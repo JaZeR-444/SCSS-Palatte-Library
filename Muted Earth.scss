@@ -1,0 +1,49 @@
+/* Muted Earth - https://coolors.co/ */
+
+:root {
+/* CSS HEX */
+--artichoke: #6b705cff;
+--sage: #a5a58dff;
+--ash-gray: #b7b7a4ff;
+--linen: #ffe8d6ff;
+--desert-sand: #ddbea9ff;
+
+/* CSS HSL */
+--artichoke: hsla(75, 10%, 40%, 1);
+--sage: hsla(60, 12%, 60%, 1);
+--ash-gray: hsla(60, 12%, 68%, 1);
+--linen: hsla(26, 100%, 92%, 1);
+--desert-sand: hsla(24, 43%, 76%, 1);
+}
+
+/* SCSS HEX */
+$artichoke: #6b705cff;
+$sage: #a5a58dff;
+$ash-gray: #b7b7a4ff;
+$linen: #ffe8d6ff;
+$desert-sand: #ddbea9ff;
+
+/* SCSS HSL */
+$artichoke: hsla(75, 10%, 40%, 1);
+$sage: hsla(60, 12%, 60%, 1);
+$ash-gray: hsla(60, 12%, 68%, 1);
+$linen: hsla(26, 100%, 92%, 1);
+$desert-sand: hsla(24, 43%, 76%, 1);
+
+/* SCSS RGB */
+$artichoke: rgba(107, 112, 92, 1);
+$sage: rgba(165, 165, 141, 1);
+$ash-gray: rgba(183, 183, 164, 1);
+$linen: rgba(255, 232, 214, 1);
+$desert-sand: rgba(221, 190, 169, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #6b705cff, #a5a58dff, #b7b7a4ff, #ffe8d6ff, #ddbea9ff);
+$gradient-right: linear-gradient(90deg, #6b705cff, #a5a58dff, #b7b7a4ff, #ffe8d6ff, #ddbea9ff);
+$gradient-bottom: linear-gradient(180deg, #6b705cff, #a5a58dff, #b7b7a4ff, #ffe8d6ff, #ddbea9ff);
+$gradient-left: linear-gradient(270deg, #6b705cff, #a5a58dff, #b7b7a4ff, #ffe8d6ff, #ddbea9ff);
+$gradient-top-right: linear-gradient(45deg, #6b705cff, #a5a58dff, #b7b7a4ff, #ffe8d6ff, #ddbea9ff);
+$gradient-bottom-right: linear-gradient(135deg, #6b705cff, #a5a58dff, #b7b7a4ff, #ffe8d6ff, #ddbea9ff);
+$gradient-top-left: linear-gradient(225deg, #6b705cff, #a5a58dff, #b7b7a4ff, #ffe8d6ff, #ddbea9ff);
+$gradient-bottom-left: linear-gradient(315deg, #6b705cff, #a5a58dff, #b7b7a4ff, #ffe8d6ff, #ddbea9ff);
+$gradient-radial: radial-gradient(#6b705cff, #a5a58dff, #b7b7a4ff, #ffe8d6ff, #ddbea9ff);

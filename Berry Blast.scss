@@ -1,0 +1,44 @@
+/* Berry Blast - https://coolors.co/ */
+
+:root {
+/* CSS HEX */
+--grape: #7209b7ff;
+--mulberry: #b5179eff;
+--rose-madder: #f72585ff;
+--crimson: #ff4d6dff;
+
+/* CSS HSL */
+--grape: hsla(276, 91%, 38%, 1);
+--mulberry: hsla(309, 77%, 40%, 1);
+--rose-madder: hsla(333, 93%, 56%, 1);
+--crimson: hsla(349, 100%, 65%, 1);
+}
+
+/* SCSS HEX */
+$grape: #7209b7ff;
+$mulberry: #b5179eff;
+$rose-madder: #f72585ff;
+$crimson: #ff4d6dff;
+
+/* SCSS HSL */
+$grape: hsla(276, 91%, 38%, 1);
+$mulberry: hsla(309, 77%, 40%, 1);
+$rose-madder: hsla(333, 93%, 56%, 1);
+$crimson: hsla(349, 100%, 65%, 1);
+
+/* SCSS RGB */
+$grape: rgba(114, 9, 183, 1);
+$mulberry: rgba(181, 23, 158, 1);
+$rose-madder: rgba(247, 37, 133, 1);
+$crimson: rgba(255, 77, 109, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #7209b7ff, #b5179eff, #f72585ff, #ff4d6dff);
+$gradient-right: linear-gradient(90deg, #7209b7ff, #b5179eff, #f72585ff, #ff4d6dff);
+$gradient-bottom: linear-gradient(180deg, #7209b7ff, #b5179eff, #f72585ff, #ff4d6dff);
+$gradient-left: linear-gradient(270deg, #7209b7ff, #b5179eff, #f72585ff, #ff4d6dff);
+$gradient-top-right: linear-gradient(45deg, #7209b7ff, #b5179eff, #f72585ff, #ff4d6dff);
+$gradient-bottom-right: linear-gradient(135deg, #7209b7ff, #b5179eff, #f72585ff, #ff4d6dff);
+$gradient-top-left: linear-gradient(225deg, #7209b7ff, #b5179eff, #f72585ff, #ff4d6dff);
+$gradient-bottom-left: linear-gradient(315deg, #7209b7ff, #b5179eff, #f72585ff, #ff4d6dff);
+$gradient-radial: radial-gradient(#7209b7ff, #b5179eff, #f72585ff, #ff4d6dff);

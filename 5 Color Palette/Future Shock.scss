@@ -1,6 +1,6 @@
 /* Future Shock */
 
-/* CSS HEX */
+:root {`r`n/* CSS HEX */
 --deep-navy: #2c3e50ff;
 --system-red: #e74c3cff;
 --warning-yellow: #eeff00ff;
@@ -14,7 +14,7 @@
 --digital-teal: hsla(168, 76%, 42%, 1);
 --rich-purple: hsla(283, 39%, 53%, 1);
 
-/* SCSS HEX */
+}`r`n`r`n/* SCSS HEX */
 $deep-navy: #2c3e50ff;
 $system-red: #e74c3cff;
 $warning-yellow: #eeff00ff;
@@ -45,3 +45,7 @@ $gradient-bottom-right: linear-gradient(135deg, #2c3e50ff, #e74c3cff, #eeff00ff,
 $gradient-top-left: linear-gradient(225deg, #2c3e50ff, #e74c3cff, #eeff00ff, #1abc9cff, #9b59b6ff);
 $gradient-bottom-left: linear-gradient(315deg, #2c3e50ff, #e74c3cff, #eeff00ff, #1abc9cff, #9b59b6ff);
 $gradient-radial: radial-gradient(#2c3e50ff, #e74c3cff, #eeff00ff, #1abc9cff, #9b59b6ff);
+
+
+
+

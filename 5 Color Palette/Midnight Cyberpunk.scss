@@ -1,6 +1,6 @@
 /* Midnight Cyberpunk */
 
-/* CSS HEX */
+:root {`r`n/* CSS HEX */
 --midnight-black: #101010ff;
 --midnight-violet: #240c76ff;
 --crt-violet: #8a2be2ff;
@@ -14,7 +14,7 @@
 --neon-grid-blue: hsla(195, 100%, 50%, 1);
 --radical-rose: hsla(331, 100%, 50%, 1);
 
-/* SCSS HEX */
+}`r`n`r`n/* SCSS HEX */
 $midnight-black: #101010ff;
 $midnight-violet: #240c76ff;
 $crt-violet: #8a2be2ff;
@@ -45,3 +45,7 @@ $gradient-bottom-right: linear-gradient(135deg, #101010ff, #240c76ff, #8a2be2ff,
 $gradient-top-left: linear-gradient(225deg, #101010ff, #240c76ff, #8a2be2ff, #00bfffff, #ff007bff);
 $gradient-bottom-left: linear-gradient(315deg, #101010ff, #240c76ff, #8a2be2ff, #00bfffff, #ff007bff);
 $gradient-radial: radial-gradient(#101010ff, #240c76ff, #8a2be2ff, #00bfffff, #ff007bff);
+
+
+
+

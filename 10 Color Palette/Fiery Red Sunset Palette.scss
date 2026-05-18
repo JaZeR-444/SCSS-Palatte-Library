@@ -1,6 +1,6 @@
 /* Fiery Red Sunset - https://coolors.co/03071e-370617-6a040f-9d0208-d00000-dc2f02-e85d04-f48c06-faa307-ffba08 */
 
-/* CSS HEX */
+:root {`r`n/* CSS HEX */
 --ink-black: #03071eff;
 --night-bordeaux: #370617ff;
 --black-cherry: #6a040fff;
@@ -24,7 +24,7 @@
 --orange: hsla(39, 96%, 50%, 1);
 --amber-flame: hsla(43, 100%, 52%, 1);
 
-/* SCSS HEX */
+}`r`n`r`n/* SCSS HEX */
 $ink-black: #03071eff;
 $night-bordeaux: #370617ff;
 $black-cherry: #6a040fff;
@@ -87,3 +87,7 @@ $gradient-repeating-top-right: repeating-linear-gradient(45deg, #03071eff, #3706
 $gradient-repeating-bottom-right: repeating-linear-gradient(135deg, #03071eff, #370617ff, #6a040fff, #9d0208ff, #d00000ff, #dc2f02ff, #e85d04ff, #f48c06ff, #faa307ff, #ffba08ff);
 $gradient-repeating-top-left: repeating-linear-gradient(225deg, #03071eff, #370617ff, #6a040fff, #9d0208ff, #d00000ff, #dc2f02ff, #e85d04ff, #f48c06ff, #faa307ff, #ffba08ff);
 $gradient-repeating-bottom-left: repeating-linear-gradient(315deg, #03071eff, #370617ff, #6a040fff, #9d0208ff, #d00000ff, #dc2f02ff, #e85d04ff, #f48c06ff, #faa307ff, #ffba08ff);
+
+
+
+

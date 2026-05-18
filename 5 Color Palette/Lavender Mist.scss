@@ -1,6 +1,6 @@
 /* Lavender Mist - https://coolors.co/cdb4db-ffafcc-ffc8dd-bde0fe-a2d2ff */
 
-/* CSS HEX */
+:root {`r`n/* CSS HEX */
 --lang-lavender: #cdb4dbff;
 --cherry-blossom: #ffafccff;
 --cotton-candy: #ffc8ddff;
@@ -14,7 +14,7 @@
 --light-sky: hsla(208, 97%, 87%, 1);
 --maya-blue: hsla(209, 100%, 82%, 1);
 
-/* SCSS HEX */
+}`r`n`r`n/* SCSS HEX */
 $lang-lavender: #cdb4dbff;
 $cherry-blossom: #ffafccff;
 $cotton-candy: #ffc8ddff;
@@ -45,3 +45,7 @@ $gradient-bottom-right: linear-gradient(135deg, #cdb4dbff, #ffafccff, #ffc8ddff,
 $gradient-top-left: linear-gradient(225deg, #cdb4dbff, #ffafccff, #ffc8ddff, #bde0feff, #a2d2ffff);
 $gradient-bottom-left: linear-gradient(315deg, #cdb4dbff, #ffafccff, #ffc8ddff, #bde0feff, #a2d2ffff);
 $gradient-radial: radial-gradient(#cdb4dbff, #ffafccff, #ffc8ddff, #bde0feff, #a2d2ffff);
+
+
+
+

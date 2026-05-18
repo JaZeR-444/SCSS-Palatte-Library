@@ -1,6 +1,6 @@
 /* Enchanted Forest - https://coolors.co/081c15-1b4332-2d6a4f-40916c-52b788-74c69d-b7e4c7-4a4e69-9a8c98 */
 
-/* CSS HEX */
+:root {`r`n/* CSS HEX */
 --midnight-moss: #081c15ff;
 --forest-shadow: #1b4332ff;
 --emerald-canopy: #2d6a4fff;
@@ -22,7 +22,7 @@
 --mystical-twilight: hsla(231, 18%, 35%, 1);
 --moonlight-silver: hsla(310, 7%, 57%, 1);
 
-/* SCSS HEX */
+}`r`n`r`n/* SCSS HEX */
 $midnight-moss: #081c15ff;
 $forest-shadow: #1b4332ff;
 $emerald-canopy: #2d6a4fff;
@@ -65,3 +65,7 @@ $gradient-bottom-right: linear-gradient(135deg, #081c15ff, #1b4332ff, #2d6a4fff,
 $gradient-top-left: linear-gradient(225deg, #081c15ff, #1b4332ff, #2d6a4fff, #40916cff, #52b788ff, #74c69dff, #b7e4c7ff, #4a4e69ff, #9a8c98ff);
 $gradient-bottom-left: linear-gradient(315deg, #081c15ff, #1b4332ff, #2d6a4fff, #40916cff, #52b788ff, #74c69dff, #b7e4c7ff, #4a4e69ff, #9a8c98ff);
 $gradient-radial: radial-gradient(#081c15ff, #1b4332ff, #2d6a4fff, #40916cff, #52b788ff, #74c69dff, #b7e4c7ff, #4a4e69ff, #9a8c98ff);
+
+
+
+

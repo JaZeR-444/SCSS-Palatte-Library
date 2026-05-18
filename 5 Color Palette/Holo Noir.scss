@@ -1,6 +1,6 @@
 /* Holo Noir */
 
-/* CSS HEX */
+:root {`r`n/* CSS HEX */
 --void-black: #080810ff;
 --night-asphalt: #12122aff;
 --cyan-flash: #00f0ffff;
@@ -14,7 +14,7 @@
 --hot-pink: hsla(334, 100%, 50%, 1);
 --electric-violet: hsla(270, 100%, 47%, 1);
 
-/* SCSS HEX */
+}`r`n`r`n/* SCSS HEX */
 $void-black: #080810ff;
 $night-asphalt: #12122aff;
 $cyan-flash: #00f0ffff;
@@ -45,3 +45,7 @@ $gradient-bottom-right: linear-gradient(135deg, #080810ff, #12122aff, #00f0ffff,
 $gradient-top-left: linear-gradient(225deg, #080810ff, #12122aff, #00f0ffff, #ff006eff, #7700eeff);
 $gradient-bottom-left: linear-gradient(315deg, #080810ff, #12122aff, #00f0ffff, #ff006eff, #7700eeff);
 $gradient-radial: radial-gradient(#080810ff, #12122aff, #00f0ffff, #ff006eff, #7700eeff);
+
+
+
+

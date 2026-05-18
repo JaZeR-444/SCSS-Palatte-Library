@@ -1,6 +1,6 @@
 /* Arctic Expedition - https://coolors.co/e0fbfc-c2f0f0-98d8d8-72c1c1-4d9696-2a6f6f-0d4d4d-052f2f-011616 */
 
-/* CSS HEX */
+:root {`r`n/* CSS HEX */
 --ice-crystal: #e0fbfcff;
 --frost-breath: #c2f0f0ff;
 --glacier-blue: #98d8d8ff;
@@ -22,7 +22,7 @@
 --midnight-ice: hsla(180, 81%, 10%, 1);
 --polar-night: hsla(180, 91%, 4%, 1);
 
-/* SCSS HEX */
+}`r`n`r`n/* SCSS HEX */
 $ice-crystal: #e0fbfcff;
 $frost-breath: #c2f0f0ff;
 $glacier-blue: #98d8d8ff;
@@ -65,3 +65,7 @@ $gradient-bottom-right: linear-gradient(135deg, #e0fbfcff, #c2f0f0ff, #98d8d8ff,
 $gradient-top-left: linear-gradient(225deg, #e0fbfcff, #c2f0f0ff, #98d8d8ff, #72c1c1ff, #4d9696ff, #2a6f6fff, #0d4d4dff, #052f2fff, #011616ff);
 $gradient-bottom-left: linear-gradient(315deg, #e0fbfcff, #c2f0f0ff, #98d8d8ff, #72c1c1ff, #4d9696ff, #2a6f6fff, #0d4d4dff, #052f2fff, #011616ff);
 $gradient-radial: radial-gradient(#e0fbfcff, #c2f0f0ff, #98d8d8ff, #72c1c1ff, #4d9696ff, #2a6f6fff, #0d4d4dff, #052f2fff, #011616ff);
+
+
+
+

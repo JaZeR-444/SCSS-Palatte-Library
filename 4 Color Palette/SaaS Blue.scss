@@ -1,6 +1,6 @@
 /* SaaS Blue */
 
-/* CSS HEX */
+:root {`r`n/* CSS HEX */
 --navy-dark: #0d1b2aff;
 --royal-blue: #1b263bff;
 --slate-gray: #415a77ff;
@@ -12,7 +12,7 @@
 --slate-gray: hsla(212, 29%, 36%, 1);
 --cloud-white: hsla(75, 6%, 87%, 1);
 
-/* SCSS HEX */
+}`r`n`r`n/* SCSS HEX */
 $navy-dark: #0d1b2aff;
 $royal-blue: #1b263bff;
 $slate-gray: #415a77ff;
@@ -40,3 +40,7 @@ $gradient-bottom-right: linear-gradient(135deg, #0d1b2aff, #1b263bff, #415a77ff,
 $gradient-top-left: linear-gradient(225deg, #0d1b2aff, #1b263bff, #415a77ff, #e0e1ddff);
 $gradient-bottom-left: linear-gradient(315deg, #0d1b2aff, #1b263bff, #415a77ff, #e0e1ddff);
 $gradient-radial: radial-gradient(#0d1b2aff, #1b263bff, #415a77ff, #e0e1ddff);
+
+
+
+

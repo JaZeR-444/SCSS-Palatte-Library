@@ -1,0 +1,54 @@
+/* Sunset Boulevard - https://coolors.co/ */
+
+:root {
+/* CSS HEX */
+--red: #ff0000ff;
+--orange-red: #ff4d00ff;
+--orange: #ff8e00ff;
+--amber: #ffc900ff;
+--yellow: #ffee00ff;
+--lime: #d4ff00ff;
+
+/* CSS HSL */
+--red: hsla(0, 100%, 50%, 1);
+--orange-red: hsla(18, 100%, 50%, 1);
+--orange: hsla(33, 100%, 50%, 1);
+--amber: hsla(47, 100%, 50%, 1);
+--yellow: hsla(56, 100%, 50%, 1);
+--lime: hsla(70, 100%, 50%, 1);
+}
+
+/* SCSS HEX */
+$red: #ff0000ff;
+$orange-red: #ff4d00ff;
+$orange: #ff8e00ff;
+$amber: #ffc900ff;
+$yellow: #ffee00ff;
+$lime: #d4ff00ff;
+
+/* SCSS HSL */
+$red: hsla(0, 100%, 50%, 1);
+$orange-red: hsla(18, 100%, 50%, 1);
+$orange: hsla(33, 100%, 50%, 1);
+$amber: hsla(47, 100%, 50%, 1);
+$yellow: hsla(56, 100%, 50%, 1);
+$lime: hsla(70, 100%, 50%, 1);
+
+/* SCSS RGB */
+$red: rgba(255, 0, 0, 1);
+$orange-red: rgba(255, 77, 0, 1);
+$orange: rgba(255, 142, 0, 1);
+$amber: rgba(255, 201, 0, 1);
+$yellow: rgba(255, 238, 0, 1);
+$lime: rgba(212, 255, 0, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #ff0000ff, #ff4d00ff, #ff8e00ff, #ffc900ff, #ffee00ff, #d4ff00ff);
+$gradient-right: linear-gradient(90deg, #ff0000ff, #ff4d00ff, #ff8e00ff, #ffc900ff, #ffee00ff, #d4ff00ff);
+$gradient-bottom: linear-gradient(180deg, #ff0000ff, #ff4d00ff, #ff8e00ff, #ffc900ff, #ffee00ff, #d4ff00ff);
+$gradient-left: linear-gradient(270deg, #ff0000ff, #ff4d00ff, #ff8e00ff, #ffc900ff, #ffee00ff, #d4ff00ff);
+$gradient-top-right: linear-gradient(45deg, #ff0000ff, #ff4d00ff, #ff8e00ff, #ffc900ff, #ffee00ff, #d4ff00ff);
+$gradient-bottom-right: linear-gradient(135deg, #ff0000ff, #ff4d00ff, #ff8e00ff, #ffc900ff, #ffee00ff, #d4ff00ff);
+$gradient-top-left: linear-gradient(225deg, #ff0000ff, #ff4d00ff, #ff8e00ff, #ffc900ff, #ffee00ff, #d4ff00ff);
+$gradient-bottom-left: linear-gradient(315deg, #ff0000ff, #ff4d00ff, #ff8e00ff, #ffc900ff, #ffee00ff, #d4ff00ff);
+$gradient-radial: radial-gradient(#ff0000ff, #ff4d00ff, #ff8e00ff, #ffc900ff, #ffee00ff, #d4ff00ff);

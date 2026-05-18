@@ -1,6 +1,6 @@
 /* Modern Vibe */
 
-/* CSS HEX */
+:root {`r`n/* CSS HEX */
 --amethyst-purple: #895eb3ff;
 --saffron-yellow: #fad372ff;
 --muted-coral: #db726dff;
@@ -16,7 +16,7 @@
 --deep-royal-blue: hsla(232, 40%, 42%, 1);
 --lime-green: hsla(76, 61%, 52%, 1);
 
-/* SCSS HEX */
+}`r`n`r`n/* SCSS HEX */
 $amethyst-purple: #895eb3ff;
 $saffron-yellow: #fad372ff;
 $muted-coral: #db726dff;
@@ -50,3 +50,7 @@ $gradient-bottom-right: linear-gradient(135deg, #895eb3ff, #fad372ff, #db726dff,
 $gradient-top-left: linear-gradient(225deg, #895eb3ff, #fad372ff, #db726dff, #f7942cff, #404c95ff, #a9d03aff);
 $gradient-bottom-left: linear-gradient(315deg, #895eb3ff, #fad372ff, #db726dff, #f7942cff, #404c95ff, #a9d03aff);
 $gradient-radial: radial-gradient(#895eb3ff, #fad372ff, #db726dff, #f7942cff, #404c95ff, #a9d03aff);
+
+
+
+

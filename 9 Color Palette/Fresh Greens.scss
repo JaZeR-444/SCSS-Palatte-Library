@@ -1,6 +1,6 @@
 /* Fresh Greens - https://coolors.co/d8f3dc-b7e4c7-95d5b2-74c69d-52b788-40916c-2d6a4f-1b4332-081c15 */
 
-/* CSS HEX */
+:root {`r`n/* CSS HEX */
 --frosted-mint: #d8f3dcff;
 --celadon: #b7e4c7ff;
 --celadon-2: #95d5b2ff;
@@ -22,7 +22,7 @@
 --pine-teal: hsla(155, 43%, 18%, 1);
 --evergreen: hsla(159, 56%, 7%, 1);
 
-/* SCSS HEX */
+}`r`n`r`n/* SCSS HEX */
 $frosted-mint: #d8f3dcff;
 $celadon: #b7e4c7ff;
 $celadon-2: #95d5b2ff;
@@ -65,3 +65,6 @@ $gradient-bottom-right: linear-gradient(135deg, #d8f3dcff, #b7e4c7ff, #95d5b2ff,
 $gradient-top-left: linear-gradient(225deg, #d8f3dcff, #b7e4c7ff, #95d5b2ff, #74c69dff, #52b788ff, #40916cff, #2d6a4fff, #1b4332ff, #081c15ff);
 $gradient-bottom-left: linear-gradient(315deg, #d8f3dcff, #b7e4c7ff, #95d5b2ff, #74c69dff, #52b788ff, #40916cff, #2d6a4fff, #1b4332ff, #081c15ff);
 $gradient-radial: radial-gradient(#d8f3dcff, #b7e4c7ff, #95d5b2ff, #74c69dff, #52b788ff, #40916cff, #2d6a4fff, #1b4332ff, #081c15ff);
+
+
+

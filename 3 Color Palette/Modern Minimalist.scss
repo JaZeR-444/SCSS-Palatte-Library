@@ -1,6 +1,6 @@
 /* Modern Minimalist */
 
-/* CSS HEX */
+:root {`r`n/* CSS HEX */
 --charcoal: #2d3436ff;
 --silver: #dfe6e9ff;
 --electric-blue: #0984e3ff;
@@ -10,7 +10,7 @@
 --silver: hsla(198, 19%, 89%, 1);
 --electric-blue: hsla(206, 92%, 46%, 1);
 
-/* SCSS HEX */
+}`r`n`r`n/* SCSS HEX */
 $charcoal: #2d3436ff;
 $silver: #dfe6e9ff;
 $electric-blue: #0984e3ff;
@@ -35,3 +35,7 @@ $gradient-bottom-right: linear-gradient(135deg, #2d3436ff, #dfe6e9ff, #0984e3ff)
 $gradient-top-left: linear-gradient(225deg, #2d3436ff, #dfe6e9ff, #0984e3ff);
 $gradient-bottom-left: linear-gradient(315deg, #2d3436ff, #dfe6e9ff, #0984e3ff);
 $gradient-radial: radial-gradient(#2d3436ff, #dfe6e9ff, #0984e3ff);
+
+
+
+

@@ -1,6 +1,6 @@
 /* Classic Vaporwave */
 
-/* CSS HEX */
+:root {`r`n/* CSS HEX */
 --hot-pink: #ff71ceff;
 --electric-blue: #01cdfeff;
 --spring-green: #05ffa1ff;
@@ -14,7 +14,7 @@
 --mauve-purple: hsla(272, 100%, 70%, 1);
 --sunshine-yellow: hsla(58, 100%, 79%, 1);
 
-/* SCSS HEX */
+}`r`n`r`n/* SCSS HEX */
 $hot-pink: #ff71ceff;
 $electric-blue: #01cdfeff;
 $spring-green: #05ffa1ff;
@@ -45,3 +45,7 @@ $gradient-bottom-right: linear-gradient(135deg, #ff71ceff, #01cdfeff, #05ffa1ff,
 $gradient-top-left: linear-gradient(225deg, #ff71ceff, #01cdfeff, #05ffa1ff, #b967ffff, #fffb96ff);
 $gradient-bottom-left: linear-gradient(315deg, #ff71ceff, #01cdfeff, #05ffa1ff, #b967ffff, #fffb96ff);
 $gradient-radial: radial-gradient(#ff71ceff, #01cdfeff, #05ffa1ff, #b967ffff, #fffb96ff);
+
+
+
+

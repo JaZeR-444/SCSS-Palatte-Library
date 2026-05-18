@@ -1,6 +1,6 @@
 /* Retro Metro */
 
-/* CSS HEX */
+:root {`r`n/* CSS HEX */
 --coral-red: #ea5545ff;
 --lively-pink: #f46a9bff;
 --vibrant-orange: #ef9b20ff;
@@ -18,7 +18,7 @@
 --vibrant-green: hsla(67, 62%, 50%, 1);
 --bright-blue: hsla(200, 86%, 55%, 1);
 
-/* SCSS HEX */
+}`r`n`r`n/* SCSS HEX */
 $coral-red: #ea5545ff;
 $lively-pink: #f46a9bff;
 $vibrant-orange: #ef9b20ff;
@@ -55,3 +55,7 @@ $gradient-bottom-right: linear-gradient(135deg, #ea5545ff, #f46a9bff, #ef9b20ff,
 $gradient-top-left: linear-gradient(225deg, #ea5545ff, #f46a9bff, #ef9b20ff, #edbf33ff, #ede15bff, #bdcf32ff, #27aeefff);
 $gradient-bottom-left: linear-gradient(315deg, #ea5545ff, #f46a9bff, #ef9b20ff, #edbf33ff, #ede15bff, #bdcf32ff, #27aeefff);
 $gradient-radial: radial-gradient(#ea5545ff, #f46a9bff, #ef9b20ff, #edbf33ff, #ede15bff, #bdcf32ff, #27aeefff);
+
+
+
+

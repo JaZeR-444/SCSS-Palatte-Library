@@ -1,6 +1,6 @@
 /* Tokyo Night */
 
-/* CSS HEX */
+:root {`r`n/* CSS HEX */
 --tokyo-bg: #1a1b26ff;
 --tokyo-fg: #c0caf5ff;
 --tokyo-red: #f7768eff;
@@ -20,7 +20,7 @@
 --tokyo-blue: hsla(221, 89%, 72%, 1);
 --tokyo-purple: hsla(261, 85%, 79%, 1);
 
-/* SCSS HEX */
+}`r`n`r`n/* SCSS HEX */
 $tokyo-bg: #1a1b26ff;
 $tokyo-fg: #c0caf5ff;
 $tokyo-red: #f7768eff;
@@ -60,3 +60,7 @@ $gradient-bottom-right: linear-gradient(135deg, #1a1b26ff, #c0caf5ff, #f7768eff,
 $gradient-top-left: linear-gradient(225deg, #1a1b26ff, #c0caf5ff, #f7768eff, #ff9e64ff, #e0af68ff, #9ece6aff, #7aa2f7ff, #bb9af7ff);
 $gradient-bottom-left: linear-gradient(315deg, #1a1b26ff, #c0caf5ff, #f7768eff, #ff9e64ff, #e0af68ff, #9ece6aff, #7aa2f7ff, #bb9af7ff);
 $gradient-radial: radial-gradient(#1a1b26ff, #c0caf5ff, #f7768eff, #ff9e64ff, #e0af68ff, #9ece6aff, #7aa2f7ff, #bb9af7ff);
+
+
+
+

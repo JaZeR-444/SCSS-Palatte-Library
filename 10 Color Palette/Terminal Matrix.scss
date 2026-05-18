@@ -1,6 +1,6 @@
 /* Terminal Matrix - https://coolors.co/0d1117-003822-004d2c-006437-007a41-00914c-00a856-00bf61-00d66b-00ed76 */
 
-/* CSS HEX */
+:root {`r`n/* CSS HEX */
 --console-void: #0d1117ff;
 --deep-kernel: #003822ff;
 --terminal-forest: #004d2cff;
@@ -24,7 +24,7 @@
 --data-pulse: hsla(150, 100%, 42%, 1);
 --glitch-mint: hsla(150, 100%, 46%, 1);
 
-/* SCSS HEX */
+}`r`n`r`n/* SCSS HEX */
 $console-void: #0d1117ff;
 $deep-kernel: #003822ff;
 $terminal-forest: #004d2cff;
@@ -70,3 +70,7 @@ $gradient-bottom-right: linear-gradient(135deg, #0d1117ff, #003822ff, #004d2cff,
 $gradient-top-left: linear-gradient(225deg, #0d1117ff, #003822ff, #004d2cff, #006437ff, #007a41ff, #00914cff, #00a856ff, #00bf61ff, #00d66bff, #00ed76ff);
 $gradient-bottom-left: linear-gradient(315deg, #0d1117ff, #003822ff, #004d2cff, #006437ff, #007a41ff, #00914cff, #00a856ff, #00bf61ff, #00d66bff, #00ed76ff);
 $gradient-radial: radial-gradient(#0d1117ff, #003822ff, #004d2cff, #006437ff, #007a41ff, #00914cff, #00a856ff, #00bf61ff, #00d66bff, #00ed76ff);
+
+
+
+

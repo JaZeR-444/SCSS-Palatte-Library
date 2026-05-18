@@ -1,0 +1,39 @@
+/* Slate Gray - https://coolors.co/ */
+
+:root {
+/* CSS HEX */
+--eerie-black: #212529ff;
+--jet: #343a40ff;
+--outer-space: #495057ff;
+
+/* CSS HSL */
+--eerie-black: hsla(210, 11%, 15%, 1);
+--jet: hsla(210, 10%, 23%, 1);
+--outer-space: hsla(210, 9%, 31%, 1);
+}
+
+/* SCSS HEX */
+$eerie-black: #212529ff;
+$jet: #343a40ff;
+$outer-space: #495057ff;
+
+/* SCSS HSL */
+$eerie-black: hsla(210, 11%, 15%, 1);
+$jet: hsla(210, 10%, 23%, 1);
+$outer-space: hsla(210, 9%, 31%, 1);
+
+/* SCSS RGB */
+$eerie-black: rgba(33, 37, 41, 1);
+$jet: rgba(52, 58, 64, 1);
+$outer-space: rgba(73, 80, 87, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #212529ff, #343a40ff, #495057ff);
+$gradient-right: linear-gradient(90deg, #212529ff, #343a40ff, #495057ff);
+$gradient-bottom: linear-gradient(180deg, #212529ff, #343a40ff, #495057ff);
+$gradient-left: linear-gradient(270deg, #212529ff, #343a40ff, #495057ff);
+$gradient-top-right: linear-gradient(45deg, #212529ff, #343a40ff, #495057ff);
+$gradient-bottom-right: linear-gradient(135deg, #212529ff, #343a40ff, #495057ff);
+$gradient-top-left: linear-gradient(225deg, #212529ff, #343a40ff, #495057ff);
+$gradient-bottom-left: linear-gradient(315deg, #212529ff, #343a40ff, #495057ff);
+$gradient-radial: radial-gradient(#212529ff, #343a40ff, #495057ff);

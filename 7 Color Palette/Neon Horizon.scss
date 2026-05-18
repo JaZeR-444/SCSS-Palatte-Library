@@ -1,6 +1,6 @@
 /* Neon Horizon */
 
-/* CSS HEX */
+:root {`r`n/* CSS HEX */
 --deep-space: #0a0018ff;
 --electric-purple: #8800ccff;
 --neon-magenta: #dd00ffff;
@@ -18,7 +18,7 @@
 --sunset-orange: hsla(32, 100%, 50%, 1);
 --horizon-gold: hsla(50, 100%, 63%, 1);
 
-/* SCSS HEX */
+}`r`n`r`n/* SCSS HEX */
 $deep-space: #0a0018ff;
 $electric-purple: #8800ccff;
 $neon-magenta: #dd00ffff;
@@ -55,3 +55,7 @@ $gradient-bottom-right: linear-gradient(135deg, #0a0018ff, #8800ccff, #dd00ffff,
 $gradient-top-left: linear-gradient(225deg, #0a0018ff, #8800ccff, #dd00ffff, #ff0099ff, #00aaaaff, #ff8800ff, #ffe040ff);
 $gradient-bottom-left: linear-gradient(315deg, #0a0018ff, #8800ccff, #dd00ffff, #ff0099ff, #00aaaaff, #ff8800ff, #ffe040ff);
 $gradient-radial: radial-gradient(#0a0018ff, #8800ccff, #dd00ffff, #ff0099ff, #00aaaaff, #ff8800ff, #ffe040ff);
+
+
+
+

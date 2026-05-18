@@ -1,6 +1,6 @@
 /* Desert Sands - https://coolors.co/264653-2a9d8f-e9c46a-f4a261-e76f51 */
 
-/* CSS HEX */
+:root {`r`n/* CSS HEX */
 --charcoal-blue: #264653ff;
 --persian-green: #2a9d8fff;
 --saffron-gold: #e9c46aff;
@@ -14,7 +14,7 @@
 --sandy-brown: hsla(27, 87%, 67%, 1);
 --burnt-sienna: hsla(12, 76%, 61%, 1);
 
-/* SCSS HEX */
+}`r`n`r`n/* SCSS HEX */
 $charcoal-blue: #264653ff;
 $persian-green: #2a9d8fff;
 $saffron-gold: #e9c46aff;
@@ -45,3 +45,7 @@ $gradient-bottom-right: linear-gradient(135deg, #264653ff, #2a9d8fff, #e9c46aff,
 $gradient-top-left: linear-gradient(225deg, #264653ff, #2a9d8fff, #e9c46aff, #f4a261ff, #e76f51ff);
 $gradient-bottom-left: linear-gradient(315deg, #264653ff, #2a9d8fff, #e9c46aff, #f4a261ff, #e76f51ff);
 $gradient-radial: radial-gradient(#264653ff, #2a9d8fff, #e9c46aff, #f4a261ff, #e76f51ff);
+
+
+
+

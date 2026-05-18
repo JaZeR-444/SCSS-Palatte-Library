@@ -1,6 +1,6 @@
 /* Vintage Gold - https://coolors.co/000000-14213d-fca311-e5e5e5-ffffff */
 
-/* CSS HEX */
+:root {`r`n/* CSS HEX */
 --midnight-black: #000000ff;
 --oxford-blue: #14213dff;
 --orange-peel: #fca311ff;
@@ -14,7 +14,7 @@
 --platinum: hsla(0, 0%, 90%, 1);
 --white: hsla(0, 0%, 100%, 1);
 
-/* SCSS HEX */
+}`r`n`r`n/* SCSS HEX */
 $midnight-black: #000000ff;
 $oxford-blue: #14213dff;
 $orange-peel: #fca311ff;
@@ -45,3 +45,7 @@ $gradient-bottom-right: linear-gradient(135deg, #000000ff, #14213dff, #fca311ff,
 $gradient-top-left: linear-gradient(225deg, #000000ff, #14213dff, #fca311ff, #e5e5e5ff, #ffffffff);
 $gradient-bottom-left: linear-gradient(315deg, #000000ff, #14213dff, #fca311ff, #e5e5e5ff, #ffffffff);
 $gradient-radial: radial-gradient(#000000ff, #14213dff, #fca311ff, #e5e5e5ff, #ffffffff);
+
+
+
+
