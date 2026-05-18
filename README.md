@@ -15,12 +15,12 @@ The library is organized into directories based on the color count of each palet
 
 - **3 Color Palettes**: Earthy Organic, Modern Minimalist, Retro Revival.
 - **4 Color Palettes**: Nature Trail, Retro Pop, SaaS Blue.
-- **5 Color Palettes**: Bold Berry, Desert Sands, Lavender Mist, Midnight Neon, Monochrome Magic, Soft Pink Delight, Vintage Gold.
+- **5 Color Palettes**: Bold Berry, Classic Vaporwave, Cyber Pastel, Desert Sands, Future Shock, Holo Noir, Lavender Mist, Midnight Cyberpunk, Midnight Neon, Monochrome Magic, Soft Pink Delight, Vintage Gold.
 - **6 Color Palettes**: Cool Oceanic, Modern Vibe.
-- **7 Color Palettes**: Professional IBM, Retro Metro.
+- **7 Color Palettes**: Neon Horizon, Professional IBM, Retro Metro.
 - **8 Color Palettes**: Dracula, Nord, Tokyo Night.
 - **9 Color Palettes**: Arctic Expedition, Autumn Harvest, Deep Forest, Enchanted Forest, Fresh Greens, Ocean Blue Serenity, Solar Flare, Tropical Paradise, Urban Industrial.
-- **10 Color Palettes**: Fiery Red Sunset.
+- **10 Color Palettes**: Cybernetic Steel, Fiery Red Sunset, Nebula Void, Synthwave Horizon, Terminal Matrix.
 
 ## Usage
 

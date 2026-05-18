@@ -1,0 +1,47 @@
+/* Midnight Cyberpunk */
+
+/* CSS HEX */
+--midnight-black: #101010ff;
+--midnight-violet: #240c76ff;
+--crt-violet: #8a2be2ff;
+--neon-grid-blue: #00bfffff;
+--radical-rose: #ff007bff;
+
+/* CSS HSL */
+--midnight-black: hsla(0, 0%, 6%, 1);
+--midnight-violet: hsla(254, 82%, 25%, 1);
+--crt-violet: hsla(271, 76%, 53%, 1);
+--neon-grid-blue: hsla(195, 100%, 50%, 1);
+--radical-rose: hsla(331, 100%, 50%, 1);
+
+/* SCSS HEX */
+$midnight-black: #101010ff;
+$midnight-violet: #240c76ff;
+$crt-violet: #8a2be2ff;
+$neon-grid-blue: #00bfffff;
+$radical-rose: #ff007bff;
+
+/* SCSS HSL */
+$midnight-black: hsla(0, 0%, 6%, 1);
+$midnight-violet: hsla(254, 82%, 25%, 1);
+$crt-violet: hsla(271, 76%, 53%, 1);
+$neon-grid-blue: hsla(195, 100%, 50%, 1);
+$radical-rose: hsla(331, 100%, 50%, 1);
+
+/* SCSS RGB */
+$midnight-black: rgba(16, 16, 16, 1);
+$midnight-violet: rgba(36, 12, 118, 1);
+$crt-violet: rgba(138, 43, 226, 1);
+$neon-grid-blue: rgba(0, 191, 255, 1);
+$radical-rose: rgba(255, 0, 123, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #101010ff, #240c76ff, #8a2be2ff, #00bfffff, #ff007bff);
+$gradient-right: linear-gradient(90deg, #101010ff, #240c76ff, #8a2be2ff, #00bfffff, #ff007bff);
+$gradient-bottom: linear-gradient(180deg, #101010ff, #240c76ff, #8a2be2ff, #00bfffff, #ff007bff);
+$gradient-left: linear-gradient(270deg, #101010ff, #240c76ff, #8a2be2ff, #00bfffff, #ff007bff);
+$gradient-top-right: linear-gradient(45deg, #101010ff, #240c76ff, #8a2be2ff, #00bfffff, #ff007bff);
+$gradient-bottom-right: linear-gradient(135deg, #101010ff, #240c76ff, #8a2be2ff, #00bfffff, #ff007bff);
+$gradient-top-left: linear-gradient(225deg, #101010ff, #240c76ff, #8a2be2ff, #00bfffff, #ff007bff);
+$gradient-bottom-left: linear-gradient(315deg, #101010ff, #240c76ff, #8a2be2ff, #00bfffff, #ff007bff);
+$gradient-radial: radial-gradient(#101010ff, #240c76ff, #8a2be2ff, #00bfffff, #ff007bff);

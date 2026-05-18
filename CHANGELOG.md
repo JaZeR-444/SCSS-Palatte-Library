@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.0] - 2026-05-18
+
+### Added
+- **Cybernetic Steel.scss**: 10-color industrial metallic palette.
+- **Nebula Void.scss**: 10-color deep space purple and violet palette.
+- **Synthwave Horizon.scss**: 10-color retro-future magenta and cyan palette.
+- **Terminal Matrix.scss**: 10-color classic monochromatic green console palette.
+
 ## [1.4.0] - 2026-05-18
 
 ### Changed
@@ -14,12 +22,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.3.0] - 2026-05-18
 
 ### Added
+- **Classic Vaporwave.scss**: 5-color iconic glowing pastel palette.
 - **Cool Oceanic.scss**: 6-color professional oceanic palette.
+- **Cyber Pastel.scss**: 5-color atmospheric neon digital haze.
 - **Dracula Palette.scss**: 8-color high-contrast dark mode palette.
 - **Earthy Organic.scss**: 3-color calm nature tones.
+- **Future Shock.scss**: 5-color industrial tech warning palette.
+- **Holo Noir.scss**: 5-color cyberpunk black and holographic palette.
+- **Midnight Cyberpunk.scss**: 5-color high-contrast neon sign palette.
 - **Modern Minimalist.scss**: 3-color clean professional palette.
 - **Modern Vibe.scss**: 6-color high-energy branding palette.
 - **Nature Trail.scss**: 4-color balanced earthy tones.
+- **Neon Horizon.scss**: 7-color synthwave digital sunset palette.
 - **Nord Palette.scss**: 8-color arctic minimalist palette.
 - **Professional IBM.scss**: 7-color accessible categorical palette.
 - **Retro Metro.scss**: 7-color vibrant retro-modern set.

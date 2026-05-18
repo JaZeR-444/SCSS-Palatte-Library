@@ -22,8 +22,13 @@ The palettes are organized into directories based on the number of colors they c
 
 ### 5 Color Palette
 - **`Bold Berry.scss`**: Rich berry-inspired shades.
+- **`Classic Vaporwave.scss`**: Iconic 5-color bright glowing pastels.
+- **`Cyber Pastel.scss`**: Soft 5-color atmospheric neon digital haze.
 - **`Desert Sands.scss`**: Warm earth tones including Persian green.
+- **`Future Shock.scss`**: Sharp 5-color industrial tech warning tones.
+- **`Holo Noir.scss`**: Sleek 5-color cyberpunk blacks and holographics.
 - **`Lavender Mist.scss`**: Soft pastel lavender and pink.
+- **`Midnight Cyberpunk.scss`**: High-contrast 5-color neon signs.
 - **`Midnight Neon.scss`**: Cyberpunk-inspired neon magenta and cyan.
 - **`Monochrome Magic.scss`**: Professional grayscale sets.
 - **`Soft Pink Delight.scss`**: Gentle and light pink variations.
@@ -34,6 +39,7 @@ The palettes are organized into directories based on the number of colors they c
 - **`Modern Vibe.scss`**: Trendy, contemporary colors.
 
 ### 7 Color Palette
+- **`Neon Horizon.scss`**: Classic 7-color synthwave digital sunset.
 - **`Professional IBM.scss`**: Colors inspired by professional enterprise design.
 - **`Retro Metro.scss`**: Urban vintage tones.
 
@@ -54,7 +60,11 @@ The palettes are organized into directories based on the number of colors they c
 - **`Urban Industrial.scss`**: Gritty concrete grays and safety yellows.
 
 ### 10 Color Palette
+- **`Cybernetic Steel.scss`**: Industrial robotics and metallic textures.
 - **`Fiery Red Sunset Palette.scss`**: Vibrant sequence from ink black to amber flames.
+- **`Nebula Void.scss`**: Deep space exploration and galactic gas clouds.
+- **`Synthwave Horizon.scss`**: 80s retro-futurism and sunset grids.
+- **`Terminal Matrix.scss`**: Classic green-on-black computing.
 
 ## Usage
 
