@@ -1,0 +1,37 @@
+/* Retro Revival */
+
+/* CSS HEX */
+--prussian-blue: #2e5283ff;
+--burnt-orange: #e2552dff;
+--marigold: #e3bd33ff;
+
+/* CSS HSL */
+--prussian-blue: hsla(215, 48%, 35%, 1);
+--burnt-orange: hsla(13, 76%, 53%, 1);
+--marigold: hsla(47, 76%, 55%, 1);
+
+/* SCSS HEX */
+$prussian-blue: #2e5283ff;
+$burnt-orange: #e2552dff;
+$marigold: #e3bd33ff;
+
+/* SCSS HSL */
+$prussian-blue: hsla(215, 48%, 35%, 1);
+$burnt-orange: hsla(13, 76%, 53%, 1);
+$marigold: hsla(47, 76%, 55%, 1);
+
+/* SCSS RGB */
+$prussian-blue: rgba(46, 82, 131, 1);
+$burnt-orange: rgba(226, 85, 45, 1);
+$marigold: rgba(227, 189, 51, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #2e5283ff, #e2552dff, #e3bd33ff);
+$gradient-right: linear-gradient(90deg, #2e5283ff, #e2552dff, #e3bd33ff);
+$gradient-bottom: linear-gradient(180deg, #2e5283ff, #e2552dff, #e3bd33ff);
+$gradient-left: linear-gradient(270deg, #2e5283ff, #e2552dff, #e3bd33ff);
+$gradient-top-right: linear-gradient(45deg, #2e5283ff, #e2552dff, #e3bd33ff);
+$gradient-bottom-right: linear-gradient(135deg, #2e5283ff, #e2552dff, #e3bd33ff);
+$gradient-top-left: linear-gradient(225deg, #2e5283ff, #e2552dff, #e3bd33ff);
+$gradient-bottom-left: linear-gradient(315deg, #2e5283ff, #e2552dff, #e3bd33ff);
+$gradient-radial: radial-gradient(#2e5283ff, #e2552dff, #e3bd33ff);

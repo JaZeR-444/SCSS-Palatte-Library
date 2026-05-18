@@ -11,23 +11,16 @@ A curated collection of themed, production-ready SCSS and CSS color palettes.
 
 ## Available Palettes
 
-- **Arctic Expedition**: 9-color icy blue and white sequence.
-- **Autumn Harvest**: 9-color earth and harvest tones.
-- **Bold Berry**: Rich berry tones.
-- **Deep Forest**: 9-color lush green and earth tones.
-- **Desert Sands**: Warm earth and sand tones.
-- **Enchanted Forest**: 9-color mystical green and silver sequence.
-- **Fiery Red Sunset**: Vibrant sunset sequence.
-- **Fresh Greens**: Natural green variations.
-- **Lavender Mist**: Soft pastel shades.
-- **Midnight Neon**: Cyberpunk-inspired high-contrast neon.
-- **Monochrome Magic**: Professional grayscale sets.
-- **Ocean Blue Serenity**: Calming aquatic tones.
-- **Soft Pink Delight**: Gentle pink shades.
-- **Solar Flare**: 9-color vibrant sun-inspired palette.
-- **Tropical Paradise**: 9-color vibrant island and sunset mix.
-- **Urban Industrial**: 9-color gritty city and industrial tones.
-- **Vintage Gold**: Classic black, blue, and gold tones.
+The library is organized into directories based on the color count of each palette (e.g., `3 Color Palette/`, `9 Color Palette/`).
+
+- **3 Color Palettes**: Earthy Organic, Modern Minimalist, Retro Revival.
+- **4 Color Palettes**: Nature Trail, Retro Pop, SaaS Blue.
+- **5 Color Palettes**: Bold Berry, Desert Sands, Lavender Mist, Midnight Neon, Monochrome Magic, Soft Pink Delight, Vintage Gold.
+- **6 Color Palettes**: Cool Oceanic, Modern Vibe.
+- **7 Color Palettes**: Professional IBM, Retro Metro.
+- **8 Color Palettes**: Dracula, Nord, Tokyo Night.
+- **9 Color Palettes**: Arctic Expedition, Autumn Harvest, Deep Forest, Enchanted Forest, Fresh Greens, Ocean Blue Serenity, Solar Flare, Tropical Paradise, Urban Industrial.
+- **10 Color Palettes**: Fiery Red Sunset.
 
 ## Usage
 

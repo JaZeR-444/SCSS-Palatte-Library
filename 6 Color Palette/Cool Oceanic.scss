@@ -1,0 +1,52 @@
+/* Cool Oceanic */
+
+/* CSS HEX */
+--midnight-blue: #011f4bff;
+--navy-blue: #03396cff;
+--ocean-blue: #005b96ff;
+--steel-blue: #6497b1ff;
+--sky-blue: #b3cde0ff;
+--ghost-white: #f4f4f8ff;
+
+/* CSS HSL */
+--midnight-blue: hsla(216, 97%, 15%, 1);
+--navy-blue: hsla(209, 95%, 22%, 1);
+--ocean-blue: hsla(204, 100%, 29%, 1);
+--steel-blue: hsla(200, 33%, 54%, 1);
+--sky-blue: hsla(205, 42%, 79%, 1);
+--ghost-white: hsla(240, 22%, 96%, 1);
+
+/* SCSS HEX */
+$midnight-blue: #011f4bff;
+$navy-blue: #03396cff;
+$ocean-blue: #005b96ff;
+$steel-blue: #6497b1ff;
+$sky-blue: #b3cde0ff;
+$ghost-white: #f4f4f8ff;
+
+/* SCSS HSL */
+$midnight-blue: hsla(216, 97%, 15%, 1);
+$navy-blue: hsla(209, 95%, 22%, 1);
+$ocean-blue: hsla(204, 100%, 29%, 1);
+$steel-blue: hsla(200, 33%, 54%, 1);
+$sky-blue: hsla(205, 42%, 79%, 1);
+$ghost-white: hsla(240, 22%, 96%, 1);
+
+/* SCSS RGB */
+$midnight-blue: rgba(1, 31, 75, 1);
+$navy-blue: rgba(3, 57, 108, 1);
+$ocean-blue: rgba(0, 91, 150, 1);
+$steel-blue: rgba(100, 151, 177, 1);
+$sky-blue: rgba(179, 205, 224, 1);
+$ghost-white: rgba(244, 244, 248, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #011f4bff, #03396cff, #005b96ff, #6497b1ff, #b3cde0ff, #f4f4f8ff);
+$gradient-right: linear-gradient(90deg, #011f4bff, #03396cff, #005b96ff, #6497b1ff, #b3cde0ff, #f4f4f8ff);
+$gradient-bottom: linear-gradient(180deg, #011f4bff, #03396cff, #005b96ff, #6497b1ff, #b3cde0ff, #f4f4f8ff);
+$gradient-left: linear-gradient(270deg, #011f4bff, #03396cff, #005b96ff, #6497b1ff, #b3cde0ff, #f4f4f8ff);
+$gradient-top-right: linear-gradient(45deg, #011f4bff, #03396cff, #005b96ff, #6497b1ff, #b3cde0ff, #f4f4f8ff);
+$gradient-bottom-right: linear-gradient(135deg, #011f4bff, #03396cff, #005b96ff, #6497b1ff, #b3cde0ff, #f4f4f8ff);
+$gradient-top-left: linear-gradient(225deg, #011f4bff, #03396cff, #005b96ff, #6497b1ff, #b3cde0ff, #f4f4f8ff);
+$gradient-bottom-left: linear-gradient(315deg, #011f4bff, #03396cff, #005b96ff, #6497b1ff, #b3cde0ff, #f4f4f8ff);
+$gradient-radial: radial-gradient(#011f4bff, #03396cff, #005b96ff, #6497b1ff, #b3cde0ff, #f4f4f8ff);

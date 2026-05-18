@@ -8,23 +8,53 @@ The project serves as a library of design assets. Each themed palette is encapsu
 
 ## Key Files
 
-- **`Arctic Expedition.scss`**: A comprehensive 9-color icy palette from crystal white to polar night blue.
-- **`Autumn Harvest.scss`**: A 9-color sequence of earthy browns, burnt oranges, and saffron yellows.
-- **`Bold Berry.scss`**: A rich palette featuring berry-inspired shades from soft apricot to night bordeaux.
-- **`Deep Forest.scss`**: A lush 9-color sequence of forest greens and misty whites.
-- **`Desert Sands.scss`**: Warm earth tones including Persian green and sandy brown.
-- **`Enchanted Forest.scss`**: A mystical 9-color palette featuring deep emeralds and moonlight silvers.
-- **`Fiery Red Sunset Palette.scss`**: A vibrant sequence of colors ranging from ink black through deep reds to amber flames.
-- **`Fresh Greens.scss`**: A palette focused on natural green tones.
-- **`Lavender Mist.scss`**: Soft pastel tones including lavender and cotton candy pink.
-- **`Midnight Neon.scss`**: High-contrast cyberpunk tones with neon magenta and cyan.
-- **`Monochrome Magic.scss`**: A sophisticated grayscale and monochrome color set.
+The palettes are organized into directories based on the number of colors they contain:
+
+### 3 Color Palette
+- **`Earthy Organic.scss`**: Natural, grounded tones.
+- **`Modern Minimalist.scss`**: Clean, contemporary colors.
+- **`Retro Revival.scss`**: Vintage-inspired 3-color set.
+
+### 4 Color Palette
+- **`Nature Trail.scss`**: Earthy outdoors tones.
+- **`Retro Pop.scss`**: Vibrant 4-color nostalgia.
+- **`SaaS Blue.scss`**: Professional software-themed blues.
+
+### 5 Color Palette
+- **`Bold Berry.scss`**: Rich berry-inspired shades.
+- **`Desert Sands.scss`**: Warm earth tones including Persian green.
+- **`Lavender Mist.scss`**: Soft pastel lavender and pink.
+- **`Midnight Neon.scss`**: Cyberpunk-inspired neon magenta and cyan.
+- **`Monochrome Magic.scss`**: Professional grayscale sets.
+- **`Soft Pink Delight.scss`**: Gentle and light pink variations.
+- **`Vintage Gold.scss`**: Classic black, oxford blue, and orange peel.
+
+### 6 Color Palette
+- **`Cool Oceanic.scss`**: Deep sea and aquatic tones.
+- **`Modern Vibe.scss`**: Trendy, contemporary colors.
+
+### 7 Color Palette
+- **`Professional IBM.scss`**: Colors inspired by professional enterprise design.
+- **`Retro Metro.scss`**: Urban vintage tones.
+
+### 8 Color Palette
+- **`Dracula Palette.scss`**: High-contrast dark theme.
+- **`Nord Palette.scss`**: Clean, arctic-inspired grays and blues.
+- **`Tokyo Night.scss`**: Deep purples and neons of a night cityscape.
+
+### 9 Color Palette
+- **`Arctic Expedition.scss`**: Icy palette from crystal white to polar night.
+- **`Autumn Harvest.scss`**: Earthy browns, burnt oranges, and saffron.
+- **`Deep Forest.scss`**: Lush forest greens and misty whites.
+- **`Enchanted Forest.scss`**: Mystical emeralds and moonlight silvers.
+- **`Fresh Greens.scss`**: Natural green variations.
 - **`Ocean Blue Serenity.scss`**: Calming blue and aquatic tones.
-- **`Soft Pink Delight.scss`**: Gentle and light pink color variations.
-- **`Solar Flare.scss`**: A vibrant 9-color sun-inspired palette from deep space blue to electric yellow.
-- **`Tropical Paradise.scss`**: A vibrant 9-color island mix from prussian blue to deep hibiscus red.
-- **`Urban Industrial.scss`**: A gritty 9-color palette of concrete grays, safety yellow, and industrial red.
-- **`Vintage Gold.scss`**: A classic palette featuring midnight black, oxford blue, and orange peel.
+- **`Solar Flare.scss`**: Sun-inspired palette from space blue to yellow.
+- **`Tropical Paradise.scss`**: Island mix from prussian blue to hibiscus red.
+- **`Urban Industrial.scss`**: Gritty concrete grays and safety yellows.
+
+### 10 Color Palette
+- **`Fiery Red Sunset Palette.scss`**: Vibrant sequence from ink black to amber flames.
 
 ## Usage
 

@@ -5,6 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 2026-05-18
+
+### Changed
+- Reorganized all palette files into subdirectories based on their color count (e.g., `3 Color Palette/`, `9 Color Palette/`).
+- Updated documentation to reflect the new directory structure.
+
+## [1.3.0] - 2026-05-18
+
+### Added
+- **Cool Oceanic.scss**: 6-color professional oceanic palette.
+- **Dracula Palette.scss**: 8-color high-contrast dark mode palette.
+- **Earthy Organic.scss**: 3-color calm nature tones.
+- **Modern Minimalist.scss**: 3-color clean professional palette.
+- **Modern Vibe.scss**: 6-color high-energy branding palette.
+- **Nature Trail.scss**: 4-color balanced earthy tones.
+- **Nord Palette.scss**: 8-color arctic minimalist palette.
+- **Professional IBM.scss**: 7-color accessible categorical palette.
+- **Retro Metro.scss**: 7-color vibrant retro-modern set.
+- **Retro Pop.scss**: 4-color high-contrast 90s aesthetic.
+- **Retro Revival.scss**: 3-color nostalgic bold and earthy mix.
+- **SaaS Blue.scss**: 4-color tech interface palette.
+- **Tokyo Night.scss**: 8-color cyberpunk neon city tones.
+
 ## [1.3.0] - 2026-05-18
 
 ### Added
