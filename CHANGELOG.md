@@ -5,6 +5,50 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.0] - 2026-05-18
+
+### Added
+- **Arctic Night.scss**: New 6-color palette.
+- **Autumn Leaves.scss**: New 7-color palette.
+- **Berry Blast.scss**: New 4-color palette.
+- **Blue Ridge.scss**: New 10-color palette.
+- **Coffee Shop.scss**: New 4-color palette.
+- **Cool Blues.scss**: New 8-color palette.
+- **Cyberpunk Neon.scss**: New 8-color palette.
+- **Dark Forest 10.scss**: New 10-color palette.
+- **Deep Ocean.scss**: New 9-color palette.
+- **Deep Space.scss**: New 5-color palette.
+- **Desert Heat.scss**: New 3-color palette.
+- **Earth Tones.scss**: New 8-color palette.
+- **Electric Night.scss**: New 4-color palette.
+- **Fire and Ice.scss**: New 7-color palette.
+- **Forest Canopy.scss**: New 6-color palette.
+- **Forest Whisper.scss**: New 3-color palette.
+- **Galactic Nebula.scss**: New 9-color palette.
+- **Heatwave 10.scss**: New 10-color palette.
+- **Industrial Gray.scss**: New 6-color palette.
+- **Midnight Sky.scss**: New 7-color palette.
+- **Monochrome Night.scss**: New 8-color palette.
+- **Muted Earth.scss**: New 5-color palette.
+- **Muted Pastels.scss**: New 9-color palette.
+- **Neon Punk.scss**: New 5-color palette.
+- **Ocean Depth.scss**: New 3-color palette.
+- **Ocean Waves.scss**: New 7-color palette.
+- **Rainbow Pastels.scss**: New 7-color palette.
+- **Rainforest.scss**: New 9-color palette.
+- **Royal Purple.scss**: New 6-color palette.
+- **Slate Gray.scss**: New 3-color palette.
+- **Spectrum 10.scss**: New 10-color palette.
+- **Spring Meadow.scss**: New 4-color palette.
+- **Steel & Rust.scss**: New 10-color palette.
+- **Sunset Boulevard.scss**: New 6-color palette.
+- **Sunset Glow.scss**: New 3-color palette.
+- **Sunset Sands.scss**: New 9-color palette.
+- **Tropical Reef.scss**: New 5-color palette.
+- **Vintage Vibe.scss**: New 5-color palette.
+- **Warm Sunset.scss**: New 8-color palette.
+- **Winter Frost.scss**: New 4-color palette.
+
 ## [1.5.0] - 2026-05-18
 
 ### Added

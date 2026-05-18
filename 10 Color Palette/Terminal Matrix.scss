@@ -1,6 +1,7 @@
 /* Terminal Matrix - https://coolors.co/0d1117-003822-004d2c-006437-007a41-00914c-00a856-00bf61-00d66b-00ed76 */
 
-:root {`r`n/* CSS HEX */
+:root {
+/* CSS HEX */
 --console-void: #0d1117ff;
 --deep-kernel: #003822ff;
 --terminal-forest: #004d2cff;
@@ -13,18 +14,19 @@
 --glitch-mint: #00ed76ff;
 
 /* CSS HSL */
---console-void: hsla(216, 27%, 7%, 1);
---deep-kernel: hsla(156, 100%, 11%, 1);
---terminal-forest: hsla(154, 100%, 15%, 1);
---old-crt: hsla(153, 100%, 20%, 1);
---code-stream: hsla(152, 100%, 24%, 1);
---command-line: hsla(151, 100%, 28%, 1);
---green-phosphorus: hsla(151, 100%, 33%, 1);
---digital-moss: hsla(151, 100%, 37%, 1);
---data-pulse: hsla(150, 100%, 42%, 1);
---glitch-mint: hsla(150, 100%, 46%, 1);
+--console-void-hsl: hsla(216, 27%, 7%, 1);
+--deep-kernel-hsl: hsla(156, 100%, 11%, 1);
+--terminal-forest-hsl: hsla(154, 100%, 15%, 1);
+--old-crt-hsl: hsla(153, 100%, 20%, 1);
+--code-stream-hsl: hsla(152, 100%, 24%, 1);
+--command-line-hsl: hsla(151, 100%, 28%, 1);
+--green-phosphorus-hsl: hsla(151, 100%, 33%, 1);
+--digital-moss-hsl: hsla(151, 100%, 37%, 1);
+--data-pulse-hsl: hsla(150, 100%, 42%, 1);
+--glitch-mint-hsl: hsla(150, 100%, 46%, 1);
+}
 
-}`r`n`r`n/* SCSS HEX */
+/* SCSS HEX */
 $console-void: #0d1117ff;
 $deep-kernel: #003822ff;
 $terminal-forest: #004d2cff;
@@ -70,7 +72,3 @@ $gradient-bottom-right: linear-gradient(135deg, #0d1117ff, #003822ff, #004d2cff,
 $gradient-top-left: linear-gradient(225deg, #0d1117ff, #003822ff, #004d2cff, #006437ff, #007a41ff, #00914cff, #00a856ff, #00bf61ff, #00d66bff, #00ed76ff);
 $gradient-bottom-left: linear-gradient(315deg, #0d1117ff, #003822ff, #004d2cff, #006437ff, #007a41ff, #00914cff, #00a856ff, #00bf61ff, #00d66bff, #00ed76ff);
 $gradient-radial: radial-gradient(#0d1117ff, #003822ff, #004d2cff, #006437ff, #007a41ff, #00914cff, #00a856ff, #00bf61ff, #00d66bff, #00ed76ff);
-
-
-
-

@@ -1,6 +1,7 @@
 /* Professional IBM */
 
-:root {`r`n/* CSS HEX */
+:root {
+/* CSS HEX */
 --ibm-purple: #6929c4ff;
 --ibm-blue: #1192e8ff;
 --ibm-teal: #005d5dff;
@@ -17,8 +18,9 @@
 --ibm-red: hsla(357, 95%, 64%, 1);
 --ibm-dark-red: hsla(357, 91%, 18%, 1);
 --ibm-green: hsla(138, 67%, 30%, 1);
+}
 
-}`r`n`r`n/* SCSS HEX */
+/* SCSS HEX */
 $ibm-purple: #6929c4ff;
 $ibm-blue: #1192e8ff;
 $ibm-teal: #005d5dff;
@@ -55,7 +57,3 @@ $gradient-bottom-right: linear-gradient(135deg, #6929c4ff, #1192e8ff, #005d5dff,
 $gradient-top-left: linear-gradient(225deg, #6929c4ff, #1192e8ff, #005d5dff, #9f1853ff, #fa4d56ff, #570408ff, #198038ff);
 $gradient-bottom-left: linear-gradient(315deg, #6929c4ff, #1192e8ff, #005d5dff, #9f1853ff, #fa4d56ff, #570408ff, #198038ff);
 $gradient-radial: radial-gradient(#6929c4ff, #1192e8ff, #005d5dff, #9f1853ff, #fa4d56ff, #570408ff, #198038ff);
-
-
-
-

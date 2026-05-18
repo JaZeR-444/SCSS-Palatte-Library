@@ -1,6 +1,7 @@
 /* Nature Trail */
 
-:root {`r`n/* CSS HEX */
+:root {
+/* CSS HEX */
 --deep-forest: #344e41ff;
 --olive-drab: #588157ff;
 --sage-green: #a3b18aff;
@@ -11,8 +12,9 @@
 --olive-drab: hsla(119, 19%, 42%, 1);
 --sage-green: hsla(82, 20%, 62%, 1);
 --sand-tan: hsla(46, 15%, 83%, 1);
+}
 
-}`r`n`r`n/* SCSS HEX */
+/* SCSS HEX */
 $deep-forest: #344e41ff;
 $olive-drab: #588157ff;
 $sage-green: #a3b18aff;
@@ -40,7 +42,3 @@ $gradient-bottom-right: linear-gradient(135deg, #344e41ff, #588157ff, #a3b18aff,
 $gradient-top-left: linear-gradient(225deg, #344e41ff, #588157ff, #a3b18aff, #dad7cdff);
 $gradient-bottom-left: linear-gradient(315deg, #344e41ff, #588157ff, #a3b18aff, #dad7cdff);
 $gradient-radial: radial-gradient(#344e41ff, #588157ff, #a3b18aff, #dad7cdff);
-
-
-
-

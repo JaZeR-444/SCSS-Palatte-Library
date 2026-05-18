@@ -1,6 +1,7 @@
 /* Monochrome Magic - https://coolors.co/eaeaea-893168-4a1942-2e1c2b-050404 */
 
-:root {`r`n/* CSS HEX */
+:root {
+/* CSS HEX */
 --alabaster-grey: #eaeaeaff;
 --royal-plum: #893168ff;
 --blackberry-cream: #4a1942ff;
@@ -13,8 +14,9 @@
 --blackberry-cream: hsla(310, 49%, 19%, 1);
 --midnight-violet: hsla(310, 24%, 15%, 1);
 --black: hsla(0, 11%, 2%, 1);
+}
 
-}`r`n`r`n/* SCSS HEX */
+/* SCSS HEX */
 $alabaster-grey: #eaeaeaff;
 $royal-plum: #893168ff;
 $blackberry-cream: #4a1942ff;
@@ -45,6 +47,3 @@ $gradient-bottom-right: linear-gradient(135deg, #eaeaeaff, #893168ff, #4a1942ff,
 $gradient-top-left: linear-gradient(225deg, #eaeaeaff, #893168ff, #4a1942ff, #2e1c2bff, #050404ff);
 $gradient-bottom-left: linear-gradient(315deg, #eaeaeaff, #893168ff, #4a1942ff, #2e1c2bff, #050404ff);
 $gradient-radial: radial-gradient(#eaeaeaff, #893168ff, #4a1942ff, #2e1c2bff, #050404ff);
-
-
-

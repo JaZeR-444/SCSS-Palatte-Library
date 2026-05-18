@@ -1,6 +1,7 @@
 /* Cool Oceanic */
 
-:root {`r`n/* CSS HEX */
+:root {
+/* CSS HEX */
 --midnight-blue: #011f4bff;
 --navy-blue: #03396cff;
 --ocean-blue: #005b96ff;
@@ -15,8 +16,9 @@
 --steel-blue: hsla(200, 33%, 54%, 1);
 --sky-blue: hsla(205, 42%, 79%, 1);
 --ghost-white: hsla(240, 22%, 96%, 1);
+}
 
-}`r`n`r`n/* SCSS HEX */
+/* SCSS HEX */
 $midnight-blue: #011f4bff;
 $navy-blue: #03396cff;
 $ocean-blue: #005b96ff;
@@ -50,7 +52,3 @@ $gradient-bottom-right: linear-gradient(135deg, #011f4bff, #03396cff, #005b96ff,
 $gradient-top-left: linear-gradient(225deg, #011f4bff, #03396cff, #005b96ff, #6497b1ff, #b3cde0ff, #f4f4f8ff);
 $gradient-bottom-left: linear-gradient(315deg, #011f4bff, #03396cff, #005b96ff, #6497b1ff, #b3cde0ff, #f4f4f8ff);
 $gradient-radial: radial-gradient(#011f4bff, #03396cff, #005b96ff, #6497b1ff, #b3cde0ff, #f4f4f8ff);
-
-
-
-

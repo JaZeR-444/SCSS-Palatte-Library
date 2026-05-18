@@ -1,6 +1,7 @@
 /* Retro Pop */
 
-:root {`r`n/* CSS HEX */
+:root {
+/* CSS HEX */
 --cyan-bright: #2ab7caff;
 --coral-red: #fe4a49ff;
 --sunshine-yellow: #fed766ff;
@@ -11,8 +12,9 @@
 --coral-red: hsla(0, 99%, 64%, 1);
 --sunshine-yellow: hsla(45, 99%, 70%, 1);
 --off-white: hsla(240, 9%, 91%, 1);
+}
 
-}`r`n`r`n/* SCSS HEX */
+/* SCSS HEX */
 $cyan-bright: #2ab7caff;
 $coral-red: #fe4a49ff;
 $sunshine-yellow: #fed766ff;
@@ -40,7 +42,3 @@ $gradient-bottom-right: linear-gradient(135deg, #2ab7caff, #fe4a49ff, #fed766ff,
 $gradient-top-left: linear-gradient(225deg, #2ab7caff, #fe4a49ff, #fed766ff, #e6e6eaff);
 $gradient-bottom-left: linear-gradient(315deg, #2ab7caff, #fe4a49ff, #fed766ff, #e6e6eaff);
 $gradient-radial: radial-gradient(#2ab7caff, #fe4a49ff, #fed766ff, #e6e6eaff);
-
-
-
-

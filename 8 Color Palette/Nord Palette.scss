@@ -1,6 +1,7 @@
 /* Nord Palette */
 
-:root {`r`n/* CSS HEX */
+:root {
+/* CSS HEX */
 --polar-night: #2e3440ff;
 --snow-storm: #d8dee9ff;
 --frost-teal: #8fbcbbff;
@@ -19,8 +20,9 @@
 --aurora-orange: hsla(14, 51%, 63%, 1);
 --aurora-yellow: hsla(40, 71%, 73%, 1);
 --aurora-green: hsla(92, 28%, 65%, 1);
+}
 
-}`r`n`r`n/* SCSS HEX */
+/* SCSS HEX */
 $polar-night: #2e3440ff;
 $snow-storm: #d8dee9ff;
 $frost-teal: #8fbcbbff;
@@ -60,7 +62,3 @@ $gradient-bottom-right: linear-gradient(135deg, #2e3440ff, #d8dee9ff, #8fbcbbff,
 $gradient-top-left: linear-gradient(225deg, #2e3440ff, #d8dee9ff, #8fbcbbff, #88c0d0ff, #bf616aff, #d08770ff, #ebcb8bff, #a3be8cff);
 $gradient-bottom-left: linear-gradient(315deg, #2e3440ff, #d8dee9ff, #8fbcbbff, #88c0d0ff, #bf616aff, #d08770ff, #ebcb8bff, #a3be8cff);
 $gradient-radial: radial-gradient(#2e3440ff, #d8dee9ff, #8fbcbbff, #88c0d0ff, #bf616aff, #d08770ff, #ebcb8bff, #a3be8cff);
-
-
-
-

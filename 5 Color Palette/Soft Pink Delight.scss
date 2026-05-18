@@ -1,6 +1,7 @@
 /* Soft Pink Delight - https://coolors.co/ffe5ec-ffc2d1-ffb3c6-ff8fab-fb6f92 */
 
-:root {`r`n/* CSS HEX */
+:root {
+/* CSS HEX */
 --soft-blush: #ffe5ecff;
 --pastel-pink: #ffc2d1ff;
 --cherry-blossom: #ffb3c6ff;
@@ -13,8 +14,9 @@
 --cherry-blossom: hsla(345, 100%, 85%, 1);
 --cotton-candy: hsla(345, 100%, 78%, 1);
 --petal-rouge: hsla(345, 95%, 71%, 1);
+}
 
-}`r`n`r`n/* SCSS HEX */
+/* SCSS HEX */
 $soft-blush: #ffe5ecff;
 $pastel-pink: #ffc2d1ff;
 $cherry-blossom: #ffb3c6ff;
@@ -45,6 +47,3 @@ $gradient-bottom-right: linear-gradient(135deg, #ffe5ecff, #ffc2d1ff, #ffb3c6ff,
 $gradient-top-left: linear-gradient(225deg, #ffe5ecff, #ffc2d1ff, #ffb3c6ff, #ff8fabff, #fb6f92ff);
 $gradient-bottom-left: linear-gradient(315deg, #ffe5ecff, #ffc2d1ff, #ffb3c6ff, #ff8fabff, #fb6f92ff);
 $gradient-radial: radial-gradient(#ffe5ecff, #ffc2d1ff, #ffb3c6ff, #ff8fabff, #fb6f92ff);
-
-
-

@@ -1,6 +1,7 @@
 /* Cybernetic Steel - https://coolors.co/1a1a1a-2b2d42-3d405b-4a4e69-5f647d-747d92-8d99ae-a2abbd-b8bdcc-edf2f4 */
 
-:root {`r`n/* CSS HEX */
+:root {
+/* CSS HEX */
 --oil-slick: #1a1a1aff;
 --industrial-slate: #2b2d42ff;
 --machine-gray: #3d405bff;
@@ -23,8 +24,9 @@
 --chrome-plate: hsla(221, 18%, 69%, 1);
 --cool-silicon: hsla(228, 16%, 76%, 1);
 --led-neutral: hsla(192, 15%, 94%, 1);
+}
 
-}`r`n`r`n/* SCSS HEX */
+/* SCSS HEX */
 $oil-slick: #1a1a1aff;
 $industrial-slate: #2b2d42ff;
 $machine-gray: #3d405bff;
@@ -70,7 +72,3 @@ $gradient-bottom-right: linear-gradient(135deg, #1a1a1aff, #2b2d42ff, #3d405bff,
 $gradient-top-left: linear-gradient(225deg, #1a1a1aff, #2b2d42ff, #3d405bff, #4a4e69ff, #5f647dff, #747d92ff, #8d99aeff, #a2abbdff, #b8bdccff, #edf2f4ff);
 $gradient-bottom-left: linear-gradient(315deg, #1a1a1aff, #2b2d42ff, #3d405bff, #4a4e69ff, #5f647dff, #747d92ff, #8d99aeff, #a2abbdff, #b8bdccff, #edf2f4ff);
 $gradient-radial: radial-gradient(#1a1a1aff, #2b2d42ff, #3d405bff, #4a4e69ff, #5f647dff, #747d92ff, #8d99aeff, #a2abbdff, #b8bdccff, #edf2f4ff);
-
-
-
-

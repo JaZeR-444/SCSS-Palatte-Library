@@ -1,6 +1,7 @@
 /* Synthwave Horizon - https://coolors.co/120458-2d0b7d-4a0e8f-7a0c9a-a0069a-c600a0-e500a4-ff00ab-3df9ff-a0fefe */
 
-:root {`r`n/* CSS HEX */
+:root {
+/* CSS HEX */
 --midnight-city: #120458ff;
 --neon-indigo: #2d0b7dff;
 --cyber-purple: #4a0e8fff;
@@ -23,8 +24,9 @@
 --hot-neon: hsla(320, 100%, 50%, 1);
 --grid-cyan: hsla(182, 100%, 62%, 1);
 --sky-blue-glitch: hsla(180, 98%, 81%, 1);
+}
 
-}`r`n`r`n/* SCSS HEX */
+/* SCSS HEX */
 $midnight-city: #120458ff;
 $neon-indigo: #2d0b7dff;
 $cyber-purple: #4a0e8fff;
@@ -70,7 +72,3 @@ $gradient-bottom-right: linear-gradient(135deg, #120458ff, #2d0b7dff, #4a0e8fff,
 $gradient-top-left: linear-gradient(225deg, #120458ff, #2d0b7dff, #4a0e8fff, #7a0c9aff, #a0069aff, #c600a0ff, #e500a4ff, #ff00abff, #3df9ffff, #a0fefeff);
 $gradient-bottom-left: linear-gradient(315deg, #120458ff, #2d0b7dff, #4a0e8fff, #7a0c9aff, #a0069aff, #c600a0ff, #e500a4ff, #ff00abff, #3df9ffff, #a0fefeff);
 $gradient-radial: radial-gradient(#120458ff, #2d0b7dff, #4a0e8fff, #7a0c9aff, #a0069aff, #c600a0ff, #e500a4ff, #ff00abff, #3df9ffff, #a0fefeff);
-
-
-
-

@@ -1,6 +1,7 @@
 /* Tropical Paradise - https://coolors.co/003049-005f73-0a9396-94d2bd-e9d8a6-ee9b00-ca6702-bb3e03-ae2012 */
 
-:root {`r`n/* CSS HEX */
+:root {
+/* CSS HEX */
 --prussian-blue: #003049ff;
 --deep-ocean: #005f73ff;
 --teal-lagoon: #0a9396ff;
@@ -21,8 +22,9 @@
 --burnt-sunset: hsla(31, 98%, 40%, 1);
 --tropical-rust: hsla(19, 97%, 37%, 1);
 --deep-hibiscus: hsla(5, 81%, 38%, 1);
+}
 
-}`r`n`r`n/* SCSS HEX */
+/* SCSS HEX */
 $prussian-blue: #003049ff;
 $deep-ocean: #005f73ff;
 $teal-lagoon: #0a9396ff;
@@ -65,7 +67,3 @@ $gradient-bottom-right: linear-gradient(135deg, #003049ff, #005f73ff, #0a9396ff,
 $gradient-top-left: linear-gradient(225deg, #003049ff, #005f73ff, #0a9396ff, #94d2bdff, #e9d8a6ff, #ee9b00ff, #ca6702ff, #bb3e03ff, #ae2012ff);
 $gradient-bottom-left: linear-gradient(315deg, #003049ff, #005f73ff, #0a9396ff, #94d2bdff, #e9d8a6ff, #ee9b00ff, #ca6702ff, #bb3e03ff, #ae2012ff);
 $gradient-radial: radial-gradient(#003049ff, #005f73ff, #0a9396ff, #94d2bdff, #e9d8a6ff, #ee9b00ff, #ca6702ff, #bb3e03ff, #ae2012ff);
-
-
-
-

@@ -1,6 +1,7 @@
 /* Nebula Void - https://coolors.co/03001e-12002f-2a004e-440074-5d009b-7600c1-8f00e8-a842f1-c184f9-da9ff9 */
 
-:root {`r`n/* CSS HEX */
+:root {
+/* CSS HEX */
 --event-horizon: #03001eff;
 --stellar-abyss: #12002fff;
 --interstellar-purple: #2a004eff;
@@ -23,8 +24,9 @@
 --star-dust: hsla(275, 84%, 60%, 1);
 --orion-mist: hsla(271, 91%, 75%, 1);
 --supernova-light: hsla(280, 89%, 80%, 1);
+}
 
-}`r`n`r`n/* SCSS HEX */
+/* SCSS HEX */
 $event-horizon: #03001eff;
 $stellar-abyss: #12002fff;
 $interstellar-purple: #2a004eff;
@@ -70,7 +72,3 @@ $gradient-bottom-right: linear-gradient(135deg, #03001eff, #12002fff, #2a004eff,
 $gradient-top-left: linear-gradient(225deg, #03001eff, #12002fff, #2a004eff, #440074ff, #5d009bff, #7600c1ff, #8f00e8ff, #a842f1ff, #c184f9ff, #da9ff9ff);
 $gradient-bottom-left: linear-gradient(315deg, #03001eff, #12002fff, #2a004eff, #440074ff, #5d009bff, #7600c1ff, #8f00e8ff, #a842f1ff, #c184f9ff, #da9ff9ff);
 $gradient-radial: radial-gradient(#03001eff, #12002fff, #2a004eff, #440074ff, #5d009bff, #7600c1ff, #8f00e8ff, #a842f1ff, #c184f9ff, #da9ff9ff);
-
-
-
-

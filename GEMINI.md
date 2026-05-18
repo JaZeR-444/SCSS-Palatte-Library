@@ -11,60 +11,100 @@ The project serves as a library of design assets. Each themed palette is encapsu
 The palettes are organized into directories based on the number of colors they contain:
 
 ### 3 Color Palette
-- **`Earthy Organic.scss`**: Natural, grounded tones.
-- **`Modern Minimalist.scss`**: Clean, contemporary colors.
-- **`Retro Revival.scss`**: Vintage-inspired 3-color set.
+- **`Desert Heat.scss`**: Thematic color palette.
+- **`Earthy Organic.scss`**: Thematic color palette.
+- **`Forest Whisper.scss`**: Thematic color palette.
+- **`Modern Minimalist.scss`**: Thematic color palette.
+- **`Ocean Depth.scss`**: Thematic color palette.
+- **`Retro Revival.scss`**: Thematic color palette.
+- **`Slate Gray.scss`**: Thematic color palette.
+- **`Sunset Glow.scss`**: Thematic color palette.
 
 ### 4 Color Palette
-- **`Nature Trail.scss`**: Earthy outdoors tones.
-- **`Retro Pop.scss`**: Vibrant 4-color nostalgia.
-- **`SaaS Blue.scss`**: Professional software-themed blues.
+- **`Berry Blast.scss`**: Thematic color palette.
+- **`Coffee Shop.scss`**: Thematic color palette.
+- **`Electric Night.scss`**: Thematic color palette.
+- **`Nature Trail.scss`**: Thematic color palette.
+- **`Retro Pop.scss`**: Thematic color palette.
+- **`SaaS Blue.scss`**: Thematic color palette.
+- **`Spring Meadow.scss`**: Thematic color palette.
+- **`Winter Frost.scss`**: Thematic color palette.
 
 ### 5 Color Palette
-- **`Bold Berry.scss`**: Rich berry-inspired shades.
-- **`Classic Vaporwave.scss`**: Iconic 5-color bright glowing pastels.
-- **`Cyber Pastel.scss`**: Soft 5-color atmospheric neon digital haze.
-- **`Desert Sands.scss`**: Warm earth tones including Persian green.
-- **`Future Shock.scss`**: Sharp 5-color industrial tech warning tones.
-- **`Holo Noir.scss`**: Sleek 5-color cyberpunk blacks and holographics.
-- **`Lavender Mist.scss`**: Soft pastel lavender and pink.
-- **`Midnight Cyberpunk.scss`**: High-contrast 5-color neon signs.
-- **`Midnight Neon.scss`**: Cyberpunk-inspired neon magenta and cyan.
-- **`Monochrome Magic.scss`**: Professional grayscale sets.
-- **`Soft Pink Delight.scss`**: Gentle and light pink variations.
-- **`Vintage Gold.scss`**: Classic black, oxford blue, and orange peel.
+- **`Bold Berry.scss`**: Thematic color palette.
+- **`Classic Vaporwave.scss`**: Thematic color palette.
+- **`Cyber Pastel.scss`**: Thematic color palette.
+- **`Deep Space.scss`**: Thematic color palette.
+- **`Desert Sands.scss`**: Thematic color palette.
+- **`Future Shock.scss`**: Thematic color palette.
+- **`Holo Noir.scss`**: Thematic color palette.
+- **`Lavender Mist.scss`**: Thematic color palette.
+- **`Midnight Cyberpunk.scss`**: Thematic color palette.
+- **`Midnight Neon.scss`**: Thematic color palette.
+- **`Monochrome Magic.scss`**: Thematic color palette.
+- **`Muted Earth.scss`**: Thematic color palette.
+- **`Neon Punk.scss`**: Thematic color palette.
+- **`Soft Pink Delight.scss`**: Thematic color palette.
+- **`Tropical Reef.scss`**: Thematic color palette.
+- **`Vintage Gold.scss`**: Thematic color palette.
+- **`Vintage Vibe.scss`**: Thematic color palette.
 
 ### 6 Color Palette
-- **`Cool Oceanic.scss`**: Deep sea and aquatic tones.
-- **`Modern Vibe.scss`**: Trendy, contemporary colors.
+- **`Arctic Night.scss`**: Thematic color palette.
+- **`Cool Oceanic.scss`**: Thematic color palette.
+- **`Forest Canopy.scss`**: Thematic color palette.
+- **`Industrial Gray.scss`**: Thematic color palette.
+- **`Modern Vibe.scss`**: Thematic color palette.
+- **`Royal Purple.scss`**: Thematic color palette.
+- **`Sunset Boulevard.scss`**: Thematic color palette.
 
 ### 7 Color Palette
-- **`Neon Horizon.scss`**: Classic 7-color synthwave digital sunset.
-- **`Professional IBM.scss`**: Colors inspired by professional enterprise design.
-- **`Retro Metro.scss`**: Urban vintage tones.
+- **`Autumn Leaves.scss`**: Thematic color palette.
+- **`Fire and Ice.scss`**: Thematic color palette.
+- **`Midnight Sky.scss`**: Thematic color palette.
+- **`Neon Horizon.scss`**: Thematic color palette.
+- **`Ocean Waves.scss`**: Thematic color palette.
+- **`Professional IBM.scss`**: Thematic color palette.
+- **`Rainbow Pastels.scss`**: Thematic color palette.
+- **`Retro Metro.scss`**: Thematic color palette.
 
 ### 8 Color Palette
-- **`Dracula Palette.scss`**: High-contrast dark theme.
-- **`Nord Palette.scss`**: Clean, arctic-inspired grays and blues.
-- **`Tokyo Night.scss`**: Deep purples and neons of a night cityscape.
+- **`Cool Blues.scss`**: Thematic color palette.
+- **`Cyberpunk Neon.scss`**: Thematic color palette.
+- **`Dracula Palette.scss`**: Thematic color palette.
+- **`Earth Tones.scss`**: Thematic color palette.
+- **`Monochrome Night.scss`**: Thematic color palette.
+- **`Nord Palette.scss`**: Thematic color palette.
+- **`Tokyo Night.scss`**: Thematic color palette.
+- **`Warm Sunset.scss`**: Thematic color palette.
 
 ### 9 Color Palette
-- **`Arctic Expedition.scss`**: Icy palette from crystal white to polar night.
-- **`Autumn Harvest.scss`**: Earthy browns, burnt oranges, and saffron.
-- **`Deep Forest.scss`**: Lush forest greens and misty whites.
-- **`Enchanted Forest.scss`**: Mystical emeralds and moonlight silvers.
-- **`Fresh Greens.scss`**: Natural green variations.
-- **`Ocean Blue Serenity.scss`**: Calming blue and aquatic tones.
-- **`Solar Flare.scss`**: Sun-inspired palette from space blue to yellow.
-- **`Tropical Paradise.scss`**: Island mix from prussian blue to hibiscus red.
-- **`Urban Industrial.scss`**: Gritty concrete grays and safety yellows.
+- **`Arctic Expedition.scss`**: Thematic color palette.
+- **`Autumn Harvest.scss`**: Thematic color palette.
+- **`Deep Forest.scss`**: Thematic color palette.
+- **`Deep Ocean.scss`**: Thematic color palette.
+- **`Enchanted Forest.scss`**: Thematic color palette.
+- **`Fresh Greens.scss`**: Thematic color palette.
+- **`Galactic Nebula.scss`**: Thematic color palette.
+- **`Muted Pastels.scss`**: Thematic color palette.
+- **`Ocean Blue Serenity.scss`**: Thematic color palette.
+- **`Rainforest.scss`**: Thematic color palette.
+- **`Solar Flare.scss`**: Thematic color palette.
+- **`Sunset Sands.scss`**: Thematic color palette.
+- **`Tropical Paradise.scss`**: Thematic color palette.
+- **`Urban Industrial.scss`**: Thematic color palette.
 
 ### 10 Color Palette
-- **`Cybernetic Steel.scss`**: Industrial robotics and metallic textures.
-- **`Fiery Red Sunset Palette.scss`**: Vibrant sequence from ink black to amber flames.
-- **`Nebula Void.scss`**: Deep space exploration and galactic gas clouds.
-- **`Synthwave Horizon.scss`**: 80s retro-futurism and sunset grids.
-- **`Terminal Matrix.scss`**: Classic green-on-black computing.
+- **`Blue Ridge.scss`**: Thematic color palette.
+- **`Cybernetic Steel.scss`**: Thematic color palette.
+- **`Dark Forest 10.scss`**: Thematic color palette.
+- **`Fiery Red Sunset Palette.scss`**: Thematic color palette.
+- **`Heatwave 10.scss`**: Thematic color palette.
+- **`Nebula Void.scss`**: Thematic color palette.
+- **`Spectrum 10.scss`**: Thematic color palette.
+- **`Steel & Rust.scss`**: Thematic color palette.
+- **`Synthwave Horizon.scss`**: Thematic color palette.
+- **`Terminal Matrix.scss`**: Thematic color palette.
 
 ## Usage
 

@@ -1,6 +1,7 @@
 /* Cyber Pastel */
 
-:root {`r`n/* CSS HEX */
+:root {
+/* CSS HEX */
 --cyber-mist: #c6f5f2ff;
 --dream-pink: #f5d8f2ff;
 --neon-aqua: #55efd5ff;
@@ -13,8 +14,9 @@
 --neon-aqua: hsla(170, 83%, 64%, 1);
 --virtual-rose: hsla(318, 82%, 61%, 1);
 --cyber-plum: hsla(275, 94%, 44%, 1);
+}
 
-}`r`n`r`n/* SCSS HEX */
+/* SCSS HEX */
 $cyber-mist: #c6f5f2ff;
 $dream-pink: #f5d8f2ff;
 $neon-aqua: #55efd5ff;
@@ -45,7 +47,3 @@ $gradient-bottom-right: linear-gradient(135deg, #c6f5f2ff, #f5d8f2ff, #55efd5ff,
 $gradient-top-left: linear-gradient(225deg, #c6f5f2ff, #f5d8f2ff, #55efd5ff, #ed4bbcff, #8207dbff);
 $gradient-bottom-left: linear-gradient(315deg, #c6f5f2ff, #f5d8f2ff, #55efd5ff, #ed4bbcff, #8207dbff);
 $gradient-radial: radial-gradient(#c6f5f2ff, #f5d8f2ff, #55efd5ff, #ed4bbcff, #8207dbff);
-
-
-
-

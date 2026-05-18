@@ -1,6 +1,7 @@
 /* Earthy Organic */
 
-:root {`r`n/* CSS HEX */
+:root {
+/* CSS HEX */
 --forest-black: #1b211cff;
 --sage-moss: #9fae9bff;
 --mist-white: #f2f5f0ff;
@@ -9,8 +10,9 @@
 --forest-black: hsla(130, 10%, 12%, 1);
 --sage-moss: hsla(107, 10%, 65%, 1);
 --mist-white: hsla(96, 20%, 95%, 1);
+}
 
-}`r`n`r`n/* SCSS HEX */
+/* SCSS HEX */
 $forest-black: #1b211cff;
 $sage-moss: #9fae9bff;
 $mist-white: #f2f5f0ff;
@@ -35,7 +37,3 @@ $gradient-bottom-right: linear-gradient(135deg, #1b211cff, #9fae9bff, #f2f5f0ff)
 $gradient-top-left: linear-gradient(225deg, #1b211cff, #9fae9bff, #f2f5f0ff);
 $gradient-bottom-left: linear-gradient(315deg, #1b211cff, #9fae9bff, #f2f5f0ff);
 $gradient-radial: radial-gradient(#1b211cff, #9fae9bff, #f2f5f0ff);
-
-
-
-

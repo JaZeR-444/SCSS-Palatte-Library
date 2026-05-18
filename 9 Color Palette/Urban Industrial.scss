@@ -1,6 +1,7 @@
 /* Urban Industrial - https://coolors.co/212529-343a40-495057-adb5bd-dee2e6-f8f9fa-ffc300-d90429-000814 */
 
-:root {`r`n/* CSS HEX */
+:root {
+/* CSS HEX */
 --charcoal-grit: #212529ff;
 --gunmetal-steel: #343a40ff;
 --industrial-slate: #495057ff;
@@ -21,8 +22,9 @@
 --safety-yellow: hsla(46, 100%, 50%, 1);
 --alert-red: hsla(349, 96%, 43%, 1);
 --midnight-asphalt: hsla(220, 100%, 4%, 1);
+}
 
-}`r`n`r`n/* SCSS HEX */
+/* SCSS HEX */
 $charcoal-grit: #212529ff;
 $gunmetal-steel: #343a40ff;
 $industrial-slate: #495057ff;
@@ -65,7 +67,3 @@ $gradient-bottom-right: linear-gradient(135deg, #212529ff, #343a40ff, #495057ff,
 $gradient-top-left: linear-gradient(225deg, #212529ff, #343a40ff, #495057ff, #adb5bdff, #dee2e6ff, #f8f9faff, #ffc300ff, #d90429ff, #000814ff);
 $gradient-bottom-left: linear-gradient(315deg, #212529ff, #343a40ff, #495057ff, #adb5bdff, #dee2e6ff, #f8f9faff, #ffc300ff, #d90429ff, #000814ff);
 $gradient-radial: radial-gradient(#212529ff, #343a40ff, #495057ff, #adb5bdff, #dee2e6ff, #f8f9faff, #ffc300ff, #d90429ff, #000814ff);
-
-
-
-

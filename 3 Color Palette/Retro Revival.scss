@@ -1,6 +1,7 @@
 /* Retro Revival */
 
-:root {`r`n/* CSS HEX */
+:root {
+/* CSS HEX */
 --prussian-blue: #2e5283ff;
 --burnt-orange: #e2552dff;
 --marigold: #e3bd33ff;
@@ -9,8 +10,9 @@
 --prussian-blue: hsla(215, 48%, 35%, 1);
 --burnt-orange: hsla(13, 76%, 53%, 1);
 --marigold: hsla(47, 76%, 55%, 1);
+}
 
-}`r`n`r`n/* SCSS HEX */
+/* SCSS HEX */
 $prussian-blue: #2e5283ff;
 $burnt-orange: #e2552dff;
 $marigold: #e3bd33ff;
@@ -35,7 +37,3 @@ $gradient-bottom-right: linear-gradient(135deg, #2e5283ff, #e2552dff, #e3bd33ff)
 $gradient-top-left: linear-gradient(225deg, #2e5283ff, #e2552dff, #e3bd33ff);
 $gradient-bottom-left: linear-gradient(315deg, #2e5283ff, #e2552dff, #e3bd33ff);
 $gradient-radial: radial-gradient(#2e5283ff, #e2552dff, #e3bd33ff);
-
-
-
-

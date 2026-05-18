@@ -1,6 +1,7 @@
 /* Dracula Palette */
 
-:root {`r`n/* CSS HEX */
+:root {
+/* CSS HEX */
 --dracula-bg: #282a36ff;
 --dracula-fg: #f8f8f2ff;
 --dracula-comment: #6272a4ff;
@@ -19,8 +20,9 @@
 --dracula-orange: hsla(31, 100%, 71%, 1);
 --dracula-pink: hsla(326, 100%, 74%, 1);
 --dracula-purple: hsla(265, 89%, 78%, 1);
+}
 
-}`r`n`r`n/* SCSS HEX */
+/* SCSS HEX */
 $dracula-bg: #282a36ff;
 $dracula-fg: #f8f8f2ff;
 $dracula-comment: #6272a4ff;
@@ -60,7 +62,3 @@ $gradient-bottom-right: linear-gradient(135deg, #282a36ff, #f8f8f2ff, #6272a4ff,
 $gradient-top-left: linear-gradient(225deg, #282a36ff, #f8f8f2ff, #6272a4ff, #8be9fdff, #50fa7bff, #ffb86cff, #ff79c6ff, #bd93f9ff);
 $gradient-bottom-left: linear-gradient(315deg, #282a36ff, #f8f8f2ff, #6272a4ff, #8be9fdff, #50fa7bff, #ffb86cff, #ff79c6ff, #bd93f9ff);
 $gradient-radial: radial-gradient(#282a36ff, #f8f8f2ff, #6272a4ff, #8be9fdff, #50fa7bff, #ffb86cff, #ff79c6ff, #bd93f9ff);
-
-
-
-

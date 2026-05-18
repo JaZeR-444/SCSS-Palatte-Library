@@ -1,6 +1,7 @@
 /* Midnight Neon - https://coolors.co/0b0114-2a044a-00d2ff-f300ff-00ff9f */
 
-:root {`r`n/* CSS HEX */
+:root {
+/* CSS HEX */
 --void-black: #0b0114ff;
 --deep-nebula: #2a044aff;
 --cyber-cyan: #00d2ffff;
@@ -13,8 +14,9 @@
 --cyber-cyan: hsla(191, 100%, 50%, 1);
 --neon-magenta: hsla(297, 100%, 50%, 1);
 --matrix-green: hsla(157, 100%, 50%, 1);
+}
 
-}`r`n`r`n/* SCSS HEX */
+/* SCSS HEX */
 $void-black: #0b0114ff;
 $deep-nebula: #2a044aff;
 $cyber-cyan: #00d2ffff;
@@ -45,7 +47,3 @@ $gradient-bottom-right: linear-gradient(135deg, #0b0114ff, #2a044aff, #00d2ffff,
 $gradient-top-left: linear-gradient(225deg, #0b0114ff, #2a044aff, #00d2ffff, #f300ff, #00ff9fff);
 $gradient-bottom-left: linear-gradient(315deg, #0b0114ff, #2a044aff, #00d2ffff, #f300ff, #00ff9fff);
 $gradient-radial: radial-gradient(#0b0114ff, #2a044aff, #00d2ffff, #f300ff, #00ff9fff);
-
-
-
-

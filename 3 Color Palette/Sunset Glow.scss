@@ -1,0 +1,39 @@
+/* Sunset Glow - https://coolors.co/ */
+
+:root {
+/* CSS HEX */
+--cherry-blossom: #ff4d6dff;
+--rose-pink: #ff758fff;
+--flamingo-pink: #ff8fa3ff;
+
+/* CSS HSL */
+--cherry-blossom: hsla(349, 100%, 65%, 1);
+--rose-pink: hsla(349, 100%, 73%, 1);
+--flamingo-pink: hsla(349, 100%, 78%, 1);
+}
+
+/* SCSS HEX */
+$cherry-blossom: #ff4d6dff;
+$rose-pink: #ff758fff;
+$flamingo-pink: #ff8fa3ff;
+
+/* SCSS HSL */
+$cherry-blossom: hsla(349, 100%, 65%, 1);
+$rose-pink: hsla(349, 100%, 73%, 1);
+$flamingo-pink: hsla(349, 100%, 78%, 1);
+
+/* SCSS RGB */
+$cherry-blossom: rgba(255, 77, 109, 1);
+$rose-pink: rgba(255, 117, 143, 1);
+$flamingo-pink: rgba(255, 143, 163, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #ff4d6dff, #ff758fff, #ff8fa3ff);
+$gradient-right: linear-gradient(90deg, #ff4d6dff, #ff758fff, #ff8fa3ff);
+$gradient-bottom: linear-gradient(180deg, #ff4d6dff, #ff758fff, #ff8fa3ff);
+$gradient-left: linear-gradient(270deg, #ff4d6dff, #ff758fff, #ff8fa3ff);
+$gradient-top-right: linear-gradient(45deg, #ff4d6dff, #ff758fff, #ff8fa3ff);
+$gradient-bottom-right: linear-gradient(135deg, #ff4d6dff, #ff758fff, #ff8fa3ff);
+$gradient-top-left: linear-gradient(225deg, #ff4d6dff, #ff758fff, #ff8fa3ff);
+$gradient-bottom-left: linear-gradient(315deg, #ff4d6dff, #ff758fff, #ff8fa3ff);
+$gradient-radial: radial-gradient(#ff4d6dff, #ff758fff, #ff8fa3ff);
