@@ -1,0 +1,47 @@
+/* Soft Pink Delight - https://coolors.co/ffe5ec-ffc2d1-ffb3c6-ff8fab-fb6f92 */
+
+/* CSS HEX */
+--soft-blush: #ffe5ecff;
+--pastel-pink: #ffc2d1ff;
+--cherry-blossom: #ffb3c6ff;
+--cotton-candy: #ff8fabff;
+--petal-rouge: #fb6f92ff;
+
+/* CSS HSL */
+--soft-blush: hsla(344, 100%, 95%, 1);
+--pastel-pink: hsla(345, 100%, 88%, 1);
+--cherry-blossom: hsla(345, 100%, 85%, 1);
+--cotton-candy: hsla(345, 100%, 78%, 1);
+--petal-rouge: hsla(345, 95%, 71%, 1);
+
+/* SCSS HEX */
+$soft-blush: #ffe5ecff;
+$pastel-pink: #ffc2d1ff;
+$cherry-blossom: #ffb3c6ff;
+$cotton-candy: #ff8fabff;
+$petal-rouge: #fb6f92ff;
+
+/* SCSS HSL */
+$soft-blush: hsla(344, 100%, 95%, 1);
+$pastel-pink: hsla(345, 100%, 88%, 1);
+$cherry-blossom: hsla(345, 100%, 85%, 1);
+$cotton-candy: hsla(345, 100%, 78%, 1);
+$petal-rouge: hsla(345, 95%, 71%, 1);
+
+/* SCSS RGB */
+$soft-blush: rgba(255, 229, 236, 1);
+$pastel-pink: rgba(255, 194, 209, 1);
+$cherry-blossom: rgba(255, 179, 198, 1);
+$cotton-candy: rgba(255, 143, 171, 1);
+$petal-rouge: rgba(251, 111, 146, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #ffe5ecff, #ffc2d1ff, #ffb3c6ff, #ff8fabff, #fb6f92ff);
+$gradient-right: linear-gradient(90deg, #ffe5ecff, #ffc2d1ff, #ffb3c6ff, #ff8fabff, #fb6f92ff);
+$gradient-bottom: linear-gradient(180deg, #ffe5ecff, #ffc2d1ff, #ffb3c6ff, #ff8fabff, #fb6f92ff);
+$gradient-left: linear-gradient(270deg, #ffe5ecff, #ffc2d1ff, #ffb3c6ff, #ff8fabff, #fb6f92ff);
+$gradient-top-right: linear-gradient(45deg, #ffe5ecff, #ffc2d1ff, #ffb3c6ff, #ff8fabff, #fb6f92ff);
+$gradient-bottom-right: linear-gradient(135deg, #ffe5ecff, #ffc2d1ff, #ffb3c6ff, #ff8fabff, #fb6f92ff);
+$gradient-top-left: linear-gradient(225deg, #ffe5ecff, #ffc2d1ff, #ffb3c6ff, #ff8fabff, #fb6f92ff);
+$gradient-bottom-left: linear-gradient(315deg, #ffe5ecff, #ffc2d1ff, #ffb3c6ff, #ff8fabff, #fb6f92ff);
+$gradient-radial: radial-gradient(#ffe5ecff, #ffc2d1ff, #ffb3c6ff, #ff8fabff, #fb6f92ff);

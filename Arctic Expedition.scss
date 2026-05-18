@@ -1,0 +1,67 @@
+/* Arctic Expedition - https://coolors.co/e0fbfc-c2f0f0-98d8d8-72c1c1-4d9696-2a6f6f-0d4d4d-052f2f-011616 */
+
+/* CSS HEX */
+--ice-crystal: #e0fbfcff;
+--frost-breath: #c2f0f0ff;
+--glacier-blue: #98d8d8ff;
+--arctic-water: #72c1c1ff;
+--deep-fjord: #4d9696ff;
+--frozen-depths: #2a6f6fff;
+--cold-abyss: #0d4d4dff;
+--midnight-ice: #052f2fff;
+--polar-night: #011616ff;
+
+/* CSS HSL */
+--ice-crystal: hsla(192, 83%, 93%, 1);
+--frost-breath: hsla(180, 67%, 85%, 1);
+--glacier-blue: hsla(180, 44%, 72%, 1);
+--arctic-water: hsla(180, 41%, 60%, 1);
+--deep-fjord: hsla(180, 32%, 44%, 1);
+--frozen-depths: hsla(180, 45%, 30%, 1);
+--cold-abyss: hsla(180, 71%, 17%, 1);
+--midnight-ice: hsla(180, 81%, 10%, 1);
+--polar-night: hsla(180, 91%, 4%, 1);
+
+/* SCSS HEX */
+$ice-crystal: #e0fbfcff;
+$frost-breath: #c2f0f0ff;
+$glacier-blue: #98d8d8ff;
+$arctic-water: #72c1c1ff;
+$deep-fjord: #4d9696ff;
+$frozen-depths: #2a6f6fff;
+$cold-abyss: #0d4d4dff;
+$midnight-ice: #052f2fff;
+$polar-night: #011616ff;
+
+/* SCSS HSL */
+$ice-crystal: hsla(192, 83%, 93%, 1);
+$frost-breath: hsla(180, 67%, 85%, 1);
+$glacier-blue: hsla(180, 44%, 72%, 1);
+$arctic-water: hsla(180, 41%, 60%, 1);
+$deep-fjord: hsla(180, 32%, 44%, 1);
+$frozen-depths: hsla(180, 45%, 30%, 1);
+$cold-abyss: hsla(180, 71%, 17%, 1);
+$midnight-ice: hsla(180, 81%, 10%, 1);
+$polar-night: hsla(180, 91%, 4%, 1);
+
+/* SCSS RGB */
+$ice-crystal: rgba(224, 251, 252, 1);
+$frost-breath: rgba(194, 240, 240, 1);
+$glacier-blue: rgba(152, 216, 216, 1);
+$arctic-water: rgba(114, 193, 193, 1);
+$deep-fjord: rgba(77, 150, 150, 1);
+$frozen-depths: rgba(42, 111, 111, 1);
+$cold-abyss: rgba(13, 77, 77, 1);
+$midnight-ice: rgba(5, 47, 47, 1);
+$polar-night: rgba(1, 22, 22, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #e0fbfcff, #c2f0f0ff, #98d8d8ff, #72c1c1ff, #4d9696ff, #2a6f6fff, #0d4d4dff, #052f2fff, #011616ff);
+$gradient-right: linear-gradient(90deg, #e0fbfcff, #c2f0f0ff, #98d8d8ff, #72c1c1ff, #4d9696ff, #2a6f6fff, #0d4d4dff, #052f2fff, #011616ff);
+$gradient-bottom: linear-gradient(180deg, #e0fbfcff, #c2f0f0ff, #98d8d8ff, #72c1c1ff, #4d9696ff, #2a6f6fff, #0d4d4dff, #052f2fff, #011616ff);
+$gradient-left: linear-gradient(270deg, #e0fbfcff, #c2f0f0ff, #98d8d8ff, #72c1c1ff, #4d9696ff, #2a6f6fff, #0d4d4dff, #052f2fff, #011616ff);
+$gradient-top-right: linear-gradient(45deg, #e0fbfcff, #c2f0f0ff, #98d8d8ff, #72c1c1ff, #4d9696ff, #2a6f6fff, #0d4d4dff, #052f2fff, #011616ff);
+$gradient-bottom-right: linear-gradient(135deg, #e0fbfcff, #c2f0f0ff, #98d8d8ff, #72c1c1ff, #4d9696ff, #2a6f6fff, #0d4d4dff, #052f2fff, #011616ff);
+$gradient-top-left: linear-gradient(225deg, #e0fbfcff, #c2f0f0ff, #98d8d8ff, #72c1c1ff, #4d9696ff, #2a6f6fff, #0d4d4dff, #052f2fff, #011616ff);
+$gradient-bottom-left: linear-gradient(315deg, #e0fbfcff, #c2f0f0ff, #98d8d8ff, #72c1c1ff, #4d9696ff, #2a6f6fff, #0d4d4dff, #052f2fff, #011616ff);
+$gradient-radial: radial-gradient(#e0fbfcff, #c2f0f0ff, #98d8d8ff, #72c1c1ff, #4d9696ff, #2a6f6fff, #0d4d4dff, #052f2fff, #011616ff);

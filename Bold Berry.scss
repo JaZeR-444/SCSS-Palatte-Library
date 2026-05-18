@@ -1,0 +1,47 @@
+/* Bold Berry - https://coolors.co/f9dbbd-ffa5ab-da627d-a53860-450920 */
+
+/* CSS HEX */
+--soft-apricot: #f9dbbdff;
+--cotton-candy: #ffa5abff;
+--blush-rose: #da627dff;
+--berry-crush: #a53860ff;
+--night-bordeaux: #450920ff;
+
+/* CSS HSL */
+--soft-apricot: hsla(30, 83%, 86%, 1);
+--cotton-candy: hsla(356, 100%, 82%, 1);
+--blush-rose: hsla(347, 62%, 62%, 1);
+--berry-crush: hsla(338, 49%, 43%, 1);
+--night-bordeaux: hsla(337, 77%, 15%, 1);
+
+/* SCSS HEX */
+$soft-apricot: #f9dbbdff;
+$cotton-candy: #ffa5abff;
+$blush-rose: #da627dff;
+$berry-crush: #a53860ff;
+$night-bordeaux: #450920ff;
+
+/* SCSS HSL */
+$soft-apricot: hsla(30, 83%, 86%, 1);
+$cotton-candy: hsla(356, 100%, 82%, 1);
+$blush-rose: hsla(347, 62%, 62%, 1);
+$berry-crush: hsla(338, 49%, 43%, 1);
+$night-bordeaux: hsla(337, 77%, 15%, 1);
+
+/* SCSS RGB */
+$soft-apricot: rgba(249, 219, 189, 1);
+$cotton-candy: rgba(255, 165, 171, 1);
+$blush-rose: rgba(218, 98, 125, 1);
+$berry-crush: rgba(165, 56, 96, 1);
+$night-bordeaux: rgba(69, 9, 32, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #f9dbbdff, #ffa5abff, #da627dff, #a53860ff, #450920ff);
+$gradient-right: linear-gradient(90deg, #f9dbbdff, #ffa5abff, #da627dff, #a53860ff, #450920ff);
+$gradient-bottom: linear-gradient(180deg, #f9dbbdff, #ffa5abff, #da627dff, #a53860ff, #450920ff);
+$gradient-left: linear-gradient(270deg, #f9dbbdff, #ffa5abff, #da627dff, #a53860ff, #450920ff);
+$gradient-top-right: linear-gradient(45deg, #f9dbbdff, #ffa5abff, #da627dff, #a53860ff, #450920ff);
+$gradient-bottom-right: linear-gradient(135deg, #f9dbbdff, #ffa5abff, #da627dff, #a53860ff, #450920ff);
+$gradient-top-left: linear-gradient(225deg, #f9dbbdff, #ffa5abff, #da627dff, #a53860ff, #450920ff);
+$gradient-bottom-left: linear-gradient(315deg, #f9dbbdff, #ffa5abff, #da627dff, #a53860ff, #450920ff);
+$gradient-radial: radial-gradient(#f9dbbdff, #ffa5abff, #da627dff, #a53860ff, #450920ff);
