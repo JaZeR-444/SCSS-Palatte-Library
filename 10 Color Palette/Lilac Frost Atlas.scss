@@ -1,0 +1,111 @@
+/*---
+id: lilac-frost-atlas
+name: Lilac Frost Atlas
+author: JaZeR-444
+version: 1.0.0
+category: Purple & Airy
+count: 10
+description: A light purple palette with frosted lilac surfaces, clean violet accents, and cool readable neutrals.
+tags:
+  mood:
+  - purple
+  - airy
+  aesthetic:
+  - Lilac
+  - Frost
+intent: A purple-focused 10-color palette designed for wellness, documentation, saas ui.
+suggested_use:
+- Wellness
+- Documentation
+- SaaS UI
+url: https://coolors.co/1e1b4b-312e81-4f46e5-7c3aed-a78bfa-c4b5fd-ddd6fe-ede9fe-f8fafc-ffffff
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--lilac-frost-atlas-frost-indigo: #1e1b4bff;
+--lilac-frost-atlas-lilac-depth: #312e81ff;
+--lilac-frost-atlas-clear-violet: #4f46e5ff;
+--lilac-frost-atlas-fresh-purple: #7c3aedff;
+--lilac-frost-atlas-soft-lavender: #a78bfaff;
+--lilac-frost-atlas-frost-lilac: #c4b5fdff;
+--lilac-frost-atlas-powder-violet: #ddd6feff;
+--lilac-frost-atlas-mist-panel: #ede9feff;
+--lilac-frost-atlas-snow-surface: #f8fafcff;
+--lilac-frost-atlas-white-crystal: #ffffffff;
+
+/* CSS HSL */
+--lilac-frost-atlas-frost-indigo: hsla(244, 47%, 20%, 1);
+--lilac-frost-atlas-lilac-depth: hsla(242, 47%, 34%, 1);
+--lilac-frost-atlas-clear-violet: hsla(243, 75%, 59%, 1);
+--lilac-frost-atlas-fresh-purple: hsla(262, 83%, 58%, 1);
+--lilac-frost-atlas-soft-lavender: hsla(255, 92%, 76%, 1);
+--lilac-frost-atlas-frost-lilac: hsla(252, 95%, 85%, 1);
+--lilac-frost-atlas-powder-violet: hsla(251, 95%, 92%, 1);
+--lilac-frost-atlas-mist-panel: hsla(251, 91%, 95%, 1);
+--lilac-frost-atlas-snow-surface: hsla(210, 40%, 98%, 1);
+--lilac-frost-atlas-white-crystal: hsla(0, 0%, 100%, 1);
+}
+
+/* SCSS HEX */
+$lilac-frost-atlas-frost-indigo: #1e1b4bff;
+$lilac-frost-atlas-lilac-depth: #312e81ff;
+$lilac-frost-atlas-clear-violet: #4f46e5ff;
+$lilac-frost-atlas-fresh-purple: #7c3aedff;
+$lilac-frost-atlas-soft-lavender: #a78bfaff;
+$lilac-frost-atlas-frost-lilac: #c4b5fdff;
+$lilac-frost-atlas-powder-violet: #ddd6feff;
+$lilac-frost-atlas-mist-panel: #ede9feff;
+$lilac-frost-atlas-snow-surface: #f8fafcff;
+$lilac-frost-atlas-white-crystal: #ffffffff;
+
+/* SCSS HSL */
+$lilac-frost-atlas-frost-indigo: hsla(244, 47%, 20%, 1);
+$lilac-frost-atlas-lilac-depth: hsla(242, 47%, 34%, 1);
+$lilac-frost-atlas-clear-violet: hsla(243, 75%, 59%, 1);
+$lilac-frost-atlas-fresh-purple: hsla(262, 83%, 58%, 1);
+$lilac-frost-atlas-soft-lavender: hsla(255, 92%, 76%, 1);
+$lilac-frost-atlas-frost-lilac: hsla(252, 95%, 85%, 1);
+$lilac-frost-atlas-powder-violet: hsla(251, 95%, 92%, 1);
+$lilac-frost-atlas-mist-panel: hsla(251, 91%, 95%, 1);
+$lilac-frost-atlas-snow-surface: hsla(210, 40%, 98%, 1);
+$lilac-frost-atlas-white-crystal: hsla(0, 0%, 100%, 1);
+
+/* SCSS RGB */
+$lilac-frost-atlas-frost-indigo: rgba(30, 27, 75, 1);
+$lilac-frost-atlas-lilac-depth: rgba(49, 46, 129, 1);
+$lilac-frost-atlas-clear-violet: rgba(79, 70, 229, 1);
+$lilac-frost-atlas-fresh-purple: rgba(124, 58, 237, 1);
+$lilac-frost-atlas-soft-lavender: rgba(167, 139, 250, 1);
+$lilac-frost-atlas-frost-lilac: rgba(196, 181, 253, 1);
+$lilac-frost-atlas-powder-violet: rgba(221, 214, 254, 1);
+$lilac-frost-atlas-mist-panel: rgba(237, 233, 254, 1);
+$lilac-frost-atlas-snow-surface: rgba(248, 250, 252, 1);
+$lilac-frost-atlas-white-crystal: rgba(255, 255, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff, #a78bfaff, #c4b5fdff, #ddd6feff, #ede9feff, #f8fafcff, #ffffffff);
+$gradient-right: linear-gradient(90deg, #1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff, #a78bfaff, #c4b5fdff, #ddd6feff, #ede9feff, #f8fafcff, #ffffffff);
+$gradient-bottom: linear-gradient(180deg, #1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff, #a78bfaff, #c4b5fdff, #ddd6feff, #ede9feff, #f8fafcff, #ffffffff);
+$gradient-left: linear-gradient(270deg, #1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff, #a78bfaff, #c4b5fdff, #ddd6feff, #ede9feff, #f8fafcff, #ffffffff);
+$gradient-top-right: linear-gradient(45deg, #1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff, #a78bfaff, #c4b5fdff, #ddd6feff, #ede9feff, #f8fafcff, #ffffffff);
+$gradient-bottom-right: linear-gradient(135deg, #1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff, #a78bfaff, #c4b5fdff, #ddd6feff, #ede9feff, #f8fafcff, #ffffffff);
+$gradient-top-left: linear-gradient(225deg, #1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff, #a78bfaff, #c4b5fdff, #ddd6feff, #ede9feff, #f8fafcff, #ffffffff);
+$gradient-bottom-left: linear-gradient(315deg, #1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff, #a78bfaff, #c4b5fdff, #ddd6feff, #ede9feff, #f8fafcff, #ffffffff);
+$gradient-radial: radial-gradient(#1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff, #a78bfaff, #c4b5fdff, #ddd6feff, #ede9feff, #f8fafcff, #ffffffff);
+
+/* SCSS Map */
+$lilac-frost-atlas-map: (
+    "lilac-frost-atlas-frost-indigo": #1e1b4bff,
+    "lilac-frost-atlas-lilac-depth": #312e81ff,
+    "lilac-frost-atlas-clear-violet": #4f46e5ff,
+    "lilac-frost-atlas-fresh-purple": #7c3aedff,
+    "lilac-frost-atlas-soft-lavender": #a78bfaff,
+    "lilac-frost-atlas-frost-lilac": #c4b5fdff,
+    "lilac-frost-atlas-powder-violet": #ddd6feff,
+    "lilac-frost-atlas-mist-panel": #ede9feff,
+    "lilac-frost-atlas-snow-surface": #f8fafcff,
+    "lilac-frost-atlas-white-crystal": #ffffffff
+);

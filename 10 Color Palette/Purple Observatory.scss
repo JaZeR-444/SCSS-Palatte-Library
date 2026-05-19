@@ -1,0 +1,111 @@
+/*---
+id: purple-observatory
+name: Purple Observatory
+author: JaZeR-444
+version: 1.0.0
+category: Purple & Cosmic
+count: 10
+description: A cosmic purple system with observatory darks, violet steps, lavender surfaces, and white light.
+tags:
+  mood:
+  - purple
+  - cosmic
+  aesthetic:
+  - Observatory
+  - Space
+intent: A purple-focused 10-color palette designed for dashboard, hero ui, data visualization.
+suggested_use:
+- Dashboard
+- Hero UI
+- Data Visualization
+url: https://coolors.co/080013-17002e-2d0057-4c1d95-6d28d9-8b5cf6-a78bfa-c4b5fd-ede9fe-ffffff
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--observatory-black: #080013ff;
+--deep-orbit: #17002eff;
+--starfield-plum: #2d0057ff;
+--telescope-violet: #4c1d95ff;
+--nebula-purple: #6d28d9ff;
+--cosmic-lavender: #8b5cf6ff;
+--starlit-lilac: #a78bfaff;
+--orbit-mist: #c4b5fdff;
+--dome-glow: #ede9feff;
+--star-white: #ffffffff;
+
+/* CSS HSL */
+--observatory-black: hsla(265, 100%, 4%, 1);
+--deep-orbit: hsla(270, 100%, 9%, 1);
+--starfield-plum: hsla(271, 100%, 17%, 1);
+--telescope-violet: hsla(264, 67%, 35%, 1);
+--nebula-purple: hsla(263, 70%, 50%, 1);
+--cosmic-lavender: hsla(258, 90%, 66%, 1);
+--starlit-lilac: hsla(255, 92%, 76%, 1);
+--orbit-mist: hsla(252, 95%, 85%, 1);
+--dome-glow: hsla(251, 91%, 95%, 1);
+--star-white: hsla(0, 0%, 100%, 1);
+}
+
+/* SCSS HEX */
+$observatory-black: #080013ff;
+$deep-orbit: #17002eff;
+$starfield-plum: #2d0057ff;
+$telescope-violet: #4c1d95ff;
+$nebula-purple: #6d28d9ff;
+$cosmic-lavender: #8b5cf6ff;
+$starlit-lilac: #a78bfaff;
+$orbit-mist: #c4b5fdff;
+$dome-glow: #ede9feff;
+$star-white: #ffffffff;
+
+/* SCSS HSL */
+$observatory-black: hsla(265, 100%, 4%, 1);
+$deep-orbit: hsla(270, 100%, 9%, 1);
+$starfield-plum: hsla(271, 100%, 17%, 1);
+$telescope-violet: hsla(264, 67%, 35%, 1);
+$nebula-purple: hsla(263, 70%, 50%, 1);
+$cosmic-lavender: hsla(258, 90%, 66%, 1);
+$starlit-lilac: hsla(255, 92%, 76%, 1);
+$orbit-mist: hsla(252, 95%, 85%, 1);
+$dome-glow: hsla(251, 91%, 95%, 1);
+$star-white: hsla(0, 0%, 100%, 1);
+
+/* SCSS RGB */
+$observatory-black: rgba(8, 0, 19, 1);
+$deep-orbit: rgba(23, 0, 46, 1);
+$starfield-plum: rgba(45, 0, 87, 1);
+$telescope-violet: rgba(76, 29, 149, 1);
+$nebula-purple: rgba(109, 40, 217, 1);
+$cosmic-lavender: rgba(139, 92, 246, 1);
+$starlit-lilac: rgba(167, 139, 250, 1);
+$orbit-mist: rgba(196, 181, 253, 1);
+$dome-glow: rgba(237, 233, 254, 1);
+$star-white: rgba(255, 255, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #080013ff, #17002eff, #2d0057ff, #4c1d95ff, #6d28d9ff, #8b5cf6ff, #a78bfaff, #c4b5fdff, #ede9feff, #ffffffff);
+$gradient-right: linear-gradient(90deg, #080013ff, #17002eff, #2d0057ff, #4c1d95ff, #6d28d9ff, #8b5cf6ff, #a78bfaff, #c4b5fdff, #ede9feff, #ffffffff);
+$gradient-bottom: linear-gradient(180deg, #080013ff, #17002eff, #2d0057ff, #4c1d95ff, #6d28d9ff, #8b5cf6ff, #a78bfaff, #c4b5fdff, #ede9feff, #ffffffff);
+$gradient-left: linear-gradient(270deg, #080013ff, #17002eff, #2d0057ff, #4c1d95ff, #6d28d9ff, #8b5cf6ff, #a78bfaff, #c4b5fdff, #ede9feff, #ffffffff);
+$gradient-top-right: linear-gradient(45deg, #080013ff, #17002eff, #2d0057ff, #4c1d95ff, #6d28d9ff, #8b5cf6ff, #a78bfaff, #c4b5fdff, #ede9feff, #ffffffff);
+$gradient-bottom-right: linear-gradient(135deg, #080013ff, #17002eff, #2d0057ff, #4c1d95ff, #6d28d9ff, #8b5cf6ff, #a78bfaff, #c4b5fdff, #ede9feff, #ffffffff);
+$gradient-top-left: linear-gradient(225deg, #080013ff, #17002eff, #2d0057ff, #4c1d95ff, #6d28d9ff, #8b5cf6ff, #a78bfaff, #c4b5fdff, #ede9feff, #ffffffff);
+$gradient-bottom-left: linear-gradient(315deg, #080013ff, #17002eff, #2d0057ff, #4c1d95ff, #6d28d9ff, #8b5cf6ff, #a78bfaff, #c4b5fdff, #ede9feff, #ffffffff);
+$gradient-radial: radial-gradient(#080013ff, #17002eff, #2d0057ff, #4c1d95ff, #6d28d9ff, #8b5cf6ff, #a78bfaff, #c4b5fdff, #ede9feff, #ffffffff);
+
+/* SCSS Map */
+$purple-observatory-map: (
+    "observatory-black": #080013ff,
+    "deep-orbit": #17002eff,
+    "starfield-plum": #2d0057ff,
+    "telescope-violet": #4c1d95ff,
+    "nebula-purple": #6d28d9ff,
+    "cosmic-lavender": #8b5cf6ff,
+    "starlit-lilac": #a78bfaff,
+    "orbit-mist": #c4b5fdff,
+    "dome-glow": #ede9feff,
+    "star-white": #ffffffff
+);

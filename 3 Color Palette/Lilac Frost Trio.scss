@@ -1,0 +1,69 @@
+/*---
+id: lilac-frost-trio
+name: Lilac Frost Trio
+author: JaZeR-444
+version: 1.0.0
+category: Purple & Airy
+count: 3
+description: A light purple palette with frosted lilac surfaces, clean violet accents, and cool readable neutrals.
+tags:
+  mood:
+  - purple
+  - airy
+  aesthetic:
+  - Lilac
+  - Frost
+intent: A purple-focused 3-color palette designed for wellness, documentation, saas ui.
+suggested_use:
+- Wellness
+- Documentation
+- SaaS UI
+url: https://coolors.co/1e1b4b-312e81-4f46e5
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--lilac-frost-trio-frost-indigo: #1e1b4bff;
+--lilac-frost-trio-lilac-depth: #312e81ff;
+--lilac-frost-trio-clear-violet: #4f46e5ff;
+
+/* CSS HSL */
+--lilac-frost-trio-frost-indigo: hsla(244, 47%, 20%, 1);
+--lilac-frost-trio-lilac-depth: hsla(242, 47%, 34%, 1);
+--lilac-frost-trio-clear-violet: hsla(243, 75%, 59%, 1);
+}
+
+/* SCSS HEX */
+$lilac-frost-trio-frost-indigo: #1e1b4bff;
+$lilac-frost-trio-lilac-depth: #312e81ff;
+$lilac-frost-trio-clear-violet: #4f46e5ff;
+
+/* SCSS HSL */
+$lilac-frost-trio-frost-indigo: hsla(244, 47%, 20%, 1);
+$lilac-frost-trio-lilac-depth: hsla(242, 47%, 34%, 1);
+$lilac-frost-trio-clear-violet: hsla(243, 75%, 59%, 1);
+
+/* SCSS RGB */
+$lilac-frost-trio-frost-indigo: rgba(30, 27, 75, 1);
+$lilac-frost-trio-lilac-depth: rgba(49, 46, 129, 1);
+$lilac-frost-trio-clear-violet: rgba(79, 70, 229, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1e1b4bff, #312e81ff, #4f46e5ff);
+$gradient-right: linear-gradient(90deg, #1e1b4bff, #312e81ff, #4f46e5ff);
+$gradient-bottom: linear-gradient(180deg, #1e1b4bff, #312e81ff, #4f46e5ff);
+$gradient-left: linear-gradient(270deg, #1e1b4bff, #312e81ff, #4f46e5ff);
+$gradient-top-right: linear-gradient(45deg, #1e1b4bff, #312e81ff, #4f46e5ff);
+$gradient-bottom-right: linear-gradient(135deg, #1e1b4bff, #312e81ff, #4f46e5ff);
+$gradient-top-left: linear-gradient(225deg, #1e1b4bff, #312e81ff, #4f46e5ff);
+$gradient-bottom-left: linear-gradient(315deg, #1e1b4bff, #312e81ff, #4f46e5ff);
+$gradient-radial: radial-gradient(#1e1b4bff, #312e81ff, #4f46e5ff);
+
+/* SCSS Map */
+$lilac-frost-trio-map: (
+    "lilac-frost-trio-frost-indigo": #1e1b4bff,
+    "lilac-frost-trio-lilac-depth": #312e81ff,
+    "lilac-frost-trio-clear-violet": #4f46e5ff
+);

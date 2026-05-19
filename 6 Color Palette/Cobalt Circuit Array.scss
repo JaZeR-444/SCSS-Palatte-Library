@@ -1,0 +1,87 @@
+/*---
+id: cobalt-circuit-array
+name: Cobalt Circuit Array
+author: JaZeR-444
+version: 1.0.0
+category: Blue & Technical
+count: 6
+description: A technical cobalt palette with dark code surfaces, electric blue states, and crisp highlights.
+tags:
+  mood:
+  - blue
+  - technical
+  aesthetic:
+  - Circuit
+  - Developer
+intent: A blue-focused 6-color palette designed for developer tools, ai ui, analytics.
+suggested_use:
+- Developer Tools
+- AI UI
+- Analytics
+url: https://coolors.co/020617-0f172a-1e3a8a-1d4ed8-2563eb-3b82f6
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--cobalt-circuit-array-circuit-black: #020617ff;
+--cobalt-circuit-array-logic-navy: #0f172aff;
+--cobalt-circuit-array-cobalt-core: #1e3a8aff;
+--cobalt-circuit-array-runtime-blue: #1d4ed8ff;
+--cobalt-circuit-array-action-blue: #2563ebff;
+--cobalt-circuit-array-signal-blue: #3b82f6ff;
+
+/* CSS HSL */
+--cobalt-circuit-array-circuit-black: hsla(229, 84%, 5%, 1);
+--cobalt-circuit-array-logic-navy: hsla(222, 47%, 11%, 1);
+--cobalt-circuit-array-cobalt-core: hsla(224, 64%, 33%, 1);
+--cobalt-circuit-array-runtime-blue: hsla(224, 76%, 48%, 1);
+--cobalt-circuit-array-action-blue: hsla(221, 83%, 53%, 1);
+--cobalt-circuit-array-signal-blue: hsla(217, 91%, 60%, 1);
+}
+
+/* SCSS HEX */
+$cobalt-circuit-array-circuit-black: #020617ff;
+$cobalt-circuit-array-logic-navy: #0f172aff;
+$cobalt-circuit-array-cobalt-core: #1e3a8aff;
+$cobalt-circuit-array-runtime-blue: #1d4ed8ff;
+$cobalt-circuit-array-action-blue: #2563ebff;
+$cobalt-circuit-array-signal-blue: #3b82f6ff;
+
+/* SCSS HSL */
+$cobalt-circuit-array-circuit-black: hsla(229, 84%, 5%, 1);
+$cobalt-circuit-array-logic-navy: hsla(222, 47%, 11%, 1);
+$cobalt-circuit-array-cobalt-core: hsla(224, 64%, 33%, 1);
+$cobalt-circuit-array-runtime-blue: hsla(224, 76%, 48%, 1);
+$cobalt-circuit-array-action-blue: hsla(221, 83%, 53%, 1);
+$cobalt-circuit-array-signal-blue: hsla(217, 91%, 60%, 1);
+
+/* SCSS RGB */
+$cobalt-circuit-array-circuit-black: rgba(2, 6, 23, 1);
+$cobalt-circuit-array-logic-navy: rgba(15, 23, 42, 1);
+$cobalt-circuit-array-cobalt-core: rgba(30, 58, 138, 1);
+$cobalt-circuit-array-runtime-blue: rgba(29, 78, 216, 1);
+$cobalt-circuit-array-action-blue: rgba(37, 99, 235, 1);
+$cobalt-circuit-array-signal-blue: rgba(59, 130, 246, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff);
+$gradient-right: linear-gradient(90deg, #020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff);
+$gradient-bottom: linear-gradient(180deg, #020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff);
+$gradient-left: linear-gradient(270deg, #020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff);
+$gradient-top-right: linear-gradient(45deg, #020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff);
+$gradient-bottom-right: linear-gradient(135deg, #020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff);
+$gradient-top-left: linear-gradient(225deg, #020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff);
+$gradient-bottom-left: linear-gradient(315deg, #020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff);
+$gradient-radial: radial-gradient(#020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff);
+
+/* SCSS Map */
+$cobalt-circuit-array-map: (
+    "cobalt-circuit-array-circuit-black": #020617ff,
+    "cobalt-circuit-array-logic-navy": #0f172aff,
+    "cobalt-circuit-array-cobalt-core": #1e3a8aff,
+    "cobalt-circuit-array-runtime-blue": #1d4ed8ff,
+    "cobalt-circuit-array-action-blue": #2563ebff,
+    "cobalt-circuit-array-signal-blue": #3b82f6ff
+);

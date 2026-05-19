@@ -1,0 +1,111 @@
+/*---
+id: carbon-candy
+name: Carbon Candy
+author: JaZeR-444
+version: 1.0.0
+category: Dark & Playful
+count: 10
+description: A playful dark palette with candy accents and carbon neutral foundations.
+tags:
+  mood:
+  - dark
+  - playful
+  aesthetic:
+  - Candy
+  - Interface
+intent: A 10-color palette designed for game ui, social, product ui.
+suggested_use:
+- Game UI
+- Social
+- Product UI
+url: https://coolors.co/030712-111827-374151-fb7185-fb923c-fde047-4ade80-60a5fa-c084fc-fff7ed
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--carbon-950: #030712ff;
+--carbon-900: #111827ff;
+--carbon-700: #374151ff;
+--candy-red: #fb7185ff;
+--candy-orange: #fb923cff;
+--candy-yellow: #fde047ff;
+--candy-green: #4ade80ff;
+--candy-blue: #60a5faff;
+--candy-purple: #c084fcff;
+--candy-white: #fff7edff;
+
+/* CSS HSL */
+--carbon-950: hsla(224, 71%, 4%, 1);
+--carbon-900: hsla(221, 39%, 11%, 1);
+--carbon-700: hsla(217, 19%, 27%, 1);
+--candy-red: hsla(351, 95%, 71%, 1);
+--candy-orange: hsla(27, 96%, 61%, 1);
+--candy-yellow: hsla(50, 98%, 64%, 1);
+--candy-green: hsla(142, 69%, 58%, 1);
+--candy-blue: hsla(213, 94%, 68%, 1);
+--candy-purple: hsla(270, 95%, 75%, 1);
+--candy-white: hsla(33, 100%, 96%, 1);
+}
+
+/* SCSS HEX */
+$carbon-950: #030712ff;
+$carbon-900: #111827ff;
+$carbon-700: #374151ff;
+$candy-red: #fb7185ff;
+$candy-orange: #fb923cff;
+$candy-yellow: #fde047ff;
+$candy-green: #4ade80ff;
+$candy-blue: #60a5faff;
+$candy-purple: #c084fcff;
+$candy-white: #fff7edff;
+
+/* SCSS HSL */
+$carbon-950: hsla(224, 71%, 4%, 1);
+$carbon-900: hsla(221, 39%, 11%, 1);
+$carbon-700: hsla(217, 19%, 27%, 1);
+$candy-red: hsla(351, 95%, 71%, 1);
+$candy-orange: hsla(27, 96%, 61%, 1);
+$candy-yellow: hsla(50, 98%, 64%, 1);
+$candy-green: hsla(142, 69%, 58%, 1);
+$candy-blue: hsla(213, 94%, 68%, 1);
+$candy-purple: hsla(270, 95%, 75%, 1);
+$candy-white: hsla(33, 100%, 96%, 1);
+
+/* SCSS RGB */
+$carbon-950: rgba(3, 7, 18, 1);
+$carbon-900: rgba(17, 24, 39, 1);
+$carbon-700: rgba(55, 65, 81, 1);
+$candy-red: rgba(251, 113, 133, 1);
+$candy-orange: rgba(251, 146, 60, 1);
+$candy-yellow: rgba(253, 224, 71, 1);
+$candy-green: rgba(74, 222, 128, 1);
+$candy-blue: rgba(96, 165, 250, 1);
+$candy-purple: rgba(192, 132, 252, 1);
+$candy-white: rgba(255, 247, 237, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #030712ff, #111827ff, #374151ff, #fb7185ff, #fb923cff, #fde047ff, #4ade80ff, #60a5faff, #c084fcff, #fff7edff);
+$gradient-right: linear-gradient(90deg, #030712ff, #111827ff, #374151ff, #fb7185ff, #fb923cff, #fde047ff, #4ade80ff, #60a5faff, #c084fcff, #fff7edff);
+$gradient-bottom: linear-gradient(180deg, #030712ff, #111827ff, #374151ff, #fb7185ff, #fb923cff, #fde047ff, #4ade80ff, #60a5faff, #c084fcff, #fff7edff);
+$gradient-left: linear-gradient(270deg, #030712ff, #111827ff, #374151ff, #fb7185ff, #fb923cff, #fde047ff, #4ade80ff, #60a5faff, #c084fcff, #fff7edff);
+$gradient-top-right: linear-gradient(45deg, #030712ff, #111827ff, #374151ff, #fb7185ff, #fb923cff, #fde047ff, #4ade80ff, #60a5faff, #c084fcff, #fff7edff);
+$gradient-bottom-right: linear-gradient(135deg, #030712ff, #111827ff, #374151ff, #fb7185ff, #fb923cff, #fde047ff, #4ade80ff, #60a5faff, #c084fcff, #fff7edff);
+$gradient-top-left: linear-gradient(225deg, #030712ff, #111827ff, #374151ff, #fb7185ff, #fb923cff, #fde047ff, #4ade80ff, #60a5faff, #c084fcff, #fff7edff);
+$gradient-bottom-left: linear-gradient(315deg, #030712ff, #111827ff, #374151ff, #fb7185ff, #fb923cff, #fde047ff, #4ade80ff, #60a5faff, #c084fcff, #fff7edff);
+$gradient-radial: radial-gradient(#030712ff, #111827ff, #374151ff, #fb7185ff, #fb923cff, #fde047ff, #4ade80ff, #60a5faff, #c084fcff, #fff7edff);
+
+/* SCSS Map */
+$carbon-candy-map: (
+    "carbon-950": #030712ff,
+    "carbon-900": #111827ff,
+    "carbon-700": #374151ff,
+    "candy-red": #fb7185ff,
+    "candy-orange": #fb923cff,
+    "candy-yellow": #fde047ff,
+    "candy-green": #4ade80ff,
+    "candy-blue": #60a5faff,
+    "candy-purple": #c084fcff,
+    "candy-white": #fff7edff
+);

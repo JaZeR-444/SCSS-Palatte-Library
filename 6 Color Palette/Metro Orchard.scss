@@ -1,0 +1,87 @@
+/*---
+id: metro-orchard
+name: Metro Orchard
+author: JaZeR-444
+version: 1.0.0
+category: Urban & Fresh
+count: 6
+description: A city-ready palette combining concrete neutrals with orchard green and transit orange.
+tags:
+  mood:
+  - urban
+  - fresh
+  aesthetic:
+  - Metro
+  - Food
+intent: A 6-color palette designed for restaurant, transit, dashboard.
+suggested_use:
+- Restaurant
+- Transit
+- Dashboard
+url: https://coolors.co/202124-5f6368-34a853-fbbc04-ea4335-f8fafd
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--metro-black: #202124ff;
+--rail-gray: #5f6368ff;
+--orchard-green: #34a853ff;
+--transit-orange: #fbbc04ff;
+--ticket-red: #ea4335ff;
+--platform-white: #f8fafdff;
+
+/* CSS HSL */
+--metro-black: hsla(225, 6%, 13%, 1);
+--rail-gray: hsla(213, 5%, 39%, 1);
+--orchard-green: hsla(136, 53%, 43%, 1);
+--transit-orange: hsla(45, 97%, 50%, 1);
+--ticket-red: hsla(5, 81%, 56%, 1);
+--platform-white: hsla(216, 56%, 98%, 1);
+}
+
+/* SCSS HEX */
+$metro-black: #202124ff;
+$rail-gray: #5f6368ff;
+$orchard-green: #34a853ff;
+$transit-orange: #fbbc04ff;
+$ticket-red: #ea4335ff;
+$platform-white: #f8fafdff;
+
+/* SCSS HSL */
+$metro-black: hsla(225, 6%, 13%, 1);
+$rail-gray: hsla(213, 5%, 39%, 1);
+$orchard-green: hsla(136, 53%, 43%, 1);
+$transit-orange: hsla(45, 97%, 50%, 1);
+$ticket-red: hsla(5, 81%, 56%, 1);
+$platform-white: hsla(216, 56%, 98%, 1);
+
+/* SCSS RGB */
+$metro-black: rgba(32, 33, 36, 1);
+$rail-gray: rgba(95, 99, 104, 1);
+$orchard-green: rgba(52, 168, 83, 1);
+$transit-orange: rgba(251, 188, 4, 1);
+$ticket-red: rgba(234, 67, 53, 1);
+$platform-white: rgba(248, 250, 253, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #202124ff, #5f6368ff, #34a853ff, #fbbc04ff, #ea4335ff, #f8fafdff);
+$gradient-right: linear-gradient(90deg, #202124ff, #5f6368ff, #34a853ff, #fbbc04ff, #ea4335ff, #f8fafdff);
+$gradient-bottom: linear-gradient(180deg, #202124ff, #5f6368ff, #34a853ff, #fbbc04ff, #ea4335ff, #f8fafdff);
+$gradient-left: linear-gradient(270deg, #202124ff, #5f6368ff, #34a853ff, #fbbc04ff, #ea4335ff, #f8fafdff);
+$gradient-top-right: linear-gradient(45deg, #202124ff, #5f6368ff, #34a853ff, #fbbc04ff, #ea4335ff, #f8fafdff);
+$gradient-bottom-right: linear-gradient(135deg, #202124ff, #5f6368ff, #34a853ff, #fbbc04ff, #ea4335ff, #f8fafdff);
+$gradient-top-left: linear-gradient(225deg, #202124ff, #5f6368ff, #34a853ff, #fbbc04ff, #ea4335ff, #f8fafdff);
+$gradient-bottom-left: linear-gradient(315deg, #202124ff, #5f6368ff, #34a853ff, #fbbc04ff, #ea4335ff, #f8fafdff);
+$gradient-radial: radial-gradient(#202124ff, #5f6368ff, #34a853ff, #fbbc04ff, #ea4335ff, #f8fafdff);
+
+/* SCSS Map */
+$metro-orchard-map: (
+    "metro-black": #202124ff,
+    "rail-gray": #5f6368ff,
+    "orchard-green": #34a853ff,
+    "transit-orange": #fbbc04ff,
+    "ticket-red": #ea4335ff,
+    "platform-white": #f8fafdff
+);

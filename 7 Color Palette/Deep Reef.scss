@@ -1,0 +1,93 @@
+/*---
+id: deep-reef
+name: Deep Reef
+author: JaZeR-444
+version: 1.0.0
+category: Aquatic & Vibrant
+count: 7
+description: A layered reef palette for marine, travel, and vivid dashboard work.
+tags:
+  mood:
+  - aquatic
+  - vibrant
+  aesthetic:
+  - Ocean
+  - Travel
+intent: A 7-color palette designed for travel, maps, product ui.
+suggested_use:
+- Travel
+- Maps
+- Product UI
+url: https://coolors.co/001219-005f73-0a9396-94d2bd-ee9b00-ca6702-e9d8a6
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--reef-night: #001219ff;
+--deep-teal: #005f73ff;
+--reef-blue: #0a9396ff;
+--tide-mint: #94d2bdff;
+--coral-pop: #ee9b00ff;
+--reef-orange: #ca6702ff;
+--shell-white: #e9d8a6ff;
+
+/* CSS HSL */
+--reef-night: hsla(197, 100%, 5%, 1);
+--deep-teal: hsla(190, 100%, 23%, 1);
+--reef-blue: hsla(181, 88%, 31%, 1);
+--tide-mint: hsla(160, 41%, 70%, 1);
+--coral-pop: hsla(39, 100%, 47%, 1);
+--reef-orange: hsla(30, 98%, 40%, 1);
+--shell-white: hsla(45, 60%, 78%, 1);
+}
+
+/* SCSS HEX */
+$reef-night: #001219ff;
+$deep-teal: #005f73ff;
+$reef-blue: #0a9396ff;
+$tide-mint: #94d2bdff;
+$coral-pop: #ee9b00ff;
+$reef-orange: #ca6702ff;
+$shell-white: #e9d8a6ff;
+
+/* SCSS HSL */
+$reef-night: hsla(197, 100%, 5%, 1);
+$deep-teal: hsla(190, 100%, 23%, 1);
+$reef-blue: hsla(181, 88%, 31%, 1);
+$tide-mint: hsla(160, 41%, 70%, 1);
+$coral-pop: hsla(39, 100%, 47%, 1);
+$reef-orange: hsla(30, 98%, 40%, 1);
+$shell-white: hsla(45, 60%, 78%, 1);
+
+/* SCSS RGB */
+$reef-night: rgba(0, 18, 25, 1);
+$deep-teal: rgba(0, 95, 115, 1);
+$reef-blue: rgba(10, 147, 150, 1);
+$tide-mint: rgba(148, 210, 189, 1);
+$coral-pop: rgba(238, 155, 0, 1);
+$reef-orange: rgba(202, 103, 2, 1);
+$shell-white: rgba(233, 216, 166, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #001219ff, #005f73ff, #0a9396ff, #94d2bdff, #ee9b00ff, #ca6702ff, #e9d8a6ff);
+$gradient-right: linear-gradient(90deg, #001219ff, #005f73ff, #0a9396ff, #94d2bdff, #ee9b00ff, #ca6702ff, #e9d8a6ff);
+$gradient-bottom: linear-gradient(180deg, #001219ff, #005f73ff, #0a9396ff, #94d2bdff, #ee9b00ff, #ca6702ff, #e9d8a6ff);
+$gradient-left: linear-gradient(270deg, #001219ff, #005f73ff, #0a9396ff, #94d2bdff, #ee9b00ff, #ca6702ff, #e9d8a6ff);
+$gradient-top-right: linear-gradient(45deg, #001219ff, #005f73ff, #0a9396ff, #94d2bdff, #ee9b00ff, #ca6702ff, #e9d8a6ff);
+$gradient-bottom-right: linear-gradient(135deg, #001219ff, #005f73ff, #0a9396ff, #94d2bdff, #ee9b00ff, #ca6702ff, #e9d8a6ff);
+$gradient-top-left: linear-gradient(225deg, #001219ff, #005f73ff, #0a9396ff, #94d2bdff, #ee9b00ff, #ca6702ff, #e9d8a6ff);
+$gradient-bottom-left: linear-gradient(315deg, #001219ff, #005f73ff, #0a9396ff, #94d2bdff, #ee9b00ff, #ca6702ff, #e9d8a6ff);
+$gradient-radial: radial-gradient(#001219ff, #005f73ff, #0a9396ff, #94d2bdff, #ee9b00ff, #ca6702ff, #e9d8a6ff);
+
+/* SCSS Map */
+$deep-reef-map: (
+    "reef-night": #001219ff,
+    "deep-teal": #005f73ff,
+    "reef-blue": #0a9396ff,
+    "tide-mint": #94d2bdff,
+    "coral-pop": #ee9b00ff,
+    "reef-orange": #ca6702ff,
+    "shell-white": #e9d8a6ff
+);

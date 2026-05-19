@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+- **New Palette Options**: Ember Dusk, Glass Aurora, Verdant Circuit, and Civic Sunrise.
+- **40-Palette Expansion**: Added five new palettes each to the 3-color through 10-color folders.
+- **Purple-Focused Palettes**: Added Royal Iris, Amethyst Haze, Plum Circuit, Violet Vineyard, Ultraviolet Bloom, Lavender Ledger, Mystic Spectrum, and Purple Observatory.
+- **Purple Systems Expansion**: Added 40 more purple-focused palettes, five each in the 3-color through 10-color folders.
+- **Blue Systems Expansion**: Added 20 curated blue-focused palettes across the 3-color through 10-color folders.
+
 ## [2.0.0] - 2026-05-18
 
 ### Added

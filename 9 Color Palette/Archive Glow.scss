@@ -1,0 +1,105 @@
+/*---
+id: archive-glow
+name: Archive Glow
+author: JaZeR-444
+version: 1.0.0
+category: Scholarly & Warm
+count: 9
+description: A library-inspired palette with ink, paper, brass, and archival accent colors.
+tags:
+  mood:
+  - scholarly
+  - warm
+  aesthetic:
+  - Archive
+  - Editorial
+intent: A 9-color palette designed for documentation, editorial, knowledge base.
+suggested_use:
+- Documentation
+- Editorial
+- Knowledge Base
+url: https://coolors.co/1c1917-5c4033-b7791f-f5e6cc-31572c-9b2226-d6ccc2-78716c-fff8dc
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--archive-ink: #1c1917ff;
+--leather-brown: #5c4033ff;
+--brass-mark: #b7791fff;
+--paper-aged: #f5e6ccff;
+--catalog-blue: #31572cff;
+--stamp-red: #9b2226ff;
+--index-tan: #d6ccc2ff;
+--margin-gray: #78716cff;
+--glow-cream: #fff8dcff;
+
+/* CSS HSL */
+--archive-ink: hsla(24, 10%, 10%, 1);
+--leather-brown: hsla(19, 29%, 28%, 1);
+--brass-mark: hsla(36, 71%, 42%, 1);
+--paper-aged: hsla(38, 67%, 88%, 1);
+--catalog-blue: hsla(113, 33%, 26%, 1);
+--stamp-red: hsla(358, 64%, 37%, 1);
+--index-tan: hsla(30, 20%, 80%, 1);
+--margin-gray: hsla(25, 5%, 45%, 1);
+--glow-cream: hsla(48, 100%, 93%, 1);
+}
+
+/* SCSS HEX */
+$archive-ink: #1c1917ff;
+$leather-brown: #5c4033ff;
+$brass-mark: #b7791fff;
+$paper-aged: #f5e6ccff;
+$catalog-blue: #31572cff;
+$stamp-red: #9b2226ff;
+$index-tan: #d6ccc2ff;
+$margin-gray: #78716cff;
+$glow-cream: #fff8dcff;
+
+/* SCSS HSL */
+$archive-ink: hsla(24, 10%, 10%, 1);
+$leather-brown: hsla(19, 29%, 28%, 1);
+$brass-mark: hsla(36, 71%, 42%, 1);
+$paper-aged: hsla(38, 67%, 88%, 1);
+$catalog-blue: hsla(113, 33%, 26%, 1);
+$stamp-red: hsla(358, 64%, 37%, 1);
+$index-tan: hsla(30, 20%, 80%, 1);
+$margin-gray: hsla(25, 5%, 45%, 1);
+$glow-cream: hsla(48, 100%, 93%, 1);
+
+/* SCSS RGB */
+$archive-ink: rgba(28, 25, 23, 1);
+$leather-brown: rgba(92, 64, 51, 1);
+$brass-mark: rgba(183, 121, 31, 1);
+$paper-aged: rgba(245, 230, 204, 1);
+$catalog-blue: rgba(49, 87, 44, 1);
+$stamp-red: rgba(155, 34, 38, 1);
+$index-tan: rgba(214, 204, 194, 1);
+$margin-gray: rgba(120, 113, 108, 1);
+$glow-cream: rgba(255, 248, 220, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1c1917ff, #5c4033ff, #b7791fff, #f5e6ccff, #31572cff, #9b2226ff, #d6ccc2ff, #78716cff, #fff8dcff);
+$gradient-right: linear-gradient(90deg, #1c1917ff, #5c4033ff, #b7791fff, #f5e6ccff, #31572cff, #9b2226ff, #d6ccc2ff, #78716cff, #fff8dcff);
+$gradient-bottom: linear-gradient(180deg, #1c1917ff, #5c4033ff, #b7791fff, #f5e6ccff, #31572cff, #9b2226ff, #d6ccc2ff, #78716cff, #fff8dcff);
+$gradient-left: linear-gradient(270deg, #1c1917ff, #5c4033ff, #b7791fff, #f5e6ccff, #31572cff, #9b2226ff, #d6ccc2ff, #78716cff, #fff8dcff);
+$gradient-top-right: linear-gradient(45deg, #1c1917ff, #5c4033ff, #b7791fff, #f5e6ccff, #31572cff, #9b2226ff, #d6ccc2ff, #78716cff, #fff8dcff);
+$gradient-bottom-right: linear-gradient(135deg, #1c1917ff, #5c4033ff, #b7791fff, #f5e6ccff, #31572cff, #9b2226ff, #d6ccc2ff, #78716cff, #fff8dcff);
+$gradient-top-left: linear-gradient(225deg, #1c1917ff, #5c4033ff, #b7791fff, #f5e6ccff, #31572cff, #9b2226ff, #d6ccc2ff, #78716cff, #fff8dcff);
+$gradient-bottom-left: linear-gradient(315deg, #1c1917ff, #5c4033ff, #b7791fff, #f5e6ccff, #31572cff, #9b2226ff, #d6ccc2ff, #78716cff, #fff8dcff);
+$gradient-radial: radial-gradient(#1c1917ff, #5c4033ff, #b7791fff, #f5e6ccff, #31572cff, #9b2226ff, #d6ccc2ff, #78716cff, #fff8dcff);
+
+/* SCSS Map */
+$archive-glow-map: (
+    "archive-ink": #1c1917ff,
+    "leather-brown": #5c4033ff,
+    "brass-mark": #b7791fff,
+    "paper-aged": #f5e6ccff,
+    "catalog-blue": #31572cff,
+    "stamp-red": #9b2226ff,
+    "index-tan": #d6ccc2ff,
+    "margin-gray": #78716cff,
+    "glow-cream": #fff8dcff
+);

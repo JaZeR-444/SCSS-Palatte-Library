@@ -1,0 +1,111 @@
+/*---
+id: imperial-velvet-atlas
+name: Imperial Velvet Atlas
+author: JaZeR-444
+version: 1.0.0
+category: Purple & Regal
+count: 10
+description: A regal purple palette with velvet shadows, saturated violet, and pale royal highlights.
+tags:
+  mood:
+  - purple
+  - regal
+  aesthetic:
+  - Luxury
+  - Velvet
+intent: A purple-focused 10-color palette designed for luxury ui, portfolio, brand accent.
+suggested_use:
+- Luxury UI
+- Portfolio
+- Brand Accent
+url: https://coolors.co/0e061a-1f0b3d-37106b-5521a3-7c3aed-a78bfa-c4b5fd-e9d5ff-faf5ff-fff7ed
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--imperial-velvet-atlas-velvet-void: #0e061aff;
+--imperial-velvet-atlas-imperial-shadow: #1f0b3dff;
+--imperial-velvet-atlas-royal-plum: #37106bff;
+--imperial-velvet-atlas-crown-violet: #5521a3ff;
+--imperial-velvet-atlas-regal-purple: #7c3aedff;
+--imperial-velvet-atlas-silk-lavender: #a78bfaff;
+--imperial-velvet-atlas-court-lilac: #c4b5fdff;
+--imperial-velvet-atlas-veil-mist: #e9d5ffff;
+--imperial-velvet-atlas-palace-white: #faf5ffff;
+--imperial-velvet-atlas-champagne-glow: #fff7edff;
+
+/* CSS HSL */
+--imperial-velvet-atlas-velvet-void: hsla(264, 63%, 6%, 1);
+--imperial-velvet-atlas-imperial-shadow: hsla(264, 69%, 14%, 1);
+--imperial-velvet-atlas-royal-plum: hsla(266, 74%, 24%, 1);
+--imperial-velvet-atlas-crown-violet: hsla(264, 66%, 38%, 1);
+--imperial-velvet-atlas-regal-purple: hsla(262, 83%, 58%, 1);
+--imperial-velvet-atlas-silk-lavender: hsla(255, 92%, 76%, 1);
+--imperial-velvet-atlas-court-lilac: hsla(252, 95%, 85%, 1);
+--imperial-velvet-atlas-veil-mist: hsla(269, 100%, 92%, 1);
+--imperial-velvet-atlas-palace-white: hsla(270, 100%, 98%, 1);
+--imperial-velvet-atlas-champagne-glow: hsla(33, 100%, 96%, 1);
+}
+
+/* SCSS HEX */
+$imperial-velvet-atlas-velvet-void: #0e061aff;
+$imperial-velvet-atlas-imperial-shadow: #1f0b3dff;
+$imperial-velvet-atlas-royal-plum: #37106bff;
+$imperial-velvet-atlas-crown-violet: #5521a3ff;
+$imperial-velvet-atlas-regal-purple: #7c3aedff;
+$imperial-velvet-atlas-silk-lavender: #a78bfaff;
+$imperial-velvet-atlas-court-lilac: #c4b5fdff;
+$imperial-velvet-atlas-veil-mist: #e9d5ffff;
+$imperial-velvet-atlas-palace-white: #faf5ffff;
+$imperial-velvet-atlas-champagne-glow: #fff7edff;
+
+/* SCSS HSL */
+$imperial-velvet-atlas-velvet-void: hsla(264, 63%, 6%, 1);
+$imperial-velvet-atlas-imperial-shadow: hsla(264, 69%, 14%, 1);
+$imperial-velvet-atlas-royal-plum: hsla(266, 74%, 24%, 1);
+$imperial-velvet-atlas-crown-violet: hsla(264, 66%, 38%, 1);
+$imperial-velvet-atlas-regal-purple: hsla(262, 83%, 58%, 1);
+$imperial-velvet-atlas-silk-lavender: hsla(255, 92%, 76%, 1);
+$imperial-velvet-atlas-court-lilac: hsla(252, 95%, 85%, 1);
+$imperial-velvet-atlas-veil-mist: hsla(269, 100%, 92%, 1);
+$imperial-velvet-atlas-palace-white: hsla(270, 100%, 98%, 1);
+$imperial-velvet-atlas-champagne-glow: hsla(33, 100%, 96%, 1);
+
+/* SCSS RGB */
+$imperial-velvet-atlas-velvet-void: rgba(14, 6, 26, 1);
+$imperial-velvet-atlas-imperial-shadow: rgba(31, 11, 61, 1);
+$imperial-velvet-atlas-royal-plum: rgba(55, 16, 107, 1);
+$imperial-velvet-atlas-crown-violet: rgba(85, 33, 163, 1);
+$imperial-velvet-atlas-regal-purple: rgba(124, 58, 237, 1);
+$imperial-velvet-atlas-silk-lavender: rgba(167, 139, 250, 1);
+$imperial-velvet-atlas-court-lilac: rgba(196, 181, 253, 1);
+$imperial-velvet-atlas-veil-mist: rgba(233, 213, 255, 1);
+$imperial-velvet-atlas-palace-white: rgba(250, 245, 255, 1);
+$imperial-velvet-atlas-champagne-glow: rgba(255, 247, 237, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0e061aff, #1f0b3dff, #37106bff, #5521a3ff, #7c3aedff, #a78bfaff, #c4b5fdff, #e9d5ffff, #faf5ffff, #fff7edff);
+$gradient-right: linear-gradient(90deg, #0e061aff, #1f0b3dff, #37106bff, #5521a3ff, #7c3aedff, #a78bfaff, #c4b5fdff, #e9d5ffff, #faf5ffff, #fff7edff);
+$gradient-bottom: linear-gradient(180deg, #0e061aff, #1f0b3dff, #37106bff, #5521a3ff, #7c3aedff, #a78bfaff, #c4b5fdff, #e9d5ffff, #faf5ffff, #fff7edff);
+$gradient-left: linear-gradient(270deg, #0e061aff, #1f0b3dff, #37106bff, #5521a3ff, #7c3aedff, #a78bfaff, #c4b5fdff, #e9d5ffff, #faf5ffff, #fff7edff);
+$gradient-top-right: linear-gradient(45deg, #0e061aff, #1f0b3dff, #37106bff, #5521a3ff, #7c3aedff, #a78bfaff, #c4b5fdff, #e9d5ffff, #faf5ffff, #fff7edff);
+$gradient-bottom-right: linear-gradient(135deg, #0e061aff, #1f0b3dff, #37106bff, #5521a3ff, #7c3aedff, #a78bfaff, #c4b5fdff, #e9d5ffff, #faf5ffff, #fff7edff);
+$gradient-top-left: linear-gradient(225deg, #0e061aff, #1f0b3dff, #37106bff, #5521a3ff, #7c3aedff, #a78bfaff, #c4b5fdff, #e9d5ffff, #faf5ffff, #fff7edff);
+$gradient-bottom-left: linear-gradient(315deg, #0e061aff, #1f0b3dff, #37106bff, #5521a3ff, #7c3aedff, #a78bfaff, #c4b5fdff, #e9d5ffff, #faf5ffff, #fff7edff);
+$gradient-radial: radial-gradient(#0e061aff, #1f0b3dff, #37106bff, #5521a3ff, #7c3aedff, #a78bfaff, #c4b5fdff, #e9d5ffff, #faf5ffff, #fff7edff);
+
+/* SCSS Map */
+$imperial-velvet-atlas-map: (
+    "imperial-velvet-atlas-velvet-void": #0e061aff,
+    "imperial-velvet-atlas-imperial-shadow": #1f0b3dff,
+    "imperial-velvet-atlas-royal-plum": #37106bff,
+    "imperial-velvet-atlas-crown-violet": #5521a3ff,
+    "imperial-velvet-atlas-regal-purple": #7c3aedff,
+    "imperial-velvet-atlas-silk-lavender": #a78bfaff,
+    "imperial-velvet-atlas-court-lilac": #c4b5fdff,
+    "imperial-velvet-atlas-veil-mist": #e9d5ffff,
+    "imperial-velvet-atlas-palace-white": #faf5ffff,
+    "imperial-velvet-atlas-champagne-glow": #fff7edff
+);

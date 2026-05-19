@@ -1,0 +1,69 @@
+/*---
+id: orchid-slate
+name: Orchid Slate
+author: JaZeR-444
+version: 1.0.0
+category: Elegant & Muted
+count: 3
+description: A refined orchid and slate palette for calm premium interfaces.
+tags:
+  mood:
+  - elegant
+  - muted
+  aesthetic:
+  - Portfolio
+  - Luxury
+intent: A 3-color palette designed for portfolio, cards, forms.
+suggested_use:
+- Portfolio
+- Cards
+- Forms
+url: https://coolors.co/3d314a-b565a7-f3e8ee
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--slate-plum: #3d314aff;
+--orchid-mist: #b565a7ff;
+--pearl-fog: #f3e8eeff;
+
+/* CSS HSL */
+--slate-plum: hsla(269, 20%, 24%, 1);
+--orchid-mist: hsla(311, 35%, 55%, 1);
+--pearl-fog: hsla(327, 31%, 93%, 1);
+}
+
+/* SCSS HEX */
+$slate-plum: #3d314aff;
+$orchid-mist: #b565a7ff;
+$pearl-fog: #f3e8eeff;
+
+/* SCSS HSL */
+$slate-plum: hsla(269, 20%, 24%, 1);
+$orchid-mist: hsla(311, 35%, 55%, 1);
+$pearl-fog: hsla(327, 31%, 93%, 1);
+
+/* SCSS RGB */
+$slate-plum: rgba(61, 49, 74, 1);
+$orchid-mist: rgba(181, 101, 167, 1);
+$pearl-fog: rgba(243, 232, 238, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #3d314aff, #b565a7ff, #f3e8eeff);
+$gradient-right: linear-gradient(90deg, #3d314aff, #b565a7ff, #f3e8eeff);
+$gradient-bottom: linear-gradient(180deg, #3d314aff, #b565a7ff, #f3e8eeff);
+$gradient-left: linear-gradient(270deg, #3d314aff, #b565a7ff, #f3e8eeff);
+$gradient-top-right: linear-gradient(45deg, #3d314aff, #b565a7ff, #f3e8eeff);
+$gradient-bottom-right: linear-gradient(135deg, #3d314aff, #b565a7ff, #f3e8eeff);
+$gradient-top-left: linear-gradient(225deg, #3d314aff, #b565a7ff, #f3e8eeff);
+$gradient-bottom-left: linear-gradient(315deg, #3d314aff, #b565a7ff, #f3e8eeff);
+$gradient-radial: radial-gradient(#3d314aff, #b565a7ff, #f3e8eeff);
+
+/* SCSS Map */
+$orchid-slate-map: (
+    "slate-plum": #3d314aff,
+    "orchid-mist": #b565a7ff,
+    "pearl-fog": #f3e8eeff
+);

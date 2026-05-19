@@ -1,0 +1,69 @@
+/*---
+id: sapphire-ledger-trio
+name: Sapphire Ledger Trio
+author: JaZeR-444
+version: 1.0.0
+category: Blue & Professional
+count: 3
+description: A professional sapphire palette for data-heavy interfaces, reports, and trustworthy product screens.
+tags:
+  mood:
+  - blue
+  - professional
+  aesthetic:
+  - Finance
+  - SaaS
+intent: A blue-focused 3-color palette designed for finance, reports, dashboard.
+suggested_use:
+- Finance
+- Reports
+- Dashboard
+url: https://coolors.co/0a2540-12355b-1d4e89
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--sapphire-ledger-trio-ledger-navy: #0a2540ff;
+--sapphire-ledger-trio-sapphire-book: #12355bff;
+--sapphire-ledger-trio-report-blue: #1d4e89ff;
+
+/* CSS HSL */
+--sapphire-ledger-trio-ledger-navy: hsla(210, 73%, 15%, 1);
+--sapphire-ledger-trio-sapphire-book: hsla(211, 67%, 21%, 1);
+--sapphire-ledger-trio-report-blue: hsla(213, 65%, 33%, 1);
+}
+
+/* SCSS HEX */
+$sapphire-ledger-trio-ledger-navy: #0a2540ff;
+$sapphire-ledger-trio-sapphire-book: #12355bff;
+$sapphire-ledger-trio-report-blue: #1d4e89ff;
+
+/* SCSS HSL */
+$sapphire-ledger-trio-ledger-navy: hsla(210, 73%, 15%, 1);
+$sapphire-ledger-trio-sapphire-book: hsla(211, 67%, 21%, 1);
+$sapphire-ledger-trio-report-blue: hsla(213, 65%, 33%, 1);
+
+/* SCSS RGB */
+$sapphire-ledger-trio-ledger-navy: rgba(10, 37, 64, 1);
+$sapphire-ledger-trio-sapphire-book: rgba(18, 53, 91, 1);
+$sapphire-ledger-trio-report-blue: rgba(29, 78, 137, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0a2540ff, #12355bff, #1d4e89ff);
+$gradient-right: linear-gradient(90deg, #0a2540ff, #12355bff, #1d4e89ff);
+$gradient-bottom: linear-gradient(180deg, #0a2540ff, #12355bff, #1d4e89ff);
+$gradient-left: linear-gradient(270deg, #0a2540ff, #12355bff, #1d4e89ff);
+$gradient-top-right: linear-gradient(45deg, #0a2540ff, #12355bff, #1d4e89ff);
+$gradient-bottom-right: linear-gradient(135deg, #0a2540ff, #12355bff, #1d4e89ff);
+$gradient-top-left: linear-gradient(225deg, #0a2540ff, #12355bff, #1d4e89ff);
+$gradient-bottom-left: linear-gradient(315deg, #0a2540ff, #12355bff, #1d4e89ff);
+$gradient-radial: radial-gradient(#0a2540ff, #12355bff, #1d4e89ff);
+
+/* SCSS Map */
+$sapphire-ledger-trio-map: (
+    "sapphire-ledger-trio-ledger-navy": #0a2540ff,
+    "sapphire-ledger-trio-sapphire-book": #12355bff,
+    "sapphire-ledger-trio-report-blue": #1d4e89ff
+);

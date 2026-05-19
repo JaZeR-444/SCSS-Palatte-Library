@@ -1,0 +1,93 @@
+/*---
+id: ultraviolet-bloom
+name: Ultraviolet Bloom
+author: JaZeR-444
+version: 1.0.0
+category: Purple & Expressive
+count: 7
+description: An expressive ultraviolet palette with deep purple foundations, bloom tones, and warm white.
+tags:
+  mood:
+  - purple
+  - expressive
+  aesthetic:
+  - Ultraviolet
+  - Bloom
+intent: A purple-focused 7-color palette designed for events, music, campaign.
+suggested_use:
+- Events
+- Music
+- Campaign
+url: https://coolors.co/0f0529-2e1065-5b21b6-9333ea-c084fc-f0abfc-fff7ed
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--ultra-night: #0f0529ff;
+--violet-root: #2e1065ff;
+--royal-stem: #5b21b6ff;
+--bloom-violet: #9333eaff;
+--petal-lavender: #c084fcff;
+--orchid-glow: #f0abfcff;
+--warm-bloom: #fff7edff;
+
+/* CSS HSL */
+--ultra-night: hsla(257, 78%, 9%, 1);
+--violet-root: hsla(261, 73%, 23%, 1);
+--royal-stem: hsla(263, 69%, 42%, 1);
+--bloom-violet: hsla(271, 81%, 56%, 1);
+--petal-lavender: hsla(270, 95%, 75%, 1);
+--orchid-glow: hsla(291, 93%, 83%, 1);
+--warm-bloom: hsla(33, 100%, 96%, 1);
+}
+
+/* SCSS HEX */
+$ultra-night: #0f0529ff;
+$violet-root: #2e1065ff;
+$royal-stem: #5b21b6ff;
+$bloom-violet: #9333eaff;
+$petal-lavender: #c084fcff;
+$orchid-glow: #f0abfcff;
+$warm-bloom: #fff7edff;
+
+/* SCSS HSL */
+$ultra-night: hsla(257, 78%, 9%, 1);
+$violet-root: hsla(261, 73%, 23%, 1);
+$royal-stem: hsla(263, 69%, 42%, 1);
+$bloom-violet: hsla(271, 81%, 56%, 1);
+$petal-lavender: hsla(270, 95%, 75%, 1);
+$orchid-glow: hsla(291, 93%, 83%, 1);
+$warm-bloom: hsla(33, 100%, 96%, 1);
+
+/* SCSS RGB */
+$ultra-night: rgba(15, 5, 41, 1);
+$violet-root: rgba(46, 16, 101, 1);
+$royal-stem: rgba(91, 33, 182, 1);
+$bloom-violet: rgba(147, 51, 234, 1);
+$petal-lavender: rgba(192, 132, 252, 1);
+$orchid-glow: rgba(240, 171, 252, 1);
+$warm-bloom: rgba(255, 247, 237, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0f0529ff, #2e1065ff, #5b21b6ff, #9333eaff, #c084fcff, #f0abfcff, #fff7edff);
+$gradient-right: linear-gradient(90deg, #0f0529ff, #2e1065ff, #5b21b6ff, #9333eaff, #c084fcff, #f0abfcff, #fff7edff);
+$gradient-bottom: linear-gradient(180deg, #0f0529ff, #2e1065ff, #5b21b6ff, #9333eaff, #c084fcff, #f0abfcff, #fff7edff);
+$gradient-left: linear-gradient(270deg, #0f0529ff, #2e1065ff, #5b21b6ff, #9333eaff, #c084fcff, #f0abfcff, #fff7edff);
+$gradient-top-right: linear-gradient(45deg, #0f0529ff, #2e1065ff, #5b21b6ff, #9333eaff, #c084fcff, #f0abfcff, #fff7edff);
+$gradient-bottom-right: linear-gradient(135deg, #0f0529ff, #2e1065ff, #5b21b6ff, #9333eaff, #c084fcff, #f0abfcff, #fff7edff);
+$gradient-top-left: linear-gradient(225deg, #0f0529ff, #2e1065ff, #5b21b6ff, #9333eaff, #c084fcff, #f0abfcff, #fff7edff);
+$gradient-bottom-left: linear-gradient(315deg, #0f0529ff, #2e1065ff, #5b21b6ff, #9333eaff, #c084fcff, #f0abfcff, #fff7edff);
+$gradient-radial: radial-gradient(#0f0529ff, #2e1065ff, #5b21b6ff, #9333eaff, #c084fcff, #f0abfcff, #fff7edff);
+
+/* SCSS Map */
+$ultraviolet-bloom-map: (
+    "ultra-night": #0f0529ff,
+    "violet-root": #2e1065ff,
+    "royal-stem": #5b21b6ff,
+    "bloom-violet": #9333eaff,
+    "petal-lavender": #c084fcff,
+    "orchid-glow": #f0abfcff,
+    "warm-bloom": #fff7edff
+);

@@ -1,0 +1,99 @@
+/*---
+id: azure-harbor-system
+name: Azure Harbor System
+author: JaZeR-444
+version: 1.0.0
+category: Blue & Coastal
+count: 8
+description: A coastal blue palette with navy depth, harbor midtones, and clean sea-light surfaces.
+tags:
+  mood:
+  - blue
+  - coastal
+  aesthetic:
+  - Harbor
+  - Maritime
+intent: A blue-focused 8-color palette designed for travel, maps, dashboard.
+suggested_use:
+- Travel
+- Maps
+- Dashboard
+url: https://coolors.co/061826-0b2e4a-0f4c81-1d72aa-38a3d1-7dd3fc-bae6fd-e0f2fe
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--azure-harbor-system-harbor-night: #061826ff;
+--azure-harbor-system-deep-channel: #0b2e4aff;
+--azure-harbor-system-azure-harbor: #0f4c81ff;
+--azure-harbor-system-dock-blue: #1d72aaff;
+--azure-harbor-system-tide-cyan: #38a3d1ff;
+--azure-harbor-system-sky-wash: #7dd3fcff;
+--azure-harbor-system-foam-blue: #bae6fdff;
+--azure-harbor-system-mist-surface: #e0f2feff;
+
+/* CSS HSL */
+--azure-harbor-system-harbor-night: hsla(206, 73%, 9%, 1);
+--azure-harbor-system-deep-channel: hsla(207, 74%, 17%, 1);
+--azure-harbor-system-azure-harbor: hsla(208, 79%, 28%, 1);
+--azure-harbor-system-dock-blue: hsla(204, 71%, 39%, 1);
+--azure-harbor-system-tide-cyan: hsla(198, 62%, 52%, 1);
+--azure-harbor-system-sky-wash: hsla(199, 95%, 74%, 1);
+--azure-harbor-system-foam-blue: hsla(201, 94%, 86%, 1);
+--azure-harbor-system-mist-surface: hsla(204, 94%, 94%, 1);
+}
+
+/* SCSS HEX */
+$azure-harbor-system-harbor-night: #061826ff;
+$azure-harbor-system-deep-channel: #0b2e4aff;
+$azure-harbor-system-azure-harbor: #0f4c81ff;
+$azure-harbor-system-dock-blue: #1d72aaff;
+$azure-harbor-system-tide-cyan: #38a3d1ff;
+$azure-harbor-system-sky-wash: #7dd3fcff;
+$azure-harbor-system-foam-blue: #bae6fdff;
+$azure-harbor-system-mist-surface: #e0f2feff;
+
+/* SCSS HSL */
+$azure-harbor-system-harbor-night: hsla(206, 73%, 9%, 1);
+$azure-harbor-system-deep-channel: hsla(207, 74%, 17%, 1);
+$azure-harbor-system-azure-harbor: hsla(208, 79%, 28%, 1);
+$azure-harbor-system-dock-blue: hsla(204, 71%, 39%, 1);
+$azure-harbor-system-tide-cyan: hsla(198, 62%, 52%, 1);
+$azure-harbor-system-sky-wash: hsla(199, 95%, 74%, 1);
+$azure-harbor-system-foam-blue: hsla(201, 94%, 86%, 1);
+$azure-harbor-system-mist-surface: hsla(204, 94%, 94%, 1);
+
+/* SCSS RGB */
+$azure-harbor-system-harbor-night: rgba(6, 24, 38, 1);
+$azure-harbor-system-deep-channel: rgba(11, 46, 74, 1);
+$azure-harbor-system-azure-harbor: rgba(15, 76, 129, 1);
+$azure-harbor-system-dock-blue: rgba(29, 114, 170, 1);
+$azure-harbor-system-tide-cyan: rgba(56, 163, 209, 1);
+$azure-harbor-system-sky-wash: rgba(125, 211, 252, 1);
+$azure-harbor-system-foam-blue: rgba(186, 230, 253, 1);
+$azure-harbor-system-mist-surface: rgba(224, 242, 254, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #061826ff, #0b2e4aff, #0f4c81ff, #1d72aaff, #38a3d1ff, #7dd3fcff, #bae6fdff, #e0f2feff);
+$gradient-right: linear-gradient(90deg, #061826ff, #0b2e4aff, #0f4c81ff, #1d72aaff, #38a3d1ff, #7dd3fcff, #bae6fdff, #e0f2feff);
+$gradient-bottom: linear-gradient(180deg, #061826ff, #0b2e4aff, #0f4c81ff, #1d72aaff, #38a3d1ff, #7dd3fcff, #bae6fdff, #e0f2feff);
+$gradient-left: linear-gradient(270deg, #061826ff, #0b2e4aff, #0f4c81ff, #1d72aaff, #38a3d1ff, #7dd3fcff, #bae6fdff, #e0f2feff);
+$gradient-top-right: linear-gradient(45deg, #061826ff, #0b2e4aff, #0f4c81ff, #1d72aaff, #38a3d1ff, #7dd3fcff, #bae6fdff, #e0f2feff);
+$gradient-bottom-right: linear-gradient(135deg, #061826ff, #0b2e4aff, #0f4c81ff, #1d72aaff, #38a3d1ff, #7dd3fcff, #bae6fdff, #e0f2feff);
+$gradient-top-left: linear-gradient(225deg, #061826ff, #0b2e4aff, #0f4c81ff, #1d72aaff, #38a3d1ff, #7dd3fcff, #bae6fdff, #e0f2feff);
+$gradient-bottom-left: linear-gradient(315deg, #061826ff, #0b2e4aff, #0f4c81ff, #1d72aaff, #38a3d1ff, #7dd3fcff, #bae6fdff, #e0f2feff);
+$gradient-radial: radial-gradient(#061826ff, #0b2e4aff, #0f4c81ff, #1d72aaff, #38a3d1ff, #7dd3fcff, #bae6fdff, #e0f2feff);
+
+/* SCSS Map */
+$azure-harbor-system-map: (
+    "azure-harbor-system-harbor-night": #061826ff,
+    "azure-harbor-system-deep-channel": #0b2e4aff,
+    "azure-harbor-system-azure-harbor": #0f4c81ff,
+    "azure-harbor-system-dock-blue": #1d72aaff,
+    "azure-harbor-system-tide-cyan": #38a3d1ff,
+    "azure-harbor-system-sky-wash": #7dd3fcff,
+    "azure-harbor-system-foam-blue": #bae6fdff,
+    "azure-harbor-system-mist-surface": #e0f2feff
+);

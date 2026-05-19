@@ -1,0 +1,93 @@
+/*---
+id: frosted-orchard
+name: Frosted Orchard
+author: JaZeR-444
+version: 1.0.0
+category: Fresh & Delicate
+count: 7
+description: A delicate orchard palette with frosted greens, berry accents, and airy neutrals.
+tags:
+  mood:
+  - fresh
+  - delicate
+  aesthetic:
+  - Botanical
+  - Wellness
+intent: A 7-color palette designed for wellness, cards, landing page.
+suggested_use:
+- Wellness
+- Cards
+- Landing Page
+url: https://coolors.co/1b263b-81b29a-e07a5f-f2cc8f-c7f9cc-f8f9fa-6b7280
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--orchard-ink: #1b263bff;
+--frost-leaf: #81b29aff;
+--apple-skin: #e07a5fff;
+--petal-pink: #f2cc8fff;
+--mist-green: #c7f9ccff;
+--frost-white: #f8f9faff;
+--branch-gray: #6b7280ff;
+
+/* CSS HSL */
+--orchard-ink: hsla(219, 37%, 17%, 1);
+--frost-leaf: hsla(151, 24%, 60%, 1);
+--apple-skin: hsla(13, 68%, 63%, 1);
+--petal-pink: hsla(37, 79%, 75%, 1);
+--mist-green: hsla(126, 81%, 88%, 1);
+--frost-white: hsla(210, 17%, 98%, 1);
+--branch-gray: hsla(220, 9%, 46%, 1);
+}
+
+/* SCSS HEX */
+$orchard-ink: #1b263bff;
+$frost-leaf: #81b29aff;
+$apple-skin: #e07a5fff;
+$petal-pink: #f2cc8fff;
+$mist-green: #c7f9ccff;
+$frost-white: #f8f9faff;
+$branch-gray: #6b7280ff;
+
+/* SCSS HSL */
+$orchard-ink: hsla(219, 37%, 17%, 1);
+$frost-leaf: hsla(151, 24%, 60%, 1);
+$apple-skin: hsla(13, 68%, 63%, 1);
+$petal-pink: hsla(37, 79%, 75%, 1);
+$mist-green: hsla(126, 81%, 88%, 1);
+$frost-white: hsla(210, 17%, 98%, 1);
+$branch-gray: hsla(220, 9%, 46%, 1);
+
+/* SCSS RGB */
+$orchard-ink: rgba(27, 38, 59, 1);
+$frost-leaf: rgba(129, 178, 154, 1);
+$apple-skin: rgba(224, 122, 95, 1);
+$petal-pink: rgba(242, 204, 143, 1);
+$mist-green: rgba(199, 249, 204, 1);
+$frost-white: rgba(248, 249, 250, 1);
+$branch-gray: rgba(107, 114, 128, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1b263bff, #81b29aff, #e07a5fff, #f2cc8fff, #c7f9ccff, #f8f9faff, #6b7280ff);
+$gradient-right: linear-gradient(90deg, #1b263bff, #81b29aff, #e07a5fff, #f2cc8fff, #c7f9ccff, #f8f9faff, #6b7280ff);
+$gradient-bottom: linear-gradient(180deg, #1b263bff, #81b29aff, #e07a5fff, #f2cc8fff, #c7f9ccff, #f8f9faff, #6b7280ff);
+$gradient-left: linear-gradient(270deg, #1b263bff, #81b29aff, #e07a5fff, #f2cc8fff, #c7f9ccff, #f8f9faff, #6b7280ff);
+$gradient-top-right: linear-gradient(45deg, #1b263bff, #81b29aff, #e07a5fff, #f2cc8fff, #c7f9ccff, #f8f9faff, #6b7280ff);
+$gradient-bottom-right: linear-gradient(135deg, #1b263bff, #81b29aff, #e07a5fff, #f2cc8fff, #c7f9ccff, #f8f9faff, #6b7280ff);
+$gradient-top-left: linear-gradient(225deg, #1b263bff, #81b29aff, #e07a5fff, #f2cc8fff, #c7f9ccff, #f8f9faff, #6b7280ff);
+$gradient-bottom-left: linear-gradient(315deg, #1b263bff, #81b29aff, #e07a5fff, #f2cc8fff, #c7f9ccff, #f8f9faff, #6b7280ff);
+$gradient-radial: radial-gradient(#1b263bff, #81b29aff, #e07a5fff, #f2cc8fff, #c7f9ccff, #f8f9faff, #6b7280ff);
+
+/* SCSS Map */
+$frosted-orchard-map: (
+    "orchard-ink": #1b263bff,
+    "frost-leaf": #81b29aff,
+    "apple-skin": #e07a5fff,
+    "petal-pink": #f2cc8fff,
+    "mist-green": #c7f9ccff,
+    "frost-white": #f8f9faff,
+    "branch-gray": #6b7280ff
+);

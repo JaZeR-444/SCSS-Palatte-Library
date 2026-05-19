@@ -1,0 +1,75 @@
+/*---
+id: amethyst-haze
+name: Amethyst Haze
+author: JaZeR-444
+version: 1.0.0
+category: Purple & Soft
+count: 4
+description: A hazy amethyst palette for calm panels, premium screens, and soft gradients.
+tags:
+  mood:
+  - purple
+  - soft
+  aesthetic:
+  - Amethyst
+  - Glass UI
+intent: A purple-focused 4-color palette designed for dashboard, landing page, forms.
+suggested_use:
+- Dashboard
+- Landing Page
+- Forms
+url: https://coolors.co/160f29-5b21b6-a78bfa-f3e8ff
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--haze-black: #160f29ff;
+--amethyst-core: #5b21b6ff;
+--lavender-beam: #a78bfaff;
+--haze-white: #f3e8ffff;
+
+/* CSS HSL */
+--haze-black: hsla(256, 46%, 11%, 1);
+--amethyst-core: hsla(263, 69%, 42%, 1);
+--lavender-beam: hsla(255, 92%, 76%, 1);
+--haze-white: hsla(269, 100%, 95%, 1);
+}
+
+/* SCSS HEX */
+$haze-black: #160f29ff;
+$amethyst-core: #5b21b6ff;
+$lavender-beam: #a78bfaff;
+$haze-white: #f3e8ffff;
+
+/* SCSS HSL */
+$haze-black: hsla(256, 46%, 11%, 1);
+$amethyst-core: hsla(263, 69%, 42%, 1);
+$lavender-beam: hsla(255, 92%, 76%, 1);
+$haze-white: hsla(269, 100%, 95%, 1);
+
+/* SCSS RGB */
+$haze-black: rgba(22, 15, 41, 1);
+$amethyst-core: rgba(91, 33, 182, 1);
+$lavender-beam: rgba(167, 139, 250, 1);
+$haze-white: rgba(243, 232, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #160f29ff, #5b21b6ff, #a78bfaff, #f3e8ffff);
+$gradient-right: linear-gradient(90deg, #160f29ff, #5b21b6ff, #a78bfaff, #f3e8ffff);
+$gradient-bottom: linear-gradient(180deg, #160f29ff, #5b21b6ff, #a78bfaff, #f3e8ffff);
+$gradient-left: linear-gradient(270deg, #160f29ff, #5b21b6ff, #a78bfaff, #f3e8ffff);
+$gradient-top-right: linear-gradient(45deg, #160f29ff, #5b21b6ff, #a78bfaff, #f3e8ffff);
+$gradient-bottom-right: linear-gradient(135deg, #160f29ff, #5b21b6ff, #a78bfaff, #f3e8ffff);
+$gradient-top-left: linear-gradient(225deg, #160f29ff, #5b21b6ff, #a78bfaff, #f3e8ffff);
+$gradient-bottom-left: linear-gradient(315deg, #160f29ff, #5b21b6ff, #a78bfaff, #f3e8ffff);
+$gradient-radial: radial-gradient(#160f29ff, #5b21b6ff, #a78bfaff, #f3e8ffff);
+
+/* SCSS Map */
+$amethyst-haze-map: (
+    "haze-black": #160f29ff,
+    "amethyst-core": #5b21b6ff,
+    "lavender-beam": #a78bfaff,
+    "haze-white": #f3e8ffff
+);

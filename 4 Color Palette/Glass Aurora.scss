@@ -1,0 +1,75 @@
+/*---
+id: glass-aurora
+name: Glass Aurora
+author: JaZeR-444
+version: 1.0.0
+category: Cool & Luminous
+count: 4
+description: A crisp glassmorphism palette with dark structure, cyan glow, mint light, and clean surface.
+tags:
+  mood:
+  - cool
+  - luminous
+  aesthetic:
+  - Glassmorphism
+  - Aurora
+intent: A 4-color palette for translucent panels, SaaS surfaces, and futuristic UI.
+suggested_use:
+- Dashboard
+- Glass UI
+- Product Page
+url: https://coolors.co/0f172a-22d3ee-a7f3d0-f8fafc
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--aurora-ink: #0f172aff;
+--polar-cyan: #22d3eeff;
+--frosted-mint: #a7f3d0ff;
+--glass-white: #f8fafcff;
+
+/* CSS HSL */
+--aurora-ink: hsla(222, 47%, 11%, 1);
+--polar-cyan: hsla(188, 86%, 53%, 1);
+--frosted-mint: hsla(152, 76%, 80%, 1);
+--glass-white: hsla(210, 40%, 98%, 1);
+}
+
+/* SCSS HEX */
+$aurora-ink: #0f172aff;
+$polar-cyan: #22d3eeff;
+$frosted-mint: #a7f3d0ff;
+$glass-white: #f8fafcff;
+
+/* SCSS HSL */
+$aurora-ink: hsla(222, 47%, 11%, 1);
+$polar-cyan: hsla(188, 86%, 53%, 1);
+$frosted-mint: hsla(152, 76%, 80%, 1);
+$glass-white: hsla(210, 40%, 98%, 1);
+
+/* SCSS RGB */
+$aurora-ink: rgba(15, 23, 42, 1);
+$polar-cyan: rgba(34, 211, 238, 1);
+$frosted-mint: rgba(167, 243, 208, 1);
+$glass-white: rgba(248, 250, 252, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0f172aff, #22d3eeff, #a7f3d0ff, #f8fafcff);
+$gradient-right: linear-gradient(90deg, #0f172aff, #22d3eeff, #a7f3d0ff, #f8fafcff);
+$gradient-bottom: linear-gradient(180deg, #0f172aff, #22d3eeff, #a7f3d0ff, #f8fafcff);
+$gradient-left: linear-gradient(270deg, #0f172aff, #22d3eeff, #a7f3d0ff, #f8fafcff);
+$gradient-top-right: linear-gradient(45deg, #0f172aff, #22d3eeff, #a7f3d0ff, #f8fafcff);
+$gradient-bottom-right: linear-gradient(135deg, #0f172aff, #22d3eeff, #a7f3d0ff, #f8fafcff);
+$gradient-top-left: linear-gradient(225deg, #0f172aff, #22d3eeff, #a7f3d0ff, #f8fafcff);
+$gradient-bottom-left: linear-gradient(315deg, #0f172aff, #22d3eeff, #a7f3d0ff, #f8fafcff);
+$gradient-radial: radial-gradient(#0f172aff, #22d3eeff, #a7f3d0ff, #f8fafcff);
+
+/* SCSS Map */
+$glass-aurora-map: (
+    "aurora-ink": #0f172aff,
+    "polar-cyan": #22d3eeff,
+    "frosted-mint": #a7f3d0ff,
+    "glass-white": #f8fafcff
+);

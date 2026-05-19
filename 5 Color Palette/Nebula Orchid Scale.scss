@@ -1,0 +1,81 @@
+/*---
+id: nebula-orchid-scale
+name: Nebula Orchid Scale
+author: JaZeR-444
+version: 1.0.0
+category: Purple & Cosmic
+count: 5
+description: A cosmic orchid palette moving from deep space purple into radiant magenta and soft starlight.
+tags:
+  mood:
+  - purple
+  - cosmic
+  aesthetic:
+  - Nebula
+  - Orchid
+intent: A purple-focused 5-color palette designed for hero ui, events, creative tools.
+suggested_use:
+- Hero UI
+- Events
+- Creative Tools
+url: https://coolors.co/080012-18002f-2f075e-5a189a-8f2fd1
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--nebula-orchid-scale-nebula-black: #080012ff;
+--nebula-orchid-scale-orbit-plum: #18002fff;
+--nebula-orchid-scale-deep-orchid: #2f075eff;
+--nebula-orchid-scale-stellar-violet: #5a189aff;
+--nebula-orchid-scale-nova-purple: #8f2fd1ff;
+
+/* CSS HSL */
+--nebula-orchid-scale-nebula-black: hsla(267, 100%, 4%, 1);
+--nebula-orchid-scale-orbit-plum: hsla(271, 100%, 9%, 1);
+--nebula-orchid-scale-deep-orchid: hsla(268, 86%, 20%, 1);
+--nebula-orchid-scale-stellar-violet: hsla(270, 73%, 35%, 1);
+--nebula-orchid-scale-nova-purple: hsla(276, 64%, 50%, 1);
+}
+
+/* SCSS HEX */
+$nebula-orchid-scale-nebula-black: #080012ff;
+$nebula-orchid-scale-orbit-plum: #18002fff;
+$nebula-orchid-scale-deep-orchid: #2f075eff;
+$nebula-orchid-scale-stellar-violet: #5a189aff;
+$nebula-orchid-scale-nova-purple: #8f2fd1ff;
+
+/* SCSS HSL */
+$nebula-orchid-scale-nebula-black: hsla(267, 100%, 4%, 1);
+$nebula-orchid-scale-orbit-plum: hsla(271, 100%, 9%, 1);
+$nebula-orchid-scale-deep-orchid: hsla(268, 86%, 20%, 1);
+$nebula-orchid-scale-stellar-violet: hsla(270, 73%, 35%, 1);
+$nebula-orchid-scale-nova-purple: hsla(276, 64%, 50%, 1);
+
+/* SCSS RGB */
+$nebula-orchid-scale-nebula-black: rgba(8, 0, 18, 1);
+$nebula-orchid-scale-orbit-plum: rgba(24, 0, 47, 1);
+$nebula-orchid-scale-deep-orchid: rgba(47, 7, 94, 1);
+$nebula-orchid-scale-stellar-violet: rgba(90, 24, 154, 1);
+$nebula-orchid-scale-nova-purple: rgba(143, 47, 209, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #080012ff, #18002fff, #2f075eff, #5a189aff, #8f2fd1ff);
+$gradient-right: linear-gradient(90deg, #080012ff, #18002fff, #2f075eff, #5a189aff, #8f2fd1ff);
+$gradient-bottom: linear-gradient(180deg, #080012ff, #18002fff, #2f075eff, #5a189aff, #8f2fd1ff);
+$gradient-left: linear-gradient(270deg, #080012ff, #18002fff, #2f075eff, #5a189aff, #8f2fd1ff);
+$gradient-top-right: linear-gradient(45deg, #080012ff, #18002fff, #2f075eff, #5a189aff, #8f2fd1ff);
+$gradient-bottom-right: linear-gradient(135deg, #080012ff, #18002fff, #2f075eff, #5a189aff, #8f2fd1ff);
+$gradient-top-left: linear-gradient(225deg, #080012ff, #18002fff, #2f075eff, #5a189aff, #8f2fd1ff);
+$gradient-bottom-left: linear-gradient(315deg, #080012ff, #18002fff, #2f075eff, #5a189aff, #8f2fd1ff);
+$gradient-radial: radial-gradient(#080012ff, #18002fff, #2f075eff, #5a189aff, #8f2fd1ff);
+
+/* SCSS Map */
+$nebula-orchid-scale-map: (
+    "nebula-orchid-scale-nebula-black": #080012ff,
+    "nebula-orchid-scale-orbit-plum": #18002fff,
+    "nebula-orchid-scale-deep-orchid": #2f075eff,
+    "nebula-orchid-scale-stellar-violet": #5a189aff,
+    "nebula-orchid-scale-nova-purple": #8f2fd1ff
+);

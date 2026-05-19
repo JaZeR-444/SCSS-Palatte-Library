@@ -1,0 +1,75 @@
+/*---
+id: harbor-mist
+name: Harbor Mist
+author: JaZeR-444
+version: 1.0.0
+category: Calm & Coastal
+count: 4
+description: A coastal interface palette with harbor blue, sea mist, foam, and sand.
+tags:
+  mood:
+  - calm
+  - coastal
+  aesthetic:
+  - Coastal
+  - Wellness
+intent: A 4-color palette designed for travel, wellness, documentation.
+suggested_use:
+- Travel
+- Wellness
+- Documentation
+url: https://coolors.co/0f3d5e-5dade2-d1f2eb-f9e79f
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--harbor-deep: #0f3d5eff;
+--mist-blue: #5dade2ff;
+--foam-mint: #d1f2ebff;
+--sand-note: #f9e79fff;
+
+/* CSS HSL */
+--harbor-deep: hsla(205, 72%, 21%, 1);
+--mist-blue: hsla(204, 70%, 63%, 1);
+--foam-mint: hsla(167, 56%, 88%, 1);
+--sand-note: hsla(48, 88%, 80%, 1);
+}
+
+/* SCSS HEX */
+$harbor-deep: #0f3d5eff;
+$mist-blue: #5dade2ff;
+$foam-mint: #d1f2ebff;
+$sand-note: #f9e79fff;
+
+/* SCSS HSL */
+$harbor-deep: hsla(205, 72%, 21%, 1);
+$mist-blue: hsla(204, 70%, 63%, 1);
+$foam-mint: hsla(167, 56%, 88%, 1);
+$sand-note: hsla(48, 88%, 80%, 1);
+
+/* SCSS RGB */
+$harbor-deep: rgba(15, 61, 94, 1);
+$mist-blue: rgba(93, 173, 226, 1);
+$foam-mint: rgba(209, 242, 235, 1);
+$sand-note: rgba(249, 231, 159, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0f3d5eff, #5dade2ff, #d1f2ebff, #f9e79fff);
+$gradient-right: linear-gradient(90deg, #0f3d5eff, #5dade2ff, #d1f2ebff, #f9e79fff);
+$gradient-bottom: linear-gradient(180deg, #0f3d5eff, #5dade2ff, #d1f2ebff, #f9e79fff);
+$gradient-left: linear-gradient(270deg, #0f3d5eff, #5dade2ff, #d1f2ebff, #f9e79fff);
+$gradient-top-right: linear-gradient(45deg, #0f3d5eff, #5dade2ff, #d1f2ebff, #f9e79fff);
+$gradient-bottom-right: linear-gradient(135deg, #0f3d5eff, #5dade2ff, #d1f2ebff, #f9e79fff);
+$gradient-top-left: linear-gradient(225deg, #0f3d5eff, #5dade2ff, #d1f2ebff, #f9e79fff);
+$gradient-bottom-left: linear-gradient(315deg, #0f3d5eff, #5dade2ff, #d1f2ebff, #f9e79fff);
+$gradient-radial: radial-gradient(#0f3d5eff, #5dade2ff, #d1f2ebff, #f9e79fff);
+
+/* SCSS Map */
+$harbor-mist-map: (
+    "harbor-deep": #0f3d5eff,
+    "mist-blue": #5dade2ff,
+    "foam-mint": #d1f2ebff,
+    "sand-note": #f9e79fff
+);

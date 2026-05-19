@@ -1,0 +1,81 @@
+/*---
+id: paper-lantern
+name: Paper Lantern
+author: JaZeR-444
+version: 1.0.0
+category: Soft & Warm
+count: 5
+description: A soft lantern palette for gentle editorial layouts and friendly products.
+tags:
+  mood:
+  - soft
+  - warm
+  aesthetic:
+  - Editorial
+  - Lifestyle
+intent: A 5-color palette designed for blog, cards, brand accent.
+suggested_use:
+- Blog
+- Cards
+- Brand Accent
+url: https://coolors.co/2b2d42-ef233c-ffccd5-fff1e6-f4a261
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--ink-brush: #2b2d42ff;
+--lantern-red: #ef233cff;
+--paper-rose: #ffccd5ff;
+--warm-paper: #fff1e6ff;
+--gold-thread: #f4a261ff;
+
+/* CSS HSL */
+--ink-brush: hsla(235, 21%, 21%, 1);
+--lantern-red: hsla(353, 86%, 54%, 1);
+--paper-rose: hsla(349, 100%, 90%, 1);
+--warm-paper: hsla(26, 100%, 95%, 1);
+--gold-thread: hsla(27, 87%, 67%, 1);
+}
+
+/* SCSS HEX */
+$ink-brush: #2b2d42ff;
+$lantern-red: #ef233cff;
+$paper-rose: #ffccd5ff;
+$warm-paper: #fff1e6ff;
+$gold-thread: #f4a261ff;
+
+/* SCSS HSL */
+$ink-brush: hsla(235, 21%, 21%, 1);
+$lantern-red: hsla(353, 86%, 54%, 1);
+$paper-rose: hsla(349, 100%, 90%, 1);
+$warm-paper: hsla(26, 100%, 95%, 1);
+$gold-thread: hsla(27, 87%, 67%, 1);
+
+/* SCSS RGB */
+$ink-brush: rgba(43, 45, 66, 1);
+$lantern-red: rgba(239, 35, 60, 1);
+$paper-rose: rgba(255, 204, 213, 1);
+$warm-paper: rgba(255, 241, 230, 1);
+$gold-thread: rgba(244, 162, 97, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #2b2d42ff, #ef233cff, #ffccd5ff, #fff1e6ff, #f4a261ff);
+$gradient-right: linear-gradient(90deg, #2b2d42ff, #ef233cff, #ffccd5ff, #fff1e6ff, #f4a261ff);
+$gradient-bottom: linear-gradient(180deg, #2b2d42ff, #ef233cff, #ffccd5ff, #fff1e6ff, #f4a261ff);
+$gradient-left: linear-gradient(270deg, #2b2d42ff, #ef233cff, #ffccd5ff, #fff1e6ff, #f4a261ff);
+$gradient-top-right: linear-gradient(45deg, #2b2d42ff, #ef233cff, #ffccd5ff, #fff1e6ff, #f4a261ff);
+$gradient-bottom-right: linear-gradient(135deg, #2b2d42ff, #ef233cff, #ffccd5ff, #fff1e6ff, #f4a261ff);
+$gradient-top-left: linear-gradient(225deg, #2b2d42ff, #ef233cff, #ffccd5ff, #fff1e6ff, #f4a261ff);
+$gradient-bottom-left: linear-gradient(315deg, #2b2d42ff, #ef233cff, #ffccd5ff, #fff1e6ff, #f4a261ff);
+$gradient-radial: radial-gradient(#2b2d42ff, #ef233cff, #ffccd5ff, #fff1e6ff, #f4a261ff);
+
+/* SCSS Map */
+$paper-lantern-map: (
+    "ink-brush": #2b2d42ff,
+    "lantern-red": #ef233cff,
+    "paper-rose": #ffccd5ff,
+    "warm-paper": #fff1e6ff,
+    "gold-thread": #f4a261ff
+);

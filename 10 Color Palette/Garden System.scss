@@ -1,0 +1,111 @@
+/*---
+id: garden-system
+name: Garden System
+author: JaZeR-444
+version: 1.0.0
+category: Natural & Systematic
+count: 10
+description: A complete garden-inspired system palette with greens, soil, bloom accents, and surfaces.
+tags:
+  mood:
+  - natural
+  - systematic
+  aesthetic:
+  - Garden
+  - Design System
+intent: A 10-color palette designed for design system, wellness, charts.
+suggested_use:
+- Design System
+- Wellness
+- Charts
+url: https://coolors.co/1a120b-3f2e1e-14532d-15803d-4ade80-dcfce7-f472b6-facc15-d6d3d1-fafaf9
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--soil-900: #1a120bff;
+--bark-700: #3f2e1eff;
+--leaf-900: #14532dff;
+--leaf-700: #15803dff;
+--leaf-400: #4ade80ff;
+--mint-100: #dcfce7ff;
+--bloom-rose: #f472b6ff;
+--pollen-gold: #facc15ff;
+--stone-300: #d6d3d1ff;
+--garden-white: #fafaf9ff;
+
+/* CSS HSL */
+--soil-900: hsla(28, 41%, 7%, 1);
+--bark-700: hsla(29, 35%, 18%, 1);
+--leaf-900: hsla(144, 61%, 20%, 1);
+--leaf-700: hsla(142, 72%, 29%, 1);
+--leaf-400: hsla(142, 69%, 58%, 1);
+--mint-100: hsla(141, 84%, 93%, 1);
+--bloom-rose: hsla(329, 86%, 70%, 1);
+--pollen-gold: hsla(48, 96%, 53%, 1);
+--stone-300: hsla(24, 6%, 83%, 1);
+--garden-white: hsla(60, 9%, 98%, 1);
+}
+
+/* SCSS HEX */
+$soil-900: #1a120bff;
+$bark-700: #3f2e1eff;
+$leaf-900: #14532dff;
+$leaf-700: #15803dff;
+$leaf-400: #4ade80ff;
+$mint-100: #dcfce7ff;
+$bloom-rose: #f472b6ff;
+$pollen-gold: #facc15ff;
+$stone-300: #d6d3d1ff;
+$garden-white: #fafaf9ff;
+
+/* SCSS HSL */
+$soil-900: hsla(28, 41%, 7%, 1);
+$bark-700: hsla(29, 35%, 18%, 1);
+$leaf-900: hsla(144, 61%, 20%, 1);
+$leaf-700: hsla(142, 72%, 29%, 1);
+$leaf-400: hsla(142, 69%, 58%, 1);
+$mint-100: hsla(141, 84%, 93%, 1);
+$bloom-rose: hsla(329, 86%, 70%, 1);
+$pollen-gold: hsla(48, 96%, 53%, 1);
+$stone-300: hsla(24, 6%, 83%, 1);
+$garden-white: hsla(60, 9%, 98%, 1);
+
+/* SCSS RGB */
+$soil-900: rgba(26, 18, 11, 1);
+$bark-700: rgba(63, 46, 30, 1);
+$leaf-900: rgba(20, 83, 45, 1);
+$leaf-700: rgba(21, 128, 61, 1);
+$leaf-400: rgba(74, 222, 128, 1);
+$mint-100: rgba(220, 252, 231, 1);
+$bloom-rose: rgba(244, 114, 182, 1);
+$pollen-gold: rgba(250, 204, 21, 1);
+$stone-300: rgba(214, 211, 209, 1);
+$garden-white: rgba(250, 250, 249, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1a120bff, #3f2e1eff, #14532dff, #15803dff, #4ade80ff, #dcfce7ff, #f472b6ff, #facc15ff, #d6d3d1ff, #fafaf9ff);
+$gradient-right: linear-gradient(90deg, #1a120bff, #3f2e1eff, #14532dff, #15803dff, #4ade80ff, #dcfce7ff, #f472b6ff, #facc15ff, #d6d3d1ff, #fafaf9ff);
+$gradient-bottom: linear-gradient(180deg, #1a120bff, #3f2e1eff, #14532dff, #15803dff, #4ade80ff, #dcfce7ff, #f472b6ff, #facc15ff, #d6d3d1ff, #fafaf9ff);
+$gradient-left: linear-gradient(270deg, #1a120bff, #3f2e1eff, #14532dff, #15803dff, #4ade80ff, #dcfce7ff, #f472b6ff, #facc15ff, #d6d3d1ff, #fafaf9ff);
+$gradient-top-right: linear-gradient(45deg, #1a120bff, #3f2e1eff, #14532dff, #15803dff, #4ade80ff, #dcfce7ff, #f472b6ff, #facc15ff, #d6d3d1ff, #fafaf9ff);
+$gradient-bottom-right: linear-gradient(135deg, #1a120bff, #3f2e1eff, #14532dff, #15803dff, #4ade80ff, #dcfce7ff, #f472b6ff, #facc15ff, #d6d3d1ff, #fafaf9ff);
+$gradient-top-left: linear-gradient(225deg, #1a120bff, #3f2e1eff, #14532dff, #15803dff, #4ade80ff, #dcfce7ff, #f472b6ff, #facc15ff, #d6d3d1ff, #fafaf9ff);
+$gradient-bottom-left: linear-gradient(315deg, #1a120bff, #3f2e1eff, #14532dff, #15803dff, #4ade80ff, #dcfce7ff, #f472b6ff, #facc15ff, #d6d3d1ff, #fafaf9ff);
+$gradient-radial: radial-gradient(#1a120bff, #3f2e1eff, #14532dff, #15803dff, #4ade80ff, #dcfce7ff, #f472b6ff, #facc15ff, #d6d3d1ff, #fafaf9ff);
+
+/* SCSS Map */
+$garden-system-map: (
+    "soil-900": #1a120bff,
+    "bark-700": #3f2e1eff,
+    "leaf-900": #14532dff,
+    "leaf-700": #15803dff,
+    "leaf-400": #4ade80ff,
+    "mint-100": #dcfce7ff,
+    "bloom-rose": #f472b6ff,
+    "pollen-gold": #facc15ff,
+    "stone-300": #d6d3d1ff,
+    "garden-white": #fafaf9ff
+);

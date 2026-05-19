@@ -1,0 +1,111 @@
+/*---
+id: nebula-orchid-atlas
+name: Nebula Orchid Atlas
+author: JaZeR-444
+version: 1.0.0
+category: Purple & Cosmic
+count: 10
+description: A cosmic orchid palette moving from deep space purple into radiant magenta and soft starlight.
+tags:
+  mood:
+  - purple
+  - cosmic
+  aesthetic:
+  - Nebula
+  - Orchid
+intent: A purple-focused 10-color palette designed for hero ui, events, creative tools.
+suggested_use:
+- Hero UI
+- Events
+- Creative Tools
+url: https://coolors.co/080012-18002f-2f075e-5a189a-8f2fd1-c026d3-e879f9-f5d0fe-fdf4ff-ecfeff
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--nebula-orchid-atlas-nebula-black: #080012ff;
+--nebula-orchid-atlas-orbit-plum: #18002fff;
+--nebula-orchid-atlas-deep-orchid: #2f075eff;
+--nebula-orchid-atlas-stellar-violet: #5a189aff;
+--nebula-orchid-atlas-nova-purple: #8f2fd1ff;
+--nebula-orchid-atlas-orchid-pulse: #c026d3ff;
+--nebula-orchid-atlas-cosmic-pink: #e879f9ff;
+--nebula-orchid-atlas-petal-light: #f5d0feff;
+--nebula-orchid-atlas-star-mist: #fdf4ffff;
+--nebula-orchid-atlas-ice-flare: #ecfeffff;
+
+/* CSS HSL */
+--nebula-orchid-atlas-nebula-black: hsla(267, 100%, 4%, 1);
+--nebula-orchid-atlas-orbit-plum: hsla(271, 100%, 9%, 1);
+--nebula-orchid-atlas-deep-orchid: hsla(268, 86%, 20%, 1);
+--nebula-orchid-atlas-stellar-violet: hsla(270, 73%, 35%, 1);
+--nebula-orchid-atlas-nova-purple: hsla(276, 64%, 50%, 1);
+--nebula-orchid-atlas-orchid-pulse: hsla(293, 69%, 49%, 1);
+--nebula-orchid-atlas-cosmic-pink: hsla(292, 91%, 73%, 1);
+--nebula-orchid-atlas-petal-light: hsla(288, 96%, 91%, 1);
+--nebula-orchid-atlas-star-mist: hsla(289, 100%, 98%, 1);
+--nebula-orchid-atlas-ice-flare: hsla(183, 100%, 96%, 1);
+}
+
+/* SCSS HEX */
+$nebula-orchid-atlas-nebula-black: #080012ff;
+$nebula-orchid-atlas-orbit-plum: #18002fff;
+$nebula-orchid-atlas-deep-orchid: #2f075eff;
+$nebula-orchid-atlas-stellar-violet: #5a189aff;
+$nebula-orchid-atlas-nova-purple: #8f2fd1ff;
+$nebula-orchid-atlas-orchid-pulse: #c026d3ff;
+$nebula-orchid-atlas-cosmic-pink: #e879f9ff;
+$nebula-orchid-atlas-petal-light: #f5d0feff;
+$nebula-orchid-atlas-star-mist: #fdf4ffff;
+$nebula-orchid-atlas-ice-flare: #ecfeffff;
+
+/* SCSS HSL */
+$nebula-orchid-atlas-nebula-black: hsla(267, 100%, 4%, 1);
+$nebula-orchid-atlas-orbit-plum: hsla(271, 100%, 9%, 1);
+$nebula-orchid-atlas-deep-orchid: hsla(268, 86%, 20%, 1);
+$nebula-orchid-atlas-stellar-violet: hsla(270, 73%, 35%, 1);
+$nebula-orchid-atlas-nova-purple: hsla(276, 64%, 50%, 1);
+$nebula-orchid-atlas-orchid-pulse: hsla(293, 69%, 49%, 1);
+$nebula-orchid-atlas-cosmic-pink: hsla(292, 91%, 73%, 1);
+$nebula-orchid-atlas-petal-light: hsla(288, 96%, 91%, 1);
+$nebula-orchid-atlas-star-mist: hsla(289, 100%, 98%, 1);
+$nebula-orchid-atlas-ice-flare: hsla(183, 100%, 96%, 1);
+
+/* SCSS RGB */
+$nebula-orchid-atlas-nebula-black: rgba(8, 0, 18, 1);
+$nebula-orchid-atlas-orbit-plum: rgba(24, 0, 47, 1);
+$nebula-orchid-atlas-deep-orchid: rgba(47, 7, 94, 1);
+$nebula-orchid-atlas-stellar-violet: rgba(90, 24, 154, 1);
+$nebula-orchid-atlas-nova-purple: rgba(143, 47, 209, 1);
+$nebula-orchid-atlas-orchid-pulse: rgba(192, 38, 211, 1);
+$nebula-orchid-atlas-cosmic-pink: rgba(232, 121, 249, 1);
+$nebula-orchid-atlas-petal-light: rgba(245, 208, 254, 1);
+$nebula-orchid-atlas-star-mist: rgba(253, 244, 255, 1);
+$nebula-orchid-atlas-ice-flare: rgba(236, 254, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #080012ff, #18002fff, #2f075eff, #5a189aff, #8f2fd1ff, #c026d3ff, #e879f9ff, #f5d0feff, #fdf4ffff, #ecfeffff);
+$gradient-right: linear-gradient(90deg, #080012ff, #18002fff, #2f075eff, #5a189aff, #8f2fd1ff, #c026d3ff, #e879f9ff, #f5d0feff, #fdf4ffff, #ecfeffff);
+$gradient-bottom: linear-gradient(180deg, #080012ff, #18002fff, #2f075eff, #5a189aff, #8f2fd1ff, #c026d3ff, #e879f9ff, #f5d0feff, #fdf4ffff, #ecfeffff);
+$gradient-left: linear-gradient(270deg, #080012ff, #18002fff, #2f075eff, #5a189aff, #8f2fd1ff, #c026d3ff, #e879f9ff, #f5d0feff, #fdf4ffff, #ecfeffff);
+$gradient-top-right: linear-gradient(45deg, #080012ff, #18002fff, #2f075eff, #5a189aff, #8f2fd1ff, #c026d3ff, #e879f9ff, #f5d0feff, #fdf4ffff, #ecfeffff);
+$gradient-bottom-right: linear-gradient(135deg, #080012ff, #18002fff, #2f075eff, #5a189aff, #8f2fd1ff, #c026d3ff, #e879f9ff, #f5d0feff, #fdf4ffff, #ecfeffff);
+$gradient-top-left: linear-gradient(225deg, #080012ff, #18002fff, #2f075eff, #5a189aff, #8f2fd1ff, #c026d3ff, #e879f9ff, #f5d0feff, #fdf4ffff, #ecfeffff);
+$gradient-bottom-left: linear-gradient(315deg, #080012ff, #18002fff, #2f075eff, #5a189aff, #8f2fd1ff, #c026d3ff, #e879f9ff, #f5d0feff, #fdf4ffff, #ecfeffff);
+$gradient-radial: radial-gradient(#080012ff, #18002fff, #2f075eff, #5a189aff, #8f2fd1ff, #c026d3ff, #e879f9ff, #f5d0feff, #fdf4ffff, #ecfeffff);
+
+/* SCSS Map */
+$nebula-orchid-atlas-map: (
+    "nebula-orchid-atlas-nebula-black": #080012ff,
+    "nebula-orchid-atlas-orbit-plum": #18002fff,
+    "nebula-orchid-atlas-deep-orchid": #2f075eff,
+    "nebula-orchid-atlas-stellar-violet": #5a189aff,
+    "nebula-orchid-atlas-nova-purple": #8f2fd1ff,
+    "nebula-orchid-atlas-orchid-pulse": #c026d3ff,
+    "nebula-orchid-atlas-cosmic-pink": #e879f9ff,
+    "nebula-orchid-atlas-petal-light": #f5d0feff,
+    "nebula-orchid-atlas-star-mist": #fdf4ffff,
+    "nebula-orchid-atlas-ice-flare": #ecfeffff
+);

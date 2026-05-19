@@ -1,0 +1,99 @@
+/*---
+id: botanical-interface
+name: Botanical Interface
+author: JaZeR-444
+version: 1.0.0
+category: Organic & Usable
+count: 8
+description: A botanical UI palette with deep greens, floral accents, and soft surfaces.
+tags:
+  mood:
+  - organic
+  - usable
+  aesthetic:
+  - Botanical
+  - Interface
+intent: A 8-color palette designed for wellness, product ui, charts.
+suggested_use:
+- Wellness
+- Product UI
+- Charts
+url: https://coolors.co/14213d-1b4332-40916c-95d5b2-ffd166-ef476f-d8f3dc-f8fff4
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--botanical-ink: #14213dff;
+--leaf-900: #1b4332ff;
+--leaf-600: #40916cff;
+--leaf-300: #95d5b2ff;
+--pollen-yellow: #ffd166ff;
+--bloom-coral: #ef476fff;
+--surface-mint: #d8f3dcff;
+--paper-soft: #f8fff4ff;
+
+/* CSS HSL */
+--botanical-ink: hsla(221, 51%, 16%, 1);
+--leaf-900: hsla(155, 43%, 18%, 1);
+--leaf-600: hsla(153, 39%, 41%, 1);
+--leaf-300: hsla(147, 43%, 71%, 1);
+--pollen-yellow: hsla(42, 100%, 70%, 1);
+--bloom-coral: hsla(346, 84%, 61%, 1);
+--surface-mint: hsla(129, 53%, 90%, 1);
+--paper-soft: hsla(98, 100%, 98%, 1);
+}
+
+/* SCSS HEX */
+$botanical-ink: #14213dff;
+$leaf-900: #1b4332ff;
+$leaf-600: #40916cff;
+$leaf-300: #95d5b2ff;
+$pollen-yellow: #ffd166ff;
+$bloom-coral: #ef476fff;
+$surface-mint: #d8f3dcff;
+$paper-soft: #f8fff4ff;
+
+/* SCSS HSL */
+$botanical-ink: hsla(221, 51%, 16%, 1);
+$leaf-900: hsla(155, 43%, 18%, 1);
+$leaf-600: hsla(153, 39%, 41%, 1);
+$leaf-300: hsla(147, 43%, 71%, 1);
+$pollen-yellow: hsla(42, 100%, 70%, 1);
+$bloom-coral: hsla(346, 84%, 61%, 1);
+$surface-mint: hsla(129, 53%, 90%, 1);
+$paper-soft: hsla(98, 100%, 98%, 1);
+
+/* SCSS RGB */
+$botanical-ink: rgba(20, 33, 61, 1);
+$leaf-900: rgba(27, 67, 50, 1);
+$leaf-600: rgba(64, 145, 108, 1);
+$leaf-300: rgba(149, 213, 178, 1);
+$pollen-yellow: rgba(255, 209, 102, 1);
+$bloom-coral: rgba(239, 71, 111, 1);
+$surface-mint: rgba(216, 243, 220, 1);
+$paper-soft: rgba(248, 255, 244, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #14213dff, #1b4332ff, #40916cff, #95d5b2ff, #ffd166ff, #ef476fff, #d8f3dcff, #f8fff4ff);
+$gradient-right: linear-gradient(90deg, #14213dff, #1b4332ff, #40916cff, #95d5b2ff, #ffd166ff, #ef476fff, #d8f3dcff, #f8fff4ff);
+$gradient-bottom: linear-gradient(180deg, #14213dff, #1b4332ff, #40916cff, #95d5b2ff, #ffd166ff, #ef476fff, #d8f3dcff, #f8fff4ff);
+$gradient-left: linear-gradient(270deg, #14213dff, #1b4332ff, #40916cff, #95d5b2ff, #ffd166ff, #ef476fff, #d8f3dcff, #f8fff4ff);
+$gradient-top-right: linear-gradient(45deg, #14213dff, #1b4332ff, #40916cff, #95d5b2ff, #ffd166ff, #ef476fff, #d8f3dcff, #f8fff4ff);
+$gradient-bottom-right: linear-gradient(135deg, #14213dff, #1b4332ff, #40916cff, #95d5b2ff, #ffd166ff, #ef476fff, #d8f3dcff, #f8fff4ff);
+$gradient-top-left: linear-gradient(225deg, #14213dff, #1b4332ff, #40916cff, #95d5b2ff, #ffd166ff, #ef476fff, #d8f3dcff, #f8fff4ff);
+$gradient-bottom-left: linear-gradient(315deg, #14213dff, #1b4332ff, #40916cff, #95d5b2ff, #ffd166ff, #ef476fff, #d8f3dcff, #f8fff4ff);
+$gradient-radial: radial-gradient(#14213dff, #1b4332ff, #40916cff, #95d5b2ff, #ffd166ff, #ef476fff, #d8f3dcff, #f8fff4ff);
+
+/* SCSS Map */
+$botanical-interface-map: (
+    "botanical-ink": #14213dff,
+    "leaf-900": #1b4332ff,
+    "leaf-600": #40916cff,
+    "leaf-300": #95d5b2ff,
+    "pollen-yellow": #ffd166ff,
+    "bloom-coral": #ef476fff,
+    "surface-mint": #d8f3dcff,
+    "paper-soft": #f8fff4ff
+);

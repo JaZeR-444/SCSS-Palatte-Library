@@ -1,0 +1,87 @@
+/*---
+id: copper-grove
+name: Copper Grove
+author: JaZeR-444
+version: 1.0.0
+category: Earthy & Refined
+count: 6
+description: A refined earth palette with copper, sage, and quiet cream tones.
+tags:
+  mood:
+  - earthy
+  - refined
+  aesthetic:
+  - Nature
+  - Interior
+intent: A 6-color palette designed for brand system, editorial, cards.
+suggested_use:
+- Brand System
+- Editorial
+- Cards
+url: https://coolors.co/252422-bc6c25-606c38-a3b18a-fefae0-fff8e7
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--grove-shadow: #252422ff;
+--copper-leaf: #bc6c25ff;
+--olive-bark: #606c38ff;
+--sage-floor: #a3b18aff;
+--wheat-light: #fefae0ff;
+--cream-wall: #fff8e7ff;
+
+/* CSS HSL */
+--grove-shadow: hsla(40, 4%, 14%, 1);
+--copper-leaf: hsla(28, 67%, 44%, 1);
+--olive-bark: hsla(74, 32%, 32%, 1);
+--sage-floor: hsla(82, 20%, 62%, 1);
+--wheat-light: hsla(52, 94%, 94%, 1);
+--cream-wall: hsla(42, 100%, 95%, 1);
+}
+
+/* SCSS HEX */
+$grove-shadow: #252422ff;
+$copper-leaf: #bc6c25ff;
+$olive-bark: #606c38ff;
+$sage-floor: #a3b18aff;
+$wheat-light: #fefae0ff;
+$cream-wall: #fff8e7ff;
+
+/* SCSS HSL */
+$grove-shadow: hsla(40, 4%, 14%, 1);
+$copper-leaf: hsla(28, 67%, 44%, 1);
+$olive-bark: hsla(74, 32%, 32%, 1);
+$sage-floor: hsla(82, 20%, 62%, 1);
+$wheat-light: hsla(52, 94%, 94%, 1);
+$cream-wall: hsla(42, 100%, 95%, 1);
+
+/* SCSS RGB */
+$grove-shadow: rgba(37, 36, 34, 1);
+$copper-leaf: rgba(188, 108, 37, 1);
+$olive-bark: rgba(96, 108, 56, 1);
+$sage-floor: rgba(163, 177, 138, 1);
+$wheat-light: rgba(254, 250, 224, 1);
+$cream-wall: rgba(255, 248, 231, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #252422ff, #bc6c25ff, #606c38ff, #a3b18aff, #fefae0ff, #fff8e7ff);
+$gradient-right: linear-gradient(90deg, #252422ff, #bc6c25ff, #606c38ff, #a3b18aff, #fefae0ff, #fff8e7ff);
+$gradient-bottom: linear-gradient(180deg, #252422ff, #bc6c25ff, #606c38ff, #a3b18aff, #fefae0ff, #fff8e7ff);
+$gradient-left: linear-gradient(270deg, #252422ff, #bc6c25ff, #606c38ff, #a3b18aff, #fefae0ff, #fff8e7ff);
+$gradient-top-right: linear-gradient(45deg, #252422ff, #bc6c25ff, #606c38ff, #a3b18aff, #fefae0ff, #fff8e7ff);
+$gradient-bottom-right: linear-gradient(135deg, #252422ff, #bc6c25ff, #606c38ff, #a3b18aff, #fefae0ff, #fff8e7ff);
+$gradient-top-left: linear-gradient(225deg, #252422ff, #bc6c25ff, #606c38ff, #a3b18aff, #fefae0ff, #fff8e7ff);
+$gradient-bottom-left: linear-gradient(315deg, #252422ff, #bc6c25ff, #606c38ff, #a3b18aff, #fefae0ff, #fff8e7ff);
+$gradient-radial: radial-gradient(#252422ff, #bc6c25ff, #606c38ff, #a3b18aff, #fefae0ff, #fff8e7ff);
+
+/* SCSS Map */
+$copper-grove-map: (
+    "grove-shadow": #252422ff,
+    "copper-leaf": #bc6c25ff,
+    "olive-bark": #606c38ff,
+    "sage-floor": #a3b18aff,
+    "wheat-light": #fefae0ff,
+    "cream-wall": #fff8e7ff
+);

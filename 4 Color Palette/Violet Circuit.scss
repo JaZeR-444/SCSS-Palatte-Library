@@ -1,0 +1,75 @@
+/*---
+id: violet-circuit
+name: Violet Circuit
+author: JaZeR-444
+version: 1.0.0
+category: Futuristic & Cool
+count: 4
+description: A cool violet circuit palette with electric cyan and pale lavender.
+tags:
+  mood:
+  - futuristic
+  - cool
+  aesthetic:
+  - Cyber
+  - Interface
+intent: A 4-color palette designed for ai ui, dashboard, hero accent.
+suggested_use:
+- AI UI
+- Dashboard
+- Hero Accent
+url: https://coolors.co/2e1065-7c3aed-06b6d4-ede9fe
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--circuit-violet: #2e1065ff;
+--logic-purple: #7c3aedff;
+--electric-cyan: #06b6d4ff;
+--lavender-screen: #ede9feff;
+
+/* CSS HSL */
+--circuit-violet: hsla(261, 73%, 23%, 1);
+--logic-purple: hsla(262, 83%, 58%, 1);
+--electric-cyan: hsla(189, 94%, 43%, 1);
+--lavender-screen: hsla(251, 91%, 95%, 1);
+}
+
+/* SCSS HEX */
+$circuit-violet: #2e1065ff;
+$logic-purple: #7c3aedff;
+$electric-cyan: #06b6d4ff;
+$lavender-screen: #ede9feff;
+
+/* SCSS HSL */
+$circuit-violet: hsla(261, 73%, 23%, 1);
+$logic-purple: hsla(262, 83%, 58%, 1);
+$electric-cyan: hsla(189, 94%, 43%, 1);
+$lavender-screen: hsla(251, 91%, 95%, 1);
+
+/* SCSS RGB */
+$circuit-violet: rgba(46, 16, 101, 1);
+$logic-purple: rgba(124, 58, 237, 1);
+$electric-cyan: rgba(6, 182, 212, 1);
+$lavender-screen: rgba(237, 233, 254, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #2e1065ff, #7c3aedff, #06b6d4ff, #ede9feff);
+$gradient-right: linear-gradient(90deg, #2e1065ff, #7c3aedff, #06b6d4ff, #ede9feff);
+$gradient-bottom: linear-gradient(180deg, #2e1065ff, #7c3aedff, #06b6d4ff, #ede9feff);
+$gradient-left: linear-gradient(270deg, #2e1065ff, #7c3aedff, #06b6d4ff, #ede9feff);
+$gradient-top-right: linear-gradient(45deg, #2e1065ff, #7c3aedff, #06b6d4ff, #ede9feff);
+$gradient-bottom-right: linear-gradient(135deg, #2e1065ff, #7c3aedff, #06b6d4ff, #ede9feff);
+$gradient-top-left: linear-gradient(225deg, #2e1065ff, #7c3aedff, #06b6d4ff, #ede9feff);
+$gradient-bottom-left: linear-gradient(315deg, #2e1065ff, #7c3aedff, #06b6d4ff, #ede9feff);
+$gradient-radial: radial-gradient(#2e1065ff, #7c3aedff, #06b6d4ff, #ede9feff);
+
+/* SCSS Map */
+$violet-circuit-map: (
+    "circuit-violet": #2e1065ff,
+    "logic-purple": #7c3aedff,
+    "electric-cyan": #06b6d4ff,
+    "lavender-screen": #ede9feff
+);

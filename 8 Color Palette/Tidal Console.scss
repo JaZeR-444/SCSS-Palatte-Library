@@ -1,0 +1,99 @@
+/*---
+id: tidal-console
+name: Tidal Console
+author: JaZeR-444
+version: 1.0.0
+category: Dark & Focused
+count: 8
+description: A focused console palette with deep marine tones and readable terminal accents.
+tags:
+  mood:
+  - dark
+  - focused
+  aesthetic:
+  - Console
+  - Marine
+intent: A 8-color palette designed for developer tools, dashboard, analytics.
+suggested_use:
+- Developer Tools
+- Dashboard
+- Analytics
+url: https://coolors.co/020617-0f172a-164e63-0891b2-5eead4-f59e0b-cbd5e1-f1f5f9
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--console-black: #020617ff;
+--tidal-navy: #0f172aff;
+--deep-current: #164e63ff;
+--console-cyan: #0891b2ff;
+--terminal-mint: #5eead4ff;
+--warning-amber: #f59e0bff;
+--text-slate: #cbd5e1ff;
+--surface-fog: #f1f5f9ff;
+
+/* CSS HSL */
+--console-black: hsla(229, 84%, 5%, 1);
+--tidal-navy: hsla(222, 47%, 11%, 1);
+--deep-current: hsla(196, 64%, 24%, 1);
+--console-cyan: hsla(192, 91%, 36%, 1);
+--terminal-mint: hsla(171, 77%, 64%, 1);
+--warning-amber: hsla(38, 92%, 50%, 1);
+--text-slate: hsla(213, 27%, 84%, 1);
+--surface-fog: hsla(210, 40%, 96%, 1);
+}
+
+/* SCSS HEX */
+$console-black: #020617ff;
+$tidal-navy: #0f172aff;
+$deep-current: #164e63ff;
+$console-cyan: #0891b2ff;
+$terminal-mint: #5eead4ff;
+$warning-amber: #f59e0bff;
+$text-slate: #cbd5e1ff;
+$surface-fog: #f1f5f9ff;
+
+/* SCSS HSL */
+$console-black: hsla(229, 84%, 5%, 1);
+$tidal-navy: hsla(222, 47%, 11%, 1);
+$deep-current: hsla(196, 64%, 24%, 1);
+$console-cyan: hsla(192, 91%, 36%, 1);
+$terminal-mint: hsla(171, 77%, 64%, 1);
+$warning-amber: hsla(38, 92%, 50%, 1);
+$text-slate: hsla(213, 27%, 84%, 1);
+$surface-fog: hsla(210, 40%, 96%, 1);
+
+/* SCSS RGB */
+$console-black: rgba(2, 6, 23, 1);
+$tidal-navy: rgba(15, 23, 42, 1);
+$deep-current: rgba(22, 78, 99, 1);
+$console-cyan: rgba(8, 145, 178, 1);
+$terminal-mint: rgba(94, 234, 212, 1);
+$warning-amber: rgba(245, 158, 11, 1);
+$text-slate: rgba(203, 213, 225, 1);
+$surface-fog: rgba(241, 245, 249, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #020617ff, #0f172aff, #164e63ff, #0891b2ff, #5eead4ff, #f59e0bff, #cbd5e1ff, #f1f5f9ff);
+$gradient-right: linear-gradient(90deg, #020617ff, #0f172aff, #164e63ff, #0891b2ff, #5eead4ff, #f59e0bff, #cbd5e1ff, #f1f5f9ff);
+$gradient-bottom: linear-gradient(180deg, #020617ff, #0f172aff, #164e63ff, #0891b2ff, #5eead4ff, #f59e0bff, #cbd5e1ff, #f1f5f9ff);
+$gradient-left: linear-gradient(270deg, #020617ff, #0f172aff, #164e63ff, #0891b2ff, #5eead4ff, #f59e0bff, #cbd5e1ff, #f1f5f9ff);
+$gradient-top-right: linear-gradient(45deg, #020617ff, #0f172aff, #164e63ff, #0891b2ff, #5eead4ff, #f59e0bff, #cbd5e1ff, #f1f5f9ff);
+$gradient-bottom-right: linear-gradient(135deg, #020617ff, #0f172aff, #164e63ff, #0891b2ff, #5eead4ff, #f59e0bff, #cbd5e1ff, #f1f5f9ff);
+$gradient-top-left: linear-gradient(225deg, #020617ff, #0f172aff, #164e63ff, #0891b2ff, #5eead4ff, #f59e0bff, #cbd5e1ff, #f1f5f9ff);
+$gradient-bottom-left: linear-gradient(315deg, #020617ff, #0f172aff, #164e63ff, #0891b2ff, #5eead4ff, #f59e0bff, #cbd5e1ff, #f1f5f9ff);
+$gradient-radial: radial-gradient(#020617ff, #0f172aff, #164e63ff, #0891b2ff, #5eead4ff, #f59e0bff, #cbd5e1ff, #f1f5f9ff);
+
+/* SCSS Map */
+$tidal-console-map: (
+    "console-black": #020617ff,
+    "tidal-navy": #0f172aff,
+    "deep-current": #164e63ff,
+    "console-cyan": #0891b2ff,
+    "terminal-mint": #5eead4ff,
+    "warning-amber": #f59e0bff,
+    "text-slate": #cbd5e1ff,
+    "surface-fog": #f1f5f9ff
+);

@@ -1,0 +1,75 @@
+/*---
+id: lilac-frost-quartet
+name: Lilac Frost Quartet
+author: JaZeR-444
+version: 1.0.0
+category: Purple & Airy
+count: 4
+description: A light purple palette with frosted lilac surfaces, clean violet accents, and cool readable neutrals.
+tags:
+  mood:
+  - purple
+  - airy
+  aesthetic:
+  - Lilac
+  - Frost
+intent: A purple-focused 4-color palette designed for wellness, documentation, saas ui.
+suggested_use:
+- Wellness
+- Documentation
+- SaaS UI
+url: https://coolors.co/1e1b4b-312e81-4f46e5-7c3aed
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--lilac-frost-quartet-frost-indigo: #1e1b4bff;
+--lilac-frost-quartet-lilac-depth: #312e81ff;
+--lilac-frost-quartet-clear-violet: #4f46e5ff;
+--lilac-frost-quartet-fresh-purple: #7c3aedff;
+
+/* CSS HSL */
+--lilac-frost-quartet-frost-indigo: hsla(244, 47%, 20%, 1);
+--lilac-frost-quartet-lilac-depth: hsla(242, 47%, 34%, 1);
+--lilac-frost-quartet-clear-violet: hsla(243, 75%, 59%, 1);
+--lilac-frost-quartet-fresh-purple: hsla(262, 83%, 58%, 1);
+}
+
+/* SCSS HEX */
+$lilac-frost-quartet-frost-indigo: #1e1b4bff;
+$lilac-frost-quartet-lilac-depth: #312e81ff;
+$lilac-frost-quartet-clear-violet: #4f46e5ff;
+$lilac-frost-quartet-fresh-purple: #7c3aedff;
+
+/* SCSS HSL */
+$lilac-frost-quartet-frost-indigo: hsla(244, 47%, 20%, 1);
+$lilac-frost-quartet-lilac-depth: hsla(242, 47%, 34%, 1);
+$lilac-frost-quartet-clear-violet: hsla(243, 75%, 59%, 1);
+$lilac-frost-quartet-fresh-purple: hsla(262, 83%, 58%, 1);
+
+/* SCSS RGB */
+$lilac-frost-quartet-frost-indigo: rgba(30, 27, 75, 1);
+$lilac-frost-quartet-lilac-depth: rgba(49, 46, 129, 1);
+$lilac-frost-quartet-clear-violet: rgba(79, 70, 229, 1);
+$lilac-frost-quartet-fresh-purple: rgba(124, 58, 237, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff);
+$gradient-right: linear-gradient(90deg, #1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff);
+$gradient-bottom: linear-gradient(180deg, #1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff);
+$gradient-left: linear-gradient(270deg, #1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff);
+$gradient-top-right: linear-gradient(45deg, #1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff);
+$gradient-bottom-right: linear-gradient(135deg, #1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff);
+$gradient-top-left: linear-gradient(225deg, #1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff);
+$gradient-bottom-left: linear-gradient(315deg, #1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff);
+$gradient-radial: radial-gradient(#1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff);
+
+/* SCSS Map */
+$lilac-frost-quartet-map: (
+    "lilac-frost-quartet-frost-indigo": #1e1b4bff,
+    "lilac-frost-quartet-lilac-depth": #312e81ff,
+    "lilac-frost-quartet-clear-violet": #4f46e5ff,
+    "lilac-frost-quartet-fresh-purple": #7c3aedff
+);

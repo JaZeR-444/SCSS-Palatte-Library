@@ -1,0 +1,99 @@
+/*---
+id: electric-mauve-system
+name: Electric Mauve System
+author: JaZeR-444
+version: 1.0.0
+category: Purple & Electric
+count: 8
+description: An electric purple palette with dark mauve foundations, neon violet, and bright interface accents.
+tags:
+  mood:
+  - purple
+  - electric
+  aesthetic:
+  - Cyber
+  - Mauve
+intent: A purple-focused 8-color palette designed for ai ui, developer tools, game ui.
+suggested_use:
+- AI UI
+- Developer Tools
+- Game UI
+url: https://coolors.co/0b0614-20113a-3b1d5f-6d28d9-9333ea-d946ef-f0abfc-bfdbfe
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--electric-mauve-system-mauve-black: #0b0614ff;
+--electric-mauve-system-voltage-plum: #20113aff;
+--electric-mauve-system-circuit-mauve: #3b1d5fff;
+--electric-mauve-system-electric-violet: #6d28d9ff;
+--electric-mauve-system-neon-purple: #9333eaff;
+--electric-mauve-system-signal-magenta: #d946efff;
+--electric-mauve-system-pink-current: #f0abfcff;
+--electric-mauve-system-blue-spark: #bfdbfeff;
+
+/* CSS HSL */
+--electric-mauve-system-mauve-black: hsla(261, 54%, 5%, 1);
+--electric-mauve-system-voltage-plum: hsla(262, 55%, 15%, 1);
+--electric-mauve-system-circuit-mauve: hsla(267, 53%, 24%, 1);
+--electric-mauve-system-electric-violet: hsla(263, 70%, 50%, 1);
+--electric-mauve-system-neon-purple: hsla(271, 81%, 56%, 1);
+--electric-mauve-system-signal-magenta: hsla(292, 84%, 61%, 1);
+--electric-mauve-system-pink-current: hsla(291, 93%, 83%, 1);
+--electric-mauve-system-blue-spark: hsla(213, 97%, 87%, 1);
+}
+
+/* SCSS HEX */
+$electric-mauve-system-mauve-black: #0b0614ff;
+$electric-mauve-system-voltage-plum: #20113aff;
+$electric-mauve-system-circuit-mauve: #3b1d5fff;
+$electric-mauve-system-electric-violet: #6d28d9ff;
+$electric-mauve-system-neon-purple: #9333eaff;
+$electric-mauve-system-signal-magenta: #d946efff;
+$electric-mauve-system-pink-current: #f0abfcff;
+$electric-mauve-system-blue-spark: #bfdbfeff;
+
+/* SCSS HSL */
+$electric-mauve-system-mauve-black: hsla(261, 54%, 5%, 1);
+$electric-mauve-system-voltage-plum: hsla(262, 55%, 15%, 1);
+$electric-mauve-system-circuit-mauve: hsla(267, 53%, 24%, 1);
+$electric-mauve-system-electric-violet: hsla(263, 70%, 50%, 1);
+$electric-mauve-system-neon-purple: hsla(271, 81%, 56%, 1);
+$electric-mauve-system-signal-magenta: hsla(292, 84%, 61%, 1);
+$electric-mauve-system-pink-current: hsla(291, 93%, 83%, 1);
+$electric-mauve-system-blue-spark: hsla(213, 97%, 87%, 1);
+
+/* SCSS RGB */
+$electric-mauve-system-mauve-black: rgba(11, 6, 20, 1);
+$electric-mauve-system-voltage-plum: rgba(32, 17, 58, 1);
+$electric-mauve-system-circuit-mauve: rgba(59, 29, 95, 1);
+$electric-mauve-system-electric-violet: rgba(109, 40, 217, 1);
+$electric-mauve-system-neon-purple: rgba(147, 51, 234, 1);
+$electric-mauve-system-signal-magenta: rgba(217, 70, 239, 1);
+$electric-mauve-system-pink-current: rgba(240, 171, 252, 1);
+$electric-mauve-system-blue-spark: rgba(191, 219, 254, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0b0614ff, #20113aff, #3b1d5fff, #6d28d9ff, #9333eaff, #d946efff, #f0abfcff, #bfdbfeff);
+$gradient-right: linear-gradient(90deg, #0b0614ff, #20113aff, #3b1d5fff, #6d28d9ff, #9333eaff, #d946efff, #f0abfcff, #bfdbfeff);
+$gradient-bottom: linear-gradient(180deg, #0b0614ff, #20113aff, #3b1d5fff, #6d28d9ff, #9333eaff, #d946efff, #f0abfcff, #bfdbfeff);
+$gradient-left: linear-gradient(270deg, #0b0614ff, #20113aff, #3b1d5fff, #6d28d9ff, #9333eaff, #d946efff, #f0abfcff, #bfdbfeff);
+$gradient-top-right: linear-gradient(45deg, #0b0614ff, #20113aff, #3b1d5fff, #6d28d9ff, #9333eaff, #d946efff, #f0abfcff, #bfdbfeff);
+$gradient-bottom-right: linear-gradient(135deg, #0b0614ff, #20113aff, #3b1d5fff, #6d28d9ff, #9333eaff, #d946efff, #f0abfcff, #bfdbfeff);
+$gradient-top-left: linear-gradient(225deg, #0b0614ff, #20113aff, #3b1d5fff, #6d28d9ff, #9333eaff, #d946efff, #f0abfcff, #bfdbfeff);
+$gradient-bottom-left: linear-gradient(315deg, #0b0614ff, #20113aff, #3b1d5fff, #6d28d9ff, #9333eaff, #d946efff, #f0abfcff, #bfdbfeff);
+$gradient-radial: radial-gradient(#0b0614ff, #20113aff, #3b1d5fff, #6d28d9ff, #9333eaff, #d946efff, #f0abfcff, #bfdbfeff);
+
+/* SCSS Map */
+$electric-mauve-system-map: (
+    "electric-mauve-system-mauve-black": #0b0614ff,
+    "electric-mauve-system-voltage-plum": #20113aff,
+    "electric-mauve-system-circuit-mauve": #3b1d5fff,
+    "electric-mauve-system-electric-violet": #6d28d9ff,
+    "electric-mauve-system-neon-purple": #9333eaff,
+    "electric-mauve-system-signal-magenta": #d946efff,
+    "electric-mauve-system-pink-current": #f0abfcff,
+    "electric-mauve-system-blue-spark": #bfdbfeff
+);

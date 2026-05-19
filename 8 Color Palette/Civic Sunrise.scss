@@ -1,0 +1,99 @@
+/*---
+id: civic-sunrise
+name: Civic Sunrise
+author: JaZeR-444
+version: 1.0.0
+category: Professional & Accessible
+count: 8
+description: A calm civic UI palette with deep blues, sunrise accents, and neutral surfaces.
+tags:
+  mood:
+  - professional
+  - calm
+  aesthetic:
+  - Civic Tech
+  - Accessible UI
+intent: An 8-color palette for public-sector tools, dashboards, and readable interfaces.
+suggested_use:
+- Dashboard
+- Civic Tech
+- Documentation
+url: https://coolors.co/102a43-243b53-486581-f0b429-f7d070-f5f7fa-d9e2ec-bcccdc
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--civic-navy: #102a43ff;
+--civic-slate: #243b53ff;
+--civic-steel: #486581ff;
+--sunrise-amber: #f0b429ff;
+--morning-gold: #f7d070ff;
+--paper-white: #f5f7faff;
+--cloud-line: #d9e2ecff;
+--harbor-gray: #bcccdcff;
+
+/* CSS HSL */
+--civic-navy: hsla(209, 61%, 16%, 1);
+--civic-slate: hsla(211, 39%, 23%, 1);
+--civic-steel: hsla(209, 28%, 39%, 1);
+--sunrise-amber: hsla(42, 87%, 55%, 1);
+--morning-gold: hsla(43, 89%, 70%, 1);
+--paper-white: hsla(216, 33%, 97%, 1);
+--cloud-line: hsla(212, 33%, 89%, 1);
+--harbor-gray: hsla(210, 31%, 80%, 1);
+}
+
+/* SCSS HEX */
+$civic-navy: #102a43ff;
+$civic-slate: #243b53ff;
+$civic-steel: #486581ff;
+$sunrise-amber: #f0b429ff;
+$morning-gold: #f7d070ff;
+$paper-white: #f5f7faff;
+$cloud-line: #d9e2ecff;
+$harbor-gray: #bcccdcff;
+
+/* SCSS HSL */
+$civic-navy: hsla(209, 61%, 16%, 1);
+$civic-slate: hsla(211, 39%, 23%, 1);
+$civic-steel: hsla(209, 28%, 39%, 1);
+$sunrise-amber: hsla(42, 87%, 55%, 1);
+$morning-gold: hsla(43, 89%, 70%, 1);
+$paper-white: hsla(216, 33%, 97%, 1);
+$cloud-line: hsla(212, 33%, 89%, 1);
+$harbor-gray: hsla(210, 31%, 80%, 1);
+
+/* SCSS RGB */
+$civic-navy: rgba(16, 42, 67, 1);
+$civic-slate: rgba(36, 59, 83, 1);
+$civic-steel: rgba(72, 101, 129, 1);
+$sunrise-amber: rgba(240, 180, 41, 1);
+$morning-gold: rgba(247, 208, 112, 1);
+$paper-white: rgba(245, 247, 250, 1);
+$cloud-line: rgba(217, 226, 236, 1);
+$harbor-gray: rgba(188, 204, 220, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #102a43ff, #243b53ff, #486581ff, #f0b429ff, #f7d070ff, #f5f7faff, #d9e2ecff, #bcccdcff);
+$gradient-right: linear-gradient(90deg, #102a43ff, #243b53ff, #486581ff, #f0b429ff, #f7d070ff, #f5f7faff, #d9e2ecff, #bcccdcff);
+$gradient-bottom: linear-gradient(180deg, #102a43ff, #243b53ff, #486581ff, #f0b429ff, #f7d070ff, #f5f7faff, #d9e2ecff, #bcccdcff);
+$gradient-left: linear-gradient(270deg, #102a43ff, #243b53ff, #486581ff, #f0b429ff, #f7d070ff, #f5f7faff, #d9e2ecff, #bcccdcff);
+$gradient-top-right: linear-gradient(45deg, #102a43ff, #243b53ff, #486581ff, #f0b429ff, #f7d070ff, #f5f7faff, #d9e2ecff, #bcccdcff);
+$gradient-bottom-right: linear-gradient(135deg, #102a43ff, #243b53ff, #486581ff, #f0b429ff, #f7d070ff, #f5f7faff, #d9e2ecff, #bcccdcff);
+$gradient-top-left: linear-gradient(225deg, #102a43ff, #243b53ff, #486581ff, #f0b429ff, #f7d070ff, #f5f7faff, #d9e2ecff, #bcccdcff);
+$gradient-bottom-left: linear-gradient(315deg, #102a43ff, #243b53ff, #486581ff, #f0b429ff, #f7d070ff, #f5f7faff, #d9e2ecff, #bcccdcff);
+$gradient-radial: radial-gradient(#102a43ff, #243b53ff, #486581ff, #f0b429ff, #f7d070ff, #f5f7faff, #d9e2ecff, #bcccdcff);
+
+/* SCSS Map */
+$civic-sunrise-map: (
+    "civic-navy": #102a43ff,
+    "civic-slate": #243b53ff,
+    "civic-steel": #486581ff,
+    "sunrise-amber": #f0b429ff,
+    "morning-gold": #f7d070ff,
+    "paper-white": #f5f7faff,
+    "cloud-line": #d9e2ecff,
+    "harbor-gray": #bcccdcff
+);

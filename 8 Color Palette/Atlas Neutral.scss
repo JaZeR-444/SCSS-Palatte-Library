@@ -1,0 +1,99 @@
+/*---
+id: atlas-neutral
+name: Atlas Neutral
+author: JaZeR-444
+version: 1.0.0
+category: Professional & Balanced
+count: 8
+description: A broad neutral system with blue anchors and a measured accent color.
+tags:
+  mood:
+  - professional
+  - balanced
+  aesthetic:
+  - Design System
+  - SaaS
+intent: A 8-color palette designed for design system, dashboard, docs.
+suggested_use:
+- Design System
+- Dashboard
+- Docs
+url: https://coolors.co/111827-1f2937-374151-6b7280-d1d5db-f3f4f6-2563eb-f59e0b
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--atlas-900: #111827ff;
+--atlas-800: #1f2937ff;
+--atlas-700: #374151ff;
+--atlas-500: #6b7280ff;
+--atlas-300: #d1d5dbff;
+--atlas-100: #f3f4f6ff;
+--atlas-blue: #2563ebff;
+--atlas-amber: #f59e0bff;
+
+/* CSS HSL */
+--atlas-900: hsla(221, 39%, 11%, 1);
+--atlas-800: hsla(215, 28%, 17%, 1);
+--atlas-700: hsla(217, 19%, 27%, 1);
+--atlas-500: hsla(220, 9%, 46%, 1);
+--atlas-300: hsla(216, 12%, 84%, 1);
+--atlas-100: hsla(220, 14%, 96%, 1);
+--atlas-blue: hsla(221, 83%, 53%, 1);
+--atlas-amber: hsla(38, 92%, 50%, 1);
+}
+
+/* SCSS HEX */
+$atlas-900: #111827ff;
+$atlas-800: #1f2937ff;
+$atlas-700: #374151ff;
+$atlas-500: #6b7280ff;
+$atlas-300: #d1d5dbff;
+$atlas-100: #f3f4f6ff;
+$atlas-blue: #2563ebff;
+$atlas-amber: #f59e0bff;
+
+/* SCSS HSL */
+$atlas-900: hsla(221, 39%, 11%, 1);
+$atlas-800: hsla(215, 28%, 17%, 1);
+$atlas-700: hsla(217, 19%, 27%, 1);
+$atlas-500: hsla(220, 9%, 46%, 1);
+$atlas-300: hsla(216, 12%, 84%, 1);
+$atlas-100: hsla(220, 14%, 96%, 1);
+$atlas-blue: hsla(221, 83%, 53%, 1);
+$atlas-amber: hsla(38, 92%, 50%, 1);
+
+/* SCSS RGB */
+$atlas-900: rgba(17, 24, 39, 1);
+$atlas-800: rgba(31, 41, 55, 1);
+$atlas-700: rgba(55, 65, 81, 1);
+$atlas-500: rgba(107, 114, 128, 1);
+$atlas-300: rgba(209, 213, 219, 1);
+$atlas-100: rgba(243, 244, 246, 1);
+$atlas-blue: rgba(37, 99, 235, 1);
+$atlas-amber: rgba(245, 158, 11, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #111827ff, #1f2937ff, #374151ff, #6b7280ff, #d1d5dbff, #f3f4f6ff, #2563ebff, #f59e0bff);
+$gradient-right: linear-gradient(90deg, #111827ff, #1f2937ff, #374151ff, #6b7280ff, #d1d5dbff, #f3f4f6ff, #2563ebff, #f59e0bff);
+$gradient-bottom: linear-gradient(180deg, #111827ff, #1f2937ff, #374151ff, #6b7280ff, #d1d5dbff, #f3f4f6ff, #2563ebff, #f59e0bff);
+$gradient-left: linear-gradient(270deg, #111827ff, #1f2937ff, #374151ff, #6b7280ff, #d1d5dbff, #f3f4f6ff, #2563ebff, #f59e0bff);
+$gradient-top-right: linear-gradient(45deg, #111827ff, #1f2937ff, #374151ff, #6b7280ff, #d1d5dbff, #f3f4f6ff, #2563ebff, #f59e0bff);
+$gradient-bottom-right: linear-gradient(135deg, #111827ff, #1f2937ff, #374151ff, #6b7280ff, #d1d5dbff, #f3f4f6ff, #2563ebff, #f59e0bff);
+$gradient-top-left: linear-gradient(225deg, #111827ff, #1f2937ff, #374151ff, #6b7280ff, #d1d5dbff, #f3f4f6ff, #2563ebff, #f59e0bff);
+$gradient-bottom-left: linear-gradient(315deg, #111827ff, #1f2937ff, #374151ff, #6b7280ff, #d1d5dbff, #f3f4f6ff, #2563ebff, #f59e0bff);
+$gradient-radial: radial-gradient(#111827ff, #1f2937ff, #374151ff, #6b7280ff, #d1d5dbff, #f3f4f6ff, #2563ebff, #f59e0bff);
+
+/* SCSS Map */
+$atlas-neutral-map: (
+    "atlas-900": #111827ff,
+    "atlas-800": #1f2937ff,
+    "atlas-700": #374151ff,
+    "atlas-500": #6b7280ff,
+    "atlas-300": #d1d5dbff,
+    "atlas-100": #f3f4f6ff,
+    "atlas-blue": #2563ebff,
+    "atlas-amber": #f59e0bff
+);

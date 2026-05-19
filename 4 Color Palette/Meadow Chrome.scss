@@ -1,0 +1,75 @@
+/*---
+id: meadow-chrome
+name: Meadow Chrome
+author: JaZeR-444
+version: 1.0.0
+category: Fresh & Modern
+count: 4
+description: A clean green palette with chrome blue and bright meadow surfaces.
+tags:
+  mood:
+  - fresh
+  - modern
+  aesthetic:
+  - Eco Tech
+  - Product
+intent: A 4-color palette designed for sustainability, product ui, charts.
+suggested_use:
+- Sustainability
+- Product UI
+- Charts
+url: https://coolors.co/14532d-14b8a6-a3e635-ecfeff
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--meadow-deep: #14532dff;
+--chrome-teal: #14b8a6ff;
+--sprout-green: #a3e635ff;
+--clean-sky: #ecfeffff;
+
+/* CSS HSL */
+--meadow-deep: hsla(144, 61%, 20%, 1);
+--chrome-teal: hsla(173, 80%, 40%, 1);
+--sprout-green: hsla(83, 78%, 55%, 1);
+--clean-sky: hsla(183, 100%, 96%, 1);
+}
+
+/* SCSS HEX */
+$meadow-deep: #14532dff;
+$chrome-teal: #14b8a6ff;
+$sprout-green: #a3e635ff;
+$clean-sky: #ecfeffff;
+
+/* SCSS HSL */
+$meadow-deep: hsla(144, 61%, 20%, 1);
+$chrome-teal: hsla(173, 80%, 40%, 1);
+$sprout-green: hsla(83, 78%, 55%, 1);
+$clean-sky: hsla(183, 100%, 96%, 1);
+
+/* SCSS RGB */
+$meadow-deep: rgba(20, 83, 45, 1);
+$chrome-teal: rgba(20, 184, 166, 1);
+$sprout-green: rgba(163, 230, 53, 1);
+$clean-sky: rgba(236, 254, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #14532dff, #14b8a6ff, #a3e635ff, #ecfeffff);
+$gradient-right: linear-gradient(90deg, #14532dff, #14b8a6ff, #a3e635ff, #ecfeffff);
+$gradient-bottom: linear-gradient(180deg, #14532dff, #14b8a6ff, #a3e635ff, #ecfeffff);
+$gradient-left: linear-gradient(270deg, #14532dff, #14b8a6ff, #a3e635ff, #ecfeffff);
+$gradient-top-right: linear-gradient(45deg, #14532dff, #14b8a6ff, #a3e635ff, #ecfeffff);
+$gradient-bottom-right: linear-gradient(135deg, #14532dff, #14b8a6ff, #a3e635ff, #ecfeffff);
+$gradient-top-left: linear-gradient(225deg, #14532dff, #14b8a6ff, #a3e635ff, #ecfeffff);
+$gradient-bottom-left: linear-gradient(315deg, #14532dff, #14b8a6ff, #a3e635ff, #ecfeffff);
+$gradient-radial: radial-gradient(#14532dff, #14b8a6ff, #a3e635ff, #ecfeffff);
+
+/* SCSS Map */
+$meadow-chrome-map: (
+    "meadow-deep": #14532dff,
+    "chrome-teal": #14b8a6ff,
+    "sprout-green": #a3e635ff,
+    "clean-sky": #ecfeffff
+);

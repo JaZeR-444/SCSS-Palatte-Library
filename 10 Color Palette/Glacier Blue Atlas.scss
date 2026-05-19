@@ -1,0 +1,111 @@
+/*---
+id: glacier-blue-atlas
+name: Glacier Blue Atlas
+author: JaZeR-444
+version: 1.0.0
+category: Blue & Icy
+count: 10
+description: An icy blue palette moving from glacial shadow through crystalline cyan and snow surfaces.
+tags:
+  mood:
+  - blue
+  - icy
+  aesthetic:
+  - Glacier
+  - Minimal
+intent: A blue-focused 10-color palette designed for saas ui, documentation, healthcare.
+suggested_use:
+- SaaS UI
+- Documentation
+- Healthcare
+url: https://coolors.co/082f49-075985-0369a1-0284c7-0ea5e9-38bdf8-7dd3fc-bae6fd-e0f2fe-f8fafc
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--glacier-blue-atlas-glacier-depth: #082f49ff;
+--glacier-blue-atlas-ice-ridge: #075985ff;
+--glacier-blue-atlas-cold-current: #0369a1ff;
+--glacier-blue-atlas-clear-blue: #0284c7ff;
+--glacier-blue-atlas-glacier-blue: #0ea5e9ff;
+--glacier-blue-atlas-crystal-cyan: #38bdf8ff;
+--glacier-blue-atlas-frost-sky: #7dd3fcff;
+--glacier-blue-atlas-pale-ice: #bae6fdff;
+--glacier-blue-atlas-snow-mist: #e0f2feff;
+--glacier-blue-atlas-whiteout: #f8fafcff;
+
+/* CSS HSL */
+--glacier-blue-atlas-glacier-depth: hsla(204, 80%, 16%, 1);
+--glacier-blue-atlas-ice-ridge: hsla(201, 90%, 27%, 1);
+--glacier-blue-atlas-cold-current: hsla(201, 96%, 32%, 1);
+--glacier-blue-atlas-clear-blue: hsla(200, 98%, 39%, 1);
+--glacier-blue-atlas-glacier-blue: hsla(199, 89%, 48%, 1);
+--glacier-blue-atlas-crystal-cyan: hsla(198, 93%, 60%, 1);
+--glacier-blue-atlas-frost-sky: hsla(199, 95%, 74%, 1);
+--glacier-blue-atlas-pale-ice: hsla(201, 94%, 86%, 1);
+--glacier-blue-atlas-snow-mist: hsla(204, 94%, 94%, 1);
+--glacier-blue-atlas-whiteout: hsla(210, 40%, 98%, 1);
+}
+
+/* SCSS HEX */
+$glacier-blue-atlas-glacier-depth: #082f49ff;
+$glacier-blue-atlas-ice-ridge: #075985ff;
+$glacier-blue-atlas-cold-current: #0369a1ff;
+$glacier-blue-atlas-clear-blue: #0284c7ff;
+$glacier-blue-atlas-glacier-blue: #0ea5e9ff;
+$glacier-blue-atlas-crystal-cyan: #38bdf8ff;
+$glacier-blue-atlas-frost-sky: #7dd3fcff;
+$glacier-blue-atlas-pale-ice: #bae6fdff;
+$glacier-blue-atlas-snow-mist: #e0f2feff;
+$glacier-blue-atlas-whiteout: #f8fafcff;
+
+/* SCSS HSL */
+$glacier-blue-atlas-glacier-depth: hsla(204, 80%, 16%, 1);
+$glacier-blue-atlas-ice-ridge: hsla(201, 90%, 27%, 1);
+$glacier-blue-atlas-cold-current: hsla(201, 96%, 32%, 1);
+$glacier-blue-atlas-clear-blue: hsla(200, 98%, 39%, 1);
+$glacier-blue-atlas-glacier-blue: hsla(199, 89%, 48%, 1);
+$glacier-blue-atlas-crystal-cyan: hsla(198, 93%, 60%, 1);
+$glacier-blue-atlas-frost-sky: hsla(199, 95%, 74%, 1);
+$glacier-blue-atlas-pale-ice: hsla(201, 94%, 86%, 1);
+$glacier-blue-atlas-snow-mist: hsla(204, 94%, 94%, 1);
+$glacier-blue-atlas-whiteout: hsla(210, 40%, 98%, 1);
+
+/* SCSS RGB */
+$glacier-blue-atlas-glacier-depth: rgba(8, 47, 73, 1);
+$glacier-blue-atlas-ice-ridge: rgba(7, 89, 133, 1);
+$glacier-blue-atlas-cold-current: rgba(3, 105, 161, 1);
+$glacier-blue-atlas-clear-blue: rgba(2, 132, 199, 1);
+$glacier-blue-atlas-glacier-blue: rgba(14, 165, 233, 1);
+$glacier-blue-atlas-crystal-cyan: rgba(56, 189, 248, 1);
+$glacier-blue-atlas-frost-sky: rgba(125, 211, 252, 1);
+$glacier-blue-atlas-pale-ice: rgba(186, 230, 253, 1);
+$glacier-blue-atlas-snow-mist: rgba(224, 242, 254, 1);
+$glacier-blue-atlas-whiteout: rgba(248, 250, 252, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #082f49ff, #075985ff, #0369a1ff, #0284c7ff, #0ea5e9ff, #38bdf8ff, #7dd3fcff, #bae6fdff, #e0f2feff, #f8fafcff);
+$gradient-right: linear-gradient(90deg, #082f49ff, #075985ff, #0369a1ff, #0284c7ff, #0ea5e9ff, #38bdf8ff, #7dd3fcff, #bae6fdff, #e0f2feff, #f8fafcff);
+$gradient-bottom: linear-gradient(180deg, #082f49ff, #075985ff, #0369a1ff, #0284c7ff, #0ea5e9ff, #38bdf8ff, #7dd3fcff, #bae6fdff, #e0f2feff, #f8fafcff);
+$gradient-left: linear-gradient(270deg, #082f49ff, #075985ff, #0369a1ff, #0284c7ff, #0ea5e9ff, #38bdf8ff, #7dd3fcff, #bae6fdff, #e0f2feff, #f8fafcff);
+$gradient-top-right: linear-gradient(45deg, #082f49ff, #075985ff, #0369a1ff, #0284c7ff, #0ea5e9ff, #38bdf8ff, #7dd3fcff, #bae6fdff, #e0f2feff, #f8fafcff);
+$gradient-bottom-right: linear-gradient(135deg, #082f49ff, #075985ff, #0369a1ff, #0284c7ff, #0ea5e9ff, #38bdf8ff, #7dd3fcff, #bae6fdff, #e0f2feff, #f8fafcff);
+$gradient-top-left: linear-gradient(225deg, #082f49ff, #075985ff, #0369a1ff, #0284c7ff, #0ea5e9ff, #38bdf8ff, #7dd3fcff, #bae6fdff, #e0f2feff, #f8fafcff);
+$gradient-bottom-left: linear-gradient(315deg, #082f49ff, #075985ff, #0369a1ff, #0284c7ff, #0ea5e9ff, #38bdf8ff, #7dd3fcff, #bae6fdff, #e0f2feff, #f8fafcff);
+$gradient-radial: radial-gradient(#082f49ff, #075985ff, #0369a1ff, #0284c7ff, #0ea5e9ff, #38bdf8ff, #7dd3fcff, #bae6fdff, #e0f2feff, #f8fafcff);
+
+/* SCSS Map */
+$glacier-blue-atlas-map: (
+    "glacier-blue-atlas-glacier-depth": #082f49ff,
+    "glacier-blue-atlas-ice-ridge": #075985ff,
+    "glacier-blue-atlas-cold-current": #0369a1ff,
+    "glacier-blue-atlas-clear-blue": #0284c7ff,
+    "glacier-blue-atlas-glacier-blue": #0ea5e9ff,
+    "glacier-blue-atlas-crystal-cyan": #38bdf8ff,
+    "glacier-blue-atlas-frost-sky": #7dd3fcff,
+    "glacier-blue-atlas-pale-ice": #bae6fdff,
+    "glacier-blue-atlas-snow-mist": #e0f2feff,
+    "glacier-blue-atlas-whiteout": #f8fafcff
+);

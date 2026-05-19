@@ -1,0 +1,87 @@
+/*---
+id: neon-monastery
+name: Neon Monastery
+author: JaZeR-444
+version: 1.0.0
+category: Dark & Spiritual
+count: 6
+description: A moody neon palette pairing contemplative dark tones with luminous accents.
+tags:
+  mood:
+  - dark
+  - luminous
+  aesthetic:
+  - Cyber
+  - Spiritual
+intent: A 6-color palette designed for music, events, hero accent.
+suggested_use:
+- Music
+- Events
+- Hero Accent
+url: https://coolors.co/07020d-3c096c-c77dff-ff9e00-00f5d4-f8f7ff
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--monk-black: #07020dff;
+--temple-violet: #3c096cff;
+--prayer-magenta: #c77dffff;
+--neon-incense: #ff9e00ff;
+--aura-cyan: #00f5d4ff;
+--moon-silk: #f8f7ffff;
+
+/* CSS HSL */
+--monk-black: hsla(267, 73%, 3%, 1);
+--temple-violet: hsla(271, 85%, 23%, 1);
+--prayer-magenta: hsla(274, 100%, 75%, 1);
+--neon-incense: hsla(37, 100%, 50%, 1);
+--aura-cyan: hsla(172, 100%, 48%, 1);
+--moon-silk: hsla(248, 100%, 98%, 1);
+}
+
+/* SCSS HEX */
+$monk-black: #07020dff;
+$temple-violet: #3c096cff;
+$prayer-magenta: #c77dffff;
+$neon-incense: #ff9e00ff;
+$aura-cyan: #00f5d4ff;
+$moon-silk: #f8f7ffff;
+
+/* SCSS HSL */
+$monk-black: hsla(267, 73%, 3%, 1);
+$temple-violet: hsla(271, 85%, 23%, 1);
+$prayer-magenta: hsla(274, 100%, 75%, 1);
+$neon-incense: hsla(37, 100%, 50%, 1);
+$aura-cyan: hsla(172, 100%, 48%, 1);
+$moon-silk: hsla(248, 100%, 98%, 1);
+
+/* SCSS RGB */
+$monk-black: rgba(7, 2, 13, 1);
+$temple-violet: rgba(60, 9, 108, 1);
+$prayer-magenta: rgba(199, 125, 255, 1);
+$neon-incense: rgba(255, 158, 0, 1);
+$aura-cyan: rgba(0, 245, 212, 1);
+$moon-silk: rgba(248, 247, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #07020dff, #3c096cff, #c77dffff, #ff9e00ff, #00f5d4ff, #f8f7ffff);
+$gradient-right: linear-gradient(90deg, #07020dff, #3c096cff, #c77dffff, #ff9e00ff, #00f5d4ff, #f8f7ffff);
+$gradient-bottom: linear-gradient(180deg, #07020dff, #3c096cff, #c77dffff, #ff9e00ff, #00f5d4ff, #f8f7ffff);
+$gradient-left: linear-gradient(270deg, #07020dff, #3c096cff, #c77dffff, #ff9e00ff, #00f5d4ff, #f8f7ffff);
+$gradient-top-right: linear-gradient(45deg, #07020dff, #3c096cff, #c77dffff, #ff9e00ff, #00f5d4ff, #f8f7ffff);
+$gradient-bottom-right: linear-gradient(135deg, #07020dff, #3c096cff, #c77dffff, #ff9e00ff, #00f5d4ff, #f8f7ffff);
+$gradient-top-left: linear-gradient(225deg, #07020dff, #3c096cff, #c77dffff, #ff9e00ff, #00f5d4ff, #f8f7ffff);
+$gradient-bottom-left: linear-gradient(315deg, #07020dff, #3c096cff, #c77dffff, #ff9e00ff, #00f5d4ff, #f8f7ffff);
+$gradient-radial: radial-gradient(#07020dff, #3c096cff, #c77dffff, #ff9e00ff, #00f5d4ff, #f8f7ffff);
+
+/* SCSS Map */
+$neon-monastery-map: (
+    "monk-black": #07020dff,
+    "temple-violet": #3c096cff,
+    "prayer-magenta": #c77dffff,
+    "neon-incense": #ff9e00ff,
+    "aura-cyan": #00f5d4ff,
+    "moon-silk": #f8f7ffff
+);

@@ -1,0 +1,99 @@
+/*---
+id: grape-nocturne-system
+name: Grape Nocturne System
+author: JaZeR-444
+version: 1.0.0
+category: Purple & Moody
+count: 8
+description: A moody grape palette with wine-dark structure, plum midtones, and quiet lavender light.
+tags:
+  mood:
+  - purple
+  - moody
+  aesthetic:
+  - Nocturne
+  - Grape
+intent: A purple-focused 8-color palette designed for music, night mode, editorial.
+suggested_use:
+- Music
+- Night Mode
+- Editorial
+url: https://coolors.co/14061f-2a0f3f-4a1d5f-6b2d83-8e44ad-b06ad1-d7bde2-eadcf8
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--grape-nocturne-system-nocturne-ink: #14061fff;
+--grape-nocturne-system-grape-shadow: #2a0f3fff;
+--grape-nocturne-system-wine-plum: #4a1d5fff;
+--grape-nocturne-system-midnight-grape: #6b2d83ff;
+--grape-nocturne-system-velvet-grape: #8e44adff;
+--grape-nocturne-system-orchid-chord: #b06ad1ff;
+--grape-nocturne-system-lavender-echo: #d7bde2ff;
+--grape-nocturne-system-mist-note: #eadcf8ff;
+
+/* CSS HSL */
+--grape-nocturne-system-nocturne-ink: hsla(274, 68%, 7%, 1);
+--grape-nocturne-system-grape-shadow: hsla(274, 62%, 15%, 1);
+--grape-nocturne-system-wine-plum: hsla(281, 53%, 24%, 1);
+--grape-nocturne-system-midnight-grape: hsla(283, 49%, 35%, 1);
+--grape-nocturne-system-velvet-grape: hsla(282, 44%, 47%, 1);
+--grape-nocturne-system-orchid-chord: hsla(281, 53%, 62%, 1);
+--grape-nocturne-system-lavender-echo: hsla(282, 39%, 81%, 1);
+--grape-nocturne-system-mist-note: hsla(270, 67%, 92%, 1);
+}
+
+/* SCSS HEX */
+$grape-nocturne-system-nocturne-ink: #14061fff;
+$grape-nocturne-system-grape-shadow: #2a0f3fff;
+$grape-nocturne-system-wine-plum: #4a1d5fff;
+$grape-nocturne-system-midnight-grape: #6b2d83ff;
+$grape-nocturne-system-velvet-grape: #8e44adff;
+$grape-nocturne-system-orchid-chord: #b06ad1ff;
+$grape-nocturne-system-lavender-echo: #d7bde2ff;
+$grape-nocturne-system-mist-note: #eadcf8ff;
+
+/* SCSS HSL */
+$grape-nocturne-system-nocturne-ink: hsla(274, 68%, 7%, 1);
+$grape-nocturne-system-grape-shadow: hsla(274, 62%, 15%, 1);
+$grape-nocturne-system-wine-plum: hsla(281, 53%, 24%, 1);
+$grape-nocturne-system-midnight-grape: hsla(283, 49%, 35%, 1);
+$grape-nocturne-system-velvet-grape: hsla(282, 44%, 47%, 1);
+$grape-nocturne-system-orchid-chord: hsla(281, 53%, 62%, 1);
+$grape-nocturne-system-lavender-echo: hsla(282, 39%, 81%, 1);
+$grape-nocturne-system-mist-note: hsla(270, 67%, 92%, 1);
+
+/* SCSS RGB */
+$grape-nocturne-system-nocturne-ink: rgba(20, 6, 31, 1);
+$grape-nocturne-system-grape-shadow: rgba(42, 15, 63, 1);
+$grape-nocturne-system-wine-plum: rgba(74, 29, 95, 1);
+$grape-nocturne-system-midnight-grape: rgba(107, 45, 131, 1);
+$grape-nocturne-system-velvet-grape: rgba(142, 68, 173, 1);
+$grape-nocturne-system-orchid-chord: rgba(176, 106, 209, 1);
+$grape-nocturne-system-lavender-echo: rgba(215, 189, 226, 1);
+$grape-nocturne-system-mist-note: rgba(234, 220, 248, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff, #8e44adff, #b06ad1ff, #d7bde2ff, #eadcf8ff);
+$gradient-right: linear-gradient(90deg, #14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff, #8e44adff, #b06ad1ff, #d7bde2ff, #eadcf8ff);
+$gradient-bottom: linear-gradient(180deg, #14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff, #8e44adff, #b06ad1ff, #d7bde2ff, #eadcf8ff);
+$gradient-left: linear-gradient(270deg, #14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff, #8e44adff, #b06ad1ff, #d7bde2ff, #eadcf8ff);
+$gradient-top-right: linear-gradient(45deg, #14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff, #8e44adff, #b06ad1ff, #d7bde2ff, #eadcf8ff);
+$gradient-bottom-right: linear-gradient(135deg, #14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff, #8e44adff, #b06ad1ff, #d7bde2ff, #eadcf8ff);
+$gradient-top-left: linear-gradient(225deg, #14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff, #8e44adff, #b06ad1ff, #d7bde2ff, #eadcf8ff);
+$gradient-bottom-left: linear-gradient(315deg, #14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff, #8e44adff, #b06ad1ff, #d7bde2ff, #eadcf8ff);
+$gradient-radial: radial-gradient(#14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff, #8e44adff, #b06ad1ff, #d7bde2ff, #eadcf8ff);
+
+/* SCSS Map */
+$grape-nocturne-system-map: (
+    "grape-nocturne-system-nocturne-ink": #14061fff,
+    "grape-nocturne-system-grape-shadow": #2a0f3fff,
+    "grape-nocturne-system-wine-plum": #4a1d5fff,
+    "grape-nocturne-system-midnight-grape": #6b2d83ff,
+    "grape-nocturne-system-velvet-grape": #8e44adff,
+    "grape-nocturne-system-orchid-chord": #b06ad1ff,
+    "grape-nocturne-system-lavender-echo": #d7bde2ff,
+    "grape-nocturne-system-mist-note": #eadcf8ff
+);

@@ -1,0 +1,99 @@
+/*---
+id: solar-ledger
+name: Solar Ledger
+author: JaZeR-444
+version: 1.0.0
+category: Bright & Analytical
+count: 8
+description: A data-friendly palette with solar accents, finance blues, and clear neutrals.
+tags:
+  mood:
+  - bright
+  - analytical
+  aesthetic:
+  - Finance
+  - Solar
+intent: A 8-color palette designed for charts, finance, dashboard.
+suggested_use:
+- Charts
+- Finance
+- Dashboard
+url: https://coolors.co/0b132b-1d4ed8-fbbf24-10b981-ef4444-94a3b8-e2e8f0-f8fafc
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--ledger-navy: #0b132bff;
+--data-blue: #1d4ed8ff;
+--solar-gold: #fbbf24ff;
+--profit-green: #10b981ff;
+--risk-red: #ef4444ff;
+--grid-gray: #94a3b8ff;
+--panel-light: #e2e8f0ff;
+--page-white: #f8fafcff;
+
+/* CSS HSL */
+--ledger-navy: hsla(225, 59%, 11%, 1);
+--data-blue: hsla(224, 76%, 48%, 1);
+--solar-gold: hsla(43, 96%, 56%, 1);
+--profit-green: hsla(160, 84%, 39%, 1);
+--risk-red: hsla(0, 84%, 60%, 1);
+--grid-gray: hsla(215, 20%, 65%, 1);
+--panel-light: hsla(214, 32%, 91%, 1);
+--page-white: hsla(210, 40%, 98%, 1);
+}
+
+/* SCSS HEX */
+$ledger-navy: #0b132bff;
+$data-blue: #1d4ed8ff;
+$solar-gold: #fbbf24ff;
+$profit-green: #10b981ff;
+$risk-red: #ef4444ff;
+$grid-gray: #94a3b8ff;
+$panel-light: #e2e8f0ff;
+$page-white: #f8fafcff;
+
+/* SCSS HSL */
+$ledger-navy: hsla(225, 59%, 11%, 1);
+$data-blue: hsla(224, 76%, 48%, 1);
+$solar-gold: hsla(43, 96%, 56%, 1);
+$profit-green: hsla(160, 84%, 39%, 1);
+$risk-red: hsla(0, 84%, 60%, 1);
+$grid-gray: hsla(215, 20%, 65%, 1);
+$panel-light: hsla(214, 32%, 91%, 1);
+$page-white: hsla(210, 40%, 98%, 1);
+
+/* SCSS RGB */
+$ledger-navy: rgba(11, 19, 43, 1);
+$data-blue: rgba(29, 78, 216, 1);
+$solar-gold: rgba(251, 191, 36, 1);
+$profit-green: rgba(16, 185, 129, 1);
+$risk-red: rgba(239, 68, 68, 1);
+$grid-gray: rgba(148, 163, 184, 1);
+$panel-light: rgba(226, 232, 240, 1);
+$page-white: rgba(248, 250, 252, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0b132bff, #1d4ed8ff, #fbbf24ff, #10b981ff, #ef4444ff, #94a3b8ff, #e2e8f0ff, #f8fafcff);
+$gradient-right: linear-gradient(90deg, #0b132bff, #1d4ed8ff, #fbbf24ff, #10b981ff, #ef4444ff, #94a3b8ff, #e2e8f0ff, #f8fafcff);
+$gradient-bottom: linear-gradient(180deg, #0b132bff, #1d4ed8ff, #fbbf24ff, #10b981ff, #ef4444ff, #94a3b8ff, #e2e8f0ff, #f8fafcff);
+$gradient-left: linear-gradient(270deg, #0b132bff, #1d4ed8ff, #fbbf24ff, #10b981ff, #ef4444ff, #94a3b8ff, #e2e8f0ff, #f8fafcff);
+$gradient-top-right: linear-gradient(45deg, #0b132bff, #1d4ed8ff, #fbbf24ff, #10b981ff, #ef4444ff, #94a3b8ff, #e2e8f0ff, #f8fafcff);
+$gradient-bottom-right: linear-gradient(135deg, #0b132bff, #1d4ed8ff, #fbbf24ff, #10b981ff, #ef4444ff, #94a3b8ff, #e2e8f0ff, #f8fafcff);
+$gradient-top-left: linear-gradient(225deg, #0b132bff, #1d4ed8ff, #fbbf24ff, #10b981ff, #ef4444ff, #94a3b8ff, #e2e8f0ff, #f8fafcff);
+$gradient-bottom-left: linear-gradient(315deg, #0b132bff, #1d4ed8ff, #fbbf24ff, #10b981ff, #ef4444ff, #94a3b8ff, #e2e8f0ff, #f8fafcff);
+$gradient-radial: radial-gradient(#0b132bff, #1d4ed8ff, #fbbf24ff, #10b981ff, #ef4444ff, #94a3b8ff, #e2e8f0ff, #f8fafcff);
+
+/* SCSS Map */
+$solar-ledger-map: (
+    "ledger-navy": #0b132bff,
+    "data-blue": #1d4ed8ff,
+    "solar-gold": #fbbf24ff,
+    "profit-green": #10b981ff,
+    "risk-red": #ef4444ff,
+    "grid-gray": #94a3b8ff,
+    "panel-light": #e2e8f0ff,
+    "page-white": #f8fafcff
+);

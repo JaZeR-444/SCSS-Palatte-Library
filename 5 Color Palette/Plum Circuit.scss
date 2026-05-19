@@ -1,0 +1,81 @@
+/*---
+id: plum-circuit
+name: Plum Circuit
+author: JaZeR-444
+version: 1.0.0
+category: Purple & Technical
+count: 5
+description: A dark plum interface palette with violet energy, magenta signal, and cool surface light.
+tags:
+  mood:
+  - purple
+  - technical
+  aesthetic:
+  - Cyber
+  - Interface
+intent: A purple-focused 5-color palette designed for developer tools, ai ui, dashboard.
+suggested_use:
+- Developer Tools
+- AI UI
+- Dashboard
+url: https://coolors.co/090413-2e1065-7e22ce-d946ef-ecfeff
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--plum-black: #090413ff;
+--circuit-plum: #2e1065ff;
+--violet-node: #7e22ceff;
+--magenta-pulse: #d946efff;
+--ice-screen: #ecfeffff;
+
+/* CSS HSL */
+--plum-black: hsla(260, 65%, 5%, 1);
+--circuit-plum: hsla(261, 73%, 23%, 1);
+--violet-node: hsla(272, 72%, 47%, 1);
+--magenta-pulse: hsla(292, 84%, 61%, 1);
+--ice-screen: hsla(183, 100%, 96%, 1);
+}
+
+/* SCSS HEX */
+$plum-black: #090413ff;
+$circuit-plum: #2e1065ff;
+$violet-node: #7e22ceff;
+$magenta-pulse: #d946efff;
+$ice-screen: #ecfeffff;
+
+/* SCSS HSL */
+$plum-black: hsla(260, 65%, 5%, 1);
+$circuit-plum: hsla(261, 73%, 23%, 1);
+$violet-node: hsla(272, 72%, 47%, 1);
+$magenta-pulse: hsla(292, 84%, 61%, 1);
+$ice-screen: hsla(183, 100%, 96%, 1);
+
+/* SCSS RGB */
+$plum-black: rgba(9, 4, 19, 1);
+$circuit-plum: rgba(46, 16, 101, 1);
+$violet-node: rgba(126, 34, 206, 1);
+$magenta-pulse: rgba(217, 70, 239, 1);
+$ice-screen: rgba(236, 254, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #090413ff, #2e1065ff, #7e22ceff, #d946efff, #ecfeffff);
+$gradient-right: linear-gradient(90deg, #090413ff, #2e1065ff, #7e22ceff, #d946efff, #ecfeffff);
+$gradient-bottom: linear-gradient(180deg, #090413ff, #2e1065ff, #7e22ceff, #d946efff, #ecfeffff);
+$gradient-left: linear-gradient(270deg, #090413ff, #2e1065ff, #7e22ceff, #d946efff, #ecfeffff);
+$gradient-top-right: linear-gradient(45deg, #090413ff, #2e1065ff, #7e22ceff, #d946efff, #ecfeffff);
+$gradient-bottom-right: linear-gradient(135deg, #090413ff, #2e1065ff, #7e22ceff, #d946efff, #ecfeffff);
+$gradient-top-left: linear-gradient(225deg, #090413ff, #2e1065ff, #7e22ceff, #d946efff, #ecfeffff);
+$gradient-bottom-left: linear-gradient(315deg, #090413ff, #2e1065ff, #7e22ceff, #d946efff, #ecfeffff);
+$gradient-radial: radial-gradient(#090413ff, #2e1065ff, #7e22ceff, #d946efff, #ecfeffff);
+
+/* SCSS Map */
+$plum-circuit-map: (
+    "plum-black": #090413ff,
+    "circuit-plum": #2e1065ff,
+    "violet-node": #7e22ceff,
+    "magenta-pulse": #d946efff,
+    "ice-screen": #ecfeffff
+);

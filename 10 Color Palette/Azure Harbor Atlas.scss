@@ -1,0 +1,111 @@
+/*---
+id: azure-harbor-atlas
+name: Azure Harbor Atlas
+author: JaZeR-444
+version: 1.0.0
+category: Blue & Coastal
+count: 10
+description: A coastal blue palette with navy depth, harbor midtones, and clean sea-light surfaces.
+tags:
+  mood:
+  - blue
+  - coastal
+  aesthetic:
+  - Harbor
+  - Maritime
+intent: A blue-focused 10-color palette designed for travel, maps, dashboard.
+suggested_use:
+- Travel
+- Maps
+- Dashboard
+url: https://coolors.co/061826-0b2e4a-0f4c81-1d72aa-38a3d1-7dd3fc-bae6fd-e0f2fe-f8fafc-ffffff
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--azure-harbor-atlas-harbor-night: #061826ff;
+--azure-harbor-atlas-deep-channel: #0b2e4aff;
+--azure-harbor-atlas-azure-harbor: #0f4c81ff;
+--azure-harbor-atlas-dock-blue: #1d72aaff;
+--azure-harbor-atlas-tide-cyan: #38a3d1ff;
+--azure-harbor-atlas-sky-wash: #7dd3fcff;
+--azure-harbor-atlas-foam-blue: #bae6fdff;
+--azure-harbor-atlas-mist-surface: #e0f2feff;
+--azure-harbor-atlas-cloud-paper: #f8fafcff;
+--azure-harbor-atlas-white-sail: #ffffffff;
+
+/* CSS HSL */
+--azure-harbor-atlas-harbor-night: hsla(206, 73%, 9%, 1);
+--azure-harbor-atlas-deep-channel: hsla(207, 74%, 17%, 1);
+--azure-harbor-atlas-azure-harbor: hsla(208, 79%, 28%, 1);
+--azure-harbor-atlas-dock-blue: hsla(204, 71%, 39%, 1);
+--azure-harbor-atlas-tide-cyan: hsla(198, 62%, 52%, 1);
+--azure-harbor-atlas-sky-wash: hsla(199, 95%, 74%, 1);
+--azure-harbor-atlas-foam-blue: hsla(201, 94%, 86%, 1);
+--azure-harbor-atlas-mist-surface: hsla(204, 94%, 94%, 1);
+--azure-harbor-atlas-cloud-paper: hsla(210, 40%, 98%, 1);
+--azure-harbor-atlas-white-sail: hsla(0, 0%, 100%, 1);
+}
+
+/* SCSS HEX */
+$azure-harbor-atlas-harbor-night: #061826ff;
+$azure-harbor-atlas-deep-channel: #0b2e4aff;
+$azure-harbor-atlas-azure-harbor: #0f4c81ff;
+$azure-harbor-atlas-dock-blue: #1d72aaff;
+$azure-harbor-atlas-tide-cyan: #38a3d1ff;
+$azure-harbor-atlas-sky-wash: #7dd3fcff;
+$azure-harbor-atlas-foam-blue: #bae6fdff;
+$azure-harbor-atlas-mist-surface: #e0f2feff;
+$azure-harbor-atlas-cloud-paper: #f8fafcff;
+$azure-harbor-atlas-white-sail: #ffffffff;
+
+/* SCSS HSL */
+$azure-harbor-atlas-harbor-night: hsla(206, 73%, 9%, 1);
+$azure-harbor-atlas-deep-channel: hsla(207, 74%, 17%, 1);
+$azure-harbor-atlas-azure-harbor: hsla(208, 79%, 28%, 1);
+$azure-harbor-atlas-dock-blue: hsla(204, 71%, 39%, 1);
+$azure-harbor-atlas-tide-cyan: hsla(198, 62%, 52%, 1);
+$azure-harbor-atlas-sky-wash: hsla(199, 95%, 74%, 1);
+$azure-harbor-atlas-foam-blue: hsla(201, 94%, 86%, 1);
+$azure-harbor-atlas-mist-surface: hsla(204, 94%, 94%, 1);
+$azure-harbor-atlas-cloud-paper: hsla(210, 40%, 98%, 1);
+$azure-harbor-atlas-white-sail: hsla(0, 0%, 100%, 1);
+
+/* SCSS RGB */
+$azure-harbor-atlas-harbor-night: rgba(6, 24, 38, 1);
+$azure-harbor-atlas-deep-channel: rgba(11, 46, 74, 1);
+$azure-harbor-atlas-azure-harbor: rgba(15, 76, 129, 1);
+$azure-harbor-atlas-dock-blue: rgba(29, 114, 170, 1);
+$azure-harbor-atlas-tide-cyan: rgba(56, 163, 209, 1);
+$azure-harbor-atlas-sky-wash: rgba(125, 211, 252, 1);
+$azure-harbor-atlas-foam-blue: rgba(186, 230, 253, 1);
+$azure-harbor-atlas-mist-surface: rgba(224, 242, 254, 1);
+$azure-harbor-atlas-cloud-paper: rgba(248, 250, 252, 1);
+$azure-harbor-atlas-white-sail: rgba(255, 255, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #061826ff, #0b2e4aff, #0f4c81ff, #1d72aaff, #38a3d1ff, #7dd3fcff, #bae6fdff, #e0f2feff, #f8fafcff, #ffffffff);
+$gradient-right: linear-gradient(90deg, #061826ff, #0b2e4aff, #0f4c81ff, #1d72aaff, #38a3d1ff, #7dd3fcff, #bae6fdff, #e0f2feff, #f8fafcff, #ffffffff);
+$gradient-bottom: linear-gradient(180deg, #061826ff, #0b2e4aff, #0f4c81ff, #1d72aaff, #38a3d1ff, #7dd3fcff, #bae6fdff, #e0f2feff, #f8fafcff, #ffffffff);
+$gradient-left: linear-gradient(270deg, #061826ff, #0b2e4aff, #0f4c81ff, #1d72aaff, #38a3d1ff, #7dd3fcff, #bae6fdff, #e0f2feff, #f8fafcff, #ffffffff);
+$gradient-top-right: linear-gradient(45deg, #061826ff, #0b2e4aff, #0f4c81ff, #1d72aaff, #38a3d1ff, #7dd3fcff, #bae6fdff, #e0f2feff, #f8fafcff, #ffffffff);
+$gradient-bottom-right: linear-gradient(135deg, #061826ff, #0b2e4aff, #0f4c81ff, #1d72aaff, #38a3d1ff, #7dd3fcff, #bae6fdff, #e0f2feff, #f8fafcff, #ffffffff);
+$gradient-top-left: linear-gradient(225deg, #061826ff, #0b2e4aff, #0f4c81ff, #1d72aaff, #38a3d1ff, #7dd3fcff, #bae6fdff, #e0f2feff, #f8fafcff, #ffffffff);
+$gradient-bottom-left: linear-gradient(315deg, #061826ff, #0b2e4aff, #0f4c81ff, #1d72aaff, #38a3d1ff, #7dd3fcff, #bae6fdff, #e0f2feff, #f8fafcff, #ffffffff);
+$gradient-radial: radial-gradient(#061826ff, #0b2e4aff, #0f4c81ff, #1d72aaff, #38a3d1ff, #7dd3fcff, #bae6fdff, #e0f2feff, #f8fafcff, #ffffffff);
+
+/* SCSS Map */
+$azure-harbor-atlas-map: (
+    "azure-harbor-atlas-harbor-night": #061826ff,
+    "azure-harbor-atlas-deep-channel": #0b2e4aff,
+    "azure-harbor-atlas-azure-harbor": #0f4c81ff,
+    "azure-harbor-atlas-dock-blue": #1d72aaff,
+    "azure-harbor-atlas-tide-cyan": #38a3d1ff,
+    "azure-harbor-atlas-sky-wash": #7dd3fcff,
+    "azure-harbor-atlas-foam-blue": #bae6fdff,
+    "azure-harbor-atlas-mist-surface": #e0f2feff,
+    "azure-harbor-atlas-cloud-paper": #f8fafcff,
+    "azure-harbor-atlas-white-sail": #ffffffff
+);

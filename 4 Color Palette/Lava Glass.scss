@@ -1,0 +1,75 @@
+/*---
+id: lava-glass
+name: Lava Glass
+author: JaZeR-444
+version: 1.0.0
+category: Dark & Energetic
+count: 4
+description: A high-energy dark palette with lava, amber glass, and ash.
+tags:
+  mood:
+  - dark
+  - energetic
+  aesthetic:
+  - Gaming
+  - Neon
+intent: A 4-color palette designed for game ui, events, landing page.
+suggested_use:
+- Game UI
+- Events
+- Landing Page
+url: https://coolors.co/120f18-ff3b30-ffb703-e5e7eb
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--obsidian-pane: #120f18ff;
+--lava-red: #ff3b30ff;
+--amber-glass: #ffb703ff;
+--ash-glow: #e5e7ebff;
+
+/* CSS HSL */
+--obsidian-pane: hsla(260, 23%, 8%, 1);
+--lava-red: hsla(3, 100%, 59%, 1);
+--amber-glass: hsla(43, 100%, 51%, 1);
+--ash-glow: hsla(220, 13%, 91%, 1);
+}
+
+/* SCSS HEX */
+$obsidian-pane: #120f18ff;
+$lava-red: #ff3b30ff;
+$amber-glass: #ffb703ff;
+$ash-glow: #e5e7ebff;
+
+/* SCSS HSL */
+$obsidian-pane: hsla(260, 23%, 8%, 1);
+$lava-red: hsla(3, 100%, 59%, 1);
+$amber-glass: hsla(43, 100%, 51%, 1);
+$ash-glow: hsla(220, 13%, 91%, 1);
+
+/* SCSS RGB */
+$obsidian-pane: rgba(18, 15, 24, 1);
+$lava-red: rgba(255, 59, 48, 1);
+$amber-glass: rgba(255, 183, 3, 1);
+$ash-glow: rgba(229, 231, 235, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #120f18ff, #ff3b30ff, #ffb703ff, #e5e7ebff);
+$gradient-right: linear-gradient(90deg, #120f18ff, #ff3b30ff, #ffb703ff, #e5e7ebff);
+$gradient-bottom: linear-gradient(180deg, #120f18ff, #ff3b30ff, #ffb703ff, #e5e7ebff);
+$gradient-left: linear-gradient(270deg, #120f18ff, #ff3b30ff, #ffb703ff, #e5e7ebff);
+$gradient-top-right: linear-gradient(45deg, #120f18ff, #ff3b30ff, #ffb703ff, #e5e7ebff);
+$gradient-bottom-right: linear-gradient(135deg, #120f18ff, #ff3b30ff, #ffb703ff, #e5e7ebff);
+$gradient-top-left: linear-gradient(225deg, #120f18ff, #ff3b30ff, #ffb703ff, #e5e7ebff);
+$gradient-bottom-left: linear-gradient(315deg, #120f18ff, #ff3b30ff, #ffb703ff, #e5e7ebff);
+$gradient-radial: radial-gradient(#120f18ff, #ff3b30ff, #ffb703ff, #e5e7ebff);
+
+/* SCSS Map */
+$lava-glass-map: (
+    "obsidian-pane": #120f18ff,
+    "lava-red": #ff3b30ff,
+    "amber-glass": #ffb703ff,
+    "ash-glow": #e5e7ebff
+);

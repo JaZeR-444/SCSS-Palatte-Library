@@ -1,0 +1,105 @@
+/*---
+id: prism-city
+name: Prism City
+author: JaZeR-444
+version: 1.0.0
+category: Urban & Colorful
+count: 9
+description: A colorful city palette with transit brights, night foundations, and clean surfaces.
+tags:
+  mood:
+  - urban
+  - colorful
+  aesthetic:
+  - City
+  - Transit
+intent: A 9-color palette designed for maps, events, brand system.
+suggested_use:
+- Maps
+- Events
+- Brand System
+url: https://coolors.co/111827-2563eb-facc15-dc2626-16a34a-a855f7-38bdf8-9ca3af-f9fafb
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--city-night: #111827ff;
+--subway-blue: #2563ebff;
+--taxi-yellow: #facc15ff;
+--signal-red: #dc2626ff;
+--park-green: #16a34aff;
+--neon-purple: #a855f7ff;
+--sky-glass: #38bdf8ff;
+--concrete-gray: #9ca3afff;
+--station-white: #f9fafbff;
+
+/* CSS HSL */
+--city-night: hsla(221, 39%, 11%, 1);
+--subway-blue: hsla(221, 83%, 53%, 1);
+--taxi-yellow: hsla(48, 96%, 53%, 1);
+--signal-red: hsla(0, 72%, 51%, 1);
+--park-green: hsla(142, 76%, 36%, 1);
+--neon-purple: hsla(271, 91%, 65%, 1);
+--sky-glass: hsla(198, 93%, 60%, 1);
+--concrete-gray: hsla(218, 11%, 65%, 1);
+--station-white: hsla(210, 20%, 98%, 1);
+}
+
+/* SCSS HEX */
+$city-night: #111827ff;
+$subway-blue: #2563ebff;
+$taxi-yellow: #facc15ff;
+$signal-red: #dc2626ff;
+$park-green: #16a34aff;
+$neon-purple: #a855f7ff;
+$sky-glass: #38bdf8ff;
+$concrete-gray: #9ca3afff;
+$station-white: #f9fafbff;
+
+/* SCSS HSL */
+$city-night: hsla(221, 39%, 11%, 1);
+$subway-blue: hsla(221, 83%, 53%, 1);
+$taxi-yellow: hsla(48, 96%, 53%, 1);
+$signal-red: hsla(0, 72%, 51%, 1);
+$park-green: hsla(142, 76%, 36%, 1);
+$neon-purple: hsla(271, 91%, 65%, 1);
+$sky-glass: hsla(198, 93%, 60%, 1);
+$concrete-gray: hsla(218, 11%, 65%, 1);
+$station-white: hsla(210, 20%, 98%, 1);
+
+/* SCSS RGB */
+$city-night: rgba(17, 24, 39, 1);
+$subway-blue: rgba(37, 99, 235, 1);
+$taxi-yellow: rgba(250, 204, 21, 1);
+$signal-red: rgba(220, 38, 38, 1);
+$park-green: rgba(22, 163, 74, 1);
+$neon-purple: rgba(168, 85, 247, 1);
+$sky-glass: rgba(56, 189, 248, 1);
+$concrete-gray: rgba(156, 163, 175, 1);
+$station-white: rgba(249, 250, 251, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #111827ff, #2563ebff, #facc15ff, #dc2626ff, #16a34aff, #a855f7ff, #38bdf8ff, #9ca3afff, #f9fafbff);
+$gradient-right: linear-gradient(90deg, #111827ff, #2563ebff, #facc15ff, #dc2626ff, #16a34aff, #a855f7ff, #38bdf8ff, #9ca3afff, #f9fafbff);
+$gradient-bottom: linear-gradient(180deg, #111827ff, #2563ebff, #facc15ff, #dc2626ff, #16a34aff, #a855f7ff, #38bdf8ff, #9ca3afff, #f9fafbff);
+$gradient-left: linear-gradient(270deg, #111827ff, #2563ebff, #facc15ff, #dc2626ff, #16a34aff, #a855f7ff, #38bdf8ff, #9ca3afff, #f9fafbff);
+$gradient-top-right: linear-gradient(45deg, #111827ff, #2563ebff, #facc15ff, #dc2626ff, #16a34aff, #a855f7ff, #38bdf8ff, #9ca3afff, #f9fafbff);
+$gradient-bottom-right: linear-gradient(135deg, #111827ff, #2563ebff, #facc15ff, #dc2626ff, #16a34aff, #a855f7ff, #38bdf8ff, #9ca3afff, #f9fafbff);
+$gradient-top-left: linear-gradient(225deg, #111827ff, #2563ebff, #facc15ff, #dc2626ff, #16a34aff, #a855f7ff, #38bdf8ff, #9ca3afff, #f9fafbff);
+$gradient-bottom-left: linear-gradient(315deg, #111827ff, #2563ebff, #facc15ff, #dc2626ff, #16a34aff, #a855f7ff, #38bdf8ff, #9ca3afff, #f9fafbff);
+$gradient-radial: radial-gradient(#111827ff, #2563ebff, #facc15ff, #dc2626ff, #16a34aff, #a855f7ff, #38bdf8ff, #9ca3afff, #f9fafbff);
+
+/* SCSS Map */
+$prism-city-map: (
+    "city-night": #111827ff,
+    "subway-blue": #2563ebff,
+    "taxi-yellow": #facc15ff,
+    "signal-red": #dc2626ff,
+    "park-green": #16a34aff,
+    "neon-purple": #a855f7ff,
+    "sky-glass": #38bdf8ff,
+    "concrete-gray": #9ca3afff,
+    "station-white": #f9fafbff
+);

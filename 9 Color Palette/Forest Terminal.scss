@@ -1,0 +1,105 @@
+/*---
+id: forest-terminal
+name: Forest Terminal
+author: JaZeR-444
+version: 1.0.0
+category: Natural & Technical
+count: 9
+description: A terminal-ready forest palette with green scales and readable system accents.
+tags:
+  mood:
+  - natural
+  - technical
+  aesthetic:
+  - Terminal
+  - Forest
+intent: A 9-color palette designed for developer tools, sustainability, analytics.
+suggested_use:
+- Developer Tools
+- Sustainability
+- Analytics
+url: https://coolors.co/030712-052e16-166534-16a34a-86efac-22d3ee-fbbf24-fb7185-f0fdf4
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--terminal-black: #030712ff;
+--forest-950: #052e16ff;
+--forest-800: #166534ff;
+--forest-600: #16a34aff;
+--forest-300: #86efacff;
+--code-cyan: #22d3eeff;
+--alert-amber: #fbbf24ff;
+--error-rose: #fb7185ff;
+--screen-white: #f0fdf4ff;
+
+/* CSS HSL */
+--terminal-black: hsla(224, 71%, 4%, 1);
+--forest-950: hsla(145, 80%, 10%, 1);
+--forest-800: hsla(143, 64%, 24%, 1);
+--forest-600: hsla(142, 76%, 36%, 1);
+--forest-300: hsla(142, 77%, 73%, 1);
+--code-cyan: hsla(188, 86%, 53%, 1);
+--alert-amber: hsla(43, 96%, 56%, 1);
+--error-rose: hsla(351, 95%, 71%, 1);
+--screen-white: hsla(138, 76%, 97%, 1);
+}
+
+/* SCSS HEX */
+$terminal-black: #030712ff;
+$forest-950: #052e16ff;
+$forest-800: #166534ff;
+$forest-600: #16a34aff;
+$forest-300: #86efacff;
+$code-cyan: #22d3eeff;
+$alert-amber: #fbbf24ff;
+$error-rose: #fb7185ff;
+$screen-white: #f0fdf4ff;
+
+/* SCSS HSL */
+$terminal-black: hsla(224, 71%, 4%, 1);
+$forest-950: hsla(145, 80%, 10%, 1);
+$forest-800: hsla(143, 64%, 24%, 1);
+$forest-600: hsla(142, 76%, 36%, 1);
+$forest-300: hsla(142, 77%, 73%, 1);
+$code-cyan: hsla(188, 86%, 53%, 1);
+$alert-amber: hsla(43, 96%, 56%, 1);
+$error-rose: hsla(351, 95%, 71%, 1);
+$screen-white: hsla(138, 76%, 97%, 1);
+
+/* SCSS RGB */
+$terminal-black: rgba(3, 7, 18, 1);
+$forest-950: rgba(5, 46, 22, 1);
+$forest-800: rgba(22, 101, 52, 1);
+$forest-600: rgba(22, 163, 74, 1);
+$forest-300: rgba(134, 239, 172, 1);
+$code-cyan: rgba(34, 211, 238, 1);
+$alert-amber: rgba(251, 191, 36, 1);
+$error-rose: rgba(251, 113, 133, 1);
+$screen-white: rgba(240, 253, 244, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #030712ff, #052e16ff, #166534ff, #16a34aff, #86efacff, #22d3eeff, #fbbf24ff, #fb7185ff, #f0fdf4ff);
+$gradient-right: linear-gradient(90deg, #030712ff, #052e16ff, #166534ff, #16a34aff, #86efacff, #22d3eeff, #fbbf24ff, #fb7185ff, #f0fdf4ff);
+$gradient-bottom: linear-gradient(180deg, #030712ff, #052e16ff, #166534ff, #16a34aff, #86efacff, #22d3eeff, #fbbf24ff, #fb7185ff, #f0fdf4ff);
+$gradient-left: linear-gradient(270deg, #030712ff, #052e16ff, #166534ff, #16a34aff, #86efacff, #22d3eeff, #fbbf24ff, #fb7185ff, #f0fdf4ff);
+$gradient-top-right: linear-gradient(45deg, #030712ff, #052e16ff, #166534ff, #16a34aff, #86efacff, #22d3eeff, #fbbf24ff, #fb7185ff, #f0fdf4ff);
+$gradient-bottom-right: linear-gradient(135deg, #030712ff, #052e16ff, #166534ff, #16a34aff, #86efacff, #22d3eeff, #fbbf24ff, #fb7185ff, #f0fdf4ff);
+$gradient-top-left: linear-gradient(225deg, #030712ff, #052e16ff, #166534ff, #16a34aff, #86efacff, #22d3eeff, #fbbf24ff, #fb7185ff, #f0fdf4ff);
+$gradient-bottom-left: linear-gradient(315deg, #030712ff, #052e16ff, #166534ff, #16a34aff, #86efacff, #22d3eeff, #fbbf24ff, #fb7185ff, #f0fdf4ff);
+$gradient-radial: radial-gradient(#030712ff, #052e16ff, #166534ff, #16a34aff, #86efacff, #22d3eeff, #fbbf24ff, #fb7185ff, #f0fdf4ff);
+
+/* SCSS Map */
+$forest-terminal-map: (
+    "terminal-black": #030712ff,
+    "forest-950": #052e16ff,
+    "forest-800": #166534ff,
+    "forest-600": #16a34aff,
+    "forest-300": #86efacff,
+    "code-cyan": #22d3eeff,
+    "alert-amber": #fbbf24ff,
+    "error-rose": #fb7185ff,
+    "screen-white": #f0fdf4ff
+);

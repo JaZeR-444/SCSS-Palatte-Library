@@ -71,6 +71,7 @@
                     <button data-facet="mood" class="facet-btn px-5 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-indigo-500 transition-all whitespace-nowrap">By Mood</button>
                     <button data-facet="aesthetic" class="facet-btn px-5 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-indigo-500 transition-all whitespace-nowrap">By Aesthetic</button>
                     <button data-facet="color" class="facet-btn px-5 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-indigo-500 transition-all whitespace-nowrap">By Color</button>
+                    <button data-facet="favorites" class="facet-btn px-5 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-red-400 hover:text-red-400 transition-all whitespace-nowrap">♥ Saved</button>
                 </div>
 
                 <!-- Sub-Filters (Injected by JS) -->
@@ -84,6 +85,14 @@
     </header>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="flex items-center justify-between mb-6">
+            <p id="results-count" class="text-sm font-bold text-gray-400 dark:text-gray-500"></p>
+            <select id="sort-order" class="text-xs font-bold text-gray-500 dark:text-gray-400 bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 rounded-xl px-3 py-2 outline-none cursor-pointer hover:border-indigo-500 transition-all">
+                <option value="name">Sort: Name A→Z</option>
+                <option value="count-asc">Sort: Fewest Colors</option>
+                <option value="count-desc">Sort: Most Colors</option>
+            </select>
+        </div>
         <div id="palette-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             <!-- Skeleton Placeholders -->
             <div class="skeleton-card bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-slate-800 space-y-4">
@@ -147,13 +156,16 @@
                         </div>
                         
                         <div class="flex flex-wrap items-center gap-2">
-                            <!-- Use Case Switcher -->
-                            <div class="flex p-1 bg-gray-100 dark:bg-slate-800 rounded-xl overflow-x-auto no-scrollbar">
-                                <button data-usecase="dashboard" class="usecase-btn active px-4 py-2 rounded-lg text-xs font-bold transition-all">DASHBOARD</button>
-                                <button data-usecase="social" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">SOCIAL</button>
-                                <button data-usecase="landing" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">LANDING</button>
-                                <button data-usecase="commerce" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">COMMERCE</button>
-                                <button data-usecase="mobile" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">MOBILE</button>
+                            <!-- Use Case Switcher + Description -->
+                            <div class="flex flex-col gap-1">
+                                <div class="flex p-1 bg-gray-100 dark:bg-slate-800 rounded-xl overflow-x-auto no-scrollbar">
+                                    <button data-usecase="dashboard" class="usecase-btn active px-4 py-2 rounded-lg text-xs font-bold transition-all">DASHBOARD</button>
+                                    <button data-usecase="social" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">SOCIAL</button>
+                                    <button data-usecase="landing" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">LANDING</button>
+                                    <button data-usecase="commerce" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">COMMERCE</button>
+                                    <button data-usecase="mobile" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">MOBILE</button>
+                                </div>
+                                <p id="usecase-description" class="text-[11px] text-gray-400 px-1">Multi-layout dashboard — Analytics, CRM, Monitor &amp; Profile</p>
                             </div>
                             <!-- Interactive Tools -->
                             <div class="flex items-center gap-2">
@@ -168,16 +180,8 @@
                         </div>
                     </div>
 
-                    <!-- Sandbox Controls: Background | Zoom | Role Labels -->
+                    <!-- Sandbox Controls: Zoom | Role Labels -->
                     <div class="flex flex-wrap items-center gap-2 mb-4">
-                        <div class="flex p-1 bg-gray-100 dark:bg-slate-800 rounded-xl overflow-x-auto no-scrollbar">
-                            <button data-bg="auto" class="bg-tone-btn active px-3 py-1.5 rounded-lg text-[10px] font-black text-gray-900 bg-white shadow-sm transition-all whitespace-nowrap">Auto</button>
-                            <button data-bg="white" class="bg-tone-btn px-3 py-1.5 rounded-lg text-[10px] font-black text-gray-500 transition-all whitespace-nowrap">White</button>
-                            <button data-bg="gray" class="bg-tone-btn px-3 py-1.5 rounded-lg text-[10px] font-black text-gray-500 transition-all whitespace-nowrap">Gray</button>
-                            <button data-bg="dark" class="bg-tone-btn px-3 py-1.5 rounded-lg text-[10px] font-black text-gray-500 transition-all whitespace-nowrap">Dark</button>
-                            <button data-bg="gradient" class="bg-tone-btn px-3 py-1.5 rounded-lg text-[10px] font-black text-gray-500 transition-all whitespace-nowrap">Gradient</button>
-                            <button data-bg="checker" class="bg-tone-btn px-3 py-1.5 rounded-lg text-[10px] font-black text-gray-500 transition-all whitespace-nowrap">Checker</button>
-                        </div>
                         <div class="flex items-center gap-0.5 p-1 bg-gray-100 dark:bg-slate-800 rounded-xl">
                             <button id="zoom-out" class="w-7 h-7 rounded-lg flex items-center justify-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200 transition-all font-black">−</button>
                             <span id="zoom-display" class="text-[10px] font-black text-gray-600 dark:text-gray-400 w-10 text-center select-none">100%</span>
@@ -549,11 +553,132 @@
                         <div id="role-labels-overlay" class="hidden absolute bottom-0 left-0 right-0 p-3 bg-black/75 backdrop-blur-sm">
                             <div id="role-labels-content" class="flex flex-wrap gap-1.5"></div>
                         </div>
+                        </div>
+                        </div>
 
-                    </div>
-                </div>
+                        <!-- SECTION 2.1: TYPOGRAPHY & READABILITY LAB -->
+                        <div class="p-8 lg:p-12 border-b border-gray-100 dark:border-slate-800">
+                        <div class="flex items-center gap-3 mb-10">
+                        <div class="w-10 h-10 rounded-xl bg-orange-500 flex items-center justify-center text-white shadow-lg">
+                            <i class="fa-solid fa-font"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Typography Lab</h3>
+                            <p class="text-sm text-gray-400">Testing legibility and contrast across varied font weights and families.</p>
+                        </div>
+                        </div>
 
-                <!-- Color Lab & Export Zone -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <!-- Specimen 1: Light Background -->
+                        <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm space-y-6 typography-specimen">
+                            <div class="space-y-1">
+                                <span class="text-[9px] font-black text-gray-300 uppercase tracking-widest">Sans-Serif Heading</span>
+                                <h4 class="text-3xl font-black font-sans leading-none" style="color: var(--ui-color-1)">Modern & Clean</h4>
+                            </div>
+                            <div class="space-y-1">
+                                <span class="text-[9px] font-black text-gray-300 uppercase tracking-widest">Serif Subheading</span>
+                                <h5 class="text-xl font-bold font-serif italic" style="color: var(--ui-color-4)">The artistic approach to structure.</h5>
+                            </div>
+                            <div class="space-y-4">
+                                <p class="text-xs leading-relaxed text-gray-600">
+                                    This paragraph demonstrates how <strong style="color: var(--ui-color-1)">primary accents</strong> and <span class="font-bold underline decoration-[var(--ui-color-2)]" style="color: var(--ui-color-2)">inline highlights</span> perform as standard body text on light surfaces.
+                                </p>
+                                <a href="#" class="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest hover:translate-x-1 transition-transform" style="color: var(--ui-color-3)">
+                                    Execute Call to Action <i class="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Specimen 2: Dark Background -->
+                        <div class="bg-slate-900 rounded-3xl p-8 border border-slate-800 shadow-xl space-y-6 typography-specimen">
+                            <div class="space-y-1">
+                                <span class="text-[9px] font-black text-slate-600 uppercase tracking-widest font-mono">Monospace Terminal</span>
+                                <h4 class="text-3xl font-black font-mono leading-none" style="color: var(--ui-color-2)">Digital Core</h4>
+                            </div>
+                            <div class="space-y-4">
+                                <p class="text-xs leading-relaxed text-slate-400">
+                                    On dark backgrounds, <span class="px-1.5 py-0.5 rounded bg-[var(--ui-color-1)]/10 text-[var(--ui-color-1)] font-bold">glow effects</span> and vibrant shades provide the best visual hierarchy. 
+                                    Let's see how <span style="color: var(--ui-color-5)">Secondary Shade 5</span> stands out against deep voids.
+                                </p>
+                                <div class="pt-2 flex gap-4">
+                                    <div class="h-8 w-24 rounded-lg flex items-center justify-center text-[10px] font-black text-white shadow-lg shadow-[var(--ui-color-1)]/20" style="background: var(--ui-color-1)">BUTTON</div>
+                                    <div class="h-8 w-24 rounded-lg border border-[var(--ui-color-2)] flex items-center justify-center text-[10px] font-black" style="color: var(--ui-color-2)">OUTLINE</div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+
+                        <!-- SECTION 2.2: BRANDING & ICONOGRAPHY STUDIO -->
+                        <div class="p-8 lg:p-12 border-b border-gray-100 dark:border-slate-800 bg-gray-50/30 dark:bg-slate-950/20">
+                        <div class="flex items-center gap-3 mb-10">
+                        <div class="w-10 h-10 rounded-xl bg-purple-500 flex items-center justify-center text-white shadow-lg">
+                            <i class="fa-solid fa-shapes"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Iconography Studio</h3>
+                            <p class="text-sm text-gray-400">Previewing the palette on high-fidelity app icons and branding glyphs.</p>
+                        </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 justify-items-center" id="icon-studio-grid">
+                        <!-- Icon 1: Primary Solid -->
+                        <div class="studio-icon group cursor-pointer">
+                            <div class="w-20 h-20 rounded-[1.5rem] shadow-2xl flex items-center justify-center text-white relative overflow-hidden transition-transform group-hover:scale-105 active:scale-95" style="background: var(--ui-color-1)">
+                                <i class="fa-solid fa-cube text-3xl"></i>
+                            </div>
+                            <span class="block mt-4 text-[9px] font-bold text-center text-gray-400 uppercase tracking-widest">Solid</span>
+                        </div>
+
+                        <!-- Icon 2: Main Gradient -->
+                        <div class="studio-icon group cursor-pointer">
+                            <div class="w-20 h-20 rounded-[1.5rem] shadow-2xl flex items-center justify-center text-white relative overflow-hidden transition-transform group-hover:scale-105 active:scale-95" style="background: linear-gradient(135deg, var(--ui-color-1), var(--ui-color-4))">
+                                <i class="fa-solid fa-paper-plane text-3xl opacity-80"></i>
+                            </div>
+                            <span class="block mt-4 text-[9px] font-bold text-center text-gray-400 uppercase tracking-widest">Gradient</span>
+                        </div>
+
+                        <!-- Icon 3: Glassmorphic -->
+                        <div class="studio-icon group cursor-pointer relative">
+                            <div class="absolute inset-0 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-[1.5rem] blur-xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                            <div class="w-20 h-20 rounded-[1.5rem] border border-white/20 dark:border-slate-800 bg-white/20 dark:bg-slate-900/40 backdrop-blur-md shadow-xl flex items-center justify-center relative overflow-hidden transition-transform group-hover:scale-105 active:scale-95">
+                                <i class="fa-solid fa-atom text-3xl" style="color: var(--ui-color-2)"></i>
+                                <div class="absolute -bottom-1 -right-1 w-8 h-8 rounded-full blur-xl" style="background: var(--ui-color-2)"></div>
+                            </div>
+                            <span class="block mt-4 text-[9px] font-bold text-center text-gray-400 uppercase tracking-widest">Glass</span>
+                        </div>
+
+                        <!-- Icon 4: Neon / Dark -->
+                        <div class="studio-icon group cursor-pointer">
+                            <div class="w-20 h-20 rounded-[1.5rem] bg-slate-950 shadow-2xl flex flex-col items-center justify-center gap-1 border-2 border-slate-900 transition-transform group-hover:scale-105 active:scale-95">
+                                <i class="fa-solid fa-bolt text-2xl filter drop-shadow-[0_0_8px_var(--ui-color-2)]" style="color: var(--ui-color-2)"></i>
+                                <div class="h-1 w-8 rounded-full blur-[1px]" style="background: var(--ui-color-2)"></div>
+                            </div>
+                            <span class="block mt-4 text-[9px] font-bold text-center text-gray-400 uppercase tracking-widest">Neon</span>
+                        </div>
+
+                        <!-- Icon 5: Multi-Tone -->
+                        <div class="studio-icon group cursor-pointer">
+                            <div class="w-20 h-20 rounded-[1.5rem] shadow-2xl flex items-center justify-center relative overflow-hidden transition-transform group-hover:scale-105 active:scale-95" style="background: var(--ui-color-9)">
+                                <div class="absolute inset-0 bg-gradient-to-t from-[var(--ui-color-1)]/40 to-transparent"></div>
+                                <i class="fa-solid fa-wind text-3xl" style="color: var(--ui-color-10)"></i>
+                            </div>
+                            <span class="block mt-4 text-[9px] font-bold text-center text-gray-400 uppercase tracking-widest">Duo</span>
+                        </div>
+
+                        <!-- Icon 6: Minimal Soft -->
+                        <div class="studio-icon group cursor-pointer">
+                            <div class="w-20 h-20 rounded-[1.5rem] bg-white dark:bg-slate-900 shadow-lg border border-gray-100 dark:border-slate-800 flex items-center justify-center transition-transform group-hover:scale-105 active:scale-95">
+                                <div class="w-12 h-12 rounded-2xl flex items-center justify-center bg-[var(--ui-color-3)]/10" style="color: var(--ui-color-3)">
+                                    <i class="fa-solid fa-leaf text-2xl"></i>
+                                </div>
+                            </div>
+                            <span class="block mt-4 text-[9px] font-bold text-center text-gray-400 uppercase tracking-widest">Soft</span>
+                        </div>
+                        </div>
+                        </div>
+
+                        <!-- Color Lab & Export Zone -->
                 <div class="p-4 sm:p-8 lg:p-12 border-b border-gray-200 dark:border-slate-800 bg-gray-100 dark:bg-slate-950/40">
                     <div class="flex items-center gap-3 mb-8">
                         <div class="w-10 h-10 rounded-xl bg-pink-500 flex items-center justify-center text-white shadow-lg"><i class="fa-solid fa-swatchbook"></i></div>

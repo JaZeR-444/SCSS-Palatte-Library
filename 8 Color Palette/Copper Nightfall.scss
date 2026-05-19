@@ -1,0 +1,99 @@
+/*---
+id: copper-nightfall
+name: Copper Nightfall
+author: JaZeR-444
+version: 1.0.0
+category: Warm & Premium
+count: 8
+description: A premium night palette with copper heat, rose light, and soft neutrals.
+tags:
+  mood:
+  - warm
+  - premium
+  aesthetic:
+  - Luxury
+  - Night
+intent: A 8-color palette designed for portfolio, restaurant, brand system.
+suggested_use:
+- Portfolio
+- Restaurant
+- Brand System
+url: https://coolors.co/171717-7f4f24-c97c5d-e5989b-f2cc8f-6b7280-f7ede2-fffaf0
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--night-iron: #171717ff;
+--copper-dark: #7f4f24ff;
+--copper-bright: #c97c5dff;
+--rose-glow: #e5989bff;
+--amber-thread: #f2cc8fff;
+--smoke-gray: #6b7280ff;
+--linen-soft: #f7ede2ff;
+--cream-top: #fffaf0ff;
+
+/* CSS HSL */
+--night-iron: hsla(0, 0%, 9%, 1);
+--copper-dark: hsla(28, 56%, 32%, 1);
+--copper-bright: hsla(17, 50%, 58%, 1);
+--rose-glow: hsla(358, 60%, 75%, 1);
+--amber-thread: hsla(37, 79%, 75%, 1);
+--smoke-gray: hsla(220, 9%, 46%, 1);
+--linen-soft: hsla(31, 57%, 93%, 1);
+--cream-top: hsla(40, 100%, 97%, 1);
+}
+
+/* SCSS HEX */
+$night-iron: #171717ff;
+$copper-dark: #7f4f24ff;
+$copper-bright: #c97c5dff;
+$rose-glow: #e5989bff;
+$amber-thread: #f2cc8fff;
+$smoke-gray: #6b7280ff;
+$linen-soft: #f7ede2ff;
+$cream-top: #fffaf0ff;
+
+/* SCSS HSL */
+$night-iron: hsla(0, 0%, 9%, 1);
+$copper-dark: hsla(28, 56%, 32%, 1);
+$copper-bright: hsla(17, 50%, 58%, 1);
+$rose-glow: hsla(358, 60%, 75%, 1);
+$amber-thread: hsla(37, 79%, 75%, 1);
+$smoke-gray: hsla(220, 9%, 46%, 1);
+$linen-soft: hsla(31, 57%, 93%, 1);
+$cream-top: hsla(40, 100%, 97%, 1);
+
+/* SCSS RGB */
+$night-iron: rgba(23, 23, 23, 1);
+$copper-dark: rgba(127, 79, 36, 1);
+$copper-bright: rgba(201, 124, 93, 1);
+$rose-glow: rgba(229, 152, 155, 1);
+$amber-thread: rgba(242, 204, 143, 1);
+$smoke-gray: rgba(107, 114, 128, 1);
+$linen-soft: rgba(247, 237, 226, 1);
+$cream-top: rgba(255, 250, 240, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #171717ff, #7f4f24ff, #c97c5dff, #e5989bff, #f2cc8fff, #6b7280ff, #f7ede2ff, #fffaf0ff);
+$gradient-right: linear-gradient(90deg, #171717ff, #7f4f24ff, #c97c5dff, #e5989bff, #f2cc8fff, #6b7280ff, #f7ede2ff, #fffaf0ff);
+$gradient-bottom: linear-gradient(180deg, #171717ff, #7f4f24ff, #c97c5dff, #e5989bff, #f2cc8fff, #6b7280ff, #f7ede2ff, #fffaf0ff);
+$gradient-left: linear-gradient(270deg, #171717ff, #7f4f24ff, #c97c5dff, #e5989bff, #f2cc8fff, #6b7280ff, #f7ede2ff, #fffaf0ff);
+$gradient-top-right: linear-gradient(45deg, #171717ff, #7f4f24ff, #c97c5dff, #e5989bff, #f2cc8fff, #6b7280ff, #f7ede2ff, #fffaf0ff);
+$gradient-bottom-right: linear-gradient(135deg, #171717ff, #7f4f24ff, #c97c5dff, #e5989bff, #f2cc8fff, #6b7280ff, #f7ede2ff, #fffaf0ff);
+$gradient-top-left: linear-gradient(225deg, #171717ff, #7f4f24ff, #c97c5dff, #e5989bff, #f2cc8fff, #6b7280ff, #f7ede2ff, #fffaf0ff);
+$gradient-bottom-left: linear-gradient(315deg, #171717ff, #7f4f24ff, #c97c5dff, #e5989bff, #f2cc8fff, #6b7280ff, #f7ede2ff, #fffaf0ff);
+$gradient-radial: radial-gradient(#171717ff, #7f4f24ff, #c97c5dff, #e5989bff, #f2cc8fff, #6b7280ff, #f7ede2ff, #fffaf0ff);
+
+/* SCSS Map */
+$copper-nightfall-map: (
+    "night-iron": #171717ff,
+    "copper-dark": #7f4f24ff,
+    "copper-bright": #c97c5dff,
+    "rose-glow": #e5989bff,
+    "amber-thread": #f2cc8fff,
+    "smoke-gray": #6b7280ff,
+    "linen-soft": #f7ede2ff,
+    "cream-top": #fffaf0ff
+);

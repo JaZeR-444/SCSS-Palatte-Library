@@ -1,0 +1,105 @@
+/*---
+id: celestial-workshop
+name: Celestial Workshop
+author: JaZeR-444
+version: 1.0.0
+category: Creative & Cosmic
+count: 9
+description: A cosmic maker palette with workshop neutrals and vivid celestial accents.
+tags:
+  mood:
+  - creative
+  - cosmic
+  aesthetic:
+  - Maker
+  - Space
+intent: A 9-color palette designed for creative tools, portfolio, events.
+suggested_use:
+- Creative Tools
+- Portfolio
+- Events
+url: https://coolors.co/0d1b2a-1b263b-415a77-778da9-f9c74f-f94144-f15bb5-00bbf9-e0e1dd
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--workshop-black: #0d1b2aff;
+--nebula-blue: #1b263bff;
+--orbit-indigo: #415a77ff;
+--tool-steel: #778da9ff;
+--star-gold: #f9c74fff;
+--rocket-red: #f94144ff;
+--plasma-pink: #f15bb5ff;
+--comet-cyan: #00bbf9ff;
+--moon-white: #e0e1ddff;
+
+/* CSS HSL */
+--workshop-black: hsla(211, 53%, 11%, 1);
+--nebula-blue: hsla(219, 37%, 17%, 1);
+--orbit-indigo: hsla(212, 29%, 36%, 1);
+--tool-steel: hsla(214, 23%, 56%, 1);
+--star-gold: hsla(42, 93%, 64%, 1);
+--rocket-red: hsla(359, 94%, 62%, 1);
+--plasma-pink: hsla(324, 84%, 65%, 1);
+--comet-cyan: hsla(195, 100%, 49%, 1);
+--moon-white: hsla(75, 6%, 87%, 1);
+}
+
+/* SCSS HEX */
+$workshop-black: #0d1b2aff;
+$nebula-blue: #1b263bff;
+$orbit-indigo: #415a77ff;
+$tool-steel: #778da9ff;
+$star-gold: #f9c74fff;
+$rocket-red: #f94144ff;
+$plasma-pink: #f15bb5ff;
+$comet-cyan: #00bbf9ff;
+$moon-white: #e0e1ddff;
+
+/* SCSS HSL */
+$workshop-black: hsla(211, 53%, 11%, 1);
+$nebula-blue: hsla(219, 37%, 17%, 1);
+$orbit-indigo: hsla(212, 29%, 36%, 1);
+$tool-steel: hsla(214, 23%, 56%, 1);
+$star-gold: hsla(42, 93%, 64%, 1);
+$rocket-red: hsla(359, 94%, 62%, 1);
+$plasma-pink: hsla(324, 84%, 65%, 1);
+$comet-cyan: hsla(195, 100%, 49%, 1);
+$moon-white: hsla(75, 6%, 87%, 1);
+
+/* SCSS RGB */
+$workshop-black: rgba(13, 27, 42, 1);
+$nebula-blue: rgba(27, 38, 59, 1);
+$orbit-indigo: rgba(65, 90, 119, 1);
+$tool-steel: rgba(119, 141, 169, 1);
+$star-gold: rgba(249, 199, 79, 1);
+$rocket-red: rgba(249, 65, 68, 1);
+$plasma-pink: rgba(241, 91, 181, 1);
+$comet-cyan: rgba(0, 187, 249, 1);
+$moon-white: rgba(224, 225, 221, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0d1b2aff, #1b263bff, #415a77ff, #778da9ff, #f9c74fff, #f94144ff, #f15bb5ff, #00bbf9ff, #e0e1ddff);
+$gradient-right: linear-gradient(90deg, #0d1b2aff, #1b263bff, #415a77ff, #778da9ff, #f9c74fff, #f94144ff, #f15bb5ff, #00bbf9ff, #e0e1ddff);
+$gradient-bottom: linear-gradient(180deg, #0d1b2aff, #1b263bff, #415a77ff, #778da9ff, #f9c74fff, #f94144ff, #f15bb5ff, #00bbf9ff, #e0e1ddff);
+$gradient-left: linear-gradient(270deg, #0d1b2aff, #1b263bff, #415a77ff, #778da9ff, #f9c74fff, #f94144ff, #f15bb5ff, #00bbf9ff, #e0e1ddff);
+$gradient-top-right: linear-gradient(45deg, #0d1b2aff, #1b263bff, #415a77ff, #778da9ff, #f9c74fff, #f94144ff, #f15bb5ff, #00bbf9ff, #e0e1ddff);
+$gradient-bottom-right: linear-gradient(135deg, #0d1b2aff, #1b263bff, #415a77ff, #778da9ff, #f9c74fff, #f94144ff, #f15bb5ff, #00bbf9ff, #e0e1ddff);
+$gradient-top-left: linear-gradient(225deg, #0d1b2aff, #1b263bff, #415a77ff, #778da9ff, #f9c74fff, #f94144ff, #f15bb5ff, #00bbf9ff, #e0e1ddff);
+$gradient-bottom-left: linear-gradient(315deg, #0d1b2aff, #1b263bff, #415a77ff, #778da9ff, #f9c74fff, #f94144ff, #f15bb5ff, #00bbf9ff, #e0e1ddff);
+$gradient-radial: radial-gradient(#0d1b2aff, #1b263bff, #415a77ff, #778da9ff, #f9c74fff, #f94144ff, #f15bb5ff, #00bbf9ff, #e0e1ddff);
+
+/* SCSS Map */
+$celestial-workshop-map: (
+    "workshop-black": #0d1b2aff,
+    "nebula-blue": #1b263bff,
+    "orbit-indigo": #415a77ff,
+    "tool-steel": #778da9ff,
+    "star-gold": #f9c74fff,
+    "rocket-red": #f94144ff,
+    "plasma-pink": #f15bb5ff,
+    "comet-cyan": #00bbf9ff,
+    "moon-white": #e0e1ddff
+);

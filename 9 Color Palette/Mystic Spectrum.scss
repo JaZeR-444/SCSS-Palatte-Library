@@ -1,0 +1,105 @@
+/*---
+id: mystic-spectrum
+name: Mystic Spectrum
+author: JaZeR-444
+version: 1.0.0
+category: Purple & Mystical
+count: 9
+description: A full purple spectrum from mystic black through violet, orchid, and luminous pink-white.
+tags:
+  mood:
+  - purple
+  - mystical
+  aesthetic:
+  - Mystic
+  - Spectrum
+intent: A purple-focused 9-color palette designed for portfolio, events, brand system.
+suggested_use:
+- Portfolio
+- Events
+- Brand System
+url: https://coolors.co/120018-240046-3c096c-5a189a-7b2cbf-9d4edd-c77dff-e0aaff-fff0ff
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--mystic-black: #120018ff;
+--void-purple: #240046ff;
+--ritual-violet: #3c096cff;
+--spell-plum: #5a189aff;
+--arcane-purple: #7b2cbfff;
+--sigil-orchid: #9d4eddff;
+--aura-lilac: #c77dffff;
+--dream-violet: #e0aaffff;
+--spirit-white: #fff0ffff;
+
+/* CSS HSL */
+--mystic-black: hsla(285, 100%, 5%, 1);
+--void-purple: hsla(271, 100%, 14%, 1);
+--ritual-violet: hsla(271, 85%, 23%, 1);
+--spell-plum: hsla(270, 73%, 35%, 1);
+--arcane-purple: hsla(272, 63%, 46%, 1);
+--sigil-orchid: hsla(273, 68%, 59%, 1);
+--aura-lilac: hsla(274, 100%, 75%, 1);
+--dream-violet: hsla(278, 100%, 83%, 1);
+--spirit-white: hsla(300, 100%, 97%, 1);
+}
+
+/* SCSS HEX */
+$mystic-black: #120018ff;
+$void-purple: #240046ff;
+$ritual-violet: #3c096cff;
+$spell-plum: #5a189aff;
+$arcane-purple: #7b2cbfff;
+$sigil-orchid: #9d4eddff;
+$aura-lilac: #c77dffff;
+$dream-violet: #e0aaffff;
+$spirit-white: #fff0ffff;
+
+/* SCSS HSL */
+$mystic-black: hsla(285, 100%, 5%, 1);
+$void-purple: hsla(271, 100%, 14%, 1);
+$ritual-violet: hsla(271, 85%, 23%, 1);
+$spell-plum: hsla(270, 73%, 35%, 1);
+$arcane-purple: hsla(272, 63%, 46%, 1);
+$sigil-orchid: hsla(273, 68%, 59%, 1);
+$aura-lilac: hsla(274, 100%, 75%, 1);
+$dream-violet: hsla(278, 100%, 83%, 1);
+$spirit-white: hsla(300, 100%, 97%, 1);
+
+/* SCSS RGB */
+$mystic-black: rgba(18, 0, 24, 1);
+$void-purple: rgba(36, 0, 70, 1);
+$ritual-violet: rgba(60, 9, 108, 1);
+$spell-plum: rgba(90, 24, 154, 1);
+$arcane-purple: rgba(123, 44, 191, 1);
+$sigil-orchid: rgba(157, 78, 221, 1);
+$aura-lilac: rgba(199, 125, 255, 1);
+$dream-violet: rgba(224, 170, 255, 1);
+$spirit-white: rgba(255, 240, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #120018ff, #240046ff, #3c096cff, #5a189aff, #7b2cbfff, #9d4eddff, #c77dffff, #e0aaffff, #fff0ffff);
+$gradient-right: linear-gradient(90deg, #120018ff, #240046ff, #3c096cff, #5a189aff, #7b2cbfff, #9d4eddff, #c77dffff, #e0aaffff, #fff0ffff);
+$gradient-bottom: linear-gradient(180deg, #120018ff, #240046ff, #3c096cff, #5a189aff, #7b2cbfff, #9d4eddff, #c77dffff, #e0aaffff, #fff0ffff);
+$gradient-left: linear-gradient(270deg, #120018ff, #240046ff, #3c096cff, #5a189aff, #7b2cbfff, #9d4eddff, #c77dffff, #e0aaffff, #fff0ffff);
+$gradient-top-right: linear-gradient(45deg, #120018ff, #240046ff, #3c096cff, #5a189aff, #7b2cbfff, #9d4eddff, #c77dffff, #e0aaffff, #fff0ffff);
+$gradient-bottom-right: linear-gradient(135deg, #120018ff, #240046ff, #3c096cff, #5a189aff, #7b2cbfff, #9d4eddff, #c77dffff, #e0aaffff, #fff0ffff);
+$gradient-top-left: linear-gradient(225deg, #120018ff, #240046ff, #3c096cff, #5a189aff, #7b2cbfff, #9d4eddff, #c77dffff, #e0aaffff, #fff0ffff);
+$gradient-bottom-left: linear-gradient(315deg, #120018ff, #240046ff, #3c096cff, #5a189aff, #7b2cbfff, #9d4eddff, #c77dffff, #e0aaffff, #fff0ffff);
+$gradient-radial: radial-gradient(#120018ff, #240046ff, #3c096cff, #5a189aff, #7b2cbfff, #9d4eddff, #c77dffff, #e0aaffff, #fff0ffff);
+
+/* SCSS Map */
+$mystic-spectrum-map: (
+    "mystic-black": #120018ff,
+    "void-purple": #240046ff,
+    "ritual-violet": #3c096cff,
+    "spell-plum": #5a189aff,
+    "arcane-purple": #7b2cbfff,
+    "sigil-orchid": #9d4eddff,
+    "aura-lilac": #c77dffff,
+    "dream-violet": #e0aaffff,
+    "spirit-white": #fff0ffff
+);

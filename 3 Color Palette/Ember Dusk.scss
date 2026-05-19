@@ -1,0 +1,69 @@
+/*---
+id: ember-dusk
+name: Ember Dusk
+author: JaZeR-444
+version: 1.0.0
+category: Warm & Dramatic
+count: 3
+description: A compact warm palette for dramatic sections, alerts, and editorial accents.
+tags:
+  mood:
+  - warm
+  - dramatic
+  aesthetic:
+  - Editorial
+  - Sunset
+intent: A 3-color palette built around ember shadows, clay heat, and gold light.
+suggested_use:
+- Hero Accent
+- Alert States
+- Editorial Layout
+url: https://coolors.co/1c1018-c44536-f6c85f
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--ember-shadow: #1c1018ff;
+--kiln-clay: #c44536ff;
+--dusk-gold: #f6c85fff;
+
+/* CSS HSL */
+--ember-shadow: hsla(320, 27%, 9%, 1);
+--kiln-clay: hsla(6, 57%, 49%, 1);
+--dusk-gold: hsla(42, 89%, 67%, 1);
+}
+
+/* SCSS HEX */
+$ember-shadow: #1c1018ff;
+$kiln-clay: #c44536ff;
+$dusk-gold: #f6c85fff;
+
+/* SCSS HSL */
+$ember-shadow: hsla(320, 27%, 9%, 1);
+$kiln-clay: hsla(6, 57%, 49%, 1);
+$dusk-gold: hsla(42, 89%, 67%, 1);
+
+/* SCSS RGB */
+$ember-shadow: rgba(28, 16, 24, 1);
+$kiln-clay: rgba(196, 69, 54, 1);
+$dusk-gold: rgba(246, 200, 95, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1c1018ff, #c44536ff, #f6c85fff);
+$gradient-right: linear-gradient(90deg, #1c1018ff, #c44536ff, #f6c85fff);
+$gradient-bottom: linear-gradient(180deg, #1c1018ff, #c44536ff, #f6c85fff);
+$gradient-left: linear-gradient(270deg, #1c1018ff, #c44536ff, #f6c85fff);
+$gradient-top-right: linear-gradient(45deg, #1c1018ff, #c44536ff, #f6c85fff);
+$gradient-bottom-right: linear-gradient(135deg, #1c1018ff, #c44536ff, #f6c85fff);
+$gradient-top-left: linear-gradient(225deg, #1c1018ff, #c44536ff, #f6c85fff);
+$gradient-bottom-left: linear-gradient(315deg, #1c1018ff, #c44536ff, #f6c85fff);
+$gradient-radial: radial-gradient(#1c1018ff, #c44536ff, #f6c85fff);
+
+/* SCSS Map */
+$ember-dusk-map: (
+    "ember-shadow": #1c1018ff,
+    "kiln-clay": #c44536ff,
+    "dusk-gold": #f6c85fff
+);

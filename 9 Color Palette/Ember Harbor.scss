@@ -1,0 +1,105 @@
+/*---
+id: ember-harbor
+name: Ember Harbor
+author: JaZeR-444
+version: 1.0.0
+category: Moody & Coastal
+count: 9
+description: A moody harbor palette with ember accents, maritime blues, and dock neutrals.
+tags:
+  mood:
+  - moody
+  - coastal
+  aesthetic:
+  - Harbor
+  - Night
+intent: A 9-color palette designed for travel, restaurant, hero accent.
+suggested_use:
+- Travel
+- Restaurant
+- Hero Accent
+url: https://coolors.co/0b132b-1c2541-3a506b-5bc0be-2f1b12-e76f51-f4a261-e0fbfc-d9c2a3
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--harbor-black: #0b132bff;
+--dock-navy: #1c2541ff;
+--storm-blue: #3a506bff;
+--sea-glass: #5bc0beff;
+--ember-coal: #2f1b12ff;
+--ember-bright: #e76f51ff;
+--lantern-gold: #f4a261ff;
+--fog-bank: #e0fbfcff;
+--rope-tan: #d9c2a3ff;
+
+/* CSS HSL */
+--harbor-black: hsla(225, 59%, 11%, 1);
+--dock-navy: hsla(225, 40%, 18%, 1);
+--storm-blue: hsla(213, 30%, 32%, 1);
+--sea-glass: hsla(179, 44%, 55%, 1);
+--ember-coal: hsla(19, 45%, 13%, 1);
+--ember-bright: hsla(12, 76%, 61%, 1);
+--lantern-gold: hsla(27, 87%, 67%, 1);
+--fog-bank: hsla(182, 82%, 93%, 1);
+--rope-tan: hsla(34, 42%, 75%, 1);
+}
+
+/* SCSS HEX */
+$harbor-black: #0b132bff;
+$dock-navy: #1c2541ff;
+$storm-blue: #3a506bff;
+$sea-glass: #5bc0beff;
+$ember-coal: #2f1b12ff;
+$ember-bright: #e76f51ff;
+$lantern-gold: #f4a261ff;
+$fog-bank: #e0fbfcff;
+$rope-tan: #d9c2a3ff;
+
+/* SCSS HSL */
+$harbor-black: hsla(225, 59%, 11%, 1);
+$dock-navy: hsla(225, 40%, 18%, 1);
+$storm-blue: hsla(213, 30%, 32%, 1);
+$sea-glass: hsla(179, 44%, 55%, 1);
+$ember-coal: hsla(19, 45%, 13%, 1);
+$ember-bright: hsla(12, 76%, 61%, 1);
+$lantern-gold: hsla(27, 87%, 67%, 1);
+$fog-bank: hsla(182, 82%, 93%, 1);
+$rope-tan: hsla(34, 42%, 75%, 1);
+
+/* SCSS RGB */
+$harbor-black: rgba(11, 19, 43, 1);
+$dock-navy: rgba(28, 37, 65, 1);
+$storm-blue: rgba(58, 80, 107, 1);
+$sea-glass: rgba(91, 192, 190, 1);
+$ember-coal: rgba(47, 27, 18, 1);
+$ember-bright: rgba(231, 111, 81, 1);
+$lantern-gold: rgba(244, 162, 97, 1);
+$fog-bank: rgba(224, 251, 252, 1);
+$rope-tan: rgba(217, 194, 163, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0b132bff, #1c2541ff, #3a506bff, #5bc0beff, #2f1b12ff, #e76f51ff, #f4a261ff, #e0fbfcff, #d9c2a3ff);
+$gradient-right: linear-gradient(90deg, #0b132bff, #1c2541ff, #3a506bff, #5bc0beff, #2f1b12ff, #e76f51ff, #f4a261ff, #e0fbfcff, #d9c2a3ff);
+$gradient-bottom: linear-gradient(180deg, #0b132bff, #1c2541ff, #3a506bff, #5bc0beff, #2f1b12ff, #e76f51ff, #f4a261ff, #e0fbfcff, #d9c2a3ff);
+$gradient-left: linear-gradient(270deg, #0b132bff, #1c2541ff, #3a506bff, #5bc0beff, #2f1b12ff, #e76f51ff, #f4a261ff, #e0fbfcff, #d9c2a3ff);
+$gradient-top-right: linear-gradient(45deg, #0b132bff, #1c2541ff, #3a506bff, #5bc0beff, #2f1b12ff, #e76f51ff, #f4a261ff, #e0fbfcff, #d9c2a3ff);
+$gradient-bottom-right: linear-gradient(135deg, #0b132bff, #1c2541ff, #3a506bff, #5bc0beff, #2f1b12ff, #e76f51ff, #f4a261ff, #e0fbfcff, #d9c2a3ff);
+$gradient-top-left: linear-gradient(225deg, #0b132bff, #1c2541ff, #3a506bff, #5bc0beff, #2f1b12ff, #e76f51ff, #f4a261ff, #e0fbfcff, #d9c2a3ff);
+$gradient-bottom-left: linear-gradient(315deg, #0b132bff, #1c2541ff, #3a506bff, #5bc0beff, #2f1b12ff, #e76f51ff, #f4a261ff, #e0fbfcff, #d9c2a3ff);
+$gradient-radial: radial-gradient(#0b132bff, #1c2541ff, #3a506bff, #5bc0beff, #2f1b12ff, #e76f51ff, #f4a261ff, #e0fbfcff, #d9c2a3ff);
+
+/* SCSS Map */
+$ember-harbor-map: (
+    "harbor-black": #0b132bff,
+    "dock-navy": #1c2541ff,
+    "storm-blue": #3a506bff,
+    "sea-glass": #5bc0beff,
+    "ember-coal": #2f1b12ff,
+    "ember-bright": #e76f51ff,
+    "lantern-gold": #f4a261ff,
+    "fog-bank": #e0fbfcff,
+    "rope-tan": #d9c2a3ff
+);

@@ -1,6 +1,6 @@
 # SCSS Palette Library (v2.0.0)
 
-A professional design system of themed, production-ready SCSS and CSS color palettes, featuring over 80 curated collections.
+A professional design system of themed, production-ready SCSS and CSS color palettes, featuring 192+ curated collections.
 
 ## 🚀 Installation
 
@@ -49,7 +49,7 @@ Native CSS variables are provided for every palette via the `:root` selector:
 - **SCSS Maps**: Programmatic access to all colors via `${filename}-map`.
 - **Unified Entry Point**: Central `_index.scss` for streamlined imports.
 - **Interactive Showcase**: A completely revamped gallery in `/showcase` featuring:
-    - **Advanced Search**: Filter 80+ palettes by name or semantic tags (neon, warm, professional, etc.).
+    - **Advanced Search**: Filter 190+ palettes by name or semantic tags (neon, warm, professional, etc.).
     - **Live UI Preview**: Test colors on mock dashboard and mobile components before implementing.
     - **One-Click Export**: Copy Tailwind config objects, SCSS Maps, or CSS variables instantly.
     - **Accessibility Audit**: Real-time WCAG contrast checking for every color in the library.
@@ -67,6 +67,10 @@ Native CSS variables are provided for every palette via the `:root` selector:
 - **Natural**: Deep Forest, Autumn Leaves, Ocean Waves...
 - **Vintage & Retro**: Classic Vaporwave, Retro Pop, 90s Metro...
 - **Professional**: SaaS Blue, IBM Categorical, Modern Minimalist...
+- **Modern UI**: Glass Aurora, Civic Sunrise, Verdant Circuit...
+- **Expanded Systems**: Atlas Neutral, Garden System, Maritime Signal, Solar Ledger...
+- **Purple Systems**: Royal Iris, Amethyst Haze, Mystic Spectrum, Purple Observatory, Imperial Velvet Atlas...
+- **Blue Systems**: Azure Harbor, Cobalt Circuit, Glacier Blue, Sapphire Ledger...
 
 ## 📜 License
 

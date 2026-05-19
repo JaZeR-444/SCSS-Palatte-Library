@@ -1,0 +1,99 @@
+/*---
+id: glacier-blue-system
+name: Glacier Blue System
+author: JaZeR-444
+version: 1.0.0
+category: Blue & Icy
+count: 8
+description: An icy blue palette moving from glacial shadow through crystalline cyan and snow surfaces.
+tags:
+  mood:
+  - blue
+  - icy
+  aesthetic:
+  - Glacier
+  - Minimal
+intent: A blue-focused 8-color palette designed for saas ui, documentation, healthcare.
+suggested_use:
+- SaaS UI
+- Documentation
+- Healthcare
+url: https://coolors.co/082f49-075985-0369a1-0284c7-0ea5e9-38bdf8-7dd3fc-bae6fd
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--glacier-blue-system-glacier-depth: #082f49ff;
+--glacier-blue-system-ice-ridge: #075985ff;
+--glacier-blue-system-cold-current: #0369a1ff;
+--glacier-blue-system-clear-blue: #0284c7ff;
+--glacier-blue-system-glacier-blue: #0ea5e9ff;
+--glacier-blue-system-crystal-cyan: #38bdf8ff;
+--glacier-blue-system-frost-sky: #7dd3fcff;
+--glacier-blue-system-pale-ice: #bae6fdff;
+
+/* CSS HSL */
+--glacier-blue-system-glacier-depth: hsla(204, 80%, 16%, 1);
+--glacier-blue-system-ice-ridge: hsla(201, 90%, 27%, 1);
+--glacier-blue-system-cold-current: hsla(201, 96%, 32%, 1);
+--glacier-blue-system-clear-blue: hsla(200, 98%, 39%, 1);
+--glacier-blue-system-glacier-blue: hsla(199, 89%, 48%, 1);
+--glacier-blue-system-crystal-cyan: hsla(198, 93%, 60%, 1);
+--glacier-blue-system-frost-sky: hsla(199, 95%, 74%, 1);
+--glacier-blue-system-pale-ice: hsla(201, 94%, 86%, 1);
+}
+
+/* SCSS HEX */
+$glacier-blue-system-glacier-depth: #082f49ff;
+$glacier-blue-system-ice-ridge: #075985ff;
+$glacier-blue-system-cold-current: #0369a1ff;
+$glacier-blue-system-clear-blue: #0284c7ff;
+$glacier-blue-system-glacier-blue: #0ea5e9ff;
+$glacier-blue-system-crystal-cyan: #38bdf8ff;
+$glacier-blue-system-frost-sky: #7dd3fcff;
+$glacier-blue-system-pale-ice: #bae6fdff;
+
+/* SCSS HSL */
+$glacier-blue-system-glacier-depth: hsla(204, 80%, 16%, 1);
+$glacier-blue-system-ice-ridge: hsla(201, 90%, 27%, 1);
+$glacier-blue-system-cold-current: hsla(201, 96%, 32%, 1);
+$glacier-blue-system-clear-blue: hsla(200, 98%, 39%, 1);
+$glacier-blue-system-glacier-blue: hsla(199, 89%, 48%, 1);
+$glacier-blue-system-crystal-cyan: hsla(198, 93%, 60%, 1);
+$glacier-blue-system-frost-sky: hsla(199, 95%, 74%, 1);
+$glacier-blue-system-pale-ice: hsla(201, 94%, 86%, 1);
+
+/* SCSS RGB */
+$glacier-blue-system-glacier-depth: rgba(8, 47, 73, 1);
+$glacier-blue-system-ice-ridge: rgba(7, 89, 133, 1);
+$glacier-blue-system-cold-current: rgba(3, 105, 161, 1);
+$glacier-blue-system-clear-blue: rgba(2, 132, 199, 1);
+$glacier-blue-system-glacier-blue: rgba(14, 165, 233, 1);
+$glacier-blue-system-crystal-cyan: rgba(56, 189, 248, 1);
+$glacier-blue-system-frost-sky: rgba(125, 211, 252, 1);
+$glacier-blue-system-pale-ice: rgba(186, 230, 253, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #082f49ff, #075985ff, #0369a1ff, #0284c7ff, #0ea5e9ff, #38bdf8ff, #7dd3fcff, #bae6fdff);
+$gradient-right: linear-gradient(90deg, #082f49ff, #075985ff, #0369a1ff, #0284c7ff, #0ea5e9ff, #38bdf8ff, #7dd3fcff, #bae6fdff);
+$gradient-bottom: linear-gradient(180deg, #082f49ff, #075985ff, #0369a1ff, #0284c7ff, #0ea5e9ff, #38bdf8ff, #7dd3fcff, #bae6fdff);
+$gradient-left: linear-gradient(270deg, #082f49ff, #075985ff, #0369a1ff, #0284c7ff, #0ea5e9ff, #38bdf8ff, #7dd3fcff, #bae6fdff);
+$gradient-top-right: linear-gradient(45deg, #082f49ff, #075985ff, #0369a1ff, #0284c7ff, #0ea5e9ff, #38bdf8ff, #7dd3fcff, #bae6fdff);
+$gradient-bottom-right: linear-gradient(135deg, #082f49ff, #075985ff, #0369a1ff, #0284c7ff, #0ea5e9ff, #38bdf8ff, #7dd3fcff, #bae6fdff);
+$gradient-top-left: linear-gradient(225deg, #082f49ff, #075985ff, #0369a1ff, #0284c7ff, #0ea5e9ff, #38bdf8ff, #7dd3fcff, #bae6fdff);
+$gradient-bottom-left: linear-gradient(315deg, #082f49ff, #075985ff, #0369a1ff, #0284c7ff, #0ea5e9ff, #38bdf8ff, #7dd3fcff, #bae6fdff);
+$gradient-radial: radial-gradient(#082f49ff, #075985ff, #0369a1ff, #0284c7ff, #0ea5e9ff, #38bdf8ff, #7dd3fcff, #bae6fdff);
+
+/* SCSS Map */
+$glacier-blue-system-map: (
+    "glacier-blue-system-glacier-depth": #082f49ff,
+    "glacier-blue-system-ice-ridge": #075985ff,
+    "glacier-blue-system-cold-current": #0369a1ff,
+    "glacier-blue-system-clear-blue": #0284c7ff,
+    "glacier-blue-system-glacier-blue": #0ea5e9ff,
+    "glacier-blue-system-crystal-cyan": #38bdf8ff,
+    "glacier-blue-system-frost-sky": #7dd3fcff,
+    "glacier-blue-system-pale-ice": #bae6fdff
+);

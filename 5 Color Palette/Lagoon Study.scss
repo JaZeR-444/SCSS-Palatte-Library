@@ -1,0 +1,81 @@
+/*---
+id: lagoon-study
+name: Lagoon Study
+author: JaZeR-444
+version: 1.0.0
+category: Calm & Scholarly
+count: 5
+description: A composed lagoon palette for learning tools, notes, and calm dashboards.
+tags:
+  mood:
+  - calm
+  - scholarly
+  aesthetic:
+  - Education
+  - Lagoon
+intent: A 5-color palette designed for education, notes, dashboard.
+suggested_use:
+- Education
+- Notes
+- Dashboard
+url: https://coolors.co/003049-457b9d-2a9d8f-f1faee-e76f51
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--deep-lagoon: #003049ff;
+--study-blue: #457b9dff;
+--lagoon-teal: #2a9d8fff;
+--page-cream: #f1faeeff;
+--mark-coral: #e76f51ff;
+
+/* CSS HSL */
+--deep-lagoon: hsla(201, 100%, 14%, 1);
+--study-blue: hsla(203, 39%, 44%, 1);
+--lagoon-teal: hsla(173, 58%, 39%, 1);
+--page-cream: hsla(105, 55%, 96%, 1);
+--mark-coral: hsla(12, 76%, 61%, 1);
+}
+
+/* SCSS HEX */
+$deep-lagoon: #003049ff;
+$study-blue: #457b9dff;
+$lagoon-teal: #2a9d8fff;
+$page-cream: #f1faeeff;
+$mark-coral: #e76f51ff;
+
+/* SCSS HSL */
+$deep-lagoon: hsla(201, 100%, 14%, 1);
+$study-blue: hsla(203, 39%, 44%, 1);
+$lagoon-teal: hsla(173, 58%, 39%, 1);
+$page-cream: hsla(105, 55%, 96%, 1);
+$mark-coral: hsla(12, 76%, 61%, 1);
+
+/* SCSS RGB */
+$deep-lagoon: rgba(0, 48, 73, 1);
+$study-blue: rgba(69, 123, 157, 1);
+$lagoon-teal: rgba(42, 157, 143, 1);
+$page-cream: rgba(241, 250, 238, 1);
+$mark-coral: rgba(231, 111, 81, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #003049ff, #457b9dff, #2a9d8fff, #f1faeeff, #e76f51ff);
+$gradient-right: linear-gradient(90deg, #003049ff, #457b9dff, #2a9d8fff, #f1faeeff, #e76f51ff);
+$gradient-bottom: linear-gradient(180deg, #003049ff, #457b9dff, #2a9d8fff, #f1faeeff, #e76f51ff);
+$gradient-left: linear-gradient(270deg, #003049ff, #457b9dff, #2a9d8fff, #f1faeeff, #e76f51ff);
+$gradient-top-right: linear-gradient(45deg, #003049ff, #457b9dff, #2a9d8fff, #f1faeeff, #e76f51ff);
+$gradient-bottom-right: linear-gradient(135deg, #003049ff, #457b9dff, #2a9d8fff, #f1faeeff, #e76f51ff);
+$gradient-top-left: linear-gradient(225deg, #003049ff, #457b9dff, #2a9d8fff, #f1faeeff, #e76f51ff);
+$gradient-bottom-left: linear-gradient(315deg, #003049ff, #457b9dff, #2a9d8fff, #f1faeeff, #e76f51ff);
+$gradient-radial: radial-gradient(#003049ff, #457b9dff, #2a9d8fff, #f1faeeff, #e76f51ff);
+
+/* SCSS Map */
+$lagoon-study-map: (
+    "deep-lagoon": #003049ff,
+    "study-blue": #457b9dff,
+    "lagoon-teal": #2a9d8fff,
+    "page-cream": #f1faeeff,
+    "mark-coral": #e76f51ff
+);

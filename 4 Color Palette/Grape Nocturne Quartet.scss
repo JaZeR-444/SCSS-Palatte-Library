@@ -1,0 +1,75 @@
+/*---
+id: grape-nocturne-quartet
+name: Grape Nocturne Quartet
+author: JaZeR-444
+version: 1.0.0
+category: Purple & Moody
+count: 4
+description: A moody grape palette with wine-dark structure, plum midtones, and quiet lavender light.
+tags:
+  mood:
+  - purple
+  - moody
+  aesthetic:
+  - Nocturne
+  - Grape
+intent: A purple-focused 4-color palette designed for music, night mode, editorial.
+suggested_use:
+- Music
+- Night Mode
+- Editorial
+url: https://coolors.co/14061f-2a0f3f-4a1d5f-6b2d83
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--grape-nocturne-quartet-nocturne-ink: #14061fff;
+--grape-nocturne-quartet-grape-shadow: #2a0f3fff;
+--grape-nocturne-quartet-wine-plum: #4a1d5fff;
+--grape-nocturne-quartet-midnight-grape: #6b2d83ff;
+
+/* CSS HSL */
+--grape-nocturne-quartet-nocturne-ink: hsla(274, 68%, 7%, 1);
+--grape-nocturne-quartet-grape-shadow: hsla(274, 62%, 15%, 1);
+--grape-nocturne-quartet-wine-plum: hsla(281, 53%, 24%, 1);
+--grape-nocturne-quartet-midnight-grape: hsla(283, 49%, 35%, 1);
+}
+
+/* SCSS HEX */
+$grape-nocturne-quartet-nocturne-ink: #14061fff;
+$grape-nocturne-quartet-grape-shadow: #2a0f3fff;
+$grape-nocturne-quartet-wine-plum: #4a1d5fff;
+$grape-nocturne-quartet-midnight-grape: #6b2d83ff;
+
+/* SCSS HSL */
+$grape-nocturne-quartet-nocturne-ink: hsla(274, 68%, 7%, 1);
+$grape-nocturne-quartet-grape-shadow: hsla(274, 62%, 15%, 1);
+$grape-nocturne-quartet-wine-plum: hsla(281, 53%, 24%, 1);
+$grape-nocturne-quartet-midnight-grape: hsla(283, 49%, 35%, 1);
+
+/* SCSS RGB */
+$grape-nocturne-quartet-nocturne-ink: rgba(20, 6, 31, 1);
+$grape-nocturne-quartet-grape-shadow: rgba(42, 15, 63, 1);
+$grape-nocturne-quartet-wine-plum: rgba(74, 29, 95, 1);
+$grape-nocturne-quartet-midnight-grape: rgba(107, 45, 131, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff);
+$gradient-right: linear-gradient(90deg, #14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff);
+$gradient-bottom: linear-gradient(180deg, #14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff);
+$gradient-left: linear-gradient(270deg, #14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff);
+$gradient-top-right: linear-gradient(45deg, #14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff);
+$gradient-bottom-right: linear-gradient(135deg, #14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff);
+$gradient-top-left: linear-gradient(225deg, #14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff);
+$gradient-bottom-left: linear-gradient(315deg, #14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff);
+$gradient-radial: radial-gradient(#14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff);
+
+/* SCSS Map */
+$grape-nocturne-quartet-map: (
+    "grape-nocturne-quartet-nocturne-ink": #14061fff,
+    "grape-nocturne-quartet-grape-shadow": #2a0f3fff,
+    "grape-nocturne-quartet-wine-plum": #4a1d5fff,
+    "grape-nocturne-quartet-midnight-grape": #6b2d83ff
+);

@@ -1,0 +1,81 @@
+/*---
+id: desert-terminal
+name: Desert Terminal
+author: JaZeR-444
+version: 1.0.0
+category: Warm & Technical
+count: 5
+description: A warm technical palette mixing desert earth, terminal green, and dry neutrals.
+tags:
+  mood:
+  - warm
+  - technical
+  aesthetic:
+  - Terminal
+  - Desert
+intent: A 5-color palette designed for docs, code ui, analytics.
+suggested_use:
+- Docs
+- Code UI
+- Analytics
+url: https://coolors.co/3c2f2f-a0522d-2dd4bf-e9d8a6-faf3dd
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--terminal-brown: #3c2f2fff;
+--clay-console: #a0522dff;
+--terminal-green: #2dd4bfff;
+--dry-sand: #e9d8a6ff;
+--bone-screen: #faf3ddff;
+
+/* CSS HSL */
+--terminal-brown: hsla(0, 12%, 21%, 1);
+--clay-console: hsla(19, 56%, 40%, 1);
+--terminal-green: hsla(172, 66%, 50%, 1);
+--dry-sand: hsla(45, 60%, 78%, 1);
+--bone-screen: hsla(46, 74%, 92%, 1);
+}
+
+/* SCSS HEX */
+$terminal-brown: #3c2f2fff;
+$clay-console: #a0522dff;
+$terminal-green: #2dd4bfff;
+$dry-sand: #e9d8a6ff;
+$bone-screen: #faf3ddff;
+
+/* SCSS HSL */
+$terminal-brown: hsla(0, 12%, 21%, 1);
+$clay-console: hsla(19, 56%, 40%, 1);
+$terminal-green: hsla(172, 66%, 50%, 1);
+$dry-sand: hsla(45, 60%, 78%, 1);
+$bone-screen: hsla(46, 74%, 92%, 1);
+
+/* SCSS RGB */
+$terminal-brown: rgba(60, 47, 47, 1);
+$clay-console: rgba(160, 82, 45, 1);
+$terminal-green: rgba(45, 212, 191, 1);
+$dry-sand: rgba(233, 216, 166, 1);
+$bone-screen: rgba(250, 243, 221, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #3c2f2fff, #a0522dff, #2dd4bfff, #e9d8a6ff, #faf3ddff);
+$gradient-right: linear-gradient(90deg, #3c2f2fff, #a0522dff, #2dd4bfff, #e9d8a6ff, #faf3ddff);
+$gradient-bottom: linear-gradient(180deg, #3c2f2fff, #a0522dff, #2dd4bfff, #e9d8a6ff, #faf3ddff);
+$gradient-left: linear-gradient(270deg, #3c2f2fff, #a0522dff, #2dd4bfff, #e9d8a6ff, #faf3ddff);
+$gradient-top-right: linear-gradient(45deg, #3c2f2fff, #a0522dff, #2dd4bfff, #e9d8a6ff, #faf3ddff);
+$gradient-bottom-right: linear-gradient(135deg, #3c2f2fff, #a0522dff, #2dd4bfff, #e9d8a6ff, #faf3ddff);
+$gradient-top-left: linear-gradient(225deg, #3c2f2fff, #a0522dff, #2dd4bfff, #e9d8a6ff, #faf3ddff);
+$gradient-bottom-left: linear-gradient(315deg, #3c2f2fff, #a0522dff, #2dd4bfff, #e9d8a6ff, #faf3ddff);
+$gradient-radial: radial-gradient(#3c2f2fff, #a0522dff, #2dd4bfff, #e9d8a6ff, #faf3ddff);
+
+/* SCSS Map */
+$desert-terminal-map: (
+    "terminal-brown": #3c2f2fff,
+    "clay-console": #a0522dff,
+    "terminal-green": #2dd4bfff,
+    "dry-sand": #e9d8a6ff,
+    "bone-screen": #faf3ddff
+);

@@ -1,0 +1,105 @@
+/*---
+id: cobalt-circuit-matrix
+name: Cobalt Circuit Matrix
+author: JaZeR-444
+version: 1.0.0
+category: Blue & Technical
+count: 9
+description: A technical cobalt palette with dark code surfaces, electric blue states, and crisp highlights.
+tags:
+  mood:
+  - blue
+  - technical
+  aesthetic:
+  - Circuit
+  - Developer
+intent: A blue-focused 9-color palette designed for developer tools, ai ui, analytics.
+suggested_use:
+- Developer Tools
+- AI UI
+- Analytics
+url: https://coolors.co/020617-0f172a-1e3a8a-1d4ed8-2563eb-3b82f6-60a5fa-bfdbfe-eff6ff
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--cobalt-circuit-matrix-circuit-black: #020617ff;
+--cobalt-circuit-matrix-logic-navy: #0f172aff;
+--cobalt-circuit-matrix-cobalt-core: #1e3a8aff;
+--cobalt-circuit-matrix-runtime-blue: #1d4ed8ff;
+--cobalt-circuit-matrix-action-blue: #2563ebff;
+--cobalt-circuit-matrix-signal-blue: #3b82f6ff;
+--cobalt-circuit-matrix-spark-blue: #60a5faff;
+--cobalt-circuit-matrix-trace-blue: #bfdbfeff;
+--cobalt-circuit-matrix-debug-mist: #eff6ffff;
+
+/* CSS HSL */
+--cobalt-circuit-matrix-circuit-black: hsla(229, 84%, 5%, 1);
+--cobalt-circuit-matrix-logic-navy: hsla(222, 47%, 11%, 1);
+--cobalt-circuit-matrix-cobalt-core: hsla(224, 64%, 33%, 1);
+--cobalt-circuit-matrix-runtime-blue: hsla(224, 76%, 48%, 1);
+--cobalt-circuit-matrix-action-blue: hsla(221, 83%, 53%, 1);
+--cobalt-circuit-matrix-signal-blue: hsla(217, 91%, 60%, 1);
+--cobalt-circuit-matrix-spark-blue: hsla(213, 94%, 68%, 1);
+--cobalt-circuit-matrix-trace-blue: hsla(213, 97%, 87%, 1);
+--cobalt-circuit-matrix-debug-mist: hsla(214, 100%, 97%, 1);
+}
+
+/* SCSS HEX */
+$cobalt-circuit-matrix-circuit-black: #020617ff;
+$cobalt-circuit-matrix-logic-navy: #0f172aff;
+$cobalt-circuit-matrix-cobalt-core: #1e3a8aff;
+$cobalt-circuit-matrix-runtime-blue: #1d4ed8ff;
+$cobalt-circuit-matrix-action-blue: #2563ebff;
+$cobalt-circuit-matrix-signal-blue: #3b82f6ff;
+$cobalt-circuit-matrix-spark-blue: #60a5faff;
+$cobalt-circuit-matrix-trace-blue: #bfdbfeff;
+$cobalt-circuit-matrix-debug-mist: #eff6ffff;
+
+/* SCSS HSL */
+$cobalt-circuit-matrix-circuit-black: hsla(229, 84%, 5%, 1);
+$cobalt-circuit-matrix-logic-navy: hsla(222, 47%, 11%, 1);
+$cobalt-circuit-matrix-cobalt-core: hsla(224, 64%, 33%, 1);
+$cobalt-circuit-matrix-runtime-blue: hsla(224, 76%, 48%, 1);
+$cobalt-circuit-matrix-action-blue: hsla(221, 83%, 53%, 1);
+$cobalt-circuit-matrix-signal-blue: hsla(217, 91%, 60%, 1);
+$cobalt-circuit-matrix-spark-blue: hsla(213, 94%, 68%, 1);
+$cobalt-circuit-matrix-trace-blue: hsla(213, 97%, 87%, 1);
+$cobalt-circuit-matrix-debug-mist: hsla(214, 100%, 97%, 1);
+
+/* SCSS RGB */
+$cobalt-circuit-matrix-circuit-black: rgba(2, 6, 23, 1);
+$cobalt-circuit-matrix-logic-navy: rgba(15, 23, 42, 1);
+$cobalt-circuit-matrix-cobalt-core: rgba(30, 58, 138, 1);
+$cobalt-circuit-matrix-runtime-blue: rgba(29, 78, 216, 1);
+$cobalt-circuit-matrix-action-blue: rgba(37, 99, 235, 1);
+$cobalt-circuit-matrix-signal-blue: rgba(59, 130, 246, 1);
+$cobalt-circuit-matrix-spark-blue: rgba(96, 165, 250, 1);
+$cobalt-circuit-matrix-trace-blue: rgba(191, 219, 254, 1);
+$cobalt-circuit-matrix-debug-mist: rgba(239, 246, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff, #60a5faff, #bfdbfeff, #eff6ffff);
+$gradient-right: linear-gradient(90deg, #020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff, #60a5faff, #bfdbfeff, #eff6ffff);
+$gradient-bottom: linear-gradient(180deg, #020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff, #60a5faff, #bfdbfeff, #eff6ffff);
+$gradient-left: linear-gradient(270deg, #020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff, #60a5faff, #bfdbfeff, #eff6ffff);
+$gradient-top-right: linear-gradient(45deg, #020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff, #60a5faff, #bfdbfeff, #eff6ffff);
+$gradient-bottom-right: linear-gradient(135deg, #020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff, #60a5faff, #bfdbfeff, #eff6ffff);
+$gradient-top-left: linear-gradient(225deg, #020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff, #60a5faff, #bfdbfeff, #eff6ffff);
+$gradient-bottom-left: linear-gradient(315deg, #020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff, #60a5faff, #bfdbfeff, #eff6ffff);
+$gradient-radial: radial-gradient(#020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff, #60a5faff, #bfdbfeff, #eff6ffff);
+
+/* SCSS Map */
+$cobalt-circuit-matrix-map: (
+    "cobalt-circuit-matrix-circuit-black": #020617ff,
+    "cobalt-circuit-matrix-logic-navy": #0f172aff,
+    "cobalt-circuit-matrix-cobalt-core": #1e3a8aff,
+    "cobalt-circuit-matrix-runtime-blue": #1d4ed8ff,
+    "cobalt-circuit-matrix-action-blue": #2563ebff,
+    "cobalt-circuit-matrix-signal-blue": #3b82f6ff,
+    "cobalt-circuit-matrix-spark-blue": #60a5faff,
+    "cobalt-circuit-matrix-trace-blue": #bfdbfeff,
+    "cobalt-circuit-matrix-debug-mist": #eff6ffff
+);

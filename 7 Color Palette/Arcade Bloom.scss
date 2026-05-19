@@ -1,0 +1,93 @@
+/*---
+id: arcade-bloom
+name: Arcade Bloom
+author: JaZeR-444
+version: 1.0.0
+category: Playful & Electric
+count: 7
+description: An arcade-inspired palette with saturated bloom colors and deep cabinet dark.
+tags:
+  mood:
+  - playful
+  - electric
+  aesthetic:
+  - Arcade
+  - Retro
+intent: A 7-color palette designed for game ui, posters, events.
+suggested_use:
+- Game UI
+- Posters
+- Events
+url: https://coolors.co/111827-8b5cf6-ef4444-22d3ee-22c55e-fde047-fff7ed
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--cabinet-black: #111827ff;
+--coin-purple: #8b5cf6ff;
+--joystick-red: #ef4444ff;
+--screen-cyan: #22d3eeff;
+--pixel-green: #22c55eff;
+--ticket-yellow: #fde047ff;
+--bloom-white: #fff7edff;
+
+/* CSS HSL */
+--cabinet-black: hsla(221, 39%, 11%, 1);
+--coin-purple: hsla(258, 90%, 66%, 1);
+--joystick-red: hsla(0, 84%, 60%, 1);
+--screen-cyan: hsla(188, 86%, 53%, 1);
+--pixel-green: hsla(142, 71%, 45%, 1);
+--ticket-yellow: hsla(50, 98%, 64%, 1);
+--bloom-white: hsla(33, 100%, 96%, 1);
+}
+
+/* SCSS HEX */
+$cabinet-black: #111827ff;
+$coin-purple: #8b5cf6ff;
+$joystick-red: #ef4444ff;
+$screen-cyan: #22d3eeff;
+$pixel-green: #22c55eff;
+$ticket-yellow: #fde047ff;
+$bloom-white: #fff7edff;
+
+/* SCSS HSL */
+$cabinet-black: hsla(221, 39%, 11%, 1);
+$coin-purple: hsla(258, 90%, 66%, 1);
+$joystick-red: hsla(0, 84%, 60%, 1);
+$screen-cyan: hsla(188, 86%, 53%, 1);
+$pixel-green: hsla(142, 71%, 45%, 1);
+$ticket-yellow: hsla(50, 98%, 64%, 1);
+$bloom-white: hsla(33, 100%, 96%, 1);
+
+/* SCSS RGB */
+$cabinet-black: rgba(17, 24, 39, 1);
+$coin-purple: rgba(139, 92, 246, 1);
+$joystick-red: rgba(239, 68, 68, 1);
+$screen-cyan: rgba(34, 211, 238, 1);
+$pixel-green: rgba(34, 197, 94, 1);
+$ticket-yellow: rgba(253, 224, 71, 1);
+$bloom-white: rgba(255, 247, 237, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #111827ff, #8b5cf6ff, #ef4444ff, #22d3eeff, #22c55eff, #fde047ff, #fff7edff);
+$gradient-right: linear-gradient(90deg, #111827ff, #8b5cf6ff, #ef4444ff, #22d3eeff, #22c55eff, #fde047ff, #fff7edff);
+$gradient-bottom: linear-gradient(180deg, #111827ff, #8b5cf6ff, #ef4444ff, #22d3eeff, #22c55eff, #fde047ff, #fff7edff);
+$gradient-left: linear-gradient(270deg, #111827ff, #8b5cf6ff, #ef4444ff, #22d3eeff, #22c55eff, #fde047ff, #fff7edff);
+$gradient-top-right: linear-gradient(45deg, #111827ff, #8b5cf6ff, #ef4444ff, #22d3eeff, #22c55eff, #fde047ff, #fff7edff);
+$gradient-bottom-right: linear-gradient(135deg, #111827ff, #8b5cf6ff, #ef4444ff, #22d3eeff, #22c55eff, #fde047ff, #fff7edff);
+$gradient-top-left: linear-gradient(225deg, #111827ff, #8b5cf6ff, #ef4444ff, #22d3eeff, #22c55eff, #fde047ff, #fff7edff);
+$gradient-bottom-left: linear-gradient(315deg, #111827ff, #8b5cf6ff, #ef4444ff, #22d3eeff, #22c55eff, #fde047ff, #fff7edff);
+$gradient-radial: radial-gradient(#111827ff, #8b5cf6ff, #ef4444ff, #22d3eeff, #22c55eff, #fde047ff, #fff7edff);
+
+/* SCSS Map */
+$arcade-bloom-map: (
+    "cabinet-black": #111827ff,
+    "coin-purple": #8b5cf6ff,
+    "joystick-red": #ef4444ff,
+    "screen-cyan": #22d3eeff,
+    "pixel-green": #22c55eff,
+    "ticket-yellow": #fde047ff,
+    "bloom-white": #fff7edff
+);

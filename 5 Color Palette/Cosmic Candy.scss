@@ -1,0 +1,81 @@
+/*---
+id: cosmic-candy
+name: Cosmic Candy
+author: JaZeR-444
+version: 1.0.0
+category: Playful & Neon
+count: 5
+description: A playful cosmic palette with candy brights over deep space.
+tags:
+  mood:
+  - playful
+  - neon
+  aesthetic:
+  - Space
+  - Pop
+intent: A 5-color palette designed for game ui, social media, campaign.
+suggested_use:
+- Game UI
+- Social Media
+- Campaign
+url: https://coolors.co/10002b-7b2cbf-ff4d6d-80ffdb-fff0f3
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--space-wrapper: #10002bff;
+--cosmic-grape: #7b2cbfff;
+--candy-pink: #ff4d6dff;
+--star-mint: #80ffdbff;
+--sugar-white: #fff0f3ff;
+
+/* CSS HSL */
+--space-wrapper: hsla(262, 100%, 8%, 1);
+--cosmic-grape: hsla(272, 63%, 46%, 1);
+--candy-pink: hsla(349, 100%, 65%, 1);
+--star-mint: hsla(163, 100%, 75%, 1);
+--sugar-white: hsla(348, 100%, 97%, 1);
+}
+
+/* SCSS HEX */
+$space-wrapper: #10002bff;
+$cosmic-grape: #7b2cbfff;
+$candy-pink: #ff4d6dff;
+$star-mint: #80ffdbff;
+$sugar-white: #fff0f3ff;
+
+/* SCSS HSL */
+$space-wrapper: hsla(262, 100%, 8%, 1);
+$cosmic-grape: hsla(272, 63%, 46%, 1);
+$candy-pink: hsla(349, 100%, 65%, 1);
+$star-mint: hsla(163, 100%, 75%, 1);
+$sugar-white: hsla(348, 100%, 97%, 1);
+
+/* SCSS RGB */
+$space-wrapper: rgba(16, 0, 43, 1);
+$cosmic-grape: rgba(123, 44, 191, 1);
+$candy-pink: rgba(255, 77, 109, 1);
+$star-mint: rgba(128, 255, 219, 1);
+$sugar-white: rgba(255, 240, 243, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #10002bff, #7b2cbfff, #ff4d6dff, #80ffdbff, #fff0f3ff);
+$gradient-right: linear-gradient(90deg, #10002bff, #7b2cbfff, #ff4d6dff, #80ffdbff, #fff0f3ff);
+$gradient-bottom: linear-gradient(180deg, #10002bff, #7b2cbfff, #ff4d6dff, #80ffdbff, #fff0f3ff);
+$gradient-left: linear-gradient(270deg, #10002bff, #7b2cbfff, #ff4d6dff, #80ffdbff, #fff0f3ff);
+$gradient-top-right: linear-gradient(45deg, #10002bff, #7b2cbfff, #ff4d6dff, #80ffdbff, #fff0f3ff);
+$gradient-bottom-right: linear-gradient(135deg, #10002bff, #7b2cbfff, #ff4d6dff, #80ffdbff, #fff0f3ff);
+$gradient-top-left: linear-gradient(225deg, #10002bff, #7b2cbfff, #ff4d6dff, #80ffdbff, #fff0f3ff);
+$gradient-bottom-left: linear-gradient(315deg, #10002bff, #7b2cbfff, #ff4d6dff, #80ffdbff, #fff0f3ff);
+$gradient-radial: radial-gradient(#10002bff, #7b2cbfff, #ff4d6dff, #80ffdbff, #fff0f3ff);
+
+/* SCSS Map */
+$cosmic-candy-map: (
+    "space-wrapper": #10002bff,
+    "cosmic-grape": #7b2cbfff,
+    "candy-pink": #ff4d6dff,
+    "star-mint": #80ffdbff,
+    "sugar-white": #fff0f3ff
+);
