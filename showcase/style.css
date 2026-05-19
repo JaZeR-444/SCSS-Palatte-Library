@@ -231,6 +231,19 @@ pre::-webkit-scrollbar-thumb:hover {
     pointer-events: none;
 }
 
+/* ASCII Hero */
+#ascii-hero-text {
+    font-size: clamp(4px, 2vw, 26px);
+    background: linear-gradient(90deg,
+        #ffb3b3, #ffcba4, #fff0a0, #e8ffb0, #b8f5c8,
+        #a8f0e0, #a8e8ff, #b0c8ff, #c8b0ff, #f0b0ff
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
 @media (max-width: 640px) {
     .sandbox-toolbar {
         width: 100%;
@@ -247,4 +260,78 @@ pre::-webkit-scrollbar-thumb:hover {
     #section-sandbox {
         padding: 0.75rem;
     }
+}
+
+/* Pro Studio Enhancements */
+
+/* State Simulation */
+.simulate-states button:not(.usecase-btn):not(.dash-btn):not(.p-2) {
+    filter: brightness(1.15) saturate(1.1);
+    transform: scale(1.04);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.simulate-states input {
+    border-color: var(--ui-color-3) !important;
+    ring: 2px solid var(--ui-color-3);
+}
+
+/* Heatmap Highlights */
+.heatmap-mode [data-role] {
+    position: relative;
+}
+.heatmap-mode .heatmap-pass {
+    outline: 2px solid #10b981 !important;
+    outline-offset: 1px;
+}
+.heatmap-mode .heatmap-fail {
+    outline: 2px solid #ef4444 !important;
+    outline-offset: 1px;
+}
+
+/* Split View */
+.split-view-active #sandbox-scale-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+    width: 200%; /* Expand to fit two scaled versions */
+}
+.split-view-active .usecase-content {
+    transform: scale(0.45);
+    transform-origin: top center;
+    flex-shrink: 0;
+}
+
+/* Real-world Background */
+.sandbox-bg-image {
+    background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop') !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.sandbox-bg-image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(4px);
+}
+
+/* Drag & Drop */
+.role-chip[draggable="true"] {
+    cursor: grab;
+}
+.role-chip.dragging {
+    opacity: 0.4;
+    scale: 0.95;
+    border-style: dashed;
+}
+.role-chip.drag-over {
+    border-color: var(--ui-color-1) !important;
+    background: rgba(99, 102, 241, 0.05) !important;
+}
+
+/* Role Tooltip */
+#role-tooltip {
+    transition: opacity 0.15s ease, transform 0.15s ease;
 }
