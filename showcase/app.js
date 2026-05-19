@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Showcase: Initializing professional sandbox v2.2.0...');
+    console.log('Showcase: Initializing professional sandbox v2.3.0...');
 
     // --- DOM Elements ---
     const getEl = (id) => document.getElementById(id);
@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let activeFacet = 'all';
     let activeSubFilter = null;
     let searchQuery = '';
+    let activeUseCase = 'dashboard';
+    let activeDashVariant = 'analytics';
 
     // --- Core Logic: Search & Filtering ---
 
@@ -146,6 +148,46 @@ document.addEventListener('DOMContentLoaded', () => {
         return l1 > l2 ? l1 / l2 : l2 / l1;
     }
 
+    function hexToHsl(hex) {
+        const clean = (hex || '#000000').replace('#', '').slice(0, 6);
+        let r = parseInt(clean.slice(0, 2), 16) / 255;
+        let g = parseInt(clean.slice(2, 4), 16) / 255;
+        let b = parseInt(clean.slice(4, 6), 16) / 255;
+        const max = Math.max(r, g, b), min = Math.min(r, g, b);
+        let h = 0, s = 0;
+        const l = (max + min) / 2;
+        if (max !== min) {
+            const d = max - min;
+            s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+            switch (max) {
+                case r: h = ((g - b) / d + (g < b ? 6 : 0)) / 6; break;
+                case g: h = ((b - r) / d + 2) / 6; break;
+                case b: h = ((r - g) / d + 4) / 6; break;
+            }
+        }
+        return [h * 360, s * 100, l * 100];
+    }
+
+    function getColorGroup(palette) {
+        const tally = {};
+        palette.colors.forEach(c => {
+            const [h, s, l] = hexToHsl(c.hex);
+            let family;
+            if (s < 12 || l < 8 || l > 92) family = 'Neutral';
+            else if (h < 20 || h >= 340) family = 'Red';
+            else if (h < 45) family = 'Orange';
+            else if (h < 70) family = 'Yellow';
+            else if (h < 160) family = 'Green';
+            else if (h < 200) family = 'Teal';
+            else if (h < 260) family = 'Blue';
+            else if (h < 300) family = 'Purple';
+            else family = 'Pink';
+            if (family !== 'Neutral') tally[family] = (tally[family] || 0) + 1;
+        });
+        const entries = Object.entries(tally);
+        return entries.length ? entries.sort((a, b) => b[1] - a[1])[0][0] : 'Neutral';
+    }
+
     function getA11yBadge(contrast) {
         if (contrast >= 7) return '<span class="px-1.5 py-0.5 rounded bg-green-500/10 text-green-500 text-[8px] font-black tracking-tighter">AAA</span>';
         if (contrast >= 4.5) return '<span class="px-1.5 py-0.5 rounded bg-blue-500/10 text-blue-500 text-[8px] font-black tracking-tighter">AA</span>';
@@ -167,10 +209,6 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => toast.remove(), 300);
         }, 2500);
     }
-
-    window.copyToClipboard = (text, msg) => {
-        navigator.clipboard.writeText(text).then(() => showToast(msg || 'Copied!'));
-    };
 
     // --- Rendering ---
 
@@ -220,7 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Modal & Switcher ---
+    // --- Modal & Switcher Logic ---
 
     function applyPaletteMapping(colors) {
         for (let i = 1; i <= 10; i++) {
@@ -234,11 +272,51 @@ document.addEventListener('DOMContentLoaded', () => {
         const shuffled = [...currentPalette.colors].sort(() => Math.random() - 0.5);
         applyPaletteMapping(shuffled);
         
-        // Visual Feedback
         if (window.gsap) {
             gsap.fromTo("#sandbox-viewport", { opacity: 0.5, scale: 0.98 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power2.out" });
         }
         showToast('Colors shuffled!');
+    }
+
+    function switchDashboardVariant(variant) {
+        document.querySelectorAll('.dash-btn').forEach(b => {
+            const isActive = b.dataset.dash === variant;
+            b.classList.toggle('active', isActive);
+            b.classList.toggle('bg-white', isActive);
+            b.classList.toggle('shadow-sm', isActive);
+            b.classList.toggle('text-gray-900', isActive);
+            b.classList.toggle('text-gray-500', !isActive);
+        });
+
+        document.querySelectorAll('.dash-view').forEach(view => {
+            const isTarget = view.id === 'dash-' + variant;
+            view.classList.toggle('opacity-0', !isTarget);
+            view.classList.toggle('pointer-events-none', !isTarget);
+            if (variant !== 'analytics') {
+                view.classList.toggle('absolute', !isTarget);
+                view.classList.toggle('inset-0', !isTarget);
+            }
+        });
+
+        activeDashVariant = variant;
+
+        // GSAP Animations for Dashboard Variants
+        if (!window.gsap) return;
+        gsap.killTweensOf(".dash-view *");
+
+        if (variant === 'analytics') {
+            gsap.from("#dash-analytics .lg\\:col-span-8", { y: 20, opacity: 0, duration: 0.6, ease: "power2.out" });
+        } else if (variant === 'crm') {
+            gsap.from("#dash-crm .space-y-4 > div", { x: -20, opacity: 0, duration: 0.4, stagger: 0.1, ease: "power2.out" });
+        } else if (variant === 'kanban') {
+            gsap.from("#dash-kanban .flex-shrink-0", { scale: 0.9, opacity: 0, duration: 0.5, stagger: 0.1, ease: "back.out(1.2)" });
+        } else if (variant === 'monitor') {
+            gsap.from("#dash-monitor .aspect-square", { scale: 0, opacity: 0, duration: 0.6, stagger: 0.1, ease: "elastic.out(1, 0.5)" });
+            gsap.from("#dash-monitor .space-y-2 div", { width: 0, duration: 1, delay: 0.5, ease: "power4.out" });
+        } else if (variant === 'profile') {
+            gsap.from("#dash-profile .bg-gradient-to-br", { y: -50, opacity: 0, duration: 0.8, ease: "power3.out" });
+            gsap.from("#dash-profile .w-24", { scale: 0, duration: 0.6, delay: 0.4, ease: "back.out(2)" });
+        }
     }
 
     function switchUseCase(usecase) {
@@ -258,12 +336,14 @@ document.addEventListener('DOMContentLoaded', () => {
             if (panel.id === 'case-dashboard') panel.classList.toggle('hidden', !isTarget);
         });
 
+        activeUseCase = usecase;
+
         // GSAP Animations
         if (!window.gsap) return;
         gsap.killTweensOf(".usecase-content *");
 
         if (usecase === 'dashboard') {
-            gsap.from("#mock-desktop", { y: 20, opacity: 0, duration: 0.6, ease: "power2.out" });
+            switchDashboardVariant(activeDashVariant);
         } else if (usecase === 'social') {
             gsap.from("#social-card", { scale: 0.9, opacity: 0, duration: 0.6, ease: "back.out(1.7)" });
             gsap.from("#case-social .w-14", { scale: 0, opacity: 0, duration: 0.4, stagger: 0.1, ease: "back.out" });
@@ -278,7 +358,6 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (usecase === 'mobile') {
             gsap.from("#mobile-shell", { y: 50, opacity: 0, duration: 0.8, ease: "power4.out" });
             gsap.from("#mobile-fab", { scale: 0, duration: 0.6, delay: 0.5, ease: "back.out(2)" });
-            gsap.from("#case-mobile h5, #case-mobile .flex", { x: -20, opacity: 0, duration: 0.4, stagger: 0.05, delay: 0.3 });
         }
     }
 
@@ -288,13 +367,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (elements.vibe) elements.vibe.textContent = `${p.category} • ${p.count} Colors`;
         if (elements.code) elements.code.textContent = '/* Loading SCSS... */';
         
-        // Hero
         if (elements.hero) {
             const hexes = p.colors.map(c => c.hex).join(', ');
             elements.hero.style.background = `radial-gradient(circle at center, ${hexes})`;
         }
 
-        // Apply Initial Mapping
         applyPaletteMapping(p.colors);
 
         // Color Lab
@@ -322,7 +399,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h4 class="font-bold text-sm mb-1 truncate">${color.name}</h4>
                         <div class="flex items-center gap-2 mb-3">
                             <code class="text-[10px] text-gray-400 font-mono">${hex6}</code>
-                            <button onclick="copyToClipboard('${hex6}', 'HEX ${hex6} copied!')" class="text-gray-300 hover:text-indigo-500 transition-colors">
+                            <button onclick="copyToClipboard('${hex6}', '${hex6} copied!')" class="text-gray-300 hover:text-indigo-500 transition-colors">
                                 <i class="fa-solid fa-copy text-[10px]"></i>
                             </button>
                         </div>
@@ -346,7 +423,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         switchUseCase('dashboard');
 
-        // Fetch SCSS
         fetch('../' + p.path)
             .then(res => res.text())
             .then(text => {
@@ -370,11 +446,11 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = '';
             if (elements.sim) elements.sim.value = 'none';
             if (elements.modal) elements.modal.style.filter = '';
-            gsap.killTweensOf(".usecase-content *");
+            gsap.killTweensOf(".usecase-content *, .dash-view *");
         }, 300);
     }
 
-    // --- Event Listeners ---
+    // --- Listeners ---
 
     if (elements.close) elements.close.addEventListener('click', closeModal);
     if (elements.overlay) elements.overlay.addEventListener('click', (e) => e.target === elements.overlay && closeModal());
@@ -387,13 +463,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    if (elements.shuffleBtn) {
-        elements.shuffleBtn.addEventListener('click', shufflePaletteMapping);
-    }
+    if (elements.shuffleBtn) elements.shuffleBtn.addEventListener('click', shufflePaletteMapping);
 
     document.addEventListener('click', (e) => {
         const useBtn = e.target.closest('.usecase-btn');
         if (useBtn) switchUseCase(useBtn.dataset.usecase);
+
+        const dashBtn = e.target.closest('.dash-btn');
+        if (dashBtn) switchDashboardVariant(dashBtn.dataset.dash);
 
         const tabBtn = e.target.closest('.tab-btn');
         if (tabBtn && currentPalette) {
