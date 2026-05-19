@@ -21,7 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
         toast: getEl('toast-container'),
         facetTabs: getEl('facet-tabs'),
         subFilterContainer: getEl('sub-filter-container'),
-        shuffleBtn: getEl('shuffle-colors')
+        shuffleBtn: getEl('shuffle-colors'),
+        colorPicker: getEl('color-proximity-picker'),
+        colorSwatch: getEl('color-picker-swatch'),
+        clearColor: getEl('clear-color-proximity')
     };
 
     // --- State ---
@@ -32,28 +35,57 @@ document.addEventListener('DOMContentLoaded', () => {
     let searchQuery = '';
     let activeUseCase = 'dashboard';
     let activeDashVariant = 'analytics';
+    let favorites = new Set(JSON.parse(localStorage.getItem('sc_favorites') || '[]'));
+    let proximityHex = null;
 
     // --- Core Logic: Search & Filtering ---
 
+    function colorDistance(hex1, hex2) {
+        const [r1, g1, b1] = hexToRgb(hex1).map(v => v * 255);
+        const [r2, g2, b2] = hexToRgb(hex2).map(v => v * 255);
+        return Math.sqrt((r1 - r2) ** 2 + (g1 - g2) ** 2 + (b1 - b2) ** 2);
+    }
+
+    function getPaletteProximity(palette, targetHex) {
+        return Math.min(...palette.colors.map(c => colorDistance(c.hex, targetHex)));
+    }
+
+    function toggleFavorite(id) {
+        if (favorites.has(id)) { favorites.delete(id); } else { favorites.add(id); }
+        localStorage.setItem('sc_favorites', JSON.stringify([...favorites]));
+        document.querySelectorAll(`.fav-btn[data-id="${id}"]`).forEach(btn => {
+            const icon = btn.querySelector('i');
+            const isFav = favorites.has(id);
+            icon.className = `fa-solid fa-heart text-sm ${isFav ? 'text-red-400' : 'text-gray-200 dark:text-slate-700'}`;
+        });
+        if (activeFacet === 'favorites') applyFilters();
+    }
+
     function applyFilters() {
         const query = searchQuery.trim().toLowerCase();
-        const filtered = allPalettes.filter(p => {
-            const matchesFacet = 
-                activeFacet === 'all' || 
+        let filtered = allPalettes.filter(p => {
+            const matchesFacet =
+                activeFacet === 'all' ||
+                (activeFacet === 'favorites' && favorites.has(p.id)) ||
                 (activeFacet === 'count' && p.count === parseInt(activeSubFilter)) ||
                 (activeFacet === 'category' && p.category === activeSubFilter) ||
-                (activeFacet === 'mood' && p.tags && p.tags.mood && p.tags.mood.includes(activeSubFilter)) ||
-                (activeFacet === 'aesthetic' && p.tags && p.tags.aesthetic && p.tags.aesthetic.includes(activeSubFilter));
+                (activeFacet === 'mood' && p.tags?.mood?.includes(activeSubFilter)) ||
+                (activeFacet === 'aesthetic' && p.tags?.aesthetic?.includes(activeSubFilter)) ||
+                (activeFacet === 'color' && getColorGroup(p) === activeSubFilter);
 
-            const matchesSearch = 
-                !query || 
-                p.name.toLowerCase().includes(query) || 
+            const matchesSearch =
+                !query ||
+                p.name.toLowerCase().includes(query) ||
                 (p.category && p.category.toLowerCase().includes(query)) ||
-                (p.tags && p.tags.mood && p.tags.mood.some(m => m.toLowerCase().includes(query))) ||
-                (p.tags && p.tags.aesthetic && p.tags.aesthetic.some(a => a.toLowerCase().includes(query)));
+                (p.intent && p.intent.toLowerCase().includes(query)) ||
+                (p.tags?.mood?.some(m => m.toLowerCase().includes(query))) ||
+                (p.tags?.aesthetic?.some(a => a.toLowerCase().includes(query)));
 
             return matchesFacet && matchesSearch;
         });
+        if (proximityHex) {
+            filtered = filtered.sort((a, b) => getPaletteProximity(a, proximityHex) - getPaletteProximity(b, proximityHex));
+        }
         renderPalettes(filtered);
     }
 
@@ -84,41 +116,56 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!elements.nav || !elements.subFilterContainer) return;
         elements.nav.innerHTML = '';
 
-        if (facet === 'all') {
+        if (facet === 'all' || facet === 'favorites') {
             elements.subFilterContainer.classList.add('hidden');
             activeSubFilter = null;
             return;
         }
 
         elements.subFilterContainer.classList.remove('hidden');
-        let values = [];
+
+        const COLOR_DOTS = { Red:'#ef4444', Orange:'#f97316', Yellow:'#eab308', Green:'#22c55e', Teal:'#14b8a6', Blue:'#3b82f6', Purple:'#a855f7', Pink:'#ec4899', Neutral:'#9ca3af' };
+        const COLOR_ORDER = ['Red','Orange','Yellow','Green','Teal','Blue','Purple','Pink','Neutral'];
+        let entries = [];
 
         if (facet === 'count') {
-            values = [...new Set(allPalettes.map(p => p.count))].sort((a, b) => a - b);
+            const map = {};
+            allPalettes.forEach(p => { map[p.count] = (map[p.count] || 0) + 1; });
+            entries = [...new Set(allPalettes.map(p => p.count))].sort((a, b) => a - b)
+                .map(v => ({ value: v, label: `${v} Colors`, count: map[v] }));
         } else if (facet === 'category') {
-            values = [...new Set(allPalettes.map(p => p.category))].filter(Boolean).sort();
+            const map = {};
+            allPalettes.forEach(p => { if (p.category) map[p.category] = (map[p.category] || 0) + 1; });
+            entries = Object.keys(map).sort().map(v => ({ value: v, label: v, count: map[v] }));
         } else if (facet === 'mood') {
-            const allMoods = allPalettes.flatMap(p => (p.tags && p.tags.mood) || []);
-            values = [...new Set(allMoods)].sort();
+            const map = {};
+            allPalettes.forEach(p => (p.tags?.mood || []).forEach(m => { map[m] = (map[m] || 0) + 1; }));
+            entries = Object.keys(map).sort().map(v => ({ value: v, label: v, count: map[v] }));
         } else if (facet === 'aesthetic') {
-            const allAesthetics = allPalettes.flatMap(p => (p.tags && p.tags.aesthetic) || []);
-            values = [...new Set(allAesthetics)].sort();
+            const map = {};
+            allPalettes.forEach(p => (p.tags?.aesthetic || []).forEach(a => { map[a] = (map[a] || 0) + 1; }));
+            entries = Object.keys(map).sort().map(v => ({ value: v, label: v, count: map[v] }));
+        } else if (facet === 'color') {
+            const map = {};
+            allPalettes.forEach(p => { const g = getColorGroup(p); map[g] = (map[g] || 0) + 1; });
+            entries = COLOR_ORDER.filter(v => map[v]).map(v => ({ value: v, label: v, count: map[v], dot: COLOR_DOTS[v] }));
         }
 
-        values.forEach((val, i) => {
+        if (entries.length === 0) { elements.subFilterContainer.classList.add('hidden'); return; }
+
+        entries.forEach((entry, i) => {
             const btn = document.createElement('button');
             btn.className = `sub-filter-btn px-4 py-1.5 rounded-xl text-xs font-bold border transition-all whitespace-nowrap ${i === 0 ? 'active border-indigo-500 bg-indigo-50 text-indigo-600' : 'border-gray-200 dark:border-slate-800 text-gray-500'}`;
-            btn.textContent = facet === 'count' ? `${val} Colors` : val;
-            
-            if (i === 0) activeSubFilter = val;
-
+            const dot = entry.dot ? `<span style="color:${entry.dot}">● </span>` : '';
+            btn.innerHTML = `${dot}${entry.label} <span class="opacity-50 font-normal">(${entry.count})</span>`;
+            if (i === 0) activeSubFilter = entry.value;
             btn.addEventListener('click', () => {
                 document.querySelectorAll('.sub-filter-btn').forEach(b => {
                     b.classList.remove('active', 'border-indigo-500', 'bg-indigo-50', 'text-indigo-600');
                     b.classList.add('border-gray-200', 'dark:border-slate-800', 'text-gray-500');
                 });
                 btn.classList.add('active', 'border-indigo-500', 'bg-indigo-50', 'text-indigo-600');
-                activeSubFilter = val;
+                activeSubFilter = entry.value;
                 applyFilters();
             });
             elements.nav.appendChild(btn);
@@ -217,23 +264,24 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.grid.innerHTML = '';
         
         if (palettes.length === 0) {
-            elements.grid.innerHTML = '<div class="col-span-full py-20 text-center opacity-50 flex flex-col items-center gap-4"><i class="fa-solid fa-ghost text-4xl"></i><p class="text-xl font-bold">No results found</p></div>';
+            const emptyMsg = activeFacet === 'favorites'
+                ? '<i class="fa-solid fa-heart-crack text-4xl"></i><p class="text-xl font-bold">No saved palettes</p><p class="text-sm opacity-60">Click the heart on any card to save it.</p>'
+                : '<i class="fa-solid fa-ghost text-4xl"></i><p class="text-xl font-bold">No results found</p>';
+            elements.grid.innerHTML = `<div class="col-span-full py-20 text-center opacity-50 flex flex-col items-center gap-4">${emptyMsg}</div>`;
             return;
         }
 
         palettes.forEach(p => {
             const card = document.createElement('div');
             card.className = 'bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-slate-800 hover:shadow-xl hover:-translate-y-1 transition-all cursor-pointer group flex flex-col h-full';
-            
-            const swatches = p.colors.map(c => 
-                `<div class="swatch-item" style="background-color: ${c.hex}" onclick="event.stopPropagation(); copyToClipboard('${c.hex}', 'Copied ${c.hex}')"></div>`
+
+            const swatches = p.colors.map(c =>
+                `<div class="swatch-item" style="background-color: ${c.hex}" onclick="event.stopPropagation(); copyToClipboard('${c.hex.slice(0,7)}', 'Copied ${c.hex.slice(0,7)}')"></div>`
             ).join('');
 
-            const allTags = [
-                ...(p.tags && p.tags.mood ? p.tags.mood : []),
-                ...(p.tags && p.tags.aesthetic ? p.tags.aesthetic : [])
-            ];
+            const allTags = [...(p.tags?.mood || []), ...(p.tags?.aesthetic || [])];
             const tags = allTags.map(t => `<span class="text-[9px] px-1.5 py-0.5 rounded bg-indigo-50 dark:bg-indigo-900/20 text-indigo-500 dark:text-indigo-400 font-black uppercase tracking-tighter">${t}</span>`).join('');
+            const isFav = favorites.has(p.id);
 
             card.innerHTML = `
                 <div class="swatch-group mb-4">${swatches}</div>
@@ -244,10 +292,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <p class="text-[10px] font-bold text-indigo-400 uppercase tracking-widest mb-2">${p.category || 'Collection'}</p>
                     <div class="flex flex-wrap gap-1 mb-4">${tags}</div>
-                    <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-2 italic">"${p.intent}"</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-2 italic">"${p.intent || p.description || ''}"</p>
                 </div>
                 <div class="flex items-center justify-between pt-4 border-t border-gray-50 dark:border-slate-800">
-                    <span class="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">v${p.version || '1.0.0'}</span>
+                    <div class="flex items-center gap-1">
+                        <button class="fav-btn p-1.5 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors" data-id="${p.id}" onclick="event.stopPropagation()" title="${isFav ? 'Remove from saved' : 'Save palette'}">
+                            <i class="fa-solid fa-heart text-sm ${isFav ? 'text-red-400' : 'text-gray-200 dark:text-slate-700'}"></i>
+                        </button>
+                        <button class="quick-copy-btn p-1.5 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors text-gray-200 dark:text-slate-700 hover:text-indigo-500 dark:hover:text-indigo-400" data-id="${p.id}" onclick="event.stopPropagation()" title="Copy all HEX values">
+                            <i class="fa-solid fa-copy text-sm"></i>
+                        </button>
+                    </div>
                     <div class="w-10 h-10 rounded-xl bg-gray-50 dark:bg-slate-800 flex items-center justify-center text-gray-400 group-hover:bg-indigo-500 group-hover:text-white transition-all transform group-hover:rotate-45 shadow-sm">
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
@@ -436,6 +491,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => elements.overlay.classList.add('active'), 10);
             document.body.style.overflow = 'hidden';
         }
+        history.replaceState(null, '', '#' + p.id);
     }
 
     function closeModal() {
@@ -448,6 +504,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (elements.modal) elements.modal.style.filter = '';
             gsap.killTweensOf(".usecase-content *, .dash-view *");
         }, 300);
+        history.replaceState(null, '', location.pathname + location.search);
     }
 
     // --- Listeners ---
@@ -465,12 +522,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (elements.shuffleBtn) elements.shuffleBtn.addEventListener('click', shufflePaletteMapping);
 
+    if (elements.colorPicker) {
+        elements.colorPicker.addEventListener('input', (e) => {
+            proximityHex = e.target.value;
+            if (elements.colorSwatch) elements.colorSwatch.style.background = e.target.value;
+            if (elements.clearColor) elements.clearColor.classList.remove('hidden');
+            applyFilters();
+        });
+    }
+
+    if (elements.clearColor) {
+        elements.clearColor.addEventListener('click', () => {
+            proximityHex = null;
+            if (elements.colorPicker) elements.colorPicker.value = '#6366f1';
+            if (elements.colorSwatch) elements.colorSwatch.style.background = '#6366f1';
+            elements.clearColor.classList.add('hidden');
+            applyFilters();
+        });
+    }
+
     document.addEventListener('click', (e) => {
         const useBtn = e.target.closest('.usecase-btn');
         if (useBtn) switchUseCase(useBtn.dataset.usecase);
 
         const dashBtn = e.target.closest('.dash-btn');
         if (dashBtn) switchDashboardVariant(dashBtn.dataset.dash);
+
+        const favBtn = e.target.closest('.fav-btn');
+        if (favBtn) { e.stopPropagation(); toggleFavorite(favBtn.dataset.id); }
+
+        const quickCopyBtn = e.target.closest('.quick-copy-btn');
+        if (quickCopyBtn) {
+            const palette = allPalettes.find(p => p.id === quickCopyBtn.dataset.id);
+            if (palette) {
+                const hexList = palette.colors.map(c => c.hex.slice(0, 7).toUpperCase()).join('\n');
+                window.copyToClipboard(hexList, `${palette.colors.length} HEX values copied!`);
+            }
+        }
+
+        const copyBtn = e.target.closest('[data-copy]');
+        if (copyBtn && currentPalette) {
+            if (copyBtn.dataset.copy === 'full-scss') window.copyToClipboard(currentPalette.source || '', 'Full SCSS copied!');
+            if (copyBtn.dataset.copy === 'current') window.copyToClipboard(elements.code?.textContent || '', 'Code copied!');
+        }
 
         const tabBtn = e.target.closest('.tab-btn');
         if (tabBtn && currentPalette) {
@@ -525,6 +619,10 @@ document.addEventListener('DOMContentLoaded', () => {
             allPalettes = data;
             setupFacetedFilters();
             renderPalettes(data);
+            if (location.hash) {
+                const target = allPalettes.find(p => p.id === location.hash.slice(1));
+                if (target) setTimeout(() => openModal(target), 150);
+            }
         })
         .catch(err => console.error('Showcase: Failed to load palettes.json', err));
 

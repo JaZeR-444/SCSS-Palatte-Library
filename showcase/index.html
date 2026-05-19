@@ -168,7 +168,6 @@
                                 <div class="flex p-1 bg-gray-100 dark:bg-slate-800 rounded-xl overflow-x-auto no-scrollbar">
                                     <button data-dash="analytics" class="dash-btn active px-4 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all">Analytics</button>
                                     <button data-dash="crm" class="dash-btn px-4 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">CRM</button>
-                                    <button data-dash="kanban" class="dash-btn px-4 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">Kanban</button>
                                     <button data-dash="monitor" class="dash-btn px-4 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">Monitor</button>
                                     <button data-dash="profile" class="dash-btn px-4 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">Profile</button>
                                 </div>
@@ -195,7 +194,7 @@
                                                         <div class="h-4 w-12 bg-[var(--ui-color-6)]/20 rounded-full"></div>
                                                         <div class="h-4 w-20 bg-[var(--ui-color-7)]/10 rounded-full"></div>
                                                     </div>
-                                                    <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-[var(--ui-color-1)] to-[var(--ui-color-3)] transition-colors duration-500 shadow-lg"></div>
+                                                    <div id="ui-avatar" class="w-8 h-8 rounded-full bg-gradient-to-tr from-[var(--ui-color-1)] to-[var(--ui-color-3)] transition-colors duration-500 shadow-lg"></div>
                                                 </div>
                                                 <div class="grid grid-cols-2 gap-4">
                                                     <div class="h-20 rounded-xl border border-[var(--ui-color-4)]/20 bg-gray-50/50 dark:bg-slate-900/50 p-3 flex flex-col justify-end gap-1">
@@ -208,7 +207,7 @@
                                                     </div>
                                                     <div class="h-20 rounded-xl bg-white dark:bg-slate-900 shadow-sm p-4 space-y-2 border border-gray-100 dark:border-slate-800">
                                                         <div class="flex justify-between items-start">
-                                                            <div class="h-3 w-12 bg-[var(--ui-color-5)] rounded-full transition-colors duration-500"></div>
+                                                            <div id="ui-badge-sm" class="h-3 w-12 bg-[var(--ui-color-5)] rounded-full transition-colors duration-500"></div>
                                                             <div class="flex gap-1">
                                                                 <div class="w-1.5 h-1.5 rounded-full bg-[var(--ui-color-9)]"></div>
                                                                 <div class="w-1.5 h-1.5 rounded-full bg-[var(--ui-color-10)] animate-pulse"></div>
@@ -218,7 +217,7 @@
                                                         <div class="h-2 w-2/3 bg-gray-100 dark:bg-slate-700 rounded-full"></div>
                                                     </div>
                                                 </div>
-                                                <button class="w-full h-10 bg-gradient-to-r from-[var(--ui-color-1)] to-[var(--ui-color-2)] rounded-xl text-white font-bold text-xs transition-all duration-500 hover:shadow-lg hover:shadow-[var(--ui-color-1)]/20">Launch Interface</button>
+                                                <button id="ui-btn-main" class="w-full h-10 bg-gradient-to-r from-[var(--ui-color-1)] to-[var(--ui-color-2)] rounded-xl text-white font-bold text-xs transition-all duration-500 hover:shadow-lg hover:shadow-[var(--ui-color-1)]/20">Launch Interface</button>
                                             </div>
                                         </div>
                                     </div>
@@ -263,53 +262,7 @@
                                     </div>
                                 </div>
 
-                                <!-- DASHBOARD 3: KANBAN -->
-                                <div id="dash-kanban" class="dash-view w-full absolute inset-0 opacity-0 pointer-events-none grid grid-cols-1 lg:grid-cols-12 gap-6 transition-all duration-500">
-                                    <div class="lg:col-span-8 flex gap-4 overflow-x-auto no-scrollbar pb-2">
-                                        <div class="flex-shrink-0 w-56 bg-gray-100/50 dark:bg-slate-950/30 rounded-2xl p-4 flex flex-col gap-3">
-                                            <div class="flex items-center justify-between mb-2">
-                                                <h5 class="text-[10px] font-black uppercase text-[var(--ui-color-3)] tracking-tighter">To Do</h5>
-                                                <div class="w-4 h-4 rounded-full bg-[var(--ui-color-3)]/20 text-[var(--ui-color-3)] text-[8px] flex items-center justify-center font-bold">2</div>
-                                            </div>
-                                            <div class="bg-white dark:bg-slate-900 p-4 rounded-xl shadow-sm border-l-4 border-[var(--ui-color-3)]">
-                                                <div class="h-1.5 w-12 bg-gray-100 dark:bg-slate-800 rounded-full mb-3"></div>
-                                                <div class="h-1 w-full bg-gray-50 dark:bg-slate-800 rounded-full"></div>
-                                            </div>
-                                            <div class="bg-white dark:bg-slate-900 p-4 rounded-xl shadow-sm">
-                                                <div class="h-1.5 w-16 bg-gray-100 dark:bg-slate-800 rounded-full mb-3"></div>
-                                                <div class="h-1 w-2/3 bg-gray-50 dark:bg-slate-800 rounded-full"></div>
-                                            </div>
-                                        </div>
-                                        <div class="flex-shrink-0 w-56 bg-gray-100/50 dark:bg-slate-950/30 rounded-2xl p-4 flex flex-col gap-3">
-                                            <div class="flex items-center justify-between mb-2">
-                                                <h5 class="text-[10px] font-black uppercase text-[var(--ui-color-4)] tracking-tighter">In Progress</h5>
-                                                <div class="w-4 h-4 rounded-full bg-[var(--ui-color-4)]/20 text-[var(--ui-color-4)] text-[8px] flex items-center justify-center font-bold">1</div>
-                                            </div>
-                                            <div class="bg-white dark:bg-slate-900 p-4 rounded-xl shadow-sm border-l-4 border-[var(--ui-color-4)]">
-                                                <div class="h-1.5 w-20 bg-gray-100 dark:bg-slate-800 rounded-full mb-3"></div>
-                                                <div class="h-1 w-full bg-gray-50 dark:bg-slate-800 rounded-full"></div>
-                                            </div>
-                                        </div>
-                                        <div class="flex-shrink-0 w-56 bg-gray-100/50 dark:bg-slate-950/30 rounded-2xl p-4 flex flex-col gap-3">
-                                            <div class="flex items-center justify-between mb-2">
-                                                <h5 class="text-[10px] font-black uppercase text-[var(--ui-color-5)] tracking-tighter">Done</h5>
-                                                <div class="w-4 h-4 rounded-full bg-[var(--ui-color-5)]/20 text-[var(--ui-color-5)] text-[8px] flex items-center justify-center font-bold">4</div>
-                                            </div>
-                                            <div class="bg-white dark:bg-slate-900 p-4 rounded-xl shadow-sm opacity-50 border-l-4 border-[var(--ui-color-5)]">
-                                                <div class="h-1.5 w-10 bg-gray-100 dark:bg-slate-800 rounded-full mb-3"></div>
-                                                <div class="h-1 w-3/4 bg-gray-50 dark:bg-slate-800 rounded-full"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="lg:col-span-4 flex flex-col justify-center gap-4">
-                                        <div class="p-4 rounded-2xl bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm border border-white/20">
-                                            <h4 class="text-xs font-black uppercase text-indigo-500 mb-2">Project Board</h4>
-                                            <p class="text-[11px] text-gray-500 leading-relaxed">Perfect for demonstrating categorical color coding and task progression.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- DASHBOARD 4: MONITOR -->
+                                <!-- DASHBOARD 3: MONITOR -->
                                 <div id="dash-monitor" class="dash-view w-full absolute inset-0 opacity-0 pointer-events-none grid grid-cols-1 lg:grid-cols-12 gap-6 transition-all duration-500">
                                     <div class="lg:col-span-8 bg-slate-950 rounded-2xl p-8 flex flex-col gap-8 shadow-2xl border border-slate-800">
                                         <div class="flex justify-between items-center">
@@ -346,7 +299,7 @@
                                     </div>
                                 </div>
 
-                                <!-- DASHBOARD 5: PROFILE -->
+                                <!-- DASHBOARD 4: PROFILE -->
                                 <div id="dash-profile" class="dash-view w-full absolute inset-0 opacity-0 pointer-events-none grid grid-cols-1 lg:grid-cols-12 gap-6 transition-all duration-500">
                                     <div class="lg:col-span-8 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-2xl border border-gray-100 dark:border-slate-800">
                                         <div class="h-32 bg-gradient-to-br from-[var(--ui-color-1)] via-[var(--ui-color-2)] to-[var(--ui-color-3)]"></div>
@@ -383,7 +336,7 @@
 
                         <!-- USE CASE: SOCIAL -->
                         <div id="case-social" class="usecase-content absolute inset-0 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-500">
-                            <div class="w-full max-w-sm flex flex-col gap-6">
+                            <div class="w-full max-sm px-2 flex flex-col gap-6">
                                 <!-- Story Row -->
                                 <div class="flex justify-center gap-6 px-4 py-2">
                                     <div class="w-14 h-14 rounded-full p-0.5 bg-gradient-to-tr from-[var(--ui-color-1)] via-[var(--ui-color-4)] to-[var(--ui-color-7)] shadow-xl shadow-[var(--ui-color-1)]/30 ring-2 ring-white dark:ring-slate-900 animate-spin-slow">
@@ -453,7 +406,7 @@
 
                         <!-- USE CASE: COMMERCE -->
                         <div id="case-commerce" class="usecase-content absolute inset-0 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-500">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-3xl">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-3xl px-4">
                                 <!-- Product Card -->
                                 <div id="commerce-card" class="bg-white dark:bg-slate-900 rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100 dark:border-slate-800 flex flex-col">
                                     <div class="h-64 bg-gradient-to-br from-[var(--ui-color-1)] to-[var(--ui-color-3)] flex items-center justify-center relative">
