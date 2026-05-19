@@ -62,3 +62,15 @@ $gradient-bottom-right: linear-gradient(135deg, #f72585ff, #b5179eff, #7209b7ff,
 $gradient-top-left: linear-gradient(225deg, #f72585ff, #b5179eff, #7209b7ff, #560badff, #480ca8ff, #3a0ca3ff, #3f37c9ff, #4361eeff);
 $gradient-bottom-left: linear-gradient(315deg, #f72585ff, #b5179eff, #7209b7ff, #560badff, #480ca8ff, #3a0ca3ff, #3f37c9ff, #4361eeff);
 $gradient-radial: radial-gradient(#f72585ff, #b5179eff, #7209b7ff, #560badff, #480ca8ff, #3a0ca3ff, #3f37c9ff, #4361eeff);
+
+/* SCSS Map */
+$cyberpunk-neon-map: (
+    "rose-red": #f72585ff,
+    "mulberry": #b5179eff,
+    "grape": #7209b7ff,
+    "violet": #560badff,
+    "indigo": #480ca8ff,
+    "persian-blue": #3a0ca3ff,
+    "neon-blue": #3f37c9ff,
+    "royal-blue": #4361eeff
+);

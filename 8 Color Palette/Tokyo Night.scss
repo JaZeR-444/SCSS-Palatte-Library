@@ -62,3 +62,15 @@ $gradient-bottom-right: linear-gradient(135deg, #1a1b26ff, #c0caf5ff, #f7768eff,
 $gradient-top-left: linear-gradient(225deg, #1a1b26ff, #c0caf5ff, #f7768eff, #ff9e64ff, #e0af68ff, #9ece6aff, #7aa2f7ff, #bb9af7ff);
 $gradient-bottom-left: linear-gradient(315deg, #1a1b26ff, #c0caf5ff, #f7768eff, #ff9e64ff, #e0af68ff, #9ece6aff, #7aa2f7ff, #bb9af7ff);
 $gradient-radial: radial-gradient(#1a1b26ff, #c0caf5ff, #f7768eff, #ff9e64ff, #e0af68ff, #9ece6aff, #7aa2f7ff, #bb9af7ff);
+
+/* SCSS Map */
+$tokyo-night-map: (
+    "tokyo-bg": #1a1b26ff,
+    "tokyo-fg": #c0caf5ff,
+    "tokyo-red": #f7768eff,
+    "tokyo-orange": #ff9e64ff,
+    "tokyo-yellow": #e0af68ff,
+    "tokyo-green": #9ece6aff,
+    "tokyo-blue": #7aa2f7ff,
+    "tokyo-purple": #bb9af7ff
+);

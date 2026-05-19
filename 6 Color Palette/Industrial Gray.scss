@@ -52,3 +52,13 @@ $gradient-bottom-right: linear-gradient(135deg, #212529ff, #343a40ff, #495057ff,
 $gradient-top-left: linear-gradient(225deg, #212529ff, #343a40ff, #495057ff, #6c757dff, #adb5bdff, #ced4daff);
 $gradient-bottom-left: linear-gradient(315deg, #212529ff, #343a40ff, #495057ff, #6c757dff, #adb5bdff, #ced4daff);
 $gradient-radial: radial-gradient(#212529ff, #343a40ff, #495057ff, #6c757dff, #adb5bdff, #ced4daff);
+
+/* SCSS Map */
+$industrial-gray-map: (
+    "eerie-black": #212529ff,
+    "jet": #343a40ff,
+    "outer-space": #495057ff,
+    "dim-gray": #6c757dff,
+    "silver-chalice": #adb5bdff,
+    "silver": #ced4daff
+);

@@ -47,3 +47,12 @@ $gradient-bottom-right: linear-gradient(135deg, #ff71ceff, #01cdfeff, #05ffa1ff,
 $gradient-top-left: linear-gradient(225deg, #ff71ceff, #01cdfeff, #05ffa1ff, #b967ffff, #fffb96ff);
 $gradient-bottom-left: linear-gradient(315deg, #ff71ceff, #01cdfeff, #05ffa1ff, #b967ffff, #fffb96ff);
 $gradient-radial: radial-gradient(#ff71ceff, #01cdfeff, #05ffa1ff, #b967ffff, #fffb96ff);
+
+/* SCSS Map */
+$classic-vaporwave-map: (
+    "hot-pink": #ff71ceff,
+    "electric-blue": #01cdfeff,
+    "spring-green": #05ffa1ff,
+    "mauve-purple": #b967ffff,
+    "sunshine-yellow": #fffb96ff
+);

@@ -42,3 +42,11 @@ $gradient-bottom-right: linear-gradient(135deg, #55a630ff, #80b918ff, #aacc00ff,
 $gradient-top-left: linear-gradient(225deg, #55a630ff, #80b918ff, #aacc00ff, #bfd200ff);
 $gradient-bottom-left: linear-gradient(315deg, #55a630ff, #80b918ff, #aacc00ff, #bfd200ff);
 $gradient-radial: radial-gradient(#55a630ff, #80b918ff, #aacc00ff, #bfd200ff);
+
+/* SCSS Map */
+$spring-meadow-map: (
+    "apple-green": #55a630ff,
+    "yellow-green": #80b918ff,
+    "lime-green": #aacc00ff,
+    "pear": #bfd200ff
+);

@@ -42,3 +42,11 @@ $gradient-bottom-right: linear-gradient(135deg, #3a0ca3ff, #4361eeff, #4cc9f0ff,
 $gradient-top-left: linear-gradient(225deg, #3a0ca3ff, #4361eeff, #4cc9f0ff, #4895efff);
 $gradient-bottom-left: linear-gradient(315deg, #3a0ca3ff, #4361eeff, #4cc9f0ff, #4895efff);
 $gradient-radial: radial-gradient(#3a0ca3ff, #4361eeff, #4cc9f0ff, #4895efff);
+
+/* SCSS Map */
+$electric-night-map: (
+    "persian-blue": #3a0ca3ff,
+    "royal-blue": #4361eeff,
+    "vivid-sky-blue": #4cc9f0ff,
+    "bleu-de-france": #4895efff
+);

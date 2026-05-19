@@ -42,3 +42,11 @@ $gradient-bottom-right: linear-gradient(135deg, #0d1b2aff, #1b263bff, #415a77ff,
 $gradient-top-left: linear-gradient(225deg, #0d1b2aff, #1b263bff, #415a77ff, #e0e1ddff);
 $gradient-bottom-left: linear-gradient(315deg, #0d1b2aff, #1b263bff, #415a77ff, #e0e1ddff);
 $gradient-radial: radial-gradient(#0d1b2aff, #1b263bff, #415a77ff, #e0e1ddff);
+
+/* SCSS Map */
+$saas-blue-map: (
+    "navy-dark": #0d1b2aff,
+    "royal-blue": #1b263bff,
+    "slate-gray": #415a77ff,
+    "cloud-white": #e0e1ddff
+);

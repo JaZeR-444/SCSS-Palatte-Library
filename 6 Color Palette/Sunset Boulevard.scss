@@ -52,3 +52,13 @@ $gradient-bottom-right: linear-gradient(135deg, #ff0000ff, #ff4d00ff, #ff8e00ff,
 $gradient-top-left: linear-gradient(225deg, #ff0000ff, #ff4d00ff, #ff8e00ff, #ffc900ff, #ffee00ff, #d4ff00ff);
 $gradient-bottom-left: linear-gradient(315deg, #ff0000ff, #ff4d00ff, #ff8e00ff, #ffc900ff, #ffee00ff, #d4ff00ff);
 $gradient-radial: radial-gradient(#ff0000ff, #ff4d00ff, #ff8e00ff, #ffc900ff, #ffee00ff, #d4ff00ff);
+
+/* SCSS Map */
+$sunset-boulevard-map: (
+    "red": #ff0000ff,
+    "orange-red": #ff4d00ff,
+    "orange": #ff8e00ff,
+    "amber": #ffc900ff,
+    "yellow": #ffee00ff,
+    "lime": #d4ff00ff
+);

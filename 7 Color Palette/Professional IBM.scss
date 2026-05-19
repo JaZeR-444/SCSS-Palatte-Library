@@ -57,3 +57,14 @@ $gradient-bottom-right: linear-gradient(135deg, #6929c4ff, #1192e8ff, #005d5dff,
 $gradient-top-left: linear-gradient(225deg, #6929c4ff, #1192e8ff, #005d5dff, #9f1853ff, #fa4d56ff, #570408ff, #198038ff);
 $gradient-bottom-left: linear-gradient(315deg, #6929c4ff, #1192e8ff, #005d5dff, #9f1853ff, #fa4d56ff, #570408ff, #198038ff);
 $gradient-radial: radial-gradient(#6929c4ff, #1192e8ff, #005d5dff, #9f1853ff, #fa4d56ff, #570408ff, #198038ff);
+
+/* SCSS Map */
+$professional-ibm-map: (
+    "ibm-purple": #6929c4ff,
+    "ibm-blue": #1192e8ff,
+    "ibm-teal": #005d5dff,
+    "ibm-magenta": #9f1853ff,
+    "ibm-red": #fa4d56ff,
+    "ibm-dark-red": #570408ff,
+    "ibm-green": #198038ff
+);

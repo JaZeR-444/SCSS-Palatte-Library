@@ -67,3 +67,16 @@ $gradient-bottom-right: linear-gradient(135deg, #03045eff, #023e8aff, #0077b6ff,
 $gradient-top-left: linear-gradient(225deg, #03045eff, #023e8aff, #0077b6ff, #0096c7ff, #00b4d8ff, #48cae4ff, #90e0efff, #ade8f4ff, #caf0f8ff);
 $gradient-bottom-left: linear-gradient(315deg, #03045eff, #023e8aff, #0077b6ff, #0096c7ff, #00b4d8ff, #48cae4ff, #90e0efff, #ade8f4ff, #caf0f8ff);
 $gradient-radial: radial-gradient(#03045eff, #023e8aff, #0077b6ff, #0096c7ff, #00b4d8ff, #48cae4ff, #90e0efff, #ade8f4ff, #caf0f8ff);
+
+/* SCSS Map */
+$ocean-blue-serenity-map: (
+    "deep-twilight": #03045eff,
+    "french-blue": #023e8aff,
+    "bright-teal-blue": #0077b6ff,
+    "blue-green": #0096c7ff,
+    "turquoise-surf": #00b4d8ff,
+    "sky-aqua": #48cae4ff,
+    "frosted-blue": #90e0efff,
+    "frosted-blue-2": #ade8f4ff,
+    "light-cyan": #caf0f8ff
+);

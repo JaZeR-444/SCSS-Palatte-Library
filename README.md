@@ -1,54 +1,73 @@
-# SCSS Color Palettes
+# SCSS Palette Library (v2.0.0)
 
-A curated collection of themed, production-ready SCSS and CSS color palettes.
+A professional design system of themed, production-ready SCSS and CSS color palettes, featuring over 80 curated collections.
 
-## Features
+## 🚀 Installation
 
-- **Multi-Format Support**: Every palette includes CSS Custom Properties (Variables), SCSS Hex, SCSS HSL, and SCSS RGB variables.
-- **Pre-defined Gradients**: 9 standard gradient variations (Top, Bottom, Left, Right, Diagonals, and Radial) for every theme.
-- **Themed Collections**: Palettes ranging from "Bold Berry" to "Ocean Blue Serenity".
-- **Easy Integration**: Drop any `.scss` file into your project and start using the variables immediately.
-## Available Palettes
+You can install this library directly from GitHub into any Node.js/frontend project:
 
-The library is organized into directories based on the color count of each palette (e.g., `3 Color Palette/`, `9 Color Palette/`).
+```bash
+npm install git+https://github.com/JaZeR-444/SCSS-Palatte-Library.git
+```
 
-- **3 Color Palettes**: Desert Heat, Earthy Organic, Forest Whisper, Modern Minimalist, Ocean Depth, Retro Revival, Slate Gray, Sunset Glow.
-- **4 Color Palettes**: Berry Blast, Coffee Shop, Electric Night, Nature Trail, Retro Pop, SaaS Blue, Spring Meadow, Winter Frost.
-- **5 Color Palettes**: Bold Berry, Classic Vaporwave, Cyber Pastel, Deep Space, Desert Sands, Future Shock, Holo Noir, Lavender Mist, Midnight Cyberpunk, Midnight Neon, Monochrome Magic, Muted Earth, Neon Punk, Soft Pink Delight, Tropical Reef, Vintage Gold, Vintage Vibe.
-- **6 Color Palettes**: Arctic Night, Cool Oceanic, Forest Canopy, Industrial Gray, Modern Vibe, Royal Purple, Sunset Boulevard.
-- **7 Color Palettes**: Autumn Leaves, Fire and Ice, Midnight Sky, Neon Horizon, Ocean Waves, Professional IBM, Rainbow Pastels, Retro Metro.
-- **8 Color Palettes**: Cool Blues, Cyberpunk Neon, Dracula Palette, Earth Tones, Monochrome Night, Nord Palette, Tokyo Night, Warm Sunset.
-- **9 Color Palettes**: Arctic Expedition, Autumn Harvest, Deep Forest, Deep Ocean, Enchanted Forest, Fresh Greens, Galactic Nebula, Muted Pastels, Ocean Blue Serenity, Rainforest, Solar Flare, Sunset Sands, Tropical Paradise, Urban Industrial.
-- **10 Color Palettes**: Blue Ridge, Cybernetic Steel, Dark Forest 10, Fiery Red Sunset Palette, Heatwave 10, Nebula Void, Spectrum 10, Steel & Rust, Synthwave Horizon, Terminal Matrix.
+## 🛠 Usage
 
-## Usage
+### 1. Simple Import
+Import the entire library to access every palette:
 
-### SCSS
 ```scss
-@import 'Ocean Blue Serenity';
+@import 'scss-palette-library';
 
 body {
-  background-color: $ocean-blue;
-  background-image: $gradient-bottom;
+    background: $midnight-asphalt; // Access global variables
+    color: map-get($midnight-neon-map, 'neon-magenta'); // Use SCSS Maps
 }
 ```
 
-### CSS
+### 2. Specific Palette
+Import only what you need:
+
+```scss
+@import 'scss-palette-library/9-color-palette/arctic-expedition';
+
+.header {
+    color: $glacier-blue;
+}
+```
+
+### 3. CSS Variables
+Native CSS variables are provided for every palette via the `:root` selector:
+
 ```css
-/* After importing or copying variables */
 .card {
-  color: var(--soft-apricot);
+    border: 1px solid var(--deep-kernel);
 }
 ```
 
-## Contributing
+## ✨ New in v2.0.0
 
-Interested in adding a palette? Check out our [CONTRIBUTING.md](CONTRIBUTING.md) for a template and naming guidelines.
+- **SCSS Maps**: Programmatic access to all colors via `${filename}-map`.
+- **Unified Entry Point**: Central `_index.scss` for streamlined imports.
+- **Interactive Showcase**: A completely revamped gallery in `/showcase` featuring:
+    - **Advanced Search**: Filter 80+ palettes by name or semantic tags (neon, warm, professional, etc.).
+    - **Live UI Preview**: Test colors on mock dashboard and mobile components before implementing.
+    - **One-Click Export**: Copy Tailwind config objects, SCSS Maps, or CSS variables instantly.
+    - **Accessibility Audit**: Real-time WCAG contrast checking for every color in the library.
 
-## Maintenance
+## 📁 Repository Structure
 
-For maintainers, please refer to [MAINTENANCE.md](MAINTENANCE.md) for auditing procedures.
+- `3 Color Palette/` through `10 Color Palette/`: Categorized SCSS collections.
+- `showcase/`: The visual interactive gallery.
+- `_index.scss`: The library entry point.
+- `package.json`: NPM configuration.
 
-## License
+## 🎨 Available Themes
 
-This project is open-source. Feel free to use these palettes in your personal or commercial projects.
+- **Sci-Fi & Tech**: Terminal Matrix, Nebula Void, Cybernetic Steel...
+- **Natural**: Deep Forest, Autumn Leaves, Ocean Waves...
+- **Vintage & Retro**: Classic Vaporwave, Retro Pop, 90s Metro...
+- **Professional**: SaaS Blue, IBM Categorical, Modern Minimalist...
+
+## 📜 License
+
+MIT. Free for personal and commercial use.

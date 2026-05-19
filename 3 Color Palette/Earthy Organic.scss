@@ -37,3 +37,10 @@ $gradient-bottom-right: linear-gradient(135deg, #1b211cff, #9fae9bff, #f2f5f0ff)
 $gradient-top-left: linear-gradient(225deg, #1b211cff, #9fae9bff, #f2f5f0ff);
 $gradient-bottom-left: linear-gradient(315deg, #1b211cff, #9fae9bff, #f2f5f0ff);
 $gradient-radial: radial-gradient(#1b211cff, #9fae9bff, #f2f5f0ff);
+
+/* SCSS Map */
+$earthy-organic-map: (
+    "forest-black": #1b211cff,
+    "sage-moss": #9fae9bff,
+    "mist-white": #f2f5f0ff
+);

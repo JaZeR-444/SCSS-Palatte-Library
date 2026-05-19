@@ -42,3 +42,11 @@ $gradient-bottom-right: linear-gradient(135deg, #00b4d8ff, #90e0efff, #caf0f8ff,
 $gradient-top-left: linear-gradient(225deg, #00b4d8ff, #90e0efff, #caf0f8ff, #ade8f4ff);
 $gradient-bottom-left: linear-gradient(315deg, #00b4d8ff, #90e0efff, #caf0f8ff, #ade8f4ff);
 $gradient-radial: radial-gradient(#00b4d8ff, #90e0efff, #caf0f8ff, #ade8f4ff);
+
+/* SCSS Map */
+$winter-frost-map: (
+    "capri": #00b4d8ff,
+    "diamond": #90e0efff,
+    "alice-blue": #caf0f8ff,
+    "non-photo-blue": #ade8f4ff
+);

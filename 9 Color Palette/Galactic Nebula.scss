@@ -67,3 +67,16 @@ $gradient-bottom-right: linear-gradient(135deg, #0b090aff, #161a1dff, #660708ff,
 $gradient-top-left: linear-gradient(225deg, #0b090aff, #161a1dff, #660708ff, #a4161aff, #ba181bff, #e5383bff, #b1a7a6ff, #d3d3d3ff, #f5f3f4ff);
 $gradient-bottom-left: linear-gradient(315deg, #0b090aff, #161a1dff, #660708ff, #a4161aff, #ba181bff, #e5383bff, #b1a7a6ff, #d3d3d3ff, #f5f3f4ff);
 $gradient-radial: radial-gradient(#0b090aff, #161a1dff, #660708ff, #a4161aff, #ba181bff, #e5383bff, #b1a7a6ff, #d3d3d3ff, #f5f3f4ff);
+
+/* SCSS Map */
+$galactic-nebula-map: (
+    "black": #0b090aff,
+    "gunmetal": #161a1dff,
+    "blood-red": #660708ff,
+    "dark-red": #a4161aff,
+    "fire-brick": #ba181bff,
+    "engineering-orange": #e5383bff,
+    "silver": #b1a7a6ff,
+    "light-gray": #d3d3d3ff,
+    "seashell": #f5f3f4ff
+);

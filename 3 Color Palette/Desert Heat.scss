@@ -37,3 +37,10 @@ $gradient-bottom-right: linear-gradient(135deg, #bc6c25ff, #dda15eff, #fefae0ff)
 $gradient-top-left: linear-gradient(225deg, #bc6c25ff, #dda15eff, #fefae0ff);
 $gradient-bottom-left: linear-gradient(315deg, #bc6c25ff, #dda15eff, #fefae0ff);
 $gradient-radial: radial-gradient(#bc6c25ff, #dda15eff, #fefae0ff);
+
+/* SCSS Map */
+$desert-heat-map: (
+    "tiger-eye": #bc6c25ff,
+    "fawn": #dda15eff,
+    "cornsilk": #fefae0ff
+);

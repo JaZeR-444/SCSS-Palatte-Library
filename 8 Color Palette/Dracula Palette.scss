@@ -62,3 +62,15 @@ $gradient-bottom-right: linear-gradient(135deg, #282a36ff, #f8f8f2ff, #6272a4ff,
 $gradient-top-left: linear-gradient(225deg, #282a36ff, #f8f8f2ff, #6272a4ff, #8be9fdff, #50fa7bff, #ffb86cff, #ff79c6ff, #bd93f9ff);
 $gradient-bottom-left: linear-gradient(315deg, #282a36ff, #f8f8f2ff, #6272a4ff, #8be9fdff, #50fa7bff, #ffb86cff, #ff79c6ff, #bd93f9ff);
 $gradient-radial: radial-gradient(#282a36ff, #f8f8f2ff, #6272a4ff, #8be9fdff, #50fa7bff, #ffb86cff, #ff79c6ff, #bd93f9ff);
+
+/* SCSS Map */
+$dracula-palette-map: (
+    "dracula-bg": #282a36ff,
+    "dracula-fg": #f8f8f2ff,
+    "dracula-comment": #6272a4ff,
+    "dracula-cyan": #8be9fdff,
+    "dracula-green": #50fa7bff,
+    "dracula-orange": #ffb86cff,
+    "dracula-pink": #ff79c6ff,
+    "dracula-purple": #bd93f9ff
+);

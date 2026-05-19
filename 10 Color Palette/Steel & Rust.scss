@@ -72,3 +72,17 @@ $gradient-bottom-right: linear-gradient(135deg, #212529ff, #343a40ff, #495057ff,
 $gradient-top-left: linear-gradient(225deg, #212529ff, #343a40ff, #495057ff, #6c757dff, #adb5bdff, #ced4daff, #dee2e6ff, #e9ecefff, #f8f9faff, #ffffffff);
 $gradient-bottom-left: linear-gradient(315deg, #212529ff, #343a40ff, #495057ff, #6c757dff, #adb5bdff, #ced4daff, #dee2e6ff, #e9ecefff, #f8f9faff, #ffffffff);
 $gradient-radial: radial-gradient(#212529ff, #343a40ff, #495057ff, #6c757dff, #adb5bdff, #ced4daff, #dee2e6ff, #e9ecefff, #f8f9faff, #ffffffff);
+
+/* SCSS Map */
+$steel-&-rust-map: (
+    "eerie-black": #212529ff,
+    "jet": #343a40ff,
+    "outer-space": #495057ff,
+    "dim-gray": #6c757dff,
+    "silver-chalice": #adb5bdff,
+    "silver": #ced4daff,
+    "platinum": #dee2e6ff,
+    "gainsboro": #e9ecefff,
+    "white-smoke": #f8f9faff,
+    "white": #ffffffff
+);

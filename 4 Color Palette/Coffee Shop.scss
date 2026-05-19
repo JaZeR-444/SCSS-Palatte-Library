@@ -42,3 +42,11 @@ $gradient-bottom-right: linear-gradient(135deg, #220901ff, #621708ff, #941b0cff,
 $gradient-top-left: linear-gradient(225deg, #220901ff, #621708ff, #941b0cff, #bc3908ff);
 $gradient-bottom-left: linear-gradient(315deg, #220901ff, #621708ff, #941b0cff, #bc3908ff);
 $gradient-radial: radial-gradient(#220901ff, #621708ff, #941b0cff, #bc3908ff);
+
+/* SCSS Map */
+$coffee-shop-map: (
+    "licorice": #220901ff,
+    "blood-red": #621708ff,
+    "ruby-red": #941b0cff,
+    "burnt-orange": #bc3908ff
+);

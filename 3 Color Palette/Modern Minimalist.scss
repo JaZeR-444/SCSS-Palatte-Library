@@ -37,3 +37,10 @@ $gradient-bottom-right: linear-gradient(135deg, #2d3436ff, #dfe6e9ff, #0984e3ff)
 $gradient-top-left: linear-gradient(225deg, #2d3436ff, #dfe6e9ff, #0984e3ff);
 $gradient-bottom-left: linear-gradient(315deg, #2d3436ff, #dfe6e9ff, #0984e3ff);
 $gradient-radial: radial-gradient(#2d3436ff, #dfe6e9ff, #0984e3ff);
+
+/* SCSS Map */
+$modern-minimalist-map: (
+    "charcoal": #2d3436ff,
+    "silver": #dfe6e9ff,
+    "electric-blue": #0984e3ff
+);

@@ -37,3 +37,10 @@ $gradient-bottom-right: linear-gradient(135deg, #03045eff, #0077b6ff, #00b4d8ff)
 $gradient-top-left: linear-gradient(225deg, #03045eff, #0077b6ff, #00b4d8ff);
 $gradient-bottom-left: linear-gradient(315deg, #03045eff, #0077b6ff, #00b4d8ff);
 $gradient-radial: radial-gradient(#03045eff, #0077b6ff, #00b4d8ff);
+
+/* SCSS Map */
+$ocean-depth-map: (
+    "midnight-blue": #03045eff,
+    "star-command-blue": #0077b6ff,
+    "blue-grotto": #00b4d8ff
+);

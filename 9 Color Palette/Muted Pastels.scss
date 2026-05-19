@@ -67,3 +67,16 @@ $gradient-bottom-right: linear-gradient(135deg, #6b705cff, #a5a58dff, #b7b7a4ff,
 $gradient-top-left: linear-gradient(225deg, #6b705cff, #a5a58dff, #b7b7a4ff, #ffe8d6ff, #ddbea9ff, #cb997eff, #b7b7a4ff, #c2b280ff, #d2b48cff);
 $gradient-bottom-left: linear-gradient(315deg, #6b705cff, #a5a58dff, #b7b7a4ff, #ffe8d6ff, #ddbea9ff, #cb997eff, #b7b7a4ff, #c2b280ff, #d2b48cff);
 $gradient-radial: radial-gradient(#6b705cff, #a5a58dff, #b7b7a4ff, #ffe8d6ff, #ddbea9ff, #cb997eff, #b7b7a4ff, #c2b280ff, #d2b48cff);
+
+/* SCSS Map */
+$muted-pastels-map: (
+    "artichoke": #6b705cff,
+    "sage": #a5a58dff,
+    "ash-gray": #b7b7a4ff,
+    "linen": #ffe8d6ff,
+    "desert-sand": #ddbea9ff,
+    "rosy-brown": #cb997eff,
+    "silver": #b7b7a4ff,
+    "khaki": #c2b280ff,
+    "tan": #d2b48cff
+);

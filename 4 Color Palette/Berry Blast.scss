@@ -42,3 +42,11 @@ $gradient-bottom-right: linear-gradient(135deg, #7209b7ff, #b5179eff, #f72585ff,
 $gradient-top-left: linear-gradient(225deg, #7209b7ff, #b5179eff, #f72585ff, #ff4d6dff);
 $gradient-bottom-left: linear-gradient(315deg, #7209b7ff, #b5179eff, #f72585ff, #ff4d6dff);
 $gradient-radial: radial-gradient(#7209b7ff, #b5179eff, #f72585ff, #ff4d6dff);
+
+/* SCSS Map */
+$berry-blast-map: (
+    "grape": #7209b7ff,
+    "mulberry": #b5179eff,
+    "rose-madder": #f72585ff,
+    "crimson": #ff4d6dff
+);

@@ -67,3 +67,16 @@ $gradient-bottom-right: linear-gradient(135deg, #d8f3dcff, #b7e4c7ff, #95d5b2ff,
 $gradient-top-left: linear-gradient(225deg, #d8f3dcff, #b7e4c7ff, #95d5b2ff, #74c69dff, #52b788ff, #40916cff, #2d6a4fff, #1b4332ff, #081c15ff);
 $gradient-bottom-left: linear-gradient(315deg, #d8f3dcff, #b7e4c7ff, #95d5b2ff, #74c69dff, #52b788ff, #40916cff, #2d6a4fff, #1b4332ff, #081c15ff);
 $gradient-radial: radial-gradient(#d8f3dcff, #b7e4c7ff, #95d5b2ff, #74c69dff, #52b788ff, #40916cff, #2d6a4fff, #1b4332ff, #081c15ff);
+
+/* SCSS Map */
+$fresh-greens-map: (
+    "frosted-mint": #d8f3dcff,
+    "celadon": #b7e4c7ff,
+    "celadon-2": #95d5b2ff,
+    "mint-leaf": #74c69dff,
+    "mint-leaf-2": #52b788ff,
+    "sea-green": #40916cff,
+    "dark-emerald": #2d6a4fff,
+    "pine-teal": #1b4332ff,
+    "evergreen": #081c15ff
+);

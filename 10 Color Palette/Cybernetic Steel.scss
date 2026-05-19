@@ -72,3 +72,17 @@ $gradient-bottom-right: linear-gradient(135deg, #1a1a1aff, #2b2d42ff, #3d405bff,
 $gradient-top-left: linear-gradient(225deg, #1a1a1aff, #2b2d42ff, #3d405bff, #4a4e69ff, #5f647dff, #747d92ff, #8d99aeff, #a2abbdff, #b8bdccff, #edf2f4ff);
 $gradient-bottom-left: linear-gradient(315deg, #1a1a1aff, #2b2d42ff, #3d405bff, #4a4e69ff, #5f647dff, #747d92ff, #8d99aeff, #a2abbdff, #b8bdccff, #edf2f4ff);
 $gradient-radial: radial-gradient(#1a1a1aff, #2b2d42ff, #3d405bff, #4a4e69ff, #5f647dff, #747d92ff, #8d99aeff, #a2abbdff, #b8bdccff, #edf2f4ff);
+
+/* SCSS Map */
+$cybernetic-steel-map: (
+    "oil-slick": #1a1a1aff,
+    "industrial-slate": #2b2d42ff,
+    "machine-gray": #3d405bff,
+    "gunmetal": #4a4e69ff,
+    "hydraulic-blue": #5f647dff,
+    "titanium": #747d92ff,
+    "brushed-steel": #8d99aeff,
+    "chrome-plate": #a2abbdff,
+    "cool-silicon": #b8bdccff,
+    "led-neutral": #edf2f4ff
+);

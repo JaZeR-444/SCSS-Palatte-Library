@@ -42,3 +42,11 @@ $gradient-bottom-right: linear-gradient(135deg, #344e41ff, #588157ff, #a3b18aff,
 $gradient-top-left: linear-gradient(225deg, #344e41ff, #588157ff, #a3b18aff, #dad7cdff);
 $gradient-bottom-left: linear-gradient(315deg, #344e41ff, #588157ff, #a3b18aff, #dad7cdff);
 $gradient-radial: radial-gradient(#344e41ff, #588157ff, #a3b18aff, #dad7cdff);
+
+/* SCSS Map */
+$nature-trail-map: (
+    "deep-forest": #344e41ff,
+    "olive-drab": #588157ff,
+    "sage-green": #a3b18aff,
+    "sand-tan": #dad7cdff
+);

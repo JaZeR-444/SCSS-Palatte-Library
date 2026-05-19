@@ -72,3 +72,17 @@ $gradient-bottom-right: linear-gradient(135deg, #370617ff, #6a040fff, #9d0208ff,
 $gradient-top-left: linear-gradient(225deg, #370617ff, #6a040fff, #9d0208ff, #d00000ff, #dc2f02ff, #e85d04ff, #f48c06ff, #faa307ff, #ffba08ff, #ffd60aff);
 $gradient-bottom-left: linear-gradient(315deg, #370617ff, #6a040fff, #9d0208ff, #d00000ff, #dc2f02ff, #e85d04ff, #f48c06ff, #faa307ff, #ffba08ff, #ffd60aff);
 $gradient-radial: radial-gradient(#370617ff, #6a040fff, #9d0208ff, #d00000ff, #dc2f02ff, #e85d04ff, #f48c06ff, #faa307ff, #ffba08ff, #ffd60aff);
+
+/* SCSS Map */
+$heatwave-10-map: (
+    "chocolate-cosmos": #370617ff,
+    "rosewood": #6a040fff,
+    "dark-red": #9d0208ff,
+    "red": #d00000ff,
+    "vermilion": #dc2f02ff,
+    "pumpkin": #e85d04ff,
+    "orange": #f48c06ff,
+    "amber": #faa307ff,
+    "golden-yellow": #ffba08ff,
+    "yellow": #ffd60aff
+);

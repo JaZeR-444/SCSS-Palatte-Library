@@ -47,3 +47,12 @@ $gradient-bottom-right: linear-gradient(135deg, #0077b6ff, #0096c7ff, #00b4d8ff,
 $gradient-top-left: linear-gradient(225deg, #0077b6ff, #0096c7ff, #00b4d8ff, #48cae4ff, #90e0efff);
 $gradient-bottom-left: linear-gradient(315deg, #0077b6ff, #0096c7ff, #00b4d8ff, #48cae4ff, #90e0efff);
 $gradient-radial: radial-gradient(#0077b6ff, #0096c7ff, #00b4d8ff, #48cae4ff, #90e0efff);
+
+/* SCSS Map */
+$tropical-reef-map: (
+    "star-command-blue": #0077b6ff,
+    "blue-sapphire": #0096c7ff,
+    "pacific-blue": #00b4d8ff,
+    "sky-blue-crayola": #48cae4ff,
+    "non-photo-blue": #90e0efff
+);

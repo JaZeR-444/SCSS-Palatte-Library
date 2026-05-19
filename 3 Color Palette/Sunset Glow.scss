@@ -37,3 +37,10 @@ $gradient-bottom-right: linear-gradient(135deg, #ff4d6dff, #ff758fff, #ff8fa3ff)
 $gradient-top-left: linear-gradient(225deg, #ff4d6dff, #ff758fff, #ff8fa3ff);
 $gradient-bottom-left: linear-gradient(315deg, #ff4d6dff, #ff758fff, #ff8fa3ff);
 $gradient-radial: radial-gradient(#ff4d6dff, #ff758fff, #ff8fa3ff);
+
+/* SCSS Map */
+$sunset-glow-map: (
+    "cherry-blossom": #ff4d6dff,
+    "rose-pink": #ff758fff,
+    "flamingo-pink": #ff8fa3ff
+);

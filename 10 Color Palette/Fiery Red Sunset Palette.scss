@@ -89,3 +89,17 @@ $gradient-repeating-top-right: repeating-linear-gradient(45deg, #03071eff, #3706
 $gradient-repeating-bottom-right: repeating-linear-gradient(135deg, #03071eff, #370617ff, #6a040fff, #9d0208ff, #d00000ff, #dc2f02ff, #e85d04ff, #f48c06ff, #faa307ff, #ffba08ff);
 $gradient-repeating-top-left: repeating-linear-gradient(225deg, #03071eff, #370617ff, #6a040fff, #9d0208ff, #d00000ff, #dc2f02ff, #e85d04ff, #f48c06ff, #faa307ff, #ffba08ff);
 $gradient-repeating-bottom-left: repeating-linear-gradient(315deg, #03071eff, #370617ff, #6a040fff, #9d0208ff, #d00000ff, #dc2f02ff, #e85d04ff, #f48c06ff, #faa307ff, #ffba08ff);
+
+/* SCSS Map */
+$fiery-red-sunset-palette-map: (
+    "ink-black": #03071eff,
+    "night-bordeaux": #370617ff,
+    "black-cherry": #6a040fff,
+    "oxblood": #9d0208ff,
+    "brick-ember": #d00000ff,
+    "red-ochre": #dc2f02ff,
+    "cayenne-red": #e85d04ff,
+    "deep-saffron": #f48c06ff,
+    "orange": #faa307ff,
+    "amber-flame": #ffba08ff
+);

@@ -37,3 +37,10 @@ $gradient-bottom-right: linear-gradient(135deg, #212529ff, #343a40ff, #495057ff)
 $gradient-top-left: linear-gradient(225deg, #212529ff, #343a40ff, #495057ff);
 $gradient-bottom-left: linear-gradient(315deg, #212529ff, #343a40ff, #495057ff);
 $gradient-radial: radial-gradient(#212529ff, #343a40ff, #495057ff);
+
+/* SCSS Map */
+$slate-gray-map: (
+    "eerie-black": #212529ff,
+    "jet": #343a40ff,
+    "outer-space": #495057ff
+);

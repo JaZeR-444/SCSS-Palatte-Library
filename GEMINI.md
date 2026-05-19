@@ -159,4 +159,5 @@ To use it in a plain CSS project (assuming the file is processed or variables ar
 1.  **`GEMINI.md`**: Update the "Key Files" section to include the new palette.
 2.  **`README.md`**: Update the "Available Palettes" list.
 3.  **`CHANGELOG.md`**: Add a new entry under the `[Unreleased]` or a new version header describing the changes.
+4.  **`showcase/palettes.json`**: Update the JSON data to include the new palette's colors and metadata for the gallery preview.
 
