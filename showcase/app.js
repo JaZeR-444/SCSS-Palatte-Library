@@ -35,17 +35,17 @@ document.addEventListener('DOMContentLoaded', () => {
     function applyFilters() {
         const query = searchQuery.trim().toLowerCase();
         const filtered = allPalettes.filter(p => {
-            const matchesFacet = 
-                activeFacet === 'all' || 
+            const matchesFacet =
+                activeFacet === 'all' ||
                 (activeFacet === 'count' && p.count === parseInt(activeSubFilter)) ||
-                (activeFacet === 'category' && p.category === activeSubFilter) ||
+                (activeFacet === 'category' && p.folder === activeSubFilter) ||
                 (activeFacet === 'mood' && p.tags && p.tags.mood && p.tags.mood.includes(activeSubFilter)) ||
                 (activeFacet === 'aesthetic' && p.tags && p.tags.aesthetic && p.tags.aesthetic.includes(activeSubFilter));
 
-            const matchesSearch = 
-                !query || 
-                p.name.toLowerCase().includes(query) || 
-                (p.category && p.category.toLowerCase().includes(query)) ||
+            const matchesSearch =
+                !query ||
+                p.name.toLowerCase().includes(query) ||
+                (p.folder && p.folder.toLowerCase().includes(query)) ||
                 (p.tags && p.tags.mood && p.tags.mood.some(m => m.toLowerCase().includes(query))) ||
                 (p.tags && p.tags.aesthetic && p.tags.aesthetic.some(a => a.toLowerCase().includes(query)));
 
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (facet === 'count') {
             values = [...new Set(allPalettes.map(p => p.count))].sort((a, b) => a - b);
         } else if (facet === 'category') {
-            values = [...new Set(allPalettes.map(p => p.category))].filter(Boolean).sort();
+            values = [...new Set(allPalettes.map(p => p.folder))].filter(Boolean).sort();
         } else if (facet === 'mood') {
             const allMoods = allPalettes.flatMap(p => (p.tags && p.tags.mood) || []);
             values = [...new Set(allMoods)].sort();
@@ -203,9 +203,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h3 class="font-extrabold text-lg text-gray-800 dark:text-gray-100 group-hover:text-indigo-500 transition-colors">${p.name}</h3>
                         <span class="px-2 py-0.5 rounded-md bg-gray-50 dark:bg-slate-800 text-gray-400 text-[10px] font-bold uppercase tracking-wider">${p.count}</span>
                     </div>
-                    <p class="text-[10px] font-bold text-indigo-400 uppercase tracking-widest mb-2">${p.category || 'Collection'}</p>
+                    <p class="text-[10px] font-bold text-indigo-400 uppercase tracking-widest mb-2">${p.folder || 'Collection'}</p>
                     <div class="flex flex-wrap gap-1 mb-4">${tags}</div>
-                    <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-2 italic">"${p.intent}"</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-2 italic">"${p.description || ''}"</p>
                 </div>
                 <div class="flex items-center justify-between pt-4 border-t border-gray-50 dark:border-slate-800">
                     <span class="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">v${p.version || '1.0.0'}</span>
@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function openModal(p) {
         currentPalette = p;
         if (elements.title) elements.title.textContent = p.name;
-        if (elements.vibe) elements.vibe.textContent = `${p.category} • ${p.count} Colors`;
+        if (elements.vibe) elements.vibe.textContent = `${p.folder || 'Collection'} • ${p.count} Colors`;
         if (elements.code) elements.code.textContent = '/* Loading SCSS... */';
         
         // Hero
@@ -424,5 +424,4 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(err => console.error('Showcase: Failed to load palettes.json', err));
 
-    window.copyToClipboard = copyToClipboard;
 });
