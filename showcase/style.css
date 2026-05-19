@@ -165,3 +165,60 @@ pre::-webkit-scrollbar-thumb:hover {
 .card-light .card-footer { border-color: rgb(249, 250, 251) !important; }
 .card-light .card-arrow { background-color: rgb(249, 250, 251) !important; color: rgb(156, 163, 175) !important; }
 .card-light .card-tag   { background-color: rgb(238, 242, 255) !important; color: rgb(99, 102, 241) !important; }
+
+.related-swatches {
+    display: flex;
+    height: 36px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.related-swatches span {
+    flex: 1;
+}
+
+.collection-tab {
+    min-height: 38px;
+}
+
+[draggable="true"] {
+    user-select: none;
+}
+
+.usecase-btn.active,
+.dash-btn.active {
+    background: var(--ui-color-1, #6366f1);
+    color: #ffffff !important;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.16);
+}
+
+.tool-icon-btn.bg-indigo-100 {
+    box-shadow: inset 0 0 0 1px rgba(99, 102, 241, 0.25);
+}
+
+.role-chip {
+    min-width: 0;
+}
+
+.role-chip span,
+.role-chip code {
+    pointer-events: none;
+}
+
+@media (max-width: 640px) {
+    .sandbox-toolbar {
+        width: 100%;
+    }
+
+    .usecase-btn {
+        min-width: 92px;
+    }
+
+    #palette-role-chips {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #section-sandbox {
+        padding: 0.75rem;
+    }
+}

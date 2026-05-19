@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Showcase: Initializing professional design system v2.4.0...');
+    console.log('Showcase: Initializing professional design system v2.4.2...');
 
     // --- DOM Elements ---
     const getEl = (id) => document.getElementById(id);
@@ -27,7 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
         scaleWrapper: getEl('sandbox-scale-wrapper'),
         roleToggle: getEl('toggle-role-labels'),
         roleOverlay: getEl('role-labels-overlay'),
-        roleContent: getEl('role-labels-content')
+        roleContent: getEl('role-labels-content'),
+        roleChips: getEl('palette-role-chips'),
+        contrastStatus: getEl('contrast-status')
     };
 
     // --- State ---
@@ -109,9 +111,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 2500);
     }
 
-    window.copyToClipboard = (text, msg) => {
+    const copyToClipboard = (text, msg) => {
         navigator.clipboard.writeText(text).then(() => showToast(msg || 'Copied!'));
     };
+    window.copyToClipboard = copyToClipboard;
 
     // --- Rendering ---
 
@@ -127,6 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
         palettes.forEach(p => {
             const card = document.createElement('div');
             card.className = 'bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-slate-800 hover:shadow-xl hover:-translate-y-1 transition-all cursor-pointer group flex flex-col h-full';
+            card.dataset.id = p.id;
             
             const swatches = p.colors.map(c => 
                 `<div class="swatch-item" style="background-color: ${c.hex}" onclick="event.stopPropagation(); copyToClipboard('${c.hex}', 'Copied ${c.hex}')"></div>`
@@ -156,102 +160,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
             `;
-            card.addEventListener('click', () => openModal(p));
             elements.grid.appendChild(card);
         });
     }
 
-    // --- Modal & Studios ---
-
-    function applyPaletteMapping(colors, targetId = null) {
-        const target = targetId ? document.getElementById(targetId) : document.documentElement;
-        for (let i = 1; i <= 10; i++) {
-            const colorIdx = (i - 1) % colors.length;
-            target.style.setProperty(`--ui-color-${i}`, colors[colorIdx].hex);
-        }
-    }
-
-    function shuffleSectionColors(section) {
-        if (!currentPalette) return;
-        const shuffled = [...currentPalette.colors].sort(() => Math.random() - 0.5);
-        const sectionId = `section-${section}`;
-        applyPaletteMapping(shuffled, sectionId);
-        
-        // Visual Feedback
-        if (window.gsap) {
-            gsap.fromTo(`#${sectionId}`, { opacity: 0.5, scale: 0.98 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power2.out" });
-        }
-        showToast(`${section.charAt(0).toUpperCase() + section.slice(1)} shuffled!`);
-        
-        // If we shuffled sandbox and role labels are on, update them
-        if (section === 'sandbox' && showRoleLabels) updateRoleLabels();
-    }
-
-    function switchDashboardVariant(variant) {
-        document.querySelectorAll('.dash-btn').forEach(b => {
-            const isActive = b.dataset.dash === variant;
-            b.classList.toggle('active', isActive);
-            b.classList.toggle('bg-white', isActive);
-            b.classList.toggle('shadow-sm', isActive);
-            b.classList.toggle('text-gray-900', isActive);
-            b.classList.toggle('text-gray-500', !isActive);
-        });
-
-        document.querySelectorAll('.dash-view').forEach(view => {
-            const isTarget = view.id === 'dash-' + variant;
-            view.classList.toggle('opacity-0', !isTarget);
-            view.classList.toggle('pointer-events-none', !isTarget);
-        });
-
-        activeDashVariant = variant;
-
-        if (!window.gsap) return;
-        gsap.killTweensOf(".dash-view *");
-        if (variant === 'analytics') {
-            gsap.from("#dash-analytics .lg\\:col-span-8", { y: 20, opacity: 0, duration: 0.6, ease: "power2.out" });
-        } else if (variant === 'crm') {
-            gsap.from("#dash-crm .space-y-4 > div", { x: -20, opacity: 0, duration: 0.4, stagger: 0.1, ease: "power2.out" });
-        } else if (variant === 'monitor') {
-            gsap.from("#dash-monitor .aspect-square", { scale: 0, opacity: 0, duration: 0.6, stagger: 0.1, ease: "elastic.out(1, 0.5)" });
-        } else if (variant === 'profile') {
-            gsap.from("#dash-profile .bg-gradient-to-br", { y: -50, opacity: 0, duration: 0.8, ease: "power3.out" });
-        }
-    }
-
-    function switchUseCase(usecase) {
-        document.querySelectorAll('.usecase-btn').forEach(b => {
-            const isActive = b.dataset.usecase === usecase;
-            b.classList.toggle('active', isActive);
-            b.classList.toggle('bg-white', isActive);
-            b.classList.toggle('shadow-sm', isActive);
-            b.classList.toggle('text-gray-900', isActive);
-            b.classList.toggle('text-gray-500', !isActive);
-        });
-
-        document.querySelectorAll('.usecase-content').forEach(panel => {
-            const isTarget = panel.id === 'case-' + usecase;
-            panel.classList.toggle('opacity-0', !isTarget);
-            panel.classList.toggle('pointer-events-none', !isTarget);
-            if (panel.id === 'case-dashboard') panel.classList.toggle('hidden', !isTarget);
-        });
-
-        if (!window.gsap) return;
-        gsap.killTweensOf(".usecase-content *");
-
-        if (usecase === 'dashboard') {
-            switchDashboardVariant(activeDashVariant);
-        } else if (usecase === 'social') {
-            gsap.from("#social-card", { scale: 0.9, opacity: 0, duration: 0.6, ease: "back.out(1.7)" });
-        } else if (usecase === 'landing') {
-            gsap.from("#landing-title", { y: 30, opacity: 0, duration: 0.8, ease: "power3.out" });
-        } else if (usecase === 'commerce') {
-            gsap.from("#commerce-card", { x: -30, opacity: 0, duration: 0.7, ease: "power3.out" });
-        } else if (usecase === 'mobile') {
-            gsap.from("#mobile-shell", { y: 50, opacity: 0, duration: 0.8, ease: "power4.out" });
-        }
-    }
+    // --- Modal Logic ---
 
     function openModal(p) {
+        console.log(`Showcase: Opening modal for ${p.name}`);
         currentPalette = p;
         if (elements.title) elements.title.textContent = p.name;
         if (elements.vibe) elements.vibe.textContent = `${p.category} • ${p.count} Colors`;
@@ -262,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.hero.style.background = `radial-gradient(circle at center, ${hexes})`;
         }
 
-        // Apply Initial Mapping to all sections
+        applyPaletteMapping(p.colors, 'modal-content');
         applyPaletteMapping(p.colors, 'section-sandbox');
         applyPaletteMapping(p.colors, 'section-typography');
         applyPaletteMapping(p.colors, 'section-iconography');
@@ -349,74 +265,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 300);
     }
 
-    // --- Sandbox Controls ---
-
-    if (elements.zoomIn && elements.zoomOut && elements.scaleWrapper) {
-        elements.zoomIn.addEventListener('click', () => {
-            sandboxZoom = Math.min(sandboxZoom + 10, 150);
-            updateSandboxScale();
-        });
-        elements.zoomOut.addEventListener('click', () => {
-            sandboxZoom = Math.max(sandboxZoom - 10, 50);
-            updateSandboxScale();
-        });
-    }
-
-    function updateSandboxScale() {
-        if (elements.scaleWrapper) elements.scaleWrapper.style.transform = `scale(${sandboxZoom / 100})`;
-        if (elements.zoomDisplay) elements.zoomDisplay.textContent = `${sandboxZoom}%`;
-    }
-
-    if (elements.roleToggle && elements.roleOverlay) {
-        elements.roleToggle.addEventListener('click', () => {
-            const isVisible = !elements.roleOverlay.classList.contains('hidden');
-            elements.roleOverlay.classList.toggle('hidden');
-            elements.roleToggle.classList.toggle('bg-indigo-100', !isVisible);
-            elements.roleToggle.classList.toggle('text-indigo-600', !isVisible);
-            showRoleLabels = !isVisible;
-            if (showRoleLabels) updateRoleLabels();
-        });
-    }
-
-    function updateRoleLabels() {
-        if (!elements.roleContent || !currentPalette) return;
-        const target = document.getElementById('section-sandbox');
-        const computed = getComputedStyle(target);
-        
-        elements.roleContent.innerHTML = '';
-        for (let i = 1; i <= 10; i++) {
-            const hex = computed.getPropertyValue(`--ui-color-${i}`).trim().toUpperCase();
-            if (!hex) continue;
-            
-            const chip = document.createElement('div');
-            chip.className = 'flex items-center gap-1.5 px-2 py-1 rounded bg-black/50 border border-white/10 backdrop-blur-md';
-            chip.innerHTML = `
-                <div class="w-2 h-2 rounded-full flex-shrink-0" style="background:${hex}"></div>
-                <span class="text-[8px] font-black text-white/70 uppercase tracking-tighter">Color ${i}: ${hex}</span>
-            `;
-            elements.roleContent.appendChild(chip);
-        }
-    }
-
     // --- Event Listeners ---
 
-    if (elements.close) elements.close.addEventListener('click', closeModal);
-    if (elements.overlay) elements.overlay.addEventListener('click', (e) => e.target === elements.overlay && closeModal());
-    document.addEventListener('keydown', (e) => e.key === 'Escape' && closeModal());
-
-    if (elements.search) {
-        elements.search.addEventListener('input', (e) => {
-            searchQuery = e.target.value.toLowerCase();
-            applyFilters();
+    // Use Event Delegation for palette cards
+    if (elements.grid) {
+        elements.grid.addEventListener('click', (e) => {
+            const card = e.target.closest('[data-id]');
+            if (card) {
+                const id = card.dataset.id;
+                const palette = allPalettes.find(p => p.id === id);
+                if (palette) openModal(palette);
+            }
         });
     }
 
     document.addEventListener('click', (e) => {
-        // Section Shuffles
         const shuffleBtn = e.target.closest('[data-shuffle]');
-        if (shuffleBtn) {
-            shuffleSectionColors(shuffleBtn.dataset.shuffle);
-        }
+        if (shuffleBtn) shuffleSectionColors(shuffleBtn.dataset.shuffle);
 
         const useBtn = e.target.closest('.usecase-btn');
         if (useBtn) switchUseCase(useBtn.dataset.usecase);
@@ -449,20 +314,208 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Theme & Simulator
+    if (elements.close) elements.close.addEventListener('click', closeModal);
+    if (elements.overlay) elements.overlay.addEventListener('click', (e) => e.target === elements.overlay && closeModal());
+    document.addEventListener('keydown', (e) => e.key === 'Escape' && closeModal());
+
+    if (elements.search) {
+        elements.search.addEventListener('input', (e) => {
+            searchQuery = e.target.value.toLowerCase();
+            applyFilters();
+        });
+    }
+
     if (elements.theme) {
         elements.theme.addEventListener('click', () => {
             const isDark = document.documentElement.classList.toggle('dark');
             localStorage.theme = isDark ? 'dark' : 'light';
         });
     }
+
     if (elements.sim && elements.modal) {
         elements.sim.addEventListener('change', (e) => {
             elements.modal.style.filter = e.target.value === 'none' ? '' : `url(#${e.target.value})`;
         });
     }
 
-    // --- Initialization ---
+    if (elements.zoomIn && elements.zoomOut && elements.scaleWrapper) {
+        elements.zoomIn.addEventListener('click', () => {
+            sandboxZoom = Math.min(sandboxZoom + 10, 150);
+            elements.scaleWrapper.style.transform = `scale(${sandboxZoom / 100})`;
+            elements.zoomDisplay.textContent = `${sandboxZoom}%`;
+        });
+        elements.zoomOut.addEventListener('click', () => {
+            sandboxZoom = Math.max(sandboxZoom - 10, 50);
+            elements.scaleWrapper.style.transform = `scale(${sandboxZoom / 100})`;
+            elements.zoomDisplay.textContent = `${sandboxZoom}%`;
+        });
+    }
+
+    if (elements.roleToggle && elements.roleOverlay) {
+        elements.roleToggle.addEventListener('click', () => {
+            const isVisible = !elements.roleOverlay.classList.contains('hidden');
+            elements.roleOverlay.classList.toggle('hidden');
+            elements.roleToggle.classList.toggle('bg-indigo-100', !isVisible);
+            elements.roleToggle.classList.toggle('text-indigo-600', !isVisible);
+            showRoleLabels = !isVisible;
+            if (showRoleLabels) updateRoleLabels();
+        });
+    }
+
+    // --- Sub-Functions ---
+
+    function applyPaletteMapping(colors, targetId = null) {
+        if (!colors || colors.length === 0) return;
+        const target = targetId ? document.getElementById(targetId) : document.documentElement;
+        if (!target) return;
+        for (let i = 1; i <= 10; i++) {
+            const colorIdx = (i - 1) % colors.length;
+            target.style.setProperty(`--ui-color-${i}`, colors[colorIdx].hex);
+        }
+        if (targetId === 'section-sandbox') {
+            renderSandboxRoleChips();
+            updateContrastStatus();
+        }
+    }
+
+    const sandboxRoles = ['Background', 'Surface', 'Primary', 'Accent', 'Text', 'Border', 'Success', 'Warning'];
+
+    function getSandboxHex(index) {
+        const target = document.getElementById('section-sandbox');
+        if (!target) return '';
+        return getComputedStyle(target).getPropertyValue(`--ui-color-${index}`).trim();
+    }
+
+    function getReadableTextColor(hex) {
+        const rgb = hexToRgb(hex);
+        const whiteContrast = getContrast(rgb, [1, 1, 1]);
+        const darkContrast = getContrast(rgb, [15/255, 23/255, 42/255]);
+        return whiteContrast >= darkContrast ? '#ffffff' : '#0f172a';
+    }
+
+    function renderSandboxRoleChips() {
+        if (!elements.roleChips || !currentPalette) return;
+        elements.roleChips.innerHTML = sandboxRoles.map((role, index) => {
+            const hex = getSandboxHex(index + 1) || currentPalette.colors[index % currentPalette.colors.length].hex;
+            return `
+                <button class="role-chip rounded-xl border border-gray-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-2 text-left shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+                    onclick="copyToClipboard('${hex.slice(0, 7).toUpperCase()}', '${role} color copied')">
+                    <span class="block h-8 rounded-lg mb-2 border border-black/5" style="background:${hex}; color:${getReadableTextColor(hex)}">
+                        <span class="sr-only">${role}</span>
+                    </span>
+                    <span class="block text-[9px] font-black uppercase tracking-widest text-gray-400">${role}</span>
+                    <code class="block truncate text-[10px] font-bold text-gray-700 dark:text-gray-200">${hex.slice(0, 7).toUpperCase()}</code>
+                </button>
+            `;
+        }).join('');
+    }
+
+    function updateContrastStatus() {
+        if (!elements.contrastStatus || !currentPalette) return;
+        const bg = getSandboxHex(1) || currentPalette.colors[0].hex;
+        const surface = getSandboxHex(2) || currentPalette.colors[1 % currentPalette.colors.length].hex;
+        const primary = getSandboxHex(3) || currentPalette.colors[2 % currentPalette.colors.length].hex;
+        const text = getSandboxHex(5) || currentPalette.colors[Math.min(4, currentPalette.colors.length - 1)].hex;
+        const textContrast = getContrast(hexToRgb(bg), hexToRgb(text));
+        const primaryContrast = getContrast(hexToRgb(surface), hexToRgb(primary));
+        const score = Math.min(textContrast, primaryContrast);
+        let label = 'Needs Review';
+        let classes = 'bg-amber-100 text-amber-700 dark:bg-amber-950/40 dark:text-amber-300';
+        if (score >= 4.5) {
+            label = 'AA Ready';
+            classes = 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300';
+        } else if (score < 3) {
+            label = 'Decorative Only';
+            classes = 'bg-red-100 text-red-700 dark:bg-red-950/40 dark:text-red-300';
+        }
+        elements.contrastStatus.className = `rounded-full px-2.5 py-1 text-[10px] font-black uppercase tracking-widest ${classes}`;
+        elements.contrastStatus.textContent = label;
+        elements.contrastStatus.title = `Text/background ${textContrast.toFixed(1)}:1, primary/surface ${primaryContrast.toFixed(1)}:1`;
+    }
+
+    function shuffleSectionColors(section) {
+        if (!currentPalette) return;
+        const shuffled = [...currentPalette.colors].sort(() => Math.random() - 0.5);
+        const sectionId = `section-${section}`;
+        applyPaletteMapping(shuffled, sectionId);
+        if (window.gsap) {
+            gsap.fromTo(`#${sectionId}`, { opacity: 0.5, scale: 0.98 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power2.out" });
+        }
+        showToast(`${section.charAt(0).toUpperCase() + section.slice(1)} shuffled!`);
+        if (section === 'sandbox' && showRoleLabels) updateRoleLabels();
+        if (section === 'sandbox') {
+            renderSandboxRoleChips();
+            updateContrastStatus();
+        }
+    }
+
+    function switchDashboardVariant(variant) {
+        document.querySelectorAll('.dash-btn').forEach(b => {
+            const isActive = b.dataset.dash === variant;
+            b.classList.toggle('active', isActive);
+            b.classList.toggle('text-gray-500', !isActive);
+        });
+        document.querySelectorAll('.dash-view').forEach(view => {
+            const isTarget = view.id === 'dash-' + variant;
+            view.classList.toggle('opacity-0', !isTarget);
+            view.classList.toggle('pointer-events-none', !isTarget);
+        });
+        activeDashVariant = variant;
+        if (!window.gsap) return;
+        gsap.killTweensOf(".dash-view *");
+        if (variant === 'analytics') gsap.from("#dash-analytics .lg\\:col-span-8", { y: 20, opacity: 0, duration: 0.6, ease: "power2.out" });
+        else if (variant === 'crm') gsap.from("#dash-crm .space-y-4 > div", { x: -20, opacity: 0, duration: 0.4, stagger: 0.1, ease: "power2.out" });
+        else if (variant === 'monitor') gsap.from("#dash-monitor .aspect-square", { scale: 0, opacity: 0, duration: 0.6, stagger: 0.1, ease: "elastic.out(1, 0.5)" });
+        else if (variant === 'profile') gsap.from("#dash-profile .bg-gradient-to-br", { y: -50, opacity: 0, duration: 0.8, ease: "power3.out" });
+    }
+
+    function switchUseCase(usecase) {
+        const descriptions = {
+            dashboard: 'Multi-layout dashboard - Analytics, CRM, Monitor & Profile',
+            social: 'Social post and interaction preview',
+            landing: 'Landing page hero and navigation preview',
+            commerce: 'Product card and shopping UI preview',
+            mobile: 'Compact app shell and navigation preview',
+            typography: 'Headings, body text, links, quotes, badges, and inline code'
+        };
+        const descriptionEl = document.getElementById('usecase-description');
+        if (descriptionEl) descriptionEl.textContent = descriptions[usecase] || descriptions.dashboard;
+
+        document.querySelectorAll('.usecase-btn').forEach(b => {
+            const isActive = b.dataset.usecase === usecase;
+            b.classList.toggle('active', isActive);
+            b.classList.toggle('text-gray-500', !isActive);
+        });
+        document.querySelectorAll('.usecase-content').forEach(panel => {
+            const isTarget = panel.id === 'case-' + usecase;
+            panel.classList.toggle('opacity-0', !isTarget);
+            panel.classList.toggle('pointer-events-none', !isTarget);
+            if (panel.id === 'case-dashboard') panel.classList.toggle('hidden', !isTarget);
+        });
+        if (!window.gsap) return;
+        gsap.killTweensOf(".usecase-content *");
+        if (usecase === 'dashboard') switchDashboardVariant(activeDashVariant);
+        else if (usecase === 'social') gsap.from("#social-card", { scale: 0.9, opacity: 0, duration: 0.6, ease: "back.out(1.7)" });
+        else if (usecase === 'landing') gsap.from("#monitor-frame", { y: 30, opacity: 0, duration: 0.8, ease: "power3.out" });
+        else if (usecase === 'commerce') gsap.from("#commerce-card", { x: -30, opacity: 0, duration: 0.7, ease: "power3.out" });
+        else if (usecase === 'mobile') gsap.from("#mobile-shell", { y: 50, opacity: 0, duration: 0.8, ease: "power4.out" });
+    }
+
+    function updateRoleLabels() {
+        if (!elements.roleContent || !currentPalette) return;
+        const target = document.getElementById('section-sandbox');
+        const computed = getComputedStyle(target);
+        elements.roleContent.innerHTML = '';
+        for (let i = 1; i <= 10; i++) {
+            const hex = computed.getPropertyValue(`--ui-color-${i}`).trim().toUpperCase();
+            if (!hex) continue;
+            const role = sandboxRoles[i - 1] || `Color ${i}`;
+            const chip = document.createElement('div');
+            chip.className = 'flex items-center gap-1.5 px-2 py-1 rounded bg-black/50 border border-white/10 backdrop-blur-md';
+            chip.innerHTML = `<div class="w-2 h-2 rounded-full flex-shrink-0" style="background:${hex}"></div><span class="text-[8px] font-black text-white/70 uppercase tracking-tighter">${role}: ${hex}</span>`;
+            elements.roleContent.appendChild(chip);
+        }
+    }
 
     function setupFacetedFilters() {
         if (!elements.facetTabs) return;
@@ -490,7 +543,6 @@ document.addEventListener('DOMContentLoaded', () => {
         else if (facet === 'category') values = [...new Set(allPalettes.map(p => p.category))].filter(Boolean).sort();
         else if (facet === 'mood') values = [...new Set(allPalettes.flatMap(p => (p.tags && p.tags.mood) || []))].sort();
         else if (facet === 'aesthetic') values = [...new Set(allPalettes.flatMap(p => (p.tags && p.tags.aesthetic) || []))].sort();
-
         values.forEach((val, i) => {
             const btn = document.createElement('button');
             btn.className = `sub-filter-btn px-4 py-1.5 rounded-xl text-xs font-bold border transition-all whitespace-nowrap ${i === 0 ? 'active border-indigo-500 bg-indigo-50 text-indigo-600' : 'border-gray-200 dark:border-slate-800 text-gray-500'}`;
@@ -516,7 +568,5 @@ document.addEventListener('DOMContentLoaded', () => {
             setupFacetedFilters();
             renderPalettes(data);
         })
-        .catch(err => console.error('Showcase: Failed to load palettes.json', err));
-
-    window.copyToClipboard = copyToClipboard;
+        .catch(err => console.error('Showcase Error:', err));
 });

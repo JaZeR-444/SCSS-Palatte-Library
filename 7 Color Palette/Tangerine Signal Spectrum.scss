@@ -1,0 +1,93 @@
+/*---
+id: tangerine-signal-spectrum
+name: Tangerine Signal Spectrum
+author: JaZeR-444
+version: 1.0.0
+category: Orange & Interface
+count: 7
+description: A punchy tangerine spectrum with dark anchors, energetic orange ramps, and soft readable UI surfaces.
+tags:
+  mood:
+  - orange
+  - bright
+  aesthetic:
+  - Signal
+  - Interface
+intent: An orange-focused 7-color palette designed for product ui, notifications, marketing.
+suggested_use:
+- Product UI
+- Notifications
+- Marketing
+url: https://coolors.co/231006-7c2d12-c2410c-ea580c-fb923c-fed7aa-fff7ed
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--tangerine-signal-spectrum-signal-night: #231006ff;
+--tangerine-signal-spectrum-burnt-routing: #7c2d12ff;
+--tangerine-signal-spectrum-alert-orange: #c2410cff;
+--tangerine-signal-spectrum-tangerine-core: #ea580cff;
+--tangerine-signal-spectrum-citrus-flash: #fb923cff;
+--tangerine-signal-spectrum-peach-notice: #fed7aaff;
+--tangerine-signal-spectrum-cream-toast: #fff7edff;
+
+/* CSS HSL */
+--tangerine-signal-spectrum-signal-night: hsla(21, 71%, 8%, 1);
+--tangerine-signal-spectrum-burnt-routing: hsla(15, 75%, 28%, 1);
+--tangerine-signal-spectrum-alert-orange: hsla(17, 88%, 40%, 1);
+--tangerine-signal-spectrum-tangerine-core: hsla(21, 90%, 48%, 1);
+--tangerine-signal-spectrum-citrus-flash: hsla(27, 96%, 61%, 1);
+--tangerine-signal-spectrum-peach-notice: hsla(32, 98%, 83%, 1);
+--tangerine-signal-spectrum-cream-toast: hsla(33, 100%, 96%, 1);
+}
+
+/* SCSS HEX */
+$tangerine-signal-spectrum-signal-night: #231006ff;
+$tangerine-signal-spectrum-burnt-routing: #7c2d12ff;
+$tangerine-signal-spectrum-alert-orange: #c2410cff;
+$tangerine-signal-spectrum-tangerine-core: #ea580cff;
+$tangerine-signal-spectrum-citrus-flash: #fb923cff;
+$tangerine-signal-spectrum-peach-notice: #fed7aaff;
+$tangerine-signal-spectrum-cream-toast: #fff7edff;
+
+/* SCSS HSL */
+$tangerine-signal-spectrum-signal-night: hsla(21, 71%, 8%, 1);
+$tangerine-signal-spectrum-burnt-routing: hsla(15, 75%, 28%, 1);
+$tangerine-signal-spectrum-alert-orange: hsla(17, 88%, 40%, 1);
+$tangerine-signal-spectrum-tangerine-core: hsla(21, 90%, 48%, 1);
+$tangerine-signal-spectrum-citrus-flash: hsla(27, 96%, 61%, 1);
+$tangerine-signal-spectrum-peach-notice: hsla(32, 98%, 83%, 1);
+$tangerine-signal-spectrum-cream-toast: hsla(33, 100%, 96%, 1);
+
+/* SCSS RGB */
+$tangerine-signal-spectrum-signal-night: rgba(35, 16, 6, 1);
+$tangerine-signal-spectrum-burnt-routing: rgba(124, 45, 18, 1);
+$tangerine-signal-spectrum-alert-orange: rgba(194, 65, 12, 1);
+$tangerine-signal-spectrum-tangerine-core: rgba(234, 88, 12, 1);
+$tangerine-signal-spectrum-citrus-flash: rgba(251, 146, 60, 1);
+$tangerine-signal-spectrum-peach-notice: rgba(254, 215, 170, 1);
+$tangerine-signal-spectrum-cream-toast: rgba(255, 247, 237, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #231006ff, #7c2d12ff, #c2410cff, #ea580cff, #fb923cff, #fed7aaff, #fff7edff);
+$gradient-right: linear-gradient(90deg, #231006ff, #7c2d12ff, #c2410cff, #ea580cff, #fb923cff, #fed7aaff, #fff7edff);
+$gradient-bottom: linear-gradient(180deg, #231006ff, #7c2d12ff, #c2410cff, #ea580cff, #fb923cff, #fed7aaff, #fff7edff);
+$gradient-left: linear-gradient(270deg, #231006ff, #7c2d12ff, #c2410cff, #ea580cff, #fb923cff, #fed7aaff, #fff7edff);
+$gradient-top-right: linear-gradient(45deg, #231006ff, #7c2d12ff, #c2410cff, #ea580cff, #fb923cff, #fed7aaff, #fff7edff);
+$gradient-bottom-right: linear-gradient(135deg, #231006ff, #7c2d12ff, #c2410cff, #ea580cff, #fb923cff, #fed7aaff, #fff7edff);
+$gradient-top-left: linear-gradient(225deg, #231006ff, #7c2d12ff, #c2410cff, #ea580cff, #fb923cff, #fed7aaff, #fff7edff);
+$gradient-bottom-left: linear-gradient(315deg, #231006ff, #7c2d12ff, #c2410cff, #ea580cff, #fb923cff, #fed7aaff, #fff7edff);
+$gradient-radial: radial-gradient(#231006ff, #7c2d12ff, #c2410cff, #ea580cff, #fb923cff, #fed7aaff, #fff7edff);
+
+/* SCSS Map */
+$tangerine-signal-spectrum-map: (
+    "tangerine-signal-spectrum-signal-night": #231006ff,
+    "tangerine-signal-spectrum-burnt-routing": #7c2d12ff,
+    "tangerine-signal-spectrum-alert-orange": #c2410cff,
+    "tangerine-signal-spectrum-tangerine-core": #ea580cff,
+    "tangerine-signal-spectrum-citrus-flash": #fb923cff,
+    "tangerine-signal-spectrum-peach-notice": #fed7aaff,
+    "tangerine-signal-spectrum-cream-toast": #fff7edff
+);

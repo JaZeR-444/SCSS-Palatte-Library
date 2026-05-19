@@ -1,0 +1,111 @@
+/*---
+id: ink-studio-atlas
+name: Ink Studio Atlas
+author: JaZeR-444
+version: 1.0.0
+category: Black & Editorial
+count: 10
+description: An editorial black palette with ink foundations, warm charcoal, paper neutrals, and gallery-ready contrast.
+tags:
+  mood:
+  - black
+  - editorial
+  aesthetic:
+  - Studio
+  - Portfolio
+intent: A black-focused 10-color palette designed for portfolio, editorial, brand system.
+suggested_use:
+- Portfolio
+- Editorial
+- Brand System
+url: https://coolors.co/070707-14110f-23201d-34312d-57534e-78716c-a8a29e-d6d3d1-f5f5f4-fffaf0
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--ink-studio-atlas-studio-black: #070707ff;
+--ink-studio-atlas-ink-depth: #14110fff;
+--ink-studio-atlas-charcoal-warm: #23201dff;
+--ink-studio-atlas-gallery-graphite: #34312dff;
+--ink-studio-atlas-type-stone: #57534eff;
+--ink-studio-atlas-caption-smoke: #78716cff;
+--ink-studio-atlas-border-stone: #a8a29eff;
+--ink-studio-atlas-paper-line: #d6d3d1ff;
+--ink-studio-atlas-studio-paper: #f5f5f4ff;
+--ink-studio-atlas-cream-light: #fffaf0ff;
+
+/* CSS HSL */
+--ink-studio-atlas-studio-black: hsla(0, 0%, 3%, 1);
+--ink-studio-atlas-ink-depth: hsla(24, 14%, 7%, 1);
+--ink-studio-atlas-charcoal-warm: hsla(30, 9%, 13%, 1);
+--ink-studio-atlas-gallery-graphite: hsla(34, 7%, 19%, 1);
+--ink-studio-atlas-type-stone: hsla(33, 5%, 32%, 1);
+--ink-studio-atlas-caption-smoke: hsla(25, 5%, 45%, 1);
+--ink-studio-atlas-border-stone: hsla(24, 5%, 64%, 1);
+--ink-studio-atlas-paper-line: hsla(24, 6%, 83%, 1);
+--ink-studio-atlas-studio-paper: hsla(60, 5%, 96%, 1);
+--ink-studio-atlas-cream-light: hsla(40, 100%, 97%, 1);
+}
+
+/* SCSS HEX */
+$ink-studio-atlas-studio-black: #070707ff;
+$ink-studio-atlas-ink-depth: #14110fff;
+$ink-studio-atlas-charcoal-warm: #23201dff;
+$ink-studio-atlas-gallery-graphite: #34312dff;
+$ink-studio-atlas-type-stone: #57534eff;
+$ink-studio-atlas-caption-smoke: #78716cff;
+$ink-studio-atlas-border-stone: #a8a29eff;
+$ink-studio-atlas-paper-line: #d6d3d1ff;
+$ink-studio-atlas-studio-paper: #f5f5f4ff;
+$ink-studio-atlas-cream-light: #fffaf0ff;
+
+/* SCSS HSL */
+$ink-studio-atlas-studio-black: hsla(0, 0%, 3%, 1);
+$ink-studio-atlas-ink-depth: hsla(24, 14%, 7%, 1);
+$ink-studio-atlas-charcoal-warm: hsla(30, 9%, 13%, 1);
+$ink-studio-atlas-gallery-graphite: hsla(34, 7%, 19%, 1);
+$ink-studio-atlas-type-stone: hsla(33, 5%, 32%, 1);
+$ink-studio-atlas-caption-smoke: hsla(25, 5%, 45%, 1);
+$ink-studio-atlas-border-stone: hsla(24, 5%, 64%, 1);
+$ink-studio-atlas-paper-line: hsla(24, 6%, 83%, 1);
+$ink-studio-atlas-studio-paper: hsla(60, 5%, 96%, 1);
+$ink-studio-atlas-cream-light: hsla(40, 100%, 97%, 1);
+
+/* SCSS RGB */
+$ink-studio-atlas-studio-black: rgba(7, 7, 7, 1);
+$ink-studio-atlas-ink-depth: rgba(20, 17, 15, 1);
+$ink-studio-atlas-charcoal-warm: rgba(35, 32, 29, 1);
+$ink-studio-atlas-gallery-graphite: rgba(52, 49, 45, 1);
+$ink-studio-atlas-type-stone: rgba(87, 83, 78, 1);
+$ink-studio-atlas-caption-smoke: rgba(120, 113, 108, 1);
+$ink-studio-atlas-border-stone: rgba(168, 162, 158, 1);
+$ink-studio-atlas-paper-line: rgba(214, 211, 209, 1);
+$ink-studio-atlas-studio-paper: rgba(245, 245, 244, 1);
+$ink-studio-atlas-cream-light: rgba(255, 250, 240, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #070707ff, #14110fff, #23201dff, #34312dff, #57534eff, #78716cff, #a8a29eff, #d6d3d1ff, #f5f5f4ff, #fffaf0ff);
+$gradient-right: linear-gradient(90deg, #070707ff, #14110fff, #23201dff, #34312dff, #57534eff, #78716cff, #a8a29eff, #d6d3d1ff, #f5f5f4ff, #fffaf0ff);
+$gradient-bottom: linear-gradient(180deg, #070707ff, #14110fff, #23201dff, #34312dff, #57534eff, #78716cff, #a8a29eff, #d6d3d1ff, #f5f5f4ff, #fffaf0ff);
+$gradient-left: linear-gradient(270deg, #070707ff, #14110fff, #23201dff, #34312dff, #57534eff, #78716cff, #a8a29eff, #d6d3d1ff, #f5f5f4ff, #fffaf0ff);
+$gradient-top-right: linear-gradient(45deg, #070707ff, #14110fff, #23201dff, #34312dff, #57534eff, #78716cff, #a8a29eff, #d6d3d1ff, #f5f5f4ff, #fffaf0ff);
+$gradient-bottom-right: linear-gradient(135deg, #070707ff, #14110fff, #23201dff, #34312dff, #57534eff, #78716cff, #a8a29eff, #d6d3d1ff, #f5f5f4ff, #fffaf0ff);
+$gradient-top-left: linear-gradient(225deg, #070707ff, #14110fff, #23201dff, #34312dff, #57534eff, #78716cff, #a8a29eff, #d6d3d1ff, #f5f5f4ff, #fffaf0ff);
+$gradient-bottom-left: linear-gradient(315deg, #070707ff, #14110fff, #23201dff, #34312dff, #57534eff, #78716cff, #a8a29eff, #d6d3d1ff, #f5f5f4ff, #fffaf0ff);
+$gradient-radial: radial-gradient(#070707ff, #14110fff, #23201dff, #34312dff, #57534eff, #78716cff, #a8a29eff, #d6d3d1ff, #f5f5f4ff, #fffaf0ff);
+
+/* SCSS Map */
+$ink-studio-atlas-map: (
+    "ink-studio-atlas-studio-black": #070707ff,
+    "ink-studio-atlas-ink-depth": #14110fff,
+    "ink-studio-atlas-charcoal-warm": #23201dff,
+    "ink-studio-atlas-gallery-graphite": #34312dff,
+    "ink-studio-atlas-type-stone": #57534eff,
+    "ink-studio-atlas-caption-smoke": #78716cff,
+    "ink-studio-atlas-border-stone": #a8a29eff,
+    "ink-studio-atlas-paper-line": #d6d3d1ff,
+    "ink-studio-atlas-studio-paper": #f5f5f4ff,
+    "ink-studio-atlas-cream-light": #fffaf0ff
+);

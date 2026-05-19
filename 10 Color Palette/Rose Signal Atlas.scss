@@ -1,0 +1,111 @@
+/*---
+id: rose-signal-atlas
+name: Rose Signal Atlas
+author: JaZeR-444
+version: 1.0.0
+category: Red & Expressive
+count: 10
+description: An expressive rose-red palette with deep berry structure, vivid signal tones, and soft pink surfaces.
+tags:
+  mood:
+  - red
+  - expressive
+  aesthetic:
+  - Rose
+  - Interface
+intent: A red-focused 10-color palette designed for social ui, events, brand accent.
+suggested_use:
+- Social UI
+- Events
+- Brand Accent
+url: https://coolors.co/17070d-3f0d1e-831843-be123c-e11d48-f43f5e-fb7185-fecdd3-ffe4e6-fff1f2
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--rose-signal-atlas-signal-black: #17070dff;
+--rose-signal-atlas-rose-depth: #3f0d1eff;
+--rose-signal-atlas-berry-core: #831843ff;
+--rose-signal-atlas-signal-ruby: #be123cff;
+--rose-signal-atlas-rose-action: #e11d48ff;
+--rose-signal-atlas-vivid-rose: #f43f5eff;
+--rose-signal-atlas-petal-red: #fb7185ff;
+--rose-signal-atlas-soft-petal: #fecdd3ff;
+--rose-signal-atlas-panel-rose: #ffe4e6ff;
+--rose-signal-atlas-rose-white: #fff1f2ff;
+
+/* CSS HSL */
+--rose-signal-atlas-signal-black: hsla(338, 53%, 6%, 1);
+--rose-signal-atlas-rose-depth: hsla(340, 66%, 15%, 1);
+--rose-signal-atlas-berry-core: hsla(336, 69%, 30%, 1);
+--rose-signal-atlas-signal-ruby: hsla(345, 83%, 41%, 1);
+--rose-signal-atlas-rose-action: hsla(347, 77%, 50%, 1);
+--rose-signal-atlas-vivid-rose: hsla(350, 89%, 60%, 1);
+--rose-signal-atlas-petal-red: hsla(351, 95%, 71%, 1);
+--rose-signal-atlas-soft-petal: hsla(353, 96%, 90%, 1);
+--rose-signal-atlas-panel-rose: hsla(356, 100%, 95%, 1);
+--rose-signal-atlas-rose-white: hsla(356, 100%, 97%, 1);
+}
+
+/* SCSS HEX */
+$rose-signal-atlas-signal-black: #17070dff;
+$rose-signal-atlas-rose-depth: #3f0d1eff;
+$rose-signal-atlas-berry-core: #831843ff;
+$rose-signal-atlas-signal-ruby: #be123cff;
+$rose-signal-atlas-rose-action: #e11d48ff;
+$rose-signal-atlas-vivid-rose: #f43f5eff;
+$rose-signal-atlas-petal-red: #fb7185ff;
+$rose-signal-atlas-soft-petal: #fecdd3ff;
+$rose-signal-atlas-panel-rose: #ffe4e6ff;
+$rose-signal-atlas-rose-white: #fff1f2ff;
+
+/* SCSS HSL */
+$rose-signal-atlas-signal-black: hsla(338, 53%, 6%, 1);
+$rose-signal-atlas-rose-depth: hsla(340, 66%, 15%, 1);
+$rose-signal-atlas-berry-core: hsla(336, 69%, 30%, 1);
+$rose-signal-atlas-signal-ruby: hsla(345, 83%, 41%, 1);
+$rose-signal-atlas-rose-action: hsla(347, 77%, 50%, 1);
+$rose-signal-atlas-vivid-rose: hsla(350, 89%, 60%, 1);
+$rose-signal-atlas-petal-red: hsla(351, 95%, 71%, 1);
+$rose-signal-atlas-soft-petal: hsla(353, 96%, 90%, 1);
+$rose-signal-atlas-panel-rose: hsla(356, 100%, 95%, 1);
+$rose-signal-atlas-rose-white: hsla(356, 100%, 97%, 1);
+
+/* SCSS RGB */
+$rose-signal-atlas-signal-black: rgba(23, 7, 13, 1);
+$rose-signal-atlas-rose-depth: rgba(63, 13, 30, 1);
+$rose-signal-atlas-berry-core: rgba(131, 24, 67, 1);
+$rose-signal-atlas-signal-ruby: rgba(190, 18, 60, 1);
+$rose-signal-atlas-rose-action: rgba(225, 29, 72, 1);
+$rose-signal-atlas-vivid-rose: rgba(244, 63, 94, 1);
+$rose-signal-atlas-petal-red: rgba(251, 113, 133, 1);
+$rose-signal-atlas-soft-petal: rgba(254, 205, 211, 1);
+$rose-signal-atlas-panel-rose: rgba(255, 228, 230, 1);
+$rose-signal-atlas-rose-white: rgba(255, 241, 242, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #17070dff, #3f0d1eff, #831843ff, #be123cff, #e11d48ff, #f43f5eff, #fb7185ff, #fecdd3ff, #ffe4e6ff, #fff1f2ff);
+$gradient-right: linear-gradient(90deg, #17070dff, #3f0d1eff, #831843ff, #be123cff, #e11d48ff, #f43f5eff, #fb7185ff, #fecdd3ff, #ffe4e6ff, #fff1f2ff);
+$gradient-bottom: linear-gradient(180deg, #17070dff, #3f0d1eff, #831843ff, #be123cff, #e11d48ff, #f43f5eff, #fb7185ff, #fecdd3ff, #ffe4e6ff, #fff1f2ff);
+$gradient-left: linear-gradient(270deg, #17070dff, #3f0d1eff, #831843ff, #be123cff, #e11d48ff, #f43f5eff, #fb7185ff, #fecdd3ff, #ffe4e6ff, #fff1f2ff);
+$gradient-top-right: linear-gradient(45deg, #17070dff, #3f0d1eff, #831843ff, #be123cff, #e11d48ff, #f43f5eff, #fb7185ff, #fecdd3ff, #ffe4e6ff, #fff1f2ff);
+$gradient-bottom-right: linear-gradient(135deg, #17070dff, #3f0d1eff, #831843ff, #be123cff, #e11d48ff, #f43f5eff, #fb7185ff, #fecdd3ff, #ffe4e6ff, #fff1f2ff);
+$gradient-top-left: linear-gradient(225deg, #17070dff, #3f0d1eff, #831843ff, #be123cff, #e11d48ff, #f43f5eff, #fb7185ff, #fecdd3ff, #ffe4e6ff, #fff1f2ff);
+$gradient-bottom-left: linear-gradient(315deg, #17070dff, #3f0d1eff, #831843ff, #be123cff, #e11d48ff, #f43f5eff, #fb7185ff, #fecdd3ff, #ffe4e6ff, #fff1f2ff);
+$gradient-radial: radial-gradient(#17070dff, #3f0d1eff, #831843ff, #be123cff, #e11d48ff, #f43f5eff, #fb7185ff, #fecdd3ff, #ffe4e6ff, #fff1f2ff);
+
+/* SCSS Map */
+$rose-signal-atlas-map: (
+    "rose-signal-atlas-signal-black": #17070dff,
+    "rose-signal-atlas-rose-depth": #3f0d1eff,
+    "rose-signal-atlas-berry-core": #831843ff,
+    "rose-signal-atlas-signal-ruby": #be123cff,
+    "rose-signal-atlas-rose-action": #e11d48ff,
+    "rose-signal-atlas-vivid-rose": #f43f5eff,
+    "rose-signal-atlas-petal-red": #fb7185ff,
+    "rose-signal-atlas-soft-petal": #fecdd3ff,
+    "rose-signal-atlas-panel-rose": #ffe4e6ff,
+    "rose-signal-atlas-rose-white": #fff1f2ff
+);

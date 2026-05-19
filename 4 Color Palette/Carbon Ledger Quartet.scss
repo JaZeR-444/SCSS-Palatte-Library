@@ -1,0 +1,75 @@
+/*---
+id: carbon-ledger-quartet
+name: Carbon Ledger Quartet
+author: JaZeR-444
+version: 1.0.0
+category: Black & Professional
+count: 4
+description: A professional black palette for reports, dashboards, executive tools, and high-contrast product interfaces.
+tags:
+  mood:
+  - black
+  - professional
+  aesthetic:
+  - Finance
+  - Reports
+intent: A black-focused 4-color palette designed for finance, reports, dashboard.
+suggested_use:
+- Finance
+- Reports
+- Dashboard
+url: https://coolors.co/050505-111111-1c1c1e-2c2c2e
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--carbon-ledger-quartet-ledger-black: #050505ff;
+--carbon-ledger-quartet-account-ink: #111111ff;
+--carbon-ledger-quartet-report-charcoal: #1c1c1eff;
+--carbon-ledger-quartet-balance-graphite: #2c2c2eff;
+
+/* CSS HSL */
+--carbon-ledger-quartet-ledger-black: hsla(0, 0%, 2%, 1);
+--carbon-ledger-quartet-account-ink: hsla(0, 0%, 7%, 1);
+--carbon-ledger-quartet-report-charcoal: hsla(240, 3%, 11%, 1);
+--carbon-ledger-quartet-balance-graphite: hsla(240, 2%, 18%, 1);
+}
+
+/* SCSS HEX */
+$carbon-ledger-quartet-ledger-black: #050505ff;
+$carbon-ledger-quartet-account-ink: #111111ff;
+$carbon-ledger-quartet-report-charcoal: #1c1c1eff;
+$carbon-ledger-quartet-balance-graphite: #2c2c2eff;
+
+/* SCSS HSL */
+$carbon-ledger-quartet-ledger-black: hsla(0, 0%, 2%, 1);
+$carbon-ledger-quartet-account-ink: hsla(0, 0%, 7%, 1);
+$carbon-ledger-quartet-report-charcoal: hsla(240, 3%, 11%, 1);
+$carbon-ledger-quartet-balance-graphite: hsla(240, 2%, 18%, 1);
+
+/* SCSS RGB */
+$carbon-ledger-quartet-ledger-black: rgba(5, 5, 5, 1);
+$carbon-ledger-quartet-account-ink: rgba(17, 17, 17, 1);
+$carbon-ledger-quartet-report-charcoal: rgba(28, 28, 30, 1);
+$carbon-ledger-quartet-balance-graphite: rgba(44, 44, 46, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff);
+$gradient-right: linear-gradient(90deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff);
+$gradient-bottom: linear-gradient(180deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff);
+$gradient-left: linear-gradient(270deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff);
+$gradient-top-right: linear-gradient(45deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff);
+$gradient-bottom-right: linear-gradient(135deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff);
+$gradient-top-left: linear-gradient(225deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff);
+$gradient-bottom-left: linear-gradient(315deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff);
+$gradient-radial: radial-gradient(#050505ff, #111111ff, #1c1c1eff, #2c2c2eff);
+
+/* SCSS Map */
+$carbon-ledger-quartet-map: (
+    "carbon-ledger-quartet-ledger-black": #050505ff,
+    "carbon-ledger-quartet-account-ink": #111111ff,
+    "carbon-ledger-quartet-report-charcoal": #1c1c1eff,
+    "carbon-ledger-quartet-balance-graphite": #2c2c2eff
+);

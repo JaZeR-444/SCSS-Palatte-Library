@@ -1,0 +1,69 @@
+/*---
+id: carbon-ledger-trio
+name: Carbon Ledger Trio
+author: JaZeR-444
+version: 1.0.0
+category: Black & Professional
+count: 3
+description: A professional black palette for reports, dashboards, executive tools, and high-contrast product interfaces.
+tags:
+  mood:
+  - black
+  - professional
+  aesthetic:
+  - Finance
+  - Reports
+intent: A black-focused 3-color palette designed for finance, reports, dashboard.
+suggested_use:
+- Finance
+- Reports
+- Dashboard
+url: https://coolors.co/050505-111111-1c1c1e
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--carbon-ledger-trio-ledger-black: #050505ff;
+--carbon-ledger-trio-account-ink: #111111ff;
+--carbon-ledger-trio-report-charcoal: #1c1c1eff;
+
+/* CSS HSL */
+--carbon-ledger-trio-ledger-black: hsla(0, 0%, 2%, 1);
+--carbon-ledger-trio-account-ink: hsla(0, 0%, 7%, 1);
+--carbon-ledger-trio-report-charcoal: hsla(240, 3%, 11%, 1);
+}
+
+/* SCSS HEX */
+$carbon-ledger-trio-ledger-black: #050505ff;
+$carbon-ledger-trio-account-ink: #111111ff;
+$carbon-ledger-trio-report-charcoal: #1c1c1eff;
+
+/* SCSS HSL */
+$carbon-ledger-trio-ledger-black: hsla(0, 0%, 2%, 1);
+$carbon-ledger-trio-account-ink: hsla(0, 0%, 7%, 1);
+$carbon-ledger-trio-report-charcoal: hsla(240, 3%, 11%, 1);
+
+/* SCSS RGB */
+$carbon-ledger-trio-ledger-black: rgba(5, 5, 5, 1);
+$carbon-ledger-trio-account-ink: rgba(17, 17, 17, 1);
+$carbon-ledger-trio-report-charcoal: rgba(28, 28, 30, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #050505ff, #111111ff, #1c1c1eff);
+$gradient-right: linear-gradient(90deg, #050505ff, #111111ff, #1c1c1eff);
+$gradient-bottom: linear-gradient(180deg, #050505ff, #111111ff, #1c1c1eff);
+$gradient-left: linear-gradient(270deg, #050505ff, #111111ff, #1c1c1eff);
+$gradient-top-right: linear-gradient(45deg, #050505ff, #111111ff, #1c1c1eff);
+$gradient-bottom-right: linear-gradient(135deg, #050505ff, #111111ff, #1c1c1eff);
+$gradient-top-left: linear-gradient(225deg, #050505ff, #111111ff, #1c1c1eff);
+$gradient-bottom-left: linear-gradient(315deg, #050505ff, #111111ff, #1c1c1eff);
+$gradient-radial: radial-gradient(#050505ff, #111111ff, #1c1c1eff);
+
+/* SCSS Map */
+$carbon-ledger-trio-map: (
+    "carbon-ledger-trio-ledger-black": #050505ff,
+    "carbon-ledger-trio-account-ink": #111111ff,
+    "carbon-ledger-trio-report-charcoal": #1c1c1eff
+);

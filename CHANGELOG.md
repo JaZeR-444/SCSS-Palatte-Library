@@ -14,6 +14,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Purple Systems Expansion**: Added 40 more purple-focused palettes, five each in the 3-color through 10-color folders.
 - **Blue Systems Expansion**: Added 20 curated blue-focused palettes across the 3-color through 10-color folders.
 - **Green Systems Expansion**: Added 20 curated green-focused palettes across the 3-color through 10-color folders.
+- **Red Systems Expansion**: Added 20 curated red-focused palettes across the 3-color through 10-color folders.
+- **Orange Systems Expansion**: Added 20 curated orange-focused palettes across the 3-color through 10-color folders.
+- **Showcase Discovery Tools**: Added recently viewed palettes and modal "More Like This" recommendations.
+- **Showcase Collections**: Added named localStorage collections with create, rename, delete, save, and drag-to-move flows.
+- **Showcase PNG Export**: Added a Canvas API swatch sheet download from the modal.
+- **Showcase Typography Sandbox**: Added a typography use case tab for headings, copy, links, quotes, badges, and inline code.
+- **Black Systems Expansion**: Added 20 curated black-focused palettes across the 3-color through 10-color folders.
+- **Showcase Sandbox Upgrade**: Refined the modal sandbox with a unified toolbar, palette role chips, contrast status, stronger active states, and improved preview framing.
 
 ## [2.0.0] - 2026-05-18
 

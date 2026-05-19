@@ -1,0 +1,99 @@
+/*---
+id: carbon-ledger-system
+name: Carbon Ledger System
+author: JaZeR-444
+version: 1.0.0
+category: Black & Professional
+count: 8
+description: A professional black palette for reports, dashboards, executive tools, and high-contrast product interfaces.
+tags:
+  mood:
+  - black
+  - professional
+  aesthetic:
+  - Finance
+  - Reports
+intent: A black-focused 8-color palette designed for finance, reports, dashboard.
+suggested_use:
+- Finance
+- Reports
+- Dashboard
+url: https://coolors.co/050505-111111-1c1c1e-2c2c2e-3a3a3c-636366-8e8e93-c7c7cc
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--carbon-ledger-system-ledger-black: #050505ff;
+--carbon-ledger-system-account-ink: #111111ff;
+--carbon-ledger-system-report-charcoal: #1c1c1eff;
+--carbon-ledger-system-balance-graphite: #2c2c2eff;
+--carbon-ledger-system-metric-steel: #3a3a3cff;
+--carbon-ledger-system-summary-smoke: #636366ff;
+--carbon-ledger-system-sheet-gray: #8e8e93ff;
+--carbon-ledger-system-panel-line: #c7c7ccff;
+
+/* CSS HSL */
+--carbon-ledger-system-ledger-black: hsla(0, 0%, 2%, 1);
+--carbon-ledger-system-account-ink: hsla(0, 0%, 7%, 1);
+--carbon-ledger-system-report-charcoal: hsla(240, 3%, 11%, 1);
+--carbon-ledger-system-balance-graphite: hsla(240, 2%, 18%, 1);
+--carbon-ledger-system-metric-steel: hsla(240, 2%, 23%, 1);
+--carbon-ledger-system-summary-smoke: hsla(240, 1%, 39%, 1);
+--carbon-ledger-system-sheet-gray: hsla(240, 2%, 57%, 1);
+--carbon-ledger-system-panel-line: hsla(240, 5%, 79%, 1);
+}
+
+/* SCSS HEX */
+$carbon-ledger-system-ledger-black: #050505ff;
+$carbon-ledger-system-account-ink: #111111ff;
+$carbon-ledger-system-report-charcoal: #1c1c1eff;
+$carbon-ledger-system-balance-graphite: #2c2c2eff;
+$carbon-ledger-system-metric-steel: #3a3a3cff;
+$carbon-ledger-system-summary-smoke: #636366ff;
+$carbon-ledger-system-sheet-gray: #8e8e93ff;
+$carbon-ledger-system-panel-line: #c7c7ccff;
+
+/* SCSS HSL */
+$carbon-ledger-system-ledger-black: hsla(0, 0%, 2%, 1);
+$carbon-ledger-system-account-ink: hsla(0, 0%, 7%, 1);
+$carbon-ledger-system-report-charcoal: hsla(240, 3%, 11%, 1);
+$carbon-ledger-system-balance-graphite: hsla(240, 2%, 18%, 1);
+$carbon-ledger-system-metric-steel: hsla(240, 2%, 23%, 1);
+$carbon-ledger-system-summary-smoke: hsla(240, 1%, 39%, 1);
+$carbon-ledger-system-sheet-gray: hsla(240, 2%, 57%, 1);
+$carbon-ledger-system-panel-line: hsla(240, 5%, 79%, 1);
+
+/* SCSS RGB */
+$carbon-ledger-system-ledger-black: rgba(5, 5, 5, 1);
+$carbon-ledger-system-account-ink: rgba(17, 17, 17, 1);
+$carbon-ledger-system-report-charcoal: rgba(28, 28, 30, 1);
+$carbon-ledger-system-balance-graphite: rgba(44, 44, 46, 1);
+$carbon-ledger-system-metric-steel: rgba(58, 58, 60, 1);
+$carbon-ledger-system-summary-smoke: rgba(99, 99, 102, 1);
+$carbon-ledger-system-sheet-gray: rgba(142, 142, 147, 1);
+$carbon-ledger-system-panel-line: rgba(199, 199, 204, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff, #3a3a3cff, #636366ff, #8e8e93ff, #c7c7ccff);
+$gradient-right: linear-gradient(90deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff, #3a3a3cff, #636366ff, #8e8e93ff, #c7c7ccff);
+$gradient-bottom: linear-gradient(180deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff, #3a3a3cff, #636366ff, #8e8e93ff, #c7c7ccff);
+$gradient-left: linear-gradient(270deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff, #3a3a3cff, #636366ff, #8e8e93ff, #c7c7ccff);
+$gradient-top-right: linear-gradient(45deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff, #3a3a3cff, #636366ff, #8e8e93ff, #c7c7ccff);
+$gradient-bottom-right: linear-gradient(135deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff, #3a3a3cff, #636366ff, #8e8e93ff, #c7c7ccff);
+$gradient-top-left: linear-gradient(225deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff, #3a3a3cff, #636366ff, #8e8e93ff, #c7c7ccff);
+$gradient-bottom-left: linear-gradient(315deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff, #3a3a3cff, #636366ff, #8e8e93ff, #c7c7ccff);
+$gradient-radial: radial-gradient(#050505ff, #111111ff, #1c1c1eff, #2c2c2eff, #3a3a3cff, #636366ff, #8e8e93ff, #c7c7ccff);
+
+/* SCSS Map */
+$carbon-ledger-system-map: (
+    "carbon-ledger-system-ledger-black": #050505ff,
+    "carbon-ledger-system-account-ink": #111111ff,
+    "carbon-ledger-system-report-charcoal": #1c1c1eff,
+    "carbon-ledger-system-balance-graphite": #2c2c2eff,
+    "carbon-ledger-system-metric-steel": #3a3a3cff,
+    "carbon-ledger-system-summary-smoke": #636366ff,
+    "carbon-ledger-system-sheet-gray": #8e8e93ff,
+    "carbon-ledger-system-panel-line": #c7c7ccff
+);

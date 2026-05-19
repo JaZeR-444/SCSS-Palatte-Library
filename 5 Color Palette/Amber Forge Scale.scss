@@ -1,0 +1,81 @@
+/*---
+id: amber-forge-scale
+name: Amber Forge Scale
+author: JaZeR-444
+version: 1.0.0
+category: Orange & Industrial
+count: 5
+description: A forged amber palette with sturdy industrial darks, heated midtones, and clear warning highlights.
+tags:
+  mood:
+  - orange
+  - industrial
+  aesthetic:
+  - Forge
+  - Manufacturing
+intent: An orange-focused 5-color palette designed for industrial ui, ops dashboard, hardware.
+suggested_use:
+- Industrial UI
+- Ops Dashboard
+- Hardware
+url: https://coolors.co/1c0f05-431407-9a3412-f97316-fbbf24
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--amber-forge-scale-kiln-black: #1c0f05ff;
+--amber-forge-scale-furnace-brown: #431407ff;
+--amber-forge-scale-forge-ember: #9a3412ff;
+--amber-forge-scale-molten-amber: #f97316ff;
+--amber-forge-scale-spark-gold: #fbbf24ff;
+
+/* CSS HSL */
+--amber-forge-scale-kiln-black: hsla(26, 70%, 6%, 1);
+--amber-forge-scale-furnace-brown: hsla(13, 81%, 15%, 1);
+--amber-forge-scale-forge-ember: hsla(15, 79%, 34%, 1);
+--amber-forge-scale-molten-amber: hsla(25, 95%, 53%, 1);
+--amber-forge-scale-spark-gold: hsla(43, 96%, 56%, 1);
+}
+
+/* SCSS HEX */
+$amber-forge-scale-kiln-black: #1c0f05ff;
+$amber-forge-scale-furnace-brown: #431407ff;
+$amber-forge-scale-forge-ember: #9a3412ff;
+$amber-forge-scale-molten-amber: #f97316ff;
+$amber-forge-scale-spark-gold: #fbbf24ff;
+
+/* SCSS HSL */
+$amber-forge-scale-kiln-black: hsla(26, 70%, 6%, 1);
+$amber-forge-scale-furnace-brown: hsla(13, 81%, 15%, 1);
+$amber-forge-scale-forge-ember: hsla(15, 79%, 34%, 1);
+$amber-forge-scale-molten-amber: hsla(25, 95%, 53%, 1);
+$amber-forge-scale-spark-gold: hsla(43, 96%, 56%, 1);
+
+/* SCSS RGB */
+$amber-forge-scale-kiln-black: rgba(28, 15, 5, 1);
+$amber-forge-scale-furnace-brown: rgba(67, 20, 7, 1);
+$amber-forge-scale-forge-ember: rgba(154, 52, 18, 1);
+$amber-forge-scale-molten-amber: rgba(249, 115, 22, 1);
+$amber-forge-scale-spark-gold: rgba(251, 191, 36, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1c0f05ff, #431407ff, #9a3412ff, #f97316ff, #fbbf24ff);
+$gradient-right: linear-gradient(90deg, #1c0f05ff, #431407ff, #9a3412ff, #f97316ff, #fbbf24ff);
+$gradient-bottom: linear-gradient(180deg, #1c0f05ff, #431407ff, #9a3412ff, #f97316ff, #fbbf24ff);
+$gradient-left: linear-gradient(270deg, #1c0f05ff, #431407ff, #9a3412ff, #f97316ff, #fbbf24ff);
+$gradient-top-right: linear-gradient(45deg, #1c0f05ff, #431407ff, #9a3412ff, #f97316ff, #fbbf24ff);
+$gradient-bottom-right: linear-gradient(135deg, #1c0f05ff, #431407ff, #9a3412ff, #f97316ff, #fbbf24ff);
+$gradient-top-left: linear-gradient(225deg, #1c0f05ff, #431407ff, #9a3412ff, #f97316ff, #fbbf24ff);
+$gradient-bottom-left: linear-gradient(315deg, #1c0f05ff, #431407ff, #9a3412ff, #f97316ff, #fbbf24ff);
+$gradient-radial: radial-gradient(#1c0f05ff, #431407ff, #9a3412ff, #f97316ff, #fbbf24ff);
+
+/* SCSS Map */
+$amber-forge-scale-map: (
+    "amber-forge-scale-kiln-black": #1c0f05ff,
+    "amber-forge-scale-furnace-brown": #431407ff,
+    "amber-forge-scale-forge-ember": #9a3412ff,
+    "amber-forge-scale-molten-amber": #f97316ff,
+    "amber-forge-scale-spark-gold": #fbbf24ff
+);

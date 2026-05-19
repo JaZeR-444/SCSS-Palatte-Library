@@ -1,0 +1,111 @@
+/*---
+id: copper-canyon-atlas
+name: Copper Canyon Atlas
+author: JaZeR-444
+version: 1.0.0
+category: Orange & Natural
+count: 10
+description: A complete copper canyon palette with desert shadows, clay ramps, sandstone warmth, and sunlit editorial surfaces.
+tags:
+  mood:
+  - orange
+  - earthy
+  aesthetic:
+  - Canyon
+  - Desert
+intent: An orange-focused 10-color palette designed for travel, outdoor, editorial.
+suggested_use:
+- Travel
+- Outdoor
+- Editorial
+url: https://coolors.co/1f1308-4a250b-7c2d12-9a3412-c2410c-ea580c-fdba74-fed7aa-fff7ed-ffffff
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--copper-canyon-atlas-canyon-night: #1f1308ff;
+--copper-canyon-atlas-desert-umber: #4a250bff;
+--copper-canyon-atlas-burnt-sienna: #7c2d12ff;
+--copper-canyon-atlas-copper-wall: #9a3412ff;
+--copper-canyon-atlas-clay-trail: #c2410cff;
+--copper-canyon-atlas-mesa-orange: #ea580cff;
+--copper-canyon-atlas-sandstone-sun: #fdba74ff;
+--copper-canyon-atlas-dune-peach: #fed7aaff;
+--copper-canyon-atlas-canyon-mist: #fff7edff;
+--copper-canyon-atlas-sky-paper: #ffffffff;
+
+/* CSS HSL */
+--copper-canyon-atlas-canyon-night: hsla(29, 59%, 8%, 1);
+--copper-canyon-atlas-desert-umber: hsla(25, 74%, 17%, 1);
+--copper-canyon-atlas-burnt-sienna: hsla(15, 75%, 28%, 1);
+--copper-canyon-atlas-copper-wall: hsla(15, 79%, 34%, 1);
+--copper-canyon-atlas-clay-trail: hsla(17, 88%, 40%, 1);
+--copper-canyon-atlas-mesa-orange: hsla(21, 90%, 48%, 1);
+--copper-canyon-atlas-sandstone-sun: hsla(31, 97%, 72%, 1);
+--copper-canyon-atlas-dune-peach: hsla(32, 98%, 83%, 1);
+--copper-canyon-atlas-canyon-mist: hsla(33, 100%, 96%, 1);
+--copper-canyon-atlas-sky-paper: hsla(0, 0%, 100%, 1);
+}
+
+/* SCSS HEX */
+$copper-canyon-atlas-canyon-night: #1f1308ff;
+$copper-canyon-atlas-desert-umber: #4a250bff;
+$copper-canyon-atlas-burnt-sienna: #7c2d12ff;
+$copper-canyon-atlas-copper-wall: #9a3412ff;
+$copper-canyon-atlas-clay-trail: #c2410cff;
+$copper-canyon-atlas-mesa-orange: #ea580cff;
+$copper-canyon-atlas-sandstone-sun: #fdba74ff;
+$copper-canyon-atlas-dune-peach: #fed7aaff;
+$copper-canyon-atlas-canyon-mist: #fff7edff;
+$copper-canyon-atlas-sky-paper: #ffffffff;
+
+/* SCSS HSL */
+$copper-canyon-atlas-canyon-night: hsla(29, 59%, 8%, 1);
+$copper-canyon-atlas-desert-umber: hsla(25, 74%, 17%, 1);
+$copper-canyon-atlas-burnt-sienna: hsla(15, 75%, 28%, 1);
+$copper-canyon-atlas-copper-wall: hsla(15, 79%, 34%, 1);
+$copper-canyon-atlas-clay-trail: hsla(17, 88%, 40%, 1);
+$copper-canyon-atlas-mesa-orange: hsla(21, 90%, 48%, 1);
+$copper-canyon-atlas-sandstone-sun: hsla(31, 97%, 72%, 1);
+$copper-canyon-atlas-dune-peach: hsla(32, 98%, 83%, 1);
+$copper-canyon-atlas-canyon-mist: hsla(33, 100%, 96%, 1);
+$copper-canyon-atlas-sky-paper: hsla(0, 0%, 100%, 1);
+
+/* SCSS RGB */
+$copper-canyon-atlas-canyon-night: rgba(31, 19, 8, 1);
+$copper-canyon-atlas-desert-umber: rgba(74, 37, 11, 1);
+$copper-canyon-atlas-burnt-sienna: rgba(124, 45, 18, 1);
+$copper-canyon-atlas-copper-wall: rgba(154, 52, 18, 1);
+$copper-canyon-atlas-clay-trail: rgba(194, 65, 12, 1);
+$copper-canyon-atlas-mesa-orange: rgba(234, 88, 12, 1);
+$copper-canyon-atlas-sandstone-sun: rgba(253, 186, 116, 1);
+$copper-canyon-atlas-dune-peach: rgba(254, 215, 170, 1);
+$copper-canyon-atlas-canyon-mist: rgba(255, 247, 237, 1);
+$copper-canyon-atlas-sky-paper: rgba(255, 255, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1f1308ff, #4a250bff, #7c2d12ff, #9a3412ff, #c2410cff, #ea580cff, #fdba74ff, #fed7aaff, #fff7edff, #ffffffff);
+$gradient-right: linear-gradient(90deg, #1f1308ff, #4a250bff, #7c2d12ff, #9a3412ff, #c2410cff, #ea580cff, #fdba74ff, #fed7aaff, #fff7edff, #ffffffff);
+$gradient-bottom: linear-gradient(180deg, #1f1308ff, #4a250bff, #7c2d12ff, #9a3412ff, #c2410cff, #ea580cff, #fdba74ff, #fed7aaff, #fff7edff, #ffffffff);
+$gradient-left: linear-gradient(270deg, #1f1308ff, #4a250bff, #7c2d12ff, #9a3412ff, #c2410cff, #ea580cff, #fdba74ff, #fed7aaff, #fff7edff, #ffffffff);
+$gradient-top-right: linear-gradient(45deg, #1f1308ff, #4a250bff, #7c2d12ff, #9a3412ff, #c2410cff, #ea580cff, #fdba74ff, #fed7aaff, #fff7edff, #ffffffff);
+$gradient-bottom-right: linear-gradient(135deg, #1f1308ff, #4a250bff, #7c2d12ff, #9a3412ff, #c2410cff, #ea580cff, #fdba74ff, #fed7aaff, #fff7edff, #ffffffff);
+$gradient-top-left: linear-gradient(225deg, #1f1308ff, #4a250bff, #7c2d12ff, #9a3412ff, #c2410cff, #ea580cff, #fdba74ff, #fed7aaff, #fff7edff, #ffffffff);
+$gradient-bottom-left: linear-gradient(315deg, #1f1308ff, #4a250bff, #7c2d12ff, #9a3412ff, #c2410cff, #ea580cff, #fdba74ff, #fed7aaff, #fff7edff, #ffffffff);
+$gradient-radial: radial-gradient(#1f1308ff, #4a250bff, #7c2d12ff, #9a3412ff, #c2410cff, #ea580cff, #fdba74ff, #fed7aaff, #fff7edff, #ffffffff);
+
+/* SCSS Map */
+$copper-canyon-atlas-map: (
+    "copper-canyon-atlas-canyon-night": #1f1308ff,
+    "copper-canyon-atlas-desert-umber": #4a250bff,
+    "copper-canyon-atlas-burnt-sienna": #7c2d12ff,
+    "copper-canyon-atlas-copper-wall": #9a3412ff,
+    "copper-canyon-atlas-clay-trail": #c2410cff,
+    "copper-canyon-atlas-mesa-orange": #ea580cff,
+    "copper-canyon-atlas-sandstone-sun": #fdba74ff,
+    "copper-canyon-atlas-dune-peach": #fed7aaff,
+    "copper-canyon-atlas-canyon-mist": #fff7edff,
+    "copper-canyon-atlas-sky-paper": #ffffffff
+);

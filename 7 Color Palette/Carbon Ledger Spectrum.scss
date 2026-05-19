@@ -1,0 +1,93 @@
+/*---
+id: carbon-ledger-spectrum
+name: Carbon Ledger Spectrum
+author: JaZeR-444
+version: 1.0.0
+category: Black & Professional
+count: 7
+description: A professional black palette for reports, dashboards, executive tools, and high-contrast product interfaces.
+tags:
+  mood:
+  - black
+  - professional
+  aesthetic:
+  - Finance
+  - Reports
+intent: A black-focused 7-color palette designed for finance, reports, dashboard.
+suggested_use:
+- Finance
+- Reports
+- Dashboard
+url: https://coolors.co/050505-111111-1c1c1e-2c2c2e-3a3a3c-636366-8e8e93
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--carbon-ledger-spectrum-ledger-black: #050505ff;
+--carbon-ledger-spectrum-account-ink: #111111ff;
+--carbon-ledger-spectrum-report-charcoal: #1c1c1eff;
+--carbon-ledger-spectrum-balance-graphite: #2c2c2eff;
+--carbon-ledger-spectrum-metric-steel: #3a3a3cff;
+--carbon-ledger-spectrum-summary-smoke: #636366ff;
+--carbon-ledger-spectrum-sheet-gray: #8e8e93ff;
+
+/* CSS HSL */
+--carbon-ledger-spectrum-ledger-black: hsla(0, 0%, 2%, 1);
+--carbon-ledger-spectrum-account-ink: hsla(0, 0%, 7%, 1);
+--carbon-ledger-spectrum-report-charcoal: hsla(240, 3%, 11%, 1);
+--carbon-ledger-spectrum-balance-graphite: hsla(240, 2%, 18%, 1);
+--carbon-ledger-spectrum-metric-steel: hsla(240, 2%, 23%, 1);
+--carbon-ledger-spectrum-summary-smoke: hsla(240, 1%, 39%, 1);
+--carbon-ledger-spectrum-sheet-gray: hsla(240, 2%, 57%, 1);
+}
+
+/* SCSS HEX */
+$carbon-ledger-spectrum-ledger-black: #050505ff;
+$carbon-ledger-spectrum-account-ink: #111111ff;
+$carbon-ledger-spectrum-report-charcoal: #1c1c1eff;
+$carbon-ledger-spectrum-balance-graphite: #2c2c2eff;
+$carbon-ledger-spectrum-metric-steel: #3a3a3cff;
+$carbon-ledger-spectrum-summary-smoke: #636366ff;
+$carbon-ledger-spectrum-sheet-gray: #8e8e93ff;
+
+/* SCSS HSL */
+$carbon-ledger-spectrum-ledger-black: hsla(0, 0%, 2%, 1);
+$carbon-ledger-spectrum-account-ink: hsla(0, 0%, 7%, 1);
+$carbon-ledger-spectrum-report-charcoal: hsla(240, 3%, 11%, 1);
+$carbon-ledger-spectrum-balance-graphite: hsla(240, 2%, 18%, 1);
+$carbon-ledger-spectrum-metric-steel: hsla(240, 2%, 23%, 1);
+$carbon-ledger-spectrum-summary-smoke: hsla(240, 1%, 39%, 1);
+$carbon-ledger-spectrum-sheet-gray: hsla(240, 2%, 57%, 1);
+
+/* SCSS RGB */
+$carbon-ledger-spectrum-ledger-black: rgba(5, 5, 5, 1);
+$carbon-ledger-spectrum-account-ink: rgba(17, 17, 17, 1);
+$carbon-ledger-spectrum-report-charcoal: rgba(28, 28, 30, 1);
+$carbon-ledger-spectrum-balance-graphite: rgba(44, 44, 46, 1);
+$carbon-ledger-spectrum-metric-steel: rgba(58, 58, 60, 1);
+$carbon-ledger-spectrum-summary-smoke: rgba(99, 99, 102, 1);
+$carbon-ledger-spectrum-sheet-gray: rgba(142, 142, 147, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff, #3a3a3cff, #636366ff, #8e8e93ff);
+$gradient-right: linear-gradient(90deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff, #3a3a3cff, #636366ff, #8e8e93ff);
+$gradient-bottom: linear-gradient(180deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff, #3a3a3cff, #636366ff, #8e8e93ff);
+$gradient-left: linear-gradient(270deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff, #3a3a3cff, #636366ff, #8e8e93ff);
+$gradient-top-right: linear-gradient(45deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff, #3a3a3cff, #636366ff, #8e8e93ff);
+$gradient-bottom-right: linear-gradient(135deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff, #3a3a3cff, #636366ff, #8e8e93ff);
+$gradient-top-left: linear-gradient(225deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff, #3a3a3cff, #636366ff, #8e8e93ff);
+$gradient-bottom-left: linear-gradient(315deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff, #3a3a3cff, #636366ff, #8e8e93ff);
+$gradient-radial: radial-gradient(#050505ff, #111111ff, #1c1c1eff, #2c2c2eff, #3a3a3cff, #636366ff, #8e8e93ff);
+
+/* SCSS Map */
+$carbon-ledger-spectrum-map: (
+    "carbon-ledger-spectrum-ledger-black": #050505ff,
+    "carbon-ledger-spectrum-account-ink": #111111ff,
+    "carbon-ledger-spectrum-report-charcoal": #1c1c1eff,
+    "carbon-ledger-spectrum-balance-graphite": #2c2c2eff,
+    "carbon-ledger-spectrum-metric-steel": #3a3a3cff,
+    "carbon-ledger-spectrum-summary-smoke": #636366ff,
+    "carbon-ledger-spectrum-sheet-gray": #8e8e93ff
+);

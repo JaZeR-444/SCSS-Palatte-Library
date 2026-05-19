@@ -1,5 +1,69 @@
 [
     {
+        "id": "amber-forge-trio",
+        "name": "Amber Forge Trio",
+        "description": "A forged amber palette with kiln darks, molten orange, and hot metal signal tones.",
+        "count": 3,
+        "colors": [
+            {
+                "name": "Amber Forge Trio Kiln Black",
+                "hex": "#1c0f05ff"
+            },
+            {
+                "name": "Amber Forge Trio Forge Ember",
+                "hex": "#7c2d12ff"
+            },
+            {
+                "name": "Amber Forge Trio Molten Amber",
+                "hex": "#f97316ff"
+            }
+        ],
+        "path": "3 Color Palette/Amber Forge Trio.scss",
+        "folder": "3 Color Palette",
+        "tags": {
+            "mood": [
+                "orange",
+                "industrial"
+            ],
+            "aesthetic": [
+                "Forge",
+                "Manufacturing"
+            ]
+        }
+    },
+    {
+        "id": "carbon-ledger-trio",
+        "name": "Carbon Ledger Trio",
+        "description": "A professional black palette for reports, dashboards, executive tools, and high-contrast product interfaces.",
+        "count": 3,
+        "colors": [
+            {
+                "name": "Carbon Ledger Trio Ledger Black",
+                "hex": "#050505ff"
+            },
+            {
+                "name": "Carbon Ledger Trio Account Ink",
+                "hex": "#111111ff"
+            },
+            {
+                "name": "Carbon Ledger Trio Report Charcoal",
+                "hex": "#1c1c1eff"
+            }
+        ],
+        "path": "3 Color Palette/Carbon Ledger Trio.scss",
+        "folder": "3 Color Palette",
+        "tags": {
+            "mood": [
+                "black",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Reports"
+            ]
+        }
+    },
+    {
         "id": "citrus-ink",
         "name": "Citrus Ink",
         "description": "A bold high-contrast trio with ink, lime, and citrus yellow.",
@@ -92,6 +156,38 @@
             "aesthetic": [
                 "Interface",
                 "Accent"
+            ]
+        }
+    },
+    {
+        "id": "crimson-circuit-trio",
+        "name": "Crimson Circuit Trio",
+        "description": "A technical crimson palette with dark interface foundations, alert reds, and clean diagnostic surfaces.",
+        "count": 3,
+        "colors": [
+            {
+                "name": "Crimson Circuit Trio Circuit Black",
+                "hex": "#160607ff"
+            },
+            {
+                "name": "Crimson Circuit Trio Alert Root",
+                "hex": "#2a0a0dff"
+            },
+            {
+                "name": "Crimson Circuit Trio Crimson Board",
+                "hex": "#5f0f14ff"
+            }
+        ],
+        "path": "3 Color Palette/Crimson Circuit Trio.scss",
+        "folder": "3 Color Palette",
+        "tags": {
+            "mood": [
+                "red",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
             ]
         }
     },
@@ -508,6 +604,38 @@
         }
     },
     {
+        "id": "obsidian-circuit-trio",
+        "name": "Obsidian Circuit Trio",
+        "description": "A black-focused technical palette with obsidian UI foundations, graphite steps, and crisp diagnostic highlights.",
+        "count": 3,
+        "colors": [
+            {
+                "name": "Obsidian Circuit Trio Circuit Void",
+                "hex": "#030304ff"
+            },
+            {
+                "name": "Obsidian Circuit Trio Obsidian Root",
+                "hex": "#0a0a0fff"
+            },
+            {
+                "name": "Obsidian Circuit Trio Carbon Board",
+                "hex": "#12121aff"
+            }
+        ],
+        "path": "3 Color Palette/Obsidian Circuit Trio.scss",
+        "folder": "3 Color Palette",
+        "tags": {
+            "mood": [
+                "black",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
         "id": "ocean-depth",
         "name": "Ocean Depth",
         "description": "A vibrant 3-color palette.",
@@ -667,6 +795,38 @@
         }
     },
     {
+        "id": "ruby-ledger-trio",
+        "name": "Ruby Ledger Trio",
+        "description": "A professional red palette for risk states, reporting, dashboards, and confident editorial systems.",
+        "count": 3,
+        "colors": [
+            {
+                "name": "Ruby Ledger Trio Ledger Ink",
+                "hex": "#1f0a0cff"
+            },
+            {
+                "name": "Ruby Ledger Trio Account Ruby",
+                "hex": "#3b0d11ff"
+            },
+            {
+                "name": "Ruby Ledger Trio Report Red",
+                "hex": "#7f1d1dff"
+            }
+        ],
+        "path": "3 Color Palette/Ruby Ledger Trio.scss",
+        "folder": "3 Color Palette",
+        "tags": {
+            "mood": [
+                "red",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Reports"
+            ]
+        }
+    },
+    {
         "id": "sapphire-ledger-trio",
         "name": "Sapphire Ledger Trio",
         "description": "A professional sapphire palette for data-heavy interfaces, reports, and trustworthy product screens.",
@@ -763,6 +923,38 @@
         }
     },
     {
+        "id": "tangerine-signal-trio",
+        "name": "Tangerine Signal Trio",
+        "description": "A punchy tangerine palette with dark UI anchors, vivid signal orange, and clean notification energy.",
+        "count": 3,
+        "colors": [
+            {
+                "name": "Tangerine Signal Trio Signal Night",
+                "hex": "#231006ff"
+            },
+            {
+                "name": "Tangerine Signal Trio Tangerine Core",
+                "hex": "#ea580cff"
+            },
+            {
+                "name": "Tangerine Signal Trio Citrus Flash",
+                "hex": "#fb923cff"
+            }
+        ],
+        "path": "3 Color Palette/Tangerine Signal Trio.scss",
+        "folder": "3 Color Palette",
+        "tags": {
+            "mood": [
+                "orange",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
         "id": "alloy-bloom",
         "name": "Alloy Bloom",
         "description": "A polished alloy palette with magenta bloom and pale surface tones.",
@@ -795,6 +987,42 @@
             "aesthetic": [
                 "Metal",
                 "UI"
+            ]
+        }
+    },
+    {
+        "id": "amber-forge-quartet",
+        "name": "Amber Forge Quartet",
+        "description": "A forged amber palette with dark furnace surfaces, burnt orange, molten amber, and bright spark highlights.",
+        "count": 4,
+        "colors": [
+            {
+                "name": "Amber Forge Quartet Kiln Black",
+                "hex": "#1c0f05ff"
+            },
+            {
+                "name": "Amber Forge Quartet Furnace Brown",
+                "hex": "#431407ff"
+            },
+            {
+                "name": "Amber Forge Quartet Forge Ember",
+                "hex": "#9a3412ff"
+            },
+            {
+                "name": "Amber Forge Quartet Molten Amber",
+                "hex": "#f97316ff"
+            }
+        ],
+        "path": "4 Color Palette/Amber Forge Quartet.scss",
+        "folder": "4 Color Palette",
+        "tags": {
+            "mood": [
+                "orange",
+                "industrial"
+            ],
+            "aesthetic": [
+                "Forge",
+                "Manufacturing"
             ]
         }
     },
@@ -870,6 +1098,42 @@
         }
     },
     {
+        "id": "carbon-ledger-quartet",
+        "name": "Carbon Ledger Quartet",
+        "description": "A professional black palette for reports, dashboards, executive tools, and high-contrast product interfaces.",
+        "count": 4,
+        "colors": [
+            {
+                "name": "Carbon Ledger Quartet Ledger Black",
+                "hex": "#050505ff"
+            },
+            {
+                "name": "Carbon Ledger Quartet Account Ink",
+                "hex": "#111111ff"
+            },
+            {
+                "name": "Carbon Ledger Quartet Report Charcoal",
+                "hex": "#1c1c1eff"
+            },
+            {
+                "name": "Carbon Ledger Quartet Balance Graphite",
+                "hex": "#2c2c2eff"
+            }
+        ],
+        "path": "4 Color Palette/Carbon Ledger Quartet.scss",
+        "folder": "4 Color Palette",
+        "tags": {
+            "mood": [
+                "black",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Reports"
+            ]
+        }
+    },
+    {
         "id": "cobalt-circuit-quartet",
         "name": "Cobalt Circuit Quartet",
         "description": "A technical cobalt palette with dark code surfaces, electric blue states, and crisp highlights.",
@@ -936,6 +1200,42 @@
             ],
             "aesthetic": [
                 "Thematic Collection"
+            ]
+        }
+    },
+    {
+        "id": "crimson-circuit-quartet",
+        "name": "Crimson Circuit Quartet",
+        "description": "A technical crimson palette with dark interface foundations, alert reds, and clean diagnostic surfaces.",
+        "count": 4,
+        "colors": [
+            {
+                "name": "Crimson Circuit Quartet Circuit Black",
+                "hex": "#160607ff"
+            },
+            {
+                "name": "Crimson Circuit Quartet Alert Root",
+                "hex": "#2a0a0dff"
+            },
+            {
+                "name": "Crimson Circuit Quartet Crimson Board",
+                "hex": "#5f0f14ff"
+            },
+            {
+                "name": "Crimson Circuit Quartet Runtime Red",
+                "hex": "#991b1bff"
+            }
+        ],
+        "path": "4 Color Palette/Crimson Circuit Quartet.scss",
+        "folder": "4 Color Palette",
+        "tags": {
+            "mood": [
+                "red",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
             ]
         }
     },
@@ -1407,6 +1707,42 @@
         }
     },
     {
+        "id": "obsidian-circuit-quartet",
+        "name": "Obsidian Circuit Quartet",
+        "description": "A black-focused technical palette with obsidian UI foundations, graphite steps, and crisp diagnostic highlights.",
+        "count": 4,
+        "colors": [
+            {
+                "name": "Obsidian Circuit Quartet Circuit Void",
+                "hex": "#030304ff"
+            },
+            {
+                "name": "Obsidian Circuit Quartet Obsidian Root",
+                "hex": "#0a0a0fff"
+            },
+            {
+                "name": "Obsidian Circuit Quartet Carbon Board",
+                "hex": "#12121aff"
+            },
+            {
+                "name": "Obsidian Circuit Quartet Graphite Panel",
+                "hex": "#1f2937ff"
+            }
+        ],
+        "path": "4 Color Palette/Obsidian Circuit Quartet.scss",
+        "folder": "4 Color Palette",
+        "tags": {
+            "mood": [
+                "black",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
         "id": "retro-pop",
         "name": "Retro Pop",
         "description": "A vibrant 4-color palette.",
@@ -1438,6 +1774,42 @@
             ],
             "aesthetic": [
                 "Retro"
+            ]
+        }
+    },
+    {
+        "id": "ruby-ledger-quartet",
+        "name": "Ruby Ledger Quartet",
+        "description": "A professional red palette for risk states, reporting, dashboards, and confident editorial systems.",
+        "count": 4,
+        "colors": [
+            {
+                "name": "Ruby Ledger Quartet Ledger Ink",
+                "hex": "#1f0a0cff"
+            },
+            {
+                "name": "Ruby Ledger Quartet Account Ruby",
+                "hex": "#3b0d11ff"
+            },
+            {
+                "name": "Ruby Ledger Quartet Report Red",
+                "hex": "#7f1d1dff"
+            },
+            {
+                "name": "Ruby Ledger Quartet Balance Red",
+                "hex": "#b91c1cff"
+            }
+        ],
+        "path": "4 Color Palette/Ruby Ledger Quartet.scss",
+        "folder": "4 Color Palette",
+        "tags": {
+            "mood": [
+                "red",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Reports"
             ]
         }
     },
@@ -1545,6 +1917,42 @@
             ],
             "aesthetic": [
                 "Nature"
+            ]
+        }
+    },
+    {
+        "id": "tangerine-signal-quartet",
+        "name": "Tangerine Signal Quartet",
+        "description": "A punchy tangerine palette with dark anchors, active orange, citrus highlights, and soft peach feedback.",
+        "count": 4,
+        "colors": [
+            {
+                "name": "Tangerine Signal Quartet Signal Night",
+                "hex": "#231006ff"
+            },
+            {
+                "name": "Tangerine Signal Quartet Burnt Routing",
+                "hex": "#7c2d12ff"
+            },
+            {
+                "name": "Tangerine Signal Quartet Tangerine Core",
+                "hex": "#ea580cff"
+            },
+            {
+                "name": "Tangerine Signal Quartet Citrus Flash",
+                "hex": "#fb923cff"
+            }
+        ],
+        "path": "4 Color Palette/Tangerine Signal Quartet.scss",
+        "folder": "4 Color Palette",
+        "tags": {
+            "mood": [
+                "orange",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
             ]
         }
     },
@@ -1660,6 +2068,46 @@
         }
     },
     {
+        "id": "amber-forge-scale",
+        "name": "Amber Forge Scale",
+        "description": "A forged amber palette with sturdy industrial darks, heated midtones, and clear warning highlights.",
+        "count": 5,
+        "colors": [
+            {
+                "name": "Amber Forge Scale Kiln Black",
+                "hex": "#1c0f05ff"
+            },
+            {
+                "name": "Amber Forge Scale Furnace Brown",
+                "hex": "#431407ff"
+            },
+            {
+                "name": "Amber Forge Scale Forge Ember",
+                "hex": "#9a3412ff"
+            },
+            {
+                "name": "Amber Forge Scale Molten Amber",
+                "hex": "#f97316ff"
+            },
+            {
+                "name": "Amber Forge Scale Spark Gold",
+                "hex": "#fbbf24ff"
+            }
+        ],
+        "path": "5 Color Palette/Amber Forge Scale.scss",
+        "folder": "5 Color Palette",
+        "tags": {
+            "mood": [
+                "orange",
+                "industrial"
+            ],
+            "aesthetic": [
+                "Forge",
+                "Manufacturing"
+            ]
+        }
+    },
+    {
         "id": "bold-berry",
         "name": "Bold Berry",
         "description": "A vibrant 5-color palette.",
@@ -1694,6 +2142,46 @@
             ],
             "aesthetic": [
                 "Retro"
+            ]
+        }
+    },
+    {
+        "id": "carbon-ledger-scale",
+        "name": "Carbon Ledger Scale",
+        "description": "A professional black palette for reports, dashboards, executive tools, and high-contrast product interfaces.",
+        "count": 5,
+        "colors": [
+            {
+                "name": "Carbon Ledger Scale Ledger Black",
+                "hex": "#050505ff"
+            },
+            {
+                "name": "Carbon Ledger Scale Account Ink",
+                "hex": "#111111ff"
+            },
+            {
+                "name": "Carbon Ledger Scale Report Charcoal",
+                "hex": "#1c1c1eff"
+            },
+            {
+                "name": "Carbon Ledger Scale Balance Graphite",
+                "hex": "#2c2c2eff"
+            },
+            {
+                "name": "Carbon Ledger Scale Metric Steel",
+                "hex": "#3a3a3cff"
+            }
+        ],
+        "path": "5 Color Palette/Carbon Ledger Scale.scss",
+        "folder": "5 Color Palette",
+        "tags": {
+            "mood": [
+                "black",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Reports"
             ]
         }
     },
@@ -1813,6 +2301,46 @@
             "aesthetic": [
                 "Space",
                 "Pop"
+            ]
+        }
+    },
+    {
+        "id": "crimson-circuit-scale",
+        "name": "Crimson Circuit Scale",
+        "description": "A technical crimson palette with dark interface foundations, alert reds, and clean diagnostic surfaces.",
+        "count": 5,
+        "colors": [
+            {
+                "name": "Crimson Circuit Scale Circuit Black",
+                "hex": "#160607ff"
+            },
+            {
+                "name": "Crimson Circuit Scale Alert Root",
+                "hex": "#2a0a0dff"
+            },
+            {
+                "name": "Crimson Circuit Scale Crimson Board",
+                "hex": "#5f0f14ff"
+            },
+            {
+                "name": "Crimson Circuit Scale Runtime Red",
+                "hex": "#991b1bff"
+            },
+            {
+                "name": "Crimson Circuit Scale Signal Red",
+                "hex": "#dc2626ff"
+            }
+        ],
+        "path": "5 Color Palette/Crimson Circuit Scale.scss",
+        "folder": "5 Color Palette",
+        "tags": {
+            "mood": [
+                "red",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
             ]
         }
     },
@@ -2588,6 +3116,46 @@
         }
     },
     {
+        "id": "obsidian-circuit-scale",
+        "name": "Obsidian Circuit Scale",
+        "description": "A black-focused technical palette with obsidian UI foundations, graphite steps, and crisp diagnostic highlights.",
+        "count": 5,
+        "colors": [
+            {
+                "name": "Obsidian Circuit Scale Circuit Void",
+                "hex": "#030304ff"
+            },
+            {
+                "name": "Obsidian Circuit Scale Obsidian Root",
+                "hex": "#0a0a0fff"
+            },
+            {
+                "name": "Obsidian Circuit Scale Carbon Board",
+                "hex": "#12121aff"
+            },
+            {
+                "name": "Obsidian Circuit Scale Graphite Panel",
+                "hex": "#1f2937ff"
+            },
+            {
+                "name": "Obsidian Circuit Scale Slate Control",
+                "hex": "#374151ff"
+            }
+        ],
+        "path": "5 Color Palette/Obsidian Circuit Scale.scss",
+        "folder": "5 Color Palette",
+        "tags": {
+            "mood": [
+                "black",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
         "id": "paper-lantern",
         "name": "Paper Lantern",
         "description": "A soft lantern palette for gentle editorial layouts and friendly products.",
@@ -2668,6 +3236,46 @@
         }
     },
     {
+        "id": "ruby-ledger-scale",
+        "name": "Ruby Ledger Scale",
+        "description": "A professional red palette for risk states, reporting, dashboards, and confident editorial systems.",
+        "count": 5,
+        "colors": [
+            {
+                "name": "Ruby Ledger Scale Ledger Ink",
+                "hex": "#1f0a0cff"
+            },
+            {
+                "name": "Ruby Ledger Scale Account Ruby",
+                "hex": "#3b0d11ff"
+            },
+            {
+                "name": "Ruby Ledger Scale Report Red",
+                "hex": "#7f1d1dff"
+            },
+            {
+                "name": "Ruby Ledger Scale Balance Red",
+                "hex": "#b91c1cff"
+            },
+            {
+                "name": "Ruby Ledger Scale Metric Red",
+                "hex": "#dc2626ff"
+            }
+        ],
+        "path": "5 Color Palette/Ruby Ledger Scale.scss",
+        "folder": "5 Color Palette",
+        "tags": {
+            "mood": [
+                "red",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Reports"
+            ]
+        }
+    },
+    {
         "id": "sapphire-ledger-scale",
         "name": "Sapphire Ledger Scale",
         "description": "A professional sapphire palette for data-heavy interfaces, reports, and trustworthy product screens.",
@@ -2742,6 +3350,46 @@
             ],
             "aesthetic": [
                 "Soft"
+            ]
+        }
+    },
+    {
+        "id": "tangerine-signal-scale",
+        "name": "Tangerine Signal Scale",
+        "description": "A punchy tangerine palette for product UI states, alerts, badges, and warm conversion surfaces.",
+        "count": 5,
+        "colors": [
+            {
+                "name": "Tangerine Signal Scale Signal Night",
+                "hex": "#231006ff"
+            },
+            {
+                "name": "Tangerine Signal Scale Burnt Routing",
+                "hex": "#7c2d12ff"
+            },
+            {
+                "name": "Tangerine Signal Scale Tangerine Core",
+                "hex": "#ea580cff"
+            },
+            {
+                "name": "Tangerine Signal Scale Citrus Flash",
+                "hex": "#fb923cff"
+            },
+            {
+                "name": "Tangerine Signal Scale Peach Notice",
+                "hex": "#fed7aaff"
+            }
+        ],
+        "path": "5 Color Palette/Tangerine Signal Scale.scss",
+        "folder": "5 Color Palette",
+        "tags": {
+            "mood": [
+                "orange",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
             ]
         }
     },
@@ -2861,6 +3509,50 @@
         }
     },
     {
+        "id": "amber-forge-array",
+        "name": "Amber Forge Array",
+        "description": "A forged amber palette with kiln foundations, copper heat, molten actions, and bright operational highlights.",
+        "count": 6,
+        "colors": [
+            {
+                "name": "Amber Forge Array Kiln Black",
+                "hex": "#1c0f05ff"
+            },
+            {
+                "name": "Amber Forge Array Furnace Brown",
+                "hex": "#431407ff"
+            },
+            {
+                "name": "Amber Forge Array Forge Ember",
+                "hex": "#9a3412ff"
+            },
+            {
+                "name": "Amber Forge Array Copper Heat",
+                "hex": "#c2410cff"
+            },
+            {
+                "name": "Amber Forge Array Molten Amber",
+                "hex": "#f97316ff"
+            },
+            {
+                "name": "Amber Forge Array Spark Gold",
+                "hex": "#fbbf24ff"
+            }
+        ],
+        "path": "6 Color Palette/Amber Forge Array.scss",
+        "folder": "6 Color Palette",
+        "tags": {
+            "mood": [
+                "orange",
+                "industrial"
+            ],
+            "aesthetic": [
+                "Forge",
+                "Manufacturing"
+            ]
+        }
+    },
+    {
         "id": "arctic-night",
         "name": "Arctic Night",
         "description": "A vibrant 6-color palette.",
@@ -2900,6 +3592,50 @@
             ],
             "aesthetic": [
                 "Aquatic"
+            ]
+        }
+    },
+    {
+        "id": "carbon-ledger-array",
+        "name": "Carbon Ledger Array",
+        "description": "A professional black palette for reports, dashboards, executive tools, and high-contrast product interfaces.",
+        "count": 6,
+        "colors": [
+            {
+                "name": "Carbon Ledger Array Ledger Black",
+                "hex": "#050505ff"
+            },
+            {
+                "name": "Carbon Ledger Array Account Ink",
+                "hex": "#111111ff"
+            },
+            {
+                "name": "Carbon Ledger Array Report Charcoal",
+                "hex": "#1c1c1eff"
+            },
+            {
+                "name": "Carbon Ledger Array Balance Graphite",
+                "hex": "#2c2c2eff"
+            },
+            {
+                "name": "Carbon Ledger Array Metric Steel",
+                "hex": "#3a3a3cff"
+            },
+            {
+                "name": "Carbon Ledger Array Summary Smoke",
+                "hex": "#636366ff"
+            }
+        ],
+        "path": "6 Color Palette/Carbon Ledger Array.scss",
+        "folder": "6 Color Palette",
+        "tags": {
+            "mood": [
+                "black",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Reports"
             ]
         }
     },
@@ -3031,6 +3767,50 @@
             "aesthetic": [
                 "Nature",
                 "Interior"
+            ]
+        }
+    },
+    {
+        "id": "crimson-circuit-array",
+        "name": "Crimson Circuit Array",
+        "description": "A technical crimson palette with dark interface foundations, alert reds, and clean diagnostic surfaces.",
+        "count": 6,
+        "colors": [
+            {
+                "name": "Crimson Circuit Array Circuit Black",
+                "hex": "#160607ff"
+            },
+            {
+                "name": "Crimson Circuit Array Alert Root",
+                "hex": "#2a0a0dff"
+            },
+            {
+                "name": "Crimson Circuit Array Crimson Board",
+                "hex": "#5f0f14ff"
+            },
+            {
+                "name": "Crimson Circuit Array Runtime Red",
+                "hex": "#991b1bff"
+            },
+            {
+                "name": "Crimson Circuit Array Signal Red",
+                "hex": "#dc2626ff"
+            },
+            {
+                "name": "Crimson Circuit Array Action Red",
+                "hex": "#ef4444ff"
+            }
+        ],
+        "path": "6 Color Palette/Crimson Circuit Array.scss",
+        "folder": "6 Color Palette",
+        "tags": {
+            "mood": [
+                "red",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
             ]
         }
     },
@@ -3601,6 +4381,50 @@
         }
     },
     {
+        "id": "obsidian-circuit-array",
+        "name": "Obsidian Circuit Array",
+        "description": "A black-focused technical palette with obsidian UI foundations, graphite steps, and crisp diagnostic highlights.",
+        "count": 6,
+        "colors": [
+            {
+                "name": "Obsidian Circuit Array Circuit Void",
+                "hex": "#030304ff"
+            },
+            {
+                "name": "Obsidian Circuit Array Obsidian Root",
+                "hex": "#0a0a0fff"
+            },
+            {
+                "name": "Obsidian Circuit Array Carbon Board",
+                "hex": "#12121aff"
+            },
+            {
+                "name": "Obsidian Circuit Array Graphite Panel",
+                "hex": "#1f2937ff"
+            },
+            {
+                "name": "Obsidian Circuit Array Slate Control",
+                "hex": "#374151ff"
+            },
+            {
+                "name": "Obsidian Circuit Array Smoke Muted",
+                "hex": "#4b5563ff"
+            }
+        ],
+        "path": "6 Color Palette/Obsidian Circuit Array.scss",
+        "folder": "6 Color Palette",
+        "tags": {
+            "mood": [
+                "black",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
         "id": "prairie-signal",
         "name": "Prairie Signal",
         "description": "A prairie-inspired palette with sky, grass, wheat, and signal red.",
@@ -3681,6 +4505,50 @@
             "mood": [],
             "aesthetic": [
                 "Thematic Collection"
+            ]
+        }
+    },
+    {
+        "id": "ruby-ledger-array",
+        "name": "Ruby Ledger Array",
+        "description": "A professional red palette for risk states, reporting, dashboards, and confident editorial systems.",
+        "count": 6,
+        "colors": [
+            {
+                "name": "Ruby Ledger Array Ledger Ink",
+                "hex": "#1f0a0cff"
+            },
+            {
+                "name": "Ruby Ledger Array Account Ruby",
+                "hex": "#3b0d11ff"
+            },
+            {
+                "name": "Ruby Ledger Array Report Red",
+                "hex": "#7f1d1dff"
+            },
+            {
+                "name": "Ruby Ledger Array Balance Red",
+                "hex": "#b91c1cff"
+            },
+            {
+                "name": "Ruby Ledger Array Metric Red",
+                "hex": "#dc2626ff"
+            },
+            {
+                "name": "Ruby Ledger Array Chart Orange",
+                "hex": "#f97316ff"
+            }
+        ],
+        "path": "6 Color Palette/Ruby Ledger Array.scss",
+        "folder": "6 Color Palette",
+        "tags": {
+            "mood": [
+                "red",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Reports"
             ]
         }
     },
@@ -3771,6 +4639,50 @@
         }
     },
     {
+        "id": "tangerine-signal-array",
+        "name": "Tangerine Signal Array",
+        "description": "A punchy tangerine palette with dark UI anchors, warning midtones, vivid CTAs, and soft notification surfaces.",
+        "count": 6,
+        "colors": [
+            {
+                "name": "Tangerine Signal Array Signal Night",
+                "hex": "#231006ff"
+            },
+            {
+                "name": "Tangerine Signal Array Burnt Routing",
+                "hex": "#7c2d12ff"
+            },
+            {
+                "name": "Tangerine Signal Array Alert Orange",
+                "hex": "#c2410cff"
+            },
+            {
+                "name": "Tangerine Signal Array Tangerine Core",
+                "hex": "#ea580cff"
+            },
+            {
+                "name": "Tangerine Signal Array Citrus Flash",
+                "hex": "#fb923cff"
+            },
+            {
+                "name": "Tangerine Signal Array Peach Notice",
+                "hex": "#fed7aaff"
+            }
+        ],
+        "path": "6 Color Palette/Tangerine Signal Array.scss",
+        "folder": "6 Color Palette",
+        "tags": {
+            "mood": [
+                "orange",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
         "id": "verdant-circuit",
         "name": "Verdant Circuit",
         "description": "A green technology palette combining forest depth with electric growth tones.",
@@ -3855,6 +4767,54 @@
             "aesthetic": [
                 "Vineyard",
                 "Design System"
+            ]
+        }
+    },
+    {
+        "id": "amber-forge-spectrum",
+        "name": "Amber Forge Spectrum",
+        "description": "A forged amber palette spanning dark kiln surfaces, oxide panels, hot orange actions, and pale work lights.",
+        "count": 7,
+        "colors": [
+            {
+                "name": "Amber Forge Spectrum Kiln Black",
+                "hex": "#1c0f05ff"
+            },
+            {
+                "name": "Amber Forge Spectrum Furnace Brown",
+                "hex": "#431407ff"
+            },
+            {
+                "name": "Amber Forge Spectrum Forge Ember",
+                "hex": "#9a3412ff"
+            },
+            {
+                "name": "Amber Forge Spectrum Copper Heat",
+                "hex": "#c2410cff"
+            },
+            {
+                "name": "Amber Forge Spectrum Molten Amber",
+                "hex": "#f97316ff"
+            },
+            {
+                "name": "Amber Forge Spectrum Spark Gold",
+                "hex": "#fbbf24ff"
+            },
+            {
+                "name": "Amber Forge Spectrum Worklight Cream",
+                "hex": "#ffedd5ff"
+            }
+        ],
+        "path": "7 Color Palette/Amber Forge Spectrum.scss",
+        "folder": "7 Color Palette",
+        "tags": {
+            "mood": [
+                "orange",
+                "industrial"
+            ],
+            "aesthetic": [
+                "Forge",
+                "Manufacturing"
             ]
         }
     },
@@ -4001,6 +4961,54 @@
         }
     },
     {
+        "id": "carbon-ledger-spectrum",
+        "name": "Carbon Ledger Spectrum",
+        "description": "A professional black palette for reports, dashboards, executive tools, and high-contrast product interfaces.",
+        "count": 7,
+        "colors": [
+            {
+                "name": "Carbon Ledger Spectrum Ledger Black",
+                "hex": "#050505ff"
+            },
+            {
+                "name": "Carbon Ledger Spectrum Account Ink",
+                "hex": "#111111ff"
+            },
+            {
+                "name": "Carbon Ledger Spectrum Report Charcoal",
+                "hex": "#1c1c1eff"
+            },
+            {
+                "name": "Carbon Ledger Spectrum Balance Graphite",
+                "hex": "#2c2c2eff"
+            },
+            {
+                "name": "Carbon Ledger Spectrum Metric Steel",
+                "hex": "#3a3a3cff"
+            },
+            {
+                "name": "Carbon Ledger Spectrum Summary Smoke",
+                "hex": "#636366ff"
+            },
+            {
+                "name": "Carbon Ledger Spectrum Sheet Gray",
+                "hex": "#8e8e93ff"
+            }
+        ],
+        "path": "7 Color Palette/Carbon Ledger Spectrum.scss",
+        "folder": "7 Color Palette",
+        "tags": {
+            "mood": [
+                "black",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Reports"
+            ]
+        }
+    },
+    {
         "id": "cobalt-circuit-spectrum",
         "name": "Cobalt Circuit Spectrum",
         "description": "A technical cobalt palette with dark code surfaces, electric blue states, and crisp highlights.",
@@ -4040,6 +5048,54 @@
         "tags": {
             "mood": [
                 "blue",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
+        "id": "crimson-circuit-spectrum",
+        "name": "Crimson Circuit Spectrum",
+        "description": "A technical crimson palette with dark interface foundations, alert reds, and clean diagnostic surfaces.",
+        "count": 7,
+        "colors": [
+            {
+                "name": "Crimson Circuit Spectrum Circuit Black",
+                "hex": "#160607ff"
+            },
+            {
+                "name": "Crimson Circuit Spectrum Alert Root",
+                "hex": "#2a0a0dff"
+            },
+            {
+                "name": "Crimson Circuit Spectrum Crimson Board",
+                "hex": "#5f0f14ff"
+            },
+            {
+                "name": "Crimson Circuit Spectrum Runtime Red",
+                "hex": "#991b1bff"
+            },
+            {
+                "name": "Crimson Circuit Spectrum Signal Red",
+                "hex": "#dc2626ff"
+            },
+            {
+                "name": "Crimson Circuit Spectrum Action Red",
+                "hex": "#ef4444ff"
+            },
+            {
+                "name": "Crimson Circuit Spectrum Trace Coral",
+                "hex": "#f87171ff"
+            }
+        ],
+        "path": "7 Color Palette/Crimson Circuit Spectrum.scss",
+        "folder": "7 Color Palette",
+        "tags": {
+            "mood": [
+                "red",
                 "technical"
             ],
             "aesthetic": [
@@ -4667,6 +5723,54 @@
         }
     },
     {
+        "id": "obsidian-circuit-spectrum",
+        "name": "Obsidian Circuit Spectrum",
+        "description": "A black-focused technical palette with obsidian UI foundations, graphite steps, and crisp diagnostic highlights.",
+        "count": 7,
+        "colors": [
+            {
+                "name": "Obsidian Circuit Spectrum Circuit Void",
+                "hex": "#030304ff"
+            },
+            {
+                "name": "Obsidian Circuit Spectrum Obsidian Root",
+                "hex": "#0a0a0fff"
+            },
+            {
+                "name": "Obsidian Circuit Spectrum Carbon Board",
+                "hex": "#12121aff"
+            },
+            {
+                "name": "Obsidian Circuit Spectrum Graphite Panel",
+                "hex": "#1f2937ff"
+            },
+            {
+                "name": "Obsidian Circuit Spectrum Slate Control",
+                "hex": "#374151ff"
+            },
+            {
+                "name": "Obsidian Circuit Spectrum Smoke Muted",
+                "hex": "#4b5563ff"
+            },
+            {
+                "name": "Obsidian Circuit Spectrum Trace Gray",
+                "hex": "#9ca3afff"
+            }
+        ],
+        "path": "7 Color Palette/Obsidian Circuit Spectrum.scss",
+        "folder": "7 Color Palette",
+        "tags": {
+            "mood": [
+                "black",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
         "id": "ocean-waves",
         "name": "Ocean Waves",
         "description": "A vibrant 7-color palette.",
@@ -4850,6 +5954,54 @@
         }
     },
     {
+        "id": "ruby-ledger-spectrum",
+        "name": "Ruby Ledger Spectrum",
+        "description": "A professional red palette for risk states, reporting, dashboards, and confident editorial systems.",
+        "count": 7,
+        "colors": [
+            {
+                "name": "Ruby Ledger Spectrum Ledger Ink",
+                "hex": "#1f0a0cff"
+            },
+            {
+                "name": "Ruby Ledger Spectrum Account Ruby",
+                "hex": "#3b0d11ff"
+            },
+            {
+                "name": "Ruby Ledger Spectrum Report Red",
+                "hex": "#7f1d1dff"
+            },
+            {
+                "name": "Ruby Ledger Spectrum Balance Red",
+                "hex": "#b91c1cff"
+            },
+            {
+                "name": "Ruby Ledger Spectrum Metric Red",
+                "hex": "#dc2626ff"
+            },
+            {
+                "name": "Ruby Ledger Spectrum Chart Orange",
+                "hex": "#f97316ff"
+            },
+            {
+                "name": "Ruby Ledger Spectrum Summary Coral",
+                "hex": "#fb923cff"
+            }
+        ],
+        "path": "7 Color Palette/Ruby Ledger Spectrum.scss",
+        "folder": "7 Color Palette",
+        "tags": {
+            "mood": [
+                "red",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Reports"
+            ]
+        }
+    },
+    {
         "id": "sapphire-ledger-spectrum",
         "name": "Sapphire Ledger Spectrum",
         "description": "A professional sapphire palette for data-heavy interfaces, reports, and trustworthy product screens.",
@@ -4898,6 +6050,54 @@
         }
     },
     {
+        "id": "tangerine-signal-spectrum",
+        "name": "Tangerine Signal Spectrum",
+        "description": "A punchy tangerine spectrum with dark anchors, energetic orange ramps, and soft readable UI surfaces.",
+        "count": 7,
+        "colors": [
+            {
+                "name": "Tangerine Signal Spectrum Signal Night",
+                "hex": "#231006ff"
+            },
+            {
+                "name": "Tangerine Signal Spectrum Burnt Routing",
+                "hex": "#7c2d12ff"
+            },
+            {
+                "name": "Tangerine Signal Spectrum Alert Orange",
+                "hex": "#c2410cff"
+            },
+            {
+                "name": "Tangerine Signal Spectrum Tangerine Core",
+                "hex": "#ea580cff"
+            },
+            {
+                "name": "Tangerine Signal Spectrum Citrus Flash",
+                "hex": "#fb923cff"
+            },
+            {
+                "name": "Tangerine Signal Spectrum Peach Notice",
+                "hex": "#fed7aaff"
+            },
+            {
+                "name": "Tangerine Signal Spectrum Cream Toast",
+                "hex": "#fff7edff"
+            }
+        ],
+        "path": "7 Color Palette/Tangerine Signal Spectrum.scss",
+        "folder": "7 Color Palette",
+        "tags": {
+            "mood": [
+                "orange",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
         "id": "ultraviolet-bloom",
         "name": "Ultraviolet Bloom",
         "description": "An expressive ultraviolet palette with deep purple foundations, bloom tones, and warm white.",
@@ -4942,6 +6142,58 @@
             "aesthetic": [
                 "Ultraviolet",
                 "Bloom"
+            ]
+        }
+    },
+    {
+        "id": "amber-forge-system",
+        "name": "Amber Forge System",
+        "description": "A forged amber palette for industrial interfaces, with kiln darks, copper controls, safety orange, and warm surfaces.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Amber Forge System Kiln Black",
+                "hex": "#1c0f05ff"
+            },
+            {
+                "name": "Amber Forge System Furnace Brown",
+                "hex": "#431407ff"
+            },
+            {
+                "name": "Amber Forge System Oxide Panel",
+                "hex": "#7c2d12ff"
+            },
+            {
+                "name": "Amber Forge System Forge Ember",
+                "hex": "#9a3412ff"
+            },
+            {
+                "name": "Amber Forge System Copper Heat",
+                "hex": "#c2410cff"
+            },
+            {
+                "name": "Amber Forge System Molten Amber",
+                "hex": "#f97316ff"
+            },
+            {
+                "name": "Amber Forge System Spark Gold",
+                "hex": "#fbbf24ff"
+            },
+            {
+                "name": "Amber Forge System Worklight Cream",
+                "hex": "#ffedd5ff"
+            }
+        ],
+        "path": "8 Color Palette/Amber Forge System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "orange",
+                "industrial"
+            ],
+            "aesthetic": [
+                "Forge",
+                "Manufacturing"
             ]
         }
     },
@@ -5102,6 +6354,58 @@
         }
     },
     {
+        "id": "carbon-ledger-system",
+        "name": "Carbon Ledger System",
+        "description": "A professional black palette for reports, dashboards, executive tools, and high-contrast product interfaces.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Carbon Ledger System Ledger Black",
+                "hex": "#050505ff"
+            },
+            {
+                "name": "Carbon Ledger System Account Ink",
+                "hex": "#111111ff"
+            },
+            {
+                "name": "Carbon Ledger System Report Charcoal",
+                "hex": "#1c1c1eff"
+            },
+            {
+                "name": "Carbon Ledger System Balance Graphite",
+                "hex": "#2c2c2eff"
+            },
+            {
+                "name": "Carbon Ledger System Metric Steel",
+                "hex": "#3a3a3cff"
+            },
+            {
+                "name": "Carbon Ledger System Summary Smoke",
+                "hex": "#636366ff"
+            },
+            {
+                "name": "Carbon Ledger System Sheet Gray",
+                "hex": "#8e8e93ff"
+            },
+            {
+                "name": "Carbon Ledger System Panel Line",
+                "hex": "#c7c7ccff"
+            }
+        ],
+        "path": "8 Color Palette/Carbon Ledger System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "black",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Reports"
+            ]
+        }
+    },
+    {
         "id": "civic-sunrise",
         "name": "Civic Sunrise",
         "description": "A calm civic UI palette with deep blues, sunrise accents, and neutral surfaces.",
@@ -5256,6 +6560,58 @@
         }
     },
     {
+        "id": "copper-canyon-system",
+        "name": "Copper Canyon System",
+        "description": "A copper canyon palette with desert shadows, clay oranges, sandstone midtones, and sunlit warm surfaces.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Copper Canyon System Canyon Night",
+                "hex": "#1f1308ff"
+            },
+            {
+                "name": "Copper Canyon System Desert Umber",
+                "hex": "#4a250bff"
+            },
+            {
+                "name": "Copper Canyon System Copper Wall",
+                "hex": "#9a3412ff"
+            },
+            {
+                "name": "Copper Canyon System Clay Trail",
+                "hex": "#c2410cff"
+            },
+            {
+                "name": "Copper Canyon System Mesa Orange",
+                "hex": "#ea580cff"
+            },
+            {
+                "name": "Copper Canyon System Sandstone Sun",
+                "hex": "#fdba74ff"
+            },
+            {
+                "name": "Copper Canyon System Dune Peach",
+                "hex": "#fed7aaff"
+            },
+            {
+                "name": "Copper Canyon System Canyon Mist",
+                "hex": "#fff7edff"
+            }
+        ],
+        "path": "8 Color Palette/Copper Canyon System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "orange",
+                "earthy"
+            ],
+            "aesthetic": [
+                "Canyon",
+                "Desert"
+            ]
+        }
+    },
+    {
         "id": "copper-nightfall",
         "name": "Copper Nightfall",
         "description": "A premium night palette with copper heat, rose light, and soft neutrals.",
@@ -5304,6 +6660,58 @@
             "aesthetic": [
                 "Luxury",
                 "Night"
+            ]
+        }
+    },
+    {
+        "id": "crimson-circuit-system",
+        "name": "Crimson Circuit System",
+        "description": "A technical crimson palette with dark interface foundations, alert reds, and clean diagnostic surfaces.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Crimson Circuit System Circuit Black",
+                "hex": "#160607ff"
+            },
+            {
+                "name": "Crimson Circuit System Alert Root",
+                "hex": "#2a0a0dff"
+            },
+            {
+                "name": "Crimson Circuit System Crimson Board",
+                "hex": "#5f0f14ff"
+            },
+            {
+                "name": "Crimson Circuit System Runtime Red",
+                "hex": "#991b1bff"
+            },
+            {
+                "name": "Crimson Circuit System Signal Red",
+                "hex": "#dc2626ff"
+            },
+            {
+                "name": "Crimson Circuit System Action Red",
+                "hex": "#ef4444ff"
+            },
+            {
+                "name": "Crimson Circuit System Trace Coral",
+                "hex": "#f87171ff"
+            },
+            {
+                "name": "Crimson Circuit System Debug Rose",
+                "hex": "#fecacaff"
+            }
+        ],
+        "path": "8 Color Palette/Crimson Circuit System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "red",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
             ]
         }
     },
@@ -5504,6 +6912,58 @@
             "aesthetic": [
                 "Cyber",
                 "Mauve"
+            ]
+        }
+    },
+    {
+        "id": "ember-market-system",
+        "name": "Ember Market System",
+        "description": "A warm commercial red palette with ember darks, retail reds, orange warmth, and soft purchase surfaces.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Ember Market System Market Night",
+                "hex": "#1c0b0bff"
+            },
+            {
+                "name": "Ember Market System Ember Depth",
+                "hex": "#3f1111ff"
+            },
+            {
+                "name": "Ember Market System Stall Red",
+                "hex": "#7f1d1dff"
+            },
+            {
+                "name": "Ember Market System Sale Ruby",
+                "hex": "#b42318ff"
+            },
+            {
+                "name": "Ember Market System Action Red",
+                "hex": "#d92d20ff"
+            },
+            {
+                "name": "Ember Market System Hot Coral",
+                "hex": "#f04438ff"
+            },
+            {
+                "name": "Ember Market System Market Orange",
+                "hex": "#f79009ff"
+            },
+            {
+                "name": "Ember Market System Receipt Gold",
+                "hex": "#fec84bff"
+            }
+        ],
+        "path": "8 Color Palette/Ember Market System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "red",
+                "warm"
+            ],
+            "aesthetic": [
+                "Market",
+                "Retail"
             ]
         }
     },
@@ -5768,6 +7228,58 @@
         }
     },
     {
+        "id": "ink-studio-system",
+        "name": "Ink Studio System",
+        "description": "An editorial black palette with ink foundations, warm charcoal, paper neutrals, and gallery-ready contrast.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Ink Studio System Studio Black",
+                "hex": "#070707ff"
+            },
+            {
+                "name": "Ink Studio System Ink Depth",
+                "hex": "#14110fff"
+            },
+            {
+                "name": "Ink Studio System Charcoal Warm",
+                "hex": "#23201dff"
+            },
+            {
+                "name": "Ink Studio System Gallery Graphite",
+                "hex": "#34312dff"
+            },
+            {
+                "name": "Ink Studio System Type Stone",
+                "hex": "#57534eff"
+            },
+            {
+                "name": "Ink Studio System Caption Smoke",
+                "hex": "#78716cff"
+            },
+            {
+                "name": "Ink Studio System Border Stone",
+                "hex": "#a8a29eff"
+            },
+            {
+                "name": "Ink Studio System Paper Line",
+                "hex": "#d6d3d1ff"
+            }
+        ],
+        "path": "8 Color Palette/Ink Studio System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "black",
+                "editorial"
+            ],
+            "aesthetic": [
+                "Studio",
+                "Portfolio"
+            ]
+        }
+    },
+    {
         "id": "lavender-ledger",
         "name": "Lavender Ledger",
         "description": "A professional purple UI scale with indigo anchors, lavender states, and clean surfaces.",
@@ -5868,6 +7380,58 @@
             "aesthetic": [
                 "Lilac",
                 "Frost"
+            ]
+        }
+    },
+    {
+        "id": "marigold-commerce-system",
+        "name": "Marigold Commerce System",
+        "description": "A marigold commercial palette with espresso anchors, cart oranges, golden highlights, and warm checkout surfaces.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Marigold Commerce System Espresso Cart",
+                "hex": "#1c0a02ff"
+            },
+            {
+                "name": "Marigold Commerce System Roast Brown",
+                "hex": "#431407ff"
+            },
+            {
+                "name": "Marigold Commerce System Cart Orange",
+                "hex": "#c2410cff"
+            },
+            {
+                "name": "Marigold Commerce System Checkout Tangerine",
+                "hex": "#f97316ff"
+            },
+            {
+                "name": "Marigold Commerce System Marigold Deal",
+                "hex": "#f59e0bff"
+            },
+            {
+                "name": "Marigold Commerce System Honey Ticket",
+                "hex": "#facc15ff"
+            },
+            {
+                "name": "Marigold Commerce System Peach Receipt",
+                "hex": "#fed7aaff"
+            },
+            {
+                "name": "Marigold Commerce System Cream Checkout",
+                "hex": "#fffbebff"
+            }
+        ],
+        "path": "8 Color Palette/Marigold Commerce System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "orange",
+                "commercial"
+            ],
+            "aesthetic": [
+                "Commerce",
+                "Retail"
             ]
         }
     },
@@ -6076,6 +7640,162 @@
         }
     },
     {
+        "id": "obsidian-circuit-system",
+        "name": "Obsidian Circuit System",
+        "description": "A black-focused technical palette with obsidian UI foundations, graphite steps, and crisp diagnostic highlights.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Obsidian Circuit System Circuit Void",
+                "hex": "#030304ff"
+            },
+            {
+                "name": "Obsidian Circuit System Obsidian Root",
+                "hex": "#0a0a0fff"
+            },
+            {
+                "name": "Obsidian Circuit System Carbon Board",
+                "hex": "#12121aff"
+            },
+            {
+                "name": "Obsidian Circuit System Graphite Panel",
+                "hex": "#1f2937ff"
+            },
+            {
+                "name": "Obsidian Circuit System Slate Control",
+                "hex": "#374151ff"
+            },
+            {
+                "name": "Obsidian Circuit System Smoke Muted",
+                "hex": "#4b5563ff"
+            },
+            {
+                "name": "Obsidian Circuit System Trace Gray",
+                "hex": "#9ca3afff"
+            },
+            {
+                "name": "Obsidian Circuit System Debug Line",
+                "hex": "#d1d5dbff"
+            }
+        ],
+        "path": "8 Color Palette/Obsidian Circuit System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "black",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
+        "id": "rose-signal-system",
+        "name": "Rose Signal System",
+        "description": "An expressive rose-red palette with deep berry structure, vivid signal tones, and soft pink surfaces.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Rose Signal System Signal Black",
+                "hex": "#17070dff"
+            },
+            {
+                "name": "Rose Signal System Rose Depth",
+                "hex": "#3f0d1eff"
+            },
+            {
+                "name": "Rose Signal System Berry Core",
+                "hex": "#831843ff"
+            },
+            {
+                "name": "Rose Signal System Signal Ruby",
+                "hex": "#be123cff"
+            },
+            {
+                "name": "Rose Signal System Rose Action",
+                "hex": "#e11d48ff"
+            },
+            {
+                "name": "Rose Signal System Vivid Rose",
+                "hex": "#f43f5eff"
+            },
+            {
+                "name": "Rose Signal System Petal Red",
+                "hex": "#fb7185ff"
+            },
+            {
+                "name": "Rose Signal System Soft Petal",
+                "hex": "#fecdd3ff"
+            }
+        ],
+        "path": "8 Color Palette/Rose Signal System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "red",
+                "expressive"
+            ],
+            "aesthetic": [
+                "Rose",
+                "Interface"
+            ]
+        }
+    },
+    {
+        "id": "ruby-ledger-system",
+        "name": "Ruby Ledger System",
+        "description": "A professional red palette for risk states, reporting, dashboards, and confident editorial systems.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Ruby Ledger System Ledger Ink",
+                "hex": "#1f0a0cff"
+            },
+            {
+                "name": "Ruby Ledger System Account Ruby",
+                "hex": "#3b0d11ff"
+            },
+            {
+                "name": "Ruby Ledger System Report Red",
+                "hex": "#7f1d1dff"
+            },
+            {
+                "name": "Ruby Ledger System Balance Red",
+                "hex": "#b91c1cff"
+            },
+            {
+                "name": "Ruby Ledger System Metric Red",
+                "hex": "#dc2626ff"
+            },
+            {
+                "name": "Ruby Ledger System Chart Orange",
+                "hex": "#f97316ff"
+            },
+            {
+                "name": "Ruby Ledger System Summary Coral",
+                "hex": "#fb923cff"
+            },
+            {
+                "name": "Ruby Ledger System Panel Peach",
+                "hex": "#fed7aaff"
+            }
+        ],
+        "path": "8 Color Palette/Ruby Ledger System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "red",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Reports"
+            ]
+        }
+    },
+    {
         "id": "sapphire-ledger-system",
         "name": "Sapphire Ledger System",
         "description": "A professional sapphire palette for data-heavy interfaces, reports, and trustworthy product screens.",
@@ -6176,6 +7896,58 @@
             "aesthetic": [
                 "Finance",
                 "Solar"
+            ]
+        }
+    },
+    {
+        "id": "tangerine-signal-system",
+        "name": "Tangerine Signal System",
+        "description": "A punchy tangerine UI system for notifications, CTAs, warm badges, and clean product surfaces.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Tangerine Signal System Signal Night",
+                "hex": "#231006ff"
+            },
+            {
+                "name": "Tangerine Signal System Burnt Routing",
+                "hex": "#7c2d12ff"
+            },
+            {
+                "name": "Tangerine Signal System Alert Orange",
+                "hex": "#c2410cff"
+            },
+            {
+                "name": "Tangerine Signal System Tangerine Core",
+                "hex": "#ea580cff"
+            },
+            {
+                "name": "Tangerine Signal System Citrus Flash",
+                "hex": "#fb923cff"
+            },
+            {
+                "name": "Tangerine Signal System Peach Notice",
+                "hex": "#fed7aaff"
+            },
+            {
+                "name": "Tangerine Signal System Cream Toast",
+                "hex": "#fff7edff"
+            },
+            {
+                "name": "Tangerine Signal System White Signal",
+                "hex": "#ffffffff"
+            }
+        ],
+        "path": "8 Color Palette/Tangerine Signal System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "orange",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
             ]
         }
     },
@@ -6334,6 +8106,58 @@
         }
     },
     {
+        "id": "void-chrome-system",
+        "name": "Void Chrome System",
+        "description": "A futuristic black palette with void darks, chrome grays, cool highlights, and clean luminous surfaces.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Void Chrome System Void Black",
+                "hex": "#000000ff"
+            },
+            {
+                "name": "Void Chrome System Chrome Night",
+                "hex": "#070b12ff"
+            },
+            {
+                "name": "Void Chrome System Deep Frame",
+                "hex": "#111827ff"
+            },
+            {
+                "name": "Void Chrome System Metal Panel",
+                "hex": "#1f2937ff"
+            },
+            {
+                "name": "Void Chrome System Blue Graphite",
+                "hex": "#334155ff"
+            },
+            {
+                "name": "Void Chrome System Chrome Muted",
+                "hex": "#64748bff"
+            },
+            {
+                "name": "Void Chrome System Cool Smoke",
+                "hex": "#94a3b8ff"
+            },
+            {
+                "name": "Void Chrome System Edge Light",
+                "hex": "#cbd5e1ff"
+            }
+        ],
+        "path": "8 Color Palette/Void Chrome System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "black",
+                "futuristic"
+            ],
+            "aesthetic": [
+                "Chrome",
+                "Cyber"
+            ]
+        }
+    },
+    {
         "id": "warm-sunset",
         "name": "Warm Sunset",
         "description": "A vibrant 8-color palette.",
@@ -6380,6 +8204,62 @@
             ],
             "aesthetic": [
                 "Vibrant"
+            ]
+        }
+    },
+    {
+        "id": "amber-forge-matrix",
+        "name": "Amber Forge Matrix",
+        "description": "A forged amber matrix with deep furnace neutrals, hot orange ramps, alert highlights, and pale work surfaces.",
+        "count": 9,
+        "colors": [
+            {
+                "name": "Amber Forge Matrix Kiln Black",
+                "hex": "#1c0f05ff"
+            },
+            {
+                "name": "Amber Forge Matrix Furnace Brown",
+                "hex": "#431407ff"
+            },
+            {
+                "name": "Amber Forge Matrix Oxide Panel",
+                "hex": "#7c2d12ff"
+            },
+            {
+                "name": "Amber Forge Matrix Forge Ember",
+                "hex": "#9a3412ff"
+            },
+            {
+                "name": "Amber Forge Matrix Copper Heat",
+                "hex": "#c2410cff"
+            },
+            {
+                "name": "Amber Forge Matrix Molten Amber",
+                "hex": "#f97316ff"
+            },
+            {
+                "name": "Amber Forge Matrix Spark Gold",
+                "hex": "#fbbf24ff"
+            },
+            {
+                "name": "Amber Forge Matrix Worklight Cream",
+                "hex": "#ffedd5ff"
+            },
+            {
+                "name": "Amber Forge Matrix Ash White",
+                "hex": "#fff7edff"
+            }
+        ],
+        "path": "9 Color Palette/Amber Forge Matrix.scss",
+        "folder": "9 Color Palette",
+        "tags": {
+            "mood": [
+                "orange",
+                "industrial"
+            ],
+            "aesthetic": [
+                "Forge",
+                "Manufacturing"
             ]
         }
     },
@@ -6551,6 +8431,62 @@
         }
     },
     {
+        "id": "carbon-ledger-matrix",
+        "name": "Carbon Ledger Matrix",
+        "description": "A professional black palette for reports, dashboards, executive tools, and high-contrast product interfaces.",
+        "count": 9,
+        "colors": [
+            {
+                "name": "Carbon Ledger Matrix Ledger Black",
+                "hex": "#050505ff"
+            },
+            {
+                "name": "Carbon Ledger Matrix Account Ink",
+                "hex": "#111111ff"
+            },
+            {
+                "name": "Carbon Ledger Matrix Report Charcoal",
+                "hex": "#1c1c1eff"
+            },
+            {
+                "name": "Carbon Ledger Matrix Balance Graphite",
+                "hex": "#2c2c2eff"
+            },
+            {
+                "name": "Carbon Ledger Matrix Metric Steel",
+                "hex": "#3a3a3cff"
+            },
+            {
+                "name": "Carbon Ledger Matrix Summary Smoke",
+                "hex": "#636366ff"
+            },
+            {
+                "name": "Carbon Ledger Matrix Sheet Gray",
+                "hex": "#8e8e93ff"
+            },
+            {
+                "name": "Carbon Ledger Matrix Panel Line",
+                "hex": "#c7c7ccff"
+            },
+            {
+                "name": "Carbon Ledger Matrix Paper Light",
+                "hex": "#f2f2f7ff"
+            }
+        ],
+        "path": "9 Color Palette/Carbon Ledger Matrix.scss",
+        "folder": "9 Color Palette",
+        "tags": {
+            "mood": [
+                "black",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Reports"
+            ]
+        }
+    },
+    {
         "id": "celestial-workshop",
         "name": "Celestial Workshop",
         "description": "A cosmic maker palette with workshop neutrals and vivid celestial accents.",
@@ -6654,6 +8590,62 @@
         "tags": {
             "mood": [
                 "blue",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
+        "id": "crimson-circuit-matrix",
+        "name": "Crimson Circuit Matrix",
+        "description": "A technical crimson palette with dark interface foundations, alert reds, and clean diagnostic surfaces.",
+        "count": 9,
+        "colors": [
+            {
+                "name": "Crimson Circuit Matrix Circuit Black",
+                "hex": "#160607ff"
+            },
+            {
+                "name": "Crimson Circuit Matrix Alert Root",
+                "hex": "#2a0a0dff"
+            },
+            {
+                "name": "Crimson Circuit Matrix Crimson Board",
+                "hex": "#5f0f14ff"
+            },
+            {
+                "name": "Crimson Circuit Matrix Runtime Red",
+                "hex": "#991b1bff"
+            },
+            {
+                "name": "Crimson Circuit Matrix Signal Red",
+                "hex": "#dc2626ff"
+            },
+            {
+                "name": "Crimson Circuit Matrix Action Red",
+                "hex": "#ef4444ff"
+            },
+            {
+                "name": "Crimson Circuit Matrix Trace Coral",
+                "hex": "#f87171ff"
+            },
+            {
+                "name": "Crimson Circuit Matrix Debug Rose",
+                "hex": "#fecacaff"
+            },
+            {
+                "name": "Crimson Circuit Matrix Panel Red",
+                "hex": "#fee2e2ff"
+            }
+        ],
+        "path": "9 Color Palette/Crimson Circuit Matrix.scss",
+        "folder": "9 Color Palette",
+        "tags": {
+            "mood": [
+                "red",
                 "technical"
             ],
             "aesthetic": [
@@ -7552,6 +9544,62 @@
         }
     },
     {
+        "id": "obsidian-circuit-matrix",
+        "name": "Obsidian Circuit Matrix",
+        "description": "A black-focused technical palette with obsidian UI foundations, graphite steps, and crisp diagnostic highlights.",
+        "count": 9,
+        "colors": [
+            {
+                "name": "Obsidian Circuit Matrix Circuit Void",
+                "hex": "#030304ff"
+            },
+            {
+                "name": "Obsidian Circuit Matrix Obsidian Root",
+                "hex": "#0a0a0fff"
+            },
+            {
+                "name": "Obsidian Circuit Matrix Carbon Board",
+                "hex": "#12121aff"
+            },
+            {
+                "name": "Obsidian Circuit Matrix Graphite Panel",
+                "hex": "#1f2937ff"
+            },
+            {
+                "name": "Obsidian Circuit Matrix Slate Control",
+                "hex": "#374151ff"
+            },
+            {
+                "name": "Obsidian Circuit Matrix Smoke Muted",
+                "hex": "#4b5563ff"
+            },
+            {
+                "name": "Obsidian Circuit Matrix Trace Gray",
+                "hex": "#9ca3afff"
+            },
+            {
+                "name": "Obsidian Circuit Matrix Debug Line",
+                "hex": "#d1d5dbff"
+            },
+            {
+                "name": "Obsidian Circuit Matrix Terminal Mist",
+                "hex": "#f3f4f6ff"
+            }
+        ],
+        "path": "9 Color Palette/Obsidian Circuit Matrix.scss",
+        "folder": "9 Color Palette",
+        "tags": {
+            "mood": [
+                "black",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
         "id": "ocean-blue-serenity",
         "name": "Ocean Blue Serenity",
         "description": "A vibrant 9-color palette.",
@@ -7714,6 +9762,62 @@
             ],
             "aesthetic": [
                 "Nature"
+            ]
+        }
+    },
+    {
+        "id": "ruby-ledger-matrix",
+        "name": "Ruby Ledger Matrix",
+        "description": "A professional red palette for risk states, reporting, dashboards, and confident editorial systems.",
+        "count": 9,
+        "colors": [
+            {
+                "name": "Ruby Ledger Matrix Ledger Ink",
+                "hex": "#1f0a0cff"
+            },
+            {
+                "name": "Ruby Ledger Matrix Account Ruby",
+                "hex": "#3b0d11ff"
+            },
+            {
+                "name": "Ruby Ledger Matrix Report Red",
+                "hex": "#7f1d1dff"
+            },
+            {
+                "name": "Ruby Ledger Matrix Balance Red",
+                "hex": "#b91c1cff"
+            },
+            {
+                "name": "Ruby Ledger Matrix Metric Red",
+                "hex": "#dc2626ff"
+            },
+            {
+                "name": "Ruby Ledger Matrix Chart Orange",
+                "hex": "#f97316ff"
+            },
+            {
+                "name": "Ruby Ledger Matrix Summary Coral",
+                "hex": "#fb923cff"
+            },
+            {
+                "name": "Ruby Ledger Matrix Panel Peach",
+                "hex": "#fed7aaff"
+            },
+            {
+                "name": "Ruby Ledger Matrix Sheet Blush",
+                "hex": "#fff1e6ff"
+            }
+        ],
+        "path": "9 Color Palette/Ruby Ledger Matrix.scss",
+        "folder": "9 Color Palette",
+        "tags": {
+            "mood": [
+                "red",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Reports"
             ]
         }
     },
@@ -7884,6 +9988,62 @@
         }
     },
     {
+        "id": "tangerine-signal-matrix",
+        "name": "Tangerine Signal Matrix",
+        "description": "A punchy tangerine matrix with dark UI anchors, alert ramp colors, peach panels, and clean notification surfaces.",
+        "count": 9,
+        "colors": [
+            {
+                "name": "Tangerine Signal Matrix Signal Night",
+                "hex": "#231006ff"
+            },
+            {
+                "name": "Tangerine Signal Matrix Burnt Routing",
+                "hex": "#7c2d12ff"
+            },
+            {
+                "name": "Tangerine Signal Matrix Alert Orange",
+                "hex": "#c2410cff"
+            },
+            {
+                "name": "Tangerine Signal Matrix Tangerine Core",
+                "hex": "#ea580cff"
+            },
+            {
+                "name": "Tangerine Signal Matrix Citrus Flash",
+                "hex": "#fb923cff"
+            },
+            {
+                "name": "Tangerine Signal Matrix Peach Notice",
+                "hex": "#fed7aaff"
+            },
+            {
+                "name": "Tangerine Signal Matrix Cream Toast",
+                "hex": "#fff7edff"
+            },
+            {
+                "name": "Tangerine Signal Matrix White Signal",
+                "hex": "#ffffffff"
+            },
+            {
+                "name": "Tangerine Signal Matrix Cool Ink",
+                "hex": "#111827ff"
+            }
+        ],
+        "path": "9 Color Palette/Tangerine Signal Matrix.scss",
+        "folder": "9 Color Palette",
+        "tags": {
+            "mood": [
+                "orange",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
         "id": "tropical-paradise",
         "name": "Tropical Paradise",
         "description": "A vibrant 9-color palette.",
@@ -7989,6 +10149,66 @@
             ],
             "aesthetic": [
                 "Professional"
+            ]
+        }
+    },
+    {
+        "id": "amber-forge-atlas",
+        "name": "Amber Forge Atlas",
+        "description": "A complete forged amber atlas for industrial systems, pairing heavy darks with oxide, copper, amber, gold, and warm surfaces.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Amber Forge Atlas Kiln Black",
+                "hex": "#1c0f05ff"
+            },
+            {
+                "name": "Amber Forge Atlas Furnace Brown",
+                "hex": "#431407ff"
+            },
+            {
+                "name": "Amber Forge Atlas Oxide Panel",
+                "hex": "#7c2d12ff"
+            },
+            {
+                "name": "Amber Forge Atlas Forge Ember",
+                "hex": "#9a3412ff"
+            },
+            {
+                "name": "Amber Forge Atlas Copper Heat",
+                "hex": "#c2410cff"
+            },
+            {
+                "name": "Amber Forge Atlas Molten Amber",
+                "hex": "#f97316ff"
+            },
+            {
+                "name": "Amber Forge Atlas Spark Gold",
+                "hex": "#fbbf24ff"
+            },
+            {
+                "name": "Amber Forge Atlas Worklight Cream",
+                "hex": "#ffedd5ff"
+            },
+            {
+                "name": "Amber Forge Atlas Ash White",
+                "hex": "#fff7edff"
+            },
+            {
+                "name": "Amber Forge Atlas Signal White",
+                "hex": "#ffffffff"
+            }
+        ],
+        "path": "10 Color Palette/Amber Forge Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "orange",
+                "industrial"
+            ],
+            "aesthetic": [
+                "Forge",
+                "Manufacturing"
             ]
         }
     },
@@ -8232,6 +10452,66 @@
         }
     },
     {
+        "id": "carbon-ledger-atlas",
+        "name": "Carbon Ledger Atlas",
+        "description": "A professional black palette for reports, dashboards, executive tools, and high-contrast product interfaces.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Carbon Ledger Atlas Ledger Black",
+                "hex": "#050505ff"
+            },
+            {
+                "name": "Carbon Ledger Atlas Account Ink",
+                "hex": "#111111ff"
+            },
+            {
+                "name": "Carbon Ledger Atlas Report Charcoal",
+                "hex": "#1c1c1eff"
+            },
+            {
+                "name": "Carbon Ledger Atlas Balance Graphite",
+                "hex": "#2c2c2eff"
+            },
+            {
+                "name": "Carbon Ledger Atlas Metric Steel",
+                "hex": "#3a3a3cff"
+            },
+            {
+                "name": "Carbon Ledger Atlas Summary Smoke",
+                "hex": "#636366ff"
+            },
+            {
+                "name": "Carbon Ledger Atlas Sheet Gray",
+                "hex": "#8e8e93ff"
+            },
+            {
+                "name": "Carbon Ledger Atlas Panel Line",
+                "hex": "#c7c7ccff"
+            },
+            {
+                "name": "Carbon Ledger Atlas Paper Light",
+                "hex": "#f2f2f7ff"
+            },
+            {
+                "name": "Carbon Ledger Atlas White Report",
+                "hex": "#ffffffff"
+            }
+        ],
+        "path": "10 Color Palette/Carbon Ledger Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "black",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Reports"
+            ]
+        }
+    },
+    {
         "id": "cobalt-circuit-atlas",
         "name": "Cobalt Circuit Atlas",
         "description": "A technical cobalt palette with dark code surfaces, electric blue states, and crisp highlights.",
@@ -8283,6 +10563,126 @@
         "tags": {
             "mood": [
                 "blue",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
+        "id": "copper-canyon-atlas",
+        "name": "Copper Canyon Atlas",
+        "description": "A complete copper canyon palette with desert shadows, clay ramps, sandstone warmth, and sunlit editorial surfaces.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Copper Canyon Atlas Canyon Night",
+                "hex": "#1f1308ff"
+            },
+            {
+                "name": "Copper Canyon Atlas Desert Umber",
+                "hex": "#4a250bff"
+            },
+            {
+                "name": "Copper Canyon Atlas Burnt Sienna",
+                "hex": "#7c2d12ff"
+            },
+            {
+                "name": "Copper Canyon Atlas Copper Wall",
+                "hex": "#9a3412ff"
+            },
+            {
+                "name": "Copper Canyon Atlas Clay Trail",
+                "hex": "#c2410cff"
+            },
+            {
+                "name": "Copper Canyon Atlas Mesa Orange",
+                "hex": "#ea580cff"
+            },
+            {
+                "name": "Copper Canyon Atlas Sandstone Sun",
+                "hex": "#fdba74ff"
+            },
+            {
+                "name": "Copper Canyon Atlas Dune Peach",
+                "hex": "#fed7aaff"
+            },
+            {
+                "name": "Copper Canyon Atlas Canyon Mist",
+                "hex": "#fff7edff"
+            },
+            {
+                "name": "Copper Canyon Atlas Sky Paper",
+                "hex": "#ffffffff"
+            }
+        ],
+        "path": "10 Color Palette/Copper Canyon Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "orange",
+                "earthy"
+            ],
+            "aesthetic": [
+                "Canyon",
+                "Desert"
+            ]
+        }
+    },
+    {
+        "id": "crimson-circuit-atlas",
+        "name": "Crimson Circuit Atlas",
+        "description": "A technical crimson palette with dark interface foundations, alert reds, and clean diagnostic surfaces.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Crimson Circuit Atlas Circuit Black",
+                "hex": "#160607ff"
+            },
+            {
+                "name": "Crimson Circuit Atlas Alert Root",
+                "hex": "#2a0a0dff"
+            },
+            {
+                "name": "Crimson Circuit Atlas Crimson Board",
+                "hex": "#5f0f14ff"
+            },
+            {
+                "name": "Crimson Circuit Atlas Runtime Red",
+                "hex": "#991b1bff"
+            },
+            {
+                "name": "Crimson Circuit Atlas Signal Red",
+                "hex": "#dc2626ff"
+            },
+            {
+                "name": "Crimson Circuit Atlas Action Red",
+                "hex": "#ef4444ff"
+            },
+            {
+                "name": "Crimson Circuit Atlas Trace Coral",
+                "hex": "#f87171ff"
+            },
+            {
+                "name": "Crimson Circuit Atlas Debug Rose",
+                "hex": "#fecacaff"
+            },
+            {
+                "name": "Crimson Circuit Atlas Panel Red",
+                "hex": "#fee2e2ff"
+            },
+            {
+                "name": "Crimson Circuit Atlas Terminal White",
+                "hex": "#fff5f5ff"
+            }
+        ],
+        "path": "10 Color Palette/Crimson Circuit Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "red",
                 "technical"
             ],
             "aesthetic": [
@@ -8469,6 +10869,66 @@
             "aesthetic": [
                 "Cyber",
                 "Mauve"
+            ]
+        }
+    },
+    {
+        "id": "ember-market-atlas",
+        "name": "Ember Market Atlas",
+        "description": "A warm commercial red palette with ember darks, retail reds, orange warmth, and soft purchase surfaces.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Ember Market Atlas Market Night",
+                "hex": "#1c0b0bff"
+            },
+            {
+                "name": "Ember Market Atlas Ember Depth",
+                "hex": "#3f1111ff"
+            },
+            {
+                "name": "Ember Market Atlas Stall Red",
+                "hex": "#7f1d1dff"
+            },
+            {
+                "name": "Ember Market Atlas Sale Ruby",
+                "hex": "#b42318ff"
+            },
+            {
+                "name": "Ember Market Atlas Action Red",
+                "hex": "#d92d20ff"
+            },
+            {
+                "name": "Ember Market Atlas Hot Coral",
+                "hex": "#f04438ff"
+            },
+            {
+                "name": "Ember Market Atlas Market Orange",
+                "hex": "#f79009ff"
+            },
+            {
+                "name": "Ember Market Atlas Receipt Gold",
+                "hex": "#fec84bff"
+            },
+            {
+                "name": "Ember Market Atlas Paper Peach",
+                "hex": "#fee4cbff"
+            },
+            {
+                "name": "Ember Market Atlas Cream Card",
+                "hex": "#fffbebff"
+            }
+        ],
+        "path": "10 Color Palette/Ember Market Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "red",
+                "warm"
+            ],
+            "aesthetic": [
+                "Market",
+                "Retail"
             ]
         }
     },
@@ -8951,6 +11411,66 @@
         }
     },
     {
+        "id": "ink-studio-atlas",
+        "name": "Ink Studio Atlas",
+        "description": "An editorial black palette with ink foundations, warm charcoal, paper neutrals, and gallery-ready contrast.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Ink Studio Atlas Studio Black",
+                "hex": "#070707ff"
+            },
+            {
+                "name": "Ink Studio Atlas Ink Depth",
+                "hex": "#14110fff"
+            },
+            {
+                "name": "Ink Studio Atlas Charcoal Warm",
+                "hex": "#23201dff"
+            },
+            {
+                "name": "Ink Studio Atlas Gallery Graphite",
+                "hex": "#34312dff"
+            },
+            {
+                "name": "Ink Studio Atlas Type Stone",
+                "hex": "#57534eff"
+            },
+            {
+                "name": "Ink Studio Atlas Caption Smoke",
+                "hex": "#78716cff"
+            },
+            {
+                "name": "Ink Studio Atlas Border Stone",
+                "hex": "#a8a29eff"
+            },
+            {
+                "name": "Ink Studio Atlas Paper Line",
+                "hex": "#d6d3d1ff"
+            },
+            {
+                "name": "Ink Studio Atlas Studio Paper",
+                "hex": "#f5f5f4ff"
+            },
+            {
+                "name": "Ink Studio Atlas Cream Light",
+                "hex": "#fffaf0ff"
+            }
+        ],
+        "path": "10 Color Palette/Ink Studio Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "black",
+                "editorial"
+            ],
+            "aesthetic": [
+                "Studio",
+                "Portfolio"
+            ]
+        }
+    },
+    {
         "id": "lilac-frost-atlas",
         "name": "Lilac Frost Atlas",
         "description": "A light purple palette with frosted lilac surfaces, clean violet accents, and cool readable neutrals.",
@@ -9007,6 +11527,66 @@
             "aesthetic": [
                 "Lilac",
                 "Frost"
+            ]
+        }
+    },
+    {
+        "id": "marigold-commerce-atlas",
+        "name": "Marigold Commerce Atlas",
+        "description": "A complete marigold commercial palette with espresso anchors, cart oranges, promotional golds, and soft checkout surfaces.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Marigold Commerce Atlas Espresso Cart",
+                "hex": "#1c0a02ff"
+            },
+            {
+                "name": "Marigold Commerce Atlas Roast Brown",
+                "hex": "#431407ff"
+            },
+            {
+                "name": "Marigold Commerce Atlas Cart Orange",
+                "hex": "#9a3412ff"
+            },
+            {
+                "name": "Marigold Commerce Atlas Checkout Tangerine",
+                "hex": "#c2410cff"
+            },
+            {
+                "name": "Marigold Commerce Atlas Action Orange",
+                "hex": "#f97316ff"
+            },
+            {
+                "name": "Marigold Commerce Atlas Marigold Deal",
+                "hex": "#f59e0bff"
+            },
+            {
+                "name": "Marigold Commerce Atlas Honey Ticket",
+                "hex": "#facc15ff"
+            },
+            {
+                "name": "Marigold Commerce Atlas Peach Receipt",
+                "hex": "#fed7aaff"
+            },
+            {
+                "name": "Marigold Commerce Atlas Cream Checkout",
+                "hex": "#fffbebff"
+            },
+            {
+                "name": "Marigold Commerce Atlas Receipt White",
+                "hex": "#ffffffff"
+            }
+        ],
+        "path": "10 Color Palette/Marigold Commerce Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "orange",
+                "commercial"
+            ],
+            "aesthetic": [
+                "Commerce",
+                "Retail"
             ]
         }
     },
@@ -9250,6 +11830,66 @@
         }
     },
     {
+        "id": "obsidian-circuit-atlas",
+        "name": "Obsidian Circuit Atlas",
+        "description": "A black-focused technical palette with obsidian UI foundations, graphite steps, and crisp diagnostic highlights.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Obsidian Circuit Atlas Circuit Void",
+                "hex": "#030304ff"
+            },
+            {
+                "name": "Obsidian Circuit Atlas Obsidian Root",
+                "hex": "#0a0a0fff"
+            },
+            {
+                "name": "Obsidian Circuit Atlas Carbon Board",
+                "hex": "#12121aff"
+            },
+            {
+                "name": "Obsidian Circuit Atlas Graphite Panel",
+                "hex": "#1f2937ff"
+            },
+            {
+                "name": "Obsidian Circuit Atlas Slate Control",
+                "hex": "#374151ff"
+            },
+            {
+                "name": "Obsidian Circuit Atlas Smoke Muted",
+                "hex": "#4b5563ff"
+            },
+            {
+                "name": "Obsidian Circuit Atlas Trace Gray",
+                "hex": "#9ca3afff"
+            },
+            {
+                "name": "Obsidian Circuit Atlas Debug Line",
+                "hex": "#d1d5dbff"
+            },
+            {
+                "name": "Obsidian Circuit Atlas Terminal Mist",
+                "hex": "#f3f4f6ff"
+            },
+            {
+                "name": "Obsidian Circuit Atlas White Signal",
+                "hex": "#ffffffff"
+            }
+        ],
+        "path": "10 Color Palette/Obsidian Circuit Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "black",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
         "id": "purple-observatory",
         "name": "Purple Observatory",
         "description": "A cosmic purple system with observatory darks, violet steps, lavender surfaces, and white light.",
@@ -9306,6 +11946,126 @@
             "aesthetic": [
                 "Observatory",
                 "Space"
+            ]
+        }
+    },
+    {
+        "id": "rose-signal-atlas",
+        "name": "Rose Signal Atlas",
+        "description": "An expressive rose-red palette with deep berry structure, vivid signal tones, and soft pink surfaces.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Rose Signal Atlas Signal Black",
+                "hex": "#17070dff"
+            },
+            {
+                "name": "Rose Signal Atlas Rose Depth",
+                "hex": "#3f0d1eff"
+            },
+            {
+                "name": "Rose Signal Atlas Berry Core",
+                "hex": "#831843ff"
+            },
+            {
+                "name": "Rose Signal Atlas Signal Ruby",
+                "hex": "#be123cff"
+            },
+            {
+                "name": "Rose Signal Atlas Rose Action",
+                "hex": "#e11d48ff"
+            },
+            {
+                "name": "Rose Signal Atlas Vivid Rose",
+                "hex": "#f43f5eff"
+            },
+            {
+                "name": "Rose Signal Atlas Petal Red",
+                "hex": "#fb7185ff"
+            },
+            {
+                "name": "Rose Signal Atlas Soft Petal",
+                "hex": "#fecdd3ff"
+            },
+            {
+                "name": "Rose Signal Atlas Panel Rose",
+                "hex": "#ffe4e6ff"
+            },
+            {
+                "name": "Rose Signal Atlas Rose White",
+                "hex": "#fff1f2ff"
+            }
+        ],
+        "path": "10 Color Palette/Rose Signal Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "red",
+                "expressive"
+            ],
+            "aesthetic": [
+                "Rose",
+                "Interface"
+            ]
+        }
+    },
+    {
+        "id": "ruby-ledger-atlas",
+        "name": "Ruby Ledger Atlas",
+        "description": "A professional red palette for risk states, reporting, dashboards, and confident editorial systems.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Ruby Ledger Atlas Ledger Ink",
+                "hex": "#1f0a0cff"
+            },
+            {
+                "name": "Ruby Ledger Atlas Account Ruby",
+                "hex": "#3b0d11ff"
+            },
+            {
+                "name": "Ruby Ledger Atlas Report Red",
+                "hex": "#7f1d1dff"
+            },
+            {
+                "name": "Ruby Ledger Atlas Balance Red",
+                "hex": "#b91c1cff"
+            },
+            {
+                "name": "Ruby Ledger Atlas Metric Red",
+                "hex": "#dc2626ff"
+            },
+            {
+                "name": "Ruby Ledger Atlas Chart Orange",
+                "hex": "#f97316ff"
+            },
+            {
+                "name": "Ruby Ledger Atlas Summary Coral",
+                "hex": "#fb923cff"
+            },
+            {
+                "name": "Ruby Ledger Atlas Panel Peach",
+                "hex": "#fed7aaff"
+            },
+            {
+                "name": "Ruby Ledger Atlas Sheet Blush",
+                "hex": "#fff1e6ff"
+            },
+            {
+                "name": "Ruby Ledger Atlas White Report",
+                "hex": "#ffffffff"
+            }
+        ],
+        "path": "10 Color Palette/Ruby Ledger Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "red",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Reports"
             ]
         }
     },
@@ -9607,6 +12367,66 @@
         }
     },
     {
+        "id": "tangerine-signal-atlas",
+        "name": "Tangerine Signal Atlas",
+        "description": "A complete tangerine interface atlas for alerts, product CTAs, onboarding surfaces, and warm notification systems.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Tangerine Signal Atlas Signal Night",
+                "hex": "#231006ff"
+            },
+            {
+                "name": "Tangerine Signal Atlas Burnt Routing",
+                "hex": "#7c2d12ff"
+            },
+            {
+                "name": "Tangerine Signal Atlas Alert Orange",
+                "hex": "#c2410cff"
+            },
+            {
+                "name": "Tangerine Signal Atlas Tangerine Core",
+                "hex": "#ea580cff"
+            },
+            {
+                "name": "Tangerine Signal Atlas Citrus Flash",
+                "hex": "#fb923cff"
+            },
+            {
+                "name": "Tangerine Signal Atlas Peach Notice",
+                "hex": "#fed7aaff"
+            },
+            {
+                "name": "Tangerine Signal Atlas Cream Toast",
+                "hex": "#fff7edff"
+            },
+            {
+                "name": "Tangerine Signal Atlas White Signal",
+                "hex": "#ffffffff"
+            },
+            {
+                "name": "Tangerine Signal Atlas Cool Ink",
+                "hex": "#111827ff"
+            },
+            {
+                "name": "Tangerine Signal Atlas Slate Caption",
+                "hex": "#475569ff"
+            }
+        ],
+        "path": "10 Color Palette/Tangerine Signal Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "orange",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
         "id": "terminal-matrix",
         "name": "Terminal Matrix",
         "description": "A vibrant 10-color palette.",
@@ -9721,6 +12541,66 @@
             "aesthetic": [
                 "Harbor",
                 "Aquatic"
+            ]
+        }
+    },
+    {
+        "id": "void-chrome-atlas",
+        "name": "Void Chrome Atlas",
+        "description": "A futuristic black palette with void darks, chrome grays, cool highlights, and clean luminous surfaces.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Void Chrome Atlas Void Black",
+                "hex": "#000000ff"
+            },
+            {
+                "name": "Void Chrome Atlas Chrome Night",
+                "hex": "#070b12ff"
+            },
+            {
+                "name": "Void Chrome Atlas Deep Frame",
+                "hex": "#111827ff"
+            },
+            {
+                "name": "Void Chrome Atlas Metal Panel",
+                "hex": "#1f2937ff"
+            },
+            {
+                "name": "Void Chrome Atlas Blue Graphite",
+                "hex": "#334155ff"
+            },
+            {
+                "name": "Void Chrome Atlas Chrome Muted",
+                "hex": "#64748bff"
+            },
+            {
+                "name": "Void Chrome Atlas Cool Smoke",
+                "hex": "#94a3b8ff"
+            },
+            {
+                "name": "Void Chrome Atlas Edge Light",
+                "hex": "#cbd5e1ff"
+            },
+            {
+                "name": "Void Chrome Atlas Chrome Surface",
+                "hex": "#e2e8f0ff"
+            },
+            {
+                "name": "Void Chrome Atlas White Glow",
+                "hex": "#f8fafcff"
+            }
+        ],
+        "path": "10 Color Palette/Void Chrome Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "black",
+                "futuristic"
+            ],
+            "aesthetic": [
+                "Chrome",
+                "Cyber"
             ]
         }
     }

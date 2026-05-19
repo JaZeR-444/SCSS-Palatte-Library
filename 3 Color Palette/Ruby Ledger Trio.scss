@@ -1,0 +1,69 @@
+/*---
+id: ruby-ledger-trio
+name: Ruby Ledger Trio
+author: JaZeR-444
+version: 1.0.0
+category: Red & Professional
+count: 3
+description: A professional red palette for risk states, reporting, dashboards, and confident editorial systems.
+tags:
+  mood:
+  - red
+  - professional
+  aesthetic:
+  - Finance
+  - Reports
+intent: A red-focused 3-color palette designed for finance, reports, dashboard.
+suggested_use:
+- Finance
+- Reports
+- Dashboard
+url: https://coolors.co/1f0a0c-3b0d11-7f1d1d
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--ruby-ledger-trio-ledger-ink: #1f0a0cff;
+--ruby-ledger-trio-account-ruby: #3b0d11ff;
+--ruby-ledger-trio-report-red: #7f1d1dff;
+
+/* CSS HSL */
+--ruby-ledger-trio-ledger-ink: hsla(354, 51%, 8%, 1);
+--ruby-ledger-trio-account-ruby: hsla(355, 64%, 14%, 1);
+--ruby-ledger-trio-report-red: hsla(0, 63%, 31%, 1);
+}
+
+/* SCSS HEX */
+$ruby-ledger-trio-ledger-ink: #1f0a0cff;
+$ruby-ledger-trio-account-ruby: #3b0d11ff;
+$ruby-ledger-trio-report-red: #7f1d1dff;
+
+/* SCSS HSL */
+$ruby-ledger-trio-ledger-ink: hsla(354, 51%, 8%, 1);
+$ruby-ledger-trio-account-ruby: hsla(355, 64%, 14%, 1);
+$ruby-ledger-trio-report-red: hsla(0, 63%, 31%, 1);
+
+/* SCSS RGB */
+$ruby-ledger-trio-ledger-ink: rgba(31, 10, 12, 1);
+$ruby-ledger-trio-account-ruby: rgba(59, 13, 17, 1);
+$ruby-ledger-trio-report-red: rgba(127, 29, 29, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1f0a0cff, #3b0d11ff, #7f1d1dff);
+$gradient-right: linear-gradient(90deg, #1f0a0cff, #3b0d11ff, #7f1d1dff);
+$gradient-bottom: linear-gradient(180deg, #1f0a0cff, #3b0d11ff, #7f1d1dff);
+$gradient-left: linear-gradient(270deg, #1f0a0cff, #3b0d11ff, #7f1d1dff);
+$gradient-top-right: linear-gradient(45deg, #1f0a0cff, #3b0d11ff, #7f1d1dff);
+$gradient-bottom-right: linear-gradient(135deg, #1f0a0cff, #3b0d11ff, #7f1d1dff);
+$gradient-top-left: linear-gradient(225deg, #1f0a0cff, #3b0d11ff, #7f1d1dff);
+$gradient-bottom-left: linear-gradient(315deg, #1f0a0cff, #3b0d11ff, #7f1d1dff);
+$gradient-radial: radial-gradient(#1f0a0cff, #3b0d11ff, #7f1d1dff);
+
+/* SCSS Map */
+$ruby-ledger-trio-map: (
+    "ruby-ledger-trio-ledger-ink": #1f0a0cff,
+    "ruby-ledger-trio-account-ruby": #3b0d11ff,
+    "ruby-ledger-trio-report-red": #7f1d1dff
+);

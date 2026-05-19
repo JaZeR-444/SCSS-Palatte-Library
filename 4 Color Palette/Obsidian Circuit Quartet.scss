@@ -1,0 +1,75 @@
+/*---
+id: obsidian-circuit-quartet
+name: Obsidian Circuit Quartet
+author: JaZeR-444
+version: 1.0.0
+category: Black & Technical
+count: 4
+description: A black-focused technical palette with obsidian UI foundations, graphite steps, and crisp diagnostic highlights.
+tags:
+  mood:
+  - black
+  - technical
+  aesthetic:
+  - Circuit
+  - Developer
+intent: A black-focused 4-color palette designed for developer tools, ai ui, analytics.
+suggested_use:
+- Developer Tools
+- AI UI
+- Analytics
+url: https://coolors.co/030304-0a0a0f-12121a-1f2937
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--obsidian-circuit-quartet-circuit-void: #030304ff;
+--obsidian-circuit-quartet-obsidian-root: #0a0a0fff;
+--obsidian-circuit-quartet-carbon-board: #12121aff;
+--obsidian-circuit-quartet-graphite-panel: #1f2937ff;
+
+/* CSS HSL */
+--obsidian-circuit-quartet-circuit-void: hsla(240, 14%, 1%, 1);
+--obsidian-circuit-quartet-obsidian-root: hsla(240, 20%, 5%, 1);
+--obsidian-circuit-quartet-carbon-board: hsla(240, 18%, 9%, 1);
+--obsidian-circuit-quartet-graphite-panel: hsla(215, 28%, 17%, 1);
+}
+
+/* SCSS HEX */
+$obsidian-circuit-quartet-circuit-void: #030304ff;
+$obsidian-circuit-quartet-obsidian-root: #0a0a0fff;
+$obsidian-circuit-quartet-carbon-board: #12121aff;
+$obsidian-circuit-quartet-graphite-panel: #1f2937ff;
+
+/* SCSS HSL */
+$obsidian-circuit-quartet-circuit-void: hsla(240, 14%, 1%, 1);
+$obsidian-circuit-quartet-obsidian-root: hsla(240, 20%, 5%, 1);
+$obsidian-circuit-quartet-carbon-board: hsla(240, 18%, 9%, 1);
+$obsidian-circuit-quartet-graphite-panel: hsla(215, 28%, 17%, 1);
+
+/* SCSS RGB */
+$obsidian-circuit-quartet-circuit-void: rgba(3, 3, 4, 1);
+$obsidian-circuit-quartet-obsidian-root: rgba(10, 10, 15, 1);
+$obsidian-circuit-quartet-carbon-board: rgba(18, 18, 26, 1);
+$obsidian-circuit-quartet-graphite-panel: rgba(31, 41, 55, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #030304ff, #0a0a0fff, #12121aff, #1f2937ff);
+$gradient-right: linear-gradient(90deg, #030304ff, #0a0a0fff, #12121aff, #1f2937ff);
+$gradient-bottom: linear-gradient(180deg, #030304ff, #0a0a0fff, #12121aff, #1f2937ff);
+$gradient-left: linear-gradient(270deg, #030304ff, #0a0a0fff, #12121aff, #1f2937ff);
+$gradient-top-right: linear-gradient(45deg, #030304ff, #0a0a0fff, #12121aff, #1f2937ff);
+$gradient-bottom-right: linear-gradient(135deg, #030304ff, #0a0a0fff, #12121aff, #1f2937ff);
+$gradient-top-left: linear-gradient(225deg, #030304ff, #0a0a0fff, #12121aff, #1f2937ff);
+$gradient-bottom-left: linear-gradient(315deg, #030304ff, #0a0a0fff, #12121aff, #1f2937ff);
+$gradient-radial: radial-gradient(#030304ff, #0a0a0fff, #12121aff, #1f2937ff);
+
+/* SCSS Map */
+$obsidian-circuit-quartet-map: (
+    "obsidian-circuit-quartet-circuit-void": #030304ff,
+    "obsidian-circuit-quartet-obsidian-root": #0a0a0fff,
+    "obsidian-circuit-quartet-carbon-board": #12121aff,
+    "obsidian-circuit-quartet-graphite-panel": #1f2937ff
+);

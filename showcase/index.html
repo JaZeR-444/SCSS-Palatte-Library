@@ -66,6 +66,7 @@
                 <!-- Primary Facets -->
                 <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1" id="facet-tabs">
                     <button data-facet="all" class="facet-btn active px-5 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-indigo-500 bg-indigo-500 text-white transition-all whitespace-nowrap">Explore All</button>
+                    <button data-facet="recent" class="facet-btn px-5 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-indigo-500 transition-all whitespace-nowrap">Recent</button>
                     <button data-facet="count" class="facet-btn px-5 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-indigo-500 transition-all whitespace-nowrap">By Count</button>
                     <button data-facet="category" class="facet-btn px-5 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-indigo-500 transition-all whitespace-nowrap">By Category</button>
                     <button data-facet="mood" class="facet-btn px-5 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-indigo-500 transition-all whitespace-nowrap">By Mood</button>
@@ -93,6 +94,7 @@
                 <option value="count-desc">Sort: Most Colors</option>
             </select>
         </div>
+        <div id="collections-panel" class="hidden mb-8 rounded-2xl border border-gray-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 sm:p-6 shadow-sm"></div>
         <div id="palette-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             <!-- Skeleton Placeholders -->
             <div class="skeleton-card bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-slate-800 space-y-4">
@@ -144,60 +146,59 @@
                 
                 <!-- SECTION 2: INTERACTIVE SANDBOX -->
                 <div class="p-4 sm:p-8 lg:p-12 border-b border-gray-100 dark:border-slate-800">
-                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
-                        <div class="flex items-center gap-3">
+                    <div class="flex flex-col xl:flex-row xl:items-start justify-between gap-6 mb-6">
+                        <div class="flex items-start gap-3">
                             <div class="w-10 h-10 rounded-xl bg-indigo-500 flex items-center justify-center text-white shadow-lg">
                                 <i class="fa-solid fa-flask"></i>
                             </div>
-                            <div>
-                                <h3 class="text-xl font-bold">Design Sandbox</h3>
-                                <p class="text-sm text-gray-400">Preview this palette across multiple digital use cases.</p>
+                            <div class="min-w-0">
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <h3 class="text-xl font-bold">Palette Preview Studio</h3>
+                                    <span id="contrast-status" class="rounded-full px-2.5 py-1 text-[10px] font-black uppercase tracking-widest bg-gray-100 text-gray-500 dark:bg-slate-800 dark:text-gray-400">Checking</span>
+                                </div>
+                                <p class="text-sm text-gray-400">Test this palette across realistic UI patterns and export the role mapping.</p>
                             </div>
                         </div>
                         
-                        <div class="flex flex-wrap items-center gap-2">
-                            <!-- Use Case Switcher + Description -->
-                            <div class="flex flex-col gap-1">
+                        <div class="sandbox-toolbar flex flex-col lg:flex-row lg:items-start gap-3 w-full xl:w-auto">
+                            <div class="flex flex-col gap-1 min-w-0 flex-1 lg:flex-none">
                                 <div class="flex p-1 bg-gray-100 dark:bg-slate-800 rounded-xl overflow-x-auto no-scrollbar">
                                     <button data-usecase="dashboard" class="usecase-btn active px-4 py-2 rounded-lg text-xs font-bold transition-all">DASHBOARD</button>
                                     <button data-usecase="social" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">SOCIAL</button>
                                     <button data-usecase="landing" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">LANDING</button>
                                     <button data-usecase="commerce" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">COMMERCE</button>
                                     <button data-usecase="mobile" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">MOBILE</button>
+                                    <button data-usecase="typography" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">TYPOGRAPHY</button>
                                 </div>
                                 <p id="usecase-description" class="text-[11px] text-gray-400 px-1">Multi-layout dashboard — Analytics, CRM, Monitor &amp; Profile</p>
                             </div>
-                            <!-- Interactive Tools -->
-                            <div class="flex items-center gap-2">
-                                <button id="shuffle-colors" class="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition-all group" title="Shuffle Palette Mapping">
-                                    <i class="fa-solid fa-dice-five group-hover:rotate-180 transition-transform duration-500"></i>
+                            <div class="flex flex-wrap items-center gap-2">
+                                <div class="flex items-center gap-0.5 p-1 bg-gray-100 dark:bg-slate-800 rounded-xl">
+                                    <button id="zoom-out" class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200 transition-all font-black" title="Zoom out">−</button>
+                                    <span id="zoom-display" class="text-[10px] font-black text-gray-600 dark:text-gray-400 w-10 text-center select-none">100%</span>
+                                    <button id="zoom-in" class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200 transition-all font-black" title="Zoom in">+</button>
+                                </div>
+                                <button id="toggle-role-labels" class="tool-icon-btn p-2.5 rounded-xl bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-all text-gray-500" title="Show color role labels">
+                                    <i class="fa-solid fa-tag text-xs"></i>
                                 </button>
                                 <button id="modal-theme-toggle" class="p-2.5 rounded-xl bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-all" title="Toggle modal theme">
                                     <i class="fa-solid fa-moon text-gray-500 dark:hidden text-sm"></i>
                                     <i class="fa-solid fa-sun hidden dark:block text-yellow-400 text-sm"></i>
                                 </button>
+                                <button id="shuffle-colors" data-shuffle="sandbox" class="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition-all group" title="Shuffle Palette Mapping">
+                                    <i class="fa-solid fa-dice-five group-hover:rotate-180 transition-transform duration-500"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Sandbox Controls: Zoom | Role Labels -->
-                    <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-                        <div class="flex items-center gap-2">
-                            <div class="flex items-center gap-0.5 p-1 bg-gray-100 dark:bg-slate-800 rounded-xl">
-                                <button id="zoom-out" class="w-7 h-7 rounded-lg flex items-center justify-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200 transition-all font-black">−</button>
-                                <span id="zoom-display" class="text-[10px] font-black text-gray-600 dark:text-gray-400 w-10 text-center select-none">100%</span>
-                                <button id="zoom-in" class="w-7 h-7 rounded-lg flex items-center justify-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200 transition-all font-black">+</button>
-                            </div>
-                            <button id="toggle-role-labels" class="p-2 rounded-xl bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-all text-gray-500" title="Show color role labels">
-                                <i class="fa-solid fa-tag text-xs"></i>
-                            </button>
-                        </div>
-                        <button data-shuffle="sandbox" class="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 transition-all group" title="Shuffle Sandbox Colors">
-                            <i class="fa-solid fa-dice-five group-hover:rotate-180 transition-transform duration-500"></i>
-                        </button>
-                    </div>
+                    <div id="palette-role-chips" class="mb-4 grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-8 gap-2"></div>
 
-                    <div id="section-sandbox" class="relative min-h-[380px] sm:min-h-[550px] flex items-center justify-center overflow-hidden rounded-2xl transition-colors duration-500 p-4">
+                    <div id="section-sandbox" class="relative min-h-[380px] sm:min-h-[550px] flex items-center justify-center overflow-hidden rounded-2xl border border-gray-200 dark:border-slate-800 bg-gray-50/70 dark:bg-slate-950/40 shadow-inner transition-colors duration-500 p-3 sm:p-4">
+                        <div class="absolute left-4 top-4 z-10 hidden sm:flex items-center gap-2 rounded-full border border-white/60 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 px-3 py-1.5 text-[10px] font-black uppercase tracking-widest text-gray-400 backdrop-blur">
+                            <i class="fa-solid fa-layer-group"></i>
+                            Applied Preview
+                        </div>
                         <div id="sandbox-scale-wrapper" class="w-full transition-transform duration-300 origin-top">
 
                         <!-- USE CASE: DASHBOARD -->
@@ -552,6 +553,31 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- USE CASE: TYPOGRAPHY -->
+                        <div id="case-typography" class="usecase-content absolute inset-0 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-500">
+                            <div class="w-full max-w-4xl bg-white dark:bg-slate-950 rounded-2xl border border-gray-200 dark:border-slate-800 shadow-2xl overflow-hidden">
+                                <div class="h-3 bg-gradient-to-r from-[var(--ui-color-1)] via-[var(--ui-color-3)] to-[var(--ui-color-6)]"></div>
+                                <div class="grid grid-cols-1 lg:grid-cols-5 gap-0">
+                                    <article class="lg:col-span-3 p-8 space-y-5">
+                                        <div class="inline-flex items-center rounded-full px-3 py-1 text-[10px] font-black uppercase tracking-widest text-white" style="background: var(--ui-color-1)">Editorial</div>
+                                        <h3 class="text-4xl font-black leading-tight" style="color: var(--ui-color-2)">Readable systems need more than attractive accents.</h3>
+                                        <p class="text-sm leading-7 text-slate-600 dark:text-slate-300">This preview checks headings, body text, links, badges, inline code, and quoted text against real reading density.</p>
+                                        <p class="text-sm leading-7 text-slate-600 dark:text-slate-300">Use <a href="#" class="font-bold underline decoration-2 underline-offset-4" style="color: var(--ui-color-4); text-decoration-color: var(--ui-color-4)">semantic color roles</a> to reserve saturated colors for navigation and actions while keeping paragraphs calm.</p>
+                                        <blockquote class="border-l-4 pl-5 text-sm italic text-slate-500 dark:text-slate-400" style="border-color: var(--ui-color-5)">A usable palette should make long-form text feel stable before it makes buttons feel exciting.</blockquote>
+                                    </article>
+                                    <aside class="lg:col-span-2 bg-slate-950 p-8 space-y-5">
+                                        <div class="flex flex-wrap gap-2">
+                                            <span class="rounded-full px-2.5 py-1 text-[10px] font-black text-white" style="background: var(--ui-color-6)">AA CHECK</span>
+                                            <span class="rounded-full px-2.5 py-1 text-[10px] font-black" style="color: var(--ui-color-7); background: color-mix(in srgb, var(--ui-color-7), transparent 84%)">STATUS</span>
+                                        </div>
+                                        <h4 class="text-2xl font-black text-white">Component Text</h4>
+                                        <p class="text-xs leading-6 text-slate-400">Muted copy, active links, labels, and <code class="rounded px-1.5 py-0.5 font-mono" style="color: var(--ui-color-8); background: rgba(255,255,255,.08)">inline-code</code> reveal how the palette behaves in documentation and product UI.</p>
+                                        <button class="w-full rounded-xl py-3 text-xs font-black text-white shadow-lg" style="background: var(--ui-color-3)">Primary Action</button>
+                                    </aside>
+                                </div>
+                            </div>
+                        </div>
                         </div><!-- /sandbox-scale-wrapper -->
 
                         <!-- Role Labels Overlay -->
@@ -562,7 +588,7 @@
                         </div>
 
                         <!-- SECTION 2.1: TYPOGRAPHY & READABILITY LAB -->
-                        <div class="p-8 lg:p-12 border-b border-gray-100 dark:border-slate-800">
+                        <div id="section-typography" class="p-8 lg:p-12 border-b border-gray-100 dark:border-slate-800">
                         <div class="flex items-center gap-3 mb-10">
                         <div class="w-10 h-10 rounded-xl bg-orange-500 flex items-center justify-center text-white shadow-lg">
                             <i class="fa-solid fa-font"></i>
@@ -615,7 +641,7 @@
                         </div>
 
                         <!-- SECTION 2.2: BRANDING & ICONOGRAPHY STUDIO -->
-                        <div class="p-8 lg:p-12 border-b border-gray-100 dark:border-slate-800 bg-gray-50/30 dark:bg-slate-950/20">
+                        <div id="section-iconography" class="p-8 lg:p-12 border-b border-gray-100 dark:border-slate-800 bg-gray-50/30 dark:bg-slate-950/20">
                         <div class="flex items-center gap-3 mb-10">
                         <div class="w-10 h-10 rounded-xl bg-purple-500 flex items-center justify-center text-white shadow-lg">
                             <i class="fa-solid fa-shapes"></i>
@@ -698,7 +724,10 @@
                             <div class="w-10 h-10 rounded-xl bg-slate-800 dark:bg-white flex items-center justify-center text-white dark:text-slate-900 shadow-lg"><i class="fa-solid fa-code"></i></div>
                             <div><h3 class="text-xl font-bold">Code</h3></div>
                         </div>
-                        <button data-copy="full-scss" class="bg-indigo-600 text-white px-6 py-2.5 rounded-xl font-bold shadow-xl shadow-indigo-600/20 active:scale-95">COPY SCSS</button>
+                        <div class="flex flex-wrap items-center gap-2">
+                            <button id="download-png" class="bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-5 py-2.5 rounded-xl font-bold shadow-xl active:scale-95">DOWNLOAD PNG</button>
+                            <button data-copy="full-scss" class="bg-indigo-600 text-white px-6 py-2.5 rounded-xl font-bold shadow-xl shadow-indigo-600/20 active:scale-95">COPY SCSS</button>
+                        </div>
                     </div>
                     <div class="bg-slate-950 rounded-2xl overflow-hidden border border-slate-800">
                         <div class="flex border-b border-slate-800">
@@ -711,6 +740,15 @@
                             <pre id="code-block" class="p-8 text-xs font-mono text-indigo-200 overflow-auto h-80 no-scrollbar"></pre>
                         </div>
                     </div>
+                </div>
+                <div class="p-4 sm:p-8 lg:p-12 border-t border-gray-100 dark:border-slate-800 bg-gray-50/60 dark:bg-slate-950/30">
+                    <div class="flex items-center justify-between gap-4 mb-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center text-white shadow-lg"><i class="fa-solid fa-layer-group"></i></div>
+                            <div><h3 class="text-xl font-bold">More Like This</h3><p class="text-sm text-gray-400">Matched by color group, category, and shared tags.</p></div>
+                        </div>
+                    </div>
+                    <div id="related-palettes" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
                 </div>
             </div>
         </div>

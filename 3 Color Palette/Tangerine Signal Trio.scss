@@ -1,0 +1,69 @@
+/*---
+id: tangerine-signal-trio
+name: Tangerine Signal Trio
+author: JaZeR-444
+version: 1.0.0
+category: Orange & Interface
+count: 3
+description: A punchy tangerine palette with dark UI anchors, vivid signal orange, and clean notification energy.
+tags:
+  mood:
+  - orange
+  - bright
+  aesthetic:
+  - Signal
+  - Interface
+intent: An orange-focused 3-color palette designed for product ui, notifications, marketing.
+suggested_use:
+- Product UI
+- Notifications
+- Marketing
+url: https://coolors.co/231006-ea580c-fb923c
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--tangerine-signal-trio-signal-night: #231006ff;
+--tangerine-signal-trio-tangerine-core: #ea580cff;
+--tangerine-signal-trio-citrus-flash: #fb923cff;
+
+/* CSS HSL */
+--tangerine-signal-trio-signal-night: hsla(21, 71%, 8%, 1);
+--tangerine-signal-trio-tangerine-core: hsla(21, 90%, 48%, 1);
+--tangerine-signal-trio-citrus-flash: hsla(27, 96%, 61%, 1);
+}
+
+/* SCSS HEX */
+$tangerine-signal-trio-signal-night: #231006ff;
+$tangerine-signal-trio-tangerine-core: #ea580cff;
+$tangerine-signal-trio-citrus-flash: #fb923cff;
+
+/* SCSS HSL */
+$tangerine-signal-trio-signal-night: hsla(21, 71%, 8%, 1);
+$tangerine-signal-trio-tangerine-core: hsla(21, 90%, 48%, 1);
+$tangerine-signal-trio-citrus-flash: hsla(27, 96%, 61%, 1);
+
+/* SCSS RGB */
+$tangerine-signal-trio-signal-night: rgba(35, 16, 6, 1);
+$tangerine-signal-trio-tangerine-core: rgba(234, 88, 12, 1);
+$tangerine-signal-trio-citrus-flash: rgba(251, 146, 60, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #231006ff, #ea580cff, #fb923cff);
+$gradient-right: linear-gradient(90deg, #231006ff, #ea580cff, #fb923cff);
+$gradient-bottom: linear-gradient(180deg, #231006ff, #ea580cff, #fb923cff);
+$gradient-left: linear-gradient(270deg, #231006ff, #ea580cff, #fb923cff);
+$gradient-top-right: linear-gradient(45deg, #231006ff, #ea580cff, #fb923cff);
+$gradient-bottom-right: linear-gradient(135deg, #231006ff, #ea580cff, #fb923cff);
+$gradient-top-left: linear-gradient(225deg, #231006ff, #ea580cff, #fb923cff);
+$gradient-bottom-left: linear-gradient(315deg, #231006ff, #ea580cff, #fb923cff);
+$gradient-radial: radial-gradient(#231006ff, #ea580cff, #fb923cff);
+
+/* SCSS Map */
+$tangerine-signal-trio-map: (
+    "tangerine-signal-trio-signal-night": #231006ff,
+    "tangerine-signal-trio-tangerine-core": #ea580cff,
+    "tangerine-signal-trio-citrus-flash": #fb923cff
+);

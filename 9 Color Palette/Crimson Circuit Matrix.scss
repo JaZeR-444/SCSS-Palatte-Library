@@ -1,0 +1,105 @@
+/*---
+id: crimson-circuit-matrix
+name: Crimson Circuit Matrix
+author: JaZeR-444
+version: 1.0.0
+category: Red & Technical
+count: 9
+description: A technical crimson palette with dark interface foundations, alert reds, and clean diagnostic surfaces.
+tags:
+  mood:
+  - red
+  - technical
+  aesthetic:
+  - Circuit
+  - Developer
+intent: A red-focused 9-color palette designed for developer tools, security, analytics.
+suggested_use:
+- Developer Tools
+- Security
+- Analytics
+url: https://coolors.co/160607-2a0a0d-5f0f14-991b1b-dc2626-ef4444-f87171-fecaca-fee2e2
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--crimson-circuit-matrix-circuit-black: #160607ff;
+--crimson-circuit-matrix-alert-root: #2a0a0dff;
+--crimson-circuit-matrix-crimson-board: #5f0f14ff;
+--crimson-circuit-matrix-runtime-red: #991b1bff;
+--crimson-circuit-matrix-signal-red: #dc2626ff;
+--crimson-circuit-matrix-action-red: #ef4444ff;
+--crimson-circuit-matrix-trace-coral: #f87171ff;
+--crimson-circuit-matrix-debug-rose: #fecacaff;
+--crimson-circuit-matrix-panel-red: #fee2e2ff;
+
+/* CSS HSL */
+--crimson-circuit-matrix-circuit-black: hsla(356, 57%, 5%, 1);
+--crimson-circuit-matrix-alert-root: hsla(354, 62%, 10%, 1);
+--crimson-circuit-matrix-crimson-board: hsla(356, 73%, 22%, 1);
+--crimson-circuit-matrix-runtime-red: hsla(0, 70%, 35%, 1);
+--crimson-circuit-matrix-signal-red: hsla(0, 72%, 51%, 1);
+--crimson-circuit-matrix-action-red: hsla(0, 84%, 60%, 1);
+--crimson-circuit-matrix-trace-coral: hsla(0, 91%, 71%, 1);
+--crimson-circuit-matrix-debug-rose: hsla(0, 96%, 89%, 1);
+--crimson-circuit-matrix-panel-red: hsla(0, 93%, 94%, 1);
+}
+
+/* SCSS HEX */
+$crimson-circuit-matrix-circuit-black: #160607ff;
+$crimson-circuit-matrix-alert-root: #2a0a0dff;
+$crimson-circuit-matrix-crimson-board: #5f0f14ff;
+$crimson-circuit-matrix-runtime-red: #991b1bff;
+$crimson-circuit-matrix-signal-red: #dc2626ff;
+$crimson-circuit-matrix-action-red: #ef4444ff;
+$crimson-circuit-matrix-trace-coral: #f87171ff;
+$crimson-circuit-matrix-debug-rose: #fecacaff;
+$crimson-circuit-matrix-panel-red: #fee2e2ff;
+
+/* SCSS HSL */
+$crimson-circuit-matrix-circuit-black: hsla(356, 57%, 5%, 1);
+$crimson-circuit-matrix-alert-root: hsla(354, 62%, 10%, 1);
+$crimson-circuit-matrix-crimson-board: hsla(356, 73%, 22%, 1);
+$crimson-circuit-matrix-runtime-red: hsla(0, 70%, 35%, 1);
+$crimson-circuit-matrix-signal-red: hsla(0, 72%, 51%, 1);
+$crimson-circuit-matrix-action-red: hsla(0, 84%, 60%, 1);
+$crimson-circuit-matrix-trace-coral: hsla(0, 91%, 71%, 1);
+$crimson-circuit-matrix-debug-rose: hsla(0, 96%, 89%, 1);
+$crimson-circuit-matrix-panel-red: hsla(0, 93%, 94%, 1);
+
+/* SCSS RGB */
+$crimson-circuit-matrix-circuit-black: rgba(22, 6, 7, 1);
+$crimson-circuit-matrix-alert-root: rgba(42, 10, 13, 1);
+$crimson-circuit-matrix-crimson-board: rgba(95, 15, 20, 1);
+$crimson-circuit-matrix-runtime-red: rgba(153, 27, 27, 1);
+$crimson-circuit-matrix-signal-red: rgba(220, 38, 38, 1);
+$crimson-circuit-matrix-action-red: rgba(239, 68, 68, 1);
+$crimson-circuit-matrix-trace-coral: rgba(248, 113, 113, 1);
+$crimson-circuit-matrix-debug-rose: rgba(254, 202, 202, 1);
+$crimson-circuit-matrix-panel-red: rgba(254, 226, 226, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #dc2626ff, #ef4444ff, #f87171ff, #fecacaff, #fee2e2ff);
+$gradient-right: linear-gradient(90deg, #160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #dc2626ff, #ef4444ff, #f87171ff, #fecacaff, #fee2e2ff);
+$gradient-bottom: linear-gradient(180deg, #160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #dc2626ff, #ef4444ff, #f87171ff, #fecacaff, #fee2e2ff);
+$gradient-left: linear-gradient(270deg, #160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #dc2626ff, #ef4444ff, #f87171ff, #fecacaff, #fee2e2ff);
+$gradient-top-right: linear-gradient(45deg, #160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #dc2626ff, #ef4444ff, #f87171ff, #fecacaff, #fee2e2ff);
+$gradient-bottom-right: linear-gradient(135deg, #160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #dc2626ff, #ef4444ff, #f87171ff, #fecacaff, #fee2e2ff);
+$gradient-top-left: linear-gradient(225deg, #160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #dc2626ff, #ef4444ff, #f87171ff, #fecacaff, #fee2e2ff);
+$gradient-bottom-left: linear-gradient(315deg, #160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #dc2626ff, #ef4444ff, #f87171ff, #fecacaff, #fee2e2ff);
+$gradient-radial: radial-gradient(#160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #dc2626ff, #ef4444ff, #f87171ff, #fecacaff, #fee2e2ff);
+
+/* SCSS Map */
+$crimson-circuit-matrix-map: (
+    "crimson-circuit-matrix-circuit-black": #160607ff,
+    "crimson-circuit-matrix-alert-root": #2a0a0dff,
+    "crimson-circuit-matrix-crimson-board": #5f0f14ff,
+    "crimson-circuit-matrix-runtime-red": #991b1bff,
+    "crimson-circuit-matrix-signal-red": #dc2626ff,
+    "crimson-circuit-matrix-action-red": #ef4444ff,
+    "crimson-circuit-matrix-trace-coral": #f87171ff,
+    "crimson-circuit-matrix-debug-rose": #fecacaff,
+    "crimson-circuit-matrix-panel-red": #fee2e2ff
+);

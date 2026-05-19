@@ -1,0 +1,111 @@
+/*---
+id: tangerine-signal-atlas
+name: Tangerine Signal Atlas
+author: JaZeR-444
+version: 1.0.0
+category: Orange & Interface
+count: 10
+description: A complete tangerine interface atlas for alerts, product CTAs, onboarding surfaces, and warm notification systems.
+tags:
+  mood:
+  - orange
+  - bright
+  aesthetic:
+  - Signal
+  - Interface
+intent: An orange-focused 10-color palette designed for product ui, notifications, marketing.
+suggested_use:
+- Product UI
+- Notifications
+- Marketing
+url: https://coolors.co/231006-7c2d12-c2410c-ea580c-fb923c-fed7aa-fff7ed-ffffff-111827-475569
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--tangerine-signal-atlas-signal-night: #231006ff;
+--tangerine-signal-atlas-burnt-routing: #7c2d12ff;
+--tangerine-signal-atlas-alert-orange: #c2410cff;
+--tangerine-signal-atlas-tangerine-core: #ea580cff;
+--tangerine-signal-atlas-citrus-flash: #fb923cff;
+--tangerine-signal-atlas-peach-notice: #fed7aaff;
+--tangerine-signal-atlas-cream-toast: #fff7edff;
+--tangerine-signal-atlas-white-signal: #ffffffff;
+--tangerine-signal-atlas-cool-ink: #111827ff;
+--tangerine-signal-atlas-slate-caption: #475569ff;
+
+/* CSS HSL */
+--tangerine-signal-atlas-signal-night: hsla(21, 71%, 8%, 1);
+--tangerine-signal-atlas-burnt-routing: hsla(15, 75%, 28%, 1);
+--tangerine-signal-atlas-alert-orange: hsla(17, 88%, 40%, 1);
+--tangerine-signal-atlas-tangerine-core: hsla(21, 90%, 48%, 1);
+--tangerine-signal-atlas-citrus-flash: hsla(27, 96%, 61%, 1);
+--tangerine-signal-atlas-peach-notice: hsla(32, 98%, 83%, 1);
+--tangerine-signal-atlas-cream-toast: hsla(33, 100%, 96%, 1);
+--tangerine-signal-atlas-white-signal: hsla(0, 0%, 100%, 1);
+--tangerine-signal-atlas-cool-ink: hsla(221, 39%, 11%, 1);
+--tangerine-signal-atlas-slate-caption: hsla(215, 19%, 35%, 1);
+}
+
+/* SCSS HEX */
+$tangerine-signal-atlas-signal-night: #231006ff;
+$tangerine-signal-atlas-burnt-routing: #7c2d12ff;
+$tangerine-signal-atlas-alert-orange: #c2410cff;
+$tangerine-signal-atlas-tangerine-core: #ea580cff;
+$tangerine-signal-atlas-citrus-flash: #fb923cff;
+$tangerine-signal-atlas-peach-notice: #fed7aaff;
+$tangerine-signal-atlas-cream-toast: #fff7edff;
+$tangerine-signal-atlas-white-signal: #ffffffff;
+$tangerine-signal-atlas-cool-ink: #111827ff;
+$tangerine-signal-atlas-slate-caption: #475569ff;
+
+/* SCSS HSL */
+$tangerine-signal-atlas-signal-night: hsla(21, 71%, 8%, 1);
+$tangerine-signal-atlas-burnt-routing: hsla(15, 75%, 28%, 1);
+$tangerine-signal-atlas-alert-orange: hsla(17, 88%, 40%, 1);
+$tangerine-signal-atlas-tangerine-core: hsla(21, 90%, 48%, 1);
+$tangerine-signal-atlas-citrus-flash: hsla(27, 96%, 61%, 1);
+$tangerine-signal-atlas-peach-notice: hsla(32, 98%, 83%, 1);
+$tangerine-signal-atlas-cream-toast: hsla(33, 100%, 96%, 1);
+$tangerine-signal-atlas-white-signal: hsla(0, 0%, 100%, 1);
+$tangerine-signal-atlas-cool-ink: hsla(221, 39%, 11%, 1);
+$tangerine-signal-atlas-slate-caption: hsla(215, 19%, 35%, 1);
+
+/* SCSS RGB */
+$tangerine-signal-atlas-signal-night: rgba(35, 16, 6, 1);
+$tangerine-signal-atlas-burnt-routing: rgba(124, 45, 18, 1);
+$tangerine-signal-atlas-alert-orange: rgba(194, 65, 12, 1);
+$tangerine-signal-atlas-tangerine-core: rgba(234, 88, 12, 1);
+$tangerine-signal-atlas-citrus-flash: rgba(251, 146, 60, 1);
+$tangerine-signal-atlas-peach-notice: rgba(254, 215, 170, 1);
+$tangerine-signal-atlas-cream-toast: rgba(255, 247, 237, 1);
+$tangerine-signal-atlas-white-signal: rgba(255, 255, 255, 1);
+$tangerine-signal-atlas-cool-ink: rgba(17, 24, 39, 1);
+$tangerine-signal-atlas-slate-caption: rgba(71, 85, 105, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #231006ff, #7c2d12ff, #c2410cff, #ea580cff, #fb923cff, #fed7aaff, #fff7edff, #ffffffff, #111827ff, #475569ff);
+$gradient-right: linear-gradient(90deg, #231006ff, #7c2d12ff, #c2410cff, #ea580cff, #fb923cff, #fed7aaff, #fff7edff, #ffffffff, #111827ff, #475569ff);
+$gradient-bottom: linear-gradient(180deg, #231006ff, #7c2d12ff, #c2410cff, #ea580cff, #fb923cff, #fed7aaff, #fff7edff, #ffffffff, #111827ff, #475569ff);
+$gradient-left: linear-gradient(270deg, #231006ff, #7c2d12ff, #c2410cff, #ea580cff, #fb923cff, #fed7aaff, #fff7edff, #ffffffff, #111827ff, #475569ff);
+$gradient-top-right: linear-gradient(45deg, #231006ff, #7c2d12ff, #c2410cff, #ea580cff, #fb923cff, #fed7aaff, #fff7edff, #ffffffff, #111827ff, #475569ff);
+$gradient-bottom-right: linear-gradient(135deg, #231006ff, #7c2d12ff, #c2410cff, #ea580cff, #fb923cff, #fed7aaff, #fff7edff, #ffffffff, #111827ff, #475569ff);
+$gradient-top-left: linear-gradient(225deg, #231006ff, #7c2d12ff, #c2410cff, #ea580cff, #fb923cff, #fed7aaff, #fff7edff, #ffffffff, #111827ff, #475569ff);
+$gradient-bottom-left: linear-gradient(315deg, #231006ff, #7c2d12ff, #c2410cff, #ea580cff, #fb923cff, #fed7aaff, #fff7edff, #ffffffff, #111827ff, #475569ff);
+$gradient-radial: radial-gradient(#231006ff, #7c2d12ff, #c2410cff, #ea580cff, #fb923cff, #fed7aaff, #fff7edff, #ffffffff, #111827ff, #475569ff);
+
+/* SCSS Map */
+$tangerine-signal-atlas-map: (
+    "tangerine-signal-atlas-signal-night": #231006ff,
+    "tangerine-signal-atlas-burnt-routing": #7c2d12ff,
+    "tangerine-signal-atlas-alert-orange": #c2410cff,
+    "tangerine-signal-atlas-tangerine-core": #ea580cff,
+    "tangerine-signal-atlas-citrus-flash": #fb923cff,
+    "tangerine-signal-atlas-peach-notice": #fed7aaff,
+    "tangerine-signal-atlas-cream-toast": #fff7edff,
+    "tangerine-signal-atlas-white-signal": #ffffffff,
+    "tangerine-signal-atlas-cool-ink": #111827ff,
+    "tangerine-signal-atlas-slate-caption": #475569ff
+);

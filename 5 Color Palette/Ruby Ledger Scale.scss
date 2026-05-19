@@ -1,0 +1,81 @@
+/*---
+id: ruby-ledger-scale
+name: Ruby Ledger Scale
+author: JaZeR-444
+version: 1.0.0
+category: Red & Professional
+count: 5
+description: A professional red palette for risk states, reporting, dashboards, and confident editorial systems.
+tags:
+  mood:
+  - red
+  - professional
+  aesthetic:
+  - Finance
+  - Reports
+intent: A red-focused 5-color palette designed for finance, reports, dashboard.
+suggested_use:
+- Finance
+- Reports
+- Dashboard
+url: https://coolors.co/1f0a0c-3b0d11-7f1d1d-b91c1c-dc2626
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--ruby-ledger-scale-ledger-ink: #1f0a0cff;
+--ruby-ledger-scale-account-ruby: #3b0d11ff;
+--ruby-ledger-scale-report-red: #7f1d1dff;
+--ruby-ledger-scale-balance-red: #b91c1cff;
+--ruby-ledger-scale-metric-red: #dc2626ff;
+
+/* CSS HSL */
+--ruby-ledger-scale-ledger-ink: hsla(354, 51%, 8%, 1);
+--ruby-ledger-scale-account-ruby: hsla(355, 64%, 14%, 1);
+--ruby-ledger-scale-report-red: hsla(0, 63%, 31%, 1);
+--ruby-ledger-scale-balance-red: hsla(0, 74%, 42%, 1);
+--ruby-ledger-scale-metric-red: hsla(0, 72%, 51%, 1);
+}
+
+/* SCSS HEX */
+$ruby-ledger-scale-ledger-ink: #1f0a0cff;
+$ruby-ledger-scale-account-ruby: #3b0d11ff;
+$ruby-ledger-scale-report-red: #7f1d1dff;
+$ruby-ledger-scale-balance-red: #b91c1cff;
+$ruby-ledger-scale-metric-red: #dc2626ff;
+
+/* SCSS HSL */
+$ruby-ledger-scale-ledger-ink: hsla(354, 51%, 8%, 1);
+$ruby-ledger-scale-account-ruby: hsla(355, 64%, 14%, 1);
+$ruby-ledger-scale-report-red: hsla(0, 63%, 31%, 1);
+$ruby-ledger-scale-balance-red: hsla(0, 74%, 42%, 1);
+$ruby-ledger-scale-metric-red: hsla(0, 72%, 51%, 1);
+
+/* SCSS RGB */
+$ruby-ledger-scale-ledger-ink: rgba(31, 10, 12, 1);
+$ruby-ledger-scale-account-ruby: rgba(59, 13, 17, 1);
+$ruby-ledger-scale-report-red: rgba(127, 29, 29, 1);
+$ruby-ledger-scale-balance-red: rgba(185, 28, 28, 1);
+$ruby-ledger-scale-metric-red: rgba(220, 38, 38, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1f0a0cff, #3b0d11ff, #7f1d1dff, #b91c1cff, #dc2626ff);
+$gradient-right: linear-gradient(90deg, #1f0a0cff, #3b0d11ff, #7f1d1dff, #b91c1cff, #dc2626ff);
+$gradient-bottom: linear-gradient(180deg, #1f0a0cff, #3b0d11ff, #7f1d1dff, #b91c1cff, #dc2626ff);
+$gradient-left: linear-gradient(270deg, #1f0a0cff, #3b0d11ff, #7f1d1dff, #b91c1cff, #dc2626ff);
+$gradient-top-right: linear-gradient(45deg, #1f0a0cff, #3b0d11ff, #7f1d1dff, #b91c1cff, #dc2626ff);
+$gradient-bottom-right: linear-gradient(135deg, #1f0a0cff, #3b0d11ff, #7f1d1dff, #b91c1cff, #dc2626ff);
+$gradient-top-left: linear-gradient(225deg, #1f0a0cff, #3b0d11ff, #7f1d1dff, #b91c1cff, #dc2626ff);
+$gradient-bottom-left: linear-gradient(315deg, #1f0a0cff, #3b0d11ff, #7f1d1dff, #b91c1cff, #dc2626ff);
+$gradient-radial: radial-gradient(#1f0a0cff, #3b0d11ff, #7f1d1dff, #b91c1cff, #dc2626ff);
+
+/* SCSS Map */
+$ruby-ledger-scale-map: (
+    "ruby-ledger-scale-ledger-ink": #1f0a0cff,
+    "ruby-ledger-scale-account-ruby": #3b0d11ff,
+    "ruby-ledger-scale-report-red": #7f1d1dff,
+    "ruby-ledger-scale-balance-red": #b91c1cff,
+    "ruby-ledger-scale-metric-red": #dc2626ff
+);

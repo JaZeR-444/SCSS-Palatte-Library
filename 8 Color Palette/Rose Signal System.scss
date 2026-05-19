@@ -1,0 +1,99 @@
+/*---
+id: rose-signal-system
+name: Rose Signal System
+author: JaZeR-444
+version: 1.0.0
+category: Red & Expressive
+count: 8
+description: An expressive rose-red palette with deep berry structure, vivid signal tones, and soft pink surfaces.
+tags:
+  mood:
+  - red
+  - expressive
+  aesthetic:
+  - Rose
+  - Interface
+intent: A red-focused 8-color palette designed for social ui, events, brand accent.
+suggested_use:
+- Social UI
+- Events
+- Brand Accent
+url: https://coolors.co/17070d-3f0d1e-831843-be123c-e11d48-f43f5e-fb7185-fecdd3
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--rose-signal-system-signal-black: #17070dff;
+--rose-signal-system-rose-depth: #3f0d1eff;
+--rose-signal-system-berry-core: #831843ff;
+--rose-signal-system-signal-ruby: #be123cff;
+--rose-signal-system-rose-action: #e11d48ff;
+--rose-signal-system-vivid-rose: #f43f5eff;
+--rose-signal-system-petal-red: #fb7185ff;
+--rose-signal-system-soft-petal: #fecdd3ff;
+
+/* CSS HSL */
+--rose-signal-system-signal-black: hsla(338, 53%, 6%, 1);
+--rose-signal-system-rose-depth: hsla(340, 66%, 15%, 1);
+--rose-signal-system-berry-core: hsla(336, 69%, 30%, 1);
+--rose-signal-system-signal-ruby: hsla(345, 83%, 41%, 1);
+--rose-signal-system-rose-action: hsla(347, 77%, 50%, 1);
+--rose-signal-system-vivid-rose: hsla(350, 89%, 60%, 1);
+--rose-signal-system-petal-red: hsla(351, 95%, 71%, 1);
+--rose-signal-system-soft-petal: hsla(353, 96%, 90%, 1);
+}
+
+/* SCSS HEX */
+$rose-signal-system-signal-black: #17070dff;
+$rose-signal-system-rose-depth: #3f0d1eff;
+$rose-signal-system-berry-core: #831843ff;
+$rose-signal-system-signal-ruby: #be123cff;
+$rose-signal-system-rose-action: #e11d48ff;
+$rose-signal-system-vivid-rose: #f43f5eff;
+$rose-signal-system-petal-red: #fb7185ff;
+$rose-signal-system-soft-petal: #fecdd3ff;
+
+/* SCSS HSL */
+$rose-signal-system-signal-black: hsla(338, 53%, 6%, 1);
+$rose-signal-system-rose-depth: hsla(340, 66%, 15%, 1);
+$rose-signal-system-berry-core: hsla(336, 69%, 30%, 1);
+$rose-signal-system-signal-ruby: hsla(345, 83%, 41%, 1);
+$rose-signal-system-rose-action: hsla(347, 77%, 50%, 1);
+$rose-signal-system-vivid-rose: hsla(350, 89%, 60%, 1);
+$rose-signal-system-petal-red: hsla(351, 95%, 71%, 1);
+$rose-signal-system-soft-petal: hsla(353, 96%, 90%, 1);
+
+/* SCSS RGB */
+$rose-signal-system-signal-black: rgba(23, 7, 13, 1);
+$rose-signal-system-rose-depth: rgba(63, 13, 30, 1);
+$rose-signal-system-berry-core: rgba(131, 24, 67, 1);
+$rose-signal-system-signal-ruby: rgba(190, 18, 60, 1);
+$rose-signal-system-rose-action: rgba(225, 29, 72, 1);
+$rose-signal-system-vivid-rose: rgba(244, 63, 94, 1);
+$rose-signal-system-petal-red: rgba(251, 113, 133, 1);
+$rose-signal-system-soft-petal: rgba(254, 205, 211, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #17070dff, #3f0d1eff, #831843ff, #be123cff, #e11d48ff, #f43f5eff, #fb7185ff, #fecdd3ff);
+$gradient-right: linear-gradient(90deg, #17070dff, #3f0d1eff, #831843ff, #be123cff, #e11d48ff, #f43f5eff, #fb7185ff, #fecdd3ff);
+$gradient-bottom: linear-gradient(180deg, #17070dff, #3f0d1eff, #831843ff, #be123cff, #e11d48ff, #f43f5eff, #fb7185ff, #fecdd3ff);
+$gradient-left: linear-gradient(270deg, #17070dff, #3f0d1eff, #831843ff, #be123cff, #e11d48ff, #f43f5eff, #fb7185ff, #fecdd3ff);
+$gradient-top-right: linear-gradient(45deg, #17070dff, #3f0d1eff, #831843ff, #be123cff, #e11d48ff, #f43f5eff, #fb7185ff, #fecdd3ff);
+$gradient-bottom-right: linear-gradient(135deg, #17070dff, #3f0d1eff, #831843ff, #be123cff, #e11d48ff, #f43f5eff, #fb7185ff, #fecdd3ff);
+$gradient-top-left: linear-gradient(225deg, #17070dff, #3f0d1eff, #831843ff, #be123cff, #e11d48ff, #f43f5eff, #fb7185ff, #fecdd3ff);
+$gradient-bottom-left: linear-gradient(315deg, #17070dff, #3f0d1eff, #831843ff, #be123cff, #e11d48ff, #f43f5eff, #fb7185ff, #fecdd3ff);
+$gradient-radial: radial-gradient(#17070dff, #3f0d1eff, #831843ff, #be123cff, #e11d48ff, #f43f5eff, #fb7185ff, #fecdd3ff);
+
+/* SCSS Map */
+$rose-signal-system-map: (
+    "rose-signal-system-signal-black": #17070dff,
+    "rose-signal-system-rose-depth": #3f0d1eff,
+    "rose-signal-system-berry-core": #831843ff,
+    "rose-signal-system-signal-ruby": #be123cff,
+    "rose-signal-system-rose-action": #e11d48ff,
+    "rose-signal-system-vivid-rose": #f43f5eff,
+    "rose-signal-system-petal-red": #fb7185ff,
+    "rose-signal-system-soft-petal": #fecdd3ff
+);

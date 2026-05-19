@@ -1,0 +1,111 @@
+/*---
+id: amber-forge-atlas
+name: Amber Forge Atlas
+author: JaZeR-444
+version: 1.0.0
+category: Orange & Industrial
+count: 10
+description: A complete forged amber atlas for industrial systems, pairing heavy darks with oxide, copper, amber, gold, and warm surfaces.
+tags:
+  mood:
+  - orange
+  - industrial
+  aesthetic:
+  - Forge
+  - Manufacturing
+intent: An orange-focused 10-color palette designed for industrial ui, ops dashboard, hardware.
+suggested_use:
+- Industrial UI
+- Ops Dashboard
+- Hardware
+url: https://coolors.co/1c0f05-431407-7c2d12-9a3412-c2410c-f97316-fbbf24-ffedd5-fff7ed-ffffff
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--amber-forge-atlas-kiln-black: #1c0f05ff;
+--amber-forge-atlas-furnace-brown: #431407ff;
+--amber-forge-atlas-oxide-panel: #7c2d12ff;
+--amber-forge-atlas-forge-ember: #9a3412ff;
+--amber-forge-atlas-copper-heat: #c2410cff;
+--amber-forge-atlas-molten-amber: #f97316ff;
+--amber-forge-atlas-spark-gold: #fbbf24ff;
+--amber-forge-atlas-worklight-cream: #ffedd5ff;
+--amber-forge-atlas-ash-white: #fff7edff;
+--amber-forge-atlas-signal-white: #ffffffff;
+
+/* CSS HSL */
+--amber-forge-atlas-kiln-black: hsla(26, 70%, 6%, 1);
+--amber-forge-atlas-furnace-brown: hsla(13, 81%, 15%, 1);
+--amber-forge-atlas-oxide-panel: hsla(15, 75%, 28%, 1);
+--amber-forge-atlas-forge-ember: hsla(15, 79%, 34%, 1);
+--amber-forge-atlas-copper-heat: hsla(17, 88%, 40%, 1);
+--amber-forge-atlas-molten-amber: hsla(25, 95%, 53%, 1);
+--amber-forge-atlas-spark-gold: hsla(43, 96%, 56%, 1);
+--amber-forge-atlas-worklight-cream: hsla(34, 100%, 92%, 1);
+--amber-forge-atlas-ash-white: hsla(33, 100%, 96%, 1);
+--amber-forge-atlas-signal-white: hsla(0, 0%, 100%, 1);
+}
+
+/* SCSS HEX */
+$amber-forge-atlas-kiln-black: #1c0f05ff;
+$amber-forge-atlas-furnace-brown: #431407ff;
+$amber-forge-atlas-oxide-panel: #7c2d12ff;
+$amber-forge-atlas-forge-ember: #9a3412ff;
+$amber-forge-atlas-copper-heat: #c2410cff;
+$amber-forge-atlas-molten-amber: #f97316ff;
+$amber-forge-atlas-spark-gold: #fbbf24ff;
+$amber-forge-atlas-worklight-cream: #ffedd5ff;
+$amber-forge-atlas-ash-white: #fff7edff;
+$amber-forge-atlas-signal-white: #ffffffff;
+
+/* SCSS HSL */
+$amber-forge-atlas-kiln-black: hsla(26, 70%, 6%, 1);
+$amber-forge-atlas-furnace-brown: hsla(13, 81%, 15%, 1);
+$amber-forge-atlas-oxide-panel: hsla(15, 75%, 28%, 1);
+$amber-forge-atlas-forge-ember: hsla(15, 79%, 34%, 1);
+$amber-forge-atlas-copper-heat: hsla(17, 88%, 40%, 1);
+$amber-forge-atlas-molten-amber: hsla(25, 95%, 53%, 1);
+$amber-forge-atlas-spark-gold: hsla(43, 96%, 56%, 1);
+$amber-forge-atlas-worklight-cream: hsla(34, 100%, 92%, 1);
+$amber-forge-atlas-ash-white: hsla(33, 100%, 96%, 1);
+$amber-forge-atlas-signal-white: hsla(0, 0%, 100%, 1);
+
+/* SCSS RGB */
+$amber-forge-atlas-kiln-black: rgba(28, 15, 5, 1);
+$amber-forge-atlas-furnace-brown: rgba(67, 20, 7, 1);
+$amber-forge-atlas-oxide-panel: rgba(124, 45, 18, 1);
+$amber-forge-atlas-forge-ember: rgba(154, 52, 18, 1);
+$amber-forge-atlas-copper-heat: rgba(194, 65, 12, 1);
+$amber-forge-atlas-molten-amber: rgba(249, 115, 22, 1);
+$amber-forge-atlas-spark-gold: rgba(251, 191, 36, 1);
+$amber-forge-atlas-worklight-cream: rgba(255, 237, 213, 1);
+$amber-forge-atlas-ash-white: rgba(255, 247, 237, 1);
+$amber-forge-atlas-signal-white: rgba(255, 255, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1c0f05ff, #431407ff, #7c2d12ff, #9a3412ff, #c2410cff, #f97316ff, #fbbf24ff, #ffedd5ff, #fff7edff, #ffffffff);
+$gradient-right: linear-gradient(90deg, #1c0f05ff, #431407ff, #7c2d12ff, #9a3412ff, #c2410cff, #f97316ff, #fbbf24ff, #ffedd5ff, #fff7edff, #ffffffff);
+$gradient-bottom: linear-gradient(180deg, #1c0f05ff, #431407ff, #7c2d12ff, #9a3412ff, #c2410cff, #f97316ff, #fbbf24ff, #ffedd5ff, #fff7edff, #ffffffff);
+$gradient-left: linear-gradient(270deg, #1c0f05ff, #431407ff, #7c2d12ff, #9a3412ff, #c2410cff, #f97316ff, #fbbf24ff, #ffedd5ff, #fff7edff, #ffffffff);
+$gradient-top-right: linear-gradient(45deg, #1c0f05ff, #431407ff, #7c2d12ff, #9a3412ff, #c2410cff, #f97316ff, #fbbf24ff, #ffedd5ff, #fff7edff, #ffffffff);
+$gradient-bottom-right: linear-gradient(135deg, #1c0f05ff, #431407ff, #7c2d12ff, #9a3412ff, #c2410cff, #f97316ff, #fbbf24ff, #ffedd5ff, #fff7edff, #ffffffff);
+$gradient-top-left: linear-gradient(225deg, #1c0f05ff, #431407ff, #7c2d12ff, #9a3412ff, #c2410cff, #f97316ff, #fbbf24ff, #ffedd5ff, #fff7edff, #ffffffff);
+$gradient-bottom-left: linear-gradient(315deg, #1c0f05ff, #431407ff, #7c2d12ff, #9a3412ff, #c2410cff, #f97316ff, #fbbf24ff, #ffedd5ff, #fff7edff, #ffffffff);
+$gradient-radial: radial-gradient(#1c0f05ff, #431407ff, #7c2d12ff, #9a3412ff, #c2410cff, #f97316ff, #fbbf24ff, #ffedd5ff, #fff7edff, #ffffffff);
+
+/* SCSS Map */
+$amber-forge-atlas-map: (
+    "amber-forge-atlas-kiln-black": #1c0f05ff,
+    "amber-forge-atlas-furnace-brown": #431407ff,
+    "amber-forge-atlas-oxide-panel": #7c2d12ff,
+    "amber-forge-atlas-forge-ember": #9a3412ff,
+    "amber-forge-atlas-copper-heat": #c2410cff,
+    "amber-forge-atlas-molten-amber": #f97316ff,
+    "amber-forge-atlas-spark-gold": #fbbf24ff,
+    "amber-forge-atlas-worklight-cream": #ffedd5ff,
+    "amber-forge-atlas-ash-white": #fff7edff,
+    "amber-forge-atlas-signal-white": #ffffffff
+);

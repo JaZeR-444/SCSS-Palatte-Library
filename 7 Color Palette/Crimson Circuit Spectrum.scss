@@ -1,0 +1,93 @@
+/*---
+id: crimson-circuit-spectrum
+name: Crimson Circuit Spectrum
+author: JaZeR-444
+version: 1.0.0
+category: Red & Technical
+count: 7
+description: A technical crimson palette with dark interface foundations, alert reds, and clean diagnostic surfaces.
+tags:
+  mood:
+  - red
+  - technical
+  aesthetic:
+  - Circuit
+  - Developer
+intent: A red-focused 7-color palette designed for developer tools, security, analytics.
+suggested_use:
+- Developer Tools
+- Security
+- Analytics
+url: https://coolors.co/160607-2a0a0d-5f0f14-991b1b-dc2626-ef4444-f87171
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--crimson-circuit-spectrum-circuit-black: #160607ff;
+--crimson-circuit-spectrum-alert-root: #2a0a0dff;
+--crimson-circuit-spectrum-crimson-board: #5f0f14ff;
+--crimson-circuit-spectrum-runtime-red: #991b1bff;
+--crimson-circuit-spectrum-signal-red: #dc2626ff;
+--crimson-circuit-spectrum-action-red: #ef4444ff;
+--crimson-circuit-spectrum-trace-coral: #f87171ff;
+
+/* CSS HSL */
+--crimson-circuit-spectrum-circuit-black: hsla(356, 57%, 5%, 1);
+--crimson-circuit-spectrum-alert-root: hsla(354, 62%, 10%, 1);
+--crimson-circuit-spectrum-crimson-board: hsla(356, 73%, 22%, 1);
+--crimson-circuit-spectrum-runtime-red: hsla(0, 70%, 35%, 1);
+--crimson-circuit-spectrum-signal-red: hsla(0, 72%, 51%, 1);
+--crimson-circuit-spectrum-action-red: hsla(0, 84%, 60%, 1);
+--crimson-circuit-spectrum-trace-coral: hsla(0, 91%, 71%, 1);
+}
+
+/* SCSS HEX */
+$crimson-circuit-spectrum-circuit-black: #160607ff;
+$crimson-circuit-spectrum-alert-root: #2a0a0dff;
+$crimson-circuit-spectrum-crimson-board: #5f0f14ff;
+$crimson-circuit-spectrum-runtime-red: #991b1bff;
+$crimson-circuit-spectrum-signal-red: #dc2626ff;
+$crimson-circuit-spectrum-action-red: #ef4444ff;
+$crimson-circuit-spectrum-trace-coral: #f87171ff;
+
+/* SCSS HSL */
+$crimson-circuit-spectrum-circuit-black: hsla(356, 57%, 5%, 1);
+$crimson-circuit-spectrum-alert-root: hsla(354, 62%, 10%, 1);
+$crimson-circuit-spectrum-crimson-board: hsla(356, 73%, 22%, 1);
+$crimson-circuit-spectrum-runtime-red: hsla(0, 70%, 35%, 1);
+$crimson-circuit-spectrum-signal-red: hsla(0, 72%, 51%, 1);
+$crimson-circuit-spectrum-action-red: hsla(0, 84%, 60%, 1);
+$crimson-circuit-spectrum-trace-coral: hsla(0, 91%, 71%, 1);
+
+/* SCSS RGB */
+$crimson-circuit-spectrum-circuit-black: rgba(22, 6, 7, 1);
+$crimson-circuit-spectrum-alert-root: rgba(42, 10, 13, 1);
+$crimson-circuit-spectrum-crimson-board: rgba(95, 15, 20, 1);
+$crimson-circuit-spectrum-runtime-red: rgba(153, 27, 27, 1);
+$crimson-circuit-spectrum-signal-red: rgba(220, 38, 38, 1);
+$crimson-circuit-spectrum-action-red: rgba(239, 68, 68, 1);
+$crimson-circuit-spectrum-trace-coral: rgba(248, 113, 113, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #dc2626ff, #ef4444ff, #f87171ff);
+$gradient-right: linear-gradient(90deg, #160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #dc2626ff, #ef4444ff, #f87171ff);
+$gradient-bottom: linear-gradient(180deg, #160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #dc2626ff, #ef4444ff, #f87171ff);
+$gradient-left: linear-gradient(270deg, #160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #dc2626ff, #ef4444ff, #f87171ff);
+$gradient-top-right: linear-gradient(45deg, #160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #dc2626ff, #ef4444ff, #f87171ff);
+$gradient-bottom-right: linear-gradient(135deg, #160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #dc2626ff, #ef4444ff, #f87171ff);
+$gradient-top-left: linear-gradient(225deg, #160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #dc2626ff, #ef4444ff, #f87171ff);
+$gradient-bottom-left: linear-gradient(315deg, #160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #dc2626ff, #ef4444ff, #f87171ff);
+$gradient-radial: radial-gradient(#160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #dc2626ff, #ef4444ff, #f87171ff);
+
+/* SCSS Map */
+$crimson-circuit-spectrum-map: (
+    "crimson-circuit-spectrum-circuit-black": #160607ff,
+    "crimson-circuit-spectrum-alert-root": #2a0a0dff,
+    "crimson-circuit-spectrum-crimson-board": #5f0f14ff,
+    "crimson-circuit-spectrum-runtime-red": #991b1bff,
+    "crimson-circuit-spectrum-signal-red": #dc2626ff,
+    "crimson-circuit-spectrum-action-red": #ef4444ff,
+    "crimson-circuit-spectrum-trace-coral": #f87171ff
+);
