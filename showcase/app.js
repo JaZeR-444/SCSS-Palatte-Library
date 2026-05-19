@@ -1,227 +1,55 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // DOM Elements
-    const paletteGrid = document.getElementById('palette-grid');
-    const filterNav = document.getElementById('filter-nav');
-    const modalOverlay = document.getElementById('modal-overlay');
-    const modalContent = document.getElementById('modal-content');
-    const closeModal = document.getElementById('close-modal');
-    const modalTitle = document.getElementById('modal-title');
-    const modalVibe = document.getElementById('modal-vibe');
-    const heroGradient = document.getElementById('hero-gradient');
-    const colorLabGrid = document.getElementById('color-lab-grid');
-    const codeBlock = document.getElementById('code-block');
-    const themeToggle = document.getElementById('theme-toggle');
-    const visionSimulator = document.getElementById('vision-simulator');
-    const searchInput = document.getElementById('palette-search');
-    const toastContainer = document.getElementById('toast-container');
+    console.log('Showcase: Initializing stable v2.0.1...');
 
-    // State
+    // --- DOM Elements with Null Safety ---
+    const getEl = (id) => document.getElementById(id);
+    
+    const elements = {
+        grid: getEl('palette-grid'),
+        nav: getEl('filter-nav'),
+        overlay: getEl('modal-overlay'),
+        modal: getEl('modal-content'),
+        close: getEl('close-modal'),
+        title: getEl('modal-title'),
+        vibe: getEl('modal-vibe'),
+        hero: getEl('hero-gradient'),
+        lab: getEl('color-lab-grid'),
+        code: getEl('code-block'),
+        theme: getEl('theme-toggle'),
+        sim: getEl('vision-simulator'),
+        search: getEl('palette-search'),
+        toast: getEl('toast-container')
+    };
+
+    // Verify critical elements
+    for (const [name, el] of Object.entries(elements)) {
+        if (!el && name !== 'search' && name !== 'sim') {
+            console.error(`Showcase Error: Critical element '${name}' not found in DOM.`);
+        }
+    }
+
+    // --- State ---
     let allPalettes = [];
-    let currentSourceCode = '';
     let currentPalette = null;
-    let currentFilter = 'all';
+    let activeFilter = 'all';
     let searchQuery = '';
 
-    // --- Core Logic: Search & Filtering ---
-
-    function applyFilters() {
-        const filtered = allPalettes.filter(p => {
-            const matchesFilter = currentFilter === 'all' || p.count === parseInt(currentFilter);
-            const matchesSearch = p.name.toLowerCase().includes(searchQuery) || 
-                                (p.tags && p.tags.some(t => t.toLowerCase().includes(searchQuery)));
-            return matchesFilter && matchesSearch;
-        });
-        renderPalettes(filtered);
-    }
-
-    if (searchInput) {
-        searchInput.addEventListener('input', (e) => {
-            searchQuery = e.target.value.toLowerCase();
-            applyFilters();
-        });
-    }
-
-    function handleFilter(e, count) {
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.classList.remove('active', 'bg-indigo-500', 'text-white', 'border-indigo-500');
-            btn.classList.add('border-gray-200', 'dark:border-slate-800');
-        });
-        
-        e.target.classList.add('active', 'bg-indigo-500', 'text-white', 'border-indigo-500');
-        currentFilter = count;
-        applyFilters();
-    }
-
-    // --- UI Rendering ---
-
-    function renderPalettes(palettes) {
-        paletteGrid.innerHTML = '';
-        if (palettes.length === 0) {
-            paletteGrid.innerHTML = `
-                <div class="col-span-full py-20 text-center opacity-50 flex flex-col items-center gap-4">
-                    <i class="fa-solid fa-ghost text-4xl"></i>
-                    <p class="font-bold text-xl">No results found</p>
-                    <p class="text-sm">Try a different name, tag, or color count.</p>
-                </div>`;
-            return;
-        }
-
-        palettes.forEach(palette => {
-            const card = document.createElement('div');
-            card.className = 'bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-slate-800 hover:shadow-xl hover:-translate-y-1 transition-all cursor-pointer group flex flex-col h-full';
-            
-            const swatches = palette.colors.map(color => 
-                `<div class="swatch-item" style="background-color: ${color.hex}" 
-                    title="${color.name}: ${color.hex}" 
-                    onclick="event.stopPropagation(); copyToClipboard('${color.hex}', 'HEX ${color.hex} copied!')">
-                </div>`
-            ).join('');
-
-            const tags = (palette.tags || []).map(t => 
-                `<span class="text-[9px] px-1.5 py-0.5 rounded bg-indigo-50 dark:bg-indigo-900/20 text-indigo-500 dark:text-indigo-400 font-black uppercase tracking-tighter">${t}</span>`
-            ).join('');
-
-            card.innerHTML = `
-                <div class="swatch-group mb-4">${swatches}</div>
-                <div class="flex-1 mb-6">
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="font-extrabold text-lg text-gray-800 dark:text-gray-100 group-hover:text-indigo-500 transition-colors">${palette.name}</h3>
-                        <span class="px-2 py-0.5 rounded-md bg-gray-50 dark:bg-slate-800 text-gray-400 text-[10px] font-bold uppercase tracking-wider">${palette.count} Colors</span>
-                    </div>
-                    <div class="flex flex-wrap gap-1 mb-4">${tags}</div>
-                    <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-2">${palette.description}</p>
-                </div>
-                <div class="flex items-center justify-between pt-4 border-t border-gray-50 dark:border-slate-800">
-                    <span class="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">View Details</span>
-                    <div class="w-10 h-10 rounded-xl bg-gray-50 dark:bg-slate-800 flex items-center justify-center text-gray-400 group-hover:bg-indigo-500 group-hover:text-white transition-all transform group-hover:rotate-45 shadow-sm">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                </div>
-            `;
-
-            card.addEventListener('click', () => openPaletteModal(palette));
-            paletteGrid.appendChild(card);
-        });
-    }
-
-    // --- Modal & Sandbox ---
-
-    function openPaletteModal(palette) {
-        currentPalette = palette;
-        modalTitle.textContent = palette.name;
-        modalVibe.textContent = (palette.tags || []).join(' • ') || 'Thematic Collection';
-        codeBlock.textContent = '/* Loading source code... */';
-        colorLabGrid.innerHTML = '';
-
-        // Reset Tabs
-        document.querySelectorAll('.tab-btn').forEach(b => {
-            b.classList.remove('active', 'text-indigo-400', 'border-indigo-500', 'bg-indigo-500/5');
-            b.classList.add('text-gray-500', 'border-transparent');
-        });
-        const firstTab = document.querySelector('.tab-btn');
-        if (firstTab) firstTab.classList.add('active', 'text-indigo-400', 'border-indigo-500', 'bg-indigo-500/5');
-
-        // Dynamic Hero
-        const hexList = palette.colors.map(c => c.hex).join(', ');
-        heroGradient.style.background = `radial-gradient(circle at center, ${hexList})`;
-        
-        // Update Sandbox Custom Properties
-        const p = palette.colors[0].hex;
-        const s = palette.colors.length > 1 ? palette.colors[1].hex : p;
-        const t = palette.colors.length > 2 ? palette.colors[2].hex : s;
-        document.documentElement.style.setProperty('--ui-color-1', p);
-        document.documentElement.style.setProperty('--ui-color-2', s);
-        document.documentElement.style.setProperty('--ui-color-3', t);
-
-        // Populate Color Lab
-        const whiteRgb = [1, 1, 1];
-        const darkRgb = [15/255, 23/255, 42/255];
-
-        palette.colors.forEach((color, i) => {
-            const rgb = hexToRgb(color.hex);
-            const contrastWhite = getContrast(rgb, whiteRgb);
-            const contrastDark = getContrast(rgb, darkRgb);
-
-            const labCard = document.createElement('div');
-            labCard.className = 'bg-white dark:bg-slate-900 rounded-2xl p-4 flex items-center gap-4 shadow-sm border border-gray-100 dark:border-slate-800 hover:shadow-md transition-all group';
-            labCard.innerHTML = `
-                <div class="w-16 h-16 rounded-xl shadow-inner border border-black/5 flex-shrink-0 cursor-pointer transition-transform active:scale-95" 
-                    style="background-color: ${color.hex}"
-                    onclick="copyToClipboard('${color.hex}', 'HEX ${color.hex} copied!')"></div>
-                <div class="flex-1 overflow-hidden">
-                    <h4 class="font-bold text-sm mb-1 truncate">${color.name}</h4>
-                    <div class="flex items-center gap-2 mb-2">
-                        <code class="text-[10px] text-gray-400 font-mono">${color.hex.toUpperCase()}</code>
-                        <button onclick="copyToClipboard('${color.hex}', 'HEX ${color.hex} copied!')" class="text-gray-300 hover:text-indigo-500 transition-colors">
-                            <i class="fa-solid fa-copy text-[10px]"></i>
-                        </button>
-                    </div>
-                    <div class="flex gap-1.5 items-center">
-                        <div class="flex items-center gap-1">
-                             <div class="w-2 h-2 rounded-full bg-white border border-gray-200"></div>
-                             ${getA11yBadge(contrastWhite)}
-                        </div>
-                        <div class="flex items-center gap-1 ml-1">
-                             <div class="w-2 h-2 rounded-full bg-slate-900"></div>
-                             ${getA11yBadge(contrastDark)}
-                        </div>
-                    </div>
-                </div>
-            `;
-            colorLabGrid.appendChild(labCard);
-            
-            if (window.gsap) {
-                gsap.from(labCard, { opacity: 0, y: 10, duration: 0.3, delay: 0.2 + (i * 0.05) });
-            }
-        });
-
-        // Sandbox Animations
-        if (window.gsap) {
-            gsap.from("#modal-hero h2", { y: 20, opacity: 0, duration: 0.6, ease: "power3.out" });
-            gsap.from("#mock-desktop", { y: 30, opacity: 0, duration: 0.8, delay: 0.3, ease: "power3.out" });
-            gsap.to("#ui-chart-bar > div", { width: "85%", duration: 1.5, delay: 0.8, ease: "elastic.out(1, 0.3)" });
-        }
-
-        // Fetch SCSS
-        fetch('../' + palette.path)
-            .then(res => res.text())
-            .then(text => {
-                currentSourceCode = text;
-                codeBlock.textContent = text;
-            })
-            .catch(() => codeBlock.textContent = '/* Error loading source SCSS file. */');
-
-        modalOverlay.classList.remove('hidden');
-        setTimeout(() => modalOverlay.classList.add('active'), 10);
-        document.body.style.overflow = 'hidden';
-    }
-
-    function closePaletteModal() {
-        modalOverlay.classList.remove('active');
-        setTimeout(() => {
-            modalOverlay.classList.add('hidden');
-            document.body.style.overflow = '';
-            visionSimulator.value = 'none';
-            modalContent.style.filter = '';
-        }, 300);
-    }
-
-    closeModal.addEventListener('click', closePaletteModal);
-    modalOverlay.addEventListener('click', (e) => e.target === modalOverlay && closePaletteModal());
-    document.addEventListener('keydown', (e) => e.key === 'Escape' && closePaletteModal());
-
-    // --- Helper Utilities ---
+    // --- Utilities ---
 
     function hexToRgb(hex) {
-        const cleanHex = hex.replace('#', '').slice(0, 6);
-        const r = parseInt(cleanHex.slice(0, 2), 16) / 255;
-        const g = parseInt(cleanHex.slice(2, 4), 16) / 255;
-        const b = parseInt(cleanHex.slice(4, 6), 16) / 255;
-        return [r, g, b];
+        try {
+            const clean = (hex || '#000000').replace('#', '').slice(0, 6);
+            const r = parseInt(clean.slice(0, 2), 16) / 255 || 0;
+            const g = parseInt(clean.slice(2, 4), 16) / 255 || 0;
+            const b = parseInt(clean.slice(4, 6), 16) / 255 || 0;
+            return [r, g, b];
+        } catch (e) {
+            return [0, 0, 0];
+        }
     }
 
-    function getLuminance([r, g, b]) {
-        const a = [r, g, b].map(v => v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4));
+    function getLuminance(rgb) {
+        const a = rgb.map(v => v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4));
         return a[0] * 0.2126 + a[1] * 0.7152 + a[2] * 0.0722;
     }
 
@@ -238,53 +66,190 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function showToast(message, type = 'success') {
+        if (!elements.toast) return;
         const toast = document.createElement('div');
         toast.className = 'px-6 py-3 rounded-2xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 shadow-2xl flex items-center gap-3 transition-all duration-300 pointer-events-auto transform translate-y-10 opacity-0';
         toast.innerHTML = `
             <i class="fa-solid ${type === 'success' ? 'fa-circle-check text-green-400' : 'fa-circle-exclamation text-red-400'}"></i>
             <span class="text-sm font-bold">${message}</span>
         `;
-        toastContainer.appendChild(toast);
-        
-        // Animate In
+        elements.toast.appendChild(toast);
         setTimeout(() => toast.classList.remove('translate-y-10', 'opacity-0'), 10);
-        
-        // Animate Out
         setTimeout(() => {
             toast.classList.add('translate-y-[-20px]', 'opacity-0');
             setTimeout(() => toast.remove(), 300);
         }, 2500);
     }
 
-    function copyToClipboard(text, message) {
-        navigator.clipboard.writeText(text).then(() => showToast(message));
-    }
+    window.copyToClipboard = (text, msg) => {
+        navigator.clipboard.writeText(text).then(() => showToast(msg || 'Copied!'));
+    };
 
-    // --- Data Export Generators ---
+    // --- Rendering ---
 
-    function generateCSSVars(palette) {
-        let css = `:root {\n`;
-        palette.colors.forEach(c => {
-            const varName = c.name.toLowerCase().replace(/\s+/g, '-');
-            css += `  --${varName}: ${c.hex};\n`;
+    function renderPalettes(palettes) {
+        if (!elements.grid) return;
+        elements.grid.innerHTML = '';
+        
+        if (palettes.length === 0) {
+            elements.grid.innerHTML = '<div class="col-span-full py-20 text-center opacity-50"><p class="text-xl font-bold">No palettes found</p></div>';
+            return;
+        }
+
+        palettes.forEach(p => {
+            const card = document.createElement('div');
+            card.className = 'bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-slate-800 hover:shadow-xl hover:-translate-y-1 transition-all cursor-pointer group flex flex-col h-full';
+            
+            const swatches = p.colors.map(c => 
+                `<div class="swatch-item" style="background-color: ${c.hex}" onclick="event.stopPropagation(); copyToClipboard('${c.hex}', 'Copied ${c.hex}')"></div>`
+            ).join('');
+
+            const tags = (p.tags || []).map(t => `<span class="text-[9px] px-1.5 py-0.5 rounded bg-indigo-50 dark:bg-indigo-900/20 text-indigo-500 dark:text-indigo-400 font-black uppercase tracking-tighter">${t}</span>`).join('');
+
+            card.innerHTML = `
+                <div class="swatch-group mb-4">${swatches}</div>
+                <div class="flex-1 mb-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-extrabold text-lg text-gray-800 dark:text-gray-100 group-hover:text-indigo-500 transition-colors">${p.name}</h3>
+                        <span class="px-2 py-0.5 rounded-md bg-gray-50 dark:bg-slate-800 text-gray-400 text-[10px] font-bold uppercase tracking-wider">${p.count}</span>
+                    </div>
+                    <div class="flex flex-wrap gap-1 mb-4">${tags}</div>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-2">${p.description}</p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-gray-50 dark:border-slate-800">
+                    <span class="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">Details</span>
+                    <div class="w-10 h-10 rounded-xl bg-gray-50 dark:bg-slate-800 flex items-center justify-center text-gray-400 group-hover:bg-indigo-500 group-hover:text-white transition-all transform group-hover:rotate-45 shadow-sm">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            `;
+            card.addEventListener('click', () => openModal(p));
+            elements.grid.appendChild(card);
         });
-        css += `}`;
-        return css;
     }
 
-    function generateTailwind(palette) {
-        let tw = `// Tailwind Config Snippet\ncolors: {\n`;
-        palette.colors.forEach(c => {
-            const key = c.name.toLowerCase().replace(/\s+/g, '-');
-            tw += `  '${key}': '${c.hex}',\n`;
+    // --- Modal Logic ---
+
+    function openModal(p) {
+        currentPalette = p;
+        if (elements.title) elements.title.textContent = p.name;
+        if (elements.vibe) elements.vibe.textContent = (p.tags || []).join(' • ') || 'Collection';
+        if (elements.code) elements.code.textContent = '/* Loading SCSS... */';
+        
+        // Hero
+        if (elements.hero) {
+            const hexes = p.colors.map(c => c.hex).join(', ');
+            elements.hero.style.background = `radial-gradient(circle at center, ${hexes})`;
+        }
+
+        // Sandbox CSS Vars
+        const colors = p.colors;
+        const c1 = colors[0].hex;
+        const c2 = colors.length > 1 ? colors[1].hex : c1;
+        const c3 = colors.length > 2 ? colors[2].hex : c2;
+        document.documentElement.style.setProperty('--ui-color-1', c1);
+        document.documentElement.style.setProperty('--ui-color-2', c2);
+        document.documentElement.style.setProperty('--ui-color-3', c3);
+
+        // --- RENDER COLOR LAB (Critical Section) ---
+        if (elements.lab) {
+            elements.lab.innerHTML = '';
+            const white = [1, 1, 1];
+            const dark = [15/255, 23/255, 42/255];
+
+            p.colors.forEach((color, i) => {
+                try {
+                    const rgb = hexToRgb(color.hex);
+                    const contrastW = getContrast(rgb, white);
+                    const contrastD = getContrast(rgb, dark);
+
+                    const labCard = document.createElement('div');
+                    labCard.className = 'bg-white dark:bg-slate-900 rounded-2xl p-4 flex items-center gap-4 shadow-sm border border-gray-100 dark:border-slate-800 hover:shadow-md transition-all group';
+                    labCard.innerHTML = `
+                        <div class="w-16 h-16 rounded-xl shadow-inner border border-black/5 flex-shrink-0 cursor-pointer transition-transform active:scale-95" 
+                            style="background-color: ${color.hex}"
+                            onclick="copyToClipboard('${color.hex}', 'HEX ${color.hex} copied!')"></div>
+                        <div class="flex-1 overflow-hidden">
+                            <h4 class="font-bold text-sm mb-1 truncate">${color.name}</h4>
+                            <div class="flex items-center gap-2 mb-2">
+                                <code class="text-[10px] text-gray-400 font-mono">${color.hex.toUpperCase()}</code>
+                                <button onclick="copyToClipboard('${color.hex}', 'HEX ${color.hex} copied!')" class="text-gray-300 hover:text-indigo-500 transition-colors">
+                                    <i class="fa-solid fa-copy text-[10px]"></i>
+                                </button>
+                            </div>
+                            <div class="flex gap-1.5 items-center">
+                                <div class="flex items-center gap-1">${getA11yBadge(contrastW)}</div>
+                                <div class="flex items-center gap-1 ml-1">${getA11yBadge(contrastD)}</div>
+                            </div>
+                        </div>
+                    `;
+                    elements.lab.appendChild(labCard);
+                    
+                    if (window.gsap) {
+                        gsap.from(labCard, { opacity: 0, y: 10, duration: 0.3, delay: 0.1 + (i * 0.05) });
+                    }
+                } catch (err) {
+                    console.error('Error rendering Color Lab card:', err);
+                }
+            });
+        }
+
+        // Fetch SCSS
+        fetch('../' + p.path)
+            .then(res => res.text())
+            .then(text => { if (elements.code) elements.code.textContent = text; })
+            .catch(() => { if (elements.code) elements.code.textContent = '/* Error loading file */'; });
+
+        // Show Modal
+        if (elements.overlay) {
+            elements.overlay.classList.remove('hidden');
+            setTimeout(() => elements.overlay.classList.add('active'), 10);
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    function closeModal() {
+        if (!elements.overlay) return;
+        elements.overlay.classList.remove('active');
+        setTimeout(() => {
+            elements.overlay.classList.add('hidden');
+            document.body.style.overflow = '';
+            if (elements.sim) elements.sim.value = 'none';
+            if (elements.modal) elements.modal.style.filter = '';
+        }, 300);
+    }
+
+    // --- Initialization & Listeners ---
+
+    if (elements.close) elements.close.addEventListener('click', closeModal);
+    if (elements.overlay) elements.overlay.addEventListener('click', (e) => e.target === elements.overlay && closeModal());
+    document.addEventListener('keydown', (e) => e.key === 'Escape' && closeModal());
+
+    if (elements.search) {
+        elements.search.addEventListener('input', (e) => {
+            searchQuery = e.target.value.toLowerCase();
+            const filtered = allPalettes.filter(p => 
+                p.name.toLowerCase().includes(searchQuery) || 
+                (p.tags && p.tags.some(t => t.toLowerCase().includes(searchQuery)))
+            );
+            renderPalettes(filtered);
         });
-        tw += `}`;
-        return tw;
     }
 
-    // --- Event Listeners ---
+    if (elements.sim && elements.modal) {
+        elements.sim.addEventListener('change', (e) => {
+            elements.modal.style.filter = e.target.value === 'none' ? '' : `url(#${e.target.value})`;
+        });
+    }
 
-    // Tab Logic
+    if (elements.theme) {
+        elements.theme.addEventListener('click', () => {
+            const isDark = document.documentElement.classList.toggle('dark');
+            localStorage.theme = isDark ? 'dark' : 'light';
+        });
+    }
+
+    // Tabs
     document.addEventListener('click', (e) => {
         if (e.target.classList.contains('tab-btn')) {
             const tab = e.target.dataset.tab;
@@ -294,62 +259,61 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             e.target.classList.add('active', 'text-indigo-400', 'border-indigo-500', 'bg-indigo-500/5');
             
-            if (tab === 'scss') codeBlock.textContent = currentSourceCode;
-            if (tab === 'css') codeBlock.textContent = generateCSSVars(currentPalette);
-            if (tab === 'tailwind') codeBlock.textContent = generateTailwind(currentPalette);
+            if (currentPalette && elements.code) {
+                if (tab === 'scss') elements.code.textContent = currentPalette.source || '/* Loading... */';
+                if (tab === 'css') {
+                    let css = ':root {\n';
+                    currentPalette.colors.forEach(c => css += `  --${c.name.toLowerCase().replace(/\s+/g, '-')}: ${c.hex};\n`);
+                    css += '}';
+                    elements.code.textContent = css;
+                }
+                if (tab === 'tailwind') {
+                    let tw = 'colors: {\n';
+                    currentPalette.colors.forEach(c => tw += `  '${c.name.toLowerCase().replace(/\s+/g, '-')}': '${c.hex}',\n`);
+                    tw += '}';
+                    elements.code.textContent = tw;
+                }
+            }
         }
     });
 
-    // Copy/Export Buttons
-    document.querySelectorAll('[data-copy]').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const type = btn.dataset.copy;
-            if (type === 'full-scss') {
-                copyToClipboard(currentSourceCode, 'Full SCSS source copied!');
-            } else {
-                copyToClipboard(codeBlock.textContent, 'Snippet copied!');
-            }
+    // Copy Current Code
+    const copyBtn = document.querySelector('[data-copy="current"]');
+    if (copyBtn) {
+        copyBtn.addEventListener('click', () => {
+            if (elements.code) copyToClipboard(elements.code.textContent, 'Code copied!');
         });
-    });
-
-    // Vision Simulator
-    visionSimulator.addEventListener('change', (e) => {
-        const val = e.target.value;
-        modalContent.style.filter = val === 'none' ? '' : `url(#${val})`;
-    });
-
-    // Theme Toggle
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
     }
-    themeToggle.addEventListener('click', () => {
-        document.documentElement.classList.toggle('dark');
-        localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
-    });
 
-    // --- Initialization ---
-
+    // Load Data
     fetch('palettes.json')
         .then(res => res.json())
         .then(data => {
             allPalettes = data;
             
             // Build count filters
-            const counts = [...new Set(data.map(p => p.count))].sort((a, b) => a - b);
-            counts.forEach(count => {
-                const btn = document.createElement('button');
-                btn.className = 'filter-btn px-4 py-1.5 rounded-full text-sm font-medium border border-gray-200 dark:border-slate-800 hover:border-indigo-500 transition-all whitespace-nowrap';
-                btn.textContent = `${count} Colors`;
-                btn.addEventListener('click', (e) => handleFilter(e, count));
-                filterNav.appendChild(btn);
-            });
+            if (elements.nav) {
+                const counts = [...new Set(data.map(p => p.count))].sort((a, b) => a - b);
+                counts.forEach(count => {
+                    const btn = document.createElement('button');
+                    btn.className = 'filter-btn px-4 py-1.5 rounded-full text-sm font-medium border border-gray-200 dark:border-slate-800 hover:border-indigo-500 transition-all whitespace-nowrap';
+                    btn.textContent = `${count} Colors`;
+                    btn.addEventListener('click', (e) => {
+                        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active', 'bg-indigo-50', 'text-indigo-600', 'border-indigo-500'));
+                        btn.classList.add('active', 'bg-indigo-50', 'text-indigo-600', 'border-indigo-500');
+                        activeFilter = count;
+                        const filtered = allPalettes.filter(p => p.count === count);
+                        renderPalettes(filtered);
+                    });
+                    elements.nav.appendChild(btn);
+                });
+            }
 
-            document.querySelector('[data-filter="all"]').addEventListener('click', (e) => handleFilter(e, 'all'));
-            
             renderPalettes(data);
+            console.log('Showcase: Successfully loaded palettes.');
         })
-        .catch(err => console.error('Error loading palettes:', err));
-
-    // Global helper for inline onclick
-    window.copyToClipboard = copyToClipboard;
+        .catch(err => {
+            console.error('Showcase: Failed to load palettes.json', err);
+            if (elements.grid) elements.grid.innerHTML = '<div class="col-span-full py-20 text-center text-red-500 font-bold">Failed to load palettes data. Check browser console.</div>';
+        });
 });

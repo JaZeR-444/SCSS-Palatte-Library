@@ -140,28 +140,37 @@
                 
                 <!-- SECTION 2: INTERACTIVE SANDBOX (Option 1) -->
                 <div class="p-8 lg:p-12 border-b border-gray-100 dark:border-slate-800">
-                    <div class="flex items-center gap-3 mb-8">
-                        <div class="w-10 h-10 rounded-xl bg-indigo-500 flex items-center justify-center text-white shadow-lg">
-                            <i class="fa-solid fa-flask"></i>
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500 flex items-center justify-center text-white shadow-lg">
+                                <i class="fa-solid fa-flask"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">Design Sandbox</h3>
+                                <p class="text-sm text-gray-400">Preview this palette across multiple digital use cases.</p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="text-xl font-bold">Design Sandbox</h3>
-                            <p class="text-sm text-gray-400">See how this palette performs in real-world interfaces.</p>
+                        
+                        <!-- Use Case Switcher -->
+                        <div class="flex p-1 bg-gray-100 dark:bg-slate-800 rounded-xl">
+                            <button data-usecase="dashboard" class="usecase-btn active px-4 py-2 rounded-lg text-xs font-bold transition-all">DASHBOARD</button>
+                            <button data-usecase="social" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">SOCIAL</button>
+                            <button data-usecase="landing" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">LANDING</button>
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                        <!-- Desktop Mockup -->
-                        <div class="space-y-4">
-                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Dashboard Interface</span>
-                            <div id="mock-desktop" class="bg-gray-50 dark:bg-slate-950 rounded-2xl border border-gray-200 dark:border-slate-800 overflow-hidden shadow-sm transition-colors duration-500">
+                    <div id="sandbox-viewport" class="relative min-h-[500px] flex items-center justify-center bg-gray-50 dark:bg-slate-950 rounded-3xl border border-gray-200 dark:border-slate-800 overflow-hidden transition-colors duration-500 p-8">
+                        
+                        <!-- USE CASE: DASHBOARD -->
+                        <div id="case-dashboard" class="usecase-content w-full max-w-4xl grid grid-cols-1 lg:grid-cols-12 gap-6 transition-all duration-500">
+                            <div id="mock-desktop" class="lg:col-span-8 bg-white dark:bg-slate-900 rounded-2xl border border-gray-200 dark:border-slate-800 overflow-hidden shadow-2xl">
                                 <div id="ui-header" class="h-10 bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-slate-800 flex items-center px-4 gap-2 transition-colors duration-500">
                                     <div class="flex gap-1.5">
                                         <div class="w-2.5 h-2.5 rounded-full bg-red-400"></div>
                                         <div class="w-2.5 h-2.5 rounded-full bg-yellow-400"></div>
                                         <div class="w-2.5 h-2.5 rounded-full bg-green-400"></div>
                                     </div>
-                                    <div class="flex-1 text-center font-bold text-[10px] text-gray-300">app.designstudio.io</div>
+                                    <div class="flex-1 text-center font-bold text-[10px] text-gray-300">analytics.io</div>
                                 </div>
                                 <div class="flex h-64">
                                     <aside id="ui-sidebar" class="w-16 bg-[var(--ui-color-1)] flex flex-col items-center py-4 gap-4 transition-colors duration-500">
@@ -175,46 +184,74 @@
                                             <div id="ui-avatar" class="w-8 h-8 rounded-full bg-[var(--ui-color-2)] transition-colors duration-500"></div>
                                         </div>
                                         <div class="grid grid-cols-2 gap-4">
-                                            <div class="h-20 rounded-xl border-2 border-dashed border-gray-200 dark:border-slate-800 flex items-center justify-center">
+                                            <div class="h-20 rounded-xl border-2 border-dashed border-gray-200 dark:border-slate-800 flex items-center justify-center overflow-hidden">
                                                 <div id="ui-chart-bar" class="w-3/4 h-8 bg-[var(--ui-color-1)]/20 rounded-lg relative overflow-hidden">
-                                                    <div class="absolute inset-y-0 left-0 w-1/2 bg-[var(--ui-color-1)] rounded-lg transition-colors duration-500"></div>
+                                                    <div class="absolute inset-y-0 left-0 w-1/2 bg-[var(--ui-color-1)] rounded-lg transition-colors duration-500 shadow-[0_0_15px_var(--ui-color-1)]"></div>
                                                 </div>
                                             </div>
-                                            <div class="h-20 rounded-xl bg-white dark:bg-slate-900 shadow-sm p-4 space-y-2 border border-gray-100 dark:border-slate-800">
-                                                <div id="ui-badge-sm" class="h-3 w-12 bg-[var(--ui-color-2)] rounded-full transition-colors duration-500"></div>
-                                                <div class="h-2 w-full bg-gray-100 dark:bg-slate-800 rounded-full"></div>
-                                                <div class="h-2 w-2/3 bg-gray-100 dark:bg-slate-800 rounded-full"></div>
+                                            <div class="h-20 rounded-xl bg-gray-50 dark:bg-slate-800 shadow-sm p-4 space-y-2 border border-gray-100 dark:border-slate-700">
+                                                <div id="ui-badge-sm" class="h-3 w-12 bg-[var(--ui-color-2)] rounded-full transition-colors duration-500 shadow-[0_0_10px_var(--ui-color-2)]"></div>
+                                                <div class="h-2 w-full bg-gray-200 dark:bg-slate-700 rounded-full"></div>
+                                                <div class="h-2 w-2/3 bg-gray-200 dark:bg-slate-700 rounded-full"></div>
                                             </div>
                                         </div>
-                                        <button id="ui-btn-main" class="w-full h-10 bg-[var(--ui-color-1)] rounded-xl text-white font-bold text-xs transition-colors duration-500">Launch Project</button>
+                                        <button id="ui-btn-main" class="w-full h-10 bg-[var(--ui-color-1)] rounded-xl text-white font-bold text-xs transition-all duration-500 shadow-lg shadow-[var(--ui-color-1)]/20">Sync Data</button>
                                     </div>
+                                </div>
+                            </div>
+                            <!-- Side info -->
+                            <div class="lg:col-span-4 flex flex-col justify-center gap-4">
+                                <div class="p-4 rounded-2xl bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm border border-white/20">
+                                    <h4 class="text-xs font-black uppercase text-indigo-500 mb-2">Color Hierarchy</h4>
+                                    <p class="text-[11px] text-gray-500 leading-relaxed">In dashboard UI, <strong>Primary</strong> is for navigation and main actions, while <strong>Secondary</strong> handles status indicators and accents.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Mobile Mockup -->
-                        <div class="space-y-4">
-                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Component Visualizer</span>
-                            <div class="flex flex-col gap-6 items-center justify-center p-8 bg-gray-50 dark:bg-slate-950 rounded-2xl border border-gray-200 dark:border-slate-800 transition-colors duration-500">
-                                <div id="ui-card-mobile" class="w-full max-w-[200px] bg-white dark:bg-slate-900 rounded-[2rem] p-4 shadow-xl border border-gray-100 dark:border-slate-800 space-y-4">
-                                    <div id="ui-dot" class="w-12 h-12 rounded-full bg-gradient-to-br from-[var(--ui-color-1)] to-[var(--ui-color-2)] mx-auto flex items-center justify-center text-white transition-all duration-500">
-                                        <i class="fa-solid fa-bolt"></i>
+                        <!-- USE CASE: SOCIAL -->
+                        <div id="case-social" class="usecase-content absolute inset-0 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-500">
+                            <div class="w-full max-w-xs bg-white dark:bg-slate-900 rounded-[2.5rem] p-6 shadow-2xl border border-gray-100 dark:border-slate-800 space-y-6">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[var(--ui-color-1)] to-[var(--ui-color-2)] p-0.5 shadow-lg">
+                                        <div class="w-full h-full rounded-full bg-white dark:bg-slate-900 flex items-center justify-center text-xs font-black text-[var(--ui-color-1)]">ME</div>
                                     </div>
-                                    <div class="space-y-1.5 text-center">
-                                        <div class="h-2.5 w-16 bg-gray-200 dark:bg-slate-800 rounded-full mx-auto"></div>
-                                        <div class="h-2 w-24 bg-gray-100 dark:bg-slate-800 rounded-full mx-auto"></div>
+                                    <div class="flex-1">
+                                        <div class="h-3 w-24 bg-gray-200 dark:bg-slate-800 rounded-full"></div>
+                                        <div class="h-2 w-16 bg-gray-100 dark:bg-slate-800 rounded-full mt-1.5"></div>
                                     </div>
-                                    <div id="ui-pill" class="h-8 bg-[var(--ui-color-1)] rounded-full flex items-center justify-center text-[10px] font-bold text-white transition-colors duration-500">
-                                        Subscribed
-                                    </div>
+                                    <i class="fa-solid fa-ellipsis text-gray-300"></i>
+                                </div>
+                                <div id="social-post-img" class="h-48 rounded-2xl bg-gradient-to-br from-[var(--ui-color-1)] to-[var(--ui-color-3)] flex items-center justify-center text-white relative overflow-hidden">
+                                    <div class="absolute inset-0 bg-black/10"></div>
+                                    <i class="fa-solid fa-image text-5xl opacity-40"></i>
                                 </div>
                                 <div class="flex gap-4">
-                                    <div id="ui-dot-1" class="w-4 h-4 rounded-full bg-[var(--ui-color-1)] shadow-lg shadow-[var(--ui-color-1)]/30 transition-all duration-500"></div>
-                                    <div id="ui-dot-2" class="w-4 h-4 rounded-full bg-[var(--ui-color-2)] shadow-lg shadow-[var(--ui-color-2)]/30 transition-all duration-500"></div>
-                                    <div id="ui-dot-3" class="w-4 h-4 rounded-full bg-[var(--ui-color-3,var(--ui-color-1))] shadow-lg shadow-[var(--ui-color-3,var(--ui-color-1))]/30 transition-all duration-500"></div>
+                                    <i class="fa-solid fa-heart text-[var(--ui-color-2)] text-lg"></i>
+                                    <i class="fa-solid fa-comment text-gray-300 text-lg"></i>
+                                    <i class="fa-solid fa-paper-plane text-gray-300 text-lg"></i>
+                                </div>
+                                <div class="space-y-2">
+                                    <div class="h-2 w-full bg-gray-100 dark:bg-slate-800 rounded-full"></div>
+                                    <div class="h-2 w-3/4 bg-gray-100 dark:bg-slate-800 rounded-full"></div>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- USE CASE: LANDING -->
+                        <div id="case-landing" class="usecase-content absolute inset-0 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-500">
+                            <div class="text-center space-y-8 max-w-lg">
+                                <div id="landing-tag" class="inline-block px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest text-[var(--ui-color-1)] bg-[var(--ui-color-1)]/10 border border-[var(--ui-color-1)]/20">
+                                    New Feature Launch
+                                </div>
+                                <h3 class="text-4xl font-black tracking-tight leading-none dark:text-white">Build something <span id="landing-highlight" class="text-[var(--ui-color-1)] transition-colors duration-500">Extraordinary.</span></h3>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">Seeing how the palette expands into a full landing page hero section with high-contrast text and gradients.</p>
+                                <div class="flex items-center justify-center gap-4">
+                                    <button class="px-8 py-3 rounded-xl bg-[var(--ui-color-1)] text-white font-bold shadow-xl shadow-[var(--ui-color-1)]/20 transition-all hover:-translate-y-1">Get Started</button>
+                                    <button class="px-8 py-3 rounded-xl border-2 border-gray-200 dark:border-slate-800 font-bold dark:text-white transition-all hover:bg-gray-50 dark:hover:bg-slate-800">Demo</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
