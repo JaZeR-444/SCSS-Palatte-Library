@@ -34,6 +34,18 @@ document.addEventListener('DOMContentLoaded', () => {
     let activeFilter = 'all';
     let searchQuery = '';
 
+    // --- Filtering ---
+
+    function applyFilters() {
+        let filtered = allPalettes;
+        if (activeFilter !== 'all') filtered = filtered.filter(p => p.count === activeFilter);
+        if (searchQuery) filtered = filtered.filter(p =>
+            p.name.toLowerCase().includes(searchQuery) ||
+            (p.tags && p.tags.some(t => t.toLowerCase().includes(searchQuery)))
+        );
+        renderPalettes(filtered);
+    }
+
     // --- Utilities ---
 
     function hexToRgb(hex) {
@@ -142,14 +154,13 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.hero.style.background = `radial-gradient(circle at center, ${hexes})`;
         }
 
-        // Sandbox CSS Vars
+        // Sandbox CSS Vars (Enhanced for 10-color mapping)
         const colors = p.colors;
-        const c1 = colors[0].hex;
-        const c2 = colors.length > 1 ? colors[1].hex : c1;
-        const c3 = colors.length > 2 ? colors[2].hex : c2;
-        document.documentElement.style.setProperty('--ui-color-1', c1);
-        document.documentElement.style.setProperty('--ui-color-2', c2);
-        document.documentElement.style.setProperty('--ui-color-3', c3);
+        for (let i = 1; i <= 10; i++) {
+            // Map index to color, looping if palette is smaller than 10
+            const colorIdx = (i - 1) % colors.length;
+            document.documentElement.style.setProperty(`--ui-color-${i}`, colors[colorIdx].hex);
+        }
 
         // --- RENDER COLOR LAB (Critical Section) ---
         if (elements.lab) {
@@ -162,24 +173,36 @@ document.addEventListener('DOMContentLoaded', () => {
                     const rgb = hexToRgb(color.hex);
                     const contrastW = getContrast(rgb, white);
                     const contrastD = getContrast(rgb, dark);
+                    const hex6 = color.hex.slice(0, 7).toUpperCase();
+                    const textOnSwatch = contrastW >= contrastD ? '#ffffff' : '#0f172a';
 
                     const labCard = document.createElement('div');
                     labCard.className = 'bg-white dark:bg-slate-900 rounded-2xl p-4 flex items-center gap-4 shadow-sm border border-gray-100 dark:border-slate-800 hover:shadow-md transition-all group';
                     labCard.innerHTML = `
-                        <div class="w-16 h-16 rounded-xl shadow-inner border border-black/5 flex-shrink-0 cursor-pointer transition-transform active:scale-95" 
+                        <div class="w-16 h-16 rounded-xl shadow-inner border border-black/5 flex-shrink-0 cursor-pointer transition-transform active:scale-95 flex items-center justify-center"
                             style="background-color: ${color.hex}"
-                            onclick="copyToClipboard('${color.hex}', 'HEX ${color.hex} copied!')"></div>
+                            onclick="copyToClipboard('${hex6}', '${hex6} copied!')">
+                            <span style="color: ${textOnSwatch}" class="text-xs font-black select-none opacity-80">Aa</span>
+                        </div>
                         <div class="flex-1 overflow-hidden">
                             <h4 class="font-bold text-sm mb-1 truncate">${color.name}</h4>
-                            <div class="flex items-center gap-2 mb-2">
-                                <code class="text-[10px] text-gray-400 font-mono">${color.hex.toUpperCase()}</code>
-                                <button onclick="copyToClipboard('${color.hex}', 'HEX ${color.hex} copied!')" class="text-gray-300 hover:text-indigo-500 transition-colors">
+                            <div class="flex items-center gap-2 mb-3">
+                                <code class="text-[10px] text-gray-400 font-mono">${hex6}</code>
+                                <button onclick="copyToClipboard('${hex6}', '${hex6} copied!')" class="text-gray-300 hover:text-indigo-500 transition-colors">
                                     <i class="fa-solid fa-copy text-[10px]"></i>
                                 </button>
                             </div>
-                            <div class="flex gap-1.5 items-center">
-                                <div class="flex items-center gap-1">${getA11yBadge(contrastW)}</div>
-                                <div class="flex items-center gap-1 ml-1">${getA11yBadge(contrastD)}</div>
+                            <div class="space-y-1.5">
+                                <div class="flex items-center gap-2">
+                                    <span class="text-[9px] font-bold text-gray-400 w-14 shrink-0">On Light</span>
+                                    ${getA11yBadge(contrastW)}
+                                    <span class="text-[9px] text-gray-400 font-mono">${contrastW.toFixed(1)}:1</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-[9px] font-bold text-gray-400 w-14 shrink-0">On Dark</span>
+                                    ${getA11yBadge(contrastD)}
+                                    <span class="text-[9px] text-gray-400 font-mono">${contrastD.toFixed(1)}:1</span>
+                                </div>
                             </div>
                         </div>
                     `;
@@ -194,10 +217,16 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
+        // Reset sandbox to dashboard view
+        switchUseCase('dashboard');
+
         // Fetch SCSS
         fetch('../' + p.path)
             .then(res => res.text())
-            .then(text => { if (elements.code) elements.code.textContent = text; })
+            .then(text => {
+                currentPalette.source = text;
+                if (elements.code) elements.code.textContent = text;
+            })
             .catch(() => { if (elements.code) elements.code.textContent = '/* Error loading file */'; });
 
         // Show Modal
@@ -228,11 +257,44 @@ document.addEventListener('DOMContentLoaded', () => {
     if (elements.search) {
         elements.search.addEventListener('input', (e) => {
             searchQuery = e.target.value.toLowerCase();
-            const filtered = allPalettes.filter(p => 
-                p.name.toLowerCase().includes(searchQuery) || 
-                (p.tags && p.tags.some(t => t.toLowerCase().includes(searchQuery)))
-            );
-            renderPalettes(filtered);
+            applyFilters();
+        });
+    }
+
+    // Use-case switcher
+    function switchUseCase(usecase) {
+        document.querySelectorAll('.usecase-btn').forEach(b => {
+            const isActive = b.dataset.usecase === usecase;
+            b.classList.toggle('bg-white', isActive);
+            b.classList.toggle('shadow-sm', isActive);
+            b.classList.toggle('text-gray-900', isActive);
+            b.classList.toggle('text-gray-500', !isActive);
+        });
+        document.querySelectorAll('.usecase-content').forEach(panel => {
+            const isTarget = panel.id === 'case-' + usecase;
+            panel.classList.toggle('opacity-0', !isTarget);
+            panel.classList.toggle('pointer-events-none', !isTarget);
+            if (panel.id === 'case-dashboard') panel.classList.toggle('hidden', !isTarget);
+        });
+    }
+
+    document.addEventListener('click', (e) => {
+        const btn = e.target.closest('.usecase-btn');
+        if (btn) switchUseCase(btn.dataset.usecase);
+    });
+
+    // "All" filter button
+    const allFilterBtn = document.querySelector('[data-filter="all"]');
+    if (allFilterBtn) {
+        allFilterBtn.addEventListener('click', () => {
+            document.querySelectorAll('.filter-btn').forEach(b => {
+                b.classList.remove('active', 'bg-indigo-500', 'text-white', 'bg-indigo-50', 'text-indigo-600', 'border-indigo-500');
+                b.classList.add('border-gray-200', 'dark:border-slate-800');
+            });
+            allFilterBtn.classList.remove('border-gray-200', 'dark:border-slate-800');
+            allFilterBtn.classList.add('active', 'bg-indigo-500', 'text-white', 'border-indigo-500');
+            activeFilter = 'all';
+            applyFilters();
         });
     }
 
@@ -298,12 +360,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     const btn = document.createElement('button');
                     btn.className = 'filter-btn px-4 py-1.5 rounded-full text-sm font-medium border border-gray-200 dark:border-slate-800 hover:border-indigo-500 transition-all whitespace-nowrap';
                     btn.textContent = `${count} Colors`;
-                    btn.addEventListener('click', (e) => {
-                        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active', 'bg-indigo-50', 'text-indigo-600', 'border-indigo-500'));
+                    btn.addEventListener('click', () => {
+                        document.querySelectorAll('.filter-btn').forEach(b => {
+                            b.classList.remove('active', 'bg-indigo-500', 'text-white', 'bg-indigo-50', 'text-indigo-600', 'border-indigo-500');
+                            b.classList.add('border-gray-200', 'dark:border-slate-800');
+                        });
+                        btn.classList.remove('border-gray-200', 'dark:border-slate-800');
                         btn.classList.add('active', 'bg-indigo-50', 'text-indigo-600', 'border-indigo-500');
                         activeFilter = count;
-                        const filtered = allPalettes.filter(p => p.count === count);
-                        renderPalettes(filtered);
+                        applyFilters();
                     });
                     elements.nav.appendChild(btn);
                 });

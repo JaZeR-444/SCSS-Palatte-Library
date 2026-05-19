@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCSS Color Palette Showcase</title>
+    <script>
+        if (localStorage.theme === 'dark' || (!localStorage.theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script>
@@ -174,28 +179,41 @@
                                 </div>
                                 <div class="flex h-64">
                                     <aside id="ui-sidebar" class="w-16 bg-[var(--ui-color-1)] flex flex-col items-center py-4 gap-4 transition-colors duration-500">
-                                        <div class="w-8 h-8 rounded-lg bg-white/20"></div>
-                                        <div class="w-8 h-8 rounded-lg bg-white/10"></div>
-                                        <div class="w-8 h-8 rounded-lg bg-white/10"></div>
+                                        <div class="w-8 h-8 rounded-lg bg-[var(--ui-color-2)] shadow-sm"></div>
+                                        <div class="w-8 h-8 rounded-lg bg-[var(--ui-color-3)]/40"></div>
+                                        <div class="w-8 h-8 rounded-lg bg-[var(--ui-color-4)]/40"></div>
+                                        <div class="mt-auto w-8 h-8 rounded-full border-2 border-[var(--ui-color-5)]"></div>
                                     </aside>
                                     <div class="flex-1 p-6 space-y-6">
                                         <div class="flex justify-between items-center">
-                                            <div class="h-4 w-32 bg-gray-200 dark:bg-slate-800 rounded-full"></div>
-                                            <div id="ui-avatar" class="w-8 h-8 rounded-full bg-[var(--ui-color-2)] transition-colors duration-500"></div>
+                                            <div class="flex gap-2">
+                                                <div class="h-4 w-12 bg-[var(--ui-color-6)]/20 rounded-full"></div>
+                                                <div class="h-4 w-20 bg-[var(--ui-color-7)]/10 rounded-full"></div>
+                                            </div>
+                                            <div id="ui-avatar" class="w-8 h-8 rounded-full bg-gradient-to-tr from-[var(--ui-color-1)] to-[var(--ui-color-3)] transition-colors duration-500 shadow-lg"></div>
                                         </div>
                                         <div class="grid grid-cols-2 gap-4">
-                                            <div class="h-20 rounded-xl border-2 border-dashed border-gray-200 dark:border-slate-800 flex items-center justify-center overflow-hidden">
-                                                <div id="ui-chart-bar" class="w-3/4 h-8 bg-[var(--ui-color-1)]/20 rounded-lg relative overflow-hidden">
-                                                    <div class="absolute inset-y-0 left-0 w-1/2 bg-[var(--ui-color-1)] rounded-lg transition-colors duration-500 shadow-[0_0_15px_var(--ui-color-1)]"></div>
+                                            <div class="h-20 rounded-xl border border-[var(--ui-color-4)]/20 bg-gray-50/50 dark:bg-slate-900/50 p-3 flex flex-col justify-end gap-1">
+                                                <div class="flex items-end gap-1 h-full">
+                                                    <div class="w-1/4 h-1/2 bg-[var(--ui-color-2)] rounded-t-sm"></div>
+                                                    <div class="w-1/4 h-3/4 bg-[var(--ui-color-4)] rounded-t-sm"></div>
+                                                    <div class="w-1/4 h-full bg-[var(--ui-color-6)] rounded-t-sm"></div>
+                                                    <div class="w-1/4 h-2/3 bg-[var(--ui-color-8)] rounded-t-sm"></div>
                                                 </div>
                                             </div>
-                                            <div class="h-20 rounded-xl bg-gray-50 dark:bg-slate-800 shadow-sm p-4 space-y-2 border border-gray-100 dark:border-slate-700">
-                                                <div id="ui-badge-sm" class="h-3 w-12 bg-[var(--ui-color-2)] rounded-full transition-colors duration-500 shadow-[0_0_10px_var(--ui-color-2)]"></div>
-                                                <div class="h-2 w-full bg-gray-200 dark:bg-slate-700 rounded-full"></div>
-                                                <div class="h-2 w-2/3 bg-gray-200 dark:bg-slate-700 rounded-full"></div>
+                                            <div class="h-20 rounded-xl bg-white dark:bg-slate-900 shadow-sm p-4 space-y-2 border border-gray-100 dark:border-slate-800">
+                                                <div class="flex justify-between items-start">
+                                                    <div id="ui-badge-sm" class="h-3 w-12 bg-[var(--ui-color-5)] rounded-full transition-colors duration-500"></div>
+                                                    <div class="flex gap-1">
+                                                        <div class="w-1.5 h-1.5 rounded-full bg-[var(--ui-color-9)]"></div>
+                                                        <div class="w-1.5 h-1.5 rounded-full bg-[var(--ui-color-10)] animate-pulse"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="h-2 w-full bg-gray-100 dark:bg-slate-700 rounded-full"></div>
+                                                <div class="h-2 w-2/3 bg-gray-100 dark:bg-slate-700 rounded-full"></div>
                                             </div>
                                         </div>
-                                        <button id="ui-btn-main" class="w-full h-10 bg-[var(--ui-color-1)] rounded-xl text-white font-bold text-xs transition-all duration-500 shadow-lg shadow-[var(--ui-color-1)]/20">Sync Data</button>
+                                        <button id="ui-btn-main" class="w-full h-10 bg-gradient-to-r from-[var(--ui-color-1)] to-[var(--ui-color-2)] rounded-xl text-white font-bold text-xs transition-all duration-500 hover:shadow-lg hover:shadow-[var(--ui-color-1)]/20">Launch Interface</button>
                                     </div>
                                 </div>
                             </div>
@@ -310,6 +328,24 @@
 
     <!-- Toast Container -->
     <div id="toast-container" class="fixed bottom-8 left-1/2 -translate-x-1/2 z-[60] flex flex-col gap-2 pointer-events-none"></div>
+
+    <!-- Color Blindness SVG Filters -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+        <defs>
+            <filter id="protanopia">
+                <feColorMatrix type="matrix" values="0.567 0.433 0 0 0  0.558 0.442 0 0 0  0 0.242 0.758 0 0  0 0 0 1 0"/>
+            </filter>
+            <filter id="deuteranopia">
+                <feColorMatrix type="matrix" values="0.625 0.375 0 0 0  0.7 0.3 0 0 0  0 0.3 0.7 0 0  0 0 0 1 0"/>
+            </filter>
+            <filter id="tritanopia">
+                <feColorMatrix type="matrix" values="0.95 0.05 0 0 0  0 0.433 0.567 0 0  0 0.475 0.525 0 0  0 0 0 1 0"/>
+            </filter>
+            <filter id="achromatopsia">
+                <feColorMatrix type="matrix" values="0.299 0.587 0.114 0 0  0.299 0.587 0.114 0 0  0.299 0.587 0.114 0 0  0 0 0 1 0"/>
+            </filter>
+        </defs>
+    </svg>
 
     <script src="app.js"></script>
 </body>

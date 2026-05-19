@@ -152,6 +152,8 @@ To use it in a plain CSS project (assuming the file is processed or variables ar
 - **Naming**: Colors are given descriptive, thematic names (e.g., `berry-crush`, `amber-flame`).
 - **Completeness**: Each file includes multiple formats (HEX, HSL, RGB) to suit different developer preferences and technical requirements.
 - **Gradients**: Standard directional gradients (top, right, bottom, left, and diagonals) and a radial gradient are included in every palette.
+- **Metadata**: Every SCSS file contains a YAML front-matter block wrapped in comments at the top. This metadata (tags, categories, descriptions) is the single source of truth for the showcase.
+- **Indexing**: The `showcase/palettes.json` file is automatically generated from the SCSS source files using the `build_index.py` script.
 
 ## Documentation Synchronization Mandate
 
