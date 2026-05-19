@@ -45,7 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
         sandboxBg: getEl('toggle-sandbox-bg'),
         exportComp: getEl('export-component'),
         roleTooltip: getEl('role-tooltip'),
-        sandbox: getEl('section-sandbox')
+        sandbox: getEl('section-sandbox'),
+        sideRail: getEl('sandbox-side-rail'),
+        sideRailChips: getEl('side-rail-chips'),
+        pillUsecase: getEl('pill-usecase'),
+        pillSub: getEl('pill-sub')
     };
 
     // --- State ---
@@ -66,6 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let colorProximity = null;
     let sortOrder = 'name';
     let labContrastBg = null;
+    let sandboxBp = 'auto';
+    let annotateMode = false;
+    let themeSplitActive = false;
+    let sideRailOpen = false;
+    let viewMode = loadJson('paletteShowcase.viewMode', 'grid');
 
     function loadJson(key, fallback) {
         try {
@@ -235,10 +244,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function showToast(message, type = 'success') {
         if (!elements.toast) return;
         const toast = document.createElement('div');
-        toast.className = 'px-6 py-3 rounded-2xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 shadow-2xl flex items-center gap-3 transition-all duration-300 pointer-events-auto transform translate-y-10 opacity-0 z-[100]';
+        toast.className = 'px-4 py-2.5 rounded-xl border border-gray-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-gray-900 dark:text-white shadow-xl flex items-center gap-3 transition-all duration-200 pointer-events-auto transform translate-y-4 opacity-0 z-[100] font-medium text-sm';
         toast.innerHTML = `
-            <i class="fa-solid ${type === 'success' ? 'fa-circle-check text-green-400' : 'fa-circle-exclamation text-red-400'}"></i>
-            <span class="text-sm font-bold">${message}</span>
+            <i class="fa-solid ${type === 'success' ? 'fa-circle-check text-indigo-500' : 'fa-circle-exclamation text-red-500'}"></i>
+            <span>${message}</span>
         `;
         elements.toast.appendChild(toast);
         setTimeout(() => toast.classList.remove('translate-y-10', 'opacity-0'), 10);
@@ -283,8 +292,116 @@ document.addEventListener('DOMContentLoaded', () => {
         return base + "bg-indigo-50 dark:bg-indigo-900/20 text-indigo-500 dark:text-indigo-400 border-indigo-100 dark:border-indigo-800/50";
     }
 
+    const VIEW_GRID_CLASSES = {
+        grid:    'grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 gap-3 sm:gap-6 xl:gap-8',
+        compact: 'grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 2xl:grid-cols-12 gap-2',
+        list:    'flex flex-col gap-1.5'
+    };
+
+    function makeSwatches(colors) {
+        return colors.map(c =>
+            `<div class="swatch-item" style="background-color:${c.hex}" onclick="event.stopPropagation(); copyToClipboard('${c.hex}', 'Copied ${c.hex}')"></div>`
+        ).join('');
+    }
+
+    function renderGridCard(p, isSaved) {
+        const gradientStops = p.colors.map(c => c.hex.slice(0, 7)).join(', ');
+        const swatches = makeSwatches(p.colors);
+        const moodTags = (p.tags && p.tags.mood ? p.tags.mood : []).map(t => `<span class="${getTagStyles(t)}">${t}</span>`);
+        const aestheticTags = (p.tags && p.tags.aesthetic ? p.tags.aesthetic : []).map(t => `<span class="${getTagStyles(t)}">${t}</span>`);
+        const allTagsHtml = [...moodTags, ...aestheticTags].slice(0, 3).join('');
+        const dotMax = 6;
+        const colorDots = p.colors.slice(0, dotMax).map((c, i) =>
+            `<span class="inline-block w-3 h-3 rounded-full border-2 border-white dark:border-slate-900 shadow-sm flex-shrink-0 relative${i > 0 ? ' -ml-1.5' : ''}" style="background:${c.hex};z-index:${dotMax - i}" title="${c.name}"></span>`
+        ).join('');
+        const extraDots = p.colors.length > dotMax ? p.colors.length - dotMax : 0;
+        const categoryLabel = p.folder ? p.folder.replace(' Palette', '') : 'Collection';
+        const card = document.createElement('div');
+        card.className = 'palette-card group relative bg-white dark:bg-slate-950 rounded-2xl overflow-hidden border border-gray-200 dark:border-slate-800 hover:border-indigo-500/50 dark:hover:border-indigo-500/50 hover:-translate-y-0.5 transition-all duration-200 cursor-pointer flex flex-col shadow-sm';
+        card.dataset.id = p.id;
+        card.innerHTML = `
+            <div class="card-preview relative overflow-hidden border-b border-gray-100 dark:border-slate-800" style="height:108px">
+                <div class="absolute inset-0 transition-transform duration-500 group-hover:scale-105" style="background:linear-gradient(135deg,${gradientStops})"></div>
+                <div class="absolute inset-0 bg-gradient-to-b from-black/0 via-black/0 to-black/20"></div>
+                <div class="card-swatches absolute bottom-0 left-0 right-0 flex overflow-hidden" style="height:28px">${swatches}</div>
+                <span class="absolute top-3 left-3 inline-flex items-center gap-1 px-2 py-0.5 rounded-lg text-[9px] font-black tracking-widest text-white" style="background:rgba(0,0,0,0.28);border:1px solid rgba(255,255,255,0.18);backdrop-filter:blur(4px)">${p.count} <span style="opacity:0.55;font-size:9px">CLR</span></span>
+                <button class="palette-favorite-btn absolute top-3 right-3 w-7 h-7 rounded-lg flex items-center justify-center transition-all opacity-100 sm:opacity-0 sm:group-hover:opacity-100" style="background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.18);backdrop-filter:blur(4px)" data-palette-id="${p.id}" title="${isSaved ? 'Remove from saved' : 'Save palette'}">
+                    <i class="fa-solid fa-heart text-[10px] ${isSaved ? 'text-red-400' : 'text-white opacity-50'}"></i>
+                </button>
+            </div>
+            <div class="card-body px-4 pt-4 pb-3 flex-1 flex flex-col gap-2">
+                <div>
+                    <h3 class="font-extrabold text-[15px] leading-snug text-gray-900 dark:text-gray-100 group-hover:text-indigo-500 transition-colors">${p.name}</h3>
+                    <p class="text-[10px] font-bold text-indigo-400 uppercase tracking-widest mt-0.5">${categoryLabel}</p>
+                </div>
+                ${allTagsHtml ? `<div class="card-tags flex flex-wrap gap-1">${allTagsHtml}</div>` : ''}
+            </div>
+            <div class="card-footer px-4 pb-4 pt-1 flex items-center justify-between gap-2">
+                <div class="flex items-center">${colorDots}${extraDots > 0 ? `<span class="text-[9px] font-bold text-gray-400 ml-1.5">+${extraDots}</span>` : ''}</div>
+                <div class="card-arrow w-9 h-9 rounded-xl bg-gray-50 dark:bg-slate-800 flex items-center justify-center text-gray-400 group-hover:bg-indigo-500 group-hover:text-white transition-all shadow-sm flex-shrink-0"><i class="fa-solid fa-arrow-right text-xs"></i></div>
+            </div>
+        `;
+        return card;
+    }
+
+    function renderCompactCard(p) {
+        const gradientStops = p.colors.map(c => c.hex.slice(0, 7)).join(', ');
+        const swatches = makeSwatches(p.colors);
+        const card = document.createElement('div');
+        card.className = 'palette-card group cursor-pointer relative rounded-xl overflow-hidden border border-gray-200 dark:border-slate-800 hover:border-indigo-500/50 hover:-translate-y-0.5 transition-all shadow-sm bg-white dark:bg-slate-950';
+        card.dataset.id = p.id;
+        card.innerHTML = `
+            <div class="relative overflow-hidden" style="height:58px">
+                <div class="absolute inset-0 transition-transform duration-500 group-hover:scale-105" style="background:linear-gradient(135deg,${gradientStops})"></div>
+                <div class="absolute bottom-0 left-0 right-0 flex overflow-hidden" style="height:13px">${swatches}</div>
+            </div>
+            <div class="px-2 py-1.5">
+                <p class="text-[9px] font-bold leading-tight text-gray-700 dark:text-gray-300 truncate group-hover:text-indigo-500 transition-colors">${p.name}</p>
+                <p class="text-[8px] text-gray-400 truncate mt-0.5">${p.count} colors</p>
+            </div>
+        `;
+        return card;
+    }
+
+    function renderListRow(p, isSaved) {
+        const gradientStops = p.colors.map(c => c.hex.slice(0, 7)).join(', ');
+        const swatches = makeSwatches(p.colors);
+        const dotMax = 7;
+        const colorDots = p.colors.slice(0, dotMax).map((c, i) =>
+            `<span class="inline-block w-2.5 h-2.5 rounded-full border border-white dark:border-slate-800 flex-shrink-0 relative${i > 0 ? ' -ml-1' : ''}" style="background:${c.hex};z-index:${dotMax - i}" title="${c.name}"></span>`
+        ).join('');
+        const extraDots = p.colors.length > dotMax ? `<span class="text-[8px] font-bold text-gray-400 ml-1">+${p.colors.length - dotMax}</span>` : '';
+        const categoryLabel = p.folder ? p.folder.replace(' Palette', '') : '';
+        const moodTags = (p.tags && p.tags.mood ? p.tags.mood : []).slice(0, 2)
+            .map(t => `<span class="px-1.5 py-0.5 rounded text-[8px] font-bold bg-gray-100 dark:bg-slate-800 text-gray-500 dark:text-gray-400 whitespace-nowrap">${t}</span>`).join('');
+        const card = document.createElement('div');
+        card.className = 'palette-card group cursor-pointer flex items-stretch bg-white dark:bg-slate-950 rounded-xl border border-gray-200 dark:border-slate-800 hover:border-indigo-500/50 transition-all overflow-hidden shadow-sm';
+        card.dataset.id = p.id;
+        card.innerHTML = `
+            <div class="flex-shrink-0 relative" style="width:68px">
+                <div class="absolute inset-0 transition-transform duration-300 group-hover:scale-105" style="background:linear-gradient(160deg,${gradientStops})"></div>
+                <div class="absolute bottom-0 left-0 right-0 flex overflow-hidden" style="height:11px">${swatches}</div>
+            </div>
+            <div class="flex-1 min-w-0 px-3 py-2 flex flex-col justify-center gap-0.5">
+                <div class="flex items-center gap-2">
+                    <h3 class="text-[12px] font-extrabold text-gray-900 dark:text-gray-100 group-hover:text-indigo-500 transition-colors truncate">${p.name}</h3>
+                    <span class="text-[8px] font-black text-indigo-400 uppercase tracking-wider flex-shrink-0">${p.count}c</span>
+                </div>
+                <div class="flex items-center gap-1.5 flex-wrap">
+                    <span class="text-[8px] text-gray-400 uppercase tracking-wider">${categoryLabel}</span>
+                    ${moodTags}
+                </div>
+            </div>
+            <div class="flex-shrink-0 flex items-center pr-3">
+                <div class="flex items-center">${colorDots}${extraDots}</div>
+            </div>
+        `;
+        return card;
+    }
+
     function renderPalettes(palettes) {
         if (!elements.grid) return;
+        elements.grid.className = VIEW_GRID_CLASSES[viewMode] || VIEW_GRID_CLASSES.grid;
         elements.grid.innerHTML = '';
 
         if (palettes.length === 0) {
@@ -293,51 +410,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         palettes.forEach(p => {
-            const card = document.createElement('div');
-            card.className = 'palette-card group relative bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-gray-100 dark:border-slate-800 hover:shadow-2xl hover:shadow-black/5 hover:-translate-y-1.5 transition-all duration-300 cursor-pointer flex flex-col';
-            card.dataset.id = p.id;
-
-            const gradientStops = p.colors.map(c => c.hex.slice(0, 7)).join(', ');
-
-            const swatches = p.colors.map(c =>
-                `<div class="swatch-item" style="background-color:${c.hex}" onclick="event.stopPropagation(); copyToClipboard('${c.hex}', 'Copied ${c.hex}')"></div>`
-            ).join('');
-
-            const moodTags = (p.tags && p.tags.mood ? p.tags.mood : []).map(t => `<span class="${getTagStyles(t)}">${t}</span>`);
-            const aestheticTags = (p.tags && p.tags.aesthetic ? p.tags.aesthetic : []).map(t => `<span class="${getTagStyles(t)}">${t}</span>`);
-            const allTagsHtml = [...moodTags, ...aestheticTags].slice(0, 3).join('');
-
-            const dotMax = 6;
-            const colorDots = p.colors.slice(0, dotMax).map((c, i) =>
-                `<span class="inline-block w-3 h-3 rounded-full border-2 border-white dark:border-slate-900 shadow-sm flex-shrink-0 relative${i > 0 ? ' -ml-1.5' : ''}" style="background:${c.hex};z-index:${dotMax - i}" title="${c.name}"></span>`
-            ).join('');
-            const extraDots = p.colors.length > dotMax ? p.colors.length - dotMax : 0;
-
             const isSaved = savedIds.includes(p.id);
-            const categoryLabel = p.folder ? p.folder.replace(' Palette', '') : 'Collection';
-
-            card.innerHTML = `
-                <div class="relative overflow-hidden" style="height:108px">
-                    <div class="absolute inset-0 transition-transform duration-700 group-hover:scale-110" style="background:linear-gradient(135deg,${gradientStops})"></div>
-                    <div class="absolute inset-0 bg-gradient-to-b from-black/0 via-black/5 to-black/40"></div>
-                    <div class="absolute bottom-0 left-0 right-0 flex overflow-hidden" style="height:28px">${swatches}</div>
-                    <span class="absolute top-3 left-3 inline-flex items-center gap-1 px-2 py-0.5 rounded-lg text-[9px] font-black tracking-widest text-white" style="background:rgba(0,0,0,0.28);border:1px solid rgba(255,255,255,0.18);backdrop-filter:blur(4px)">${p.count} <span style="opacity:0.55;font-size:8px">CLR</span></span>
-                    <button class="palette-favorite-btn absolute top-3 right-3 w-7 h-7 rounded-lg flex items-center justify-center transition-all opacity-100 sm:opacity-0 sm:group-hover:opacity-100" style="background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.18);backdrop-filter:blur(4px)" data-palette-id="${p.id}" title="${isSaved ? 'Remove from saved' : 'Save palette'}">
-                        <i class="fa-solid fa-heart text-[10px] ${isSaved ? 'text-red-400' : 'text-white opacity-50'}"></i>
-                    </button>
-                </div>
-                <div class="px-4 pt-4 pb-3 flex-1 flex flex-col gap-2">
-                    <div>
-                        <h3 class="font-extrabold text-[15px] leading-snug text-gray-900 dark:text-gray-100 group-hover:text-indigo-500 transition-colors">${p.name}</h3>
-                        <p class="text-[10px] font-bold text-indigo-400 uppercase tracking-widest mt-0.5">${categoryLabel}</p>
-                    </div>
-                    ${allTagsHtml ? `<div class="flex flex-wrap gap-1">${allTagsHtml}</div>` : ''}
-                </div>
-                <div class="px-4 pb-4 pt-1 flex items-center justify-between gap-2">
-                    <div class="flex items-center">${colorDots}${extraDots > 0 ? `<span class="text-[9px] font-bold text-gray-400 ml-1.5">+${extraDots}</span>` : ''}</div>
-                    <div class="w-9 h-9 rounded-xl bg-gray-50 dark:bg-slate-800 flex items-center justify-center text-gray-400 group-hover:bg-indigo-500 group-hover:text-white transition-all shadow-sm flex-shrink-0"><i class="fa-solid fa-arrow-right text-xs"></i></div>
-                </div>
-            `;
+            let card;
+            if (viewMode === 'compact') card = renderCompactCard(p, isSaved);
+            else if (viewMode === 'list') card = renderListRow(p, isSaved);
+            else card = renderGridCard(p, isSaved);
             elements.grid.appendChild(card);
         });
     }
@@ -349,18 +426,14 @@ document.addEventListener('DOMContentLoaded', () => {
         currentPalette = p;
         rememberPalette(p.id);
         if (elements.title) elements.title.textContent = p.name;
-        if (elements.vibe) elements.vibe.textContent = `${(p.folder || '').replace(' Palette', '') || 'Collection'} • ${p.count} Colors`;
+        updateMoodHero(p); // 10x Upgrade
+        
         const descEl = document.getElementById('modal-description');
-        if (descEl) { descEl.textContent = p.description || ''; descEl.classList.toggle('hidden', !p.description); }
+        if (descEl) { descEl.textContent = p.description || generateMoodDescription(p); descEl.classList.toggle('hidden', false); }
         if (elements.code) elements.code.textContent = '/* Loading SCSS... */';
         sandboxZoom = 100;
         if (elements.scaleWrapper) elements.scaleWrapper.style.transform = 'scale(1)';
         if (elements.zoomDisplay) elements.zoomDisplay.textContent = '100%';
-
-        if (elements.hero) {
-            const hexes = p.colors.map(c => c.hex).join(', ');
-            elements.hero.style.background = `radial-gradient(circle at center, ${hexes})`;
-        }
 
         applyPaletteMapping(p.colors, 'modal-content');
         applyPaletteMapping(p.colors, 'section-sandbox');
@@ -368,8 +441,8 @@ document.addEventListener('DOMContentLoaded', () => {
         applyPaletteMapping(p.colors, 'section-iconography');
 
         renderColorLab(p);
-
         switchUseCase('dashboard');
+        renderSideRail();
 
         // Studio Animations
         if (window.gsap) {
@@ -391,6 +464,163 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => elements.overlay.classList.add('active'), 10);
             document.body.style.overflow = 'hidden';
         }
+        triggerUISound('open');
+    }
+
+    // --- Mood Hero 10x Core ---
+
+    function initMoodHero() {
+        const hero = document.getElementById('section-hero');
+        if (!hero) return;
+
+        hero.addEventListener('mousemove', (e) => {
+            if (!window.gsap) return;
+            const rect = hero.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width - 0.5;
+            const y = (e.clientY - rect.top) / rect.height - 0.5;
+
+            gsap.to(".hero-bg-layer", { x: x * 20, y: y * 20, duration: 1, ease: "power2.out" });
+            gsap.to(".hero-mid-layer", { x: x * 40, y: y * 40, duration: 1.2, ease: "power2.out" });
+            gsap.to(".hero-front-layer", { x: x * -15, y: y * -15, duration: 0.8, ease: "power2.out" });
+        });
+    }
+
+    function updateMoodHero(p) {
+        const midLayer = document.getElementById('hero-mid-layer');
+        const tagsContainer = document.getElementById('hero-tags');
+        if (!midLayer || !tagsContainer) return;
+
+        // 1. Particle Generation
+        midLayer.innerHTML = '';
+        const particleCount = 12;
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            const color = p.colors[i % p.colors.length].hex;
+            const size = 150 + Math.random() * 250;
+            particle.className = 'hero-particle';
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+            particle.style.background = color;
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.top = `${Math.random() * 100}%`;
+            particle.style.animationDelay = `${Math.random() * -20}s`;
+            particle.style.animationDuration = `${15 + Math.random() * 15}s`;
+            midLayer.appendChild(particle);
+        }
+
+        // 2. Interactive Tags
+        const allTags = [...(p.tags?.mood || []), ...(p.tags?.aesthetic || [])];
+        tagsContainer.innerHTML = allTags.map(t => 
+            `<button onclick="filterByHeroTag('${t}')" class="hero-tag-pill px-3 py-1 rounded-full text-[9px] font-black uppercase tracking-widest bg-white/10 border border-white/20 backdrop-blur-md hover:bg-white hover:text-slate-900 transition-all">${t}</button>`
+        ).join('');
+
+        // 3. Mood Scores
+        calculateMoodScores(p);
+
+        // 4. Adaptive Glass & Nav Orbs
+        updateNavOrbs(p);
+        
+        // 5. Typography Shadow
+        const title = document.getElementById('modal-title');
+        const accent = p.colors[Math.min(2, p.colors.length - 1)].hex;
+        if (title) title.style.textShadow = `0 20px 40px ${accent}44`;
+    }
+
+    window.filterByHeroTag = (tag) => {
+        closeModal();
+        searchQuery = tag;
+        if (elements.search) elements.search.value = tag;
+        applyFilters();
+    };
+
+    function calculateMoodScores(p) {
+        let totalSat = 0;
+        let minLum = 1, maxLum = 0;
+        let warmCount = 0;
+
+        p.colors.forEach(c => {
+            const [h, s, l] = hexToHsl(c.hex);
+            totalSat += s;
+            const lum = getLuminance(hexToRgb(c.hex));
+            if (lum < minLum) minLum = lum;
+            if (lum > maxLum) maxLum = lum;
+            if ((h >= 0 && h <= 50) || (h >= 330)) warmCount++;
+        });
+
+        const vibrancy = totalSat / p.colors.length;
+        const contrast = (maxLum - minLum) * 100;
+        const temp = warmCount / p.colors.length > 0.5 ? 'Warm' : 'Cool';
+
+        const vibEl = document.getElementById('stat-vibrancy');
+        const conEl = document.getElementById('stat-contrast');
+        const tempEl = document.getElementById('stat-temp-label');
+
+        if (vibEl) vibEl.style.width = `${vibrancy}%`;
+        if (conEl) conEl.style.width = `${contrast}%`;
+        if (tempEl) tempEl.textContent = temp;
+
+        const dash = document.getElementById('mood-score-dashboard');
+        if (dash) {
+            dash.classList.remove('opacity-0', 'translate-y-4');
+            const avgLum = (maxLum + minLum) / 2;
+            dash.className = `glass-pill pointer-events-auto flex items-center gap-4 px-4 py-2 rounded-2xl shadow-2xl transition-all duration-700 ${avgLum > 0.6 ? 'glass-dark' : 'glass-light'}`;
+        }
+    }
+
+    function updateNavOrbs(p) {
+        const currentIndex = allPalettes.findIndex(item => item.id === p.id);
+        const prevP = allPalettes[(currentIndex - 1 + allPalettes.length) % allPalettes.length];
+        const nextP = allPalettes[(currentIndex + 1) % allPalettes.length];
+
+        const prevOrb = document.getElementById('nav-orb-prev');
+        const nextOrb = document.getElementById('nav-orb-next');
+
+        if (prevOrb) {
+            const color = prevP.colors[0].hex;
+            prevOrb.style.setProperty('--orb-color', `${color}66`);
+            prevOrb.querySelector('.orb-glow').style.background = color;
+        }
+        if (nextOrb) {
+            const color = nextP.colors[0].hex;
+            nextOrb.style.setProperty('--orb-color', `${color}66`);
+            nextOrb.querySelector('.orb-glow').style.background = color;
+        }
+    }
+
+    function generateMoodDescription(p) {
+        const moods = (p.tags?.mood || []).join(', ');
+        const primaryColor = p.colors[0].name.split(' ').pop().toLowerCase();
+        return `A curated selection of ${p.count} tones featuring ${primaryColor} accents. Defined by its ${moods || 'versatile'} aesthetic, this palette is optimized for professional digital interfaces.`;
+    }
+
+    // --- Sound System ---
+    let audioCtx = null;
+    function triggerUISound(type = 'click') {
+        try {
+            if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+
+            const now = audioCtx.currentTime;
+            if (type === 'open') {
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(440, now);
+                osc.frequency.exponentialRampToValueAtTime(880, now + 0.1);
+                gain.gain.setValueAtTime(0.05, now);
+                gain.gain.exponentialRampToValueAtTime(0.01, now + 0.1);
+                osc.start(now);
+                osc.stop(now + 0.1);
+            } else {
+                osc.type = 'triangle';
+                osc.frequency.setValueAtTime(150, now);
+                gain.gain.setValueAtTime(0.03, now);
+                gain.gain.exponentialRampToValueAtTime(0.01, now + 0.05);
+                osc.start(now);
+                osc.stop(now + 0.05);
+            }
+        } catch(e) {}
     }
 
     function closeModal() {
@@ -805,6 +1035,7 @@ document.addEventListener('DOMContentLoaded', () => {
             view.classList.toggle('pointer-events-none', !isTarget);
         });
         activeDashVariant = variant;
+        updateStatePill('dashboard', variant.charAt(0).toUpperCase() + variant.slice(1));
         if (!window.gsap) return;
         gsap.killTweensOf(".dash-view *");
         if (variant === 'analytics') gsap.from("#dash-analytics .lg\\:col-span-8", { y: 20, opacity: 0, duration: 0.6, ease: "power2.out" });
@@ -824,6 +1055,11 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         const descriptionEl = document.getElementById('usecase-description');
         if (descriptionEl) descriptionEl.textContent = descriptions[usecase] || descriptions.dashboard;
+
+        updateStatePill(usecase, usecase === 'dashboard' ? activeDashVariant : null);
+        const deviceLabels = { dashboard:'Browser · Desktop', social:'Mobile App', landing:'Browser · Desktop', commerce:'Browser · Tablet', mobile:'Native App · iOS', typography:'Document' };
+        const badgeLabel = document.getElementById('applied-preview-label');
+        if (badgeLabel) badgeLabel.textContent = deviceLabels[usecase] ? `Applied Preview · ${deviceLabels[usecase]}` : 'Applied Preview';
 
         // Adaptive Skeleton Flash
         const wrapper = elements.sandbox;
@@ -853,6 +1089,12 @@ document.addEventListener('DOMContentLoaded', () => {
         else if (usecase === 'landing') gsap.from("#monitor-frame", { y: 30, opacity: 0, duration: 0.8, ease: "power3.out" });
         else if (usecase === 'commerce') gsap.from("#commerce-card", { x: -30, opacity: 0, duration: 0.7, ease: "power3.out" });
         else if (usecase === 'mobile') gsap.from("#mobile-shell", { y: 50, opacity: 0, duration: 0.8, ease: "power4.out" });
+
+        // Micro-slide entry
+        const activePanel = document.getElementById('case-' + usecase);
+        if (activePanel && window.gsap) {
+            gsap.fromTo(activePanel, { y: -10, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: 'power2.out', delay: 0.05 });
+        }
     }
 
     function updateRoleLabels() {
@@ -920,6 +1162,30 @@ document.addEventListener('DOMContentLoaded', () => {
         renderSandboxRoleChips();
         updateContrastStatus();
         showToast(`Swapped Role ${idx1} and ${idx2}`);
+    }
+
+    function updateStatePill(usecase, sub) {
+        const labels = { dashboard:'Dashboard', social:'Social', landing:'Landing', commerce:'Commerce', mobile:'Mobile', typography:'Typography' };
+        if (elements.pillUsecase) elements.pillUsecase.textContent = labels[usecase] || usecase;
+        const subEl = elements.pillSub;
+        const sepEl = document.querySelector('#canvas-state-pill .pill-sep');
+        if (subEl) { subEl.textContent = sub || ''; subEl.style.display = sub ? '' : 'none'; }
+        if (sepEl) sepEl.style.display = sub ? '' : 'none';
+    }
+
+    function renderSideRail() {
+        const container = elements.sideRailChips;
+        if (!container || !currentPalette) return;
+        container.innerHTML = '';
+        for (let i = 1; i <= Math.min(currentPalette.colors.length, 10); i++) {
+            const hex = (getSandboxHex(i) || currentPalette.colors[(i-1) % currentPalette.colors.length].hex).trim();
+            const role = sandboxRoles[i - 1] || `Color ${i}`;
+            const div = document.createElement('div');
+            div.className = 'flex items-center gap-2 cursor-pointer group';
+            div.innerHTML = `<div class="w-7 h-7 rounded-lg flex-shrink-0 border border-white/10" style="background:${hex}"></div><div class="min-w-0"><div class="text-[7px] font-black uppercase tracking-widest text-white/40">${role}</div><div class="text-[9px] font-mono text-white/55 truncate">${hex.slice(0,7).toUpperCase()}</div></div>`;
+            div.onclick = () => copyToClipboard(hex.slice(0,7).toUpperCase(), `${role} copied`);
+            container.appendChild(div);
+        }
     }
 
     function initProTools() {
@@ -1031,6 +1297,145 @@ document.addEventListener('DOMContentLoaded', () => {
                 elements.roleTooltip.classList.add('hidden');
             }
         });
+
+        // Breakpoint switcher
+        document.querySelectorAll('[data-bp]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                sandboxBp = btn.dataset.bp;
+                document.querySelectorAll('[data-bp]').forEach(b => b.classList.remove('active-bp'));
+                document.querySelectorAll(`[data-bp="${sandboxBp}"]`).forEach(b => b.classList.add('active-bp'));
+                const wrapper = elements.scaleWrapper;
+                if (!wrapper) return;
+                wrapper.classList.remove('bp-mobile', 'bp-tablet', 'bp-desktop', 'bp-ring');
+                if (sandboxBp !== 'auto') wrapper.classList.add(`bp-${sandboxBp}`, 'bp-ring');
+            });
+        });
+
+        // Fullscreen
+        const fsBtn = getEl('sandbox-fullscreen-btn');
+        if (fsBtn && elements.sandbox) {
+            fsBtn.addEventListener('click', () => {
+                const isFs = elements.sandbox.classList.toggle('sandbox-fullscreen');
+                fsBtn.classList.toggle('active-tool', isFs);
+                const icon = fsBtn.querySelector('i');
+                if (icon) icon.className = isFs ? 'fa-solid fa-compress' : 'fa-solid fa-expand';
+                if (isFs) {
+                    document.addEventListener('keydown', function onEscFs(e) {
+                        if (e.key === 'Escape') {
+                            elements.sandbox.classList.remove('sandbox-fullscreen');
+                            fsBtn.classList.remove('active-tool');
+                            const ic = fsBtn.querySelector('i');
+                            if (ic) ic.className = 'fa-solid fa-expand';
+                            document.removeEventListener('keydown', onEscFs);
+                        }
+                    });
+                }
+            });
+        }
+
+        // Annotate / Inspect mode
+        const annotateBtn = getEl('sandbox-annotate-btn');
+        if (annotateBtn && elements.sandbox) {
+            annotateBtn.addEventListener('click', () => {
+                annotateMode = !annotateMode;
+                elements.sandbox.classList.toggle('sandbox-annotate', annotateMode);
+                annotateBtn.classList.toggle('active-tool', annotateMode);
+                showToast(annotateMode ? 'Inspect mode ON — hover [data-role] elements' : 'Inspect mode OFF');
+            });
+        }
+
+        // Theme split (Light vs Dark)
+        const themeSplitBtn = getEl('sandbox-theme-split-btn');
+        if (themeSplitBtn && elements.sandbox) {
+            themeSplitBtn.addEventListener('click', () => {
+                themeSplitActive = !themeSplitActive;
+                themeSplitBtn.classList.toggle('active-tool', themeSplitActive);
+                elements.sandbox.classList.toggle('sandbox-theme-split', themeSplitActive);
+                const wrapper = elements.scaleWrapper;
+                if (!wrapper) return;
+                if (themeSplitActive) {
+                    const activeContent = elements.sandbox.querySelector('.usecase-content:not(.opacity-0):not([style*="display: none"])');
+                    if (activeContent) {
+                        const lightPanel = document.createElement('div');
+                        lightPanel.className = 'split-panel split-light-side';
+                        const lightClone = activeContent.cloneNode(true);
+                        lightClone.classList.remove('opacity-0','pointer-events-none','absolute','inset-0');
+                        lightClone.classList.add('card-light','w-full','relative');
+                        lightClone.style.cssText = 'position:relative;opacity:1;pointer-events:auto;';
+                        lightPanel.innerHTML = `<span class="split-panel-badge" style="background:rgba(255,255,255,0.88);color:#374151">&#9728; LIGHT</span>`;
+                        lightPanel.appendChild(lightClone);
+                        const divider = document.createElement('div'); divider.className = 'split-divider split-td';
+                        const darkPanel = document.createElement('div');
+                        darkPanel.className = 'split-panel split-dark-side';
+                        const darkClone = activeContent.cloneNode(true);
+                        darkClone.classList.remove('opacity-0','pointer-events-none','absolute','inset-0');
+                        darkClone.classList.add('card-dark','w-full','relative');
+                        darkClone.style.cssText = 'position:relative;opacity:1;pointer-events:auto;background:#0f172a;';
+                        darkPanel.innerHTML = `<span class="split-panel-badge" style="background:rgba(15,23,42,0.88);color:rgba(255,255,255,0.65)">&#9790; DARK</span>`;
+                        darkPanel.appendChild(darkClone);
+                        activeContent.classList.add('theme-split-hidden');
+                        activeContent.style.display = 'none';
+                        wrapper.appendChild(lightPanel); wrapper.appendChild(divider); wrapper.appendChild(darkPanel);
+                    }
+                } else {
+                    wrapper.querySelectorAll('.split-panel,.split-td').forEach(el => el.remove());
+                    elements.sandbox.querySelectorAll('.theme-split-hidden').forEach(el => { el.classList.remove('theme-split-hidden'); el.style.display = ''; });
+                }
+                showToast(themeSplitActive ? 'Light / Dark compare ON' : 'Theme compare OFF');
+            });
+        }
+
+        // Capture this view
+        const captureBtn = getEl('sandbox-capture-btn');
+        if (captureBtn) {
+            captureBtn.addEventListener('click', () => {
+                if (!currentPalette) return;
+                const colors = currentPalette.colors;
+                const W = 600, stripH = 140, infoH = 60, H = stripH + infoH;
+                const sw = W / colors.length;
+                const canvas = document.createElement('canvas');
+                canvas.width = W; canvas.height = H;
+                const ctx = canvas.getContext('2d');
+                colors.forEach((c, i) => {
+                    ctx.fillStyle = c.hex.slice(0,7); ctx.fillRect(i * sw, 0, sw + 1, stripH);
+                    ctx.fillStyle = 'rgba(0,0,0,0.35)'; ctx.fillRect(i * sw, stripH - 22, sw + 1, 22);
+                    ctx.fillStyle = 'rgba(255,255,255,0.75)'; ctx.font = '7px monospace';
+                    ctx.fillText(c.hex.slice(0,7).toUpperCase(), i * sw + 4, stripH - 8);
+                });
+                ctx.fillStyle = '#0f172a'; ctx.fillRect(0, stripH, W, infoH);
+                ctx.fillStyle = '#f1f5f9'; ctx.font = 'bold 14px system-ui';
+                ctx.fillText(currentPalette.name, 14, stripH + 22);
+                const activeUsecase = document.querySelector('.usecase-btn.active')?.dataset.usecase || '';
+                const ucLabel = { dashboard:'Dashboard', social:'Social', landing:'Landing', commerce:'Commerce', mobile:'Mobile', typography:'Typography' }[activeUsecase] || 'Preview';
+                ctx.fillStyle = '#6366f1'; ctx.font = 'bold 9px system-ui';
+                ctx.fillText(ucLabel + ' · ' + colors.length + ' Colors', 14, stripH + 40);
+                canvas.toBlob(blob => {
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a'); a.href = url; a.download = `${currentPalette.id}-preview.png`; a.click();
+                    URL.revokeObjectURL(url); showToast('Preview captured!');
+                });
+            });
+        }
+
+        // Side rail toggle
+        const sideRailToggle = getEl('toggle-side-rail');
+        if (sideRailToggle && elements.sideRail) {
+            sideRailToggle.addEventListener('click', () => {
+                sideRailOpen = !sideRailOpen;
+                elements.sideRail.classList.toggle('open', sideRailOpen);
+                sideRailToggle.classList.toggle('bg-indigo-100', sideRailOpen);
+                sideRailToggle.classList.toggle('text-indigo-600', sideRailOpen);
+                if (sideRailOpen) renderSideRail();
+            });
+        }
+        const closeSideRailBtn = getEl('close-side-rail');
+        if (closeSideRailBtn && elements.sideRail) {
+            closeSideRailBtn.addEventListener('click', () => {
+                sideRailOpen = false;
+                elements.sideRail.classList.remove('open');
+                if (sideRailToggle) { sideRailToggle.classList.remove('bg-indigo-100','text-indigo-600'); }
+            });
+        }
     }
 
     function setupFacetedFilters() {
@@ -1194,7 +1599,29 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    function initViewToggle() {
+        const modes = ['grid', 'compact', 'list'];
+        modes.forEach(mode => {
+            const btn = document.getElementById(`view-${mode}`);
+            if (!btn) return;
+            btn.addEventListener('click', () => {
+                viewMode = mode;
+                saveJson('paletteShowcase.viewMode', mode);
+                document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                applyFilters();
+            });
+        });
+        const saved = document.getElementById(`view-${viewMode}`);
+        if (saved) {
+            document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+            saved.classList.add('active');
+        }
+    }
+
     initProTools();
+    initViewToggle();
+    initMoodHero();
 
     fetch('palettes.json')
         .then(res => res.json())

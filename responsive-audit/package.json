@@ -1,0 +1,14 @@
+{
+  "name": "responsive-audit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "audit": "node audit.mjs"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.49.0",
+    "playwright": "^1.49.0",
+    "serve": "^14.2.0"
+  }
+}
