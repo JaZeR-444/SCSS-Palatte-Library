@@ -24,7 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
         shuffleBtn: getEl('shuffle-colors'),
         colorPicker: getEl('color-proximity-picker'),
         colorSwatch: getEl('color-picker-swatch'),
-        clearColor: getEl('clear-color-proximity')
+        clearColor: getEl('clear-color-proximity'),
+        sandboxViewport: getEl('sandbox-viewport'),
+        scaleWrapper: getEl('sandbox-scale-wrapper'),
+        zoomIn: getEl('zoom-in'),
+        zoomOut: getEl('zoom-out'),
+        zoomDisplay: getEl('zoom-display'),
+        roleLabelsToggle: getEl('toggle-role-labels'),
+        roleLabelsOverlay: getEl('role-labels-overlay'),
+        roleLabelsContent: getEl('role-labels-content')
     };
 
     // --- State ---
@@ -37,6 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let activeDashVariant = 'analytics';
     let favorites = new Set(JSON.parse(localStorage.getItem('sc_favorites') || '[]'));
     let proximityHex = null;
+    let sandboxZoom = 1.0;
+    let sandboxBg = 'auto';
+    let showRoleLabels = false;
 
     // --- Core Logic: Search & Filtering ---
 
@@ -428,6 +439,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         applyPaletteMapping(p.colors);
+        applySandboxBg();
+        if (showRoleLabels) updateRoleLabels();
 
         // Color Lab
         if (elements.lab) {
@@ -507,6 +520,60 @@ document.addEventListener('DOMContentLoaded', () => {
         history.replaceState(null, '', location.pathname + location.search);
     }
 
+    // --- Sandbox Controls ---
+
+    function applyZoom() {
+        if (elements.scaleWrapper) {
+            elements.scaleWrapper.style.transform = sandboxZoom === 1 ? '' : `scale(${sandboxZoom})`;
+            elements.scaleWrapper.style.transformOrigin = 'center top';
+        }
+        if (elements.zoomDisplay) elements.zoomDisplay.textContent = Math.round(sandboxZoom * 100) + '%';
+    }
+
+    function applySandboxBg() {
+        const vp = elements.sandboxViewport;
+        if (!vp) return;
+        if (sandboxBg === 'auto') { vp.style.background = ''; return; }
+        if (sandboxBg === 'white') { vp.style.background = '#ffffff'; return; }
+        if (sandboxBg === 'gray') { vp.style.background = '#f3f4f6'; return; }
+        if (sandboxBg === 'dark') { vp.style.background = '#0f172a'; return; }
+        if (sandboxBg === 'gradient' && currentPalette) {
+            const hexes = currentPalette.colors.slice(0, 5).map(c => c.hex.slice(0, 7));
+            vp.style.background = `linear-gradient(135deg, ${hexes.join(', ')})`;
+            return;
+        }
+        if (sandboxBg === 'checker') {
+            vp.style.background = 'repeating-conic-gradient(#e5e7eb 0% 25%, #ffffff 0% 50%) 0 0 / 20px 20px';
+        }
+    }
+
+    function updateRoleLabels() {
+        if (!elements.roleLabelsOverlay || !elements.roleLabelsContent) return;
+        if (!showRoleLabels) {
+            elements.roleLabelsOverlay.classList.add('hidden');
+            if (elements.roleLabelsToggle) {
+                elements.roleLabelsToggle.classList.remove('bg-indigo-500', 'text-white');
+                elements.roleLabelsToggle.classList.add('bg-gray-100', 'dark:bg-slate-800', 'text-gray-500');
+            }
+            return;
+        }
+        elements.roleLabelsOverlay.classList.remove('hidden');
+        elements.roleLabelsContent.innerHTML = '';
+        for (let i = 1; i <= 10; i++) {
+            const raw = getComputedStyle(document.documentElement).getPropertyValue(`--ui-color-${i}`).trim();
+            if (!raw) continue;
+            const hex = raw.slice(0, 7).toUpperCase();
+            const chip = document.createElement('div');
+            chip.className = 'flex items-center gap-1.5 bg-black/50 rounded-lg px-2 py-1';
+            chip.innerHTML = `<div class="w-3 h-3 rounded-sm flex-shrink-0 border border-white/20" style="background:${hex}"></div><span class="text-[9px] font-mono text-white/70 select-none">--ui-color-${i}</span><span class="text-[9px] font-mono text-white/50 select-none">${hex}</span>`;
+            elements.roleLabelsContent.appendChild(chip);
+        }
+        if (elements.roleLabelsToggle) {
+            elements.roleLabelsToggle.classList.add('bg-indigo-500', 'text-white');
+            elements.roleLabelsToggle.classList.remove('bg-gray-100', 'dark:bg-slate-800', 'text-gray-500');
+        }
+    }
+
     // --- Listeners ---
 
     if (elements.close) elements.close.addEventListener('click', closeModal);
@@ -541,6 +608,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    if (elements.zoomIn) elements.zoomIn.addEventListener('click', () => {
+        sandboxZoom = Math.min(1.5, parseFloat((sandboxZoom + 0.1).toFixed(1)));
+        applyZoom();
+    });
+    if (elements.zoomOut) elements.zoomOut.addEventListener('click', () => {
+        sandboxZoom = Math.max(0.5, parseFloat((sandboxZoom - 0.1).toFixed(1)));
+        applyZoom();
+    });
+    if (elements.roleLabelsToggle) elements.roleLabelsToggle.addEventListener('click', () => {
+        showRoleLabels = !showRoleLabels;
+        updateRoleLabels();
+    });
+
     document.addEventListener('click', (e) => {
         const useBtn = e.target.closest('.usecase-btn');
         if (useBtn) switchUseCase(useBtn.dataset.usecase);
@@ -564,6 +644,19 @@ document.addEventListener('DOMContentLoaded', () => {
         if (copyBtn && currentPalette) {
             if (copyBtn.dataset.copy === 'full-scss') window.copyToClipboard(currentPalette.source || '', 'Full SCSS copied!');
             if (copyBtn.dataset.copy === 'current') window.copyToClipboard(elements.code?.textContent || '', 'Code copied!');
+        }
+
+        const bgBtn = e.target.closest('.bg-tone-btn');
+        if (bgBtn && bgBtn.dataset.bg) {
+            sandboxBg = bgBtn.dataset.bg;
+            document.querySelectorAll('.bg-tone-btn').forEach(b => {
+                const isActive = b === bgBtn;
+                b.classList.toggle('bg-white', isActive);
+                b.classList.toggle('shadow-sm', isActive);
+                b.classList.toggle('text-gray-900', isActive);
+                b.classList.toggle('text-gray-500', !isActive);
+            });
+            applySandboxBg();
         }
 
         const tabBtn = e.target.closest('.tab-btn');
