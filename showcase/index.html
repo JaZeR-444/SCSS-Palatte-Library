@@ -32,7 +32,7 @@
     <header class="sticky top-0 z-40 w-full backdrop-blur-xl border-b border-gray-200 dark:border-slate-800 bg-white/70 dark:bg-slate-950/70">
         <div class="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12 3xl:px-16 py-2.5 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
             <div class="flex items-center gap-4 min-w-0">
-                <div class="relative h-10 w-10 flex-shrink-0 rounded-xl bg-black dark:bg-white flex items-center justify-center shadow-sm border border-gray-200 dark:border-slate-700">
+                <div id="logo-reset" class="relative h-10 w-10 flex-shrink-0 rounded-xl bg-black dark:bg-white flex items-center justify-center shadow-sm border border-gray-200 dark:border-slate-700 cursor-pointer" title="Reset &amp; go to top">
                     <span class="text-white dark:text-black font-black text-lg select-none">P/</span>
                 </div>
                 <div class="min-w-0">
@@ -50,11 +50,11 @@
                     <div class="h-2 w-2 rounded-full bg-emerald-500"></div>
                     <span id="library-count" class="text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">Loading</span>
                 </div>
-                <button id="theme-toggle" class="flex h-8 w-8 items-center justify-center rounded-lg border border-transparent text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-slate-800 dark:hover:text-white transition-colors" title="Toggle Theme">
+                <button id="theme-toggle" class="flex h-8 w-8 items-center justify-center rounded-lg border border-transparent text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-slate-800 dark:hover:text-white transition-colors focus:ring-2 focus:ring-indigo-500 focus:outline-none" aria-label="Toggle Dark Mode" title="Toggle Theme">
                     <i class="fa-solid fa-moon dark:hidden text-sm"></i>
                     <i class="fa-solid fa-sun hidden dark:inline text-sm"></i>
                 </button>
-                <a href="https://github.com/JaZeR-444/SCSS-Palatte-Library" class="flex h-8 w-8 items-center justify-center rounded-lg border border-transparent text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-slate-800 dark:hover:text-white transition-colors" title="GitHub">
+                <a href="https://github.com/JaZeR-444/SCSS-Palatte-Library" class="flex h-8 w-8 items-center justify-center rounded-lg border border-transparent text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-slate-800 dark:hover:text-white transition-colors focus:ring-2 focus:ring-indigo-500 focus:outline-none" aria-label="View Project on GitHub" title="GitHub">
                     <i class="fa-brands fa-github text-sm"></i>
                 </a>
             </div>
@@ -67,8 +67,9 @@
                 <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
+                <label for="palette-search" class="sr-only">Search palettes</label>
                 <input type="text" id="palette-search" placeholder="Search by name, mood, or color..."
-                    class="block w-full pl-12 pr-36 py-3.5 border border-gray-200 dark:border-slate-800 rounded-2xl bg-white dark:bg-slate-900/80 text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-400 shadow-sm transition-all">
+                    class="block w-full pl-12 pr-36 py-3.5 border border-gray-200 dark:border-slate-800 rounded-2xl bg-white dark:bg-slate-900/80 text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 shadow-sm transition-all">
                 
                 <div class="absolute inset-y-0 right-0 flex items-center pr-3 gap-2">
                     <kbd class="hidden md:inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[9px] font-bold bg-gray-100 dark:bg-slate-800 border border-gray-200 dark:border-slate-700 text-gray-400 pointer-events-none select-none">⌘K</kbd>
@@ -80,14 +81,17 @@
                 </div>
             </div>
 
+            <!-- Active Filters Strip -->
+            <div id="active-filters-strip" class="hidden flex items-center gap-1.5 flex-wrap"></div>
+
             <!-- Faceted Filter Tabs -->
-            <div class="flex flex-col gap-3">
+            <div id="facet-area" class="flex flex-col gap-3">
                 <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2">
                     <div class="hidden sm:block">
                         <p class="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 dark:text-gray-500">Browse Mode</p>
                         <p id="facet-summary" class="text-sm font-bold text-gray-600 dark:text-gray-300">Explore the full palette library.</p>
                     </div>
-                    <button id="reset-filters" class="self-start sm:self-auto rounded-xl border border-gray-200 dark:border-slate-800 px-3 py-2 text-[10px] font-black uppercase tracking-widest text-gray-400 hover:border-indigo-500 hover:text-indigo-500 transition-all">
+                    <button id="reset-filters" class="self-start sm:self-auto rounded-full border border-gray-200 dark:border-slate-800 px-3 py-2 text-[10px] font-black uppercase tracking-widest text-gray-400 hover:border-indigo-500 hover:text-indigo-500 transition-all">
                         Reset
                     </button>
                 </div>
@@ -96,10 +100,10 @@
                     <div class="pointer-events-none absolute left-0 top-0 z-10 h-full w-6 bg-gradient-to-r from-white/80 to-transparent dark:from-slate-900/80"></div>
                     <div class="pointer-events-none absolute right-0 top-0 z-10 h-full w-10 bg-gradient-to-l from-white/90 to-transparent dark:from-slate-900/90"></div>
                     <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 px-1" id="facet-tabs" role="tablist" aria-label="Palette browsing modes">
-                        <button data-facet="all" aria-selected="true" class="facet-btn active px-4 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-indigo-500 bg-indigo-500 text-white transition-all whitespace-nowrap"><i class="fa-solid fa-border-all mr-2"></i>All</button>
-                        <button data-facet="recent" aria-selected="false" class="facet-btn px-4 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-indigo-500 transition-all whitespace-nowrap"><i class="fa-solid fa-clock-rotate-left mr-2"></i>Recent</button>
-                        <button data-facet="count" aria-selected="false" class="facet-btn px-4 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-indigo-500 transition-all whitespace-nowrap"><i class="fa-solid fa-layer-group mr-2"></i>Count</button>
-                        <button data-facet="favorites" aria-selected="false" class="facet-btn px-4 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-red-400 hover:text-red-400 transition-all whitespace-nowrap"><i class="fa-solid fa-heart mr-2"></i>Saved</button>
+                        <button data-facet="all" aria-selected="true" class="facet-btn active px-4 py-2 rounded-full text-xs font-black uppercase tracking-widest border border-indigo-500 bg-indigo-500 text-white transition-all whitespace-nowrap"><i class="fa-solid fa-border-all mr-2"></i>All</button>
+                        <button data-facet="recent" aria-selected="false" class="facet-btn px-4 py-2 rounded-full text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-indigo-500 transition-all whitespace-nowrap"><i class="fa-solid fa-clock-rotate-left mr-2"></i>Recent</button>
+                        <button data-facet="count" aria-selected="false" class="facet-btn px-4 py-2 rounded-full text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-indigo-500 transition-all whitespace-nowrap"><i class="fa-solid fa-layer-group mr-2"></i>Count</button>
+                        <button data-facet="favorites" aria-selected="false" class="facet-btn px-4 py-2 rounded-full text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-red-400 hover:text-red-400 transition-all whitespace-nowrap"><i class="fa-solid fa-heart mr-2"></i>Saved</button>
                     </div>
                 </div>
 
@@ -134,25 +138,28 @@
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
             <p id="results-count" class="text-sm font-bold text-gray-400 dark:text-gray-500"></p>
             <div class="flex items-center gap-2">
-                <div class="flex items-center gap-0.5 rounded-2xl border border-gray-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-1 shadow-sm">
-                    <button id="view-grid" class="view-btn active h-8 w-8 flex items-center justify-center rounded-xl transition-all" title="Grid view"><i class="fa-solid fa-border-all text-xs"></i></button>
-                    <button id="view-compact" class="view-btn h-8 w-8 flex items-center justify-center rounded-xl transition-all" title="Compact tiles"><i class="fa-solid fa-grip text-xs"></i></button>
-                    <button id="view-list" class="view-btn h-8 w-8 flex items-center justify-center rounded-xl transition-all" title="List view"><i class="fa-solid fa-list text-xs"></i></button>
+                <div class="inline-flex items-center rounded-full border border-gray-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-1 shadow-sm">
+                    <button id="view-grid" class="view-btn active h-10 w-10 rounded-full flex items-center justify-center transition-all" title="Grid view">
+                        <i class="fa-solid fa-border-all text-xs"></i>
+                    </button>
+                    <button id="view-compact" class="view-btn h-10 w-10 rounded-full flex items-center justify-center transition-all" title="Compact tiles">
+                        <i class="fa-solid fa-grip text-xs"></i>
+                    </button>
+                    <button id="view-list" class="view-btn h-10 w-10 rounded-full flex items-center justify-center transition-all" title="List view">
+                        <i class="fa-solid fa-list text-xs"></i>
+                    </button>
                 </div>
-            <label class="sort-control group flex items-center gap-2 rounded-2xl border border-gray-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-3 py-2 shadow-sm transition-all hover:border-indigo-500 focus-within:border-indigo-500 focus-within:ring-4 focus-within:ring-indigo-500/10">
-                <span class="flex h-8 w-8 items-center justify-center rounded-xl bg-indigo-50 text-indigo-500 dark:bg-indigo-950/40 dark:text-indigo-300">
-                    <i class="fa-solid fa-arrow-down-wide-short text-xs"></i>
-                </span>
-                <span class="text-[10px] font-black uppercase tracking-widest text-gray-400">Sort</span>
-                <select id="sort-order" class="min-w-40 appearance-none bg-transparent pr-6 text-xs font-black text-gray-700 outline-none cursor-pointer dark:text-gray-200">
-                    <option value="name">Name A-Z</option>
-                    <option value="recent">Recently Added</option>
-                    <option value="count-asc">Fewest Colors</option>
-                    <option value="count-desc">Most Colors</option>
-                    <option value="proximity">Closest Color</option>
-                </select>
-                <i class="fa-solid fa-chevron-down text-[10px] text-gray-300 transition-transform group-focus-within:rotate-180"></i>
-            </label>
+                <label class="group inline-flex h-11 items-center gap-2 rounded-full border border-gray-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 shadow-sm">
+                    <i class="fa-solid fa-arrow-down-wide-short text-xs text-indigo-500"></i>
+                    <select id="sort-order" class="appearance-none bg-transparent pr-5 text-xs font-black text-gray-700 dark:text-gray-200 outline-none cursor-pointer">
+                        <option value="name">Name A-Z</option>
+                        <option value="recent">Recently Added</option>
+                        <option value="count-asc">Fewest Colors</option>
+                        <option value="count-desc">Most Colors</option>
+                        <option value="proximity">Closest Color</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down text-[10px] text-gray-300"></i>
+                </label>
             </div>
         </div>
         <div id="collections-panel" class="hidden mb-8 rounded-2xl border border-gray-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 sm:p-6 shadow-sm"></div>
@@ -267,127 +274,145 @@
             <!-- Scrollable Content -->
             <div class="flex-1 overflow-y-auto no-scrollbar">
                 
-                <!-- SECTION 2: INTERACTIVE SANDBOX -->
-                <div class="p-4 sm:p-8 lg:p-12 border-b border-gray-100 dark:border-slate-800">
-                    <div class="flex flex-col xl:flex-row xl:items-start justify-between gap-6 mb-6">
-                        <div class="flex items-start gap-3">
-                            <div class="w-10 h-10 rounded-xl bg-indigo-500 flex items-center justify-center text-white shadow-lg">
-                                <i class="fa-solid fa-flask"></i>
-                            </div>
-                            <div class="min-w-0">
-                                <div class="flex flex-wrap items-center gap-2">
-                                    <h3 class="text-xl font-bold">Palette Preview Studio</h3>
-                                    <span id="contrast-status" class="rounded-full px-2.5 py-1 text-[10px] font-black uppercase tracking-widest bg-gray-100 text-gray-500 dark:bg-slate-800 dark:text-gray-400">Checking</span>
+                <!-- SECTION 2: PALETTE LAB CANVAS -->
+                <div id="palette-lab" class="p-4 sm:p-8 lg:p-12 border-b border-gray-100 dark:border-slate-800 bg-gray-50/30 dark:bg-slate-950/20">
+                    
+                    <div class="palette-lab-container border border-gray-200 dark:border-slate-800 rounded-3xl bg-white dark:bg-slate-900 shadow-2xl overflow-hidden flex flex-col">
+                        <!-- Lab Header -->
+                        <header class="flex flex-col sm:flex-row justify-between items-start sm:items-center p-6 border-b border-gray-100 dark:border-slate-800 gap-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-indigo-500 flex items-center justify-center text-white shadow-lg">
+                                    <i class="fa-solid fa-flask-vial"></i>
                                 </div>
-                                <p class="text-sm text-gray-400">Test this palette across realistic UI patterns and export the role mapping.</p>
+                                <div>
+                                    <h2 class="text-xl font-bold tracking-tight">Palette Lab</h2>
+                                    <p class="text-[11px] text-gray-400 font-medium">Professional role mapping & interface validation studio.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 ml-auto sm:ml-0">
+                                <span id="contrast-status" class="rounded-full px-3 py-1 text-[10px] font-black uppercase tracking-widest bg-gray-100 text-gray-500 dark:bg-slate-800 dark:text-gray-400">Checking</span>
+                                <button id="export-component" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-indigo-500 text-white hover:bg-indigo-600 transition-all shadow-md text-[10px] font-black uppercase tracking-widest">
+                                    <i class="fa-solid fa-file-export"></i> Export
+                                </button>
+                            </div>
+                        </header>
+
+                        <!-- Lab Secondary Toolbar -->
+                        <div class="flex flex-col lg:flex-row justify-between items-center p-2 bg-gray-50/50 dark:bg-slate-950/50 border-b border-gray-100 dark:border-slate-800 gap-2">
+                            <div class="flex items-center gap-3 px-2 w-full lg:w-auto">
+                                <span class="text-[9px] font-black text-gray-400 uppercase tracking-widest">Scenario</span>
+                                <select id="scenario-dropdown" class="bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-lg text-xs font-bold py-1.5 px-3 focus:ring-2 focus:ring-indigo-500/20 cursor-pointer min-w-[160px]">
+                                    <option value="dashboard">Analytics Dashboard</option>
+                                    <option value="social">Social Feed</option>
+                                    <option value="landing">Product Landing</option>
+                                    <option value="commerce">E-Commerce</option>
+                                    <option value="mobile">Mobile App</option>
+                                    <option value="typography">Type System</option>
+                                </select>
+                            </div>
+
+                            <div class="flex items-center gap-2 w-full lg:w-auto justify-end px-2">
+                                <span class="text-[9px] font-black text-gray-400 uppercase tracking-widest mr-1">View</span>
+                                <div class="flex p-1 bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-slate-700">
+                                    <button data-view="light" class="view-toggle-btn px-3 py-1.5 rounded-lg text-[9px] font-black uppercase transition-all hover:bg-gray-50 dark:hover:bg-slate-700">Light</button>
+                                    <button data-view="dark" class="view-toggle-btn px-3 py-1.5 rounded-lg text-[9px] font-black uppercase transition-all hover:bg-gray-50 dark:hover:bg-slate-700">Dark</button>
+                                    <button id="toggle-split-view" class="px-3 py-1.5 rounded-lg text-[9px] font-black uppercase transition-all hover:bg-gray-50 dark:hover:bg-slate-700">Split</button>
+                                </div>
+                                <div class="h-6 w-px bg-gray-200 dark:bg-slate-700 mx-1"></div>
+                                <button id="shuffle-colors" data-shuffle="sandbox" class="p-2 rounded-lg bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 hover:border-indigo-400 transition-all" title="Shuffle Roles">
+                                    <i class="fa-solid fa-dice text-xs text-gray-400"></i>
+                                </button>
                             </div>
                         </div>
-                        
-                        <div class="sandbox-toolbar flex flex-col lg:flex-row lg:items-start gap-3 w-full xl:w-auto">
-                            <div class="flex flex-col gap-1 min-w-0 flex-1 lg:flex-none">
-                                <div class="relative">
-                                    <div class="pointer-events-none absolute right-0 top-0 z-10 h-full w-8 bg-gradient-to-l from-gray-100 to-transparent dark:from-slate-800 rounded-r-xl"></div>
-                                    <div class="flex p-1 bg-gray-100 dark:bg-slate-800 rounded-xl overflow-x-auto no-scrollbar">
-                                    <button data-usecase="dashboard" class="usecase-btn active px-4 py-2 rounded-lg text-xs font-bold transition-all">DASHBOARD</button>
-                                    <button data-usecase="social" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">SOCIAL</button>
-                                    <button data-usecase="landing" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">LANDING</button>
-                                    <button data-usecase="commerce" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">COMMERCE</button>
-                                    <button data-usecase="mobile" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">MOBILE</button>
-                                    <button data-usecase="typography" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">TYPOGRAPHY</button>
-                                    </div>
+
+                        <!-- Main Canvas Area -->
+                        <div id="section-sandbox" class="relative min-h-[500px] flex items-center justify-center p-4 sm:p-12 transition-all duration-500">
+                            <!-- Canvas Controls Overlay -->
+                            <div id="canvas-top-controls">
+                                <div class="flex p-1 bg-white dark:bg-slate-900 rounded-xl border border-gray-200 dark:border-slate-800 shadow-xl">
+                                    <button data-bp="auto" class="bp-btn active-bp px-2 py-1.5 rounded-lg text-[8px] font-black">AUTO</button>
+                                    <button data-bp="mobile" class="bp-btn w-8 h-8 rounded-lg flex items-center justify-center"><i class="fa-solid fa-mobile-screen"></i></button>
+                                    <button data-bp="tablet" class="bp-btn w-8 h-8 rounded-lg flex items-center justify-center"><i class="fa-solid fa-tablet-screen"></i></button>
+                                    <button data-bp="desktop" class="bp-btn w-8 h-8 rounded-lg flex items-center justify-center"><i class="fa-solid fa-desktop"></i></button>
                                 </div>
-                                <p id="usecase-description" class="text-[11px] text-gray-400 px-1">Multi-layout dashboard — Analytics, CRM, Monitor &amp; Profile</p>
+                                <div class="flex p-1 bg-white dark:bg-slate-900 rounded-xl border border-gray-200 dark:border-slate-800 shadow-xl ml-2">
+                                    <button id="sandbox-fullscreen-btn" class="w-8 h-8 rounded-lg flex items-center justify-center" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+                                </div>
                             </div>
-                            <div class="flex flex-wrap items-center gap-2">
-                                <div class="flex items-center gap-0.5 p-1 bg-gray-100 dark:bg-slate-800 rounded-xl">
-                                    <button id="zoom-out" class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200 transition-all font-black" title="Zoom out">−</button>
-                                    <span id="zoom-display" class="text-[10px] font-black text-gray-600 dark:text-gray-400 w-10 text-center select-none">100%</span>
-                                    <button id="zoom-in" class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200 transition-all font-black" title="Zoom in">+</button>
-                                </div>
-                                <button id="toggle-role-labels" class="tool-icon-btn p-2.5 rounded-xl bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-all text-gray-500" title="Show color role labels">
-                                    <i class="fa-solid fa-tag text-xs"></i>
-                                </button>
-                                <button id="modal-theme-toggle" class="p-2.5 rounded-xl bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-all" title="Toggle modal theme">
-                                    <i class="fa-solid fa-moon text-gray-500 dark:hidden text-sm"></i>
-                                    <i class="fa-solid fa-sun hidden dark:block text-yellow-400 text-sm"></i>
-                                </button>
-                                <button id="shuffle-colors" data-shuffle="sandbox" class="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition-all group" title="Shuffle Palette Mapping">
-                                    <i class="fa-solid fa-dice-five group-hover:rotate-180 transition-transform duration-500"></i>
-                                </button>
-                                
-                                <!-- Pro Tools Cluster -->
-                                <div class="flex items-center gap-1.5 p-1 bg-gray-100 dark:bg-slate-800 rounded-xl ml-auto">
-                                    <div class="relative group/sim">
-                                        <button class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-slate-700 text-gray-500 transition-all" title="Vision Simulator">
-                                            <i class="fa-solid fa-eye text-xs"></i>
-                                        </button>
-                                        <div class="absolute bottom-full right-0 mb-2 hidden group-hover/sim:block bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 rounded-xl shadow-2xl p-2 min-w-[160px] z-50">
-                                            <p class="text-[9px] font-black uppercase text-gray-400 px-2 py-1 mb-1">A11y Vision</p>
-                                            <select id="vision-simulator" class="w-full bg-gray-50 dark:bg-slate-800 border-none rounded-lg text-[10px] font-bold py-1.5 focus:ring-0 cursor-pointer">
-                                                <option value="none">Normal Vision</option>
-                                                <option value="protanopia">Protanopia</option>
-                                                <option value="deuteranopia">Deuteranopia</option>
-                                                <option value="tritanopia">Tritanopia</option>
-                                                <option value="achromatopsia">Achromatopsia</option>
-                                            </select>
+
+                            <!-- Role Tooltip -->
+                            <div id="role-tooltip" class="fixed pointer-events-none z-[100] hidden bg-slate-900/90 dark:bg-white/90 text-white dark:text-slate-900 px-3 py-1.5 rounded-xl text-[10px] font-black uppercase tracking-widest backdrop-blur-md shadow-2xl border border-white/10 dark:border-black/10"></div>
+
+                            <div id="sandbox-scale-wrapper" class="w-full transition-all duration-500 origin-top flex items-center justify-center">
+                                <!-- USE CASE: DASHBOARD -->
+                                <div id="case-dashboard" class="usecase-content w-full max-w-5xl flex flex-col gap-6 transition-all duration-500">
+                                    <!-- Dashboard Sub-Switcher -->
+                                    <div class="flex justify-center">
+                                        <div class="flex p-1 bg-gray-100 dark:bg-slate-800 rounded-xl overflow-x-auto no-scrollbar">
+                                            <button data-dash="analytics" class="dash-btn active px-4 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all">Analytics</button>
+                                            <button data-dash="crm" class="dash-btn px-4 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">CRM</button>
+                                            <button data-dash="monitor" class="dash-btn px-4 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">Monitor</button>
+                                            <button data-dash="profile" class="dash-btn px-4 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">Profile</button>
                                         </div>
                                     </div>
-                                    <button id="toggle-states" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-slate-700 text-gray-500 transition-all" title="Toggle States (Hover/Focus)">
-                                        <i class="fa-solid fa-mouse-pointer text-xs"></i>
-                                    </button>
-                                    <button id="play-animations" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-slate-700 text-indigo-500 transition-all" title="Play Interactions">
-                                        <i class="fa-solid fa-play text-xs"></i>
-                                    </button>
-                                    <button id="toggle-split-view" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-slate-700 text-gray-500 transition-all" title="Side-by-Side Comparison">
-                                        <i class="fa-solid fa-columns text-xs"></i>
-                                    </button>
-                                    <button id="toggle-heatmap" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-slate-700 text-gray-500 transition-all" title="Contrast Heatmap">
-                                        <i class="fa-solid fa-fire text-xs"></i>
-                                    </button>
-                                    <button id="toggle-sandbox-bg" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-slate-700 text-gray-500 transition-all" title="Real-world Background">
-                                        <i class="fa-solid fa-image text-xs"></i>
-                                    </button>
-                                    <button id="toggle-side-rail" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-slate-700 text-gray-500 transition-all" title="Color Roles Panel">
-                                        <i class="fa-solid fa-table-columns text-xs"></i>
-                                    </button>
-                                    <div class="h-4 w-px bg-gray-200 dark:bg-slate-700 mx-0.5"></div>
-                                    <button id="export-component" class="p-2 rounded-lg bg-indigo-500 text-white hover:bg-indigo-600 transition-all shadow-sm" title="Export Component">
-                                        <i class="fa-solid fa-file-export text-xs"></i>
-                                    </button>
+
+                                    <div class="relative min-h-[400px]">
+                                        <!-- DASHBOARD 1: ANALYTICS -->
+                                        <div id="dash-analytics" class="dash-view w-full grid grid-cols-1 lg:grid-cols-12 gap-6 transition-all duration-500">
+                                            <div class="lg:col-span-8 bg-white dark:bg-slate-900 rounded-2xl border border-gray-200 dark:border-slate-800 overflow-hidden shadow-2xl">
+                                                <div class="h-10 bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-slate-800 flex items-center px-4 gap-2 transition-colors duration-500">
+                                                    <div class="flex gap-1.5"><div class="w-2.5 h-2.5 rounded-full bg-red-400"></div><div class="w-2.5 h-2.5 rounded-full bg-yellow-400"></div><div class="w-2.5 h-2.5 rounded-full bg-green-400"></div></div>
+                                                    <div class="flex-1 text-center font-bold text-[10px] text-gray-300 uppercase tracking-widest">Analytics Dashboard</div>
+                                                </div>
+                                                <div class="flex h-64">
+                                                    <aside class="w-16 bg-[var(--ui-color-1)] flex flex-col items-center py-4 gap-4 transition-colors duration-500" data-role="--ui-color-1">
+                                                        <div class="w-8 h-8 rounded-lg bg-[var(--ui-color-2)] shadow-sm text-white flex items-center justify-center text-[10px]" data-role="--ui-color-2"><i class="fa-solid fa-house"></i></div>
+                                                        <div class="w-8 h-8 rounded-lg bg-[var(--ui-color-3)]/40" data-role="--ui-color-3"></div>
+                                                        <div class="w-8 h-8 rounded-lg bg-[var(--ui-color-4)]/40" data-role="--ui-color-4"></div>
+                                                        <div class="mt-auto w-8 h-8 rounded-full border-2 border-[var(--ui-color-5)]" data-role="--ui-color-5"></div>
+                                                    </aside>
+                                                    <div class="flex-1 p-6 space-y-6">
+                                                        <div class="flex justify-between items-center">
+                                                            <div class="flex gap-2">
+                                                                <div class="h-4 w-12 bg-[var(--ui-color-6)]/20 rounded-full" data-role="--ui-color-6"></div>
+                                                                <div class="h-4 w-20 bg-[var(--ui-color-7)]/10 rounded-full" data-role="--ui-color-7"></div>
+                                                            </div>
+                                                            <div id="ui-avatar" class="w-8 h-8 rounded-full bg-gradient-to-tr from-[var(--ui-color-1)] to-[var(--ui-color-3)] transition-colors duration-500 shadow-lg"></div>
+                                                        </div>
+                                                        <div class="grid grid-cols-2 gap-4">
+                                                            <div class="h-20 rounded-xl border border-[var(--ui-color-4)]/20 bg-gray-50/50 dark:bg-slate-900/50 p-3 flex flex-col justify-end gap-1">
+                                                                <div class="flex items-end gap-1 h-full">
+                                                                    <div class="w-1/4 h-1/2 bg-[var(--ui-color-2)] rounded-t-sm" data-role="--ui-color-2"></div>
+                                                                    <div class="w-1/4 h-3/4 bg-[var(--ui-color-4)] rounded-t-sm" data-role="--ui-color-4"></div>
+                                                                    <div class="w-1/4 h-full bg-[var(--ui-color-6)] rounded-t-sm" data-role="--ui-color-6"></div>
+                                                                    <div class="w-1/4 h-2/3 bg-[var(--ui-color-8)] rounded-t-sm" data-role="--ui-color-8"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="h-20 rounded-xl bg-white dark:bg-slate-900 shadow-sm p-4 space-y-2 border border-gray-100 dark:border-slate-800">
+                                                                <div class="flex justify-between items-start">
+                                                                    <div id="ui-badge-sm" class="h-3 w-12 bg-[var(--ui-color-5)] rounded-full transition-colors duration-500" data-role="--ui-color-5"></div>
+                                                                    <div class="flex gap-1">
+                                                                        <div class="w-1.5 h-1.5 rounded-full bg-[var(--ui-color-9)]" data-role="--ui-color-9"></div>
+                                                                        <div class="w-1.5 h-1.5 rounded-full bg-[var(--ui-color-10)] animate-pulse" data-role="--ui-color-10"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="h-2 w-full bg-gray-100 dark:bg-slate-700 rounded-full"></div>
+                                                                <div class="h-2 w-2/3 bg-gray-100 dark:bg-slate-700 rounded-full"></div>
+                                                            </div>
+                                                        </div>
+                                                        <button id="ui-btn-main" class="w-full h-10 bg-gradient-to-r from-[var(--ui-color-1)] to-[var(--ui-color-2)] rounded-xl text-white font-bold text-xs transition-all duration-500 hover:shadow-lg hover:shadow-[var(--ui-color-1)]/20" data-role="--ui-color-1">Launch Interface</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="lg:col-span-4 flex flex-col justify-center gap-4">
+                                                <div class="p-4 rounded-2xl bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm border border-white/20">
+                                                    <h4 class="text-xs font-black uppercase text-indigo-500 mb-2">Analytics View</h4>
+                                                    <p class="text-[11px] text-gray-500 leading-relaxed">Focuses on data visualization and core status metrics.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="palette-role-chips" class="mb-4 grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-8 gap-2"></div>
-
-                    <div id="section-sandbox" class="relative min-h-[380px] sm:min-h-[550px] flex items-center justify-center overflow-hidden rounded-2xl border border-gray-200 dark:border-slate-800 bg-gray-50/70 dark:bg-slate-950/40 shadow-inner transition-colors duration-500 p-3 sm:p-4">
-                        <!-- Role Tooltip -->
-                        <div id="role-tooltip" class="fixed pointer-events-none z-[100] hidden bg-slate-900/90 dark:bg-white/90 text-white dark:text-slate-900 px-3 py-1.5 rounded-xl text-[10px] font-black uppercase tracking-widest backdrop-blur-md shadow-2xl border border-white/10 dark:border-black/10"></div>
-                        
-                        <div id="applied-preview-badge" class="absolute left-4 top-4 z-10 hidden sm:flex items-center gap-2 rounded-full border border-white/60 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 px-3 py-1.5 text-[10px] font-black uppercase tracking-widest text-gray-400 backdrop-blur">
-                            <i class="fa-solid fa-layer-group"></i>
-                            <span id="applied-preview-label">Applied Preview</span>
-                        </div>
-                        <!-- Canvas Top-Right Controls (bp switcher + action buttons) -->
-                        <div id="canvas-top-controls">
-                            <button data-bp="auto" class="bp-btn active-bp" style="font-size:8px;font-weight:900;letter-spacing:0.04em" title="Auto width">AUTO</button>
-                            <button data-bp="mobile" class="bp-btn" title="Mobile (375px)"><i class="fa-solid fa-mobile-screen-button"></i></button>
-                            <button data-bp="tablet" class="bp-btn" title="Tablet (768px)"><i class="fa-solid fa-tablet-screen-button"></i></button>
-                            <button data-bp="desktop" class="bp-btn" title="Desktop (1280px)"><i class="fa-solid fa-desktop"></i></button>
-                            <span class="ctrl-divider"></span>
-                            <button id="sandbox-annotate-btn" title="Inspect color roles"><i class="fa-solid fa-eye-dropper"></i></button>
-                            <button id="sandbox-theme-split-btn" title="Light vs Dark compare"><i class="fa-solid fa-circle-half-stroke"></i></button>
-                            <button id="sandbox-capture-btn" title="Capture this view"><i class="fa-solid fa-camera"></i></button>
-                            <button id="sandbox-fullscreen-btn" title="Fullscreen canvas"><i class="fa-solid fa-expand"></i></button>
-                        </div>
-                        <div id="sandbox-scale-wrapper" class="w-full transition-transform duration-300 origin-top">
-
-                        <!-- USE CASE: DASHBOARD -->
-                        <div id="case-dashboard" class="usecase-content w-full max-w-5xl flex flex-col gap-6 transition-all duration-500">
-                            <!-- Dashboard Sub-Switcher -->
-                            <div class="flex justify-center">
-                                <div class="flex p-1 bg-gray-100 dark:bg-slate-800 rounded-xl overflow-x-auto no-scrollbar">
                                     <button data-dash="analytics" class="dash-btn active px-4 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all">Analytics</button>
                                     <button data-dash="crm" class="dash-btn px-4 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">CRM</button>
                                     <button data-dash="monitor" class="dash-btn px-4 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">Monitor</button>
