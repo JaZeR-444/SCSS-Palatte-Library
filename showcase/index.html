@@ -181,18 +181,23 @@
                     </div>
 
                     <!-- Sandbox Controls: Zoom | Role Labels -->
-                    <div class="flex flex-wrap items-center gap-2 mb-4">
-                        <div class="flex items-center gap-0.5 p-1 bg-gray-100 dark:bg-slate-800 rounded-xl">
-                            <button id="zoom-out" class="w-7 h-7 rounded-lg flex items-center justify-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200 transition-all font-black">−</button>
-                            <span id="zoom-display" class="text-[10px] font-black text-gray-600 dark:text-gray-400 w-10 text-center select-none">100%</span>
-                            <button id="zoom-in" class="w-7 h-7 rounded-lg flex items-center justify-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200 transition-all font-black">+</button>
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center gap-0.5 p-1 bg-gray-100 dark:bg-slate-800 rounded-xl">
+                                <button id="zoom-out" class="w-7 h-7 rounded-lg flex items-center justify-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200 transition-all font-black">−</button>
+                                <span id="zoom-display" class="text-[10px] font-black text-gray-600 dark:text-gray-400 w-10 text-center select-none">100%</span>
+                                <button id="zoom-in" class="w-7 h-7 rounded-lg flex items-center justify-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200 transition-all font-black">+</button>
+                            </div>
+                            <button id="toggle-role-labels" class="p-2 rounded-xl bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-all text-gray-500" title="Show color role labels">
+                                <i class="fa-solid fa-tag text-xs"></i>
+                            </button>
                         </div>
-                        <button id="toggle-role-labels" class="p-2 rounded-xl bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-all text-gray-500" title="Show color role labels">
-                            <i class="fa-solid fa-tag text-xs"></i>
+                        <button data-shuffle="sandbox" class="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 transition-all group" title="Shuffle Sandbox Colors">
+                            <i class="fa-solid fa-dice-five group-hover:rotate-180 transition-transform duration-500"></i>
                         </button>
                     </div>
 
-                    <div id="sandbox-viewport" class="relative min-h-[380px] sm:min-h-[550px] flex items-center justify-center overflow-hidden rounded-2xl transition-colors duration-500 p-4">
+                    <div id="section-sandbox" class="relative min-h-[380px] sm:min-h-[550px] flex items-center justify-center overflow-hidden rounded-2xl transition-colors duration-500 p-4">
                         <div id="sandbox-scale-wrapper" class="w-full transition-transform duration-300 origin-top">
 
                         <!-- USE CASE: DASHBOARD -->

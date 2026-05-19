@@ -222,6 +222,70 @@
         }
     },
     {
+        "id": "emerald-circuit-trio",
+        "name": "Emerald Circuit Trio",
+        "description": "A technical emerald palette with dark interface foundations, bright signal greens, and clean terminal surfaces.",
+        "count": 3,
+        "colors": [
+            {
+                "name": "Emerald Circuit Trio Circuit Black",
+                "hex": "#02140bff"
+            },
+            {
+                "name": "Emerald Circuit Trio Terminal Root",
+                "hex": "#052e16ff"
+            },
+            {
+                "name": "Emerald Circuit Trio Emerald Board",
+                "hex": "#14532dff"
+            }
+        ],
+        "path": "3 Color Palette/Emerald Circuit Trio.scss",
+        "folder": "3 Color Palette",
+        "tags": {
+            "mood": [
+                "green",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
+        "id": "forest-ledger-trio",
+        "name": "Forest Ledger Trio",
+        "description": "A professional green palette for reports, finance screens, sustainability products, and trustworthy dashboards.",
+        "count": 3,
+        "colors": [
+            {
+                "name": "Forest Ledger Trio Ledger Forest",
+                "hex": "#0b1f17ff"
+            },
+            {
+                "name": "Forest Ledger Trio Account Pine",
+                "hex": "#123524ff"
+            },
+            {
+                "name": "Forest Ledger Trio Report Green",
+                "hex": "#1b5e3cff"
+            }
+        ],
+        "path": "3 Color Palette/Forest Ledger Trio.scss",
+        "folder": "3 Color Palette",
+        "tags": {
+            "mood": [
+                "green",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Nature"
+            ]
+        }
+    },
+    {
         "id": "forest-whisper",
         "name": "Forest Whisper",
         "description": "A vibrant 3-color palette.",
@@ -944,6 +1008,78 @@
             ],
             "aesthetic": [
                 "Cyberpunk"
+            ]
+        }
+    },
+    {
+        "id": "emerald-circuit-quartet",
+        "name": "Emerald Circuit Quartet",
+        "description": "A technical emerald palette with dark interface foundations, bright signal greens, and clean terminal surfaces.",
+        "count": 4,
+        "colors": [
+            {
+                "name": "Emerald Circuit Quartet Circuit Black",
+                "hex": "#02140bff"
+            },
+            {
+                "name": "Emerald Circuit Quartet Terminal Root",
+                "hex": "#052e16ff"
+            },
+            {
+                "name": "Emerald Circuit Quartet Emerald Board",
+                "hex": "#14532dff"
+            },
+            {
+                "name": "Emerald Circuit Quartet Runtime Green",
+                "hex": "#15803dff"
+            }
+        ],
+        "path": "4 Color Palette/Emerald Circuit Quartet.scss",
+        "folder": "4 Color Palette",
+        "tags": {
+            "mood": [
+                "green",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
+        "id": "forest-ledger-quartet",
+        "name": "Forest Ledger Quartet",
+        "description": "A professional green palette for reports, finance screens, sustainability products, and trustworthy dashboards.",
+        "count": 4,
+        "colors": [
+            {
+                "name": "Forest Ledger Quartet Ledger Forest",
+                "hex": "#0b1f17ff"
+            },
+            {
+                "name": "Forest Ledger Quartet Account Pine",
+                "hex": "#123524ff"
+            },
+            {
+                "name": "Forest Ledger Quartet Report Green",
+                "hex": "#1b5e3cff"
+            },
+            {
+                "name": "Forest Ledger Quartet Balance Green",
+                "hex": "#2e7d32ff"
+            }
+        ],
+        "path": "4 Color Palette/Forest Ledger Quartet.scss",
+        "folder": "4 Color Palette",
+        "tags": {
+            "mood": [
+                "green",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Nature"
             ]
         }
     },
@@ -1870,6 +2006,86 @@
             "aesthetic": [
                 "Cyber",
                 "Mauve"
+            ]
+        }
+    },
+    {
+        "id": "emerald-circuit-scale",
+        "name": "Emerald Circuit Scale",
+        "description": "A technical emerald palette with dark interface foundations, bright signal greens, and clean terminal surfaces.",
+        "count": 5,
+        "colors": [
+            {
+                "name": "Emerald Circuit Scale Circuit Black",
+                "hex": "#02140bff"
+            },
+            {
+                "name": "Emerald Circuit Scale Terminal Root",
+                "hex": "#052e16ff"
+            },
+            {
+                "name": "Emerald Circuit Scale Emerald Board",
+                "hex": "#14532dff"
+            },
+            {
+                "name": "Emerald Circuit Scale Runtime Green",
+                "hex": "#15803dff"
+            },
+            {
+                "name": "Emerald Circuit Scale Signal Green",
+                "hex": "#16a34aff"
+            }
+        ],
+        "path": "5 Color Palette/Emerald Circuit Scale.scss",
+        "folder": "5 Color Palette",
+        "tags": {
+            "mood": [
+                "green",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
+        "id": "forest-ledger-scale",
+        "name": "Forest Ledger Scale",
+        "description": "A professional green palette for reports, finance screens, sustainability products, and trustworthy dashboards.",
+        "count": 5,
+        "colors": [
+            {
+                "name": "Forest Ledger Scale Ledger Forest",
+                "hex": "#0b1f17ff"
+            },
+            {
+                "name": "Forest Ledger Scale Account Pine",
+                "hex": "#123524ff"
+            },
+            {
+                "name": "Forest Ledger Scale Report Green",
+                "hex": "#1b5e3cff"
+            },
+            {
+                "name": "Forest Ledger Scale Balance Green",
+                "hex": "#2e7d32ff"
+            },
+            {
+                "name": "Forest Ledger Scale Metric Leaf",
+                "hex": "#43a047ff"
+            }
+        ],
+        "path": "5 Color Palette/Forest Ledger Scale.scss",
+        "folder": "5 Color Palette",
+        "tags": {
+            "mood": [
+                "green",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Nature"
             ]
         }
     },
@@ -2863,6 +3079,50 @@
         }
     },
     {
+        "id": "emerald-circuit-array",
+        "name": "Emerald Circuit Array",
+        "description": "A technical emerald palette with dark interface foundations, bright signal greens, and clean terminal surfaces.",
+        "count": 6,
+        "colors": [
+            {
+                "name": "Emerald Circuit Array Circuit Black",
+                "hex": "#02140bff"
+            },
+            {
+                "name": "Emerald Circuit Array Terminal Root",
+                "hex": "#052e16ff"
+            },
+            {
+                "name": "Emerald Circuit Array Emerald Board",
+                "hex": "#14532dff"
+            },
+            {
+                "name": "Emerald Circuit Array Runtime Green",
+                "hex": "#15803dff"
+            },
+            {
+                "name": "Emerald Circuit Array Signal Green",
+                "hex": "#16a34aff"
+            },
+            {
+                "name": "Emerald Circuit Array Action Green",
+                "hex": "#22c55eff"
+            }
+        ],
+        "path": "6 Color Palette/Emerald Circuit Array.scss",
+        "folder": "6 Color Palette",
+        "tags": {
+            "mood": [
+                "green",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
         "id": "forest-canopy",
         "name": "Forest Canopy",
         "description": "A vibrant 6-color palette.",
@@ -2900,6 +3160,50 @@
                 "nature"
             ],
             "aesthetic": [
+                "Nature"
+            ]
+        }
+    },
+    {
+        "id": "forest-ledger-array",
+        "name": "Forest Ledger Array",
+        "description": "A professional green palette for reports, finance screens, sustainability products, and trustworthy dashboards.",
+        "count": 6,
+        "colors": [
+            {
+                "name": "Forest Ledger Array Ledger Forest",
+                "hex": "#0b1f17ff"
+            },
+            {
+                "name": "Forest Ledger Array Account Pine",
+                "hex": "#123524ff"
+            },
+            {
+                "name": "Forest Ledger Array Report Green",
+                "hex": "#1b5e3cff"
+            },
+            {
+                "name": "Forest Ledger Array Balance Green",
+                "hex": "#2e7d32ff"
+            },
+            {
+                "name": "Forest Ledger Array Metric Leaf",
+                "hex": "#43a047ff"
+            },
+            {
+                "name": "Forest Ledger Array Growth Green",
+                "hex": "#66bb6aff"
+            }
+        ],
+        "path": "6 Color Palette/Forest Ledger Array.scss",
+        "folder": "6 Color Palette",
+        "tags": {
+            "mood": [
+                "green",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
                 "Nature"
             ]
         }
@@ -3841,6 +4145,54 @@
         }
     },
     {
+        "id": "emerald-circuit-spectrum",
+        "name": "Emerald Circuit Spectrum",
+        "description": "A technical emerald palette with dark interface foundations, bright signal greens, and clean terminal surfaces.",
+        "count": 7,
+        "colors": [
+            {
+                "name": "Emerald Circuit Spectrum Circuit Black",
+                "hex": "#02140bff"
+            },
+            {
+                "name": "Emerald Circuit Spectrum Terminal Root",
+                "hex": "#052e16ff"
+            },
+            {
+                "name": "Emerald Circuit Spectrum Emerald Board",
+                "hex": "#14532dff"
+            },
+            {
+                "name": "Emerald Circuit Spectrum Runtime Green",
+                "hex": "#15803dff"
+            },
+            {
+                "name": "Emerald Circuit Spectrum Signal Green",
+                "hex": "#16a34aff"
+            },
+            {
+                "name": "Emerald Circuit Spectrum Action Green",
+                "hex": "#22c55eff"
+            },
+            {
+                "name": "Emerald Circuit Spectrum Trace Mint",
+                "hex": "#86efacff"
+            }
+        ],
+        "path": "7 Color Palette/Emerald Circuit Spectrum.scss",
+        "folder": "7 Color Palette",
+        "tags": {
+            "mood": [
+                "green",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
         "id": "fire-and-ice",
         "name": "Fire and Ice",
         "description": "A vibrant 7-color palette.",
@@ -3883,6 +4235,54 @@
             ],
             "aesthetic": [
                 "Aquatic"
+            ]
+        }
+    },
+    {
+        "id": "forest-ledger-spectrum",
+        "name": "Forest Ledger Spectrum",
+        "description": "A professional green palette for reports, finance screens, sustainability products, and trustworthy dashboards.",
+        "count": 7,
+        "colors": [
+            {
+                "name": "Forest Ledger Spectrum Ledger Forest",
+                "hex": "#0b1f17ff"
+            },
+            {
+                "name": "Forest Ledger Spectrum Account Pine",
+                "hex": "#123524ff"
+            },
+            {
+                "name": "Forest Ledger Spectrum Report Green",
+                "hex": "#1b5e3cff"
+            },
+            {
+                "name": "Forest Ledger Spectrum Balance Green",
+                "hex": "#2e7d32ff"
+            },
+            {
+                "name": "Forest Ledger Spectrum Metric Leaf",
+                "hex": "#43a047ff"
+            },
+            {
+                "name": "Forest Ledger Spectrum Growth Green",
+                "hex": "#66bb6aff"
+            },
+            {
+                "name": "Forest Ledger Spectrum Summary Sage",
+                "hex": "#a5d6a7ff"
+            }
+        ],
+        "path": "7 Color Palette/Forest Ledger Spectrum.scss",
+        "folder": "7 Color Palette",
+        "tags": {
+            "mood": [
+                "green",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Nature"
             ]
         }
     },
@@ -5108,6 +5508,110 @@
         }
     },
     {
+        "id": "emerald-circuit-system",
+        "name": "Emerald Circuit System",
+        "description": "A technical emerald palette with dark interface foundations, bright signal greens, and clean terminal surfaces.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Emerald Circuit System Circuit Black",
+                "hex": "#02140bff"
+            },
+            {
+                "name": "Emerald Circuit System Terminal Root",
+                "hex": "#052e16ff"
+            },
+            {
+                "name": "Emerald Circuit System Emerald Board",
+                "hex": "#14532dff"
+            },
+            {
+                "name": "Emerald Circuit System Runtime Green",
+                "hex": "#15803dff"
+            },
+            {
+                "name": "Emerald Circuit System Signal Green",
+                "hex": "#16a34aff"
+            },
+            {
+                "name": "Emerald Circuit System Action Green",
+                "hex": "#22c55eff"
+            },
+            {
+                "name": "Emerald Circuit System Trace Mint",
+                "hex": "#86efacff"
+            },
+            {
+                "name": "Emerald Circuit System Debug Mint",
+                "hex": "#bbf7d0ff"
+            }
+        ],
+        "path": "8 Color Palette/Emerald Circuit System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "green",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
+        "id": "forest-ledger-system",
+        "name": "Forest Ledger System",
+        "description": "A professional green palette for reports, finance screens, sustainability products, and trustworthy dashboards.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Forest Ledger System Ledger Forest",
+                "hex": "#0b1f17ff"
+            },
+            {
+                "name": "Forest Ledger System Account Pine",
+                "hex": "#123524ff"
+            },
+            {
+                "name": "Forest Ledger System Report Green",
+                "hex": "#1b5e3cff"
+            },
+            {
+                "name": "Forest Ledger System Balance Green",
+                "hex": "#2e7d32ff"
+            },
+            {
+                "name": "Forest Ledger System Metric Leaf",
+                "hex": "#43a047ff"
+            },
+            {
+                "name": "Forest Ledger System Growth Green",
+                "hex": "#66bb6aff"
+            },
+            {
+                "name": "Forest Ledger System Summary Sage",
+                "hex": "#a5d6a7ff"
+            },
+            {
+                "name": "Forest Ledger System Panel Sprout",
+                "hex": "#dcedc8ff"
+            }
+        ],
+        "path": "8 Color Palette/Forest Ledger System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "green",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Nature"
+            ]
+        }
+    },
+    {
         "id": "glacier-blue-system",
         "name": "Glacier Blue System",
         "description": "An icy blue palette moving from glacial shadow through crystalline cyan and snow surfaces.",
@@ -5418,6 +5922,58 @@
         }
     },
     {
+        "id": "moss-garden-system",
+        "name": "Moss Garden System",
+        "description": "An organic garden palette with mossy darks, leafy midtones, soft sprouts, and clean wellness surfaces.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Moss Garden System Garden Night",
+                "hex": "#111d13ff"
+            },
+            {
+                "name": "Moss Garden System Moss Depth",
+                "hex": "#1b4332ff"
+            },
+            {
+                "name": "Moss Garden System Leaf Shadow",
+                "hex": "#2d6a4fff"
+            },
+            {
+                "name": "Moss Garden System Herb Green",
+                "hex": "#40916cff"
+            },
+            {
+                "name": "Moss Garden System Garden Green",
+                "hex": "#52b788ff"
+            },
+            {
+                "name": "Moss Garden System Fresh Leaf",
+                "hex": "#74c69dff"
+            },
+            {
+                "name": "Moss Garden System Sage Mist",
+                "hex": "#95d5b2ff"
+            },
+            {
+                "name": "Moss Garden System Sprout Line",
+                "hex": "#b7e4c7ff"
+            }
+        ],
+        "path": "8 Color Palette/Moss Garden System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "green",
+                "organic"
+            ],
+            "aesthetic": [
+                "Garden",
+                "Wellness"
+            ]
+        }
+    },
+    {
         "id": "nebula-orchid-system",
         "name": "Nebula Orchid System",
         "description": "A cosmic orchid palette moving from deep space purple into radiant magenta and soft starlight.",
@@ -5722,6 +6278,58 @@
             ],
             "aesthetic": [
                 "Thematic Collection"
+            ]
+        }
+    },
+    {
+        "id": "viridian-harbor-system",
+        "name": "Viridian Harbor System",
+        "description": "A coastal green palette blending viridian water, sea-glass tones, and pale foam surfaces.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Viridian Harbor System Harbor Ink",
+                "hex": "#03201bff"
+            },
+            {
+                "name": "Viridian Harbor System Deep Viridian",
+                "hex": "#064e3bff"
+            },
+            {
+                "name": "Viridian Harbor System Dock Green",
+                "hex": "#047857ff"
+            },
+            {
+                "name": "Viridian Harbor System Channel Green",
+                "hex": "#059669ff"
+            },
+            {
+                "name": "Viridian Harbor System Harbor Teal",
+                "hex": "#10b981ff"
+            },
+            {
+                "name": "Viridian Harbor System Sea Signal",
+                "hex": "#2dd4bfff"
+            },
+            {
+                "name": "Viridian Harbor System Glass Mint",
+                "hex": "#5eead4ff"
+            },
+            {
+                "name": "Viridian Harbor System Foam Mint",
+                "hex": "#99f6e4ff"
+            }
+        ],
+        "path": "8 Color Palette/Viridian Harbor System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "green",
+                "coastal"
+            ],
+            "aesthetic": [
+                "Harbor",
+                "Aquatic"
             ]
         }
     },
@@ -6278,6 +6886,62 @@
         }
     },
     {
+        "id": "emerald-circuit-matrix",
+        "name": "Emerald Circuit Matrix",
+        "description": "A technical emerald palette with dark interface foundations, bright signal greens, and clean terminal surfaces.",
+        "count": 9,
+        "colors": [
+            {
+                "name": "Emerald Circuit Matrix Circuit Black",
+                "hex": "#02140bff"
+            },
+            {
+                "name": "Emerald Circuit Matrix Terminal Root",
+                "hex": "#052e16ff"
+            },
+            {
+                "name": "Emerald Circuit Matrix Emerald Board",
+                "hex": "#14532dff"
+            },
+            {
+                "name": "Emerald Circuit Matrix Runtime Green",
+                "hex": "#15803dff"
+            },
+            {
+                "name": "Emerald Circuit Matrix Signal Green",
+                "hex": "#16a34aff"
+            },
+            {
+                "name": "Emerald Circuit Matrix Action Green",
+                "hex": "#22c55eff"
+            },
+            {
+                "name": "Emerald Circuit Matrix Trace Mint",
+                "hex": "#86efacff"
+            },
+            {
+                "name": "Emerald Circuit Matrix Debug Mint",
+                "hex": "#bbf7d0ff"
+            },
+            {
+                "name": "Emerald Circuit Matrix Panel Green",
+                "hex": "#dcfce7ff"
+            }
+        ],
+        "path": "9 Color Palette/Emerald Circuit Matrix.scss",
+        "folder": "9 Color Palette",
+        "tags": {
+            "mood": [
+                "green",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
         "id": "enchanted-forest",
         "name": "Enchanted Forest",
         "description": "A vibrant 9-color palette.",
@@ -6328,6 +6992,62 @@
                 "nature"
             ],
             "aesthetic": [
+                "Nature"
+            ]
+        }
+    },
+    {
+        "id": "forest-ledger-matrix",
+        "name": "Forest Ledger Matrix",
+        "description": "A professional green palette for reports, finance screens, sustainability products, and trustworthy dashboards.",
+        "count": 9,
+        "colors": [
+            {
+                "name": "Forest Ledger Matrix Ledger Forest",
+                "hex": "#0b1f17ff"
+            },
+            {
+                "name": "Forest Ledger Matrix Account Pine",
+                "hex": "#123524ff"
+            },
+            {
+                "name": "Forest Ledger Matrix Report Green",
+                "hex": "#1b5e3cff"
+            },
+            {
+                "name": "Forest Ledger Matrix Balance Green",
+                "hex": "#2e7d32ff"
+            },
+            {
+                "name": "Forest Ledger Matrix Metric Leaf",
+                "hex": "#43a047ff"
+            },
+            {
+                "name": "Forest Ledger Matrix Growth Green",
+                "hex": "#66bb6aff"
+            },
+            {
+                "name": "Forest Ledger Matrix Summary Sage",
+                "hex": "#a5d6a7ff"
+            },
+            {
+                "name": "Forest Ledger Matrix Panel Sprout",
+                "hex": "#dcedc8ff"
+            },
+            {
+                "name": "Forest Ledger Matrix Sheet Mint",
+                "hex": "#f1f8e9ff"
+            }
+        ],
+        "path": "9 Color Palette/Forest Ledger Matrix.scss",
+        "folder": "9 Color Palette",
+        "tags": {
+            "mood": [
+                "green",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
                 "Nature"
             ]
         }
@@ -7753,6 +8473,66 @@
         }
     },
     {
+        "id": "emerald-circuit-atlas",
+        "name": "Emerald Circuit Atlas",
+        "description": "A technical emerald palette with dark interface foundations, bright signal greens, and clean terminal surfaces.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Emerald Circuit Atlas Circuit Black",
+                "hex": "#02140bff"
+            },
+            {
+                "name": "Emerald Circuit Atlas Terminal Root",
+                "hex": "#052e16ff"
+            },
+            {
+                "name": "Emerald Circuit Atlas Emerald Board",
+                "hex": "#14532dff"
+            },
+            {
+                "name": "Emerald Circuit Atlas Runtime Green",
+                "hex": "#15803dff"
+            },
+            {
+                "name": "Emerald Circuit Atlas Signal Green",
+                "hex": "#16a34aff"
+            },
+            {
+                "name": "Emerald Circuit Atlas Action Green",
+                "hex": "#22c55eff"
+            },
+            {
+                "name": "Emerald Circuit Atlas Trace Mint",
+                "hex": "#86efacff"
+            },
+            {
+                "name": "Emerald Circuit Atlas Debug Mint",
+                "hex": "#bbf7d0ff"
+            },
+            {
+                "name": "Emerald Circuit Atlas Panel Green",
+                "hex": "#dcfce7ff"
+            },
+            {
+                "name": "Emerald Circuit Atlas Terminal White",
+                "hex": "#f0fdf4ff"
+            }
+        ],
+        "path": "10 Color Palette/Emerald Circuit Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "green",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
         "id": "fiery-red-sunset-palette",
         "name": "Fiery Red Sunset Palette",
         "description": "A vibrant 10-color palette.",
@@ -7808,6 +8588,66 @@
             ],
             "aesthetic": [
                 "Vibrant"
+            ]
+        }
+    },
+    {
+        "id": "forest-ledger-atlas",
+        "name": "Forest Ledger Atlas",
+        "description": "A professional green palette for reports, finance screens, sustainability products, and trustworthy dashboards.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Forest Ledger Atlas Ledger Forest",
+                "hex": "#0b1f17ff"
+            },
+            {
+                "name": "Forest Ledger Atlas Account Pine",
+                "hex": "#123524ff"
+            },
+            {
+                "name": "Forest Ledger Atlas Report Green",
+                "hex": "#1b5e3cff"
+            },
+            {
+                "name": "Forest Ledger Atlas Balance Green",
+                "hex": "#2e7d32ff"
+            },
+            {
+                "name": "Forest Ledger Atlas Metric Leaf",
+                "hex": "#43a047ff"
+            },
+            {
+                "name": "Forest Ledger Atlas Growth Green",
+                "hex": "#66bb6aff"
+            },
+            {
+                "name": "Forest Ledger Atlas Summary Sage",
+                "hex": "#a5d6a7ff"
+            },
+            {
+                "name": "Forest Ledger Atlas Panel Sprout",
+                "hex": "#dcedc8ff"
+            },
+            {
+                "name": "Forest Ledger Atlas Sheet Mint",
+                "hex": "#f1f8e9ff"
+            },
+            {
+                "name": "Forest Ledger Atlas White Report",
+                "hex": "#ffffffff"
+            }
+        ],
+        "path": "10 Color Palette/Forest Ledger Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "green",
+                "professional"
+            ],
+            "aesthetic": [
+                "Finance",
+                "Nature"
             ]
         }
     },
@@ -8227,6 +9067,66 @@
             "aesthetic": [
                 "Maritime",
                 "Operations"
+            ]
+        }
+    },
+    {
+        "id": "moss-garden-atlas",
+        "name": "Moss Garden Atlas",
+        "description": "An organic garden palette with mossy darks, leafy midtones, soft sprouts, and clean wellness surfaces.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Moss Garden Atlas Garden Night",
+                "hex": "#111d13ff"
+            },
+            {
+                "name": "Moss Garden Atlas Moss Depth",
+                "hex": "#1b4332ff"
+            },
+            {
+                "name": "Moss Garden Atlas Leaf Shadow",
+                "hex": "#2d6a4fff"
+            },
+            {
+                "name": "Moss Garden Atlas Herb Green",
+                "hex": "#40916cff"
+            },
+            {
+                "name": "Moss Garden Atlas Garden Green",
+                "hex": "#52b788ff"
+            },
+            {
+                "name": "Moss Garden Atlas Fresh Leaf",
+                "hex": "#74c69dff"
+            },
+            {
+                "name": "Moss Garden Atlas Sage Mist",
+                "hex": "#95d5b2ff"
+            },
+            {
+                "name": "Moss Garden Atlas Sprout Line",
+                "hex": "#b7e4c7ff"
+            },
+            {
+                "name": "Moss Garden Atlas Mint Panel",
+                "hex": "#d8f3dcff"
+            },
+            {
+                "name": "Moss Garden Atlas Garden White",
+                "hex": "#f8fff4ff"
+            }
+        ],
+        "path": "10 Color Palette/Moss Garden Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "green",
+                "organic"
+            ],
+            "aesthetic": [
+                "Garden",
+                "Wellness"
             ]
         }
     },
@@ -8761,6 +9661,66 @@
             ],
             "aesthetic": [
                 "Cyberpunk"
+            ]
+        }
+    },
+    {
+        "id": "viridian-harbor-atlas",
+        "name": "Viridian Harbor Atlas",
+        "description": "A coastal green palette blending viridian water, sea-glass tones, and pale foam surfaces.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Viridian Harbor Atlas Harbor Ink",
+                "hex": "#03201bff"
+            },
+            {
+                "name": "Viridian Harbor Atlas Deep Viridian",
+                "hex": "#064e3bff"
+            },
+            {
+                "name": "Viridian Harbor Atlas Dock Green",
+                "hex": "#047857ff"
+            },
+            {
+                "name": "Viridian Harbor Atlas Channel Green",
+                "hex": "#059669ff"
+            },
+            {
+                "name": "Viridian Harbor Atlas Harbor Teal",
+                "hex": "#10b981ff"
+            },
+            {
+                "name": "Viridian Harbor Atlas Sea Signal",
+                "hex": "#2dd4bfff"
+            },
+            {
+                "name": "Viridian Harbor Atlas Glass Mint",
+                "hex": "#5eead4ff"
+            },
+            {
+                "name": "Viridian Harbor Atlas Foam Mint",
+                "hex": "#99f6e4ff"
+            },
+            {
+                "name": "Viridian Harbor Atlas Mist Tide",
+                "hex": "#ccfbf1ff"
+            },
+            {
+                "name": "Viridian Harbor Atlas White Tide",
+                "hex": "#f0fdfaff"
+            }
+        ],
+        "path": "10 Color Palette/Viridian Harbor Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "green",
+                "coastal"
+            ],
+            "aesthetic": [
+                "Harbor",
+                "Aquatic"
             ]
         }
     }

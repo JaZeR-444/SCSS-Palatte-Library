@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Showcase: Initializing advanced design system v2.3.0...');
+    console.log('Showcase: Initializing professional design system v2.4.0...');
 
     // --- DOM Elements ---
     const getEl = (id) => document.getElementById(id);
@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
         toast: getEl('toast-container'),
         facetTabs: getEl('facet-tabs'),
         subFilterContainer: getEl('sub-filter-container'),
-        shuffleBtn: getEl('shuffle-colors'),
         zoomIn: getEl('zoom-in'),
         zoomOut: getEl('zoom-out'),
         zoomDisplay: getEl('zoom-display'),
@@ -39,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let searchQuery = '';
     let activeDashVariant = 'analytics';
     let sandboxZoom = 100;
+    let showRoleLabels = false;
 
     // --- Core Logic: Search & Filtering ---
 
@@ -163,21 +163,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Modal & Studios ---
 
-    function applyPaletteMapping(colors) {
+    function applyPaletteMapping(colors, targetId = null) {
+        const target = targetId ? document.getElementById(targetId) : document.documentElement;
         for (let i = 1; i <= 10; i++) {
             const colorIdx = (i - 1) % colors.length;
-            document.documentElement.style.setProperty(`--ui-color-${i}`, colors[colorIdx].hex);
+            target.style.setProperty(`--ui-color-${i}`, colors[colorIdx].hex);
         }
     }
 
-    function shufflePaletteMapping() {
+    function shuffleSectionColors(section) {
         if (!currentPalette) return;
         const shuffled = [...currentPalette.colors].sort(() => Math.random() - 0.5);
-        applyPaletteMapping(shuffled);
+        const sectionId = `section-${section}`;
+        applyPaletteMapping(shuffled, sectionId);
+        
+        // Visual Feedback
         if (window.gsap) {
-            gsap.fromTo("#sandbox-viewport", { opacity: 0.5, scale: 0.98 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power2.out" });
+            gsap.fromTo(`#${sectionId}`, { opacity: 0.5, scale: 0.98 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power2.out" });
         }
-        showToast('Colors shuffled!');
+        showToast(`${section.charAt(0).toUpperCase() + section.slice(1)} shuffled!`);
+        
+        // If we shuffled sandbox and role labels are on, update them
+        if (section === 'sandbox' && showRoleLabels) updateRoleLabels();
     }
 
     function switchDashboardVariant(variant) {
@@ -255,7 +262,10 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.hero.style.background = `radial-gradient(circle at center, ${hexes})`;
         }
 
-        applyPaletteMapping(p.colors);
+        // Apply Initial Mapping to all sections
+        applyPaletteMapping(p.colors, 'section-sandbox');
+        applyPaletteMapping(p.colors, 'section-typography');
+        applyPaletteMapping(p.colors, 'section-iconography');
 
         // Color Lab
         if (elements.lab) {
@@ -363,16 +373,29 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.roleOverlay.classList.toggle('hidden');
             elements.roleToggle.classList.toggle('bg-indigo-100', !isVisible);
             elements.roleToggle.classList.toggle('text-indigo-600', !isVisible);
-            
-            if (!isVisible && currentPalette) {
-                elements.roleContent.innerHTML = currentPalette.colors.map((c, i) => `
-                    <div class="flex items-center gap-1.5 px-2 py-1 rounded bg-black/50 border border-white/10 backdrop-blur-md">
-                        <div class="w-2 h-2 rounded-full flex-shrink-0" style="background:${c.hex}"></div>
-                        <span class="text-[8px] font-black text-white/70 uppercase tracking-tighter">Color ${i+1}: ${c.name}</span>
-                    </div>
-                `).join('');
-            }
+            showRoleLabels = !isVisible;
+            if (showRoleLabels) updateRoleLabels();
         });
+    }
+
+    function updateRoleLabels() {
+        if (!elements.roleContent || !currentPalette) return;
+        const target = document.getElementById('section-sandbox');
+        const computed = getComputedStyle(target);
+        
+        elements.roleContent.innerHTML = '';
+        for (let i = 1; i <= 10; i++) {
+            const hex = computed.getPropertyValue(`--ui-color-${i}`).trim().toUpperCase();
+            if (!hex) continue;
+            
+            const chip = document.createElement('div');
+            chip.className = 'flex items-center gap-1.5 px-2 py-1 rounded bg-black/50 border border-white/10 backdrop-blur-md';
+            chip.innerHTML = `
+                <div class="w-2 h-2 rounded-full flex-shrink-0" style="background:${hex}"></div>
+                <span class="text-[8px] font-black text-white/70 uppercase tracking-tighter">Color ${i}: ${hex}</span>
+            `;
+            elements.roleContent.appendChild(chip);
+        }
     }
 
     // --- Event Listeners ---
@@ -388,9 +411,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    if (elements.shuffleBtn) elements.shuffleBtn.addEventListener('click', shufflePaletteMapping);
-
     document.addEventListener('click', (e) => {
+        // Section Shuffles
+        const shuffleBtn = e.target.closest('[data-shuffle]');
+        if (shuffleBtn) {
+            shuffleSectionColors(shuffleBtn.dataset.shuffle);
+        }
+
         const useBtn = e.target.closest('.usecase-btn');
         if (useBtn) switchUseCase(useBtn.dataset.usecase);
 
@@ -490,4 +517,6 @@ document.addEventListener('DOMContentLoaded', () => {
             renderPalettes(data);
         })
         .catch(err => console.error('Showcase: Failed to load palettes.json', err));
+
+    window.copyToClipboard = copyToClipboard;
 });

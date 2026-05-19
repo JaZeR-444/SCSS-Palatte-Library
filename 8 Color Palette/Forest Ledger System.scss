@@ -1,0 +1,99 @@
+/*---
+id: forest-ledger-system
+name: Forest Ledger System
+author: JaZeR-444
+version: 1.0.0
+category: Green & Professional
+count: 8
+description: A professional green palette for reports, finance screens, sustainability products, and trustworthy dashboards.
+tags:
+  mood:
+  - green
+  - professional
+  aesthetic:
+  - Finance
+  - Nature
+intent: A green-focused 8-color palette designed for finance, reports, sustainability.
+suggested_use:
+- Finance
+- Reports
+- Sustainability
+url: https://coolors.co/0b1f17-123524-1b5e3c-2e7d32-43a047-66bb6a-a5d6a7-dcedc8
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--forest-ledger-system-ledger-forest: #0b1f17ff;
+--forest-ledger-system-account-pine: #123524ff;
+--forest-ledger-system-report-green: #1b5e3cff;
+--forest-ledger-system-balance-green: #2e7d32ff;
+--forest-ledger-system-metric-leaf: #43a047ff;
+--forest-ledger-system-growth-green: #66bb6aff;
+--forest-ledger-system-summary-sage: #a5d6a7ff;
+--forest-ledger-system-panel-sprout: #dcedc8ff;
+
+/* CSS HSL */
+--forest-ledger-system-ledger-forest: hsla(156, 48%, 8%, 1);
+--forest-ledger-system-account-pine: hsla(151, 49%, 14%, 1);
+--forest-ledger-system-report-green: hsla(150, 55%, 24%, 1);
+--forest-ledger-system-balance-green: hsla(123, 46%, 34%, 1);
+--forest-ledger-system-metric-leaf: hsla(123, 41%, 45%, 1);
+--forest-ledger-system-growth-green: hsla(123, 38%, 57%, 1);
+--forest-ledger-system-summary-sage: hsla(122, 37%, 74%, 1);
+--forest-ledger-system-panel-sprout: hsla(88, 51%, 86%, 1);
+}
+
+/* SCSS HEX */
+$forest-ledger-system-ledger-forest: #0b1f17ff;
+$forest-ledger-system-account-pine: #123524ff;
+$forest-ledger-system-report-green: #1b5e3cff;
+$forest-ledger-system-balance-green: #2e7d32ff;
+$forest-ledger-system-metric-leaf: #43a047ff;
+$forest-ledger-system-growth-green: #66bb6aff;
+$forest-ledger-system-summary-sage: #a5d6a7ff;
+$forest-ledger-system-panel-sprout: #dcedc8ff;
+
+/* SCSS HSL */
+$forest-ledger-system-ledger-forest: hsla(156, 48%, 8%, 1);
+$forest-ledger-system-account-pine: hsla(151, 49%, 14%, 1);
+$forest-ledger-system-report-green: hsla(150, 55%, 24%, 1);
+$forest-ledger-system-balance-green: hsla(123, 46%, 34%, 1);
+$forest-ledger-system-metric-leaf: hsla(123, 41%, 45%, 1);
+$forest-ledger-system-growth-green: hsla(123, 38%, 57%, 1);
+$forest-ledger-system-summary-sage: hsla(122, 37%, 74%, 1);
+$forest-ledger-system-panel-sprout: hsla(88, 51%, 86%, 1);
+
+/* SCSS RGB */
+$forest-ledger-system-ledger-forest: rgba(11, 31, 23, 1);
+$forest-ledger-system-account-pine: rgba(18, 53, 36, 1);
+$forest-ledger-system-report-green: rgba(27, 94, 60, 1);
+$forest-ledger-system-balance-green: rgba(46, 125, 50, 1);
+$forest-ledger-system-metric-leaf: rgba(67, 160, 71, 1);
+$forest-ledger-system-growth-green: rgba(102, 187, 106, 1);
+$forest-ledger-system-summary-sage: rgba(165, 214, 167, 1);
+$forest-ledger-system-panel-sprout: rgba(220, 237, 200, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #43a047ff, #66bb6aff, #a5d6a7ff, #dcedc8ff);
+$gradient-right: linear-gradient(90deg, #0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #43a047ff, #66bb6aff, #a5d6a7ff, #dcedc8ff);
+$gradient-bottom: linear-gradient(180deg, #0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #43a047ff, #66bb6aff, #a5d6a7ff, #dcedc8ff);
+$gradient-left: linear-gradient(270deg, #0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #43a047ff, #66bb6aff, #a5d6a7ff, #dcedc8ff);
+$gradient-top-right: linear-gradient(45deg, #0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #43a047ff, #66bb6aff, #a5d6a7ff, #dcedc8ff);
+$gradient-bottom-right: linear-gradient(135deg, #0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #43a047ff, #66bb6aff, #a5d6a7ff, #dcedc8ff);
+$gradient-top-left: linear-gradient(225deg, #0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #43a047ff, #66bb6aff, #a5d6a7ff, #dcedc8ff);
+$gradient-bottom-left: linear-gradient(315deg, #0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #43a047ff, #66bb6aff, #a5d6a7ff, #dcedc8ff);
+$gradient-radial: radial-gradient(#0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #43a047ff, #66bb6aff, #a5d6a7ff, #dcedc8ff);
+
+/* SCSS Map */
+$forest-ledger-system-map: (
+    "forest-ledger-system-ledger-forest": #0b1f17ff,
+    "forest-ledger-system-account-pine": #123524ff,
+    "forest-ledger-system-report-green": #1b5e3cff,
+    "forest-ledger-system-balance-green": #2e7d32ff,
+    "forest-ledger-system-metric-leaf": #43a047ff,
+    "forest-ledger-system-growth-green": #66bb6aff,
+    "forest-ledger-system-summary-sage": #a5d6a7ff,
+    "forest-ledger-system-panel-sprout": #dcedc8ff
+);

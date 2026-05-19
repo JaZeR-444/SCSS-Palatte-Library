@@ -1,0 +1,69 @@
+/*---
+id: forest-ledger-trio
+name: Forest Ledger Trio
+author: JaZeR-444
+version: 1.0.0
+category: Green & Professional
+count: 3
+description: A professional green palette for reports, finance screens, sustainability products, and trustworthy dashboards.
+tags:
+  mood:
+  - green
+  - professional
+  aesthetic:
+  - Finance
+  - Nature
+intent: A green-focused 3-color palette designed for finance, reports, sustainability.
+suggested_use:
+- Finance
+- Reports
+- Sustainability
+url: https://coolors.co/0b1f17-123524-1b5e3c
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--forest-ledger-trio-ledger-forest: #0b1f17ff;
+--forest-ledger-trio-account-pine: #123524ff;
+--forest-ledger-trio-report-green: #1b5e3cff;
+
+/* CSS HSL */
+--forest-ledger-trio-ledger-forest: hsla(156, 48%, 8%, 1);
+--forest-ledger-trio-account-pine: hsla(151, 49%, 14%, 1);
+--forest-ledger-trio-report-green: hsla(150, 55%, 24%, 1);
+}
+
+/* SCSS HEX */
+$forest-ledger-trio-ledger-forest: #0b1f17ff;
+$forest-ledger-trio-account-pine: #123524ff;
+$forest-ledger-trio-report-green: #1b5e3cff;
+
+/* SCSS HSL */
+$forest-ledger-trio-ledger-forest: hsla(156, 48%, 8%, 1);
+$forest-ledger-trio-account-pine: hsla(151, 49%, 14%, 1);
+$forest-ledger-trio-report-green: hsla(150, 55%, 24%, 1);
+
+/* SCSS RGB */
+$forest-ledger-trio-ledger-forest: rgba(11, 31, 23, 1);
+$forest-ledger-trio-account-pine: rgba(18, 53, 36, 1);
+$forest-ledger-trio-report-green: rgba(27, 94, 60, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0b1f17ff, #123524ff, #1b5e3cff);
+$gradient-right: linear-gradient(90deg, #0b1f17ff, #123524ff, #1b5e3cff);
+$gradient-bottom: linear-gradient(180deg, #0b1f17ff, #123524ff, #1b5e3cff);
+$gradient-left: linear-gradient(270deg, #0b1f17ff, #123524ff, #1b5e3cff);
+$gradient-top-right: linear-gradient(45deg, #0b1f17ff, #123524ff, #1b5e3cff);
+$gradient-bottom-right: linear-gradient(135deg, #0b1f17ff, #123524ff, #1b5e3cff);
+$gradient-top-left: linear-gradient(225deg, #0b1f17ff, #123524ff, #1b5e3cff);
+$gradient-bottom-left: linear-gradient(315deg, #0b1f17ff, #123524ff, #1b5e3cff);
+$gradient-radial: radial-gradient(#0b1f17ff, #123524ff, #1b5e3cff);
+
+/* SCSS Map */
+$forest-ledger-trio-map: (
+    "forest-ledger-trio-ledger-forest": #0b1f17ff,
+    "forest-ledger-trio-account-pine": #123524ff,
+    "forest-ledger-trio-report-green": #1b5e3cff
+);

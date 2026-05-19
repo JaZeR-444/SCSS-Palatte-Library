@@ -1,0 +1,81 @@
+/*---
+id: forest-ledger-scale
+name: Forest Ledger Scale
+author: JaZeR-444
+version: 1.0.0
+category: Green & Professional
+count: 5
+description: A professional green palette for reports, finance screens, sustainability products, and trustworthy dashboards.
+tags:
+  mood:
+  - green
+  - professional
+  aesthetic:
+  - Finance
+  - Nature
+intent: A green-focused 5-color palette designed for finance, reports, sustainability.
+suggested_use:
+- Finance
+- Reports
+- Sustainability
+url: https://coolors.co/0b1f17-123524-1b5e3c-2e7d32-43a047
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--forest-ledger-scale-ledger-forest: #0b1f17ff;
+--forest-ledger-scale-account-pine: #123524ff;
+--forest-ledger-scale-report-green: #1b5e3cff;
+--forest-ledger-scale-balance-green: #2e7d32ff;
+--forest-ledger-scale-metric-leaf: #43a047ff;
+
+/* CSS HSL */
+--forest-ledger-scale-ledger-forest: hsla(156, 48%, 8%, 1);
+--forest-ledger-scale-account-pine: hsla(151, 49%, 14%, 1);
+--forest-ledger-scale-report-green: hsla(150, 55%, 24%, 1);
+--forest-ledger-scale-balance-green: hsla(123, 46%, 34%, 1);
+--forest-ledger-scale-metric-leaf: hsla(123, 41%, 45%, 1);
+}
+
+/* SCSS HEX */
+$forest-ledger-scale-ledger-forest: #0b1f17ff;
+$forest-ledger-scale-account-pine: #123524ff;
+$forest-ledger-scale-report-green: #1b5e3cff;
+$forest-ledger-scale-balance-green: #2e7d32ff;
+$forest-ledger-scale-metric-leaf: #43a047ff;
+
+/* SCSS HSL */
+$forest-ledger-scale-ledger-forest: hsla(156, 48%, 8%, 1);
+$forest-ledger-scale-account-pine: hsla(151, 49%, 14%, 1);
+$forest-ledger-scale-report-green: hsla(150, 55%, 24%, 1);
+$forest-ledger-scale-balance-green: hsla(123, 46%, 34%, 1);
+$forest-ledger-scale-metric-leaf: hsla(123, 41%, 45%, 1);
+
+/* SCSS RGB */
+$forest-ledger-scale-ledger-forest: rgba(11, 31, 23, 1);
+$forest-ledger-scale-account-pine: rgba(18, 53, 36, 1);
+$forest-ledger-scale-report-green: rgba(27, 94, 60, 1);
+$forest-ledger-scale-balance-green: rgba(46, 125, 50, 1);
+$forest-ledger-scale-metric-leaf: rgba(67, 160, 71, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #43a047ff);
+$gradient-right: linear-gradient(90deg, #0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #43a047ff);
+$gradient-bottom: linear-gradient(180deg, #0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #43a047ff);
+$gradient-left: linear-gradient(270deg, #0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #43a047ff);
+$gradient-top-right: linear-gradient(45deg, #0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #43a047ff);
+$gradient-bottom-right: linear-gradient(135deg, #0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #43a047ff);
+$gradient-top-left: linear-gradient(225deg, #0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #43a047ff);
+$gradient-bottom-left: linear-gradient(315deg, #0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #43a047ff);
+$gradient-radial: radial-gradient(#0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #43a047ff);
+
+/* SCSS Map */
+$forest-ledger-scale-map: (
+    "forest-ledger-scale-ledger-forest": #0b1f17ff,
+    "forest-ledger-scale-account-pine": #123524ff,
+    "forest-ledger-scale-report-green": #1b5e3cff,
+    "forest-ledger-scale-balance-green": #2e7d32ff,
+    "forest-ledger-scale-metric-leaf": #43a047ff
+);

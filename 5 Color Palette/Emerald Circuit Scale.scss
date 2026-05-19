@@ -1,0 +1,81 @@
+/*---
+id: emerald-circuit-scale
+name: Emerald Circuit Scale
+author: JaZeR-444
+version: 1.0.0
+category: Green & Technical
+count: 5
+description: A technical emerald palette with dark interface foundations, bright signal greens, and clean terminal surfaces.
+tags:
+  mood:
+  - green
+  - technical
+  aesthetic:
+  - Circuit
+  - Developer
+intent: A green-focused 5-color palette designed for developer tools, analytics, ai ui.
+suggested_use:
+- Developer Tools
+- Analytics
+- AI UI
+url: https://coolors.co/02140b-052e16-14532d-15803d-16a34a
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--emerald-circuit-scale-circuit-black: #02140bff;
+--emerald-circuit-scale-terminal-root: #052e16ff;
+--emerald-circuit-scale-emerald-board: #14532dff;
+--emerald-circuit-scale-runtime-green: #15803dff;
+--emerald-circuit-scale-signal-green: #16a34aff;
+
+/* CSS HSL */
+--emerald-circuit-scale-circuit-black: hsla(150, 82%, 4%, 1);
+--emerald-circuit-scale-terminal-root: hsla(145, 80%, 10%, 1);
+--emerald-circuit-scale-emerald-board: hsla(144, 61%, 20%, 1);
+--emerald-circuit-scale-runtime-green: hsla(142, 72%, 29%, 1);
+--emerald-circuit-scale-signal-green: hsla(142, 76%, 36%, 1);
+}
+
+/* SCSS HEX */
+$emerald-circuit-scale-circuit-black: #02140bff;
+$emerald-circuit-scale-terminal-root: #052e16ff;
+$emerald-circuit-scale-emerald-board: #14532dff;
+$emerald-circuit-scale-runtime-green: #15803dff;
+$emerald-circuit-scale-signal-green: #16a34aff;
+
+/* SCSS HSL */
+$emerald-circuit-scale-circuit-black: hsla(150, 82%, 4%, 1);
+$emerald-circuit-scale-terminal-root: hsla(145, 80%, 10%, 1);
+$emerald-circuit-scale-emerald-board: hsla(144, 61%, 20%, 1);
+$emerald-circuit-scale-runtime-green: hsla(142, 72%, 29%, 1);
+$emerald-circuit-scale-signal-green: hsla(142, 76%, 36%, 1);
+
+/* SCSS RGB */
+$emerald-circuit-scale-circuit-black: rgba(2, 20, 11, 1);
+$emerald-circuit-scale-terminal-root: rgba(5, 46, 22, 1);
+$emerald-circuit-scale-emerald-board: rgba(20, 83, 45, 1);
+$emerald-circuit-scale-runtime-green: rgba(21, 128, 61, 1);
+$emerald-circuit-scale-signal-green: rgba(22, 163, 74, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #02140bff, #052e16ff, #14532dff, #15803dff, #16a34aff);
+$gradient-right: linear-gradient(90deg, #02140bff, #052e16ff, #14532dff, #15803dff, #16a34aff);
+$gradient-bottom: linear-gradient(180deg, #02140bff, #052e16ff, #14532dff, #15803dff, #16a34aff);
+$gradient-left: linear-gradient(270deg, #02140bff, #052e16ff, #14532dff, #15803dff, #16a34aff);
+$gradient-top-right: linear-gradient(45deg, #02140bff, #052e16ff, #14532dff, #15803dff, #16a34aff);
+$gradient-bottom-right: linear-gradient(135deg, #02140bff, #052e16ff, #14532dff, #15803dff, #16a34aff);
+$gradient-top-left: linear-gradient(225deg, #02140bff, #052e16ff, #14532dff, #15803dff, #16a34aff);
+$gradient-bottom-left: linear-gradient(315deg, #02140bff, #052e16ff, #14532dff, #15803dff, #16a34aff);
+$gradient-radial: radial-gradient(#02140bff, #052e16ff, #14532dff, #15803dff, #16a34aff);
+
+/* SCSS Map */
+$emerald-circuit-scale-map: (
+    "emerald-circuit-scale-circuit-black": #02140bff,
+    "emerald-circuit-scale-terminal-root": #052e16ff,
+    "emerald-circuit-scale-emerald-board": #14532dff,
+    "emerald-circuit-scale-runtime-green": #15803dff,
+    "emerald-circuit-scale-signal-green": #16a34aff
+);

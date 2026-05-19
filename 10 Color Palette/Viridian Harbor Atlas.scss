@@ -1,0 +1,111 @@
+/*---
+id: viridian-harbor-atlas
+name: Viridian Harbor Atlas
+author: JaZeR-444
+version: 1.0.0
+category: Green & Coastal
+count: 10
+description: A coastal green palette blending viridian water, sea-glass tones, and pale foam surfaces.
+tags:
+  mood:
+  - green
+  - coastal
+  aesthetic:
+  - Harbor
+  - Aquatic
+intent: A green-focused 10-color palette designed for travel, maps, hospitality.
+suggested_use:
+- Travel
+- Maps
+- Hospitality
+url: https://coolors.co/03201b-064e3b-047857-059669-10b981-2dd4bf-5eead4-99f6e4-ccfbf1-f0fdfa
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--viridian-harbor-atlas-harbor-ink: #03201bff;
+--viridian-harbor-atlas-deep-viridian: #064e3bff;
+--viridian-harbor-atlas-dock-green: #047857ff;
+--viridian-harbor-atlas-channel-green: #059669ff;
+--viridian-harbor-atlas-harbor-teal: #10b981ff;
+--viridian-harbor-atlas-sea-signal: #2dd4bfff;
+--viridian-harbor-atlas-glass-mint: #5eead4ff;
+--viridian-harbor-atlas-foam-mint: #99f6e4ff;
+--viridian-harbor-atlas-mist-tide: #ccfbf1ff;
+--viridian-harbor-atlas-white-tide: #f0fdfaff;
+
+/* CSS HSL */
+--viridian-harbor-atlas-harbor-ink: hsla(170, 83%, 7%, 1);
+--viridian-harbor-atlas-deep-viridian: hsla(164, 86%, 16%, 1);
+--viridian-harbor-atlas-dock-green: hsla(163, 94%, 24%, 1);
+--viridian-harbor-atlas-channel-green: hsla(161, 94%, 30%, 1);
+--viridian-harbor-atlas-harbor-teal: hsla(160, 84%, 39%, 1);
+--viridian-harbor-atlas-sea-signal: hsla(172, 66%, 50%, 1);
+--viridian-harbor-atlas-glass-mint: hsla(171, 77%, 64%, 1);
+--viridian-harbor-atlas-foam-mint: hsla(168, 84%, 78%, 1);
+--viridian-harbor-atlas-mist-tide: hsla(167, 85%, 89%, 1);
+--viridian-harbor-atlas-white-tide: hsla(166, 76%, 97%, 1);
+}
+
+/* SCSS HEX */
+$viridian-harbor-atlas-harbor-ink: #03201bff;
+$viridian-harbor-atlas-deep-viridian: #064e3bff;
+$viridian-harbor-atlas-dock-green: #047857ff;
+$viridian-harbor-atlas-channel-green: #059669ff;
+$viridian-harbor-atlas-harbor-teal: #10b981ff;
+$viridian-harbor-atlas-sea-signal: #2dd4bfff;
+$viridian-harbor-atlas-glass-mint: #5eead4ff;
+$viridian-harbor-atlas-foam-mint: #99f6e4ff;
+$viridian-harbor-atlas-mist-tide: #ccfbf1ff;
+$viridian-harbor-atlas-white-tide: #f0fdfaff;
+
+/* SCSS HSL */
+$viridian-harbor-atlas-harbor-ink: hsla(170, 83%, 7%, 1);
+$viridian-harbor-atlas-deep-viridian: hsla(164, 86%, 16%, 1);
+$viridian-harbor-atlas-dock-green: hsla(163, 94%, 24%, 1);
+$viridian-harbor-atlas-channel-green: hsla(161, 94%, 30%, 1);
+$viridian-harbor-atlas-harbor-teal: hsla(160, 84%, 39%, 1);
+$viridian-harbor-atlas-sea-signal: hsla(172, 66%, 50%, 1);
+$viridian-harbor-atlas-glass-mint: hsla(171, 77%, 64%, 1);
+$viridian-harbor-atlas-foam-mint: hsla(168, 84%, 78%, 1);
+$viridian-harbor-atlas-mist-tide: hsla(167, 85%, 89%, 1);
+$viridian-harbor-atlas-white-tide: hsla(166, 76%, 97%, 1);
+
+/* SCSS RGB */
+$viridian-harbor-atlas-harbor-ink: rgba(3, 32, 27, 1);
+$viridian-harbor-atlas-deep-viridian: rgba(6, 78, 59, 1);
+$viridian-harbor-atlas-dock-green: rgba(4, 120, 87, 1);
+$viridian-harbor-atlas-channel-green: rgba(5, 150, 105, 1);
+$viridian-harbor-atlas-harbor-teal: rgba(16, 185, 129, 1);
+$viridian-harbor-atlas-sea-signal: rgba(45, 212, 191, 1);
+$viridian-harbor-atlas-glass-mint: rgba(94, 234, 212, 1);
+$viridian-harbor-atlas-foam-mint: rgba(153, 246, 228, 1);
+$viridian-harbor-atlas-mist-tide: rgba(204, 251, 241, 1);
+$viridian-harbor-atlas-white-tide: rgba(240, 253, 250, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #03201bff, #064e3bff, #047857ff, #059669ff, #10b981ff, #2dd4bfff, #5eead4ff, #99f6e4ff, #ccfbf1ff, #f0fdfaff);
+$gradient-right: linear-gradient(90deg, #03201bff, #064e3bff, #047857ff, #059669ff, #10b981ff, #2dd4bfff, #5eead4ff, #99f6e4ff, #ccfbf1ff, #f0fdfaff);
+$gradient-bottom: linear-gradient(180deg, #03201bff, #064e3bff, #047857ff, #059669ff, #10b981ff, #2dd4bfff, #5eead4ff, #99f6e4ff, #ccfbf1ff, #f0fdfaff);
+$gradient-left: linear-gradient(270deg, #03201bff, #064e3bff, #047857ff, #059669ff, #10b981ff, #2dd4bfff, #5eead4ff, #99f6e4ff, #ccfbf1ff, #f0fdfaff);
+$gradient-top-right: linear-gradient(45deg, #03201bff, #064e3bff, #047857ff, #059669ff, #10b981ff, #2dd4bfff, #5eead4ff, #99f6e4ff, #ccfbf1ff, #f0fdfaff);
+$gradient-bottom-right: linear-gradient(135deg, #03201bff, #064e3bff, #047857ff, #059669ff, #10b981ff, #2dd4bfff, #5eead4ff, #99f6e4ff, #ccfbf1ff, #f0fdfaff);
+$gradient-top-left: linear-gradient(225deg, #03201bff, #064e3bff, #047857ff, #059669ff, #10b981ff, #2dd4bfff, #5eead4ff, #99f6e4ff, #ccfbf1ff, #f0fdfaff);
+$gradient-bottom-left: linear-gradient(315deg, #03201bff, #064e3bff, #047857ff, #059669ff, #10b981ff, #2dd4bfff, #5eead4ff, #99f6e4ff, #ccfbf1ff, #f0fdfaff);
+$gradient-radial: radial-gradient(#03201bff, #064e3bff, #047857ff, #059669ff, #10b981ff, #2dd4bfff, #5eead4ff, #99f6e4ff, #ccfbf1ff, #f0fdfaff);
+
+/* SCSS Map */
+$viridian-harbor-atlas-map: (
+    "viridian-harbor-atlas-harbor-ink": #03201bff,
+    "viridian-harbor-atlas-deep-viridian": #064e3bff,
+    "viridian-harbor-atlas-dock-green": #047857ff,
+    "viridian-harbor-atlas-channel-green": #059669ff,
+    "viridian-harbor-atlas-harbor-teal": #10b981ff,
+    "viridian-harbor-atlas-sea-signal": #2dd4bfff,
+    "viridian-harbor-atlas-glass-mint": #5eead4ff,
+    "viridian-harbor-atlas-foam-mint": #99f6e4ff,
+    "viridian-harbor-atlas-mist-tide": #ccfbf1ff,
+    "viridian-harbor-atlas-white-tide": #f0fdfaff
+);

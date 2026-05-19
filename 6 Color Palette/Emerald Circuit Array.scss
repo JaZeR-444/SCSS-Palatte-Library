@@ -1,0 +1,87 @@
+/*---
+id: emerald-circuit-array
+name: Emerald Circuit Array
+author: JaZeR-444
+version: 1.0.0
+category: Green & Technical
+count: 6
+description: A technical emerald palette with dark interface foundations, bright signal greens, and clean terminal surfaces.
+tags:
+  mood:
+  - green
+  - technical
+  aesthetic:
+  - Circuit
+  - Developer
+intent: A green-focused 6-color palette designed for developer tools, analytics, ai ui.
+suggested_use:
+- Developer Tools
+- Analytics
+- AI UI
+url: https://coolors.co/02140b-052e16-14532d-15803d-16a34a-22c55e
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--emerald-circuit-array-circuit-black: #02140bff;
+--emerald-circuit-array-terminal-root: #052e16ff;
+--emerald-circuit-array-emerald-board: #14532dff;
+--emerald-circuit-array-runtime-green: #15803dff;
+--emerald-circuit-array-signal-green: #16a34aff;
+--emerald-circuit-array-action-green: #22c55eff;
+
+/* CSS HSL */
+--emerald-circuit-array-circuit-black: hsla(150, 82%, 4%, 1);
+--emerald-circuit-array-terminal-root: hsla(145, 80%, 10%, 1);
+--emerald-circuit-array-emerald-board: hsla(144, 61%, 20%, 1);
+--emerald-circuit-array-runtime-green: hsla(142, 72%, 29%, 1);
+--emerald-circuit-array-signal-green: hsla(142, 76%, 36%, 1);
+--emerald-circuit-array-action-green: hsla(142, 71%, 45%, 1);
+}
+
+/* SCSS HEX */
+$emerald-circuit-array-circuit-black: #02140bff;
+$emerald-circuit-array-terminal-root: #052e16ff;
+$emerald-circuit-array-emerald-board: #14532dff;
+$emerald-circuit-array-runtime-green: #15803dff;
+$emerald-circuit-array-signal-green: #16a34aff;
+$emerald-circuit-array-action-green: #22c55eff;
+
+/* SCSS HSL */
+$emerald-circuit-array-circuit-black: hsla(150, 82%, 4%, 1);
+$emerald-circuit-array-terminal-root: hsla(145, 80%, 10%, 1);
+$emerald-circuit-array-emerald-board: hsla(144, 61%, 20%, 1);
+$emerald-circuit-array-runtime-green: hsla(142, 72%, 29%, 1);
+$emerald-circuit-array-signal-green: hsla(142, 76%, 36%, 1);
+$emerald-circuit-array-action-green: hsla(142, 71%, 45%, 1);
+
+/* SCSS RGB */
+$emerald-circuit-array-circuit-black: rgba(2, 20, 11, 1);
+$emerald-circuit-array-terminal-root: rgba(5, 46, 22, 1);
+$emerald-circuit-array-emerald-board: rgba(20, 83, 45, 1);
+$emerald-circuit-array-runtime-green: rgba(21, 128, 61, 1);
+$emerald-circuit-array-signal-green: rgba(22, 163, 74, 1);
+$emerald-circuit-array-action-green: rgba(34, 197, 94, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #02140bff, #052e16ff, #14532dff, #15803dff, #16a34aff, #22c55eff);
+$gradient-right: linear-gradient(90deg, #02140bff, #052e16ff, #14532dff, #15803dff, #16a34aff, #22c55eff);
+$gradient-bottom: linear-gradient(180deg, #02140bff, #052e16ff, #14532dff, #15803dff, #16a34aff, #22c55eff);
+$gradient-left: linear-gradient(270deg, #02140bff, #052e16ff, #14532dff, #15803dff, #16a34aff, #22c55eff);
+$gradient-top-right: linear-gradient(45deg, #02140bff, #052e16ff, #14532dff, #15803dff, #16a34aff, #22c55eff);
+$gradient-bottom-right: linear-gradient(135deg, #02140bff, #052e16ff, #14532dff, #15803dff, #16a34aff, #22c55eff);
+$gradient-top-left: linear-gradient(225deg, #02140bff, #052e16ff, #14532dff, #15803dff, #16a34aff, #22c55eff);
+$gradient-bottom-left: linear-gradient(315deg, #02140bff, #052e16ff, #14532dff, #15803dff, #16a34aff, #22c55eff);
+$gradient-radial: radial-gradient(#02140bff, #052e16ff, #14532dff, #15803dff, #16a34aff, #22c55eff);
+
+/* SCSS Map */
+$emerald-circuit-array-map: (
+    "emerald-circuit-array-circuit-black": #02140bff,
+    "emerald-circuit-array-terminal-root": #052e16ff,
+    "emerald-circuit-array-emerald-board": #14532dff,
+    "emerald-circuit-array-runtime-green": #15803dff,
+    "emerald-circuit-array-signal-green": #16a34aff,
+    "emerald-circuit-array-action-green": #22c55eff
+);
