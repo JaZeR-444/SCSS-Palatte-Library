@@ -477,6 +477,38 @@
         }
     },
     {
+        "id": "lemon-signal-trio",
+        "name": "Lemon Signal Trio",
+        "description": "A bright lemon palette with deep UI contrast, lively yellow action color, and clean highlight energy.",
+        "count": 3,
+        "colors": [
+            {
+                "name": "Lemon Signal Trio Signal Ink",
+                "hex": "#18140aff"
+            },
+            {
+                "name": "Lemon Signal Trio Lemon Core",
+                "hex": "#facc15ff"
+            },
+            {
+                "name": "Lemon Signal Trio Lemon Flash",
+                "hex": "#fef08aff"
+            }
+        ],
+        "path": "3 Color Palette/Lemon Signal Trio.scss",
+        "folder": "3 Color Palette",
+        "tags": {
+            "mood": [
+                "yellow",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
         "id": "lilac-frost-trio",
         "name": "Lilac Frost Trio",
         "description": "A light purple palette with frosted lilac surfaces, clean violet accents, and cool readable neutrals.",
@@ -888,6 +920,38 @@
             ],
             "aesthetic": [
                 "Professional"
+            ]
+        }
+    },
+    {
+        "id": "solar-circuit-trio",
+        "name": "Solar Circuit Trio",
+        "description": "A technical yellow palette with dark console anchors, circuit gold, and bright diagnostic signal.",
+        "count": 3,
+        "colors": [
+            {
+                "name": "Solar Circuit Trio Console Black",
+                "hex": "#171104ff"
+            },
+            {
+                "name": "Solar Circuit Trio Circuit Gold",
+                "hex": "#a16207ff"
+            },
+            {
+                "name": "Solar Circuit Trio Signal Yellow",
+                "hex": "#eab308ff"
+            }
+        ],
+        "path": "3 Color Palette/Solar Circuit Trio.scss",
+        "folder": "3 Color Palette",
+        "tags": {
+            "mood": [
+                "yellow",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
             ]
         }
     },
@@ -1564,6 +1628,42 @@
         }
     },
     {
+        "id": "lemon-signal-quartet",
+        "name": "Lemon Signal Quartet",
+        "description": "A bright lemon interface palette with dark anchors, golden state color, and clean energetic highlights.",
+        "count": 4,
+        "colors": [
+            {
+                "name": "Lemon Signal Quartet Signal Ink",
+                "hex": "#18140aff"
+            },
+            {
+                "name": "Lemon Signal Quartet Golden Route",
+                "hex": "#ca8a04ff"
+            },
+            {
+                "name": "Lemon Signal Quartet Lemon Core",
+                "hex": "#facc15ff"
+            },
+            {
+                "name": "Lemon Signal Quartet Lemon Flash",
+                "hex": "#fef08aff"
+            }
+        ],
+        "path": "4 Color Palette/Lemon Signal Quartet.scss",
+        "folder": "4 Color Palette",
+        "tags": {
+            "mood": [
+                "yellow",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
         "id": "lilac-frost-quartet",
         "name": "Lilac Frost Quartet",
         "description": "A light purple palette with frosted lilac surfaces, clean violet accents, and cool readable neutrals.",
@@ -1882,6 +1982,42 @@
             "aesthetic": [
                 "Finance",
                 "SaaS"
+            ]
+        }
+    },
+    {
+        "id": "solar-circuit-quartet",
+        "name": "Solar Circuit Quartet",
+        "description": "A technical yellow palette with dark console surfaces, amber state colors, and bright diagnostic signal.",
+        "count": 4,
+        "colors": [
+            {
+                "name": "Solar Circuit Quartet Console Black",
+                "hex": "#171104ff"
+            },
+            {
+                "name": "Solar Circuit Quartet Trace Brown",
+                "hex": "#422006ff"
+            },
+            {
+                "name": "Solar Circuit Quartet Circuit Gold",
+                "hex": "#a16207ff"
+            },
+            {
+                "name": "Solar Circuit Quartet Signal Yellow",
+                "hex": "#eab308ff"
+            }
+        ],
+        "path": "4 Color Palette/Solar Circuit Quartet.scss",
+        "folder": "4 Color Palette",
+        "tags": {
+            "mood": [
+                "yellow",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
             ]
         }
     },
@@ -2848,6 +2984,46 @@
         }
     },
     {
+        "id": "lemon-signal-scale",
+        "name": "Lemon Signal Scale",
+        "description": "A bright lemon palette for onboarding screens, alerts, badges, callouts, and lively product surfaces.",
+        "count": 5,
+        "colors": [
+            {
+                "name": "Lemon Signal Scale Signal Ink",
+                "hex": "#18140aff"
+            },
+            {
+                "name": "Lemon Signal Scale Golden Route",
+                "hex": "#ca8a04ff"
+            },
+            {
+                "name": "Lemon Signal Scale Lemon Core",
+                "hex": "#facc15ff"
+            },
+            {
+                "name": "Lemon Signal Scale Lemon Flash",
+                "hex": "#fef08aff"
+            },
+            {
+                "name": "Lemon Signal Scale Cream Notice",
+                "hex": "#fefce8ff"
+            }
+        ],
+        "path": "5 Color Palette/Lemon Signal Scale.scss",
+        "folder": "5 Color Palette",
+        "tags": {
+            "mood": [
+                "yellow",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
         "id": "lilac-frost-scale",
         "name": "Lilac Frost Scale",
         "description": "A light purple palette with frosted lilac surfaces, clean violet accents, and cool readable neutrals.",
@@ -3350,6 +3526,46 @@
             ],
             "aesthetic": [
                 "Soft"
+            ]
+        }
+    },
+    {
+        "id": "solar-circuit-scale",
+        "name": "Solar Circuit Scale",
+        "description": "A technical yellow palette with console darks, amber ramps, signal yellow, and soft terminal highlights.",
+        "count": 5,
+        "colors": [
+            {
+                "name": "Solar Circuit Scale Console Black",
+                "hex": "#171104ff"
+            },
+            {
+                "name": "Solar Circuit Scale Trace Brown",
+                "hex": "#422006ff"
+            },
+            {
+                "name": "Solar Circuit Scale Circuit Gold",
+                "hex": "#a16207ff"
+            },
+            {
+                "name": "Solar Circuit Scale Warning Amber",
+                "hex": "#ca8a04ff"
+            },
+            {
+                "name": "Solar Circuit Scale Signal Yellow",
+                "hex": "#eab308ff"
+            }
+        ],
+        "path": "5 Color Palette/Solar Circuit Scale.scss",
+        "folder": "5 Color Palette",
+        "tags": {
+            "mood": [
+                "yellow",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
             ]
         }
     },
@@ -4163,6 +4379,50 @@
         }
     },
     {
+        "id": "lemon-signal-array",
+        "name": "Lemon Signal Array",
+        "description": "A bright lemon interface array with dark anchors, golden accents, active yellow states, and soft notice panels.",
+        "count": 6,
+        "colors": [
+            {
+                "name": "Lemon Signal Array Signal Ink",
+                "hex": "#18140aff"
+            },
+            {
+                "name": "Lemon Signal Array Golden Route",
+                "hex": "#854d0eff"
+            },
+            {
+                "name": "Lemon Signal Array Active Gold",
+                "hex": "#ca8a04ff"
+            },
+            {
+                "name": "Lemon Signal Array Lemon Core",
+                "hex": "#facc15ff"
+            },
+            {
+                "name": "Lemon Signal Array Lemon Flash",
+                "hex": "#fef08aff"
+            },
+            {
+                "name": "Lemon Signal Array Cream Notice",
+                "hex": "#fefce8ff"
+            }
+        ],
+        "path": "6 Color Palette/Lemon Signal Array.scss",
+        "folder": "6 Color Palette",
+        "tags": {
+            "mood": [
+                "yellow",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
         "id": "lilac-frost-array",
         "name": "Lilac Frost Array",
         "description": "A light purple palette with frosted lilac surfaces, clean violet accents, and cool readable neutrals.",
@@ -4593,6 +4853,50 @@
             "aesthetic": [
                 "Finance",
                 "SaaS"
+            ]
+        }
+    },
+    {
+        "id": "solar-circuit-array",
+        "name": "Solar Circuit Array",
+        "description": "A technical yellow palette with dark console foundations, amber diagnostics, live yellow states, and warm highlights.",
+        "count": 6,
+        "colors": [
+            {
+                "name": "Solar Circuit Array Console Black",
+                "hex": "#171104ff"
+            },
+            {
+                "name": "Solar Circuit Array Trace Brown",
+                "hex": "#422006ff"
+            },
+            {
+                "name": "Solar Circuit Array Circuit Gold",
+                "hex": "#a16207ff"
+            },
+            {
+                "name": "Solar Circuit Array Warning Amber",
+                "hex": "#ca8a04ff"
+            },
+            {
+                "name": "Solar Circuit Array Signal Yellow",
+                "hex": "#eab308ff"
+            },
+            {
+                "name": "Solar Circuit Array Pulse Lime",
+                "hex": "#fde047ff"
+            }
+        ],
+        "path": "6 Color Palette/Solar Circuit Array.scss",
+        "folder": "6 Color Palette",
+        "tags": {
+            "mood": [
+                "yellow",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
             ]
         }
     },
@@ -5487,6 +5791,54 @@
         }
     },
     {
+        "id": "lemon-signal-spectrum",
+        "name": "Lemon Signal Spectrum",
+        "description": "A bright lemon spectrum with high-contrast anchors, golden UI states, and soft readable notification surfaces.",
+        "count": 7,
+        "colors": [
+            {
+                "name": "Lemon Signal Spectrum Signal Ink",
+                "hex": "#18140aff"
+            },
+            {
+                "name": "Lemon Signal Spectrum Golden Route",
+                "hex": "#854d0eff"
+            },
+            {
+                "name": "Lemon Signal Spectrum Active Gold",
+                "hex": "#ca8a04ff"
+            },
+            {
+                "name": "Lemon Signal Spectrum Lemon Core",
+                "hex": "#facc15ff"
+            },
+            {
+                "name": "Lemon Signal Spectrum Lemon Flash",
+                "hex": "#fef08aff"
+            },
+            {
+                "name": "Lemon Signal Spectrum Cream Notice",
+                "hex": "#fefce8ff"
+            },
+            {
+                "name": "Lemon Signal Spectrum White Signal",
+                "hex": "#ffffffff"
+            }
+        ],
+        "path": "7 Color Palette/Lemon Signal Spectrum.scss",
+        "folder": "7 Color Palette",
+        "tags": {
+            "mood": [
+                "yellow",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
         "id": "lilac-frost-spectrum",
         "name": "Lilac Frost Spectrum",
         "description": "A light purple palette with frosted lilac surfaces, clean violet accents, and cool readable neutrals.",
@@ -6046,6 +6398,54 @@
             "aesthetic": [
                 "Finance",
                 "SaaS"
+            ]
+        }
+    },
+    {
+        "id": "solar-circuit-spectrum",
+        "name": "Solar Circuit Spectrum",
+        "description": "A technical yellow spectrum with console darks, amber warnings, bright signal states, and readable pale highlights.",
+        "count": 7,
+        "colors": [
+            {
+                "name": "Solar Circuit Spectrum Console Black",
+                "hex": "#171104ff"
+            },
+            {
+                "name": "Solar Circuit Spectrum Trace Brown",
+                "hex": "#422006ff"
+            },
+            {
+                "name": "Solar Circuit Spectrum Circuit Gold",
+                "hex": "#a16207ff"
+            },
+            {
+                "name": "Solar Circuit Spectrum Warning Amber",
+                "hex": "#ca8a04ff"
+            },
+            {
+                "name": "Solar Circuit Spectrum Signal Yellow",
+                "hex": "#eab308ff"
+            },
+            {
+                "name": "Solar Circuit Spectrum Pulse Lime",
+                "hex": "#fde047ff"
+            },
+            {
+                "name": "Solar Circuit Spectrum Terminal Cream",
+                "hex": "#fef9c3ff"
+            }
+        ],
+        "path": "7 Color Palette/Solar Circuit Spectrum.scss",
+        "folder": "7 Color Palette",
+        "tags": {
+            "mood": [
+                "yellow",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
             ]
         }
     },
@@ -7176,6 +7576,58 @@
         }
     },
     {
+        "id": "honey-commerce-system",
+        "name": "Honey Commerce System",
+        "description": "A honey commercial palette with espresso anchors, golden cart states, offer highlights, and soft checkout surfaces.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Honey Commerce System Espresso Shelf",
+                "hex": "#1c1206ff"
+            },
+            {
+                "name": "Honey Commerce System Roast Label",
+                "hex": "#422006ff"
+            },
+            {
+                "name": "Honey Commerce System Honey Cart",
+                "hex": "#a16207ff"
+            },
+            {
+                "name": "Honey Commerce System Checkout Gold",
+                "hex": "#ca8a04ff"
+            },
+            {
+                "name": "Honey Commerce System Offer Yellow",
+                "hex": "#eab308ff"
+            },
+            {
+                "name": "Honey Commerce System Ticket Glow",
+                "hex": "#fde047ff"
+            },
+            {
+                "name": "Honey Commerce System Receipt Cream",
+                "hex": "#fef9c3ff"
+            },
+            {
+                "name": "Honey Commerce System Checkout White",
+                "hex": "#fffef5ff"
+            }
+        ],
+        "path": "8 Color Palette/Honey Commerce System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "yellow",
+                "commercial"
+            ],
+            "aesthetic": [
+                "Commerce",
+                "Retail"
+            ]
+        }
+    },
+    {
         "id": "imperial-velvet-system",
         "name": "Imperial Velvet System",
         "description": "A regal purple palette with velvet shadows, saturated violet, and pale royal highlights.",
@@ -7328,6 +7780,58 @@
             "aesthetic": [
                 "SaaS",
                 "Ledger"
+            ]
+        }
+    },
+    {
+        "id": "lemon-signal-system",
+        "name": "Lemon Signal System",
+        "description": "A bright lemon UI system for onboarding flows, callouts, notifications, badges, and upbeat product surfaces.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Lemon Signal System Signal Ink",
+                "hex": "#18140aff"
+            },
+            {
+                "name": "Lemon Signal System Golden Route",
+                "hex": "#854d0eff"
+            },
+            {
+                "name": "Lemon Signal System Active Gold",
+                "hex": "#ca8a04ff"
+            },
+            {
+                "name": "Lemon Signal System Lemon Core",
+                "hex": "#facc15ff"
+            },
+            {
+                "name": "Lemon Signal System Lemon Flash",
+                "hex": "#fef08aff"
+            },
+            {
+                "name": "Lemon Signal System Cream Notice",
+                "hex": "#fefce8ff"
+            },
+            {
+                "name": "Lemon Signal System White Signal",
+                "hex": "#ffffffff"
+            },
+            {
+                "name": "Lemon Signal System Slate Copy",
+                "hex": "#334155ff"
+            }
+        ],
+        "path": "8 Color Palette/Lemon Signal System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "yellow",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
             ]
         }
     },
@@ -7848,6 +8352,58 @@
         }
     },
     {
+        "id": "solar-circuit-system",
+        "name": "Solar Circuit System",
+        "description": "A technical yellow system for monitoring, developer tools, diagnostics, warnings, and luminous interface states.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Solar Circuit System Console Black",
+                "hex": "#171104ff"
+            },
+            {
+                "name": "Solar Circuit System Trace Brown",
+                "hex": "#422006ff"
+            },
+            {
+                "name": "Solar Circuit System Circuit Gold",
+                "hex": "#854d0eff"
+            },
+            {
+                "name": "Solar Circuit System Warning Amber",
+                "hex": "#a16207ff"
+            },
+            {
+                "name": "Solar Circuit System Status Gold",
+                "hex": "#ca8a04ff"
+            },
+            {
+                "name": "Solar Circuit System Signal Yellow",
+                "hex": "#eab308ff"
+            },
+            {
+                "name": "Solar Circuit System Pulse Lime",
+                "hex": "#fde047ff"
+            },
+            {
+                "name": "Solar Circuit System Terminal Cream",
+                "hex": "#fef9c3ff"
+            }
+        ],
+        "path": "8 Color Palette/Solar Circuit System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "yellow",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
         "id": "solar-ledger",
         "name": "Solar Ledger",
         "description": "A data-friendly palette with solar accents, finance blues, and clear neutrals.",
@@ -7896,6 +8452,58 @@
             "aesthetic": [
                 "Finance",
                 "Solar"
+            ]
+        }
+    },
+    {
+        "id": "sunflower-field-system",
+        "name": "Sunflower Field System",
+        "description": "A sunflower field palette with earthy shadows, golden petals, warm daylight, and pale natural surfaces.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Sunflower Field System Field Shadow",
+                "hex": "#1a1405ff"
+            },
+            {
+                "name": "Sunflower Field System Soil Umber",
+                "hex": "#3f2f08ff"
+            },
+            {
+                "name": "Sunflower Field System Seed Brown",
+                "hex": "#713f12ff"
+            },
+            {
+                "name": "Sunflower Field System Petal Gold",
+                "hex": "#ca8a04ff"
+            },
+            {
+                "name": "Sunflower Field System Sunflower Yellow",
+                "hex": "#eab308ff"
+            },
+            {
+                "name": "Sunflower Field System Daylight Petal",
+                "hex": "#fde047ff"
+            },
+            {
+                "name": "Sunflower Field System Pollen Cream",
+                "hex": "#fef9c3ff"
+            },
+            {
+                "name": "Sunflower Field System Field Mist",
+                "hex": "#fefce8ff"
+            }
+        ],
+        "path": "8 Color Palette/Sunflower Field System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "yellow",
+                "earthy"
+            ],
+            "aesthetic": [
+                "Sunflower",
+                "Botanical"
             ]
         }
     },
@@ -9322,6 +9930,62 @@
         }
     },
     {
+        "id": "lemon-signal-matrix",
+        "name": "Lemon Signal Matrix",
+        "description": "A bright lemon matrix for product UI, combining dark anchors, golden alerts, pale notices, and readable copy colors.",
+        "count": 9,
+        "colors": [
+            {
+                "name": "Lemon Signal Matrix Signal Ink",
+                "hex": "#18140aff"
+            },
+            {
+                "name": "Lemon Signal Matrix Golden Route",
+                "hex": "#854d0eff"
+            },
+            {
+                "name": "Lemon Signal Matrix Active Gold",
+                "hex": "#ca8a04ff"
+            },
+            {
+                "name": "Lemon Signal Matrix Lemon Core",
+                "hex": "#facc15ff"
+            },
+            {
+                "name": "Lemon Signal Matrix Lemon Flash",
+                "hex": "#fef08aff"
+            },
+            {
+                "name": "Lemon Signal Matrix Cream Notice",
+                "hex": "#fefce8ff"
+            },
+            {
+                "name": "Lemon Signal Matrix White Signal",
+                "hex": "#ffffffff"
+            },
+            {
+                "name": "Lemon Signal Matrix Slate Copy",
+                "hex": "#334155ff"
+            },
+            {
+                "name": "Lemon Signal Matrix Mist Border",
+                "hex": "#e2e8f0ff"
+            }
+        ],
+        "path": "9 Color Palette/Lemon Signal Matrix.scss",
+        "folder": "9 Color Palette",
+        "tags": {
+            "mood": [
+                "yellow",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
         "id": "lilac-frost-matrix",
         "name": "Lilac Frost Matrix",
         "description": "A light purple palette with frosted lilac surfaces, clean violet accents, and cool readable neutrals.",
@@ -9874,6 +10538,62 @@
             "aesthetic": [
                 "Finance",
                 "SaaS"
+            ]
+        }
+    },
+    {
+        "id": "solar-circuit-matrix",
+        "name": "Solar Circuit Matrix",
+        "description": "A technical yellow matrix with console darks, amber diagnostic ramps, bright signal states, and clean terminal surfaces.",
+        "count": 9,
+        "colors": [
+            {
+                "name": "Solar Circuit Matrix Console Black",
+                "hex": "#171104ff"
+            },
+            {
+                "name": "Solar Circuit Matrix Trace Brown",
+                "hex": "#422006ff"
+            },
+            {
+                "name": "Solar Circuit Matrix Circuit Gold",
+                "hex": "#854d0eff"
+            },
+            {
+                "name": "Solar Circuit Matrix Warning Amber",
+                "hex": "#a16207ff"
+            },
+            {
+                "name": "Solar Circuit Matrix Status Gold",
+                "hex": "#ca8a04ff"
+            },
+            {
+                "name": "Solar Circuit Matrix Signal Yellow",
+                "hex": "#eab308ff"
+            },
+            {
+                "name": "Solar Circuit Matrix Pulse Lime",
+                "hex": "#fde047ff"
+            },
+            {
+                "name": "Solar Circuit Matrix Terminal Cream",
+                "hex": "#fef9c3ff"
+            },
+            {
+                "name": "Solar Circuit Matrix Signal White",
+                "hex": "#fefce8ff"
+            }
+        ],
+        "path": "9 Color Palette/Solar Circuit Matrix.scss",
+        "folder": "9 Color Palette",
+        "tags": {
+            "mood": [
+                "yellow",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
             ]
         }
     },
@@ -11351,6 +12071,66 @@
         }
     },
     {
+        "id": "honey-commerce-atlas",
+        "name": "Honey Commerce Atlas",
+        "description": "A complete honey commercial palette with espresso anchors, golden CTAs, promotional yellows, and soft checkout surfaces.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Honey Commerce Atlas Espresso Shelf",
+                "hex": "#1c1206ff"
+            },
+            {
+                "name": "Honey Commerce Atlas Roast Label",
+                "hex": "#422006ff"
+            },
+            {
+                "name": "Honey Commerce Atlas Honey Cart",
+                "hex": "#854d0eff"
+            },
+            {
+                "name": "Honey Commerce Atlas Checkout Gold",
+                "hex": "#a16207ff"
+            },
+            {
+                "name": "Honey Commerce Atlas Action Amber",
+                "hex": "#ca8a04ff"
+            },
+            {
+                "name": "Honey Commerce Atlas Offer Yellow",
+                "hex": "#eab308ff"
+            },
+            {
+                "name": "Honey Commerce Atlas Ticket Glow",
+                "hex": "#fde047ff"
+            },
+            {
+                "name": "Honey Commerce Atlas Receipt Cream",
+                "hex": "#fef9c3ff"
+            },
+            {
+                "name": "Honey Commerce Atlas Checkout White",
+                "hex": "#fffef5ff"
+            },
+            {
+                "name": "Honey Commerce Atlas Ink Copy",
+                "hex": "#111827ff"
+            }
+        ],
+        "path": "10 Color Palette/Honey Commerce Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "yellow",
+                "commercial"
+            ],
+            "aesthetic": [
+                "Commerce",
+                "Retail"
+            ]
+        }
+    },
+    {
         "id": "imperial-velvet-atlas",
         "name": "Imperial Velvet Atlas",
         "description": "A regal purple palette with velvet shadows, saturated violet, and pale royal highlights.",
@@ -11467,6 +12247,66 @@
             "aesthetic": [
                 "Studio",
                 "Portfolio"
+            ]
+        }
+    },
+    {
+        "id": "lemon-signal-atlas",
+        "name": "Lemon Signal Atlas",
+        "description": "A complete lemon interface atlas for onboarding, alerts, product highlights, and cheerful UI feedback systems.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Lemon Signal Atlas Signal Ink",
+                "hex": "#18140aff"
+            },
+            {
+                "name": "Lemon Signal Atlas Golden Route",
+                "hex": "#854d0eff"
+            },
+            {
+                "name": "Lemon Signal Atlas Active Gold",
+                "hex": "#ca8a04ff"
+            },
+            {
+                "name": "Lemon Signal Atlas Lemon Core",
+                "hex": "#facc15ff"
+            },
+            {
+                "name": "Lemon Signal Atlas Lemon Flash",
+                "hex": "#fef08aff"
+            },
+            {
+                "name": "Lemon Signal Atlas Cream Notice",
+                "hex": "#fefce8ff"
+            },
+            {
+                "name": "Lemon Signal Atlas White Signal",
+                "hex": "#ffffffff"
+            },
+            {
+                "name": "Lemon Signal Atlas Slate Copy",
+                "hex": "#334155ff"
+            },
+            {
+                "name": "Lemon Signal Atlas Mist Border",
+                "hex": "#e2e8f0ff"
+            },
+            {
+                "name": "Lemon Signal Atlas Deep Slate",
+                "hex": "#0f172aff"
+            }
+        ],
+        "path": "10 Color Palette/Lemon Signal Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "yellow",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
             ]
         }
     },
@@ -12130,6 +12970,66 @@
         }
     },
     {
+        "id": "solar-circuit-atlas",
+        "name": "Solar Circuit Atlas",
+        "description": "A complete technical yellow atlas for diagnostics, monitoring, developer dashboards, and signal-rich interfaces.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Solar Circuit Atlas Console Black",
+                "hex": "#171104ff"
+            },
+            {
+                "name": "Solar Circuit Atlas Trace Brown",
+                "hex": "#422006ff"
+            },
+            {
+                "name": "Solar Circuit Atlas Circuit Gold",
+                "hex": "#854d0eff"
+            },
+            {
+                "name": "Solar Circuit Atlas Warning Amber",
+                "hex": "#a16207ff"
+            },
+            {
+                "name": "Solar Circuit Atlas Status Gold",
+                "hex": "#ca8a04ff"
+            },
+            {
+                "name": "Solar Circuit Atlas Signal Yellow",
+                "hex": "#eab308ff"
+            },
+            {
+                "name": "Solar Circuit Atlas Pulse Lime",
+                "hex": "#fde047ff"
+            },
+            {
+                "name": "Solar Circuit Atlas Terminal Cream",
+                "hex": "#fef9c3ff"
+            },
+            {
+                "name": "Solar Circuit Atlas Signal White",
+                "hex": "#fefce8ff"
+            },
+            {
+                "name": "Solar Circuit Atlas Ink Slate",
+                "hex": "#111827ff"
+            }
+        ],
+        "path": "10 Color Palette/Solar Circuit Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "yellow",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
         "id": "spectrum-10",
         "name": "Spectrum 10",
         "description": "A vibrant 10-color palette.",
@@ -12244,6 +13144,66 @@
             ],
             "aesthetic": [
                 "Urban"
+            ]
+        }
+    },
+    {
+        "id": "sunflower-field-atlas",
+        "name": "Sunflower Field Atlas",
+        "description": "A complete sunflower field palette with earthy shadows, seed browns, golden petals, daylight yellows, and soft editorial surfaces.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Sunflower Field Atlas Field Shadow",
+                "hex": "#1a1405ff"
+            },
+            {
+                "name": "Sunflower Field Atlas Soil Umber",
+                "hex": "#3f2f08ff"
+            },
+            {
+                "name": "Sunflower Field Atlas Seed Brown",
+                "hex": "#713f12ff"
+            },
+            {
+                "name": "Sunflower Field Atlas Stem Olive",
+                "hex": "#4d7c0fff"
+            },
+            {
+                "name": "Sunflower Field Atlas Petal Gold",
+                "hex": "#ca8a04ff"
+            },
+            {
+                "name": "Sunflower Field Atlas Sunflower Yellow",
+                "hex": "#eab308ff"
+            },
+            {
+                "name": "Sunflower Field Atlas Daylight Petal",
+                "hex": "#fde047ff"
+            },
+            {
+                "name": "Sunflower Field Atlas Pollen Cream",
+                "hex": "#fef9c3ff"
+            },
+            {
+                "name": "Sunflower Field Atlas Field Mist",
+                "hex": "#fefce8ff"
+            },
+            {
+                "name": "Sunflower Field Atlas Paper White",
+                "hex": "#ffffffff"
+            }
+        ],
+        "path": "10 Color Palette/Sunflower Field Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "yellow",
+                "earthy"
+            ],
+            "aesthetic": [
+                "Sunflower",
+                "Botanical"
             ]
         }
     },

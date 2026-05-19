@@ -1,0 +1,81 @@
+/*---
+id: fuchsia-circuit-scale
+name: Fuchsia Circuit Scale
+author: JaZeR-444
+version: 1.0.0
+category: Pink & Technical
+count: 5
+description: A technical fuchsia palette with console darks, magenta ramps, signal pink, and soft diagnostic highlights.
+tags:
+  mood:
+  - pink
+  - technical
+  aesthetic:
+  - Circuit
+  - Developer
+intent: A pink-focused 5-color palette designed for developer tools, monitoring, analytics.
+suggested_use:
+- Developer Tools
+- Monitoring
+- Analytics
+url: https://coolors.co/1a0712-500724-be185d-ec4899-f9a8d4
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--fuchsia-circuit-scale-console-plum: #1a0712ff;
+--fuchsia-circuit-scale-trace-wine: #500724ff;
+--fuchsia-circuit-scale-circuit-fuchsia: #be185dff;
+--fuchsia-circuit-scale-signal-pink: #ec4899ff;
+--fuchsia-circuit-scale-pulse-rose: #f9a8d4ff;
+
+/* CSS HSL */
+--fuchsia-circuit-scale-console-plum: hsla(325, 58%, 6%, 1);
+--fuchsia-circuit-scale-trace-wine: hsla(336, 84%, 17%, 1);
+--fuchsia-circuit-scale-circuit-fuchsia: hsla(335, 78%, 42%, 1);
+--fuchsia-circuit-scale-signal-pink: hsla(330, 81%, 60%, 1);
+--fuchsia-circuit-scale-pulse-rose: hsla(327, 87%, 82%, 1);
+}
+
+/* SCSS HEX */
+$fuchsia-circuit-scale-console-plum: #1a0712ff;
+$fuchsia-circuit-scale-trace-wine: #500724ff;
+$fuchsia-circuit-scale-circuit-fuchsia: #be185dff;
+$fuchsia-circuit-scale-signal-pink: #ec4899ff;
+$fuchsia-circuit-scale-pulse-rose: #f9a8d4ff;
+
+/* SCSS HSL */
+$fuchsia-circuit-scale-console-plum: hsla(325, 58%, 6%, 1);
+$fuchsia-circuit-scale-trace-wine: hsla(336, 84%, 17%, 1);
+$fuchsia-circuit-scale-circuit-fuchsia: hsla(335, 78%, 42%, 1);
+$fuchsia-circuit-scale-signal-pink: hsla(330, 81%, 60%, 1);
+$fuchsia-circuit-scale-pulse-rose: hsla(327, 87%, 82%, 1);
+
+/* SCSS RGB */
+$fuchsia-circuit-scale-console-plum: rgba(26, 7, 18, 1);
+$fuchsia-circuit-scale-trace-wine: rgba(80, 7, 36, 1);
+$fuchsia-circuit-scale-circuit-fuchsia: rgba(190, 24, 93, 1);
+$fuchsia-circuit-scale-signal-pink: rgba(236, 72, 153, 1);
+$fuchsia-circuit-scale-pulse-rose: rgba(249, 168, 212, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1a0712ff, #500724ff, #be185dff, #ec4899ff, #f9a8d4ff);
+$gradient-right: linear-gradient(90deg, #1a0712ff, #500724ff, #be185dff, #ec4899ff, #f9a8d4ff);
+$gradient-bottom: linear-gradient(180deg, #1a0712ff, #500724ff, #be185dff, #ec4899ff, #f9a8d4ff);
+$gradient-left: linear-gradient(270deg, #1a0712ff, #500724ff, #be185dff, #ec4899ff, #f9a8d4ff);
+$gradient-top-right: linear-gradient(45deg, #1a0712ff, #500724ff, #be185dff, #ec4899ff, #f9a8d4ff);
+$gradient-bottom-right: linear-gradient(135deg, #1a0712ff, #500724ff, #be185dff, #ec4899ff, #f9a8d4ff);
+$gradient-top-left: linear-gradient(225deg, #1a0712ff, #500724ff, #be185dff, #ec4899ff, #f9a8d4ff);
+$gradient-bottom-left: linear-gradient(315deg, #1a0712ff, #500724ff, #be185dff, #ec4899ff, #f9a8d4ff);
+$gradient-radial: radial-gradient(#1a0712ff, #500724ff, #be185dff, #ec4899ff, #f9a8d4ff);
+
+/* SCSS Map */
+$fuchsia-circuit-scale-map: (
+    "fuchsia-circuit-scale-console-plum": #1a0712ff,
+    "fuchsia-circuit-scale-trace-wine": #500724ff,
+    "fuchsia-circuit-scale-circuit-fuchsia": #be185dff,
+    "fuchsia-circuit-scale-signal-pink": #ec4899ff,
+    "fuchsia-circuit-scale-pulse-rose": #f9a8d4ff
+);

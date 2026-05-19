@@ -1,0 +1,81 @@
+/*---
+id: blush-signal-scale
+name: Blush Signal Scale
+author: JaZeR-444
+version: 1.0.0
+category: Pink & Interface
+count: 5
+description: A bright blush palette for onboarding screens, alerts, badges, callouts, and lively product surfaces.
+tags:
+  mood:
+  - pink
+  - bright
+  aesthetic:
+  - Signal
+  - Interface
+intent: A pink-focused 5-color palette designed for product ui, onboarding, notifications.
+suggested_use:
+- Product UI
+- Onboarding
+- Notifications
+url: https://coolors.co/1f0a17-be185d-db2777-f9a8d4-fdf2f8
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--blush-signal-scale-signal-ink: #1f0a17ff;
+--blush-signal-scale-rose-route: #be185dff;
+--blush-signal-scale-blush-core: #db2777ff;
+--blush-signal-scale-pink-flash: #f9a8d4ff;
+--blush-signal-scale-cream-notice: #fdf2f8ff;
+
+/* CSS HSL */
+--blush-signal-scale-signal-ink: hsla(323, 51%, 8%, 1);
+--blush-signal-scale-rose-route: hsla(335, 78%, 42%, 1);
+--blush-signal-scale-blush-core: hsla(333, 71%, 51%, 1);
+--blush-signal-scale-pink-flash: hsla(327, 87%, 82%, 1);
+--blush-signal-scale-cream-notice: hsla(327, 73%, 97%, 1);
+}
+
+/* SCSS HEX */
+$blush-signal-scale-signal-ink: #1f0a17ff;
+$blush-signal-scale-rose-route: #be185dff;
+$blush-signal-scale-blush-core: #db2777ff;
+$blush-signal-scale-pink-flash: #f9a8d4ff;
+$blush-signal-scale-cream-notice: #fdf2f8ff;
+
+/* SCSS HSL */
+$blush-signal-scale-signal-ink: hsla(323, 51%, 8%, 1);
+$blush-signal-scale-rose-route: hsla(335, 78%, 42%, 1);
+$blush-signal-scale-blush-core: hsla(333, 71%, 51%, 1);
+$blush-signal-scale-pink-flash: hsla(327, 87%, 82%, 1);
+$blush-signal-scale-cream-notice: hsla(327, 73%, 97%, 1);
+
+/* SCSS RGB */
+$blush-signal-scale-signal-ink: rgba(31, 10, 23, 1);
+$blush-signal-scale-rose-route: rgba(190, 24, 93, 1);
+$blush-signal-scale-blush-core: rgba(219, 39, 119, 1);
+$blush-signal-scale-pink-flash: rgba(249, 168, 212, 1);
+$blush-signal-scale-cream-notice: rgba(253, 242, 248, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1f0a17ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff);
+$gradient-right: linear-gradient(90deg, #1f0a17ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff);
+$gradient-bottom: linear-gradient(180deg, #1f0a17ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff);
+$gradient-left: linear-gradient(270deg, #1f0a17ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff);
+$gradient-top-right: linear-gradient(45deg, #1f0a17ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff);
+$gradient-bottom-right: linear-gradient(135deg, #1f0a17ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff);
+$gradient-top-left: linear-gradient(225deg, #1f0a17ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff);
+$gradient-bottom-left: linear-gradient(315deg, #1f0a17ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff);
+$gradient-radial: radial-gradient(#1f0a17ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff);
+
+/* SCSS Map */
+$blush-signal-scale-map: (
+    "blush-signal-scale-signal-ink": #1f0a17ff,
+    "blush-signal-scale-rose-route": #be185dff,
+    "blush-signal-scale-blush-core": #db2777ff,
+    "blush-signal-scale-pink-flash": #f9a8d4ff,
+    "blush-signal-scale-cream-notice": #fdf2f8ff
+);

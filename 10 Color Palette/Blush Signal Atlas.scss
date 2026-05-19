@@ -1,0 +1,111 @@
+/*---
+id: blush-signal-atlas
+name: Blush Signal Atlas
+author: JaZeR-444
+version: 1.0.0
+category: Pink & Interface
+count: 10
+description: A complete blush interface atlas for onboarding, alerts, product highlights, and cheerful UI feedback systems.
+tags:
+  mood:
+  - pink
+  - bright
+  aesthetic:
+  - Signal
+  - Interface
+intent: A pink-focused 10-color palette designed for product ui, onboarding, notifications.
+suggested_use:
+- Product UI
+- Onboarding
+- Notifications
+url: https://coolors.co/1f0a17-831843-be185d-db2777-f9a8d4-fdf2f8-ffffff-334155-e2e8f0-0f172a
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--blush-signal-atlas-signal-ink: #1f0a17ff;
+--blush-signal-atlas-rose-route: #831843ff;
+--blush-signal-atlas-active-rose: #be185dff;
+--blush-signal-atlas-blush-core: #db2777ff;
+--blush-signal-atlas-pink-flash: #f9a8d4ff;
+--blush-signal-atlas-cream-notice: #fdf2f8ff;
+--blush-signal-atlas-white-signal: #ffffffff;
+--blush-signal-atlas-slate-copy: #334155ff;
+--blush-signal-atlas-mist-border: #e2e8f0ff;
+--blush-signal-atlas-deep-slate: #0f172aff;
+
+/* CSS HSL */
+--blush-signal-atlas-signal-ink: hsla(323, 51%, 8%, 1);
+--blush-signal-atlas-rose-route: hsla(336, 69%, 30%, 1);
+--blush-signal-atlas-active-rose: hsla(335, 78%, 42%, 1);
+--blush-signal-atlas-blush-core: hsla(333, 71%, 51%, 1);
+--blush-signal-atlas-pink-flash: hsla(327, 87%, 82%, 1);
+--blush-signal-atlas-cream-notice: hsla(327, 73%, 97%, 1);
+--blush-signal-atlas-white-signal: hsla(0, 0%, 100%, 1);
+--blush-signal-atlas-slate-copy: hsla(215, 25%, 27%, 1);
+--blush-signal-atlas-mist-border: hsla(214, 32%, 91%, 1);
+--blush-signal-atlas-deep-slate: hsla(222, 47%, 11%, 1);
+}
+
+/* SCSS HEX */
+$blush-signal-atlas-signal-ink: #1f0a17ff;
+$blush-signal-atlas-rose-route: #831843ff;
+$blush-signal-atlas-active-rose: #be185dff;
+$blush-signal-atlas-blush-core: #db2777ff;
+$blush-signal-atlas-pink-flash: #f9a8d4ff;
+$blush-signal-atlas-cream-notice: #fdf2f8ff;
+$blush-signal-atlas-white-signal: #ffffffff;
+$blush-signal-atlas-slate-copy: #334155ff;
+$blush-signal-atlas-mist-border: #e2e8f0ff;
+$blush-signal-atlas-deep-slate: #0f172aff;
+
+/* SCSS HSL */
+$blush-signal-atlas-signal-ink: hsla(323, 51%, 8%, 1);
+$blush-signal-atlas-rose-route: hsla(336, 69%, 30%, 1);
+$blush-signal-atlas-active-rose: hsla(335, 78%, 42%, 1);
+$blush-signal-atlas-blush-core: hsla(333, 71%, 51%, 1);
+$blush-signal-atlas-pink-flash: hsla(327, 87%, 82%, 1);
+$blush-signal-atlas-cream-notice: hsla(327, 73%, 97%, 1);
+$blush-signal-atlas-white-signal: hsla(0, 0%, 100%, 1);
+$blush-signal-atlas-slate-copy: hsla(215, 25%, 27%, 1);
+$blush-signal-atlas-mist-border: hsla(214, 32%, 91%, 1);
+$blush-signal-atlas-deep-slate: hsla(222, 47%, 11%, 1);
+
+/* SCSS RGB */
+$blush-signal-atlas-signal-ink: rgba(31, 10, 23, 1);
+$blush-signal-atlas-rose-route: rgba(131, 24, 67, 1);
+$blush-signal-atlas-active-rose: rgba(190, 24, 93, 1);
+$blush-signal-atlas-blush-core: rgba(219, 39, 119, 1);
+$blush-signal-atlas-pink-flash: rgba(249, 168, 212, 1);
+$blush-signal-atlas-cream-notice: rgba(253, 242, 248, 1);
+$blush-signal-atlas-white-signal: rgba(255, 255, 255, 1);
+$blush-signal-atlas-slate-copy: rgba(51, 65, 85, 1);
+$blush-signal-atlas-mist-border: rgba(226, 232, 240, 1);
+$blush-signal-atlas-deep-slate: rgba(15, 23, 42, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1f0a17ff, #831843ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff, #ffffffff, #334155ff, #e2e8f0ff, #0f172aff);
+$gradient-right: linear-gradient(90deg, #1f0a17ff, #831843ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff, #ffffffff, #334155ff, #e2e8f0ff, #0f172aff);
+$gradient-bottom: linear-gradient(180deg, #1f0a17ff, #831843ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff, #ffffffff, #334155ff, #e2e8f0ff, #0f172aff);
+$gradient-left: linear-gradient(270deg, #1f0a17ff, #831843ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff, #ffffffff, #334155ff, #e2e8f0ff, #0f172aff);
+$gradient-top-right: linear-gradient(45deg, #1f0a17ff, #831843ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff, #ffffffff, #334155ff, #e2e8f0ff, #0f172aff);
+$gradient-bottom-right: linear-gradient(135deg, #1f0a17ff, #831843ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff, #ffffffff, #334155ff, #e2e8f0ff, #0f172aff);
+$gradient-top-left: linear-gradient(225deg, #1f0a17ff, #831843ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff, #ffffffff, #334155ff, #e2e8f0ff, #0f172aff);
+$gradient-bottom-left: linear-gradient(315deg, #1f0a17ff, #831843ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff, #ffffffff, #334155ff, #e2e8f0ff, #0f172aff);
+$gradient-radial: radial-gradient(#1f0a17ff, #831843ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff, #ffffffff, #334155ff, #e2e8f0ff, #0f172aff);
+
+/* SCSS Map */
+$blush-signal-atlas-map: (
+    "blush-signal-atlas-signal-ink": #1f0a17ff,
+    "blush-signal-atlas-rose-route": #831843ff,
+    "blush-signal-atlas-active-rose": #be185dff,
+    "blush-signal-atlas-blush-core": #db2777ff,
+    "blush-signal-atlas-pink-flash": #f9a8d4ff,
+    "blush-signal-atlas-cream-notice": #fdf2f8ff,
+    "blush-signal-atlas-white-signal": #ffffffff,
+    "blush-signal-atlas-slate-copy": #334155ff,
+    "blush-signal-atlas-mist-border": #e2e8f0ff,
+    "blush-signal-atlas-deep-slate": #0f172aff
+);

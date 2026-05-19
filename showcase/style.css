@@ -73,6 +73,24 @@ body {
     box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
 }
 
+.facet-scroll {
+    border-radius: 14px;
+}
+
+.facet-btn {
+    min-height: 38px;
+}
+
+.facet-btn:focus-visible,
+.sub-filter-btn:focus-visible {
+    outline: 2px solid rgba(99, 102, 241, 0.65);
+    outline-offset: 2px;
+}
+
+.facet-btn.active {
+    box-shadow: 0 10px 22px rgba(99, 102, 241, 0.22);
+}
+
 /* Shimmer Animation */
 @keyframes shimmer {
     0% { background-position: -1000px 0; }

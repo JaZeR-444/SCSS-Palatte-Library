@@ -1,0 +1,105 @@
+/*---
+id: solar-circuit-matrix
+name: Solar Circuit Matrix
+author: JaZeR-444
+version: 1.0.0
+category: Yellow & Technical
+count: 9
+description: A technical yellow matrix with console darks, amber diagnostic ramps, bright signal states, and clean terminal surfaces.
+tags:
+  mood:
+  - yellow
+  - technical
+  aesthetic:
+  - Circuit
+  - Developer
+intent: A yellow-focused 9-color palette designed for developer tools, monitoring, analytics.
+suggested_use:
+- Developer Tools
+- Monitoring
+- Analytics
+url: https://coolors.co/171104-422006-854d0e-a16207-ca8a04-eab308-fde047-fef9c3-fefce8
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--solar-circuit-matrix-console-black: #171104ff;
+--solar-circuit-matrix-trace-brown: #422006ff;
+--solar-circuit-matrix-circuit-gold: #854d0eff;
+--solar-circuit-matrix-warning-amber: #a16207ff;
+--solar-circuit-matrix-status-gold: #ca8a04ff;
+--solar-circuit-matrix-signal-yellow: #eab308ff;
+--solar-circuit-matrix-pulse-lime: #fde047ff;
+--solar-circuit-matrix-terminal-cream: #fef9c3ff;
+--solar-circuit-matrix-signal-white: #fefce8ff;
+
+/* CSS HSL */
+--solar-circuit-matrix-console-black: hsla(41, 70%, 5%, 1);
+--solar-circuit-matrix-trace-brown: hsla(26, 83%, 14%, 1);
+--solar-circuit-matrix-circuit-gold: hsla(32, 81%, 29%, 1);
+--solar-circuit-matrix-warning-amber: hsla(35, 92%, 33%, 1);
+--solar-circuit-matrix-status-gold: hsla(41, 96%, 40%, 1);
+--solar-circuit-matrix-signal-yellow: hsla(45, 93%, 47%, 1);
+--solar-circuit-matrix-pulse-lime: hsla(50, 98%, 64%, 1);
+--solar-circuit-matrix-terminal-cream: hsla(55, 97%, 88%, 1);
+--solar-circuit-matrix-signal-white: hsla(55, 92%, 95%, 1);
+}
+
+/* SCSS HEX */
+$solar-circuit-matrix-console-black: #171104ff;
+$solar-circuit-matrix-trace-brown: #422006ff;
+$solar-circuit-matrix-circuit-gold: #854d0eff;
+$solar-circuit-matrix-warning-amber: #a16207ff;
+$solar-circuit-matrix-status-gold: #ca8a04ff;
+$solar-circuit-matrix-signal-yellow: #eab308ff;
+$solar-circuit-matrix-pulse-lime: #fde047ff;
+$solar-circuit-matrix-terminal-cream: #fef9c3ff;
+$solar-circuit-matrix-signal-white: #fefce8ff;
+
+/* SCSS HSL */
+$solar-circuit-matrix-console-black: hsla(41, 70%, 5%, 1);
+$solar-circuit-matrix-trace-brown: hsla(26, 83%, 14%, 1);
+$solar-circuit-matrix-circuit-gold: hsla(32, 81%, 29%, 1);
+$solar-circuit-matrix-warning-amber: hsla(35, 92%, 33%, 1);
+$solar-circuit-matrix-status-gold: hsla(41, 96%, 40%, 1);
+$solar-circuit-matrix-signal-yellow: hsla(45, 93%, 47%, 1);
+$solar-circuit-matrix-pulse-lime: hsla(50, 98%, 64%, 1);
+$solar-circuit-matrix-terminal-cream: hsla(55, 97%, 88%, 1);
+$solar-circuit-matrix-signal-white: hsla(55, 92%, 95%, 1);
+
+/* SCSS RGB */
+$solar-circuit-matrix-console-black: rgba(23, 17, 4, 1);
+$solar-circuit-matrix-trace-brown: rgba(66, 32, 6, 1);
+$solar-circuit-matrix-circuit-gold: rgba(133, 77, 14, 1);
+$solar-circuit-matrix-warning-amber: rgba(161, 98, 7, 1);
+$solar-circuit-matrix-status-gold: rgba(202, 138, 4, 1);
+$solar-circuit-matrix-signal-yellow: rgba(234, 179, 8, 1);
+$solar-circuit-matrix-pulse-lime: rgba(253, 224, 71, 1);
+$solar-circuit-matrix-terminal-cream: rgba(254, 249, 195, 1);
+$solar-circuit-matrix-signal-white: rgba(254, 252, 232, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #171104ff, #422006ff, #854d0eff, #a16207ff, #ca8a04ff, #eab308ff, #fde047ff, #fef9c3ff, #fefce8ff);
+$gradient-right: linear-gradient(90deg, #171104ff, #422006ff, #854d0eff, #a16207ff, #ca8a04ff, #eab308ff, #fde047ff, #fef9c3ff, #fefce8ff);
+$gradient-bottom: linear-gradient(180deg, #171104ff, #422006ff, #854d0eff, #a16207ff, #ca8a04ff, #eab308ff, #fde047ff, #fef9c3ff, #fefce8ff);
+$gradient-left: linear-gradient(270deg, #171104ff, #422006ff, #854d0eff, #a16207ff, #ca8a04ff, #eab308ff, #fde047ff, #fef9c3ff, #fefce8ff);
+$gradient-top-right: linear-gradient(45deg, #171104ff, #422006ff, #854d0eff, #a16207ff, #ca8a04ff, #eab308ff, #fde047ff, #fef9c3ff, #fefce8ff);
+$gradient-bottom-right: linear-gradient(135deg, #171104ff, #422006ff, #854d0eff, #a16207ff, #ca8a04ff, #eab308ff, #fde047ff, #fef9c3ff, #fefce8ff);
+$gradient-top-left: linear-gradient(225deg, #171104ff, #422006ff, #854d0eff, #a16207ff, #ca8a04ff, #eab308ff, #fde047ff, #fef9c3ff, #fefce8ff);
+$gradient-bottom-left: linear-gradient(315deg, #171104ff, #422006ff, #854d0eff, #a16207ff, #ca8a04ff, #eab308ff, #fde047ff, #fef9c3ff, #fefce8ff);
+$gradient-radial: radial-gradient(#171104ff, #422006ff, #854d0eff, #a16207ff, #ca8a04ff, #eab308ff, #fde047ff, #fef9c3ff, #fefce8ff);
+
+/* SCSS Map */
+$solar-circuit-matrix-map: (
+    "solar-circuit-matrix-console-black": #171104ff,
+    "solar-circuit-matrix-trace-brown": #422006ff,
+    "solar-circuit-matrix-circuit-gold": #854d0eff,
+    "solar-circuit-matrix-warning-amber": #a16207ff,
+    "solar-circuit-matrix-status-gold": #ca8a04ff,
+    "solar-circuit-matrix-signal-yellow": #eab308ff,
+    "solar-circuit-matrix-pulse-lime": #fde047ff,
+    "solar-circuit-matrix-terminal-cream": #fef9c3ff,
+    "solar-circuit-matrix-signal-white": #fefce8ff
+);

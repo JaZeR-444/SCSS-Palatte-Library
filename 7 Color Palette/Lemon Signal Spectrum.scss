@@ -1,0 +1,93 @@
+/*---
+id: lemon-signal-spectrum
+name: Lemon Signal Spectrum
+author: JaZeR-444
+version: 1.0.0
+category: Yellow & Interface
+count: 7
+description: A bright lemon spectrum with high-contrast anchors, golden UI states, and soft readable notification surfaces.
+tags:
+  mood:
+  - yellow
+  - bright
+  aesthetic:
+  - Signal
+  - Interface
+intent: A yellow-focused 7-color palette designed for product ui, onboarding, notifications.
+suggested_use:
+- Product UI
+- Onboarding
+- Notifications
+url: https://coolors.co/18140a-854d0e-ca8a04-facc15-fef08a-fefce8-ffffff
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--lemon-signal-spectrum-signal-ink: #18140aff;
+--lemon-signal-spectrum-golden-route: #854d0eff;
+--lemon-signal-spectrum-active-gold: #ca8a04ff;
+--lemon-signal-spectrum-lemon-core: #facc15ff;
+--lemon-signal-spectrum-lemon-flash: #fef08aff;
+--lemon-signal-spectrum-cream-notice: #fefce8ff;
+--lemon-signal-spectrum-white-signal: #ffffffff;
+
+/* CSS HSL */
+--lemon-signal-spectrum-signal-ink: hsla(43, 41%, 7%, 1);
+--lemon-signal-spectrum-golden-route: hsla(32, 81%, 29%, 1);
+--lemon-signal-spectrum-active-gold: hsla(41, 96%, 40%, 1);
+--lemon-signal-spectrum-lemon-core: hsla(48, 96%, 53%, 1);
+--lemon-signal-spectrum-lemon-flash: hsla(53, 98%, 77%, 1);
+--lemon-signal-spectrum-cream-notice: hsla(55, 92%, 95%, 1);
+--lemon-signal-spectrum-white-signal: hsla(0, 0%, 100%, 1);
+}
+
+/* SCSS HEX */
+$lemon-signal-spectrum-signal-ink: #18140aff;
+$lemon-signal-spectrum-golden-route: #854d0eff;
+$lemon-signal-spectrum-active-gold: #ca8a04ff;
+$lemon-signal-spectrum-lemon-core: #facc15ff;
+$lemon-signal-spectrum-lemon-flash: #fef08aff;
+$lemon-signal-spectrum-cream-notice: #fefce8ff;
+$lemon-signal-spectrum-white-signal: #ffffffff;
+
+/* SCSS HSL */
+$lemon-signal-spectrum-signal-ink: hsla(43, 41%, 7%, 1);
+$lemon-signal-spectrum-golden-route: hsla(32, 81%, 29%, 1);
+$lemon-signal-spectrum-active-gold: hsla(41, 96%, 40%, 1);
+$lemon-signal-spectrum-lemon-core: hsla(48, 96%, 53%, 1);
+$lemon-signal-spectrum-lemon-flash: hsla(53, 98%, 77%, 1);
+$lemon-signal-spectrum-cream-notice: hsla(55, 92%, 95%, 1);
+$lemon-signal-spectrum-white-signal: hsla(0, 0%, 100%, 1);
+
+/* SCSS RGB */
+$lemon-signal-spectrum-signal-ink: rgba(24, 20, 10, 1);
+$lemon-signal-spectrum-golden-route: rgba(133, 77, 14, 1);
+$lemon-signal-spectrum-active-gold: rgba(202, 138, 4, 1);
+$lemon-signal-spectrum-lemon-core: rgba(250, 204, 21, 1);
+$lemon-signal-spectrum-lemon-flash: rgba(254, 240, 138, 1);
+$lemon-signal-spectrum-cream-notice: rgba(254, 252, 232, 1);
+$lemon-signal-spectrum-white-signal: rgba(255, 255, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #18140aff, #854d0eff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff, #ffffffff);
+$gradient-right: linear-gradient(90deg, #18140aff, #854d0eff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff, #ffffffff);
+$gradient-bottom: linear-gradient(180deg, #18140aff, #854d0eff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff, #ffffffff);
+$gradient-left: linear-gradient(270deg, #18140aff, #854d0eff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff, #ffffffff);
+$gradient-top-right: linear-gradient(45deg, #18140aff, #854d0eff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff, #ffffffff);
+$gradient-bottom-right: linear-gradient(135deg, #18140aff, #854d0eff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff, #ffffffff);
+$gradient-top-left: linear-gradient(225deg, #18140aff, #854d0eff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff, #ffffffff);
+$gradient-bottom-left: linear-gradient(315deg, #18140aff, #854d0eff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff, #ffffffff);
+$gradient-radial: radial-gradient(#18140aff, #854d0eff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff, #ffffffff);
+
+/* SCSS Map */
+$lemon-signal-spectrum-map: (
+    "lemon-signal-spectrum-signal-ink": #18140aff,
+    "lemon-signal-spectrum-golden-route": #854d0eff,
+    "lemon-signal-spectrum-active-gold": #ca8a04ff,
+    "lemon-signal-spectrum-lemon-core": #facc15ff,
+    "lemon-signal-spectrum-lemon-flash": #fef08aff,
+    "lemon-signal-spectrum-cream-notice": #fefce8ff,
+    "lemon-signal-spectrum-white-signal": #ffffffff
+);

@@ -1,0 +1,69 @@
+/*---
+id: solar-circuit-trio
+name: Solar Circuit Trio
+author: JaZeR-444
+version: 1.0.0
+category: Yellow & Technical
+count: 3
+description: A technical yellow palette with dark console anchors, circuit gold, and bright diagnostic signal.
+tags:
+  mood:
+  - yellow
+  - technical
+  aesthetic:
+  - Circuit
+  - Developer
+intent: A yellow-focused 3-color palette designed for developer tools, monitoring, analytics.
+suggested_use:
+- Developer Tools
+- Monitoring
+- Analytics
+url: https://coolors.co/171104-a16207-eab308
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--solar-circuit-trio-console-black: #171104ff;
+--solar-circuit-trio-circuit-gold: #a16207ff;
+--solar-circuit-trio-signal-yellow: #eab308ff;
+
+/* CSS HSL */
+--solar-circuit-trio-console-black: hsla(41, 70%, 5%, 1);
+--solar-circuit-trio-circuit-gold: hsla(35, 92%, 33%, 1);
+--solar-circuit-trio-signal-yellow: hsla(45, 93%, 47%, 1);
+}
+
+/* SCSS HEX */
+$solar-circuit-trio-console-black: #171104ff;
+$solar-circuit-trio-circuit-gold: #a16207ff;
+$solar-circuit-trio-signal-yellow: #eab308ff;
+
+/* SCSS HSL */
+$solar-circuit-trio-console-black: hsla(41, 70%, 5%, 1);
+$solar-circuit-trio-circuit-gold: hsla(35, 92%, 33%, 1);
+$solar-circuit-trio-signal-yellow: hsla(45, 93%, 47%, 1);
+
+/* SCSS RGB */
+$solar-circuit-trio-console-black: rgba(23, 17, 4, 1);
+$solar-circuit-trio-circuit-gold: rgba(161, 98, 7, 1);
+$solar-circuit-trio-signal-yellow: rgba(234, 179, 8, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #171104ff, #a16207ff, #eab308ff);
+$gradient-right: linear-gradient(90deg, #171104ff, #a16207ff, #eab308ff);
+$gradient-bottom: linear-gradient(180deg, #171104ff, #a16207ff, #eab308ff);
+$gradient-left: linear-gradient(270deg, #171104ff, #a16207ff, #eab308ff);
+$gradient-top-right: linear-gradient(45deg, #171104ff, #a16207ff, #eab308ff);
+$gradient-bottom-right: linear-gradient(135deg, #171104ff, #a16207ff, #eab308ff);
+$gradient-top-left: linear-gradient(225deg, #171104ff, #a16207ff, #eab308ff);
+$gradient-bottom-left: linear-gradient(315deg, #171104ff, #a16207ff, #eab308ff);
+$gradient-radial: radial-gradient(#171104ff, #a16207ff, #eab308ff);
+
+/* SCSS Map */
+$solar-circuit-trio-map: (
+    "solar-circuit-trio-console-black": #171104ff,
+    "solar-circuit-trio-circuit-gold": #a16207ff,
+    "solar-circuit-trio-signal-yellow": #eab308ff
+);

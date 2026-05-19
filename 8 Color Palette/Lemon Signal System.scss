@@ -1,0 +1,99 @@
+/*---
+id: lemon-signal-system
+name: Lemon Signal System
+author: JaZeR-444
+version: 1.0.0
+category: Yellow & Interface
+count: 8
+description: A bright lemon UI system for onboarding flows, callouts, notifications, badges, and upbeat product surfaces.
+tags:
+  mood:
+  - yellow
+  - bright
+  aesthetic:
+  - Signal
+  - Interface
+intent: A yellow-focused 8-color palette designed for product ui, onboarding, notifications.
+suggested_use:
+- Product UI
+- Onboarding
+- Notifications
+url: https://coolors.co/18140a-854d0e-ca8a04-facc15-fef08a-fefce8-ffffff-334155
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--lemon-signal-system-signal-ink: #18140aff;
+--lemon-signal-system-golden-route: #854d0eff;
+--lemon-signal-system-active-gold: #ca8a04ff;
+--lemon-signal-system-lemon-core: #facc15ff;
+--lemon-signal-system-lemon-flash: #fef08aff;
+--lemon-signal-system-cream-notice: #fefce8ff;
+--lemon-signal-system-white-signal: #ffffffff;
+--lemon-signal-system-slate-copy: #334155ff;
+
+/* CSS HSL */
+--lemon-signal-system-signal-ink: hsla(43, 41%, 7%, 1);
+--lemon-signal-system-golden-route: hsla(32, 81%, 29%, 1);
+--lemon-signal-system-active-gold: hsla(41, 96%, 40%, 1);
+--lemon-signal-system-lemon-core: hsla(48, 96%, 53%, 1);
+--lemon-signal-system-lemon-flash: hsla(53, 98%, 77%, 1);
+--lemon-signal-system-cream-notice: hsla(55, 92%, 95%, 1);
+--lemon-signal-system-white-signal: hsla(0, 0%, 100%, 1);
+--lemon-signal-system-slate-copy: hsla(215, 25%, 27%, 1);
+}
+
+/* SCSS HEX */
+$lemon-signal-system-signal-ink: #18140aff;
+$lemon-signal-system-golden-route: #854d0eff;
+$lemon-signal-system-active-gold: #ca8a04ff;
+$lemon-signal-system-lemon-core: #facc15ff;
+$lemon-signal-system-lemon-flash: #fef08aff;
+$lemon-signal-system-cream-notice: #fefce8ff;
+$lemon-signal-system-white-signal: #ffffffff;
+$lemon-signal-system-slate-copy: #334155ff;
+
+/* SCSS HSL */
+$lemon-signal-system-signal-ink: hsla(43, 41%, 7%, 1);
+$lemon-signal-system-golden-route: hsla(32, 81%, 29%, 1);
+$lemon-signal-system-active-gold: hsla(41, 96%, 40%, 1);
+$lemon-signal-system-lemon-core: hsla(48, 96%, 53%, 1);
+$lemon-signal-system-lemon-flash: hsla(53, 98%, 77%, 1);
+$lemon-signal-system-cream-notice: hsla(55, 92%, 95%, 1);
+$lemon-signal-system-white-signal: hsla(0, 0%, 100%, 1);
+$lemon-signal-system-slate-copy: hsla(215, 25%, 27%, 1);
+
+/* SCSS RGB */
+$lemon-signal-system-signal-ink: rgba(24, 20, 10, 1);
+$lemon-signal-system-golden-route: rgba(133, 77, 14, 1);
+$lemon-signal-system-active-gold: rgba(202, 138, 4, 1);
+$lemon-signal-system-lemon-core: rgba(250, 204, 21, 1);
+$lemon-signal-system-lemon-flash: rgba(254, 240, 138, 1);
+$lemon-signal-system-cream-notice: rgba(254, 252, 232, 1);
+$lemon-signal-system-white-signal: rgba(255, 255, 255, 1);
+$lemon-signal-system-slate-copy: rgba(51, 65, 85, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #18140aff, #854d0eff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff, #ffffffff, #334155ff);
+$gradient-right: linear-gradient(90deg, #18140aff, #854d0eff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff, #ffffffff, #334155ff);
+$gradient-bottom: linear-gradient(180deg, #18140aff, #854d0eff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff, #ffffffff, #334155ff);
+$gradient-left: linear-gradient(270deg, #18140aff, #854d0eff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff, #ffffffff, #334155ff);
+$gradient-top-right: linear-gradient(45deg, #18140aff, #854d0eff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff, #ffffffff, #334155ff);
+$gradient-bottom-right: linear-gradient(135deg, #18140aff, #854d0eff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff, #ffffffff, #334155ff);
+$gradient-top-left: linear-gradient(225deg, #18140aff, #854d0eff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff, #ffffffff, #334155ff);
+$gradient-bottom-left: linear-gradient(315deg, #18140aff, #854d0eff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff, #ffffffff, #334155ff);
+$gradient-radial: radial-gradient(#18140aff, #854d0eff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff, #ffffffff, #334155ff);
+
+/* SCSS Map */
+$lemon-signal-system-map: (
+    "lemon-signal-system-signal-ink": #18140aff,
+    "lemon-signal-system-golden-route": #854d0eff,
+    "lemon-signal-system-active-gold": #ca8a04ff,
+    "lemon-signal-system-lemon-core": #facc15ff,
+    "lemon-signal-system-lemon-flash": #fef08aff,
+    "lemon-signal-system-cream-notice": #fefce8ff,
+    "lemon-signal-system-white-signal": #ffffffff,
+    "lemon-signal-system-slate-copy": #334155ff
+);

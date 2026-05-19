@@ -1,0 +1,75 @@
+/*---
+id: fuchsia-circuit-quartet
+name: Fuchsia Circuit Quartet
+author: JaZeR-444
+version: 1.0.0
+category: Pink & Technical
+count: 4
+description: A technical fuchsia palette with dark console surfaces, magenta control states, and bright diagnostic signal.
+tags:
+  mood:
+  - pink
+  - technical
+  aesthetic:
+  - Circuit
+  - Developer
+intent: A pink-focused 4-color palette designed for developer tools, monitoring, analytics.
+suggested_use:
+- Developer Tools
+- Monitoring
+- Analytics
+url: https://coolors.co/1a0712-500724-be185d-ec4899
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--fuchsia-circuit-quartet-console-plum: #1a0712ff;
+--fuchsia-circuit-quartet-trace-wine: #500724ff;
+--fuchsia-circuit-quartet-circuit-fuchsia: #be185dff;
+--fuchsia-circuit-quartet-signal-pink: #ec4899ff;
+
+/* CSS HSL */
+--fuchsia-circuit-quartet-console-plum: hsla(325, 58%, 6%, 1);
+--fuchsia-circuit-quartet-trace-wine: hsla(336, 84%, 17%, 1);
+--fuchsia-circuit-quartet-circuit-fuchsia: hsla(335, 78%, 42%, 1);
+--fuchsia-circuit-quartet-signal-pink: hsla(330, 81%, 60%, 1);
+}
+
+/* SCSS HEX */
+$fuchsia-circuit-quartet-console-plum: #1a0712ff;
+$fuchsia-circuit-quartet-trace-wine: #500724ff;
+$fuchsia-circuit-quartet-circuit-fuchsia: #be185dff;
+$fuchsia-circuit-quartet-signal-pink: #ec4899ff;
+
+/* SCSS HSL */
+$fuchsia-circuit-quartet-console-plum: hsla(325, 58%, 6%, 1);
+$fuchsia-circuit-quartet-trace-wine: hsla(336, 84%, 17%, 1);
+$fuchsia-circuit-quartet-circuit-fuchsia: hsla(335, 78%, 42%, 1);
+$fuchsia-circuit-quartet-signal-pink: hsla(330, 81%, 60%, 1);
+
+/* SCSS RGB */
+$fuchsia-circuit-quartet-console-plum: rgba(26, 7, 18, 1);
+$fuchsia-circuit-quartet-trace-wine: rgba(80, 7, 36, 1);
+$fuchsia-circuit-quartet-circuit-fuchsia: rgba(190, 24, 93, 1);
+$fuchsia-circuit-quartet-signal-pink: rgba(236, 72, 153, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1a0712ff, #500724ff, #be185dff, #ec4899ff);
+$gradient-right: linear-gradient(90deg, #1a0712ff, #500724ff, #be185dff, #ec4899ff);
+$gradient-bottom: linear-gradient(180deg, #1a0712ff, #500724ff, #be185dff, #ec4899ff);
+$gradient-left: linear-gradient(270deg, #1a0712ff, #500724ff, #be185dff, #ec4899ff);
+$gradient-top-right: linear-gradient(45deg, #1a0712ff, #500724ff, #be185dff, #ec4899ff);
+$gradient-bottom-right: linear-gradient(135deg, #1a0712ff, #500724ff, #be185dff, #ec4899ff);
+$gradient-top-left: linear-gradient(225deg, #1a0712ff, #500724ff, #be185dff, #ec4899ff);
+$gradient-bottom-left: linear-gradient(315deg, #1a0712ff, #500724ff, #be185dff, #ec4899ff);
+$gradient-radial: radial-gradient(#1a0712ff, #500724ff, #be185dff, #ec4899ff);
+
+/* SCSS Map */
+$fuchsia-circuit-quartet-map: (
+    "fuchsia-circuit-quartet-console-plum": #1a0712ff,
+    "fuchsia-circuit-quartet-trace-wine": #500724ff,
+    "fuchsia-circuit-quartet-circuit-fuchsia": #be185dff,
+    "fuchsia-circuit-quartet-signal-pink": #ec4899ff
+);

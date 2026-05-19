@@ -1,0 +1,99 @@
+/*---
+id: sakura-bloom-system
+name: Sakura Bloom System
+author: JaZeR-444
+version: 1.0.0
+category: Pink & Natural
+count: 8
+description: A sakura bloom palette with plum shadows, blossom pinks, warm petals, and pale editorial surfaces.
+tags:
+  mood:
+  - pink
+  - soft
+  aesthetic:
+  - Sakura
+  - Botanical
+intent: A pink-focused 8-color palette designed for wellness, editorial, lifestyle.
+suggested_use:
+- Wellness
+- Editorial
+- Lifestyle
+url: https://coolors.co/1f0a17-4a044e-831843-be185d-ec4899-f9a8d4-fce7f3-fdf2f8
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--sakura-bloom-system-bloom-shadow: #1f0a17ff;
+--sakura-bloom-system-plum-branch: #4a044eff;
+--sakura-bloom-system-sakura-bark: #831843ff;
+--sakura-bloom-system-petal-rose: #be185dff;
+--sakura-bloom-system-bloom-pink: #ec4899ff;
+--sakura-bloom-system-soft-petal: #f9a8d4ff;
+--sakura-bloom-system-blossom-cream: #fce7f3ff;
+--sakura-bloom-system-morning-mist: #fdf2f8ff;
+
+/* CSS HSL */
+--sakura-bloom-system-bloom-shadow: hsla(323, 51%, 8%, 1);
+--sakura-bloom-system-plum-branch: hsla(297, 90%, 16%, 1);
+--sakura-bloom-system-sakura-bark: hsla(336, 69%, 30%, 1);
+--sakura-bloom-system-petal-rose: hsla(335, 78%, 42%, 1);
+--sakura-bloom-system-bloom-pink: hsla(330, 81%, 60%, 1);
+--sakura-bloom-system-soft-petal: hsla(327, 87%, 82%, 1);
+--sakura-bloom-system-blossom-cream: hsla(326, 78%, 95%, 1);
+--sakura-bloom-system-morning-mist: hsla(327, 73%, 97%, 1);
+}
+
+/* SCSS HEX */
+$sakura-bloom-system-bloom-shadow: #1f0a17ff;
+$sakura-bloom-system-plum-branch: #4a044eff;
+$sakura-bloom-system-sakura-bark: #831843ff;
+$sakura-bloom-system-petal-rose: #be185dff;
+$sakura-bloom-system-bloom-pink: #ec4899ff;
+$sakura-bloom-system-soft-petal: #f9a8d4ff;
+$sakura-bloom-system-blossom-cream: #fce7f3ff;
+$sakura-bloom-system-morning-mist: #fdf2f8ff;
+
+/* SCSS HSL */
+$sakura-bloom-system-bloom-shadow: hsla(323, 51%, 8%, 1);
+$sakura-bloom-system-plum-branch: hsla(297, 90%, 16%, 1);
+$sakura-bloom-system-sakura-bark: hsla(336, 69%, 30%, 1);
+$sakura-bloom-system-petal-rose: hsla(335, 78%, 42%, 1);
+$sakura-bloom-system-bloom-pink: hsla(330, 81%, 60%, 1);
+$sakura-bloom-system-soft-petal: hsla(327, 87%, 82%, 1);
+$sakura-bloom-system-blossom-cream: hsla(326, 78%, 95%, 1);
+$sakura-bloom-system-morning-mist: hsla(327, 73%, 97%, 1);
+
+/* SCSS RGB */
+$sakura-bloom-system-bloom-shadow: rgba(31, 10, 23, 1);
+$sakura-bloom-system-plum-branch: rgba(74, 4, 78, 1);
+$sakura-bloom-system-sakura-bark: rgba(131, 24, 67, 1);
+$sakura-bloom-system-petal-rose: rgba(190, 24, 93, 1);
+$sakura-bloom-system-bloom-pink: rgba(236, 72, 153, 1);
+$sakura-bloom-system-soft-petal: rgba(249, 168, 212, 1);
+$sakura-bloom-system-blossom-cream: rgba(252, 231, 243, 1);
+$sakura-bloom-system-morning-mist: rgba(253, 242, 248, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1f0a17ff, #4a044eff, #831843ff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff, #fdf2f8ff);
+$gradient-right: linear-gradient(90deg, #1f0a17ff, #4a044eff, #831843ff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff, #fdf2f8ff);
+$gradient-bottom: linear-gradient(180deg, #1f0a17ff, #4a044eff, #831843ff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff, #fdf2f8ff);
+$gradient-left: linear-gradient(270deg, #1f0a17ff, #4a044eff, #831843ff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff, #fdf2f8ff);
+$gradient-top-right: linear-gradient(45deg, #1f0a17ff, #4a044eff, #831843ff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff, #fdf2f8ff);
+$gradient-bottom-right: linear-gradient(135deg, #1f0a17ff, #4a044eff, #831843ff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff, #fdf2f8ff);
+$gradient-top-left: linear-gradient(225deg, #1f0a17ff, #4a044eff, #831843ff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff, #fdf2f8ff);
+$gradient-bottom-left: linear-gradient(315deg, #1f0a17ff, #4a044eff, #831843ff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff, #fdf2f8ff);
+$gradient-radial: radial-gradient(#1f0a17ff, #4a044eff, #831843ff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff, #fdf2f8ff);
+
+/* SCSS Map */
+$sakura-bloom-system-map: (
+    "sakura-bloom-system-bloom-shadow": #1f0a17ff,
+    "sakura-bloom-system-plum-branch": #4a044eff,
+    "sakura-bloom-system-sakura-bark": #831843ff,
+    "sakura-bloom-system-petal-rose": #be185dff,
+    "sakura-bloom-system-bloom-pink": #ec4899ff,
+    "sakura-bloom-system-soft-petal": #f9a8d4ff,
+    "sakura-bloom-system-blossom-cream": #fce7f3ff,
+    "sakura-bloom-system-morning-mist": #fdf2f8ff
+);

@@ -1,0 +1,105 @@
+/*---
+id: fuchsia-circuit-matrix
+name: Pink & Technical
+author: JaZeR-444
+version: 1.0.0
+category: Fuchsia Circuit Matrix
+count: 9
+description: A technical fuchsia matrix with console darks, magenta diagnostic ramps, bright pink states, and soft terminal surfaces.
+tags:
+  mood:
+  - pink
+  - technical
+  aesthetic:
+  - Circuit
+  - Developer
+intent: A pink-focused 9-color palette designed for developer tools, monitoring, analytics.
+suggested_use:
+- Developer Tools
+- Monitoring
+- Analytics
+url: https://coolors.co/1a0712-500724-831843-9d174d-be185d-ec4899-f9a8d4-fce7f3-fdf2f8
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--fuchsia-circuit-matrix-console-plum: #1a0712ff;
+--fuchsia-circuit-matrix-trace-wine: #500724ff;
+--fuchsia-circuit-matrix-circuit-fuchsia: #831843ff;
+--fuchsia-circuit-matrix-active-magenta: #9d174dff;
+--fuchsia-circuit-matrix-status-pink: #be185dff;
+--fuchsia-circuit-matrix-signal-pink: #ec4899ff;
+--fuchsia-circuit-matrix-pulse-rose: #f9a8d4ff;
+--fuchsia-circuit-matrix-terminal-blush: #fce7f3ff;
+--fuchsia-circuit-matrix-signal-white: #fdf2f8ff;
+
+/* CSS HSL */
+--fuchsia-circuit-matrix-console-plum: hsla(325, 58%, 6%, 1);
+--fuchsia-circuit-matrix-trace-wine: hsla(336, 84%, 17%, 1);
+--fuchsia-circuit-matrix-circuit-fuchsia: hsla(336, 69%, 30%, 1);
+--fuchsia-circuit-matrix-active-magenta: hsla(336, 74%, 35%, 1);
+--fuchsia-circuit-matrix-status-pink: hsla(335, 78%, 42%, 1);
+--fuchsia-circuit-matrix-signal-pink: hsla(330, 81%, 60%, 1);
+--fuchsia-circuit-matrix-pulse-rose: hsla(327, 87%, 82%, 1);
+--fuchsia-circuit-matrix-terminal-blush: hsla(326, 78%, 95%, 1);
+--fuchsia-circuit-matrix-signal-white: hsla(327, 73%, 97%, 1);
+}
+
+/* SCSS HEX */
+$fuchsia-circuit-matrix-console-plum: #1a0712ff;
+$fuchsia-circuit-matrix-trace-wine: #500724ff;
+$fuchsia-circuit-matrix-circuit-fuchsia: #831843ff;
+$fuchsia-circuit-matrix-active-magenta: #9d174dff;
+$fuchsia-circuit-matrix-status-pink: #be185dff;
+$fuchsia-circuit-matrix-signal-pink: #ec4899ff;
+$fuchsia-circuit-matrix-pulse-rose: #f9a8d4ff;
+$fuchsia-circuit-matrix-terminal-blush: #fce7f3ff;
+$fuchsia-circuit-matrix-signal-white: #fdf2f8ff;
+
+/* SCSS HSL */
+$fuchsia-circuit-matrix-console-plum: hsla(325, 58%, 6%, 1);
+$fuchsia-circuit-matrix-trace-wine: hsla(336, 84%, 17%, 1);
+$fuchsia-circuit-matrix-circuit-fuchsia: hsla(336, 69%, 30%, 1);
+$fuchsia-circuit-matrix-active-magenta: hsla(336, 74%, 35%, 1);
+$fuchsia-circuit-matrix-status-pink: hsla(335, 78%, 42%, 1);
+$fuchsia-circuit-matrix-signal-pink: hsla(330, 81%, 60%, 1);
+$fuchsia-circuit-matrix-pulse-rose: hsla(327, 87%, 82%, 1);
+$fuchsia-circuit-matrix-terminal-blush: hsla(326, 78%, 95%, 1);
+$fuchsia-circuit-matrix-signal-white: hsla(327, 73%, 97%, 1);
+
+/* SCSS RGB */
+$fuchsia-circuit-matrix-console-plum: rgba(26, 7, 18, 1);
+$fuchsia-circuit-matrix-trace-wine: rgba(80, 7, 36, 1);
+$fuchsia-circuit-matrix-circuit-fuchsia: rgba(131, 24, 67, 1);
+$fuchsia-circuit-matrix-active-magenta: rgba(157, 23, 77, 1);
+$fuchsia-circuit-matrix-status-pink: rgba(190, 24, 93, 1);
+$fuchsia-circuit-matrix-signal-pink: rgba(236, 72, 153, 1);
+$fuchsia-circuit-matrix-pulse-rose: rgba(249, 168, 212, 1);
+$fuchsia-circuit-matrix-terminal-blush: rgba(252, 231, 243, 1);
+$fuchsia-circuit-matrix-signal-white: rgba(253, 242, 248, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1a0712ff, #500724ff, #831843ff, #9d174dff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff, #fdf2f8ff);
+$gradient-right: linear-gradient(90deg, #1a0712ff, #500724ff, #831843ff, #9d174dff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff, #fdf2f8ff);
+$gradient-bottom: linear-gradient(180deg, #1a0712ff, #500724ff, #831843ff, #9d174dff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff, #fdf2f8ff);
+$gradient-left: linear-gradient(270deg, #1a0712ff, #500724ff, #831843ff, #9d174dff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff, #fdf2f8ff);
+$gradient-top-right: linear-gradient(45deg, #1a0712ff, #500724ff, #831843ff, #9d174dff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff, #fdf2f8ff);
+$gradient-bottom-right: linear-gradient(135deg, #1a0712ff, #500724ff, #831843ff, #9d174dff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff, #fdf2f8ff);
+$gradient-top-left: linear-gradient(225deg, #1a0712ff, #500724ff, #831843ff, #9d174dff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff, #fdf2f8ff);
+$gradient-bottom-left: linear-gradient(315deg, #1a0712ff, #500724ff, #831843ff, #9d174dff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff, #fdf2f8ff);
+$gradient-radial: radial-gradient(#1a0712ff, #500724ff, #831843ff, #9d174dff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff, #fdf2f8ff);
+
+/* SCSS Map */
+$fuchsia-circuit-matrix-map: (
+    "fuchsia-circuit-matrix-console-plum": #1a0712ff,
+    "fuchsia-circuit-matrix-trace-wine": #500724ff,
+    "fuchsia-circuit-matrix-circuit-fuchsia": #831843ff,
+    "fuchsia-circuit-matrix-active-magenta": #9d174dff,
+    "fuchsia-circuit-matrix-status-pink": #be185dff,
+    "fuchsia-circuit-matrix-signal-pink": #ec4899ff,
+    "fuchsia-circuit-matrix-pulse-rose": #f9a8d4ff,
+    "fuchsia-circuit-matrix-terminal-blush": #fce7f3ff,
+    "fuchsia-circuit-matrix-signal-white": #fdf2f8ff
+);

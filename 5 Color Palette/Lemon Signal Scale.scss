@@ -1,0 +1,81 @@
+/*---
+id: lemon-signal-scale
+name: Lemon Signal Scale
+author: JaZeR-444
+version: 1.0.0
+category: Yellow & Interface
+count: 5
+description: A bright lemon palette for onboarding screens, alerts, badges, callouts, and lively product surfaces.
+tags:
+  mood:
+  - yellow
+  - bright
+  aesthetic:
+  - Signal
+  - Interface
+intent: A yellow-focused 5-color palette designed for product ui, onboarding, notifications.
+suggested_use:
+- Product UI
+- Onboarding
+- Notifications
+url: https://coolors.co/18140a-ca8a04-facc15-fef08a-fefce8
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--lemon-signal-scale-signal-ink: #18140aff;
+--lemon-signal-scale-golden-route: #ca8a04ff;
+--lemon-signal-scale-lemon-core: #facc15ff;
+--lemon-signal-scale-lemon-flash: #fef08aff;
+--lemon-signal-scale-cream-notice: #fefce8ff;
+
+/* CSS HSL */
+--lemon-signal-scale-signal-ink: hsla(43, 41%, 7%, 1);
+--lemon-signal-scale-golden-route: hsla(41, 96%, 40%, 1);
+--lemon-signal-scale-lemon-core: hsla(48, 96%, 53%, 1);
+--lemon-signal-scale-lemon-flash: hsla(53, 98%, 77%, 1);
+--lemon-signal-scale-cream-notice: hsla(55, 92%, 95%, 1);
+}
+
+/* SCSS HEX */
+$lemon-signal-scale-signal-ink: #18140aff;
+$lemon-signal-scale-golden-route: #ca8a04ff;
+$lemon-signal-scale-lemon-core: #facc15ff;
+$lemon-signal-scale-lemon-flash: #fef08aff;
+$lemon-signal-scale-cream-notice: #fefce8ff;
+
+/* SCSS HSL */
+$lemon-signal-scale-signal-ink: hsla(43, 41%, 7%, 1);
+$lemon-signal-scale-golden-route: hsla(41, 96%, 40%, 1);
+$lemon-signal-scale-lemon-core: hsla(48, 96%, 53%, 1);
+$lemon-signal-scale-lemon-flash: hsla(53, 98%, 77%, 1);
+$lemon-signal-scale-cream-notice: hsla(55, 92%, 95%, 1);
+
+/* SCSS RGB */
+$lemon-signal-scale-signal-ink: rgba(24, 20, 10, 1);
+$lemon-signal-scale-golden-route: rgba(202, 138, 4, 1);
+$lemon-signal-scale-lemon-core: rgba(250, 204, 21, 1);
+$lemon-signal-scale-lemon-flash: rgba(254, 240, 138, 1);
+$lemon-signal-scale-cream-notice: rgba(254, 252, 232, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #18140aff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff);
+$gradient-right: linear-gradient(90deg, #18140aff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff);
+$gradient-bottom: linear-gradient(180deg, #18140aff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff);
+$gradient-left: linear-gradient(270deg, #18140aff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff);
+$gradient-top-right: linear-gradient(45deg, #18140aff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff);
+$gradient-bottom-right: linear-gradient(135deg, #18140aff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff);
+$gradient-top-left: linear-gradient(225deg, #18140aff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff);
+$gradient-bottom-left: linear-gradient(315deg, #18140aff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff);
+$gradient-radial: radial-gradient(#18140aff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff);
+
+/* SCSS Map */
+$lemon-signal-scale-map: (
+    "lemon-signal-scale-signal-ink": #18140aff,
+    "lemon-signal-scale-golden-route": #ca8a04ff,
+    "lemon-signal-scale-lemon-core": #facc15ff,
+    "lemon-signal-scale-lemon-flash": #fef08aff,
+    "lemon-signal-scale-cream-notice": #fefce8ff
+);

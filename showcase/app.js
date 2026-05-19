@@ -29,7 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
         roleOverlay: getEl('role-labels-overlay'),
         roleContent: getEl('role-labels-content'),
         roleChips: getEl('palette-role-chips'),
-        contrastStatus: getEl('contrast-status')
+        contrastStatus: getEl('contrast-status'),
+        facetSummary: getEl('facet-summary'),
+        resetFilters: getEl('reset-filters'),
+        resultsCount: getEl('results-count')
     };
 
     // --- State ---
@@ -41,6 +44,26 @@ document.addEventListener('DOMContentLoaded', () => {
     let activeDashVariant = 'analytics';
     let sandboxZoom = 100;
     let showRoleLabels = false;
+    let recentIds = loadJson('paletteShowcase.recentIds', []);
+    let savedIds = loadJson('paletteShowcase.favorites', []);
+
+    function loadJson(key, fallback) {
+        try {
+            const raw = localStorage.getItem(key);
+            return raw ? JSON.parse(raw) : fallback;
+        } catch (e) {
+            return fallback;
+        }
+    }
+
+    function saveJson(key, value) {
+        localStorage.setItem(key, JSON.stringify(value));
+    }
+
+    function rememberPalette(paletteId) {
+        recentIds = [paletteId, ...recentIds.filter(id => id !== paletteId)].slice(0, 24);
+        saveJson('paletteShowcase.recentIds', recentIds);
+    }
 
     // --- Core Logic: Search & Filtering ---
 
@@ -49,10 +72,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const filtered = allPalettes.filter(p => {
             const matchesFacet = 
                 activeFacet === 'all' || 
+                (activeFacet === 'recent' && recentIds.includes(p.id)) ||
+                (activeFacet === 'favorites' && savedIds.includes(p.id)) ||
                 (activeFacet === 'count' && p.count === parseInt(activeSubFilter)) ||
                 (activeFacet === 'category' && p.category === activeSubFilter) ||
                 (activeFacet === 'mood' && p.tags && p.tags.mood && p.tags.mood.includes(activeSubFilter)) ||
-                (activeFacet === 'aesthetic' && p.tags && p.tags.aesthetic && p.tags.aesthetic.includes(activeSubFilter));
+                (activeFacet === 'aesthetic' && p.tags && p.tags.aesthetic && p.tags.aesthetic.includes(activeSubFilter)) ||
+                (activeFacet === 'color' && getPaletteColorGroups(p).includes(activeSubFilter));
 
             const matchesSearch = 
                 !query || 
@@ -64,6 +90,43 @@ document.addEventListener('DOMContentLoaded', () => {
             return matchesFacet && matchesSearch;
         });
         renderPalettes(filtered);
+        updateFacetSummary(filtered.length);
+        if (elements.resultsCount) {
+            elements.resultsCount.textContent = `${filtered.length} palettes`;
+        }
+    }
+
+    function getPaletteColorGroups(palette) {
+        const text = [
+            palette.category,
+            palette.name,
+            ...((palette.tags && palette.tags.mood) || []),
+            ...((palette.tags && palette.tags.aesthetic) || [])
+        ].join(' ').toLowerCase();
+        const groups = [];
+        ['black', 'red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink', 'gray', 'neutral', 'dark', 'warm', 'cool'].forEach(group => {
+            if (text.includes(group) || (group === 'gray' && text.includes('grey'))) groups.push(group);
+        });
+        return groups.length ? groups : ['mixed'];
+    }
+
+    function getFacetLabel() {
+        const labels = {
+            all: 'Explore the full palette library.',
+            recent: 'Recently opened palettes from this browser.',
+            favorites: 'Saved palettes from this browser.',
+            count: activeSubFilter ? `Showing ${activeSubFilter}-color palettes.` : 'Group palettes by swatch count.',
+            category: activeSubFilter ? `Showing ${activeSubFilter} palettes.` : 'Group palettes by category.',
+            mood: activeSubFilter ? `Showing ${activeSubFilter} mood palettes.` : 'Group palettes by mood.',
+            aesthetic: activeSubFilter ? `Showing ${activeSubFilter} aesthetic palettes.` : 'Group palettes by aesthetic.',
+            color: activeSubFilter ? `Showing ${activeSubFilter} palettes.` : 'Group palettes by dominant color family.'
+        };
+        return labels[activeFacet] || labels.all;
+    }
+
+    function updateFacetSummary(count) {
+        if (!elements.facetSummary) return;
+        elements.facetSummary.textContent = `${getFacetLabel()} ${count} match${count === 1 ? '' : 'es'}.`;
     }
 
     // --- UI Utilities ---
@@ -169,6 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function openModal(p) {
         console.log(`Showcase: Opening modal for ${p.name}`);
         currentPalette = p;
+        rememberPalette(p.id);
         if (elements.title) elements.title.textContent = p.name;
         if (elements.vibe) elements.vibe.textContent = `${p.category} • ${p.count} Colors`;
         if (elements.code) elements.code.textContent = '/* Loading SCSS... */';
@@ -525,24 +589,39 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll('.facet-btn').forEach(b => {
                 b.classList.remove('active', 'border-indigo-500', 'bg-indigo-500', 'text-white');
                 b.classList.add('border-gray-200', 'dark:border-slate-800', 'text-gray-500');
+                b.setAttribute('aria-selected', 'false');
             });
             btn.classList.add('active', 'border-indigo-500', 'bg-indigo-500', 'text-white');
+            btn.classList.remove('border-gray-200', 'dark:border-slate-800', 'text-gray-500');
+            btn.setAttribute('aria-selected', 'true');
             activeFacet = btn.dataset.facet;
             renderSubFilters(activeFacet);
             applyFilters();
         });
+
+        if (elements.resetFilters) {
+            elements.resetFilters.addEventListener('click', () => {
+                activeFacet = 'all';
+                activeSubFilter = null;
+                searchQuery = '';
+                if (elements.search) elements.search.value = '';
+                document.querySelector('[data-facet="all"]')?.click();
+            });
+        }
     }
 
     function renderSubFilters(facet) {
         if (!elements.nav || !elements.subFilterContainer) return;
         elements.nav.innerHTML = '';
-        if (facet === 'all') { elements.subFilterContainer.classList.add('hidden'); return; }
+        activeSubFilter = null;
+        if (facet === 'all' || facet === 'recent' || facet === 'favorites') { elements.subFilterContainer.classList.add('hidden'); return; }
         elements.subFilterContainer.classList.remove('hidden');
         let values = [];
         if (facet === 'count') values = [...new Set(allPalettes.map(p => p.count))].sort((a,b)=>a-b);
         else if (facet === 'category') values = [...new Set(allPalettes.map(p => p.category))].filter(Boolean).sort();
         else if (facet === 'mood') values = [...new Set(allPalettes.flatMap(p => (p.tags && p.tags.mood) || []))].sort();
         else if (facet === 'aesthetic') values = [...new Set(allPalettes.flatMap(p => (p.tags && p.tags.aesthetic) || []))].sort();
+        else if (facet === 'color') values = [...new Set(allPalettes.flatMap(getPaletteColorGroups))].sort();
         values.forEach((val, i) => {
             const btn = document.createElement('button');
             btn.className = `sub-filter-btn px-4 py-1.5 rounded-xl text-xs font-bold border transition-all whitespace-nowrap ${i === 0 ? 'active border-indigo-500 bg-indigo-50 text-indigo-600' : 'border-gray-200 dark:border-slate-800 text-gray-500'}`;
@@ -566,7 +645,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
             allPalettes = data;
             setupFacetedFilters();
-            renderPalettes(data);
+            applyFilters();
         })
         .catch(err => console.error('Showcase Error:', err));
 });

@@ -1,0 +1,105 @@
+/*---
+id: blush-signal-matrix
+name: Blush Signal Matrix
+author: JaZeR-444
+version: 1.0.0
+category: Pink & Interface
+count: 9
+description: A bright blush matrix for product UI, combining dark anchors, rose alerts, pale notices, and readable copy colors.
+tags:
+  mood:
+  - pink
+  - bright
+  aesthetic:
+  - Signal
+  - Interface
+intent: A pink-focused 9-color palette designed for product ui, onboarding, notifications.
+suggested_use:
+- Product UI
+- Onboarding
+- Notifications
+url: https://coolors.co/1f0a17-831843-be185d-db2777-f9a8d4-fdf2f8-ffffff-334155-e2e8f0
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--blush-signal-matrix-signal-ink: #1f0a17ff;
+--blush-signal-matrix-rose-route: #831843ff;
+--blush-signal-matrix-active-rose: #be185dff;
+--blush-signal-matrix-blush-core: #db2777ff;
+--blush-signal-matrix-pink-flash: #f9a8d4ff;
+--blush-signal-matrix-cream-notice: #fdf2f8ff;
+--blush-signal-matrix-white-signal: #ffffffff;
+--blush-signal-matrix-slate-copy: #334155ff;
+--blush-signal-matrix-mist-border: #e2e8f0ff;
+
+/* CSS HSL */
+--blush-signal-matrix-signal-ink: hsla(323, 51%, 8%, 1);
+--blush-signal-matrix-rose-route: hsla(336, 69%, 30%, 1);
+--blush-signal-matrix-active-rose: hsla(335, 78%, 42%, 1);
+--blush-signal-matrix-blush-core: hsla(333, 71%, 51%, 1);
+--blush-signal-matrix-pink-flash: hsla(327, 87%, 82%, 1);
+--blush-signal-matrix-cream-notice: hsla(327, 73%, 97%, 1);
+--blush-signal-matrix-white-signal: hsla(0, 0%, 100%, 1);
+--blush-signal-matrix-slate-copy: hsla(215, 25%, 27%, 1);
+--blush-signal-matrix-mist-border: hsla(214, 32%, 91%, 1);
+}
+
+/* SCSS HEX */
+$blush-signal-matrix-signal-ink: #1f0a17ff;
+$blush-signal-matrix-rose-route: #831843ff;
+$blush-signal-matrix-active-rose: #be185dff;
+$blush-signal-matrix-blush-core: #db2777ff;
+$blush-signal-matrix-pink-flash: #f9a8d4ff;
+$blush-signal-matrix-cream-notice: #fdf2f8ff;
+$blush-signal-matrix-white-signal: #ffffffff;
+$blush-signal-matrix-slate-copy: #334155ff;
+$blush-signal-matrix-mist-border: #e2e8f0ff;
+
+/* SCSS HSL */
+$blush-signal-matrix-signal-ink: hsla(323, 51%, 8%, 1);
+$blush-signal-matrix-rose-route: hsla(336, 69%, 30%, 1);
+$blush-signal-matrix-active-rose: hsla(335, 78%, 42%, 1);
+$blush-signal-matrix-blush-core: hsla(333, 71%, 51%, 1);
+$blush-signal-matrix-pink-flash: hsla(327, 87%, 82%, 1);
+$blush-signal-matrix-cream-notice: hsla(327, 73%, 97%, 1);
+$blush-signal-matrix-white-signal: hsla(0, 0%, 100%, 1);
+$blush-signal-matrix-slate-copy: hsla(215, 25%, 27%, 1);
+$blush-signal-matrix-mist-border: hsla(214, 32%, 91%, 1);
+
+/* SCSS RGB */
+$blush-signal-matrix-signal-ink: rgba(31, 10, 23, 1);
+$blush-signal-matrix-rose-route: rgba(131, 24, 67, 1);
+$blush-signal-matrix-active-rose: rgba(190, 24, 93, 1);
+$blush-signal-matrix-blush-core: rgba(219, 39, 119, 1);
+$blush-signal-matrix-pink-flash: rgba(249, 168, 212, 1);
+$blush-signal-matrix-cream-notice: rgba(253, 242, 248, 1);
+$blush-signal-matrix-white-signal: rgba(255, 255, 255, 1);
+$blush-signal-matrix-slate-copy: rgba(51, 65, 85, 1);
+$blush-signal-matrix-mist-border: rgba(226, 232, 240, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1f0a17ff, #831843ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff, #ffffffff, #334155ff, #e2e8f0ff);
+$gradient-right: linear-gradient(90deg, #1f0a17ff, #831843ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff, #ffffffff, #334155ff, #e2e8f0ff);
+$gradient-bottom: linear-gradient(180deg, #1f0a17ff, #831843ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff, #ffffffff, #334155ff, #e2e8f0ff);
+$gradient-left: linear-gradient(270deg, #1f0a17ff, #831843ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff, #ffffffff, #334155ff, #e2e8f0ff);
+$gradient-top-right: linear-gradient(45deg, #1f0a17ff, #831843ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff, #ffffffff, #334155ff, #e2e8f0ff);
+$gradient-bottom-right: linear-gradient(135deg, #1f0a17ff, #831843ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff, #ffffffff, #334155ff, #e2e8f0ff);
+$gradient-top-left: linear-gradient(225deg, #1f0a17ff, #831843ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff, #ffffffff, #334155ff, #e2e8f0ff);
+$gradient-bottom-left: linear-gradient(315deg, #1f0a17ff, #831843ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff, #ffffffff, #334155ff, #e2e8f0ff);
+$gradient-radial: radial-gradient(#1f0a17ff, #831843ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff, #ffffffff, #334155ff, #e2e8f0ff);
+
+/* SCSS Map */
+$blush-signal-matrix-map: (
+    "blush-signal-matrix-signal-ink": #1f0a17ff,
+    "blush-signal-matrix-rose-route": #831843ff,
+    "blush-signal-matrix-active-rose": #be185dff,
+    "blush-signal-matrix-blush-core": #db2777ff,
+    "blush-signal-matrix-pink-flash": #f9a8d4ff,
+    "blush-signal-matrix-cream-notice": #fdf2f8ff,
+    "blush-signal-matrix-white-signal": #ffffffff,
+    "blush-signal-matrix-slate-copy": #334155ff,
+    "blush-signal-matrix-mist-border": #e2e8f0ff
+);

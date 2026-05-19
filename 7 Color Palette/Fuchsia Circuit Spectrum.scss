@@ -1,0 +1,93 @@
+/*---
+id: fuchsia-circuit-spectrum
+name: Fuchsia Circuit Spectrum
+author: JaZeR-444
+version: 1.0.0
+category: Pink & Technical
+count: 7
+description: A technical fuchsia spectrum with console darks, magenta diagnostics, bright signal states, and readable pale highlights.
+tags:
+  mood:
+  - pink
+  - technical
+  aesthetic:
+  - Circuit
+  - Developer
+intent: A pink-focused 7-color palette designed for developer tools, monitoring, analytics.
+suggested_use:
+- Developer Tools
+- Monitoring
+- Analytics
+url: https://coolors.co/1a0712-500724-9d174d-be185d-ec4899-f9a8d4-fce7f3
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--fuchsia-circuit-spectrum-console-plum: #1a0712ff;
+--fuchsia-circuit-spectrum-trace-wine: #500724ff;
+--fuchsia-circuit-spectrum-circuit-fuchsia: #9d174dff;
+--fuchsia-circuit-spectrum-active-magenta: #be185dff;
+--fuchsia-circuit-spectrum-signal-pink: #ec4899ff;
+--fuchsia-circuit-spectrum-pulse-rose: #f9a8d4ff;
+--fuchsia-circuit-spectrum-terminal-blush: #fce7f3ff;
+
+/* CSS HSL */
+--fuchsia-circuit-spectrum-console-plum: hsla(325, 58%, 6%, 1);
+--fuchsia-circuit-spectrum-trace-wine: hsla(336, 84%, 17%, 1);
+--fuchsia-circuit-spectrum-circuit-fuchsia: hsla(336, 74%, 35%, 1);
+--fuchsia-circuit-spectrum-active-magenta: hsla(335, 78%, 42%, 1);
+--fuchsia-circuit-spectrum-signal-pink: hsla(330, 81%, 60%, 1);
+--fuchsia-circuit-spectrum-pulse-rose: hsla(327, 87%, 82%, 1);
+--fuchsia-circuit-spectrum-terminal-blush: hsla(326, 78%, 95%, 1);
+}
+
+/* SCSS HEX */
+$fuchsia-circuit-spectrum-console-plum: #1a0712ff;
+$fuchsia-circuit-spectrum-trace-wine: #500724ff;
+$fuchsia-circuit-spectrum-circuit-fuchsia: #9d174dff;
+$fuchsia-circuit-spectrum-active-magenta: #be185dff;
+$fuchsia-circuit-spectrum-signal-pink: #ec4899ff;
+$fuchsia-circuit-spectrum-pulse-rose: #f9a8d4ff;
+$fuchsia-circuit-spectrum-terminal-blush: #fce7f3ff;
+
+/* SCSS HSL */
+$fuchsia-circuit-spectrum-console-plum: hsla(325, 58%, 6%, 1);
+$fuchsia-circuit-spectrum-trace-wine: hsla(336, 84%, 17%, 1);
+$fuchsia-circuit-spectrum-circuit-fuchsia: hsla(336, 74%, 35%, 1);
+$fuchsia-circuit-spectrum-active-magenta: hsla(335, 78%, 42%, 1);
+$fuchsia-circuit-spectrum-signal-pink: hsla(330, 81%, 60%, 1);
+$fuchsia-circuit-spectrum-pulse-rose: hsla(327, 87%, 82%, 1);
+$fuchsia-circuit-spectrum-terminal-blush: hsla(326, 78%, 95%, 1);
+
+/* SCSS RGB */
+$fuchsia-circuit-spectrum-console-plum: rgba(26, 7, 18, 1);
+$fuchsia-circuit-spectrum-trace-wine: rgba(80, 7, 36, 1);
+$fuchsia-circuit-spectrum-circuit-fuchsia: rgba(157, 23, 77, 1);
+$fuchsia-circuit-spectrum-active-magenta: rgba(190, 24, 93, 1);
+$fuchsia-circuit-spectrum-signal-pink: rgba(236, 72, 153, 1);
+$fuchsia-circuit-spectrum-pulse-rose: rgba(249, 168, 212, 1);
+$fuchsia-circuit-spectrum-terminal-blush: rgba(252, 231, 243, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1a0712ff, #500724ff, #9d174dff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff);
+$gradient-right: linear-gradient(90deg, #1a0712ff, #500724ff, #9d174dff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff);
+$gradient-bottom: linear-gradient(180deg, #1a0712ff, #500724ff, #9d174dff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff);
+$gradient-left: linear-gradient(270deg, #1a0712ff, #500724ff, #9d174dff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff);
+$gradient-top-right: linear-gradient(45deg, #1a0712ff, #500724ff, #9d174dff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff);
+$gradient-bottom-right: linear-gradient(135deg, #1a0712ff, #500724ff, #9d174dff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff);
+$gradient-top-left: linear-gradient(225deg, #1a0712ff, #500724ff, #9d174dff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff);
+$gradient-bottom-left: linear-gradient(315deg, #1a0712ff, #500724ff, #9d174dff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff);
+$gradient-radial: radial-gradient(#1a0712ff, #500724ff, #9d174dff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff);
+
+/* SCSS Map */
+$fuchsia-circuit-spectrum-map: (
+    "fuchsia-circuit-spectrum-console-plum": #1a0712ff,
+    "fuchsia-circuit-spectrum-trace-wine": #500724ff,
+    "fuchsia-circuit-spectrum-circuit-fuchsia": #9d174dff,
+    "fuchsia-circuit-spectrum-active-magenta": #be185dff,
+    "fuchsia-circuit-spectrum-signal-pink": #ec4899ff,
+    "fuchsia-circuit-spectrum-pulse-rose": #f9a8d4ff,
+    "fuchsia-circuit-spectrum-terminal-blush": #fce7f3ff
+);

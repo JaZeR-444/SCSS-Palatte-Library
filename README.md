@@ -1,6 +1,6 @@
 # SCSS Palette Library (v2.0.0)
 
-A professional design system of themed, production-ready SCSS and CSS color palettes, featuring 272+ curated collections.
+A professional design system of themed, production-ready SCSS and CSS color palettes, featuring 292+ curated collections.
 
 ## 🚀 Installation
 
@@ -49,7 +49,7 @@ Native CSS variables are provided for every palette via the `:root` selector:
 - **SCSS Maps**: Programmatic access to all colors via `${filename}-map`.
 - **Unified Entry Point**: Central `_index.scss` for streamlined imports.
 - **Interactive Showcase**: A completely revamped gallery in `/showcase` featuring:
-    - **Advanced Search**: Filter 270+ palettes by name or semantic tags (neon, warm, professional, etc.).
+    - **Advanced Search**: Filter 290+ palettes by name or semantic tags (neon, warm, professional, etc.).
     - **Live UI Preview**: Test colors on mock dashboard and mobile components before implementing.
     - **Typography Sandbox**: Check headings, body text, links, badges, blockquotes, and inline code against each palette.
     - **Personal Organization**: Save palettes into named local collections and revisit recently viewed palettes.
@@ -77,6 +77,7 @@ Native CSS variables are provided for every palette via the `:root` selector:
 - **Red Systems**: Crimson Circuit, Ruby Ledger, Ember Market, Rose Signal...
 - **Black Systems**: Obsidian Circuit, Carbon Ledger, Ink Studio, Void Chrome...
 - **Orange Systems**: Amber Forge, Tangerine Signal, Marigold Commerce, Copper Canyon...
+- **Yellow Systems**: Solar Circuit, Lemon Signal, Honey Commerce, Sunflower Field...
 
 ## 📜 License
 
