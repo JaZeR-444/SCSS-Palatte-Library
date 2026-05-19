@@ -1,0 +1,99 @@
+/*---
+id: porcelain-circuit-system
+name: Porcelain Circuit System
+author: JaZeR-444
+version: 1.0.0
+category: White & Technical
+count: 8
+description: A technical white system for developer tools, monitoring surfaces, clean panels, borders, and porcelain UI shells.
+tags:
+  mood:
+  - white
+  - technical
+  aesthetic:
+  - Circuit
+  - Developer
+intent: A white-focused 8-color palette designed for developer tools, monitoring, analytics.
+suggested_use:
+- Developer Tools
+- Monitoring
+- Analytics
+url: https://coolors.co/111827-475569-94a3b8-cbd5e1-e5e7eb-f1f5f9-f8fafc-ffffff
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--porcelain-circuit-system-graphite-console: #111827ff;
+--porcelain-circuit-system-slate-trace: #475569ff;
+--porcelain-circuit-system-cool-trace: #94a3b8ff;
+--porcelain-circuit-system-ceramic-border: #cbd5e1ff;
+--porcelain-circuit-system-porcelain-panel: #e5e7ebff;
+--porcelain-circuit-system-soft-console: #f1f5f9ff;
+--porcelain-circuit-system-mist-surface: #f8fafcff;
+--porcelain-circuit-system-signal-white: #ffffffff;
+
+/* CSS HSL */
+--porcelain-circuit-system-graphite-console: hsla(221, 39%, 11%, 1);
+--porcelain-circuit-system-slate-trace: hsla(215, 19%, 35%, 1);
+--porcelain-circuit-system-cool-trace: hsla(215, 20%, 65%, 1);
+--porcelain-circuit-system-ceramic-border: hsla(213, 27%, 84%, 1);
+--porcelain-circuit-system-porcelain-panel: hsla(220, 13%, 91%, 1);
+--porcelain-circuit-system-soft-console: hsla(210, 40%, 96%, 1);
+--porcelain-circuit-system-mist-surface: hsla(210, 40%, 98%, 1);
+--porcelain-circuit-system-signal-white: hsla(0, 0%, 100%, 1);
+}
+
+/* SCSS HEX */
+$porcelain-circuit-system-graphite-console: #111827ff;
+$porcelain-circuit-system-slate-trace: #475569ff;
+$porcelain-circuit-system-cool-trace: #94a3b8ff;
+$porcelain-circuit-system-ceramic-border: #cbd5e1ff;
+$porcelain-circuit-system-porcelain-panel: #e5e7ebff;
+$porcelain-circuit-system-soft-console: #f1f5f9ff;
+$porcelain-circuit-system-mist-surface: #f8fafcff;
+$porcelain-circuit-system-signal-white: #ffffffff;
+
+/* SCSS HSL */
+$porcelain-circuit-system-graphite-console: hsla(221, 39%, 11%, 1);
+$porcelain-circuit-system-slate-trace: hsla(215, 19%, 35%, 1);
+$porcelain-circuit-system-cool-trace: hsla(215, 20%, 65%, 1);
+$porcelain-circuit-system-ceramic-border: hsla(213, 27%, 84%, 1);
+$porcelain-circuit-system-porcelain-panel: hsla(220, 13%, 91%, 1);
+$porcelain-circuit-system-soft-console: hsla(210, 40%, 96%, 1);
+$porcelain-circuit-system-mist-surface: hsla(210, 40%, 98%, 1);
+$porcelain-circuit-system-signal-white: hsla(0, 0%, 100%, 1);
+
+/* SCSS RGB */
+$porcelain-circuit-system-graphite-console: rgba(17, 24, 39, 1);
+$porcelain-circuit-system-slate-trace: rgba(71, 85, 105, 1);
+$porcelain-circuit-system-cool-trace: rgba(148, 163, 184, 1);
+$porcelain-circuit-system-ceramic-border: rgba(203, 213, 225, 1);
+$porcelain-circuit-system-porcelain-panel: rgba(229, 231, 235, 1);
+$porcelain-circuit-system-soft-console: rgba(241, 245, 249, 1);
+$porcelain-circuit-system-mist-surface: rgba(248, 250, 252, 1);
+$porcelain-circuit-system-signal-white: rgba(255, 255, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e5e7ebff, #f1f5f9ff, #f8fafcff, #ffffffff);
+$gradient-right: linear-gradient(90deg, #111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e5e7ebff, #f1f5f9ff, #f8fafcff, #ffffffff);
+$gradient-bottom: linear-gradient(180deg, #111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e5e7ebff, #f1f5f9ff, #f8fafcff, #ffffffff);
+$gradient-left: linear-gradient(270deg, #111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e5e7ebff, #f1f5f9ff, #f8fafcff, #ffffffff);
+$gradient-top-right: linear-gradient(45deg, #111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e5e7ebff, #f1f5f9ff, #f8fafcff, #ffffffff);
+$gradient-bottom-right: linear-gradient(135deg, #111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e5e7ebff, #f1f5f9ff, #f8fafcff, #ffffffff);
+$gradient-top-left: linear-gradient(225deg, #111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e5e7ebff, #f1f5f9ff, #f8fafcff, #ffffffff);
+$gradient-bottom-left: linear-gradient(315deg, #111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e5e7ebff, #f1f5f9ff, #f8fafcff, #ffffffff);
+$gradient-radial: radial-gradient(#111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e5e7ebff, #f1f5f9ff, #f8fafcff, #ffffffff);
+
+/* SCSS Map */
+$porcelain-circuit-system-map: (
+    "porcelain-circuit-system-graphite-console": #111827ff,
+    "porcelain-circuit-system-slate-trace": #475569ff,
+    "porcelain-circuit-system-cool-trace": #94a3b8ff,
+    "porcelain-circuit-system-ceramic-border": #cbd5e1ff,
+    "porcelain-circuit-system-porcelain-panel": #e5e7ebff,
+    "porcelain-circuit-system-soft-console": #f1f5f9ff,
+    "porcelain-circuit-system-mist-surface": #f8fafcff,
+    "porcelain-circuit-system-signal-white": #ffffffff
+);

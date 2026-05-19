@@ -1,0 +1,99 @@
+/*---
+id: alpine-mist-system
+name: Alpine Mist System
+author: JaZeR-444
+version: 1.0.0
+category: White & Natural
+count: 8
+description: An alpine white palette with mist surfaces, snow whites, cool ice accents, and mountain-shadow anchors.
+tags:
+  mood:
+  - white
+  - cool
+  aesthetic:
+  - Alpine
+  - Nature
+intent: A white-focused 8-color palette designed for outdoor, wellness, editorial.
+suggested_use:
+- Outdoor
+- Wellness
+- Editorial
+url: https://coolors.co/0f172a-64748b-cbd5e1-e2e8f0-f8fafc-ffffff-dbeafe-bfdbfe
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--alpine-mist-system-mountain-shadow: #0f172aff;
+--alpine-mist-system-stone-ridge: #64748bff;
+--alpine-mist-system-frost-edge: #cbd5e1ff;
+--alpine-mist-system-alpine-mist: #e2e8f0ff;
+--alpine-mist-system-snow-field: #f8fafcff;
+--alpine-mist-system-glacier-white: #ffffffff;
+--alpine-mist-system-ice-blue: #dbeafeff;
+--alpine-mist-system-sky-reflection: #bfdbfeff;
+
+/* CSS HSL */
+--alpine-mist-system-mountain-shadow: hsla(222, 47%, 11%, 1);
+--alpine-mist-system-stone-ridge: hsla(215, 16%, 47%, 1);
+--alpine-mist-system-frost-edge: hsla(213, 27%, 84%, 1);
+--alpine-mist-system-alpine-mist: hsla(214, 32%, 91%, 1);
+--alpine-mist-system-snow-field: hsla(210, 40%, 98%, 1);
+--alpine-mist-system-glacier-white: hsla(0, 0%, 100%, 1);
+--alpine-mist-system-ice-blue: hsla(214, 95%, 93%, 1);
+--alpine-mist-system-sky-reflection: hsla(213, 97%, 87%, 1);
+}
+
+/* SCSS HEX */
+$alpine-mist-system-mountain-shadow: #0f172aff;
+$alpine-mist-system-stone-ridge: #64748bff;
+$alpine-mist-system-frost-edge: #cbd5e1ff;
+$alpine-mist-system-alpine-mist: #e2e8f0ff;
+$alpine-mist-system-snow-field: #f8fafcff;
+$alpine-mist-system-glacier-white: #ffffffff;
+$alpine-mist-system-ice-blue: #dbeafeff;
+$alpine-mist-system-sky-reflection: #bfdbfeff;
+
+/* SCSS HSL */
+$alpine-mist-system-mountain-shadow: hsla(222, 47%, 11%, 1);
+$alpine-mist-system-stone-ridge: hsla(215, 16%, 47%, 1);
+$alpine-mist-system-frost-edge: hsla(213, 27%, 84%, 1);
+$alpine-mist-system-alpine-mist: hsla(214, 32%, 91%, 1);
+$alpine-mist-system-snow-field: hsla(210, 40%, 98%, 1);
+$alpine-mist-system-glacier-white: hsla(0, 0%, 100%, 1);
+$alpine-mist-system-ice-blue: hsla(214, 95%, 93%, 1);
+$alpine-mist-system-sky-reflection: hsla(213, 97%, 87%, 1);
+
+/* SCSS RGB */
+$alpine-mist-system-mountain-shadow: rgba(15, 23, 42, 1);
+$alpine-mist-system-stone-ridge: rgba(100, 116, 139, 1);
+$alpine-mist-system-frost-edge: rgba(203, 213, 225, 1);
+$alpine-mist-system-alpine-mist: rgba(226, 232, 240, 1);
+$alpine-mist-system-snow-field: rgba(248, 250, 252, 1);
+$alpine-mist-system-glacier-white: rgba(255, 255, 255, 1);
+$alpine-mist-system-ice-blue: rgba(219, 234, 254, 1);
+$alpine-mist-system-sky-reflection: rgba(191, 219, 254, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0f172aff, #64748bff, #cbd5e1ff, #e2e8f0ff, #f8fafcff, #ffffffff, #dbeafeff, #bfdbfeff);
+$gradient-right: linear-gradient(90deg, #0f172aff, #64748bff, #cbd5e1ff, #e2e8f0ff, #f8fafcff, #ffffffff, #dbeafeff, #bfdbfeff);
+$gradient-bottom: linear-gradient(180deg, #0f172aff, #64748bff, #cbd5e1ff, #e2e8f0ff, #f8fafcff, #ffffffff, #dbeafeff, #bfdbfeff);
+$gradient-left: linear-gradient(270deg, #0f172aff, #64748bff, #cbd5e1ff, #e2e8f0ff, #f8fafcff, #ffffffff, #dbeafeff, #bfdbfeff);
+$gradient-top-right: linear-gradient(45deg, #0f172aff, #64748bff, #cbd5e1ff, #e2e8f0ff, #f8fafcff, #ffffffff, #dbeafeff, #bfdbfeff);
+$gradient-bottom-right: linear-gradient(135deg, #0f172aff, #64748bff, #cbd5e1ff, #e2e8f0ff, #f8fafcff, #ffffffff, #dbeafeff, #bfdbfeff);
+$gradient-top-left: linear-gradient(225deg, #0f172aff, #64748bff, #cbd5e1ff, #e2e8f0ff, #f8fafcff, #ffffffff, #dbeafeff, #bfdbfeff);
+$gradient-bottom-left: linear-gradient(315deg, #0f172aff, #64748bff, #cbd5e1ff, #e2e8f0ff, #f8fafcff, #ffffffff, #dbeafeff, #bfdbfeff);
+$gradient-radial: radial-gradient(#0f172aff, #64748bff, #cbd5e1ff, #e2e8f0ff, #f8fafcff, #ffffffff, #dbeafeff, #bfdbfeff);
+
+/* SCSS Map */
+$alpine-mist-system-map: (
+    "alpine-mist-system-mountain-shadow": #0f172aff,
+    "alpine-mist-system-stone-ridge": #64748bff,
+    "alpine-mist-system-frost-edge": #cbd5e1ff,
+    "alpine-mist-system-alpine-mist": #e2e8f0ff,
+    "alpine-mist-system-snow-field": #f8fafcff,
+    "alpine-mist-system-glacier-white": #ffffffff,
+    "alpine-mist-system-ice-blue": #dbeafeff,
+    "alpine-mist-system-sky-reflection": #bfdbfeff
+);

@@ -32,7 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
         contrastStatus: getEl('contrast-status'),
         facetSummary: getEl('facet-summary'),
         resetFilters: getEl('reset-filters'),
-        resultsCount: getEl('results-count')
+        resultsCount: getEl('results-count'),
+        colorPicker: getEl('color-proximity-picker'),
+        colorPickerSwatch: getEl('color-picker-swatch'),
+        clearColorProximity: getEl('clear-color-proximity'),
+        libraryCount: getEl('library-count')
     };
 
     // --- State ---
@@ -46,6 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let showRoleLabels = false;
     let recentIds = loadJson('paletteShowcase.recentIds', []);
     let savedIds = loadJson('paletteShowcase.favorites', []);
+    let colorProximity = null;
+    let sortOrder = 'name';
 
     function loadJson(key, fallback) {
         try {
@@ -69,16 +75,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function applyFilters() {
         const query = searchQuery.trim().toLowerCase();
-        const filtered = allPalettes.filter(p => {
+        let filtered = allPalettes.filter(p => {
             const matchesFacet = 
                 activeFacet === 'all' || 
                 (activeFacet === 'recent' && recentIds.includes(p.id)) ||
                 (activeFacet === 'favorites' && savedIds.includes(p.id)) ||
-                (activeFacet === 'count' && p.count === parseInt(activeSubFilter)) ||
-                (activeFacet === 'category' && p.category === activeSubFilter) ||
-                (activeFacet === 'mood' && p.tags && p.tags.mood && p.tags.mood.includes(activeSubFilter)) ||
-                (activeFacet === 'aesthetic' && p.tags && p.tags.aesthetic && p.tags.aesthetic.includes(activeSubFilter)) ||
-                (activeFacet === 'color' && getPaletteColorGroups(p).includes(activeSubFilter));
+                (activeFacet === 'count' && p.count === parseInt(activeSubFilter));
 
             const matchesSearch = 
                 !query || 
@@ -89,11 +91,57 @@ document.addEventListener('DOMContentLoaded', () => {
 
             return matchesFacet && matchesSearch;
         });
+        if (colorProximity && sortOrder === 'proximity') {
+            filtered = filtered
+                .map(p => ({ palette: p, distance: getPaletteDistance(p, colorProximity) }))
+                .sort((a, b) => a.distance - b.distance || a.palette.name.localeCompare(b.palette.name))
+                .map(item => item.palette);
+        } else {
+            filtered = sortPalettes(filtered);
+        }
         renderPalettes(filtered);
         updateFacetSummary(filtered.length);
         if (elements.resultsCount) {
             elements.resultsCount.textContent = `${filtered.length} palettes`;
         }
+    }
+
+    function sortPalettes(palettes) {
+        const list = [...palettes];
+        if (activeFacet === 'recent' && sortOrder === 'recent') {
+            return list.sort((a, b) => recentIds.indexOf(a.id) - recentIds.indexOf(b.id));
+        }
+        if (sortOrder === 'recent') {
+            return list.sort((a, b) => {
+                const aTime = Date.parse(a.updated || a.created || '') || 0;
+                const bTime = Date.parse(b.updated || b.created || '') || 0;
+                return bTime - aTime || a.name.localeCompare(b.name);
+            });
+        }
+        if (sortOrder === 'count-asc') return list.sort((a, b) => a.count - b.count || a.name.localeCompare(b.name));
+        if (sortOrder === 'count-desc') return list.sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+        return list.sort((a, b) => a.name.localeCompare(b.name));
+    }
+
+    function getPaletteDistance(palette, targetHex) {
+        const target = hexToRgb255(targetHex);
+        return Math.min(...palette.colors.map(color => {
+            const rgb = hexToRgb255(color.hex);
+            return Math.sqrt(
+                Math.pow(rgb[0] - target[0], 2) +
+                Math.pow(rgb[1] - target[1], 2) +
+                Math.pow(rgb[2] - target[2], 2)
+            );
+        }));
+    }
+
+    function hexToRgb255(hex) {
+        const clean = (hex || '#000000').replace('#', '').slice(0, 6).padEnd(6, '0');
+        return [
+            parseInt(clean.slice(0, 2), 16) || 0,
+            parseInt(clean.slice(2, 4), 16) || 0,
+            parseInt(clean.slice(4, 6), 16) || 0
+        ];
     }
 
     function getPaletteColorGroups(palette) {
@@ -104,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ...((palette.tags && palette.tags.aesthetic) || [])
         ].join(' ').toLowerCase();
         const groups = [];
-        ['black', 'red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink', 'gray', 'neutral', 'dark', 'warm', 'cool'].forEach(group => {
+        ['white', 'black', 'red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink', 'gray', 'neutral', 'dark', 'warm', 'cool'].forEach(group => {
             if (text.includes(group) || (group === 'gray' && text.includes('grey'))) groups.push(group);
         });
         return groups.length ? groups : ['mixed'];
@@ -115,13 +163,10 @@ document.addEventListener('DOMContentLoaded', () => {
             all: 'Explore the full palette library.',
             recent: 'Recently opened palettes from this browser.',
             favorites: 'Saved palettes from this browser.',
-            count: activeSubFilter ? `Showing ${activeSubFilter}-color palettes.` : 'Group palettes by swatch count.',
-            category: activeSubFilter ? `Showing ${activeSubFilter} palettes.` : 'Group palettes by category.',
-            mood: activeSubFilter ? `Showing ${activeSubFilter} mood palettes.` : 'Group palettes by mood.',
-            aesthetic: activeSubFilter ? `Showing ${activeSubFilter} aesthetic palettes.` : 'Group palettes by aesthetic.',
-            color: activeSubFilter ? `Showing ${activeSubFilter} palettes.` : 'Group palettes by dominant color family.'
+            count: activeSubFilter ? `Showing ${activeSubFilter}-color palettes.` : 'Group palettes by swatch count.'
         };
-        return labels[activeFacet] || labels.all;
+        const colorText = colorProximity ? ` Sorted near ${colorProximity.toUpperCase()}.` : '';
+        return `${labels[activeFacet] || labels.all}${colorText}`;
     }
 
     function updateFacetSummary(count) {
@@ -344,6 +389,40 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     document.addEventListener('click', (e) => {
+        // Handle Palette Navigation Actions
+        const actionBtn = e.target.closest('[data-action]');
+        if (actionBtn && currentPalette) {
+            const action = actionBtn.dataset.action;
+            if (allPalettes.length === 0) return;
+            
+            const currentIndex = allPalettes.findIndex(p => p.id === currentPalette.id);
+            let target = null;
+            
+            if (action === 'random-palette') {
+                target = allPalettes[Math.floor(Math.random() * allPalettes.length)];
+            } else if (action === 'next-palette') {
+                target = allPalettes[(currentIndex + 1) % allPalettes.length];
+            } else if (action === 'prev-palette') {
+                target = allPalettes[(currentIndex - 1 + allPalettes.length) % allPalettes.length];
+            }
+            
+            if (target) {
+                openModal(target);
+                showToast(action === 'random-palette' ? 'Randomized palette!' : 'Jumping to next...');
+            }
+            return;
+        }
+
+        const randomPaletteGlobal = e.target.closest('#random-palette');
+        if (randomPaletteGlobal) {
+            if (allPalettes.length === 0) return;
+            const target = allPalettes[Math.floor(Math.random() * allPalettes.length)];
+            openModal(target);
+            showToast('Jumped to random palette!');
+            return;
+        }
+
+        // Section Shuffles
         const shuffleBtn = e.target.closest('[data-shuffle]');
         if (shuffleBtn) shuffleSectionColors(shuffleBtn.dataset.shuffle);
 
@@ -385,6 +464,18 @@ document.addEventListener('DOMContentLoaded', () => {
     if (elements.search) {
         elements.search.addEventListener('input', (e) => {
             searchQuery = e.target.value.toLowerCase();
+            applyFilters();
+        });
+    }
+
+    const sortSelect = getEl('sort-order');
+    if (sortSelect) {
+        sortSelect.addEventListener('change', (e) => {
+            sortOrder = e.target.value;
+            if (sortOrder === 'proximity' && !colorProximity) {
+                setColorProximity(elements.colorPicker ? elements.colorPicker.value : '#6366f1');
+                return;
+            }
             applyFilters();
         });
     }
@@ -499,20 +590,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function shuffleSectionColors(section) {
         if (!currentPalette) return;
-        const shuffled = [...currentPalette.colors].sort(() => Math.random() - 0.5);
-        const sectionId = `section-${section}`;
-        applyPaletteMapping(shuffled, sectionId);
+
+        const targetId = `section-${section}`;
+        if (section === 'lab') {
+            const grid = document.getElementById('color-lab-grid');
+            if (grid) {
+                const cards = Array.from(grid.children);
+                cards.sort(() => Math.random() - 0.5);
+                grid.innerHTML = '';
+                cards.forEach(c => grid.appendChild(c));
+            }
+        } else if (section === 'hero') {
+            const hexes = [...currentPalette.colors].sort(() => Math.random() - 0.5).map(c => c.hex).join(', ');
+            if (elements.hero) elements.hero.style.background = `radial-gradient(circle at center, ${hexes})`;
+        } else {
+            const shuffled = [...currentPalette.colors].sort(() => Math.random() - 0.5);
+            applyPaletteMapping(shuffled, targetId);
+            if (section === 'sandbox' && showRoleLabels) updateRoleLabels();
+            if (section === 'sandbox') {
+                renderSandboxRoleChips();
+                updateContrastStatus();
+            }
+        }
+
         if (window.gsap) {
-            gsap.fromTo(`#${sectionId}`, { opacity: 0.5, scale: 0.98 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power2.out" });
+            gsap.fromTo(`#${targetId}`, { opacity: 0.5, scale: 0.98 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power2.out" });
         }
         showToast(`${section.charAt(0).toUpperCase() + section.slice(1)} shuffled!`);
-        if (section === 'sandbox' && showRoleLabels) updateRoleLabels();
-        if (section === 'sandbox') {
-            renderSandboxRoleChips();
-            updateContrastStatus();
-        }
     }
-
     function switchDashboardVariant(variant) {
         document.querySelectorAll('.dash-btn').forEach(b => {
             const isActive = b.dataset.dash === variant;
@@ -604,6 +709,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 activeFacet = 'all';
                 activeSubFilter = null;
                 searchQuery = '';
+                clearColorProximity();
                 if (elements.search) elements.search.value = '';
                 document.querySelector('[data-facet="all"]')?.click();
             });
@@ -618,10 +724,7 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.subFilterContainer.classList.remove('hidden');
         let values = [];
         if (facet === 'count') values = [...new Set(allPalettes.map(p => p.count))].sort((a,b)=>a-b);
-        else if (facet === 'category') values = [...new Set(allPalettes.map(p => p.category))].filter(Boolean).sort();
-        else if (facet === 'mood') values = [...new Set(allPalettes.flatMap(p => (p.tags && p.tags.mood) || []))].sort();
-        else if (facet === 'aesthetic') values = [...new Set(allPalettes.flatMap(p => (p.tags && p.tags.aesthetic) || []))].sort();
-        else if (facet === 'color') values = [...new Set(allPalettes.flatMap(getPaletteColorGroups))].sort();
+        if (!values.length) { elements.subFilterContainer.classList.add('hidden'); return; }
         values.forEach((val, i) => {
             const btn = document.createElement('button');
             btn.className = `sub-filter-btn px-4 py-1.5 rounded-xl text-xs font-bold border transition-all whitespace-nowrap ${i === 0 ? 'active border-indigo-500 bg-indigo-50 text-indigo-600' : 'border-gray-200 dark:border-slate-800 text-gray-500'}`;
@@ -640,10 +743,47 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    function setColorProximity(hex) {
+        colorProximity = hex;
+        sortOrder = 'proximity';
+        const sortSelect = getEl('sort-order');
+        if (sortSelect) sortSelect.value = 'proximity';
+        if (elements.colorPickerSwatch) elements.colorPickerSwatch.style.background = hex;
+        if (elements.clearColorProximity) elements.clearColorProximity.classList.remove('hidden');
+        applyFilters();
+    }
+
+    function clearColorProximity() {
+        colorProximity = null;
+        if (sortOrder === 'proximity') {
+            sortOrder = 'name';
+            const sortSelect = getEl('sort-order');
+            if (sortSelect) sortSelect.value = 'name';
+        }
+        if (elements.colorPicker) elements.colorPicker.value = '#6366f1';
+        if (elements.colorPickerSwatch) elements.colorPickerSwatch.style.background = '#6366f1';
+        if (elements.clearColorProximity) elements.clearColorProximity.classList.add('hidden');
+    }
+
+    if (elements.colorPicker) {
+        elements.colorPicker.addEventListener('input', (e) => setColorProximity(e.target.value));
+        elements.colorPicker.addEventListener('change', (e) => setColorProximity(e.target.value));
+    }
+
+    if (elements.clearColorProximity) {
+        elements.clearColorProximity.addEventListener('click', () => {
+            clearColorProximity();
+            applyFilters();
+        });
+    }
+
     fetch('palettes.json')
         .then(res => res.json())
         .then(data => {
             allPalettes = data;
+            if (elements.libraryCount) {
+                elements.libraryCount.textContent = `${data.length} palettes`;
+            }
             setupFacetedFilters();
             applyFilters();
         })

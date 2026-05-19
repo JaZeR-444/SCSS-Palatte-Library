@@ -91,6 +91,14 @@ body {
     box-shadow: 0 10px 22px rgba(99, 102, 241, 0.22);
 }
 
+.sort-control {
+    position: relative;
+}
+
+.sort-control select {
+    max-width: 12rem;
+}
+
 /* Shimmer Animation */
 @keyframes shimmer {
     0% { background-position: -1000px 0; }

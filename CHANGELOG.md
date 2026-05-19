@@ -17,13 +17,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Red Systems Expansion**: Added 20 curated red-focused palettes across the 3-color through 10-color folders.
 - **Orange Systems Expansion**: Added 20 curated orange-focused palettes across the 3-color through 10-color folders.
 - **Yellow Systems Expansion**: Added 20 curated yellow-focused palettes across the 3-color through 10-color folders.
+- **Pink Systems Expansion**: Added 20 curated pink-focused palettes across the 3-color through 10-color folders.
+- **White Systems Expansion**: Added 20 curated white-focused palettes across the 3-color through 10-color folders.
 - **Showcase Discovery Tools**: Added recently viewed palettes and modal "More Like This" recommendations.
 - **Showcase Collections**: Added named localStorage collections with create, rename, delete, save, and drag-to-move flows.
 - **Showcase PNG Export**: Added a Canvas API swatch sheet download from the modal.
 - **Showcase Typography Sandbox**: Added a typography use case tab for headings, copy, links, quotes, badges, and inline code.
 - **Black Systems Expansion**: Added 20 curated black-focused palettes across the 3-color through 10-color folders.
 - **Showcase Sandbox Upgrade**: Refined the modal sandbox with a unified toolbar, palette role chips, contrast status, stronger active states, and improved preview framing.
-- **Showcase Filter Bar Upgrade**: Improved the primary facet row with clearer labels, icons, reset control, accessible tab states, recent browsing, and color-family filtering.
+- **Showcase Filter Bar Upgrade**: Simplified the primary facet row to All, Recent, Count, and Saved, and wired the search-bar color picker to sort palettes by color proximity.
+- **Showcase Sort Control Upgrade**: Reworked the palette sort dropdown with a labeled icon control and wired name, recency, count, and closest-color sorting.
+- **Showcase Header Upgrade**: Enhanced the sticky header with richer branding, live palette count, WCAG tooling badge, and a direct repository action.
 
 ## [2.0.0] - 2026-05-18
 

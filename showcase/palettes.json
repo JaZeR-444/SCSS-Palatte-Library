@@ -32,6 +32,38 @@
         }
     },
     {
+        "id": "blush-signal-trio",
+        "name": "Blush Signal Trio",
+        "description": "A bright blush palette with deep UI contrast, active pink color, and clean feedback energy.",
+        "count": 3,
+        "colors": [
+            {
+                "name": "Blush Signal Trio Signal Ink",
+                "hex": "#1f0a17ff"
+            },
+            {
+                "name": "Blush Signal Trio Blush Core",
+                "hex": "#db2777ff"
+            },
+            {
+                "name": "Blush Signal Trio Pink Flash",
+                "hex": "#f9a8d4ff"
+            }
+        ],
+        "path": "3 Color Palette/Blush Signal Trio.scss",
+        "folder": "3 Color Palette",
+        "tags": {
+            "mood": [
+                "pink",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
         "id": "carbon-ledger-trio",
         "name": "Carbon Ledger Trio",
         "description": "A professional black palette for reports, dashboards, executive tools, and high-contrast product interfaces.",
@@ -413,6 +445,38 @@
         }
     },
     {
+        "id": "fuchsia-circuit-trio",
+        "name": "Fuchsia Circuit Trio",
+        "description": "A technical fuchsia palette with dark console anchors, electric pink signal, and clean diagnostic glow.",
+        "count": 3,
+        "colors": [
+            {
+                "name": "Fuchsia Circuit Trio Console Plum",
+                "hex": "#1a0712ff"
+            },
+            {
+                "name": "Fuchsia Circuit Trio Circuit Fuchsia",
+                "hex": "#9d174dff"
+            },
+            {
+                "name": "Fuchsia Circuit Trio Signal Pink",
+                "hex": "#ec4899ff"
+            }
+        ],
+        "path": "3 Color Palette/Fuchsia Circuit Trio.scss",
+        "folder": "3 Color Palette",
+        "tags": {
+            "mood": [
+                "pink",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
         "id": "grape-nocturne-trio",
         "name": "Grape Nocturne Trio",
         "description": "A moody grape palette with wine-dark structure, plum midtones, and quiet lavender light.",
@@ -732,6 +796,38 @@
         }
     },
     {
+        "id": "pearl-signal-trio",
+        "name": "Pearl Signal Trio",
+        "description": "A pearl interface palette with dark readable ink, soft pearl surfaces, and clean white highlights.",
+        "count": 3,
+        "colors": [
+            {
+                "name": "Pearl Signal Trio Signal Ink",
+                "hex": "#1f2937ff"
+            },
+            {
+                "name": "Pearl Signal Trio Pearl Surface",
+                "hex": "#f3f4f6ff"
+            },
+            {
+                "name": "Pearl Signal Trio Pearl White",
+                "hex": "#ffffffff"
+            }
+        ],
+        "path": "3 Color Palette/Pearl Signal Trio.scss",
+        "folder": "3 Color Palette",
+        "tags": {
+            "mood": [
+                "white",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
         "id": "pine-ember",
         "name": "Pine Ember",
         "description": "A grounded three-color palette balancing pine depth, ember orange, and linen light.",
@@ -760,6 +856,38 @@
             "aesthetic": [
                 "Cabin",
                 "Editorial"
+            ]
+        }
+    },
+    {
+        "id": "porcelain-circuit-trio",
+        "name": "Porcelain Circuit Trio",
+        "description": "A technical white palette with graphite anchors, porcelain surfaces, and clean diagnostic highlights.",
+        "count": 3,
+        "colors": [
+            {
+                "name": "Porcelain Circuit Trio Graphite Console",
+                "hex": "#111827ff"
+            },
+            {
+                "name": "Porcelain Circuit Trio Porcelain Panel",
+                "hex": "#e5e7ebff"
+            },
+            {
+                "name": "Porcelain Circuit Trio Signal White",
+                "hex": "#ffffffff"
+            }
+        ],
+        "path": "3 Color Palette/Porcelain Circuit Trio.scss",
+        "folder": "3 Color Palette",
+        "tags": {
+            "mood": [
+                "white",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
             ]
         }
     },
@@ -1162,6 +1290,42 @@
         }
     },
     {
+        "id": "blush-signal-quartet",
+        "name": "Blush Signal Quartet",
+        "description": "A bright blush interface palette with dark anchors, active rose state, and clean energetic highlights.",
+        "count": 4,
+        "colors": [
+            {
+                "name": "Blush Signal Quartet Signal Ink",
+                "hex": "#1f0a17ff"
+            },
+            {
+                "name": "Blush Signal Quartet Rose Route",
+                "hex": "#be185dff"
+            },
+            {
+                "name": "Blush Signal Quartet Blush Core",
+                "hex": "#db2777ff"
+            },
+            {
+                "name": "Blush Signal Quartet Pink Flash",
+                "hex": "#f9a8d4ff"
+            }
+        ],
+        "path": "4 Color Palette/Blush Signal Quartet.scss",
+        "folder": "4 Color Palette",
+        "tags": {
+            "mood": [
+                "pink",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
         "id": "carbon-ledger-quartet",
         "name": "Carbon Ledger Quartet",
         "description": "A professional black palette for reports, dashboards, executive tools, and high-contrast product interfaces.",
@@ -1444,6 +1608,42 @@
             "aesthetic": [
                 "Finance",
                 "Nature"
+            ]
+        }
+    },
+    {
+        "id": "fuchsia-circuit-quartet",
+        "name": "Fuchsia Circuit Quartet",
+        "description": "A technical fuchsia palette with dark console surfaces, magenta control states, and bright diagnostic signal.",
+        "count": 4,
+        "colors": [
+            {
+                "name": "Fuchsia Circuit Quartet Console Plum",
+                "hex": "#1a0712ff"
+            },
+            {
+                "name": "Fuchsia Circuit Quartet Trace Wine",
+                "hex": "#500724ff"
+            },
+            {
+                "name": "Fuchsia Circuit Quartet Circuit Fuchsia",
+                "hex": "#be185dff"
+            },
+            {
+                "name": "Fuchsia Circuit Quartet Signal Pink",
+                "hex": "#ec4899ff"
+            }
+        ],
+        "path": "4 Color Palette/Fuchsia Circuit Quartet.scss",
+        "folder": "4 Color Palette",
+        "tags": {
+            "mood": [
+                "pink",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
             ]
         }
     },
@@ -1834,6 +2034,78 @@
         "tags": {
             "mood": [
                 "black",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
+        "id": "pearl-signal-quartet",
+        "name": "Pearl Signal Quartet",
+        "description": "A pearl interface palette with readable ink, cool border tone, pearl surfaces, and clean white highlights.",
+        "count": 4,
+        "colors": [
+            {
+                "name": "Pearl Signal Quartet Signal Ink",
+                "hex": "#1f2937ff"
+            },
+            {
+                "name": "Pearl Signal Quartet Soft Border",
+                "hex": "#d1d5dbff"
+            },
+            {
+                "name": "Pearl Signal Quartet Pearl Surface",
+                "hex": "#f3f4f6ff"
+            },
+            {
+                "name": "Pearl Signal Quartet Pearl White",
+                "hex": "#ffffffff"
+            }
+        ],
+        "path": "4 Color Palette/Pearl Signal Quartet.scss",
+        "folder": "4 Color Palette",
+        "tags": {
+            "mood": [
+                "white",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
+        "id": "porcelain-circuit-quartet",
+        "name": "Porcelain Circuit Quartet",
+        "description": "A technical white palette with graphite anchors, cool ceramic panels, porcelain surfaces, and clean signal white.",
+        "count": 4,
+        "colors": [
+            {
+                "name": "Porcelain Circuit Quartet Graphite Console",
+                "hex": "#111827ff"
+            },
+            {
+                "name": "Porcelain Circuit Quartet Cool Trace",
+                "hex": "#94a3b8ff"
+            },
+            {
+                "name": "Porcelain Circuit Quartet Porcelain Panel",
+                "hex": "#e5e7ebff"
+            },
+            {
+                "name": "Porcelain Circuit Quartet Signal White",
+                "hex": "#ffffffff"
+            }
+        ],
+        "path": "4 Color Palette/Porcelain Circuit Quartet.scss",
+        "folder": "4 Color Palette",
+        "tags": {
+            "mood": [
+                "white",
                 "technical"
             ],
             "aesthetic": [
@@ -2240,6 +2512,46 @@
             "aesthetic": [
                 "Forge",
                 "Manufacturing"
+            ]
+        }
+    },
+    {
+        "id": "blush-signal-scale",
+        "name": "Blush Signal Scale",
+        "description": "A bright blush palette for onboarding screens, alerts, badges, callouts, and lively product surfaces.",
+        "count": 5,
+        "colors": [
+            {
+                "name": "Blush Signal Scale Signal Ink",
+                "hex": "#1f0a17ff"
+            },
+            {
+                "name": "Blush Signal Scale Rose Route",
+                "hex": "#be185dff"
+            },
+            {
+                "name": "Blush Signal Scale Blush Core",
+                "hex": "#db2777ff"
+            },
+            {
+                "name": "Blush Signal Scale Pink Flash",
+                "hex": "#f9a8d4ff"
+            },
+            {
+                "name": "Blush Signal Scale Cream Notice",
+                "hex": "#fdf2f8ff"
+            }
+        ],
+        "path": "5 Color Palette/Blush Signal Scale.scss",
+        "folder": "5 Color Palette",
+        "tags": {
+            "mood": [
+                "pink",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
             ]
         }
     },
@@ -2750,6 +3062,46 @@
             "aesthetic": [
                 "Finance",
                 "Nature"
+            ]
+        }
+    },
+    {
+        "id": "fuchsia-circuit-scale",
+        "name": "Fuchsia Circuit Scale",
+        "description": "A technical fuchsia palette with console darks, magenta ramps, signal pink, and soft diagnostic highlights.",
+        "count": 5,
+        "colors": [
+            {
+                "name": "Fuchsia Circuit Scale Console Plum",
+                "hex": "#1a0712ff"
+            },
+            {
+                "name": "Fuchsia Circuit Scale Trace Wine",
+                "hex": "#500724ff"
+            },
+            {
+                "name": "Fuchsia Circuit Scale Circuit Fuchsia",
+                "hex": "#be185dff"
+            },
+            {
+                "name": "Fuchsia Circuit Scale Signal Pink",
+                "hex": "#ec4899ff"
+            },
+            {
+                "name": "Fuchsia Circuit Scale Pulse Rose",
+                "hex": "#f9a8d4ff"
+            }
+        ],
+        "path": "5 Color Palette/Fuchsia Circuit Scale.scss",
+        "folder": "5 Color Palette",
+        "tags": {
+            "mood": [
+                "pink",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
             ]
         }
     },
@@ -3372,6 +3724,46 @@
         }
     },
     {
+        "id": "pearl-signal-scale",
+        "name": "Pearl Signal Scale",
+        "description": "A pearl interface palette for clean UI surfaces, notifications, onboarding cards, and crisp white controls.",
+        "count": 5,
+        "colors": [
+            {
+                "name": "Pearl Signal Scale Signal Ink",
+                "hex": "#1f2937ff"
+            },
+            {
+                "name": "Pearl Signal Scale Caption Gray",
+                "hex": "#6b7280ff"
+            },
+            {
+                "name": "Pearl Signal Scale Soft Border",
+                "hex": "#d1d5dbff"
+            },
+            {
+                "name": "Pearl Signal Scale Pearl Surface",
+                "hex": "#f3f4f6ff"
+            },
+            {
+                "name": "Pearl Signal Scale Pearl White",
+                "hex": "#ffffffff"
+            }
+        ],
+        "path": "5 Color Palette/Pearl Signal Scale.scss",
+        "folder": "5 Color Palette",
+        "tags": {
+            "mood": [
+                "white",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
         "id": "plum-circuit",
         "name": "Plum Circuit",
         "description": "A dark plum interface palette with violet energy, magenta signal, and cool surface light.",
@@ -3408,6 +3800,46 @@
             "aesthetic": [
                 "Cyber",
                 "Interface"
+            ]
+        }
+    },
+    {
+        "id": "porcelain-circuit-scale",
+        "name": "Porcelain Circuit Scale",
+        "description": "A technical white palette with graphite contrast, cool traces, porcelain panels, and luminous diagnostic surfaces.",
+        "count": 5,
+        "colors": [
+            {
+                "name": "Porcelain Circuit Scale Graphite Console",
+                "hex": "#111827ff"
+            },
+            {
+                "name": "Porcelain Circuit Scale Slate Trace",
+                "hex": "#475569ff"
+            },
+            {
+                "name": "Porcelain Circuit Scale Cool Trace",
+                "hex": "#94a3b8ff"
+            },
+            {
+                "name": "Porcelain Circuit Scale Porcelain Panel",
+                "hex": "#e5e7ebff"
+            },
+            {
+                "name": "Porcelain Circuit Scale Signal White",
+                "hex": "#ffffffff"
+            }
+        ],
+        "path": "5 Color Palette/Porcelain Circuit Scale.scss",
+        "folder": "5 Color Palette",
+        "tags": {
+            "mood": [
+                "white",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
             ]
         }
     },
@@ -3812,6 +4244,50 @@
         }
     },
     {
+        "id": "blush-signal-array",
+        "name": "Blush Signal Array",
+        "description": "A bright blush interface array with dark anchors, rose accents, active pink states, and soft notice panels.",
+        "count": 6,
+        "colors": [
+            {
+                "name": "Blush Signal Array Signal Ink",
+                "hex": "#1f0a17ff"
+            },
+            {
+                "name": "Blush Signal Array Rose Route",
+                "hex": "#831843ff"
+            },
+            {
+                "name": "Blush Signal Array Active Rose",
+                "hex": "#be185dff"
+            },
+            {
+                "name": "Blush Signal Array Blush Core",
+                "hex": "#db2777ff"
+            },
+            {
+                "name": "Blush Signal Array Pink Flash",
+                "hex": "#f9a8d4ff"
+            },
+            {
+                "name": "Blush Signal Array Cream Notice",
+                "hex": "#fdf2f8ff"
+            }
+        ],
+        "path": "6 Color Palette/Blush Signal Array.scss",
+        "folder": "6 Color Palette",
+        "tags": {
+            "mood": [
+                "pink",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
         "id": "carbon-ledger-array",
         "name": "Carbon Ledger Array",
         "description": "A professional black palette for reports, dashboards, executive tools, and high-contrast product interfaces.",
@@ -4201,6 +4677,50 @@
             "aesthetic": [
                 "Finance",
                 "Nature"
+            ]
+        }
+    },
+    {
+        "id": "fuchsia-circuit-array",
+        "name": "Fuchsia Circuit Array",
+        "description": "A technical fuchsia palette with dark console foundations, magenta diagnostics, live pink states, and soft highlights.",
+        "count": 6,
+        "colors": [
+            {
+                "name": "Fuchsia Circuit Array Console Plum",
+                "hex": "#1a0712ff"
+            },
+            {
+                "name": "Fuchsia Circuit Array Trace Wine",
+                "hex": "#500724ff"
+            },
+            {
+                "name": "Fuchsia Circuit Array Circuit Fuchsia",
+                "hex": "#9d174dff"
+            },
+            {
+                "name": "Fuchsia Circuit Array Active Magenta",
+                "hex": "#be185dff"
+            },
+            {
+                "name": "Fuchsia Circuit Array Signal Pink",
+                "hex": "#ec4899ff"
+            },
+            {
+                "name": "Fuchsia Circuit Array Pulse Rose",
+                "hex": "#f9a8d4ff"
+            }
+        ],
+        "path": "6 Color Palette/Fuchsia Circuit Array.scss",
+        "folder": "6 Color Palette",
+        "tags": {
+            "mood": [
+                "pink",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
             ]
         }
     },
@@ -4676,6 +5196,94 @@
         "tags": {
             "mood": [
                 "black",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
+        "id": "pearl-signal-array",
+        "name": "Pearl Signal Array",
+        "description": "A pearl interface array with readable ink, caption gray, subtle borders, pearl surfaces, and clean white panels.",
+        "count": 6,
+        "colors": [
+            {
+                "name": "Pearl Signal Array Signal Ink",
+                "hex": "#1f2937ff"
+            },
+            {
+                "name": "Pearl Signal Array Caption Gray",
+                "hex": "#6b7280ff"
+            },
+            {
+                "name": "Pearl Signal Array Soft Border",
+                "hex": "#d1d5dbff"
+            },
+            {
+                "name": "Pearl Signal Array Pearl Surface",
+                "hex": "#f3f4f6ff"
+            },
+            {
+                "name": "Pearl Signal Array Cloud Panel",
+                "hex": "#f9fafbff"
+            },
+            {
+                "name": "Pearl Signal Array Pearl White",
+                "hex": "#ffffffff"
+            }
+        ],
+        "path": "6 Color Palette/Pearl Signal Array.scss",
+        "folder": "6 Color Palette",
+        "tags": {
+            "mood": [
+                "white",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
+        "id": "porcelain-circuit-array",
+        "name": "Porcelain Circuit Array",
+        "description": "A technical white palette with dark console contrast, cool neutral traces, porcelain panels, and clean diagnostic whites.",
+        "count": 6,
+        "colors": [
+            {
+                "name": "Porcelain Circuit Array Graphite Console",
+                "hex": "#111827ff"
+            },
+            {
+                "name": "Porcelain Circuit Array Slate Trace",
+                "hex": "#475569ff"
+            },
+            {
+                "name": "Porcelain Circuit Array Cool Trace",
+                "hex": "#94a3b8ff"
+            },
+            {
+                "name": "Porcelain Circuit Array Ceramic Border",
+                "hex": "#cbd5e1ff"
+            },
+            {
+                "name": "Porcelain Circuit Array Porcelain Panel",
+                "hex": "#e5e7ebff"
+            },
+            {
+                "name": "Porcelain Circuit Array Signal White",
+                "hex": "#ffffffff"
+            }
+        ],
+        "path": "6 Color Palette/Porcelain Circuit Array.scss",
+        "folder": "6 Color Palette",
+        "tags": {
+            "mood": [
+                "white",
                 "technical"
             ],
             "aesthetic": [
@@ -5217,6 +5825,54 @@
         }
     },
     {
+        "id": "blush-signal-spectrum",
+        "name": "Blush Signal Spectrum",
+        "description": "A bright blush spectrum with high-contrast anchors, rose UI states, and soft readable notification surfaces.",
+        "count": 7,
+        "colors": [
+            {
+                "name": "Blush Signal Spectrum Signal Ink",
+                "hex": "#1f0a17ff"
+            },
+            {
+                "name": "Blush Signal Spectrum Rose Route",
+                "hex": "#831843ff"
+            },
+            {
+                "name": "Blush Signal Spectrum Active Rose",
+                "hex": "#be185dff"
+            },
+            {
+                "name": "Blush Signal Spectrum Blush Core",
+                "hex": "#db2777ff"
+            },
+            {
+                "name": "Blush Signal Spectrum Pink Flash",
+                "hex": "#f9a8d4ff"
+            },
+            {
+                "name": "Blush Signal Spectrum Cream Notice",
+                "hex": "#fdf2f8ff"
+            },
+            {
+                "name": "Blush Signal Spectrum White Signal",
+                "hex": "#ffffffff"
+            }
+        ],
+        "path": "7 Color Palette/Blush Signal Spectrum.scss",
+        "folder": "7 Color Palette",
+        "tags": {
+            "mood": [
+                "pink",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
         "id": "canyon-ledger",
         "name": "Canyon Ledger",
         "description": "A warm professional palette with canyon earth, ledger blues, and clean paper.",
@@ -5691,6 +6347,54 @@
             "aesthetic": [
                 "Botanical",
                 "Wellness"
+            ]
+        }
+    },
+    {
+        "id": "fuchsia-circuit-spectrum",
+        "name": "Fuchsia Circuit Spectrum",
+        "description": "A technical fuchsia spectrum with console darks, magenta diagnostics, bright signal states, and readable pale highlights.",
+        "count": 7,
+        "colors": [
+            {
+                "name": "Fuchsia Circuit Spectrum Console Plum",
+                "hex": "#1a0712ff"
+            },
+            {
+                "name": "Fuchsia Circuit Spectrum Trace Wine",
+                "hex": "#500724ff"
+            },
+            {
+                "name": "Fuchsia Circuit Spectrum Circuit Fuchsia",
+                "hex": "#9d174dff"
+            },
+            {
+                "name": "Fuchsia Circuit Spectrum Active Magenta",
+                "hex": "#be185dff"
+            },
+            {
+                "name": "Fuchsia Circuit Spectrum Signal Pink",
+                "hex": "#ec4899ff"
+            },
+            {
+                "name": "Fuchsia Circuit Spectrum Pulse Rose",
+                "hex": "#f9a8d4ff"
+            },
+            {
+                "name": "Fuchsia Circuit Spectrum Terminal Blush",
+                "hex": "#fce7f3ff"
+            }
+        ],
+        "path": "7 Color Palette/Fuchsia Circuit Spectrum.scss",
+        "folder": "7 Color Palette",
+        "tags": {
+            "mood": [
+                "pink",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
             ]
         }
     },
@@ -6170,6 +6874,102 @@
         }
     },
     {
+        "id": "pearl-signal-spectrum",
+        "name": "Pearl Signal Spectrum",
+        "description": "A pearl interface spectrum with readable copy colors, borders, clouds, pearl panels, and cool accent support.",
+        "count": 7,
+        "colors": [
+            {
+                "name": "Pearl Signal Spectrum Signal Ink",
+                "hex": "#1f2937ff"
+            },
+            {
+                "name": "Pearl Signal Spectrum Caption Gray",
+                "hex": "#6b7280ff"
+            },
+            {
+                "name": "Pearl Signal Spectrum Soft Border",
+                "hex": "#d1d5dbff"
+            },
+            {
+                "name": "Pearl Signal Spectrum Pearl Surface",
+                "hex": "#f3f4f6ff"
+            },
+            {
+                "name": "Pearl Signal Spectrum Cloud Panel",
+                "hex": "#f9fafbff"
+            },
+            {
+                "name": "Pearl Signal Spectrum Pearl White",
+                "hex": "#ffffffff"
+            },
+            {
+                "name": "Pearl Signal Spectrum Sky Accent",
+                "hex": "#bae6fdff"
+            }
+        ],
+        "path": "7 Color Palette/Pearl Signal Spectrum.scss",
+        "folder": "7 Color Palette",
+        "tags": {
+            "mood": [
+                "white",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
+        "id": "porcelain-circuit-spectrum",
+        "name": "Porcelain Circuit Spectrum",
+        "description": "A technical white spectrum with graphite UI anchors, cool traces, ceramic borders, and layered porcelain surfaces.",
+        "count": 7,
+        "colors": [
+            {
+                "name": "Porcelain Circuit Spectrum Graphite Console",
+                "hex": "#111827ff"
+            },
+            {
+                "name": "Porcelain Circuit Spectrum Slate Trace",
+                "hex": "#475569ff"
+            },
+            {
+                "name": "Porcelain Circuit Spectrum Cool Trace",
+                "hex": "#94a3b8ff"
+            },
+            {
+                "name": "Porcelain Circuit Spectrum Ceramic Border",
+                "hex": "#cbd5e1ff"
+            },
+            {
+                "name": "Porcelain Circuit Spectrum Porcelain Panel",
+                "hex": "#e5e7ebff"
+            },
+            {
+                "name": "Porcelain Circuit Spectrum Soft Console",
+                "hex": "#f1f5f9ff"
+            },
+            {
+                "name": "Porcelain Circuit Spectrum Signal White",
+                "hex": "#ffffffff"
+            }
+        ],
+        "path": "7 Color Palette/Porcelain Circuit Spectrum.scss",
+        "folder": "7 Color Palette",
+        "tags": {
+            "mood": [
+                "white",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
         "id": "professional-ibm",
         "name": "Professional IBM",
         "description": "A vibrant 7-color palette.",
@@ -6546,6 +7346,58 @@
         }
     },
     {
+        "id": "alpine-mist-system",
+        "name": "Alpine Mist System",
+        "description": "An alpine white palette with mist surfaces, snow whites, cool ice accents, and mountain-shadow anchors.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Alpine Mist System Mountain Shadow",
+                "hex": "#0f172aff"
+            },
+            {
+                "name": "Alpine Mist System Stone Ridge",
+                "hex": "#64748bff"
+            },
+            {
+                "name": "Alpine Mist System Frost Edge",
+                "hex": "#cbd5e1ff"
+            },
+            {
+                "name": "Alpine Mist System Alpine Mist",
+                "hex": "#e2e8f0ff"
+            },
+            {
+                "name": "Alpine Mist System Snow Field",
+                "hex": "#f8fafcff"
+            },
+            {
+                "name": "Alpine Mist System Glacier White",
+                "hex": "#ffffffff"
+            },
+            {
+                "name": "Alpine Mist System Ice Blue",
+                "hex": "#dbeafeff"
+            },
+            {
+                "name": "Alpine Mist System Sky Reflection",
+                "hex": "#bfdbfeff"
+            }
+        ],
+        "path": "8 Color Palette/Alpine Mist System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "white",
+                "cool"
+            ],
+            "aesthetic": [
+                "Alpine",
+                "Nature"
+            ]
+        }
+    },
+    {
         "id": "amber-forge-system",
         "name": "Amber Forge System",
         "description": "A forged amber palette for industrial interfaces, with kiln darks, copper controls, safety orange, and warm surfaces.",
@@ -6698,6 +7550,58 @@
             "aesthetic": [
                 "Harbor",
                 "Maritime"
+            ]
+        }
+    },
+    {
+        "id": "blush-signal-system",
+        "name": "Blush Signal System",
+        "description": "A bright blush UI system for onboarding flows, callouts, notifications, badges, and upbeat product surfaces.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Blush Signal System Signal Ink",
+                "hex": "#1f0a17ff"
+            },
+            {
+                "name": "Blush Signal System Rose Route",
+                "hex": "#831843ff"
+            },
+            {
+                "name": "Blush Signal System Active Rose",
+                "hex": "#be185dff"
+            },
+            {
+                "name": "Blush Signal System Blush Core",
+                "hex": "#db2777ff"
+            },
+            {
+                "name": "Blush Signal System Pink Flash",
+                "hex": "#f9a8d4ff"
+            },
+            {
+                "name": "Blush Signal System Cream Notice",
+                "hex": "#fdf2f8ff"
+            },
+            {
+                "name": "Blush Signal System White Signal",
+                "hex": "#ffffffff"
+            },
+            {
+                "name": "Blush Signal System Slate Copy",
+                "hex": "#334155ff"
+            }
+        ],
+        "path": "8 Color Palette/Blush Signal System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "pink",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
             ]
         }
     },
@@ -7472,6 +8376,58 @@
         }
     },
     {
+        "id": "fuchsia-circuit-system",
+        "name": "Fuchsia Circuit System",
+        "description": "A technical fuchsia system for monitoring, developer tools, diagnostics, alerts, and vivid interface states.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Fuchsia Circuit System Console Plum",
+                "hex": "#1a0712ff"
+            },
+            {
+                "name": "Fuchsia Circuit System Trace Wine",
+                "hex": "#500724ff"
+            },
+            {
+                "name": "Fuchsia Circuit System Circuit Fuchsia",
+                "hex": "#831843ff"
+            },
+            {
+                "name": "Fuchsia Circuit System Active Magenta",
+                "hex": "#9d174dff"
+            },
+            {
+                "name": "Fuchsia Circuit System Status Pink",
+                "hex": "#be185dff"
+            },
+            {
+                "name": "Fuchsia Circuit System Signal Pink",
+                "hex": "#ec4899ff"
+            },
+            {
+                "name": "Fuchsia Circuit System Pulse Rose",
+                "hex": "#f9a8d4ff"
+            },
+            {
+                "name": "Fuchsia Circuit System Terminal Blush",
+                "hex": "#fce7f3ff"
+            }
+        ],
+        "path": "8 Color Palette/Fuchsia Circuit System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "pink",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
         "id": "glacier-blue-system",
         "name": "Glacier Blue System",
         "description": "An icy blue palette moving from glacial shadow through crystalline cyan and snow surfaces.",
@@ -7728,6 +8684,58 @@
             "aesthetic": [
                 "Studio",
                 "Portfolio"
+            ]
+        }
+    },
+    {
+        "id": "ivory-commerce-system",
+        "name": "Ivory Commerce System",
+        "description": "An ivory commercial palette with ink anchors, warm checkout whites, soft borders, premium gold, and clean retail surfaces.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Ivory Commerce System Ink Receipt",
+                "hex": "#1f2937ff"
+            },
+            {
+                "name": "Ivory Commerce System Label Stone",
+                "hex": "#78716cff"
+            },
+            {
+                "name": "Ivory Commerce System Warm Border",
+                "hex": "#d6d3d1ff"
+            },
+            {
+                "name": "Ivory Commerce System Ivory Shelf",
+                "hex": "#f5f5f4ff"
+            },
+            {
+                "name": "Ivory Commerce System Checkout Ivory",
+                "hex": "#fafaf9ff"
+            },
+            {
+                "name": "Ivory Commerce System Receipt White",
+                "hex": "#ffffffff"
+            },
+            {
+                "name": "Ivory Commerce System Premium Gold",
+                "hex": "#d4af37ff"
+            },
+            {
+                "name": "Ivory Commerce System Action Charcoal",
+                "hex": "#292524ff"
+            }
+        ],
+        "path": "8 Color Palette/Ivory Commerce System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "white",
+                "commercial"
+            ],
+            "aesthetic": [
+                "Commerce",
+                "Retail"
             ]
         }
     },
@@ -8196,6 +9204,162 @@
         }
     },
     {
+        "id": "pearl-signal-system",
+        "name": "Pearl Signal System",
+        "description": "A pearl UI system for clean onboarding, empty states, notification surfaces, subtle cards, and crisp white controls.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Pearl Signal System Signal Ink",
+                "hex": "#1f2937ff"
+            },
+            {
+                "name": "Pearl Signal System Caption Gray",
+                "hex": "#6b7280ff"
+            },
+            {
+                "name": "Pearl Signal System Soft Border",
+                "hex": "#d1d5dbff"
+            },
+            {
+                "name": "Pearl Signal System Pearl Surface",
+                "hex": "#f3f4f6ff"
+            },
+            {
+                "name": "Pearl Signal System Cloud Panel",
+                "hex": "#f9fafbff"
+            },
+            {
+                "name": "Pearl Signal System Pearl White",
+                "hex": "#ffffffff"
+            },
+            {
+                "name": "Pearl Signal System Sky Accent",
+                "hex": "#bae6fdff"
+            },
+            {
+                "name": "Pearl Signal System Action Blue",
+                "hex": "#2563ebff"
+            }
+        ],
+        "path": "8 Color Palette/Pearl Signal System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "white",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
+        "id": "petal-commerce-system",
+        "name": "Petal Commerce System",
+        "description": "A petal commercial palette with berry anchors, rose cart states, promotional pinks, and soft checkout surfaces.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Petal Commerce System Berry Shelf",
+                "hex": "#1f0a17ff"
+            },
+            {
+                "name": "Petal Commerce System Wine Label",
+                "hex": "#500724ff"
+            },
+            {
+                "name": "Petal Commerce System Petal Cart",
+                "hex": "#9d174dff"
+            },
+            {
+                "name": "Petal Commerce System Checkout Rose",
+                "hex": "#be185dff"
+            },
+            {
+                "name": "Petal Commerce System Offer Pink",
+                "hex": "#db2777ff"
+            },
+            {
+                "name": "Petal Commerce System Ticket Glow",
+                "hex": "#f9a8d4ff"
+            },
+            {
+                "name": "Petal Commerce System Receipt Blush",
+                "hex": "#fce7f3ff"
+            },
+            {
+                "name": "Petal Commerce System Checkout White",
+                "hex": "#fff7fbff"
+            }
+        ],
+        "path": "8 Color Palette/Petal Commerce System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "pink",
+                "commercial"
+            ],
+            "aesthetic": [
+                "Commerce",
+                "Retail"
+            ]
+        }
+    },
+    {
+        "id": "porcelain-circuit-system",
+        "name": "Porcelain Circuit System",
+        "description": "A technical white system for developer tools, monitoring surfaces, clean panels, borders, and porcelain UI shells.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Porcelain Circuit System Graphite Console",
+                "hex": "#111827ff"
+            },
+            {
+                "name": "Porcelain Circuit System Slate Trace",
+                "hex": "#475569ff"
+            },
+            {
+                "name": "Porcelain Circuit System Cool Trace",
+                "hex": "#94a3b8ff"
+            },
+            {
+                "name": "Porcelain Circuit System Ceramic Border",
+                "hex": "#cbd5e1ff"
+            },
+            {
+                "name": "Porcelain Circuit System Porcelain Panel",
+                "hex": "#e5e7ebff"
+            },
+            {
+                "name": "Porcelain Circuit System Soft Console",
+                "hex": "#f1f5f9ff"
+            },
+            {
+                "name": "Porcelain Circuit System Mist Surface",
+                "hex": "#f8fafcff"
+            },
+            {
+                "name": "Porcelain Circuit System Signal White",
+                "hex": "#ffffffff"
+            }
+        ],
+        "path": "8 Color Palette/Porcelain Circuit System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "white",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
         "id": "rose-signal-system",
         "name": "Rose Signal System",
         "description": "An expressive rose-red palette with deep berry structure, vivid signal tones, and soft pink surfaces.",
@@ -8296,6 +9460,58 @@
             "aesthetic": [
                 "Finance",
                 "Reports"
+            ]
+        }
+    },
+    {
+        "id": "sakura-bloom-system",
+        "name": "Sakura Bloom System",
+        "description": "A sakura bloom palette with plum shadows, blossom pinks, warm petals, and pale editorial surfaces.",
+        "count": 8,
+        "colors": [
+            {
+                "name": "Sakura Bloom System Bloom Shadow",
+                "hex": "#1f0a17ff"
+            },
+            {
+                "name": "Sakura Bloom System Plum Branch",
+                "hex": "#4a044eff"
+            },
+            {
+                "name": "Sakura Bloom System Sakura Bark",
+                "hex": "#831843ff"
+            },
+            {
+                "name": "Sakura Bloom System Petal Rose",
+                "hex": "#be185dff"
+            },
+            {
+                "name": "Sakura Bloom System Bloom Pink",
+                "hex": "#ec4899ff"
+            },
+            {
+                "name": "Sakura Bloom System Soft Petal",
+                "hex": "#f9a8d4ff"
+            },
+            {
+                "name": "Sakura Bloom System Blossom Cream",
+                "hex": "#fce7f3ff"
+            },
+            {
+                "name": "Sakura Bloom System Morning Mist",
+                "hex": "#fdf2f8ff"
+            }
+        ],
+        "path": "8 Color Palette/Sakura Bloom System.scss",
+        "folder": "8 Color Palette",
+        "tags": {
+            "mood": [
+                "pink",
+                "soft"
+            ],
+            "aesthetic": [
+                "Sakura",
+                "Botanical"
             ]
         }
     },
@@ -9039,6 +10255,62 @@
         }
     },
     {
+        "id": "blush-signal-matrix",
+        "name": "Blush Signal Matrix",
+        "description": "A bright blush matrix for product UI, combining dark anchors, rose alerts, pale notices, and readable copy colors.",
+        "count": 9,
+        "colors": [
+            {
+                "name": "Blush Signal Matrix Signal Ink",
+                "hex": "#1f0a17ff"
+            },
+            {
+                "name": "Blush Signal Matrix Rose Route",
+                "hex": "#831843ff"
+            },
+            {
+                "name": "Blush Signal Matrix Active Rose",
+                "hex": "#be185dff"
+            },
+            {
+                "name": "Blush Signal Matrix Blush Core",
+                "hex": "#db2777ff"
+            },
+            {
+                "name": "Blush Signal Matrix Pink Flash",
+                "hex": "#f9a8d4ff"
+            },
+            {
+                "name": "Blush Signal Matrix Cream Notice",
+                "hex": "#fdf2f8ff"
+            },
+            {
+                "name": "Blush Signal Matrix White Signal",
+                "hex": "#ffffffff"
+            },
+            {
+                "name": "Blush Signal Matrix Slate Copy",
+                "hex": "#334155ff"
+            },
+            {
+                "name": "Blush Signal Matrix Mist Border",
+                "hex": "#e2e8f0ff"
+            }
+        ],
+        "path": "9 Color Palette/Blush Signal Matrix.scss",
+        "folder": "9 Color Palette",
+        "tags": {
+            "mood": [
+                "pink",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
         "id": "carbon-ledger-matrix",
         "name": "Carbon Ledger Matrix",
         "description": "A professional black palette for reports, dashboards, executive tools, and high-contrast product interfaces.",
@@ -9764,6 +11036,62 @@
         }
     },
     {
+        "id": "fuchsia-circuit-matrix",
+        "name": "Fuchsia Circuit Matrix",
+        "description": "A technical fuchsia matrix with console darks, magenta diagnostic ramps, bright pink states, and soft terminal surfaces.",
+        "count": 9,
+        "colors": [
+            {
+                "name": "Fuchsia Circuit Matrix Console Plum",
+                "hex": "#1a0712ff"
+            },
+            {
+                "name": "Fuchsia Circuit Matrix Trace Wine",
+                "hex": "#500724ff"
+            },
+            {
+                "name": "Fuchsia Circuit Matrix Circuit Fuchsia",
+                "hex": "#831843ff"
+            },
+            {
+                "name": "Fuchsia Circuit Matrix Active Magenta",
+                "hex": "#9d174dff"
+            },
+            {
+                "name": "Fuchsia Circuit Matrix Status Pink",
+                "hex": "#be185dff"
+            },
+            {
+                "name": "Fuchsia Circuit Matrix Signal Pink",
+                "hex": "#ec4899ff"
+            },
+            {
+                "name": "Fuchsia Circuit Matrix Pulse Rose",
+                "hex": "#f9a8d4ff"
+            },
+            {
+                "name": "Fuchsia Circuit Matrix Terminal Blush",
+                "hex": "#fce7f3ff"
+            },
+            {
+                "name": "Fuchsia Circuit Matrix Signal White",
+                "hex": "#fdf2f8ff"
+            }
+        ],
+        "path": "9 Color Palette/Fuchsia Circuit Matrix.scss",
+        "folder": "9 Color Palette",
+        "tags": {
+            "mood": [
+                "pink",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
         "id": "galactic-nebula",
         "name": "Galactic Nebula",
         "description": "A vibrant 9-color palette.",
@@ -10315,6 +11643,118 @@
             ],
             "aesthetic": [
                 "Soft"
+            ]
+        }
+    },
+    {
+        "id": "pearl-signal-matrix",
+        "name": "Pearl Signal Matrix",
+        "description": "A pearl interface matrix with readable ink, quiet borders, layered white panels, and cool action accents.",
+        "count": 9,
+        "colors": [
+            {
+                "name": "Pearl Signal Matrix Signal Ink",
+                "hex": "#1f2937ff"
+            },
+            {
+                "name": "Pearl Signal Matrix Caption Gray",
+                "hex": "#6b7280ff"
+            },
+            {
+                "name": "Pearl Signal Matrix Soft Border",
+                "hex": "#d1d5dbff"
+            },
+            {
+                "name": "Pearl Signal Matrix Pearl Surface",
+                "hex": "#f3f4f6ff"
+            },
+            {
+                "name": "Pearl Signal Matrix Cloud Panel",
+                "hex": "#f9fafbff"
+            },
+            {
+                "name": "Pearl Signal Matrix Pearl White",
+                "hex": "#ffffffff"
+            },
+            {
+                "name": "Pearl Signal Matrix Sky Accent",
+                "hex": "#bae6fdff"
+            },
+            {
+                "name": "Pearl Signal Matrix Action Blue",
+                "hex": "#2563ebff"
+            },
+            {
+                "name": "Pearl Signal Matrix Focus Indigo",
+                "hex": "#4f46e5ff"
+            }
+        ],
+        "path": "9 Color Palette/Pearl Signal Matrix.scss",
+        "folder": "9 Color Palette",
+        "tags": {
+            "mood": [
+                "white",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
+        "id": "porcelain-circuit-matrix",
+        "name": "Porcelain Circuit Matrix",
+        "description": "A technical white matrix with graphite contrast, cool neutral steps, porcelain panels, mist surfaces, and signal white.",
+        "count": 9,
+        "colors": [
+            {
+                "name": "Porcelain Circuit Matrix Graphite Console",
+                "hex": "#111827ff"
+            },
+            {
+                "name": "Porcelain Circuit Matrix Slate Trace",
+                "hex": "#475569ff"
+            },
+            {
+                "name": "Porcelain Circuit Matrix Cool Trace",
+                "hex": "#94a3b8ff"
+            },
+            {
+                "name": "Porcelain Circuit Matrix Ceramic Border",
+                "hex": "#cbd5e1ff"
+            },
+            {
+                "name": "Porcelain Circuit Matrix Porcelain Panel",
+                "hex": "#e5e7ebff"
+            },
+            {
+                "name": "Porcelain Circuit Matrix Soft Console",
+                "hex": "#f1f5f9ff"
+            },
+            {
+                "name": "Porcelain Circuit Matrix Mist Surface",
+                "hex": "#f8fafcff"
+            },
+            {
+                "name": "Porcelain Circuit Matrix Signal White",
+                "hex": "#ffffffff"
+            },
+            {
+                "name": "Porcelain Circuit Matrix Ice Accent",
+                "hex": "#e0f2feff"
+            }
+        ],
+        "path": "9 Color Palette/Porcelain Circuit Matrix.scss",
+        "folder": "9 Color Palette",
+        "tags": {
+            "mood": [
+                "white",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
             ]
         }
     },
@@ -10873,6 +12313,66 @@
         }
     },
     {
+        "id": "alpine-mist-atlas",
+        "name": "Alpine Mist Atlas",
+        "description": "A complete alpine white palette with mountain shadows, frost grays, snow fields, glacier whites, and cool sky accents.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Alpine Mist Atlas Mountain Shadow",
+                "hex": "#0f172aff"
+            },
+            {
+                "name": "Alpine Mist Atlas Stone Ridge",
+                "hex": "#64748bff"
+            },
+            {
+                "name": "Alpine Mist Atlas Frost Edge",
+                "hex": "#cbd5e1ff"
+            },
+            {
+                "name": "Alpine Mist Atlas Alpine Mist",
+                "hex": "#e2e8f0ff"
+            },
+            {
+                "name": "Alpine Mist Atlas Snow Field",
+                "hex": "#f8fafcff"
+            },
+            {
+                "name": "Alpine Mist Atlas Glacier White",
+                "hex": "#ffffffff"
+            },
+            {
+                "name": "Alpine Mist Atlas Ice Blue",
+                "hex": "#dbeafeff"
+            },
+            {
+                "name": "Alpine Mist Atlas Sky Reflection",
+                "hex": "#bfdbfeff"
+            },
+            {
+                "name": "Alpine Mist Atlas Alpine Blue",
+                "hex": "#3b82f6ff"
+            },
+            {
+                "name": "Alpine Mist Atlas Evergreen Ink",
+                "hex": "#064e3bff"
+            }
+        ],
+        "path": "10 Color Palette/Alpine Mist Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "white",
+                "cool"
+            ],
+            "aesthetic": [
+                "Alpine",
+                "Nature"
+            ]
+        }
+    },
+    {
         "id": "amber-forge-atlas",
         "name": "Amber Forge Atlas",
         "description": "A complete forged amber atlas for industrial systems, pairing heavy darks with oxide, copper, amber, gold, and warm surfaces.",
@@ -11108,6 +12608,66 @@
             ],
             "aesthetic": [
                 "Aquatic"
+            ]
+        }
+    },
+    {
+        "id": "blush-signal-atlas",
+        "name": "Blush Signal Atlas",
+        "description": "A complete blush interface atlas for onboarding, alerts, product highlights, and cheerful UI feedback systems.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Blush Signal Atlas Signal Ink",
+                "hex": "#1f0a17ff"
+            },
+            {
+                "name": "Blush Signal Atlas Rose Route",
+                "hex": "#831843ff"
+            },
+            {
+                "name": "Blush Signal Atlas Active Rose",
+                "hex": "#be185dff"
+            },
+            {
+                "name": "Blush Signal Atlas Blush Core",
+                "hex": "#db2777ff"
+            },
+            {
+                "name": "Blush Signal Atlas Pink Flash",
+                "hex": "#f9a8d4ff"
+            },
+            {
+                "name": "Blush Signal Atlas Cream Notice",
+                "hex": "#fdf2f8ff"
+            },
+            {
+                "name": "Blush Signal Atlas White Signal",
+                "hex": "#ffffffff"
+            },
+            {
+                "name": "Blush Signal Atlas Slate Copy",
+                "hex": "#334155ff"
+            },
+            {
+                "name": "Blush Signal Atlas Mist Border",
+                "hex": "#e2e8f0ff"
+            },
+            {
+                "name": "Blush Signal Atlas Deep Slate",
+                "hex": "#0f172aff"
+            }
+        ],
+        "path": "10 Color Palette/Blush Signal Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "pink",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
             ]
         }
     },
@@ -11832,6 +13392,66 @@
         }
     },
     {
+        "id": "fuchsia-circuit-atlas",
+        "name": "Fuchsia Circuit Atlas",
+        "description": "A complete technical fuchsia atlas for diagnostics, developer dashboards, monitoring states, and signal-rich interfaces.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Fuchsia Circuit Atlas Console Plum",
+                "hex": "#1a0712ff"
+            },
+            {
+                "name": "Fuchsia Circuit Atlas Trace Wine",
+                "hex": "#500724ff"
+            },
+            {
+                "name": "Fuchsia Circuit Atlas Circuit Fuchsia",
+                "hex": "#831843ff"
+            },
+            {
+                "name": "Fuchsia Circuit Atlas Active Magenta",
+                "hex": "#9d174dff"
+            },
+            {
+                "name": "Fuchsia Circuit Atlas Status Pink",
+                "hex": "#be185dff"
+            },
+            {
+                "name": "Fuchsia Circuit Atlas Signal Pink",
+                "hex": "#ec4899ff"
+            },
+            {
+                "name": "Fuchsia Circuit Atlas Pulse Rose",
+                "hex": "#f9a8d4ff"
+            },
+            {
+                "name": "Fuchsia Circuit Atlas Terminal Blush",
+                "hex": "#fce7f3ff"
+            },
+            {
+                "name": "Fuchsia Circuit Atlas Signal White",
+                "hex": "#fdf2f8ff"
+            },
+            {
+                "name": "Fuchsia Circuit Atlas Ink Slate",
+                "hex": "#111827ff"
+            }
+        ],
+        "path": "10 Color Palette/Fuchsia Circuit Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "pink",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
         "id": "garden-system",
         "name": "Garden System",
         "description": "A complete garden-inspired system palette with greens, soil, bloom accents, and surfaces.",
@@ -12247,6 +13867,66 @@
             "aesthetic": [
                 "Studio",
                 "Portfolio"
+            ]
+        }
+    },
+    {
+        "id": "ivory-commerce-atlas",
+        "name": "Ivory Commerce Atlas",
+        "description": "A complete ivory commercial palette with ink anchors, warm retail neutrals, premium golds, checkout whites, and clean product surfaces.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Ivory Commerce Atlas Ink Receipt",
+                "hex": "#1f2937ff"
+            },
+            {
+                "name": "Ivory Commerce Atlas Action Charcoal",
+                "hex": "#292524ff"
+            },
+            {
+                "name": "Ivory Commerce Atlas Label Stone",
+                "hex": "#78716cff"
+            },
+            {
+                "name": "Ivory Commerce Atlas Warm Border",
+                "hex": "#d6d3d1ff"
+            },
+            {
+                "name": "Ivory Commerce Atlas Ivory Shelf",
+                "hex": "#f5f5f4ff"
+            },
+            {
+                "name": "Ivory Commerce Atlas Checkout Ivory",
+                "hex": "#fafaf9ff"
+            },
+            {
+                "name": "Ivory Commerce Atlas Receipt White",
+                "hex": "#ffffffff"
+            },
+            {
+                "name": "Ivory Commerce Atlas Premium Gold",
+                "hex": "#d4af37ff"
+            },
+            {
+                "name": "Ivory Commerce Atlas Soft Champagne",
+                "hex": "#fef3c7ff"
+            },
+            {
+                "name": "Ivory Commerce Atlas Deep Espresso",
+                "hex": "#1c1206ff"
+            }
+        ],
+        "path": "10 Color Palette/Ivory Commerce Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "white",
+                "commercial"
+            ],
+            "aesthetic": [
+                "Commerce",
+                "Retail"
             ]
         }
     },
@@ -12730,6 +14410,186 @@
         }
     },
     {
+        "id": "pearl-signal-atlas",
+        "name": "Pearl Signal Atlas",
+        "description": "A complete pearl interface atlas for white product UI, onboarding, notifications, cards, borders, and cool action states.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Pearl Signal Atlas Signal Ink",
+                "hex": "#1f2937ff"
+            },
+            {
+                "name": "Pearl Signal Atlas Caption Gray",
+                "hex": "#6b7280ff"
+            },
+            {
+                "name": "Pearl Signal Atlas Soft Border",
+                "hex": "#d1d5dbff"
+            },
+            {
+                "name": "Pearl Signal Atlas Pearl Surface",
+                "hex": "#f3f4f6ff"
+            },
+            {
+                "name": "Pearl Signal Atlas Cloud Panel",
+                "hex": "#f9fafbff"
+            },
+            {
+                "name": "Pearl Signal Atlas Pearl White",
+                "hex": "#ffffffff"
+            },
+            {
+                "name": "Pearl Signal Atlas Sky Accent",
+                "hex": "#bae6fdff"
+            },
+            {
+                "name": "Pearl Signal Atlas Action Blue",
+                "hex": "#2563ebff"
+            },
+            {
+                "name": "Pearl Signal Atlas Focus Indigo",
+                "hex": "#4f46e5ff"
+            },
+            {
+                "name": "Pearl Signal Atlas Deep Navy",
+                "hex": "#0f172aff"
+            }
+        ],
+        "path": "10 Color Palette/Pearl Signal Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "white",
+                "bright"
+            ],
+            "aesthetic": [
+                "Signal",
+                "Interface"
+            ]
+        }
+    },
+    {
+        "id": "petal-commerce-atlas",
+        "name": "Petal Commerce Atlas",
+        "description": "A complete petal commercial palette with berry anchors, rose CTAs, promotional pinks, and soft checkout surfaces.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Petal Commerce Atlas Berry Shelf",
+                "hex": "#1f0a17ff"
+            },
+            {
+                "name": "Petal Commerce Atlas Wine Label",
+                "hex": "#500724ff"
+            },
+            {
+                "name": "Petal Commerce Atlas Petal Cart",
+                "hex": "#831843ff"
+            },
+            {
+                "name": "Petal Commerce Atlas Checkout Rose",
+                "hex": "#9d174dff"
+            },
+            {
+                "name": "Petal Commerce Atlas Action Pink",
+                "hex": "#be185dff"
+            },
+            {
+                "name": "Petal Commerce Atlas Offer Pink",
+                "hex": "#db2777ff"
+            },
+            {
+                "name": "Petal Commerce Atlas Ticket Glow",
+                "hex": "#f9a8d4ff"
+            },
+            {
+                "name": "Petal Commerce Atlas Receipt Blush",
+                "hex": "#fce7f3ff"
+            },
+            {
+                "name": "Petal Commerce Atlas Checkout White",
+                "hex": "#fff7fbff"
+            },
+            {
+                "name": "Petal Commerce Atlas Ink Copy",
+                "hex": "#111827ff"
+            }
+        ],
+        "path": "10 Color Palette/Petal Commerce Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "pink",
+                "commercial"
+            ],
+            "aesthetic": [
+                "Commerce",
+                "Retail"
+            ]
+        }
+    },
+    {
+        "id": "porcelain-circuit-atlas",
+        "name": "Porcelain Circuit Atlas",
+        "description": "A complete technical white atlas for dashboards, diagnostics, clean product shells, porcelain panels, and cool highlights.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Porcelain Circuit Atlas Graphite Console",
+                "hex": "#111827ff"
+            },
+            {
+                "name": "Porcelain Circuit Atlas Slate Trace",
+                "hex": "#475569ff"
+            },
+            {
+                "name": "Porcelain Circuit Atlas Cool Trace",
+                "hex": "#94a3b8ff"
+            },
+            {
+                "name": "Porcelain Circuit Atlas Ceramic Border",
+                "hex": "#cbd5e1ff"
+            },
+            {
+                "name": "Porcelain Circuit Atlas Porcelain Panel",
+                "hex": "#e5e7ebff"
+            },
+            {
+                "name": "Porcelain Circuit Atlas Soft Console",
+                "hex": "#f1f5f9ff"
+            },
+            {
+                "name": "Porcelain Circuit Atlas Mist Surface",
+                "hex": "#f8fafcff"
+            },
+            {
+                "name": "Porcelain Circuit Atlas Signal White",
+                "hex": "#ffffffff"
+            },
+            {
+                "name": "Porcelain Circuit Atlas Ice Accent",
+                "hex": "#e0f2feff"
+            },
+            {
+                "name": "Porcelain Circuit Atlas Blue Ink",
+                "hex": "#1d4ed8ff"
+            }
+        ],
+        "path": "10 Color Palette/Porcelain Circuit Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "white",
+                "technical"
+            ],
+            "aesthetic": [
+                "Circuit",
+                "Developer"
+            ]
+        }
+    },
+    {
         "id": "purple-observatory",
         "name": "Purple Observatory",
         "description": "A cosmic purple system with observatory darks, violet steps, lavender surfaces, and white light.",
@@ -12906,6 +14766,66 @@
             "aesthetic": [
                 "Finance",
                 "Reports"
+            ]
+        }
+    },
+    {
+        "id": "sakura-bloom-atlas",
+        "name": "Sakura Bloom Atlas",
+        "description": "A complete sakura bloom palette with plum shadows, blossom ramps, petal highlights, and soft lifestyle surfaces.",
+        "count": 10,
+        "colors": [
+            {
+                "name": "Sakura Bloom Atlas Bloom Shadow",
+                "hex": "#1f0a17ff"
+            },
+            {
+                "name": "Sakura Bloom Atlas Plum Branch",
+                "hex": "#4a044eff"
+            },
+            {
+                "name": "Sakura Bloom Atlas Sakura Bark",
+                "hex": "#831843ff"
+            },
+            {
+                "name": "Sakura Bloom Atlas Petal Rose",
+                "hex": "#be185dff"
+            },
+            {
+                "name": "Sakura Bloom Atlas Bloom Pink",
+                "hex": "#ec4899ff"
+            },
+            {
+                "name": "Sakura Bloom Atlas Soft Petal",
+                "hex": "#f9a8d4ff"
+            },
+            {
+                "name": "Sakura Bloom Atlas Blossom Cream",
+                "hex": "#fce7f3ff"
+            },
+            {
+                "name": "Sakura Bloom Atlas Morning Mist",
+                "hex": "#fdf2f8ff"
+            },
+            {
+                "name": "Sakura Bloom Atlas Paper White",
+                "hex": "#ffffffff"
+            },
+            {
+                "name": "Sakura Bloom Atlas Stem Slate",
+                "hex": "#475569ff"
+            }
+        ],
+        "path": "10 Color Palette/Sakura Bloom Atlas.scss",
+        "folder": "10 Color Palette",
+        "tags": {
+            "mood": [
+                "pink",
+                "soft"
+            ],
+            "aesthetic": [
+                "Sakura",
+                "Botanical"
             ]
         }
     },

@@ -1,0 +1,111 @@
+/*---
+id: alpine-mist-atlas
+name: Alpine Mist Atlas
+author: JaZeR-444
+version: 1.0.0
+category: White & Natural
+count: 10
+description: A complete alpine white palette with mountain shadows, frost grays, snow fields, glacier whites, and cool sky accents.
+tags:
+  mood:
+  - white
+  - cool
+  aesthetic:
+  - Alpine
+  - Nature
+intent: A white-focused 10-color palette designed for outdoor, wellness, editorial.
+suggested_use:
+- Outdoor
+- Wellness
+- Editorial
+url: https://coolors.co/0f172a-64748b-cbd5e1-e2e8f0-f8fafc-ffffff-dbeafe-bfdbfe-3b82f6-064e3b
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--alpine-mist-atlas-mountain-shadow: #0f172aff;
+--alpine-mist-atlas-stone-ridge: #64748bff;
+--alpine-mist-atlas-frost-edge: #cbd5e1ff;
+--alpine-mist-atlas-alpine-mist: #e2e8f0ff;
+--alpine-mist-atlas-snow-field: #f8fafcff;
+--alpine-mist-atlas-glacier-white: #ffffffff;
+--alpine-mist-atlas-ice-blue: #dbeafeff;
+--alpine-mist-atlas-sky-reflection: #bfdbfeff;
+--alpine-mist-atlas-alpine-blue: #3b82f6ff;
+--alpine-mist-atlas-evergreen-ink: #064e3bff;
+
+/* CSS HSL */
+--alpine-mist-atlas-mountain-shadow: hsla(222, 47%, 11%, 1);
+--alpine-mist-atlas-stone-ridge: hsla(215, 16%, 47%, 1);
+--alpine-mist-atlas-frost-edge: hsla(213, 27%, 84%, 1);
+--alpine-mist-atlas-alpine-mist: hsla(214, 32%, 91%, 1);
+--alpine-mist-atlas-snow-field: hsla(210, 40%, 98%, 1);
+--alpine-mist-atlas-glacier-white: hsla(0, 0%, 100%, 1);
+--alpine-mist-atlas-ice-blue: hsla(214, 95%, 93%, 1);
+--alpine-mist-atlas-sky-reflection: hsla(213, 97%, 87%, 1);
+--alpine-mist-atlas-alpine-blue: hsla(217, 91%, 60%, 1);
+--alpine-mist-atlas-evergreen-ink: hsla(164, 86%, 16%, 1);
+}
+
+/* SCSS HEX */
+$alpine-mist-atlas-mountain-shadow: #0f172aff;
+$alpine-mist-atlas-stone-ridge: #64748bff;
+$alpine-mist-atlas-frost-edge: #cbd5e1ff;
+$alpine-mist-atlas-alpine-mist: #e2e8f0ff;
+$alpine-mist-atlas-snow-field: #f8fafcff;
+$alpine-mist-atlas-glacier-white: #ffffffff;
+$alpine-mist-atlas-ice-blue: #dbeafeff;
+$alpine-mist-atlas-sky-reflection: #bfdbfeff;
+$alpine-mist-atlas-alpine-blue: #3b82f6ff;
+$alpine-mist-atlas-evergreen-ink: #064e3bff;
+
+/* SCSS HSL */
+$alpine-mist-atlas-mountain-shadow: hsla(222, 47%, 11%, 1);
+$alpine-mist-atlas-stone-ridge: hsla(215, 16%, 47%, 1);
+$alpine-mist-atlas-frost-edge: hsla(213, 27%, 84%, 1);
+$alpine-mist-atlas-alpine-mist: hsla(214, 32%, 91%, 1);
+$alpine-mist-atlas-snow-field: hsla(210, 40%, 98%, 1);
+$alpine-mist-atlas-glacier-white: hsla(0, 0%, 100%, 1);
+$alpine-mist-atlas-ice-blue: hsla(214, 95%, 93%, 1);
+$alpine-mist-atlas-sky-reflection: hsla(213, 97%, 87%, 1);
+$alpine-mist-atlas-alpine-blue: hsla(217, 91%, 60%, 1);
+$alpine-mist-atlas-evergreen-ink: hsla(164, 86%, 16%, 1);
+
+/* SCSS RGB */
+$alpine-mist-atlas-mountain-shadow: rgba(15, 23, 42, 1);
+$alpine-mist-atlas-stone-ridge: rgba(100, 116, 139, 1);
+$alpine-mist-atlas-frost-edge: rgba(203, 213, 225, 1);
+$alpine-mist-atlas-alpine-mist: rgba(226, 232, 240, 1);
+$alpine-mist-atlas-snow-field: rgba(248, 250, 252, 1);
+$alpine-mist-atlas-glacier-white: rgba(255, 255, 255, 1);
+$alpine-mist-atlas-ice-blue: rgba(219, 234, 254, 1);
+$alpine-mist-atlas-sky-reflection: rgba(191, 219, 254, 1);
+$alpine-mist-atlas-alpine-blue: rgba(59, 130, 246, 1);
+$alpine-mist-atlas-evergreen-ink: rgba(6, 78, 59, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0f172aff, #64748bff, #cbd5e1ff, #e2e8f0ff, #f8fafcff, #ffffffff, #dbeafeff, #bfdbfeff, #3b82f6ff, #064e3bff);
+$gradient-right: linear-gradient(90deg, #0f172aff, #64748bff, #cbd5e1ff, #e2e8f0ff, #f8fafcff, #ffffffff, #dbeafeff, #bfdbfeff, #3b82f6ff, #064e3bff);
+$gradient-bottom: linear-gradient(180deg, #0f172aff, #64748bff, #cbd5e1ff, #e2e8f0ff, #f8fafcff, #ffffffff, #dbeafeff, #bfdbfeff, #3b82f6ff, #064e3bff);
+$gradient-left: linear-gradient(270deg, #0f172aff, #64748bff, #cbd5e1ff, #e2e8f0ff, #f8fafcff, #ffffffff, #dbeafeff, #bfdbfeff, #3b82f6ff, #064e3bff);
+$gradient-top-right: linear-gradient(45deg, #0f172aff, #64748bff, #cbd5e1ff, #e2e8f0ff, #f8fafcff, #ffffffff, #dbeafeff, #bfdbfeff, #3b82f6ff, #064e3bff);
+$gradient-bottom-right: linear-gradient(135deg, #0f172aff, #64748bff, #cbd5e1ff, #e2e8f0ff, #f8fafcff, #ffffffff, #dbeafeff, #bfdbfeff, #3b82f6ff, #064e3bff);
+$gradient-top-left: linear-gradient(225deg, #0f172aff, #64748bff, #cbd5e1ff, #e2e8f0ff, #f8fafcff, #ffffffff, #dbeafeff, #bfdbfeff, #3b82f6ff, #064e3bff);
+$gradient-bottom-left: linear-gradient(315deg, #0f172aff, #64748bff, #cbd5e1ff, #e2e8f0ff, #f8fafcff, #ffffffff, #dbeafeff, #bfdbfeff, #3b82f6ff, #064e3bff);
+$gradient-radial: radial-gradient(#0f172aff, #64748bff, #cbd5e1ff, #e2e8f0ff, #f8fafcff, #ffffffff, #dbeafeff, #bfdbfeff, #3b82f6ff, #064e3bff);
+
+/* SCSS Map */
+$alpine-mist-atlas-map: (
+    "alpine-mist-atlas-mountain-shadow": #0f172aff,
+    "alpine-mist-atlas-stone-ridge": #64748bff,
+    "alpine-mist-atlas-frost-edge": #cbd5e1ff,
+    "alpine-mist-atlas-alpine-mist": #e2e8f0ff,
+    "alpine-mist-atlas-snow-field": #f8fafcff,
+    "alpine-mist-atlas-glacier-white": #ffffffff,
+    "alpine-mist-atlas-ice-blue": #dbeafeff,
+    "alpine-mist-atlas-sky-reflection": #bfdbfeff,
+    "alpine-mist-atlas-alpine-blue": #3b82f6ff,
+    "alpine-mist-atlas-evergreen-ink": #064e3bff
+);

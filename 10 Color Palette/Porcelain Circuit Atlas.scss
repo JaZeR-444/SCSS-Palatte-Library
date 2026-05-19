@@ -1,0 +1,111 @@
+/*---
+id: porcelain-circuit-atlas
+name: Porcelain Circuit Atlas
+author: JaZeR-444
+version: 1.0.0
+category: White & Technical
+count: 10
+description: A complete technical white atlas for dashboards, diagnostics, clean product shells, porcelain panels, and cool highlights.
+tags:
+  mood:
+  - white
+  - technical
+  aesthetic:
+  - Circuit
+  - Developer
+intent: A white-focused 10-color palette designed for developer tools, monitoring, analytics.
+suggested_use:
+- Developer Tools
+- Monitoring
+- Analytics
+url: https://coolors.co/111827-475569-94a3b8-cbd5e1-e5e7eb-f1f5f9-f8fafc-ffffff-e0f2fe-1d4ed8
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--porcelain-circuit-atlas-graphite-console: #111827ff;
+--porcelain-circuit-atlas-slate-trace: #475569ff;
+--porcelain-circuit-atlas-cool-trace: #94a3b8ff;
+--porcelain-circuit-atlas-ceramic-border: #cbd5e1ff;
+--porcelain-circuit-atlas-porcelain-panel: #e5e7ebff;
+--porcelain-circuit-atlas-soft-console: #f1f5f9ff;
+--porcelain-circuit-atlas-mist-surface: #f8fafcff;
+--porcelain-circuit-atlas-signal-white: #ffffffff;
+--porcelain-circuit-atlas-ice-accent: #e0f2feff;
+--porcelain-circuit-atlas-blue-ink: #1d4ed8ff;
+
+/* CSS HSL */
+--porcelain-circuit-atlas-graphite-console: hsla(221, 39%, 11%, 1);
+--porcelain-circuit-atlas-slate-trace: hsla(215, 19%, 35%, 1);
+--porcelain-circuit-atlas-cool-trace: hsla(215, 20%, 65%, 1);
+--porcelain-circuit-atlas-ceramic-border: hsla(213, 27%, 84%, 1);
+--porcelain-circuit-atlas-porcelain-panel: hsla(220, 13%, 91%, 1);
+--porcelain-circuit-atlas-soft-console: hsla(210, 40%, 96%, 1);
+--porcelain-circuit-atlas-mist-surface: hsla(210, 40%, 98%, 1);
+--porcelain-circuit-atlas-signal-white: hsla(0, 0%, 100%, 1);
+--porcelain-circuit-atlas-ice-accent: hsla(204, 94%, 94%, 1);
+--porcelain-circuit-atlas-blue-ink: hsla(224, 76%, 48%, 1);
+}
+
+/* SCSS HEX */
+$porcelain-circuit-atlas-graphite-console: #111827ff;
+$porcelain-circuit-atlas-slate-trace: #475569ff;
+$porcelain-circuit-atlas-cool-trace: #94a3b8ff;
+$porcelain-circuit-atlas-ceramic-border: #cbd5e1ff;
+$porcelain-circuit-atlas-porcelain-panel: #e5e7ebff;
+$porcelain-circuit-atlas-soft-console: #f1f5f9ff;
+$porcelain-circuit-atlas-mist-surface: #f8fafcff;
+$porcelain-circuit-atlas-signal-white: #ffffffff;
+$porcelain-circuit-atlas-ice-accent: #e0f2feff;
+$porcelain-circuit-atlas-blue-ink: #1d4ed8ff;
+
+/* SCSS HSL */
+$porcelain-circuit-atlas-graphite-console: hsla(221, 39%, 11%, 1);
+$porcelain-circuit-atlas-slate-trace: hsla(215, 19%, 35%, 1);
+$porcelain-circuit-atlas-cool-trace: hsla(215, 20%, 65%, 1);
+$porcelain-circuit-atlas-ceramic-border: hsla(213, 27%, 84%, 1);
+$porcelain-circuit-atlas-porcelain-panel: hsla(220, 13%, 91%, 1);
+$porcelain-circuit-atlas-soft-console: hsla(210, 40%, 96%, 1);
+$porcelain-circuit-atlas-mist-surface: hsla(210, 40%, 98%, 1);
+$porcelain-circuit-atlas-signal-white: hsla(0, 0%, 100%, 1);
+$porcelain-circuit-atlas-ice-accent: hsla(204, 94%, 94%, 1);
+$porcelain-circuit-atlas-blue-ink: hsla(224, 76%, 48%, 1);
+
+/* SCSS RGB */
+$porcelain-circuit-atlas-graphite-console: rgba(17, 24, 39, 1);
+$porcelain-circuit-atlas-slate-trace: rgba(71, 85, 105, 1);
+$porcelain-circuit-atlas-cool-trace: rgba(148, 163, 184, 1);
+$porcelain-circuit-atlas-ceramic-border: rgba(203, 213, 225, 1);
+$porcelain-circuit-atlas-porcelain-panel: rgba(229, 231, 235, 1);
+$porcelain-circuit-atlas-soft-console: rgba(241, 245, 249, 1);
+$porcelain-circuit-atlas-mist-surface: rgba(248, 250, 252, 1);
+$porcelain-circuit-atlas-signal-white: rgba(255, 255, 255, 1);
+$porcelain-circuit-atlas-ice-accent: rgba(224, 242, 254, 1);
+$porcelain-circuit-atlas-blue-ink: rgba(29, 78, 216, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e5e7ebff, #f1f5f9ff, #f8fafcff, #ffffffff, #e0f2feff, #1d4ed8ff);
+$gradient-right: linear-gradient(90deg, #111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e5e7ebff, #f1f5f9ff, #f8fafcff, #ffffffff, #e0f2feff, #1d4ed8ff);
+$gradient-bottom: linear-gradient(180deg, #111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e5e7ebff, #f1f5f9ff, #f8fafcff, #ffffffff, #e0f2feff, #1d4ed8ff);
+$gradient-left: linear-gradient(270deg, #111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e5e7ebff, #f1f5f9ff, #f8fafcff, #ffffffff, #e0f2feff, #1d4ed8ff);
+$gradient-top-right: linear-gradient(45deg, #111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e5e7ebff, #f1f5f9ff, #f8fafcff, #ffffffff, #e0f2feff, #1d4ed8ff);
+$gradient-bottom-right: linear-gradient(135deg, #111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e5e7ebff, #f1f5f9ff, #f8fafcff, #ffffffff, #e0f2feff, #1d4ed8ff);
+$gradient-top-left: linear-gradient(225deg, #111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e5e7ebff, #f1f5f9ff, #f8fafcff, #ffffffff, #e0f2feff, #1d4ed8ff);
+$gradient-bottom-left: linear-gradient(315deg, #111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e5e7ebff, #f1f5f9ff, #f8fafcff, #ffffffff, #e0f2feff, #1d4ed8ff);
+$gradient-radial: radial-gradient(#111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e5e7ebff, #f1f5f9ff, #f8fafcff, #ffffffff, #e0f2feff, #1d4ed8ff);
+
+/* SCSS Map */
+$porcelain-circuit-atlas-map: (
+    "porcelain-circuit-atlas-graphite-console": #111827ff,
+    "porcelain-circuit-atlas-slate-trace": #475569ff,
+    "porcelain-circuit-atlas-cool-trace": #94a3b8ff,
+    "porcelain-circuit-atlas-ceramic-border": #cbd5e1ff,
+    "porcelain-circuit-atlas-porcelain-panel": #e5e7ebff,
+    "porcelain-circuit-atlas-soft-console": #f1f5f9ff,
+    "porcelain-circuit-atlas-mist-surface": #f8fafcff,
+    "porcelain-circuit-atlas-signal-white": #ffffffff,
+    "porcelain-circuit-atlas-ice-accent": #e0f2feff,
+    "porcelain-circuit-atlas-blue-ink": #1d4ed8ff
+);

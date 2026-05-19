@@ -1,0 +1,75 @@
+/*---
+id: pearl-signal-quartet
+name: Pearl Signal Quartet
+author: JaZeR-444
+version: 1.0.0
+category: White & Interface
+count: 4
+description: A pearl interface palette with readable ink, cool border tone, pearl surfaces, and clean white highlights.
+tags:
+  mood:
+  - white
+  - bright
+  aesthetic:
+  - Signal
+  - Interface
+intent: A white-focused 4-color palette designed for product ui, onboarding, notifications.
+suggested_use:
+- Product UI
+- Onboarding
+- Notifications
+url: https://coolors.co/1f2937-d1d5db-f3f4f6-ffffff
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--pearl-signal-quartet-signal-ink: #1f2937ff;
+--pearl-signal-quartet-soft-border: #d1d5dbff;
+--pearl-signal-quartet-pearl-surface: #f3f4f6ff;
+--pearl-signal-quartet-pearl-white: #ffffffff;
+
+/* CSS HSL */
+--pearl-signal-quartet-signal-ink: hsla(215, 28%, 17%, 1);
+--pearl-signal-quartet-soft-border: hsla(216, 12%, 84%, 1);
+--pearl-signal-quartet-pearl-surface: hsla(220, 14%, 96%, 1);
+--pearl-signal-quartet-pearl-white: hsla(0, 0%, 100%, 1);
+}
+
+/* SCSS HEX */
+$pearl-signal-quartet-signal-ink: #1f2937ff;
+$pearl-signal-quartet-soft-border: #d1d5dbff;
+$pearl-signal-quartet-pearl-surface: #f3f4f6ff;
+$pearl-signal-quartet-pearl-white: #ffffffff;
+
+/* SCSS HSL */
+$pearl-signal-quartet-signal-ink: hsla(215, 28%, 17%, 1);
+$pearl-signal-quartet-soft-border: hsla(216, 12%, 84%, 1);
+$pearl-signal-quartet-pearl-surface: hsla(220, 14%, 96%, 1);
+$pearl-signal-quartet-pearl-white: hsla(0, 0%, 100%, 1);
+
+/* SCSS RGB */
+$pearl-signal-quartet-signal-ink: rgba(31, 41, 55, 1);
+$pearl-signal-quartet-soft-border: rgba(209, 213, 219, 1);
+$pearl-signal-quartet-pearl-surface: rgba(243, 244, 246, 1);
+$pearl-signal-quartet-pearl-white: rgba(255, 255, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1f2937ff, #d1d5dbff, #f3f4f6ff, #ffffffff);
+$gradient-right: linear-gradient(90deg, #1f2937ff, #d1d5dbff, #f3f4f6ff, #ffffffff);
+$gradient-bottom: linear-gradient(180deg, #1f2937ff, #d1d5dbff, #f3f4f6ff, #ffffffff);
+$gradient-left: linear-gradient(270deg, #1f2937ff, #d1d5dbff, #f3f4f6ff, #ffffffff);
+$gradient-top-right: linear-gradient(45deg, #1f2937ff, #d1d5dbff, #f3f4f6ff, #ffffffff);
+$gradient-bottom-right: linear-gradient(135deg, #1f2937ff, #d1d5dbff, #f3f4f6ff, #ffffffff);
+$gradient-top-left: linear-gradient(225deg, #1f2937ff, #d1d5dbff, #f3f4f6ff, #ffffffff);
+$gradient-bottom-left: linear-gradient(315deg, #1f2937ff, #d1d5dbff, #f3f4f6ff, #ffffffff);
+$gradient-radial: radial-gradient(#1f2937ff, #d1d5dbff, #f3f4f6ff, #ffffffff);
+
+/* SCSS Map */
+$pearl-signal-quartet-map: (
+    "pearl-signal-quartet-signal-ink": #1f2937ff,
+    "pearl-signal-quartet-soft-border": #d1d5dbff,
+    "pearl-signal-quartet-pearl-surface": #f3f4f6ff,
+    "pearl-signal-quartet-pearl-white": #ffffffff
+);

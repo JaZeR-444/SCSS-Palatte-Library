@@ -1,0 +1,81 @@
+/*---
+id: porcelain-circuit-scale
+name: Porcelain Circuit Scale
+author: JaZeR-444
+version: 1.0.0
+category: White & Technical
+count: 5
+description: A technical white palette with graphite contrast, cool traces, porcelain panels, and luminous diagnostic surfaces.
+tags:
+  mood:
+  - white
+  - technical
+  aesthetic:
+  - Circuit
+  - Developer
+intent: A white-focused 5-color palette designed for developer tools, monitoring, analytics.
+suggested_use:
+- Developer Tools
+- Monitoring
+- Analytics
+url: https://coolors.co/111827-475569-94a3b8-e5e7eb-ffffff
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--porcelain-circuit-scale-graphite-console: #111827ff;
+--porcelain-circuit-scale-slate-trace: #475569ff;
+--porcelain-circuit-scale-cool-trace: #94a3b8ff;
+--porcelain-circuit-scale-porcelain-panel: #e5e7ebff;
+--porcelain-circuit-scale-signal-white: #ffffffff;
+
+/* CSS HSL */
+--porcelain-circuit-scale-graphite-console: hsla(221, 39%, 11%, 1);
+--porcelain-circuit-scale-slate-trace: hsla(215, 19%, 35%, 1);
+--porcelain-circuit-scale-cool-trace: hsla(215, 20%, 65%, 1);
+--porcelain-circuit-scale-porcelain-panel: hsla(220, 13%, 91%, 1);
+--porcelain-circuit-scale-signal-white: hsla(0, 0%, 100%, 1);
+}
+
+/* SCSS HEX */
+$porcelain-circuit-scale-graphite-console: #111827ff;
+$porcelain-circuit-scale-slate-trace: #475569ff;
+$porcelain-circuit-scale-cool-trace: #94a3b8ff;
+$porcelain-circuit-scale-porcelain-panel: #e5e7ebff;
+$porcelain-circuit-scale-signal-white: #ffffffff;
+
+/* SCSS HSL */
+$porcelain-circuit-scale-graphite-console: hsla(221, 39%, 11%, 1);
+$porcelain-circuit-scale-slate-trace: hsla(215, 19%, 35%, 1);
+$porcelain-circuit-scale-cool-trace: hsla(215, 20%, 65%, 1);
+$porcelain-circuit-scale-porcelain-panel: hsla(220, 13%, 91%, 1);
+$porcelain-circuit-scale-signal-white: hsla(0, 0%, 100%, 1);
+
+/* SCSS RGB */
+$porcelain-circuit-scale-graphite-console: rgba(17, 24, 39, 1);
+$porcelain-circuit-scale-slate-trace: rgba(71, 85, 105, 1);
+$porcelain-circuit-scale-cool-trace: rgba(148, 163, 184, 1);
+$porcelain-circuit-scale-porcelain-panel: rgba(229, 231, 235, 1);
+$porcelain-circuit-scale-signal-white: rgba(255, 255, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #111827ff, #475569ff, #94a3b8ff, #e5e7ebff, #ffffffff);
+$gradient-right: linear-gradient(90deg, #111827ff, #475569ff, #94a3b8ff, #e5e7ebff, #ffffffff);
+$gradient-bottom: linear-gradient(180deg, #111827ff, #475569ff, #94a3b8ff, #e5e7ebff, #ffffffff);
+$gradient-left: linear-gradient(270deg, #111827ff, #475569ff, #94a3b8ff, #e5e7ebff, #ffffffff);
+$gradient-top-right: linear-gradient(45deg, #111827ff, #475569ff, #94a3b8ff, #e5e7ebff, #ffffffff);
+$gradient-bottom-right: linear-gradient(135deg, #111827ff, #475569ff, #94a3b8ff, #e5e7ebff, #ffffffff);
+$gradient-top-left: linear-gradient(225deg, #111827ff, #475569ff, #94a3b8ff, #e5e7ebff, #ffffffff);
+$gradient-bottom-left: linear-gradient(315deg, #111827ff, #475569ff, #94a3b8ff, #e5e7ebff, #ffffffff);
+$gradient-radial: radial-gradient(#111827ff, #475569ff, #94a3b8ff, #e5e7ebff, #ffffffff);
+
+/* SCSS Map */
+$porcelain-circuit-scale-map: (
+    "porcelain-circuit-scale-graphite-console": #111827ff,
+    "porcelain-circuit-scale-slate-trace": #475569ff,
+    "porcelain-circuit-scale-cool-trace": #94a3b8ff,
+    "porcelain-circuit-scale-porcelain-panel": #e5e7ebff,
+    "porcelain-circuit-scale-signal-white": #ffffffff
+);

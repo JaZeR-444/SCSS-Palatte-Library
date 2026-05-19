@@ -23,21 +23,40 @@
 
     <!-- Header -->
     <header class="sticky top-0 z-40 w-full backdrop-blur border-b border-gray-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <div class="w-8 h-8 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 rounded-lg shadow-lg"></div>
-                <h1 class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 dark:from-indigo-400 dark:to-purple-400">
-                    Palette Showcase
-                </h1>
+        <div class="h-[3px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
+            <div class="flex items-center gap-3 min-w-0">
+                <div class="relative h-11 w-11 flex-shrink-0 rounded-2xl bg-slate-950 p-1 shadow-lg dark:bg-white ring-1 ring-indigo-500/25 ring-offset-2 ring-offset-white dark:ring-offset-slate-900">
+                    <div class="h-full w-full rounded-xl bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500"></div>
+                    <div class="absolute -right-1 -bottom-1 h-4 w-4 rounded-full border-2 border-white bg-emerald-400 dark:border-slate-900 animate-pulse"></div>
+                </div>
+                <div class="min-w-0">
+                    <div class="flex flex-wrap items-center gap-2">
+                        <h1 class="text-xl sm:text-2xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 dark:from-indigo-400 dark:to-purple-400">
+                            Palette Showcase
+                        </h1>
+                        <span class="rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 px-2.5 py-1 text-[10px] font-black uppercase tracking-widest text-white shadow-sm shadow-indigo-500/30">v2.0</span>
+                    </div>
+                    <p class="truncate text-xs font-medium text-gray-400 dark:text-gray-500">Professional SCSS palettes &mdash; live preview, WCAG tools &amp; export.</p>
+                </div>
             </div>
             
-            <div class="flex items-center gap-4">
-                <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors" title="Toggle Theme">
-                    <i class="fa-solid fa-moon dark:hidden text-gray-600"></i>
-                    <i class="fa-solid fa-sun hidden dark:block text-yellow-400"></i>
+            <div class="flex flex-wrap items-center gap-2 sm:justify-end">
+                <div class="hidden md:flex items-center gap-2 rounded-2xl border border-gray-200 bg-white/70 px-3 py-2 shadow-sm dark:border-slate-800 dark:bg-slate-900/70">
+                    <div class="h-2.5 w-2.5 rounded-full bg-emerald-400"></div>
+                    <span id="library-count" class="text-[11px] font-black uppercase tracking-widest text-gray-500 dark:text-gray-400">Loading palettes</span>
+                </div>
+                <div class="hidden lg:flex items-center gap-2 rounded-2xl border border-gray-200 bg-white/70 px-3 py-2 shadow-sm dark:border-slate-800 dark:bg-slate-900/70">
+                    <i class="fa-solid fa-universal-access text-indigo-400"></i>
+                    <span class="text-[11px] font-black uppercase tracking-widest text-gray-500 dark:text-gray-400">WCAG Tools</span>
+                </div>
+                <button id="theme-toggle" class="h-10 w-10 rounded-2xl border border-gray-200 bg-white/70 text-gray-500 shadow-sm hover:border-indigo-500 hover:text-indigo-500 dark:border-slate-800 dark:bg-slate-900/70 dark:hover:border-indigo-400 transition-colors" title="Toggle Theme">
+                    <i class="fa-solid fa-moon dark:hidden"></i>
+                    <i class="fa-solid fa-sun hidden dark:inline text-yellow-400"></i>
                 </button>
-                <a href="https://github.com" class="text-gray-500 hover:text-indigo-500 transition-colors text-xl">
+                <a href="https://github.com/JaZeR-444/SCSS-Palatte-Library" class="inline-flex h-10 items-center gap-2 rounded-2xl border border-gray-200 bg-white/70 px-3 text-xs font-black uppercase tracking-widest text-gray-500 shadow-sm hover:border-indigo-500 hover:text-indigo-500 dark:border-slate-800 dark:bg-slate-900/70 dark:hover:border-indigo-400 transition-colors">
                     <i class="fa-brands fa-github"></i>
+                    <span class="hidden sm:inline">GitHub</span>
                 </a>
             </div>
         </div>
@@ -49,10 +68,11 @@
                 <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <input type="text" id="palette-search" placeholder="Search by name, category, or vibe..." 
-                    class="block w-full pl-12 pr-32 py-3 border border-gray-200 dark:border-slate-800 rounded-2xl bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm text-base placeholder-gray-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-500 transition-all">
+                <input type="text" id="palette-search" placeholder="Search by name, mood, or color..."
+                    class="block w-full pl-12 pr-36 py-3.5 border border-gray-200 dark:border-slate-800 rounded-2xl bg-white dark:bg-slate-900/80 text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-400 shadow-sm transition-all">
                 
                 <div class="absolute inset-y-0 right-0 flex items-center pr-3 gap-2">
+                    <kbd class="hidden md:inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[9px] font-bold bg-gray-100 dark:bg-slate-800 border border-gray-200 dark:border-slate-700 text-gray-400 pointer-events-none select-none">⌘K</kbd>
                     <button id="clear-color-proximity" class="hidden text-[10px] font-black text-red-400 hover:text-red-600 transition-colors whitespace-nowrap">✕ Color</button>
                     <label class="relative cursor-pointer flex-shrink-0" title="Sort by color proximity">
                         <input type="color" id="color-proximity-picker" value="#6366f1" class="absolute inset-0 opacity-0 cursor-pointer w-full h-full">
@@ -80,10 +100,6 @@
                         <button data-facet="all" aria-selected="true" class="facet-btn active px-4 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-indigo-500 bg-indigo-500 text-white transition-all whitespace-nowrap"><i class="fa-solid fa-border-all mr-2"></i>All</button>
                         <button data-facet="recent" aria-selected="false" class="facet-btn px-4 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-indigo-500 transition-all whitespace-nowrap"><i class="fa-solid fa-clock-rotate-left mr-2"></i>Recent</button>
                         <button data-facet="count" aria-selected="false" class="facet-btn px-4 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-indigo-500 transition-all whitespace-nowrap"><i class="fa-solid fa-layer-group mr-2"></i>Count</button>
-                        <button data-facet="category" aria-selected="false" class="facet-btn px-4 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-indigo-500 transition-all whitespace-nowrap"><i class="fa-solid fa-folder-tree mr-2"></i>Category</button>
-                        <button data-facet="mood" aria-selected="false" class="facet-btn px-4 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-indigo-500 transition-all whitespace-nowrap"><i class="fa-solid fa-cloud-sun mr-2"></i>Mood</button>
-                        <button data-facet="aesthetic" aria-selected="false" class="facet-btn px-4 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-indigo-500 transition-all whitespace-nowrap"><i class="fa-solid fa-wand-magic-sparkles mr-2"></i>Aesthetic</button>
-                        <button data-facet="color" aria-selected="false" class="facet-btn px-4 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-indigo-500 transition-all whitespace-nowrap"><i class="fa-solid fa-droplet mr-2"></i>Color</button>
                         <button data-facet="favorites" aria-selected="false" class="facet-btn px-4 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-red-400 hover:text-red-400 transition-all whitespace-nowrap"><i class="fa-solid fa-heart mr-2"></i>Saved</button>
                     </div>
                 </div>
@@ -99,26 +115,45 @@
     </header>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div class="flex items-center justify-between mb-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
             <p id="results-count" class="text-sm font-bold text-gray-400 dark:text-gray-500"></p>
-            <select id="sort-order" class="text-xs font-bold text-gray-500 dark:text-gray-400 bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 rounded-xl px-3 py-2 outline-none cursor-pointer hover:border-indigo-500 transition-all">
-                <option value="name">Sort: Name A→Z</option>
-                <option value="count-asc">Sort: Fewest Colors</option>
-                <option value="count-desc">Sort: Most Colors</option>
-            </select>
+            <label class="sort-control group flex items-center gap-2 rounded-2xl border border-gray-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-3 py-2 shadow-sm transition-all hover:border-indigo-500 focus-within:border-indigo-500 focus-within:ring-4 focus-within:ring-indigo-500/10">
+                <span class="flex h-8 w-8 items-center justify-center rounded-xl bg-indigo-50 text-indigo-500 dark:bg-indigo-950/40 dark:text-indigo-300">
+                    <i class="fa-solid fa-arrow-down-wide-short text-xs"></i>
+                </span>
+                <span class="text-[10px] font-black uppercase tracking-widest text-gray-400">Sort</span>
+                <select id="sort-order" class="min-w-40 appearance-none bg-transparent pr-6 text-xs font-black text-gray-700 outline-none cursor-pointer dark:text-gray-200">
+                    <option value="name">Name A-Z</option>
+                    <option value="recent">Recently Added</option>
+                    <option value="count-asc">Fewest Colors</option>
+                    <option value="count-desc">Most Colors</option>
+                    <option value="proximity">Closest Color</option>
+                </select>
+                <i class="fa-solid fa-chevron-down text-[10px] text-gray-300 transition-transform group-focus-within:rotate-180"></i>
+            </label>
         </div>
         <div id="collections-panel" class="hidden mb-8 rounded-2xl border border-gray-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 sm:p-6 shadow-sm"></div>
         <div id="palette-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             <!-- Skeleton Placeholders -->
-            <div class="skeleton-card bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-slate-800 space-y-4">
-                <div class="h-12 w-full skeleton rounded-lg"></div>
-                <div class="space-y-2">
-                    <div class="h-4 w-3/4 skeleton rounded"></div>
-                    <div class="h-4 w-full skeleton rounded"></div>
+            <div class="skeleton-card bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-gray-100 dark:border-slate-800 flex flex-col">
+                <div class="skeleton" style="height:108px"></div>
+                <div class="p-4 space-y-2.5">
+                    <div class="h-5 w-3/4 skeleton rounded-lg"></div>
+                    <div class="h-3 w-1/3 skeleton rounded-full"></div>
+                    <div class="flex gap-1.5 pt-1">
+                        <div class="h-4 w-12 skeleton rounded-full"></div>
+                        <div class="h-4 w-16 skeleton rounded-full"></div>
+                    </div>
                 </div>
-                <div class="pt-4 border-t border-gray-50 dark:border-slate-800 flex justify-between">
-                    <div class="h-3 w-20 skeleton rounded"></div>
-                    <div class="h-10 w-10 skeleton rounded-xl"></div>
+                <div class="px-4 pb-4 flex items-center justify-between mt-auto">
+                    <div class="flex gap-0.5">
+                        <div class="h-3 w-3 skeleton rounded-full"></div>
+                        <div class="h-3 w-3 skeleton rounded-full"></div>
+                        <div class="h-3 w-3 skeleton rounded-full"></div>
+                        <div class="h-3 w-3 skeleton rounded-full"></div>
+                        <div class="h-3 w-3 skeleton rounded-full"></div>
+                    </div>
+                    <div class="h-9 w-9 skeleton rounded-xl"></div>
                 </div>
             </div>
         </div>
@@ -128,29 +163,41 @@
     <div id="modal-overlay" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md hidden opacity-0 transition-opacity duration-300">
         <div id="modal-content" class="bg-white dark:bg-slate-900 w-full max-w-6xl max-h-[95vh] rounded-3xl shadow-2xl overflow-hidden flex flex-col scale-95 transition-all duration-300">
             
-            <!-- Close Button -->
-            <button id="close-modal" class="absolute top-4 right-4 z-50 p-2.5 bg-white/20 hover:bg-white/40 text-white rounded-full transition-all backdrop-blur-md border border-white/30">
-                <i class="fa-solid fa-xmark text-xl"></i>
-            </button>
-
-            <!-- Vision Simulator -->
-            <div class="absolute top-4 left-4 z-50">
-                <select id="vision-simulator" class="bg-white/20 hover:bg-white/30 text-white text-[10px] font-black uppercase tracking-widest px-3 py-2 rounded-full border border-white/30 backdrop-blur-md outline-none cursor-pointer transition-all">
-                    <option value="none" class="text-slate-900">Normal Vision</option>
-                    <option value="protanopia" class="text-slate-900">Protanopia</option>
-                    <option value="deuteranopia" class="text-slate-900">Deuteranopia</option>
-                    <option value="tritanopia" class="text-slate-900">Tritanopia</option>
-                    <option value="achromatopsia" class="text-slate-900">Achromatopsia</option>
-                </select>
+            <!-- Close & Tools -->
+            <div class="absolute top-4 right-4 z-50 flex items-center gap-2">
+                <button id="random-palette" class="p-2.5 bg-white/20 hover:bg-white/40 text-white rounded-full transition-all backdrop-blur-md border border-white/30" title="Pick random palette">
+                    <i class="fa-solid fa-shuffle text-sm"></i>
+                </button>
+                <button id="close-modal" class="p-2.5 bg-white/20 hover:bg-white/40 text-white rounded-full transition-all backdrop-blur-md border border-white/30">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
             </div>
-
+...
             <!-- Mood Hero -->
-            <div id="modal-hero" class="relative h-64 sm:h-80 flex flex-col items-center justify-center text-white text-center p-8 transition-all duration-700 overflow-hidden">
+            <div id="section-hero" class="relative h-64 sm:h-80 flex flex-col items-center justify-center text-white text-center p-8 transition-all duration-700 overflow-hidden">
                 <div id="hero-gradient" class="absolute inset-0 transition-all duration-1000"></div>
                 <div class="absolute inset-0 bg-black/10"></div>
-                <div class="relative z-10 space-y-2">
+                <div class="absolute bottom-4 right-4 z-20">
+                    <button data-shuffle="hero" class="p-2.5 bg-white/10 hover:bg-white/20 text-white/70 hover:text-white rounded-xl transition-all backdrop-blur-md border border-white/10 group" title="Shuffle Hero Gradient">
+                        <i class="fa-solid fa-dice-five group-hover:rotate-180 transition-transform duration-500"></i>
+                    </button>
+                </div>
+                <div class="relative z-10 space-y-4">
                     <span id="modal-vibe" class="inline-block px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest bg-white/20 border border-white/30 backdrop-blur-md">Collection</span>
-                    <h2 id="modal-title" class="text-4xl sm:text-6xl font-black tracking-tight drop-shadow-2xl">Palette Name</h2>
+                    <div class="flex flex-col items-center gap-4">
+                        <h2 id="modal-title" class="text-4xl sm:text-6xl font-black tracking-tight drop-shadow-2xl">Palette Name</h2>
+                        <div class="flex items-center gap-2">
+                            <button data-action="prev-palette" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 backdrop-blur-md transition-all flex items-center justify-center">
+                                <i class="fa-solid fa-chevron-left text-xs"></i>
+                            </button>
+                            <button data-action="random-palette" class="px-6 py-2 rounded-full bg-white text-slate-900 font-black text-[10px] uppercase tracking-widest shadow-xl hover:scale-105 active:scale-95 transition-all flex items-center gap-2">
+                                <i class="fa-solid fa-dice"></i> Randomize
+                            </button>
+                            <button data-action="next-palette" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 backdrop-blur-md transition-all flex items-center justify-center">
+                                <i class="fa-solid fa-chevron-right text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -723,10 +770,20 @@
                         </div>
 
                         <!-- Color Lab & Export Zone -->
-                <div class="p-4 sm:p-8 lg:p-12 border-b border-gray-200 dark:border-slate-800 bg-gray-100 dark:bg-slate-950/40">
-                    <div class="flex items-center gap-3 mb-8">
-                        <div class="w-10 h-10 rounded-xl bg-pink-500 flex items-center justify-center text-white shadow-lg"><i class="fa-solid fa-swatchbook"></i></div>
-                        <div><h3 class="text-xl font-bold">Color Lab</h3><p class="text-sm text-gray-400">Technical breakdown.</p></div>
+                <div id="section-lab" class="p-4 sm:p-8 lg:p-12 border-b border-gray-200 dark:border-slate-800 bg-gray-100 dark:bg-slate-950/40">
+                    <div class="flex items-center justify-between mb-8">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-pink-500 flex items-center justify-center text-white shadow-lg"><i class="fa-solid fa-swatchbook"></i></div>
+                            <div><h3 class="text-xl font-bold">Color Lab</h3><p class="text-sm text-gray-400">Technical breakdown.</p></div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <button data-action="random-palette" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 hover:bg-slate-200 transition-all" title="Pick random palette">
+                                <i class="fa-solid fa-shuffle text-xs"></i>
+                            </button>
+                            <button data-shuffle="lab" class="p-2.5 rounded-xl bg-pink-50 dark:bg-pink-900/20 text-pink-600 dark:text-pink-400 hover:bg-pink-100 transition-all group" title="Shuffle Lab Order">
+                                <i class="fa-solid fa-dice-five group-hover:rotate-180 transition-transform duration-500"></i>
+                            </button>
+                        </div>
                     </div>
                     <div id="color-lab-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"></div>
                 </div>

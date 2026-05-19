@@ -1,0 +1,99 @@
+/*---
+id: pearl-signal-system
+name: Pearl Signal System
+author: JaZeR-444
+version: 1.0.0
+category: White & Interface
+count: 8
+description: A pearl UI system for clean onboarding, empty states, notification surfaces, subtle cards, and crisp white controls.
+tags:
+  mood:
+  - white
+  - bright
+  aesthetic:
+  - Signal
+  - Interface
+intent: A white-focused 8-color palette designed for product ui, onboarding, notifications.
+suggested_use:
+- Product UI
+- Onboarding
+- Notifications
+url: https://coolors.co/1f2937-6b7280-d1d5db-f3f4f6-f9fafb-ffffff-bae6fd-2563eb
+created: '2026-05-19'
+updated: '2026-05-19'
+---*/
+
+:root {
+/* CSS HEX */
+--pearl-signal-system-signal-ink: #1f2937ff;
+--pearl-signal-system-caption-gray: #6b7280ff;
+--pearl-signal-system-soft-border: #d1d5dbff;
+--pearl-signal-system-pearl-surface: #f3f4f6ff;
+--pearl-signal-system-cloud-panel: #f9fafbff;
+--pearl-signal-system-pearl-white: #ffffffff;
+--pearl-signal-system-sky-accent: #bae6fdff;
+--pearl-signal-system-action-blue: #2563ebff;
+
+/* CSS HSL */
+--pearl-signal-system-signal-ink: hsla(215, 28%, 17%, 1);
+--pearl-signal-system-caption-gray: hsla(220, 9%, 46%, 1);
+--pearl-signal-system-soft-border: hsla(216, 12%, 84%, 1);
+--pearl-signal-system-pearl-surface: hsla(220, 14%, 96%, 1);
+--pearl-signal-system-cloud-panel: hsla(210, 20%, 98%, 1);
+--pearl-signal-system-pearl-white: hsla(0, 0%, 100%, 1);
+--pearl-signal-system-sky-accent: hsla(201, 94%, 86%, 1);
+--pearl-signal-system-action-blue: hsla(221, 83%, 53%, 1);
+}
+
+/* SCSS HEX */
+$pearl-signal-system-signal-ink: #1f2937ff;
+$pearl-signal-system-caption-gray: #6b7280ff;
+$pearl-signal-system-soft-border: #d1d5dbff;
+$pearl-signal-system-pearl-surface: #f3f4f6ff;
+$pearl-signal-system-cloud-panel: #f9fafbff;
+$pearl-signal-system-pearl-white: #ffffffff;
+$pearl-signal-system-sky-accent: #bae6fdff;
+$pearl-signal-system-action-blue: #2563ebff;
+
+/* SCSS HSL */
+$pearl-signal-system-signal-ink: hsla(215, 28%, 17%, 1);
+$pearl-signal-system-caption-gray: hsla(220, 9%, 46%, 1);
+$pearl-signal-system-soft-border: hsla(216, 12%, 84%, 1);
+$pearl-signal-system-pearl-surface: hsla(220, 14%, 96%, 1);
+$pearl-signal-system-cloud-panel: hsla(210, 20%, 98%, 1);
+$pearl-signal-system-pearl-white: hsla(0, 0%, 100%, 1);
+$pearl-signal-system-sky-accent: hsla(201, 94%, 86%, 1);
+$pearl-signal-system-action-blue: hsla(221, 83%, 53%, 1);
+
+/* SCSS RGB */
+$pearl-signal-system-signal-ink: rgba(31, 41, 55, 1);
+$pearl-signal-system-caption-gray: rgba(107, 114, 128, 1);
+$pearl-signal-system-soft-border: rgba(209, 213, 219, 1);
+$pearl-signal-system-pearl-surface: rgba(243, 244, 246, 1);
+$pearl-signal-system-cloud-panel: rgba(249, 250, 251, 1);
+$pearl-signal-system-pearl-white: rgba(255, 255, 255, 1);
+$pearl-signal-system-sky-accent: rgba(186, 230, 253, 1);
+$pearl-signal-system-action-blue: rgba(37, 99, 235, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1f2937ff, #6b7280ff, #d1d5dbff, #f3f4f6ff, #f9fafbff, #ffffffff, #bae6fdff, #2563ebff);
+$gradient-right: linear-gradient(90deg, #1f2937ff, #6b7280ff, #d1d5dbff, #f3f4f6ff, #f9fafbff, #ffffffff, #bae6fdff, #2563ebff);
+$gradient-bottom: linear-gradient(180deg, #1f2937ff, #6b7280ff, #d1d5dbff, #f3f4f6ff, #f9fafbff, #ffffffff, #bae6fdff, #2563ebff);
+$gradient-left: linear-gradient(270deg, #1f2937ff, #6b7280ff, #d1d5dbff, #f3f4f6ff, #f9fafbff, #ffffffff, #bae6fdff, #2563ebff);
+$gradient-top-right: linear-gradient(45deg, #1f2937ff, #6b7280ff, #d1d5dbff, #f3f4f6ff, #f9fafbff, #ffffffff, #bae6fdff, #2563ebff);
+$gradient-bottom-right: linear-gradient(135deg, #1f2937ff, #6b7280ff, #d1d5dbff, #f3f4f6ff, #f9fafbff, #ffffffff, #bae6fdff, #2563ebff);
+$gradient-top-left: linear-gradient(225deg, #1f2937ff, #6b7280ff, #d1d5dbff, #f3f4f6ff, #f9fafbff, #ffffffff, #bae6fdff, #2563ebff);
+$gradient-bottom-left: linear-gradient(315deg, #1f2937ff, #6b7280ff, #d1d5dbff, #f3f4f6ff, #f9fafbff, #ffffffff, #bae6fdff, #2563ebff);
+$gradient-radial: radial-gradient(#1f2937ff, #6b7280ff, #d1d5dbff, #f3f4f6ff, #f9fafbff, #ffffffff, #bae6fdff, #2563ebff);
+
+/* SCSS Map */
+$pearl-signal-system-map: (
+    "pearl-signal-system-signal-ink": #1f2937ff,
+    "pearl-signal-system-caption-gray": #6b7280ff,
+    "pearl-signal-system-soft-border": #d1d5dbff,
+    "pearl-signal-system-pearl-surface": #f3f4f6ff,
+    "pearl-signal-system-cloud-panel": #f9fafbff,
+    "pearl-signal-system-pearl-white": #ffffffff,
+    "pearl-signal-system-sky-accent": #bae6fdff,
+    "pearl-signal-system-action-blue": #2563ebff
+);
