@@ -142,3 +142,26 @@ pre::-webkit-scrollbar-thumb {
 pre::-webkit-scrollbar-thumb:hover {
     background: rgba(99, 102, 241, 0.4);
 }
+
+/* Per-card forced theme — overrides global dark/light */
+.card-dark {
+    background-color: rgb(15, 23, 42) !important;
+    border-color: rgb(30, 41, 59) !important;
+}
+.card-dark .card-title { color: rgb(243, 244, 246) !important; }
+.card-dark .card-desc  { color: rgb(156, 163, 175) !important; }
+.card-dark .card-badge { background-color: rgb(30, 41, 59) !important; }
+.card-dark .card-footer { border-color: rgb(30, 41, 59) !important; }
+.card-dark .card-arrow { background-color: rgb(30, 41, 59) !important; color: rgb(156, 163, 175) !important; }
+.card-dark .card-tag   { background-color: rgba(99, 102, 241, 0.2) !important; color: rgb(129, 140, 248) !important; }
+
+.card-light {
+    background-color: #ffffff !important;
+    border-color: rgb(229, 231, 235) !important;
+}
+.card-light .card-title { color: rgb(31, 41, 55) !important; }
+.card-light .card-desc  { color: rgb(107, 114, 128) !important; }
+.card-light .card-badge { background-color: rgb(249, 250, 251) !important; }
+.card-light .card-footer { border-color: rgb(249, 250, 251) !important; }
+.card-light .card-arrow { background-color: rgb(249, 250, 251) !important; color: rgb(156, 163, 175) !important; }
+.card-light .card-tag   { background-color: rgb(238, 242, 255) !important; color: rgb(99, 102, 241) !important; }

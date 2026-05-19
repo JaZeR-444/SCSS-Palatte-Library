@@ -7,24 +7,51 @@
       "previewPath": null,
       "fields": [
         {
+          "title": "ID",
+          "name": "id",
+          "type": "string"
+        },
+        {
           "title": "Title",
-          "name": "title",
+          "name": "name",
           "type": "string"
         },
         {
-          "title": "Description",
-          "name": "description",
+          "title": "Author",
+          "name": "author",
           "type": "string"
         },
         {
-          "title": "Tags",
-          "name": "tags",
-          "type": "tags"
+          "title": "Version",
+          "name": "version",
+          "type": "string"
         },
         {
-          "title": "Categories",
-          "name": "categories",
-          "type": "categories"
+          "title": "Category",
+          "name": "category",
+          "type": "choice",
+          "options": [
+            "Nature & Elemental",
+            "Aquatic & Polar",
+            "Cyberpunk & Neon",
+            "Space & Cosmic",
+            "Professional & SaaS",
+            "Retro & Nostalgia",
+            "Minimalist & Mono",
+            "Urban & Industrial",
+            "Vibrant & Pop",
+            "Soft & Pastel"
+          ]
+        },
+        {
+          "title": "Design Intent",
+          "name": "intent",
+          "type": "string"
+        },
+        {
+          "title": "Suggested Use",
+          "name": "suggested_use",
+          "type": "list"
         },
         {
           "title": "Source URL",

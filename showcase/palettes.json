@@ -2,7 +2,7 @@
     {
         "id": "desert-heat",
         "name": "Desert Heat",
-        "description": "A vibrant 3-color palette inspired by Desert Heat.",
+        "description": "A vibrant 3-color palette.",
         "count": 3,
         "colors": [
             {
@@ -20,15 +20,20 @@
         ],
         "path": "3 Color Palette/Desert Heat.scss",
         "folder": "3 Color Palette",
-        "tags": [
-            "minimal",
-            "warm"
-        ]
+        "tags": {
+            "mood": [
+                "minimal",
+                "warm"
+            ],
+            "aesthetic": [
+                "Nature"
+            ]
+        }
     },
     {
         "id": "earthy-organic",
         "name": "Earthy Organic",
-        "description": "A vibrant 3-color palette inspired by Earthy Organic.",
+        "description": "A vibrant 3-color palette.",
         "count": 3,
         "colors": [
             {
@@ -46,15 +51,20 @@
         ],
         "path": "3 Color Palette/Earthy Organic.scss",
         "folder": "3 Color Palette",
-        "tags": [
-            "minimal",
-            "nature"
-        ]
+        "tags": {
+            "mood": [
+                "minimal",
+                "nature"
+            ],
+            "aesthetic": [
+                "Nature"
+            ]
+        }
     },
     {
         "id": "forest-whisper",
         "name": "Forest Whisper",
-        "description": "A vibrant 3-color palette inspired by Forest Whisper.",
+        "description": "A vibrant 3-color palette.",
         "count": 3,
         "colors": [
             {
@@ -72,15 +82,20 @@
         ],
         "path": "3 Color Palette/Forest Whisper.scss",
         "folder": "3 Color Palette",
-        "tags": [
-            "minimal",
-            "nature"
-        ]
+        "tags": {
+            "mood": [
+                "minimal",
+                "nature"
+            ],
+            "aesthetic": [
+                "Nature"
+            ]
+        }
     },
     {
         "id": "modern-minimalist",
         "name": "Modern Minimalist",
-        "description": "A vibrant 3-color palette inspired by Modern Minimalist.",
+        "description": "A vibrant 3-color palette.",
         "count": 3,
         "colors": [
             {
@@ -98,15 +113,20 @@
         ],
         "path": "3 Color Palette/Modern Minimalist.scss",
         "folder": "3 Color Palette",
-        "tags": [
-            "minimal",
-            "professional"
-        ]
+        "tags": {
+            "mood": [
+                "minimal",
+                "professional"
+            ],
+            "aesthetic": [
+                "Professional"
+            ]
+        }
     },
     {
         "id": "ocean-depth",
         "name": "Ocean Depth",
-        "description": "A vibrant 3-color palette inspired by Ocean Depth.",
+        "description": "A vibrant 3-color palette.",
         "count": 3,
         "colors": [
             {
@@ -124,16 +144,21 @@
         ],
         "path": "3 Color Palette/Ocean Depth.scss",
         "folder": "3 Color Palette",
-        "tags": [
-            "cool",
-            "minimal",
-            "nature"
-        ]
+        "tags": {
+            "mood": [
+                "cool",
+                "minimal",
+                "nature"
+            ],
+            "aesthetic": [
+                "Aquatic"
+            ]
+        }
     },
     {
         "id": "retro-revival",
         "name": "Retro Revival",
-        "description": "A vibrant 3-color palette inspired by Retro Revival.",
+        "description": "A vibrant 3-color palette.",
         "count": 3,
         "colors": [
             {
@@ -151,15 +176,20 @@
         ],
         "path": "3 Color Palette/Retro Revival.scss",
         "folder": "3 Color Palette",
-        "tags": [
-            "minimal",
-            "retro"
-        ]
+        "tags": {
+            "mood": [
+                "minimal",
+                "retro"
+            ],
+            "aesthetic": [
+                "Retro"
+            ]
+        }
     },
     {
         "id": "slate-gray",
         "name": "Slate Gray",
-        "description": "A vibrant 3-color palette inspired by Slate Gray.",
+        "description": "A vibrant 3-color palette.",
         "count": 3,
         "colors": [
             {
@@ -177,17 +207,22 @@
         ],
         "path": "3 Color Palette/Slate Gray.scss",
         "folder": "3 Color Palette",
-        "tags": [
-            "cool",
-            "dark",
-            "minimal",
-            "professional"
-        ]
+        "tags": {
+            "mood": [
+                "cool",
+                "dark",
+                "minimal",
+                "professional"
+            ],
+            "aesthetic": [
+                "Professional"
+            ]
+        }
     },
     {
         "id": "sunset-glow",
         "name": "Sunset Glow",
-        "description": "A vibrant 3-color palette inspired by Sunset Glow.",
+        "description": "A vibrant 3-color palette.",
         "count": 3,
         "colors": [
             {
@@ -205,15 +240,20 @@
         ],
         "path": "3 Color Palette/Sunset Glow.scss",
         "folder": "3 Color Palette",
-        "tags": [
-            "minimal",
-            "warm"
-        ]
+        "tags": {
+            "mood": [
+                "minimal",
+                "warm"
+            ],
+            "aesthetic": [
+                "Vibrant"
+            ]
+        }
     },
     {
         "id": "berry-blast",
         "name": "Berry Blast",
-        "description": "A vibrant 4-color palette inspired by Berry Blast.",
+        "description": "A vibrant 4-color palette.",
         "count": 4,
         "colors": [
             {
@@ -235,15 +275,20 @@
         ],
         "path": "4 Color Palette/Berry Blast.scss",
         "folder": "4 Color Palette",
-        "tags": [
-            "minimal",
-            "warm"
-        ]
+        "tags": {
+            "mood": [
+                "minimal",
+                "warm"
+            ],
+            "aesthetic": [
+                "Vibrant"
+            ]
+        }
     },
     {
         "id": "coffee-shop",
         "name": "Coffee Shop",
-        "description": "A vibrant 4-color palette inspired by Coffee Shop.",
+        "description": "A vibrant 4-color palette.",
         "count": 4,
         "colors": [
             {
@@ -265,14 +310,19 @@
         ],
         "path": "4 Color Palette/Coffee Shop.scss",
         "folder": "4 Color Palette",
-        "tags": [
-            "minimal"
-        ]
+        "tags": {
+            "mood": [
+                "minimal"
+            ],
+            "aesthetic": [
+                "Thematic Collection"
+            ]
+        }
     },
     {
         "id": "electric-night",
         "name": "Electric Night",
-        "description": "A vibrant 4-color palette inspired by Electric Night.",
+        "description": "A vibrant 4-color palette.",
         "count": 4,
         "colors": [
             {
@@ -294,16 +344,21 @@
         ],
         "path": "4 Color Palette/Electric Night.scss",
         "folder": "4 Color Palette",
-        "tags": [
-            "dark",
-            "minimal",
-            "neon"
-        ]
+        "tags": {
+            "mood": [
+                "dark",
+                "minimal",
+                "neon"
+            ],
+            "aesthetic": [
+                "Cyberpunk"
+            ]
+        }
     },
     {
         "id": "nature-trail",
         "name": "Nature Trail",
-        "description": "A vibrant 4-color palette inspired by Nature Trail.",
+        "description": "A vibrant 4-color palette.",
         "count": 4,
         "colors": [
             {
@@ -325,15 +380,20 @@
         ],
         "path": "4 Color Palette/Nature Trail.scss",
         "folder": "4 Color Palette",
-        "tags": [
-            "minimal",
-            "nature"
-        ]
+        "tags": {
+            "mood": [
+                "minimal",
+                "nature"
+            ],
+            "aesthetic": [
+                "Thematic Collection"
+            ]
+        }
     },
     {
         "id": "retro-pop",
         "name": "Retro Pop",
-        "description": "A vibrant 4-color palette inspired by Retro Pop.",
+        "description": "A vibrant 4-color palette.",
         "count": 4,
         "colors": [
             {
@@ -355,15 +415,20 @@
         ],
         "path": "4 Color Palette/Retro Pop.scss",
         "folder": "4 Color Palette",
-        "tags": [
-            "minimal",
-            "retro"
-        ]
+        "tags": {
+            "mood": [
+                "minimal",
+                "retro"
+            ],
+            "aesthetic": [
+                "Retro"
+            ]
+        }
     },
     {
         "id": "saas-blue",
         "name": "SaaS Blue",
-        "description": "A vibrant 4-color palette inspired by SaaS Blue.",
+        "description": "A vibrant 4-color palette.",
         "count": 4,
         "colors": [
             {
@@ -385,16 +450,21 @@
         ],
         "path": "4 Color Palette/SaaS Blue.scss",
         "folder": "4 Color Palette",
-        "tags": [
-            "cool",
-            "minimal",
-            "professional"
-        ]
+        "tags": {
+            "mood": [
+                "cool",
+                "minimal",
+                "professional"
+            ],
+            "aesthetic": [
+                "Aquatic"
+            ]
+        }
     },
     {
         "id": "spring-meadow",
         "name": "Spring Meadow",
-        "description": "A vibrant 4-color palette inspired by Spring Meadow.",
+        "description": "A vibrant 4-color palette.",
         "count": 4,
         "colors": [
             {
@@ -416,15 +486,20 @@
         ],
         "path": "4 Color Palette/Spring Meadow.scss",
         "folder": "4 Color Palette",
-        "tags": [
-            "minimal",
-            "nature"
-        ]
+        "tags": {
+            "mood": [
+                "minimal",
+                "nature"
+            ],
+            "aesthetic": [
+                "Nature"
+            ]
+        }
     },
     {
         "id": "winter-frost",
         "name": "Winter Frost",
-        "description": "A vibrant 4-color palette inspired by Winter Frost.",
+        "description": "A vibrant 4-color palette.",
         "count": 4,
         "colors": [
             {
@@ -446,15 +521,20 @@
         ],
         "path": "4 Color Palette/Winter Frost.scss",
         "folder": "4 Color Palette",
-        "tags": [
-            "cool",
-            "minimal"
-        ]
+        "tags": {
+            "mood": [
+                "cool",
+                "minimal"
+            ],
+            "aesthetic": [
+                "Aquatic"
+            ]
+        }
     },
     {
         "id": "bold-berry",
         "name": "Bold Berry",
-        "description": "A vibrant 5-color palette inspired by Bold Berry.",
+        "description": "A vibrant 5-color palette.",
         "count": 5,
         "colors": [
             {
@@ -480,14 +560,19 @@
         ],
         "path": "5 Color Palette/Bold Berry.scss",
         "folder": "5 Color Palette",
-        "tags": [
-            "warm"
-        ]
+        "tags": {
+            "mood": [
+                "warm"
+            ],
+            "aesthetic": [
+                "Retro"
+            ]
+        }
     },
     {
         "id": "classic-vaporwave",
         "name": "Classic Vaporwave",
-        "description": "A vibrant 5-color palette inspired by Classic Vaporwave.",
+        "description": "A vibrant 5-color palette.",
         "count": 5,
         "colors": [
             {
@@ -513,15 +598,20 @@
         ],
         "path": "5 Color Palette/Classic Vaporwave.scss",
         "folder": "5 Color Palette",
-        "tags": [
-            "neon",
-            "retro"
-        ]
+        "tags": {
+            "mood": [
+                "neon",
+                "retro"
+            ],
+            "aesthetic": [
+                "Retro"
+            ]
+        }
     },
     {
         "id": "cyber-pastel",
         "name": "Cyber Pastel",
-        "description": "A vibrant 5-color palette inspired by Cyber Pastel.",
+        "description": "A vibrant 5-color palette.",
         "count": 5,
         "colors": [
             {
@@ -547,14 +637,19 @@
         ],
         "path": "5 Color Palette/Cyber Pastel.scss",
         "folder": "5 Color Palette",
-        "tags": [
-            "neon"
-        ]
+        "tags": {
+            "mood": [
+                "neon"
+            ],
+            "aesthetic": [
+                "Cyberpunk"
+            ]
+        }
     },
     {
         "id": "deep-space",
         "name": "Deep Space",
-        "description": "A vibrant 5-color palette inspired by Deep Space.",
+        "description": "A vibrant 5-color palette.",
         "count": 5,
         "colors": [
             {
@@ -580,12 +675,17 @@
         ],
         "path": "5 Color Palette/Deep Space.scss",
         "folder": "5 Color Palette",
-        "tags": []
+        "tags": {
+            "mood": [],
+            "aesthetic": [
+                "Space"
+            ]
+        }
     },
     {
         "id": "desert-sands",
         "name": "Desert Sands",
-        "description": "A vibrant 5-color palette inspired by Desert Sands.",
+        "description": "A vibrant 5-color palette.",
         "count": 5,
         "colors": [
             {
@@ -611,15 +711,20 @@
         ],
         "path": "5 Color Palette/Desert Sands.scss",
         "folder": "5 Color Palette",
-        "tags": [
-            "nature",
-            "warm"
-        ]
+        "tags": {
+            "mood": [
+                "nature",
+                "warm"
+            ],
+            "aesthetic": [
+                "Nature"
+            ]
+        }
     },
     {
         "id": "future-shock",
         "name": "Future Shock",
-        "description": "A vibrant 5-color palette inspired by Future Shock.",
+        "description": "A vibrant 5-color palette.",
         "count": 5,
         "colors": [
             {
@@ -645,12 +750,17 @@
         ],
         "path": "5 Color Palette/Future Shock.scss",
         "folder": "5 Color Palette",
-        "tags": []
+        "tags": {
+            "mood": [],
+            "aesthetic": [
+                "Thematic Collection"
+            ]
+        }
     },
     {
         "id": "holo-noir",
         "name": "Holo Noir",
-        "description": "A vibrant 5-color palette inspired by Holo Noir.",
+        "description": "A vibrant 5-color palette.",
         "count": 5,
         "colors": [
             {
@@ -676,12 +786,17 @@
         ],
         "path": "5 Color Palette/Holo Noir.scss",
         "folder": "5 Color Palette",
-        "tags": []
+        "tags": {
+            "mood": [],
+            "aesthetic": [
+                "Cyberpunk"
+            ]
+        }
     },
     {
         "id": "lavender-mist",
         "name": "Lavender Mist",
-        "description": "A vibrant 5-color palette inspired by Lavender Mist.",
+        "description": "A vibrant 5-color palette.",
         "count": 5,
         "colors": [
             {
@@ -707,14 +822,19 @@
         ],
         "path": "5 Color Palette/Lavender Mist.scss",
         "folder": "5 Color Palette",
-        "tags": [
-            "cool"
-        ]
+        "tags": {
+            "mood": [
+                "cool"
+            ],
+            "aesthetic": [
+                "Aquatic"
+            ]
+        }
     },
     {
         "id": "midnight-cyberpunk",
         "name": "Midnight Cyberpunk",
-        "description": "A vibrant 5-color palette inspired by Midnight Cyberpunk.",
+        "description": "A vibrant 5-color palette.",
         "count": 5,
         "colors": [
             {
@@ -740,15 +860,20 @@
         ],
         "path": "5 Color Palette/Midnight Cyberpunk.scss",
         "folder": "5 Color Palette",
-        "tags": [
-            "dark",
-            "neon"
-        ]
+        "tags": {
+            "mood": [
+                "dark",
+                "neon"
+            ],
+            "aesthetic": [
+                "Cyberpunk"
+            ]
+        }
     },
     {
         "id": "midnight-neon",
         "name": "Midnight Neon",
-        "description": "A vibrant 5-color palette inspired by Midnight Neon.",
+        "description": "A vibrant 5-color palette.",
         "count": 5,
         "colors": [
             {
@@ -774,15 +899,20 @@
         ],
         "path": "5 Color Palette/Midnight Neon.scss",
         "folder": "5 Color Palette",
-        "tags": [
-            "dark",
-            "neon"
-        ]
+        "tags": {
+            "mood": [
+                "dark",
+                "neon"
+            ],
+            "aesthetic": [
+                "Cyberpunk"
+            ]
+        }
     },
     {
         "id": "monochrome-magic",
         "name": "Monochrome Magic",
-        "description": "A vibrant 5-color palette inspired by Monochrome Magic.",
+        "description": "A vibrant 5-color palette.",
         "count": 5,
         "colors": [
             {
@@ -808,12 +938,17 @@
         ],
         "path": "5 Color Palette/Monochrome Magic.scss",
         "folder": "5 Color Palette",
-        "tags": []
+        "tags": {
+            "mood": [],
+            "aesthetic": [
+                "Minimalist"
+            ]
+        }
     },
     {
         "id": "muted-earth",
         "name": "Muted Earth",
-        "description": "A vibrant 5-color palette inspired by Muted Earth.",
+        "description": "A vibrant 5-color palette.",
         "count": 5,
         "colors": [
             {
@@ -839,12 +974,17 @@
         ],
         "path": "5 Color Palette/Muted Earth.scss",
         "folder": "5 Color Palette",
-        "tags": []
+        "tags": {
+            "mood": [],
+            "aesthetic": [
+                "Nature"
+            ]
+        }
     },
     {
         "id": "neon-punk",
         "name": "Neon Punk",
-        "description": "A vibrant 5-color palette inspired by Neon Punk.",
+        "description": "A vibrant 5-color palette.",
         "count": 5,
         "colors": [
             {
@@ -870,14 +1010,19 @@
         ],
         "path": "5 Color Palette/Neon Punk.scss",
         "folder": "5 Color Palette",
-        "tags": [
-            "neon"
-        ]
+        "tags": {
+            "mood": [
+                "neon"
+            ],
+            "aesthetic": [
+                "Cyberpunk"
+            ]
+        }
     },
     {
         "id": "soft-pink-delight",
         "name": "Soft Pink Delight",
-        "description": "A vibrant 5-color palette inspired by Soft Pink Delight.",
+        "description": "A vibrant 5-color palette.",
         "count": 5,
         "colors": [
             {
@@ -903,14 +1048,19 @@
         ],
         "path": "5 Color Palette/Soft Pink Delight.scss",
         "folder": "5 Color Palette",
-        "tags": [
-            "warm"
-        ]
+        "tags": {
+            "mood": [
+                "warm"
+            ],
+            "aesthetic": [
+                "Soft"
+            ]
+        }
     },
     {
         "id": "tropical-reef",
         "name": "Tropical Reef",
-        "description": "A vibrant 5-color palette inspired by Tropical Reef.",
+        "description": "A vibrant 5-color palette.",
         "count": 5,
         "colors": [
             {
@@ -936,14 +1086,19 @@
         ],
         "path": "5 Color Palette/Tropical Reef.scss",
         "folder": "5 Color Palette",
-        "tags": [
-            "nature"
-        ]
+        "tags": {
+            "mood": [
+                "nature"
+            ],
+            "aesthetic": [
+                "Aquatic"
+            ]
+        }
     },
     {
         "id": "vintage-gold",
         "name": "Vintage Gold",
-        "description": "A vibrant 5-color palette inspired by Vintage Gold.",
+        "description": "A vibrant 5-color palette.",
         "count": 5,
         "colors": [
             {
@@ -969,15 +1124,20 @@
         ],
         "path": "5 Color Palette/Vintage Gold.scss",
         "folder": "5 Color Palette",
-        "tags": [
-            "retro",
-            "warm"
-        ]
+        "tags": {
+            "mood": [
+                "retro",
+                "warm"
+            ],
+            "aesthetic": [
+                "Retro"
+            ]
+        }
     },
     {
         "id": "vintage-vibe",
         "name": "Vintage Vibe",
-        "description": "A vibrant 5-color palette inspired by Vintage Vibe.",
+        "description": "A vibrant 5-color palette.",
         "count": 5,
         "colors": [
             {
@@ -1003,14 +1163,19 @@
         ],
         "path": "5 Color Palette/Vintage Vibe.scss",
         "folder": "5 Color Palette",
-        "tags": [
-            "retro"
-        ]
+        "tags": {
+            "mood": [
+                "retro"
+            ],
+            "aesthetic": [
+                "Retro"
+            ]
+        }
     },
     {
         "id": "arctic-night",
         "name": "Arctic Night",
-        "description": "A vibrant 6-color palette inspired by Arctic Night.",
+        "description": "A vibrant 6-color palette.",
         "count": 6,
         "colors": [
             {
@@ -1040,15 +1205,20 @@
         ],
         "path": "6 Color Palette/Arctic Night.scss",
         "folder": "6 Color Palette",
-        "tags": [
-            "cool",
-            "dark"
-        ]
+        "tags": {
+            "mood": [
+                "cool",
+                "dark"
+            ],
+            "aesthetic": [
+                "Aquatic"
+            ]
+        }
     },
     {
         "id": "cool-oceanic",
         "name": "Cool Oceanic",
-        "description": "A vibrant 6-color palette inspired by Cool Oceanic.",
+        "description": "A vibrant 6-color palette.",
         "count": 6,
         "colors": [
             {
@@ -1078,15 +1248,20 @@
         ],
         "path": "6 Color Palette/Cool Oceanic.scss",
         "folder": "6 Color Palette",
-        "tags": [
-            "cool",
-            "nature"
-        ]
+        "tags": {
+            "mood": [
+                "cool",
+                "nature"
+            ],
+            "aesthetic": [
+                "Aquatic"
+            ]
+        }
     },
     {
         "id": "forest-canopy",
         "name": "Forest Canopy",
-        "description": "A vibrant 6-color palette inspired by Forest Canopy.",
+        "description": "A vibrant 6-color palette.",
         "count": 6,
         "colors": [
             {
@@ -1116,14 +1291,19 @@
         ],
         "path": "6 Color Palette/Forest Canopy.scss",
         "folder": "6 Color Palette",
-        "tags": [
-            "nature"
-        ]
+        "tags": {
+            "mood": [
+                "nature"
+            ],
+            "aesthetic": [
+                "Nature"
+            ]
+        }
     },
     {
         "id": "industrial-gray",
         "name": "Industrial Gray",
-        "description": "A vibrant 6-color palette inspired by Industrial Gray.",
+        "description": "A vibrant 6-color palette.",
         "count": 6,
         "colors": [
             {
@@ -1153,14 +1333,19 @@
         ],
         "path": "6 Color Palette/Industrial Gray.scss",
         "folder": "6 Color Palette",
-        "tags": [
-            "professional"
-        ]
+        "tags": {
+            "mood": [
+                "professional"
+            ],
+            "aesthetic": [
+                "Professional"
+            ]
+        }
     },
     {
         "id": "modern-vibe",
         "name": "Modern Vibe",
-        "description": "A vibrant 6-color palette inspired by Modern Vibe.",
+        "description": "A vibrant 6-color palette.",
         "count": 6,
         "colors": [
             {
@@ -1190,14 +1375,19 @@
         ],
         "path": "6 Color Palette/Modern Vibe.scss",
         "folder": "6 Color Palette",
-        "tags": [
-            "professional"
-        ]
+        "tags": {
+            "mood": [
+                "professional"
+            ],
+            "aesthetic": [
+                "Professional"
+            ]
+        }
     },
     {
         "id": "royal-purple",
         "name": "Royal Purple",
-        "description": "A vibrant 6-color palette inspired by Royal Purple.",
+        "description": "A vibrant 6-color palette.",
         "count": 6,
         "colors": [
             {
@@ -1227,12 +1417,17 @@
         ],
         "path": "6 Color Palette/Royal Purple.scss",
         "folder": "6 Color Palette",
-        "tags": []
+        "tags": {
+            "mood": [],
+            "aesthetic": [
+                "Thematic Collection"
+            ]
+        }
     },
     {
         "id": "sunset-boulevard",
         "name": "Sunset Boulevard",
-        "description": "A vibrant 6-color palette inspired by Sunset Boulevard.",
+        "description": "A vibrant 6-color palette.",
         "count": 6,
         "colors": [
             {
@@ -1262,14 +1457,19 @@
         ],
         "path": "6 Color Palette/Sunset Boulevard.scss",
         "folder": "6 Color Palette",
-        "tags": [
-            "warm"
-        ]
+        "tags": {
+            "mood": [
+                "warm"
+            ],
+            "aesthetic": [
+                "Vibrant"
+            ]
+        }
     },
     {
         "id": "autumn-leaves",
         "name": "Autumn Leaves",
-        "description": "A vibrant 7-color palette inspired by Autumn Leaves.",
+        "description": "A vibrant 7-color palette.",
         "count": 7,
         "colors": [
             {
@@ -1303,14 +1503,19 @@
         ],
         "path": "7 Color Palette/Autumn Leaves.scss",
         "folder": "7 Color Palette",
-        "tags": [
-            "nature"
-        ]
+        "tags": {
+            "mood": [
+                "nature"
+            ],
+            "aesthetic": [
+                "Nature"
+            ]
+        }
     },
     {
         "id": "fire-and-ice",
         "name": "Fire and Ice",
-        "description": "A vibrant 7-color palette inspired by Fire and Ice.",
+        "description": "A vibrant 7-color palette.",
         "count": 7,
         "colors": [
             {
@@ -1344,14 +1549,19 @@
         ],
         "path": "7 Color Palette/Fire and Ice.scss",
         "folder": "7 Color Palette",
-        "tags": [
-            "cool"
-        ]
+        "tags": {
+            "mood": [
+                "cool"
+            ],
+            "aesthetic": [
+                "Aquatic"
+            ]
+        }
     },
     {
         "id": "midnight-sky",
         "name": "Midnight Sky",
-        "description": "A vibrant 7-color palette inspired by Midnight Sky.",
+        "description": "A vibrant 7-color palette.",
         "count": 7,
         "colors": [
             {
@@ -1385,14 +1595,19 @@
         ],
         "path": "7 Color Palette/Midnight Sky.scss",
         "folder": "7 Color Palette",
-        "tags": [
-            "dark"
-        ]
+        "tags": {
+            "mood": [
+                "dark"
+            ],
+            "aesthetic": [
+                "Space"
+            ]
+        }
     },
     {
         "id": "neon-horizon",
         "name": "Neon Horizon",
-        "description": "A vibrant 7-color palette inspired by Neon Horizon.",
+        "description": "A vibrant 7-color palette.",
         "count": 7,
         "colors": [
             {
@@ -1426,14 +1641,19 @@
         ],
         "path": "7 Color Palette/Neon Horizon.scss",
         "folder": "7 Color Palette",
-        "tags": [
-            "neon"
-        ]
+        "tags": {
+            "mood": [
+                "neon"
+            ],
+            "aesthetic": [
+                "Cyberpunk"
+            ]
+        }
     },
     {
         "id": "ocean-waves",
         "name": "Ocean Waves",
-        "description": "A vibrant 7-color palette inspired by Ocean Waves.",
+        "description": "A vibrant 7-color palette.",
         "count": 7,
         "colors": [
             {
@@ -1467,15 +1687,20 @@
         ],
         "path": "7 Color Palette/Ocean Waves.scss",
         "folder": "7 Color Palette",
-        "tags": [
-            "cool",
-            "nature"
-        ]
+        "tags": {
+            "mood": [
+                "cool",
+                "nature"
+            ],
+            "aesthetic": [
+                "Aquatic"
+            ]
+        }
     },
     {
         "id": "professional-ibm",
         "name": "Professional IBM",
-        "description": "A vibrant 7-color palette inspired by Professional IBM.",
+        "description": "A vibrant 7-color palette.",
         "count": 7,
         "colors": [
             {
@@ -1509,14 +1734,19 @@
         ],
         "path": "7 Color Palette/Professional IBM.scss",
         "folder": "7 Color Palette",
-        "tags": [
-            "professional"
-        ]
+        "tags": {
+            "mood": [
+                "professional"
+            ],
+            "aesthetic": [
+                "Professional"
+            ]
+        }
     },
     {
         "id": "rainbow-pastels",
         "name": "Rainbow Pastels",
-        "description": "A vibrant 7-color palette inspired by Rainbow Pastels.",
+        "description": "A vibrant 7-color palette.",
         "count": 7,
         "colors": [
             {
@@ -1550,12 +1780,17 @@
         ],
         "path": "7 Color Palette/Rainbow Pastels.scss",
         "folder": "7 Color Palette",
-        "tags": []
+        "tags": {
+            "mood": [],
+            "aesthetic": [
+                "Soft"
+            ]
+        }
     },
     {
         "id": "retro-metro",
         "name": "Retro Metro",
-        "description": "A vibrant 7-color palette inspired by Retro Metro.",
+        "description": "A vibrant 7-color palette.",
         "count": 7,
         "colors": [
             {
@@ -1589,14 +1824,19 @@
         ],
         "path": "7 Color Palette/Retro Metro.scss",
         "folder": "7 Color Palette",
-        "tags": [
-            "retro"
-        ]
+        "tags": {
+            "mood": [
+                "retro"
+            ],
+            "aesthetic": [
+                "Retro"
+            ]
+        }
     },
     {
         "id": "cool-blues",
         "name": "Cool Blues",
-        "description": "A vibrant 8-color palette inspired by Cool Blues.",
+        "description": "A vibrant 8-color palette.",
         "count": 8,
         "colors": [
             {
@@ -1634,14 +1874,19 @@
         ],
         "path": "8 Color Palette/Cool Blues.scss",
         "folder": "8 Color Palette",
-        "tags": [
-            "cool"
-        ]
+        "tags": {
+            "mood": [
+                "cool"
+            ],
+            "aesthetic": [
+                "Aquatic"
+            ]
+        }
     },
     {
         "id": "cyberpunk-neon",
         "name": "Cyberpunk Neon",
-        "description": "A vibrant 8-color palette inspired by Cyberpunk Neon.",
+        "description": "A vibrant 8-color palette.",
         "count": 8,
         "colors": [
             {
@@ -1679,14 +1924,19 @@
         ],
         "path": "8 Color Palette/Cyberpunk Neon.scss",
         "folder": "8 Color Palette",
-        "tags": [
-            "neon"
-        ]
+        "tags": {
+            "mood": [
+                "neon"
+            ],
+            "aesthetic": [
+                "Cyberpunk"
+            ]
+        }
     },
     {
         "id": "dracula-palette",
         "name": "Dracula Palette",
-        "description": "A vibrant 8-color palette inspired by Dracula Palette.",
+        "description": "A vibrant 8-color palette.",
         "count": 8,
         "colors": [
             {
@@ -1724,14 +1974,19 @@
         ],
         "path": "8 Color Palette/Dracula Palette.scss",
         "folder": "8 Color Palette",
-        "tags": [
-            "dark"
-        ]
+        "tags": {
+            "mood": [
+                "dark"
+            ],
+            "aesthetic": [
+                "Space"
+            ]
+        }
     },
     {
         "id": "earth-tones",
         "name": "Earth Tones",
-        "description": "A vibrant 8-color palette inspired by Earth Tones.",
+        "description": "A vibrant 8-color palette.",
         "count": 8,
         "colors": [
             {
@@ -1769,12 +2024,17 @@
         ],
         "path": "8 Color Palette/Earth Tones.scss",
         "folder": "8 Color Palette",
-        "tags": []
+        "tags": {
+            "mood": [],
+            "aesthetic": [
+                "Nature"
+            ]
+        }
     },
     {
         "id": "monochrome-night",
         "name": "Monochrome Night",
-        "description": "A vibrant 8-color palette inspired by Monochrome Night.",
+        "description": "A vibrant 8-color palette.",
         "count": 8,
         "colors": [
             {
@@ -1812,14 +2072,19 @@
         ],
         "path": "8 Color Palette/Monochrome Night.scss",
         "folder": "8 Color Palette",
-        "tags": [
-            "dark"
-        ]
+        "tags": {
+            "mood": [
+                "dark"
+            ],
+            "aesthetic": [
+                "Minimalist"
+            ]
+        }
     },
     {
         "id": "nord-palette",
         "name": "Nord Palette",
-        "description": "A vibrant 8-color palette inspired by Nord Palette.",
+        "description": "A vibrant 8-color palette.",
         "count": 8,
         "colors": [
             {
@@ -1857,14 +2122,19 @@
         ],
         "path": "8 Color Palette/Nord Palette.scss",
         "folder": "8 Color Palette",
-        "tags": [
-            "cool"
-        ]
+        "tags": {
+            "mood": [
+                "cool"
+            ],
+            "aesthetic": [
+                "Minimalist"
+            ]
+        }
     },
     {
         "id": "tokyo-night",
         "name": "Tokyo Night",
-        "description": "A vibrant 8-color palette inspired by Tokyo Night.",
+        "description": "A vibrant 8-color palette.",
         "count": 8,
         "colors": [
             {
@@ -1902,14 +2172,19 @@
         ],
         "path": "8 Color Palette/Tokyo Night.scss",
         "folder": "8 Color Palette",
-        "tags": [
-            "dark"
-        ]
+        "tags": {
+            "mood": [
+                "dark"
+            ],
+            "aesthetic": [
+                "Thematic Collection"
+            ]
+        }
     },
     {
         "id": "warm-sunset",
         "name": "Warm Sunset",
-        "description": "A vibrant 8-color palette inspired by Warm Sunset.",
+        "description": "A vibrant 8-color palette.",
         "count": 8,
         "colors": [
             {
@@ -1947,14 +2222,19 @@
         ],
         "path": "8 Color Palette/Warm Sunset.scss",
         "folder": "8 Color Palette",
-        "tags": [
-            "warm"
-        ]
+        "tags": {
+            "mood": [
+                "warm"
+            ],
+            "aesthetic": [
+                "Vibrant"
+            ]
+        }
     },
     {
         "id": "arctic-expedition",
         "name": "Arctic Expedition",
-        "description": "A vibrant 9-color palette inspired by Arctic Expedition.",
+        "description": "A vibrant 9-color palette.",
         "count": 9,
         "colors": [
             {
@@ -1996,15 +2276,20 @@
         ],
         "path": "9 Color Palette/Arctic Expedition.scss",
         "folder": "9 Color Palette",
-        "tags": [
-            "comprehensive",
-            "cool"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive",
+                "cool"
+            ],
+            "aesthetic": [
+                "Aquatic"
+            ]
+        }
     },
     {
         "id": "autumn-harvest",
         "name": "Autumn Harvest",
-        "description": "A vibrant 9-color palette inspired by Autumn Harvest.",
+        "description": "A vibrant 9-color palette.",
         "count": 9,
         "colors": [
             {
@@ -2046,66 +2331,21 @@
         ],
         "path": "9 Color Palette/Autumn Harvest.scss",
         "folder": "9 Color Palette",
-        "tags": [
-            "comprehensive",
-            "nature",
-            "warm"
-        ]
-    },
-    {
-        "id": "ocean-blue-serenity",
-        "name": "Coolors Exported Palette",
-        "description": "A vibrant 9-color palette inspired by Coolors Exported Palette.",
-        "count": 9,
-        "colors": [
-            {
-                "name": "Deep Twilight",
-                "hex": "#03045eff"
-            },
-            {
-                "name": "French Blue",
-                "hex": "#023e8aff"
-            },
-            {
-                "name": "Bright Teal Blue",
-                "hex": "#0077b6ff"
-            },
-            {
-                "name": "Blue Green",
-                "hex": "#0096c7ff"
-            },
-            {
-                "name": "Turquoise Surf",
-                "hex": "#00b4d8ff"
-            },
-            {
-                "name": "Sky Aqua",
-                "hex": "#48cae4ff"
-            },
-            {
-                "name": "Frosted Blue",
-                "hex": "#90e0efff"
-            },
-            {
-                "name": "Frosted Blue 2",
-                "hex": "#ade8f4ff"
-            },
-            {
-                "name": "Light Cyan",
-                "hex": "#caf0f8ff"
-            }
-        ],
-        "path": "9 Color Palette/Ocean Blue Serenity.scss",
-        "folder": "9 Color Palette",
-        "tags": [
-            "comprehensive",
-            "cool"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive",
+                "nature",
+                "warm"
+            ],
+            "aesthetic": [
+                "Nature"
+            ]
+        }
     },
     {
         "id": "deep-forest",
         "name": "Deep Forest",
-        "description": "A vibrant 9-color palette inspired by Deep Forest.",
+        "description": "A vibrant 9-color palette.",
         "count": 9,
         "colors": [
             {
@@ -2147,15 +2387,20 @@
         ],
         "path": "9 Color Palette/Deep Forest.scss",
         "folder": "9 Color Palette",
-        "tags": [
-            "comprehensive",
-            "nature"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive",
+                "nature"
+            ],
+            "aesthetic": [
+                "Nature"
+            ]
+        }
     },
     {
         "id": "deep-ocean",
         "name": "Deep Ocean",
-        "description": "A vibrant 9-color palette inspired by Deep Ocean.",
+        "description": "A vibrant 9-color palette.",
         "count": 9,
         "colors": [
             {
@@ -2197,16 +2442,21 @@
         ],
         "path": "9 Color Palette/Deep Ocean.scss",
         "folder": "9 Color Palette",
-        "tags": [
-            "comprehensive",
-            "cool",
-            "nature"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive",
+                "cool",
+                "nature"
+            ],
+            "aesthetic": [
+                "Aquatic"
+            ]
+        }
     },
     {
         "id": "enchanted-forest",
         "name": "Enchanted Forest",
-        "description": "A vibrant 9-color palette inspired by Enchanted Forest.",
+        "description": "A vibrant 9-color palette.",
         "count": 9,
         "colors": [
             {
@@ -2248,15 +2498,20 @@
         ],
         "path": "9 Color Palette/Enchanted Forest.scss",
         "folder": "9 Color Palette",
-        "tags": [
-            "comprehensive",
-            "nature"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive",
+                "nature"
+            ],
+            "aesthetic": [
+                "Nature"
+            ]
+        }
     },
     {
         "id": "fresh-greens",
         "name": "Fresh Greens",
-        "description": "A vibrant 9-color palette inspired by Fresh Greens.",
+        "description": "A vibrant 9-color palette.",
         "count": 9,
         "colors": [
             {
@@ -2298,15 +2553,20 @@
         ],
         "path": "9 Color Palette/Fresh Greens.scss",
         "folder": "9 Color Palette",
-        "tags": [
-            "comprehensive",
-            "nature"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive",
+                "nature"
+            ],
+            "aesthetic": [
+                "Nature"
+            ]
+        }
     },
     {
         "id": "galactic-nebula",
         "name": "Galactic Nebula",
-        "description": "A vibrant 9-color palette inspired by Galactic Nebula.",
+        "description": "A vibrant 9-color palette.",
         "count": 9,
         "colors": [
             {
@@ -2348,14 +2608,19 @@
         ],
         "path": "9 Color Palette/Galactic Nebula.scss",
         "folder": "9 Color Palette",
-        "tags": [
-            "comprehensive"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive"
+            ],
+            "aesthetic": [
+                "Space"
+            ]
+        }
     },
     {
         "id": "muted-pastels",
         "name": "Muted Pastels",
-        "description": "A vibrant 9-color palette inspired by Muted Pastels.",
+        "description": "A vibrant 9-color palette.",
         "count": 9,
         "colors": [
             {
@@ -2397,14 +2662,74 @@
         ],
         "path": "9 Color Palette/Muted Pastels.scss",
         "folder": "9 Color Palette",
-        "tags": [
-            "comprehensive"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive"
+            ],
+            "aesthetic": [
+                "Soft"
+            ]
+        }
+    },
+    {
+        "id": "ocean-blue-serenity",
+        "name": "Ocean Blue Serenity",
+        "description": "A vibrant 9-color palette.",
+        "count": 9,
+        "colors": [
+            {
+                "name": "Deep Twilight",
+                "hex": "#03045eff"
+            },
+            {
+                "name": "French Blue",
+                "hex": "#023e8aff"
+            },
+            {
+                "name": "Bright Teal Blue",
+                "hex": "#0077b6ff"
+            },
+            {
+                "name": "Blue Green",
+                "hex": "#0096c7ff"
+            },
+            {
+                "name": "Turquoise Surf",
+                "hex": "#00b4d8ff"
+            },
+            {
+                "name": "Sky Aqua",
+                "hex": "#48cae4ff"
+            },
+            {
+                "name": "Frosted Blue",
+                "hex": "#90e0efff"
+            },
+            {
+                "name": "Frosted Blue 2",
+                "hex": "#ade8f4ff"
+            },
+            {
+                "name": "Light Cyan",
+                "hex": "#caf0f8ff"
+            }
+        ],
+        "path": "9 Color Palette/Ocean Blue Serenity.scss",
+        "folder": "9 Color Palette",
+        "tags": {
+            "mood": [
+                "comprehensive",
+                "cool"
+            ],
+            "aesthetic": [
+                "Soft"
+            ]
+        }
     },
     {
         "id": "rainforest",
         "name": "Rainforest",
-        "description": "A vibrant 9-color palette inspired by Rainforest.",
+        "description": "A vibrant 9-color palette.",
         "count": 9,
         "colors": [
             {
@@ -2446,15 +2771,20 @@
         ],
         "path": "9 Color Palette/Rainforest.scss",
         "folder": "9 Color Palette",
-        "tags": [
-            "comprehensive",
-            "nature"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive",
+                "nature"
+            ],
+            "aesthetic": [
+                "Nature"
+            ]
+        }
     },
     {
         "id": "solar-flare",
         "name": "Solar Flare",
-        "description": "A vibrant 9-color palette inspired by Solar Flare.",
+        "description": "A vibrant 9-color palette.",
         "count": 9,
         "colors": [
             {
@@ -2496,14 +2826,19 @@
         ],
         "path": "9 Color Palette/Solar Flare.scss",
         "folder": "9 Color Palette",
-        "tags": [
-            "comprehensive"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive"
+            ],
+            "aesthetic": [
+                "Vibrant"
+            ]
+        }
     },
     {
         "id": "sunset-sands",
         "name": "Sunset Sands",
-        "description": "A vibrant 9-color palette inspired by Sunset Sands.",
+        "description": "A vibrant 9-color palette.",
         "count": 9,
         "colors": [
             {
@@ -2545,16 +2880,21 @@
         ],
         "path": "9 Color Palette/Sunset Sands.scss",
         "folder": "9 Color Palette",
-        "tags": [
-            "comprehensive",
-            "nature",
-            "warm"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive",
+                "nature",
+                "warm"
+            ],
+            "aesthetic": [
+                "Nature"
+            ]
+        }
     },
     {
         "id": "tropical-paradise",
         "name": "Tropical Paradise",
-        "description": "A vibrant 9-color palette inspired by Tropical Paradise.",
+        "description": "A vibrant 9-color palette.",
         "count": 9,
         "colors": [
             {
@@ -2596,14 +2936,19 @@
         ],
         "path": "9 Color Palette/Tropical Paradise.scss",
         "folder": "9 Color Palette",
-        "tags": [
-            "comprehensive"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive"
+            ],
+            "aesthetic": [
+                "Thematic Collection"
+            ]
+        }
     },
     {
         "id": "urban-industrial",
         "name": "Urban Industrial",
-        "description": "A vibrant 9-color palette inspired by Urban Industrial.",
+        "description": "A vibrant 9-color palette.",
         "count": 9,
         "colors": [
             {
@@ -2645,15 +2990,20 @@
         ],
         "path": "9 Color Palette/Urban Industrial.scss",
         "folder": "9 Color Palette",
-        "tags": [
-            "comprehensive",
-            "professional"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive",
+                "professional"
+            ],
+            "aesthetic": [
+                "Professional"
+            ]
+        }
     },
     {
         "id": "blue-ridge",
         "name": "Blue Ridge",
-        "description": "A vibrant 10-color palette inspired by Blue Ridge.",
+        "description": "A vibrant 10-color palette.",
         "count": 10,
         "colors": [
             {
@@ -2699,15 +3049,20 @@
         ],
         "path": "10 Color Palette/Blue Ridge.scss",
         "folder": "10 Color Palette",
-        "tags": [
-            "comprehensive",
-            "cool"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive",
+                "cool"
+            ],
+            "aesthetic": [
+                "Aquatic"
+            ]
+        }
     },
     {
         "id": "cybernetic-steel",
         "name": "Cybernetic Steel",
-        "description": "A vibrant 10-color palette inspired by Cybernetic Steel.",
+        "description": "A vibrant 10-color palette.",
         "count": 10,
         "colors": [
             {
@@ -2753,17 +3108,22 @@
         ],
         "path": "10 Color Palette/Cybernetic Steel.scss",
         "folder": "10 Color Palette",
-        "tags": [
-            "comprehensive",
-            "cool",
-            "neon",
-            "professional"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive",
+                "cool",
+                "neon",
+                "professional"
+            ],
+            "aesthetic": [
+                "Cyberpunk"
+            ]
+        }
     },
     {
         "id": "dark-forest-10",
         "name": "Dark Forest 10",
-        "description": "A vibrant 10-color palette inspired by Dark Forest 10.",
+        "description": "A vibrant 10-color palette.",
         "count": 10,
         "colors": [
             {
@@ -2809,16 +3169,21 @@
         ],
         "path": "10 Color Palette/Dark Forest 10.scss",
         "folder": "10 Color Palette",
-        "tags": [
-            "comprehensive",
-            "dark",
-            "nature"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive",
+                "dark",
+                "nature"
+            ],
+            "aesthetic": [
+                "Nature"
+            ]
+        }
     },
     {
         "id": "fiery-red-sunset-palette",
-        "name": "Fiery Red Sunset",
-        "description": "A vibrant 10-color palette inspired by Fiery Red Sunset.",
+        "name": "Fiery Red Sunset Palette",
+        "description": "A vibrant 10-color palette.",
         "count": 10,
         "colors": [
             {
@@ -2864,15 +3229,20 @@
         ],
         "path": "10 Color Palette/Fiery Red Sunset Palette.scss",
         "folder": "10 Color Palette",
-        "tags": [
-            "comprehensive",
-            "warm"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive",
+                "warm"
+            ],
+            "aesthetic": [
+                "Vibrant"
+            ]
+        }
     },
     {
         "id": "heatwave-10",
         "name": "Heatwave 10",
-        "description": "A vibrant 10-color palette inspired by Heatwave 10.",
+        "description": "A vibrant 10-color palette.",
         "count": 10,
         "colors": [
             {
@@ -2918,15 +3288,20 @@
         ],
         "path": "10 Color Palette/Heatwave 10.scss",
         "folder": "10 Color Palette",
-        "tags": [
-            "comprehensive",
-            "warm"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive",
+                "warm"
+            ],
+            "aesthetic": [
+                "Vibrant"
+            ]
+        }
     },
     {
         "id": "nebula-void",
         "name": "Nebula Void",
-        "description": "A vibrant 10-color palette inspired by Nebula Void.",
+        "description": "A vibrant 10-color palette.",
         "count": 10,
         "colors": [
             {
@@ -2972,15 +3347,20 @@
         ],
         "path": "10 Color Palette/Nebula Void.scss",
         "folder": "10 Color Palette",
-        "tags": [
-            "comprehensive",
-            "dark"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive",
+                "dark"
+            ],
+            "aesthetic": [
+                "Space"
+            ]
+        }
     },
     {
         "id": "spectrum-10",
         "name": "Spectrum 10",
-        "description": "A vibrant 10-color palette inspired by Spectrum 10.",
+        "description": "A vibrant 10-color palette.",
         "count": 10,
         "colors": [
             {
@@ -3026,14 +3406,19 @@
         ],
         "path": "10 Color Palette/Spectrum 10.scss",
         "folder": "10 Color Palette",
-        "tags": [
-            "comprehensive"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive"
+            ],
+            "aesthetic": [
+                "Thematic Collection"
+            ]
+        }
     },
     {
         "id": "steel-&-rust",
         "name": "Steel & Rust",
-        "description": "A vibrant 10-color palette inspired by Steel & Rust.",
+        "description": "A vibrant 10-color palette.",
         "count": 10,
         "colors": [
             {
@@ -3079,16 +3464,21 @@
         ],
         "path": "10 Color Palette/Steel & Rust.scss",
         "folder": "10 Color Palette",
-        "tags": [
-            "comprehensive",
-            "cool",
-            "professional"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive",
+                "cool",
+                "professional"
+            ],
+            "aesthetic": [
+                "Urban"
+            ]
+        }
     },
     {
         "id": "synthwave-horizon",
         "name": "Synthwave Horizon",
-        "description": "A vibrant 10-color palette inspired by Synthwave Horizon.",
+        "description": "A vibrant 10-color palette.",
         "count": 10,
         "colors": [
             {
@@ -3134,15 +3524,20 @@
         ],
         "path": "10 Color Palette/Synthwave Horizon.scss",
         "folder": "10 Color Palette",
-        "tags": [
-            "comprehensive",
-            "neon"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive",
+                "neon"
+            ],
+            "aesthetic": [
+                "Cyberpunk"
+            ]
+        }
     },
     {
         "id": "terminal-matrix",
         "name": "Terminal Matrix",
-        "description": "A vibrant 10-color palette inspired by Terminal Matrix.",
+        "description": "A vibrant 10-color palette.",
         "count": 10,
         "colors": [
             {
@@ -3188,8 +3583,13 @@
         ],
         "path": "10 Color Palette/Terminal Matrix.scss",
         "folder": "10 Color Palette",
-        "tags": [
-            "comprehensive"
-        ]
+        "tags": {
+            "mood": [
+                "comprehensive"
+            ],
+            "aesthetic": [
+                "Cyberpunk"
+            ]
+        }
     }
 ]
