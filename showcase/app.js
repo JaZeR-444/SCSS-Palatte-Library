@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Showcase: Initializing advanced search v2.1.0...');
+    console.log('Showcase: Initializing professional sandbox v2.2.0...');
 
     // --- DOM Elements ---
     const getEl = (id) => document.getElementById(id);
@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
         search: getEl('palette-search'),
         toast: getEl('toast-container'),
         facetTabs: getEl('facet-tabs'),
-        subFilterContainer: getEl('sub-filter-container')
+        subFilterContainer: getEl('sub-filter-container'),
+        shuffleBtn: getEl('shuffle-colors')
     };
 
     // --- State ---
@@ -35,17 +36,17 @@ document.addEventListener('DOMContentLoaded', () => {
     function applyFilters() {
         const query = searchQuery.trim().toLowerCase();
         const filtered = allPalettes.filter(p => {
-            const matchesFacet =
-                activeFacet === 'all' ||
+            const matchesFacet = 
+                activeFacet === 'all' || 
                 (activeFacet === 'count' && p.count === parseInt(activeSubFilter)) ||
-                (activeFacet === 'category' && p.folder === activeSubFilter) ||
+                (activeFacet === 'category' && p.category === activeSubFilter) ||
                 (activeFacet === 'mood' && p.tags && p.tags.mood && p.tags.mood.includes(activeSubFilter)) ||
                 (activeFacet === 'aesthetic' && p.tags && p.tags.aesthetic && p.tags.aesthetic.includes(activeSubFilter));
 
-            const matchesSearch =
-                !query ||
-                p.name.toLowerCase().includes(query) ||
-                (p.folder && p.folder.toLowerCase().includes(query)) ||
+            const matchesSearch = 
+                !query || 
+                p.name.toLowerCase().includes(query) || 
+                (p.category && p.category.toLowerCase().includes(query)) ||
                 (p.tags && p.tags.mood && p.tags.mood.some(m => m.toLowerCase().includes(query))) ||
                 (p.tags && p.tags.aesthetic && p.tags.aesthetic.some(a => a.toLowerCase().includes(query)));
 
@@ -93,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (facet === 'count') {
             values = [...new Set(allPalettes.map(p => p.count))].sort((a, b) => a - b);
         } else if (facet === 'category') {
-            values = [...new Set(allPalettes.map(p => p.folder))].filter(Boolean).sort();
+            values = [...new Set(allPalettes.map(p => p.category))].filter(Boolean).sort();
         } else if (facet === 'mood') {
             const allMoods = allPalettes.flatMap(p => (p.tags && p.tags.mood) || []);
             values = [...new Set(allMoods)].sort();
@@ -203,9 +204,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h3 class="font-extrabold text-lg text-gray-800 dark:text-gray-100 group-hover:text-indigo-500 transition-colors">${p.name}</h3>
                         <span class="px-2 py-0.5 rounded-md bg-gray-50 dark:bg-slate-800 text-gray-400 text-[10px] font-bold uppercase tracking-wider">${p.count}</span>
                     </div>
-                    <p class="text-[10px] font-bold text-indigo-400 uppercase tracking-widest mb-2">${p.folder || 'Collection'}</p>
+                    <p class="text-[10px] font-bold text-indigo-400 uppercase tracking-widest mb-2">${p.category || 'Collection'}</p>
                     <div class="flex flex-wrap gap-1 mb-4">${tags}</div>
-                    <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-2 italic">"${p.description || ''}"</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-2 italic">"${p.intent}"</p>
                 </div>
                 <div class="flex items-center justify-between pt-4 border-t border-gray-50 dark:border-slate-800">
                     <span class="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">v${p.version || '1.0.0'}</span>
@@ -220,6 +221,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- Modal & Switcher ---
+
+    function applyPaletteMapping(colors) {
+        for (let i = 1; i <= 10; i++) {
+            const colorIdx = (i - 1) % colors.length;
+            document.documentElement.style.setProperty(`--ui-color-${i}`, colors[colorIdx].hex);
+        }
+    }
+
+    function shufflePaletteMapping() {
+        if (!currentPalette) return;
+        const shuffled = [...currentPalette.colors].sort(() => Math.random() - 0.5);
+        applyPaletteMapping(shuffled);
+        
+        // Visual Feedback
+        if (window.gsap) {
+            gsap.fromTo("#sandbox-viewport", { opacity: 0.5, scale: 0.98 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power2.out" });
+        }
+        showToast('Colors shuffled!');
+    }
 
     function switchUseCase(usecase) {
         document.querySelectorAll('.usecase-btn').forEach(b => {
@@ -252,13 +272,20 @@ document.addEventListener('DOMContentLoaded', () => {
             gsap.from("#landing-title", { y: 30, opacity: 0, duration: 0.8, ease: "power3.out" });
             gsap.from("#case-landing p, #case-landing button", { y: 20, opacity: 0, duration: 0.6, stagger: 0.1, delay: 0.2, ease: "power2.out" });
             gsap.from("#case-landing .grid > div", { scale: 0.8, opacity: 0, duration: 0.5, stagger: 0.1, delay: 0.5, ease: "back.out" });
+        } else if (usecase === 'commerce') {
+            gsap.from("#commerce-card", { x: -30, opacity: 0, duration: 0.7, ease: "power3.out" });
+            gsap.from("#case-commerce .space-y-3 > div", { x: 30, opacity: 0, duration: 0.5, stagger: 0.1, delay: 0.2, ease: "power2.out" });
+        } else if (usecase === 'mobile') {
+            gsap.from("#mobile-shell", { y: 50, opacity: 0, duration: 0.8, ease: "power4.out" });
+            gsap.from("#mobile-fab", { scale: 0, duration: 0.6, delay: 0.5, ease: "back.out(2)" });
+            gsap.from("#case-mobile h5, #case-mobile .flex", { x: -20, opacity: 0, duration: 0.4, stagger: 0.05, delay: 0.3 });
         }
     }
 
     function openModal(p) {
         currentPalette = p;
         if (elements.title) elements.title.textContent = p.name;
-        if (elements.vibe) elements.vibe.textContent = `${p.folder || 'Collection'} • ${p.count} Colors`;
+        if (elements.vibe) elements.vibe.textContent = `${p.category} • ${p.count} Colors`;
         if (elements.code) elements.code.textContent = '/* Loading SCSS... */';
         
         // Hero
@@ -267,12 +294,8 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.hero.style.background = `radial-gradient(circle at center, ${hexes})`;
         }
 
-        // Mapping All Colors
-        const colors = p.colors;
-        for (let i = 1; i <= 10; i++) {
-            const colorIdx = (i - 1) % colors.length;
-            document.documentElement.style.setProperty(`--ui-color-${i}`, colors[colorIdx].hex);
-        }
+        // Apply Initial Mapping
+        applyPaletteMapping(p.colors);
 
         // Color Lab
         if (elements.lab) {
@@ -364,6 +387,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    if (elements.shuffleBtn) {
+        elements.shuffleBtn.addEventListener('click', shufflePaletteMapping);
+    }
+
     document.addEventListener('click', (e) => {
         const useBtn = e.target.closest('.usecase-btn');
         if (useBtn) switchUseCase(useBtn.dataset.usecase);
@@ -424,4 +451,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(err => console.error('Showcase: Failed to load palettes.json', err));
 
+    window.copyToClipboard = (text, msg) => {
+        navigator.clipboard.writeText(text).then(() => showToast(msg || 'Copied!'));
+    };
 });

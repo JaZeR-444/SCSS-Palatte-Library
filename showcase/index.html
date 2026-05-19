@@ -88,39 +88,6 @@
                     <div class="h-10 w-10 skeleton rounded-xl"></div>
                 </div>
             </div>
-            <div class="skeleton-card bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-slate-800 space-y-4 hidden sm:block">
-                <div class="h-12 w-full skeleton rounded-lg"></div>
-                <div class="space-y-2">
-                    <div class="h-4 w-3/4 skeleton rounded"></div>
-                    <div class="h-4 w-full skeleton rounded"></div>
-                </div>
-                <div class="pt-4 border-t border-gray-50 dark:border-slate-800 flex justify-between">
-                    <div class="h-3 w-20 skeleton rounded"></div>
-                    <div class="h-10 w-10 skeleton rounded-xl"></div>
-                </div>
-            </div>
-            <div class="skeleton-card bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-slate-800 space-y-4 hidden lg:block">
-                <div class="h-12 w-full skeleton rounded-lg"></div>
-                <div class="space-y-2">
-                    <div class="h-4 w-3/4 skeleton rounded"></div>
-                    <div class="h-4 w-full skeleton rounded"></div>
-                </div>
-                <div class="pt-4 border-t border-gray-50 dark:border-slate-800 flex justify-between">
-                    <div class="h-3 w-20 skeleton rounded"></div>
-                    <div class="h-10 w-10 skeleton rounded-xl"></div>
-                </div>
-            </div>
-            <div class="skeleton-card bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-slate-800 space-y-4 hidden xl:block">
-                <div class="h-12 w-full skeleton rounded-lg"></div>
-                <div class="space-y-2">
-                    <div class="h-4 w-3/4 skeleton rounded"></div>
-                    <div class="h-4 w-full skeleton rounded"></div>
-                </div>
-                <div class="pt-4 border-t border-gray-50 dark:border-slate-800 flex justify-between">
-                    <div class="h-3 w-20 skeleton rounded"></div>
-                    <div class="h-10 w-10 skeleton rounded-xl"></div>
-                </div>
-            </div>
         </div>
     </main>
 
@@ -128,30 +95,28 @@
     <div id="modal-overlay" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md hidden opacity-0 transition-opacity duration-300">
         <div id="modal-content" class="bg-white dark:bg-slate-900 w-full max-w-6xl max-h-[95vh] rounded-3xl shadow-2xl overflow-hidden flex flex-col scale-95 transition-all duration-300">
             
-            <!-- Close Button (Floating) -->
+            <!-- Close Button -->
             <button id="close-modal" class="absolute top-4 right-4 z-50 p-2.5 bg-white/20 hover:bg-white/40 text-white rounded-full transition-all backdrop-blur-md border border-white/30">
                 <i class="fa-solid fa-xmark text-xl"></i>
             </button>
 
-            <!-- Color Blindness Simulator Dropdown -->
+            <!-- Vision Simulator -->
             <div class="absolute top-4 left-4 z-50">
                 <select id="vision-simulator" class="bg-white/20 hover:bg-white/30 text-white text-[10px] font-black uppercase tracking-widest px-3 py-2 rounded-full border border-white/30 backdrop-blur-md outline-none cursor-pointer transition-all">
                     <option value="none" class="text-slate-900">Normal Vision</option>
-                    <option value="protanopia" class="text-slate-900">Protanopia (Red-Blind)</option>
-                    <option value="deuteranopia" class="text-slate-900">Deuteranopia (Green-Blind)</option>
-                    <option value="tritanopia" class="text-slate-900">Tritanopia (Blue-Blind)</option>
-                    <option value="achromatopsia" class="text-slate-900">Achromatopsia (No Color)</option>
+                    <option value="protanopia" class="text-slate-900">Protanopia</option>
+                    <option value="deuteranopia" class="text-slate-900">Deuteranopia</option>
+                    <option value="tritanopia" class="text-slate-900">Tritanopia</option>
+                    <option value="achromatopsia" class="text-slate-900">Achromatopsia</option>
                 </select>
             </div>
 
-            <!-- SECTION 1: THE MOOD HERO (Option 3) -->
+            <!-- Mood Hero -->
             <div id="modal-hero" class="relative h-64 sm:h-80 flex flex-col items-center justify-center text-white text-center p-8 transition-all duration-700 overflow-hidden">
                 <div id="hero-gradient" class="absolute inset-0 transition-all duration-1000"></div>
                 <div class="absolute inset-0 bg-black/10"></div>
                 <div class="relative z-10 space-y-2">
-                    <span id="modal-vibe" class="inline-block px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest bg-white/20 border border-white/30 backdrop-blur-md">
-                        Thematic Aesthetic
-                    </span>
+                    <span id="modal-vibe" class="inline-block px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest bg-white/20 border border-white/30 backdrop-blur-md">Collection</span>
                     <h2 id="modal-title" class="text-4xl sm:text-6xl font-black tracking-tight drop-shadow-2xl">Palette Name</h2>
                 </div>
             </div>
@@ -159,7 +124,7 @@
             <!-- Scrollable Content -->
             <div class="flex-1 overflow-y-auto no-scrollbar">
                 
-                <!-- SECTION 2: INTERACTIVE SANDBOX (Option 1) -->
+                <!-- SECTION 2: INTERACTIVE SANDBOX -->
                 <div class="p-8 lg:p-12 border-b border-gray-100 dark:border-slate-800">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
                         <div class="flex items-center gap-3">
@@ -172,37 +137,40 @@
                             </div>
                         </div>
                         
-                        <div class="flex items-center gap-2">
+                        <div class="flex flex-wrap items-center gap-2">
                             <!-- Use Case Switcher -->
-                            <div class="flex p-1 bg-gray-100 dark:bg-slate-800 rounded-xl">
+                            <div class="flex p-1 bg-gray-100 dark:bg-slate-800 rounded-xl overflow-x-auto no-scrollbar">
                                 <button data-usecase="dashboard" class="usecase-btn active px-4 py-2 rounded-lg text-xs font-bold transition-all">DASHBOARD</button>
                                 <button data-usecase="social" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">SOCIAL</button>
                                 <button data-usecase="landing" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">LANDING</button>
+                                <button data-usecase="commerce" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">COMMERCE</button>
+                                <button data-usecase="mobile" class="usecase-btn px-4 py-2 rounded-lg text-xs font-bold text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all">MOBILE</button>
                             </div>
-                            <!-- Modal Theme Toggle -->
-                            <button id="modal-theme-toggle" class="p-2 rounded-xl bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-all" title="Toggle modal theme">
-                                <i class="fa-solid fa-moon text-gray-500 dark:hidden text-sm"></i>
-                                <i class="fa-solid fa-sun hidden dark:block text-yellow-400 text-sm"></i>
-                            </button>
+                            <!-- Interactive Tools -->
+                            <div class="flex items-center gap-2">
+                                <button id="shuffle-colors" class="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition-all group" title="Shuffle Palette Mapping">
+                                    <i class="fa-solid fa-dice-five group-hover:rotate-180 transition-transform duration-500"></i>
+                                </button>
+                                <button id="modal-theme-toggle" class="p-2.5 rounded-xl bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-all" title="Toggle modal theme">
+                                    <i class="fa-solid fa-moon text-gray-500 dark:hidden text-sm"></i>
+                                    <i class="fa-solid fa-sun hidden dark:block text-yellow-400 text-sm"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
 
-                    <div id="sandbox-viewport" class="relative min-h-[500px] flex items-center justify-center overflow-hidden transition-colors duration-500 p-4">
+                    <div id="sandbox-viewport" class="relative min-h-[550px] flex items-center justify-center overflow-hidden transition-colors duration-500 p-4">
                         
                         <!-- USE CASE: DASHBOARD -->
                         <div id="case-dashboard" class="usecase-content w-full max-w-4xl grid grid-cols-1 lg:grid-cols-12 gap-6 transition-all duration-500">
                             <div id="mock-desktop" class="lg:col-span-8 bg-white dark:bg-slate-900 rounded-2xl border border-gray-200 dark:border-slate-800 overflow-hidden shadow-2xl">
                                 <div id="ui-header" class="h-10 bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-slate-800 flex items-center px-4 gap-2 transition-colors duration-500">
-                                    <div class="flex gap-1.5">
-                                        <div class="w-2.5 h-2.5 rounded-full bg-red-400"></div>
-                                        <div class="w-2.5 h-2.5 rounded-full bg-yellow-400"></div>
-                                        <div class="w-2.5 h-2.5 rounded-full bg-green-400"></div>
-                                    </div>
-                                    <div class="flex-1 text-center font-bold text-[10px] text-gray-300">analytics.io</div>
+                                    <div class="flex gap-1.5"><div class="w-2.5 h-2.5 rounded-full bg-red-400"></div><div class="w-2.5 h-2.5 rounded-full bg-yellow-400"></div><div class="w-2.5 h-2.5 rounded-full bg-green-400"></div></div>
+                                    <div class="flex-1 text-center font-bold text-[10px] text-gray-300 uppercase tracking-widest">Analytics Dashboard</div>
                                 </div>
                                 <div class="flex h-64">
                                     <aside id="ui-sidebar" class="w-16 bg-[var(--ui-color-1)] flex flex-col items-center py-4 gap-4 transition-colors duration-500">
-                                        <div class="w-8 h-8 rounded-lg bg-[var(--ui-color-2)] shadow-sm"></div>
+                                        <div class="w-8 h-8 rounded-lg bg-[var(--ui-color-2)] shadow-sm text-white flex items-center justify-center text-[10px]"><i class="fa-solid fa-house"></i></div>
                                         <div class="w-8 h-8 rounded-lg bg-[var(--ui-color-3)]/40"></div>
                                         <div class="w-8 h-8 rounded-lg bg-[var(--ui-color-4)]/40"></div>
                                         <div class="mt-auto w-8 h-8 rounded-full border-2 border-[var(--ui-color-5)]"></div>
@@ -280,17 +248,11 @@
                                     </div>
                                     <div id="social-post-img" class="h-56 rounded-3xl bg-gradient-to-br from-[var(--ui-color-1)] via-[var(--ui-color-4)] to-[var(--ui-color-8)] flex items-center justify-center text-white relative overflow-hidden group">
                                         <div class="absolute inset-0 bg-black/10"></div>
-                                        <div class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center">
-                                            <i class="fa-solid fa-location-dot text-[10px]"></i>
-                                        </div>
                                         <i class="fa-solid fa-wand-magic-sparkles text-6xl opacity-30 group-hover:scale-110 transition-transform duration-700"></i>
                                     </div>
                                     <div class="flex justify-between items-center px-1">
                                         <div class="flex gap-5">
-                                            <div class="flex items-center gap-1.5">
-                                                <i class="fa-solid fa-heart text-[var(--ui-color-2)] text-xl filter drop-shadow-[0_0_8px_var(--ui-color-2)]"></i>
-                                                <span class="text-[10px] font-bold text-[var(--ui-color-2)]">1.2k</span>
-                                            </div>
+                                            <i class="fa-solid fa-heart text-[var(--ui-color-2)] text-xl filter drop-shadow-[0_0_8px_var(--ui-color-2)]"></i>
                                             <i class="fa-solid fa-comment text-[var(--ui-color-5)]/40 text-xl"></i>
                                             <i class="fa-solid fa-paper-plane text-[var(--ui-color-6)]/40 text-xl"></i>
                                         </div>
@@ -307,44 +269,85 @@
                         <!-- USE CASE: LANDING -->
                         <div id="case-landing" class="usecase-content absolute inset-0 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-500">
                             <div class="text-center space-y-10 max-w-2xl px-6">
-                                <div class="flex justify-center gap-1">
-                                    <div class="w-1.5 h-1.5 rounded-full bg-[var(--ui-color-1)]"></div>
-                                    <div class="w-1.5 h-1.5 rounded-full bg-[var(--ui-color-3)] opacity-60"></div>
-                                    <div class="w-1.5 h-1.5 rounded-full bg-[var(--ui-color-5)] opacity-30"></div>
-                                </div>
                                 <div class="space-y-4">
-                                    <div id="landing-tag" class="inline-block px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] text-[var(--ui-color-1)] bg-[var(--ui-color-1)]/10 border border-[var(--ui-color-1)]/20 shadow-sm shadow-[var(--ui-color-1)]/5">
-                                        v2.0 Platform Live
-                                    </div>
-                                    <h3 id="landing-title" class="text-5xl sm:text-6xl font-black tracking-tight leading-[0.9] dark:text-white">
-                                        Pure <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--ui-color-1)] via-[var(--ui-color-4)] to-[var(--ui-color-7)]">Creative</span> Potential.
-                                    </h3>
-                                    <p class="text-base text-gray-500 dark:text-gray-400 max-w-md mx-auto leading-relaxed">
-                                        Experience the full spectrum of your design library with high-fidelity previews and programmatic access.
-                                    </p>
+                                    <div id="landing-tag" class="inline-block px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] text-[var(--ui-color-1)] bg-[var(--ui-color-1)]/10 border border-[var(--ui-color-1)]/20 shadow-sm shadow-[var(--ui-color-1)]/5">v2.0 Platform Live</div>
+                                    <h3 id="landing-title" class="text-5xl sm:text-6xl font-black tracking-tight leading-[0.9] dark:text-white">Pure <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--ui-color-1)] via-[var(--ui-color-4)] to-[var(--ui-color-7)]">Creative</span> Potential.</h3>
+                                    <p class="text-base text-gray-500 dark:text-gray-400 max-w-md mx-auto leading-relaxed">High-fidelity previews and programmatic access for your design library.</p>
                                 </div>
                                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                                    <button class="w-full sm:w-auto px-10 py-4 rounded-2xl bg-gradient-to-r from-[var(--ui-color-1)] to-[var(--ui-color-2)] text-white font-bold shadow-2xl shadow-[var(--ui-color-1)]/30 transition-all hover:-translate-y-1 active:scale-95">
-                                        Get Started Free
-                                    </button>
-                                    <button class="w-full sm:w-auto px-10 py-4 rounded-2xl border-2 border-[var(--ui-color-3)]/20 font-bold dark:text-white transition-all hover:bg-[var(--ui-color-3)]/5">
-                                        View Documentation
-                                    </button>
+                                    <button class="w-full sm:w-auto px-10 py-4 rounded-2xl bg-gradient-to-r from-[var(--ui-color-1)] to-[var(--ui-color-2)] text-white font-bold shadow-2xl shadow-[var(--ui-color-1)]/30 transition-all hover:-translate-y-1 active:scale-95">Get Started Free</button>
+                                    <button class="w-full sm:w-auto px-10 py-4 rounded-2xl border-2 border-[var(--ui-color-3)]/20 font-bold dark:text-white transition-all hover:bg-[var(--ui-color-3)]/5">View Documentation</button>
                                 </div>
                                 <!-- Feature Pips -->
                                 <div class="grid grid-cols-3 gap-8 pt-6">
-                                    <div class="space-y-2">
-                                        <div class="text-2xl font-black text-[var(--ui-color-4)]">80+</div>
-                                        <div class="text-[9px] font-bold uppercase tracking-widest text-gray-400">Palettes</div>
+                                    <div class="space-y-2"><div class="text-2xl font-black text-[var(--ui-color-4)]">80+</div><div class="text-[9px] font-bold uppercase tracking-widest text-gray-400">Palettes</div></div>
+                                    <div class="space-y-2"><div class="text-2xl font-black text-[var(--ui-color-6)]">100%</div><div class="text-[9px] font-bold uppercase tracking-widest text-gray-400">Scalable</div></div>
+                                    <div class="space-y-2"><div class="text-2xl font-black text-[var(--ui-color-8)]">WCAG</div><div class="text-[9px] font-bold uppercase tracking-widest text-gray-400">Audit</div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- USE CASE: COMMERCE -->
+                        <div id="case-commerce" class="usecase-content absolute inset-0 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-500">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-3xl">
+                                <!-- Product Card -->
+                                <div id="commerce-card" class="bg-white dark:bg-slate-900 rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100 dark:border-slate-800 flex flex-col">
+                                    <div class="h-64 bg-gradient-to-br from-[var(--ui-color-1)] to-[var(--ui-color-3)] flex items-center justify-center relative">
+                                        <div class="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-[10px] font-black text-white uppercase tracking-widest border border-white/30">New Arrival</div>
+                                        <i class="fa-solid fa-bag-shopping text-7xl text-white opacity-20"></i>
                                     </div>
-                                    <div class="space-y-2">
-                                        <div class="text-2xl font-black text-[var(--ui-color-6)]">100%</div>
-                                        <div class="text-[9px] font-bold uppercase tracking-widest text-gray-400">Scalable</div>
+                                    <div class="p-8 space-y-4">
+                                        <div class="flex justify-between items-start">
+                                            <h4 class="text-2xl font-black dark:text-white leading-none">Studio Edition</h4>
+                                            <div class="text-2xl font-black text-[var(--ui-color-1)]">$299</div>
+                                        </div>
+                                        <div class="flex gap-1 text-[var(--ui-color-4)]">
+                                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                        <button class="w-full py-4 rounded-2xl bg-[var(--ui-color-2)] text-white font-black shadow-xl shadow-[var(--ui-color-2)]/20 hover:-translate-y-0.5 active:scale-95 transition-all">ADD TO CART</button>
                                     </div>
-                                    <div class="space-y-2">
-                                        <div class="text-2xl font-black text-[var(--ui-color-8)]">WCAG</div>
-                                        <div class="text-[9px] font-bold uppercase tracking-widest text-gray-400">Audit</div>
+                                </div>
+                                <!-- Category List -->
+                                <div class="space-y-4 py-4">
+                                    <h4 class="text-xs font-black uppercase tracking-widest text-gray-400 mb-6">Popular Collections</h4>
+                                    <div class="space-y-3">
+                                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-slate-900 border border-gray-100 dark:border-slate-800 shadow-sm">
+                                            <div class="w-12 h-12 rounded-xl bg-[var(--ui-color-5)]/10 flex items-center justify-center text-[var(--ui-color-5)]"><i class="fa-solid fa-bolt"></i></div>
+                                            <div class="flex-1"><div class="h-2.5 w-24 bg-gray-100 dark:bg-slate-800 rounded-full"></div><div class="h-2 w-12 bg-gray-50 dark:bg-slate-800 rounded-full mt-2"></div></div>
+                                            <div class="w-2 h-2 rounded-full bg-[var(--ui-color-6)]"></div>
+                                        </div>
+                                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-slate-900 border border-gray-100 dark:border-slate-800 shadow-sm">
+                                            <div class="w-12 h-12 rounded-xl bg-[var(--ui-color-7)]/10 flex items-center justify-center text-[var(--ui-color-7)]"><i class="fa-solid fa-leaf"></i></div>
+                                            <div class="flex-1"><div class="h-2.5 w-32 bg-gray-100 dark:bg-slate-800 rounded-full"></div><div class="h-2 w-16 bg-gray-50 dark:bg-slate-800 rounded-full mt-2"></div></div>
+                                            <div class="w-2 h-2 rounded-full bg-[var(--ui-color-8)]"></div>
+                                        </div>
+                                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-slate-900 border border-gray-100 dark:border-slate-800 shadow-sm">
+                                            <div class="w-12 h-12 rounded-xl bg-[var(--ui-color-9)]/10 flex items-center justify-center text-[var(--ui-color-9)]"><i class="fa-solid fa-moon"></i></div>
+                                            <div class="flex-1"><div class="h-2.5 w-20 bg-gray-100 dark:bg-slate-800 rounded-full"></div><div class="h-2 w-24 bg-gray-50 dark:bg-slate-800 rounded-full mt-2"></div></div>
+                                            <div class="w-2 h-2 rounded-full bg-[var(--ui-color-10)]"></div>
+                                        </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- USE CASE: MOBILE -->
+                        <div id="case-mobile" class="usecase-content absolute inset-0 flex items-center justify-center opacity-0 pointer-events-none transition-all duration-500">
+                            <div id="mobile-shell" class="w-72 h-[500px] bg-white dark:bg-slate-900 rounded-[3rem] shadow-2xl border-[8px] border-slate-800 dark:border-slate-800 relative overflow-hidden flex flex-col">
+                                <div class="h-16 bg-[var(--ui-color-1)] flex items-end justify-between px-6 pb-3 transition-colors duration-500">
+                                    <div class="w-8 h-2 bg-white/20 rounded-full"></div><div class="w-4 h-4 rounded-full bg-white/30"></div>
+                                </div>
+                                <div class="flex-1 p-6 space-y-6">
+                                    <div class="flex justify-between items-center"><h5 class="font-black text-lg dark:text-white">Tasks</h5><div class="text-[10px] font-bold text-[var(--ui-color-2)] bg-[var(--ui-color-2)]/10 px-2 py-0.5 rounded-full">Active</div></div>
+                                    <div class="space-y-4">
+                                        <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[var(--ui-color-3)] to-[var(--ui-color-4)]"></div><div class="h-2 w-full bg-gray-100 dark:bg-slate-800 rounded-full"></div></div>
+                                        <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[var(--ui-color-5)] to-[var(--ui-color-6)]"></div><div class="h-2 w-3/4 bg-gray-100 dark:bg-slate-800 rounded-full"></div></div>
+                                        <div class="flex items-center gap-4"><div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[var(--ui-color-7)] to-[var(--ui-color-8)]"></div><div class="h-2 w-1/2 bg-gray-100 dark:bg-slate-800 rounded-full"></div></div>
+                                    </div>
+                                </div>
+                                <div class="h-16 border-t border-gray-100 dark:border-slate-800 flex items-center justify-around px-2 relative">
+                                    <i class="fa-solid fa-house text-[var(--ui-color-1)]"></i><i class="fa-solid fa-chart-line text-gray-300"></i><div class="w-10"></div><i class="fa-solid fa-message text-gray-300"></i><i class="fa-solid fa-gear text-gray-300"></i>
+                                    <button id="mobile-fab" class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-2xl bg-[var(--ui-color-2)] text-white shadow-xl flex items-center justify-center"><i class="fa-solid fa-plus"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -352,55 +355,35 @@
                     </div>
                 </div>
 
-                <!-- SECTION 3: TECHNICAL COLOR LAB (Option 2) -->
+                <!-- Color Lab & Export Zone -->
                 <div class="p-8 lg:p-12 border-b border-gray-200 dark:border-slate-800 bg-gray-100 dark:bg-slate-950/40">
                     <div class="flex items-center gap-3 mb-8">
-                        <div class="w-10 h-10 rounded-xl bg-pink-500 flex items-center justify-center text-white shadow-lg">
-                            <i class="fa-solid fa-swatchbook"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold">Color Lab</h3>
-                            <p class="text-sm text-gray-400">Detailed breakdown of every shade in the sequence.</p>
-                        </div>
+                        <div class="w-10 h-10 rounded-xl bg-pink-500 flex items-center justify-center text-white shadow-lg"><i class="fa-solid fa-swatchbook"></i></div>
+                        <div><h3 class="text-xl font-bold">Color Lab</h3><p class="text-sm text-gray-400">Technical breakdown.</p></div>
                     </div>
-
-                    <div id="color-lab-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-                        <!-- Color details injected by JS -->
-                    </div>
+                    <div id="color-lab-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"></div>
                 </div>
 
-                <!-- SECTION 4: EXPORT ZONE -->
                 <div class="p-8 lg:p-12">
                     <div class="flex items-center justify-between mb-8">
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-xl bg-slate-800 dark:bg-white flex items-center justify-center text-white dark:text-slate-900 shadow-lg">
-                                <i class="fa-solid fa-code"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold">Implementation Code</h3>
-                                <p class="text-sm text-gray-400">One-click copy for your project variables.</p>
-                            </div>
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 dark:bg-white flex items-center justify-center text-white dark:text-slate-900 shadow-lg"><i class="fa-solid fa-code"></i></div>
+                            <div><h3 class="text-xl font-bold">Code</h3></div>
                         </div>
-                        <button data-copy="full-scss" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2.5 rounded-xl font-bold shadow-xl shadow-indigo-600/20 transition-all active:scale-95">
-                            <i class="fa-solid fa-copy mr-2"></i> COPY FULL SCSS
-                        </button>
+                        <button data-copy="full-scss" class="bg-indigo-600 text-white px-6 py-2.5 rounded-xl font-bold shadow-xl shadow-indigo-600/20 active:scale-95">COPY SCSS</button>
                     </div>
-
                     <div class="bg-slate-950 rounded-2xl overflow-hidden border border-slate-800">
-                        <div class="flex border-b border-slate-800 overflow-x-auto no-scrollbar">
-                            <button data-tab="scss" class="tab-btn active px-6 py-4 text-xs font-bold text-indigo-400 border-b-2 border-indigo-500 bg-indigo-500/5 uppercase tracking-widest transition-all whitespace-nowrap">SCSS Source</button>
-                            <button data-tab="css" class="tab-btn px-6 py-4 text-xs font-bold text-gray-500 border-b-2 border-transparent hover:text-indigo-400 transition-all whitespace-nowrap uppercase tracking-widest">CSS Variables</button>
-                            <button data-tab="tailwind" class="tab-btn px-6 py-4 text-xs font-bold text-gray-500 border-b-2 border-transparent hover:text-indigo-400 transition-all whitespace-nowrap uppercase tracking-widest">Tailwind Config</button>
+                        <div class="flex border-b border-slate-800">
+                            <button data-tab="scss" class="tab-btn active px-6 py-4 text-xs font-bold text-indigo-400 border-b-2 border-indigo-500 bg-indigo-500/5 uppercase tracking-widest transition-all">SCSS</button>
+                            <button data-tab="css" class="tab-btn px-6 py-4 text-xs font-bold text-gray-500 border-b-2 border-transparent uppercase tracking-widest transition-all">CSS</button>
+                            <button data-tab="tailwind" class="tab-btn px-6 py-4 text-xs font-bold text-gray-500 border-b-2 border-transparent uppercase tracking-widest transition-all">Tailwind</button>
                         </div>
                         <div class="relative group">
-                            <button data-copy="current" class="absolute top-4 right-4 z-10 bg-indigo-600/80 hover:bg-indigo-600 text-white px-3 py-1.5 rounded-lg text-[10px] font-bold transition-all opacity-0 group-hover:opacity-100 backdrop-blur-sm">
-                                <i class="fa-solid fa-copy mr-1"></i> COPY CODE
-                            </button>
-                            <pre id="code-block" class="p-8 text-xs font-mono text-indigo-200 leading-relaxed overflow-auto h-80 no-scrollbar"></pre>
+                            <button data-copy="current" class="absolute top-4 right-4 z-10 bg-indigo-600/80 text-white px-3 py-1.5 rounded-lg text-[10px] font-bold opacity-0 group-hover:opacity-100 transition-all">COPY</button>
+                            <pre id="code-block" class="p-8 text-xs font-mono text-indigo-200 overflow-auto h-80 no-scrollbar"></pre>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -411,18 +394,10 @@
     <!-- Color Blindness SVG Filters -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
         <defs>
-            <filter id="protanopia">
-                <feColorMatrix type="matrix" values="0.567 0.433 0 0 0  0.558 0.442 0 0 0  0 0.242 0.758 0 0  0 0 0 1 0"/>
-            </filter>
-            <filter id="deuteranopia">
-                <feColorMatrix type="matrix" values="0.625 0.375 0 0 0  0.7 0.3 0 0 0  0 0.3 0.7 0 0  0 0 0 1 0"/>
-            </filter>
-            <filter id="tritanopia">
-                <feColorMatrix type="matrix" values="0.95 0.05 0 0 0  0 0.433 0.567 0 0  0 0.475 0.525 0 0  0 0 0 1 0"/>
-            </filter>
-            <filter id="achromatopsia">
-                <feColorMatrix type="matrix" values="0.299 0.587 0.114 0 0  0.299 0.587 0.114 0 0  0.299 0.587 0.114 0 0  0 0 0 1 0"/>
-            </filter>
+            <filter id="protanopia"><feColorMatrix type="matrix" values="0.567 0.433 0 0 0  0.558 0.442 0 0 0  0 0.242 0.758 0 0  0 0 0 1 0"/></filter>
+            <filter id="deuteranopia"><feColorMatrix type="matrix" values="0.625 0.375 0 0 0  0.7 0.3 0 0 0  0 0.3 0.7 0 0  0 0 0 1 0"/></filter>
+            <filter id="tritanopia"><feColorMatrix type="matrix" values="0.95 0.05 0 0 0  0 0.433 0.567 0 0  0 0.475 0.525 0 0  0 0 0 1 0"/></filter>
+            <filter id="achromatopsia"><feColorMatrix type="matrix" values="0.299 0.587 0.114 0 0  0.299 0.587 0.114 0 0  0.299 0.587 0.114 0 0  0 0 0 1 0"/></filter>
         </defs>
     </svg>
 
