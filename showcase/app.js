@@ -38,12 +38,13 @@ document.addEventListener('DOMContentLoaded', () => {
     function applyFilters() {
         const query = searchQuery.trim().toLowerCase();
         const filtered = allPalettes.filter(p => {
-            const matchesFacet = 
-                activeFacet === 'all' || 
+            const matchesFacet =
+                activeFacet === 'all' ||
                 (activeFacet === 'count' && p.count === parseInt(activeSubFilter)) ||
                 (activeFacet === 'category' && p.category === activeSubFilter) ||
-                (activeFacet === 'mood' && p.tags && p.tags.mood && p.tags.mood.includes(activeSubFilter)) ||
-                (activeFacet === 'aesthetic' && p.tags && p.tags.aesthetic && p.tags.aesthetic.includes(activeSubFilter));
+                (activeFacet === 'mood' && p.tags?.mood?.includes(activeSubFilter)) ||
+                (activeFacet === 'aesthetic' && p.tags?.aesthetic?.includes(activeSubFilter)) ||
+                (activeFacet === 'color' && getColorGroup(p) === activeSubFilter);
 
             const matchesSearch = 
                 !query || 
@@ -91,26 +92,51 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         elements.subFilterContainer.classList.remove('hidden');
-        let values = [];
+
+        const COLOR_DOTS = {
+            Red: '#ef4444', Orange: '#f97316', Yellow: '#eab308',
+            Green: '#22c55e', Teal: '#14b8a6', Blue: '#3b82f6',
+            Purple: '#a855f7', Pink: '#ec4899', Neutral: '#9ca3af'
+        };
+        const COLOR_ORDER = ['Red', 'Orange', 'Yellow', 'Green', 'Teal', 'Blue', 'Purple', 'Pink', 'Neutral'];
+
+        let entries = [];
 
         if (facet === 'count') {
-            values = [...new Set(allPalettes.map(p => p.count))].sort((a, b) => a - b);
+            const map = {};
+            allPalettes.forEach(p => { map[p.count] = (map[p.count] || 0) + 1; });
+            entries = [...new Set(allPalettes.map(p => p.count))].sort((a, b) => a - b)
+                .map(v => ({ value: v, label: `${v} Colors`, count: map[v] }));
         } else if (facet === 'category') {
-            values = [...new Set(allPalettes.map(p => p.category))].filter(Boolean).sort();
+            const map = {};
+            allPalettes.forEach(p => { if (p.category) map[p.category] = (map[p.category] || 0) + 1; });
+            entries = Object.keys(map).sort().map(v => ({ value: v, label: v, count: map[v] }));
         } else if (facet === 'mood') {
-            const allMoods = allPalettes.flatMap(p => (p.tags && p.tags.mood) || []);
-            values = [...new Set(allMoods)].sort();
+            const map = {};
+            allPalettes.forEach(p => (p.tags?.mood || []).forEach(m => { map[m] = (map[m] || 0) + 1; }));
+            entries = Object.keys(map).sort().map(v => ({ value: v, label: v, count: map[v] }));
         } else if (facet === 'aesthetic') {
-            const allAesthetics = allPalettes.flatMap(p => (p.tags && p.tags.aesthetic) || []);
-            values = [...new Set(allAesthetics)].sort();
+            const map = {};
+            allPalettes.forEach(p => (p.tags?.aesthetic || []).forEach(a => { map[a] = (map[a] || 0) + 1; }));
+            entries = Object.keys(map).sort().map(v => ({ value: v, label: v, count: map[v] }));
+        } else if (facet === 'color') {
+            const map = {};
+            allPalettes.forEach(p => { const g = getColorGroup(p); map[g] = (map[g] || 0) + 1; });
+            entries = COLOR_ORDER.filter(v => map[v]).map(v => ({ value: v, label: v, count: map[v], dot: COLOR_DOTS[v] }));
         }
 
-        values.forEach((val, i) => {
+        if (entries.length === 0) {
+            elements.subFilterContainer.classList.add('hidden');
+            return;
+        }
+
+        entries.forEach((entry, i) => {
             const btn = document.createElement('button');
             btn.className = `sub-filter-btn px-4 py-1.5 rounded-xl text-xs font-bold border transition-all whitespace-nowrap ${i === 0 ? 'active border-indigo-500 bg-indigo-50 text-indigo-600' : 'border-gray-200 dark:border-slate-800 text-gray-500'}`;
-            btn.textContent = facet === 'count' ? `${val} Colors` : val;
-            
-            if (i === 0) activeSubFilter = val;
+            const dot = entry.dot ? `<span style="color:${entry.dot}">● </span>` : '';
+            btn.innerHTML = `${dot}${entry.label} <span class="opacity-50 font-normal">(${entry.count})</span>`;
+
+            if (i === 0) activeSubFilter = entry.value;
 
             btn.addEventListener('click', () => {
                 document.querySelectorAll('.sub-filter-btn').forEach(b => {
@@ -118,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     b.classList.add('border-gray-200', 'dark:border-slate-800', 'text-gray-500');
                 });
                 btn.classList.add('active', 'border-indigo-500', 'bg-indigo-50', 'text-indigo-600');
-                activeSubFilter = val;
+                activeSubFilter = entry.value;
                 applyFilters();
             });
             elements.nav.appendChild(btn);
@@ -308,8 +334,9 @@ document.addEventListener('DOMContentLoaded', () => {
             gsap.from("#dash-analytics .lg\\:col-span-8", { y: 20, opacity: 0, duration: 0.6, ease: "power2.out" });
         } else if (variant === 'crm') {
             gsap.from("#dash-crm .space-y-4 > div", { x: -20, opacity: 0, duration: 0.4, stagger: 0.1, ease: "power2.out" });
-        } else if (variant === 'kanban') {
-            gsap.from("#dash-kanban .flex-shrink-0", { scale: 0.9, opacity: 0, duration: 0.5, stagger: 0.1, ease: "back.out(1.2)" });
+        } else if (variant === 'calendar') {
+            gsap.from("#dash-calendar .grid > div", { scale: 0.9, opacity: 0, duration: 0.4, stagger: { each: 0.02, from: "start", grid: [7, 6] }, ease: "power1.out" });
+            gsap.from(".calendar-today", { backgroundColor: "transparent", duration: 1, delay: 0.5 });
         } else if (variant === 'monitor') {
             gsap.from("#dash-monitor .aspect-square", { scale: 0, opacity: 0, duration: 0.6, stagger: 0.1, ease: "elastic.out(1, 0.5)" });
             gsap.from("#dash-monitor .space-y-2 div", { width: 0, duration: 1, delay: 0.5, ease: "power4.out" });
