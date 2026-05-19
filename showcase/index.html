@@ -50,7 +50,15 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 <input type="text" id="palette-search" placeholder="Search by name, category, or vibe..." 
-                    class="block w-full pl-12 pr-4 py-3 border border-gray-200 dark:border-slate-800 rounded-2xl bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm text-base placeholder-gray-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-500 transition-all">
+                    class="block w-full pl-12 pr-32 py-3 border border-gray-200 dark:border-slate-800 rounded-2xl bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm text-base placeholder-gray-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-500 transition-all">
+                
+                <div class="absolute inset-y-0 right-0 flex items-center pr-3 gap-2">
+                    <button id="clear-color-proximity" class="hidden text-[10px] font-black text-red-400 hover:text-red-600 transition-colors whitespace-nowrap">✕ Color</button>
+                    <label class="relative cursor-pointer flex-shrink-0" title="Sort by color proximity">
+                        <input type="color" id="color-proximity-picker" value="#6366f1" class="absolute inset-0 opacity-0 cursor-pointer w-full h-full">
+                        <div id="color-picker-swatch" class="w-8 h-8 rounded-lg border-2 border-white dark:border-slate-700 shadow-md transition-all hover:scale-110" style="background:#6366f1"></div>
+                    </label>
+                </div>
             </div>
 
             <!-- Faceted Filter Tabs -->
@@ -62,6 +70,7 @@
                     <button data-facet="category" class="facet-btn px-5 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-indigo-500 transition-all whitespace-nowrap">By Category</button>
                     <button data-facet="mood" class="facet-btn px-5 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-indigo-500 transition-all whitespace-nowrap">By Mood</button>
                     <button data-facet="aesthetic" class="facet-btn px-5 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-indigo-500 transition-all whitespace-nowrap">By Aesthetic</button>
+                    <button data-facet="color" class="facet-btn px-5 py-2 rounded-xl text-xs font-black uppercase tracking-widest border border-gray-200 dark:border-slate-800 text-gray-500 hover:border-indigo-500 transition-all whitespace-nowrap">By Color</button>
                 </div>
 
                 <!-- Sub-Filters (Injected by JS) -->
