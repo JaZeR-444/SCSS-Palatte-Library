@@ -49,8 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sideRail: getEl('sandbox-side-rail'),
         sideRailChips: getEl('side-rail-chips'),
         pillUsecase: getEl('pill-usecase'),
-        pillSub: getEl('pill-sub'),
-        scenarioDropdown: getEl('scenario-dropdown')
+        pillSub: getEl('pill-sub')
     };
 
     // --- State ---
@@ -61,11 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let searchQuery = '';
     let activeDashVariant = 'analytics';
     let sandboxZoom = 100;
-    let lastFocusedElement = null;
     let showRoleLabels = false;
     let heatmapActive = false;
     let splitViewActive = false;
-    let activeView = 'auto'; // light, dark, auto
     let statesActive = false;
     let sandboxBgActive = false;
     let recentIds = loadJson('paletteShowcase.recentIds', []);
@@ -130,7 +127,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (elements.resultsCount) {
             elements.resultsCount.textContent = `${filtered.length} palettes`;
         }
-        renderActiveFilters();
     }
 
     function sortPalettes(palettes) {
@@ -299,7 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const VIEW_GRID_CLASSES = {
         grid:    'grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 gap-3 sm:gap-6 xl:gap-8',
         compact: 'grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 2xl:grid-cols-12 gap-2',
-        list:    'grid grid-cols-2 gap-1.5'
+        list:    'flex flex-col gap-1.5'
     };
 
     function makeSwatches(colors) {
@@ -396,7 +392,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${moodTags}
                 </div>
             </div>
-            <div class="list-row-dots flex-shrink-0 flex items-center pr-3">
+            <div class="flex-shrink-0 flex items-center pr-3">
                 <div class="flex items-center">${colorDots}${extraDots}</div>
             </div>
         `;
@@ -426,7 +422,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Modal Logic ---
 
     function openModal(p) {
-        lastFocusedElement = document.activeElement;
         console.log(`Showcase: Opening modal for ${p.name}`);
         currentPalette = p;
         rememberPalette(p.id);
@@ -468,7 +463,6 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.overlay.classList.remove('hidden');
             setTimeout(() => elements.overlay.classList.add('active'), 10);
             document.body.style.overflow = 'hidden';
-            if (elements.close) elements.close.focus();
         }
         triggerUISound('open');
     }
@@ -638,7 +632,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (elements.sim) elements.sim.value = 'none';
             if (elements.modal) elements.modal.style.filter = '';
             gsap.killTweensOf(".usecase-content *, .dash-view *, .typography-specimen, .studio-icon");
-            if (lastFocusedElement) lastFocusedElement.focus();
         }, 300);
     }
 
@@ -1068,8 +1061,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const badgeLabel = document.getElementById('applied-preview-label');
         if (badgeLabel) badgeLabel.textContent = deviceLabels[usecase] ? `Applied Preview · ${deviceLabels[usecase]}` : 'Applied Preview';
 
-        if (elements.scenarioDropdown) elements.scenarioDropdown.value = usecase;
-
         // Adaptive Skeleton Flash
         const wrapper = elements.sandbox;
         if (wrapper && window.gsap) {
@@ -1197,65 +1188,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function initScrollBehavior() {
-        const hero = document.getElementById('typographic-hero');
-        const hdr = document.querySelector('header');
-        if (!hero || !hdr) return;
-        new IntersectionObserver(([e]) => {
-            hdr.classList.toggle('header-compact', !e.isIntersecting);
-        }, { threshold: 0 }).observe(hero);
-    }
-
-    function initKeyboardShortcuts() {
-        document.addEventListener('keydown', e => {
-            if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
-                e.preventDefault();
-                if (elements.search) { elements.search.focus(); elements.search.select(); }
-                return;
-            }
-            if (e.key === '/' && !['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)) {
-                e.preventDefault();
-                if (elements.search) elements.search.focus();
-                return;
-            }
-            if (e.key === 'Escape' && document.activeElement === elements.search) {
-                elements.search.blur();
-            }
-        });
-    }
-
-    function initLogoReset() {
-        const logo = document.getElementById('logo-reset');
-        if (!logo) return;
-        logo.addEventListener('click', () => {
-            if (elements.resetFilters) elements.resetFilters.click();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    }
-
     function initProTools() {
-        // Scenario Dropdown
-        elements.scenarioDropdown?.addEventListener('change', (e) => {
-            switchUseCase(e.target.value);
-        });
-
-        // View Toggles (Light/Dark/Auto)
-        document.querySelectorAll('[data-view]').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const view = btn.dataset.view;
-                const wrapper = elements.scaleWrapper;
-                if (!wrapper) return;
-                
-                wrapper.classList.remove('force-light', 'force-dark');
-                if (view === 'light') wrapper.classList.add('force-light');
-                if (view === 'dark') wrapper.classList.add('force-dark');
-                
-                document.querySelectorAll('[data-view]').forEach(b => b.classList.remove('active', 'bg-gray-100', 'dark:bg-slate-700'));
-                btn.classList.add('active', 'bg-gray-100', 'dark:bg-slate-700');
-                showToast(`Switched to ${view} view`);
-            });
-        });
-
         // Vision Simulator
         if (elements.sim && elements.sandbox) {
             elements.sim.addEventListener('change', (e) => {
@@ -1295,7 +1228,7 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.playAnims?.addEventListener('click', () => {
             if (!window.gsap) return;
             showToast('Playing interaction timeline...');
-            switchUseCase(elements.scenarioDropdown ? elements.scenarioDropdown.value : 'dashboard');
+            switchUseCase(document.querySelector('.usecase-btn.active').dataset.usecase);
         });
 
         // Sandbox BG
@@ -1370,7 +1303,7 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.addEventListener('click', () => {
                 sandboxBp = btn.dataset.bp;
                 document.querySelectorAll('[data-bp]').forEach(b => b.classList.remove('active-bp'));
-                btn.classList.add('active-bp');
+                document.querySelectorAll(`[data-bp="${sandboxBp}"]`).forEach(b => b.classList.add('active-bp'));
                 const wrapper = elements.scaleWrapper;
                 if (!wrapper) return;
                 wrapper.classList.remove('bp-mobile', 'bp-tablet', 'bp-desktop', 'bp-ring');
@@ -1505,35 +1438,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function renderActiveFilters() {
-        const strip = document.getElementById('active-filters-strip');
-        if (!strip) return;
-        const chips = [];
-        if (activeFacet !== 'all') {
-            const label = (activeFacet === 'count' && activeSubFilter)
-                ? `${activeSubFilter} Colors`
-                : ({ recent: 'Recent', favorites: 'Saved', count: 'Count' }[activeFacet] || activeFacet);
-            chips.push({ label, dismiss: () => document.querySelector('[data-facet="all"]')?.click() });
-        }
-        if (searchQuery.trim()) {
-            const q = searchQuery.trim();
-            chips.push({ label: `"${q}"`, dismiss: () => {
-                if (elements.search) elements.search.value = '';
-                searchQuery = '';
-                applyFilters();
-            }});
-        }
-        if (colorProximity) {
-            chips.push({ label: 'Color match', dismiss: () => { clearColorProximity(); applyFilters(); } });
-        }
-        if (!chips.length) { strip.classList.add('hidden'); strip.innerHTML = ''; return; }
-        strip.classList.remove('hidden');
-        strip.innerHTML = chips.map((c, i) =>
-            `<button class="active-filter-chip" data-idx="${i}">${c.label} <span aria-hidden="true">×</span></button>`
-        ).join('');
-        strip.querySelectorAll('.active-filter-chip').forEach((btn, i) => btn.addEventListener('click', chips[i].dismiss));
-    }
-
     function setupFacetedFilters() {
         if (!elements.facetTabs) return;
         elements.facetTabs.addEventListener('click', (e) => {
@@ -1575,7 +1479,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!values.length) { elements.subFilterContainer.classList.add('hidden'); return; }
         values.forEach((val, i) => {
             const btn = document.createElement('button');
-            btn.className = `sub-filter-btn px-4 py-1.5 rounded-full text-xs font-bold border transition-all whitespace-nowrap ${i === 0 ? 'active border-indigo-500 bg-indigo-50 text-indigo-600' : 'border-gray-200 dark:border-slate-800 text-gray-500'}`;
+            btn.className = `sub-filter-btn px-4 py-1.5 rounded-xl text-xs font-bold border transition-all whitespace-nowrap ${i === 0 ? 'active border-indigo-500 bg-indigo-50 text-indigo-600' : 'border-gray-200 dark:border-slate-800 text-gray-500'}`;
             btn.textContent = facet === 'count' ? `${val} Colors` : val;
             if (i === 0) activeSubFilter = val;
             btn.addEventListener('click', () => {
@@ -1717,9 +1621,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     initProTools();
     initViewToggle();
-    initScrollBehavior();
-    initKeyboardShortcuts();
-    initLogoReset();
     initMoodHero();
 
     fetch('palettes.json')
