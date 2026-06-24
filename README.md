@@ -1,129 +1,65 @@
-# SCSS Palette Library (v2.0.0)
+# Palattes
 
-A professional design system of themed, production-ready SCSS and CSS color palettes, featuring 512+ curated collections.
+This repository contains the SCSS palette library plus a **Next.js App Router showcase workspace** at `web-showcase/`.
 
-## 🚀 Installation
+## Current state of the Next.js application (`web-showcase/`)
 
-You can install this library directly from GitHub into any Node.js/frontend project:
+The directory currently contains:
 
-```bash
-npm install git+https://github.com/JaZeR-444/SCSS-Palatte-Library.git
-```
+- `.next/` (compiled Next.js output)
+- `node_modules/`
+- `public/` (present, currently empty)
+- `src/app/favicon.ico`
+- `next-env.d.ts`
+- `tsconfig.tsbuildinfo`
 
-## 🛠 Usage
+There is **no checked-in `web-showcase/package.json` or app source tree** in this snapshot, so the app is represented mainly by compiled output in `.next/`.
 
-### 1. Simple Import
+## What the compiled app currently includes
 
-Import the entire library to access every palette:
+From the manifests/chunks in `web-showcase/.next/`:
 
-```scss
-@import 'scss-palette-library';
+1. **Routing**
+   - App Router with a single public page: `/`
+   - Built-in `_not-found`, `_global-error`, and `/favicon.ico` routes
 
-body {
-    background: $midnight-asphalt; // Access global variables
-    color: map-get($midnight-neon-map, 'neon-magenta'); // Use SCSS Maps
-}
-```
+2. **Main page composition**
+   - `Header`
+   - Hero section (`SCSS Color Systems. Built for precision.`)
+   - `LavaLamp` and `PaletteWall` visuals
+   - `PaletteGrid`
+   - `StudioModal`
+   - `PaletteCreator`
 
-### 2. Specific Palette
+3. **Server actions in `src/app/actions.ts`**
+   - `fetchPalettes`
+   - `getFavoritesAction`, `toggleFavoriteAction`
+   - `getRoleMappingAction`, `saveRoleMappingAction`
+   - `savePaletteAction`
+   - `getCollectionsAction`, `createCollectionAction`, `deleteCollectionAction`
+   - `addPaletteToCollectionAction`, `removePaletteFromCollectionAction`
+   - `getCollectionPalettesAction`
+   - `getPaletteHistoryAction`
+   - `searchPalettesAction`, `searchPalettesByColorAction`
 
-Import only what you need:
+4. **Referenced app modules**
+   - `src/app/layout.tsx`, `src/app/page.tsx`, `src/app/actions.ts`
+   - `src/components/*` including studio/scenario UI modules
+   - `src/components/theme-provider.tsx`, `src/components/theme-toggle.tsx`, `src/components/ui/toaster.tsx`
+   - `src/data/palettes.json`
+   - `src/utils/audio.ts`, `src/utils/contrast-utils.ts`, `src/utils/db.ts`, `src/utils/toast.ts`
+   - `src/types/studio.ts`
 
-```scss
-@import 'scss-palette-library/palettes-library/src/palettes/9 Color Palette/Arctic Expedition';
+5. **Data/storage**
+   - Build traces reference SQLite usage via `better-sqlite3`
+   - Tracing config expects `src/data/palettes.db`
 
-.header {
-    color: $glacier-blue;
-}
-```
+## Palette library (root)
 
-### 3. CSS Variables
+The SCSS palette library remains in the root palette folders (`3 Color Palette` through `10 Color Palette`) with `_index.scss` as the package entry point.
 
-Native CSS variables are provided for every palette via the `:root` selector:
+`package.json` at the repository root still publishes the SCSS library (`main: "_index.scss"`).
 
-```css
-.card {
-    border: 1px solid var(--deep-kernel);
-}
-```
+## License
 
-### 4. Interactive Showcase
-
-To view the full gallery of 2500+ palettes with search, accessibility audits, live UI previews, sandboxes, and export options:
-
-- **Next.js Web Showcase**: Run `view_next_showcase.bat` at the project root to update indices and launch on `http://localhost:3000`.
-- **Legacy Static Showcase**: Run `view_showcase.bat` at the project root to update indices and launch a local Python server on `http://localhost:8000`.
-
-## ✨ New in v2.0.0
-
-- **SCSS Maps**: Programmatic access to all colors via `${filename}-map`.
-- **Unified Entry Point**: Central `_index.scss` for streamlined imports.
-- **Interactive Showcase**: A completely revamped gallery featuring:
-  - **Advanced Search**: Filter 2500+ palettes by name or semantic tags (neon, warm, professional, etc.).
-  - **Live UI Preview**: Test colors on mock dashboard and mobile components before implementing.
-  - **Typography Sandbox**: Check headings, body text, links, badges, blockquotes, and inline code against each palette.
-  - **Personal Organization**: Save palettes into named local collections and revisit recently viewed palettes.
-  - **One-Click Export**: Copy Tailwind config objects, SCSS Maps, CSS variables, or download PNG swatch sheets instantly.
-  - **Accessibility Audit**: Real-time WCAG contrast checking for every color in the library.
-
-## 📁 Repository Structure
-
-- `palettes-library/src/_index.scss`: SCSS package entry point.
-- `palettes-library/src/palettes/`: Palette source folders grouped by color count.
-- `tools/`: Build, generation, maintenance, and audit utilities.
-- `generated/`: Generated palette indexes (`palettes.json`, `palettes.db`, `master-index.csv`, `PALETTES.md`).
-- `legacy/static-showcase/`: Legacy static interactive gallery.
-- `web-showcase/`: The modern Next.js showcase.
-- `assets/`: Project images and visual assets.
-- `package.json`: NPM configuration.
-
-## 🎨 Available Themes
-
-- **Floral Fantasy**: Sakura Drift, Lavender Fields, Midnight Rose, Wild Sunflower...
-- **Mythic Legends**: Mount Olympus, Valkyrie Gold, Phoenix Flame, Dragon Scale...
-- **Scientific Theory**: Quantum Physics, Petri Dish, Neon Neuron, Chemical Reaction...
-- **Athletic Edge**: Stadium Lights, Team Spirit, Victory Gold, Marathon Grey...
-- **Musical Rhythms**: Jazz Velvet, Heavy Metal, Classical Marble, Synthwave Neon...
-- **Literary Journeys**: Sherlock Smoke, Gatsby Gold, Wonderland Tea, Moby Dick Abyssal...
-- **Seasonal Festivals**: Lunar New Year, Holi Colors, Carnival Rio, Solstice Fire...
-- **Abyssal Depths**: Biolume Trench, Coral Reef, Kelp Forest, Deep Pressure...
-- **Mechanical Pulse**: Oil & Gears, Steam Engine, Welder's Spark, Circuit Logic...
-- **Celestial Mysteries**: Black Hole Void, Pulsar Pulse, Quasar Glow, Solar Wind...
-- **Earth's Core**: Magma Flow, Obsidian Crust, Sulfur Vent, Tectonic Shift...
-- **Arctic Echoes**: Glacier Shard, Permafrost, Tundra Moss, Iceberg Blue...
-- **Desert Secrets**: Oasis Mirage, Bedouin Silk, Pyramid Stone, Sandstorm Dust...
-- **Tropical Pulse**: Mango Mangrove, Parrot Wing, Lagoon Teal, Canopy Shade...
-- **Procedural Expansions**: Over 1,800 uniquely generated palettes across Abstract, Cinematic, Cosmic, and Industrial themes using procedural HSL scaling.
-- **Culinary Delights**: Espresso Roast, Matcha Latte, Berry Sorbet, Vintage Bordeaux...
-- **Textile & Fabric**: Denim Drift, Cashmere Soft, Velvet Night, Tweed Texture...
-- **Galactic Frontiers**: Supernova Glow, Deep Nebula, Martian Soil, Event Horizon...
-- **Precious Minerals**: Emerald Envy, Ruby Radiance, Lapis Lazuli, Oxidized Copper...
-- **Historical Aesthetics**: Renaissance Gold, Victorian Mourning, Art Nouveau, Roaring 20s...
-- **Emotional Atmospheres**: Melancholy Blue, Euphoric Yellow, Serene Sage, Aggressive Red...
-- **Cinematic Grades**: Technicolor Dream, Film Noir, Wes Anderson Pastel, Neo-Noir Cyan...
-- **Urban Explorations**: Tokyo Neon, Parisian Chic, London Fog, Rio Carnival...
-- **Natural Elements**: Polished Marble, Burnt Wood, Raw Concrete, Slate Shingle...
-- **Digital Frontiers**: Glitch Matrix, Bio-Luminescence, Liquid Metal, Vapor Grid...
-- **Modern Data Dashboards**: Metric Matrix, Insight Indigo, Analytics Atlas, Dashboard Dynamo...
-- **Enterprise SaaS**: Civic Cloud, Trust Teal, SaaS Slate, Platform Platinum...
-- **High-Tech Utility**: Binary Black, Syntax Sage, Compiler Cyan, Debugger Dark, Terminal Titan...
-- **Minimalist Marketing**: Ivory Ink, Silk Sand, Marble Modern, Gallery Grey...
-- **Sci-Fi & Tech**: Terminal Matrix, Nebula Void, Cybernetic Steel...
-- **Natural**: Deep Forest, Autumn Leaves, Ocean Waves...
-- **Vintage & Retro**: Classic Vaporwave, Retro Pop, 90s Metro...
-- **Professional**: SaaS Blue, IBM Categorical, Modern Minimalist...
-- **Modern UI**: Glass Aurora, Civic Sunrise, Verdant Circuit...
-- **Expanded Systems**: Atlas Neutral, Garden System, Maritime Signal, Solar Ledger...
-- **Purple Systems**: Royal Iris, Amethyst Haze, Mystic Spectrum, Purple Observatory, Imperial Velvet Atlas...
-- **Blue Systems**: Azure Harbor, Cobalt Circuit, Glacier Blue, Sapphire Ledger...
-- **Green Systems**: Emerald Circuit, Forest Ledger, Moss Garden, Viridian Harbor...
-- **Red Systems**: Crimson Circuit, Ruby Ledger, Ember Market, Rose Signal...
-- **Black Systems**: Obsidian Circuit, Carbon Ledger, Ink Studio, Void Chrome...
-- **Orange Systems**: Amber Forge, Tangerine Signal, Marigold Commerce, Copper Canyon...
-- **Yellow Systems**: Solar Circuit, Lemon Signal, Honey Commerce, Sunflower Field...
-- **Pink Systems**: Fuchsia Circuit, Blush Signal, Petal Commerce, Sakura Bloom...
-- **White Systems**: Porcelain Circuit, Pearl Signal, Ivory Commerce, Alpine Mist...
-
-## 📜 License
-
-MIT. Free for personal and commercial use.
+MIT
