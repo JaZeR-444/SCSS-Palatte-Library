@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cd web-showcase && npm install && npm run build",
+  "outputDirectory": "web-showcase/.next",
+  "installCommand": "cd web-showcase && npm install",
+  "framework": "nextjs"
+}
