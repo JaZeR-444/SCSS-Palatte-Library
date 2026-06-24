@@ -1,4 +1,9 @@
 {
-  "rootDirectory": "web-showcase",
-  "framework": "nextjs"
+  "version": 2,
+  "builds": [
+    {
+      "src": "web-showcase/package.json",
+      "use": "@vercel/next"
+    }
+  ]
 }
