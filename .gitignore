@@ -6,3 +6,11 @@ Thumbs.db
 # Gemini related (if any)
 .gemini/
 memory/
+
+# Node / Next.js artifacts
+node_modules/
+**/node_modules/
+.next/
+**/.next/
+.vercel/
+**/.vercel/

@@ -1,6 +1,6 @@
 # SCSS Palette Library (v2.0.0)
 
-A professional design system of themed, production-ready SCSS and CSS color palettes, featuring 332+ curated collections.
+A professional design system of themed, production-ready SCSS and CSS color palettes, featuring 512+ curated collections.
 
 ## 🚀 Installation
 
@@ -13,6 +13,7 @@ npm install git+https://github.com/JaZeR-444/SCSS-Palatte-Library.git
 ## 🛠 Usage
 
 ### 1. Simple Import
+
 Import the entire library to access every palette:
 
 ```scss
@@ -25,10 +26,11 @@ body {
 ```
 
 ### 2. Specific Palette
+
 Import only what you need:
 
 ```scss
-@import 'scss-palette-library/9-color-palette/arctic-expedition';
+@import 'scss-palette-library/palettes-library/src/palettes/9 Color Palette/Arctic Expedition';
 
 .header {
     color: $glacier-blue;
@@ -36,6 +38,7 @@ Import only what you need:
 ```
 
 ### 3. CSS Variables
+
 Native CSS variables are provided for every palette via the `:root` selector:
 
 ```css
@@ -44,27 +47,67 @@ Native CSS variables are provided for every palette via the `:root` selector:
 }
 ```
 
+### 4. Interactive Showcase
+
+To view the full gallery of 2500+ palettes with search, accessibility audits, live UI previews, sandboxes, and export options:
+
+- **Next.js Web Showcase**: Run `view_next_showcase.bat` at the project root to update indices and launch on `http://localhost:3000`.
+- **Legacy Static Showcase**: Run `view_showcase.bat` at the project root to update indices and launch a local Python server on `http://localhost:8000`.
+
 ## ✨ New in v2.0.0
 
 - **SCSS Maps**: Programmatic access to all colors via `${filename}-map`.
 - **Unified Entry Point**: Central `_index.scss` for streamlined imports.
-- **Interactive Showcase**: A completely revamped gallery in `/showcase` featuring:
-    - **Advanced Search**: Filter 330+ palettes by name or semantic tags (neon, warm, professional, etc.).
-    - **Live UI Preview**: Test colors on mock dashboard and mobile components before implementing.
-    - **Typography Sandbox**: Check headings, body text, links, badges, blockquotes, and inline code against each palette.
-    - **Personal Organization**: Save palettes into named local collections and revisit recently viewed palettes.
-    - **One-Click Export**: Copy Tailwind config objects, SCSS Maps, CSS variables, or download PNG swatch sheets instantly.
-    - **Accessibility Audit**: Real-time WCAG contrast checking for every color in the library.
+- **Interactive Showcase**: A completely revamped gallery featuring:
+  - **Advanced Search**: Filter 2500+ palettes by name or semantic tags (neon, warm, professional, etc.).
+  - **Live UI Preview**: Test colors on mock dashboard and mobile components before implementing.
+  - **Typography Sandbox**: Check headings, body text, links, badges, blockquotes, and inline code against each palette.
+  - **Personal Organization**: Save palettes into named local collections and revisit recently viewed palettes.
+  - **One-Click Export**: Copy Tailwind config objects, SCSS Maps, CSS variables, or download PNG swatch sheets instantly.
+  - **Accessibility Audit**: Real-time WCAG contrast checking for every color in the library.
 
 ## 📁 Repository Structure
 
-- `3 Color Palette/` through `10 Color Palette/`: Categorized SCSS collections.
-- `showcase/`: The visual interactive gallery.
-- `_index.scss`: The library entry point.
+- `palettes-library/src/_index.scss`: SCSS package entry point.
+- `palettes-library/src/palettes/`: Palette source folders grouped by color count.
+- `tools/`: Build, generation, maintenance, and audit utilities.
+- `generated/`: Generated palette indexes (`palettes.json`, `palettes.db`, `master-index.csv`, `PALETTES.md`).
+- `legacy/static-showcase/`: Legacy static interactive gallery.
+- `web-showcase/`: The modern Next.js showcase.
+- `assets/`: Project images and visual assets.
 - `package.json`: NPM configuration.
 
 ## 🎨 Available Themes
 
+- **Floral Fantasy**: Sakura Drift, Lavender Fields, Midnight Rose, Wild Sunflower...
+- **Mythic Legends**: Mount Olympus, Valkyrie Gold, Phoenix Flame, Dragon Scale...
+- **Scientific Theory**: Quantum Physics, Petri Dish, Neon Neuron, Chemical Reaction...
+- **Athletic Edge**: Stadium Lights, Team Spirit, Victory Gold, Marathon Grey...
+- **Musical Rhythms**: Jazz Velvet, Heavy Metal, Classical Marble, Synthwave Neon...
+- **Literary Journeys**: Sherlock Smoke, Gatsby Gold, Wonderland Tea, Moby Dick Abyssal...
+- **Seasonal Festivals**: Lunar New Year, Holi Colors, Carnival Rio, Solstice Fire...
+- **Abyssal Depths**: Biolume Trench, Coral Reef, Kelp Forest, Deep Pressure...
+- **Mechanical Pulse**: Oil & Gears, Steam Engine, Welder's Spark, Circuit Logic...
+- **Celestial Mysteries**: Black Hole Void, Pulsar Pulse, Quasar Glow, Solar Wind...
+- **Earth's Core**: Magma Flow, Obsidian Crust, Sulfur Vent, Tectonic Shift...
+- **Arctic Echoes**: Glacier Shard, Permafrost, Tundra Moss, Iceberg Blue...
+- **Desert Secrets**: Oasis Mirage, Bedouin Silk, Pyramid Stone, Sandstorm Dust...
+- **Tropical Pulse**: Mango Mangrove, Parrot Wing, Lagoon Teal, Canopy Shade...
+- **Procedural Expansions**: Over 1,800 uniquely generated palettes across Abstract, Cinematic, Cosmic, and Industrial themes using procedural HSL scaling.
+- **Culinary Delights**: Espresso Roast, Matcha Latte, Berry Sorbet, Vintage Bordeaux...
+- **Textile & Fabric**: Denim Drift, Cashmere Soft, Velvet Night, Tweed Texture...
+- **Galactic Frontiers**: Supernova Glow, Deep Nebula, Martian Soil, Event Horizon...
+- **Precious Minerals**: Emerald Envy, Ruby Radiance, Lapis Lazuli, Oxidized Copper...
+- **Historical Aesthetics**: Renaissance Gold, Victorian Mourning, Art Nouveau, Roaring 20s...
+- **Emotional Atmospheres**: Melancholy Blue, Euphoric Yellow, Serene Sage, Aggressive Red...
+- **Cinematic Grades**: Technicolor Dream, Film Noir, Wes Anderson Pastel, Neo-Noir Cyan...
+- **Urban Explorations**: Tokyo Neon, Parisian Chic, London Fog, Rio Carnival...
+- **Natural Elements**: Polished Marble, Burnt Wood, Raw Concrete, Slate Shingle...
+- **Digital Frontiers**: Glitch Matrix, Bio-Luminescence, Liquid Metal, Vapor Grid...
+- **Modern Data Dashboards**: Metric Matrix, Insight Indigo, Analytics Atlas, Dashboard Dynamo...
+- **Enterprise SaaS**: Civic Cloud, Trust Teal, SaaS Slate, Platform Platinum...
+- **High-Tech Utility**: Binary Black, Syntax Sage, Compiler Cyan, Debugger Dark, Terminal Titan...
+- **Minimalist Marketing**: Ivory Ink, Silk Sand, Marble Modern, Gallery Grey...
 - **Sci-Fi & Tech**: Terminal Matrix, Nebula Void, Cybernetic Steel...
 - **Natural**: Deep Forest, Autumn Leaves, Ocean Waves...
 - **Vintage & Retro**: Classic Vaporwave, Retro Pop, 90s Metro...
