@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-This repository is an SCSS color palette library with a static showcase. Palette source files live in folders named by palette size, such as `3 Color Palette/`, `5 Color Palette/`, and `10 Color Palette/`. The package entry point is `_index.scss`. The gallery lives in `showcase/` with `index.html`, `style.css`, `app.js`, and generated `palettes.json`. Docs live in `README.md`, `CONTRIBUTING.md`, `MAINTENANCE.md`, and `docs/`.
+This repository is an SCSS color palette library with a static showcase. Palette source files live under `Palattes by # of Colors/` in folders named by palette size, such as `3 Color Palette/`, `5 Color Palette/`, and `10 Color Palette/` (extended through `35 Color Palette/`). The package entry point is `_index.scss`. The gallery lives in `showcase/` with `index.html`, `style.css`, `app.js`, and generated `palettes.json`. Docs live in `README.md`, `CONTRIBUTING.md`, `MAINTENANCE.md`, and `docs/`.
 
 ## Root File Sync Requirements
 

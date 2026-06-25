@@ -3,12 +3,18 @@ setlocal enabledelayedexpansion
 
 :: SCSS Palette Organizer
 :: This script scans the root directory for .scss files, counts the number of color variables,
-:: and moves them into categorized folders (e.g., "5 Color Palette").
+:: and moves them into categorized folders (e.g., "5 Color Palette")
+:: under "Palattes by # of Colors".
 
 echo Scanning for SCSS palettes...
 echo.
 
 set "movedCount=0"
+set "paletteRoot=Palattes by # of Colors"
+
+if not exist "%paletteRoot%" (
+    mkdir "%paletteRoot%"
+)
 
 for %%f in (*.scss) do (
     set "filename=%%f"
@@ -20,7 +26,7 @@ for %%f in (*.scss) do (
     )
     
     if !colorCount! GTR 0 (
-        set "targetFolder=!colorCount! Color Palette"
+        set "targetFolder=%paletteRoot%\!colorCount! Color Palette"
         
         if not exist "!targetFolder!" (
             mkdir "!targetFolder!"

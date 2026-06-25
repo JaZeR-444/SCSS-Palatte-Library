@@ -56,7 +56,7 @@ From the manifests/chunks in `web-showcase/.next/`:
 
 ## Palette library (root)
 
-The SCSS palette library remains in the root palette folders (`3 Color Palette` through `10 Color Palette`) with `_index.scss` as the package entry point.
+The SCSS palette library now lives under `Palattes by # of Colors/`, with folders spanning `3 Color Palette` through `35 Color Palette`. `_index.scss` remains the package entry point.
 
 `package.json` at the repository root still publishes the SCSS library (`main: "_index.scss"`).
 

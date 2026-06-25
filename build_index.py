@@ -6,11 +6,8 @@ import sqlite3
 import csv
 
 # --- Configuration ---
-FOLDERS = [
-    "3 Color Palette", "4 Color Palette", "5 Color Palette", 
-    "6 Color Palette", "7 Color Palette", "8 Color Palette", 
-    "9 Color Palette", "10 Color Palette"
-]
+PALETTES_BASE_DIR = "Palattes by # of Colors"
+FOLDERS = [f"{count} Color Palette" for count in range(3, 36)]
 
 def extract_metadata(path):
     with open(path, 'r', encoding='utf-8') as f:
@@ -47,13 +44,14 @@ def build_indices():
     print("🚀 Starting Master Index synchronization...")
 
     for folder in FOLDERS:
-        if not os.path.exists(folder):
+        folder_path = os.path.join(PALETTES_BASE_DIR, folder)
+        if not os.path.exists(folder_path):
             continue
             
         color_count = int(folder.split(' ')[0])
-        for filename in os.listdir(folder):
+        for filename in os.listdir(folder_path):
             if filename.endswith(".scss"):
-                path = os.path.join(folder, filename).replace("\\", "/")
+                path = os.path.join(folder_path, filename).replace("\\", "/")
                 meta, colors = extract_metadata(path)
                 
                 palette_id = filename.replace(".scss", "").lower().replace(" ", "-")

@@ -10,7 +10,7 @@ This is a **no-build SCSS/CSS color palette library** published to npm. There ar
 
 When adding a palette, **all four of these files must be updated in the same commit**:
 
-1. **New SCSS file** in the appropriate `N Color Palette/` folder
+1. **New SCSS file** in the appropriate `Palattes by # of Colors/N Color Palette/` folder
 2. **`_index.scss`** — add a `@use` import for the new palette
 3. **`showcase/palettes.json`** — add the palette metadata entry
 4. **`GEMINI.md`** — add the file to the "Key Files" section under its color-count heading
@@ -69,7 +69,7 @@ $palette-name-map: (
 ## Repository Architecture
 
 - **`_index.scss`** — single entry point; imports all 81 palettes via `@use`. This is the `"main"` field in `package.json`.
-- **`N Color Palette/`** — eight folders grouping palettes by color count (3–10).
+- **`Palattes by # of Colors/N Color Palette/`** — folders grouping palettes by color count (3–35).
 - **`showcase/`** — standalone interactive gallery; no build tooling.
   - `index.html` — Tailwind CSS (CDN) + GSAP + FontAwesome, all via CDN.
   - `app.js` — vanilla JS (~400 lines); loads `palettes.json`, renders the grid, handles search/filter, contrast checking (WCAG), clipboard copy, dark mode, and export (Tailwind config, SCSS Maps, CSS variables).
@@ -89,7 +89,7 @@ The showcase is self-contained and opens directly in a browser — just open `sh
   "colors": [
     { "name": "Color Name", "hex": "#rrggbbff" }
   ],
-  "path": "5 Color Palette/Palette Name.scss",
+  "path": "Palattes by # of Colors/5 Color Palette/Palette Name.scss",
   "folder": "5 Color Palette",
   "tags": ["tag1", "tag2"]
 }
