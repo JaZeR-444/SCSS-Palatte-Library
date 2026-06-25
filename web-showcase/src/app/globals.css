@@ -1,5 +1,22 @@
 @import "tailwindcss";
 
+/* ── Custom breakpoints ───────────────────────────────────────────────────── */
+/* Tailwind v4 needs @theme to register breakpoints beyond 2xl (1536px).      */
+/* 3xl = 1920px  (large 4K/wide monitors)                                     */
+/* 4xl = 2560px  (QHD ultrawide, 27"+)                                        */
+/* 5xl = 3440px  (34" ultrawide, target maximum)                              */
+@theme {
+  --breakpoint-3xl: 1920px;
+  --breakpoint-4xl: 2560px;
+  --breakpoint-5xl: 3440px;
+
+  /* Named animation utilities (referenced via animate-* classes) */
+  --animate-scroll-up:       scroll-up 30s linear infinite;
+  --animate-scroll-up-slow:  scroll-up-slow 45s linear infinite;
+  --animate-gradient-pan:    gradient-pan 8s ease-in-out infinite;
+}
+
+/* ── Design tokens ───────────────────────────────────────────────────────── */
 :root {
   --background: #f9fafb;
   --foreground: #111827;
@@ -15,32 +32,29 @@ body {
   color: var(--foreground);
 }
 
+/* ── Scrollbar utilities ─────────────────────────────────────────────────── */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ── Keyframes ───────────────────────────────────────────────────────────── */
 @keyframes scroll-up {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-50%);
-  }
+  from { transform: translateY(0); }
+  to   { transform: translateY(-50%); }
 }
 
 @keyframes scroll-up-slow {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-50%);
-  }
+  from { transform: translateY(0); }
+  to   { transform: translateY(-50%); }
 }
 
 @keyframes gradient-pan {
-  0% {
-    background-position: 0%;
-  }
-  50% {
-    background-position: 100%;
-  }
-  100% {
-    background-position: 0%;
-  }
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
+

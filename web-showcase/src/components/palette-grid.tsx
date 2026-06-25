@@ -255,16 +255,24 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
     if (viewMode === "list") return 1;
     const w = windowWidth;
     if (viewMode === "compact") {
+      if (w >= 3440) return 20;
+      if (w >= 2560) return 16;
+      if (w >= 1920) return 12;
       if (w >= 1536) return 10;
       if (w >= 1280) return 8;
       if (w >= 1024) return 6;
-      if (w >= 768) return 4;
-      return 3;
+      if (w >= 768)  return 4;
+      if (w >= 480)  return 3;
+      return 2;
     }
+    // grid mode
+    if (w >= 3440) return 10;
+    if (w >= 2560) return 8;
+    if (w >= 1920) return 7;
     if (w >= 1536) return 6;
     if (w >= 1280) return 5;
     if (w >= 1024) return 4;
-    if (w >= 768) return 3;
+    if (w >= 640)  return 3;
     return 2;
   }, [windowWidth, viewMode]);
 
@@ -341,9 +349,9 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
   const rowVirtualizer = useWindowVirtualizer({
     count: rows.length,
     estimateSize: () => {
-      if (viewMode === "list") return 75;
-      if (viewMode === "compact") return 110;
-      return 220;
+      if (viewMode === "list") return 80;
+      if (viewMode === "compact") return windowWidth >= 1280 ? 140 : 116;
+      return windowWidth >= 1920 ? 280 : windowWidth >= 1024 ? 250 : 220;
     },
     overscan: 6,
     scrollMargin,
@@ -644,12 +652,12 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
               const rowItems = rows[virtualRow.index];
               if (!rowItems) return null;
 
-              const gridClass =
+              const gapClass =
                 viewMode === "compact"
-                  ? "grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-10 gap-3 pb-3"
+                  ? "gap-1.5 sm:gap-2 lg:gap-3 pb-1.5 sm:pb-2 lg:pb-3"
                   : viewMode === "list"
-                    ? "grid grid-cols-1 gap-3 pb-3 w-full"
-                    : "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 sm:gap-8 pb-4 sm:pb-8";
+                  ? "gap-2 sm:gap-3 pb-2 sm:pb-3 w-full"
+                  : "gap-3 sm:gap-5 lg:gap-6 xl:gap-8 pb-3 sm:pb-5 lg:pb-6 xl:pb-8";
 
               return (
                 <div
@@ -662,8 +670,12 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
                     left: 0,
                     width: "100%",
                     transform: `translateY(${virtualRow.start - rowVirtualizer.options.scrollMargin}px)`,
+                    gridTemplateColumns:
+                      viewMode === "list"
+                        ? "1fr"
+                        : `repeat(${columns}, minmax(0, 1fr))`,
                   }}
-                  className={gridClass}
+                  className={`grid ${gapClass}`}
                 >
                   {rowItems.map((palette) => (
                     <div

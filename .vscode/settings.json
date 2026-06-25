@@ -11,5 +11,73 @@
             "other": "off"
         },
         "editor.minimap.enabled": false
-    }
+    },
+    "frontMatter.framework.id": "next",
+    "frontMatter.content.publicFolder": "public",
+    "frontMatter.preview.host": "http://localhost:3000",
+    "frontMatter.taxonomy.contentTypes": [
+        {
+            "name": "default",
+            "pageBundle": false,
+            "previewPath": null,
+            "fields": [
+                {
+                    "title": "Title",
+                    "name": "title",
+                    "type": "string"
+                },
+                {
+                    "title": "Description",
+                    "name": "description",
+                    "type": "string"
+                },
+                {
+                    "title": "Publishing date",
+                    "name": "date",
+                    "type": "datetime",
+                    "default": "{{now}}",
+                    "isPublishDate": true
+                },
+                {
+                    "title": "Content preview",
+                    "name": "preview",
+                    "type": "image"
+                },
+                {
+                    "title": "Is in draft",
+                    "name": "draft",
+                    "type": "draft"
+                },
+                {
+                    "title": "Tags",
+                    "name": "tags",
+                    "type": "tags"
+                },
+                {
+                    "title": "Categories",
+                    "name": "categories",
+                    "type": "categories"
+                }
+            ]
+        }
+    ],
+    "frontMatter.git.enabled": false,
+    "frontMatter.content.pageFolders": [
+        {
+            "title": "showcase",
+            "path": "[[workspace]]/showcase"
+        },
+        {
+            "path": "[[workspace]]/responsive-audit",
+            "title": "responsive-audit"
+        },
+        {
+            "title": "App - Pallates",
+            "path": "[[workspace]]"
+        },
+        {
+            "title": "5 Color Palette",
+            "path": "[[workspace]]/Palattes by # of Colors/5 Color Palette"
+        }
+    ]
 }

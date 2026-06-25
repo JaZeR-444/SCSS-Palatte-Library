@@ -45,6 +45,14 @@
 
 ---
 
+## Lead Viewer Helper
+
+For Zoho or lead-review pages that only show the Search button after highlighting a phone number, use `tools/zoho-one-click-phone-search.user.js` with a userscript manager such as Tampermonkey. It scans the current page for US-style phone numbers, turns each one into a small clickable button, selects the number, and clicks the page's existing `Search` button.
+
+Update the `@match` line in the script to the exact viewer domain before using it every day.
+
+---
+
 ## 📦 SCSS Library — Quick Start
 
 ### Install from GitHub
@@ -218,4 +226,3 @@ $midnight-neon-map: (
 ## 📄 License
 
 MIT © [JaZeR-444](https://github.com/JaZeR-444)
-
