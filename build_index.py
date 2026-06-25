@@ -41,7 +41,7 @@ def extract_metadata(path):
 
 def build_indices():
     all_palettes = []
-    print("🚀 Starting Master Index synchronization...")
+    print("[START] Starting Master Index synchronization...")
 
     for folder in FOLDERS:
         folder_path = os.path.join(PALETTES_BASE_DIR, folder)
@@ -78,7 +78,7 @@ def build_indices():
     os.makedirs("showcase", exist_ok=True)
     with open("showcase/palettes.json", "w", encoding='utf-8') as f:
         json.dump(all_palettes, f, indent=4)
-    print("✅ Generated showcase/palettes.json")
+    print("[OK] Generated showcase/palettes.json")
 
     # --- 2. Generate CSV (for Spreadsheet) ---
     with open("master_index.csv", "w", encoding='utf-8', newline='') as f:
@@ -89,7 +89,7 @@ def build_indices():
             moods = ", ".join(p['tags'].get('mood', [])) if isinstance(p['tags'], dict) else ""
             aesthetics = ", ".join(p['tags'].get('aesthetic', [])) if isinstance(p['tags'], dict) else ""
             writer.writerow([p['id'], p['name'], p['category'], p['count'], hex_list, moods, aesthetics])
-    print("✅ Generated master_index.csv")
+    print("[OK] Generated master_index.csv")
 
     # --- 3. Generate Markdown (for GitHub) ---
     with open("PALETTES.md", "w", encoding='utf-8', newline='\n') as f:
@@ -101,7 +101,7 @@ def build_indices():
             # Create small visual blocks using Unicode squares or HTML spans
             swatches = "".join([f'<span title="{c["name"]}: {c["hex"]}"><img src="https://placehold.co/12x12/{c["hex"].replace("#","")}/{c["hex"].replace("#","")}.png" /></span>' for c in p['colors']])
             f.write(f"| `{p['id']}` | **{p['name']}** | {p['category']} | {p['count']} | {swatches} |\n")
-    print("✅ Generated PALETTES.md")
+    print("[OK] Generated PALETTES.md")
 
     # --- 4. Generate SQLite (for Querying) ---
     db_path = "palettes.db"
@@ -137,7 +137,7 @@ def build_indices():
     
     conn.commit()
     conn.close()
-    print("✅ Generated palettes.db")
+    print("[OK] Generated palettes.db")
 
 if __name__ == "__main__":
     build_indices()
