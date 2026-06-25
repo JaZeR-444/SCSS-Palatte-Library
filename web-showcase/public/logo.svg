@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 72" fill="none" role="img" aria-label="Palattes logo">
+  <!-- ── Icon mark (72 × 72 rounded square) ── -->
+  <rect x="0" y="0" width="72" height="72" rx="16" fill="#0F172A"/>
+
+  <!-- 6-dot palette grid -->
+  <circle cx="21.5" cy="19" r="8.5" fill="#6366F1"/>
+  <circle cx="50.5" cy="19" r="8.5" fill="#10B981"/>
+  <circle cx="21.5" cy="36" r="8.5" fill="#F97316"/>
+  <circle cx="50.5" cy="36" r="8.5" fill="#EC4899"/>
+  <circle cx="21.5" cy="53" r="8.5" fill="#8B5CF6"/>
+  <circle cx="50.5" cy="53" r="8.5" fill="#06B6D4"/>
+
+  <!-- ── Wordmark ── -->
+  <!-- "Palattes" — bold system sans-serif, dark mode friendly -->
+  <text
+    x="88"
+    y="50"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif"
+    font-weight="800"
+    font-size="42"
+    letter-spacing="-1.2"
+    fill="#0F172A"
+  >Palattes</text>
+
+  <!-- Tagline -->
+  <text
+    x="89"
+    y="66"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif"
+    font-weight="500"
+    font-size="11"
+    letter-spacing="2"
+    fill="#64748B"
+  >COLOR PALETTE LIBRARY</text>
+</svg>

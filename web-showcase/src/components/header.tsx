@@ -1,6 +1,7 @@
 ﻿"use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Github, Shuffle, Plus, Folder, Trash, ChevronDown, FolderPlus, X } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
 import { useStudio } from "./studio/studio-context";
@@ -107,16 +108,22 @@ export function Header({ count }: HeaderProps) {
         <div className="flex items-center gap-4 min-w-0">
           <Link
             href="/"
-            className="relative h-10 w-10 flex-shrink-0 rounded-xl bg-black dark:bg-white flex items-center justify-center shadow-sm border border-gray-200 dark:border-slate-700"
+            className="relative h-10 w-10 flex-shrink-0 rounded-xl overflow-hidden shadow-sm border border-gray-200 dark:border-slate-700"
+            aria-label="Palattes home"
           >
-            <span className="text-white dark:text-black font-black text-lg select-none">
-              P/
-            </span>
+            <Image
+              src="/icon.svg"
+              alt="Palattes icon"
+              width={40}
+              height={40}
+              className="w-full h-full"
+              priority
+            />
           </Link>
           <div className="min-w-0">
             <div className="flex flex-wrap items-center gap-3">
               <h1 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Palettes
+                Palattes
               </h1>
               <span className="rounded-md border border-gray-200 dark:border-slate-800 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">
                 v2.0

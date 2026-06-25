@@ -1,65 +1,221 @@
-# Palattes
+<div align="center">
+  <br />
+  <img src="web-showcase/public/logo.svg" alt="Palattes — Color Palette Library" height="72" />
+  <br /><br />
 
-This repository contains the SCSS palette library plus a **Next.js App Router showcase workspace** at `web-showcase/`.
+  [![Live Demo](https://img.shields.io/badge/Live_Demo-app--pallates.vercel.app-6366F1?style=for-the-badge&logo=vercel&logoColor=white)](https://app-pallates.vercel.app)
+  [![Palettes](https://img.shields.io/badge/Palettes-2%2C555%2B-F97316?style=for-the-badge)](https://app-pallates.vercel.app)
+  [![License](https://img.shields.io/badge/License-MIT-10B981?style=for-the-badge)](LICENSE)
+  [![npm](https://img.shields.io/badge/npm-install-CB3837?style=for-the-badge&logo=npm)](https://github.com/JaZeR-444/SCSS-Palatte-Library)
 
-## Current state of the Next.js application (`web-showcase/`)
+  <p><em>2,500+ production-ready SCSS & CSS color palettes — browse, search, export, and use in any project.</em></p>
+</div>
 
-The directory currently contains:
+---
 
-- `.next/` (compiled Next.js output)
-- `node_modules/`
-- `public/` (present, currently empty)
-- `src/app/favicon.ico`
-- `next-env.d.ts`
-- `tsconfig.tsbuildinfo`
+## ✨ What is Palattes?
 
-There is **no checked-in `web-showcase/package.json` or app source tree** in this snapshot, so the app is represented mainly by compiled output in `.next/`.
+**Palattes** is a dual-purpose repository:
 
-## What the compiled app currently includes
+| Layer | Description |
+|-------|-------------|
+| 📦 **SCSS/CSS Library** | 332+ curated palette files installable via `npm`. Each palette ships in HEX, HSL, RGB, and gradient formats. |
+| 🌐 **Interactive Showcase** | A Next.js 15 App Router web app at `web-showcase/` with live preview, search, contrast checking (WCAG), export, and collection management for 2,555+ palettes from a SQLite database. |
 
-From the manifests/chunks in `web-showcase/.next/`:
+---
 
-1. **Routing**
-   - App Router with a single public page: `/`
-   - Built-in `_not-found`, `_global-error`, and `/favicon.ico` routes
+## 🚀 Live App
 
-2. **Main page composition**
-   - `Header`
-   - Hero section (`SCSS Color Systems. Built for precision.`)
-   - `LavaLamp` and `PaletteWall` visuals
-   - `PaletteGrid`
-   - `StudioModal`
-   - `PaletteCreator`
+**[https://app-pallates.vercel.app](https://app-pallates.vercel.app)**
 
-3. **Server actions in `src/app/actions.ts`**
-   - `fetchPalettes`
-   - `getFavoritesAction`, `toggleFavoriteAction`
-   - `getRoleMappingAction`, `saveRoleMappingAction`
-   - `savePaletteAction`
-   - `getCollectionsAction`, `createCollectionAction`, `deleteCollectionAction`
-   - `addPaletteToCollectionAction`, `removePaletteFromCollectionAction`
-   - `getCollectionPalettesAction`
-   - `getPaletteHistoryAction`
-   - `searchPalettesAction`, `searchPalettesByColorAction`
+### App Features
 
-4. **Referenced app modules**
-   - `src/app/layout.tsx`, `src/app/page.tsx`, `src/app/actions.ts`
-   - `src/components/*` including studio/scenario UI modules
-   - `src/components/theme-provider.tsx`, `src/components/theme-toggle.tsx`, `src/components/ui/toaster.tsx`
-   - `src/data/palettes.json`
-   - `src/utils/audio.ts`, `src/utils/contrast-utils.ts`, `src/utils/db.ts`, `src/utils/toast.ts`
-   - `src/types/studio.ts`
+- 🔍 **Full-text search** — fuzzy-match palettes by name, description, tag, or hex value
+- 🎨 **2,555+ palettes** served from a normalized SQLite database
+- 🌓 **Dark / Light mode** with system preference support
+- ♿ **WCAG contrast checker** — AA/AAA pass/fail for any palette
+- 🎭 **Colorblind simulation** — Protanopia, Deuteranopia, Tritanopia, Achromatopsia
+- 📋 **One-click export** — CSS variables, SCSS map, Tailwind config, raw hex array
+- ❤️ **Favorites** — persisted in SQLite
+- 🗂️ **Collections** — create named collections, add/remove palettes
+- 🎲 **Random palette** — discover something new instantly
+- 🎛️ **Studio Mode** — deep-dive view with role mapping and audio feedback
+- 📱 **Fully responsive** — mobile, tablet, and desktop
+- 🔧 **Palette Creator** — build your own palette and save to the library
 
-5. **Data/storage**
-   - Build traces reference SQLite usage via `better-sqlite3`
-   - Tracing config expects `src/data/palettes.db`
+---
 
-## Palette library (root)
+## 📦 SCSS Library — Quick Start
 
-The SCSS palette library now lives under `Palattes by # of Colors/`, with folders spanning `3 Color Palette` through `35 Color Palette`. `_index.scss` remains the package entry point.
+### Install from GitHub
 
-`package.json` at the repository root still publishes the SCSS library (`main: "_index.scss"`).
+```bash
+npm install git+https://github.com/JaZeR-444/SCSS-Palatte-Library.git
+```
 
-## License
+### Import a palette
 
-MIT
+```scss
+// Single palette
+@use 'scss-palette-library/Palattes by # of Colors/5 Color Palette/Midnight Neon' as *;
+
+.hero {
+  background: $gradient-top;
+  color: $electric-violet;
+}
+```
+
+```css
+/* CSS custom properties (no pre-processing needed) */
+:root {
+  --electric-violet: #7b2fff;
+}
+```
+
+### Import everything
+
+```scss
+@use 'scss-palette-library'; // imports _index.scss → all 332 palettes
+```
+
+---
+
+## 🗂️ Repository Structure
+
+```
+App - Palattes/
+├── Palattes by # of Colors/          # SCSS source palettes
+│   ├── 3 Color Palette/              # 8 palettes
+│   ├── 4 Color Palette/              # 8 palettes
+│   ├── 5 Color Palette/              # 17 palettes
+│   ├── 6 Color Palette/              # 7 palettes
+│   ├── 7 Color Palette/              # 8 palettes
+│   ├── 8 Color Palette/              # 8 palettes
+│   ├── 9 Color Palette/              # 14 palettes
+│   ├── 10 Color Palette/             # 10 palettes
+│   └── 11–35 Color Palette/          # reserved for future palettes
+│
+├── web-showcase/                     # Next.js 15 App Router showcase
+│   ├── src/
+│   │   ├── app/                      # layout, page, server actions
+│   │   ├── components/               # UI components + Studio
+│   │   ├── data/                     # palettes.json + palettes.db
+│   │   ├── types/                    # TypeScript types
+│   │   └── utils/                    # db, contrast, audio, toast
+│   └── public/                       # Brand assets + PWA icons
+│       ├── icon.svg                  # App icon (SVG)
+│       ├── logo.svg                  # Full wordmark
+│       ├── og-image.png              # OpenGraph social card (1200×630)
+│       ├── icon-192.png              # PWA icon
+│       ├── icon-512.png              # PWA icon
+│       ├── apple-touch-icon.png      # iOS home screen (180×180)
+│       └── site.webmanifest          # PWA manifest
+│
+├── showcase/                         # Legacy static gallery
+│   ├── index.html
+│   ├── app.js
+│   └── palettes.json                 # Generated from build_index.py
+│
+├── generated/                        # Generated assets
+│   └── palettes.db                   # Normalized SQLite (2,555 palettes)
+│
+├── _index.scss                       # npm package entry point
+├── build_index.py                    # Regenerates showcase data from SCSS
+├── package.json                      # npm package config (SCSS library)
+└── CHANGELOG.md
+```
+
+---
+
+## 🎨 Brand Assets
+
+| Asset | Path | Usage |
+|-------|------|-------|
+| App Icon (SVG) | `web-showcase/public/icon.svg` | Favicon, header mark |
+| Full Wordmark | `web-showcase/public/logo.svg` | Light backgrounds |
+| Dark Wordmark | `web-showcase/public/logo-dark.svg` | Dark backgrounds |
+| OG Image | `web-showcase/public/og-image.png` | Social sharing (1200×630) |
+| PWA Icon 192 | `web-showcase/public/icon-192.png` | Android home screen |
+| PWA Icon 512 | `web-showcase/public/icon-512.png` | Android splash |
+| Apple Touch | `web-showcase/public/apple-touch-icon.png` | iOS home screen |
+
+**Brand colors:**
+
+| Token | Hex | Usage |
+|-------|-----|-------|
+| Indigo | `#6366F1` | Primary / interactive |
+| Emerald | `#10B981` | Success / accent |
+| Orange | `#F97316` | CTA / highlight |
+| Pink | `#EC4899` | Tag / mood |
+| Violet | `#8B5CF6` | Secondary accent |
+| Cyan | `#06B6D4` | Aesthetic tag |
+| Dark BG | `#0F172A` | App dark background |
+
+---
+
+## 🛠️ Development
+
+### Run the showcase locally
+
+```bash
+cd web-showcase
+npm install
+npm run dev
+# open http://localhost:3000
+```
+
+### Rebuild palette index
+
+```bash
+python build_index.py
+# regenerates showcase/palettes.json, PALETTES.md, master_index.csv
+```
+
+### Serve the legacy static gallery
+
+```bash
+python -m http.server 8000
+# open http://localhost:8000/showcase/
+```
+
+---
+
+## 📋 Palette Format
+
+Every `.scss` file follows this structure:
+
+```scss
+/*---
+title: Midnight Neon
+description: Electric neons against deep midnight black for a futuristic edge.
+tags: ["neon", "dark", "cyberpunk"]
+categories: ["5 Color"]
+url: https://coolors.co/...
+---*/
+
+:root {
+  /* CSS HEX */
+  --electric-violet: #7b2fff;
+  /* CSS HSL */
+  --electric-violet-hsl: hsla(264, 100%, 59%, 1);
+}
+
+/* SCSS HEX */
+$electric-violet: #7b2fff;
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #7b2fff, #00f5d4, ...);
+$gradient-radial: radial-gradient(ellipse at center, ...);
+
+/* SCSS Map */
+$midnight-neon-map: (
+  "electric-violet": #7b2fff,
+);
+```
+
+---
+
+## 📄 License
+
+MIT © [JaZeR-444](https://github.com/JaZeR-444)
+
