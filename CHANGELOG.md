@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- **GitHub npm Install Package Surface**: Limited the install tarball to SCSS library files and root package docs, and added Sass-aware package metadata for downstream imports.
+- **License File**: Added the missing MIT `LICENSE` file referenced by package metadata and README badges.
+
 ### Added
 - **New Palette Options**: Ember Dusk, Glass Aurora, Verdant Circuit, and Civic Sunrise.
 - **40-Palette Expansion**: Added five new palettes each to the 3-color through 10-color folders.

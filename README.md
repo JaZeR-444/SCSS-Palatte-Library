@@ -61,6 +61,16 @@ Update the `@match` line in the script to the exact viewer domain before using i
 npm install git+https://github.com/JaZeR-444/SCSS-Palatte-Library.git
 ```
 
+If npm reports an old cached package after a repository update, clear the entry
+or install with a commit SHA:
+
+```bash
+npm install git+https://github.com/JaZeR-444/SCSS-Palatte-Library.git#main
+```
+
+The package tarball is intentionally limited to `_index.scss`, palette `.scss`
+files, and root package docs so installs stay lightweight.
+
 ### Import a palette
 
 ```scss

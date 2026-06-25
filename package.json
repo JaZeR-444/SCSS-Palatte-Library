@@ -3,6 +3,32 @@
   "version": "2.0.0",
   "description": "A comprehensive collection of themed SCSS and CSS color palettes.",
   "main": "_index.scss",
+  "sass": "_index.scss",
+  "style": "_index.scss",
+  "exports": {
+    ".": {
+      "sass": "./_index.scss",
+      "style": "./_index.scss",
+      "default": "./_index.scss"
+    },
+    "./Palattes by # of Colors/*.scss": {
+      "sass": "./Palattes by # of Colors/*.scss",
+      "style": "./Palattes by # of Colors/*.scss",
+      "default": "./Palattes by # of Colors/*.scss"
+    },
+    "./Palattes by # of Colors/*": {
+      "sass": "./Palattes by # of Colors/*.scss",
+      "style": "./Palattes by # of Colors/*.scss",
+      "default": "./Palattes by # of Colors/*.scss"
+    }
+  },
+  "files": [
+    "_index.scss",
+    "Palattes by # of Colors/**/*.scss",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JaZeR-444/SCSS-Palatte-Library.git"

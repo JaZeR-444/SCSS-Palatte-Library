@@ -29,6 +29,11 @@ Since this project does not currently use automated linting, maintainers should 
 - [ ] Is the new palette listed in the `Key Files` section of `GEMINI.md`?
 - [ ] Has the `CHANGELOG.md` been updated with the new addition?
 
+### 5. Package Install Check
+- [ ] Run `npm pack --dry-run` after changing package metadata or repository inventory.
+- [ ] Confirm the tarball includes `_index.scss`, `Palattes by # of Colors/**/*.scss`, `README.md`, `CHANGELOG.md`, and `LICENSE`.
+- [ ] Confirm generated databases, showcase builds, audit screenshots, editor settings, caches, and local app files are not included in the package tarball.
+
 ## Troubleshooting
 
 If you find a palette with inconsistent values or missing sections:
