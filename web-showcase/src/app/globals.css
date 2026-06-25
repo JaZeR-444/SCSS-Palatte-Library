@@ -24,6 +24,15 @@ body {
   }
 }
 
+@keyframes scroll-up-slow {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
 @keyframes gradient-pan {
   0% {
     background-position: 0%;

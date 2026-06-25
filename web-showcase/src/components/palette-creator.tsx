@@ -167,7 +167,7 @@ export function PaletteCreator() {
       },
       created: creatorPaletteToEdit?.created || new Date().toISOString().split("T")[0],
       updated: new Date().toISOString().split("T")[0],
-      path: creatorPaletteToEdit?.path || `src/palettes/${count} Color Palette/${name.trim()}.scss`
+      path: creatorPaletteToEdit?.path || `Palattes by # of Colors/${count} Color Palette/${name.trim()}.scss`
     };
 
     startTransition(async () => {

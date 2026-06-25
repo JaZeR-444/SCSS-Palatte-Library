@@ -29,6 +29,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Showcase Sort Control Upgrade**: Reworked the palette sort dropdown with a labeled icon control and wired name, recency, count, and closest-color sorting.
 - **Showcase Header Upgrade**: Enhanced the sticky header with richer branding, live palette count, WCAG tooling badge, and a direct repository action.
 
+### Changed
+- **Palette Folder Hierarchy**: Moved `3 Color Palette` through `10 Color Palette` into `Palattes by # of Colors/` and added empty `11 Color Palette` through `35 Color Palette` folders for expansion.
+
 ## [2.0.0] - 2026-05-18
 
 ### Added
