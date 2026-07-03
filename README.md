@@ -129,12 +129,10 @@ App - Palattes/
 │       ├── apple-touch-icon.png      # iOS home screen (180×180)
 │       └── site.webmanifest          # PWA manifest
 │
-├── showcase/                         # Legacy static gallery
-│   ├── index.html
-│   ├── app.js
-│   └── palettes.json                 # Generated from build_index.py
+├── archive/
+│   └── showcase/                     # Retired legacy static gallery (kept for reference)
 │
-├── generated/                        # Generated assets
+├── generated/                        # Canonical palette dataset (single source of truth)
 │   └── palettes.db                   # Normalized SQLite (2,555 palettes)
 │
 ├── _index.scss                       # npm package entry point
@@ -186,14 +184,14 @@ npm run dev
 
 ```bash
 python build_index.py
-# regenerates showcase/palettes.json, PALETTES.md, master_index.csv
+# regenerates archive/showcase/palettes.json, PALETTES.md, master_index.csv
 ```
 
-### Serve the legacy static gallery
+### Serve the retired static gallery (archived)
 
 ```bash
 python -m http.server 8000
-# open http://localhost:8000/showcase/
+# open http://localhost:8000/archive/showcase/
 ```
 
 ---

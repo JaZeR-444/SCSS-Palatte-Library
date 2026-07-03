@@ -74,11 +74,11 @@ def build_indices():
     # Sort for consistency
     all_palettes.sort(key=lambda x: (x['count'], x['name']))
 
-    # --- 1. Generate JSON (for Showcase) ---
-    os.makedirs("showcase", exist_ok=True)
-    with open("showcase/palettes.json", "w", encoding='utf-8') as f:
+    # --- 1. Generate JSON (for the archived static gallery) ---
+    os.makedirs("archive/showcase", exist_ok=True)
+    with open("archive/showcase/palettes.json", "w", encoding='utf-8') as f:
         json.dump(all_palettes, f, indent=4)
-    print("[OK] Generated showcase/palettes.json")
+    print("[OK] Generated archive/showcase/palettes.json")
 
     # --- 2. Generate CSV (for Spreadsheet) ---
     with open("master_index.csv", "w", encoding='utf-8', newline='') as f:

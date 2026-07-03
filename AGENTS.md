@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-This repository is an SCSS color palette library with a static showcase. Palette source files live under `Palattes by # of Colors/` in folders named by palette size, such as `3 Color Palette/`, `5 Color Palette/`, and `10 Color Palette/` (extended through `35 Color Palette/`). The package entry point is `_index.scss`. The gallery lives in `showcase/` with `index.html`, `style.css`, `app.js`, and generated `palettes.json`. Docs live in `README.md`, `CONTRIBUTING.md`, `MAINTENANCE.md`, and `docs/`.
+This repository is an SCSS color palette library plus a deployed web app. Palette source files live under `Palattes by # of Colors/` in folders named by palette size, such as `3 Color Palette/`, `5 Color Palette/`, and `10 Color Palette/` (extended through `35 Color Palette/`). The package entry point is `_index.scss`. The **one active showcase is the deployed Next.js app in `web-showcase/`** (`app-pallates.vercel.app`), whose data is synced from the canonical `generated/` dataset via `sync_palettes.py`. The retired legacy static gallery is kept at `archive/showcase/`. Docs live in `README.md`, `CONTRIBUTING.md`, `MAINTENANCE.md`, and `docs/`.
 
 ## Root File Sync Requirements
 
@@ -16,13 +16,13 @@ There are no npm scripts currently defined. Use these direct commands:
 python build_index.py
 ```
 
-Regenerates `showcase/palettes.json` from SCSS files. Run after adding, renaming, moving, or editing palette metadata. Requires Python plus `PyYAML`.
+Regenerates `archive/showcase/palettes.json` and the root `palettes.db` from SCSS files. Run after adding, renaming, moving, or editing palette metadata. Requires Python plus `PyYAML`. To update the deployed app, add the palette to `generated/` and run `python sync_palettes.py`.
 
 ```bash
 python -m http.server 8000
 ```
 
-Serves the repo so you can open `http://localhost:8000/showcase/`.
+Serves the repo so you can open the archived static gallery at `http://localhost:8000/archive/showcase/`. (The primary app runs via `cd web-showcase && npm run dev`.)
 
 ```bash
 npm install git+https://github.com/JaZeR-444/SCSS-Palatte-Library.git
@@ -36,7 +36,7 @@ Palette filenames use Title Case with spaces, for example `Midnight Neon.scss`. 
 
 ## Testing Guidelines
 
-No automated test suite is configured. Validate changes by running `python build_index.py`, then loading the showcase locally and checking search, previews, export snippets, and contrast results. For SCSS edits, confirm all expected color entries and standard gradient variables exist. New palette options are not complete until they appear in `showcase/palettes.json` and render in `showcase/`.
+No automated test suite is configured. Validate changes by running `python build_index.py`, then loading the archived gallery (or the `web-showcase/` app) locally and checking search, previews, export snippets, and contrast results. For SCSS edits, confirm all expected color entries and standard gradient variables exist. New palette options are not complete until they appear in `generated/` (and, if shipped in the library, the SCSS sources) and render in the app.
 
 ## Commit & Pull Request Guidelines
 
@@ -44,4 +44,4 @@ Recent history uses concise Conventional Commit style, such as `feat: ...` and `
 
 ## Agent-Specific Instructions
 
-Do not hand-edit `showcase/palettes.json` unless explicitly requested; regenerate it with `build_index.py`. Keep unrelated generated or editor metadata untouched. When adding palettes, update source SCSS first, regenerate showcase data, verify the palette appears in `showcase/`, and update affected root files before finishing.
+Do not hand-edit `archive/showcase/palettes.json` or `web-showcase/src/data/palettes.json` unless explicitly requested; regenerate the former with `build_index.py` and the latter with `sync_palettes.py` (source of truth: `generated/`). Keep unrelated generated or editor metadata untouched. When adding palettes, update source SCSS first, add the palette to `generated/`, run the sync, verify it appears in the `web-showcase/` app, and update affected root files before finishing.
