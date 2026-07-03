@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **License File**: Added the missing MIT `LICENSE` file referenced by package metadata and README badges.
 
 ### Added
+- **Tonary Neural Indigo**: New 8-color palette derived from the Tonary.io brand icon — a deep indigo-to-cyan tech ramp.
 - **New Palette Options**: Ember Dusk, Glass Aurora, Verdant Circuit, and Civic Sunrise.
 - **40-Palette Expansion**: Added five new palettes each to the 3-color through 10-color folders.
 - **Purple-Focused Palettes**: Added Royal Iris, Amethyst Haze, Plum Circuit, Violet Vineyard, Ultraviolet Bloom, Lavender Ledger, Mystic Spectrum, and Purple Observatory.
