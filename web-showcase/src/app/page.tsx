@@ -4,6 +4,7 @@ import { Hero } from "@/components/hero";
 import { PaletteGrid } from "@/components/palette-grid";
 import { StudioModal } from "@/components/studio/studio-modal";
 import { PaletteCreator } from "@/components/palette-creator";
+import { BrandSystemModal } from "@/components/brand-system/brand-system-modal";
 
 export const dynamic = "force-dynamic";
 
@@ -23,6 +24,9 @@ export default function Home() {
 
       {/* Global Palette Creator/Editor Modal */}
       <PaletteCreator />
+
+      {/* Global Brand System Builder Modal */}
+      <BrandSystemModal />
     </main>
   );
 }

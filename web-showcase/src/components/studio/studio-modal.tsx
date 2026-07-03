@@ -19,6 +19,7 @@ import {
   Code2,
   Download,
   Layers,
+  Sparkles,
 } from "lucide-react";
 import { ScenarioTabs } from "./scenario-tabs";
 import { RoleConfigurator } from "./role-configurator";
@@ -241,6 +242,7 @@ export function StudioModal() {
     visionFilter,
     setVisionFilter,
     openCreator,
+    openBrandSystem,
   } = useStudio();
 
   const palettes = palettesData as Palette[];
@@ -506,6 +508,20 @@ export function StudioModal() {
                   </div>
                 )}
               </div>
+
+              {/* Build Brand System */}
+              <button
+                onClick={() => {
+                  playSound("open");
+                  closeStudio();
+                  openBrandSystem(selectedPalette);
+                }}
+                className="flex items-center gap-1.5 px-3 py-3 bg-gradient-to-r from-indigo-500 to-violet-600 hover:from-indigo-600 hover:to-violet-700 text-white rounded-full transition-all backdrop-blur-md border border-white/20 cursor-pointer shadow-lg shadow-indigo-500/20"
+                title="Build a brand system from this palette"
+              >
+                <Sparkles className="h-4 w-4" />
+                <span className="hidden sm:inline text-[11px] font-bold">Brand System</span>
+              </button>
 
               {/* Edit Palette */}
               <button
