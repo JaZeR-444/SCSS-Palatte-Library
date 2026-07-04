@@ -1,0 +1,118 @@
+/*---
+id: indigo-mosaic-12-02
+name: Indigo Mosaic 12-02
+author: JaZeR-444
+version: 1.0.0
+category: Multi Color Composition
+count: 12
+tags:
+  mood:
+  - multi-color
+  - vibrant
+  - exploratory
+  aesthetic:
+  - Mosaic
+intent: A diverse 12-color composition for broad creative and UI exploration.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--tone-01: #224e18ff;
+--tone-02: #196949ff;
+--tone-03: #187488ff;
+--tone-04: #1422a8ff;
+--tone-05: #810dccff;
+--tone-06: #bb3b9dff;
+--tone-07: #d14641ff;
+--tone-08: #e0c24fff;
+--tone-09: #b9ec60ff;
+--tone-10: #73f67dff;
+--tone-11: #a3e2dbff;
+--tone-12: #b5d5edff;
+
+/* CSS HSL */
+--tone-01: hsla(109, 52%, 20%, 1);
+--tone-02: hsla(156, 61%, 26%, 1);
+--tone-03: hsla(191, 70%, 31%, 1);
+--tone-04: hsla(234, 79%, 37%, 1);
+--tone-05: hsla(277, 88%, 43%, 1);
+--tone-06: hsla(314, 52%, 48%, 1);
+--tone-07: hsla(2, 61%, 54%, 1);
+--tone-08: hsla(48, 70%, 59%, 1);
+--tone-09: hsla(82, 79%, 65%, 1);
+--tone-10: hsla(125, 88%, 71%, 1);
+--tone-11: hsla(173, 52%, 76%, 1);
+--tone-12: hsla(206, 61%, 82%, 1);
+}
+
+/* SCSS HEX */
+$tone-01: #224e18ff;
+$tone-02: #196949ff;
+$tone-03: #187488ff;
+$tone-04: #1422a8ff;
+$tone-05: #810dccff;
+$tone-06: #bb3b9dff;
+$tone-07: #d14641ff;
+$tone-08: #e0c24fff;
+$tone-09: #b9ec60ff;
+$tone-10: #73f67dff;
+$tone-11: #a3e2dbff;
+$tone-12: #b5d5edff;
+
+/* SCSS HSL */
+$tone-01: hsla(109, 52%, 20%, 1);
+$tone-02: hsla(156, 61%, 26%, 1);
+$tone-03: hsla(191, 70%, 31%, 1);
+$tone-04: hsla(234, 79%, 37%, 1);
+$tone-05: hsla(277, 88%, 43%, 1);
+$tone-06: hsla(314, 52%, 48%, 1);
+$tone-07: hsla(2, 61%, 54%, 1);
+$tone-08: hsla(48, 70%, 59%, 1);
+$tone-09: hsla(82, 79%, 65%, 1);
+$tone-10: hsla(125, 88%, 71%, 1);
+$tone-11: hsla(173, 52%, 76%, 1);
+$tone-12: hsla(206, 61%, 82%, 1);
+
+/* SCSS RGB */
+$tone-01: rgba(34, 78, 24, 1);
+$tone-02: rgba(25, 105, 73, 1);
+$tone-03: rgba(24, 116, 136, 1);
+$tone-04: rgba(20, 34, 168, 1);
+$tone-05: rgba(129, 13, 204, 1);
+$tone-06: rgba(187, 59, 157, 1);
+$tone-07: rgba(209, 70, 65, 1);
+$tone-08: rgba(224, 194, 79, 1);
+$tone-09: rgba(185, 236, 96, 1);
+$tone-10: rgba(115, 246, 125, 1);
+$tone-11: rgba(163, 226, 219, 1);
+$tone-12: rgba(181, 213, 237, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #224e18ff, #196949ff, #187488ff, #1422a8ff, #810dccff, #bb3b9dff, #d14641ff, #e0c24fff, #b9ec60ff, #73f67dff, #a3e2dbff, #b5d5edff);
+$gradient-right: linear-gradient(90deg, #224e18ff, #196949ff, #187488ff, #1422a8ff, #810dccff, #bb3b9dff, #d14641ff, #e0c24fff, #b9ec60ff, #73f67dff, #a3e2dbff, #b5d5edff);
+$gradient-bottom: linear-gradient(180deg, #224e18ff, #196949ff, #187488ff, #1422a8ff, #810dccff, #bb3b9dff, #d14641ff, #e0c24fff, #b9ec60ff, #73f67dff, #a3e2dbff, #b5d5edff);
+$gradient-left: linear-gradient(270deg, #224e18ff, #196949ff, #187488ff, #1422a8ff, #810dccff, #bb3b9dff, #d14641ff, #e0c24fff, #b9ec60ff, #73f67dff, #a3e2dbff, #b5d5edff);
+$gradient-top-right: linear-gradient(45deg, #224e18ff, #196949ff, #187488ff, #1422a8ff, #810dccff, #bb3b9dff, #d14641ff, #e0c24fff, #b9ec60ff, #73f67dff, #a3e2dbff, #b5d5edff);
+$gradient-bottom-right: linear-gradient(135deg, #224e18ff, #196949ff, #187488ff, #1422a8ff, #810dccff, #bb3b9dff, #d14641ff, #e0c24fff, #b9ec60ff, #73f67dff, #a3e2dbff, #b5d5edff);
+$gradient-top-left: linear-gradient(225deg, #224e18ff, #196949ff, #187488ff, #1422a8ff, #810dccff, #bb3b9dff, #d14641ff, #e0c24fff, #b9ec60ff, #73f67dff, #a3e2dbff, #b5d5edff);
+$gradient-bottom-left: linear-gradient(315deg, #224e18ff, #196949ff, #187488ff, #1422a8ff, #810dccff, #bb3b9dff, #d14641ff, #e0c24fff, #b9ec60ff, #73f67dff, #a3e2dbff, #b5d5edff);
+$gradient-radial: radial-gradient(#224e18ff, #196949ff, #187488ff, #1422a8ff, #810dccff, #bb3b9dff, #d14641ff, #e0c24fff, #b9ec60ff, #73f67dff, #a3e2dbff, #b5d5edff);
+
+/* SCSS Map */
+$indigo-mosaic-12-02-map: (
+    "tone-01": #224e18ff,
+    "tone-02": #196949ff,
+    "tone-03": #187488ff,
+    "tone-04": #1422a8ff,
+    "tone-05": #810dccff,
+    "tone-06": #bb3b9dff,
+    "tone-07": #d14641ff,
+    "tone-08": #e0c24fff,
+    "tone-09": #b9ec60ff,
+    "tone-10": #73f67dff,
+    "tone-11": #a3e2dbff,
+    "tone-12": #b5d5edff
+);

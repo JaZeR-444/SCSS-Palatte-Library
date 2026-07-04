@@ -1,0 +1,112 @@
+/*---
+id: fintech-interface-map-11-16
+name: Fintech Interface Map 11-16
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 11
+tags:
+  mood:
+  - semantic
+  - product
+  - ui
+  aesthetic:
+  - Web Design
+intent: A semantic 11-color system mapped for web development roles, states, and surfaces.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--bg-canvas: #131416ff;
+--bg-surface: #434751ff;
+--bg-elevated: #707c8fff;
+--bg-overlay: #aab3c0ff;
+--border-subtle: #e7eaeeff;
+--primary: #294599ff;
+--primary-hover: #7627c4ff;
+--secondary: #31e3a4ff;
+--secondary-hover: #f0ba4cff;
+--accent: #df9286ff;
+--accent-soft: #2087a2ff;
+
+/* CSS HSL */
+--bg-canvas: hsla(218, 6%, 8%, 1);
+--bg-surface: hsla(224, 9%, 29%, 1);
+--bg-elevated: hsla(217, 12%, 50%, 1);
+--bg-overlay: hsla(216, 15%, 71%, 1);
+--border-subtle: hsla(218, 18%, 92%, 1);
+--primary: hsla(225, 58%, 38%, 1);
+--primary-hover: hsla(270, 67%, 46%, 1);
+--secondary: hsla(159, 76%, 54%, 1);
+--secondary-hover: hsla(40, 85%, 62%, 1);
+--accent: hsla(8, 58%, 70%, 1);
+--accent-soft: hsla(192, 67%, 38%, 1);
+}
+
+/* SCSS HEX */
+$bg-canvas: #131416ff;
+$bg-surface: #434751ff;
+$bg-elevated: #707c8fff;
+$bg-overlay: #aab3c0ff;
+$border-subtle: #e7eaeeff;
+$primary: #294599ff;
+$primary-hover: #7627c4ff;
+$secondary: #31e3a4ff;
+$secondary-hover: #f0ba4cff;
+$accent: #df9286ff;
+$accent-soft: #2087a2ff;
+
+/* SCSS HSL */
+$bg-canvas: hsla(218, 6%, 8%, 1);
+$bg-surface: hsla(224, 9%, 29%, 1);
+$bg-elevated: hsla(217, 12%, 50%, 1);
+$bg-overlay: hsla(216, 15%, 71%, 1);
+$border-subtle: hsla(218, 18%, 92%, 1);
+$primary: hsla(225, 58%, 38%, 1);
+$primary-hover: hsla(270, 67%, 46%, 1);
+$secondary: hsla(159, 76%, 54%, 1);
+$secondary-hover: hsla(40, 85%, 62%, 1);
+$accent: hsla(8, 58%, 70%, 1);
+$accent-soft: hsla(192, 67%, 38%, 1);
+
+/* SCSS RGB */
+$bg-canvas: rgba(19, 20, 22, 1);
+$bg-surface: rgba(67, 71, 81, 1);
+$bg-elevated: rgba(112, 124, 143, 1);
+$bg-overlay: rgba(170, 179, 192, 1);
+$border-subtle: rgba(231, 234, 238, 1);
+$primary: rgba(41, 69, 153, 1);
+$primary-hover: rgba(118, 39, 196, 1);
+$secondary: rgba(49, 227, 164, 1);
+$secondary-hover: rgba(240, 186, 76, 1);
+$accent: rgba(223, 146, 134, 1);
+$accent-soft: rgba(32, 135, 162, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #131416ff, #434751ff, #707c8fff, #aab3c0ff, #e7eaeeff, #294599ff, #7627c4ff, #31e3a4ff, #f0ba4cff, #df9286ff, #2087a2ff);
+$gradient-right: linear-gradient(90deg, #131416ff, #434751ff, #707c8fff, #aab3c0ff, #e7eaeeff, #294599ff, #7627c4ff, #31e3a4ff, #f0ba4cff, #df9286ff, #2087a2ff);
+$gradient-bottom: linear-gradient(180deg, #131416ff, #434751ff, #707c8fff, #aab3c0ff, #e7eaeeff, #294599ff, #7627c4ff, #31e3a4ff, #f0ba4cff, #df9286ff, #2087a2ff);
+$gradient-left: linear-gradient(270deg, #131416ff, #434751ff, #707c8fff, #aab3c0ff, #e7eaeeff, #294599ff, #7627c4ff, #31e3a4ff, #f0ba4cff, #df9286ff, #2087a2ff);
+$gradient-top-right: linear-gradient(45deg, #131416ff, #434751ff, #707c8fff, #aab3c0ff, #e7eaeeff, #294599ff, #7627c4ff, #31e3a4ff, #f0ba4cff, #df9286ff, #2087a2ff);
+$gradient-bottom-right: linear-gradient(135deg, #131416ff, #434751ff, #707c8fff, #aab3c0ff, #e7eaeeff, #294599ff, #7627c4ff, #31e3a4ff, #f0ba4cff, #df9286ff, #2087a2ff);
+$gradient-top-left: linear-gradient(225deg, #131416ff, #434751ff, #707c8fff, #aab3c0ff, #e7eaeeff, #294599ff, #7627c4ff, #31e3a4ff, #f0ba4cff, #df9286ff, #2087a2ff);
+$gradient-bottom-left: linear-gradient(315deg, #131416ff, #434751ff, #707c8fff, #aab3c0ff, #e7eaeeff, #294599ff, #7627c4ff, #31e3a4ff, #f0ba4cff, #df9286ff, #2087a2ff);
+$gradient-radial: radial-gradient(#131416ff, #434751ff, #707c8fff, #aab3c0ff, #e7eaeeff, #294599ff, #7627c4ff, #31e3a4ff, #f0ba4cff, #df9286ff, #2087a2ff);
+
+/* SCSS Map */
+$fintech-interface-map-11-16-map: (
+    "bg-canvas": #131416ff,
+    "bg-surface": #434751ff,
+    "bg-elevated": #707c8fff,
+    "bg-overlay": #aab3c0ff,
+    "border-subtle": #e7eaeeff,
+    "primary": #294599ff,
+    "primary-hover": #7627c4ff,
+    "secondary": #31e3a4ff,
+    "secondary-hover": #f0ba4cff,
+    "accent": #df9286ff,
+    "accent-soft": #2087a2ff
+);

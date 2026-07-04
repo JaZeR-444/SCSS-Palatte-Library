@@ -1,0 +1,142 @@
+/*---
+id: fintech-interface-map-16-19
+name: Fintech Interface Map 16-19
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 16
+tags:
+  mood:
+  - semantic
+  - product
+  - ui
+  aesthetic:
+  - Web Design
+intent: A semantic 16-color system mapped for web development roles, states, and surfaces.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--bg-canvas: #131416ff;
+--bg-surface: #2f3137ff;
+--bg-elevated: #4a4f59ff;
+--bg-overlay: #646e7dff;
+--border-subtle: #808a9dff;
+--border-strong: #a2a8b9ff;
+--text-muted: #c4cad4ff;
+--text-base: #e7eaeeff;
+--primary: #294399ff;
+--primary-hover: #8e27c4ff;
+--secondary: #31e399ff;
+--secondary-hover: #f0cc4cff;
+--accent: #df9286ff;
+--accent-soft: #2081a2ff;
+--success: #ce1c83ff;
+--warning: #265eedff;
+
+/* CSS HSL */
+--bg-canvas: hsla(223, 6%, 8%, 1);
+--bg-surface: hsla(227, 8%, 20%, 1);
+--bg-elevated: hsla(221, 9%, 32%, 1);
+--bg-overlay: hsla(215, 11%, 44%, 1);
+--border-subtle: hsla(220, 13%, 56%, 1);
+--border-strong: hsla(223, 15%, 68%, 1);
+--text-muted: hsla(219, 16%, 80%, 1);
+--text-base: hsla(219, 18%, 92%, 1);
+--primary: hsla(226, 58%, 38%, 1);
+--primary-hover: hsla(279, 67%, 46%, 1);
+--secondary: hsla(155, 76%, 54%, 1);
+--secondary-hover: hsla(47, 85%, 62%, 1);
+--accent: hsla(8, 58%, 70%, 1);
+--accent-soft: hsla(195, 67%, 38%, 1);
+--success: hsla(325, 76%, 46%, 1);
+--warning: hsla(223, 85%, 54%, 1);
+}
+
+/* SCSS HEX */
+$bg-canvas: #131416ff;
+$bg-surface: #2f3137ff;
+$bg-elevated: #4a4f59ff;
+$bg-overlay: #646e7dff;
+$border-subtle: #808a9dff;
+$border-strong: #a2a8b9ff;
+$text-muted: #c4cad4ff;
+$text-base: #e7eaeeff;
+$primary: #294399ff;
+$primary-hover: #8e27c4ff;
+$secondary: #31e399ff;
+$secondary-hover: #f0cc4cff;
+$accent: #df9286ff;
+$accent-soft: #2081a2ff;
+$success: #ce1c83ff;
+$warning: #265eedff;
+
+/* SCSS HSL */
+$bg-canvas: hsla(223, 6%, 8%, 1);
+$bg-surface: hsla(227, 8%, 20%, 1);
+$bg-elevated: hsla(221, 9%, 32%, 1);
+$bg-overlay: hsla(215, 11%, 44%, 1);
+$border-subtle: hsla(220, 13%, 56%, 1);
+$border-strong: hsla(223, 15%, 68%, 1);
+$text-muted: hsla(219, 16%, 80%, 1);
+$text-base: hsla(219, 18%, 92%, 1);
+$primary: hsla(226, 58%, 38%, 1);
+$primary-hover: hsla(279, 67%, 46%, 1);
+$secondary: hsla(155, 76%, 54%, 1);
+$secondary-hover: hsla(47, 85%, 62%, 1);
+$accent: hsla(8, 58%, 70%, 1);
+$accent-soft: hsla(195, 67%, 38%, 1);
+$success: hsla(325, 76%, 46%, 1);
+$warning: hsla(223, 85%, 54%, 1);
+
+/* SCSS RGB */
+$bg-canvas: rgba(19, 20, 22, 1);
+$bg-surface: rgba(47, 49, 55, 1);
+$bg-elevated: rgba(74, 79, 89, 1);
+$bg-overlay: rgba(100, 110, 125, 1);
+$border-subtle: rgba(128, 138, 157, 1);
+$border-strong: rgba(162, 168, 185, 1);
+$text-muted: rgba(196, 202, 212, 1);
+$text-base: rgba(231, 234, 238, 1);
+$primary: rgba(41, 67, 153, 1);
+$primary-hover: rgba(142, 39, 196, 1);
+$secondary: rgba(49, 227, 153, 1);
+$secondary-hover: rgba(240, 204, 76, 1);
+$accent: rgba(223, 146, 134, 1);
+$accent-soft: rgba(32, 129, 162, 1);
+$success: rgba(206, 28, 131, 1);
+$warning: rgba(38, 94, 237, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #131416ff, #2f3137ff, #4a4f59ff, #646e7dff, #808a9dff, #a2a8b9ff, #c4cad4ff, #e7eaeeff, #294399ff, #8e27c4ff, #31e399ff, #f0cc4cff, #df9286ff, #2081a2ff, #ce1c83ff, #265eedff);
+$gradient-right: linear-gradient(90deg, #131416ff, #2f3137ff, #4a4f59ff, #646e7dff, #808a9dff, #a2a8b9ff, #c4cad4ff, #e7eaeeff, #294399ff, #8e27c4ff, #31e399ff, #f0cc4cff, #df9286ff, #2081a2ff, #ce1c83ff, #265eedff);
+$gradient-bottom: linear-gradient(180deg, #131416ff, #2f3137ff, #4a4f59ff, #646e7dff, #808a9dff, #a2a8b9ff, #c4cad4ff, #e7eaeeff, #294399ff, #8e27c4ff, #31e399ff, #f0cc4cff, #df9286ff, #2081a2ff, #ce1c83ff, #265eedff);
+$gradient-left: linear-gradient(270deg, #131416ff, #2f3137ff, #4a4f59ff, #646e7dff, #808a9dff, #a2a8b9ff, #c4cad4ff, #e7eaeeff, #294399ff, #8e27c4ff, #31e399ff, #f0cc4cff, #df9286ff, #2081a2ff, #ce1c83ff, #265eedff);
+$gradient-top-right: linear-gradient(45deg, #131416ff, #2f3137ff, #4a4f59ff, #646e7dff, #808a9dff, #a2a8b9ff, #c4cad4ff, #e7eaeeff, #294399ff, #8e27c4ff, #31e399ff, #f0cc4cff, #df9286ff, #2081a2ff, #ce1c83ff, #265eedff);
+$gradient-bottom-right: linear-gradient(135deg, #131416ff, #2f3137ff, #4a4f59ff, #646e7dff, #808a9dff, #a2a8b9ff, #c4cad4ff, #e7eaeeff, #294399ff, #8e27c4ff, #31e399ff, #f0cc4cff, #df9286ff, #2081a2ff, #ce1c83ff, #265eedff);
+$gradient-top-left: linear-gradient(225deg, #131416ff, #2f3137ff, #4a4f59ff, #646e7dff, #808a9dff, #a2a8b9ff, #c4cad4ff, #e7eaeeff, #294399ff, #8e27c4ff, #31e399ff, #f0cc4cff, #df9286ff, #2081a2ff, #ce1c83ff, #265eedff);
+$gradient-bottom-left: linear-gradient(315deg, #131416ff, #2f3137ff, #4a4f59ff, #646e7dff, #808a9dff, #a2a8b9ff, #c4cad4ff, #e7eaeeff, #294399ff, #8e27c4ff, #31e399ff, #f0cc4cff, #df9286ff, #2081a2ff, #ce1c83ff, #265eedff);
+$gradient-radial: radial-gradient(#131416ff, #2f3137ff, #4a4f59ff, #646e7dff, #808a9dff, #a2a8b9ff, #c4cad4ff, #e7eaeeff, #294399ff, #8e27c4ff, #31e399ff, #f0cc4cff, #df9286ff, #2081a2ff, #ce1c83ff, #265eedff);
+
+/* SCSS Map */
+$fintech-interface-map-16-19-map: (
+    "bg-canvas": #131416ff,
+    "bg-surface": #2f3137ff,
+    "bg-elevated": #4a4f59ff,
+    "bg-overlay": #646e7dff,
+    "border-subtle": #808a9dff,
+    "border-strong": #a2a8b9ff,
+    "text-muted": #c4cad4ff,
+    "text-base": #e7eaeeff,
+    "primary": #294399ff,
+    "primary-hover": #8e27c4ff,
+    "secondary": #31e399ff,
+    "secondary-hover": #f0cc4cff,
+    "accent": #df9286ff,
+    "accent-soft": #2081a2ff,
+    "success": #ce1c83ff,
+    "warning": #265eedff
+);

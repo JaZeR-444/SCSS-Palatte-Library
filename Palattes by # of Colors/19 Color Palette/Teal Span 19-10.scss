@@ -1,0 +1,160 @@
+/*---
+id: teal-span-19-10
+name: Teal Span 19-10
+author: JaZeR-444
+version: 1.0.0
+category: Singular Hue Span
+count: 19
+tags:
+  mood:
+  - focused
+  - tonal
+  - cohesive
+  aesthetic:
+  - Hue Span
+intent: A single-hue 19-step span for systematic tonal design and theming.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--span-01: #101917ff;
+--span-02: #162b27ff;
+--span-03: #1b3e35ff;
+--span-04: #1e5349ff;
+--span-05: #1f695cff;
+--span-06: #208069ff;
+--span-07: #1f997fff;
+--span-08: #1cb495ff;
+--span-09: #16d1b3ff;
+--span-10: #0ef1c7ff;
+--span-11: #31e6bfff;
+--span-12: #4ee1c1ff;
+--span-13: #64e2c8ff;
+--span-14: #81ded0ff;
+--span-15: #96e0d2ff;
+--span-16: #aee0d6ff;
+--span-17: #c4e2dbff;
+--span-18: #d6e8e5ff;
+--span-19: #e6efedff;
+
+/* CSS HSL */
+--span-01: hsla(168, 23%, 8%, 1);
+--span-02: hsla(168, 32%, 13%, 1);
+--span-03: hsla(168, 40%, 17%, 1);
+--span-04: hsla(168, 47%, 22%, 1);
+--span-05: hsla(168, 54%, 27%, 1);
+--span-06: hsla(168, 60%, 31%, 1);
+--span-07: hsla(168, 67%, 36%, 1);
+--span-08: hsla(168, 73%, 41%, 1);
+--span-09: hsla(168, 81%, 45%, 1);
+--span-10: hsla(168, 89%, 50%, 1);
+--span-11: hsla(168, 78%, 55%, 1);
+--span-12: hsla(168, 71%, 59%, 1);
+--span-13: hsla(168, 69%, 64%, 1);
+--span-14: hsla(168, 58%, 69%, 1);
+--span-15: hsla(168, 55%, 73%, 1);
+--span-16: hsla(168, 44%, 78%, 1);
+--span-17: hsla(168, 35%, 83%, 1);
+--span-18: hsla(168, 27%, 87%, 1);
+--span-19: hsla(168, 21%, 92%, 1);
+}
+
+/* SCSS HEX */
+$span-01: #101917ff;
+$span-02: #162b27ff;
+$span-03: #1b3e35ff;
+$span-04: #1e5349ff;
+$span-05: #1f695cff;
+$span-06: #208069ff;
+$span-07: #1f997fff;
+$span-08: #1cb495ff;
+$span-09: #16d1b3ff;
+$span-10: #0ef1c7ff;
+$span-11: #31e6bfff;
+$span-12: #4ee1c1ff;
+$span-13: #64e2c8ff;
+$span-14: #81ded0ff;
+$span-15: #96e0d2ff;
+$span-16: #aee0d6ff;
+$span-17: #c4e2dbff;
+$span-18: #d6e8e5ff;
+$span-19: #e6efedff;
+
+/* SCSS HSL */
+$span-01: hsla(168, 23%, 8%, 1);
+$span-02: hsla(168, 32%, 13%, 1);
+$span-03: hsla(168, 40%, 17%, 1);
+$span-04: hsla(168, 47%, 22%, 1);
+$span-05: hsla(168, 54%, 27%, 1);
+$span-06: hsla(168, 60%, 31%, 1);
+$span-07: hsla(168, 67%, 36%, 1);
+$span-08: hsla(168, 73%, 41%, 1);
+$span-09: hsla(168, 81%, 45%, 1);
+$span-10: hsla(168, 89%, 50%, 1);
+$span-11: hsla(168, 78%, 55%, 1);
+$span-12: hsla(168, 71%, 59%, 1);
+$span-13: hsla(168, 69%, 64%, 1);
+$span-14: hsla(168, 58%, 69%, 1);
+$span-15: hsla(168, 55%, 73%, 1);
+$span-16: hsla(168, 44%, 78%, 1);
+$span-17: hsla(168, 35%, 83%, 1);
+$span-18: hsla(168, 27%, 87%, 1);
+$span-19: hsla(168, 21%, 92%, 1);
+
+/* SCSS RGB */
+$span-01: rgba(16, 25, 23, 1);
+$span-02: rgba(22, 43, 39, 1);
+$span-03: rgba(27, 62, 53, 1);
+$span-04: rgba(30, 83, 73, 1);
+$span-05: rgba(31, 105, 92, 1);
+$span-06: rgba(32, 128, 105, 1);
+$span-07: rgba(31, 153, 127, 1);
+$span-08: rgba(28, 180, 149, 1);
+$span-09: rgba(22, 209, 179, 1);
+$span-10: rgba(14, 241, 199, 1);
+$span-11: rgba(49, 230, 191, 1);
+$span-12: rgba(78, 225, 193, 1);
+$span-13: rgba(100, 226, 200, 1);
+$span-14: rgba(129, 222, 208, 1);
+$span-15: rgba(150, 224, 210, 1);
+$span-16: rgba(174, 224, 214, 1);
+$span-17: rgba(196, 226, 219, 1);
+$span-18: rgba(214, 232, 229, 1);
+$span-19: rgba(230, 239, 237, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #101917ff, #162b27ff, #1b3e35ff, #1e5349ff, #1f695cff, #208069ff, #1f997fff, #1cb495ff, #16d1b3ff, #0ef1c7ff, #31e6bfff, #4ee1c1ff, #64e2c8ff, #81ded0ff, #96e0d2ff, #aee0d6ff, #c4e2dbff, #d6e8e5ff, #e6efedff);
+$gradient-right: linear-gradient(90deg, #101917ff, #162b27ff, #1b3e35ff, #1e5349ff, #1f695cff, #208069ff, #1f997fff, #1cb495ff, #16d1b3ff, #0ef1c7ff, #31e6bfff, #4ee1c1ff, #64e2c8ff, #81ded0ff, #96e0d2ff, #aee0d6ff, #c4e2dbff, #d6e8e5ff, #e6efedff);
+$gradient-bottom: linear-gradient(180deg, #101917ff, #162b27ff, #1b3e35ff, #1e5349ff, #1f695cff, #208069ff, #1f997fff, #1cb495ff, #16d1b3ff, #0ef1c7ff, #31e6bfff, #4ee1c1ff, #64e2c8ff, #81ded0ff, #96e0d2ff, #aee0d6ff, #c4e2dbff, #d6e8e5ff, #e6efedff);
+$gradient-left: linear-gradient(270deg, #101917ff, #162b27ff, #1b3e35ff, #1e5349ff, #1f695cff, #208069ff, #1f997fff, #1cb495ff, #16d1b3ff, #0ef1c7ff, #31e6bfff, #4ee1c1ff, #64e2c8ff, #81ded0ff, #96e0d2ff, #aee0d6ff, #c4e2dbff, #d6e8e5ff, #e6efedff);
+$gradient-top-right: linear-gradient(45deg, #101917ff, #162b27ff, #1b3e35ff, #1e5349ff, #1f695cff, #208069ff, #1f997fff, #1cb495ff, #16d1b3ff, #0ef1c7ff, #31e6bfff, #4ee1c1ff, #64e2c8ff, #81ded0ff, #96e0d2ff, #aee0d6ff, #c4e2dbff, #d6e8e5ff, #e6efedff);
+$gradient-bottom-right: linear-gradient(135deg, #101917ff, #162b27ff, #1b3e35ff, #1e5349ff, #1f695cff, #208069ff, #1f997fff, #1cb495ff, #16d1b3ff, #0ef1c7ff, #31e6bfff, #4ee1c1ff, #64e2c8ff, #81ded0ff, #96e0d2ff, #aee0d6ff, #c4e2dbff, #d6e8e5ff, #e6efedff);
+$gradient-top-left: linear-gradient(225deg, #101917ff, #162b27ff, #1b3e35ff, #1e5349ff, #1f695cff, #208069ff, #1f997fff, #1cb495ff, #16d1b3ff, #0ef1c7ff, #31e6bfff, #4ee1c1ff, #64e2c8ff, #81ded0ff, #96e0d2ff, #aee0d6ff, #c4e2dbff, #d6e8e5ff, #e6efedff);
+$gradient-bottom-left: linear-gradient(315deg, #101917ff, #162b27ff, #1b3e35ff, #1e5349ff, #1f695cff, #208069ff, #1f997fff, #1cb495ff, #16d1b3ff, #0ef1c7ff, #31e6bfff, #4ee1c1ff, #64e2c8ff, #81ded0ff, #96e0d2ff, #aee0d6ff, #c4e2dbff, #d6e8e5ff, #e6efedff);
+$gradient-radial: radial-gradient(#101917ff, #162b27ff, #1b3e35ff, #1e5349ff, #1f695cff, #208069ff, #1f997fff, #1cb495ff, #16d1b3ff, #0ef1c7ff, #31e6bfff, #4ee1c1ff, #64e2c8ff, #81ded0ff, #96e0d2ff, #aee0d6ff, #c4e2dbff, #d6e8e5ff, #e6efedff);
+
+/* SCSS Map */
+$teal-span-19-10-map: (
+    "span-01": #101917ff,
+    "span-02": #162b27ff,
+    "span-03": #1b3e35ff,
+    "span-04": #1e5349ff,
+    "span-05": #1f695cff,
+    "span-06": #208069ff,
+    "span-07": #1f997fff,
+    "span-08": #1cb495ff,
+    "span-09": #16d1b3ff,
+    "span-10": #0ef1c7ff,
+    "span-11": #31e6bfff,
+    "span-12": #4ee1c1ff,
+    "span-13": #64e2c8ff,
+    "span-14": #81ded0ff,
+    "span-15": #96e0d2ff,
+    "span-16": #aee0d6ff,
+    "span-17": #c4e2dbff,
+    "span-18": #d6e8e5ff,
+    "span-19": #e6efedff
+);

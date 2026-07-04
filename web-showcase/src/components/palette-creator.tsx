@@ -25,7 +25,7 @@ const CATEGORIES = [
   "Minimalist"
 ];
 
-const STANDARD_COUNTS = [3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 21];
+const STANDARD_COUNTS = Array.from({ length: 33 }, (_, i) => i + 3);
 
 // Generate procedural cohesive colors (analogous or monochromatic)
 function generateCohesiveColors(count: number): Color[] {

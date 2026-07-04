@@ -1,0 +1,166 @@
+/*---
+id: fintech-interface-map-20-15
+name: Fintech Interface Map 20-15
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 20
+tags:
+  mood:
+  - semantic
+  - product
+  - ui
+  aesthetic:
+  - Web Design
+intent: A semantic 20-color system mapped for web development roles, states, and surfaces.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--bg-canvas: #131416ff;
+--bg-surface: #2c2f33ff;
+--bg-elevated: #434751ff;
+--bg-overlay: #5a636fff;
+--border-subtle: #70798fff;
+--border-strong: #8d95a8ff;
+--text-muted: #aab4c0ff;
+--text-base: #c8cbd8ff;
+--text-strong: #e7eaeeff;
+--primary: #295299ff;
+--primary-hover: #8827c4ff;
+--secondary: #31e3afff;
+--secondary-hover: #f0b64cff;
+--accent: #df9986ff;
+--accent-soft: #207fa2ff;
+--success: #ce1c80ff;
+--warning: #266fedff;
+--danger: #af66d6ff;
+--info: #7fe6c5ff;
+--link: #ab7f17ff;
+
+/* CSS HSL */
+--bg-canvas: hsla(222, 6%, 8%, 1);
+--bg-surface: hsla(214, 8%, 18%, 1);
+--bg-elevated: hsla(222, 9%, 29%, 1);
+--bg-overlay: hsla(214, 10%, 40%, 1);
+--border-subtle: hsla(223, 12%, 50%, 1);
+--border-strong: hsla(223, 14%, 60%, 1);
+--text-muted: hsla(213, 15%, 71%, 1);
+--text-base: hsla(227, 16%, 82%, 1);
+--text-strong: hsla(218, 18%, 92%, 1);
+--primary: hsla(218, 58%, 38%, 1);
+--primary-hover: hsla(277, 67%, 46%, 1);
+--secondary: hsla(163, 76%, 54%, 1);
+--secondary-hover: hsla(39, 85%, 62%, 1);
+--accent: hsla(13, 58%, 70%, 1);
+--accent-soft: hsla(196, 67%, 38%, 1);
+--success: hsla(326, 76%, 46%, 1);
+--warning: hsla(218, 85%, 54%, 1);
+--danger: hsla(279, 58%, 62%, 1);
+--info: hsla(161, 67%, 70%, 1);
+--link: hsla(42, 76%, 38%, 1);
+}
+
+/* SCSS HEX */
+$bg-canvas: #131416ff;
+$bg-surface: #2c2f33ff;
+$bg-elevated: #434751ff;
+$bg-overlay: #5a636fff;
+$border-subtle: #70798fff;
+$border-strong: #8d95a8ff;
+$text-muted: #aab4c0ff;
+$text-base: #c8cbd8ff;
+$text-strong: #e7eaeeff;
+$primary: #295299ff;
+$primary-hover: #8827c4ff;
+$secondary: #31e3afff;
+$secondary-hover: #f0b64cff;
+$accent: #df9986ff;
+$accent-soft: #207fa2ff;
+$success: #ce1c80ff;
+$warning: #266fedff;
+$danger: #af66d6ff;
+$info: #7fe6c5ff;
+$link: #ab7f17ff;
+
+/* SCSS HSL */
+$bg-canvas: hsla(222, 6%, 8%, 1);
+$bg-surface: hsla(214, 8%, 18%, 1);
+$bg-elevated: hsla(222, 9%, 29%, 1);
+$bg-overlay: hsla(214, 10%, 40%, 1);
+$border-subtle: hsla(223, 12%, 50%, 1);
+$border-strong: hsla(223, 14%, 60%, 1);
+$text-muted: hsla(213, 15%, 71%, 1);
+$text-base: hsla(227, 16%, 82%, 1);
+$text-strong: hsla(218, 18%, 92%, 1);
+$primary: hsla(218, 58%, 38%, 1);
+$primary-hover: hsla(277, 67%, 46%, 1);
+$secondary: hsla(163, 76%, 54%, 1);
+$secondary-hover: hsla(39, 85%, 62%, 1);
+$accent: hsla(13, 58%, 70%, 1);
+$accent-soft: hsla(196, 67%, 38%, 1);
+$success: hsla(326, 76%, 46%, 1);
+$warning: hsla(218, 85%, 54%, 1);
+$danger: hsla(279, 58%, 62%, 1);
+$info: hsla(161, 67%, 70%, 1);
+$link: hsla(42, 76%, 38%, 1);
+
+/* SCSS RGB */
+$bg-canvas: rgba(19, 20, 22, 1);
+$bg-surface: rgba(44, 47, 51, 1);
+$bg-elevated: rgba(67, 71, 81, 1);
+$bg-overlay: rgba(90, 99, 111, 1);
+$border-subtle: rgba(112, 121, 143, 1);
+$border-strong: rgba(141, 149, 168, 1);
+$text-muted: rgba(170, 180, 192, 1);
+$text-base: rgba(200, 203, 216, 1);
+$text-strong: rgba(231, 234, 238, 1);
+$primary: rgba(41, 82, 153, 1);
+$primary-hover: rgba(136, 39, 196, 1);
+$secondary: rgba(49, 227, 175, 1);
+$secondary-hover: rgba(240, 182, 76, 1);
+$accent: rgba(223, 153, 134, 1);
+$accent-soft: rgba(32, 127, 162, 1);
+$success: rgba(206, 28, 128, 1);
+$warning: rgba(38, 111, 237, 1);
+$danger: rgba(175, 102, 214, 1);
+$info: rgba(127, 230, 197, 1);
+$link: rgba(171, 127, 23, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #131416ff, #2c2f33ff, #434751ff, #5a636fff, #70798fff, #8d95a8ff, #aab4c0ff, #c8cbd8ff, #e7eaeeff, #295299ff, #8827c4ff, #31e3afff, #f0b64cff, #df9986ff, #207fa2ff, #ce1c80ff, #266fedff, #af66d6ff, #7fe6c5ff, #ab7f17ff);
+$gradient-right: linear-gradient(90deg, #131416ff, #2c2f33ff, #434751ff, #5a636fff, #70798fff, #8d95a8ff, #aab4c0ff, #c8cbd8ff, #e7eaeeff, #295299ff, #8827c4ff, #31e3afff, #f0b64cff, #df9986ff, #207fa2ff, #ce1c80ff, #266fedff, #af66d6ff, #7fe6c5ff, #ab7f17ff);
+$gradient-bottom: linear-gradient(180deg, #131416ff, #2c2f33ff, #434751ff, #5a636fff, #70798fff, #8d95a8ff, #aab4c0ff, #c8cbd8ff, #e7eaeeff, #295299ff, #8827c4ff, #31e3afff, #f0b64cff, #df9986ff, #207fa2ff, #ce1c80ff, #266fedff, #af66d6ff, #7fe6c5ff, #ab7f17ff);
+$gradient-left: linear-gradient(270deg, #131416ff, #2c2f33ff, #434751ff, #5a636fff, #70798fff, #8d95a8ff, #aab4c0ff, #c8cbd8ff, #e7eaeeff, #295299ff, #8827c4ff, #31e3afff, #f0b64cff, #df9986ff, #207fa2ff, #ce1c80ff, #266fedff, #af66d6ff, #7fe6c5ff, #ab7f17ff);
+$gradient-top-right: linear-gradient(45deg, #131416ff, #2c2f33ff, #434751ff, #5a636fff, #70798fff, #8d95a8ff, #aab4c0ff, #c8cbd8ff, #e7eaeeff, #295299ff, #8827c4ff, #31e3afff, #f0b64cff, #df9986ff, #207fa2ff, #ce1c80ff, #266fedff, #af66d6ff, #7fe6c5ff, #ab7f17ff);
+$gradient-bottom-right: linear-gradient(135deg, #131416ff, #2c2f33ff, #434751ff, #5a636fff, #70798fff, #8d95a8ff, #aab4c0ff, #c8cbd8ff, #e7eaeeff, #295299ff, #8827c4ff, #31e3afff, #f0b64cff, #df9986ff, #207fa2ff, #ce1c80ff, #266fedff, #af66d6ff, #7fe6c5ff, #ab7f17ff);
+$gradient-top-left: linear-gradient(225deg, #131416ff, #2c2f33ff, #434751ff, #5a636fff, #70798fff, #8d95a8ff, #aab4c0ff, #c8cbd8ff, #e7eaeeff, #295299ff, #8827c4ff, #31e3afff, #f0b64cff, #df9986ff, #207fa2ff, #ce1c80ff, #266fedff, #af66d6ff, #7fe6c5ff, #ab7f17ff);
+$gradient-bottom-left: linear-gradient(315deg, #131416ff, #2c2f33ff, #434751ff, #5a636fff, #70798fff, #8d95a8ff, #aab4c0ff, #c8cbd8ff, #e7eaeeff, #295299ff, #8827c4ff, #31e3afff, #f0b64cff, #df9986ff, #207fa2ff, #ce1c80ff, #266fedff, #af66d6ff, #7fe6c5ff, #ab7f17ff);
+$gradient-radial: radial-gradient(#131416ff, #2c2f33ff, #434751ff, #5a636fff, #70798fff, #8d95a8ff, #aab4c0ff, #c8cbd8ff, #e7eaeeff, #295299ff, #8827c4ff, #31e3afff, #f0b64cff, #df9986ff, #207fa2ff, #ce1c80ff, #266fedff, #af66d6ff, #7fe6c5ff, #ab7f17ff);
+
+/* SCSS Map */
+$fintech-interface-map-20-15-map: (
+    "bg-canvas": #131416ff,
+    "bg-surface": #2c2f33ff,
+    "bg-elevated": #434751ff,
+    "bg-overlay": #5a636fff,
+    "border-subtle": #70798fff,
+    "border-strong": #8d95a8ff,
+    "text-muted": #aab4c0ff,
+    "text-base": #c8cbd8ff,
+    "text-strong": #e7eaeeff,
+    "primary": #295299ff,
+    "primary-hover": #8827c4ff,
+    "secondary": #31e3afff,
+    "secondary-hover": #f0b64cff,
+    "accent": #df9986ff,
+    "accent-soft": #207fa2ff,
+    "success": #ce1c80ff,
+    "warning": #266fedff,
+    "danger": #af66d6ff,
+    "info": #7fe6c5ff,
+    "link": #ab7f17ff
+);

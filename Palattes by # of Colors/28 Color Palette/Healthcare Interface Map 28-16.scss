@@ -1,0 +1,214 @@
+/*---
+id: healthcare-interface-map-28-16
+name: Healthcare Interface Map 28-16
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 28
+tags:
+  mood:
+  - semantic
+  - product
+  - ui
+  aesthetic:
+  - Web Design
+intent: A semantic 28-color system mapped for web development roles, states, and surfaces.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--bg-canvas: #131416ff;
+--bg-surface: #242529ff;
+--bg-elevated: #34373dff;
+--bg-overlay: #434751ff;
+--border-subtle: #535965ff;
+--border-strong: #62677aff;
+--text-muted: #707d8fff;
+--text-base: #8390a0ff;
+--text-strong: #96a2b0ff;
+--text-inverse: #aab3c0ff;
+--neutral-11: #bec6d0ff;
+--neutral-12: #d2d7dfff;
+--neutral-13: #e7eaeeff;
+--primary: #295499ff;
+--primary-hover: #8927c4ff;
+--secondary: #31e3a8ff;
+--secondary-hover: #f0af4cff;
+--accent: #df9286ff;
+--accent-soft: #207ea2ff;
+--success: #ce1c78ff;
+--warning: #2676edff;
+--danger: #a866d6ff;
+--info: #7fe6bbff;
+--link: #ab7517ff;
+--focus-ring: #d91d12ff;
+--support-13: #46a9ceff;
+--support-14: #df5d9eff;
+--support-15: #78a9edff;
+
+/* CSS HSL */
+--bg-canvas: hsla(217, 6%, 8%, 1);
+--bg-surface: hsla(227, 7%, 15%, 1);
+--bg-elevated: hsla(215, 8%, 22%, 1);
+--bg-overlay: hsla(224, 9%, 29%, 1);
+--border-subtle: hsla(218, 10%, 36%, 1);
+--border-strong: hsla(228, 11%, 43%, 1);
+--text-muted: hsla(214, 12%, 50%, 1);
+--text-base: hsla(214, 13%, 57%, 1);
+--text-strong: hsla(214, 14%, 64%, 1);
+--text-inverse: hsla(215, 15%, 71%, 1);
+--neutral-11: hsla(212, 16%, 78%, 1);
+--neutral-12: hsla(220, 17%, 85%, 1);
+--neutral-13: hsla(215, 18%, 92%, 1);
+--primary: hsla(217, 58%, 38%, 1);
+--primary-hover: hsla(278, 67%, 46%, 1);
+--secondary: hsla(160, 76%, 54%, 1);
+--secondary-hover: hsla(36, 85%, 62%, 1);
+--accent: hsla(8, 58%, 70%, 1);
+--accent-soft: hsla(197, 67%, 38%, 1);
+--success: hsla(329, 76%, 46%, 1);
+--warning: hsla(216, 85%, 54%, 1);
+--danger: hsla(275, 58%, 62%, 1);
+--info: hsla(155, 67%, 70%, 1);
+--link: hsla(38, 76%, 38%, 1);
+--focus-ring: hsla(4, 85%, 46%, 1);
+--support-13: hsla(196, 58%, 54%, 1);
+--support-14: hsla(330, 67%, 62%, 1);
+--support-15: hsla(215, 76%, 70%, 1);
+}
+
+/* SCSS HEX */
+$bg-canvas: #131416ff;
+$bg-surface: #242529ff;
+$bg-elevated: #34373dff;
+$bg-overlay: #434751ff;
+$border-subtle: #535965ff;
+$border-strong: #62677aff;
+$text-muted: #707d8fff;
+$text-base: #8390a0ff;
+$text-strong: #96a2b0ff;
+$text-inverse: #aab3c0ff;
+$neutral-11: #bec6d0ff;
+$neutral-12: #d2d7dfff;
+$neutral-13: #e7eaeeff;
+$primary: #295499ff;
+$primary-hover: #8927c4ff;
+$secondary: #31e3a8ff;
+$secondary-hover: #f0af4cff;
+$accent: #df9286ff;
+$accent-soft: #207ea2ff;
+$success: #ce1c78ff;
+$warning: #2676edff;
+$danger: #a866d6ff;
+$info: #7fe6bbff;
+$link: #ab7517ff;
+$focus-ring: #d91d12ff;
+$support-13: #46a9ceff;
+$support-14: #df5d9eff;
+$support-15: #78a9edff;
+
+/* SCSS HSL */
+$bg-canvas: hsla(217, 6%, 8%, 1);
+$bg-surface: hsla(227, 7%, 15%, 1);
+$bg-elevated: hsla(215, 8%, 22%, 1);
+$bg-overlay: hsla(224, 9%, 29%, 1);
+$border-subtle: hsla(218, 10%, 36%, 1);
+$border-strong: hsla(228, 11%, 43%, 1);
+$text-muted: hsla(214, 12%, 50%, 1);
+$text-base: hsla(214, 13%, 57%, 1);
+$text-strong: hsla(214, 14%, 64%, 1);
+$text-inverse: hsla(215, 15%, 71%, 1);
+$neutral-11: hsla(212, 16%, 78%, 1);
+$neutral-12: hsla(220, 17%, 85%, 1);
+$neutral-13: hsla(215, 18%, 92%, 1);
+$primary: hsla(217, 58%, 38%, 1);
+$primary-hover: hsla(278, 67%, 46%, 1);
+$secondary: hsla(160, 76%, 54%, 1);
+$secondary-hover: hsla(36, 85%, 62%, 1);
+$accent: hsla(8, 58%, 70%, 1);
+$accent-soft: hsla(197, 67%, 38%, 1);
+$success: hsla(329, 76%, 46%, 1);
+$warning: hsla(216, 85%, 54%, 1);
+$danger: hsla(275, 58%, 62%, 1);
+$info: hsla(155, 67%, 70%, 1);
+$link: hsla(38, 76%, 38%, 1);
+$focus-ring: hsla(4, 85%, 46%, 1);
+$support-13: hsla(196, 58%, 54%, 1);
+$support-14: hsla(330, 67%, 62%, 1);
+$support-15: hsla(215, 76%, 70%, 1);
+
+/* SCSS RGB */
+$bg-canvas: rgba(19, 20, 22, 1);
+$bg-surface: rgba(36, 37, 41, 1);
+$bg-elevated: rgba(52, 55, 61, 1);
+$bg-overlay: rgba(67, 71, 81, 1);
+$border-subtle: rgba(83, 89, 101, 1);
+$border-strong: rgba(98, 103, 122, 1);
+$text-muted: rgba(112, 125, 143, 1);
+$text-base: rgba(131, 144, 160, 1);
+$text-strong: rgba(150, 162, 176, 1);
+$text-inverse: rgba(170, 179, 192, 1);
+$neutral-11: rgba(190, 198, 208, 1);
+$neutral-12: rgba(210, 215, 223, 1);
+$neutral-13: rgba(231, 234, 238, 1);
+$primary: rgba(41, 84, 153, 1);
+$primary-hover: rgba(137, 39, 196, 1);
+$secondary: rgba(49, 227, 168, 1);
+$secondary-hover: rgba(240, 175, 76, 1);
+$accent: rgba(223, 146, 134, 1);
+$accent-soft: rgba(32, 126, 162, 1);
+$success: rgba(206, 28, 120, 1);
+$warning: rgba(38, 118, 237, 1);
+$danger: rgba(168, 102, 214, 1);
+$info: rgba(127, 230, 187, 1);
+$link: rgba(171, 117, 23, 1);
+$focus-ring: rgba(217, 29, 18, 1);
+$support-13: rgba(70, 169, 206, 1);
+$support-14: rgba(223, 93, 158, 1);
+$support-15: rgba(120, 169, 237, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #131416ff, #242529ff, #34373dff, #434751ff, #535965ff, #62677aff, #707d8fff, #8390a0ff, #96a2b0ff, #aab3c0ff, #bec6d0ff, #d2d7dfff, #e7eaeeff, #295499ff, #8927c4ff, #31e3a8ff, #f0af4cff, #df9286ff, #207ea2ff, #ce1c78ff, #2676edff, #a866d6ff, #7fe6bbff, #ab7517ff, #d91d12ff, #46a9ceff, #df5d9eff, #78a9edff);
+$gradient-right: linear-gradient(90deg, #131416ff, #242529ff, #34373dff, #434751ff, #535965ff, #62677aff, #707d8fff, #8390a0ff, #96a2b0ff, #aab3c0ff, #bec6d0ff, #d2d7dfff, #e7eaeeff, #295499ff, #8927c4ff, #31e3a8ff, #f0af4cff, #df9286ff, #207ea2ff, #ce1c78ff, #2676edff, #a866d6ff, #7fe6bbff, #ab7517ff, #d91d12ff, #46a9ceff, #df5d9eff, #78a9edff);
+$gradient-bottom: linear-gradient(180deg, #131416ff, #242529ff, #34373dff, #434751ff, #535965ff, #62677aff, #707d8fff, #8390a0ff, #96a2b0ff, #aab3c0ff, #bec6d0ff, #d2d7dfff, #e7eaeeff, #295499ff, #8927c4ff, #31e3a8ff, #f0af4cff, #df9286ff, #207ea2ff, #ce1c78ff, #2676edff, #a866d6ff, #7fe6bbff, #ab7517ff, #d91d12ff, #46a9ceff, #df5d9eff, #78a9edff);
+$gradient-left: linear-gradient(270deg, #131416ff, #242529ff, #34373dff, #434751ff, #535965ff, #62677aff, #707d8fff, #8390a0ff, #96a2b0ff, #aab3c0ff, #bec6d0ff, #d2d7dfff, #e7eaeeff, #295499ff, #8927c4ff, #31e3a8ff, #f0af4cff, #df9286ff, #207ea2ff, #ce1c78ff, #2676edff, #a866d6ff, #7fe6bbff, #ab7517ff, #d91d12ff, #46a9ceff, #df5d9eff, #78a9edff);
+$gradient-top-right: linear-gradient(45deg, #131416ff, #242529ff, #34373dff, #434751ff, #535965ff, #62677aff, #707d8fff, #8390a0ff, #96a2b0ff, #aab3c0ff, #bec6d0ff, #d2d7dfff, #e7eaeeff, #295499ff, #8927c4ff, #31e3a8ff, #f0af4cff, #df9286ff, #207ea2ff, #ce1c78ff, #2676edff, #a866d6ff, #7fe6bbff, #ab7517ff, #d91d12ff, #46a9ceff, #df5d9eff, #78a9edff);
+$gradient-bottom-right: linear-gradient(135deg, #131416ff, #242529ff, #34373dff, #434751ff, #535965ff, #62677aff, #707d8fff, #8390a0ff, #96a2b0ff, #aab3c0ff, #bec6d0ff, #d2d7dfff, #e7eaeeff, #295499ff, #8927c4ff, #31e3a8ff, #f0af4cff, #df9286ff, #207ea2ff, #ce1c78ff, #2676edff, #a866d6ff, #7fe6bbff, #ab7517ff, #d91d12ff, #46a9ceff, #df5d9eff, #78a9edff);
+$gradient-top-left: linear-gradient(225deg, #131416ff, #242529ff, #34373dff, #434751ff, #535965ff, #62677aff, #707d8fff, #8390a0ff, #96a2b0ff, #aab3c0ff, #bec6d0ff, #d2d7dfff, #e7eaeeff, #295499ff, #8927c4ff, #31e3a8ff, #f0af4cff, #df9286ff, #207ea2ff, #ce1c78ff, #2676edff, #a866d6ff, #7fe6bbff, #ab7517ff, #d91d12ff, #46a9ceff, #df5d9eff, #78a9edff);
+$gradient-bottom-left: linear-gradient(315deg, #131416ff, #242529ff, #34373dff, #434751ff, #535965ff, #62677aff, #707d8fff, #8390a0ff, #96a2b0ff, #aab3c0ff, #bec6d0ff, #d2d7dfff, #e7eaeeff, #295499ff, #8927c4ff, #31e3a8ff, #f0af4cff, #df9286ff, #207ea2ff, #ce1c78ff, #2676edff, #a866d6ff, #7fe6bbff, #ab7517ff, #d91d12ff, #46a9ceff, #df5d9eff, #78a9edff);
+$gradient-radial: radial-gradient(#131416ff, #242529ff, #34373dff, #434751ff, #535965ff, #62677aff, #707d8fff, #8390a0ff, #96a2b0ff, #aab3c0ff, #bec6d0ff, #d2d7dfff, #e7eaeeff, #295499ff, #8927c4ff, #31e3a8ff, #f0af4cff, #df9286ff, #207ea2ff, #ce1c78ff, #2676edff, #a866d6ff, #7fe6bbff, #ab7517ff, #d91d12ff, #46a9ceff, #df5d9eff, #78a9edff);
+
+/* SCSS Map */
+$healthcare-interface-map-28-16-map: (
+    "bg-canvas": #131416ff,
+    "bg-surface": #242529ff,
+    "bg-elevated": #34373dff,
+    "bg-overlay": #434751ff,
+    "border-subtle": #535965ff,
+    "border-strong": #62677aff,
+    "text-muted": #707d8fff,
+    "text-base": #8390a0ff,
+    "text-strong": #96a2b0ff,
+    "text-inverse": #aab3c0ff,
+    "neutral-11": #bec6d0ff,
+    "neutral-12": #d2d7dfff,
+    "neutral-13": #e7eaeeff,
+    "primary": #295499ff,
+    "primary-hover": #8927c4ff,
+    "secondary": #31e3a8ff,
+    "secondary-hover": #f0af4cff,
+    "accent": #df9286ff,
+    "accent-soft": #207ea2ff,
+    "success": #ce1c78ff,
+    "warning": #2676edff,
+    "danger": #a866d6ff,
+    "info": #7fe6bbff,
+    "link": #ab7517ff,
+    "focus-ring": #d91d12ff,
+    "support-13": #46a9ceff,
+    "support-14": #df5d9eff,
+    "support-15": #78a9edff
+);

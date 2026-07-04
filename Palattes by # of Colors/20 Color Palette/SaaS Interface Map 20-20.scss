@@ -1,0 +1,166 @@
+/*---
+id: saas-interface-map-20-20
+name: SaaS Interface Map 20-20
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 20
+tags:
+  mood:
+  - semantic
+  - product
+  - ui
+  aesthetic:
+  - Web Design
+intent: A semantic 20-color system mapped for web development roles, states, and surfaces.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--bg-canvas: #131416ff;
+--bg-surface: #2c2d33ff;
+--bg-elevated: #434951ff;
+--bg-overlay: #5a5f6fff;
+--border-subtle: #707b8fff;
+--border-strong: #8d99a8ff;
+--text-muted: #aab1c0ff;
+--text-base: #c8cbd8ff;
+--text-strong: #e7eaeeff;
+--primary: #294a99ff;
+--primary-hover: #8f27c4ff;
+--secondary: #31e3a3ff;
+--secondary-hover: #f0ca4cff;
+--accent: #df9986ff;
+--accent-soft: #207ba2ff;
+--success: #ce1c78ff;
+--warning: #2678edff;
+--danger: #a266d6ff;
+--info: #7fe6c9ff;
+--link: #ab7917ff;
+
+/* CSS HSL */
+--bg-canvas: hsla(215, 6%, 8%, 1);
+--bg-surface: hsla(225, 8%, 18%, 1);
+--bg-elevated: hsla(213, 9%, 29%, 1);
+--bg-overlay: hsla(227, 10%, 40%, 1);
+--border-subtle: hsla(218, 12%, 50%, 1);
+--border-strong: hsla(214, 14%, 60%, 1);
+--text-muted: hsla(220, 15%, 71%, 1);
+--text-base: hsla(227, 16%, 82%, 1);
+--text-strong: hsla(218, 18%, 92%, 1);
+--primary: hsla(222, 58%, 38%, 1);
+--primary-hover: hsla(280, 67%, 46%, 1);
+--secondary: hsla(158, 76%, 54%, 1);
+--secondary-hover: hsla(46, 85%, 62%, 1);
+--accent: hsla(13, 58%, 70%, 1);
+--accent-soft: hsla(198, 67%, 38%, 1);
+--success: hsla(329, 76%, 46%, 1);
+--warning: hsla(215, 85%, 54%, 1);
+--danger: hsla(272, 58%, 62%, 1);
+--info: hsla(163, 67%, 70%, 1);
+--link: hsla(40, 76%, 38%, 1);
+}
+
+/* SCSS HEX */
+$bg-canvas: #131416ff;
+$bg-surface: #2c2d33ff;
+$bg-elevated: #434951ff;
+$bg-overlay: #5a5f6fff;
+$border-subtle: #707b8fff;
+$border-strong: #8d99a8ff;
+$text-muted: #aab1c0ff;
+$text-base: #c8cbd8ff;
+$text-strong: #e7eaeeff;
+$primary: #294a99ff;
+$primary-hover: #8f27c4ff;
+$secondary: #31e3a3ff;
+$secondary-hover: #f0ca4cff;
+$accent: #df9986ff;
+$accent-soft: #207ba2ff;
+$success: #ce1c78ff;
+$warning: #2678edff;
+$danger: #a266d6ff;
+$info: #7fe6c9ff;
+$link: #ab7917ff;
+
+/* SCSS HSL */
+$bg-canvas: hsla(215, 6%, 8%, 1);
+$bg-surface: hsla(225, 8%, 18%, 1);
+$bg-elevated: hsla(213, 9%, 29%, 1);
+$bg-overlay: hsla(227, 10%, 40%, 1);
+$border-subtle: hsla(218, 12%, 50%, 1);
+$border-strong: hsla(214, 14%, 60%, 1);
+$text-muted: hsla(220, 15%, 71%, 1);
+$text-base: hsla(227, 16%, 82%, 1);
+$text-strong: hsla(218, 18%, 92%, 1);
+$primary: hsla(222, 58%, 38%, 1);
+$primary-hover: hsla(280, 67%, 46%, 1);
+$secondary: hsla(158, 76%, 54%, 1);
+$secondary-hover: hsla(46, 85%, 62%, 1);
+$accent: hsla(13, 58%, 70%, 1);
+$accent-soft: hsla(198, 67%, 38%, 1);
+$success: hsla(329, 76%, 46%, 1);
+$warning: hsla(215, 85%, 54%, 1);
+$danger: hsla(272, 58%, 62%, 1);
+$info: hsla(163, 67%, 70%, 1);
+$link: hsla(40, 76%, 38%, 1);
+
+/* SCSS RGB */
+$bg-canvas: rgba(19, 20, 22, 1);
+$bg-surface: rgba(44, 45, 51, 1);
+$bg-elevated: rgba(67, 73, 81, 1);
+$bg-overlay: rgba(90, 95, 111, 1);
+$border-subtle: rgba(112, 123, 143, 1);
+$border-strong: rgba(141, 153, 168, 1);
+$text-muted: rgba(170, 177, 192, 1);
+$text-base: rgba(200, 203, 216, 1);
+$text-strong: rgba(231, 234, 238, 1);
+$primary: rgba(41, 74, 153, 1);
+$primary-hover: rgba(143, 39, 196, 1);
+$secondary: rgba(49, 227, 163, 1);
+$secondary-hover: rgba(240, 202, 76, 1);
+$accent: rgba(223, 153, 134, 1);
+$accent-soft: rgba(32, 123, 162, 1);
+$success: rgba(206, 28, 120, 1);
+$warning: rgba(38, 120, 237, 1);
+$danger: rgba(162, 102, 214, 1);
+$info: rgba(127, 230, 201, 1);
+$link: rgba(171, 121, 23, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #131416ff, #2c2d33ff, #434951ff, #5a5f6fff, #707b8fff, #8d99a8ff, #aab1c0ff, #c8cbd8ff, #e7eaeeff, #294a99ff, #8f27c4ff, #31e3a3ff, #f0ca4cff, #df9986ff, #207ba2ff, #ce1c78ff, #2678edff, #a266d6ff, #7fe6c9ff, #ab7917ff);
+$gradient-right: linear-gradient(90deg, #131416ff, #2c2d33ff, #434951ff, #5a5f6fff, #707b8fff, #8d99a8ff, #aab1c0ff, #c8cbd8ff, #e7eaeeff, #294a99ff, #8f27c4ff, #31e3a3ff, #f0ca4cff, #df9986ff, #207ba2ff, #ce1c78ff, #2678edff, #a266d6ff, #7fe6c9ff, #ab7917ff);
+$gradient-bottom: linear-gradient(180deg, #131416ff, #2c2d33ff, #434951ff, #5a5f6fff, #707b8fff, #8d99a8ff, #aab1c0ff, #c8cbd8ff, #e7eaeeff, #294a99ff, #8f27c4ff, #31e3a3ff, #f0ca4cff, #df9986ff, #207ba2ff, #ce1c78ff, #2678edff, #a266d6ff, #7fe6c9ff, #ab7917ff);
+$gradient-left: linear-gradient(270deg, #131416ff, #2c2d33ff, #434951ff, #5a5f6fff, #707b8fff, #8d99a8ff, #aab1c0ff, #c8cbd8ff, #e7eaeeff, #294a99ff, #8f27c4ff, #31e3a3ff, #f0ca4cff, #df9986ff, #207ba2ff, #ce1c78ff, #2678edff, #a266d6ff, #7fe6c9ff, #ab7917ff);
+$gradient-top-right: linear-gradient(45deg, #131416ff, #2c2d33ff, #434951ff, #5a5f6fff, #707b8fff, #8d99a8ff, #aab1c0ff, #c8cbd8ff, #e7eaeeff, #294a99ff, #8f27c4ff, #31e3a3ff, #f0ca4cff, #df9986ff, #207ba2ff, #ce1c78ff, #2678edff, #a266d6ff, #7fe6c9ff, #ab7917ff);
+$gradient-bottom-right: linear-gradient(135deg, #131416ff, #2c2d33ff, #434951ff, #5a5f6fff, #707b8fff, #8d99a8ff, #aab1c0ff, #c8cbd8ff, #e7eaeeff, #294a99ff, #8f27c4ff, #31e3a3ff, #f0ca4cff, #df9986ff, #207ba2ff, #ce1c78ff, #2678edff, #a266d6ff, #7fe6c9ff, #ab7917ff);
+$gradient-top-left: linear-gradient(225deg, #131416ff, #2c2d33ff, #434951ff, #5a5f6fff, #707b8fff, #8d99a8ff, #aab1c0ff, #c8cbd8ff, #e7eaeeff, #294a99ff, #8f27c4ff, #31e3a3ff, #f0ca4cff, #df9986ff, #207ba2ff, #ce1c78ff, #2678edff, #a266d6ff, #7fe6c9ff, #ab7917ff);
+$gradient-bottom-left: linear-gradient(315deg, #131416ff, #2c2d33ff, #434951ff, #5a5f6fff, #707b8fff, #8d99a8ff, #aab1c0ff, #c8cbd8ff, #e7eaeeff, #294a99ff, #8f27c4ff, #31e3a3ff, #f0ca4cff, #df9986ff, #207ba2ff, #ce1c78ff, #2678edff, #a266d6ff, #7fe6c9ff, #ab7917ff);
+$gradient-radial: radial-gradient(#131416ff, #2c2d33ff, #434951ff, #5a5f6fff, #707b8fff, #8d99a8ff, #aab1c0ff, #c8cbd8ff, #e7eaeeff, #294a99ff, #8f27c4ff, #31e3a3ff, #f0ca4cff, #df9986ff, #207ba2ff, #ce1c78ff, #2678edff, #a266d6ff, #7fe6c9ff, #ab7917ff);
+
+/* SCSS Map */
+$saas-interface-map-20-20-map: (
+    "bg-canvas": #131416ff,
+    "bg-surface": #2c2d33ff,
+    "bg-elevated": #434951ff,
+    "bg-overlay": #5a5f6fff,
+    "border-subtle": #707b8fff,
+    "border-strong": #8d99a8ff,
+    "text-muted": #aab1c0ff,
+    "text-base": #c8cbd8ff,
+    "text-strong": #e7eaeeff,
+    "primary": #294a99ff,
+    "primary-hover": #8f27c4ff,
+    "secondary": #31e3a3ff,
+    "secondary-hover": #f0ca4cff,
+    "accent": #df9986ff,
+    "accent-soft": #207ba2ff,
+    "success": #ce1c78ff,
+    "warning": #2678edff,
+    "danger": #a266d6ff,
+    "info": #7fe6c9ff,
+    "link": #ab7917ff
+);

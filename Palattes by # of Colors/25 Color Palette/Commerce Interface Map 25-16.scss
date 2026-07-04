@@ -1,0 +1,196 @@
+/*---
+id: commerce-interface-map-25-16
+name: Commerce Interface Map 25-16
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 25
+tags:
+  mood:
+  - semantic
+  - product
+  - ui
+  aesthetic:
+  - Web Design
+intent: A semantic 25-color system mapped for web development roles, states, and surfaces.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--bg-canvas: #131416ff;
+--bg-surface: #27292dff;
+--bg-elevated: #3a3e45ff;
+--bg-overlay: #4d545dff;
+--border-subtle: #5f6776ff;
+--border-strong: #707b8fff;
+--text-muted: #8791a3ff;
+--text-base: #9ea5b7ff;
+--text-strong: #b6bbcaff;
+--text-inverse: #ced2dcff;
+--neutral-11: #e7e9eeff;
+--primary: #294799ff;
+--primary-hover: #7827c4ff;
+--secondary: #31e39dff;
+--secondary-hover: #f0c24cff;
+--accent: #df8f86ff;
+--accent-soft: #2079a2ff;
+--success: #ce1c6aff;
+--warning: #265bedff;
+--danger: #a766d6ff;
+--info: #7fe6c4ff;
+--link: #ab8d17ff;
+--focus-ring: #d92a12ff;
+--support-13: #46acceff;
+--support-14: #df5d97ff;
+
+/* CSS HSL */
+--bg-canvas: hsla(224, 6%, 8%, 1);
+--bg-surface: hsla(220, 7%, 16%, 1);
+--bg-elevated: hsla(215, 8%, 25%, 1);
+--bg-overlay: hsla(214, 10%, 33%, 1);
+--border-subtle: hsla(219, 11%, 42%, 1);
+--border-strong: hsla(220, 12%, 50%, 1);
+--text-muted: hsla(219, 13%, 58%, 1);
+--text-base: hsla(224, 14%, 67%, 1);
+--text-strong: hsla(226, 16%, 75%, 1);
+--text-inverse: hsla(223, 17%, 84%, 1);
+--neutral-11: hsla(219, 18%, 92%, 1);
+--primary: hsla(224, 58%, 38%, 1);
+--primary-hover: hsla(271, 67%, 46%, 1);
+--secondary: hsla(157, 76%, 54%, 1);
+--secondary-hover: hsla(43, 85%, 62%, 1);
+--accent: hsla(6, 58%, 70%, 1);
+--accent-soft: hsla(199, 67%, 38%, 1);
+--success: hsla(334, 76%, 46%, 1);
+--warning: hsla(224, 85%, 54%, 1);
+--danger: hsla(275, 58%, 62%, 1);
+--info: hsla(160, 67%, 70%, 1);
+--link: hsla(48, 76%, 38%, 1);
+--focus-ring: hsla(7, 85%, 46%, 1);
+--support-13: hsla(195, 58%, 54%, 1);
+--support-14: hsla(333, 67%, 62%, 1);
+}
+
+/* SCSS HEX */
+$bg-canvas: #131416ff;
+$bg-surface: #27292dff;
+$bg-elevated: #3a3e45ff;
+$bg-overlay: #4d545dff;
+$border-subtle: #5f6776ff;
+$border-strong: #707b8fff;
+$text-muted: #8791a3ff;
+$text-base: #9ea5b7ff;
+$text-strong: #b6bbcaff;
+$text-inverse: #ced2dcff;
+$neutral-11: #e7e9eeff;
+$primary: #294799ff;
+$primary-hover: #7827c4ff;
+$secondary: #31e39dff;
+$secondary-hover: #f0c24cff;
+$accent: #df8f86ff;
+$accent-soft: #2079a2ff;
+$success: #ce1c6aff;
+$warning: #265bedff;
+$danger: #a766d6ff;
+$info: #7fe6c4ff;
+$link: #ab8d17ff;
+$focus-ring: #d92a12ff;
+$support-13: #46acceff;
+$support-14: #df5d97ff;
+
+/* SCSS HSL */
+$bg-canvas: hsla(224, 6%, 8%, 1);
+$bg-surface: hsla(220, 7%, 16%, 1);
+$bg-elevated: hsla(215, 8%, 25%, 1);
+$bg-overlay: hsla(214, 10%, 33%, 1);
+$border-subtle: hsla(219, 11%, 42%, 1);
+$border-strong: hsla(220, 12%, 50%, 1);
+$text-muted: hsla(219, 13%, 58%, 1);
+$text-base: hsla(224, 14%, 67%, 1);
+$text-strong: hsla(226, 16%, 75%, 1);
+$text-inverse: hsla(223, 17%, 84%, 1);
+$neutral-11: hsla(219, 18%, 92%, 1);
+$primary: hsla(224, 58%, 38%, 1);
+$primary-hover: hsla(271, 67%, 46%, 1);
+$secondary: hsla(157, 76%, 54%, 1);
+$secondary-hover: hsla(43, 85%, 62%, 1);
+$accent: hsla(6, 58%, 70%, 1);
+$accent-soft: hsla(199, 67%, 38%, 1);
+$success: hsla(334, 76%, 46%, 1);
+$warning: hsla(224, 85%, 54%, 1);
+$danger: hsla(275, 58%, 62%, 1);
+$info: hsla(160, 67%, 70%, 1);
+$link: hsla(48, 76%, 38%, 1);
+$focus-ring: hsla(7, 85%, 46%, 1);
+$support-13: hsla(195, 58%, 54%, 1);
+$support-14: hsla(333, 67%, 62%, 1);
+
+/* SCSS RGB */
+$bg-canvas: rgba(19, 20, 22, 1);
+$bg-surface: rgba(39, 41, 45, 1);
+$bg-elevated: rgba(58, 62, 69, 1);
+$bg-overlay: rgba(77, 84, 93, 1);
+$border-subtle: rgba(95, 103, 118, 1);
+$border-strong: rgba(112, 123, 143, 1);
+$text-muted: rgba(135, 145, 163, 1);
+$text-base: rgba(158, 165, 183, 1);
+$text-strong: rgba(182, 187, 202, 1);
+$text-inverse: rgba(206, 210, 220, 1);
+$neutral-11: rgba(231, 233, 238, 1);
+$primary: rgba(41, 71, 153, 1);
+$primary-hover: rgba(120, 39, 196, 1);
+$secondary: rgba(49, 227, 157, 1);
+$secondary-hover: rgba(240, 194, 76, 1);
+$accent: rgba(223, 143, 134, 1);
+$accent-soft: rgba(32, 121, 162, 1);
+$success: rgba(206, 28, 106, 1);
+$warning: rgba(38, 91, 237, 1);
+$danger: rgba(167, 102, 214, 1);
+$info: rgba(127, 230, 196, 1);
+$link: rgba(171, 141, 23, 1);
+$focus-ring: rgba(217, 42, 18, 1);
+$support-13: rgba(70, 172, 206, 1);
+$support-14: rgba(223, 93, 151, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #131416ff, #27292dff, #3a3e45ff, #4d545dff, #5f6776ff, #707b8fff, #8791a3ff, #9ea5b7ff, #b6bbcaff, #ced2dcff, #e7e9eeff, #294799ff, #7827c4ff, #31e39dff, #f0c24cff, #df8f86ff, #2079a2ff, #ce1c6aff, #265bedff, #a766d6ff, #7fe6c4ff, #ab8d17ff, #d92a12ff, #46acceff, #df5d97ff);
+$gradient-right: linear-gradient(90deg, #131416ff, #27292dff, #3a3e45ff, #4d545dff, #5f6776ff, #707b8fff, #8791a3ff, #9ea5b7ff, #b6bbcaff, #ced2dcff, #e7e9eeff, #294799ff, #7827c4ff, #31e39dff, #f0c24cff, #df8f86ff, #2079a2ff, #ce1c6aff, #265bedff, #a766d6ff, #7fe6c4ff, #ab8d17ff, #d92a12ff, #46acceff, #df5d97ff);
+$gradient-bottom: linear-gradient(180deg, #131416ff, #27292dff, #3a3e45ff, #4d545dff, #5f6776ff, #707b8fff, #8791a3ff, #9ea5b7ff, #b6bbcaff, #ced2dcff, #e7e9eeff, #294799ff, #7827c4ff, #31e39dff, #f0c24cff, #df8f86ff, #2079a2ff, #ce1c6aff, #265bedff, #a766d6ff, #7fe6c4ff, #ab8d17ff, #d92a12ff, #46acceff, #df5d97ff);
+$gradient-left: linear-gradient(270deg, #131416ff, #27292dff, #3a3e45ff, #4d545dff, #5f6776ff, #707b8fff, #8791a3ff, #9ea5b7ff, #b6bbcaff, #ced2dcff, #e7e9eeff, #294799ff, #7827c4ff, #31e39dff, #f0c24cff, #df8f86ff, #2079a2ff, #ce1c6aff, #265bedff, #a766d6ff, #7fe6c4ff, #ab8d17ff, #d92a12ff, #46acceff, #df5d97ff);
+$gradient-top-right: linear-gradient(45deg, #131416ff, #27292dff, #3a3e45ff, #4d545dff, #5f6776ff, #707b8fff, #8791a3ff, #9ea5b7ff, #b6bbcaff, #ced2dcff, #e7e9eeff, #294799ff, #7827c4ff, #31e39dff, #f0c24cff, #df8f86ff, #2079a2ff, #ce1c6aff, #265bedff, #a766d6ff, #7fe6c4ff, #ab8d17ff, #d92a12ff, #46acceff, #df5d97ff);
+$gradient-bottom-right: linear-gradient(135deg, #131416ff, #27292dff, #3a3e45ff, #4d545dff, #5f6776ff, #707b8fff, #8791a3ff, #9ea5b7ff, #b6bbcaff, #ced2dcff, #e7e9eeff, #294799ff, #7827c4ff, #31e39dff, #f0c24cff, #df8f86ff, #2079a2ff, #ce1c6aff, #265bedff, #a766d6ff, #7fe6c4ff, #ab8d17ff, #d92a12ff, #46acceff, #df5d97ff);
+$gradient-top-left: linear-gradient(225deg, #131416ff, #27292dff, #3a3e45ff, #4d545dff, #5f6776ff, #707b8fff, #8791a3ff, #9ea5b7ff, #b6bbcaff, #ced2dcff, #e7e9eeff, #294799ff, #7827c4ff, #31e39dff, #f0c24cff, #df8f86ff, #2079a2ff, #ce1c6aff, #265bedff, #a766d6ff, #7fe6c4ff, #ab8d17ff, #d92a12ff, #46acceff, #df5d97ff);
+$gradient-bottom-left: linear-gradient(315deg, #131416ff, #27292dff, #3a3e45ff, #4d545dff, #5f6776ff, #707b8fff, #8791a3ff, #9ea5b7ff, #b6bbcaff, #ced2dcff, #e7e9eeff, #294799ff, #7827c4ff, #31e39dff, #f0c24cff, #df8f86ff, #2079a2ff, #ce1c6aff, #265bedff, #a766d6ff, #7fe6c4ff, #ab8d17ff, #d92a12ff, #46acceff, #df5d97ff);
+$gradient-radial: radial-gradient(#131416ff, #27292dff, #3a3e45ff, #4d545dff, #5f6776ff, #707b8fff, #8791a3ff, #9ea5b7ff, #b6bbcaff, #ced2dcff, #e7e9eeff, #294799ff, #7827c4ff, #31e39dff, #f0c24cff, #df8f86ff, #2079a2ff, #ce1c6aff, #265bedff, #a766d6ff, #7fe6c4ff, #ab8d17ff, #d92a12ff, #46acceff, #df5d97ff);
+
+/* SCSS Map */
+$commerce-interface-map-25-16-map: (
+    "bg-canvas": #131416ff,
+    "bg-surface": #27292dff,
+    "bg-elevated": #3a3e45ff,
+    "bg-overlay": #4d545dff,
+    "border-subtle": #5f6776ff,
+    "border-strong": #707b8fff,
+    "text-muted": #8791a3ff,
+    "text-base": #9ea5b7ff,
+    "text-strong": #b6bbcaff,
+    "text-inverse": #ced2dcff,
+    "neutral-11": #e7e9eeff,
+    "primary": #294799ff,
+    "primary-hover": #7827c4ff,
+    "secondary": #31e39dff,
+    "secondary-hover": #f0c24cff,
+    "accent": #df8f86ff,
+    "accent-soft": #2079a2ff,
+    "success": #ce1c6aff,
+    "warning": #265bedff,
+    "danger": #a766d6ff,
+    "info": #7fe6c4ff,
+    "link": #ab8d17ff,
+    "focus-ring": #d92a12ff,
+    "support-13": #46acceff,
+    "support-14": #df5d97ff
+);

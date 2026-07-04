@@ -1,0 +1,118 @@
+/*---
+id: healthcare-interface-map-12-16
+name: Healthcare Interface Map 12-16
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 12
+tags:
+  mood:
+  - semantic
+  - product
+  - ui
+  aesthetic:
+  - Web Design
+intent: A semantic 12-color system mapped for web development roles, states, and surfaces.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--bg-canvas: #131416ff;
+--bg-surface: #3a3d45ff;
+--bg-elevated: #5f6876ff;
+--bg-overlay: #878ea3ff;
+--border-subtle: #b6bbcaff;
+--border-strong: #e7eaeeff;
+--primary: #294399ff;
+--primary-hover: #8d27c4ff;
+--secondary: #31e3b5ff;
+--secondary-hover: #f0cd4cff;
+--accent: #df9986ff;
+--accent-soft: #207aa2ff;
+
+/* CSS HSL */
+--bg-canvas: hsla(225, 6%, 8%, 1);
+--bg-surface: hsla(224, 8%, 25%, 1);
+--bg-elevated: hsla(216, 11%, 42%, 1);
+--bg-overlay: hsla(225, 13%, 58%, 1);
+--border-subtle: hsla(226, 16%, 75%, 1);
+--border-strong: hsla(214, 18%, 92%, 1);
+--primary: hsla(226, 58%, 38%, 1);
+--primary-hover: hsla(279, 67%, 46%, 1);
+--secondary: hsla(165, 76%, 54%, 1);
+--secondary-hover: hsla(47, 85%, 62%, 1);
+--accent: hsla(13, 58%, 70%, 1);
+--accent-soft: hsla(199, 67%, 38%, 1);
+}
+
+/* SCSS HEX */
+$bg-canvas: #131416ff;
+$bg-surface: #3a3d45ff;
+$bg-elevated: #5f6876ff;
+$bg-overlay: #878ea3ff;
+$border-subtle: #b6bbcaff;
+$border-strong: #e7eaeeff;
+$primary: #294399ff;
+$primary-hover: #8d27c4ff;
+$secondary: #31e3b5ff;
+$secondary-hover: #f0cd4cff;
+$accent: #df9986ff;
+$accent-soft: #207aa2ff;
+
+/* SCSS HSL */
+$bg-canvas: hsla(225, 6%, 8%, 1);
+$bg-surface: hsla(224, 8%, 25%, 1);
+$bg-elevated: hsla(216, 11%, 42%, 1);
+$bg-overlay: hsla(225, 13%, 58%, 1);
+$border-subtle: hsla(226, 16%, 75%, 1);
+$border-strong: hsla(214, 18%, 92%, 1);
+$primary: hsla(226, 58%, 38%, 1);
+$primary-hover: hsla(279, 67%, 46%, 1);
+$secondary: hsla(165, 76%, 54%, 1);
+$secondary-hover: hsla(47, 85%, 62%, 1);
+$accent: hsla(13, 58%, 70%, 1);
+$accent-soft: hsla(199, 67%, 38%, 1);
+
+/* SCSS RGB */
+$bg-canvas: rgba(19, 20, 22, 1);
+$bg-surface: rgba(58, 61, 69, 1);
+$bg-elevated: rgba(95, 104, 118, 1);
+$bg-overlay: rgba(135, 142, 163, 1);
+$border-subtle: rgba(182, 187, 202, 1);
+$border-strong: rgba(231, 234, 238, 1);
+$primary: rgba(41, 67, 153, 1);
+$primary-hover: rgba(141, 39, 196, 1);
+$secondary: rgba(49, 227, 181, 1);
+$secondary-hover: rgba(240, 205, 76, 1);
+$accent: rgba(223, 153, 134, 1);
+$accent-soft: rgba(32, 122, 162, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #131416ff, #3a3d45ff, #5f6876ff, #878ea3ff, #b6bbcaff, #e7eaeeff, #294399ff, #8d27c4ff, #31e3b5ff, #f0cd4cff, #df9986ff, #207aa2ff);
+$gradient-right: linear-gradient(90deg, #131416ff, #3a3d45ff, #5f6876ff, #878ea3ff, #b6bbcaff, #e7eaeeff, #294399ff, #8d27c4ff, #31e3b5ff, #f0cd4cff, #df9986ff, #207aa2ff);
+$gradient-bottom: linear-gradient(180deg, #131416ff, #3a3d45ff, #5f6876ff, #878ea3ff, #b6bbcaff, #e7eaeeff, #294399ff, #8d27c4ff, #31e3b5ff, #f0cd4cff, #df9986ff, #207aa2ff);
+$gradient-left: linear-gradient(270deg, #131416ff, #3a3d45ff, #5f6876ff, #878ea3ff, #b6bbcaff, #e7eaeeff, #294399ff, #8d27c4ff, #31e3b5ff, #f0cd4cff, #df9986ff, #207aa2ff);
+$gradient-top-right: linear-gradient(45deg, #131416ff, #3a3d45ff, #5f6876ff, #878ea3ff, #b6bbcaff, #e7eaeeff, #294399ff, #8d27c4ff, #31e3b5ff, #f0cd4cff, #df9986ff, #207aa2ff);
+$gradient-bottom-right: linear-gradient(135deg, #131416ff, #3a3d45ff, #5f6876ff, #878ea3ff, #b6bbcaff, #e7eaeeff, #294399ff, #8d27c4ff, #31e3b5ff, #f0cd4cff, #df9986ff, #207aa2ff);
+$gradient-top-left: linear-gradient(225deg, #131416ff, #3a3d45ff, #5f6876ff, #878ea3ff, #b6bbcaff, #e7eaeeff, #294399ff, #8d27c4ff, #31e3b5ff, #f0cd4cff, #df9986ff, #207aa2ff);
+$gradient-bottom-left: linear-gradient(315deg, #131416ff, #3a3d45ff, #5f6876ff, #878ea3ff, #b6bbcaff, #e7eaeeff, #294399ff, #8d27c4ff, #31e3b5ff, #f0cd4cff, #df9986ff, #207aa2ff);
+$gradient-radial: radial-gradient(#131416ff, #3a3d45ff, #5f6876ff, #878ea3ff, #b6bbcaff, #e7eaeeff, #294399ff, #8d27c4ff, #31e3b5ff, #f0cd4cff, #df9986ff, #207aa2ff);
+
+/* SCSS Map */
+$healthcare-interface-map-12-16-map: (
+    "bg-canvas": #131416ff,
+    "bg-surface": #3a3d45ff,
+    "bg-elevated": #5f6876ff,
+    "bg-overlay": #878ea3ff,
+    "border-subtle": #b6bbcaff,
+    "border-strong": #e7eaeeff,
+    "primary": #294399ff,
+    "primary-hover": #8d27c4ff,
+    "secondary": #31e3b5ff,
+    "secondary-hover": #f0cd4cff,
+    "accent": #df9986ff,
+    "accent-soft": #207aa2ff
+);

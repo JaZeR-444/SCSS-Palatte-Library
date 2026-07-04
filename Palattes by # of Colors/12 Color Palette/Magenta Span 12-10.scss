@@ -1,0 +1,118 @@
+/*---
+id: magenta-span-12-10
+name: Magenta Span 12-10
+author: JaZeR-444
+version: 1.0.0
+category: Singular Hue Span
+count: 12
+tags:
+  mood:
+  - focused
+  - tonal
+  - cohesive
+  aesthetic:
+  - Hue Span
+intent: A single-hue 12-step span for systematic tonal design and theming.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--span-01: #191016ff;
+--span-02: #351b2eff;
+--span-03: #552246ff;
+--span-04: #7b235dff;
+--span-05: #aa1b78ff;
+--span-06: #d814a6ff;
+--span-07: #e72cb2ff;
+--span-08: #de5bb2ff;
+--span-09: #db85c4ff;
+--span-10: #e1a6d2ff;
+--span-11: #e4cadcff;
+--span-12: #f0e5ecff;
+
+/* CSS HSL */
+--span-01: hsla(318, 20%, 8%, 1);
+--span-02: hsla(318, 33%, 16%, 1);
+--span-03: hsla(318, 43%, 23%, 1);
+--span-04: hsla(318, 56%, 31%, 1);
+--span-05: hsla(318, 73%, 39%, 1);
+--span-06: hsla(318, 83%, 46%, 1);
+--span-07: hsla(318, 79%, 54%, 1);
+--span-08: hsla(318, 67%, 61%, 1);
+--span-09: hsla(318, 55%, 69%, 1);
+--span-10: hsla(318, 50%, 77%, 1);
+--span-11: hsla(318, 32%, 84%, 1);
+--span-12: hsla(318, 25%, 92%, 1);
+}
+
+/* SCSS HEX */
+$span-01: #191016ff;
+$span-02: #351b2eff;
+$span-03: #552246ff;
+$span-04: #7b235dff;
+$span-05: #aa1b78ff;
+$span-06: #d814a6ff;
+$span-07: #e72cb2ff;
+$span-08: #de5bb2ff;
+$span-09: #db85c4ff;
+$span-10: #e1a6d2ff;
+$span-11: #e4cadcff;
+$span-12: #f0e5ecff;
+
+/* SCSS HSL */
+$span-01: hsla(318, 20%, 8%, 1);
+$span-02: hsla(318, 33%, 16%, 1);
+$span-03: hsla(318, 43%, 23%, 1);
+$span-04: hsla(318, 56%, 31%, 1);
+$span-05: hsla(318, 73%, 39%, 1);
+$span-06: hsla(318, 83%, 46%, 1);
+$span-07: hsla(318, 79%, 54%, 1);
+$span-08: hsla(318, 67%, 61%, 1);
+$span-09: hsla(318, 55%, 69%, 1);
+$span-10: hsla(318, 50%, 77%, 1);
+$span-11: hsla(318, 32%, 84%, 1);
+$span-12: hsla(318, 25%, 92%, 1);
+
+/* SCSS RGB */
+$span-01: rgba(25, 16, 22, 1);
+$span-02: rgba(53, 27, 46, 1);
+$span-03: rgba(85, 34, 70, 1);
+$span-04: rgba(123, 35, 93, 1);
+$span-05: rgba(170, 27, 120, 1);
+$span-06: rgba(216, 20, 166, 1);
+$span-07: rgba(231, 44, 178, 1);
+$span-08: rgba(222, 91, 178, 1);
+$span-09: rgba(219, 133, 196, 1);
+$span-10: rgba(225, 166, 210, 1);
+$span-11: rgba(228, 202, 220, 1);
+$span-12: rgba(240, 229, 236, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #191016ff, #351b2eff, #552246ff, #7b235dff, #aa1b78ff, #d814a6ff, #e72cb2ff, #de5bb2ff, #db85c4ff, #e1a6d2ff, #e4cadcff, #f0e5ecff);
+$gradient-right: linear-gradient(90deg, #191016ff, #351b2eff, #552246ff, #7b235dff, #aa1b78ff, #d814a6ff, #e72cb2ff, #de5bb2ff, #db85c4ff, #e1a6d2ff, #e4cadcff, #f0e5ecff);
+$gradient-bottom: linear-gradient(180deg, #191016ff, #351b2eff, #552246ff, #7b235dff, #aa1b78ff, #d814a6ff, #e72cb2ff, #de5bb2ff, #db85c4ff, #e1a6d2ff, #e4cadcff, #f0e5ecff);
+$gradient-left: linear-gradient(270deg, #191016ff, #351b2eff, #552246ff, #7b235dff, #aa1b78ff, #d814a6ff, #e72cb2ff, #de5bb2ff, #db85c4ff, #e1a6d2ff, #e4cadcff, #f0e5ecff);
+$gradient-top-right: linear-gradient(45deg, #191016ff, #351b2eff, #552246ff, #7b235dff, #aa1b78ff, #d814a6ff, #e72cb2ff, #de5bb2ff, #db85c4ff, #e1a6d2ff, #e4cadcff, #f0e5ecff);
+$gradient-bottom-right: linear-gradient(135deg, #191016ff, #351b2eff, #552246ff, #7b235dff, #aa1b78ff, #d814a6ff, #e72cb2ff, #de5bb2ff, #db85c4ff, #e1a6d2ff, #e4cadcff, #f0e5ecff);
+$gradient-top-left: linear-gradient(225deg, #191016ff, #351b2eff, #552246ff, #7b235dff, #aa1b78ff, #d814a6ff, #e72cb2ff, #de5bb2ff, #db85c4ff, #e1a6d2ff, #e4cadcff, #f0e5ecff);
+$gradient-bottom-left: linear-gradient(315deg, #191016ff, #351b2eff, #552246ff, #7b235dff, #aa1b78ff, #d814a6ff, #e72cb2ff, #de5bb2ff, #db85c4ff, #e1a6d2ff, #e4cadcff, #f0e5ecff);
+$gradient-radial: radial-gradient(#191016ff, #351b2eff, #552246ff, #7b235dff, #aa1b78ff, #d814a6ff, #e72cb2ff, #de5bb2ff, #db85c4ff, #e1a6d2ff, #e4cadcff, #f0e5ecff);
+
+/* SCSS Map */
+$magenta-span-12-10-map: (
+    "span-01": #191016ff,
+    "span-02": #351b2eff,
+    "span-03": #552246ff,
+    "span-04": #7b235dff,
+    "span-05": #aa1b78ff,
+    "span-06": #d814a6ff,
+    "span-07": #e72cb2ff,
+    "span-08": #de5bb2ff,
+    "span-09": #db85c4ff,
+    "span-10": #e1a6d2ff,
+    "span-11": #e4cadcff,
+    "span-12": #f0e5ecff
+);

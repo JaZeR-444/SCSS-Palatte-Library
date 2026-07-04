@@ -1,0 +1,172 @@
+/*---
+id: healthcare-interface-map-21-15
+name: Healthcare Interface Map 21-15
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 21
+tags:
+  mood:
+  - semantic
+  - product
+  - ui
+  aesthetic:
+  - Web Design
+intent: A semantic 21-color system mapped for web development roles, states, and surfaces.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--bg-canvas: #131416ff;
+--bg-surface: #2c2d33ff;
+--bg-elevated: #434751ff;
+--bg-overlay: #5a606fff;
+--border-subtle: #707d8fff;
+--border-strong: #8d93a8ff;
+--text-muted: #aab2c0ff;
+--text-base: #c8ced8ff;
+--text-strong: #e7e9eeff;
+--primary: #294f99ff;
+--primary-hover: #8227c4ff;
+--secondary: #31e3a3ff;
+--secondary-hover: #f0cc4cff;
+--accent: #df9786ff;
+--accent-soft: #2082a2ff;
+--success: #ce1c6aff;
+--warning: #265aedff;
+--danger: #a466d6ff;
+--info: #7fe6c1ff;
+--link: #ab7817ff;
+--focus-ring: #d91912ff;
+
+/* CSS HSL */
+--bg-canvas: hsla(221, 6%, 8%, 1);
+--bg-surface: hsla(227, 8%, 18%, 1);
+--bg-elevated: hsla(221, 9%, 29%, 1);
+--bg-overlay: hsla(224, 10%, 40%, 1);
+--border-subtle: hsla(215, 12%, 50%, 1);
+--border-strong: hsla(225, 14%, 60%, 1);
+--text-muted: hsla(217, 15%, 71%, 1);
+--text-base: hsla(218, 16%, 82%, 1);
+--text-strong: hsla(224, 18%, 92%, 1);
+--primary: hsla(220, 58%, 38%, 1);
+--primary-hover: hsla(275, 67%, 46%, 1);
+--secondary: hsla(158, 76%, 54%, 1);
+--secondary-hover: hsla(47, 85%, 62%, 1);
+--accent: hsla(12, 58%, 70%, 1);
+--accent-soft: hsla(195, 67%, 38%, 1);
+--success: hsla(334, 76%, 46%, 1);
+--warning: hsla(224, 85%, 54%, 1);
+--danger: hsla(273, 58%, 62%, 1);
+--info: hsla(159, 67%, 70%, 1);
+--link: hsla(39, 76%, 38%, 1);
+--focus-ring: hsla(2, 85%, 46%, 1);
+}
+
+/* SCSS HEX */
+$bg-canvas: #131416ff;
+$bg-surface: #2c2d33ff;
+$bg-elevated: #434751ff;
+$bg-overlay: #5a606fff;
+$border-subtle: #707d8fff;
+$border-strong: #8d93a8ff;
+$text-muted: #aab2c0ff;
+$text-base: #c8ced8ff;
+$text-strong: #e7e9eeff;
+$primary: #294f99ff;
+$primary-hover: #8227c4ff;
+$secondary: #31e3a3ff;
+$secondary-hover: #f0cc4cff;
+$accent: #df9786ff;
+$accent-soft: #2082a2ff;
+$success: #ce1c6aff;
+$warning: #265aedff;
+$danger: #a466d6ff;
+$info: #7fe6c1ff;
+$link: #ab7817ff;
+$focus-ring: #d91912ff;
+
+/* SCSS HSL */
+$bg-canvas: hsla(221, 6%, 8%, 1);
+$bg-surface: hsla(227, 8%, 18%, 1);
+$bg-elevated: hsla(221, 9%, 29%, 1);
+$bg-overlay: hsla(224, 10%, 40%, 1);
+$border-subtle: hsla(215, 12%, 50%, 1);
+$border-strong: hsla(225, 14%, 60%, 1);
+$text-muted: hsla(217, 15%, 71%, 1);
+$text-base: hsla(218, 16%, 82%, 1);
+$text-strong: hsla(224, 18%, 92%, 1);
+$primary: hsla(220, 58%, 38%, 1);
+$primary-hover: hsla(275, 67%, 46%, 1);
+$secondary: hsla(158, 76%, 54%, 1);
+$secondary-hover: hsla(47, 85%, 62%, 1);
+$accent: hsla(12, 58%, 70%, 1);
+$accent-soft: hsla(195, 67%, 38%, 1);
+$success: hsla(334, 76%, 46%, 1);
+$warning: hsla(224, 85%, 54%, 1);
+$danger: hsla(273, 58%, 62%, 1);
+$info: hsla(159, 67%, 70%, 1);
+$link: hsla(39, 76%, 38%, 1);
+$focus-ring: hsla(2, 85%, 46%, 1);
+
+/* SCSS RGB */
+$bg-canvas: rgba(19, 20, 22, 1);
+$bg-surface: rgba(44, 45, 51, 1);
+$bg-elevated: rgba(67, 71, 81, 1);
+$bg-overlay: rgba(90, 96, 111, 1);
+$border-subtle: rgba(112, 125, 143, 1);
+$border-strong: rgba(141, 147, 168, 1);
+$text-muted: rgba(170, 178, 192, 1);
+$text-base: rgba(200, 206, 216, 1);
+$text-strong: rgba(231, 233, 238, 1);
+$primary: rgba(41, 79, 153, 1);
+$primary-hover: rgba(130, 39, 196, 1);
+$secondary: rgba(49, 227, 163, 1);
+$secondary-hover: rgba(240, 204, 76, 1);
+$accent: rgba(223, 151, 134, 1);
+$accent-soft: rgba(32, 130, 162, 1);
+$success: rgba(206, 28, 106, 1);
+$warning: rgba(38, 90, 237, 1);
+$danger: rgba(164, 102, 214, 1);
+$info: rgba(127, 230, 193, 1);
+$link: rgba(171, 120, 23, 1);
+$focus-ring: rgba(217, 25, 18, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #131416ff, #2c2d33ff, #434751ff, #5a606fff, #707d8fff, #8d93a8ff, #aab2c0ff, #c8ced8ff, #e7e9eeff, #294f99ff, #8227c4ff, #31e3a3ff, #f0cc4cff, #df9786ff, #2082a2ff, #ce1c6aff, #265aedff, #a466d6ff, #7fe6c1ff, #ab7817ff, #d91912ff);
+$gradient-right: linear-gradient(90deg, #131416ff, #2c2d33ff, #434751ff, #5a606fff, #707d8fff, #8d93a8ff, #aab2c0ff, #c8ced8ff, #e7e9eeff, #294f99ff, #8227c4ff, #31e3a3ff, #f0cc4cff, #df9786ff, #2082a2ff, #ce1c6aff, #265aedff, #a466d6ff, #7fe6c1ff, #ab7817ff, #d91912ff);
+$gradient-bottom: linear-gradient(180deg, #131416ff, #2c2d33ff, #434751ff, #5a606fff, #707d8fff, #8d93a8ff, #aab2c0ff, #c8ced8ff, #e7e9eeff, #294f99ff, #8227c4ff, #31e3a3ff, #f0cc4cff, #df9786ff, #2082a2ff, #ce1c6aff, #265aedff, #a466d6ff, #7fe6c1ff, #ab7817ff, #d91912ff);
+$gradient-left: linear-gradient(270deg, #131416ff, #2c2d33ff, #434751ff, #5a606fff, #707d8fff, #8d93a8ff, #aab2c0ff, #c8ced8ff, #e7e9eeff, #294f99ff, #8227c4ff, #31e3a3ff, #f0cc4cff, #df9786ff, #2082a2ff, #ce1c6aff, #265aedff, #a466d6ff, #7fe6c1ff, #ab7817ff, #d91912ff);
+$gradient-top-right: linear-gradient(45deg, #131416ff, #2c2d33ff, #434751ff, #5a606fff, #707d8fff, #8d93a8ff, #aab2c0ff, #c8ced8ff, #e7e9eeff, #294f99ff, #8227c4ff, #31e3a3ff, #f0cc4cff, #df9786ff, #2082a2ff, #ce1c6aff, #265aedff, #a466d6ff, #7fe6c1ff, #ab7817ff, #d91912ff);
+$gradient-bottom-right: linear-gradient(135deg, #131416ff, #2c2d33ff, #434751ff, #5a606fff, #707d8fff, #8d93a8ff, #aab2c0ff, #c8ced8ff, #e7e9eeff, #294f99ff, #8227c4ff, #31e3a3ff, #f0cc4cff, #df9786ff, #2082a2ff, #ce1c6aff, #265aedff, #a466d6ff, #7fe6c1ff, #ab7817ff, #d91912ff);
+$gradient-top-left: linear-gradient(225deg, #131416ff, #2c2d33ff, #434751ff, #5a606fff, #707d8fff, #8d93a8ff, #aab2c0ff, #c8ced8ff, #e7e9eeff, #294f99ff, #8227c4ff, #31e3a3ff, #f0cc4cff, #df9786ff, #2082a2ff, #ce1c6aff, #265aedff, #a466d6ff, #7fe6c1ff, #ab7817ff, #d91912ff);
+$gradient-bottom-left: linear-gradient(315deg, #131416ff, #2c2d33ff, #434751ff, #5a606fff, #707d8fff, #8d93a8ff, #aab2c0ff, #c8ced8ff, #e7e9eeff, #294f99ff, #8227c4ff, #31e3a3ff, #f0cc4cff, #df9786ff, #2082a2ff, #ce1c6aff, #265aedff, #a466d6ff, #7fe6c1ff, #ab7817ff, #d91912ff);
+$gradient-radial: radial-gradient(#131416ff, #2c2d33ff, #434751ff, #5a606fff, #707d8fff, #8d93a8ff, #aab2c0ff, #c8ced8ff, #e7e9eeff, #294f99ff, #8227c4ff, #31e3a3ff, #f0cc4cff, #df9786ff, #2082a2ff, #ce1c6aff, #265aedff, #a466d6ff, #7fe6c1ff, #ab7817ff, #d91912ff);
+
+/* SCSS Map */
+$healthcare-interface-map-21-15-map: (
+    "bg-canvas": #131416ff,
+    "bg-surface": #2c2d33ff,
+    "bg-elevated": #434751ff,
+    "bg-overlay": #5a606fff,
+    "border-subtle": #707d8fff,
+    "border-strong": #8d93a8ff,
+    "text-muted": #aab2c0ff,
+    "text-base": #c8ced8ff,
+    "text-strong": #e7e9eeff,
+    "primary": #294f99ff,
+    "primary-hover": #8227c4ff,
+    "secondary": #31e3a3ff,
+    "secondary-hover": #f0cc4cff,
+    "accent": #df9786ff,
+    "accent-soft": #2082a2ff,
+    "success": #ce1c6aff,
+    "warning": #265aedff,
+    "danger": #a466d6ff,
+    "info": #7fe6c1ff,
+    "link": #ab7817ff,
+    "focus-ring": #d91912ff
+);

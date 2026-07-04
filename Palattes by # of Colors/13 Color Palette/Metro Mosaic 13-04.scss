@@ -1,0 +1,124 @@
+/*---
+id: metro-mosaic-13-04
+name: Metro Mosaic 13-04
+author: JaZeR-444
+version: 1.0.0
+category: Multi Color Composition
+count: 13
+tags:
+  mood:
+  - multi-color
+  - vibrant
+  - exploratory
+  aesthetic:
+  - Mosaic
+intent: A diverse 13-color composition for broad creative and UI exploration.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--tone-01: #184e21ff;
+--tone-02: #19674fff;
+--tone-03: #176183ff;
+--tone-04: #132ba2ff;
+--tone-05: #6c0cc3ff;
+--tone-06: #b238b2ff;
+--tone-07: #ce366fff;
+--tone-08: #dd6141ff;
+--tone-09: #ead64fff;
+--tone-10: #aaf55eff;
+--tone-11: #91dc92ff;
+--tone-12: #a0e8cbff;
+--tone-13: #b1dbf1ff;
+
+/* CSS HSL */
+--tone-01: hsla(129, 52%, 20%, 1);
+--tone-02: hsla(162, 61%, 25%, 1);
+--tone-03: hsla(199, 70%, 30%, 1);
+--tone-04: hsla(230, 79%, 36%, 1);
+--tone-05: hsla(271, 88%, 41%, 1);
+--tone-06: hsla(300, 52%, 46%, 1);
+--tone-07: hsla(338, 61%, 51%, 1);
+--tone-08: hsla(12, 70%, 56%, 1);
+--tone-09: hsla(52, 79%, 61%, 1);
+--tone-10: hsla(90, 88%, 66%, 1);
+--tone-11: hsla(121, 52%, 72%, 1);
+--tone-12: hsla(156, 61%, 77%, 1);
+--tone-13: hsla(201, 70%, 82%, 1);
+}
+
+/* SCSS HEX */
+$tone-01: #184e21ff;
+$tone-02: #19674fff;
+$tone-03: #176183ff;
+$tone-04: #132ba2ff;
+$tone-05: #6c0cc3ff;
+$tone-06: #b238b2ff;
+$tone-07: #ce366fff;
+$tone-08: #dd6141ff;
+$tone-09: #ead64fff;
+$tone-10: #aaf55eff;
+$tone-11: #91dc92ff;
+$tone-12: #a0e8cbff;
+$tone-13: #b1dbf1ff;
+
+/* SCSS HSL */
+$tone-01: hsla(129, 52%, 20%, 1);
+$tone-02: hsla(162, 61%, 25%, 1);
+$tone-03: hsla(199, 70%, 30%, 1);
+$tone-04: hsla(230, 79%, 36%, 1);
+$tone-05: hsla(271, 88%, 41%, 1);
+$tone-06: hsla(300, 52%, 46%, 1);
+$tone-07: hsla(338, 61%, 51%, 1);
+$tone-08: hsla(12, 70%, 56%, 1);
+$tone-09: hsla(52, 79%, 61%, 1);
+$tone-10: hsla(90, 88%, 66%, 1);
+$tone-11: hsla(121, 52%, 72%, 1);
+$tone-12: hsla(156, 61%, 77%, 1);
+$tone-13: hsla(201, 70%, 82%, 1);
+
+/* SCSS RGB */
+$tone-01: rgba(24, 78, 33, 1);
+$tone-02: rgba(25, 103, 79, 1);
+$tone-03: rgba(23, 97, 131, 1);
+$tone-04: rgba(19, 43, 162, 1);
+$tone-05: rgba(108, 12, 195, 1);
+$tone-06: rgba(178, 56, 178, 1);
+$tone-07: rgba(206, 54, 111, 1);
+$tone-08: rgba(221, 97, 65, 1);
+$tone-09: rgba(234, 214, 79, 1);
+$tone-10: rgba(170, 245, 94, 1);
+$tone-11: rgba(145, 220, 146, 1);
+$tone-12: rgba(160, 232, 203, 1);
+$tone-13: rgba(177, 219, 241, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #184e21ff, #19674fff, #176183ff, #132ba2ff, #6c0cc3ff, #b238b2ff, #ce366fff, #dd6141ff, #ead64fff, #aaf55eff, #91dc92ff, #a0e8cbff, #b1dbf1ff);
+$gradient-right: linear-gradient(90deg, #184e21ff, #19674fff, #176183ff, #132ba2ff, #6c0cc3ff, #b238b2ff, #ce366fff, #dd6141ff, #ead64fff, #aaf55eff, #91dc92ff, #a0e8cbff, #b1dbf1ff);
+$gradient-bottom: linear-gradient(180deg, #184e21ff, #19674fff, #176183ff, #132ba2ff, #6c0cc3ff, #b238b2ff, #ce366fff, #dd6141ff, #ead64fff, #aaf55eff, #91dc92ff, #a0e8cbff, #b1dbf1ff);
+$gradient-left: linear-gradient(270deg, #184e21ff, #19674fff, #176183ff, #132ba2ff, #6c0cc3ff, #b238b2ff, #ce366fff, #dd6141ff, #ead64fff, #aaf55eff, #91dc92ff, #a0e8cbff, #b1dbf1ff);
+$gradient-top-right: linear-gradient(45deg, #184e21ff, #19674fff, #176183ff, #132ba2ff, #6c0cc3ff, #b238b2ff, #ce366fff, #dd6141ff, #ead64fff, #aaf55eff, #91dc92ff, #a0e8cbff, #b1dbf1ff);
+$gradient-bottom-right: linear-gradient(135deg, #184e21ff, #19674fff, #176183ff, #132ba2ff, #6c0cc3ff, #b238b2ff, #ce366fff, #dd6141ff, #ead64fff, #aaf55eff, #91dc92ff, #a0e8cbff, #b1dbf1ff);
+$gradient-top-left: linear-gradient(225deg, #184e21ff, #19674fff, #176183ff, #132ba2ff, #6c0cc3ff, #b238b2ff, #ce366fff, #dd6141ff, #ead64fff, #aaf55eff, #91dc92ff, #a0e8cbff, #b1dbf1ff);
+$gradient-bottom-left: linear-gradient(315deg, #184e21ff, #19674fff, #176183ff, #132ba2ff, #6c0cc3ff, #b238b2ff, #ce366fff, #dd6141ff, #ead64fff, #aaf55eff, #91dc92ff, #a0e8cbff, #b1dbf1ff);
+$gradient-radial: radial-gradient(#184e21ff, #19674fff, #176183ff, #132ba2ff, #6c0cc3ff, #b238b2ff, #ce366fff, #dd6141ff, #ead64fff, #aaf55eff, #91dc92ff, #a0e8cbff, #b1dbf1ff);
+
+/* SCSS Map */
+$metro-mosaic-13-04-map: (
+    "tone-01": #184e21ff,
+    "tone-02": #19674fff,
+    "tone-03": #176183ff,
+    "tone-04": #132ba2ff,
+    "tone-05": #6c0cc3ff,
+    "tone-06": #b238b2ff,
+    "tone-07": #ce366fff,
+    "tone-08": #dd6141ff,
+    "tone-09": #ead64fff,
+    "tone-10": #aaf55eff,
+    "tone-11": #91dc92ff,
+    "tone-12": #a0e8cbff,
+    "tone-13": #b1dbf1ff
+);

@@ -1,0 +1,130 @@
+/*---
+id: ember-mosaic-14-01
+name: Ember Mosaic 14-01
+author: JaZeR-444
+version: 1.0.0
+category: Multi Color Composition
+count: 14
+tags:
+  mood:
+  - multi-color
+  - vibrant
+  - exploratory
+  aesthetic:
+  - Mosaic
+intent: A diverse 14-color composition for broad creative and UI exploration.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--tone-01: #30184eff;
+--tone-02: #661964ff;
+--tone-03: #80173dff;
+--tone-04: #9d2312ff;
+--tone-05: #bb820cff;
+--tone-06: #92aa36ff;
+--tone-07: #64c830ff;
+--tone-08: #35db4dff;
+--tone-09: #40e9b5ff;
+--tone-10: #4db8f4ff;
+--tone-11: #8296d7ff;
+--tone-12: #a58ee4ff;
+--tone-13: #e19ceeff;
+--tone-14: #f5addcff;
+
+/* CSS HSL */
+--tone-01: hsla(267, 52%, 20%, 1);
+--tone-02: hsla(302, 61%, 25%, 1);
+--tone-03: hsla(338, 70%, 30%, 1);
+--tone-04: hsla(7, 79%, 34%, 1);
+--tone-05: hsla(40, 88%, 39%, 1);
+--tone-06: hsla(72, 52%, 44%, 1);
+--tone-07: hsla(100, 61%, 49%, 1);
+--tone-08: hsla(129, 70%, 53%, 1);
+--tone-09: hsla(162, 79%, 58%, 1);
+--tone-10: hsla(201, 88%, 63%, 1);
+--tone-11: hsla(226, 52%, 68%, 1);
+--tone-12: hsla(256, 61%, 72%, 1);
+--tone-13: hsla(290, 70%, 77%, 1);
+--tone-14: hsla(321, 79%, 82%, 1);
+}
+
+/* SCSS HEX */
+$tone-01: #30184eff;
+$tone-02: #661964ff;
+$tone-03: #80173dff;
+$tone-04: #9d2312ff;
+$tone-05: #bb820cff;
+$tone-06: #92aa36ff;
+$tone-07: #64c830ff;
+$tone-08: #35db4dff;
+$tone-09: #40e9b5ff;
+$tone-10: #4db8f4ff;
+$tone-11: #8296d7ff;
+$tone-12: #a58ee4ff;
+$tone-13: #e19ceeff;
+$tone-14: #f5addcff;
+
+/* SCSS HSL */
+$tone-01: hsla(267, 52%, 20%, 1);
+$tone-02: hsla(302, 61%, 25%, 1);
+$tone-03: hsla(338, 70%, 30%, 1);
+$tone-04: hsla(7, 79%, 34%, 1);
+$tone-05: hsla(40, 88%, 39%, 1);
+$tone-06: hsla(72, 52%, 44%, 1);
+$tone-07: hsla(100, 61%, 49%, 1);
+$tone-08: hsla(129, 70%, 53%, 1);
+$tone-09: hsla(162, 79%, 58%, 1);
+$tone-10: hsla(201, 88%, 63%, 1);
+$tone-11: hsla(226, 52%, 68%, 1);
+$tone-12: hsla(256, 61%, 72%, 1);
+$tone-13: hsla(290, 70%, 77%, 1);
+$tone-14: hsla(321, 79%, 82%, 1);
+
+/* SCSS RGB */
+$tone-01: rgba(48, 24, 78, 1);
+$tone-02: rgba(102, 25, 100, 1);
+$tone-03: rgba(128, 23, 61, 1);
+$tone-04: rgba(157, 35, 18, 1);
+$tone-05: rgba(187, 130, 12, 1);
+$tone-06: rgba(146, 170, 54, 1);
+$tone-07: rgba(100, 200, 48, 1);
+$tone-08: rgba(53, 219, 77, 1);
+$tone-09: rgba(64, 233, 181, 1);
+$tone-10: rgba(77, 184, 244, 1);
+$tone-11: rgba(130, 150, 215, 1);
+$tone-12: rgba(165, 142, 228, 1);
+$tone-13: rgba(225, 156, 238, 1);
+$tone-14: rgba(245, 173, 220, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #30184eff, #661964ff, #80173dff, #9d2312ff, #bb820cff, #92aa36ff, #64c830ff, #35db4dff, #40e9b5ff, #4db8f4ff, #8296d7ff, #a58ee4ff, #e19ceeff, #f5addcff);
+$gradient-right: linear-gradient(90deg, #30184eff, #661964ff, #80173dff, #9d2312ff, #bb820cff, #92aa36ff, #64c830ff, #35db4dff, #40e9b5ff, #4db8f4ff, #8296d7ff, #a58ee4ff, #e19ceeff, #f5addcff);
+$gradient-bottom: linear-gradient(180deg, #30184eff, #661964ff, #80173dff, #9d2312ff, #bb820cff, #92aa36ff, #64c830ff, #35db4dff, #40e9b5ff, #4db8f4ff, #8296d7ff, #a58ee4ff, #e19ceeff, #f5addcff);
+$gradient-left: linear-gradient(270deg, #30184eff, #661964ff, #80173dff, #9d2312ff, #bb820cff, #92aa36ff, #64c830ff, #35db4dff, #40e9b5ff, #4db8f4ff, #8296d7ff, #a58ee4ff, #e19ceeff, #f5addcff);
+$gradient-top-right: linear-gradient(45deg, #30184eff, #661964ff, #80173dff, #9d2312ff, #bb820cff, #92aa36ff, #64c830ff, #35db4dff, #40e9b5ff, #4db8f4ff, #8296d7ff, #a58ee4ff, #e19ceeff, #f5addcff);
+$gradient-bottom-right: linear-gradient(135deg, #30184eff, #661964ff, #80173dff, #9d2312ff, #bb820cff, #92aa36ff, #64c830ff, #35db4dff, #40e9b5ff, #4db8f4ff, #8296d7ff, #a58ee4ff, #e19ceeff, #f5addcff);
+$gradient-top-left: linear-gradient(225deg, #30184eff, #661964ff, #80173dff, #9d2312ff, #bb820cff, #92aa36ff, #64c830ff, #35db4dff, #40e9b5ff, #4db8f4ff, #8296d7ff, #a58ee4ff, #e19ceeff, #f5addcff);
+$gradient-bottom-left: linear-gradient(315deg, #30184eff, #661964ff, #80173dff, #9d2312ff, #bb820cff, #92aa36ff, #64c830ff, #35db4dff, #40e9b5ff, #4db8f4ff, #8296d7ff, #a58ee4ff, #e19ceeff, #f5addcff);
+$gradient-radial: radial-gradient(#30184eff, #661964ff, #80173dff, #9d2312ff, #bb820cff, #92aa36ff, #64c830ff, #35db4dff, #40e9b5ff, #4db8f4ff, #8296d7ff, #a58ee4ff, #e19ceeff, #f5addcff);
+
+/* SCSS Map */
+$ember-mosaic-14-01-map: (
+    "tone-01": #30184eff,
+    "tone-02": #661964ff,
+    "tone-03": #80173dff,
+    "tone-04": #9d2312ff,
+    "tone-05": #bb820cff,
+    "tone-06": #92aa36ff,
+    "tone-07": #64c830ff,
+    "tone-08": #35db4dff,
+    "tone-09": #40e9b5ff,
+    "tone-10": #4db8f4ff,
+    "tone-11": #8296d7ff,
+    "tone-12": #a58ee4ff,
+    "tone-13": #e19ceeff,
+    "tone-14": #f5addcff
+);

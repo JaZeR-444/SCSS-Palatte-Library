@@ -1,0 +1,206 @@
+/*---
+id: modern-pulse-461
+name: Modern Pulse 461
+author: JaZeR-444
+version: 1.0.0
+category: Vaporwave & Synthwave
+count: 26
+tags:
+  mood:
+  - serious
+  aesthetic:
+  - Urban
+  - Futuristic
+  - Modern
+intent: A vibrant 26-color palette inspired by Modern Pulse 461.
+suggested_use:
+- Dashboard
+- Social Media
+- Landing Page
+url: https://coolors.co/79f87b-76f882-6df495-64f58e-64f58d-50f4a2-5befa3-66f5a2-5cf2a2-67f3c8
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--autumn-emerald-1: #79f87bff;
+--fiery-lime-2: #76f882ff;
+--scarlet-pulse-3: #6df495ff;
+--classic-blue-4: #64f58eff;
+--pastel-platinum-5: #64f58dff;
+--amber-canyon-6: #50f4a2ff;
+--jade-nebula-7: #5befa3ff;
+--winter-rust-8: #66f5a2ff;
+--maroon-canyon-9: #5cf2a2ff;
+--rose-ash-10: #67f3c8ff;
+--electric-lilac-11: #5befd2ff;
+--light-magenta-12: #5eeccbff;
+--crystal-crimson-13: #76f1ceff;
+--lime-mist-14: #71e7edff;
+--glow-jade-15: #59eee3ff;
+--solar-rose-16: #77e0f2ff;
+--scarlet-rain-17: #66d0eaff;
+--industrial-turquoise-18: #5acceeff;
+--gold-pulse-19: #58c1e9ff;
+--autumn-crimson-20: #51b0ebff;
+--gold-ember-21: #73d6efff;
+--stellar-gray-22: #74aeecff;
+--red-storm-23: #649fe5ff;
+--brown-dawn-24: #5f96e8ff;
+--urban-teal-25: #83aee8ff;
+--jade-desert-26: #73a1eaff;
+
+/* CSS HSL */
+--autumn-emerald-1: hsla(121, 91%, 73%, 1);
+--fiery-lime-2: hsla(125, 91%, 72%, 1);
+--scarlet-pulse-3: hsla(138, 87%, 70%, 1);
+--classic-blue-4: hsla(137, 88%, 68%, 1);
+--pastel-platinum-5: hsla(137, 88%, 68%, 1);
+--amber-canyon-6: hsla(150, 89%, 64%, 1);
+--jade-nebula-7: hsla(149, 83%, 65%, 1);
+--winter-rust-8: hsla(145, 88%, 68%, 1);
+--maroon-canyon-9: hsla(148, 85%, 66%, 1);
+--rose-ash-10: hsla(161, 86%, 68%, 1);
+--electric-lilac-11: hsla(168, 83%, 65%, 1);
+--light-magenta-12: hsla(166, 79%, 65%, 1);
+--crystal-crimson-13: hsla(163, 82%, 71%, 1);
+--lime-mist-14: hsla(183, 78%, 69%, 1);
+--glow-jade-15: hsla(176, 81%, 64%, 1);
+--solar-rose-16: hsla(189, 83%, 71%, 1);
+--scarlet-rain-17: hsla(192, 76%, 66%, 1);
+--industrial-turquoise-18: hsla(194, 82%, 64%, 1);
+--gold-pulse-19: hsla(196, 77%, 63%, 1);
+--autumn-crimson-20: hsla(203, 80%, 62%, 1);
+--gold-ember-21: hsla(192, 80%, 70%, 1);
+--stellar-gray-22: hsla(211, 77%, 69%, 1);
+--red-storm-23: hsla(213, 71%, 65%, 1);
+--brown-dawn-24: hsla(216, 76%, 64%, 1);
+--urban-teal-25: hsla(214, 69%, 71%, 1);
+--jade-desert-26: hsla(217, 74%, 69%, 1);
+}
+
+/* SCSS HEX */
+$autumn-emerald-1: #79f87bff;
+$fiery-lime-2: #76f882ff;
+$scarlet-pulse-3: #6df495ff;
+$classic-blue-4: #64f58eff;
+$pastel-platinum-5: #64f58dff;
+$amber-canyon-6: #50f4a2ff;
+$jade-nebula-7: #5befa3ff;
+$winter-rust-8: #66f5a2ff;
+$maroon-canyon-9: #5cf2a2ff;
+$rose-ash-10: #67f3c8ff;
+$electric-lilac-11: #5befd2ff;
+$light-magenta-12: #5eeccbff;
+$crystal-crimson-13: #76f1ceff;
+$lime-mist-14: #71e7edff;
+$glow-jade-15: #59eee3ff;
+$solar-rose-16: #77e0f2ff;
+$scarlet-rain-17: #66d0eaff;
+$industrial-turquoise-18: #5acceeff;
+$gold-pulse-19: #58c1e9ff;
+$autumn-crimson-20: #51b0ebff;
+$gold-ember-21: #73d6efff;
+$stellar-gray-22: #74aeecff;
+$red-storm-23: #649fe5ff;
+$brown-dawn-24: #5f96e8ff;
+$urban-teal-25: #83aee8ff;
+$jade-desert-26: #73a1eaff;
+
+/* SCSS HSL */
+$autumn-emerald-1: hsla(121, 91%, 73%, 1);
+$fiery-lime-2: hsla(125, 91%, 72%, 1);
+$scarlet-pulse-3: hsla(138, 87%, 70%, 1);
+$classic-blue-4: hsla(137, 88%, 68%, 1);
+$pastel-platinum-5: hsla(137, 88%, 68%, 1);
+$amber-canyon-6: hsla(150, 89%, 64%, 1);
+$jade-nebula-7: hsla(149, 83%, 65%, 1);
+$winter-rust-8: hsla(145, 88%, 68%, 1);
+$maroon-canyon-9: hsla(148, 85%, 66%, 1);
+$rose-ash-10: hsla(161, 86%, 68%, 1);
+$electric-lilac-11: hsla(168, 83%, 65%, 1);
+$light-magenta-12: hsla(166, 79%, 65%, 1);
+$crystal-crimson-13: hsla(163, 82%, 71%, 1);
+$lime-mist-14: hsla(183, 78%, 69%, 1);
+$glow-jade-15: hsla(176, 81%, 64%, 1);
+$solar-rose-16: hsla(189, 83%, 71%, 1);
+$scarlet-rain-17: hsla(192, 76%, 66%, 1);
+$industrial-turquoise-18: hsla(194, 82%, 64%, 1);
+$gold-pulse-19: hsla(196, 77%, 63%, 1);
+$autumn-crimson-20: hsla(203, 80%, 62%, 1);
+$gold-ember-21: hsla(192, 80%, 70%, 1);
+$stellar-gray-22: hsla(211, 77%, 69%, 1);
+$red-storm-23: hsla(213, 71%, 65%, 1);
+$brown-dawn-24: hsla(216, 76%, 64%, 1);
+$urban-teal-25: hsla(214, 69%, 71%, 1);
+$jade-desert-26: hsla(217, 74%, 69%, 1);
+
+/* SCSS RGB */
+$autumn-emerald-1: rgba(121, 248, 123, 1);
+$fiery-lime-2: rgba(118, 248, 130, 1);
+$scarlet-pulse-3: rgba(109, 244, 149, 1);
+$classic-blue-4: rgba(100, 245, 142, 1);
+$pastel-platinum-5: rgba(100, 245, 141, 1);
+$amber-canyon-6: rgba(80, 244, 162, 1);
+$jade-nebula-7: rgba(91, 239, 163, 1);
+$winter-rust-8: rgba(102, 245, 162, 1);
+$maroon-canyon-9: rgba(92, 242, 162, 1);
+$rose-ash-10: rgba(103, 243, 200, 1);
+$electric-lilac-11: rgba(91, 239, 210, 1);
+$light-magenta-12: rgba(94, 236, 203, 1);
+$crystal-crimson-13: rgba(118, 241, 206, 1);
+$lime-mist-14: rgba(113, 231, 237, 1);
+$glow-jade-15: rgba(89, 238, 227, 1);
+$solar-rose-16: rgba(119, 224, 242, 1);
+$scarlet-rain-17: rgba(102, 208, 234, 1);
+$industrial-turquoise-18: rgba(90, 204, 238, 1);
+$gold-pulse-19: rgba(88, 193, 233, 1);
+$autumn-crimson-20: rgba(81, 176, 235, 1);
+$gold-ember-21: rgba(115, 214, 239, 1);
+$stellar-gray-22: rgba(116, 174, 236, 1);
+$red-storm-23: rgba(100, 159, 229, 1);
+$brown-dawn-24: rgba(95, 150, 232, 1);
+$urban-teal-25: rgba(131, 174, 232, 1);
+$jade-desert-26: rgba(115, 161, 234, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #79f87bff, #76f882ff, #6df495ff, #64f58eff, #64f58dff, #50f4a2ff, #5befa3ff, #66f5a2ff, #5cf2a2ff, #67f3c8ff, #5befd2ff, #5eeccbff, #76f1ceff, #71e7edff, #59eee3ff, #77e0f2ff, #66d0eaff, #5acceeff, #58c1e9ff, #51b0ebff, #73d6efff, #74aeecff, #649fe5ff, #5f96e8ff, #83aee8ff, #73a1eaff);
+$gradient-right: linear-gradient(90deg, #79f87bff, #76f882ff, #6df495ff, #64f58eff, #64f58dff, #50f4a2ff, #5befa3ff, #66f5a2ff, #5cf2a2ff, #67f3c8ff, #5befd2ff, #5eeccbff, #76f1ceff, #71e7edff, #59eee3ff, #77e0f2ff, #66d0eaff, #5acceeff, #58c1e9ff, #51b0ebff, #73d6efff, #74aeecff, #649fe5ff, #5f96e8ff, #83aee8ff, #73a1eaff);
+$gradient-bottom: linear-gradient(180deg, #79f87bff, #76f882ff, #6df495ff, #64f58eff, #64f58dff, #50f4a2ff, #5befa3ff, #66f5a2ff, #5cf2a2ff, #67f3c8ff, #5befd2ff, #5eeccbff, #76f1ceff, #71e7edff, #59eee3ff, #77e0f2ff, #66d0eaff, #5acceeff, #58c1e9ff, #51b0ebff, #73d6efff, #74aeecff, #649fe5ff, #5f96e8ff, #83aee8ff, #73a1eaff);
+$gradient-left: linear-gradient(270deg, #79f87bff, #76f882ff, #6df495ff, #64f58eff, #64f58dff, #50f4a2ff, #5befa3ff, #66f5a2ff, #5cf2a2ff, #67f3c8ff, #5befd2ff, #5eeccbff, #76f1ceff, #71e7edff, #59eee3ff, #77e0f2ff, #66d0eaff, #5acceeff, #58c1e9ff, #51b0ebff, #73d6efff, #74aeecff, #649fe5ff, #5f96e8ff, #83aee8ff, #73a1eaff);
+$gradient-top-right: linear-gradient(45deg, #79f87bff, #76f882ff, #6df495ff, #64f58eff, #64f58dff, #50f4a2ff, #5befa3ff, #66f5a2ff, #5cf2a2ff, #67f3c8ff, #5befd2ff, #5eeccbff, #76f1ceff, #71e7edff, #59eee3ff, #77e0f2ff, #66d0eaff, #5acceeff, #58c1e9ff, #51b0ebff, #73d6efff, #74aeecff, #649fe5ff, #5f96e8ff, #83aee8ff, #73a1eaff);
+$gradient-bottom-right: linear-gradient(135deg, #79f87bff, #76f882ff, #6df495ff, #64f58eff, #64f58dff, #50f4a2ff, #5befa3ff, #66f5a2ff, #5cf2a2ff, #67f3c8ff, #5befd2ff, #5eeccbff, #76f1ceff, #71e7edff, #59eee3ff, #77e0f2ff, #66d0eaff, #5acceeff, #58c1e9ff, #51b0ebff, #73d6efff, #74aeecff, #649fe5ff, #5f96e8ff, #83aee8ff, #73a1eaff);
+$gradient-top-left: linear-gradient(225deg, #79f87bff, #76f882ff, #6df495ff, #64f58eff, #64f58dff, #50f4a2ff, #5befa3ff, #66f5a2ff, #5cf2a2ff, #67f3c8ff, #5befd2ff, #5eeccbff, #76f1ceff, #71e7edff, #59eee3ff, #77e0f2ff, #66d0eaff, #5acceeff, #58c1e9ff, #51b0ebff, #73d6efff, #74aeecff, #649fe5ff, #5f96e8ff, #83aee8ff, #73a1eaff);
+$gradient-bottom-left: linear-gradient(315deg, #79f87bff, #76f882ff, #6df495ff, #64f58eff, #64f58dff, #50f4a2ff, #5befa3ff, #66f5a2ff, #5cf2a2ff, #67f3c8ff, #5befd2ff, #5eeccbff, #76f1ceff, #71e7edff, #59eee3ff, #77e0f2ff, #66d0eaff, #5acceeff, #58c1e9ff, #51b0ebff, #73d6efff, #74aeecff, #649fe5ff, #5f96e8ff, #83aee8ff, #73a1eaff);
+$gradient-radial: radial-gradient(#79f87bff, #76f882ff, #6df495ff, #64f58eff, #64f58dff, #50f4a2ff, #5befa3ff, #66f5a2ff, #5cf2a2ff, #67f3c8ff, #5befd2ff, #5eeccbff, #76f1ceff, #71e7edff, #59eee3ff, #77e0f2ff, #66d0eaff, #5acceeff, #58c1e9ff, #51b0ebff, #73d6efff, #74aeecff, #649fe5ff, #5f96e8ff, #83aee8ff, #73a1eaff);
+
+/* SCSS Map */
+$modern-pulse-461-map: (
+    "autumn-emerald-1": #79f87bff,
+    "fiery-lime-2": #76f882ff,
+    "scarlet-pulse-3": #6df495ff,
+    "classic-blue-4": #64f58eff,
+    "pastel-platinum-5": #64f58dff,
+    "amber-canyon-6": #50f4a2ff,
+    "jade-nebula-7": #5befa3ff,
+    "winter-rust-8": #66f5a2ff,
+    "maroon-canyon-9": #5cf2a2ff,
+    "rose-ash-10": #67f3c8ff,
+    "electric-lilac-11": #5befd2ff,
+    "light-magenta-12": #5eeccbff,
+    "crystal-crimson-13": #76f1ceff,
+    "lime-mist-14": #71e7edff,
+    "glow-jade-15": #59eee3ff,
+    "solar-rose-16": #77e0f2ff,
+    "scarlet-rain-17": #66d0eaff,
+    "industrial-turquoise-18": #5acceeff,
+    "gold-pulse-19": #58c1e9ff,
+    "autumn-crimson-20": #51b0ebff,
+    "gold-ember-21": #73d6efff,
+    "stellar-gray-22": #74aeecff,
+    "red-storm-23": #649fe5ff,
+    "brown-dawn-24": #5f96e8ff,
+    "urban-teal-25": #83aee8ff,
+    "jade-desert-26": #73a1eaff
+);
