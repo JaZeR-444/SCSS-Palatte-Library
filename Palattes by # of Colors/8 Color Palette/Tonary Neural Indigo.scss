@@ -1,0 +1,99 @@
+/*---
+id: tonary-neural-indigo
+name: Tonary Neural Indigo
+author: JaZeR-444
+version: 1.0.0
+category: Violet & Technical
+count: 8
+description: An indigo-to-cyan tech palette drawn from the Tonary.io brand icon — a neural circuit bell pepper.
+tags:
+  mood:
+  - violet
+  - technical
+  aesthetic:
+  - Circuit
+  - Neural
+intent: A violet-focused 8-color palette designed for ai ui, developer tools, creative apps.
+suggested_use:
+- AI UI
+- Developer Tools
+- Creative Apps
+url: https://coolors.co/1e1b4b-433b71-635c9b-867dc8-9d97d7-c9b4ec-bae0fd-ddcffa
+created: '2026-07-02'
+updated: '2026-07-02'
+---*/
+
+:root {
+/* CSS HEX */
+--tonary-neural-indigo-midnight-indigo: #1e1b4bff;
+--tonary-neural-indigo-nightshade-violet: #433b71ff;
+--tonary-neural-indigo-twilight-violet: #635c9bff;
+--tonary-neural-indigo-circuit-orchid: #867dc8ff;
+--tonary-neural-indigo-lavender-bloom: #9d97d7ff;
+--tonary-neural-indigo-soft-lilac: #c9b4ecff;
+--tonary-neural-indigo-neural-cyan: #bae0fdff;
+--tonary-neural-indigo-pale-flesh: #ddcffaff;
+
+/* CSS HSL */
+--tonary-neural-indigo-midnight-indigo: hsla(244, 47%, 20%, 1);
+--tonary-neural-indigo-nightshade-violet: hsla(249, 31%, 34%, 1);
+--tonary-neural-indigo-twilight-violet: hsla(247, 26%, 48%, 1);
+--tonary-neural-indigo-circuit-orchid: hsla(247, 41%, 64%, 1);
+--tonary-neural-indigo-lavender-bloom: hsla(246, 44%, 72%, 1);
+--tonary-neural-indigo-soft-lilac: hsla(262, 60%, 82%, 1);
+--tonary-neural-indigo-neural-cyan: hsla(206, 94%, 86%, 1);
+--tonary-neural-indigo-pale-flesh: hsla(260, 81%, 90%, 1);
+}
+
+/* SCSS HEX */
+$tonary-neural-indigo-midnight-indigo: #1e1b4bff;
+$tonary-neural-indigo-nightshade-violet: #433b71ff;
+$tonary-neural-indigo-twilight-violet: #635c9bff;
+$tonary-neural-indigo-circuit-orchid: #867dc8ff;
+$tonary-neural-indigo-lavender-bloom: #9d97d7ff;
+$tonary-neural-indigo-soft-lilac: #c9b4ecff;
+$tonary-neural-indigo-neural-cyan: #bae0fdff;
+$tonary-neural-indigo-pale-flesh: #ddcffaff;
+
+/* SCSS HSL */
+$tonary-neural-indigo-midnight-indigo: hsla(244, 47%, 20%, 1);
+$tonary-neural-indigo-nightshade-violet: hsla(249, 31%, 34%, 1);
+$tonary-neural-indigo-twilight-violet: hsla(247, 26%, 48%, 1);
+$tonary-neural-indigo-circuit-orchid: hsla(247, 41%, 64%, 1);
+$tonary-neural-indigo-lavender-bloom: hsla(246, 44%, 72%, 1);
+$tonary-neural-indigo-soft-lilac: hsla(262, 60%, 82%, 1);
+$tonary-neural-indigo-neural-cyan: hsla(206, 94%, 86%, 1);
+$tonary-neural-indigo-pale-flesh: hsla(260, 81%, 90%, 1);
+
+/* SCSS RGB */
+$tonary-neural-indigo-midnight-indigo: rgba(30, 27, 75, 1);
+$tonary-neural-indigo-nightshade-violet: rgba(67, 59, 113, 1);
+$tonary-neural-indigo-twilight-violet: rgba(99, 92, 155, 1);
+$tonary-neural-indigo-circuit-orchid: rgba(134, 125, 200, 1);
+$tonary-neural-indigo-lavender-bloom: rgba(157, 151, 215, 1);
+$tonary-neural-indigo-soft-lilac: rgba(201, 180, 236, 1);
+$tonary-neural-indigo-neural-cyan: rgba(186, 224, 253, 1);
+$tonary-neural-indigo-pale-flesh: rgba(221, 207, 250, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1e1b4bff, #433b71ff, #635c9bff, #867dc8ff, #9d97d7ff, #c9b4ecff, #bae0fdff, #ddcffaff);
+$gradient-right: linear-gradient(90deg, #1e1b4bff, #433b71ff, #635c9bff, #867dc8ff, #9d97d7ff, #c9b4ecff, #bae0fdff, #ddcffaff);
+$gradient-bottom: linear-gradient(180deg, #1e1b4bff, #433b71ff, #635c9bff, #867dc8ff, #9d97d7ff, #c9b4ecff, #bae0fdff, #ddcffaff);
+$gradient-left: linear-gradient(270deg, #1e1b4bff, #433b71ff, #635c9bff, #867dc8ff, #9d97d7ff, #c9b4ecff, #bae0fdff, #ddcffaff);
+$gradient-top-right: linear-gradient(45deg, #1e1b4bff, #433b71ff, #635c9bff, #867dc8ff, #9d97d7ff, #c9b4ecff, #bae0fdff, #ddcffaff);
+$gradient-bottom-right: linear-gradient(135deg, #1e1b4bff, #433b71ff, #635c9bff, #867dc8ff, #9d97d7ff, #c9b4ecff, #bae0fdff, #ddcffaff);
+$gradient-top-left: linear-gradient(225deg, #1e1b4bff, #433b71ff, #635c9bff, #867dc8ff, #9d97d7ff, #c9b4ecff, #bae0fdff, #ddcffaff);
+$gradient-bottom-left: linear-gradient(315deg, #1e1b4bff, #433b71ff, #635c9bff, #867dc8ff, #9d97d7ff, #c9b4ecff, #bae0fdff, #ddcffaff);
+$gradient-radial: radial-gradient(#1e1b4bff, #433b71ff, #635c9bff, #867dc8ff, #9d97d7ff, #c9b4ecff, #bae0fdff, #ddcffaff);
+
+/* SCSS Map */
+$tonary-neural-indigo-map: (
+    "tonary-neural-indigo-midnight-indigo": #1e1b4bff,
+    "tonary-neural-indigo-nightshade-violet": #433b71ff,
+    "tonary-neural-indigo-twilight-violet": #635c9bff,
+    "tonary-neural-indigo-circuit-orchid": #867dc8ff,
+    "tonary-neural-indigo-lavender-bloom": #9d97d7ff,
+    "tonary-neural-indigo-soft-lilac": #c9b4ecff,
+    "tonary-neural-indigo-neural-cyan": #bae0fdff,
+    "tonary-neural-indigo-pale-flesh": #ddcffaff
+);

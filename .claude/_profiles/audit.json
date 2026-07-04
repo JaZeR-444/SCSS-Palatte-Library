@@ -1,0 +1,26 @@
+{
+  "name": "audit",
+  "include": [
+    "CLAUDE.md",
+    "settings.json",
+    ".gitignore",
+    "rules/security.md",
+    "rules/architecture.md",
+    "agents/code-reviewer.md",
+    "agents/ui-ux-auditor.md",
+    "agents/qa-tester.md",
+    "skills/architecture-review/**",
+    "skills/security-review/**",
+    "skills/dependency-audit/**",
+    "skills/accessibility-audit/**",
+    "skills/dead-code-sweep/**",
+    "skills/scope-guard/**",
+    "skills/audit/**",
+    "checklists/security.md",
+    "checklists/accessibility.md",
+    "checklists/qa.md",
+    "references/architecture-map.md",
+    "references/protected-decisions.md",
+    "templates/audit-report.md"
+  ]
+}

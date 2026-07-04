@@ -76,6 +76,7 @@ The palettes are organized under `Palattes by # of Colors/` into directories bas
 - **`Monochrome Night.scss`**: Thematic color palette.
 - **`Nord Palette.scss`**: Thematic color palette.
 - **`Tokyo Night.scss`**: Thematic color palette.
+- **`Tonary Neural Indigo.scss`**: Indigo-to-cyan tech palette from the Tonary.io brand icon.
 - **`Warm Sunset.scss`**: Thematic color palette.
 
 ### 9 Color Palette
@@ -153,7 +154,7 @@ To use it in a plain CSS project (assuming the file is processed or variables ar
 - **Completeness**: Each file includes multiple formats (HEX, HSL, RGB) to suit different developer preferences and technical requirements.
 - **Gradients**: Standard directional gradients (top, right, bottom, left, and diagonals) and a radial gradient are included in every palette.
 - **Metadata**: Every SCSS file contains a YAML front-matter block wrapped in comments at the top. This metadata (tags, categories, descriptions) is the single source of truth for the showcase.
-- **Indexing**: The `showcase/palettes.json` file is automatically generated from the SCSS source files using the `build_index.py` script.
+- **Indexing**: `build_index.py` generates the root `palettes.db` (and `archive/showcase/palettes.json`) from the SCSS sources. The canonical dataset for the deployed app is `generated/`, propagated to `web-showcase/` via `sync_palettes.py`.
 
 ## Documentation Synchronization Mandate
 
@@ -161,4 +162,4 @@ To use it in a plain CSS project (assuming the file is processed or variables ar
 1.  **`GEMINI.md`**: Update the "Key Files" section to include the new palette.
 2.  **`README.md`**: Update the "Available Palettes" list.
 3.  **`CHANGELOG.md`**: Add a new entry under the `[Unreleased]` or a new version header describing the changes.
-4.  **`showcase/palettes.json`**: Update the JSON data to include the new palette's colors and metadata for the gallery preview.
+4.  **`generated/` + `sync_palettes.py`**: Add the palette to the canonical `generated/` dataset and run `python sync_palettes.py` so it appears in the deployed `web-showcase/` app.

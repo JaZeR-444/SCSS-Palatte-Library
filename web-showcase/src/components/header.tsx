@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Github, Shuffle, Plus, Folder, Trash, ChevronDown, FolderPlus, X } from "lucide-react";
+import { Github, Shuffle, Plus, Folder, Trash, ChevronDown, FolderPlus, X, Sparkles } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
 import { useStudio } from "./studio/studio-context";
 import { playSound } from "@/utils/audio";
@@ -15,7 +15,7 @@ interface HeaderProps {
 }
 
 export function Header({ count }: HeaderProps) {
-  const { openStudio, openCreator, activeCollectionId, setActiveCollectionId } = useStudio();
+  const { openStudio, openCreator, openBrandSystem, activeCollectionId, setActiveCollectionId } = useStudio();
   const palettes = palettesData as Palette[];
   
   const [collections, setCollections] = useState<{ id: string; name: string; palette_count: number }[]>([]);
@@ -243,6 +243,19 @@ export function Header({ count }: HeaderProps) {
           >
             <Shuffle className="h-3.5 w-3.5" />
             <span className="hidden sm:inline">Random</span>
+          </button>
+
+          {/* Brand System Builder */}
+          <button
+            onClick={() => {
+              playSound("open");
+              openBrandSystem();
+            }}
+            className="flex items-center gap-2 h-8 px-3 rounded-lg bg-gradient-to-r from-indigo-500 to-violet-600 text-white shadow-sm shadow-indigo-500/30 hover:from-indigo-600 hover:to-violet-700 transition-colors text-[11px] font-bold cursor-pointer"
+            title="Build a brand system from a palette"
+          >
+            <Sparkles className="h-3.5 w-3.5" />
+            <span className="hidden sm:inline">Brand System</span>
           </button>
 
           {/* Create Palette */}

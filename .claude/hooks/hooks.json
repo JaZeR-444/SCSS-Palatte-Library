@@ -1,0 +1,13 @@
+{
+  "_comment": "Plugin hook config. In a plugin this lives at hooks/hooks.json; in a repo the same object goes under \"hooks\" in .claude/settings.json. Validate with: claude plugin validate.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash(git commit*)",
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PROJECT_DIR}/.claude/hooks/secret-scan.sh ${CLAUDE_PROJECT_DIR}" }
+        ]
+      }
+    ]
+  }
+}

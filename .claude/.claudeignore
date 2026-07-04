@@ -1,0 +1,35 @@
+# Dependency directories
+node_modules/
+vendor/
+.venv/
+venv/
+env/
+
+# Build artifacts
+dist/
+build/
+.next/
+.nuxt/
+out/
+
+# Logs and databases
+*.log
+*.sqlite
+*.sqlite3
+
+# Environment and secrets
+.env
+.env.*
+*.pem
+*.key
+secrets.json
+
+# Tooling and IDE
+.idea/
+.vscode/
+.DS_Store
+
+# Temporary AI scratch space
+.claude/scratch/*
+!.claude/scratch/README.md
+!.claude/scratch/.keep

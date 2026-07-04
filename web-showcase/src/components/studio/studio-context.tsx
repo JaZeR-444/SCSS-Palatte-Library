@@ -26,6 +26,10 @@ interface StudioContextType extends StudioState {
   closeCreator: () => void;
   activeCollectionId: string | null;
   setActiveCollectionId: (id: string | null) => void;
+  isBrandSystemOpen: boolean;
+  brandSystemPalette: Palette | null;
+  openBrandSystem: (palette?: Palette) => void;
+  closeBrandSystem: () => void;
 }
 
 const StudioContext = createContext<StudioContextType | undefined>(undefined);
@@ -46,6 +50,9 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
   const [creatorPaletteToEdit, setCreatorPaletteToEdit] = useState<Palette | null>(null);
   const [activeCollectionId, setActiveCollectionId] = useState<string | null>(null);
 
+  const [isBrandSystemOpen, setIsBrandSystemOpen] = useState(false);
+  const [brandSystemPalette, setBrandSystemPalette] = useState<Palette | null>(null);
+
   const openCreator = useCallback((palette?: Palette) => {
     setCreatorPaletteToEdit(palette || null);
     setIsCreatorOpen(true);
@@ -54,6 +61,15 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
   const closeCreator = useCallback(() => {
     setIsCreatorOpen(false);
     setCreatorPaletteToEdit(null);
+  }, []);
+
+  const openBrandSystem = useCallback((palette?: Palette) => {
+    setBrandSystemPalette(palette || null);
+    setIsBrandSystemOpen(true);
+  }, []);
+
+  const closeBrandSystem = useCallback(() => {
+    setIsBrandSystemOpen(false);
   }, []);
 
   // Load recents from localStorage on mount
@@ -168,6 +184,10 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
         closeCreator,
         activeCollectionId,
         setActiveCollectionId,
+        isBrandSystemOpen,
+        brandSystemPalette,
+        openBrandSystem,
+        closeBrandSystem,
       }}
     >
       {children}
