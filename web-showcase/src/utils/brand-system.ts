@@ -669,6 +669,43 @@ export function exportJson(system: BrandSystem): string {
   );
 }
 
+export function exportTailwind(system: BrandSystem): string {
+  const entries = system.rolesList
+    .map((r) => `        "${r.key}": "${r.hex.toLowerCase()}",`)
+    .join("\n");
+  return `/** @type {import('tailwindcss').Config} */
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+${entries}
+      },
+    },
+  },
+};`;
+}
+
+export function exportStyleDictionary(system: BrandSystem): string {
+  const tokens: Record<string, { value: string; type: "color"; comment: string }> = {};
+  for (const r of system.rolesList) {
+    tokens[r.key] = {
+      value: r.hex.toLowerCase(),
+      type: "color",
+      comment: `${r.group} · ${r.label}`,
+    };
+  }
+  return JSON.stringify(
+    {
+      source: "Palattes",
+      system: `${system.inputs.appName} Brand System`,
+      mode: system.mode,
+      color: tokens,
+    },
+    null,
+    2,
+  );
+}
+
 export function exportMarkdown(system: BrandSystem): string {
   const { inputs, foundation, rolesList, usage, components, accessibility, limitations } =
     system;

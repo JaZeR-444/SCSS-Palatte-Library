@@ -90,6 +90,7 @@ interface PaletteCardProps {
   isFavorite: boolean;
   onToggleFavorite: (e: React.MouseEvent) => void;
   viewMode?: "grid" | "compact" | "list";
+  qualityScore?: number;
 }
 
 export function PaletteCard({
@@ -97,6 +98,7 @@ export function PaletteCard({
   isFavorite,
   onToggleFavorite,
   viewMode = "grid",
+  qualityScore,
 }: PaletteCardProps) {
   const handleFavoriteClick = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -153,6 +155,11 @@ export function PaletteCard({
         >
           {palette.count} CLR
         </span>
+        {typeof qualityScore === "number" && (
+          <span className="absolute bottom-2 left-2 text-[8px] font-black tracking-widest rounded-lg px-1.5 py-0.5 bg-white/85 dark:bg-slate-900/85 text-emerald-600 border border-emerald-200 dark:border-emerald-900/50">
+            Q {qualityScore}
+          </span>
+        )}
         <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
           {favoriteButton}
         </div>
@@ -202,6 +209,11 @@ export function PaletteCard({
           <span className="px-2 py-1 rounded-md bg-gray-100 dark:bg-slate-800 text-[9px] font-black text-gray-500">
             {palette.count} Colors
           </span>
+          {typeof qualityScore === "number" && (
+            <span className="px-2 py-1 rounded-md bg-emerald-50 dark:bg-emerald-950/30 text-[9px] font-black text-emerald-600 dark:text-emerald-400">
+              Q {qualityScore}
+            </span>
+          )}
           {favoriteButton}
         </div>
       </div>
@@ -233,6 +245,11 @@ export function PaletteCard({
           {palette.count}{" "}
           <span style={{ opacity: 0.6, fontSize: "8px" }}>CLR</span>
         </span>
+        {typeof qualityScore === "number" && (
+          <span className="absolute bottom-3 left-3 text-[9px] font-black tracking-widest rounded-lg px-2 py-0.5 bg-white/85 dark:bg-slate-900/85 text-emerald-600 border border-emerald-200 dark:border-emerald-900/50">
+            Q {qualityScore}
+          </span>
+        )}
         <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity duration-200">
           {favoriteButton}
         </div>

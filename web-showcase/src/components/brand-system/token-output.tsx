@@ -7,17 +7,21 @@ import {
   exportJson,
   exportMarkdown,
   exportScss,
+  exportStyleDictionary,
+  exportTailwind,
 } from "@/utils/brand-system";
 import { showToast } from "@/utils/toast";
 import { playSound } from "@/utils/audio";
 import { Copy, Download } from "lucide-react";
 
-type Tab = "css" | "scss" | "json" | "markdown";
+type Tab = "css" | "scss" | "json" | "tailwind" | "style-dictionary" | "markdown";
 
 const TABS: { id: Tab; label: string; ext: string }[] = [
   { id: "css", label: "CSS Vars", ext: "css" },
   { id: "scss", label: "SCSS", ext: "scss" },
   { id: "json", label: "JSON", ext: "json" },
+  { id: "tailwind", label: "Tailwind", ext: "js" },
+  { id: "style-dictionary", label: "Style Dictionary", ext: "json" },
   { id: "markdown", label: "Markdown", ext: "md" },
 ];
 
@@ -41,6 +45,10 @@ export function TokenOutput({ system }: { system: BrandSystem }) {
         return exportScss(system);
       case "json":
         return exportJson(system);
+      case "tailwind":
+        return exportTailwind(system);
+      case "style-dictionary":
+        return exportStyleDictionary(system);
       case "markdown":
         return exportMarkdown(system);
     }

@@ -18,9 +18,11 @@ import {
   RotateCcw,
   X,
   Folder,
+  ShieldCheck,
 } from "lucide-react";
 import { useWindowVirtualizer } from "@tanstack/react-virtual";
 import { getPaletteDistance } from "@/utils/contrast-utils";
+import { analyzePalette } from "@/utils/palette-metrics";
 import { playSound } from "@/utils/audio";
 
 type Facet =
@@ -56,11 +58,48 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
   const [activeFacet, setActiveFacet] = useState<Facet>("all");
   const [activeSubFilter, setActiveSubFilter] = useState<string | null>(null);
   const [sortOrder, setSortOrder] = useState<
-    "name-asc" | "name-desc" | "count-desc" | "count-asc" | "distance"
+    "name-asc" | "name-desc" | "count-desc" | "count-asc" | "distance" | "quality-desc"
   >("name-asc");
   const [targetColor, setTargetColor] = useState("");
   const [viewMode, setViewMode] = useState<"grid" | "compact" | "list">("grid");
   const [displayedPalettes, setDisplayedPalettes] = useState<Palette[]>(palettes);
+  const [a11yOnly, setA11yOnly] = useState(false);
+  const [temperatureFilter, setTemperatureFilter] = useState<"all" | "warm" | "cool" | "balanced">("all");
+  const [structureFilter, setStructureFilter] = useState<"all" | "single-span" | "multi-hue">("all");
+  const [saturationFilter, setSaturationFilter] = useState<"all" | "muted" | "balanced" | "vibrant">("all");
+  const [collectionRecsMode, setCollectionRecsMode] = useState(false);
+
+  const metricsById = useMemo(() => {
+    const map: Record<string, ReturnType<typeof analyzePalette>> = {};
+    for (const p of palettes) {
+      map[p.id] = analyzePalette(p);
+    }
+    return map;
+  }, [palettes]);
+
+  const collectionRecommendations = useMemo(() => {
+    if (!activeCollectionId || displayedPalettes.length === 0) return [];
+    const seedIds = new Set(displayedPalettes.map((p) => p.id));
+    const seedCategories = new Set(displayedPalettes.map((p) => p.category).filter(Boolean));
+    const seedMood = new Set(displayedPalettes.flatMap((p) => p.tags?.mood ?? []));
+    const seedAesthetic = new Set(displayedPalettes.flatMap((p) => p.tags?.aesthetic ?? []));
+    const avgCount =
+      displayedPalettes.reduce((sum, p) => sum + p.count, 0) / Math.max(1, displayedPalettes.length);
+
+    return palettes
+      .filter((p) => !seedIds.has(p.id))
+      .map((p) => {
+        const moodHit = (p.tags?.mood ?? []).filter((t) => seedMood.has(t)).length;
+        const aestHit = (p.tags?.aesthetic ?? []).filter((t) => seedAesthetic.has(t)).length;
+        const categoryHit = p.category && seedCategories.has(p.category) ? 2 : 0;
+        const countScore = Math.max(0, 3 - Math.abs(p.count - avgCount) / 4);
+        const quality = (metricsById[p.id]?.uiReadiness ?? 0) / 25;
+        return { p, score: moodHit + aestHit + categoryHit + countScore + quality };
+      })
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 160)
+      .map((x) => x.p);
+  }, [activeCollectionId, displayedPalettes, palettes, metricsById]);
 
   useEffect(() => {
     setDisplayedPalettes(palettes);
@@ -238,6 +277,7 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
     setActiveFacet(facet);
     setActiveSubFilter(null);
     setActiveCollectionId(null);
+    setCollectionRecsMode(false);
     playSound("click");
   };
 
@@ -248,6 +288,11 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
     setTargetColor("");
     setSortOrder("name-asc");
     setActiveCollectionId(null);
+    setA11yOnly(false);
+    setTemperatureFilter("all");
+    setStructureFilter("all");
+    setSaturationFilter("all");
+    setCollectionRecsMode(false);
     playSound("click");
   };
 
@@ -277,7 +322,10 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
   }, [windowWidth, viewMode]);
 
   const sortedAndFiltered = useMemo(() => {
-    let items = displayedPalettes;
+    let items =
+      collectionRecsMode && activeCollectionId
+        ? collectionRecommendations
+        : displayedPalettes;
 
     // Facet filter
     if (activeFacet === "recent") {
@@ -294,6 +342,19 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
       items = items.filter((p) =>
         p.tags?.aesthetic.includes(activeSubFilter)
       );
+    }
+
+    if (a11yOnly) {
+      items = items.filter((p) => (metricsById[p.id]?.wcagPassRate ?? 0) >= 0.5);
+    }
+    if (temperatureFilter !== "all") {
+      items = items.filter((p) => metricsById[p.id]?.temperature === temperatureFilter);
+    }
+    if (structureFilter !== "all") {
+      items = items.filter((p) => metricsById[p.id]?.structure === structureFilter);
+    }
+    if (saturationFilter !== "all") {
+      items = items.filter((p) => metricsById[p.id]?.saturationProfile === saturationFilter);
     }
 
     // Sort
@@ -316,17 +377,29 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
       items.sort((a, b) => b.count - a.count);
     } else if (sortOrder === "count-asc") {
       items.sort((a, b) => a.count - b.count);
+    } else if (sortOrder === "quality-desc") {
+      items.sort(
+        (a, b) => (metricsById[b.id]?.uiReadiness ?? 0) - (metricsById[a.id]?.uiReadiness ?? 0)
+      );
     }
 
     return items;
   }, [
     displayedPalettes,
+    collectionRecommendations,
+    collectionRecsMode,
     activeFacet,
     activeSubFilter,
+    activeCollectionId,
     favorites,
     sortOrder,
     targetColor,
     recents,
+    a11yOnly,
+    temperatureFilter,
+    structureFilter,
+    saturationFilter,
+    metricsById,
   ]);
 
   const rows = useMemo(() => {
@@ -362,6 +435,7 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
     const suffix = `${n} palette${n === 1 ? "" : "s"}`;
     if (activeCollectionId) {
       const colName = activeCollectionId.split("-").slice(0, -2).join(" ").replace(/\b\w/g, c => c.toUpperCase()) || activeCollectionId;
+      if (collectionRecsMode) return `Recommendations for ${colName}. ${suffix}.`;
       return `Collection: ${colName || "Custom Board"}. ${suffix}.`;
     }
     if (activeFacet === "recent") return `Recently opened. ${suffix}.`;
@@ -374,16 +448,22 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
       return `Mood: ${activeSubFilter}. ${suffix}.`;
     if (activeFacet === "aesthetic" && activeSubFilter)
       return `Aesthetic: ${activeSubFilter}. ${suffix}.`;
+    if (a11yOnly) return `Accessibility mode enabled. ${suffix}.`;
     if (targetColor) return `Sorted by color proximity. ${suffix}.`;
     return `Full library. ${suffix}.`;
-  }, [activeFacet, activeSubFilter, activeCollectionId, sortedAndFiltered.length, targetColor]);
+  }, [activeFacet, activeSubFilter, activeCollectionId, sortedAndFiltered.length, targetColor, a11yOnly, collectionRecsMode]);
 
   const hasActiveFilters =
     activeFacet !== "all" ||
     activeSubFilter !== null ||
     search !== "" ||
     targetColor !== "" ||
-    activeCollectionId !== null;
+    activeCollectionId !== null ||
+    a11yOnly ||
+    temperatureFilter !== "all" ||
+    structureFilter !== "all" ||
+    saturationFilter !== "all" ||
+    collectionRecsMode;
 
   const renderSearchAndHeader = () => (
     <div className="space-y-5">
@@ -500,20 +580,94 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
           )}
 
           {activeCollectionId && (
-            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/30 border border-indigo-200 dark:border-indigo-900 text-[10px] font-black uppercase tracking-widest text-indigo-600 dark:text-indigo-400">
-              <Folder className="h-3 w-3 text-indigo-500" />
-              <span>{activeCollectionId.split("-").slice(0, -2).join(" ") || "Collection"}</span>
+            <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/30 border border-indigo-200 dark:border-indigo-900 text-[10px] font-black uppercase tracking-widest text-indigo-600 dark:text-indigo-400">
+                <Folder className="h-3 w-3 text-indigo-500" />
+                <span>{activeCollectionId.split("-").slice(0, -2).join(" ") || "Collection"}</span>
+                <button
+                  onClick={() => {
+                    setActiveCollectionId(null);
+                    setCollectionRecsMode(false);
+                    playSound("click");
+                  }}
+                  className="hover:text-indigo-800 dark:hover:text-indigo-300 ml-1 cursor-pointer"
+                >
+                  <X className="h-3 w-3" />
+                </button>
+              </div>
               <button
                 onClick={() => {
-                  setActiveCollectionId(null);
+                  setCollectionRecsMode((v) => !v);
                   playSound("click");
                 }}
-                className="hover:text-indigo-800 dark:hover:text-indigo-300 ml-1 cursor-pointer"
+                className={`px-3 py-1.5 rounded-xl border text-[10px] font-black uppercase tracking-widest transition-all cursor-pointer ${
+                  collectionRecsMode
+                    ? "bg-violet-50 dark:bg-violet-950/30 border-violet-300 dark:border-violet-900 text-violet-600 dark:text-violet-400"
+                    : "bg-white dark:bg-slate-900 border-gray-200 dark:border-slate-800 text-gray-500 dark:text-gray-400 hover:border-violet-300 hover:text-violet-500"
+                }`}
+                title="Suggest similar palettes based on this collection"
               >
-                <X className="h-3 w-3" />
+                Smart Recs
               </button>
             </div>
           )}
+
+          <button
+            onClick={() => {
+              setA11yOnly((v) => !v);
+              playSound("click");
+            }}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-[10px] font-black uppercase tracking-widest transition-all cursor-pointer ${
+              a11yOnly
+                ? "bg-emerald-50 dark:bg-emerald-950/30 border-emerald-300 dark:border-emerald-900 text-emerald-600 dark:text-emerald-400"
+                : "bg-white dark:bg-slate-900 border-gray-200 dark:border-slate-800 text-gray-500 dark:text-gray-400 hover:border-emerald-300 hover:text-emerald-500"
+            }`}
+            title="Only show palettes with stronger WCAG pair pass-rate"
+          >
+            <ShieldCheck className="h-3.5 w-3.5" />
+            A11y Mode
+          </button>
+
+          <div className="flex items-center gap-2 bg-white dark:bg-slate-900 px-3 py-2 rounded-2xl border border-gray-200 dark:border-slate-800">
+            <span className="text-[10px] font-bold text-gray-500 dark:text-gray-400">Temp:</span>
+            <select
+              value={temperatureFilter}
+              onChange={(e) => setTemperatureFilter(e.target.value as typeof temperatureFilter)}
+              className="text-xs font-bold text-gray-700 dark:text-gray-300 bg-transparent border-none focus:outline-none cursor-pointer"
+            >
+              <option value="all">All</option>
+              <option value="warm">Warm</option>
+              <option value="cool">Cool</option>
+              <option value="balanced">Balanced</option>
+            </select>
+          </div>
+
+          <div className="flex items-center gap-2 bg-white dark:bg-slate-900 px-3 py-2 rounded-2xl border border-gray-200 dark:border-slate-800">
+            <span className="text-[10px] font-bold text-gray-500 dark:text-gray-400">Structure:</span>
+            <select
+              value={structureFilter}
+              onChange={(e) => setStructureFilter(e.target.value as typeof structureFilter)}
+              className="text-xs font-bold text-gray-700 dark:text-gray-300 bg-transparent border-none focus:outline-none cursor-pointer"
+            >
+              <option value="all">All</option>
+              <option value="single-span">Single Span</option>
+              <option value="multi-hue">Multi Hue</option>
+            </select>
+          </div>
+
+          <div className="flex items-center gap-2 bg-white dark:bg-slate-900 px-3 py-2 rounded-2xl border border-gray-200 dark:border-slate-800">
+            <span className="text-[10px] font-bold text-gray-500 dark:text-gray-400">Saturation:</span>
+            <select
+              value={saturationFilter}
+              onChange={(e) => setSaturationFilter(e.target.value as typeof saturationFilter)}
+              className="text-xs font-bold text-gray-700 dark:text-gray-300 bg-transparent border-none focus:outline-none cursor-pointer"
+            >
+              <option value="all">All</option>
+              <option value="muted">Muted</option>
+              <option value="balanced">Balanced</option>
+              <option value="vibrant">Vibrant</option>
+            </select>
+          </div>
 
           {/* Color Proximity Matcher */}
           <div className="flex items-center gap-2 bg-white dark:bg-slate-900 px-3 py-2 rounded-2xl border border-gray-200 dark:border-slate-800">
@@ -572,6 +726,7 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
               <option value="name-desc">Z → A</option>
               <option value="count-desc">Most Colors</option>
               <option value="count-asc">Fewest Colors</option>
+              <option value="quality-desc">Best UI Quality</option>
               {targetColor && (
                 <option value="distance">Color Proximity</option>
               )}
@@ -625,6 +780,7 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
                 isFavorite={false}
                 onToggleFavorite={() => {}}
                 viewMode="grid"
+                qualityScore={metricsById[palette.id]?.uiReadiness}
               />
             </div>
           ))}
@@ -701,6 +857,7 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
                         isFavorite={favorites.has(palette.id)}
                         onToggleFavorite={() => toggleFavorite(palette.id)}
                         viewMode={viewMode}
+                        qualityScore={metricsById[palette.id]?.uiReadiness}
                       />
                     </div>
                   ))}

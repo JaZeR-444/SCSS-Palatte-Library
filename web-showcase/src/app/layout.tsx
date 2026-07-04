@@ -21,11 +21,11 @@ const BASE_URL = "https://app-pallates.vercel.app";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Palattes — 2,500+ Color Palettes",
+    default: "Palattes — 3,000+ Color Palettes",
     template: "%s | Palattes",
   },
   description:
-    "Browse, search, and export 2,500+ production-ready SCSS & CSS color palettes. Built for designers and developers who care about precision.",
+    "Browse, search, and export 3,000+ production-ready SCSS & CSS color palettes. Built for designers and developers who care about precision.",
   keywords: [
     "color palette",
     "SCSS palette",
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
     type: "website",
     url: BASE_URL,
     siteName: "Palattes",
-    title: "Palattes — 2,500+ Color Palettes",
+    title: "Palattes — 3,000+ Color Palettes",
     description:
-      "Browse, search, and export 2,500+ production-ready SCSS & CSS color palettes.",
+      "Browse, search, and export 3,000+ production-ready SCSS & CSS color palettes.",
     images: [
       {
         url: "/og-image.png",
@@ -66,9 +66,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Palattes — 2,500+ Color Palettes",
+    title: "Palattes — 3,000+ Color Palettes",
     description:
-      "Browse, search, and export 2,500+ production-ready SCSS & CSS color palettes.",
+      "Browse, search, and export 3,000+ production-ready SCSS & CSS color palettes.",
     images: ["/og-image.png"],
     creator: "@JaZeR_444",
   },

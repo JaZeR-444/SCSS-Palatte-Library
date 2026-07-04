@@ -25,9 +25,9 @@ export function Hero() {
         </h2>
 
         <p className="text-base sm:text-lg 3xl:text-xl text-gray-500 dark:text-gray-400 max-w-2xl 3xl:max-w-4xl font-medium mt-1 sm:mt-2 leading-relaxed">
-          A curated library of professional design palettes with ready-to-use
-          SCSS and CSS variables. Features WCAG contrast tools, real-world
-          layout simulations, and zero dependencies.
+          A curated library of 3,000+ professional color systems with ready-to-use
+          SCSS and CSS variables, semantic role mapping, WCAG quality filters,
+          and export-ready design tokens for production UI workflows.
         </p>
       </div>
 
