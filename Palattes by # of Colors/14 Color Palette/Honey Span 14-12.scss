@@ -1,0 +1,130 @@
+/*---
+id: honey-span-14-12
+name: Honey Span 14-12
+author: JaZeR-444
+version: 1.0.0
+category: Singular Hue Span
+count: 14
+tags:
+  mood:
+  - focused
+  - tonal
+  - cohesive
+  aesthetic:
+  - Hue Span
+intent: A single-hue 14-step span for systematic tonal design and theming.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--span-01: #191610ff;
+--span-02: #302a1aff;
+--span-03: #4e431dff;
+--span-04: #6b5a20ff;
+--span-05: #897323ff;
+--span-06: #ae8c20ff;
+--span-07: #d5a91aff;
+--span-08: #e5ae2bff;
+--span-09: #e2be4eff;
+--span-10: #ddc474ff;
+--span-11: #ddce96ff;
+--span-12: #e1d6b2ff;
+--span-13: #e8e1ccff;
+--span-14: #f0ede5ff;
+
+/* CSS HSL */
+--span-01: hsla(45, 20%, 8%, 1);
+--span-02: hsla(45, 30%, 14%, 1);
+--span-03: hsla(45, 46%, 21%, 1);
+--span-04: hsla(45, 54%, 27%, 1);
+--span-05: hsla(45, 59%, 34%, 1);
+--span-06: hsla(45, 69%, 40%, 1);
+--span-07: hsla(45, 79%, 47%, 1);
+--span-08: hsla(45, 78%, 53%, 1);
+--span-09: hsla(45, 72%, 60%, 1);
+--span-10: hsla(45, 61%, 66%, 1);
+--span-11: hsla(45, 51%, 73%, 1);
+--span-12: hsla(45, 44%, 79%, 1);
+--span-13: hsla(45, 37%, 86%, 1);
+--span-14: hsla(45, 28%, 92%, 1);
+}
+
+/* SCSS HEX */
+$span-01: #191610ff;
+$span-02: #302a1aff;
+$span-03: #4e431dff;
+$span-04: #6b5a20ff;
+$span-05: #897323ff;
+$span-06: #ae8c20ff;
+$span-07: #d5a91aff;
+$span-08: #e5ae2bff;
+$span-09: #e2be4eff;
+$span-10: #ddc474ff;
+$span-11: #ddce96ff;
+$span-12: #e1d6b2ff;
+$span-13: #e8e1ccff;
+$span-14: #f0ede5ff;
+
+/* SCSS HSL */
+$span-01: hsla(45, 20%, 8%, 1);
+$span-02: hsla(45, 30%, 14%, 1);
+$span-03: hsla(45, 46%, 21%, 1);
+$span-04: hsla(45, 54%, 27%, 1);
+$span-05: hsla(45, 59%, 34%, 1);
+$span-06: hsla(45, 69%, 40%, 1);
+$span-07: hsla(45, 79%, 47%, 1);
+$span-08: hsla(45, 78%, 53%, 1);
+$span-09: hsla(45, 72%, 60%, 1);
+$span-10: hsla(45, 61%, 66%, 1);
+$span-11: hsla(45, 51%, 73%, 1);
+$span-12: hsla(45, 44%, 79%, 1);
+$span-13: hsla(45, 37%, 86%, 1);
+$span-14: hsla(45, 28%, 92%, 1);
+
+/* SCSS RGB */
+$span-01: rgba(25, 22, 16, 1);
+$span-02: rgba(48, 42, 26, 1);
+$span-03: rgba(78, 67, 29, 1);
+$span-04: rgba(107, 90, 32, 1);
+$span-05: rgba(137, 115, 35, 1);
+$span-06: rgba(174, 140, 32, 1);
+$span-07: rgba(213, 169, 26, 1);
+$span-08: rgba(229, 174, 43, 1);
+$span-09: rgba(226, 190, 78, 1);
+$span-10: rgba(221, 196, 116, 1);
+$span-11: rgba(221, 206, 150, 1);
+$span-12: rgba(225, 214, 178, 1);
+$span-13: rgba(232, 225, 204, 1);
+$span-14: rgba(240, 237, 229, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #191610ff, #302a1aff, #4e431dff, #6b5a20ff, #897323ff, #ae8c20ff, #d5a91aff, #e5ae2bff, #e2be4eff, #ddc474ff, #ddce96ff, #e1d6b2ff, #e8e1ccff, #f0ede5ff);
+$gradient-right: linear-gradient(90deg, #191610ff, #302a1aff, #4e431dff, #6b5a20ff, #897323ff, #ae8c20ff, #d5a91aff, #e5ae2bff, #e2be4eff, #ddc474ff, #ddce96ff, #e1d6b2ff, #e8e1ccff, #f0ede5ff);
+$gradient-bottom: linear-gradient(180deg, #191610ff, #302a1aff, #4e431dff, #6b5a20ff, #897323ff, #ae8c20ff, #d5a91aff, #e5ae2bff, #e2be4eff, #ddc474ff, #ddce96ff, #e1d6b2ff, #e8e1ccff, #f0ede5ff);
+$gradient-left: linear-gradient(270deg, #191610ff, #302a1aff, #4e431dff, #6b5a20ff, #897323ff, #ae8c20ff, #d5a91aff, #e5ae2bff, #e2be4eff, #ddc474ff, #ddce96ff, #e1d6b2ff, #e8e1ccff, #f0ede5ff);
+$gradient-top-right: linear-gradient(45deg, #191610ff, #302a1aff, #4e431dff, #6b5a20ff, #897323ff, #ae8c20ff, #d5a91aff, #e5ae2bff, #e2be4eff, #ddc474ff, #ddce96ff, #e1d6b2ff, #e8e1ccff, #f0ede5ff);
+$gradient-bottom-right: linear-gradient(135deg, #191610ff, #302a1aff, #4e431dff, #6b5a20ff, #897323ff, #ae8c20ff, #d5a91aff, #e5ae2bff, #e2be4eff, #ddc474ff, #ddce96ff, #e1d6b2ff, #e8e1ccff, #f0ede5ff);
+$gradient-top-left: linear-gradient(225deg, #191610ff, #302a1aff, #4e431dff, #6b5a20ff, #897323ff, #ae8c20ff, #d5a91aff, #e5ae2bff, #e2be4eff, #ddc474ff, #ddce96ff, #e1d6b2ff, #e8e1ccff, #f0ede5ff);
+$gradient-bottom-left: linear-gradient(315deg, #191610ff, #302a1aff, #4e431dff, #6b5a20ff, #897323ff, #ae8c20ff, #d5a91aff, #e5ae2bff, #e2be4eff, #ddc474ff, #ddce96ff, #e1d6b2ff, #e8e1ccff, #f0ede5ff);
+$gradient-radial: radial-gradient(#191610ff, #302a1aff, #4e431dff, #6b5a20ff, #897323ff, #ae8c20ff, #d5a91aff, #e5ae2bff, #e2be4eff, #ddc474ff, #ddce96ff, #e1d6b2ff, #e8e1ccff, #f0ede5ff);
+
+/* SCSS Map */
+$honey-span-14-12-map: (
+    "span-01": #191610ff,
+    "span-02": #302a1aff,
+    "span-03": #4e431dff,
+    "span-04": #6b5a20ff,
+    "span-05": #897323ff,
+    "span-06": #ae8c20ff,
+    "span-07": #d5a91aff,
+    "span-08": #e5ae2bff,
+    "span-09": #e2be4eff,
+    "span-10": #ddc474ff,
+    "span-11": #ddce96ff,
+    "span-12": #e1d6b2ff,
+    "span-13": #e8e1ccff,
+    "span-14": #f0ede5ff
+);

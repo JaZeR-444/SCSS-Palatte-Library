@@ -93,7 +93,7 @@ files, and root package docs so installs stay lightweight.
 ### Import everything
 
 ```scss
-@use 'scss-palette-library'; // imports _index.scss → all 332 palettes
+@use 'scss-palette-library'; // imports _index.scss → all 833 palettes
 ```
 
 ---
@@ -103,15 +103,15 @@ files, and root package docs so installs stay lightweight.
 ```
 App - Palattes/
 ├── Palattes by # of Colors/          # SCSS source palettes
-│   ├── 3 Color Palette/              # 8 palettes
-│   ├── 4 Color Palette/              # 8 palettes
-│   ├── 5 Color Palette/              # 17 palettes
-│   ├── 6 Color Palette/              # 7 palettes
-│   ├── 7 Color Palette/              # 8 palettes
-│   ├── 8 Color Palette/              # 8 palettes
-│   ├── 9 Color Palette/              # 14 palettes
-│   ├── 10 Color Palette/             # 10 palettes
-│   └── 11–35 Color Palette/          # reserved for future palettes
+│   ├── 3 Color Palette/              # 36 palettes
+│   ├── 4 Color Palette/              # 36 palettes
+│   ├── 5 Color Palette/              # 44 palettes
+│   ├── 6 Color Palette/              # 35 palettes
+│   ├── 7 Color Palette/              # 35 palettes
+│   ├── 8 Color Palette/              # 53 palettes
+│   ├── 9 Color Palette/              # 41 palettes
+│   ├── 10 Color Palette/             # 53 palettes
+│   └── 11-35 Color Palette/          # 500 new palettes (20 per folder)
 │
 ├── web-showcase/                     # Next.js 15 App Router showcase
 │   ├── src/
@@ -133,7 +133,7 @@ App - Palattes/
 │   └── showcase/                     # Retired legacy static gallery (kept for reference)
 │
 ├── generated/                        # Canonical palette dataset (single source of truth)
-│   └── palettes.db                   # Normalized SQLite (2,555 palettes)
+│   └── palettes.db                   # Normalized SQLite (3,056 palettes)
 │
 ├── _index.scss                       # npm package entry point
 ├── build_index.py                    # Regenerates showcase data from SCSS

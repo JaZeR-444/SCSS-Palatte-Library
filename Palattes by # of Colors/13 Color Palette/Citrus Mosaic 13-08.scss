@@ -1,0 +1,124 @@
+/*---
+id: citrus-mosaic-13-08
+name: Citrus Mosaic 13-08
+author: JaZeR-444
+version: 1.0.0
+category: Multi Color Composition
+count: 13
+tags:
+  mood:
+  - multi-color
+  - vibrant
+  - exploratory
+  aesthetic:
+  - Mosaic
+intent: A diverse 13-color composition for broad creative and UI exploration.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--tone-01: #46184eff;
+--tone-02: #671940ff;
+--tone-03: #831717ff;
+--tone-04: #a26a13ff;
+--tone-05: #aac30cff;
+--tone-06: #72b238ff;
+--tone-07: #36ce42ff;
+--tone-08: #41dda4ff;
+--tone-09: #4fbaeaff;
+--tone-10: #5e81f5ff;
+--tone-11: #a291dcff;
+--tone-12: #dba0e8ff;
+--tone-13: #f1b1d9ff;
+
+/* CSS HSL */
+--tone-01: hsla(291, 52%, 20%, 1);
+--tone-02: hsla(330, 61%, 25%, 1);
+--tone-03: hsla(0, 70%, 30%, 1);
+--tone-04: hsla(36, 79%, 36%, 1);
+--tone-05: hsla(68, 88%, 41%, 1);
+--tone-06: hsla(91, 52%, 46%, 1);
+--tone-07: hsla(125, 61%, 51%, 1);
+--tone-08: hsla(158, 70%, 56%, 1);
+--tone-09: hsla(199, 79%, 61%, 1);
+--tone-10: hsla(226, 88%, 66%, 1);
+--tone-11: hsla(253, 52%, 72%, 1);
+--tone-12: hsla(289, 61%, 77%, 1);
+--tone-13: hsla(322, 70%, 82%, 1);
+}
+
+/* SCSS HEX */
+$tone-01: #46184eff;
+$tone-02: #671940ff;
+$tone-03: #831717ff;
+$tone-04: #a26a13ff;
+$tone-05: #aac30cff;
+$tone-06: #72b238ff;
+$tone-07: #36ce42ff;
+$tone-08: #41dda4ff;
+$tone-09: #4fbaeaff;
+$tone-10: #5e81f5ff;
+$tone-11: #a291dcff;
+$tone-12: #dba0e8ff;
+$tone-13: #f1b1d9ff;
+
+/* SCSS HSL */
+$tone-01: hsla(291, 52%, 20%, 1);
+$tone-02: hsla(330, 61%, 25%, 1);
+$tone-03: hsla(0, 70%, 30%, 1);
+$tone-04: hsla(36, 79%, 36%, 1);
+$tone-05: hsla(68, 88%, 41%, 1);
+$tone-06: hsla(91, 52%, 46%, 1);
+$tone-07: hsla(125, 61%, 51%, 1);
+$tone-08: hsla(158, 70%, 56%, 1);
+$tone-09: hsla(199, 79%, 61%, 1);
+$tone-10: hsla(226, 88%, 66%, 1);
+$tone-11: hsla(253, 52%, 72%, 1);
+$tone-12: hsla(289, 61%, 77%, 1);
+$tone-13: hsla(322, 70%, 82%, 1);
+
+/* SCSS RGB */
+$tone-01: rgba(70, 24, 78, 1);
+$tone-02: rgba(103, 25, 64, 1);
+$tone-03: rgba(131, 23, 23, 1);
+$tone-04: rgba(162, 106, 19, 1);
+$tone-05: rgba(170, 195, 12, 1);
+$tone-06: rgba(114, 178, 56, 1);
+$tone-07: rgba(54, 206, 66, 1);
+$tone-08: rgba(65, 221, 164, 1);
+$tone-09: rgba(79, 186, 234, 1);
+$tone-10: rgba(94, 129, 245, 1);
+$tone-11: rgba(162, 145, 220, 1);
+$tone-12: rgba(219, 160, 232, 1);
+$tone-13: rgba(241, 177, 217, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #46184eff, #671940ff, #831717ff, #a26a13ff, #aac30cff, #72b238ff, #36ce42ff, #41dda4ff, #4fbaeaff, #5e81f5ff, #a291dcff, #dba0e8ff, #f1b1d9ff);
+$gradient-right: linear-gradient(90deg, #46184eff, #671940ff, #831717ff, #a26a13ff, #aac30cff, #72b238ff, #36ce42ff, #41dda4ff, #4fbaeaff, #5e81f5ff, #a291dcff, #dba0e8ff, #f1b1d9ff);
+$gradient-bottom: linear-gradient(180deg, #46184eff, #671940ff, #831717ff, #a26a13ff, #aac30cff, #72b238ff, #36ce42ff, #41dda4ff, #4fbaeaff, #5e81f5ff, #a291dcff, #dba0e8ff, #f1b1d9ff);
+$gradient-left: linear-gradient(270deg, #46184eff, #671940ff, #831717ff, #a26a13ff, #aac30cff, #72b238ff, #36ce42ff, #41dda4ff, #4fbaeaff, #5e81f5ff, #a291dcff, #dba0e8ff, #f1b1d9ff);
+$gradient-top-right: linear-gradient(45deg, #46184eff, #671940ff, #831717ff, #a26a13ff, #aac30cff, #72b238ff, #36ce42ff, #41dda4ff, #4fbaeaff, #5e81f5ff, #a291dcff, #dba0e8ff, #f1b1d9ff);
+$gradient-bottom-right: linear-gradient(135deg, #46184eff, #671940ff, #831717ff, #a26a13ff, #aac30cff, #72b238ff, #36ce42ff, #41dda4ff, #4fbaeaff, #5e81f5ff, #a291dcff, #dba0e8ff, #f1b1d9ff);
+$gradient-top-left: linear-gradient(225deg, #46184eff, #671940ff, #831717ff, #a26a13ff, #aac30cff, #72b238ff, #36ce42ff, #41dda4ff, #4fbaeaff, #5e81f5ff, #a291dcff, #dba0e8ff, #f1b1d9ff);
+$gradient-bottom-left: linear-gradient(315deg, #46184eff, #671940ff, #831717ff, #a26a13ff, #aac30cff, #72b238ff, #36ce42ff, #41dda4ff, #4fbaeaff, #5e81f5ff, #a291dcff, #dba0e8ff, #f1b1d9ff);
+$gradient-radial: radial-gradient(#46184eff, #671940ff, #831717ff, #a26a13ff, #aac30cff, #72b238ff, #36ce42ff, #41dda4ff, #4fbaeaff, #5e81f5ff, #a291dcff, #dba0e8ff, #f1b1d9ff);
+
+/* SCSS Map */
+$citrus-mosaic-13-08-map: (
+    "tone-01": #46184eff,
+    "tone-02": #671940ff,
+    "tone-03": #831717ff,
+    "tone-04": #a26a13ff,
+    "tone-05": #aac30cff,
+    "tone-06": #72b238ff,
+    "tone-07": #36ce42ff,
+    "tone-08": #41dda4ff,
+    "tone-09": #4fbaeaff,
+    "tone-10": #5e81f5ff,
+    "tone-11": #a291dcff,
+    "tone-12": #dba0e8ff,
+    "tone-13": #f1b1d9ff
+);

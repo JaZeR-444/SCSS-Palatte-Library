@@ -1,0 +1,172 @@
+/*---
+id: analytics-interface-map-21-16
+name: Analytics Interface Map 21-16
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 21
+tags:
+  mood:
+  - semantic
+  - product
+  - ui
+  aesthetic:
+  - Web Design
+intent: A semantic 21-color system mapped for web development roles, states, and surfaces.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--bg-canvas: #131416ff;
+--bg-surface: #2c2e33ff;
+--bg-elevated: #434651ff;
+--bg-overlay: #5a646fff;
+--border-subtle: #707d8fff;
+--border-strong: #8d99a8ff;
+--text-muted: #aab4c0ff;
+--text-base: #c8cdd8ff;
+--text-strong: #e7eaeeff;
+--primary: #294e99ff;
+--primary-hover: #8427c4ff;
+--secondary: #31e3a4ff;
+--secondary-hover: #f0bd4cff;
+--accent: #df8f86ff;
+--accent-soft: #2085a2ff;
+--success: #ce1c7eff;
+--warning: #2656edff;
+--danger: #9d66d6ff;
+--info: #7fe6baff;
+--link: #ab7517ff;
+--focus-ring: #d91e12ff;
+
+/* CSS HSL */
+--bg-canvas: hsla(216, 6%, 8%, 1);
+--bg-surface: hsla(222, 8%, 18%, 1);
+--bg-elevated: hsla(226, 9%, 29%, 1);
+--bg-overlay: hsla(213, 10%, 40%, 1);
+--border-subtle: hsla(216, 12%, 50%, 1);
+--border-strong: hsla(212, 14%, 60%, 1);
+--text-muted: hsla(213, 15%, 71%, 1);
+--text-base: hsla(220, 16%, 82%, 1);
+--text-strong: hsla(219, 18%, 92%, 1);
+--primary: hsla(220, 58%, 38%, 1);
+--primary-hover: hsla(275, 67%, 46%, 1);
+--secondary: hsla(159, 76%, 54%, 1);
+--secondary-hover: hsla(41, 85%, 62%, 1);
+--accent: hsla(6, 58%, 70%, 1);
+--accent-soft: hsla(193, 67%, 38%, 1);
+--success: hsla(327, 76%, 46%, 1);
+--warning: hsla(226, 85%, 54%, 1);
+--danger: hsla(269, 58%, 62%, 1);
+--info: hsla(155, 67%, 70%, 1);
+--link: hsla(38, 76%, 38%, 1);
+--focus-ring: hsla(4, 85%, 46%, 1);
+}
+
+/* SCSS HEX */
+$bg-canvas: #131416ff;
+$bg-surface: #2c2e33ff;
+$bg-elevated: #434651ff;
+$bg-overlay: #5a646fff;
+$border-subtle: #707d8fff;
+$border-strong: #8d99a8ff;
+$text-muted: #aab4c0ff;
+$text-base: #c8cdd8ff;
+$text-strong: #e7eaeeff;
+$primary: #294e99ff;
+$primary-hover: #8427c4ff;
+$secondary: #31e3a4ff;
+$secondary-hover: #f0bd4cff;
+$accent: #df8f86ff;
+$accent-soft: #2085a2ff;
+$success: #ce1c7eff;
+$warning: #2656edff;
+$danger: #9d66d6ff;
+$info: #7fe6baff;
+$link: #ab7517ff;
+$focus-ring: #d91e12ff;
+
+/* SCSS HSL */
+$bg-canvas: hsla(216, 6%, 8%, 1);
+$bg-surface: hsla(222, 8%, 18%, 1);
+$bg-elevated: hsla(226, 9%, 29%, 1);
+$bg-overlay: hsla(213, 10%, 40%, 1);
+$border-subtle: hsla(216, 12%, 50%, 1);
+$border-strong: hsla(212, 14%, 60%, 1);
+$text-muted: hsla(213, 15%, 71%, 1);
+$text-base: hsla(220, 16%, 82%, 1);
+$text-strong: hsla(219, 18%, 92%, 1);
+$primary: hsla(220, 58%, 38%, 1);
+$primary-hover: hsla(275, 67%, 46%, 1);
+$secondary: hsla(159, 76%, 54%, 1);
+$secondary-hover: hsla(41, 85%, 62%, 1);
+$accent: hsla(6, 58%, 70%, 1);
+$accent-soft: hsla(193, 67%, 38%, 1);
+$success: hsla(327, 76%, 46%, 1);
+$warning: hsla(226, 85%, 54%, 1);
+$danger: hsla(269, 58%, 62%, 1);
+$info: hsla(155, 67%, 70%, 1);
+$link: hsla(38, 76%, 38%, 1);
+$focus-ring: hsla(4, 85%, 46%, 1);
+
+/* SCSS RGB */
+$bg-canvas: rgba(19, 20, 22, 1);
+$bg-surface: rgba(44, 46, 51, 1);
+$bg-elevated: rgba(67, 70, 81, 1);
+$bg-overlay: rgba(90, 100, 111, 1);
+$border-subtle: rgba(112, 125, 143, 1);
+$border-strong: rgba(141, 153, 168, 1);
+$text-muted: rgba(170, 180, 192, 1);
+$text-base: rgba(200, 205, 216, 1);
+$text-strong: rgba(231, 234, 238, 1);
+$primary: rgba(41, 78, 153, 1);
+$primary-hover: rgba(132, 39, 196, 1);
+$secondary: rgba(49, 227, 164, 1);
+$secondary-hover: rgba(240, 189, 76, 1);
+$accent: rgba(223, 143, 134, 1);
+$accent-soft: rgba(32, 133, 162, 1);
+$success: rgba(206, 28, 126, 1);
+$warning: rgba(38, 86, 237, 1);
+$danger: rgba(157, 102, 214, 1);
+$info: rgba(127, 230, 186, 1);
+$link: rgba(171, 117, 23, 1);
+$focus-ring: rgba(217, 30, 18, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #131416ff, #2c2e33ff, #434651ff, #5a646fff, #707d8fff, #8d99a8ff, #aab4c0ff, #c8cdd8ff, #e7eaeeff, #294e99ff, #8427c4ff, #31e3a4ff, #f0bd4cff, #df8f86ff, #2085a2ff, #ce1c7eff, #2656edff, #9d66d6ff, #7fe6baff, #ab7517ff, #d91e12ff);
+$gradient-right: linear-gradient(90deg, #131416ff, #2c2e33ff, #434651ff, #5a646fff, #707d8fff, #8d99a8ff, #aab4c0ff, #c8cdd8ff, #e7eaeeff, #294e99ff, #8427c4ff, #31e3a4ff, #f0bd4cff, #df8f86ff, #2085a2ff, #ce1c7eff, #2656edff, #9d66d6ff, #7fe6baff, #ab7517ff, #d91e12ff);
+$gradient-bottom: linear-gradient(180deg, #131416ff, #2c2e33ff, #434651ff, #5a646fff, #707d8fff, #8d99a8ff, #aab4c0ff, #c8cdd8ff, #e7eaeeff, #294e99ff, #8427c4ff, #31e3a4ff, #f0bd4cff, #df8f86ff, #2085a2ff, #ce1c7eff, #2656edff, #9d66d6ff, #7fe6baff, #ab7517ff, #d91e12ff);
+$gradient-left: linear-gradient(270deg, #131416ff, #2c2e33ff, #434651ff, #5a646fff, #707d8fff, #8d99a8ff, #aab4c0ff, #c8cdd8ff, #e7eaeeff, #294e99ff, #8427c4ff, #31e3a4ff, #f0bd4cff, #df8f86ff, #2085a2ff, #ce1c7eff, #2656edff, #9d66d6ff, #7fe6baff, #ab7517ff, #d91e12ff);
+$gradient-top-right: linear-gradient(45deg, #131416ff, #2c2e33ff, #434651ff, #5a646fff, #707d8fff, #8d99a8ff, #aab4c0ff, #c8cdd8ff, #e7eaeeff, #294e99ff, #8427c4ff, #31e3a4ff, #f0bd4cff, #df8f86ff, #2085a2ff, #ce1c7eff, #2656edff, #9d66d6ff, #7fe6baff, #ab7517ff, #d91e12ff);
+$gradient-bottom-right: linear-gradient(135deg, #131416ff, #2c2e33ff, #434651ff, #5a646fff, #707d8fff, #8d99a8ff, #aab4c0ff, #c8cdd8ff, #e7eaeeff, #294e99ff, #8427c4ff, #31e3a4ff, #f0bd4cff, #df8f86ff, #2085a2ff, #ce1c7eff, #2656edff, #9d66d6ff, #7fe6baff, #ab7517ff, #d91e12ff);
+$gradient-top-left: linear-gradient(225deg, #131416ff, #2c2e33ff, #434651ff, #5a646fff, #707d8fff, #8d99a8ff, #aab4c0ff, #c8cdd8ff, #e7eaeeff, #294e99ff, #8427c4ff, #31e3a4ff, #f0bd4cff, #df8f86ff, #2085a2ff, #ce1c7eff, #2656edff, #9d66d6ff, #7fe6baff, #ab7517ff, #d91e12ff);
+$gradient-bottom-left: linear-gradient(315deg, #131416ff, #2c2e33ff, #434651ff, #5a646fff, #707d8fff, #8d99a8ff, #aab4c0ff, #c8cdd8ff, #e7eaeeff, #294e99ff, #8427c4ff, #31e3a4ff, #f0bd4cff, #df8f86ff, #2085a2ff, #ce1c7eff, #2656edff, #9d66d6ff, #7fe6baff, #ab7517ff, #d91e12ff);
+$gradient-radial: radial-gradient(#131416ff, #2c2e33ff, #434651ff, #5a646fff, #707d8fff, #8d99a8ff, #aab4c0ff, #c8cdd8ff, #e7eaeeff, #294e99ff, #8427c4ff, #31e3a4ff, #f0bd4cff, #df8f86ff, #2085a2ff, #ce1c7eff, #2656edff, #9d66d6ff, #7fe6baff, #ab7517ff, #d91e12ff);
+
+/* SCSS Map */
+$analytics-interface-map-21-16-map: (
+    "bg-canvas": #131416ff,
+    "bg-surface": #2c2e33ff,
+    "bg-elevated": #434651ff,
+    "bg-overlay": #5a646fff,
+    "border-subtle": #707d8fff,
+    "border-strong": #8d99a8ff,
+    "text-muted": #aab4c0ff,
+    "text-base": #c8cdd8ff,
+    "text-strong": #e7eaeeff,
+    "primary": #294e99ff,
+    "primary-hover": #8427c4ff,
+    "secondary": #31e3a4ff,
+    "secondary-hover": #f0bd4cff,
+    "accent": #df8f86ff,
+    "accent-soft": #2085a2ff,
+    "success": #ce1c7eff,
+    "warning": #2656edff,
+    "danger": #9d66d6ff,
+    "info": #7fe6baff,
+    "link": #ab7517ff,
+    "focus-ring": #d91e12ff
+);

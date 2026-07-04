@@ -1,0 +1,214 @@
+/*---
+id: canyon-mosaic-28-07
+name: Canyon Mosaic 28-07
+author: JaZeR-444
+version: 1.0.0
+category: Multi Color Composition
+count: 28
+tags:
+  mood:
+  - multi-color
+  - vibrant
+  - exploratory
+  aesthetic:
+  - Mosaic
+intent: A diverse 28-color composition for broad creative and UI exploration.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--tone-01: #18404eff;
+--tone-02: #162b5cff;
+--tone-03: #1f136bff;
+--tone-04: #400e7bff;
+--tone-05: #86098cff;
+--tone-06: #7a275bff;
+--tone-07: #8b223fff;
+--tone-08: #9c331cff;
+--tone-09: #af5b15ff;
+--tone-10: #c3c00cff;
+--tone-11: #7aa735ff;
+--tone-12: #58ba2dff;
+--tone-13: #24ce41ff;
+--tone-14: #1be48bff;
+--tone-15: #1af0deff;
+--tone-16: #4ea8c7ff;
+--tone-17: #4d7dd4ff;
+--tone-18: #634de0ff;
+--tone-19: #ac4feaff;
+--tone-20: #e451f4ff;
+--tone-21: #d57bbbff;
+--tone-22: #df7d94ff;
+--tone-23: #e8847fff;
+--tone-24: #f0c383ff;
+--tone-25: #f7f588ff;
+--tone-26: #d3e3a7ff;
+--tone-27: #bfebacff;
+--tone-28: #b1f1bcff;
+
+/* CSS HSL */
+--tone-01: hsla(195, 52%, 20%, 1);
+--tone-02: hsla(222, 61%, 22%, 1);
+--tone-03: hsla(248, 70%, 25%, 1);
+--tone-04: hsla(268, 79%, 27%, 1);
+--tone-05: hsla(297, 88%, 29%, 1);
+--tone-06: hsla(322, 52%, 31%, 1);
+--tone-07: hsla(343, 61%, 34%, 1);
+--tone-08: hsla(11, 70%, 36%, 1);
+--tone-09: hsla(27, 79%, 38%, 1);
+--tone-10: hsla(59, 88%, 41%, 1);
+--tone-11: hsla(83, 52%, 43%, 1);
+--tone-12: hsla(102, 61%, 45%, 1);
+--tone-13: hsla(130, 70%, 48%, 1);
+--tone-14: hsla(154, 79%, 50%, 1);
+--tone-15: hsla(175, 88%, 52%, 1);
+--tone-16: hsla(196, 52%, 54%, 1);
+--tone-17: hsla(219, 61%, 57%, 1);
+--tone-18: hsla(249, 70%, 59%, 1);
+--tone-19: hsla(276, 79%, 61%, 1);
+--tone-20: hsla(294, 88%, 64%, 1);
+--tone-21: hsla(318, 52%, 66%, 1);
+--tone-22: hsla(346, 61%, 68%, 1);
+--tone-23: hsla(3, 70%, 71%, 1);
+--tone-24: hsla(35, 79%, 73%, 1);
+--tone-25: hsla(59, 88%, 75%, 1);
+--tone-26: hsla(76, 52%, 77%, 1);
+--tone-27: hsla(101, 61%, 80%, 1);
+--tone-28: hsla(130, 70%, 82%, 1);
+}
+
+/* SCSS HEX */
+$tone-01: #18404eff;
+$tone-02: #162b5cff;
+$tone-03: #1f136bff;
+$tone-04: #400e7bff;
+$tone-05: #86098cff;
+$tone-06: #7a275bff;
+$tone-07: #8b223fff;
+$tone-08: #9c331cff;
+$tone-09: #af5b15ff;
+$tone-10: #c3c00cff;
+$tone-11: #7aa735ff;
+$tone-12: #58ba2dff;
+$tone-13: #24ce41ff;
+$tone-14: #1be48bff;
+$tone-15: #1af0deff;
+$tone-16: #4ea8c7ff;
+$tone-17: #4d7dd4ff;
+$tone-18: #634de0ff;
+$tone-19: #ac4feaff;
+$tone-20: #e451f4ff;
+$tone-21: #d57bbbff;
+$tone-22: #df7d94ff;
+$tone-23: #e8847fff;
+$tone-24: #f0c383ff;
+$tone-25: #f7f588ff;
+$tone-26: #d3e3a7ff;
+$tone-27: #bfebacff;
+$tone-28: #b1f1bcff;
+
+/* SCSS HSL */
+$tone-01: hsla(195, 52%, 20%, 1);
+$tone-02: hsla(222, 61%, 22%, 1);
+$tone-03: hsla(248, 70%, 25%, 1);
+$tone-04: hsla(268, 79%, 27%, 1);
+$tone-05: hsla(297, 88%, 29%, 1);
+$tone-06: hsla(322, 52%, 31%, 1);
+$tone-07: hsla(343, 61%, 34%, 1);
+$tone-08: hsla(11, 70%, 36%, 1);
+$tone-09: hsla(27, 79%, 38%, 1);
+$tone-10: hsla(59, 88%, 41%, 1);
+$tone-11: hsla(83, 52%, 43%, 1);
+$tone-12: hsla(102, 61%, 45%, 1);
+$tone-13: hsla(130, 70%, 48%, 1);
+$tone-14: hsla(154, 79%, 50%, 1);
+$tone-15: hsla(175, 88%, 52%, 1);
+$tone-16: hsla(196, 52%, 54%, 1);
+$tone-17: hsla(219, 61%, 57%, 1);
+$tone-18: hsla(249, 70%, 59%, 1);
+$tone-19: hsla(276, 79%, 61%, 1);
+$tone-20: hsla(294, 88%, 64%, 1);
+$tone-21: hsla(318, 52%, 66%, 1);
+$tone-22: hsla(346, 61%, 68%, 1);
+$tone-23: hsla(3, 70%, 71%, 1);
+$tone-24: hsla(35, 79%, 73%, 1);
+$tone-25: hsla(59, 88%, 75%, 1);
+$tone-26: hsla(76, 52%, 77%, 1);
+$tone-27: hsla(101, 61%, 80%, 1);
+$tone-28: hsla(130, 70%, 82%, 1);
+
+/* SCSS RGB */
+$tone-01: rgba(24, 64, 78, 1);
+$tone-02: rgba(22, 43, 92, 1);
+$tone-03: rgba(31, 19, 107, 1);
+$tone-04: rgba(64, 14, 123, 1);
+$tone-05: rgba(134, 9, 140, 1);
+$tone-06: rgba(122, 39, 91, 1);
+$tone-07: rgba(139, 34, 63, 1);
+$tone-08: rgba(156, 51, 28, 1);
+$tone-09: rgba(175, 91, 21, 1);
+$tone-10: rgba(195, 192, 12, 1);
+$tone-11: rgba(122, 167, 53, 1);
+$tone-12: rgba(88, 186, 45, 1);
+$tone-13: rgba(36, 206, 65, 1);
+$tone-14: rgba(27, 228, 139, 1);
+$tone-15: rgba(26, 240, 222, 1);
+$tone-16: rgba(78, 168, 199, 1);
+$tone-17: rgba(77, 125, 212, 1);
+$tone-18: rgba(99, 77, 224, 1);
+$tone-19: rgba(172, 79, 234, 1);
+$tone-20: rgba(228, 81, 244, 1);
+$tone-21: rgba(213, 123, 187, 1);
+$tone-22: rgba(223, 125, 148, 1);
+$tone-23: rgba(232, 132, 127, 1);
+$tone-24: rgba(240, 195, 131, 1);
+$tone-25: rgba(247, 245, 136, 1);
+$tone-26: rgba(211, 227, 167, 1);
+$tone-27: rgba(191, 235, 172, 1);
+$tone-28: rgba(177, 241, 188, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #18404eff, #162b5cff, #1f136bff, #400e7bff, #86098cff, #7a275bff, #8b223fff, #9c331cff, #af5b15ff, #c3c00cff, #7aa735ff, #58ba2dff, #24ce41ff, #1be48bff, #1af0deff, #4ea8c7ff, #4d7dd4ff, #634de0ff, #ac4feaff, #e451f4ff, #d57bbbff, #df7d94ff, #e8847fff, #f0c383ff, #f7f588ff, #d3e3a7ff, #bfebacff, #b1f1bcff);
+$gradient-right: linear-gradient(90deg, #18404eff, #162b5cff, #1f136bff, #400e7bff, #86098cff, #7a275bff, #8b223fff, #9c331cff, #af5b15ff, #c3c00cff, #7aa735ff, #58ba2dff, #24ce41ff, #1be48bff, #1af0deff, #4ea8c7ff, #4d7dd4ff, #634de0ff, #ac4feaff, #e451f4ff, #d57bbbff, #df7d94ff, #e8847fff, #f0c383ff, #f7f588ff, #d3e3a7ff, #bfebacff, #b1f1bcff);
+$gradient-bottom: linear-gradient(180deg, #18404eff, #162b5cff, #1f136bff, #400e7bff, #86098cff, #7a275bff, #8b223fff, #9c331cff, #af5b15ff, #c3c00cff, #7aa735ff, #58ba2dff, #24ce41ff, #1be48bff, #1af0deff, #4ea8c7ff, #4d7dd4ff, #634de0ff, #ac4feaff, #e451f4ff, #d57bbbff, #df7d94ff, #e8847fff, #f0c383ff, #f7f588ff, #d3e3a7ff, #bfebacff, #b1f1bcff);
+$gradient-left: linear-gradient(270deg, #18404eff, #162b5cff, #1f136bff, #400e7bff, #86098cff, #7a275bff, #8b223fff, #9c331cff, #af5b15ff, #c3c00cff, #7aa735ff, #58ba2dff, #24ce41ff, #1be48bff, #1af0deff, #4ea8c7ff, #4d7dd4ff, #634de0ff, #ac4feaff, #e451f4ff, #d57bbbff, #df7d94ff, #e8847fff, #f0c383ff, #f7f588ff, #d3e3a7ff, #bfebacff, #b1f1bcff);
+$gradient-top-right: linear-gradient(45deg, #18404eff, #162b5cff, #1f136bff, #400e7bff, #86098cff, #7a275bff, #8b223fff, #9c331cff, #af5b15ff, #c3c00cff, #7aa735ff, #58ba2dff, #24ce41ff, #1be48bff, #1af0deff, #4ea8c7ff, #4d7dd4ff, #634de0ff, #ac4feaff, #e451f4ff, #d57bbbff, #df7d94ff, #e8847fff, #f0c383ff, #f7f588ff, #d3e3a7ff, #bfebacff, #b1f1bcff);
+$gradient-bottom-right: linear-gradient(135deg, #18404eff, #162b5cff, #1f136bff, #400e7bff, #86098cff, #7a275bff, #8b223fff, #9c331cff, #af5b15ff, #c3c00cff, #7aa735ff, #58ba2dff, #24ce41ff, #1be48bff, #1af0deff, #4ea8c7ff, #4d7dd4ff, #634de0ff, #ac4feaff, #e451f4ff, #d57bbbff, #df7d94ff, #e8847fff, #f0c383ff, #f7f588ff, #d3e3a7ff, #bfebacff, #b1f1bcff);
+$gradient-top-left: linear-gradient(225deg, #18404eff, #162b5cff, #1f136bff, #400e7bff, #86098cff, #7a275bff, #8b223fff, #9c331cff, #af5b15ff, #c3c00cff, #7aa735ff, #58ba2dff, #24ce41ff, #1be48bff, #1af0deff, #4ea8c7ff, #4d7dd4ff, #634de0ff, #ac4feaff, #e451f4ff, #d57bbbff, #df7d94ff, #e8847fff, #f0c383ff, #f7f588ff, #d3e3a7ff, #bfebacff, #b1f1bcff);
+$gradient-bottom-left: linear-gradient(315deg, #18404eff, #162b5cff, #1f136bff, #400e7bff, #86098cff, #7a275bff, #8b223fff, #9c331cff, #af5b15ff, #c3c00cff, #7aa735ff, #58ba2dff, #24ce41ff, #1be48bff, #1af0deff, #4ea8c7ff, #4d7dd4ff, #634de0ff, #ac4feaff, #e451f4ff, #d57bbbff, #df7d94ff, #e8847fff, #f0c383ff, #f7f588ff, #d3e3a7ff, #bfebacff, #b1f1bcff);
+$gradient-radial: radial-gradient(#18404eff, #162b5cff, #1f136bff, #400e7bff, #86098cff, #7a275bff, #8b223fff, #9c331cff, #af5b15ff, #c3c00cff, #7aa735ff, #58ba2dff, #24ce41ff, #1be48bff, #1af0deff, #4ea8c7ff, #4d7dd4ff, #634de0ff, #ac4feaff, #e451f4ff, #d57bbbff, #df7d94ff, #e8847fff, #f0c383ff, #f7f588ff, #d3e3a7ff, #bfebacff, #b1f1bcff);
+
+/* SCSS Map */
+$canyon-mosaic-28-07-map: (
+    "tone-01": #18404eff,
+    "tone-02": #162b5cff,
+    "tone-03": #1f136bff,
+    "tone-04": #400e7bff,
+    "tone-05": #86098cff,
+    "tone-06": #7a275bff,
+    "tone-07": #8b223fff,
+    "tone-08": #9c331cff,
+    "tone-09": #af5b15ff,
+    "tone-10": #c3c00cff,
+    "tone-11": #7aa735ff,
+    "tone-12": #58ba2dff,
+    "tone-13": #24ce41ff,
+    "tone-14": #1be48bff,
+    "tone-15": #1af0deff,
+    "tone-16": #4ea8c7ff,
+    "tone-17": #4d7dd4ff,
+    "tone-18": #634de0ff,
+    "tone-19": #ac4feaff,
+    "tone-20": #e451f4ff,
+    "tone-21": #d57bbbff,
+    "tone-22": #df7d94ff,
+    "tone-23": #e8847fff,
+    "tone-24": #f0c383ff,
+    "tone-25": #f7f588ff,
+    "tone-26": #d3e3a7ff,
+    "tone-27": #bfebacff,
+    "tone-28": #b1f1bcff
+);

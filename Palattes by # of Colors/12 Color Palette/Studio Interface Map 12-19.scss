@@ -1,0 +1,118 @@
+/*---
+id: studio-interface-map-12-19
+name: Studio Interface Map 12-19
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 12
+tags:
+  mood:
+  - semantic
+  - product
+  - ui
+  aesthetic:
+  - Web Design
+intent: A semantic 12-color system mapped for web development roles, states, and surfaces.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--bg-canvas: #131416ff;
+--bg-surface: #3a3d45ff;
+--bg-elevated: #5f6476ff;
+--bg-overlay: #8793a3ff;
+--border-subtle: #b6becaff;
+--border-strong: #e7eaeeff;
+--primary: #294e99ff;
+--primary-hover: #8a27c4ff;
+--secondary: #31e3adff;
+--secondary-hover: #f0b24cff;
+--accent: #df9286ff;
+--accent-soft: #2086a2ff;
+
+/* CSS HSL */
+--bg-canvas: hsla(219, 6%, 8%, 1);
+--bg-surface: hsla(225, 8%, 25%, 1);
+--bg-elevated: hsla(225, 11%, 42%, 1);
+--bg-overlay: hsla(214, 13%, 58%, 1);
+--border-subtle: hsla(215, 16%, 75%, 1);
+--border-strong: hsla(213, 18%, 92%, 1);
+--primary: hsla(220, 58%, 38%, 1);
+--primary-hover: hsla(278, 67%, 46%, 1);
+--secondary: hsla(162, 76%, 54%, 1);
+--secondary-hover: hsla(37, 85%, 62%, 1);
+--accent: hsla(8, 58%, 70%, 1);
+--accent-soft: hsla(193, 67%, 38%, 1);
+}
+
+/* SCSS HEX */
+$bg-canvas: #131416ff;
+$bg-surface: #3a3d45ff;
+$bg-elevated: #5f6476ff;
+$bg-overlay: #8793a3ff;
+$border-subtle: #b6becaff;
+$border-strong: #e7eaeeff;
+$primary: #294e99ff;
+$primary-hover: #8a27c4ff;
+$secondary: #31e3adff;
+$secondary-hover: #f0b24cff;
+$accent: #df9286ff;
+$accent-soft: #2086a2ff;
+
+/* SCSS HSL */
+$bg-canvas: hsla(219, 6%, 8%, 1);
+$bg-surface: hsla(225, 8%, 25%, 1);
+$bg-elevated: hsla(225, 11%, 42%, 1);
+$bg-overlay: hsla(214, 13%, 58%, 1);
+$border-subtle: hsla(215, 16%, 75%, 1);
+$border-strong: hsla(213, 18%, 92%, 1);
+$primary: hsla(220, 58%, 38%, 1);
+$primary-hover: hsla(278, 67%, 46%, 1);
+$secondary: hsla(162, 76%, 54%, 1);
+$secondary-hover: hsla(37, 85%, 62%, 1);
+$accent: hsla(8, 58%, 70%, 1);
+$accent-soft: hsla(193, 67%, 38%, 1);
+
+/* SCSS RGB */
+$bg-canvas: rgba(19, 20, 22, 1);
+$bg-surface: rgba(58, 61, 69, 1);
+$bg-elevated: rgba(95, 100, 118, 1);
+$bg-overlay: rgba(135, 147, 163, 1);
+$border-subtle: rgba(182, 190, 202, 1);
+$border-strong: rgba(231, 234, 238, 1);
+$primary: rgba(41, 78, 153, 1);
+$primary-hover: rgba(138, 39, 196, 1);
+$secondary: rgba(49, 227, 173, 1);
+$secondary-hover: rgba(240, 178, 76, 1);
+$accent: rgba(223, 146, 134, 1);
+$accent-soft: rgba(32, 134, 162, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #131416ff, #3a3d45ff, #5f6476ff, #8793a3ff, #b6becaff, #e7eaeeff, #294e99ff, #8a27c4ff, #31e3adff, #f0b24cff, #df9286ff, #2086a2ff);
+$gradient-right: linear-gradient(90deg, #131416ff, #3a3d45ff, #5f6476ff, #8793a3ff, #b6becaff, #e7eaeeff, #294e99ff, #8a27c4ff, #31e3adff, #f0b24cff, #df9286ff, #2086a2ff);
+$gradient-bottom: linear-gradient(180deg, #131416ff, #3a3d45ff, #5f6476ff, #8793a3ff, #b6becaff, #e7eaeeff, #294e99ff, #8a27c4ff, #31e3adff, #f0b24cff, #df9286ff, #2086a2ff);
+$gradient-left: linear-gradient(270deg, #131416ff, #3a3d45ff, #5f6476ff, #8793a3ff, #b6becaff, #e7eaeeff, #294e99ff, #8a27c4ff, #31e3adff, #f0b24cff, #df9286ff, #2086a2ff);
+$gradient-top-right: linear-gradient(45deg, #131416ff, #3a3d45ff, #5f6476ff, #8793a3ff, #b6becaff, #e7eaeeff, #294e99ff, #8a27c4ff, #31e3adff, #f0b24cff, #df9286ff, #2086a2ff);
+$gradient-bottom-right: linear-gradient(135deg, #131416ff, #3a3d45ff, #5f6476ff, #8793a3ff, #b6becaff, #e7eaeeff, #294e99ff, #8a27c4ff, #31e3adff, #f0b24cff, #df9286ff, #2086a2ff);
+$gradient-top-left: linear-gradient(225deg, #131416ff, #3a3d45ff, #5f6476ff, #8793a3ff, #b6becaff, #e7eaeeff, #294e99ff, #8a27c4ff, #31e3adff, #f0b24cff, #df9286ff, #2086a2ff);
+$gradient-bottom-left: linear-gradient(315deg, #131416ff, #3a3d45ff, #5f6476ff, #8793a3ff, #b6becaff, #e7eaeeff, #294e99ff, #8a27c4ff, #31e3adff, #f0b24cff, #df9286ff, #2086a2ff);
+$gradient-radial: radial-gradient(#131416ff, #3a3d45ff, #5f6476ff, #8793a3ff, #b6becaff, #e7eaeeff, #294e99ff, #8a27c4ff, #31e3adff, #f0b24cff, #df9286ff, #2086a2ff);
+
+/* SCSS Map */
+$studio-interface-map-12-19-map: (
+    "bg-canvas": #131416ff,
+    "bg-surface": #3a3d45ff,
+    "bg-elevated": #5f6476ff,
+    "bg-overlay": #8793a3ff,
+    "border-subtle": #b6becaff,
+    "border-strong": #e7eaeeff,
+    "primary": #294e99ff,
+    "primary-hover": #8a27c4ff,
+    "secondary": #31e3adff,
+    "secondary-hover": #f0b24cff,
+    "accent": #df9286ff,
+    "accent-soft": #2086a2ff
+);

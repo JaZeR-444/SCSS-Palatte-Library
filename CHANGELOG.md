@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **License File**: Added the missing MIT `LICENSE` file referenced by package metadata and README badges.
 
 ### Added
+- **Large Palette Expansion**: Added 100 new fresh color palettes ranging from 20 to 35 colors.
+- **11-35 Folder Population**: Added 500 curated palettes across `11 Color Palette` through `35 Color Palette` (20 per folder), including multi-color compositions, single-hue spans, and web-development semantic systems.
 - **Tonary Neural Indigo**: New 8-color palette derived from the Tonary.io brand icon — a deep indigo-to-cyan tech ramp.
 - **New Palette Options**: Ember Dusk, Glass Aurora, Verdant Circuit, and Civic Sunrise.
 - **40-Palette Expansion**: Added five new palettes each to the 3-color through 10-color folders.
@@ -35,7 +37,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Showcase Header Upgrade**: Enhanced the sticky header with richer branding, live palette count, WCAG tooling badge, and a direct repository action.
 
 ### Changed
-- **Palette Folder Hierarchy**: Moved `3 Color Palette` through `10 Color Palette` into `Palattes by # of Colors/` and added empty `11 Color Palette` through `35 Color Palette` folders for expansion.
+- **Palette Folder Hierarchy**: Moved `3 Color Palette` through `10 Color Palette` into `Palattes by # of Colors/` and populated `11 Color Palette` through `35 Color Palette` with 20 palettes each.
+- **Palette Creator Count Range**: Expanded the creator count selector to support all palette sizes from 3 through 35 colors.
 
 ## [2.0.0] - 2026-05-18
 

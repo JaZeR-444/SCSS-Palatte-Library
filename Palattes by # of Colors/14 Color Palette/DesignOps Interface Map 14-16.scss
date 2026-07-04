@@ -1,0 +1,130 @@
+/*---
+id: designops-interface-map-14-16
+name: DesignOps Interface Map 14-16
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 14
+tags:
+  mood:
+  - semantic
+  - product
+  - ui
+  aesthetic:
+  - Web Design
+intent: A semantic 14-color system mapped for web development roles, states, and surfaces.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--bg-canvas: #131416ff;
+--bg-surface: #2f3237ff;
+--bg-elevated: #4a4e59ff;
+--bg-overlay: #646d7dff;
+--border-subtle: #808d9dff;
+--border-strong: #a2acb9ff;
+--text-muted: #c4c9d4ff;
+--text-base: #e7eaeeff;
+--primary: #294599ff;
+--primary-hover: #8227c4ff;
+--secondary: #31e399ff;
+--secondary-hover: #f0af4cff;
+--accent: #df8e86ff;
+--accent-soft: #2088a2ff;
+
+/* CSS HSL */
+--bg-canvas: hsla(219, 6%, 8%, 1);
+--bg-surface: hsla(216, 8%, 20%, 1);
+--bg-elevated: hsla(224, 9%, 32%, 1);
+--bg-overlay: hsla(217, 11%, 44%, 1);
+--border-subtle: hsla(215, 13%, 56%, 1);
+--border-strong: hsla(215, 15%, 68%, 1);
+--text-muted: hsla(221, 16%, 80%, 1);
+--text-base: hsla(212, 18%, 92%, 1);
+--primary: hsla(225, 58%, 38%, 1);
+--primary-hover: hsla(275, 67%, 46%, 1);
+--secondary: hsla(155, 76%, 54%, 1);
+--secondary-hover: hsla(36, 85%, 62%, 1);
+--accent: hsla(5, 58%, 70%, 1);
+--accent-soft: hsla(192, 67%, 38%, 1);
+}
+
+/* SCSS HEX */
+$bg-canvas: #131416ff;
+$bg-surface: #2f3237ff;
+$bg-elevated: #4a4e59ff;
+$bg-overlay: #646d7dff;
+$border-subtle: #808d9dff;
+$border-strong: #a2acb9ff;
+$text-muted: #c4c9d4ff;
+$text-base: #e7eaeeff;
+$primary: #294599ff;
+$primary-hover: #8227c4ff;
+$secondary: #31e399ff;
+$secondary-hover: #f0af4cff;
+$accent: #df8e86ff;
+$accent-soft: #2088a2ff;
+
+/* SCSS HSL */
+$bg-canvas: hsla(219, 6%, 8%, 1);
+$bg-surface: hsla(216, 8%, 20%, 1);
+$bg-elevated: hsla(224, 9%, 32%, 1);
+$bg-overlay: hsla(217, 11%, 44%, 1);
+$border-subtle: hsla(215, 13%, 56%, 1);
+$border-strong: hsla(215, 15%, 68%, 1);
+$text-muted: hsla(221, 16%, 80%, 1);
+$text-base: hsla(212, 18%, 92%, 1);
+$primary: hsla(225, 58%, 38%, 1);
+$primary-hover: hsla(275, 67%, 46%, 1);
+$secondary: hsla(155, 76%, 54%, 1);
+$secondary-hover: hsla(36, 85%, 62%, 1);
+$accent: hsla(5, 58%, 70%, 1);
+$accent-soft: hsla(192, 67%, 38%, 1);
+
+/* SCSS RGB */
+$bg-canvas: rgba(19, 20, 22, 1);
+$bg-surface: rgba(47, 50, 55, 1);
+$bg-elevated: rgba(74, 78, 89, 1);
+$bg-overlay: rgba(100, 109, 125, 1);
+$border-subtle: rgba(128, 141, 157, 1);
+$border-strong: rgba(162, 172, 185, 1);
+$text-muted: rgba(196, 201, 212, 1);
+$text-base: rgba(231, 234, 238, 1);
+$primary: rgba(41, 69, 153, 1);
+$primary-hover: rgba(130, 39, 196, 1);
+$secondary: rgba(49, 227, 153, 1);
+$secondary-hover: rgba(240, 175, 76, 1);
+$accent: rgba(223, 142, 134, 1);
+$accent-soft: rgba(32, 136, 162, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #131416ff, #2f3237ff, #4a4e59ff, #646d7dff, #808d9dff, #a2acb9ff, #c4c9d4ff, #e7eaeeff, #294599ff, #8227c4ff, #31e399ff, #f0af4cff, #df8e86ff, #2088a2ff);
+$gradient-right: linear-gradient(90deg, #131416ff, #2f3237ff, #4a4e59ff, #646d7dff, #808d9dff, #a2acb9ff, #c4c9d4ff, #e7eaeeff, #294599ff, #8227c4ff, #31e399ff, #f0af4cff, #df8e86ff, #2088a2ff);
+$gradient-bottom: linear-gradient(180deg, #131416ff, #2f3237ff, #4a4e59ff, #646d7dff, #808d9dff, #a2acb9ff, #c4c9d4ff, #e7eaeeff, #294599ff, #8227c4ff, #31e399ff, #f0af4cff, #df8e86ff, #2088a2ff);
+$gradient-left: linear-gradient(270deg, #131416ff, #2f3237ff, #4a4e59ff, #646d7dff, #808d9dff, #a2acb9ff, #c4c9d4ff, #e7eaeeff, #294599ff, #8227c4ff, #31e399ff, #f0af4cff, #df8e86ff, #2088a2ff);
+$gradient-top-right: linear-gradient(45deg, #131416ff, #2f3237ff, #4a4e59ff, #646d7dff, #808d9dff, #a2acb9ff, #c4c9d4ff, #e7eaeeff, #294599ff, #8227c4ff, #31e399ff, #f0af4cff, #df8e86ff, #2088a2ff);
+$gradient-bottom-right: linear-gradient(135deg, #131416ff, #2f3237ff, #4a4e59ff, #646d7dff, #808d9dff, #a2acb9ff, #c4c9d4ff, #e7eaeeff, #294599ff, #8227c4ff, #31e399ff, #f0af4cff, #df8e86ff, #2088a2ff);
+$gradient-top-left: linear-gradient(225deg, #131416ff, #2f3237ff, #4a4e59ff, #646d7dff, #808d9dff, #a2acb9ff, #c4c9d4ff, #e7eaeeff, #294599ff, #8227c4ff, #31e399ff, #f0af4cff, #df8e86ff, #2088a2ff);
+$gradient-bottom-left: linear-gradient(315deg, #131416ff, #2f3237ff, #4a4e59ff, #646d7dff, #808d9dff, #a2acb9ff, #c4c9d4ff, #e7eaeeff, #294599ff, #8227c4ff, #31e399ff, #f0af4cff, #df8e86ff, #2088a2ff);
+$gradient-radial: radial-gradient(#131416ff, #2f3237ff, #4a4e59ff, #646d7dff, #808d9dff, #a2acb9ff, #c4c9d4ff, #e7eaeeff, #294599ff, #8227c4ff, #31e399ff, #f0af4cff, #df8e86ff, #2088a2ff);
+
+/* SCSS Map */
+$designops-interface-map-14-16-map: (
+    "bg-canvas": #131416ff,
+    "bg-surface": #2f3237ff,
+    "bg-elevated": #4a4e59ff,
+    "bg-overlay": #646d7dff,
+    "border-subtle": #808d9dff,
+    "border-strong": #a2acb9ff,
+    "text-muted": #c4c9d4ff,
+    "text-base": #e7eaeeff,
+    "primary": #294599ff,
+    "primary-hover": #8227c4ff,
+    "secondary": #31e399ff,
+    "secondary-hover": #f0af4cff,
+    "accent": #df8e86ff,
+    "accent-soft": #2088a2ff
+);

@@ -1,0 +1,124 @@
+/*---
+id: honey-span-13-13
+name: Honey Span 13-13
+author: JaZeR-444
+version: 1.0.0
+category: Singular Hue Span
+count: 13
+tags:
+  mood:
+  - focused
+  - tonal
+  - cohesive
+  aesthetic:
+  - Hue Span
+intent: A single-hue 13-step span for systematic tonal design and theming.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--span-01: #191710ff;
+--span-02: #322b1bff;
+--span-03: #53471dff;
+--span-04: #725d22ff;
+--span-05: #957823ff;
+--span-06: #c49918ff;
+--span-07: #efb410ff;
+--span-08: #e8c53bff;
+--span-09: #dfbf67ff;
+--span-10: #decc8cff;
+--span-11: #e1d3adff;
+--span-12: #e7e0caff;
+--span-13: #efede6ff;
+
+/* CSS HSL */
+--span-01: hsla(45, 23%, 8%, 1);
+--span-02: hsla(45, 30%, 15%, 1);
+--span-03: hsla(45, 48%, 22%, 1);
+--span-04: hsla(45, 54%, 29%, 1);
+--span-05: hsla(45, 62%, 36%, 1);
+--span-06: hsla(45, 78%, 43%, 1);
+--span-07: hsla(45, 87%, 50%, 1);
+--span-08: hsla(45, 79%, 57%, 1);
+--span-09: hsla(45, 65%, 64%, 1);
+--span-10: hsla(45, 56%, 71%, 1);
+--span-11: hsla(45, 46%, 78%, 1);
+--span-12: hsla(45, 37%, 85%, 1);
+--span-13: hsla(45, 23%, 92%, 1);
+}
+
+/* SCSS HEX */
+$span-01: #191710ff;
+$span-02: #322b1bff;
+$span-03: #53471dff;
+$span-04: #725d22ff;
+$span-05: #957823ff;
+$span-06: #c49918ff;
+$span-07: #efb410ff;
+$span-08: #e8c53bff;
+$span-09: #dfbf67ff;
+$span-10: #decc8cff;
+$span-11: #e1d3adff;
+$span-12: #e7e0caff;
+$span-13: #efede6ff;
+
+/* SCSS HSL */
+$span-01: hsla(45, 23%, 8%, 1);
+$span-02: hsla(45, 30%, 15%, 1);
+$span-03: hsla(45, 48%, 22%, 1);
+$span-04: hsla(45, 54%, 29%, 1);
+$span-05: hsla(45, 62%, 36%, 1);
+$span-06: hsla(45, 78%, 43%, 1);
+$span-07: hsla(45, 87%, 50%, 1);
+$span-08: hsla(45, 79%, 57%, 1);
+$span-09: hsla(45, 65%, 64%, 1);
+$span-10: hsla(45, 56%, 71%, 1);
+$span-11: hsla(45, 46%, 78%, 1);
+$span-12: hsla(45, 37%, 85%, 1);
+$span-13: hsla(45, 23%, 92%, 1);
+
+/* SCSS RGB */
+$span-01: rgba(25, 23, 16, 1);
+$span-02: rgba(50, 43, 27, 1);
+$span-03: rgba(83, 71, 29, 1);
+$span-04: rgba(114, 93, 34, 1);
+$span-05: rgba(149, 120, 35, 1);
+$span-06: rgba(196, 153, 24, 1);
+$span-07: rgba(239, 180, 16, 1);
+$span-08: rgba(232, 197, 59, 1);
+$span-09: rgba(223, 191, 103, 1);
+$span-10: rgba(222, 204, 140, 1);
+$span-11: rgba(225, 211, 173, 1);
+$span-12: rgba(231, 224, 202, 1);
+$span-13: rgba(239, 237, 230, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #191710ff, #322b1bff, #53471dff, #725d22ff, #957823ff, #c49918ff, #efb410ff, #e8c53bff, #dfbf67ff, #decc8cff, #e1d3adff, #e7e0caff, #efede6ff);
+$gradient-right: linear-gradient(90deg, #191710ff, #322b1bff, #53471dff, #725d22ff, #957823ff, #c49918ff, #efb410ff, #e8c53bff, #dfbf67ff, #decc8cff, #e1d3adff, #e7e0caff, #efede6ff);
+$gradient-bottom: linear-gradient(180deg, #191710ff, #322b1bff, #53471dff, #725d22ff, #957823ff, #c49918ff, #efb410ff, #e8c53bff, #dfbf67ff, #decc8cff, #e1d3adff, #e7e0caff, #efede6ff);
+$gradient-left: linear-gradient(270deg, #191710ff, #322b1bff, #53471dff, #725d22ff, #957823ff, #c49918ff, #efb410ff, #e8c53bff, #dfbf67ff, #decc8cff, #e1d3adff, #e7e0caff, #efede6ff);
+$gradient-top-right: linear-gradient(45deg, #191710ff, #322b1bff, #53471dff, #725d22ff, #957823ff, #c49918ff, #efb410ff, #e8c53bff, #dfbf67ff, #decc8cff, #e1d3adff, #e7e0caff, #efede6ff);
+$gradient-bottom-right: linear-gradient(135deg, #191710ff, #322b1bff, #53471dff, #725d22ff, #957823ff, #c49918ff, #efb410ff, #e8c53bff, #dfbf67ff, #decc8cff, #e1d3adff, #e7e0caff, #efede6ff);
+$gradient-top-left: linear-gradient(225deg, #191710ff, #322b1bff, #53471dff, #725d22ff, #957823ff, #c49918ff, #efb410ff, #e8c53bff, #dfbf67ff, #decc8cff, #e1d3adff, #e7e0caff, #efede6ff);
+$gradient-bottom-left: linear-gradient(315deg, #191710ff, #322b1bff, #53471dff, #725d22ff, #957823ff, #c49918ff, #efb410ff, #e8c53bff, #dfbf67ff, #decc8cff, #e1d3adff, #e7e0caff, #efede6ff);
+$gradient-radial: radial-gradient(#191710ff, #322b1bff, #53471dff, #725d22ff, #957823ff, #c49918ff, #efb410ff, #e8c53bff, #dfbf67ff, #decc8cff, #e1d3adff, #e7e0caff, #efede6ff);
+
+/* SCSS Map */
+$honey-span-13-13-map: (
+    "span-01": #191710ff,
+    "span-02": #322b1bff,
+    "span-03": #53471dff,
+    "span-04": #725d22ff,
+    "span-05": #957823ff,
+    "span-06": #c49918ff,
+    "span-07": #efb410ff,
+    "span-08": #e8c53bff,
+    "span-09": #dfbf67ff,
+    "span-10": #decc8cff,
+    "span-11": #e1d3adff,
+    "span-12": #e7e0caff,
+    "span-13": #efede6ff
+);

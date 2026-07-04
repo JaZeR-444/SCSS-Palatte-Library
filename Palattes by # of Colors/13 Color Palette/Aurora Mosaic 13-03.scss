@@ -1,0 +1,124 @@
+/*---
+id: aurora-mosaic-13-03
+name: Aurora Mosaic 13-03
+author: JaZeR-444
+version: 1.0.0
+category: Multi Color Composition
+count: 13
+tags:
+  mood:
+  - multi-color
+  - vibrant
+  - exploratory
+  aesthetic:
+  - Mosaic
+intent: A diverse 13-color composition for broad creative and UI exploration.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--tone-01: #4e181fff;
+--tone-02: #672f19ff;
+--tone-03: #836017ff;
+--tone-04: #8aa213ff;
+--tone-05: #4cc30cff;
+--tone-06: #38b240ff;
+--tone-07: #36ce95ff;
+--tone-08: #41ddd6ff;
+--tone-09: #4fa6eaff;
+--tone-10: #5e5ff5ff;
+--tone-11: #af91dcff;
+--tone-12: #e8a0e8ff;
+--tone-13: #f1b1d3ff;
+
+/* CSS HSL */
+--tone-01: hsla(352, 52%, 20%, 1);
+--tone-02: hsla(17, 61%, 25%, 1);
+--tone-03: hsla(40, 70%, 30%, 1);
+--tone-04: hsla(70, 79%, 36%, 1);
+--tone-05: hsla(99, 88%, 41%, 1);
+--tone-06: hsla(124, 52%, 46%, 1);
+--tone-07: hsla(158, 61%, 51%, 1);
+--tone-08: hsla(177, 70%, 56%, 1);
+--tone-09: hsla(206, 79%, 61%, 1);
+--tone-10: hsla(240, 88%, 66%, 1);
+--tone-11: hsla(264, 52%, 72%, 1);
+--tone-12: hsla(300, 61%, 77%, 1);
+--tone-13: hsla(328, 70%, 82%, 1);
+}
+
+/* SCSS HEX */
+$tone-01: #4e181fff;
+$tone-02: #672f19ff;
+$tone-03: #836017ff;
+$tone-04: #8aa213ff;
+$tone-05: #4cc30cff;
+$tone-06: #38b240ff;
+$tone-07: #36ce95ff;
+$tone-08: #41ddd6ff;
+$tone-09: #4fa6eaff;
+$tone-10: #5e5ff5ff;
+$tone-11: #af91dcff;
+$tone-12: #e8a0e8ff;
+$tone-13: #f1b1d3ff;
+
+/* SCSS HSL */
+$tone-01: hsla(352, 52%, 20%, 1);
+$tone-02: hsla(17, 61%, 25%, 1);
+$tone-03: hsla(40, 70%, 30%, 1);
+$tone-04: hsla(70, 79%, 36%, 1);
+$tone-05: hsla(99, 88%, 41%, 1);
+$tone-06: hsla(124, 52%, 46%, 1);
+$tone-07: hsla(158, 61%, 51%, 1);
+$tone-08: hsla(177, 70%, 56%, 1);
+$tone-09: hsla(206, 79%, 61%, 1);
+$tone-10: hsla(240, 88%, 66%, 1);
+$tone-11: hsla(264, 52%, 72%, 1);
+$tone-12: hsla(300, 61%, 77%, 1);
+$tone-13: hsla(328, 70%, 82%, 1);
+
+/* SCSS RGB */
+$tone-01: rgba(78, 24, 31, 1);
+$tone-02: rgba(103, 47, 25, 1);
+$tone-03: rgba(131, 96, 23, 1);
+$tone-04: rgba(138, 162, 19, 1);
+$tone-05: rgba(76, 195, 12, 1);
+$tone-06: rgba(56, 178, 64, 1);
+$tone-07: rgba(54, 206, 149, 1);
+$tone-08: rgba(65, 221, 214, 1);
+$tone-09: rgba(79, 166, 234, 1);
+$tone-10: rgba(94, 95, 245, 1);
+$tone-11: rgba(175, 145, 220, 1);
+$tone-12: rgba(232, 160, 232, 1);
+$tone-13: rgba(241, 177, 211, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #4e181fff, #672f19ff, #836017ff, #8aa213ff, #4cc30cff, #38b240ff, #36ce95ff, #41ddd6ff, #4fa6eaff, #5e5ff5ff, #af91dcff, #e8a0e8ff, #f1b1d3ff);
+$gradient-right: linear-gradient(90deg, #4e181fff, #672f19ff, #836017ff, #8aa213ff, #4cc30cff, #38b240ff, #36ce95ff, #41ddd6ff, #4fa6eaff, #5e5ff5ff, #af91dcff, #e8a0e8ff, #f1b1d3ff);
+$gradient-bottom: linear-gradient(180deg, #4e181fff, #672f19ff, #836017ff, #8aa213ff, #4cc30cff, #38b240ff, #36ce95ff, #41ddd6ff, #4fa6eaff, #5e5ff5ff, #af91dcff, #e8a0e8ff, #f1b1d3ff);
+$gradient-left: linear-gradient(270deg, #4e181fff, #672f19ff, #836017ff, #8aa213ff, #4cc30cff, #38b240ff, #36ce95ff, #41ddd6ff, #4fa6eaff, #5e5ff5ff, #af91dcff, #e8a0e8ff, #f1b1d3ff);
+$gradient-top-right: linear-gradient(45deg, #4e181fff, #672f19ff, #836017ff, #8aa213ff, #4cc30cff, #38b240ff, #36ce95ff, #41ddd6ff, #4fa6eaff, #5e5ff5ff, #af91dcff, #e8a0e8ff, #f1b1d3ff);
+$gradient-bottom-right: linear-gradient(135deg, #4e181fff, #672f19ff, #836017ff, #8aa213ff, #4cc30cff, #38b240ff, #36ce95ff, #41ddd6ff, #4fa6eaff, #5e5ff5ff, #af91dcff, #e8a0e8ff, #f1b1d3ff);
+$gradient-top-left: linear-gradient(225deg, #4e181fff, #672f19ff, #836017ff, #8aa213ff, #4cc30cff, #38b240ff, #36ce95ff, #41ddd6ff, #4fa6eaff, #5e5ff5ff, #af91dcff, #e8a0e8ff, #f1b1d3ff);
+$gradient-bottom-left: linear-gradient(315deg, #4e181fff, #672f19ff, #836017ff, #8aa213ff, #4cc30cff, #38b240ff, #36ce95ff, #41ddd6ff, #4fa6eaff, #5e5ff5ff, #af91dcff, #e8a0e8ff, #f1b1d3ff);
+$gradient-radial: radial-gradient(#4e181fff, #672f19ff, #836017ff, #8aa213ff, #4cc30cff, #38b240ff, #36ce95ff, #41ddd6ff, #4fa6eaff, #5e5ff5ff, #af91dcff, #e8a0e8ff, #f1b1d3ff);
+
+/* SCSS Map */
+$aurora-mosaic-13-03-map: (
+    "tone-01": #4e181fff,
+    "tone-02": #672f19ff,
+    "tone-03": #836017ff,
+    "tone-04": #8aa213ff,
+    "tone-05": #4cc30cff,
+    "tone-06": #38b240ff,
+    "tone-07": #36ce95ff,
+    "tone-08": #41ddd6ff,
+    "tone-09": #4fa6eaff,
+    "tone-10": #5e5ff5ff,
+    "tone-11": #af91dcff,
+    "tone-12": #e8a0e8ff,
+    "tone-13": #f1b1d3ff
+);

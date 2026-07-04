@@ -1,0 +1,160 @@
+/*---
+id: analytics-interface-map-19-18
+name: Analytics Interface Map 19-18
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 19
+tags:
+  mood:
+  - semantic
+  - product
+  - ui
+  aesthetic:
+  - Web Design
+intent: A semantic 19-color system mapped for web development roles, states, and surfaces.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--bg-canvas: #131416ff;
+--bg-surface: #2c2e33ff;
+--bg-elevated: #434751ff;
+--bg-overlay: #5a606fff;
+--border-subtle: #707e8fff;
+--border-strong: #8d97a8ff;
+--text-muted: #aab0c0ff;
+--text-base: #c8cdd8ff;
+--text-strong: #e7eaeeff;
+--primary: #295499ff;
+--primary-hover: #7427c4ff;
+--secondary: #31e3acff;
+--secondary-hover: #f0c54cff;
+--accent: #df8b86ff;
+--accent-soft: #208ca2ff;
+--success: #ce1c81ff;
+--warning: #2679edff;
+--danger: #ad66d6ff;
+--info: #7fe6bcff;
+
+/* CSS HSL */
+--bg-canvas: hsla(214, 6%, 8%, 1);
+--bg-surface: hsla(222, 8%, 18%, 1);
+--bg-elevated: hsla(221, 9%, 29%, 1);
+--bg-overlay: hsla(224, 10%, 40%, 1);
+--border-subtle: hsla(213, 12%, 50%, 1);
+--border-strong: hsla(216, 14%, 60%, 1);
+--text-muted: hsla(223, 15%, 71%, 1);
+--text-base: hsla(223, 16%, 82%, 1);
+--text-strong: hsla(216, 18%, 92%, 1);
+--primary: hsla(217, 58%, 38%, 1);
+--primary-hover: hsla(269, 67%, 46%, 1);
+--secondary: hsla(162, 76%, 54%, 1);
+--secondary-hover: hsla(44, 85%, 62%, 1);
+--accent: hsla(3, 58%, 70%, 1);
+--accent-soft: hsla(190, 67%, 38%, 1);
+--success: hsla(326, 76%, 46%, 1);
+--warning: hsla(215, 85%, 54%, 1);
+--danger: hsla(278, 58%, 62%, 1);
+--info: hsla(155, 67%, 70%, 1);
+}
+
+/* SCSS HEX */
+$bg-canvas: #131416ff;
+$bg-surface: #2c2e33ff;
+$bg-elevated: #434751ff;
+$bg-overlay: #5a606fff;
+$border-subtle: #707e8fff;
+$border-strong: #8d97a8ff;
+$text-muted: #aab0c0ff;
+$text-base: #c8cdd8ff;
+$text-strong: #e7eaeeff;
+$primary: #295499ff;
+$primary-hover: #7427c4ff;
+$secondary: #31e3acff;
+$secondary-hover: #f0c54cff;
+$accent: #df8b86ff;
+$accent-soft: #208ca2ff;
+$success: #ce1c81ff;
+$warning: #2679edff;
+$danger: #ad66d6ff;
+$info: #7fe6bcff;
+
+/* SCSS HSL */
+$bg-canvas: hsla(214, 6%, 8%, 1);
+$bg-surface: hsla(222, 8%, 18%, 1);
+$bg-elevated: hsla(221, 9%, 29%, 1);
+$bg-overlay: hsla(224, 10%, 40%, 1);
+$border-subtle: hsla(213, 12%, 50%, 1);
+$border-strong: hsla(216, 14%, 60%, 1);
+$text-muted: hsla(223, 15%, 71%, 1);
+$text-base: hsla(223, 16%, 82%, 1);
+$text-strong: hsla(216, 18%, 92%, 1);
+$primary: hsla(217, 58%, 38%, 1);
+$primary-hover: hsla(269, 67%, 46%, 1);
+$secondary: hsla(162, 76%, 54%, 1);
+$secondary-hover: hsla(44, 85%, 62%, 1);
+$accent: hsla(3, 58%, 70%, 1);
+$accent-soft: hsla(190, 67%, 38%, 1);
+$success: hsla(326, 76%, 46%, 1);
+$warning: hsla(215, 85%, 54%, 1);
+$danger: hsla(278, 58%, 62%, 1);
+$info: hsla(155, 67%, 70%, 1);
+
+/* SCSS RGB */
+$bg-canvas: rgba(19, 20, 22, 1);
+$bg-surface: rgba(44, 46, 51, 1);
+$bg-elevated: rgba(67, 71, 81, 1);
+$bg-overlay: rgba(90, 96, 111, 1);
+$border-subtle: rgba(112, 126, 143, 1);
+$border-strong: rgba(141, 151, 168, 1);
+$text-muted: rgba(170, 176, 192, 1);
+$text-base: rgba(200, 205, 216, 1);
+$text-strong: rgba(231, 234, 238, 1);
+$primary: rgba(41, 84, 153, 1);
+$primary-hover: rgba(116, 39, 196, 1);
+$secondary: rgba(49, 227, 172, 1);
+$secondary-hover: rgba(240, 197, 76, 1);
+$accent: rgba(223, 139, 134, 1);
+$accent-soft: rgba(32, 140, 162, 1);
+$success: rgba(206, 28, 129, 1);
+$warning: rgba(38, 121, 237, 1);
+$danger: rgba(173, 102, 214, 1);
+$info: rgba(127, 230, 188, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #131416ff, #2c2e33ff, #434751ff, #5a606fff, #707e8fff, #8d97a8ff, #aab0c0ff, #c8cdd8ff, #e7eaeeff, #295499ff, #7427c4ff, #31e3acff, #f0c54cff, #df8b86ff, #208ca2ff, #ce1c81ff, #2679edff, #ad66d6ff, #7fe6bcff);
+$gradient-right: linear-gradient(90deg, #131416ff, #2c2e33ff, #434751ff, #5a606fff, #707e8fff, #8d97a8ff, #aab0c0ff, #c8cdd8ff, #e7eaeeff, #295499ff, #7427c4ff, #31e3acff, #f0c54cff, #df8b86ff, #208ca2ff, #ce1c81ff, #2679edff, #ad66d6ff, #7fe6bcff);
+$gradient-bottom: linear-gradient(180deg, #131416ff, #2c2e33ff, #434751ff, #5a606fff, #707e8fff, #8d97a8ff, #aab0c0ff, #c8cdd8ff, #e7eaeeff, #295499ff, #7427c4ff, #31e3acff, #f0c54cff, #df8b86ff, #208ca2ff, #ce1c81ff, #2679edff, #ad66d6ff, #7fe6bcff);
+$gradient-left: linear-gradient(270deg, #131416ff, #2c2e33ff, #434751ff, #5a606fff, #707e8fff, #8d97a8ff, #aab0c0ff, #c8cdd8ff, #e7eaeeff, #295499ff, #7427c4ff, #31e3acff, #f0c54cff, #df8b86ff, #208ca2ff, #ce1c81ff, #2679edff, #ad66d6ff, #7fe6bcff);
+$gradient-top-right: linear-gradient(45deg, #131416ff, #2c2e33ff, #434751ff, #5a606fff, #707e8fff, #8d97a8ff, #aab0c0ff, #c8cdd8ff, #e7eaeeff, #295499ff, #7427c4ff, #31e3acff, #f0c54cff, #df8b86ff, #208ca2ff, #ce1c81ff, #2679edff, #ad66d6ff, #7fe6bcff);
+$gradient-bottom-right: linear-gradient(135deg, #131416ff, #2c2e33ff, #434751ff, #5a606fff, #707e8fff, #8d97a8ff, #aab0c0ff, #c8cdd8ff, #e7eaeeff, #295499ff, #7427c4ff, #31e3acff, #f0c54cff, #df8b86ff, #208ca2ff, #ce1c81ff, #2679edff, #ad66d6ff, #7fe6bcff);
+$gradient-top-left: linear-gradient(225deg, #131416ff, #2c2e33ff, #434751ff, #5a606fff, #707e8fff, #8d97a8ff, #aab0c0ff, #c8cdd8ff, #e7eaeeff, #295499ff, #7427c4ff, #31e3acff, #f0c54cff, #df8b86ff, #208ca2ff, #ce1c81ff, #2679edff, #ad66d6ff, #7fe6bcff);
+$gradient-bottom-left: linear-gradient(315deg, #131416ff, #2c2e33ff, #434751ff, #5a606fff, #707e8fff, #8d97a8ff, #aab0c0ff, #c8cdd8ff, #e7eaeeff, #295499ff, #7427c4ff, #31e3acff, #f0c54cff, #df8b86ff, #208ca2ff, #ce1c81ff, #2679edff, #ad66d6ff, #7fe6bcff);
+$gradient-radial: radial-gradient(#131416ff, #2c2e33ff, #434751ff, #5a606fff, #707e8fff, #8d97a8ff, #aab0c0ff, #c8cdd8ff, #e7eaeeff, #295499ff, #7427c4ff, #31e3acff, #f0c54cff, #df8b86ff, #208ca2ff, #ce1c81ff, #2679edff, #ad66d6ff, #7fe6bcff);
+
+/* SCSS Map */
+$analytics-interface-map-19-18-map: (
+    "bg-canvas": #131416ff,
+    "bg-surface": #2c2e33ff,
+    "bg-elevated": #434751ff,
+    "bg-overlay": #5a606fff,
+    "border-subtle": #707e8fff,
+    "border-strong": #8d97a8ff,
+    "text-muted": #aab0c0ff,
+    "text-base": #c8cdd8ff,
+    "text-strong": #e7eaeeff,
+    "primary": #295499ff,
+    "primary-hover": #7427c4ff,
+    "secondary": #31e3acff,
+    "secondary-hover": #f0c54cff,
+    "accent": #df8b86ff,
+    "accent-soft": #208ca2ff,
+    "success": #ce1c81ff,
+    "warning": #2679edff,
+    "danger": #ad66d6ff,
+    "info": #7fe6bcff
+);

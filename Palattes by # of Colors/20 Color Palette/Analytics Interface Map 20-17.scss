@@ -1,0 +1,166 @@
+/*---
+id: analytics-interface-map-20-17
+name: Analytics Interface Map 20-17
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 20
+tags:
+  mood:
+  - semantic
+  - product
+  - ui
+  aesthetic:
+  - Web Design
+intent: A semantic 20-color system mapped for web development roles, states, and surfaces.
+url: https://coolors.co/
+created: '2026-07-04'
+updated: '2026-07-04'
+---*/
+
+:root {
+/* CSS HEX */
+--bg-canvas: #131416ff;
+--bg-surface: #2c2e33ff;
+--bg-elevated: #434651ff;
+--bg-overlay: #5a5f6fff;
+--border-subtle: #70778fff;
+--border-strong: #8d98a8ff;
+--text-muted: #aab1c0ff;
+--text-base: #c8cdd8ff;
+--text-strong: #e7eaeeff;
+--primary: #295999ff;
+--primary-hover: #7727c4ff;
+--secondary: #31e3aaff;
+--secondary-hover: #f0c44cff;
+--accent: #df8f86ff;
+--accent-soft: #2079a2ff;
+--success: #ce1c66ff;
+--warning: #267bedff;
+--danger: #a766d6ff;
+--info: #7fe6bcff;
+--link: #ab7617ff;
+
+/* CSS HSL */
+--bg-canvas: hsla(218, 6%, 8%, 1);
+--bg-surface: hsla(220, 8%, 18%, 1);
+--bg-elevated: hsla(228, 9%, 29%, 1);
+--bg-overlay: hsla(228, 10%, 40%, 1);
+--border-subtle: hsla(226, 12%, 50%, 1);
+--border-strong: hsla(214, 14%, 60%, 1);
+--text-muted: hsla(220, 15%, 71%, 1);
+--text-base: hsla(222, 16%, 82%, 1);
+--text-strong: hsla(217, 18%, 92%, 1);
+--primary: hsla(214, 58%, 38%, 1);
+--primary-hover: hsla(270, 67%, 46%, 1);
+--secondary: hsla(161, 76%, 54%, 1);
+--secondary-hover: hsla(44, 85%, 62%, 1);
+--accent: hsla(6, 58%, 70%, 1);
+--accent-soft: hsla(199, 67%, 38%, 1);
+--success: hsla(335, 76%, 46%, 1);
+--warning: hsla(214, 85%, 54%, 1);
+--danger: hsla(275, 58%, 62%, 1);
+--info: hsla(156, 67%, 70%, 1);
+--link: hsla(38, 76%, 38%, 1);
+}
+
+/* SCSS HEX */
+$bg-canvas: #131416ff;
+$bg-surface: #2c2e33ff;
+$bg-elevated: #434651ff;
+$bg-overlay: #5a5f6fff;
+$border-subtle: #70778fff;
+$border-strong: #8d98a8ff;
+$text-muted: #aab1c0ff;
+$text-base: #c8cdd8ff;
+$text-strong: #e7eaeeff;
+$primary: #295999ff;
+$primary-hover: #7727c4ff;
+$secondary: #31e3aaff;
+$secondary-hover: #f0c44cff;
+$accent: #df8f86ff;
+$accent-soft: #2079a2ff;
+$success: #ce1c66ff;
+$warning: #267bedff;
+$danger: #a766d6ff;
+$info: #7fe6bcff;
+$link: #ab7617ff;
+
+/* SCSS HSL */
+$bg-canvas: hsla(218, 6%, 8%, 1);
+$bg-surface: hsla(220, 8%, 18%, 1);
+$bg-elevated: hsla(228, 9%, 29%, 1);
+$bg-overlay: hsla(228, 10%, 40%, 1);
+$border-subtle: hsla(226, 12%, 50%, 1);
+$border-strong: hsla(214, 14%, 60%, 1);
+$text-muted: hsla(220, 15%, 71%, 1);
+$text-base: hsla(222, 16%, 82%, 1);
+$text-strong: hsla(217, 18%, 92%, 1);
+$primary: hsla(214, 58%, 38%, 1);
+$primary-hover: hsla(270, 67%, 46%, 1);
+$secondary: hsla(161, 76%, 54%, 1);
+$secondary-hover: hsla(44, 85%, 62%, 1);
+$accent: hsla(6, 58%, 70%, 1);
+$accent-soft: hsla(199, 67%, 38%, 1);
+$success: hsla(335, 76%, 46%, 1);
+$warning: hsla(214, 85%, 54%, 1);
+$danger: hsla(275, 58%, 62%, 1);
+$info: hsla(156, 67%, 70%, 1);
+$link: hsla(38, 76%, 38%, 1);
+
+/* SCSS RGB */
+$bg-canvas: rgba(19, 20, 22, 1);
+$bg-surface: rgba(44, 46, 51, 1);
+$bg-elevated: rgba(67, 70, 81, 1);
+$bg-overlay: rgba(90, 95, 111, 1);
+$border-subtle: rgba(112, 119, 143, 1);
+$border-strong: rgba(141, 152, 168, 1);
+$text-muted: rgba(170, 177, 192, 1);
+$text-base: rgba(200, 205, 216, 1);
+$text-strong: rgba(231, 234, 238, 1);
+$primary: rgba(41, 89, 153, 1);
+$primary-hover: rgba(119, 39, 196, 1);
+$secondary: rgba(49, 227, 170, 1);
+$secondary-hover: rgba(240, 196, 76, 1);
+$accent: rgba(223, 143, 134, 1);
+$accent-soft: rgba(32, 121, 162, 1);
+$success: rgba(206, 28, 102, 1);
+$warning: rgba(38, 123, 237, 1);
+$danger: rgba(167, 102, 214, 1);
+$info: rgba(127, 230, 188, 1);
+$link: rgba(171, 118, 23, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #131416ff, #2c2e33ff, #434651ff, #5a5f6fff, #70778fff, #8d98a8ff, #aab1c0ff, #c8cdd8ff, #e7eaeeff, #295999ff, #7727c4ff, #31e3aaff, #f0c44cff, #df8f86ff, #2079a2ff, #ce1c66ff, #267bedff, #a766d6ff, #7fe6bcff, #ab7617ff);
+$gradient-right: linear-gradient(90deg, #131416ff, #2c2e33ff, #434651ff, #5a5f6fff, #70778fff, #8d98a8ff, #aab1c0ff, #c8cdd8ff, #e7eaeeff, #295999ff, #7727c4ff, #31e3aaff, #f0c44cff, #df8f86ff, #2079a2ff, #ce1c66ff, #267bedff, #a766d6ff, #7fe6bcff, #ab7617ff);
+$gradient-bottom: linear-gradient(180deg, #131416ff, #2c2e33ff, #434651ff, #5a5f6fff, #70778fff, #8d98a8ff, #aab1c0ff, #c8cdd8ff, #e7eaeeff, #295999ff, #7727c4ff, #31e3aaff, #f0c44cff, #df8f86ff, #2079a2ff, #ce1c66ff, #267bedff, #a766d6ff, #7fe6bcff, #ab7617ff);
+$gradient-left: linear-gradient(270deg, #131416ff, #2c2e33ff, #434651ff, #5a5f6fff, #70778fff, #8d98a8ff, #aab1c0ff, #c8cdd8ff, #e7eaeeff, #295999ff, #7727c4ff, #31e3aaff, #f0c44cff, #df8f86ff, #2079a2ff, #ce1c66ff, #267bedff, #a766d6ff, #7fe6bcff, #ab7617ff);
+$gradient-top-right: linear-gradient(45deg, #131416ff, #2c2e33ff, #434651ff, #5a5f6fff, #70778fff, #8d98a8ff, #aab1c0ff, #c8cdd8ff, #e7eaeeff, #295999ff, #7727c4ff, #31e3aaff, #f0c44cff, #df8f86ff, #2079a2ff, #ce1c66ff, #267bedff, #a766d6ff, #7fe6bcff, #ab7617ff);
+$gradient-bottom-right: linear-gradient(135deg, #131416ff, #2c2e33ff, #434651ff, #5a5f6fff, #70778fff, #8d98a8ff, #aab1c0ff, #c8cdd8ff, #e7eaeeff, #295999ff, #7727c4ff, #31e3aaff, #f0c44cff, #df8f86ff, #2079a2ff, #ce1c66ff, #267bedff, #a766d6ff, #7fe6bcff, #ab7617ff);
+$gradient-top-left: linear-gradient(225deg, #131416ff, #2c2e33ff, #434651ff, #5a5f6fff, #70778fff, #8d98a8ff, #aab1c0ff, #c8cdd8ff, #e7eaeeff, #295999ff, #7727c4ff, #31e3aaff, #f0c44cff, #df8f86ff, #2079a2ff, #ce1c66ff, #267bedff, #a766d6ff, #7fe6bcff, #ab7617ff);
+$gradient-bottom-left: linear-gradient(315deg, #131416ff, #2c2e33ff, #434651ff, #5a5f6fff, #70778fff, #8d98a8ff, #aab1c0ff, #c8cdd8ff, #e7eaeeff, #295999ff, #7727c4ff, #31e3aaff, #f0c44cff, #df8f86ff, #2079a2ff, #ce1c66ff, #267bedff, #a766d6ff, #7fe6bcff, #ab7617ff);
+$gradient-radial: radial-gradient(#131416ff, #2c2e33ff, #434651ff, #5a5f6fff, #70778fff, #8d98a8ff, #aab1c0ff, #c8cdd8ff, #e7eaeeff, #295999ff, #7727c4ff, #31e3aaff, #f0c44cff, #df8f86ff, #2079a2ff, #ce1c66ff, #267bedff, #a766d6ff, #7fe6bcff, #ab7617ff);
+
+/* SCSS Map */
+$analytics-interface-map-20-17-map: (
+    "bg-canvas": #131416ff,
+    "bg-surface": #2c2e33ff,
+    "bg-elevated": #434651ff,
+    "bg-overlay": #5a5f6fff,
+    "border-subtle": #70778fff,
+    "border-strong": #8d98a8ff,
+    "text-muted": #aab1c0ff,
+    "text-base": #c8cdd8ff,
+    "text-strong": #e7eaeeff,
+    "primary": #295999ff,
+    "primary-hover": #7727c4ff,
+    "secondary": #31e3aaff,
+    "secondary-hover": #f0c44cff,
+    "accent": #df8f86ff,
+    "accent-soft": #2079a2ff,
+    "success": #ce1c66ff,
+    "warning": #267bedff,
+    "danger": #a766d6ff,
+    "info": #7fe6bcff,
+    "link": #ab7617ff
+);
