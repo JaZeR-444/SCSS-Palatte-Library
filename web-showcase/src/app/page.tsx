@@ -19,7 +19,10 @@ export default function Home() {
       <div className="max-w-[3440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-14 3xl:px-20 4xl:px-28 5xl:px-32 py-8 sm:py-12 lg:py-16">
         <FeaturedRails palettes={palettes} />
       </div>
-      <div className="max-w-[3440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-14 3xl:px-20 4xl:px-28 5xl:px-32 py-2 sm:py-4 lg:py-6">
+      <div
+        id="palette-viewer"
+        className="scroll-mt-24 max-w-[3440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-14 3xl:px-20 4xl:px-28 5xl:px-32 py-2 sm:py-4 lg:py-6"
+      >
         <PaletteGrid palettes={palettes} />
       </div>
 

@@ -1,39 +1,83 @@
-﻿import { LavaLamp } from "./lava-lamp";
+"use client";
+
+import palettesData from "@/data/palettes.json";
+import { Palette } from "@/types";
+import { playSound } from "@/utils/audio";
+import { Shuffle, Sparkles, SwatchBook } from "lucide-react";
 import { PaletteWall } from "./palette-wall";
+import { useStudio } from "./studio/studio-context";
 
 export function Hero() {
+  const { openStudio, openBrandSystem } = useStudio();
+  const palettes = palettesData as Palette[];
+
+  const browse = () => {
+    document
+      .getElementById("palette-viewer")
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const openRandom = () => {
+    const random = palettes[Math.floor(Math.random() * palettes.length)];
+    playSound("open");
+    openStudio(random);
+  };
+
   return (
     <div
       id="typographic-hero"
-      className="w-full border-b border-gray-200 dark:border-slate-800 overflow-hidden relative"
+      className="relative w-full overflow-hidden border-b border-gray-200 dark:border-slate-800"
     >
-      {/* Foreground content */}
-      <div className="px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-14 3xl:px-20 4xl:px-28 5xl:px-32 py-14 sm:py-24 lg:py-32 3xl:py-40 flex flex-col items-start gap-5 sm:gap-6 relative z-10 lg:w-[55%] 3xl:w-[50%] max-w-[3440px]">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-gray-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 backdrop-blur-sm">
-          <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-          <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600 dark:text-gray-400">
+      <div className="relative z-10 flex max-w-[3440px] flex-col items-start gap-5 px-4 py-12 sm:gap-6 sm:px-6 sm:py-16 lg:w-[55%] lg:px-8 lg:py-20 xl:px-10 2xl:px-14 3xl:w-[50%] 3xl:px-20 3xl:py-24 4xl:px-28 5xl:px-32">
+        <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-3 py-1 dark:border-slate-800 dark:bg-slate-900/80">
+          <span className="flex h-2 w-2 rounded-full bg-emerald-500" />
+          <span className="text-[10px] font-bold uppercase text-gray-600 dark:text-gray-400">
             Production Ready
           </span>
         </div>
 
-        <h2 className="text-4xl sm:text-6xl lg:text-8xl 3xl:text-9xl font-black tracking-tighter text-gray-900 dark:text-white leading-[1.05] max-w-4xl 3xl:max-w-6xl">
+        <h2 className="max-w-4xl text-balance text-4xl font-black leading-[1.05] text-gray-900 sm:text-6xl lg:text-7xl 3xl:max-w-6xl 3xl:text-8xl dark:text-white">
           SCSS Color Systems.
           <br />
-          <span className="bg-gradient-to-r from-[#d4af37] via-[#0f52ba] to-[#6d28d9] bg-clip-text text-transparent animate-gradient-pan bg-[length:300%_300%]">
+          <span className="text-indigo-600 dark:text-indigo-400">
             Built for precision.
           </span>
         </h2>
 
-        <p className="text-base sm:text-lg 3xl:text-xl text-gray-500 dark:text-gray-400 max-w-2xl 3xl:max-w-4xl font-medium mt-1 sm:mt-2 leading-relaxed">
+        <p className="mt-1 max-w-2xl text-pretty text-base font-medium leading-relaxed text-gray-500 sm:mt-2 sm:text-lg 3xl:max-w-4xl 3xl:text-xl dark:text-gray-400">
           A curated library of 3,000+ professional color systems with ready-to-use
           SCSS and CSS variables, semantic role mapping, WCAG quality filters,
           and export-ready design tokens for production UI workflows.
         </p>
+
+        <div className="flex flex-wrap items-center gap-3">
+          <button
+            onClick={browse}
+            className="inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-4 py-2.5 text-sm font-black text-white shadow-sm transition-colors hover:bg-indigo-700"
+          >
+            <SwatchBook className="h-4 w-4" />
+            Browse palettes
+          </button>
+          <button
+            onClick={openRandom}
+            className="inline-flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm font-black text-gray-700 transition-colors hover:border-indigo-300 hover:text-indigo-600 dark:border-slate-800 dark:bg-slate-900 dark:text-gray-300 dark:hover:border-indigo-800 dark:hover:text-indigo-400"
+          >
+            <Shuffle className="h-4 w-4" />
+            Open random
+          </button>
+          <button
+            onClick={() => {
+              playSound("open");
+              openBrandSystem();
+            }}
+            className="inline-flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm font-black text-gray-700 transition-colors hover:border-indigo-300 hover:text-indigo-600 dark:border-slate-800 dark:bg-slate-900 dark:text-gray-300 dark:hover:border-indigo-800 dark:hover:text-indigo-400"
+          >
+            <Sparkles className="h-4 w-4" />
+            Build brand system
+          </button>
+        </div>
       </div>
 
-      <LavaLamp />
-
-      {/* Animated palette wall — right side, large viewports only */}
       <PaletteWall />
     </div>
   );

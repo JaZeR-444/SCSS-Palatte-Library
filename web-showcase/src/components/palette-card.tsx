@@ -1,7 +1,8 @@
 ﻿"use client";
 
 import { Palette } from "@/types";
-import { Heart } from "lucide-react";
+import { showToast } from "@/utils/toast";
+import { ArrowRight, CheckSquare, Code2, Copy, Heart, Square } from "lucide-react";
 import React from "react";
 
 function getTagStyle(tag: string): string {
@@ -91,6 +92,8 @@ interface PaletteCardProps {
   onToggleFavorite: (e: React.MouseEvent) => void;
   viewMode?: "grid" | "compact" | "list";
   qualityScore?: number;
+  isSelectedForCompare?: boolean;
+  onToggleCompare?: (e: React.MouseEvent) => void;
 }
 
 export function PaletteCard({
@@ -99,6 +102,8 @@ export function PaletteCard({
   onToggleFavorite,
   viewMode = "grid",
   qualityScore,
+  isSelectedForCompare = false,
+  onToggleCompare,
 }: PaletteCardProps) {
   const handleFavoriteClick = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -112,15 +117,36 @@ export function PaletteCard({
 
   const DOT_MAX = 6;
 
+  const copyHex = async (e: React.MouseEvent) => {
+    e.stopPropagation();
+    await navigator.clipboard.writeText(palette.colors.map((c) => c.hex).join("\n"));
+    showToast(`Copied ${palette.name} HEX values`);
+  };
+
+  const copyScss = async (e: React.MouseEvent) => {
+    e.stopPropagation();
+    const scss = palette.colors
+      .map((c) => `$${c.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}: ${c.hex};`)
+      .join("\n");
+    await navigator.clipboard.writeText(scss);
+    showToast(`Copied ${palette.name} SCSS variables`);
+  };
+
+  const handleCompareClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    onToggleCompare?.(e);
+  };
+
   const favoriteButton = (
     <button
       onClick={handleFavoriteClick}
-      className={`w-8 h-8 rounded-full flex items-center justify-center border transition-all ${
+      className={`w-8 h-8 rounded-lg flex items-center justify-center border transition-all ${
         isFavorite
-          ? "text-rose-500 fill-rose-500 bg-rose-50/90 dark:bg-rose-950/50 border-rose-200 dark:border-rose-900/50 scale-110"
-          : "text-gray-400 hover:text-rose-500 hover:scale-105 bg-white/90 dark:bg-slate-900/90 border-gray-200 dark:border-slate-800"
+          ? "text-rose-500 fill-rose-500 bg-rose-50/90 dark:bg-rose-950/50 border-rose-200 dark:border-rose-900/50"
+          : "text-gray-400 hover:text-rose-500 bg-white/90 dark:bg-slate-900/90 border-gray-200 dark:border-slate-800"
       }`}
       title={isFavorite ? "Remove from favorites" : "Add to favorites"}
+      aria-label={isFavorite ? `Remove ${palette.name} from favorites` : `Add ${palette.name} to favorites`}
     >
       <Heart
         className={`h-4 w-4 transition-transform ${isFavorite ? "fill-current" : ""}`}
@@ -128,18 +154,54 @@ export function PaletteCard({
     </button>
   );
 
+  const quickActions = (
+    <div className="flex items-center gap-1">
+      {onToggleCompare && (
+        <button
+          onClick={handleCompareClick}
+          className={`flex h-8 w-8 items-center justify-center rounded-lg border transition-colors ${
+            isSelectedForCompare
+              ? "border-indigo-300 bg-indigo-50 text-indigo-600 dark:border-indigo-800 dark:bg-indigo-950/40 dark:text-indigo-400"
+              : "border-gray-200 bg-white/90 text-gray-400 hover:text-indigo-600 dark:border-slate-800 dark:bg-slate-900/90 dark:hover:text-indigo-400"
+          }`}
+          title={isSelectedForCompare ? "Remove from comparison" : "Add to comparison"}
+          aria-label={isSelectedForCompare ? `Remove ${palette.name} from comparison` : `Add ${palette.name} to comparison`}
+        >
+          {isSelectedForCompare ? <CheckSquare className="h-4 w-4" /> : <Square className="h-4 w-4" />}
+        </button>
+      )}
+      <button
+        onClick={copyHex}
+        className="flex h-8 w-8 items-center justify-center rounded-lg border border-gray-200 bg-white/90 text-gray-400 transition-colors hover:text-indigo-600 dark:border-slate-800 dark:bg-slate-900/90 dark:hover:text-indigo-400"
+        title="Copy HEX values"
+        aria-label={`Copy ${palette.name} HEX values`}
+      >
+        <Copy className="h-4 w-4" />
+      </button>
+      <button
+        onClick={copyScss}
+        className="flex h-8 w-8 items-center justify-center rounded-lg border border-gray-200 bg-white/90 text-gray-400 transition-colors hover:text-indigo-600 dark:border-slate-800 dark:bg-slate-900/90 dark:hover:text-indigo-400"
+        title="Copy SCSS variables"
+        aria-label={`Copy ${palette.name} SCSS variables`}
+      >
+        <Code2 className="h-4 w-4" />
+      </button>
+      {favoriteButton}
+    </div>
+  );
+
   /* ── Compact ─────────────────────────────────────────────────── */
   if (viewMode === "compact") {
     return (
       <div
-        className="group relative bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-gray-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all cursor-pointer h-24 sm:h-28"
+        className="group relative bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-gray-100 dark:border-slate-800 shadow-sm hover:shadow-lg transition-shadow cursor-pointer h-24 sm:h-28"
         title={`${palette.name} (${palette.category})`}
       >
         <div className="flex h-full w-full overflow-hidden">
           {palette.colors.map((color, i) => (
             <div
               key={i}
-              className="flex-1 h-full transition-all group-hover:flex-[1.5]"
+              className="flex-1 h-full transition-opacity group-hover:opacity-90"
               style={{ backgroundColor: color.hex }}
             />
           ))}
@@ -157,11 +219,11 @@ export function PaletteCard({
         </span>
         {typeof qualityScore === "number" && (
           <span className="absolute bottom-2 left-2 text-[8px] font-black tracking-widest rounded-lg px-1.5 py-0.5 bg-white/85 dark:bg-slate-900/85 text-emerald-600 border border-emerald-200 dark:border-emerald-900/50">
-            Q {qualityScore}
+            UI {qualityScore}/25
           </span>
         )}
-        <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-          {favoriteButton}
+        <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-200">
+          {quickActions}
         </div>
         <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 to-transparent p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
           <p className="text-[10px] font-black text-white truncate">
@@ -175,7 +237,7 @@ export function PaletteCard({
   /* ── List ─────────────────────────────────────────────────────── */
   if (viewMode === "list") {
     return (
-      <div className="group bg-white dark:bg-slate-900 rounded-2xl p-3 sm:p-4 border border-gray-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-all cursor-pointer flex items-center justify-between gap-4 w-full">
+      <div className="group bg-white dark:bg-slate-900 rounded-xl p-3 sm:p-4 border border-gray-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow cursor-pointer flex items-center justify-between gap-4 w-full">
         <div className="min-w-0 flex-1 sm:flex-initial sm:w-48">
           <h3 className="font-black text-sm text-gray-900 dark:text-white truncate">
             {palette.name}
@@ -198,7 +260,7 @@ export function PaletteCard({
           {palette.colors.map((color, i) => (
             <div
               key={i}
-              className="flex-1 h-full hover:flex-[1.3] transition-all"
+              className="flex-1 h-full transition-opacity hover:opacity-90"
               style={{ backgroundColor: color.hex }}
               title={`${color.name}: ${color.hex}`}
             />
@@ -211,10 +273,10 @@ export function PaletteCard({
           </span>
           {typeof qualityScore === "number" && (
             <span className="px-2 py-1 rounded-md bg-emerald-50 dark:bg-emerald-950/30 text-[9px] font-black text-emerald-600 dark:text-emerald-400">
-              Q {qualityScore}
+              UI {qualityScore}/25
             </span>
           )}
-          {favoriteButton}
+          {quickActions}
         </div>
       </div>
     );
@@ -222,13 +284,13 @@ export function PaletteCard({
 
   /* ── Grid (default) ───────────────────────────────────────────── */
   return (
-    <div className="group relative bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-gray-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all cursor-pointer flex flex-col h-full">
+    <div className="group relative bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-gray-100 dark:border-slate-800 shadow-sm hover:shadow-lg transition-shadow cursor-pointer flex flex-col h-full">
       {/* Swatch strip */}
       <div className="relative flex h-28 sm:h-32 overflow-hidden flex-shrink-0">
         {palette.colors.map((color, i) => (
           <div
             key={i}
-            className="flex-1 h-full transition-all group-hover:flex-[1.5]"
+            className="flex-1 h-full transition-opacity group-hover:opacity-90"
             style={{ backgroundColor: color.hex }}
             title={color.name}
           />
@@ -247,11 +309,11 @@ export function PaletteCard({
         </span>
         {typeof qualityScore === "number" && (
           <span className="absolute bottom-3 left-3 text-[9px] font-black tracking-widest rounded-lg px-2 py-0.5 bg-white/85 dark:bg-slate-900/85 text-emerald-600 border border-emerald-200 dark:border-emerald-900/50">
-            Q {qualityScore}
+            UI {qualityScore}/25
           </span>
         )}
         <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity duration-200">
-          {favoriteButton}
+          {quickActions}
         </div>
       </div>
 
@@ -261,7 +323,7 @@ export function PaletteCard({
           <h3 className="font-black text-sm text-gray-900 dark:text-white truncate group-hover:text-indigo-500 transition-colors">
             {palette.name}
           </h3>
-          <p className="text-[10px] text-indigo-400 font-bold uppercase tracking-widest mt-0.5">
+          <p className="text-[10px] text-indigo-400 font-bold uppercase mt-0.5">
             {palette.category}
           </p>
           {allTags.length > 0 && (
@@ -296,21 +358,8 @@ export function PaletteCard({
               </span>
             )}
           </div>
-          <div className="w-8 h-8 rounded-xl bg-gray-50 dark:bg-slate-800 flex items-center justify-center text-gray-400 group-hover:bg-indigo-500 group-hover:text-white transition-all shadow-sm flex-shrink-0">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="12"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M5 12h14" />
-              <path d="m12 5 7 7-7 7" />
-            </svg>
+          <div className="w-8 h-8 rounded-lg bg-gray-50 dark:bg-slate-800 flex items-center justify-center text-gray-400 group-hover:bg-indigo-500 group-hover:text-white transition-colors shadow-sm flex-shrink-0">
+            <ArrowRight className="h-3.5 w-3.5" />
           </div>
         </div>
       </div>

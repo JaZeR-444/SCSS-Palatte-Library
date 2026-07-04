@@ -6,6 +6,7 @@ import { Github, Shuffle, Plus, Folder, Trash, ChevronDown, FolderPlus, X, Spark
 import { ThemeToggle } from "./theme-toggle";
 import { useStudio } from "./studio/studio-context";
 import { playSound } from "@/utils/audio";
+import { showToast } from "@/utils/toast";
 import palettesData from "@/data/palettes.json";
 import { Palette } from "@/types";
 import { useState, useEffect, useRef } from "react";
@@ -21,6 +22,8 @@ export function Header({ count }: HeaderProps) {
   const [collections, setCollections] = useState<{ id: string; name: string; palette_count: number }[]>([]);
   const [showCollections, setShowCollections] = useState(false);
   const [newCollectionName, setNewCollectionName] = useState("");
+  const [collectionError, setCollectionError] = useState("");
+  const [collectionToDelete, setCollectionToDelete] = useState<{ id: string; name: string } | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const fetchCollections = async () => {
@@ -62,6 +65,7 @@ export function Header({ count }: HeaderProps) {
 
   const handleCreateCollection = async (e: React.FormEvent) => {
     e.preventDefault();
+    setCollectionError("");
     if (!newCollectionName.trim()) return;
     try {
       const { createCollectionAction } = await import("@/app/actions");
@@ -70,25 +74,35 @@ export function Header({ count }: HeaderProps) {
         setNewCollectionName("");
         fetchCollections();
         playSound("success");
+        showToast("Collection created");
+      } else {
+        setCollectionError(res.error || "Could not create collection.");
       }
     } catch (error) {
       console.error("Create collection failed:", error);
+      setCollectionError("Could not create collection.");
     }
   };
 
-  const handleDeleteCollection = async (id: string, e: React.MouseEvent) => {
-    e.stopPropagation();
-    if (!confirm("Are you sure you want to delete this collection? All saved mappings inside it will be removed.")) return;
+  const handleDeleteCollection = async () => {
+    if (!collectionToDelete) return;
     try {
       const { deleteCollectionAction } = await import("@/app/actions");
-      await deleteCollectionAction(id);
-      if (activeCollectionId === id) {
+      const res = await deleteCollectionAction(collectionToDelete.id);
+      if (!res.success) {
+        showToast(res.error || "Could not delete collection.", "error");
+        return;
+      }
+      if (activeCollectionId === collectionToDelete.id) {
         setActiveCollectionId(null);
       }
+      setCollectionToDelete(null);
       fetchCollections();
       playSound("click");
+      showToast("Collection deleted");
     } catch (error) {
       console.error("Delete collection failed:", error);
+      showToast("Could not delete collection.", "error");
     }
   };
 
@@ -152,6 +166,7 @@ export function Header({ count }: HeaderProps) {
                   ? "bg-indigo-500 text-white border-indigo-500"
                   : "border-gray-200 dark:border-slate-800 text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-slate-800/50"
               }`}
+              aria-label={activeCollectionId ? "Open selected collection menu" : "Open collections menu"}
             >
               <Folder className="h-3.5 w-3.5" />
               <span>
@@ -203,9 +218,13 @@ export function Header({ count }: HeaderProps) {
                           </span>
                         </div>
                         <button
-                          onClick={(e) => handleDeleteCollection(col.id, e)}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setCollectionToDelete({ id: col.id, name: col.name });
+                          }}
                           className="opacity-0 group-hover:opacity-100 text-gray-400 hover:text-rose-500 p-1 rounded hover:bg-rose-50 dark:hover:bg-rose-950/30 transition-all cursor-pointer"
                           title="Delete collection"
+                          aria-label={`Delete ${col.name} collection`}
                         >
                           <Trash className="h-3 w-3" />
                         </button>
@@ -227,10 +246,16 @@ export function Header({ count }: HeaderProps) {
                     type="submit"
                     className="p-1.5 rounded-lg bg-indigo-500 text-white hover:bg-indigo-600 transition-colors flex items-center justify-center cursor-pointer"
                     title="Create Collection"
+                    aria-label="Create collection"
                   >
                     <FolderPlus className="h-3.5 w-3.5" />
                   </button>
                 </form>
+                {collectionError && (
+                  <p className="mt-2 rounded-lg border border-rose-200 bg-rose-50 px-2.5 py-1.5 text-[11px] font-bold text-rose-600 dark:border-rose-900/60 dark:bg-rose-950/30 dark:text-rose-400">
+                    {collectionError}
+                  </p>
+                )}
               </div>
             )}
           </div>
@@ -240,6 +265,7 @@ export function Header({ count }: HeaderProps) {
             onClick={handleRandom}
             className="flex items-center gap-2 h-8 px-3 rounded-lg border border-gray-200 dark:border-slate-800 text-gray-500 hover:bg-indigo-50 hover:text-indigo-600 hover:border-indigo-300 dark:text-gray-400 dark:hover:bg-indigo-950/30 dark:hover:text-indigo-400 dark:hover:border-indigo-800 transition-colors text-[11px] font-bold cursor-pointer"
             title="Open a random palette"
+            aria-label="Open a random palette"
           >
             <Shuffle className="h-3.5 w-3.5" />
             <span className="hidden sm:inline">Random</span>
@@ -251,8 +277,9 @@ export function Header({ count }: HeaderProps) {
               playSound("open");
               openBrandSystem();
             }}
-            className="flex items-center gap-2 h-8 px-3 rounded-lg bg-gradient-to-r from-indigo-500 to-violet-600 text-white shadow-sm shadow-indigo-500/30 hover:from-indigo-600 hover:to-violet-700 transition-colors text-[11px] font-bold cursor-pointer"
+            className="flex items-center gap-2 h-8 px-3 rounded-lg bg-indigo-600 text-white shadow-sm hover:bg-indigo-700 transition-colors text-[11px] font-bold cursor-pointer"
             title="Build a brand system from a palette"
+            aria-label="Build a brand system from a palette"
           >
             <Sparkles className="h-3.5 w-3.5" />
             <span className="hidden sm:inline">Brand System</span>
@@ -266,6 +293,7 @@ export function Header({ count }: HeaderProps) {
             }}
             className="flex items-center gap-2 h-8 px-3 rounded-lg border border-gray-200 dark:border-slate-800 text-gray-500 hover:bg-indigo-50 hover:text-indigo-600 hover:border-indigo-300 dark:text-gray-400 dark:hover:bg-indigo-950/30 dark:hover:text-indigo-400 dark:hover:border-indigo-800 transition-colors text-[11px] font-bold cursor-pointer"
             title="Create a new palette"
+            aria-label="Create a new palette"
           >
             <Plus className="h-3.5 w-3.5" />
             <span className="hidden sm:inline">Create Palette</span>
@@ -284,6 +312,32 @@ export function Header({ count }: HeaderProps) {
           </a>
         </div>
       </div>
+      {collectionToDelete && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/50 p-4" role="alertdialog" aria-modal="true" aria-labelledby="delete-collection-title">
+          <div className="w-full max-w-sm rounded-2xl border border-gray-200 bg-white p-5 shadow-2xl dark:border-slate-800 dark:bg-slate-950">
+            <h2 id="delete-collection-title" className="text-base font-black text-gray-900 dark:text-white">
+              Delete collection?
+            </h2>
+            <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+              This removes "{collectionToDelete.name}" and all saved mappings inside it.
+            </p>
+            <div className="mt-5 flex justify-end gap-2">
+              <button
+                onClick={() => setCollectionToDelete(null)}
+                className="rounded-lg border border-gray-200 px-3 py-2 text-sm font-bold text-gray-600 hover:bg-gray-50 dark:border-slate-800 dark:text-gray-300 dark:hover:bg-slate-900"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleDeleteCollection}
+                className="rounded-lg bg-rose-600 px-3 py-2 text-sm font-bold text-white hover:bg-rose-700"
+              >
+                Delete
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
