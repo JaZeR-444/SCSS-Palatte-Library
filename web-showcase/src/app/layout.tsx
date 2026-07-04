@@ -20,6 +20,9 @@ const BASE_URL = "https://app-pallates.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
+  alternates: {
+    canonical: BASE_URL,
+  },
   title: {
     default: "Palattes — 3,000+ Color Palettes",
     template: "%s | Palattes",
@@ -72,6 +75,17 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
     creator: "@JaZeR_444",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export const viewport: Viewport = {
@@ -91,6 +105,12 @@ export default function RootLayout({
       <body
         className={`${bricolage.variable} ${dmMono.variable} font-sans antialiased`}
       >
+        <a
+          href="#palette-viewer"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-indigo-600 focus:px-3 focus:py-2 focus:text-sm focus:font-black focus:text-white"
+        >
+          Skip to palette viewer
+        </a>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

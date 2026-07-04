@@ -7,9 +7,7 @@ import { ThemeToggle } from "./theme-toggle";
 import { useStudio } from "./studio/studio-context";
 import { playSound } from "@/utils/audio";
 import { showToast } from "@/utils/toast";
-import palettesData from "@/data/palettes.json";
-import { Palette } from "@/types";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, type KeyboardEvent as ReactKeyboardEvent } from "react";
 
 interface HeaderProps {
   count: number;
@@ -17,7 +15,6 @@ interface HeaderProps {
 
 export function Header({ count }: HeaderProps) {
   const { openStudio, openCreator, openBrandSystem, activeCollectionId, setActiveCollectionId } = useStudio();
-  const palettes = palettesData as Palette[];
   
   const [collections, setCollections] = useState<{ id: string; name: string; palette_count: number }[]>([]);
   const [showCollections, setShowCollections] = useState(false);
@@ -25,6 +22,8 @@ export function Header({ count }: HeaderProps) {
   const [collectionError, setCollectionError] = useState("");
   const [collectionToDelete, setCollectionToDelete] = useState<{ id: string; name: string } | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const firstCollectionItemRef = useRef<HTMLDivElement>(null);
+  const deleteDialogRef = useRef<HTMLDivElement>(null);
 
   const fetchCollections = async () => {
     try {
@@ -43,6 +42,8 @@ export function Header({ count }: HeaderProps) {
   useEffect(() => {
     if (showCollections) {
       fetchCollections();
+      const frame = requestAnimationFrame(() => firstCollectionItemRef.current?.focus());
+      return () => cancelAnimationFrame(frame);
     }
   }, [showCollections]);
 
@@ -57,10 +58,61 @@ export function Header({ count }: HeaderProps) {
     return () => window.removeEventListener("mousedown", handleOutsideClick);
   }, []);
 
-  const handleRandom = () => {
-    const random = palettes[Math.floor(Math.random() * palettes.length)];
-    playSound("open");
-    openStudio(random);
+  useEffect(() => {
+    if (!showCollections) return;
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setShowCollections(false);
+    };
+    window.addEventListener("keydown", handleEscape);
+    return () => window.removeEventListener("keydown", handleEscape);
+  }, [showCollections]);
+
+  useEffect(() => {
+    if (!collectionToDelete) return;
+    const dialog = deleteDialogRef.current;
+    if (!dialog) return;
+
+    const focusable = dialog.querySelectorAll<HTMLElement>(
+      'button, [href], input, [tabindex]:not([tabindex="-1"])',
+    );
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    first?.focus();
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        setCollectionToDelete(null);
+        return;
+      }
+      if (e.key !== "Tab" || focusable.length === 0) return;
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last?.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first?.focus();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [collectionToDelete]);
+
+  const handleRandom = async () => {
+    try {
+      const { getRandomPaletteAction } = await import("@/app/actions");
+      const random = await getRandomPaletteAction();
+      if (!random) {
+        showToast("No palettes available right now.", "error");
+        return;
+      }
+      playSound("open");
+      openStudio(random);
+    } catch (error) {
+      console.error("Random palette failed:", error);
+      showToast("Could not load a random palette.", "error");
+    }
   };
 
   const handleCreateCollection = async (e: React.FormEvent) => {
@@ -116,6 +168,25 @@ export function Header({ count }: HeaderProps) {
     playSound("click");
   };
 
+  const handleCollectionsMenuKeyDown = (e: ReactKeyboardEvent<HTMLDivElement>) => {
+    if (e.key !== "ArrowDown" && e.key !== "ArrowUp") return;
+    const menu = dropdownRef.current;
+    if (!menu) return;
+    const items = Array.from(
+      menu.querySelectorAll<HTMLElement>('[role="menuitemradio"]'),
+    );
+    if (items.length === 0) return;
+
+    const currentIndex = items.findIndex((item) => item === document.activeElement);
+    const delta = e.key === "ArrowDown" ? 1 : -1;
+    const nextIndex =
+      currentIndex < 0
+        ? 0
+        : (currentIndex + delta + items.length) % items.length;
+    e.preventDefault();
+    items[nextIndex]?.focus();
+  };
+
   return (
     <header className="sticky top-0 z-40 w-full backdrop-blur-xl border-b border-gray-200 dark:border-slate-800 bg-white/70 dark:bg-slate-950/70">
       <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12 3xl:px-16 py-2.5 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
@@ -136,9 +207,9 @@ export function Header({ count }: HeaderProps) {
           </Link>
           <div className="min-w-0">
             <div className="flex flex-wrap items-center gap-3">
-              <h1 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <p className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                 Palattes
-              </h1>
+              </p>
               <span className="rounded-md border border-gray-200 dark:border-slate-800 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">
                 v2.0
               </span>
@@ -161,12 +232,15 @@ export function Header({ count }: HeaderProps) {
                 setShowCollections(!showCollections);
                 playSound("click");
               }}
-              className={`flex items-center gap-2 h-8 px-3 rounded-lg border transition-all text-[11px] font-bold cursor-pointer ${
+              className={`flex items-center gap-2 h-8 px-3 rounded-lg border transition-all text-[11px] font-bold cursor-pointer focus-visible:outline-2 focus-visible:outline-indigo-500 ${
                 activeCollectionId
                   ? "bg-indigo-500 text-white border-indigo-500"
                   : "border-gray-200 dark:border-slate-800 text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-slate-800/50"
               }`}
               aria-label={activeCollectionId ? "Open selected collection menu" : "Open collections menu"}
+              aria-haspopup="menu"
+              aria-expanded={showCollections}
+              aria-controls="collections-menu"
             >
               <Folder className="h-3.5 w-3.5" />
               <span>
@@ -178,7 +252,13 @@ export function Header({ count }: HeaderProps) {
             </button>
 
             {showCollections && (
-              <div className="absolute right-0 mt-2 w-72 rounded-2xl border border-gray-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-4 shadow-2xl z-50">
+              <div
+                id="collections-menu"
+                role="menu"
+                aria-label="Collections"
+                onKeyDown={handleCollectionsMenuKeyDown}
+                className="absolute right-0 mt-2 w-72 rounded-2xl border border-gray-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-4 shadow-2xl z-50"
+              >
                 <div className="flex items-center justify-between mb-3 pb-2 border-b border-gray-100 dark:border-slate-800">
                   <h3 className="text-xs font-black uppercase tracking-wider text-gray-400 dark:text-gray-500">
                     My Collections
@@ -204,16 +284,30 @@ export function Header({ count }: HeaderProps) {
                       <div
                         key={col.id}
                         onClick={() => handleSelectCollection(col.id)}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter" || e.key === " ") {
+                            e.preventDefault();
+                            handleSelectCollection(col.id);
+                          }
+                        }}
+                        role="menuitemradio"
+                        aria-checked={activeCollectionId === col.id}
+                        tabIndex={0}
+                        ref={(node) => {
+                          if (node && collections[0]?.id === col.id) {
+                            firstCollectionItemRef.current = node;
+                          }
+                        }}
                         className={`group flex items-center justify-between px-3 py-2 rounded-xl text-xs cursor-pointer transition-colors ${
                           activeCollectionId === col.id
                             ? "bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 font-bold"
                             : "text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-900/60"
-                        }`}
+                        } focus-visible:outline-2 focus-visible:outline-indigo-500`}
                       >
                         <div className="flex items-center gap-2 min-w-0">
                           <Folder className={`h-3.5 w-3.5 flex-shrink-0 ${activeCollectionId === col.id ? "text-indigo-500" : "text-gray-400"}`} />
                           <span className="truncate pr-1">{col.name}</span>
-                          <span className="text-[9px] px-1.5 py-0.5 rounded bg-gray-100 dark:bg-slate-800 text-gray-400 font-black">
+                          <span className="text-[10px] px-1.5 py-0.5 rounded bg-gray-100 dark:bg-slate-800 text-gray-500 dark:text-gray-300 font-black">
                             {col.palette_count}
                           </span>
                         </div>
@@ -235,7 +329,11 @@ export function Header({ count }: HeaderProps) {
 
                 {/* Create Collection Form */}
                 <form onSubmit={handleCreateCollection} className="flex items-center gap-1.5 pt-2 border-t border-gray-100 dark:border-slate-800">
+                  <label htmlFor="new-collection-name" className="sr-only">
+                    New collection name
+                  </label>
                   <input
+                    id="new-collection-name"
                     type="text"
                     placeholder="New Collection Name..."
                     className="flex-1 px-2.5 py-1.5 rounded-lg text-xs bg-gray-50 dark:bg-slate-900 border border-gray-200 dark:border-slate-800 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-gray-800 dark:text-gray-200"
@@ -263,7 +361,7 @@ export function Header({ count }: HeaderProps) {
           {/* Random Palette */}
           <button
             onClick={handleRandom}
-            className="flex items-center gap-2 h-8 px-3 rounded-lg border border-gray-200 dark:border-slate-800 text-gray-500 hover:bg-indigo-50 hover:text-indigo-600 hover:border-indigo-300 dark:text-gray-400 dark:hover:bg-indigo-950/30 dark:hover:text-indigo-400 dark:hover:border-indigo-800 transition-colors text-[11px] font-bold cursor-pointer"
+            className="flex items-center gap-2 h-8 px-3 rounded-lg border border-gray-200 dark:border-slate-800 text-gray-500 hover:bg-indigo-50 hover:text-indigo-600 hover:border-indigo-300 dark:text-gray-400 dark:hover:bg-indigo-950/30 dark:hover:text-indigo-400 dark:hover:border-indigo-800 transition-colors text-[11px] font-bold cursor-pointer focus-visible:outline-2 focus-visible:outline-indigo-500"
             title="Open a random palette"
             aria-label="Open a random palette"
           >
@@ -277,7 +375,7 @@ export function Header({ count }: HeaderProps) {
               playSound("open");
               openBrandSystem();
             }}
-            className="flex items-center gap-2 h-8 px-3 rounded-lg bg-indigo-600 text-white shadow-sm hover:bg-indigo-700 transition-colors text-[11px] font-bold cursor-pointer"
+            className="flex items-center gap-2 h-8 px-3 rounded-lg bg-indigo-600 text-white shadow-sm hover:bg-indigo-700 transition-colors text-[11px] font-bold cursor-pointer focus-visible:outline-2 focus-visible:outline-indigo-500"
             title="Build a brand system from a palette"
             aria-label="Build a brand system from a palette"
           >
@@ -291,7 +389,7 @@ export function Header({ count }: HeaderProps) {
               playSound("open");
               openCreator();
             }}
-            className="flex items-center gap-2 h-8 px-3 rounded-lg border border-gray-200 dark:border-slate-800 text-gray-500 hover:bg-indigo-50 hover:text-indigo-600 hover:border-indigo-300 dark:text-gray-400 dark:hover:bg-indigo-950/30 dark:hover:text-indigo-400 dark:hover:border-indigo-800 transition-colors text-[11px] font-bold cursor-pointer"
+            className="flex items-center gap-2 h-8 px-3 rounded-lg border border-gray-200 dark:border-slate-800 text-gray-500 hover:bg-indigo-50 hover:text-indigo-600 hover:border-indigo-300 dark:text-gray-400 dark:hover:bg-indigo-950/30 dark:hover:text-indigo-400 dark:hover:border-indigo-800 transition-colors text-[11px] font-bold cursor-pointer focus-visible:outline-2 focus-visible:outline-indigo-500"
             title="Create a new palette"
             aria-label="Create a new palette"
           >
@@ -314,7 +412,7 @@ export function Header({ count }: HeaderProps) {
       </div>
       {collectionToDelete && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/50 p-4" role="alertdialog" aria-modal="true" aria-labelledby="delete-collection-title">
-          <div className="w-full max-w-sm rounded-2xl border border-gray-200 bg-white p-5 shadow-2xl dark:border-slate-800 dark:bg-slate-950">
+          <div ref={deleteDialogRef} className="w-full max-w-sm rounded-2xl border border-gray-200 bg-white p-5 shadow-2xl dark:border-slate-800 dark:bg-slate-950">
             <h2 id="delete-collection-title" className="text-base font-black text-gray-900 dark:text-white">
               Delete collection?
             </h2>

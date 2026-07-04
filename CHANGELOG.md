@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **License File**: Added the missing MIT `LICENSE` file referenced by package metadata and README badges.
 
 ### Added
+- **Homepage Crawlability + Structured Data**: Added `robots.txt`, `sitemap.xml`, canonical metadata, and JSON-LD (`WebSite`, `Organization`, `SoftwareApplication`) for the active web showcase.
+- **Homepage Trust Footer**: Added a production/trust footer section linking to repository resources (repo, changelog, license).
 - **Large Palette Expansion**: Added 100 new fresh color palettes ranging from 20 to 35 colors.
 - **11-35 Folder Population**: Added 500 curated palettes across `11 Color Palette` through `35 Color Palette` (20 per folder), including multi-color compositions, single-hue spans, and web-development semantic systems.
 - **Palette Quality & Discovery Upgrade**: Added UI readiness scoring, accessibility mode, and advanced filters for temperature, saturation profile, and single-span vs multi-hue structure.
@@ -41,9 +43,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Showcase Header Upgrade**: Enhanced the sticky header with richer branding, live palette count, WCAG tooling badge, and a direct repository action.
 
 ### Changed
+- **Homepage Performance + Accessibility Pass**: Removed `force-dynamic` in favor of ISR (`revalidate`), lazy-loaded heavy modal surfaces, added skip navigation, improved focus visibility, and upgraded command/filter/dialog semantics.
+- **Search State URL Sync**: Wired filter/search state into URL query params for shareable links and browser navigation parity.
+- **Random Palette Fetching**: Replaced client-side full JSON random selection with server-backed random palette retrieval.
 - **Palette Folder Hierarchy**: Moved `3 Color Palette` through `10 Color Palette` into `Palattes by # of Colors/` and populated `11 Color Palette` through `35 Color Palette` with 20 palettes each.
 - **Palette Creator Count Range**: Expanded the creator count selector to support all palette sizes from 3 through 35 colors.
 - **SEO Messaging**: Updated app metadata and hero copy to reflect the expanded 3,000+ palette library.
+- **Manifest Messaging Consistency**: Updated `site.webmanifest` description copy to match the 3,000+ library positioning.
 
 ## [2.0.0] - 2026-05-18
 

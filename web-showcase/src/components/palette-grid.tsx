@@ -4,6 +4,7 @@ import { useStudio } from "./studio/studio-context";
 import { PaletteCard } from "./palette-card";
 import { Palette } from "@/types";
 import { useState, useMemo, useEffect, useRef, useCallback } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import {
   Search,
   Grid,
@@ -52,6 +53,9 @@ const FACETS: { id: Facet; label: string; icon: React.ElementType }[] = [
 ];
 
 export function PaletteGrid({ palettes }: PaletteGridProps) {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
   const [search, setSearch] = useState("");
   const { openStudio, recents, activeCollectionId, setActiveCollectionId } = useStudio();
   const [isMounted, setIsMounted] = useState(false);
@@ -76,6 +80,8 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
   const [compareIds, setCompareIds] = useState<string[]>([]);
   const [showAdvancedFilters, setShowAdvancedFilters] = useState(false);
   const [isControlsCompact, setIsControlsCompact] = useState(false);
+  const isHydratedFromUrlRef = useRef(false);
+  const commandDialogRef = useRef<HTMLDivElement>(null);
 
   const metricsById = useMemo(() => {
     const map: Record<string, ReturnType<typeof analyzePalette>> = {};
@@ -170,6 +176,77 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
   const searchRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
+    if (isHydratedFromUrlRef.current) return;
+
+    const query = searchParams.get("q");
+    const facet = searchParams.get("facet");
+    const sub = searchParams.get("sub");
+    const sort = searchParams.get("sort");
+    const color = searchParams.get("color");
+    const wcag = searchParams.get("wcag");
+    const temp = searchParams.get("temp");
+    const structure = searchParams.get("structure");
+    const sat = searchParams.get("sat");
+
+    if (query) setSearch(query);
+    if (facet && FACETS.some((f) => f.id === facet)) setActiveFacet(facet as Facet);
+    if (sub) setActiveSubFilter(sub);
+    if (
+      sort &&
+      ["name-asc", "name-desc", "count-desc", "count-asc", "distance", "quality-desc"].includes(sort)
+    ) {
+      setSortOrder(sort as typeof sortOrder);
+    }
+    if (color) setTargetColor(color);
+    if (wcag === "1") setA11yOnly(true);
+    if (temp && ["all", "warm", "cool", "balanced"].includes(temp)) {
+      setTemperatureFilter(temp as typeof temperatureFilter);
+    }
+    if (structure && ["all", "single-span", "multi-hue"].includes(structure)) {
+      setStructureFilter(structure as typeof structureFilter);
+    }
+    if (sat && ["all", "muted", "balanced", "vibrant"].includes(sat)) {
+      setSaturationFilter(sat as typeof saturationFilter);
+    }
+
+    isHydratedFromUrlRef.current = true;
+  }, [searchParams, sortOrder, temperatureFilter, structureFilter, saturationFilter]);
+
+  useEffect(() => {
+    if (!isHydratedFromUrlRef.current) return;
+    const params = new URLSearchParams();
+
+    if (search.trim()) params.set("q", search.trim());
+    if (activeFacet !== "all") params.set("facet", activeFacet);
+    if (activeSubFilter) params.set("sub", activeSubFilter);
+    if (sortOrder !== "name-asc") params.set("sort", sortOrder);
+    if (targetColor) params.set("color", targetColor);
+    if (a11yOnly) params.set("wcag", "1");
+    if (temperatureFilter !== "all") params.set("temp", temperatureFilter);
+    if (structureFilter !== "all") params.set("structure", structureFilter);
+    if (saturationFilter !== "all") params.set("sat", saturationFilter);
+
+    const nextQuery = params.toString();
+    const currentQuery = searchParams.toString();
+    if (nextQuery === currentQuery) return;
+
+    router.replace(nextQuery ? `${pathname}?${nextQuery}` : pathname, { scroll: false });
+  }, [
+    search,
+    activeFacet,
+    activeSubFilter,
+    sortOrder,
+    targetColor,
+    a11yOnly,
+    temperatureFilter,
+    structureFilter,
+    saturationFilter,
+    router,
+    pathname,
+    searchParams,
+  ]);
+
+  useEffect(() => {
     setIsMounted(true);
     setWindowWidth(window.innerWidth);
     const updateWidth = () => setWindowWidth(window.innerWidth);
@@ -228,6 +305,48 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
   }, []);
+
+  useEffect(() => {
+    if (!isCommandOpen) return;
+    const dialog = commandDialogRef.current;
+    if (!dialog) return;
+
+    const focusable = dialog.querySelectorAll<HTMLElement>(
+      'input, button, [href], [tabindex]:not([tabindex="-1"])',
+    );
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    first?.focus();
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        setIsCommandOpen(false);
+        return;
+      }
+
+      if (e.key !== "Tab" || focusable.length === 0) return;
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last?.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first?.focus();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isCommandOpen]);
+
+  useEffect(() => {
+    if (!showAdvancedFilters) return;
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setShowAdvancedFilters(false);
+    };
+    window.addEventListener("keydown", handleEscape);
+    return () => window.removeEventListener("keydown", handleEscape);
+  }, [showAdvancedFilters]);
 
   const toggleFavorite = useCallback(
     (paletteId: string) => {
@@ -590,7 +709,11 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
               <div className="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400 group-focus-within:text-indigo-500">
                 <Search className="h-4 w-4" />
               </div>
+              <label htmlFor="palette-search-input" className="sr-only">
+                Search palettes
+              </label>
               <input
+                id="palette-search-input"
                 ref={searchRef}
                 type="text"
                 placeholder="Search palettes..."
@@ -613,6 +736,9 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
                   onClick={() => setIsCommandOpen(true)}
                   className="hidden rounded-md border border-gray-200 bg-gray-50 px-1.5 py-1 text-[10px] font-bold text-gray-500 transition-colors hover:border-indigo-300 hover:text-indigo-600 sm:inline-flex dark:border-slate-700 dark:bg-slate-800 dark:text-gray-400"
                   aria-label="Open commands"
+                  aria-haspopup="dialog"
+                  aria-expanded={isCommandOpen}
+                  aria-controls="palette-command-dialog"
                 >
                   <Command className="h-3 w-3" />
                 </button>
@@ -703,6 +829,8 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
                     ? "border-indigo-300 bg-indigo-50 text-indigo-600 dark:border-indigo-800 dark:bg-indigo-950/40 dark:text-indigo-400"
                     : "border-gray-200 bg-white text-gray-500 hover:border-indigo-300 hover:text-indigo-600 dark:border-slate-800 dark:bg-slate-900 dark:text-gray-400"
                 }`}
+                aria-expanded={showAdvancedFilters}
+                aria-controls="advanced-filters-panel"
               >
                 <ShieldCheck className="h-3.5 w-3.5" />
                 Filters
@@ -714,7 +842,13 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
               </button>
 
               {showAdvancedFilters && (
-                <div className="absolute right-0 top-11 z-50 w-[min(92vw,560px)] rounded-xl border border-gray-200 bg-white p-3 shadow-2xl dark:border-slate-800 dark:bg-slate-950">
+                <div
+                  id="advanced-filters-panel"
+                  role="dialog"
+                  aria-modal="false"
+                  aria-label="Advanced palette filters"
+                  className="absolute right-0 top-11 z-50 w-[min(92vw,560px)] rounded-xl border border-gray-200 bg-white p-3 shadow-2xl dark:border-slate-800 dark:bg-slate-950"
+                >
                   <div className="mb-3 flex items-center justify-between">
                     <p className="text-sm font-black text-gray-900 dark:text-white">Advanced filters</p>
                     <button
@@ -911,21 +1045,18 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
         {renderSearchAndHeader()}
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 sm:gap-8">
           {sortedAndFiltered.slice(0, 12).map((palette) => (
-            <div
+            <PaletteCard
               key={palette.id}
-              onClick={() => {
+              palette={palette}
+              onOpen={() => {
                 playSound("open");
                 openStudio(palette);
               }}
-            >
-              <PaletteCard
-                palette={palette}
-                isFavorite={false}
-                onToggleFavorite={() => {}}
-                viewMode="grid"
-                qualityScore={metricsById[palette.id]?.uiReadiness}
-              />
-            </div>
+              isFavorite={false}
+              onToggleFavorite={() => {}}
+              viewMode="grid"
+              qualityScore={metricsById[palette.id]?.uiReadiness}
+            />
           ))}
         </div>
       </div>
@@ -985,11 +1116,29 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
       )}
 
       {isCommandOpen && (
-        <div className="fixed inset-0 z-50 flex items-start justify-center bg-slate-950/50 px-4 pt-24" onClick={() => setIsCommandOpen(false)}>
-          <div className="w-full max-w-lg rounded-2xl border border-gray-200 bg-white p-3 shadow-2xl dark:border-slate-800 dark:bg-slate-950" onClick={(e) => e.stopPropagation()}>
+        <div
+          className="fixed inset-0 z-50 flex items-start justify-center bg-slate-950/50 px-4 pt-24"
+          onClick={() => setIsCommandOpen(false)}
+        >
+          <div
+            id="palette-command-dialog"
+            ref={commandDialogRef}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="palette-command-title"
+            className="w-full max-w-lg rounded-2xl border border-gray-200 bg-white p-3 shadow-2xl dark:border-slate-800 dark:bg-slate-950"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h3 id="palette-command-title" className="sr-only">
+              Palette command menu
+            </h3>
             <div className="flex items-center gap-3 border-b border-gray-100 px-2 py-3 dark:border-slate-800">
               <Command className="h-4 w-4 text-gray-400" />
+              <label htmlFor="palette-command-search" className="sr-only">
+                Search palettes and commands
+              </label>
               <input
+                id="palette-command-search"
                 autoFocus
                 className="w-full bg-transparent text-sm font-medium outline-none"
                 placeholder="Search palettes, run actions..."
@@ -1016,10 +1165,35 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
       )}
 
       {isLoading ? (
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4 xl:grid-cols-5">
-          {Array.from({ length: 10 }).map((_, i) => (
-            <div key={i} className="h-56 animate-pulse rounded-xl border border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-900">
-              <div className="h-32 rounded-t-xl bg-gray-100 dark:bg-slate-800" />
+        <div
+          className={
+            viewMode === "list"
+              ? "grid grid-cols-1 gap-3"
+              : viewMode === "compact"
+                ? "grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6"
+                : "grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4 xl:grid-cols-5"
+          }
+        >
+          {Array.from({ length: viewMode === "list" ? 8 : 10 }).map((_, i) => (
+            <div
+              key={i}
+              className={`animate-pulse rounded-xl border border-gray-100 bg-white dark:border-slate-800 dark:bg-slate-900 ${
+                viewMode === "compact"
+                  ? "h-28"
+                  : viewMode === "list"
+                    ? "h-24"
+                    : "h-56"
+              }`}
+            >
+              <div
+                className={`rounded-t-xl bg-gray-100 dark:bg-slate-800 ${
+                  viewMode === "compact"
+                    ? "h-16"
+                    : viewMode === "list"
+                      ? "h-8"
+                      : "h-32"
+                }`}
+              />
               <div className="space-y-2 p-4">
                 <div className="h-3 w-2/3 rounded bg-gray-100 dark:bg-slate-800" />
                 <div className="h-3 w-1/2 rounded bg-gray-100 dark:bg-slate-800" />
@@ -1066,34 +1240,20 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
                   className={`grid ${gapClass}`}
                 >
                   {rowItems.map((palette) => (
-                    <div
+                    <PaletteCard
                       key={palette.id}
-                      onClick={() => {
+                      palette={palette}
+                      onOpen={() => {
                         playSound("open");
                         openStudio(palette);
                       }}
-                      onKeyDown={(e) => {
-                        if (e.key === "Enter" || e.key === " ") {
-                          e.preventDefault();
-                          playSound("open");
-                          openStudio(palette);
-                        }
-                      }}
-                      tabIndex={0}
-                      role="button"
-                      aria-label={`View ${palette.name} palette, ${palette.count} colors`}
-                      className="focus-visible:outline-2 focus-visible:outline-indigo-500 rounded-3xl"
-                    >
-                      <PaletteCard
-                        palette={palette}
-                        isFavorite={favorites.has(palette.id)}
-                        onToggleFavorite={() => toggleFavorite(palette.id)}
-                        viewMode={viewMode}
-                        qualityScore={metricsById[palette.id]?.uiReadiness}
-                        isSelectedForCompare={compareIds.includes(palette.id)}
-                        onToggleCompare={() => toggleCompare(palette.id)}
-                      />
-                    </div>
+                      isFavorite={favorites.has(palette.id)}
+                      onToggleFavorite={() => toggleFavorite(palette.id)}
+                      viewMode={viewMode}
+                      qualityScore={metricsById[palette.id]?.uiReadiness}
+                      isSelectedForCompare={compareIds.includes(palette.id)}
+                      onToggleCompare={() => toggleCompare(palette.id)}
+                    />
                   ))}
                 </div>
               );
@@ -1116,18 +1276,38 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
             >
               reset all filters
             </button>
-            .{" "}
+            .
+          </p>
+          <div className="flex flex-wrap justify-center gap-2">
+            <button
+              onClick={() => {
+                resetFilters();
+                setSearch("web");
+              }}
+              className="rounded-lg border border-gray-200 px-3 py-1.5 text-xs font-black text-gray-600 transition-colors hover:border-indigo-300 hover:text-indigo-600 dark:border-slate-800 dark:text-gray-300 dark:hover:border-indigo-800 dark:hover:text-indigo-400"
+            >
+              Search: web
+            </button>
+            <button
+              onClick={() => {
+                resetFilters();
+                setActiveFacet("saved");
+              }}
+              className="rounded-lg border border-gray-200 px-3 py-1.5 text-xs font-black text-gray-600 transition-colors hover:border-indigo-300 hover:text-indigo-600 dark:border-slate-800 dark:text-gray-300 dark:hover:border-indigo-800 dark:hover:text-indigo-400"
+            >
+              Show saved
+            </button>
             <button
               onClick={() => {
                 setA11yOnly(false);
                 setTemperatureFilter("warm");
                 setActiveFacet("all");
               }}
-              className="text-indigo-500 hover:underline font-bold"
+              className="rounded-lg border border-gray-200 px-3 py-1.5 text-xs font-black text-gray-600 transition-colors hover:border-indigo-300 hover:text-indigo-600 dark:border-slate-800 dark:text-gray-300 dark:hover:border-indigo-800 dark:hover:text-indigo-400"
             >
               Show warm palettes
             </button>
-          </p>
+          </div>
         </div>
       )}
     </div>

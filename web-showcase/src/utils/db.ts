@@ -154,6 +154,31 @@ export function getAllPalettes(): Palette[] {
   }
 }
 
+export function getRandomPalette(): Palette | null {
+  const db = getDb();
+  try {
+    const palette = db
+      .prepare("SELECT * FROM palettes ORDER BY RANDOM() LIMIT 1")
+      .get() as any | undefined;
+    if (!palette) return null;
+
+    const colors = db
+      .prepare(
+        "SELECT * FROM palette_colors WHERE palette_id = ? ORDER BY color_index ASC",
+      )
+      .all(palette.id) as any[];
+    const tags = db
+      .prepare("SELECT * FROM palette_tags WHERE palette_id = ?")
+      .all(palette.id) as any[];
+
+    const stitched = stitchPalettes([palette], colors, tags);
+    return stitched[0] ?? null;
+  } catch (error) {
+    console.error("Failed to fetch random palette:", error);
+    return null;
+  }
+}
+
 // SQL FTS5 Search
 export function searchPalettes(query: string): Palette[] {
   if (!query || !query.trim()) {

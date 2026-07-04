@@ -1,15 +1,13 @@
 "use client";
 
-import palettesData from "@/data/palettes.json";
-import { Palette } from "@/types";
 import { playSound } from "@/utils/audio";
+import { showToast } from "@/utils/toast";
 import { Shuffle, Sparkles, SwatchBook } from "lucide-react";
 import { PaletteWall } from "./palette-wall";
 import { useStudio } from "./studio/studio-context";
 
 export function Hero() {
   const { openStudio, openBrandSystem } = useStudio();
-  const palettes = palettesData as Palette[];
 
   const browse = () => {
     document
@@ -17,10 +15,20 @@ export function Hero() {
       ?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
-  const openRandom = () => {
-    const random = palettes[Math.floor(Math.random() * palettes.length)];
-    playSound("open");
-    openStudio(random);
+  const openRandom = async () => {
+    try {
+      const { getRandomPaletteAction } = await import("@/app/actions");
+      const random = await getRandomPaletteAction();
+      if (!random) {
+        showToast("No palettes available right now.", "error");
+        return;
+      }
+      playSound("open");
+      openStudio(random);
+    } catch (error) {
+      console.error("Failed to open random palette:", error);
+      showToast("Could not load a random palette.", "error");
+    }
   };
 
   return (
@@ -36,13 +44,13 @@ export function Hero() {
           </span>
         </div>
 
-        <h2 className="max-w-4xl text-balance text-4xl font-black leading-[1.05] text-gray-900 sm:text-6xl lg:text-7xl 3xl:max-w-6xl 3xl:text-8xl dark:text-white">
+        <h1 className="max-w-4xl text-balance text-4xl font-black leading-[1.05] text-gray-900 sm:text-6xl lg:text-7xl 3xl:max-w-6xl 3xl:text-8xl dark:text-white">
           SCSS Color Systems.
           <br />
           <span className="text-indigo-600 dark:text-indigo-400">
             Built for precision.
           </span>
-        </h2>
+        </h1>
 
         <p className="mt-1 max-w-2xl text-pretty text-base font-medium leading-relaxed text-gray-500 sm:mt-2 sm:text-lg 3xl:max-w-4xl 3xl:text-xl dark:text-gray-400">
           A curated library of 3,000+ professional color systems with ready-to-use
@@ -53,14 +61,14 @@ export function Hero() {
         <div className="flex flex-wrap items-center gap-3">
           <button
             onClick={browse}
-            className="inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-4 py-2.5 text-sm font-black text-white shadow-sm transition-colors hover:bg-indigo-700"
+            className="inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-4 py-2.5 text-sm font-black text-white shadow-sm transition-colors hover:bg-indigo-700 focus-visible:outline-2 focus-visible:outline-indigo-500"
           >
             <SwatchBook className="h-4 w-4" />
             Browse palettes
           </button>
           <button
             onClick={openRandom}
-            className="inline-flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm font-black text-gray-700 transition-colors hover:border-indigo-300 hover:text-indigo-600 dark:border-slate-800 dark:bg-slate-900 dark:text-gray-300 dark:hover:border-indigo-800 dark:hover:text-indigo-400"
+            className="inline-flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm font-black text-gray-700 transition-colors hover:border-indigo-300 hover:text-indigo-600 dark:border-slate-800 dark:bg-slate-900 dark:text-gray-300 dark:hover:border-indigo-800 dark:hover:text-indigo-400 focus-visible:outline-2 focus-visible:outline-indigo-500"
           >
             <Shuffle className="h-4 w-4" />
             Open random
@@ -70,7 +78,7 @@ export function Hero() {
               playSound("open");
               openBrandSystem();
             }}
-            className="inline-flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm font-black text-gray-700 transition-colors hover:border-indigo-300 hover:text-indigo-600 dark:border-slate-800 dark:bg-slate-900 dark:text-gray-300 dark:hover:border-indigo-800 dark:hover:text-indigo-400"
+            className="inline-flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm font-black text-gray-700 transition-colors hover:border-indigo-300 hover:text-indigo-600 dark:border-slate-800 dark:bg-slate-900 dark:text-gray-300 dark:hover:border-indigo-800 dark:hover:text-indigo-400 focus-visible:outline-2 focus-visible:outline-indigo-500"
           >
             <Sparkles className="h-4 w-4" />
             Build brand system

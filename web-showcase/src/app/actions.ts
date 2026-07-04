@@ -14,6 +14,10 @@ export async function fetchPalettes() {
   return db.getAllPalettes();
 }
 
+export async function getRandomPaletteAction() {
+  return db.getRandomPalette();
+}
+
 export async function getFavoritesAction() {
   return db.getFavorites();
 }
