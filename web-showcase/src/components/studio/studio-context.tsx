@@ -8,7 +8,7 @@ import React, {
   useEffect,
 } from "react";
 import { Palette } from "@/types";
-import { UISelection, StudioState } from "@/types/studio";
+import { ROLE_COUNT, UISelection, StudioState } from "@/types/studio";
 
 interface StudioContextType extends StudioState {
   openStudio: (palette: Palette) => void;
@@ -94,7 +94,7 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
 
   const openStudio = useCallback((palette: Palette) => {
     const mapping: Record<string, string> = {};
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= ROLE_COUNT; i++) {
       const color = palette.colors[(i - 1) % palette.colors.length];
       mapping[`--ui-color-${i}`] = color.hex;
     }
@@ -135,7 +135,7 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
       const paletteColors = prev.selectedPalette.colors.map((c) => c.hex);
       const shuffled = [...paletteColors].sort(() => Math.random() - 0.5);
       const newMapping: Record<string, string> = {};
-      for (let i = 1; i <= 10; i++) {
+      for (let i = 1; i <= ROLE_COUNT; i++) {
         newMapping[`--ui-color-${i}`] = shuffled[(i - 1) % shuffled.length];
       }
       return { ...prev, roleMapping: newMapping };

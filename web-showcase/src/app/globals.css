@@ -41,6 +41,25 @@ body {
   display: none;
 }
 
+.subtle-scrollbar {
+  scrollbar-color: rgba(148, 163, 184, 0.45) transparent;
+  scrollbar-width: thin;
+}
+
+.subtle-scrollbar::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.subtle-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.45);
+  border-radius: 999px;
+}
+
+.subtle-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 /* ── Keyframes ───────────────────────────────────────────────────────────── */
 @keyframes scroll-up {
   from { transform: translateY(0); }

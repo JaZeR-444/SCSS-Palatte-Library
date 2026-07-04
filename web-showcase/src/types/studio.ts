@@ -23,14 +23,27 @@ export const SCENARIO_DESCRIPTIONS: Record<UISelection, string> = {
 };
 
 export const DEFAULT_ROLES = [
-  "Brand Primary",
-  "Accent Secondary",
-  "Deep Background",
-  "Card Surface",
-  "Subtle Border",
-  "Primary Text",
-  "Muted Text",
-  "Success State",
-  "Warning State",
-  "Danger State",
+  "Bg Canvas",
+  "Bg Surface",
+  "Bg Elevated",
+  "Bg Overlay",
+  "Border Subtle",
+  "Border Strong",
+  "Text Muted",
+  "Text Base",
+  "Text Strong",
+  "Primary",
+  "Primary Hover",
+  "Secondary",
+  "Secondary Hover",
+  "Accent",
+  "Accent Soft",
+  "Success",
+  "Warning",
+  "Danger",
+  "Info",
+  "Link",
+  "Focus Ring",
 ];
+
+export const ROLE_COUNT = DEFAULT_ROLES.length;

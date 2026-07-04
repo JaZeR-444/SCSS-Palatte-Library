@@ -17,7 +17,7 @@ export function ScenarioTabs() {
   const { activeScenario, setScenario } = useStudio();
 
   return (
-    <div className="flex p-1 bg-gray-100 dark:bg-slate-800 rounded-2xl overflow-x-auto no-scrollbar">
+    <div className="flex p-1 bg-gray-100 dark:bg-slate-800 rounded-2xl overflow-x-auto subtle-scrollbar">
       {SCENARIOS.map((s) => {
         const Icon = s.icon;
         const isActive = activeScenario === s.id;

@@ -12,6 +12,7 @@ import {
   ZoomOut,
   Eye,
   Copy,
+  Check,
   Flame,
   Edit3,
   FolderPlus,
@@ -54,6 +55,16 @@ const VISION_OPTIONS = [
 ];
 
 type CodeTab = "scss" | "css" | "tailwind";
+
+const STUDIO_SECTIONS = [
+  { id: "overview", label: "Overview" },
+  { id: "preview", label: "Preview" },
+  { id: "roles", label: "Roles" },
+  { id: "export", label: "Export" },
+  { id: "contrast", label: "Contrast" },
+  { id: "history", label: "History" },
+  { id: "related", label: "Related" },
+];
 
 function nameToVar(name: string) {
   return name
@@ -247,6 +258,8 @@ export function StudioModal() {
 
   const palettes = palettesData as Palette[];
   const [codeTab, setCodeTab] = useState<CodeTab>("scss");
+  const [copiedCode, setCopiedCode] = useState(false);
+  const [copiedPalette, setCopiedPalette] = useState(false);
 
   const [collections, setCollections] = useState<Collection[]>([]);
   const [collectionsOpen, setCollectionsOpen] = useState(false);
@@ -385,6 +398,33 @@ export function StudioModal() {
     showToast("Jumped to random palette!");
   };
 
+  const copyPalette = async () => {
+    const value = selectedPalette.colors.map((color) => color.hex.slice(0, 7)).join(", ");
+    await navigator.clipboard.writeText(value);
+    setCopiedPalette(true);
+    showToast("Palette colors copied!");
+    playSound("success");
+  };
+
+  const copyCode = async () => {
+    await navigator.clipboard.writeText(codeContent);
+    setCopiedCode(true);
+    showToast(`${codeTab.toUpperCase()} copied to clipboard!`);
+    playSound("success");
+  };
+
+  useEffect(() => {
+    if (!copiedCode) return;
+    const timeout = window.setTimeout(() => setCopiedCode(false), 1800);
+    return () => window.clearTimeout(timeout);
+  }, [copiedCode]);
+
+  useEffect(() => {
+    if (!copiedPalette) return;
+    const timeout = window.setTimeout(() => setCopiedPalette(false), 1800);
+    return () => window.clearTimeout(timeout);
+  }, [copiedPalette]);
+
   const downloadCode = () => {
     const ext = codeTab === "scss" ? "scss" : codeTab === "css" ? "css" : "js";
     const filename = `${nameToVar(selectedPalette.name)}.${ext}`;
@@ -477,7 +517,7 @@ export function StudioModal() {
                   <FolderPlus className="h-5 w-5" />
                 </button>
                 {collectionsOpen && (
-                  <div className="absolute right-0 mt-2 w-64 rounded-3xl bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border border-gray-200/50 dark:border-slate-800/80 shadow-2xl p-4 z-50 text-slate-800 dark:text-white text-xs space-y-2 max-h-60 overflow-y-auto no-scrollbar">
+                  <div className="absolute right-0 mt-2 w-64 rounded-3xl bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border border-gray-200/50 dark:border-slate-800/80 shadow-2xl p-4 z-50 text-slate-800 dark:text-white text-xs space-y-2 max-h-60 overflow-y-auto subtle-scrollbar">
                     <p className="font-black text-[9px] uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-2">
                       Add to Collection
                     </p>
@@ -556,9 +596,9 @@ export function StudioModal() {
             </div>
 
             {/* Scrollable Content */}
-            <div className="flex-1 overflow-y-auto no-scrollbar">
+            <div className="flex-1 overflow-y-auto subtle-scrollbar">
               {/* Mood Hero */}
-              <div className="relative h-64 sm:h-80 bg-slate-950 flex flex-col items-center justify-center text-center px-6 overflow-hidden">
+              <div id="overview" className="relative h-[25rem] scroll-mt-28 bg-slate-950 flex flex-col items-center justify-center text-center px-6 overflow-hidden sm:h-80">
                 <div className="absolute inset-0 flex">
                   {selectedPalette.colors.map((c, i) => (
                     <div
@@ -570,7 +610,7 @@ export function StudioModal() {
                   <div className="absolute inset-0 bg-slate-950/40" />
                 </div>
 
-                <div className="relative z-10 space-y-4">
+                <div className="relative z-10 max-w-3xl space-y-5">
                   <h2 className="text-4xl sm:text-6xl font-black text-white tracking-tighter drop-shadow-2xl">
                     {selectedPalette.name}
                   </h2>
@@ -578,25 +618,65 @@ export function StudioModal() {
                     {selectedPalette.description}
                   </p>
                   <MoodScore />
+                  <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
+                    <button
+                      onClick={copyPalette}
+                      className="inline-flex items-center gap-2 rounded-2xl bg-white px-4 py-2.5 text-[11px] font-black uppercase tracking-widest text-slate-950 shadow-xl transition-transform hover:scale-[1.02] active:scale-[0.98]"
+                    >
+                      {copiedPalette ? <Check className="h-3.5 w-3.5" /> : <Copy className="h-3.5 w-3.5" />}
+                      {copiedPalette ? "Copied" : "Copy Palette"}
+                    </button>
+                    <button
+                      onClick={downloadCode}
+                      className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-white/10 px-4 py-2.5 text-[11px] font-black uppercase tracking-widest text-white backdrop-blur-md transition-colors hover:bg-white/20"
+                    >
+                      <Download className="h-3.5 w-3.5" />
+                      Export
+                    </button>
+                    <button
+                      onClick={() => {
+                        playSound("click");
+                        openCreator(selectedPalette);
+                      }}
+                      className="inline-flex items-center gap-2 rounded-2xl border border-white/20 bg-white/10 px-4 py-2.5 text-[11px] font-black uppercase tracking-widest text-white backdrop-blur-md transition-colors hover:bg-white/20"
+                    >
+                      <Edit3 className="h-3.5 w-3.5" />
+                      Creator
+                    </button>
+                  </div>
                 </div>
 
                 <button
                   onClick={handlePrev}
-                  className="absolute left-6 top-1/2 -translate-y-1/2 p-4 bg-white/10 hover:bg-white/20 rounded-full border border-white/20 backdrop-blur-md text-white transition-all cursor-pointer"
+                  className="absolute bottom-5 left-6 p-3 bg-white/10 hover:bg-white/20 rounded-full border border-white/20 backdrop-blur-md text-white transition-all cursor-pointer sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2 sm:p-4"
                   title="Previous Palette"
                 >
                   <ArrowLeft className="h-5 w-5" />
                 </button>
                 <button
                   onClick={handleNext}
-                  className="absolute right-6 top-1/2 -translate-y-1/2 p-4 bg-white/10 hover:bg-white/20 rounded-full border border-white/20 backdrop-blur-md text-white transition-all cursor-pointer"
+                  className="absolute bottom-5 right-6 p-3 bg-white/10 hover:bg-white/20 rounded-full border border-white/20 backdrop-blur-md text-white transition-all cursor-pointer sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2 sm:p-4"
                   title="Next Palette"
                 >
                   <ArrowRight className="h-5 w-5" />
                 </button>
               </div>
 
-              <div className="p-6 sm:p-10 space-y-12">
+              <div className="sticky top-0 z-30 border-b border-gray-100 bg-white/90 px-4 py-3 backdrop-blur-xl dark:border-slate-800 dark:bg-slate-900/90 sm:px-8">
+                <div className="flex gap-2 overflow-x-auto subtle-scrollbar">
+                  {STUDIO_SECTIONS.map((section) => (
+                    <a
+                      key={section.id}
+                      href={`#${section.id}`}
+                      className="shrink-0 rounded-xl px-3 py-2 text-[10px] font-black uppercase tracking-widest text-gray-500 transition-colors hover:bg-gray-100 hover:text-indigo-500 dark:text-gray-400 dark:hover:bg-slate-800"
+                    >
+                      {section.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+
+              <div className="p-6 sm:p-10 space-y-10">
                 {/* Palette Metadata */}
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-gray-100 dark:bg-slate-800 text-[10px] font-black uppercase tracking-widest text-gray-500 dark:text-gray-400">
@@ -624,7 +704,7 @@ export function StudioModal() {
                 </div>
 
                 {/* Scenario Section */}
-                <div className="space-y-4">
+                <div id="preview" className="scroll-mt-28 space-y-4">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-2xl bg-indigo-500 flex items-center justify-center text-white shadow-lg shadow-indigo-500/20">
@@ -643,7 +723,7 @@ export function StudioModal() {
                   </div>
 
                   {/* Scenario Toolbar */}
-                  <div className="flex items-center justify-between gap-3">
+                  <div className="sticky top-[58px] z-20 flex flex-col gap-3 rounded-2xl border border-gray-100 bg-white/90 p-2 backdrop-blur-xl dark:border-slate-800 dark:bg-slate-900/90 sm:flex-row sm:items-center sm:justify-between">
                     {/* Zoom Controls */}
                     <div className="flex items-center gap-2 bg-gray-100 dark:bg-slate-800 rounded-2xl p-1">
                       <button
@@ -695,7 +775,7 @@ export function StudioModal() {
                   </div>
 
                   {/* Scenario Preview */}
-                  <div className="overflow-hidden rounded-[2.5rem] bg-gray-50/50 dark:bg-slate-950/30 border border-gray-100 dark:border-slate-800">
+                  <div className="overflow-hidden rounded-3xl bg-gray-50/50 dark:bg-slate-950/30 border border-gray-100 dark:border-slate-800">
                     <div
                       style={{
                         transform: `scale(${zoom / 100})`,
@@ -766,7 +846,7 @@ export function StudioModal() {
                 <RoleConfigurator />
 
                 {/* Code Export */}
-                <div className="space-y-4">
+                <div id="export" className="scroll-mt-28 space-y-4">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-2xl bg-violet-500 flex items-center justify-center text-white shadow-lg shadow-violet-500/20 flex-shrink-0">
                       <Code2 className="h-5 w-5" />
@@ -809,23 +889,21 @@ export function StudioModal() {
                         <span className="hidden sm:inline">Save</span>
                       </button>
                       <button
-                        onClick={() => {
-                          navigator.clipboard.writeText(codeContent);
-                          showToast(
-                            `${codeTab.toUpperCase()} copied to clipboard!`
-                          );
-                          playSound("success");
-                        }}
-                        className="flex items-center gap-2 px-4 py-3 text-[11px] font-bold text-gray-400 hover:text-indigo-500 transition-colors cursor-pointer"
+                        onClick={copyCode}
+                        className={`flex items-center gap-2 px-4 py-3 text-[11px] font-bold transition-colors cursor-pointer ${
+                          copiedCode
+                            ? "text-emerald-500"
+                            : "text-gray-400 hover:text-indigo-500"
+                        }`}
                         title="Copy to clipboard"
                       >
-                        <Copy className="h-3.5 w-3.5" />
-                        Copy
+                        {copiedCode ? <Check className="h-3.5 w-3.5" /> : <Copy className="h-3.5 w-3.5" />}
+                        {copiedCode ? "Copied" : "Copy"}
                       </button>
                     </div>
 
                     {/* Code Block */}
-                    <div className="bg-gray-950 rounded-b-3xl p-5 overflow-x-auto no-scrollbar">
+                    <div className="bg-gray-950 rounded-b-3xl p-5 overflow-x-auto subtle-scrollbar">
                       <pre className="text-[11px] font-mono text-gray-300 leading-relaxed whitespace-pre">
                         {codeContent}
                       </pre>
@@ -837,7 +915,7 @@ export function StudioModal() {
                 <ColorLab />
 
                 {/* History Log */}
-                <div className="space-y-4 pt-4">
+                <div id="history" className="scroll-mt-28 space-y-4 pt-4">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-2xl bg-teal-500 flex items-center justify-center text-white shadow-lg shadow-teal-500/20">
                       <Clock className="h-5 w-5" />
@@ -852,7 +930,7 @@ export function StudioModal() {
                     </div>
                   </div>
 
-                  <div className="rounded-[2.5rem] border border-gray-100 dark:border-slate-800 bg-gray-50/50 dark:bg-slate-950/20 p-6">
+                  <div className="rounded-3xl border border-gray-100 dark:border-slate-800 bg-gray-50/50 dark:bg-slate-950/20 p-6">
                     {loadingHistory ? (
                       <div className="flex items-center justify-center py-8">
                         <span className="animate-spin rounded-full h-6 w-6 border-2 border-indigo-500 border-t-transparent" />
@@ -894,7 +972,7 @@ export function StudioModal() {
 
                 {/* Related Palettes */}
                 {relatedPalettes.length > 0 && (
-                  <div className="space-y-6 pt-10 border-t border-gray-100 dark:border-slate-800/80">
+                  <div id="related" className="scroll-mt-28 space-y-6 pt-10 border-t border-gray-100 dark:border-slate-800/80">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-2xl bg-amber-500 flex items-center justify-center text-white shadow-lg shadow-amber-500/20 flex-shrink-0">
                         <Layers className="h-5 w-5" />
@@ -908,7 +986,7 @@ export function StudioModal() {
                         </p>
                       </div>
                     </div>
-                    <div className="flex gap-4 overflow-x-auto pb-4 no-scrollbar snap-x snap-mandatory">
+                    <div className="flex gap-4 overflow-x-auto pb-4 subtle-scrollbar snap-x snap-mandatory">
                       {relatedPalettes.map((p) => (
                         <div
                           key={p.id}
@@ -917,7 +995,7 @@ export function StudioModal() {
                             playSound("open");
                             openStudio(p);
                           }}
-                          className="flex-shrink-0 snap-start group cursor-pointer bg-gray-50/50 dark:bg-slate-950/20 hover:bg-white dark:hover:bg-slate-900 border border-gray-100 dark:border-slate-800/80 rounded-3xl p-4 w-48 hover:shadow-xl transition-all duration-300"
+                          className="flex-shrink-0 snap-start group cursor-pointer bg-gray-50/50 dark:bg-slate-950/20 hover:bg-white dark:hover:bg-slate-900 border border-gray-100 dark:border-slate-800/80 rounded-2xl p-4 w-48 hover:shadow-xl transition-all duration-300"
                         >
                           <div className="flex h-10 rounded-xl overflow-hidden border border-gray-100 dark:border-slate-800 mb-3 shadow-inner">
                             {p.colors.map((c, idx) => (

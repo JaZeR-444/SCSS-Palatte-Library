@@ -8,7 +8,7 @@ import {
   getReadableTextColor,
 } from "@/utils/contrast-utils";
 import { showToast } from "@/utils/toast";
-import { Copy, Shuffle } from "lucide-react";
+import { Check, Copy, Shuffle } from "lucide-react";
 
 function a11yBadge(ratio: number) {
   if (ratio >= 7)
@@ -60,15 +60,23 @@ export function ColorLab() {
   const { selectedPalette } = useStudio();
   const [customBg, setCustomBg] = useState("");
   const [shuffleOrder, setShuffleOrder] = useState(false);
+  const [copiedHex, setCopiedHex] = useState("");
 
   if (!selectedPalette) return null;
 
   const colors = shuffleOrder
-    ? [...selectedPalette.colors].sort(() => Math.random() - 0.5)
+    ? [...selectedPalette.colors].sort((a, b) => b.hex.localeCompare(a.hex))
     : selectedPalette.colors;
 
+  const copyHex = (hex: string) => {
+    navigator.clipboard.writeText(hex);
+    setCopiedHex(hex);
+    showToast(`${hex} copied!`);
+    window.setTimeout(() => setCopiedHex(""), 1400);
+  };
+
   return (
-    <div className="space-y-4">
+    <div id="contrast" className="scroll-mt-28 space-y-4">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <h3 className="text-xs font-black uppercase tracking-widest text-gray-400">
@@ -129,17 +137,18 @@ export function ColorLab() {
               className="bg-white dark:bg-slate-900 rounded-2xl p-4 flex items-center gap-4 shadow-sm border border-gray-100 dark:border-slate-800 hover:shadow-md transition-all"
             >
               <button
-                onClick={() => {
-                  navigator.clipboard.writeText(hex6);
-                  showToast(`${hex6} copied!`);
-                }}
+                onClick={() => copyHex(hex6)}
                 className="w-16 h-16 rounded-xl flex-shrink-0 flex items-center justify-center transition-transform active:scale-95 border border-black/5 cursor-copy"
                 style={{ backgroundColor: hex6, color: textColor }}
                 title={`Copy ${hex6}`}
               >
-                <span className="text-xs font-black select-none opacity-80">
-                  Aa
-                </span>
+                {copiedHex === hex6 ? (
+                  <Check className="h-4 w-4" />
+                ) : (
+                  <span className="text-xs font-black select-none opacity-80">
+                    Aa
+                  </span>
+                )}
               </button>
               <div className="flex-1 min-w-0">
                 <h4 className="font-bold text-sm mb-1 truncate text-gray-900 dark:text-white">
@@ -150,13 +159,12 @@ export function ColorLab() {
                     {hex6}
                   </code>
                   <button
-                    onClick={() => {
-                      navigator.clipboard.writeText(hex6);
-                      showToast(`${hex6} copied!`);
-                    }}
-                    className="text-gray-300 hover:text-indigo-500 transition-colors"
+                    onClick={() => copyHex(hex6)}
+                    className={`transition-colors ${
+                      copiedHex === hex6 ? "text-emerald-500" : "text-gray-300 hover:text-indigo-500"
+                    }`}
                   >
-                    <Copy className="h-3 w-3" />
+                    {copiedHex === hex6 ? <Check className="h-3 w-3" /> : <Copy className="h-3 w-3" />}
                   </button>
                 </div>
                 <code className="block text-[9px] text-gray-300 dark:text-gray-600 font-mono mb-2">
