@@ -1045,18 +1045,21 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
         {renderSearchAndHeader()}
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 sm:gap-8">
           {sortedAndFiltered.slice(0, 12).map((palette) => (
-            <PaletteCard
+            <div
               key={palette.id}
-              palette={palette}
-              onOpen={() => {
+              onClick={() => {
                 playSound("open");
                 openStudio(palette);
               }}
-              isFavorite={false}
-              onToggleFavorite={() => {}}
-              viewMode="grid"
-              qualityScore={metricsById[palette.id]?.uiReadiness}
-            />
+            >
+              <PaletteCard
+                palette={palette}
+                isFavorite={false}
+                onToggleFavorite={() => {}}
+                viewMode="grid"
+                qualityScore={metricsById[palette.id]?.uiReadiness}
+              />
+            </div>
           ))}
         </div>
       </div>
@@ -1240,20 +1243,34 @@ export function PaletteGrid({ palettes }: PaletteGridProps) {
                   className={`grid ${gapClass}`}
                 >
                   {rowItems.map((palette) => (
-                    <PaletteCard
+                    <div
                       key={palette.id}
-                      palette={palette}
-                      onOpen={() => {
+                      onClick={() => {
                         playSound("open");
                         openStudio(palette);
                       }}
-                      isFavorite={favorites.has(palette.id)}
-                      onToggleFavorite={() => toggleFavorite(palette.id)}
-                      viewMode={viewMode}
-                      qualityScore={metricsById[palette.id]?.uiReadiness}
-                      isSelectedForCompare={compareIds.includes(palette.id)}
-                      onToggleCompare={() => toggleCompare(palette.id)}
-                    />
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                          e.preventDefault();
+                          playSound("open");
+                          openStudio(palette);
+                        }
+                      }}
+                      tabIndex={0}
+                      role="button"
+                      aria-label={`View ${palette.name} palette, ${palette.count} colors`}
+                      className="focus-visible:outline-2 focus-visible:outline-indigo-500 rounded-3xl"
+                    >
+                      <PaletteCard
+                        palette={palette}
+                        isFavorite={favorites.has(palette.id)}
+                        onToggleFavorite={() => toggleFavorite(palette.id)}
+                        viewMode={viewMode}
+                        qualityScore={metricsById[palette.id]?.uiReadiness}
+                        isSelectedForCompare={compareIds.includes(palette.id)}
+                        onToggleCompare={() => toggleCompare(palette.id)}
+                      />
+                    </div>
                   ))}
                 </div>
               );

@@ -88,7 +88,6 @@ function getTagStyle(tag: string): string {
 
 interface PaletteCardProps {
   palette: Palette;
-  onOpen: () => void;
   isFavorite: boolean;
   onToggleFavorite: (e: React.MouseEvent) => void;
   viewMode?: "grid" | "compact" | "list";
@@ -99,7 +98,6 @@ interface PaletteCardProps {
 
 export function PaletteCard({
   palette,
-  onOpen,
   isFavorite,
   onToggleFavorite,
   viewMode = "grid",
@@ -157,7 +155,7 @@ export function PaletteCard({
   );
 
   const quickActions = (
-    <div className="relative z-20 flex items-center gap-1">
+    <div className="flex items-center gap-1">
       {onToggleCompare && (
         <button
           onClick={handleCompareClick}
@@ -196,15 +194,9 @@ export function PaletteCard({
   if (viewMode === "compact") {
     return (
       <div
-        className="group relative bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-gray-100 dark:border-slate-800 shadow-sm hover:shadow-lg transition-shadow h-24 sm:h-28"
+        className="group relative bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-gray-100 dark:border-slate-800 shadow-sm hover:shadow-lg transition-shadow cursor-pointer h-24 sm:h-28"
         title={`${palette.name} (${palette.category})`}
       >
-        <button
-          type="button"
-          onClick={onOpen}
-          className="absolute inset-0 z-10 rounded-xl focus-visible:outline-2 focus-visible:outline-indigo-500"
-          aria-label={`Open ${palette.name} palette`}
-        />
         <div className="flex h-full w-full overflow-hidden">
           {palette.colors.map((color, i) => (
             <div
@@ -230,7 +222,7 @@ export function PaletteCard({
             UI {qualityScore}/25
           </span>
         )}
-        <div className="absolute top-2 right-2 z-20 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-200">
+        <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-200">
           {quickActions}
         </div>
         <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 to-transparent p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
@@ -245,13 +237,7 @@ export function PaletteCard({
   /* ── List ─────────────────────────────────────────────────────── */
   if (viewMode === "list") {
     return (
-      <div className="group relative bg-white dark:bg-slate-900 rounded-xl p-3 sm:p-4 border border-gray-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow flex items-center justify-between gap-4 w-full">
-        <button
-          type="button"
-          onClick={onOpen}
-          className="absolute inset-0 z-10 rounded-xl focus-visible:outline-2 focus-visible:outline-indigo-500"
-          aria-label={`Open ${palette.name} palette`}
-        />
+      <div className="group bg-white dark:bg-slate-900 rounded-xl p-3 sm:p-4 border border-gray-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow cursor-pointer flex items-center justify-between gap-4 w-full">
         <div className="min-w-0 flex-1 sm:flex-initial sm:w-48">
           <h3 className="font-black text-sm text-gray-900 dark:text-white truncate">
             {palette.name}
@@ -298,13 +284,7 @@ export function PaletteCard({
 
   /* ── Grid (default) ───────────────────────────────────────────── */
   return (
-    <div className="group relative bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-gray-100 dark:border-slate-800 shadow-sm hover:shadow-lg transition-shadow flex flex-col h-full">
-      <button
-        type="button"
-        onClick={onOpen}
-        className="absolute inset-0 z-10 rounded-xl focus-visible:outline-2 focus-visible:outline-indigo-500"
-        aria-label={`Open ${palette.name} palette`}
-      />
+    <div className="group relative bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-gray-100 dark:border-slate-800 shadow-sm hover:shadow-lg transition-shadow cursor-pointer flex flex-col h-full">
       {/* Swatch strip */}
       <div className="relative flex h-28 sm:h-32 overflow-hidden flex-shrink-0">
         {palette.colors.map((color, i) => (
@@ -332,7 +312,7 @@ export function PaletteCard({
             UI {qualityScore}/25
           </span>
         )}
-        <div className="absolute top-3 right-3 z-20 opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity duration-200">
+        <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity duration-200">
           {quickActions}
         </div>
       </div>
