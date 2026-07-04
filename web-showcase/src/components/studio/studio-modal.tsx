@@ -368,6 +368,18 @@ export function StudioModal() {
     return combined.slice(0, 6);
   }, [selectedPalette, palettes]);
 
+  useEffect(() => {
+    if (!copiedCode) return;
+    const timeout = window.setTimeout(() => setCopiedCode(false), 1800);
+    return () => window.clearTimeout(timeout);
+  }, [copiedCode]);
+
+  useEffect(() => {
+    if (!copiedPalette) return;
+    const timeout = window.setTimeout(() => setCopiedPalette(false), 1800);
+    return () => window.clearTimeout(timeout);
+  }, [copiedPalette]);
+
   if (!selectedPalette) return null;
 
   const handleClose = () => {
@@ -412,18 +424,6 @@ export function StudioModal() {
     showToast(`${codeTab.toUpperCase()} copied to clipboard!`);
     playSound("success");
   };
-
-  useEffect(() => {
-    if (!copiedCode) return;
-    const timeout = window.setTimeout(() => setCopiedCode(false), 1800);
-    return () => window.clearTimeout(timeout);
-  }, [copiedCode]);
-
-  useEffect(() => {
-    if (!copiedPalette) return;
-    const timeout = window.setTimeout(() => setCopiedPalette(false), 1800);
-    return () => window.clearTimeout(timeout);
-  }, [copiedPalette]);
 
   const downloadCode = () => {
     const ext = codeTab === "scss" ? "scss" : codeTab === "css" ? "css" : "js";
