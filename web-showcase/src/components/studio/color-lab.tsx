@@ -14,16 +14,21 @@ function a11yBadge(ratio: number) {
   if (ratio >= 7)
     return {
       label: "AAA",
-      cls: "bg-emerald-500/10 text-emerald-500 border-emerald-500/20",
+      cls: "bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border-emerald-500/30",
     };
   if (ratio >= 4.5)
     return {
       label: "AA",
-      cls: "bg-indigo-500/10 text-indigo-500 border-indigo-500/20",
+      cls: "bg-indigo-500/15 text-indigo-600 dark:text-indigo-400 border-indigo-500/30",
+    };
+  if (ratio >= 3)
+    return {
+      label: "AA Lg",
+      cls: "bg-amber-500/15 text-amber-600 dark:text-amber-400 border-amber-500/30",
     };
   return {
-    label: "FAIL",
-    cls: "bg-red-500/10 text-red-400 border-red-500/20 opacity-60 italic",
+    label: "Fail",
+    cls: "bg-red-500/15 text-red-600 dark:text-red-400 border-red-500/40",
   };
 }
 
@@ -82,8 +87,9 @@ export function ColorLab() {
           <h3 className="text-xs font-black uppercase tracking-widest text-gray-400">
             Color Lab
           </h3>
-          <p className="text-[11px] text-gray-400 mt-0.5">
-            WCAG contrast analysis per swatch.
+          <p className="mt-0.5 max-w-md text-[11px] text-gray-400">
+            Each swatch as text on white, dark, and its best in-palette pairing.
+            For every color-vs-color combination, enable the Heatmap above.
           </p>
         </div>
         <div className="flex items-center gap-3">
@@ -131,6 +137,16 @@ export function ColorLab() {
           const onCustom = customBg ? getContrastRatio(hex6, customBg) : null;
           const textColor = getReadableTextColor(hex6);
 
+          // Best partner within the palette — the most useful real pairing.
+          const bestPartner = selectedPalette.colors
+            .filter((c) => c.hex.slice(0, 7).toUpperCase() !== hex6)
+            .map((c) => ({
+              name: c.name,
+              hex: c.hex.slice(0, 7).toUpperCase(),
+              ratio: getContrastRatio(hex6, c.hex),
+            }))
+            .sort((a, b) => b.ratio - a.ratio)[0];
+
           return (
             <div
               key={idx}
@@ -161,18 +177,44 @@ export function ColorLab() {
                   <button
                     onClick={() => copyHex(hex6)}
                     className={`transition-colors ${
-                      copiedHex === hex6 ? "text-emerald-500" : "text-gray-300 hover:text-indigo-500"
+                      copiedHex === hex6
+                        ? "text-emerald-500"
+                        : "text-gray-300 hover:text-indigo-500"
                     }`}
                   >
-                    {copiedHex === hex6 ? <Check className="h-3 w-3" /> : <Copy className="h-3 w-3" />}
+                    {copiedHex === hex6 ? (
+                      <Check className="h-3 w-3" />
+                    ) : (
+                      <Copy className="h-3 w-3" />
+                    )}
                   </button>
                 </div>
                 <code className="block text-[9px] text-gray-300 dark:text-gray-600 font-mono mb-2">
                   hsl({h}, {s}%, {l}%)
                 </code>
                 <div className="space-y-1">
-                  <ContrastRow label="On Light" ratio={onWhite} />
-                  <ContrastRow label="On Dark" ratio={onDark} />
+                  <ContrastRow label="On white" ratio={onWhite} />
+                  <ContrastRow label="On dark" ratio={onDark} />
+                  {bestPartner && (
+                    <div
+                      className="flex items-center gap-2"
+                      title={`Highest-contrast pairing inside this palette: ${bestPartner.name} (${bestPartner.hex})`}
+                    >
+                      <span className="w-14 shrink-0 text-[9px] font-bold text-gray-400">
+                        Best pair
+                      </span>
+                      <span
+                        className="h-3 w-3 shrink-0 rounded-sm border border-black/10"
+                        style={{ backgroundColor: bestPartner.hex }}
+                      />
+                      <span className="truncate text-[9px] font-bold text-gray-500 dark:text-gray-400">
+                        {bestPartner.name}
+                      </span>
+                      <span className="ml-auto font-mono text-[9px] text-gray-400">
+                        {bestPartner.ratio.toFixed(1)}:1
+                      </span>
+                    </div>
+                  )}
                   {onCustom !== null && (
                     <ContrastRow label="Custom" ratio={onCustom} highlight />
                   )}

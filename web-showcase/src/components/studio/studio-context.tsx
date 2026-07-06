@@ -6,9 +6,11 @@ import React, {
   useState,
   useCallback,
   useEffect,
+  useRef,
 } from "react";
 import { Palette } from "@/types";
-import { ROLE_COUNT, UISelection, StudioState } from "@/types/studio";
+import { UISelection, StudioState } from "@/types/studio";
+import { buildRoleMapping, indexRoleMapping } from "@/utils/role-mapping";
 
 interface StudioContextType extends StudioState {
   openStudio: (palette: Palette) => void;
@@ -17,6 +19,8 @@ interface StudioContextType extends StudioState {
   updateRole: (role: string, hex: string) => void;
   shuffleRoles: () => void;
   swapRoles: (idx1: number, idx2: number) => void;
+  resetRoles: () => void;
+  hasRoleEdits: boolean;
   setZoom: (z: number) => void;
   toggleHeatmap: () => void;
   setVisionFilter: (f: string) => void;
@@ -47,11 +51,20 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
   });
 
   const [isCreatorOpen, setIsCreatorOpen] = useState(false);
-  const [creatorPaletteToEdit, setCreatorPaletteToEdit] = useState<Palette | null>(null);
-  const [activeCollectionId, setActiveCollectionId] = useState<string | null>(null);
+  const [creatorPaletteToEdit, setCreatorPaletteToEdit] =
+    useState<Palette | null>(null);
+  const [activeCollectionId, setActiveCollectionId] = useState<string | null>(
+    null,
+  );
 
   const [isBrandSystemOpen, setIsBrandSystemOpen] = useState(false);
-  const [brandSystemPalette, setBrandSystemPalette] = useState<Palette | null>(null);
+  const [brandSystemPalette, setBrandSystemPalette] = useState<Palette | null>(
+    null,
+  );
+
+  const [hasRoleEdits, setHasRoleEdits] = useState(false);
+  // Per-palette role overrides survive prev/next navigation within a session.
+  const overridesRef = useRef<Record<string, Record<string, string>>>({});
 
   const openCreator = useCallback((palette?: Palette) => {
     setCreatorPaletteToEdit(palette || null);
@@ -87,17 +100,15 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
     try {
       localStorage.setItem(
         "paletteShowcase.recentIds",
-        JSON.stringify(state.recents)
+        JSON.stringify(state.recents),
       );
     } catch {}
   }, [state.recents]);
 
   const openStudio = useCallback((palette: Palette) => {
-    const mapping: Record<string, string> = {};
-    for (let i = 1; i <= ROLE_COUNT; i++) {
-      const color = palette.colors[(i - 1) % palette.colors.length];
-      mapping[`--ui-color-${i}`] = color.hex;
-    }
+    const saved = overridesRef.current[palette.id];
+    const mapping = saved ?? buildRoleMapping(palette.colors.map((c) => c.hex));
+    setHasRoleEdits(Boolean(saved));
     setState((prev) => ({
       ...prev,
       isOpen: true,
@@ -111,7 +122,6 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
         ...prev.recents.filter((id) => id !== palette.id),
       ].slice(0, 24),
     }));
-
   }, []);
 
   const closeStudio = useCallback(() => {
@@ -122,11 +132,22 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
     setState((prev) => ({ ...prev, activeScenario: scenario }));
   }, []);
 
+  // Remember edits per palette so navigating away and back restores them.
+  const rememberEdits = (
+    paletteId: string | undefined,
+    mapping: Record<string, string>,
+  ) => {
+    if (!paletteId) return;
+    overridesRef.current[paletteId] = mapping;
+    setHasRoleEdits(true);
+  };
+
   const updateRole = useCallback((role: string, hex: string) => {
-    setState((prev) => ({
-      ...prev,
-      roleMapping: { ...prev.roleMapping, [role]: hex },
-    }));
+    setState((prev) => {
+      const roleMapping = { ...prev.roleMapping, [role]: hex };
+      rememberEdits(prev.selectedPalette?.id, roleMapping);
+      return { ...prev, roleMapping };
+    });
   }, []);
 
   const shuffleRoles = useCallback(() => {
@@ -134,12 +155,23 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
       if (!prev.selectedPalette) return prev;
       const paletteColors = prev.selectedPalette.colors.map((c) => c.hex);
       const shuffled = [...paletteColors].sort(() => Math.random() - 0.5);
-      const newMapping: Record<string, string> = {};
-      for (let i = 1; i <= ROLE_COUNT; i++) {
-        newMapping[`--ui-color-${i}`] = shuffled[(i - 1) % shuffled.length];
-      }
-      return { ...prev, roleMapping: newMapping };
+      const roleMapping = indexRoleMapping(shuffled);
+      rememberEdits(prev.selectedPalette.id, roleMapping);
+      return { ...prev, roleMapping };
     });
+  }, []);
+
+  // Restore the smart, accessibility-aware default assignment.
+  const resetRoles = useCallback(() => {
+    setState((prev) => {
+      if (!prev.selectedPalette) return prev;
+      const roleMapping = buildRoleMapping(
+        prev.selectedPalette.colors.map((c) => c.hex),
+      );
+      delete overridesRef.current[prev.selectedPalette.id];
+      return { ...prev, roleMapping };
+    });
+    setHasRoleEdits(false);
   }, []);
 
   const swapRoles = useCallback((idx1: number, idx2: number) => {
@@ -149,6 +181,7 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
       const b = m[`--ui-color-${idx2}`];
       m[`--ui-color-${idx1}`] = b;
       m[`--ui-color-${idx2}`] = a;
+      rememberEdits(prev.selectedPalette?.id, m);
       return { ...prev, roleMapping: m };
     });
   }, []);
@@ -175,6 +208,8 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
         updateRole,
         shuffleRoles,
         swapRoles,
+        resetRoles,
+        hasRoleEdits,
         setZoom,
         toggleHeatmap,
         setVisionFilter,
