@@ -11,9 +11,9 @@
   --breakpoint-5xl: 3440px;
 
   /* Named animation utilities (referenced via animate-* classes) */
-  --animate-scroll-up:       scroll-up 30s linear infinite;
-  --animate-scroll-up-slow:  scroll-up-slow 45s linear infinite;
-  --animate-gradient-pan:    gradient-pan 8s ease-in-out infinite;
+  --animate-scroll-up: scroll-up 30s linear infinite;
+  --animate-scroll-up-slow: scroll-up-slow 45s linear infinite;
+  --animate-gradient-pan: gradient-pan 8s ease-in-out infinite;
 }
 
 /* ── Design tokens ───────────────────────────────────────────────────────── */
@@ -62,19 +62,33 @@ body {
 
 /* ── Keyframes ───────────────────────────────────────────────────────────── */
 @keyframes scroll-up {
-  from { transform: translateY(0); }
-  to   { transform: translateY(-50%); }
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
 }
 
 @keyframes scroll-up-slow {
-  from { transform: translateY(0); }
-  to   { transform: translateY(-50%); }
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
 }
 
 @keyframes gradient-pan {
-  0%   { background-position: 0% 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -88,3 +102,47 @@ body {
   }
 }
 
+/* --- Studio Design tab: link the mockup preview to the role editor --- */
+/* Elements tagged with data-role are clickable to jump to their token. */
+.studio-preview [data-role] {
+  cursor: pointer;
+}
+/* Role hovered in the editor → outline every place it is used. */
+.role-highlight {
+  outline: 2px solid rgba(99, 102, 241, 0.9);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.18);
+  transition:
+    outline-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+/* "Show issues" overlay → mark regions using a failing token. */
+.role-issue {
+  outline: 2px dashed rgba(239, 68, 68, 0.9);
+  outline-offset: 1px;
+}
+/* Brief flash after a single role is edited. */
+@keyframes studioRolePulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.55);
+  }
+  100% {
+    box-shadow: 0 0 0 9px rgba(99, 102, 241, 0);
+  }
+}
+.role-pulse {
+  animation: studioRolePulse 0.7s ease-out;
+}
+/* Role card flashed when its element is clicked in the mockup. */
+@keyframes studioCardFlash {
+  0%,
+  100% {
+    background-color: transparent;
+  }
+  30% {
+    background-color: rgba(99, 102, 241, 0.16);
+  }
+}
+.role-card-flash {
+  animation: studioCardFlash 1s ease-out;
+}

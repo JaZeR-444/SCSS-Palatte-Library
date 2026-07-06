@@ -9,8 +9,19 @@ import React, {
   useRef,
 } from "react";
 import { Palette } from "@/types";
-import { UISelection, StudioState } from "@/types/studio";
-import { buildRoleMapping, indexRoleMapping } from "@/utils/role-mapping";
+import { UISelection, StudioState, ROLE_META } from "@/types/studio";
+import {
+  buildRoleMapping,
+  indexRoleMapping,
+  kindToSurface,
+} from "@/utils/role-mapping";
+import {
+  bestContrastColor,
+  getContrastRatio,
+  wcagGrade,
+} from "@/utils/contrast-utils";
+
+export type PreviewDevice = "desktop" | "tablet" | "mobile";
 
 interface StudioContextType extends StudioState {
   openStudio: (palette: Palette) => void;
@@ -20,7 +31,15 @@ interface StudioContextType extends StudioState {
   shuffleRoles: () => void;
   swapRoles: (idx1: number, idx2: number) => void;
   resetRoles: () => void;
+  autoFixRoles: () => void;
   hasRoleEdits: boolean;
+  // Cross-highlight between the mockup and the role editor.
+  hoveredRole: string | null;
+  setHoveredRole: (role: string | null) => void;
+  // Brief flash on the last individually-changed role's mockup regions.
+  pulse: { role: string; nonce: number } | null;
+  previewDevice: PreviewDevice;
+  setPreviewDevice: (d: PreviewDevice) => void;
   setZoom: (z: number) => void;
   toggleHeatmap: () => void;
   setVisionFilter: (f: string) => void;
@@ -65,6 +84,12 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
   const [hasRoleEdits, setHasRoleEdits] = useState(false);
   // Per-palette role overrides survive prev/next navigation within a session.
   const overridesRef = useRef<Record<string, Record<string, string>>>({});
+
+  const [hoveredRole, setHoveredRole] = useState<string | null>(null);
+  const [pulse, setPulse] = useState<{ role: string; nonce: number } | null>(
+    null,
+  );
+  const [previewDevice, setPreviewDevice] = useState<PreviewDevice>("desktop");
 
   const openCreator = useCallback((palette?: Palette) => {
     setCreatorPaletteToEdit(palette || null);
@@ -148,6 +173,8 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
       rememberEdits(prev.selectedPalette?.id, roleMapping);
       return { ...prev, roleMapping };
     });
+    // Flash this role's regions in the mockup so the change is visible.
+    setPulse((p) => ({ role, nonce: (p?.nonce ?? 0) + 1 }));
   }, []);
 
   const shuffleRoles = useCallback(() => {
@@ -172,6 +199,32 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
       return { ...prev, roleMapping };
     });
     setHasRoleEdits(false);
+  }, []);
+
+  // Auto-repair every failing role to the best available in-palette color.
+  const autoFixRoles = useCallback(() => {
+    setState((prev) => {
+      if (!prev.selectedPalette) return prev;
+      const mapping = { ...prev.roleMapping };
+      const colors = prev.selectedPalette.colors.map((c) => c.hex);
+      ROLE_META.forEach((meta, i) => {
+        const cur = mapping[`--ui-color-${i + 1}`];
+        const cmp = mapping[`--ui-color-${meta.compareIndex + 1}`];
+        if (!cur || !cmp) return;
+        const ratio = getContrastRatio(cur, cmp);
+        if (wcagGrade(ratio, kindToSurface(meta.kind)).pass) return;
+        const best = bestContrastColor(colors, cmp, { min: 4.5, exclude: cur });
+        if (
+          best &&
+          best.ratio > ratio &&
+          best.hex.toLowerCase() !== cur.slice(0, 7).toLowerCase()
+        ) {
+          mapping[`--ui-color-${i + 1}`] = best.hex;
+        }
+      });
+      rememberEdits(prev.selectedPalette.id, mapping);
+      return { ...prev, roleMapping: mapping };
+    });
   }, []);
 
   const swapRoles = useCallback((idx1: number, idx2: number) => {
@@ -209,7 +262,13 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
         shuffleRoles,
         swapRoles,
         resetRoles,
+        autoFixRoles,
         hasRoleEdits,
+        hoveredRole,
+        setHoveredRole,
+        pulse,
+        previewDevice,
+        setPreviewDevice,
         setZoom,
         toggleHeatmap,
         setVisionFilter,

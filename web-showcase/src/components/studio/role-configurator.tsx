@@ -50,7 +50,9 @@ export function RoleConfigurator() {
     selectedPalette,
     swapRoles,
     resetRoles,
+    autoFixRoles,
     hasRoleEdits,
+    setHoveredRole,
   } = useStudio();
   const [dragFromIdx, setDragFromIdx] = useState<number | null>(null);
   const [dragOverIdx, setDragOverIdx] = useState<number | null>(null);
@@ -85,19 +87,34 @@ export function RoleConfigurator() {
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <h3 className="text-xs font-black uppercase tracking-widest text-gray-400">
-            Color Roles
+            Tokens
           </h3>
           <p className="mt-0.5 max-w-md text-[11px] text-gray-400">
-            Every color mapped to a design-system token. Reassign with the swap
-            menu, fine-tune the swatch, or auto-fix low-contrast pairings.
+            Each color mapped to a design-system role that drives the preview.
+            Hover a token to find it in the mockup, or reassign, fine-tune, and
+            fix contrast.
           </p>
         </div>
         <div className="flex items-center gap-2">
           {totalFailures > 0 && (
-            <span className="inline-flex items-center gap-1.5 rounded-lg bg-red-500/10 px-2 py-1 text-[10px] font-black uppercase tracking-wider text-red-500">
-              <span className="h-1.5 w-1.5 rounded-full bg-red-500" />
-              {totalFailures} to fix
-            </span>
+            <>
+              <span className="inline-flex items-center gap-1.5 rounded-lg bg-red-500/10 px-2 py-1 text-[10px] font-black uppercase tracking-wider text-red-500">
+                <span className="h-1.5 w-1.5 rounded-full bg-red-500" />
+                {totalFailures} to fix
+              </span>
+              <button
+                type="button"
+                onClick={() => {
+                  autoFixRoles();
+                  showToast("Auto-fixed low-contrast tokens where possible");
+                }}
+                className="inline-flex items-center gap-1.5 rounded-lg bg-indigo-500 px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-white transition-transform hover:scale-[1.02]"
+                title="Repair every failing token to the best in-palette color"
+              >
+                <Wand2 className="h-3 w-3" />
+                Fix all
+              </button>
+            </>
           )}
           {hasRoleEdits && (
             <button
@@ -172,7 +189,7 @@ export function RoleConfigurator() {
               </button>
 
               {!isCollapsed && (
-                <div className="grid grid-cols-1 gap-3 p-3 sm:grid-cols-2 xl:grid-cols-3">
+                <div className="grid grid-cols-1 gap-3 p-3 sm:grid-cols-2 lg:grid-cols-1">
                   {group.range.map((index) => {
                     const meta = ROLE_META[index];
                     const varName = `--ui-color-${index + 1}`;
@@ -215,7 +232,10 @@ export function RoleConfigurator() {
                     return (
                       <div
                         key={varName}
+                        data-role-card={varName}
                         draggable
+                        onMouseEnter={() => setHoveredRole(varName)}
+                        onMouseLeave={() => setHoveredRole(null)}
                         onDragStart={() => setDragFromIdx(index)}
                         onDragEnd={() => {
                           setDragFromIdx(null);

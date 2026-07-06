@@ -8,12 +8,9 @@ import {
   ArrowLeft,
   ArrowRight,
   Layout,
-  ZoomIn,
-  ZoomOut,
   Eye,
   Copy,
   Check,
-  Flame,
   Edit3,
   FolderPlus,
   Clock,
@@ -24,6 +21,9 @@ import {
   Braces,
   AlertTriangle,
   ChevronRight,
+  Monitor,
+  Tablet,
+  Smartphone,
 } from "lucide-react";
 import { ScenarioTabs } from "./scenario-tabs";
 import { RoleConfigurator } from "./role-configurator";
@@ -336,8 +336,6 @@ export function StudioModal() {
     selectedPalette,
     activeScenario,
     shuffleRoles,
-    zoom,
-    setZoom,
     heatmapActive,
     toggleHeatmap,
     visionFilter,
@@ -345,6 +343,11 @@ export function StudioModal() {
     openCreator,
     openBrandSystem,
     roleMapping,
+    hoveredRole,
+    setHoveredRole,
+    pulse,
+    previewDevice,
+    setPreviewDevice,
   } = useStudio();
 
   const palettes = palettesData as Palette[];
@@ -364,7 +367,9 @@ export function StudioModal() {
   // True tabs: only the active panel renders, so each workflow is focused.
   const scrollRef = useRef<HTMLDivElement>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
+  const previewRef = useRef<HTMLDivElement>(null);
   const [activeTab, setActiveTab] = useState<string>("overview");
+  const [usedRoles, setUsedRoles] = useState<string[]>([]);
 
   // Close collections dropdown when clicking outside
   useEffect(() => {
@@ -532,6 +537,92 @@ export function StudioModal() {
     () => computeRoleIssues(roleMapping),
     [roleMapping],
   );
+
+  // Collect which role tokens the current mockup actually renders (from the
+  // data-role tags) so the Design tab can show "this view uses …".
+  useEffect(() => {
+    const root = previewRef.current;
+    if (!root || activeTab !== "design") {
+      setUsedRoles([]);
+      return;
+    }
+    const set = new Set<string>();
+    root.querySelectorAll("[data-role]").forEach((el) => {
+      const r = el.getAttribute("data-role");
+      if (r) set.add(r);
+    });
+    setUsedRoles(Array.from(set));
+  }, [activeTab, activeScenario, roleMapping]);
+
+  // Hover a token in the editor → outline every place it is used in the mockup.
+  useEffect(() => {
+    const root = previewRef.current;
+    if (!root) return;
+    root
+      .querySelectorAll(".role-highlight")
+      .forEach((el) => el.classList.remove("role-highlight"));
+    if (hoveredRole) {
+      root
+        .querySelectorAll(`[data-role="${hoveredRole}"]`)
+        .forEach((el) => el.classList.add("role-highlight"));
+    }
+  }, [hoveredRole, activeTab, activeScenario, roleMapping]);
+
+  // "Issues" overlay → mark mockup regions that use a failing token.
+  useEffect(() => {
+    const root = previewRef.current;
+    if (!root) return;
+    root
+      .querySelectorAll(".role-issue")
+      .forEach((el) => el.classList.remove("role-issue"));
+    if (heatmapActive) {
+      const failSet = new Set(
+        roleFailures.map((f) => `--ui-color-${f.index + 1}`),
+      );
+      root.querySelectorAll("[data-role]").forEach((el) => {
+        const r = el.getAttribute("data-role");
+        if (r && failSet.has(r)) el.classList.add("role-issue");
+      });
+    }
+  }, [heatmapActive, roleFailures, activeTab, activeScenario, roleMapping]);
+
+  // Flash the regions of the last individually-edited token.
+  useEffect(() => {
+    if (!pulse) return;
+    const root = previewRef.current;
+    if (!root) return;
+    const nodes = root.querySelectorAll(`[data-role="${pulse.role}"]`);
+    nodes.forEach((el) => {
+      el.classList.remove("role-pulse");
+      void (el as HTMLElement).offsetWidth;
+      el.classList.add("role-pulse");
+    });
+    const t = window.setTimeout(
+      () => nodes.forEach((el) => el.classList.remove("role-pulse")),
+      750,
+    );
+    return () => window.clearTimeout(t);
+  }, [pulse]);
+
+  // Scroll to and flash a token's card in the editor.
+  const jumpToRole = (role: string) => {
+    const card = scrollRef.current?.querySelector(
+      `[data-role-card="${role}"]`,
+    ) as HTMLElement | null;
+    if (!card) return;
+    card.scrollIntoView({ behavior: "smooth", block: "center" });
+    card.classList.remove("role-card-flash");
+    void card.offsetWidth;
+    card.classList.add("role-card-flash");
+    window.setTimeout(() => card.classList.remove("role-card-flash"), 1100);
+  };
+
+  // Click a mockup region → jump to the token that drives it.
+  const handlePreviewClick = (e: React.MouseEvent) => {
+    const el = (e.target as HTMLElement).closest("[data-role]");
+    const role = el?.getAttribute("data-role");
+    if (role) jumpToRole(role);
+  };
 
   useEffect(() => {
     if (!copiedCode) return;
@@ -1084,191 +1175,229 @@ export function StudioModal() {
 
                 {/* ------------------ DESIGN (Preview + Roles) ------------ */}
                 {activeTab === "design" && (
-                  <div className="space-y-4">
-                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                      <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-2xl bg-indigo-500 flex items-center justify-center text-white shadow-lg shadow-indigo-500/20">
-                          <Layout className="h-5 w-5" />
-                        </div>
-                        <div>
-                          <h3 className="text-sm font-bold tracking-tight">
-                            Thematic Studio
-                          </h3>
-                          <p className="text-[11px] text-gray-400 font-medium">
-                            {SCENARIO_DESCRIPTIONS[activeScenario]}
-                          </p>
-                        </div>
-                      </div>
-                      <ScenarioTabs />
-                    </div>
-
-                    {/* Scenario Toolbar */}
-                    <div className="flex flex-col gap-3 rounded-2xl border border-gray-100 bg-white/90 p-2 backdrop-blur-xl dark:border-slate-800 dark:bg-slate-900/90 sm:flex-row sm:items-center sm:justify-between">
-                      {/* Zoom Controls */}
-                      <div className="flex items-center gap-2 bg-gray-100 dark:bg-slate-800 rounded-2xl p-1">
-                        <button
-                          onClick={() => {
-                            setZoom(zoom - 10);
-                            playSound("click");
-                          }}
-                          className="p-2 rounded-xl hover:bg-white dark:hover:bg-slate-700 text-gray-500 dark:text-gray-400 transition-all cursor-pointer disabled:opacity-40"
-                          title="Zoom out"
-                          aria-label="Zoom out"
-                          disabled={zoom <= 50}
-                        >
-                          <ZoomOut className="h-3.5 w-3.5" />
-                        </button>
-                        <button
-                          onClick={() => {
-                            setZoom(100);
-                            playSound("click");
-                          }}
-                          className="w-12 text-center text-[11px] font-black text-gray-500 transition-colors hover:text-indigo-500 dark:text-gray-400"
-                          title="Reset zoom to 100%"
-                          aria-label="Reset zoom to 100 percent"
-                        >
-                          {zoom}%
-                        </button>
-                        <button
-                          onClick={() => {
-                            setZoom(zoom + 10);
-                            playSound("click");
-                          }}
-                          className="p-2 rounded-xl hover:bg-white dark:hover:bg-slate-700 text-gray-500 dark:text-gray-400 transition-all cursor-pointer disabled:opacity-40"
-                          title="Zoom in"
-                          aria-label="Zoom in"
-                          disabled={zoom >= 150}
-                        >
-                          <ZoomIn className="h-3.5 w-3.5" />
-                        </button>
-                      </div>
-
-                      <div className="flex items-center gap-2">
-                        {/* Heatmap Toggle */}
-                        <button
-                          onClick={() => {
-                            toggleHeatmap();
-                            playSound("click");
-                          }}
-                          className={`flex items-center gap-2 px-3 py-2 rounded-2xl text-[11px] font-bold border transition-all cursor-pointer ${
-                            heatmapActive
-                              ? "bg-orange-500 text-white border-orange-500 shadow-lg shadow-orange-500/20"
-                              : "bg-gray-100 dark:bg-slate-800 text-gray-500 dark:text-gray-400 border-transparent hover:border-orange-300"
-                          }`}
-                          title="Toggle Contrast Heatmap"
-                        >
-                          <Flame className="h-3.5 w-3.5" />
-                          Heatmap
-                        </button>
-
-                        {/* Random */}
-                        <button
-                          onClick={handleRandom}
-                          className="flex items-center gap-2 px-3 py-2 rounded-2xl text-[11px] font-bold bg-gray-100 dark:bg-slate-800 text-gray-500 dark:text-gray-400 border border-transparent hover:border-indigo-300 transition-all cursor-pointer"
-                          title="Random Palette"
-                        >
-                          <Shuffle className="h-3.5 w-3.5" />
-                          Random
-                        </button>
-                      </div>
-                    </div>
-
-                    {/* Scenario Preview */}
-                    <div className="overflow-hidden rounded-3xl bg-gray-50/50 dark:bg-slate-950/30 border border-gray-100 dark:border-slate-800">
-                      <div
-                        style={{
-                          transform: `scale(${zoom / 100})`,
-                          transformOrigin: "top center",
-                          transition: "transform 0.2s ease",
-                          marginBottom:
-                            zoom < 100 ? `${(zoom - 100) * 3}px` : "0",
-                          ...scenarioFilterStyle,
-                        }}
-                      >
-                        <div className="p-8">{renderScenario()}</div>
-                      </div>
-                    </div>
-
-                    {/* Heatmap: Contrast Matrix Panel */}
-                    {heatmapActive && (
-                      <div className="rounded-2xl bg-orange-50 dark:bg-orange-950/20 border border-orange-200 dark:border-orange-800/50 p-4 space-y-3">
-                        <div className="flex flex-wrap items-center justify-between gap-2">
-                          <p className="text-[10px] font-black uppercase tracking-widest text-orange-600 dark:text-orange-400">
-                            Contrast Matrix — every color pair
-                          </p>
-                          <div className="flex items-center gap-2 text-[9px] font-bold">
-                            <span className="inline-flex items-center gap-1 text-emerald-600">
-                              <span className="h-2 w-2 rounded-sm bg-emerald-500" />{" "}
-                              AAA ≥7
-                            </span>
-                            <span className="inline-flex items-center gap-1 text-indigo-600">
-                              <span className="h-2 w-2 rounded-sm bg-indigo-500" />{" "}
-                              AA ≥4.5
-                            </span>
-                            <span className="inline-flex items-center gap-1 text-red-500">
-                              <span className="h-2 w-2 rounded-sm bg-red-500" />{" "}
-                              Fail
-                            </span>
+                  <div className="space-y-8 lg:grid lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-start lg:gap-8 lg:space-y-0">
+                    {/* Preview column — pinned on large screens so editing a
+                        token updates the mockup in view. */}
+                    <div className="space-y-4 lg:sticky lg:top-2 lg:self-start">
+                      <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-center">
+                        <div className="flex items-center gap-3">
+                          <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-indigo-500 text-white shadow-lg shadow-indigo-500/20">
+                            <Layout className="h-5 w-5" />
+                          </div>
+                          <div>
+                            <h3 className="text-sm font-bold tracking-tight">
+                              Preview
+                            </h3>
+                            <p className="text-[11px] font-medium text-gray-400">
+                              {SCENARIO_DESCRIPTIONS[activeScenario]}
+                            </p>
                           </div>
                         </div>
-                        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
-                          {selectedPalette.colors.flatMap((a, ai) =>
-                            selectedPalette.colors
-                              .slice(ai + 1)
-                              .map((b, bi) => {
-                                const ratio: number = getContrastRatio(
-                                  a.hex,
-                                  b.hex,
-                                );
-                                const pass = ratio >= 4.5;
-                                const aa = ratio >= 4.5 && ratio < 7;
-                                const aaa = ratio >= 7;
-                                return (
-                                  <div
-                                    key={`${ai}-${ai + 1 + bi}`}
-                                    className={`flex items-center gap-2 p-2 rounded-xl border ${
-                                      aaa
-                                        ? "bg-emerald-50 dark:bg-emerald-950/20 border-emerald-200 dark:border-emerald-800/50"
-                                        : aa
-                                          ? "bg-indigo-50 dark:bg-indigo-950/20 border-indigo-200 dark:border-indigo-800/50"
-                                          : "bg-red-50 dark:bg-red-950/20 border-red-200 dark:border-red-800/50"
-                                    }`}
-                                  >
-                                    <div
-                                      className="w-4 h-4 rounded-full flex-shrink-0 border border-black/10"
-                                      style={{ background: a.hex }}
-                                    />
-                                    <div
-                                      className="w-4 h-4 rounded-full flex-shrink-0 border border-black/10"
-                                      style={{ background: b.hex }}
-                                    />
-                                    <span
-                                      className={`text-[9px] font-black ${
-                                        aaa
-                                          ? "text-emerald-600"
-                                          : aa
-                                            ? "text-indigo-600"
-                                            : "text-red-500"
-                                      }`}
-                                    >
-                                      {ratio.toFixed(1)}:1{" "}
-                                      {aaa ? "AAA" : aa ? "AA" : "FAIL"}
-                                    </span>
-                                  </div>
-                                );
-                              }),
-                          )}
+                      </div>
+
+                      <ScenarioTabs />
+
+                      {/* Toolbar: device widths + issues overlay + random */}
+                      <div className="flex flex-col gap-3 rounded-2xl border border-gray-100 bg-white/90 p-2 backdrop-blur-xl dark:border-slate-800 dark:bg-slate-900/90 sm:flex-row sm:items-center sm:justify-between">
+                        <div className="flex items-center gap-1 rounded-2xl bg-gray-100 p-1 dark:bg-slate-800">
+                          {(
+                            [
+                              ["desktop", Monitor, "Desktop width"],
+                              ["tablet", Tablet, "Tablet width"],
+                              ["mobile", Smartphone, "Mobile width"],
+                            ] as const
+                          ).map(([d, Icon, label]) => (
+                            <button
+                              key={d}
+                              onClick={() => {
+                                setPreviewDevice(d);
+                                playSound("click");
+                              }}
+                              className={`rounded-xl p-2 transition-all ${
+                                previewDevice === d
+                                  ? "bg-white text-indigo-500 shadow-sm dark:bg-slate-900"
+                                  : "text-gray-500 hover:text-gray-700 dark:text-gray-400"
+                              }`}
+                              title={label}
+                              aria-label={label}
+                              aria-pressed={previewDevice === d}
+                            >
+                              <Icon className="h-3.5 w-3.5" />
+                            </button>
+                          ))}
+                        </div>
+
+                        <div className="flex items-center gap-2">
+                          <button
+                            onClick={() => {
+                              toggleHeatmap();
+                              playSound("click");
+                            }}
+                            className={`flex items-center gap-2 rounded-2xl border px-3 py-2 text-[11px] font-bold transition-all ${
+                              heatmapActive
+                                ? "border-red-500 bg-red-500 text-white shadow-lg shadow-red-500/20"
+                                : "border-transparent bg-gray-100 text-gray-500 hover:border-red-300 dark:bg-slate-800 dark:text-gray-400"
+                            }`}
+                            title="Highlight mockup regions that use a failing token"
+                            aria-pressed={heatmapActive}
+                          >
+                            <AlertTriangle className="h-3.5 w-3.5" />
+                            Issues
+                            {roleFailures.length > 0 && (
+                              <span
+                                className={`inline-flex h-4 min-w-4 items-center justify-center rounded-full px-1 text-[9px] font-black ${
+                                  heatmapActive
+                                    ? "bg-white/25 text-white"
+                                    : "bg-red-500/15 text-red-500"
+                                }`}
+                              >
+                                {roleFailures.length}
+                              </span>
+                            )}
+                          </button>
+                          <button
+                            onClick={handleRandom}
+                            className="flex items-center gap-2 rounded-2xl border border-transparent bg-gray-100 px-3 py-2 text-[11px] font-bold text-gray-500 transition-all hover:border-indigo-300 dark:bg-slate-800 dark:text-gray-400"
+                            title="Jump to a random palette"
+                          >
+                            <Shuffle className="h-3.5 w-3.5" />
+                            Random
+                          </button>
                         </div>
                       </div>
-                    )}
-                  </div>
-                )}
 
-                {/* Role editor lives under the mockup, so tuning a role
-                    updates the applied preview above it in the same tab. */}
-                {activeTab === "design" && (
-                  <div className="mt-12 border-t border-gray-100 pt-10 dark:border-slate-800">
-                    <RoleConfigurator />
+                      {/* Mockup canvas — click a region to jump to its token */}
+                      <div
+                        ref={previewRef}
+                        onClick={handlePreviewClick}
+                        className="studio-preview subtle-scrollbar overflow-auto rounded-3xl border border-gray-100 bg-gray-50/50 dark:border-slate-800 dark:bg-slate-950/30"
+                      >
+                        <div
+                          className="mx-auto"
+                          style={{
+                            width:
+                              previewDevice === "mobile"
+                                ? "390px"
+                                : previewDevice === "tablet"
+                                  ? "820px"
+                                  : "100%",
+                            maxWidth: "100%",
+                            transition: "width 0.25s ease",
+                            ...scenarioFilterStyle,
+                          }}
+                        >
+                          <div className="p-5 sm:p-8">{renderScenario()}</div>
+                        </div>
+                      </div>
+
+                      {/* Which tokens this view exercises */}
+                      {usedRoles.length > 0 && (
+                        <div className="flex flex-wrap items-center gap-1.5">
+                          <span className="text-[9px] font-black uppercase tracking-widest text-gray-400">
+                            This view uses
+                          </span>
+                          {usedRoles.map((r) => {
+                            const idx =
+                              parseInt(r.replace("--ui-color-", ""), 10) - 1;
+                            const meta = ROLE_META[idx];
+                            if (!meta) return null;
+                            return (
+                              <button
+                                key={r}
+                                onMouseEnter={() => setHoveredRole(r)}
+                                onMouseLeave={() => setHoveredRole(null)}
+                                onClick={() => jumpToRole(r)}
+                                className="inline-flex items-center gap-1 rounded-lg border border-gray-200 bg-white px-1.5 py-0.5 text-[9px] font-bold text-gray-500 transition-colors hover:border-indigo-300 hover:text-indigo-500 dark:border-slate-700 dark:bg-slate-900 dark:text-gray-400"
+                              >
+                                <span
+                                  className="h-2.5 w-2.5 rounded-sm border border-black/10"
+                                  style={{ backgroundColor: roleMapping[r] }}
+                                />
+                                {meta.name}
+                              </button>
+                            );
+                          })}
+                        </div>
+                      )}
+
+                      {/* Contrast matrix (shown with Issues) */}
+                      {heatmapActive && (
+                        <div className="rounded-2xl bg-orange-50 dark:bg-orange-950/20 border border-orange-200 dark:border-orange-800/50 p-4 space-y-3">
+                          <div className="flex flex-wrap items-center justify-between gap-2">
+                            <p className="text-[10px] font-black uppercase tracking-widest text-orange-600 dark:text-orange-400">
+                              Contrast Matrix — every color pair
+                            </p>
+                            <div className="flex items-center gap-2 text-[9px] font-bold">
+                              <span className="inline-flex items-center gap-1 text-emerald-600">
+                                <span className="h-2 w-2 rounded-sm bg-emerald-500" />{" "}
+                                AAA ≥7
+                              </span>
+                              <span className="inline-flex items-center gap-1 text-indigo-600">
+                                <span className="h-2 w-2 rounded-sm bg-indigo-500" />{" "}
+                                AA ≥4.5
+                              </span>
+                              <span className="inline-flex items-center gap-1 text-red-500">
+                                <span className="h-2 w-2 rounded-sm bg-red-500" />{" "}
+                                Fail
+                              </span>
+                            </div>
+                          </div>
+                          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+                            {selectedPalette.colors.flatMap((a, ai) =>
+                              selectedPalette.colors
+                                .slice(ai + 1)
+                                .map((b, bi) => {
+                                  const ratio: number = getContrastRatio(
+                                    a.hex,
+                                    b.hex,
+                                  );
+                                  const pass = ratio >= 4.5;
+                                  const aa = ratio >= 4.5 && ratio < 7;
+                                  const aaa = ratio >= 7;
+                                  return (
+                                    <div
+                                      key={`${ai}-${ai + 1 + bi}`}
+                                      className={`flex items-center gap-2 p-2 rounded-xl border ${
+                                        aaa
+                                          ? "bg-emerald-50 dark:bg-emerald-950/20 border-emerald-200 dark:border-emerald-800/50"
+                                          : aa
+                                            ? "bg-indigo-50 dark:bg-indigo-950/20 border-indigo-200 dark:border-indigo-800/50"
+                                            : "bg-red-50 dark:bg-red-950/20 border-red-200 dark:border-red-800/50"
+                                      }`}
+                                    >
+                                      <div
+                                        className="w-4 h-4 rounded-full flex-shrink-0 border border-black/10"
+                                        style={{ background: a.hex }}
+                                      />
+                                      <div
+                                        className="w-4 h-4 rounded-full flex-shrink-0 border border-black/10"
+                                        style={{ background: b.hex }}
+                                      />
+                                      <span
+                                        className={`text-[9px] font-black ${
+                                          aaa
+                                            ? "text-emerald-600"
+                                            : aa
+                                              ? "text-indigo-600"
+                                              : "text-red-500"
+                                        }`}
+                                      >
+                                        {ratio.toFixed(1)}:1{" "}
+                                        {aaa ? "AAA" : aa ? "AA" : "FAIL"}
+                                      </span>
+                                    </div>
+                                  );
+                                }),
+                            )}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Tokens column — the role editor */}
+                    <div>
+                      <RoleConfigurator />
+                    </div>
                   </div>
                 )}
 
