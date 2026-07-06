@@ -1175,10 +1175,10 @@ export function StudioModal() {
 
                 {/* ------------------ DESIGN (Preview + Roles) ------------ */}
                 {activeTab === "design" && (
-                  <div className="space-y-8 lg:grid lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-start lg:gap-8 lg:space-y-0">
+                  <div className="space-y-8 xl:grid xl:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] xl:items-start xl:gap-10 xl:space-y-0">
                     {/* Preview column — pinned on large screens so editing a
                         token updates the mockup in view. */}
-                    <div className="space-y-4 lg:sticky lg:top-2 lg:self-start">
+                    <div className="space-y-4 xl:sticky xl:top-2 xl:self-start">
                       <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-center">
                         <div className="flex items-center gap-3">
                           <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-indigo-500 text-white shadow-lg shadow-indigo-500/20">

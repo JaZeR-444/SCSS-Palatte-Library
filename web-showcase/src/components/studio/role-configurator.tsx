@@ -84,7 +84,7 @@ export function RoleConfigurator() {
 
   return (
     <div id="roles" className="scroll-mt-28 flex flex-col gap-5">
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+      <div className="flex flex-col gap-3">
         <div>
           <h3 className="text-xs font-black uppercase tracking-widest text-gray-400">
             Tokens
@@ -95,7 +95,7 @@ export function RoleConfigurator() {
             fix contrast.
           </p>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           {totalFailures > 0 && (
             <>
               <span className="inline-flex items-center gap-1.5 rounded-lg bg-red-500/10 px-2 py-1 text-[10px] font-black uppercase tracking-wider text-red-500">
@@ -189,7 +189,7 @@ export function RoleConfigurator() {
               </button>
 
               {!isCollapsed && (
-                <div className="grid grid-cols-1 gap-3 p-3 sm:grid-cols-2 lg:grid-cols-1">
+                <div className="grid grid-cols-1 gap-3 p-3 sm:grid-cols-2 xl:grid-cols-1">
                   {group.range.map((index) => {
                     const meta = ROLE_META[index];
                     const varName = `--ui-color-${index + 1}`;
