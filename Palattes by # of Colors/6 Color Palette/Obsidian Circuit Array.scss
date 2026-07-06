@@ -25,45 +25,45 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---obsidian-circuit-array-circuit-void: #030304ff;
---obsidian-circuit-array-obsidian-root: #0a0a0fff;
---obsidian-circuit-array-carbon-board: #12121aff;
---obsidian-circuit-array-graphite-panel: #1f2937ff;
---obsidian-circuit-array-slate-control: #374151ff;
---obsidian-circuit-array-smoke-muted: #4b5563ff;
+--circuit-void: #030304ff;
+--obsidian-root: #0a0a0fff;
+--carbon-board: #12121aff;
+--graphite-panel: #1f2937ff;
+--slate-control: #374151ff;
+--smoke-muted: #4b5563ff;
 
 /* CSS HSL */
---obsidian-circuit-array-circuit-void: hsla(240, 14%, 1%, 1);
---obsidian-circuit-array-obsidian-root: hsla(240, 20%, 5%, 1);
---obsidian-circuit-array-carbon-board: hsla(240, 18%, 9%, 1);
---obsidian-circuit-array-graphite-panel: hsla(215, 28%, 17%, 1);
---obsidian-circuit-array-slate-control: hsla(217, 19%, 27%, 1);
---obsidian-circuit-array-smoke-muted: hsla(215, 14%, 34%, 1);
+--circuit-void: hsla(240, 14%, 1%, 1);
+--obsidian-root: hsla(240, 20%, 5%, 1);
+--carbon-board: hsla(240, 18%, 9%, 1);
+--graphite-panel: hsla(215, 28%, 17%, 1);
+--slate-control: hsla(217, 19%, 27%, 1);
+--smoke-muted: hsla(215, 14%, 34%, 1);
 }
 
 /* SCSS HEX */
-$obsidian-circuit-array-circuit-void: #030304ff;
-$obsidian-circuit-array-obsidian-root: #0a0a0fff;
-$obsidian-circuit-array-carbon-board: #12121aff;
-$obsidian-circuit-array-graphite-panel: #1f2937ff;
-$obsidian-circuit-array-slate-control: #374151ff;
-$obsidian-circuit-array-smoke-muted: #4b5563ff;
+$circuit-void: #030304ff;
+$obsidian-root: #0a0a0fff;
+$carbon-board: #12121aff;
+$graphite-panel: #1f2937ff;
+$slate-control: #374151ff;
+$smoke-muted: #4b5563ff;
 
 /* SCSS HSL */
-$obsidian-circuit-array-circuit-void: hsla(240, 14%, 1%, 1);
-$obsidian-circuit-array-obsidian-root: hsla(240, 20%, 5%, 1);
-$obsidian-circuit-array-carbon-board: hsla(240, 18%, 9%, 1);
-$obsidian-circuit-array-graphite-panel: hsla(215, 28%, 17%, 1);
-$obsidian-circuit-array-slate-control: hsla(217, 19%, 27%, 1);
-$obsidian-circuit-array-smoke-muted: hsla(215, 14%, 34%, 1);
+$circuit-void: hsla(240, 14%, 1%, 1);
+$obsidian-root: hsla(240, 20%, 5%, 1);
+$carbon-board: hsla(240, 18%, 9%, 1);
+$graphite-panel: hsla(215, 28%, 17%, 1);
+$slate-control: hsla(217, 19%, 27%, 1);
+$smoke-muted: hsla(215, 14%, 34%, 1);
 
 /* SCSS RGB */
-$obsidian-circuit-array-circuit-void: rgba(3, 3, 4, 1);
-$obsidian-circuit-array-obsidian-root: rgba(10, 10, 15, 1);
-$obsidian-circuit-array-carbon-board: rgba(18, 18, 26, 1);
-$obsidian-circuit-array-graphite-panel: rgba(31, 41, 55, 1);
-$obsidian-circuit-array-slate-control: rgba(55, 65, 81, 1);
-$obsidian-circuit-array-smoke-muted: rgba(75, 85, 99, 1);
+$circuit-void: rgba(3, 3, 4, 1);
+$obsidian-root: rgba(10, 10, 15, 1);
+$carbon-board: rgba(18, 18, 26, 1);
+$graphite-panel: rgba(31, 41, 55, 1);
+$slate-control: rgba(55, 65, 81, 1);
+$smoke-muted: rgba(75, 85, 99, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #030304ff, #0a0a0fff, #12121aff, #1f2937ff, #374151ff, #4b5563ff);
@@ -78,10 +78,10 @@ $gradient-radial: radial-gradient(#030304ff, #0a0a0fff, #12121aff, #1f2937ff, #3
 
 /* SCSS Map */
 $obsidian-circuit-array-map: (
-    "obsidian-circuit-array-circuit-void": #030304ff,
-    "obsidian-circuit-array-obsidian-root": #0a0a0fff,
-    "obsidian-circuit-array-carbon-board": #12121aff,
-    "obsidian-circuit-array-graphite-panel": #1f2937ff,
-    "obsidian-circuit-array-slate-control": #374151ff,
-    "obsidian-circuit-array-smoke-muted": #4b5563ff
+    "circuit-void": #030304ff,
+    "obsidian-root": #0a0a0fff,
+    "carbon-board": #12121aff,
+    "graphite-panel": #1f2937ff,
+    "slate-control": #374151ff,
+    "smoke-muted": #4b5563ff
 );

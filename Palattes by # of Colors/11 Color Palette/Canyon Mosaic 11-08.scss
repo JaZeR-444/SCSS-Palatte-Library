@@ -1,6 +1,6 @@
 /*---
 id: canyon-mosaic-11-08
-name: Canyon Mosaic 11-08
+name: Canyon Mosaic Micro
 author: JaZeR-444
 version: 1.0.0
 category: Multi Color Composition
@@ -20,70 +20,70 @@ updated: '2026-07-04'
 
 :root {
 /* CSS HEX */
---tone-01: #184e31ff;
---tone-02: #1a6c6bff;
---tone-03: #19688cff;
---tone-04: #153db0ff;
---tone-05: #160ed7ff;
---tone-06: #7e41c3ff;
---tone-07: #be4fd4ff;
---tone-08: #e360bbff;
---tone-09: #ef748eff;
---tone-10: #f8968bff;
---tone-11: #e9cdb9ff;
+--evergreen: #184e31ff;
+--dark-aqua: #1a6c6bff;
+--ocean-blue: #19688cff;
+--sapphire: #153db0ff;
+--ultramarine-blue: #160ed7ff;
+--bluey-purple: #7e41c3ff;
+--pinkish-purple: #be4fd4ff;
+--purplish-pink: #e360bbff;
+--carnation: #ef748eff;
+--peachy-pink: #f8968bff;
+--light-peach: #e9cdb9ff;
 
 /* CSS HSL */
---tone-01: hsla(147, 52%, 20%, 1);
---tone-02: hsla(179, 61%, 26%, 1);
---tone-03: hsla(199, 70%, 32%, 1);
---tone-04: hsla(224, 79%, 39%, 1);
---tone-05: hsla(242, 88%, 45%, 1);
---tone-06: hsla(268, 52%, 51%, 1);
---tone-07: hsla(290, 61%, 57%, 1);
---tone-08: hsla(318, 70%, 63%, 1);
---tone-09: hsla(348, 79%, 70%, 1);
---tone-10: hsla(6, 88%, 76%, 1);
---tone-11: hsla(25, 52%, 82%, 1);
+--evergreen: hsla(147, 52%, 20%, 1);
+--dark-aqua: hsla(179, 61%, 26%, 1);
+--ocean-blue: hsla(199, 70%, 32%, 1);
+--sapphire: hsla(224, 79%, 39%, 1);
+--ultramarine-blue: hsla(242, 88%, 45%, 1);
+--bluey-purple: hsla(268, 52%, 51%, 1);
+--pinkish-purple: hsla(290, 61%, 57%, 1);
+--purplish-pink: hsla(318, 70%, 63%, 1);
+--carnation: hsla(348, 79%, 70%, 1);
+--peachy-pink: hsla(6, 88%, 76%, 1);
+--light-peach: hsla(25, 52%, 82%, 1);
 }
 
 /* SCSS HEX */
-$tone-01: #184e31ff;
-$tone-02: #1a6c6bff;
-$tone-03: #19688cff;
-$tone-04: #153db0ff;
-$tone-05: #160ed7ff;
-$tone-06: #7e41c3ff;
-$tone-07: #be4fd4ff;
-$tone-08: #e360bbff;
-$tone-09: #ef748eff;
-$tone-10: #f8968bff;
-$tone-11: #e9cdb9ff;
+$evergreen: #184e31ff;
+$dark-aqua: #1a6c6bff;
+$ocean-blue: #19688cff;
+$sapphire: #153db0ff;
+$ultramarine-blue: #160ed7ff;
+$bluey-purple: #7e41c3ff;
+$pinkish-purple: #be4fd4ff;
+$purplish-pink: #e360bbff;
+$carnation: #ef748eff;
+$peachy-pink: #f8968bff;
+$light-peach: #e9cdb9ff;
 
 /* SCSS HSL */
-$tone-01: hsla(147, 52%, 20%, 1);
-$tone-02: hsla(179, 61%, 26%, 1);
-$tone-03: hsla(199, 70%, 32%, 1);
-$tone-04: hsla(224, 79%, 39%, 1);
-$tone-05: hsla(242, 88%, 45%, 1);
-$tone-06: hsla(268, 52%, 51%, 1);
-$tone-07: hsla(290, 61%, 57%, 1);
-$tone-08: hsla(318, 70%, 63%, 1);
-$tone-09: hsla(348, 79%, 70%, 1);
-$tone-10: hsla(6, 88%, 76%, 1);
-$tone-11: hsla(25, 52%, 82%, 1);
+$evergreen: hsla(147, 52%, 20%, 1);
+$dark-aqua: hsla(179, 61%, 26%, 1);
+$ocean-blue: hsla(199, 70%, 32%, 1);
+$sapphire: hsla(224, 79%, 39%, 1);
+$ultramarine-blue: hsla(242, 88%, 45%, 1);
+$bluey-purple: hsla(268, 52%, 51%, 1);
+$pinkish-purple: hsla(290, 61%, 57%, 1);
+$purplish-pink: hsla(318, 70%, 63%, 1);
+$carnation: hsla(348, 79%, 70%, 1);
+$peachy-pink: hsla(6, 88%, 76%, 1);
+$light-peach: hsla(25, 52%, 82%, 1);
 
 /* SCSS RGB */
-$tone-01: rgba(24, 78, 49, 1);
-$tone-02: rgba(26, 108, 107, 1);
-$tone-03: rgba(25, 104, 140, 1);
-$tone-04: rgba(21, 61, 176, 1);
-$tone-05: rgba(22, 14, 215, 1);
-$tone-06: rgba(126, 65, 195, 1);
-$tone-07: rgba(190, 79, 212, 1);
-$tone-08: rgba(227, 96, 187, 1);
-$tone-09: rgba(239, 116, 142, 1);
-$tone-10: rgba(248, 150, 139, 1);
-$tone-11: rgba(233, 205, 185, 1);
+$evergreen: rgba(24, 78, 49, 1);
+$dark-aqua: rgba(26, 108, 107, 1);
+$ocean-blue: rgba(25, 104, 140, 1);
+$sapphire: rgba(21, 61, 176, 1);
+$ultramarine-blue: rgba(22, 14, 215, 1);
+$bluey-purple: rgba(126, 65, 195, 1);
+$pinkish-purple: rgba(190, 79, 212, 1);
+$purplish-pink: rgba(227, 96, 187, 1);
+$carnation: rgba(239, 116, 142, 1);
+$peachy-pink: rgba(248, 150, 139, 1);
+$light-peach: rgba(233, 205, 185, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #184e31ff, #1a6c6bff, #19688cff, #153db0ff, #160ed7ff, #7e41c3ff, #be4fd4ff, #e360bbff, #ef748eff, #f8968bff, #e9cdb9ff);
@@ -98,15 +98,15 @@ $gradient-radial: radial-gradient(#184e31ff, #1a6c6bff, #19688cff, #153db0ff, #1
 
 /* SCSS Map */
 $canyon-mosaic-11-08-map: (
-    "tone-01": #184e31ff,
-    "tone-02": #1a6c6bff,
-    "tone-03": #19688cff,
-    "tone-04": #153db0ff,
-    "tone-05": #160ed7ff,
-    "tone-06": #7e41c3ff,
-    "tone-07": #be4fd4ff,
-    "tone-08": #e360bbff,
-    "tone-09": #ef748eff,
-    "tone-10": #f8968bff,
-    "tone-11": #e9cdb9ff
+    "evergreen": #184e31ff,
+    "dark-aqua": #1a6c6bff,
+    "ocean-blue": #19688cff,
+    "sapphire": #153db0ff,
+    "ultramarine-blue": #160ed7ff,
+    "bluey-purple": #7e41c3ff,
+    "pinkish-purple": #be4fd4ff,
+    "purplish-pink": #e360bbff,
+    "carnation": #ef748eff,
+    "peachy-pink": #f8968bff,
+    "light-peach": #e9cdb9ff
 );

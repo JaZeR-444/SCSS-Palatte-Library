@@ -1,6 +1,6 @@
 /*---
 id: indigo-span-32-12
-name: Indigo Span 32-12
+name: Indigo Span Large
 author: JaZeR-444
 version: 1.0.0
 category: Singular Hue Span
@@ -20,175 +20,175 @@ updated: '2026-07-04'
 
 :root {
 /* CSS HEX */
---span-01: #110f1aff;
---span-02: #161324ff;
---span-03: #1c192cff;
---span-04: #221b37ff;
---span-05: #261e42ff;
---span-06: #2a1e50ff;
---span-07: #2d1f5cff;
---span-08: #2d1e6bff;
---span-09: #2e2177ff;
---span-10: #362382ff;
---span-11: #392390ff;
---span-12: #3d1ca4ff;
---span-13: #361cb3ff;
---span-14: #3116c6ff;
---span-15: #3519d1ff;
---span-16: #4a18e0ff;
---span-17: #4716f0ff;
---span-18: #4d28ecff;
---span-19: #633be7ff;
---span-20: #6d4ae5ff;
---span-21: #755de0ff;
---span-22: #7e6ae1ff;
---span-23: #8c7ddcff;
---span-24: #9e8cdbff;
---span-25: #a699dbff;
---span-26: #aea5ddff;
---span-27: #b6aee2ff;
---span-28: #c3bde1ff;
---span-29: #cdc8e3ff;
---span-30: #d6d3e7ff;
---span-31: #dfdcebff;
---span-32: #e7e5f0ff;
+--almost-black: #110f1aff;
+--dark: #161324ff;
+--midnight: #1c192cff;
+--navy: #221b37ff;
+--dark-navy-blue: #261e42ff;
+--navy-blue: #2a1e50ff;
+--dark-indigo: #2d1f5cff;
+--night-blue: #2d1e6bff;
+--dark-blue: #2e2177ff;
+--dark-royal-blue: #362382ff;
+--indigo: #392390ff;
+--indigo-blue: #3d1ca4ff;
+--cobalt-blue: #361cb3ff;
+--violet-blue: #3116c6ff;
+--true-blue: #3519d1ff;
+--blue-violet: #4a18e0ff;
+--purplish-blue: #4716f0ff;
+--purple-blue: #4d28ecff;
+--bluish-purple: #633be7ff;
+--blurple: #6d4ae5ff;
+--light-indigo: #755de0ff;
+--dark-periwinkle: #7e6ae1ff;
+--lavender-blue: #8c7ddcff;
+--pale-purple: #9e8cdbff;
+--pale-violet: #a699dbff;
+--light-periwinkle: #aea5ddff;
+--light-lavender: #b6aee2ff;
+--cloudy-blue: #c3bde1ff;
+--powder-blue: #cdc8e3ff;
+--light-pink: #d6d3e7ff;
+--very-light-pink: #dfdcebff;
+--white: #e7e5f0ff;
 
 /* CSS HSL */
---span-01: hsla(252, 28%, 8%, 1);
---span-02: hsla(252, 31%, 11%, 1);
---span-03: hsla(252, 28%, 13%, 1);
---span-04: hsla(252, 34%, 16%, 1);
---span-05: hsla(252, 38%, 19%, 1);
---span-06: hsla(252, 46%, 22%, 1);
---span-07: hsla(252, 49%, 24%, 1);
---span-08: hsla(252, 56%, 27%, 1);
---span-09: hsla(252, 57%, 30%, 1);
---span-10: hsla(252, 58%, 32%, 1);
---span-11: hsla(252, 61%, 35%, 1);
---span-12: hsla(252, 71%, 38%, 1);
---span-13: hsla(252, 73%, 41%, 1);
---span-14: hsla(252, 80%, 43%, 1);
---span-15: hsla(252, 78%, 46%, 1);
---span-16: hsla(252, 81%, 49%, 1);
---span-17: hsla(252, 88%, 51%, 1);
---span-18: hsla(252, 84%, 54%, 1);
---span-19: hsla(252, 78%, 57%, 1);
---span-20: hsla(252, 75%, 59%, 1);
---span-21: hsla(252, 68%, 62%, 1);
---span-22: hsla(252, 66%, 65%, 1);
---span-23: hsla(252, 57%, 68%, 1);
---span-24: hsla(252, 52%, 70%, 1);
---span-25: hsla(252, 48%, 73%, 1);
---span-26: hsla(252, 45%, 76%, 1);
---span-27: hsla(252, 48%, 78%, 1);
---span-28: hsla(252, 38%, 81%, 1);
---span-29: hsla(252, 33%, 84%, 1);
---span-30: hsla(252, 29%, 87%, 1);
---span-31: hsla(252, 27%, 89%, 1);
---span-32: hsla(252, 25%, 92%, 1);
+--almost-black: hsla(252, 28%, 8%, 1);
+--dark: hsla(252, 31%, 11%, 1);
+--midnight: hsla(252, 28%, 13%, 1);
+--navy: hsla(252, 34%, 16%, 1);
+--dark-navy-blue: hsla(252, 38%, 19%, 1);
+--navy-blue: hsla(252, 46%, 22%, 1);
+--dark-indigo: hsla(252, 49%, 24%, 1);
+--night-blue: hsla(252, 56%, 27%, 1);
+--dark-blue: hsla(252, 57%, 30%, 1);
+--dark-royal-blue: hsla(252, 58%, 32%, 1);
+--indigo: hsla(252, 61%, 35%, 1);
+--indigo-blue: hsla(252, 71%, 38%, 1);
+--cobalt-blue: hsla(252, 73%, 41%, 1);
+--violet-blue: hsla(252, 80%, 43%, 1);
+--true-blue: hsla(252, 78%, 46%, 1);
+--blue-violet: hsla(252, 81%, 49%, 1);
+--purplish-blue: hsla(252, 88%, 51%, 1);
+--purple-blue: hsla(252, 84%, 54%, 1);
+--bluish-purple: hsla(252, 78%, 57%, 1);
+--blurple: hsla(252, 75%, 59%, 1);
+--light-indigo: hsla(252, 68%, 62%, 1);
+--dark-periwinkle: hsla(252, 66%, 65%, 1);
+--lavender-blue: hsla(252, 57%, 68%, 1);
+--pale-purple: hsla(252, 52%, 70%, 1);
+--pale-violet: hsla(252, 48%, 73%, 1);
+--light-periwinkle: hsla(252, 45%, 76%, 1);
+--light-lavender: hsla(252, 48%, 78%, 1);
+--cloudy-blue: hsla(252, 38%, 81%, 1);
+--powder-blue: hsla(252, 33%, 84%, 1);
+--light-pink: hsla(252, 29%, 87%, 1);
+--very-light-pink: hsla(252, 27%, 89%, 1);
+--white: hsla(252, 25%, 92%, 1);
 }
 
 /* SCSS HEX */
-$span-01: #110f1aff;
-$span-02: #161324ff;
-$span-03: #1c192cff;
-$span-04: #221b37ff;
-$span-05: #261e42ff;
-$span-06: #2a1e50ff;
-$span-07: #2d1f5cff;
-$span-08: #2d1e6bff;
-$span-09: #2e2177ff;
-$span-10: #362382ff;
-$span-11: #392390ff;
-$span-12: #3d1ca4ff;
-$span-13: #361cb3ff;
-$span-14: #3116c6ff;
-$span-15: #3519d1ff;
-$span-16: #4a18e0ff;
-$span-17: #4716f0ff;
-$span-18: #4d28ecff;
-$span-19: #633be7ff;
-$span-20: #6d4ae5ff;
-$span-21: #755de0ff;
-$span-22: #7e6ae1ff;
-$span-23: #8c7ddcff;
-$span-24: #9e8cdbff;
-$span-25: #a699dbff;
-$span-26: #aea5ddff;
-$span-27: #b6aee2ff;
-$span-28: #c3bde1ff;
-$span-29: #cdc8e3ff;
-$span-30: #d6d3e7ff;
-$span-31: #dfdcebff;
-$span-32: #e7e5f0ff;
+$almost-black: #110f1aff;
+$dark: #161324ff;
+$midnight: #1c192cff;
+$navy: #221b37ff;
+$dark-navy-blue: #261e42ff;
+$navy-blue: #2a1e50ff;
+$dark-indigo: #2d1f5cff;
+$night-blue: #2d1e6bff;
+$dark-blue: #2e2177ff;
+$dark-royal-blue: #362382ff;
+$indigo: #392390ff;
+$indigo-blue: #3d1ca4ff;
+$cobalt-blue: #361cb3ff;
+$violet-blue: #3116c6ff;
+$true-blue: #3519d1ff;
+$blue-violet: #4a18e0ff;
+$purplish-blue: #4716f0ff;
+$purple-blue: #4d28ecff;
+$bluish-purple: #633be7ff;
+$blurple: #6d4ae5ff;
+$light-indigo: #755de0ff;
+$dark-periwinkle: #7e6ae1ff;
+$lavender-blue: #8c7ddcff;
+$pale-purple: #9e8cdbff;
+$pale-violet: #a699dbff;
+$light-periwinkle: #aea5ddff;
+$light-lavender: #b6aee2ff;
+$cloudy-blue: #c3bde1ff;
+$powder-blue: #cdc8e3ff;
+$light-pink: #d6d3e7ff;
+$very-light-pink: #dfdcebff;
+$white: #e7e5f0ff;
 
 /* SCSS HSL */
-$span-01: hsla(252, 28%, 8%, 1);
-$span-02: hsla(252, 31%, 11%, 1);
-$span-03: hsla(252, 28%, 13%, 1);
-$span-04: hsla(252, 34%, 16%, 1);
-$span-05: hsla(252, 38%, 19%, 1);
-$span-06: hsla(252, 46%, 22%, 1);
-$span-07: hsla(252, 49%, 24%, 1);
-$span-08: hsla(252, 56%, 27%, 1);
-$span-09: hsla(252, 57%, 30%, 1);
-$span-10: hsla(252, 58%, 32%, 1);
-$span-11: hsla(252, 61%, 35%, 1);
-$span-12: hsla(252, 71%, 38%, 1);
-$span-13: hsla(252, 73%, 41%, 1);
-$span-14: hsla(252, 80%, 43%, 1);
-$span-15: hsla(252, 78%, 46%, 1);
-$span-16: hsla(252, 81%, 49%, 1);
-$span-17: hsla(252, 88%, 51%, 1);
-$span-18: hsla(252, 84%, 54%, 1);
-$span-19: hsla(252, 78%, 57%, 1);
-$span-20: hsla(252, 75%, 59%, 1);
-$span-21: hsla(252, 68%, 62%, 1);
-$span-22: hsla(252, 66%, 65%, 1);
-$span-23: hsla(252, 57%, 68%, 1);
-$span-24: hsla(252, 52%, 70%, 1);
-$span-25: hsla(252, 48%, 73%, 1);
-$span-26: hsla(252, 45%, 76%, 1);
-$span-27: hsla(252, 48%, 78%, 1);
-$span-28: hsla(252, 38%, 81%, 1);
-$span-29: hsla(252, 33%, 84%, 1);
-$span-30: hsla(252, 29%, 87%, 1);
-$span-31: hsla(252, 27%, 89%, 1);
-$span-32: hsla(252, 25%, 92%, 1);
+$almost-black: hsla(252, 28%, 8%, 1);
+$dark: hsla(252, 31%, 11%, 1);
+$midnight: hsla(252, 28%, 13%, 1);
+$navy: hsla(252, 34%, 16%, 1);
+$dark-navy-blue: hsla(252, 38%, 19%, 1);
+$navy-blue: hsla(252, 46%, 22%, 1);
+$dark-indigo: hsla(252, 49%, 24%, 1);
+$night-blue: hsla(252, 56%, 27%, 1);
+$dark-blue: hsla(252, 57%, 30%, 1);
+$dark-royal-blue: hsla(252, 58%, 32%, 1);
+$indigo: hsla(252, 61%, 35%, 1);
+$indigo-blue: hsla(252, 71%, 38%, 1);
+$cobalt-blue: hsla(252, 73%, 41%, 1);
+$violet-blue: hsla(252, 80%, 43%, 1);
+$true-blue: hsla(252, 78%, 46%, 1);
+$blue-violet: hsla(252, 81%, 49%, 1);
+$purplish-blue: hsla(252, 88%, 51%, 1);
+$purple-blue: hsla(252, 84%, 54%, 1);
+$bluish-purple: hsla(252, 78%, 57%, 1);
+$blurple: hsla(252, 75%, 59%, 1);
+$light-indigo: hsla(252, 68%, 62%, 1);
+$dark-periwinkle: hsla(252, 66%, 65%, 1);
+$lavender-blue: hsla(252, 57%, 68%, 1);
+$pale-purple: hsla(252, 52%, 70%, 1);
+$pale-violet: hsla(252, 48%, 73%, 1);
+$light-periwinkle: hsla(252, 45%, 76%, 1);
+$light-lavender: hsla(252, 48%, 78%, 1);
+$cloudy-blue: hsla(252, 38%, 81%, 1);
+$powder-blue: hsla(252, 33%, 84%, 1);
+$light-pink: hsla(252, 29%, 87%, 1);
+$very-light-pink: hsla(252, 27%, 89%, 1);
+$white: hsla(252, 25%, 92%, 1);
 
 /* SCSS RGB */
-$span-01: rgba(17, 15, 26, 1);
-$span-02: rgba(22, 19, 36, 1);
-$span-03: rgba(28, 25, 44, 1);
-$span-04: rgba(34, 27, 55, 1);
-$span-05: rgba(38, 30, 66, 1);
-$span-06: rgba(42, 30, 80, 1);
-$span-07: rgba(45, 31, 92, 1);
-$span-08: rgba(45, 30, 107, 1);
-$span-09: rgba(46, 33, 119, 1);
-$span-10: rgba(54, 35, 130, 1);
-$span-11: rgba(57, 35, 144, 1);
-$span-12: rgba(61, 28, 164, 1);
-$span-13: rgba(54, 28, 179, 1);
-$span-14: rgba(49, 22, 198, 1);
-$span-15: rgba(53, 25, 209, 1);
-$span-16: rgba(74, 24, 224, 1);
-$span-17: rgba(71, 22, 240, 1);
-$span-18: rgba(77, 40, 236, 1);
-$span-19: rgba(99, 59, 231, 1);
-$span-20: rgba(109, 74, 229, 1);
-$span-21: rgba(117, 93, 224, 1);
-$span-22: rgba(126, 106, 225, 1);
-$span-23: rgba(140, 125, 220, 1);
-$span-24: rgba(158, 140, 219, 1);
-$span-25: rgba(166, 153, 219, 1);
-$span-26: rgba(174, 165, 221, 1);
-$span-27: rgba(182, 174, 226, 1);
-$span-28: rgba(195, 189, 225, 1);
-$span-29: rgba(205, 200, 227, 1);
-$span-30: rgba(214, 211, 231, 1);
-$span-31: rgba(223, 220, 235, 1);
-$span-32: rgba(231, 229, 240, 1);
+$almost-black: rgba(17, 15, 26, 1);
+$dark: rgba(22, 19, 36, 1);
+$midnight: rgba(28, 25, 44, 1);
+$navy: rgba(34, 27, 55, 1);
+$dark-navy-blue: rgba(38, 30, 66, 1);
+$navy-blue: rgba(42, 30, 80, 1);
+$dark-indigo: rgba(45, 31, 92, 1);
+$night-blue: rgba(45, 30, 107, 1);
+$dark-blue: rgba(46, 33, 119, 1);
+$dark-royal-blue: rgba(54, 35, 130, 1);
+$indigo: rgba(57, 35, 144, 1);
+$indigo-blue: rgba(61, 28, 164, 1);
+$cobalt-blue: rgba(54, 28, 179, 1);
+$violet-blue: rgba(49, 22, 198, 1);
+$true-blue: rgba(53, 25, 209, 1);
+$blue-violet: rgba(74, 24, 224, 1);
+$purplish-blue: rgba(71, 22, 240, 1);
+$purple-blue: rgba(77, 40, 236, 1);
+$bluish-purple: rgba(99, 59, 231, 1);
+$blurple: rgba(109, 74, 229, 1);
+$light-indigo: rgba(117, 93, 224, 1);
+$dark-periwinkle: rgba(126, 106, 225, 1);
+$lavender-blue: rgba(140, 125, 220, 1);
+$pale-purple: rgba(158, 140, 219, 1);
+$pale-violet: rgba(166, 153, 219, 1);
+$light-periwinkle: rgba(174, 165, 221, 1);
+$light-lavender: rgba(182, 174, 226, 1);
+$cloudy-blue: rgba(195, 189, 225, 1);
+$powder-blue: rgba(205, 200, 227, 1);
+$light-pink: rgba(214, 211, 231, 1);
+$very-light-pink: rgba(223, 220, 235, 1);
+$white: rgba(231, 229, 240, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #110f1aff, #161324ff, #1c192cff, #221b37ff, #261e42ff, #2a1e50ff, #2d1f5cff, #2d1e6bff, #2e2177ff, #362382ff, #392390ff, #3d1ca4ff, #361cb3ff, #3116c6ff, #3519d1ff, #4a18e0ff, #4716f0ff, #4d28ecff, #633be7ff, #6d4ae5ff, #755de0ff, #7e6ae1ff, #8c7ddcff, #9e8cdbff, #a699dbff, #aea5ddff, #b6aee2ff, #c3bde1ff, #cdc8e3ff, #d6d3e7ff, #dfdcebff, #e7e5f0ff);
@@ -203,36 +203,36 @@ $gradient-radial: radial-gradient(#110f1aff, #161324ff, #1c192cff, #221b37ff, #2
 
 /* SCSS Map */
 $indigo-span-32-12-map: (
-    "span-01": #110f1aff,
-    "span-02": #161324ff,
-    "span-03": #1c192cff,
-    "span-04": #221b37ff,
-    "span-05": #261e42ff,
-    "span-06": #2a1e50ff,
-    "span-07": #2d1f5cff,
-    "span-08": #2d1e6bff,
-    "span-09": #2e2177ff,
-    "span-10": #362382ff,
-    "span-11": #392390ff,
-    "span-12": #3d1ca4ff,
-    "span-13": #361cb3ff,
-    "span-14": #3116c6ff,
-    "span-15": #3519d1ff,
-    "span-16": #4a18e0ff,
-    "span-17": #4716f0ff,
-    "span-18": #4d28ecff,
-    "span-19": #633be7ff,
-    "span-20": #6d4ae5ff,
-    "span-21": #755de0ff,
-    "span-22": #7e6ae1ff,
-    "span-23": #8c7ddcff,
-    "span-24": #9e8cdbff,
-    "span-25": #a699dbff,
-    "span-26": #aea5ddff,
-    "span-27": #b6aee2ff,
-    "span-28": #c3bde1ff,
-    "span-29": #cdc8e3ff,
-    "span-30": #d6d3e7ff,
-    "span-31": #dfdcebff,
-    "span-32": #e7e5f0ff
+    "almost-black": #110f1aff,
+    "dark": #161324ff,
+    "midnight": #1c192cff,
+    "navy": #221b37ff,
+    "dark-navy-blue": #261e42ff,
+    "navy-blue": #2a1e50ff,
+    "dark-indigo": #2d1f5cff,
+    "night-blue": #2d1e6bff,
+    "dark-blue": #2e2177ff,
+    "dark-royal-blue": #362382ff,
+    "indigo": #392390ff,
+    "indigo-blue": #3d1ca4ff,
+    "cobalt-blue": #361cb3ff,
+    "violet-blue": #3116c6ff,
+    "true-blue": #3519d1ff,
+    "blue-violet": #4a18e0ff,
+    "purplish-blue": #4716f0ff,
+    "purple-blue": #4d28ecff,
+    "bluish-purple": #633be7ff,
+    "blurple": #6d4ae5ff,
+    "light-indigo": #755de0ff,
+    "dark-periwinkle": #7e6ae1ff,
+    "lavender-blue": #8c7ddcff,
+    "pale-purple": #9e8cdbff,
+    "pale-violet": #a699dbff,
+    "light-periwinkle": #aea5ddff,
+    "light-lavender": #b6aee2ff,
+    "cloudy-blue": #c3bde1ff,
+    "powder-blue": #cdc8e3ff,
+    "light-pink": #d6d3e7ff,
+    "very-light-pink": #dfdcebff,
+    "white": #e7e5f0ff
 );

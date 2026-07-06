@@ -25,65 +25,65 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---marigold-commerce-atlas-espresso-cart: #1c0a02ff;
---marigold-commerce-atlas-roast-brown: #431407ff;
---marigold-commerce-atlas-cart-orange: #9a3412ff;
---marigold-commerce-atlas-checkout-tangerine: #c2410cff;
---marigold-commerce-atlas-action-orange: #f97316ff;
---marigold-commerce-atlas-marigold-deal: #f59e0bff;
---marigold-commerce-atlas-honey-ticket: #facc15ff;
---marigold-commerce-atlas-peach-receipt: #fed7aaff;
---marigold-commerce-atlas-cream-checkout: #fffbebff;
---marigold-commerce-atlas-receipt-white: #ffffffff;
+--espresso-cart: #1c0a02ff;
+--roast-brown: #431407ff;
+--cart-orange: #9a3412ff;
+--checkout-tangerine: #c2410cff;
+--action-orange: #f97316ff;
+--marigold-deal: #f59e0bff;
+--honey-ticket: #facc15ff;
+--peach-receipt: #fed7aaff;
+--cream-checkout: #fffbebff;
+--receipt-white: #ffffffff;
 
 /* CSS HSL */
---marigold-commerce-atlas-espresso-cart: hsla(18, 87%, 6%, 1);
---marigold-commerce-atlas-roast-brown: hsla(13, 81%, 15%, 1);
---marigold-commerce-atlas-cart-orange: hsla(15, 79%, 34%, 1);
---marigold-commerce-atlas-checkout-tangerine: hsla(17, 88%, 40%, 1);
---marigold-commerce-atlas-action-orange: hsla(25, 95%, 53%, 1);
---marigold-commerce-atlas-marigold-deal: hsla(38, 92%, 50%, 1);
---marigold-commerce-atlas-honey-ticket: hsla(48, 96%, 53%, 1);
---marigold-commerce-atlas-peach-receipt: hsla(32, 98%, 83%, 1);
---marigold-commerce-atlas-cream-checkout: hsla(48, 100%, 96%, 1);
---marigold-commerce-atlas-receipt-white: hsla(0, 0%, 100%, 1);
+--espresso-cart: hsla(18, 87%, 6%, 1);
+--roast-brown: hsla(13, 81%, 15%, 1);
+--cart-orange: hsla(15, 79%, 34%, 1);
+--checkout-tangerine: hsla(17, 88%, 40%, 1);
+--action-orange: hsla(25, 95%, 53%, 1);
+--marigold-deal: hsla(38, 92%, 50%, 1);
+--honey-ticket: hsla(48, 96%, 53%, 1);
+--peach-receipt: hsla(32, 98%, 83%, 1);
+--cream-checkout: hsla(48, 100%, 96%, 1);
+--receipt-white: hsla(0, 0%, 100%, 1);
 }
 
 /* SCSS HEX */
-$marigold-commerce-atlas-espresso-cart: #1c0a02ff;
-$marigold-commerce-atlas-roast-brown: #431407ff;
-$marigold-commerce-atlas-cart-orange: #9a3412ff;
-$marigold-commerce-atlas-checkout-tangerine: #c2410cff;
-$marigold-commerce-atlas-action-orange: #f97316ff;
-$marigold-commerce-atlas-marigold-deal: #f59e0bff;
-$marigold-commerce-atlas-honey-ticket: #facc15ff;
-$marigold-commerce-atlas-peach-receipt: #fed7aaff;
-$marigold-commerce-atlas-cream-checkout: #fffbebff;
-$marigold-commerce-atlas-receipt-white: #ffffffff;
+$espresso-cart: #1c0a02ff;
+$roast-brown: #431407ff;
+$cart-orange: #9a3412ff;
+$checkout-tangerine: #c2410cff;
+$action-orange: #f97316ff;
+$marigold-deal: #f59e0bff;
+$honey-ticket: #facc15ff;
+$peach-receipt: #fed7aaff;
+$cream-checkout: #fffbebff;
+$receipt-white: #ffffffff;
 
 /* SCSS HSL */
-$marigold-commerce-atlas-espresso-cart: hsla(18, 87%, 6%, 1);
-$marigold-commerce-atlas-roast-brown: hsla(13, 81%, 15%, 1);
-$marigold-commerce-atlas-cart-orange: hsla(15, 79%, 34%, 1);
-$marigold-commerce-atlas-checkout-tangerine: hsla(17, 88%, 40%, 1);
-$marigold-commerce-atlas-action-orange: hsla(25, 95%, 53%, 1);
-$marigold-commerce-atlas-marigold-deal: hsla(38, 92%, 50%, 1);
-$marigold-commerce-atlas-honey-ticket: hsla(48, 96%, 53%, 1);
-$marigold-commerce-atlas-peach-receipt: hsla(32, 98%, 83%, 1);
-$marigold-commerce-atlas-cream-checkout: hsla(48, 100%, 96%, 1);
-$marigold-commerce-atlas-receipt-white: hsla(0, 0%, 100%, 1);
+$espresso-cart: hsla(18, 87%, 6%, 1);
+$roast-brown: hsla(13, 81%, 15%, 1);
+$cart-orange: hsla(15, 79%, 34%, 1);
+$checkout-tangerine: hsla(17, 88%, 40%, 1);
+$action-orange: hsla(25, 95%, 53%, 1);
+$marigold-deal: hsla(38, 92%, 50%, 1);
+$honey-ticket: hsla(48, 96%, 53%, 1);
+$peach-receipt: hsla(32, 98%, 83%, 1);
+$cream-checkout: hsla(48, 100%, 96%, 1);
+$receipt-white: hsla(0, 0%, 100%, 1);
 
 /* SCSS RGB */
-$marigold-commerce-atlas-espresso-cart: rgba(28, 10, 2, 1);
-$marigold-commerce-atlas-roast-brown: rgba(67, 20, 7, 1);
-$marigold-commerce-atlas-cart-orange: rgba(154, 52, 18, 1);
-$marigold-commerce-atlas-checkout-tangerine: rgba(194, 65, 12, 1);
-$marigold-commerce-atlas-action-orange: rgba(249, 115, 22, 1);
-$marigold-commerce-atlas-marigold-deal: rgba(245, 158, 11, 1);
-$marigold-commerce-atlas-honey-ticket: rgba(250, 204, 21, 1);
-$marigold-commerce-atlas-peach-receipt: rgba(254, 215, 170, 1);
-$marigold-commerce-atlas-cream-checkout: rgba(255, 251, 235, 1);
-$marigold-commerce-atlas-receipt-white: rgba(255, 255, 255, 1);
+$espresso-cart: rgba(28, 10, 2, 1);
+$roast-brown: rgba(67, 20, 7, 1);
+$cart-orange: rgba(154, 52, 18, 1);
+$checkout-tangerine: rgba(194, 65, 12, 1);
+$action-orange: rgba(249, 115, 22, 1);
+$marigold-deal: rgba(245, 158, 11, 1);
+$honey-ticket: rgba(250, 204, 21, 1);
+$peach-receipt: rgba(254, 215, 170, 1);
+$cream-checkout: rgba(255, 251, 235, 1);
+$receipt-white: rgba(255, 255, 255, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1c0a02ff, #431407ff, #9a3412ff, #c2410cff, #f97316ff, #f59e0bff, #facc15ff, #fed7aaff, #fffbebff, #ffffffff);
@@ -98,14 +98,14 @@ $gradient-radial: radial-gradient(#1c0a02ff, #431407ff, #9a3412ff, #c2410cff, #f
 
 /* SCSS Map */
 $marigold-commerce-atlas-map: (
-    "marigold-commerce-atlas-espresso-cart": #1c0a02ff,
-    "marigold-commerce-atlas-roast-brown": #431407ff,
-    "marigold-commerce-atlas-cart-orange": #9a3412ff,
-    "marigold-commerce-atlas-checkout-tangerine": #c2410cff,
-    "marigold-commerce-atlas-action-orange": #f97316ff,
-    "marigold-commerce-atlas-marigold-deal": #f59e0bff,
-    "marigold-commerce-atlas-honey-ticket": #facc15ff,
-    "marigold-commerce-atlas-peach-receipt": #fed7aaff,
-    "marigold-commerce-atlas-cream-checkout": #fffbebff,
-    "marigold-commerce-atlas-receipt-white": #ffffffff
+    "espresso-cart": #1c0a02ff,
+    "roast-brown": #431407ff,
+    "cart-orange": #9a3412ff,
+    "checkout-tangerine": #c2410cff,
+    "action-orange": #f97316ff,
+    "marigold-deal": #f59e0bff,
+    "honey-ticket": #facc15ff,
+    "peach-receipt": #fed7aaff,
+    "cream-checkout": #fffbebff,
+    "receipt-white": #ffffffff
 );

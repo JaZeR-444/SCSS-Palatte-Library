@@ -25,65 +25,65 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---sakura-bloom-atlas-bloom-shadow: #1f0a17ff;
---sakura-bloom-atlas-plum-branch: #4a044eff;
---sakura-bloom-atlas-sakura-bark: #831843ff;
---sakura-bloom-atlas-petal-rose: #be185dff;
---sakura-bloom-atlas-bloom-pink: #ec4899ff;
---sakura-bloom-atlas-soft-petal: #f9a8d4ff;
---sakura-bloom-atlas-blossom-cream: #fce7f3ff;
---sakura-bloom-atlas-morning-mist: #fdf2f8ff;
---sakura-bloom-atlas-paper-white: #ffffffff;
---sakura-bloom-atlas-stem-slate: #475569ff;
+--bloom-shadow: #1f0a17ff;
+--plum-branch: #4a044eff;
+--sakura-bark: #831843ff;
+--petal-rose: #be185dff;
+--bloom-pink: #ec4899ff;
+--soft-petal: #f9a8d4ff;
+--blossom-cream: #fce7f3ff;
+--morning-mist: #fdf2f8ff;
+--paper-white: #ffffffff;
+--stem-slate: #475569ff;
 
 /* CSS HSL */
---sakura-bloom-atlas-bloom-shadow: hsla(323, 51%, 8%, 1);
---sakura-bloom-atlas-plum-branch: hsla(297, 90%, 16%, 1);
---sakura-bloom-atlas-sakura-bark: hsla(336, 69%, 30%, 1);
---sakura-bloom-atlas-petal-rose: hsla(335, 78%, 42%, 1);
---sakura-bloom-atlas-bloom-pink: hsla(330, 81%, 60%, 1);
---sakura-bloom-atlas-soft-petal: hsla(327, 87%, 82%, 1);
---sakura-bloom-atlas-blossom-cream: hsla(326, 78%, 95%, 1);
---sakura-bloom-atlas-morning-mist: hsla(327, 73%, 97%, 1);
---sakura-bloom-atlas-paper-white: hsla(0, 0%, 100%, 1);
---sakura-bloom-atlas-stem-slate: hsla(215, 19%, 35%, 1);
+--bloom-shadow: hsla(323, 51%, 8%, 1);
+--plum-branch: hsla(297, 90%, 16%, 1);
+--sakura-bark: hsla(336, 69%, 30%, 1);
+--petal-rose: hsla(335, 78%, 42%, 1);
+--bloom-pink: hsla(330, 81%, 60%, 1);
+--soft-petal: hsla(327, 87%, 82%, 1);
+--blossom-cream: hsla(326, 78%, 95%, 1);
+--morning-mist: hsla(327, 73%, 97%, 1);
+--paper-white: hsla(0, 0%, 100%, 1);
+--stem-slate: hsla(215, 19%, 35%, 1);
 }
 
 /* SCSS HEX */
-$sakura-bloom-atlas-bloom-shadow: #1f0a17ff;
-$sakura-bloom-atlas-plum-branch: #4a044eff;
-$sakura-bloom-atlas-sakura-bark: #831843ff;
-$sakura-bloom-atlas-petal-rose: #be185dff;
-$sakura-bloom-atlas-bloom-pink: #ec4899ff;
-$sakura-bloom-atlas-soft-petal: #f9a8d4ff;
-$sakura-bloom-atlas-blossom-cream: #fce7f3ff;
-$sakura-bloom-atlas-morning-mist: #fdf2f8ff;
-$sakura-bloom-atlas-paper-white: #ffffffff;
-$sakura-bloom-atlas-stem-slate: #475569ff;
+$bloom-shadow: #1f0a17ff;
+$plum-branch: #4a044eff;
+$sakura-bark: #831843ff;
+$petal-rose: #be185dff;
+$bloom-pink: #ec4899ff;
+$soft-petal: #f9a8d4ff;
+$blossom-cream: #fce7f3ff;
+$morning-mist: #fdf2f8ff;
+$paper-white: #ffffffff;
+$stem-slate: #475569ff;
 
 /* SCSS HSL */
-$sakura-bloom-atlas-bloom-shadow: hsla(323, 51%, 8%, 1);
-$sakura-bloom-atlas-plum-branch: hsla(297, 90%, 16%, 1);
-$sakura-bloom-atlas-sakura-bark: hsla(336, 69%, 30%, 1);
-$sakura-bloom-atlas-petal-rose: hsla(335, 78%, 42%, 1);
-$sakura-bloom-atlas-bloom-pink: hsla(330, 81%, 60%, 1);
-$sakura-bloom-atlas-soft-petal: hsla(327, 87%, 82%, 1);
-$sakura-bloom-atlas-blossom-cream: hsla(326, 78%, 95%, 1);
-$sakura-bloom-atlas-morning-mist: hsla(327, 73%, 97%, 1);
-$sakura-bloom-atlas-paper-white: hsla(0, 0%, 100%, 1);
-$sakura-bloom-atlas-stem-slate: hsla(215, 19%, 35%, 1);
+$bloom-shadow: hsla(323, 51%, 8%, 1);
+$plum-branch: hsla(297, 90%, 16%, 1);
+$sakura-bark: hsla(336, 69%, 30%, 1);
+$petal-rose: hsla(335, 78%, 42%, 1);
+$bloom-pink: hsla(330, 81%, 60%, 1);
+$soft-petal: hsla(327, 87%, 82%, 1);
+$blossom-cream: hsla(326, 78%, 95%, 1);
+$morning-mist: hsla(327, 73%, 97%, 1);
+$paper-white: hsla(0, 0%, 100%, 1);
+$stem-slate: hsla(215, 19%, 35%, 1);
 
 /* SCSS RGB */
-$sakura-bloom-atlas-bloom-shadow: rgba(31, 10, 23, 1);
-$sakura-bloom-atlas-plum-branch: rgba(74, 4, 78, 1);
-$sakura-bloom-atlas-sakura-bark: rgba(131, 24, 67, 1);
-$sakura-bloom-atlas-petal-rose: rgba(190, 24, 93, 1);
-$sakura-bloom-atlas-bloom-pink: rgba(236, 72, 153, 1);
-$sakura-bloom-atlas-soft-petal: rgba(249, 168, 212, 1);
-$sakura-bloom-atlas-blossom-cream: rgba(252, 231, 243, 1);
-$sakura-bloom-atlas-morning-mist: rgba(253, 242, 248, 1);
-$sakura-bloom-atlas-paper-white: rgba(255, 255, 255, 1);
-$sakura-bloom-atlas-stem-slate: rgba(71, 85, 105, 1);
+$bloom-shadow: rgba(31, 10, 23, 1);
+$plum-branch: rgba(74, 4, 78, 1);
+$sakura-bark: rgba(131, 24, 67, 1);
+$petal-rose: rgba(190, 24, 93, 1);
+$bloom-pink: rgba(236, 72, 153, 1);
+$soft-petal: rgba(249, 168, 212, 1);
+$blossom-cream: rgba(252, 231, 243, 1);
+$morning-mist: rgba(253, 242, 248, 1);
+$paper-white: rgba(255, 255, 255, 1);
+$stem-slate: rgba(71, 85, 105, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1f0a17ff, #4a044eff, #831843ff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff, #fdf2f8ff, #ffffffff, #475569ff);
@@ -98,14 +98,14 @@ $gradient-radial: radial-gradient(#1f0a17ff, #4a044eff, #831843ff, #be185dff, #e
 
 /* SCSS Map */
 $sakura-bloom-atlas-map: (
-    "sakura-bloom-atlas-bloom-shadow": #1f0a17ff,
-    "sakura-bloom-atlas-plum-branch": #4a044eff,
-    "sakura-bloom-atlas-sakura-bark": #831843ff,
-    "sakura-bloom-atlas-petal-rose": #be185dff,
-    "sakura-bloom-atlas-bloom-pink": #ec4899ff,
-    "sakura-bloom-atlas-soft-petal": #f9a8d4ff,
-    "sakura-bloom-atlas-blossom-cream": #fce7f3ff,
-    "sakura-bloom-atlas-morning-mist": #fdf2f8ff,
-    "sakura-bloom-atlas-paper-white": #ffffffff,
-    "sakura-bloom-atlas-stem-slate": #475569ff
+    "bloom-shadow": #1f0a17ff,
+    "plum-branch": #4a044eff,
+    "sakura-bark": #831843ff,
+    "petal-rose": #be185dff,
+    "bloom-pink": #ec4899ff,
+    "soft-petal": #f9a8d4ff,
+    "blossom-cream": #fce7f3ff,
+    "morning-mist": #fdf2f8ff,
+    "paper-white": #ffffffff,
+    "stem-slate": #475569ff
 );

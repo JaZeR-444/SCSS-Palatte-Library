@@ -25,45 +25,45 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---grape-nocturne-array-nocturne-ink: #14061fff;
---grape-nocturne-array-grape-shadow: #2a0f3fff;
---grape-nocturne-array-wine-plum: #4a1d5fff;
---grape-nocturne-array-midnight-grape: #6b2d83ff;
---grape-nocturne-array-velvet-grape: #8e44adff;
---grape-nocturne-array-orchid-chord: #b06ad1ff;
+--nocturne-ink: #14061fff;
+--grape-shadow: #2a0f3fff;
+--wine-plum: #4a1d5fff;
+--midnight-grape: #6b2d83ff;
+--velvet-grape: #8e44adff;
+--orchid-chord: #b06ad1ff;
 
 /* CSS HSL */
---grape-nocturne-array-nocturne-ink: hsla(274, 68%, 7%, 1);
---grape-nocturne-array-grape-shadow: hsla(274, 62%, 15%, 1);
---grape-nocturne-array-wine-plum: hsla(281, 53%, 24%, 1);
---grape-nocturne-array-midnight-grape: hsla(283, 49%, 35%, 1);
---grape-nocturne-array-velvet-grape: hsla(282, 44%, 47%, 1);
---grape-nocturne-array-orchid-chord: hsla(281, 53%, 62%, 1);
+--nocturne-ink: hsla(274, 68%, 7%, 1);
+--grape-shadow: hsla(274, 62%, 15%, 1);
+--wine-plum: hsla(281, 53%, 24%, 1);
+--midnight-grape: hsla(283, 49%, 35%, 1);
+--velvet-grape: hsla(282, 44%, 47%, 1);
+--orchid-chord: hsla(281, 53%, 62%, 1);
 }
 
 /* SCSS HEX */
-$grape-nocturne-array-nocturne-ink: #14061fff;
-$grape-nocturne-array-grape-shadow: #2a0f3fff;
-$grape-nocturne-array-wine-plum: #4a1d5fff;
-$grape-nocturne-array-midnight-grape: #6b2d83ff;
-$grape-nocturne-array-velvet-grape: #8e44adff;
-$grape-nocturne-array-orchid-chord: #b06ad1ff;
+$nocturne-ink: #14061fff;
+$grape-shadow: #2a0f3fff;
+$wine-plum: #4a1d5fff;
+$midnight-grape: #6b2d83ff;
+$velvet-grape: #8e44adff;
+$orchid-chord: #b06ad1ff;
 
 /* SCSS HSL */
-$grape-nocturne-array-nocturne-ink: hsla(274, 68%, 7%, 1);
-$grape-nocturne-array-grape-shadow: hsla(274, 62%, 15%, 1);
-$grape-nocturne-array-wine-plum: hsla(281, 53%, 24%, 1);
-$grape-nocturne-array-midnight-grape: hsla(283, 49%, 35%, 1);
-$grape-nocturne-array-velvet-grape: hsla(282, 44%, 47%, 1);
-$grape-nocturne-array-orchid-chord: hsla(281, 53%, 62%, 1);
+$nocturne-ink: hsla(274, 68%, 7%, 1);
+$grape-shadow: hsla(274, 62%, 15%, 1);
+$wine-plum: hsla(281, 53%, 24%, 1);
+$midnight-grape: hsla(283, 49%, 35%, 1);
+$velvet-grape: hsla(282, 44%, 47%, 1);
+$orchid-chord: hsla(281, 53%, 62%, 1);
 
 /* SCSS RGB */
-$grape-nocturne-array-nocturne-ink: rgba(20, 6, 31, 1);
-$grape-nocturne-array-grape-shadow: rgba(42, 15, 63, 1);
-$grape-nocturne-array-wine-plum: rgba(74, 29, 95, 1);
-$grape-nocturne-array-midnight-grape: rgba(107, 45, 131, 1);
-$grape-nocturne-array-velvet-grape: rgba(142, 68, 173, 1);
-$grape-nocturne-array-orchid-chord: rgba(176, 106, 209, 1);
+$nocturne-ink: rgba(20, 6, 31, 1);
+$grape-shadow: rgba(42, 15, 63, 1);
+$wine-plum: rgba(74, 29, 95, 1);
+$midnight-grape: rgba(107, 45, 131, 1);
+$velvet-grape: rgba(142, 68, 173, 1);
+$orchid-chord: rgba(176, 106, 209, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff, #8e44adff, #b06ad1ff);
@@ -78,10 +78,10 @@ $gradient-radial: radial-gradient(#14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff, #8
 
 /* SCSS Map */
 $grape-nocturne-array-map: (
-    "grape-nocturne-array-nocturne-ink": #14061fff,
-    "grape-nocturne-array-grape-shadow": #2a0f3fff,
-    "grape-nocturne-array-wine-plum": #4a1d5fff,
-    "grape-nocturne-array-midnight-grape": #6b2d83ff,
-    "grape-nocturne-array-velvet-grape": #8e44adff,
-    "grape-nocturne-array-orchid-chord": #b06ad1ff
+    "nocturne-ink": #14061fff,
+    "grape-shadow": #2a0f3fff,
+    "wine-plum": #4a1d5fff,
+    "midnight-grape": #6b2d83ff,
+    "velvet-grape": #8e44adff,
+    "orchid-chord": #b06ad1ff
 );

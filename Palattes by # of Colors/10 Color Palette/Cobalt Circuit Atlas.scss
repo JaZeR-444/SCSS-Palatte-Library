@@ -25,65 +25,65 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---cobalt-circuit-atlas-circuit-black: #020617ff;
---cobalt-circuit-atlas-logic-navy: #0f172aff;
---cobalt-circuit-atlas-cobalt-core: #1e3a8aff;
---cobalt-circuit-atlas-runtime-blue: #1d4ed8ff;
---cobalt-circuit-atlas-action-blue: #2563ebff;
---cobalt-circuit-atlas-signal-blue: #3b82f6ff;
---cobalt-circuit-atlas-spark-blue: #60a5faff;
---cobalt-circuit-atlas-trace-blue: #bfdbfeff;
---cobalt-circuit-atlas-debug-mist: #eff6ffff;
---cobalt-circuit-atlas-terminal-white: #f8fafcff;
+--circuit-black: #020617ff;
+--logic-navy: #0f172aff;
+--cobalt-core: #1e3a8aff;
+--runtime-blue: #1d4ed8ff;
+--action-blue: #2563ebff;
+--signal-blue: #3b82f6ff;
+--spark-blue: #60a5faff;
+--trace-blue: #bfdbfeff;
+--debug-mist: #eff6ffff;
+--terminal-white: #f8fafcff;
 
 /* CSS HSL */
---cobalt-circuit-atlas-circuit-black: hsla(229, 84%, 5%, 1);
---cobalt-circuit-atlas-logic-navy: hsla(222, 47%, 11%, 1);
---cobalt-circuit-atlas-cobalt-core: hsla(224, 64%, 33%, 1);
---cobalt-circuit-atlas-runtime-blue: hsla(224, 76%, 48%, 1);
---cobalt-circuit-atlas-action-blue: hsla(221, 83%, 53%, 1);
---cobalt-circuit-atlas-signal-blue: hsla(217, 91%, 60%, 1);
---cobalt-circuit-atlas-spark-blue: hsla(213, 94%, 68%, 1);
---cobalt-circuit-atlas-trace-blue: hsla(213, 97%, 87%, 1);
---cobalt-circuit-atlas-debug-mist: hsla(214, 100%, 97%, 1);
---cobalt-circuit-atlas-terminal-white: hsla(210, 40%, 98%, 1);
+--circuit-black: hsla(229, 84%, 5%, 1);
+--logic-navy: hsla(222, 47%, 11%, 1);
+--cobalt-core: hsla(224, 64%, 33%, 1);
+--runtime-blue: hsla(224, 76%, 48%, 1);
+--action-blue: hsla(221, 83%, 53%, 1);
+--signal-blue: hsla(217, 91%, 60%, 1);
+--spark-blue: hsla(213, 94%, 68%, 1);
+--trace-blue: hsla(213, 97%, 87%, 1);
+--debug-mist: hsla(214, 100%, 97%, 1);
+--terminal-white: hsla(210, 40%, 98%, 1);
 }
 
 /* SCSS HEX */
-$cobalt-circuit-atlas-circuit-black: #020617ff;
-$cobalt-circuit-atlas-logic-navy: #0f172aff;
-$cobalt-circuit-atlas-cobalt-core: #1e3a8aff;
-$cobalt-circuit-atlas-runtime-blue: #1d4ed8ff;
-$cobalt-circuit-atlas-action-blue: #2563ebff;
-$cobalt-circuit-atlas-signal-blue: #3b82f6ff;
-$cobalt-circuit-atlas-spark-blue: #60a5faff;
-$cobalt-circuit-atlas-trace-blue: #bfdbfeff;
-$cobalt-circuit-atlas-debug-mist: #eff6ffff;
-$cobalt-circuit-atlas-terminal-white: #f8fafcff;
+$circuit-black: #020617ff;
+$logic-navy: #0f172aff;
+$cobalt-core: #1e3a8aff;
+$runtime-blue: #1d4ed8ff;
+$action-blue: #2563ebff;
+$signal-blue: #3b82f6ff;
+$spark-blue: #60a5faff;
+$trace-blue: #bfdbfeff;
+$debug-mist: #eff6ffff;
+$terminal-white: #f8fafcff;
 
 /* SCSS HSL */
-$cobalt-circuit-atlas-circuit-black: hsla(229, 84%, 5%, 1);
-$cobalt-circuit-atlas-logic-navy: hsla(222, 47%, 11%, 1);
-$cobalt-circuit-atlas-cobalt-core: hsla(224, 64%, 33%, 1);
-$cobalt-circuit-atlas-runtime-blue: hsla(224, 76%, 48%, 1);
-$cobalt-circuit-atlas-action-blue: hsla(221, 83%, 53%, 1);
-$cobalt-circuit-atlas-signal-blue: hsla(217, 91%, 60%, 1);
-$cobalt-circuit-atlas-spark-blue: hsla(213, 94%, 68%, 1);
-$cobalt-circuit-atlas-trace-blue: hsla(213, 97%, 87%, 1);
-$cobalt-circuit-atlas-debug-mist: hsla(214, 100%, 97%, 1);
-$cobalt-circuit-atlas-terminal-white: hsla(210, 40%, 98%, 1);
+$circuit-black: hsla(229, 84%, 5%, 1);
+$logic-navy: hsla(222, 47%, 11%, 1);
+$cobalt-core: hsla(224, 64%, 33%, 1);
+$runtime-blue: hsla(224, 76%, 48%, 1);
+$action-blue: hsla(221, 83%, 53%, 1);
+$signal-blue: hsla(217, 91%, 60%, 1);
+$spark-blue: hsla(213, 94%, 68%, 1);
+$trace-blue: hsla(213, 97%, 87%, 1);
+$debug-mist: hsla(214, 100%, 97%, 1);
+$terminal-white: hsla(210, 40%, 98%, 1);
 
 /* SCSS RGB */
-$cobalt-circuit-atlas-circuit-black: rgba(2, 6, 23, 1);
-$cobalt-circuit-atlas-logic-navy: rgba(15, 23, 42, 1);
-$cobalt-circuit-atlas-cobalt-core: rgba(30, 58, 138, 1);
-$cobalt-circuit-atlas-runtime-blue: rgba(29, 78, 216, 1);
-$cobalt-circuit-atlas-action-blue: rgba(37, 99, 235, 1);
-$cobalt-circuit-atlas-signal-blue: rgba(59, 130, 246, 1);
-$cobalt-circuit-atlas-spark-blue: rgba(96, 165, 250, 1);
-$cobalt-circuit-atlas-trace-blue: rgba(191, 219, 254, 1);
-$cobalt-circuit-atlas-debug-mist: rgba(239, 246, 255, 1);
-$cobalt-circuit-atlas-terminal-white: rgba(248, 250, 252, 1);
+$circuit-black: rgba(2, 6, 23, 1);
+$logic-navy: rgba(15, 23, 42, 1);
+$cobalt-core: rgba(30, 58, 138, 1);
+$runtime-blue: rgba(29, 78, 216, 1);
+$action-blue: rgba(37, 99, 235, 1);
+$signal-blue: rgba(59, 130, 246, 1);
+$spark-blue: rgba(96, 165, 250, 1);
+$trace-blue: rgba(191, 219, 254, 1);
+$debug-mist: rgba(239, 246, 255, 1);
+$terminal-white: rgba(248, 250, 252, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff, #60a5faff, #bfdbfeff, #eff6ffff, #f8fafcff);
@@ -98,14 +98,14 @@ $gradient-radial: radial-gradient(#020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2
 
 /* SCSS Map */
 $cobalt-circuit-atlas-map: (
-    "cobalt-circuit-atlas-circuit-black": #020617ff,
-    "cobalt-circuit-atlas-logic-navy": #0f172aff,
-    "cobalt-circuit-atlas-cobalt-core": #1e3a8aff,
-    "cobalt-circuit-atlas-runtime-blue": #1d4ed8ff,
-    "cobalt-circuit-atlas-action-blue": #2563ebff,
-    "cobalt-circuit-atlas-signal-blue": #3b82f6ff,
-    "cobalt-circuit-atlas-spark-blue": #60a5faff,
-    "cobalt-circuit-atlas-trace-blue": #bfdbfeff,
-    "cobalt-circuit-atlas-debug-mist": #eff6ffff,
-    "cobalt-circuit-atlas-terminal-white": #f8fafcff
+    "circuit-black": #020617ff,
+    "logic-navy": #0f172aff,
+    "cobalt-core": #1e3a8aff,
+    "runtime-blue": #1d4ed8ff,
+    "action-blue": #2563ebff,
+    "signal-blue": #3b82f6ff,
+    "spark-blue": #60a5faff,
+    "trace-blue": #bfdbfeff,
+    "debug-mist": #eff6ffff,
+    "terminal-white": #f8fafcff
 );

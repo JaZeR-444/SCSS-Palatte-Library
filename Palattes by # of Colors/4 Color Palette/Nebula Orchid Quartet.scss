@@ -25,35 +25,35 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---nebula-orchid-quartet-nebula-black: #080012ff;
---nebula-orchid-quartet-orbit-plum: #18002fff;
---nebula-orchid-quartet-deep-orchid: #2f075eff;
---nebula-orchid-quartet-stellar-violet: #5a189aff;
+--nebula-black: #080012ff;
+--orbit-plum: #18002fff;
+--deep-orchid: #2f075eff;
+--stellar-violet: #5a189aff;
 
 /* CSS HSL */
---nebula-orchid-quartet-nebula-black: hsla(267, 100%, 4%, 1);
---nebula-orchid-quartet-orbit-plum: hsla(271, 100%, 9%, 1);
---nebula-orchid-quartet-deep-orchid: hsla(268, 86%, 20%, 1);
---nebula-orchid-quartet-stellar-violet: hsla(270, 73%, 35%, 1);
+--nebula-black: hsla(267, 100%, 4%, 1);
+--orbit-plum: hsla(271, 100%, 9%, 1);
+--deep-orchid: hsla(268, 86%, 20%, 1);
+--stellar-violet: hsla(270, 73%, 35%, 1);
 }
 
 /* SCSS HEX */
-$nebula-orchid-quartet-nebula-black: #080012ff;
-$nebula-orchid-quartet-orbit-plum: #18002fff;
-$nebula-orchid-quartet-deep-orchid: #2f075eff;
-$nebula-orchid-quartet-stellar-violet: #5a189aff;
+$nebula-black: #080012ff;
+$orbit-plum: #18002fff;
+$deep-orchid: #2f075eff;
+$stellar-violet: #5a189aff;
 
 /* SCSS HSL */
-$nebula-orchid-quartet-nebula-black: hsla(267, 100%, 4%, 1);
-$nebula-orchid-quartet-orbit-plum: hsla(271, 100%, 9%, 1);
-$nebula-orchid-quartet-deep-orchid: hsla(268, 86%, 20%, 1);
-$nebula-orchid-quartet-stellar-violet: hsla(270, 73%, 35%, 1);
+$nebula-black: hsla(267, 100%, 4%, 1);
+$orbit-plum: hsla(271, 100%, 9%, 1);
+$deep-orchid: hsla(268, 86%, 20%, 1);
+$stellar-violet: hsla(270, 73%, 35%, 1);
 
 /* SCSS RGB */
-$nebula-orchid-quartet-nebula-black: rgba(8, 0, 18, 1);
-$nebula-orchid-quartet-orbit-plum: rgba(24, 0, 47, 1);
-$nebula-orchid-quartet-deep-orchid: rgba(47, 7, 94, 1);
-$nebula-orchid-quartet-stellar-violet: rgba(90, 24, 154, 1);
+$nebula-black: rgba(8, 0, 18, 1);
+$orbit-plum: rgba(24, 0, 47, 1);
+$deep-orchid: rgba(47, 7, 94, 1);
+$stellar-violet: rgba(90, 24, 154, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #080012ff, #18002fff, #2f075eff, #5a189aff);
@@ -68,8 +68,8 @@ $gradient-radial: radial-gradient(#080012ff, #18002fff, #2f075eff, #5a189aff);
 
 /* SCSS Map */
 $nebula-orchid-quartet-map: (
-    "nebula-orchid-quartet-nebula-black": #080012ff,
-    "nebula-orchid-quartet-orbit-plum": #18002fff,
-    "nebula-orchid-quartet-deep-orchid": #2f075eff,
-    "nebula-orchid-quartet-stellar-violet": #5a189aff
+    "nebula-black": #080012ff,
+    "orbit-plum": #18002fff,
+    "deep-orchid": #2f075eff,
+    "stellar-violet": #5a189aff
 );

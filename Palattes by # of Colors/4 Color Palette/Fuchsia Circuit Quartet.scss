@@ -25,35 +25,35 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---fuchsia-circuit-quartet-console-plum: #1a0712ff;
---fuchsia-circuit-quartet-trace-wine: #500724ff;
---fuchsia-circuit-quartet-circuit-fuchsia: #be185dff;
---fuchsia-circuit-quartet-signal-pink: #ec4899ff;
+--console-plum: #1a0712ff;
+--trace-wine: #500724ff;
+--circuit-fuchsia: #be185dff;
+--signal-pink: #ec4899ff;
 
 /* CSS HSL */
---fuchsia-circuit-quartet-console-plum: hsla(325, 58%, 6%, 1);
---fuchsia-circuit-quartet-trace-wine: hsla(336, 84%, 17%, 1);
---fuchsia-circuit-quartet-circuit-fuchsia: hsla(335, 78%, 42%, 1);
---fuchsia-circuit-quartet-signal-pink: hsla(330, 81%, 60%, 1);
+--console-plum: hsla(325, 58%, 6%, 1);
+--trace-wine: hsla(336, 84%, 17%, 1);
+--circuit-fuchsia: hsla(335, 78%, 42%, 1);
+--signal-pink: hsla(330, 81%, 60%, 1);
 }
 
 /* SCSS HEX */
-$fuchsia-circuit-quartet-console-plum: #1a0712ff;
-$fuchsia-circuit-quartet-trace-wine: #500724ff;
-$fuchsia-circuit-quartet-circuit-fuchsia: #be185dff;
-$fuchsia-circuit-quartet-signal-pink: #ec4899ff;
+$console-plum: #1a0712ff;
+$trace-wine: #500724ff;
+$circuit-fuchsia: #be185dff;
+$signal-pink: #ec4899ff;
 
 /* SCSS HSL */
-$fuchsia-circuit-quartet-console-plum: hsla(325, 58%, 6%, 1);
-$fuchsia-circuit-quartet-trace-wine: hsla(336, 84%, 17%, 1);
-$fuchsia-circuit-quartet-circuit-fuchsia: hsla(335, 78%, 42%, 1);
-$fuchsia-circuit-quartet-signal-pink: hsla(330, 81%, 60%, 1);
+$console-plum: hsla(325, 58%, 6%, 1);
+$trace-wine: hsla(336, 84%, 17%, 1);
+$circuit-fuchsia: hsla(335, 78%, 42%, 1);
+$signal-pink: hsla(330, 81%, 60%, 1);
 
 /* SCSS RGB */
-$fuchsia-circuit-quartet-console-plum: rgba(26, 7, 18, 1);
-$fuchsia-circuit-quartet-trace-wine: rgba(80, 7, 36, 1);
-$fuchsia-circuit-quartet-circuit-fuchsia: rgba(190, 24, 93, 1);
-$fuchsia-circuit-quartet-signal-pink: rgba(236, 72, 153, 1);
+$console-plum: rgba(26, 7, 18, 1);
+$trace-wine: rgba(80, 7, 36, 1);
+$circuit-fuchsia: rgba(190, 24, 93, 1);
+$signal-pink: rgba(236, 72, 153, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1a0712ff, #500724ff, #be185dff, #ec4899ff);
@@ -68,8 +68,8 @@ $gradient-radial: radial-gradient(#1a0712ff, #500724ff, #be185dff, #ec4899ff);
 
 /* SCSS Map */
 $fuchsia-circuit-quartet-map: (
-    "fuchsia-circuit-quartet-console-plum": #1a0712ff,
-    "fuchsia-circuit-quartet-trace-wine": #500724ff,
-    "fuchsia-circuit-quartet-circuit-fuchsia": #be185dff,
-    "fuchsia-circuit-quartet-signal-pink": #ec4899ff
+    "console-plum": #1a0712ff,
+    "trace-wine": #500724ff,
+    "circuit-fuchsia": #be185dff,
+    "signal-pink": #ec4899ff
 );

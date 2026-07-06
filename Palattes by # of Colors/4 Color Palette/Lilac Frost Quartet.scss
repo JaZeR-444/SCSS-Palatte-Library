@@ -25,35 +25,35 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---lilac-frost-quartet-frost-indigo: #1e1b4bff;
---lilac-frost-quartet-lilac-depth: #312e81ff;
---lilac-frost-quartet-clear-violet: #4f46e5ff;
---lilac-frost-quartet-fresh-purple: #7c3aedff;
+--frost-indigo: #1e1b4bff;
+--lilac-depth: #312e81ff;
+--clear-violet: #4f46e5ff;
+--fresh-purple: #7c3aedff;
 
 /* CSS HSL */
---lilac-frost-quartet-frost-indigo: hsla(244, 47%, 20%, 1);
---lilac-frost-quartet-lilac-depth: hsla(242, 47%, 34%, 1);
---lilac-frost-quartet-clear-violet: hsla(243, 75%, 59%, 1);
---lilac-frost-quartet-fresh-purple: hsla(262, 83%, 58%, 1);
+--frost-indigo: hsla(244, 47%, 20%, 1);
+--lilac-depth: hsla(242, 47%, 34%, 1);
+--clear-violet: hsla(243, 75%, 59%, 1);
+--fresh-purple: hsla(262, 83%, 58%, 1);
 }
 
 /* SCSS HEX */
-$lilac-frost-quartet-frost-indigo: #1e1b4bff;
-$lilac-frost-quartet-lilac-depth: #312e81ff;
-$lilac-frost-quartet-clear-violet: #4f46e5ff;
-$lilac-frost-quartet-fresh-purple: #7c3aedff;
+$frost-indigo: #1e1b4bff;
+$lilac-depth: #312e81ff;
+$clear-violet: #4f46e5ff;
+$fresh-purple: #7c3aedff;
 
 /* SCSS HSL */
-$lilac-frost-quartet-frost-indigo: hsla(244, 47%, 20%, 1);
-$lilac-frost-quartet-lilac-depth: hsla(242, 47%, 34%, 1);
-$lilac-frost-quartet-clear-violet: hsla(243, 75%, 59%, 1);
-$lilac-frost-quartet-fresh-purple: hsla(262, 83%, 58%, 1);
+$frost-indigo: hsla(244, 47%, 20%, 1);
+$lilac-depth: hsla(242, 47%, 34%, 1);
+$clear-violet: hsla(243, 75%, 59%, 1);
+$fresh-purple: hsla(262, 83%, 58%, 1);
 
 /* SCSS RGB */
-$lilac-frost-quartet-frost-indigo: rgba(30, 27, 75, 1);
-$lilac-frost-quartet-lilac-depth: rgba(49, 46, 129, 1);
-$lilac-frost-quartet-clear-violet: rgba(79, 70, 229, 1);
-$lilac-frost-quartet-fresh-purple: rgba(124, 58, 237, 1);
+$frost-indigo: rgba(30, 27, 75, 1);
+$lilac-depth: rgba(49, 46, 129, 1);
+$clear-violet: rgba(79, 70, 229, 1);
+$fresh-purple: rgba(124, 58, 237, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff);
@@ -68,8 +68,8 @@ $gradient-radial: radial-gradient(#1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff);
 
 /* SCSS Map */
 $lilac-frost-quartet-map: (
-    "lilac-frost-quartet-frost-indigo": #1e1b4bff,
-    "lilac-frost-quartet-lilac-depth": #312e81ff,
-    "lilac-frost-quartet-clear-violet": #4f46e5ff,
-    "lilac-frost-quartet-fresh-purple": #7c3aedff
+    "frost-indigo": #1e1b4bff,
+    "lilac-depth": #312e81ff,
+    "clear-violet": #4f46e5ff,
+    "fresh-purple": #7c3aedff
 );

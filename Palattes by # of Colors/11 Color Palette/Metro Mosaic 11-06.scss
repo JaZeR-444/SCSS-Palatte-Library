@@ -1,6 +1,6 @@
 /*---
 id: metro-mosaic-11-06
-name: Metro Mosaic 11-06
+name: Metro Mosaic Micro
 author: JaZeR-444
 version: 1.0.0
 category: Multi Color Composition
@@ -20,70 +20,70 @@ updated: '2026-07-04'
 
 :root {
 /* CSS HEX */
---tone-01: #49184eff;
---tone-02: #6c1a4fff;
---tone-03: #8c1926ff;
---tone-04: #b06115ff;
---tone-05: #d7d20eff;
---tone-06: #87c341ff;
---tone-07: #4fd45eff;
---tone-08: #60e3afff;
---tone-09: #74d3efff;
---tone-10: #8ba9f8ff;
---tone-11: #c7b9e9ff;
+--eggplant-purple: #49184eff;
+--plum: #6c1a4fff;
+--wine-red: #8c1926ff;
+--raw-umber: #b06115ff;
+--mustard-yellow: #d7d20eff;
+--leaf: #87c341ff;
+--lightish-green: #4fd45eff;
+--aqua-marine: #60e3afff;
+--neon-blue: #74d3efff;
+--carolina-blue: #8ba9f8ff;
+--light-periwinkle: #c7b9e9ff;
 
 /* CSS HSL */
---tone-01: hsla(295, 52%, 20%, 1);
---tone-02: hsla(321, 61%, 26%, 1);
---tone-03: hsla(353, 70%, 32%, 1);
---tone-04: hsla(29, 79%, 39%, 1);
---tone-05: hsla(59, 88%, 45%, 1);
---tone-06: hsla(88, 52%, 51%, 1);
---tone-07: hsla(127, 61%, 57%, 1);
---tone-08: hsla(156, 70%, 63%, 1);
---tone-09: hsla(194, 79%, 70%, 1);
---tone-10: hsla(223, 88%, 76%, 1);
---tone-11: hsla(258, 52%, 82%, 1);
+--eggplant-purple: hsla(295, 52%, 20%, 1);
+--plum: hsla(321, 61%, 26%, 1);
+--wine-red: hsla(353, 70%, 32%, 1);
+--raw-umber: hsla(29, 79%, 39%, 1);
+--mustard-yellow: hsla(59, 88%, 45%, 1);
+--leaf: hsla(88, 52%, 51%, 1);
+--lightish-green: hsla(127, 61%, 57%, 1);
+--aqua-marine: hsla(156, 70%, 63%, 1);
+--neon-blue: hsla(194, 79%, 70%, 1);
+--carolina-blue: hsla(223, 88%, 76%, 1);
+--light-periwinkle: hsla(258, 52%, 82%, 1);
 }
 
 /* SCSS HEX */
-$tone-01: #49184eff;
-$tone-02: #6c1a4fff;
-$tone-03: #8c1926ff;
-$tone-04: #b06115ff;
-$tone-05: #d7d20eff;
-$tone-06: #87c341ff;
-$tone-07: #4fd45eff;
-$tone-08: #60e3afff;
-$tone-09: #74d3efff;
-$tone-10: #8ba9f8ff;
-$tone-11: #c7b9e9ff;
+$eggplant-purple: #49184eff;
+$plum: #6c1a4fff;
+$wine-red: #8c1926ff;
+$raw-umber: #b06115ff;
+$mustard-yellow: #d7d20eff;
+$leaf: #87c341ff;
+$lightish-green: #4fd45eff;
+$aqua-marine: #60e3afff;
+$neon-blue: #74d3efff;
+$carolina-blue: #8ba9f8ff;
+$light-periwinkle: #c7b9e9ff;
 
 /* SCSS HSL */
-$tone-01: hsla(295, 52%, 20%, 1);
-$tone-02: hsla(321, 61%, 26%, 1);
-$tone-03: hsla(353, 70%, 32%, 1);
-$tone-04: hsla(29, 79%, 39%, 1);
-$tone-05: hsla(59, 88%, 45%, 1);
-$tone-06: hsla(88, 52%, 51%, 1);
-$tone-07: hsla(127, 61%, 57%, 1);
-$tone-08: hsla(156, 70%, 63%, 1);
-$tone-09: hsla(194, 79%, 70%, 1);
-$tone-10: hsla(223, 88%, 76%, 1);
-$tone-11: hsla(258, 52%, 82%, 1);
+$eggplant-purple: hsla(295, 52%, 20%, 1);
+$plum: hsla(321, 61%, 26%, 1);
+$wine-red: hsla(353, 70%, 32%, 1);
+$raw-umber: hsla(29, 79%, 39%, 1);
+$mustard-yellow: hsla(59, 88%, 45%, 1);
+$leaf: hsla(88, 52%, 51%, 1);
+$lightish-green: hsla(127, 61%, 57%, 1);
+$aqua-marine: hsla(156, 70%, 63%, 1);
+$neon-blue: hsla(194, 79%, 70%, 1);
+$carolina-blue: hsla(223, 88%, 76%, 1);
+$light-periwinkle: hsla(258, 52%, 82%, 1);
 
 /* SCSS RGB */
-$tone-01: rgba(73, 24, 78, 1);
-$tone-02: rgba(108, 26, 79, 1);
-$tone-03: rgba(140, 25, 38, 1);
-$tone-04: rgba(176, 97, 21, 1);
-$tone-05: rgba(215, 210, 14, 1);
-$tone-06: rgba(135, 195, 65, 1);
-$tone-07: rgba(79, 212, 94, 1);
-$tone-08: rgba(96, 227, 175, 1);
-$tone-09: rgba(116, 211, 239, 1);
-$tone-10: rgba(139, 169, 248, 1);
-$tone-11: rgba(199, 185, 233, 1);
+$eggplant-purple: rgba(73, 24, 78, 1);
+$plum: rgba(108, 26, 79, 1);
+$wine-red: rgba(140, 25, 38, 1);
+$raw-umber: rgba(176, 97, 21, 1);
+$mustard-yellow: rgba(215, 210, 14, 1);
+$leaf: rgba(135, 195, 65, 1);
+$lightish-green: rgba(79, 212, 94, 1);
+$aqua-marine: rgba(96, 227, 175, 1);
+$neon-blue: rgba(116, 211, 239, 1);
+$carolina-blue: rgba(139, 169, 248, 1);
+$light-periwinkle: rgba(199, 185, 233, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #49184eff, #6c1a4fff, #8c1926ff, #b06115ff, #d7d20eff, #87c341ff, #4fd45eff, #60e3afff, #74d3efff, #8ba9f8ff, #c7b9e9ff);
@@ -98,15 +98,15 @@ $gradient-radial: radial-gradient(#49184eff, #6c1a4fff, #8c1926ff, #b06115ff, #d
 
 /* SCSS Map */
 $metro-mosaic-11-06-map: (
-    "tone-01": #49184eff,
-    "tone-02": #6c1a4fff,
-    "tone-03": #8c1926ff,
-    "tone-04": #b06115ff,
-    "tone-05": #d7d20eff,
-    "tone-06": #87c341ff,
-    "tone-07": #4fd45eff,
-    "tone-08": #60e3afff,
-    "tone-09": #74d3efff,
-    "tone-10": #8ba9f8ff,
-    "tone-11": #c7b9e9ff
+    "eggplant-purple": #49184eff,
+    "plum": #6c1a4fff,
+    "wine-red": #8c1926ff,
+    "raw-umber": #b06115ff,
+    "mustard-yellow": #d7d20eff,
+    "leaf": #87c341ff,
+    "lightish-green": #4fd45eff,
+    "aqua-marine": #60e3afff,
+    "neon-blue": #74d3efff,
+    "carolina-blue": #8ba9f8ff,
+    "light-periwinkle": #c7b9e9ff
 );

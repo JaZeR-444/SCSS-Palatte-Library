@@ -1,6 +1,6 @@
 /*---
 id: canyon-mosaic-34-01
-name: Canyon Mosaic 34-01
+name: Canyon Mosaic Full
 author: JaZeR-444
 version: 1.0.0
 category: Multi Color Composition
@@ -20,185 +20,185 @@ updated: '2026-07-04'
 
 :root {
 /* CSS HEX */
---tone-01: #184e2fff;
---tone-02: #16525aff;
---tone-03: #121f67ff;
---tone-04: #4d0e75ff;
---tone-05: #840865ff;
---tone-06: #722824ff;
---tone-07: #805e1fff;
---tone-08: #6a9019ff;
---tone-09: #13a026ff;
---tone-10: #0bb19cff;
---tone-11: #2f6996ff;
---tone-12: #4c28a7ff;
---tone-13: #9a21b8ff;
---tone-14: #cb1869ff;
---tone-15: #de4a0eff;
---tone-16: #bbb93bff;
---tone-17: #6acd32ff;
---tone-18: #2fda6cff;
---tone-19: #2cdfe6ff;
---tone-20: #2b4ff1ff;
---tone-21: #935bcbff;
---tone-22: #d759c1ff;
---tone-23: #e15768ff;
---tone-24: #ebac57ff;
---tone-25: #c6f458ff;
---tone-26: #88d77fff;
---tone-27: #7fe0bbff;
---tone-28: #80c9e9ff;
---tone-29: #8b82f0ff;
---tone-30: #e385f7ff;
---tone-31: #e2a3c8ff;
---tone-32: #e9b8a6ff;
---tone-33: #f0eba9ff;
---tone-34: #ccf5adff;
+--evergreen: #184e2fff;
+--deep-teal: #16525aff;
+--dark-indigo: #121f67ff;
+--royal-purple: #4d0e75ff;
+--rich-purple: #840865ff;
+--claret: #722824ff;
+--mud: #805e1fff;
+--sap-green: #6a9019ff;
+--kelly-green: #13a026ff;
+--tealish: #0bb19cff;
+--muted-blue: #2f6996ff;
+--blue-with-a-hint-of-purple: #4c28a7ff;
+--barney: #9a21b8ff;
+--deep-pink: #cb1869ff;
+--deep-orange: #de4a0eff;
+--pea-soup-green: #bbb93bff;
+--apple: #6acd32ff;
+--tealish-green: #2fda6cff;
+--aqua-blue: #2cdfe6ff;
+--blue: #2b4ff1ff;
+--amethyst: #935bcbff;
+--pinky-purple: #d759c1ff;
+--pastel-red: #e15768ff;
+--apricot: #ebac57ff;
+--pear: #c6f458ff;
+--soft-green: #88d77fff;
+--light-teal: #7fe0bbff;
+--light-blue: #80c9e9ff;
+--lavender-blue: #8b82f0ff;
+--light-purple: #e385f7ff;
+--powder-pink: #e2a3c8ff;
+--pinkish-tan: #e9b8a6ff;
+--light-tan: #f0eba9ff;
+--very-pale-green: #ccf5adff;
 
 /* CSS HSL */
---tone-01: hsla(146, 52%, 20%, 1);
---tone-02: hsla(187, 61%, 22%, 1);
---tone-03: hsla(231, 70%, 24%, 1);
---tone-04: hsla(277, 79%, 26%, 1);
---tone-05: hsla(315, 88%, 28%, 1);
---tone-06: hsla(3, 52%, 29%, 1);
---tone-07: hsla(39, 61%, 31%, 1);
---tone-08: hsla(79, 70%, 33%, 1);
---tone-09: hsla(128, 79%, 35%, 1);
---tone-10: hsla(172, 88%, 37%, 1);
---tone-11: hsla(206, 52%, 39%, 1);
---tone-12: hsla(257, 61%, 41%, 1);
---tone-13: hsla(288, 70%, 43%, 1);
---tone-14: hsla(333, 79%, 44%, 1);
---tone-15: hsla(17, 88%, 46%, 1);
---tone-16: hsla(59, 52%, 48%, 1);
---tone-17: hsla(98, 61%, 50%, 1);
---tone-18: hsla(142, 70%, 52%, 1);
---tone-19: hsla(182, 79%, 54%, 1);
---tone-20: hsla(229, 88%, 56%, 1);
---tone-21: hsla(270, 52%, 58%, 1);
---tone-22: hsla(311, 61%, 59%, 1);
---tone-23: hsla(353, 70%, 61%, 1);
---tone-24: hsla(34, 79%, 63%, 1);
---tone-25: hsla(78, 88%, 65%, 1);
---tone-26: hsla(114, 52%, 67%, 1);
---tone-27: hsla(157, 61%, 69%, 1);
---tone-28: hsla(198, 70%, 71%, 1);
---tone-29: hsla(245, 79%, 73%, 1);
---tone-30: hsla(289, 88%, 74%, 1);
---tone-31: hsla(325, 52%, 76%, 1);
---tone-32: hsla(16, 61%, 78%, 1);
---tone-33: hsla(56, 70%, 80%, 1);
---tone-34: hsla(94, 79%, 82%, 1);
+--evergreen: hsla(146, 52%, 20%, 1);
+--deep-teal: hsla(187, 61%, 22%, 1);
+--dark-indigo: hsla(231, 70%, 24%, 1);
+--royal-purple: hsla(277, 79%, 26%, 1);
+--rich-purple: hsla(315, 88%, 28%, 1);
+--claret: hsla(3, 52%, 29%, 1);
+--mud: hsla(39, 61%, 31%, 1);
+--sap-green: hsla(79, 70%, 33%, 1);
+--kelly-green: hsla(128, 79%, 35%, 1);
+--tealish: hsla(172, 88%, 37%, 1);
+--muted-blue: hsla(206, 52%, 39%, 1);
+--blue-with-a-hint-of-purple: hsla(257, 61%, 41%, 1);
+--barney: hsla(288, 70%, 43%, 1);
+--deep-pink: hsla(333, 79%, 44%, 1);
+--deep-orange: hsla(17, 88%, 46%, 1);
+--pea-soup-green: hsla(59, 52%, 48%, 1);
+--apple: hsla(98, 61%, 50%, 1);
+--tealish-green: hsla(142, 70%, 52%, 1);
+--aqua-blue: hsla(182, 79%, 54%, 1);
+--blue: hsla(229, 88%, 56%, 1);
+--amethyst: hsla(270, 52%, 58%, 1);
+--pinky-purple: hsla(311, 61%, 59%, 1);
+--pastel-red: hsla(353, 70%, 61%, 1);
+--apricot: hsla(34, 79%, 63%, 1);
+--pear: hsla(78, 88%, 65%, 1);
+--soft-green: hsla(114, 52%, 67%, 1);
+--light-teal: hsla(157, 61%, 69%, 1);
+--light-blue: hsla(198, 70%, 71%, 1);
+--lavender-blue: hsla(245, 79%, 73%, 1);
+--light-purple: hsla(289, 88%, 74%, 1);
+--powder-pink: hsla(325, 52%, 76%, 1);
+--pinkish-tan: hsla(16, 61%, 78%, 1);
+--light-tan: hsla(56, 70%, 80%, 1);
+--very-pale-green: hsla(94, 79%, 82%, 1);
 }
 
 /* SCSS HEX */
-$tone-01: #184e2fff;
-$tone-02: #16525aff;
-$tone-03: #121f67ff;
-$tone-04: #4d0e75ff;
-$tone-05: #840865ff;
-$tone-06: #722824ff;
-$tone-07: #805e1fff;
-$tone-08: #6a9019ff;
-$tone-09: #13a026ff;
-$tone-10: #0bb19cff;
-$tone-11: #2f6996ff;
-$tone-12: #4c28a7ff;
-$tone-13: #9a21b8ff;
-$tone-14: #cb1869ff;
-$tone-15: #de4a0eff;
-$tone-16: #bbb93bff;
-$tone-17: #6acd32ff;
-$tone-18: #2fda6cff;
-$tone-19: #2cdfe6ff;
-$tone-20: #2b4ff1ff;
-$tone-21: #935bcbff;
-$tone-22: #d759c1ff;
-$tone-23: #e15768ff;
-$tone-24: #ebac57ff;
-$tone-25: #c6f458ff;
-$tone-26: #88d77fff;
-$tone-27: #7fe0bbff;
-$tone-28: #80c9e9ff;
-$tone-29: #8b82f0ff;
-$tone-30: #e385f7ff;
-$tone-31: #e2a3c8ff;
-$tone-32: #e9b8a6ff;
-$tone-33: #f0eba9ff;
-$tone-34: #ccf5adff;
+$evergreen: #184e2fff;
+$deep-teal: #16525aff;
+$dark-indigo: #121f67ff;
+$royal-purple: #4d0e75ff;
+$rich-purple: #840865ff;
+$claret: #722824ff;
+$mud: #805e1fff;
+$sap-green: #6a9019ff;
+$kelly-green: #13a026ff;
+$tealish: #0bb19cff;
+$muted-blue: #2f6996ff;
+$blue-with-a-hint-of-purple: #4c28a7ff;
+$barney: #9a21b8ff;
+$deep-pink: #cb1869ff;
+$deep-orange: #de4a0eff;
+$pea-soup-green: #bbb93bff;
+$apple: #6acd32ff;
+$tealish-green: #2fda6cff;
+$aqua-blue: #2cdfe6ff;
+$blue: #2b4ff1ff;
+$amethyst: #935bcbff;
+$pinky-purple: #d759c1ff;
+$pastel-red: #e15768ff;
+$apricot: #ebac57ff;
+$pear: #c6f458ff;
+$soft-green: #88d77fff;
+$light-teal: #7fe0bbff;
+$light-blue: #80c9e9ff;
+$lavender-blue: #8b82f0ff;
+$light-purple: #e385f7ff;
+$powder-pink: #e2a3c8ff;
+$pinkish-tan: #e9b8a6ff;
+$light-tan: #f0eba9ff;
+$very-pale-green: #ccf5adff;
 
 /* SCSS HSL */
-$tone-01: hsla(146, 52%, 20%, 1);
-$tone-02: hsla(187, 61%, 22%, 1);
-$tone-03: hsla(231, 70%, 24%, 1);
-$tone-04: hsla(277, 79%, 26%, 1);
-$tone-05: hsla(315, 88%, 28%, 1);
-$tone-06: hsla(3, 52%, 29%, 1);
-$tone-07: hsla(39, 61%, 31%, 1);
-$tone-08: hsla(79, 70%, 33%, 1);
-$tone-09: hsla(128, 79%, 35%, 1);
-$tone-10: hsla(172, 88%, 37%, 1);
-$tone-11: hsla(206, 52%, 39%, 1);
-$tone-12: hsla(257, 61%, 41%, 1);
-$tone-13: hsla(288, 70%, 43%, 1);
-$tone-14: hsla(333, 79%, 44%, 1);
-$tone-15: hsla(17, 88%, 46%, 1);
-$tone-16: hsla(59, 52%, 48%, 1);
-$tone-17: hsla(98, 61%, 50%, 1);
-$tone-18: hsla(142, 70%, 52%, 1);
-$tone-19: hsla(182, 79%, 54%, 1);
-$tone-20: hsla(229, 88%, 56%, 1);
-$tone-21: hsla(270, 52%, 58%, 1);
-$tone-22: hsla(311, 61%, 59%, 1);
-$tone-23: hsla(353, 70%, 61%, 1);
-$tone-24: hsla(34, 79%, 63%, 1);
-$tone-25: hsla(78, 88%, 65%, 1);
-$tone-26: hsla(114, 52%, 67%, 1);
-$tone-27: hsla(157, 61%, 69%, 1);
-$tone-28: hsla(198, 70%, 71%, 1);
-$tone-29: hsla(245, 79%, 73%, 1);
-$tone-30: hsla(289, 88%, 74%, 1);
-$tone-31: hsla(325, 52%, 76%, 1);
-$tone-32: hsla(16, 61%, 78%, 1);
-$tone-33: hsla(56, 70%, 80%, 1);
-$tone-34: hsla(94, 79%, 82%, 1);
+$evergreen: hsla(146, 52%, 20%, 1);
+$deep-teal: hsla(187, 61%, 22%, 1);
+$dark-indigo: hsla(231, 70%, 24%, 1);
+$royal-purple: hsla(277, 79%, 26%, 1);
+$rich-purple: hsla(315, 88%, 28%, 1);
+$claret: hsla(3, 52%, 29%, 1);
+$mud: hsla(39, 61%, 31%, 1);
+$sap-green: hsla(79, 70%, 33%, 1);
+$kelly-green: hsla(128, 79%, 35%, 1);
+$tealish: hsla(172, 88%, 37%, 1);
+$muted-blue: hsla(206, 52%, 39%, 1);
+$blue-with-a-hint-of-purple: hsla(257, 61%, 41%, 1);
+$barney: hsla(288, 70%, 43%, 1);
+$deep-pink: hsla(333, 79%, 44%, 1);
+$deep-orange: hsla(17, 88%, 46%, 1);
+$pea-soup-green: hsla(59, 52%, 48%, 1);
+$apple: hsla(98, 61%, 50%, 1);
+$tealish-green: hsla(142, 70%, 52%, 1);
+$aqua-blue: hsla(182, 79%, 54%, 1);
+$blue: hsla(229, 88%, 56%, 1);
+$amethyst: hsla(270, 52%, 58%, 1);
+$pinky-purple: hsla(311, 61%, 59%, 1);
+$pastel-red: hsla(353, 70%, 61%, 1);
+$apricot: hsla(34, 79%, 63%, 1);
+$pear: hsla(78, 88%, 65%, 1);
+$soft-green: hsla(114, 52%, 67%, 1);
+$light-teal: hsla(157, 61%, 69%, 1);
+$light-blue: hsla(198, 70%, 71%, 1);
+$lavender-blue: hsla(245, 79%, 73%, 1);
+$light-purple: hsla(289, 88%, 74%, 1);
+$powder-pink: hsla(325, 52%, 76%, 1);
+$pinkish-tan: hsla(16, 61%, 78%, 1);
+$light-tan: hsla(56, 70%, 80%, 1);
+$very-pale-green: hsla(94, 79%, 82%, 1);
 
 /* SCSS RGB */
-$tone-01: rgba(24, 78, 47, 1);
-$tone-02: rgba(22, 82, 90, 1);
-$tone-03: rgba(18, 31, 103, 1);
-$tone-04: rgba(77, 14, 117, 1);
-$tone-05: rgba(132, 8, 101, 1);
-$tone-06: rgba(114, 40, 36, 1);
-$tone-07: rgba(128, 94, 31, 1);
-$tone-08: rgba(106, 144, 25, 1);
-$tone-09: rgba(19, 160, 38, 1);
-$tone-10: rgba(11, 177, 156, 1);
-$tone-11: rgba(47, 105, 150, 1);
-$tone-12: rgba(76, 40, 167, 1);
-$tone-13: rgba(154, 33, 184, 1);
-$tone-14: rgba(203, 24, 105, 1);
-$tone-15: rgba(222, 74, 14, 1);
-$tone-16: rgba(187, 185, 59, 1);
-$tone-17: rgba(106, 205, 50, 1);
-$tone-18: rgba(47, 218, 108, 1);
-$tone-19: rgba(44, 223, 230, 1);
-$tone-20: rgba(43, 79, 241, 1);
-$tone-21: rgba(147, 91, 203, 1);
-$tone-22: rgba(215, 89, 193, 1);
-$tone-23: rgba(225, 87, 104, 1);
-$tone-24: rgba(235, 172, 87, 1);
-$tone-25: rgba(198, 244, 88, 1);
-$tone-26: rgba(136, 215, 127, 1);
-$tone-27: rgba(127, 224, 187, 1);
-$tone-28: rgba(128, 201, 233, 1);
-$tone-29: rgba(139, 130, 240, 1);
-$tone-30: rgba(227, 133, 247, 1);
-$tone-31: rgba(226, 163, 200, 1);
-$tone-32: rgba(233, 184, 166, 1);
-$tone-33: rgba(240, 235, 169, 1);
-$tone-34: rgba(204, 245, 173, 1);
+$evergreen: rgba(24, 78, 47, 1);
+$deep-teal: rgba(22, 82, 90, 1);
+$dark-indigo: rgba(18, 31, 103, 1);
+$royal-purple: rgba(77, 14, 117, 1);
+$rich-purple: rgba(132, 8, 101, 1);
+$claret: rgba(114, 40, 36, 1);
+$mud: rgba(128, 94, 31, 1);
+$sap-green: rgba(106, 144, 25, 1);
+$kelly-green: rgba(19, 160, 38, 1);
+$tealish: rgba(11, 177, 156, 1);
+$muted-blue: rgba(47, 105, 150, 1);
+$blue-with-a-hint-of-purple: rgba(76, 40, 167, 1);
+$barney: rgba(154, 33, 184, 1);
+$deep-pink: rgba(203, 24, 105, 1);
+$deep-orange: rgba(222, 74, 14, 1);
+$pea-soup-green: rgba(187, 185, 59, 1);
+$apple: rgba(106, 205, 50, 1);
+$tealish-green: rgba(47, 218, 108, 1);
+$aqua-blue: rgba(44, 223, 230, 1);
+$blue: rgba(43, 79, 241, 1);
+$amethyst: rgba(147, 91, 203, 1);
+$pinky-purple: rgba(215, 89, 193, 1);
+$pastel-red: rgba(225, 87, 104, 1);
+$apricot: rgba(235, 172, 87, 1);
+$pear: rgba(198, 244, 88, 1);
+$soft-green: rgba(136, 215, 127, 1);
+$light-teal: rgba(127, 224, 187, 1);
+$light-blue: rgba(128, 201, 233, 1);
+$lavender-blue: rgba(139, 130, 240, 1);
+$light-purple: rgba(227, 133, 247, 1);
+$powder-pink: rgba(226, 163, 200, 1);
+$pinkish-tan: rgba(233, 184, 166, 1);
+$light-tan: rgba(240, 235, 169, 1);
+$very-pale-green: rgba(204, 245, 173, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #184e2fff, #16525aff, #121f67ff, #4d0e75ff, #840865ff, #722824ff, #805e1fff, #6a9019ff, #13a026ff, #0bb19cff, #2f6996ff, #4c28a7ff, #9a21b8ff, #cb1869ff, #de4a0eff, #bbb93bff, #6acd32ff, #2fda6cff, #2cdfe6ff, #2b4ff1ff, #935bcbff, #d759c1ff, #e15768ff, #ebac57ff, #c6f458ff, #88d77fff, #7fe0bbff, #80c9e9ff, #8b82f0ff, #e385f7ff, #e2a3c8ff, #e9b8a6ff, #f0eba9ff, #ccf5adff);
@@ -213,38 +213,38 @@ $gradient-radial: radial-gradient(#184e2fff, #16525aff, #121f67ff, #4d0e75ff, #8
 
 /* SCSS Map */
 $canyon-mosaic-34-01-map: (
-    "tone-01": #184e2fff,
-    "tone-02": #16525aff,
-    "tone-03": #121f67ff,
-    "tone-04": #4d0e75ff,
-    "tone-05": #840865ff,
-    "tone-06": #722824ff,
-    "tone-07": #805e1fff,
-    "tone-08": #6a9019ff,
-    "tone-09": #13a026ff,
-    "tone-10": #0bb19cff,
-    "tone-11": #2f6996ff,
-    "tone-12": #4c28a7ff,
-    "tone-13": #9a21b8ff,
-    "tone-14": #cb1869ff,
-    "tone-15": #de4a0eff,
-    "tone-16": #bbb93bff,
-    "tone-17": #6acd32ff,
-    "tone-18": #2fda6cff,
-    "tone-19": #2cdfe6ff,
-    "tone-20": #2b4ff1ff,
-    "tone-21": #935bcbff,
-    "tone-22": #d759c1ff,
-    "tone-23": #e15768ff,
-    "tone-24": #ebac57ff,
-    "tone-25": #c6f458ff,
-    "tone-26": #88d77fff,
-    "tone-27": #7fe0bbff,
-    "tone-28": #80c9e9ff,
-    "tone-29": #8b82f0ff,
-    "tone-30": #e385f7ff,
-    "tone-31": #e2a3c8ff,
-    "tone-32": #e9b8a6ff,
-    "tone-33": #f0eba9ff,
-    "tone-34": #ccf5adff
+    "evergreen": #184e2fff,
+    "deep-teal": #16525aff,
+    "dark-indigo": #121f67ff,
+    "royal-purple": #4d0e75ff,
+    "rich-purple": #840865ff,
+    "claret": #722824ff,
+    "mud": #805e1fff,
+    "sap-green": #6a9019ff,
+    "kelly-green": #13a026ff,
+    "tealish": #0bb19cff,
+    "muted-blue": #2f6996ff,
+    "blue-with-a-hint-of-purple": #4c28a7ff,
+    "barney": #9a21b8ff,
+    "deep-pink": #cb1869ff,
+    "deep-orange": #de4a0eff,
+    "pea-soup-green": #bbb93bff,
+    "apple": #6acd32ff,
+    "tealish-green": #2fda6cff,
+    "aqua-blue": #2cdfe6ff,
+    "blue": #2b4ff1ff,
+    "amethyst": #935bcbff,
+    "pinky-purple": #d759c1ff,
+    "pastel-red": #e15768ff,
+    "apricot": #ebac57ff,
+    "pear": #c6f458ff,
+    "soft-green": #88d77fff,
+    "light-teal": #7fe0bbff,
+    "light-blue": #80c9e9ff,
+    "lavender-blue": #8b82f0ff,
+    "light-purple": #e385f7ff,
+    "powder-pink": #e2a3c8ff,
+    "pinkish-tan": #e9b8a6ff,
+    "light-tan": #f0eba9ff,
+    "very-pale-green": #ccf5adff
 );

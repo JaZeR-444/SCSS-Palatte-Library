@@ -25,65 +25,65 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---void-chrome-atlas-void-black: #000000ff;
---void-chrome-atlas-chrome-night: #070b12ff;
---void-chrome-atlas-deep-frame: #111827ff;
---void-chrome-atlas-metal-panel: #1f2937ff;
---void-chrome-atlas-blue-graphite: #334155ff;
---void-chrome-atlas-chrome-muted: #64748bff;
---void-chrome-atlas-cool-smoke: #94a3b8ff;
---void-chrome-atlas-edge-light: #cbd5e1ff;
---void-chrome-atlas-chrome-surface: #e2e8f0ff;
---void-chrome-atlas-white-glow: #f8fafcff;
+--void-black: #000000ff;
+--chrome-night: #070b12ff;
+--deep-frame: #111827ff;
+--metal-panel: #1f2937ff;
+--blue-graphite: #334155ff;
+--chrome-muted: #64748bff;
+--cool-smoke: #94a3b8ff;
+--edge-light: #cbd5e1ff;
+--chrome-surface: #e2e8f0ff;
+--white-glow: #f8fafcff;
 
 /* CSS HSL */
---void-chrome-atlas-void-black: hsla(0, 0%, 0%, 1);
---void-chrome-atlas-chrome-night: hsla(218, 44%, 5%, 1);
---void-chrome-atlas-deep-frame: hsla(221, 39%, 11%, 1);
---void-chrome-atlas-metal-panel: hsla(215, 28%, 17%, 1);
---void-chrome-atlas-blue-graphite: hsla(215, 25%, 27%, 1);
---void-chrome-atlas-chrome-muted: hsla(215, 16%, 47%, 1);
---void-chrome-atlas-cool-smoke: hsla(215, 20%, 65%, 1);
---void-chrome-atlas-edge-light: hsla(213, 27%, 84%, 1);
---void-chrome-atlas-chrome-surface: hsla(214, 32%, 91%, 1);
---void-chrome-atlas-white-glow: hsla(210, 40%, 98%, 1);
+--void-black: hsla(0, 0%, 0%, 1);
+--chrome-night: hsla(218, 44%, 5%, 1);
+--deep-frame: hsla(221, 39%, 11%, 1);
+--metal-panel: hsla(215, 28%, 17%, 1);
+--blue-graphite: hsla(215, 25%, 27%, 1);
+--chrome-muted: hsla(215, 16%, 47%, 1);
+--cool-smoke: hsla(215, 20%, 65%, 1);
+--edge-light: hsla(213, 27%, 84%, 1);
+--chrome-surface: hsla(214, 32%, 91%, 1);
+--white-glow: hsla(210, 40%, 98%, 1);
 }
 
 /* SCSS HEX */
-$void-chrome-atlas-void-black: #000000ff;
-$void-chrome-atlas-chrome-night: #070b12ff;
-$void-chrome-atlas-deep-frame: #111827ff;
-$void-chrome-atlas-metal-panel: #1f2937ff;
-$void-chrome-atlas-blue-graphite: #334155ff;
-$void-chrome-atlas-chrome-muted: #64748bff;
-$void-chrome-atlas-cool-smoke: #94a3b8ff;
-$void-chrome-atlas-edge-light: #cbd5e1ff;
-$void-chrome-atlas-chrome-surface: #e2e8f0ff;
-$void-chrome-atlas-white-glow: #f8fafcff;
+$void-black: #000000ff;
+$chrome-night: #070b12ff;
+$deep-frame: #111827ff;
+$metal-panel: #1f2937ff;
+$blue-graphite: #334155ff;
+$chrome-muted: #64748bff;
+$cool-smoke: #94a3b8ff;
+$edge-light: #cbd5e1ff;
+$chrome-surface: #e2e8f0ff;
+$white-glow: #f8fafcff;
 
 /* SCSS HSL */
-$void-chrome-atlas-void-black: hsla(0, 0%, 0%, 1);
-$void-chrome-atlas-chrome-night: hsla(218, 44%, 5%, 1);
-$void-chrome-atlas-deep-frame: hsla(221, 39%, 11%, 1);
-$void-chrome-atlas-metal-panel: hsla(215, 28%, 17%, 1);
-$void-chrome-atlas-blue-graphite: hsla(215, 25%, 27%, 1);
-$void-chrome-atlas-chrome-muted: hsla(215, 16%, 47%, 1);
-$void-chrome-atlas-cool-smoke: hsla(215, 20%, 65%, 1);
-$void-chrome-atlas-edge-light: hsla(213, 27%, 84%, 1);
-$void-chrome-atlas-chrome-surface: hsla(214, 32%, 91%, 1);
-$void-chrome-atlas-white-glow: hsla(210, 40%, 98%, 1);
+$void-black: hsla(0, 0%, 0%, 1);
+$chrome-night: hsla(218, 44%, 5%, 1);
+$deep-frame: hsla(221, 39%, 11%, 1);
+$metal-panel: hsla(215, 28%, 17%, 1);
+$blue-graphite: hsla(215, 25%, 27%, 1);
+$chrome-muted: hsla(215, 16%, 47%, 1);
+$cool-smoke: hsla(215, 20%, 65%, 1);
+$edge-light: hsla(213, 27%, 84%, 1);
+$chrome-surface: hsla(214, 32%, 91%, 1);
+$white-glow: hsla(210, 40%, 98%, 1);
 
 /* SCSS RGB */
-$void-chrome-atlas-void-black: rgba(0, 0, 0, 1);
-$void-chrome-atlas-chrome-night: rgba(7, 11, 18, 1);
-$void-chrome-atlas-deep-frame: rgba(17, 24, 39, 1);
-$void-chrome-atlas-metal-panel: rgba(31, 41, 55, 1);
-$void-chrome-atlas-blue-graphite: rgba(51, 65, 85, 1);
-$void-chrome-atlas-chrome-muted: rgba(100, 116, 139, 1);
-$void-chrome-atlas-cool-smoke: rgba(148, 163, 184, 1);
-$void-chrome-atlas-edge-light: rgba(203, 213, 225, 1);
-$void-chrome-atlas-chrome-surface: rgba(226, 232, 240, 1);
-$void-chrome-atlas-white-glow: rgba(248, 250, 252, 1);
+$void-black: rgba(0, 0, 0, 1);
+$chrome-night: rgba(7, 11, 18, 1);
+$deep-frame: rgba(17, 24, 39, 1);
+$metal-panel: rgba(31, 41, 55, 1);
+$blue-graphite: rgba(51, 65, 85, 1);
+$chrome-muted: rgba(100, 116, 139, 1);
+$cool-smoke: rgba(148, 163, 184, 1);
+$edge-light: rgba(203, 213, 225, 1);
+$chrome-surface: rgba(226, 232, 240, 1);
+$white-glow: rgba(248, 250, 252, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #000000ff, #070b12ff, #111827ff, #1f2937ff, #334155ff, #64748bff, #94a3b8ff, #cbd5e1ff, #e2e8f0ff, #f8fafcff);
@@ -98,14 +98,14 @@ $gradient-radial: radial-gradient(#000000ff, #070b12ff, #111827ff, #1f2937ff, #3
 
 /* SCSS Map */
 $void-chrome-atlas-map: (
-    "void-chrome-atlas-void-black": #000000ff,
-    "void-chrome-atlas-chrome-night": #070b12ff,
-    "void-chrome-atlas-deep-frame": #111827ff,
-    "void-chrome-atlas-metal-panel": #1f2937ff,
-    "void-chrome-atlas-blue-graphite": #334155ff,
-    "void-chrome-atlas-chrome-muted": #64748bff,
-    "void-chrome-atlas-cool-smoke": #94a3b8ff,
-    "void-chrome-atlas-edge-light": #cbd5e1ff,
-    "void-chrome-atlas-chrome-surface": #e2e8f0ff,
-    "void-chrome-atlas-white-glow": #f8fafcff
+    "void-black": #000000ff,
+    "chrome-night": #070b12ff,
+    "deep-frame": #111827ff,
+    "metal-panel": #1f2937ff,
+    "blue-graphite": #334155ff,
+    "chrome-muted": #64748bff,
+    "cool-smoke": #94a3b8ff,
+    "edge-light": #cbd5e1ff,
+    "chrome-surface": #e2e8f0ff,
+    "white-glow": #f8fafcff
 );

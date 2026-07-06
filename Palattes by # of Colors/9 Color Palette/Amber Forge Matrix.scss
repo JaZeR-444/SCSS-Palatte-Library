@@ -25,60 +25,60 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---amber-forge-matrix-kiln-black: #1c0f05ff;
---amber-forge-matrix-furnace-brown: #431407ff;
---amber-forge-matrix-oxide-panel: #7c2d12ff;
---amber-forge-matrix-forge-ember: #9a3412ff;
---amber-forge-matrix-copper-heat: #c2410cff;
---amber-forge-matrix-molten-amber: #f97316ff;
---amber-forge-matrix-spark-gold: #fbbf24ff;
---amber-forge-matrix-worklight-cream: #ffedd5ff;
---amber-forge-matrix-ash-white: #fff7edff;
+--kiln-black: #1c0f05ff;
+--furnace-brown: #431407ff;
+--oxide-panel: #7c2d12ff;
+--forge-ember: #9a3412ff;
+--copper-heat: #c2410cff;
+--molten-amber: #f97316ff;
+--spark-gold: #fbbf24ff;
+--worklight-cream: #ffedd5ff;
+--ash-white: #fff7edff;
 
 /* CSS HSL */
---amber-forge-matrix-kiln-black: hsla(26, 70%, 6%, 1);
---amber-forge-matrix-furnace-brown: hsla(13, 81%, 15%, 1);
---amber-forge-matrix-oxide-panel: hsla(15, 75%, 28%, 1);
---amber-forge-matrix-forge-ember: hsla(15, 79%, 34%, 1);
---amber-forge-matrix-copper-heat: hsla(17, 88%, 40%, 1);
---amber-forge-matrix-molten-amber: hsla(25, 95%, 53%, 1);
---amber-forge-matrix-spark-gold: hsla(43, 96%, 56%, 1);
---amber-forge-matrix-worklight-cream: hsla(34, 100%, 92%, 1);
---amber-forge-matrix-ash-white: hsla(33, 100%, 96%, 1);
+--kiln-black: hsla(26, 70%, 6%, 1);
+--furnace-brown: hsla(13, 81%, 15%, 1);
+--oxide-panel: hsla(15, 75%, 28%, 1);
+--forge-ember: hsla(15, 79%, 34%, 1);
+--copper-heat: hsla(17, 88%, 40%, 1);
+--molten-amber: hsla(25, 95%, 53%, 1);
+--spark-gold: hsla(43, 96%, 56%, 1);
+--worklight-cream: hsla(34, 100%, 92%, 1);
+--ash-white: hsla(33, 100%, 96%, 1);
 }
 
 /* SCSS HEX */
-$amber-forge-matrix-kiln-black: #1c0f05ff;
-$amber-forge-matrix-furnace-brown: #431407ff;
-$amber-forge-matrix-oxide-panel: #7c2d12ff;
-$amber-forge-matrix-forge-ember: #9a3412ff;
-$amber-forge-matrix-copper-heat: #c2410cff;
-$amber-forge-matrix-molten-amber: #f97316ff;
-$amber-forge-matrix-spark-gold: #fbbf24ff;
-$amber-forge-matrix-worklight-cream: #ffedd5ff;
-$amber-forge-matrix-ash-white: #fff7edff;
+$kiln-black: #1c0f05ff;
+$furnace-brown: #431407ff;
+$oxide-panel: #7c2d12ff;
+$forge-ember: #9a3412ff;
+$copper-heat: #c2410cff;
+$molten-amber: #f97316ff;
+$spark-gold: #fbbf24ff;
+$worklight-cream: #ffedd5ff;
+$ash-white: #fff7edff;
 
 /* SCSS HSL */
-$amber-forge-matrix-kiln-black: hsla(26, 70%, 6%, 1);
-$amber-forge-matrix-furnace-brown: hsla(13, 81%, 15%, 1);
-$amber-forge-matrix-oxide-panel: hsla(15, 75%, 28%, 1);
-$amber-forge-matrix-forge-ember: hsla(15, 79%, 34%, 1);
-$amber-forge-matrix-copper-heat: hsla(17, 88%, 40%, 1);
-$amber-forge-matrix-molten-amber: hsla(25, 95%, 53%, 1);
-$amber-forge-matrix-spark-gold: hsla(43, 96%, 56%, 1);
-$amber-forge-matrix-worklight-cream: hsla(34, 100%, 92%, 1);
-$amber-forge-matrix-ash-white: hsla(33, 100%, 96%, 1);
+$kiln-black: hsla(26, 70%, 6%, 1);
+$furnace-brown: hsla(13, 81%, 15%, 1);
+$oxide-panel: hsla(15, 75%, 28%, 1);
+$forge-ember: hsla(15, 79%, 34%, 1);
+$copper-heat: hsla(17, 88%, 40%, 1);
+$molten-amber: hsla(25, 95%, 53%, 1);
+$spark-gold: hsla(43, 96%, 56%, 1);
+$worklight-cream: hsla(34, 100%, 92%, 1);
+$ash-white: hsla(33, 100%, 96%, 1);
 
 /* SCSS RGB */
-$amber-forge-matrix-kiln-black: rgba(28, 15, 5, 1);
-$amber-forge-matrix-furnace-brown: rgba(67, 20, 7, 1);
-$amber-forge-matrix-oxide-panel: rgba(124, 45, 18, 1);
-$amber-forge-matrix-forge-ember: rgba(154, 52, 18, 1);
-$amber-forge-matrix-copper-heat: rgba(194, 65, 12, 1);
-$amber-forge-matrix-molten-amber: rgba(249, 115, 22, 1);
-$amber-forge-matrix-spark-gold: rgba(251, 191, 36, 1);
-$amber-forge-matrix-worklight-cream: rgba(255, 237, 213, 1);
-$amber-forge-matrix-ash-white: rgba(255, 247, 237, 1);
+$kiln-black: rgba(28, 15, 5, 1);
+$furnace-brown: rgba(67, 20, 7, 1);
+$oxide-panel: rgba(124, 45, 18, 1);
+$forge-ember: rgba(154, 52, 18, 1);
+$copper-heat: rgba(194, 65, 12, 1);
+$molten-amber: rgba(249, 115, 22, 1);
+$spark-gold: rgba(251, 191, 36, 1);
+$worklight-cream: rgba(255, 237, 213, 1);
+$ash-white: rgba(255, 247, 237, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1c0f05ff, #431407ff, #7c2d12ff, #9a3412ff, #c2410cff, #f97316ff, #fbbf24ff, #ffedd5ff, #fff7edff);
@@ -93,13 +93,13 @@ $gradient-radial: radial-gradient(#1c0f05ff, #431407ff, #7c2d12ff, #9a3412ff, #c
 
 /* SCSS Map */
 $amber-forge-matrix-map: (
-    "amber-forge-matrix-kiln-black": #1c0f05ff,
-    "amber-forge-matrix-furnace-brown": #431407ff,
-    "amber-forge-matrix-oxide-panel": #7c2d12ff,
-    "amber-forge-matrix-forge-ember": #9a3412ff,
-    "amber-forge-matrix-copper-heat": #c2410cff,
-    "amber-forge-matrix-molten-amber": #f97316ff,
-    "amber-forge-matrix-spark-gold": #fbbf24ff,
-    "amber-forge-matrix-worklight-cream": #ffedd5ff,
-    "amber-forge-matrix-ash-white": #fff7edff
+    "kiln-black": #1c0f05ff,
+    "furnace-brown": #431407ff,
+    "oxide-panel": #7c2d12ff,
+    "forge-ember": #9a3412ff,
+    "copper-heat": #c2410cff,
+    "molten-amber": #f97316ff,
+    "spark-gold": #fbbf24ff,
+    "worklight-cream": #ffedd5ff,
+    "ash-white": #fff7edff
 );

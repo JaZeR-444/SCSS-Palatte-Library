@@ -25,65 +25,65 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---sapphire-ledger-atlas-ledger-navy: #0a2540ff;
---sapphire-ledger-atlas-sapphire-book: #12355bff;
---sapphire-ledger-atlas-report-blue: #1d4e89ff;
---sapphire-ledger-atlas-primary-blue: #2563ebff;
---sapphire-ledger-atlas-metric-blue: #2f80edff;
---sapphire-ledger-atlas-chart-cyan: #56ccf2ff;
---sapphire-ledger-atlas-summary-blue: #93c5fdff;
---sapphire-ledger-atlas-panel-blue: #dbeafeff;
---sapphire-ledger-atlas-sheet-slate: #f1f5f9ff;
---sapphire-ledger-atlas-white-report: #ffffffff;
+--ledger-navy: #0a2540ff;
+--sapphire-book: #12355bff;
+--report-blue: #1d4e89ff;
+--primary-blue: #2563ebff;
+--metric-blue: #2f80edff;
+--chart-cyan: #56ccf2ff;
+--summary-blue: #93c5fdff;
+--panel-blue: #dbeafeff;
+--sheet-slate: #f1f5f9ff;
+--white-report: #ffffffff;
 
 /* CSS HSL */
---sapphire-ledger-atlas-ledger-navy: hsla(210, 73%, 15%, 1);
---sapphire-ledger-atlas-sapphire-book: hsla(211, 67%, 21%, 1);
---sapphire-ledger-atlas-report-blue: hsla(213, 65%, 33%, 1);
---sapphire-ledger-atlas-primary-blue: hsla(221, 83%, 53%, 1);
---sapphire-ledger-atlas-metric-blue: hsla(214, 84%, 56%, 1);
---sapphire-ledger-atlas-chart-cyan: hsla(195, 86%, 64%, 1);
---sapphire-ledger-atlas-summary-blue: hsla(212, 96%, 78%, 1);
---sapphire-ledger-atlas-panel-blue: hsla(214, 95%, 93%, 1);
---sapphire-ledger-atlas-sheet-slate: hsla(210, 40%, 96%, 1);
---sapphire-ledger-atlas-white-report: hsla(0, 0%, 100%, 1);
+--ledger-navy: hsla(210, 73%, 15%, 1);
+--sapphire-book: hsla(211, 67%, 21%, 1);
+--report-blue: hsla(213, 65%, 33%, 1);
+--primary-blue: hsla(221, 83%, 53%, 1);
+--metric-blue: hsla(214, 84%, 56%, 1);
+--chart-cyan: hsla(195, 86%, 64%, 1);
+--summary-blue: hsla(212, 96%, 78%, 1);
+--panel-blue: hsla(214, 95%, 93%, 1);
+--sheet-slate: hsla(210, 40%, 96%, 1);
+--white-report: hsla(0, 0%, 100%, 1);
 }
 
 /* SCSS HEX */
-$sapphire-ledger-atlas-ledger-navy: #0a2540ff;
-$sapphire-ledger-atlas-sapphire-book: #12355bff;
-$sapphire-ledger-atlas-report-blue: #1d4e89ff;
-$sapphire-ledger-atlas-primary-blue: #2563ebff;
-$sapphire-ledger-atlas-metric-blue: #2f80edff;
-$sapphire-ledger-atlas-chart-cyan: #56ccf2ff;
-$sapphire-ledger-atlas-summary-blue: #93c5fdff;
-$sapphire-ledger-atlas-panel-blue: #dbeafeff;
-$sapphire-ledger-atlas-sheet-slate: #f1f5f9ff;
-$sapphire-ledger-atlas-white-report: #ffffffff;
+$ledger-navy: #0a2540ff;
+$sapphire-book: #12355bff;
+$report-blue: #1d4e89ff;
+$primary-blue: #2563ebff;
+$metric-blue: #2f80edff;
+$chart-cyan: #56ccf2ff;
+$summary-blue: #93c5fdff;
+$panel-blue: #dbeafeff;
+$sheet-slate: #f1f5f9ff;
+$white-report: #ffffffff;
 
 /* SCSS HSL */
-$sapphire-ledger-atlas-ledger-navy: hsla(210, 73%, 15%, 1);
-$sapphire-ledger-atlas-sapphire-book: hsla(211, 67%, 21%, 1);
-$sapphire-ledger-atlas-report-blue: hsla(213, 65%, 33%, 1);
-$sapphire-ledger-atlas-primary-blue: hsla(221, 83%, 53%, 1);
-$sapphire-ledger-atlas-metric-blue: hsla(214, 84%, 56%, 1);
-$sapphire-ledger-atlas-chart-cyan: hsla(195, 86%, 64%, 1);
-$sapphire-ledger-atlas-summary-blue: hsla(212, 96%, 78%, 1);
-$sapphire-ledger-atlas-panel-blue: hsla(214, 95%, 93%, 1);
-$sapphire-ledger-atlas-sheet-slate: hsla(210, 40%, 96%, 1);
-$sapphire-ledger-atlas-white-report: hsla(0, 0%, 100%, 1);
+$ledger-navy: hsla(210, 73%, 15%, 1);
+$sapphire-book: hsla(211, 67%, 21%, 1);
+$report-blue: hsla(213, 65%, 33%, 1);
+$primary-blue: hsla(221, 83%, 53%, 1);
+$metric-blue: hsla(214, 84%, 56%, 1);
+$chart-cyan: hsla(195, 86%, 64%, 1);
+$summary-blue: hsla(212, 96%, 78%, 1);
+$panel-blue: hsla(214, 95%, 93%, 1);
+$sheet-slate: hsla(210, 40%, 96%, 1);
+$white-report: hsla(0, 0%, 100%, 1);
 
 /* SCSS RGB */
-$sapphire-ledger-atlas-ledger-navy: rgba(10, 37, 64, 1);
-$sapphire-ledger-atlas-sapphire-book: rgba(18, 53, 91, 1);
-$sapphire-ledger-atlas-report-blue: rgba(29, 78, 137, 1);
-$sapphire-ledger-atlas-primary-blue: rgba(37, 99, 235, 1);
-$sapphire-ledger-atlas-metric-blue: rgba(47, 128, 237, 1);
-$sapphire-ledger-atlas-chart-cyan: rgba(86, 204, 242, 1);
-$sapphire-ledger-atlas-summary-blue: rgba(147, 197, 253, 1);
-$sapphire-ledger-atlas-panel-blue: rgba(219, 234, 254, 1);
-$sapphire-ledger-atlas-sheet-slate: rgba(241, 245, 249, 1);
-$sapphire-ledger-atlas-white-report: rgba(255, 255, 255, 1);
+$ledger-navy: rgba(10, 37, 64, 1);
+$sapphire-book: rgba(18, 53, 91, 1);
+$report-blue: rgba(29, 78, 137, 1);
+$primary-blue: rgba(37, 99, 235, 1);
+$metric-blue: rgba(47, 128, 237, 1);
+$chart-cyan: rgba(86, 204, 242, 1);
+$summary-blue: rgba(147, 197, 253, 1);
+$panel-blue: rgba(219, 234, 254, 1);
+$sheet-slate: rgba(241, 245, 249, 1);
+$white-report: rgba(255, 255, 255, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #0a2540ff, #12355bff, #1d4e89ff, #2563ebff, #2f80edff, #56ccf2ff, #93c5fdff, #dbeafeff, #f1f5f9ff, #ffffffff);
@@ -98,14 +98,14 @@ $gradient-radial: radial-gradient(#0a2540ff, #12355bff, #1d4e89ff, #2563ebff, #2
 
 /* SCSS Map */
 $sapphire-ledger-atlas-map: (
-    "sapphire-ledger-atlas-ledger-navy": #0a2540ff,
-    "sapphire-ledger-atlas-sapphire-book": #12355bff,
-    "sapphire-ledger-atlas-report-blue": #1d4e89ff,
-    "sapphire-ledger-atlas-primary-blue": #2563ebff,
-    "sapphire-ledger-atlas-metric-blue": #2f80edff,
-    "sapphire-ledger-atlas-chart-cyan": #56ccf2ff,
-    "sapphire-ledger-atlas-summary-blue": #93c5fdff,
-    "sapphire-ledger-atlas-panel-blue": #dbeafeff,
-    "sapphire-ledger-atlas-sheet-slate": #f1f5f9ff,
-    "sapphire-ledger-atlas-white-report": #ffffffff
+    "ledger-navy": #0a2540ff,
+    "sapphire-book": #12355bff,
+    "report-blue": #1d4e89ff,
+    "primary-blue": #2563ebff,
+    "metric-blue": #2f80edff,
+    "chart-cyan": #56ccf2ff,
+    "summary-blue": #93c5fdff,
+    "panel-blue": #dbeafeff,
+    "sheet-slate": #f1f5f9ff,
+    "white-report": #ffffffff
 );

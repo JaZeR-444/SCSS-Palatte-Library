@@ -25,55 +25,55 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---glacier-blue-system-glacier-depth: #082f49ff;
---glacier-blue-system-ice-ridge: #075985ff;
---glacier-blue-system-cold-current: #0369a1ff;
---glacier-blue-system-clear-blue: #0284c7ff;
---glacier-blue-system-glacier-blue: #0ea5e9ff;
---glacier-blue-system-crystal-cyan: #38bdf8ff;
---glacier-blue-system-frost-sky: #7dd3fcff;
---glacier-blue-system-pale-ice: #bae6fdff;
+--glacier-depth: #082f49ff;
+--ice-ridge: #075985ff;
+--cold-current: #0369a1ff;
+--clear-blue: #0284c7ff;
+--glacier-blue: #0ea5e9ff;
+--crystal-cyan: #38bdf8ff;
+--frost-sky: #7dd3fcff;
+--pale-ice: #bae6fdff;
 
 /* CSS HSL */
---glacier-blue-system-glacier-depth: hsla(204, 80%, 16%, 1);
---glacier-blue-system-ice-ridge: hsla(201, 90%, 27%, 1);
---glacier-blue-system-cold-current: hsla(201, 96%, 32%, 1);
---glacier-blue-system-clear-blue: hsla(200, 98%, 39%, 1);
---glacier-blue-system-glacier-blue: hsla(199, 89%, 48%, 1);
---glacier-blue-system-crystal-cyan: hsla(198, 93%, 60%, 1);
---glacier-blue-system-frost-sky: hsla(199, 95%, 74%, 1);
---glacier-blue-system-pale-ice: hsla(201, 94%, 86%, 1);
+--glacier-depth: hsla(204, 80%, 16%, 1);
+--ice-ridge: hsla(201, 90%, 27%, 1);
+--cold-current: hsla(201, 96%, 32%, 1);
+--clear-blue: hsla(200, 98%, 39%, 1);
+--glacier-blue: hsla(199, 89%, 48%, 1);
+--crystal-cyan: hsla(198, 93%, 60%, 1);
+--frost-sky: hsla(199, 95%, 74%, 1);
+--pale-ice: hsla(201, 94%, 86%, 1);
 }
 
 /* SCSS HEX */
-$glacier-blue-system-glacier-depth: #082f49ff;
-$glacier-blue-system-ice-ridge: #075985ff;
-$glacier-blue-system-cold-current: #0369a1ff;
-$glacier-blue-system-clear-blue: #0284c7ff;
-$glacier-blue-system-glacier-blue: #0ea5e9ff;
-$glacier-blue-system-crystal-cyan: #38bdf8ff;
-$glacier-blue-system-frost-sky: #7dd3fcff;
-$glacier-blue-system-pale-ice: #bae6fdff;
+$glacier-depth: #082f49ff;
+$ice-ridge: #075985ff;
+$cold-current: #0369a1ff;
+$clear-blue: #0284c7ff;
+$glacier-blue: #0ea5e9ff;
+$crystal-cyan: #38bdf8ff;
+$frost-sky: #7dd3fcff;
+$pale-ice: #bae6fdff;
 
 /* SCSS HSL */
-$glacier-blue-system-glacier-depth: hsla(204, 80%, 16%, 1);
-$glacier-blue-system-ice-ridge: hsla(201, 90%, 27%, 1);
-$glacier-blue-system-cold-current: hsla(201, 96%, 32%, 1);
-$glacier-blue-system-clear-blue: hsla(200, 98%, 39%, 1);
-$glacier-blue-system-glacier-blue: hsla(199, 89%, 48%, 1);
-$glacier-blue-system-crystal-cyan: hsla(198, 93%, 60%, 1);
-$glacier-blue-system-frost-sky: hsla(199, 95%, 74%, 1);
-$glacier-blue-system-pale-ice: hsla(201, 94%, 86%, 1);
+$glacier-depth: hsla(204, 80%, 16%, 1);
+$ice-ridge: hsla(201, 90%, 27%, 1);
+$cold-current: hsla(201, 96%, 32%, 1);
+$clear-blue: hsla(200, 98%, 39%, 1);
+$glacier-blue: hsla(199, 89%, 48%, 1);
+$crystal-cyan: hsla(198, 93%, 60%, 1);
+$frost-sky: hsla(199, 95%, 74%, 1);
+$pale-ice: hsla(201, 94%, 86%, 1);
 
 /* SCSS RGB */
-$glacier-blue-system-glacier-depth: rgba(8, 47, 73, 1);
-$glacier-blue-system-ice-ridge: rgba(7, 89, 133, 1);
-$glacier-blue-system-cold-current: rgba(3, 105, 161, 1);
-$glacier-blue-system-clear-blue: rgba(2, 132, 199, 1);
-$glacier-blue-system-glacier-blue: rgba(14, 165, 233, 1);
-$glacier-blue-system-crystal-cyan: rgba(56, 189, 248, 1);
-$glacier-blue-system-frost-sky: rgba(125, 211, 252, 1);
-$glacier-blue-system-pale-ice: rgba(186, 230, 253, 1);
+$glacier-depth: rgba(8, 47, 73, 1);
+$ice-ridge: rgba(7, 89, 133, 1);
+$cold-current: rgba(3, 105, 161, 1);
+$clear-blue: rgba(2, 132, 199, 1);
+$glacier-blue: rgba(14, 165, 233, 1);
+$crystal-cyan: rgba(56, 189, 248, 1);
+$frost-sky: rgba(125, 211, 252, 1);
+$pale-ice: rgba(186, 230, 253, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #082f49ff, #075985ff, #0369a1ff, #0284c7ff, #0ea5e9ff, #38bdf8ff, #7dd3fcff, #bae6fdff);
@@ -88,12 +88,12 @@ $gradient-radial: radial-gradient(#082f49ff, #075985ff, #0369a1ff, #0284c7ff, #0
 
 /* SCSS Map */
 $glacier-blue-system-map: (
-    "glacier-blue-system-glacier-depth": #082f49ff,
-    "glacier-blue-system-ice-ridge": #075985ff,
-    "glacier-blue-system-cold-current": #0369a1ff,
-    "glacier-blue-system-clear-blue": #0284c7ff,
-    "glacier-blue-system-glacier-blue": #0ea5e9ff,
-    "glacier-blue-system-crystal-cyan": #38bdf8ff,
-    "glacier-blue-system-frost-sky": #7dd3fcff,
-    "glacier-blue-system-pale-ice": #bae6fdff
+    "glacier-depth": #082f49ff,
+    "ice-ridge": #075985ff,
+    "cold-current": #0369a1ff,
+    "clear-blue": #0284c7ff,
+    "glacier-blue": #0ea5e9ff,
+    "crystal-cyan": #38bdf8ff,
+    "frost-sky": #7dd3fcff,
+    "pale-ice": #bae6fdff
 );

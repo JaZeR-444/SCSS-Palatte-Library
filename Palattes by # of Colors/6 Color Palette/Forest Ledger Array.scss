@@ -25,45 +25,45 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---forest-ledger-array-ledger-forest: #0b1f17ff;
---forest-ledger-array-account-pine: #123524ff;
---forest-ledger-array-report-green: #1b5e3cff;
---forest-ledger-array-balance-green: #2e7d32ff;
---forest-ledger-array-metric-leaf: #43a047ff;
---forest-ledger-array-growth-green: #66bb6aff;
+--ledger-forest: #0b1f17ff;
+--account-pine: #123524ff;
+--report-green: #1b5e3cff;
+--balance-green: #2e7d32ff;
+--metric-leaf: #43a047ff;
+--growth-green: #66bb6aff;
 
 /* CSS HSL */
---forest-ledger-array-ledger-forest: hsla(156, 48%, 8%, 1);
---forest-ledger-array-account-pine: hsla(151, 49%, 14%, 1);
---forest-ledger-array-report-green: hsla(150, 55%, 24%, 1);
---forest-ledger-array-balance-green: hsla(123, 46%, 34%, 1);
---forest-ledger-array-metric-leaf: hsla(123, 41%, 45%, 1);
---forest-ledger-array-growth-green: hsla(123, 38%, 57%, 1);
+--ledger-forest: hsla(156, 48%, 8%, 1);
+--account-pine: hsla(151, 49%, 14%, 1);
+--report-green: hsla(150, 55%, 24%, 1);
+--balance-green: hsla(123, 46%, 34%, 1);
+--metric-leaf: hsla(123, 41%, 45%, 1);
+--growth-green: hsla(123, 38%, 57%, 1);
 }
 
 /* SCSS HEX */
-$forest-ledger-array-ledger-forest: #0b1f17ff;
-$forest-ledger-array-account-pine: #123524ff;
-$forest-ledger-array-report-green: #1b5e3cff;
-$forest-ledger-array-balance-green: #2e7d32ff;
-$forest-ledger-array-metric-leaf: #43a047ff;
-$forest-ledger-array-growth-green: #66bb6aff;
+$ledger-forest: #0b1f17ff;
+$account-pine: #123524ff;
+$report-green: #1b5e3cff;
+$balance-green: #2e7d32ff;
+$metric-leaf: #43a047ff;
+$growth-green: #66bb6aff;
 
 /* SCSS HSL */
-$forest-ledger-array-ledger-forest: hsla(156, 48%, 8%, 1);
-$forest-ledger-array-account-pine: hsla(151, 49%, 14%, 1);
-$forest-ledger-array-report-green: hsla(150, 55%, 24%, 1);
-$forest-ledger-array-balance-green: hsla(123, 46%, 34%, 1);
-$forest-ledger-array-metric-leaf: hsla(123, 41%, 45%, 1);
-$forest-ledger-array-growth-green: hsla(123, 38%, 57%, 1);
+$ledger-forest: hsla(156, 48%, 8%, 1);
+$account-pine: hsla(151, 49%, 14%, 1);
+$report-green: hsla(150, 55%, 24%, 1);
+$balance-green: hsla(123, 46%, 34%, 1);
+$metric-leaf: hsla(123, 41%, 45%, 1);
+$growth-green: hsla(123, 38%, 57%, 1);
 
 /* SCSS RGB */
-$forest-ledger-array-ledger-forest: rgba(11, 31, 23, 1);
-$forest-ledger-array-account-pine: rgba(18, 53, 36, 1);
-$forest-ledger-array-report-green: rgba(27, 94, 60, 1);
-$forest-ledger-array-balance-green: rgba(46, 125, 50, 1);
-$forest-ledger-array-metric-leaf: rgba(67, 160, 71, 1);
-$forest-ledger-array-growth-green: rgba(102, 187, 106, 1);
+$ledger-forest: rgba(11, 31, 23, 1);
+$account-pine: rgba(18, 53, 36, 1);
+$report-green: rgba(27, 94, 60, 1);
+$balance-green: rgba(46, 125, 50, 1);
+$metric-leaf: rgba(67, 160, 71, 1);
+$growth-green: rgba(102, 187, 106, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #43a047ff, #66bb6aff);
@@ -78,10 +78,10 @@ $gradient-radial: radial-gradient(#0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #4
 
 /* SCSS Map */
 $forest-ledger-array-map: (
-    "forest-ledger-array-ledger-forest": #0b1f17ff,
-    "forest-ledger-array-account-pine": #123524ff,
-    "forest-ledger-array-report-green": #1b5e3cff,
-    "forest-ledger-array-balance-green": #2e7d32ff,
-    "forest-ledger-array-metric-leaf": #43a047ff,
-    "forest-ledger-array-growth-green": #66bb6aff
+    "ledger-forest": #0b1f17ff,
+    "account-pine": #123524ff,
+    "report-green": #1b5e3cff,
+    "balance-green": #2e7d32ff,
+    "metric-leaf": #43a047ff,
+    "growth-green": #66bb6aff
 );

@@ -30,7 +30,7 @@ updated: '2026-05-18'
 --turquoise-surf: #00b4d8ff;
 --sky-aqua: #48cae4ff;
 --frosted-blue: #90e0efff;
---frosted-blue-2: #ade8f4ff;
+--pale-sky-blue: #ade8f4ff;
 --light-cyan: #caf0f8ff;
 
 /* CSS HSL */
@@ -41,7 +41,7 @@ updated: '2026-05-18'
 --turquoise-surf: hsla(190, 100%, 42%, 1);
 --sky-aqua: hsla(190, 74%, 59%, 1);
 --frosted-blue: hsla(189, 75%, 75%, 1);
---frosted-blue-2: hsla(190, 76%, 82%, 1);
+--pale-sky-blue: hsla(190, 76%, 82%, 1);
 --light-cyan: hsla(190, 77%, 88%, 1);
 }
 
@@ -53,7 +53,7 @@ $blue-green: #0096c7ff;
 $turquoise-surf: #00b4d8ff;
 $sky-aqua: #48cae4ff;
 $frosted-blue: #90e0efff;
-$frosted-blue-2: #ade8f4ff;
+$pale-sky-blue: #ade8f4ff;
 $light-cyan: #caf0f8ff;
 
 /* SCSS HSL */
@@ -64,7 +64,7 @@ $blue-green: hsla(195, 100%, 39%, 1);
 $turquoise-surf: hsla(190, 100%, 42%, 1);
 $sky-aqua: hsla(190, 74%, 59%, 1);
 $frosted-blue: hsla(189, 75%, 75%, 1);
-$frosted-blue-2: hsla(190, 76%, 82%, 1);
+$pale-sky-blue: hsla(190, 76%, 82%, 1);
 $light-cyan: hsla(190, 77%, 88%, 1);
 
 /* SCSS RGB */
@@ -75,7 +75,7 @@ $blue-green: rgba(0, 150, 199, 1);
 $turquoise-surf: rgba(0, 180, 216, 1);
 $sky-aqua: rgba(72, 202, 228, 1);
 $frosted-blue: rgba(144, 224, 239, 1);
-$frosted-blue-2: rgba(173, 232, 244, 1);
+$pale-sky-blue: rgba(173, 232, 244, 1);
 $light-cyan: rgba(202, 240, 248, 1);
 
 /* SCSS Gradient */
@@ -98,6 +98,6 @@ $ocean-blue-serenity-map: (
     "turquoise-surf": #00b4d8ff,
     "sky-aqua": #48cae4ff,
     "frosted-blue": #90e0efff,
-    "frosted-blue-2": #ade8f4ff,
+    "pale-sky-blue": #ade8f4ff,
     "light-cyan": #caf0f8ff
 );

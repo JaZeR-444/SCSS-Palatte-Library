@@ -26,9 +26,9 @@ updated: '2026-05-19'
 :root {
 /* CSS HEX */
 --botanical-ink: #14213dff;
---leaf-900: #1b4332ff;
---leaf-600: #40916cff;
---leaf-300: #95d5b2ff;
+--dark-blue-green: #1b4332ff;
+--ocean-green: #40916cff;
+--pale-teal: #95d5b2ff;
 --pollen-yellow: #ffd166ff;
 --bloom-coral: #ef476fff;
 --surface-mint: #d8f3dcff;
@@ -36,9 +36,9 @@ updated: '2026-05-19'
 
 /* CSS HSL */
 --botanical-ink: hsla(221, 51%, 16%, 1);
---leaf-900: hsla(155, 43%, 18%, 1);
---leaf-600: hsla(153, 39%, 41%, 1);
---leaf-300: hsla(147, 43%, 71%, 1);
+--dark-blue-green: hsla(155, 43%, 18%, 1);
+--ocean-green: hsla(153, 39%, 41%, 1);
+--pale-teal: hsla(147, 43%, 71%, 1);
 --pollen-yellow: hsla(42, 100%, 70%, 1);
 --bloom-coral: hsla(346, 84%, 61%, 1);
 --surface-mint: hsla(129, 53%, 90%, 1);
@@ -47,9 +47,9 @@ updated: '2026-05-19'
 
 /* SCSS HEX */
 $botanical-ink: #14213dff;
-$leaf-900: #1b4332ff;
-$leaf-600: #40916cff;
-$leaf-300: #95d5b2ff;
+$dark-blue-green: #1b4332ff;
+$ocean-green: #40916cff;
+$pale-teal: #95d5b2ff;
 $pollen-yellow: #ffd166ff;
 $bloom-coral: #ef476fff;
 $surface-mint: #d8f3dcff;
@@ -57,9 +57,9 @@ $paper-soft: #f8fff4ff;
 
 /* SCSS HSL */
 $botanical-ink: hsla(221, 51%, 16%, 1);
-$leaf-900: hsla(155, 43%, 18%, 1);
-$leaf-600: hsla(153, 39%, 41%, 1);
-$leaf-300: hsla(147, 43%, 71%, 1);
+$dark-blue-green: hsla(155, 43%, 18%, 1);
+$ocean-green: hsla(153, 39%, 41%, 1);
+$pale-teal: hsla(147, 43%, 71%, 1);
 $pollen-yellow: hsla(42, 100%, 70%, 1);
 $bloom-coral: hsla(346, 84%, 61%, 1);
 $surface-mint: hsla(129, 53%, 90%, 1);
@@ -67,9 +67,9 @@ $paper-soft: hsla(98, 100%, 98%, 1);
 
 /* SCSS RGB */
 $botanical-ink: rgba(20, 33, 61, 1);
-$leaf-900: rgba(27, 67, 50, 1);
-$leaf-600: rgba(64, 145, 108, 1);
-$leaf-300: rgba(149, 213, 178, 1);
+$dark-blue-green: rgba(27, 67, 50, 1);
+$ocean-green: rgba(64, 145, 108, 1);
+$pale-teal: rgba(149, 213, 178, 1);
 $pollen-yellow: rgba(255, 209, 102, 1);
 $bloom-coral: rgba(239, 71, 111, 1);
 $surface-mint: rgba(216, 243, 220, 1);
@@ -89,9 +89,9 @@ $gradient-radial: radial-gradient(#14213dff, #1b4332ff, #40916cff, #95d5b2ff, #f
 /* SCSS Map */
 $botanical-interface-map: (
     "botanical-ink": #14213dff,
-    "leaf-900": #1b4332ff,
-    "leaf-600": #40916cff,
-    "leaf-300": #95d5b2ff,
+    "dark-blue-green": #1b4332ff,
+    "ocean-green": #40916cff,
+    "pale-teal": #95d5b2ff,
     "pollen-yellow": #ffd166ff,
     "bloom-coral": #ef476fff,
     "surface-mint": #d8f3dcff,

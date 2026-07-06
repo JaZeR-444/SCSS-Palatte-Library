@@ -25,65 +25,65 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---ink-studio-atlas-studio-black: #070707ff;
---ink-studio-atlas-ink-depth: #14110fff;
---ink-studio-atlas-charcoal-warm: #23201dff;
---ink-studio-atlas-gallery-graphite: #34312dff;
---ink-studio-atlas-type-stone: #57534eff;
---ink-studio-atlas-caption-smoke: #78716cff;
---ink-studio-atlas-border-stone: #a8a29eff;
---ink-studio-atlas-paper-line: #d6d3d1ff;
---ink-studio-atlas-studio-paper: #f5f5f4ff;
---ink-studio-atlas-cream-light: #fffaf0ff;
+--studio-black: #070707ff;
+--ink-depth: #14110fff;
+--charcoal-warm: #23201dff;
+--gallery-graphite: #34312dff;
+--type-stone: #57534eff;
+--caption-smoke: #78716cff;
+--border-stone: #a8a29eff;
+--paper-line: #d6d3d1ff;
+--studio-paper: #f5f5f4ff;
+--cream-light: #fffaf0ff;
 
 /* CSS HSL */
---ink-studio-atlas-studio-black: hsla(0, 0%, 3%, 1);
---ink-studio-atlas-ink-depth: hsla(24, 14%, 7%, 1);
---ink-studio-atlas-charcoal-warm: hsla(30, 9%, 13%, 1);
---ink-studio-atlas-gallery-graphite: hsla(34, 7%, 19%, 1);
---ink-studio-atlas-type-stone: hsla(33, 5%, 32%, 1);
---ink-studio-atlas-caption-smoke: hsla(25, 5%, 45%, 1);
---ink-studio-atlas-border-stone: hsla(24, 5%, 64%, 1);
---ink-studio-atlas-paper-line: hsla(24, 6%, 83%, 1);
---ink-studio-atlas-studio-paper: hsla(60, 5%, 96%, 1);
---ink-studio-atlas-cream-light: hsla(40, 100%, 97%, 1);
+--studio-black: hsla(0, 0%, 3%, 1);
+--ink-depth: hsla(24, 14%, 7%, 1);
+--charcoal-warm: hsla(30, 9%, 13%, 1);
+--gallery-graphite: hsla(34, 7%, 19%, 1);
+--type-stone: hsla(33, 5%, 32%, 1);
+--caption-smoke: hsla(25, 5%, 45%, 1);
+--border-stone: hsla(24, 5%, 64%, 1);
+--paper-line: hsla(24, 6%, 83%, 1);
+--studio-paper: hsla(60, 5%, 96%, 1);
+--cream-light: hsla(40, 100%, 97%, 1);
 }
 
 /* SCSS HEX */
-$ink-studio-atlas-studio-black: #070707ff;
-$ink-studio-atlas-ink-depth: #14110fff;
-$ink-studio-atlas-charcoal-warm: #23201dff;
-$ink-studio-atlas-gallery-graphite: #34312dff;
-$ink-studio-atlas-type-stone: #57534eff;
-$ink-studio-atlas-caption-smoke: #78716cff;
-$ink-studio-atlas-border-stone: #a8a29eff;
-$ink-studio-atlas-paper-line: #d6d3d1ff;
-$ink-studio-atlas-studio-paper: #f5f5f4ff;
-$ink-studio-atlas-cream-light: #fffaf0ff;
+$studio-black: #070707ff;
+$ink-depth: #14110fff;
+$charcoal-warm: #23201dff;
+$gallery-graphite: #34312dff;
+$type-stone: #57534eff;
+$caption-smoke: #78716cff;
+$border-stone: #a8a29eff;
+$paper-line: #d6d3d1ff;
+$studio-paper: #f5f5f4ff;
+$cream-light: #fffaf0ff;
 
 /* SCSS HSL */
-$ink-studio-atlas-studio-black: hsla(0, 0%, 3%, 1);
-$ink-studio-atlas-ink-depth: hsla(24, 14%, 7%, 1);
-$ink-studio-atlas-charcoal-warm: hsla(30, 9%, 13%, 1);
-$ink-studio-atlas-gallery-graphite: hsla(34, 7%, 19%, 1);
-$ink-studio-atlas-type-stone: hsla(33, 5%, 32%, 1);
-$ink-studio-atlas-caption-smoke: hsla(25, 5%, 45%, 1);
-$ink-studio-atlas-border-stone: hsla(24, 5%, 64%, 1);
-$ink-studio-atlas-paper-line: hsla(24, 6%, 83%, 1);
-$ink-studio-atlas-studio-paper: hsla(60, 5%, 96%, 1);
-$ink-studio-atlas-cream-light: hsla(40, 100%, 97%, 1);
+$studio-black: hsla(0, 0%, 3%, 1);
+$ink-depth: hsla(24, 14%, 7%, 1);
+$charcoal-warm: hsla(30, 9%, 13%, 1);
+$gallery-graphite: hsla(34, 7%, 19%, 1);
+$type-stone: hsla(33, 5%, 32%, 1);
+$caption-smoke: hsla(25, 5%, 45%, 1);
+$border-stone: hsla(24, 5%, 64%, 1);
+$paper-line: hsla(24, 6%, 83%, 1);
+$studio-paper: hsla(60, 5%, 96%, 1);
+$cream-light: hsla(40, 100%, 97%, 1);
 
 /* SCSS RGB */
-$ink-studio-atlas-studio-black: rgba(7, 7, 7, 1);
-$ink-studio-atlas-ink-depth: rgba(20, 17, 15, 1);
-$ink-studio-atlas-charcoal-warm: rgba(35, 32, 29, 1);
-$ink-studio-atlas-gallery-graphite: rgba(52, 49, 45, 1);
-$ink-studio-atlas-type-stone: rgba(87, 83, 78, 1);
-$ink-studio-atlas-caption-smoke: rgba(120, 113, 108, 1);
-$ink-studio-atlas-border-stone: rgba(168, 162, 158, 1);
-$ink-studio-atlas-paper-line: rgba(214, 211, 209, 1);
-$ink-studio-atlas-studio-paper: rgba(245, 245, 244, 1);
-$ink-studio-atlas-cream-light: rgba(255, 250, 240, 1);
+$studio-black: rgba(7, 7, 7, 1);
+$ink-depth: rgba(20, 17, 15, 1);
+$charcoal-warm: rgba(35, 32, 29, 1);
+$gallery-graphite: rgba(52, 49, 45, 1);
+$type-stone: rgba(87, 83, 78, 1);
+$caption-smoke: rgba(120, 113, 108, 1);
+$border-stone: rgba(168, 162, 158, 1);
+$paper-line: rgba(214, 211, 209, 1);
+$studio-paper: rgba(245, 245, 244, 1);
+$cream-light: rgba(255, 250, 240, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #070707ff, #14110fff, #23201dff, #34312dff, #57534eff, #78716cff, #a8a29eff, #d6d3d1ff, #f5f5f4ff, #fffaf0ff);
@@ -98,14 +98,14 @@ $gradient-radial: radial-gradient(#070707ff, #14110fff, #23201dff, #34312dff, #5
 
 /* SCSS Map */
 $ink-studio-atlas-map: (
-    "ink-studio-atlas-studio-black": #070707ff,
-    "ink-studio-atlas-ink-depth": #14110fff,
-    "ink-studio-atlas-charcoal-warm": #23201dff,
-    "ink-studio-atlas-gallery-graphite": #34312dff,
-    "ink-studio-atlas-type-stone": #57534eff,
-    "ink-studio-atlas-caption-smoke": #78716cff,
-    "ink-studio-atlas-border-stone": #a8a29eff,
-    "ink-studio-atlas-paper-line": #d6d3d1ff,
-    "ink-studio-atlas-studio-paper": #f5f5f4ff,
-    "ink-studio-atlas-cream-light": #fffaf0ff
+    "studio-black": #070707ff,
+    "ink-depth": #14110fff,
+    "charcoal-warm": #23201dff,
+    "gallery-graphite": #34312dff,
+    "type-stone": #57534eff,
+    "caption-smoke": #78716cff,
+    "border-stone": #a8a29eff,
+    "paper-line": #d6d3d1ff,
+    "studio-paper": #f5f5f4ff,
+    "cream-light": #fffaf0ff
 );

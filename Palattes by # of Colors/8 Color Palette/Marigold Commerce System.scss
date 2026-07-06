@@ -25,55 +25,55 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---marigold-commerce-system-espresso-cart: #1c0a02ff;
---marigold-commerce-system-roast-brown: #431407ff;
---marigold-commerce-system-cart-orange: #c2410cff;
---marigold-commerce-system-checkout-tangerine: #f97316ff;
---marigold-commerce-system-marigold-deal: #f59e0bff;
---marigold-commerce-system-honey-ticket: #facc15ff;
---marigold-commerce-system-peach-receipt: #fed7aaff;
---marigold-commerce-system-cream-checkout: #fffbebff;
+--espresso-cart: #1c0a02ff;
+--roast-brown: #431407ff;
+--cart-orange: #c2410cff;
+--checkout-tangerine: #f97316ff;
+--marigold-deal: #f59e0bff;
+--honey-ticket: #facc15ff;
+--peach-receipt: #fed7aaff;
+--cream-checkout: #fffbebff;
 
 /* CSS HSL */
---marigold-commerce-system-espresso-cart: hsla(18, 87%, 6%, 1);
---marigold-commerce-system-roast-brown: hsla(13, 81%, 15%, 1);
---marigold-commerce-system-cart-orange: hsla(17, 88%, 40%, 1);
---marigold-commerce-system-checkout-tangerine: hsla(25, 95%, 53%, 1);
---marigold-commerce-system-marigold-deal: hsla(38, 92%, 50%, 1);
---marigold-commerce-system-honey-ticket: hsla(48, 96%, 53%, 1);
---marigold-commerce-system-peach-receipt: hsla(32, 98%, 83%, 1);
---marigold-commerce-system-cream-checkout: hsla(48, 100%, 96%, 1);
+--espresso-cart: hsla(18, 87%, 6%, 1);
+--roast-brown: hsla(13, 81%, 15%, 1);
+--cart-orange: hsla(17, 88%, 40%, 1);
+--checkout-tangerine: hsla(25, 95%, 53%, 1);
+--marigold-deal: hsla(38, 92%, 50%, 1);
+--honey-ticket: hsla(48, 96%, 53%, 1);
+--peach-receipt: hsla(32, 98%, 83%, 1);
+--cream-checkout: hsla(48, 100%, 96%, 1);
 }
 
 /* SCSS HEX */
-$marigold-commerce-system-espresso-cart: #1c0a02ff;
-$marigold-commerce-system-roast-brown: #431407ff;
-$marigold-commerce-system-cart-orange: #c2410cff;
-$marigold-commerce-system-checkout-tangerine: #f97316ff;
-$marigold-commerce-system-marigold-deal: #f59e0bff;
-$marigold-commerce-system-honey-ticket: #facc15ff;
-$marigold-commerce-system-peach-receipt: #fed7aaff;
-$marigold-commerce-system-cream-checkout: #fffbebff;
+$espresso-cart: #1c0a02ff;
+$roast-brown: #431407ff;
+$cart-orange: #c2410cff;
+$checkout-tangerine: #f97316ff;
+$marigold-deal: #f59e0bff;
+$honey-ticket: #facc15ff;
+$peach-receipt: #fed7aaff;
+$cream-checkout: #fffbebff;
 
 /* SCSS HSL */
-$marigold-commerce-system-espresso-cart: hsla(18, 87%, 6%, 1);
-$marigold-commerce-system-roast-brown: hsla(13, 81%, 15%, 1);
-$marigold-commerce-system-cart-orange: hsla(17, 88%, 40%, 1);
-$marigold-commerce-system-checkout-tangerine: hsla(25, 95%, 53%, 1);
-$marigold-commerce-system-marigold-deal: hsla(38, 92%, 50%, 1);
-$marigold-commerce-system-honey-ticket: hsla(48, 96%, 53%, 1);
-$marigold-commerce-system-peach-receipt: hsla(32, 98%, 83%, 1);
-$marigold-commerce-system-cream-checkout: hsla(48, 100%, 96%, 1);
+$espresso-cart: hsla(18, 87%, 6%, 1);
+$roast-brown: hsla(13, 81%, 15%, 1);
+$cart-orange: hsla(17, 88%, 40%, 1);
+$checkout-tangerine: hsla(25, 95%, 53%, 1);
+$marigold-deal: hsla(38, 92%, 50%, 1);
+$honey-ticket: hsla(48, 96%, 53%, 1);
+$peach-receipt: hsla(32, 98%, 83%, 1);
+$cream-checkout: hsla(48, 100%, 96%, 1);
 
 /* SCSS RGB */
-$marigold-commerce-system-espresso-cart: rgba(28, 10, 2, 1);
-$marigold-commerce-system-roast-brown: rgba(67, 20, 7, 1);
-$marigold-commerce-system-cart-orange: rgba(194, 65, 12, 1);
-$marigold-commerce-system-checkout-tangerine: rgba(249, 115, 22, 1);
-$marigold-commerce-system-marigold-deal: rgba(245, 158, 11, 1);
-$marigold-commerce-system-honey-ticket: rgba(250, 204, 21, 1);
-$marigold-commerce-system-peach-receipt: rgba(254, 215, 170, 1);
-$marigold-commerce-system-cream-checkout: rgba(255, 251, 235, 1);
+$espresso-cart: rgba(28, 10, 2, 1);
+$roast-brown: rgba(67, 20, 7, 1);
+$cart-orange: rgba(194, 65, 12, 1);
+$checkout-tangerine: rgba(249, 115, 22, 1);
+$marigold-deal: rgba(245, 158, 11, 1);
+$honey-ticket: rgba(250, 204, 21, 1);
+$peach-receipt: rgba(254, 215, 170, 1);
+$cream-checkout: rgba(255, 251, 235, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1c0a02ff, #431407ff, #c2410cff, #f97316ff, #f59e0bff, #facc15ff, #fed7aaff, #fffbebff);
@@ -88,12 +88,12 @@ $gradient-radial: radial-gradient(#1c0a02ff, #431407ff, #c2410cff, #f97316ff, #f
 
 /* SCSS Map */
 $marigold-commerce-system-map: (
-    "marigold-commerce-system-espresso-cart": #1c0a02ff,
-    "marigold-commerce-system-roast-brown": #431407ff,
-    "marigold-commerce-system-cart-orange": #c2410cff,
-    "marigold-commerce-system-checkout-tangerine": #f97316ff,
-    "marigold-commerce-system-marigold-deal": #f59e0bff,
-    "marigold-commerce-system-honey-ticket": #facc15ff,
-    "marigold-commerce-system-peach-receipt": #fed7aaff,
-    "marigold-commerce-system-cream-checkout": #fffbebff
+    "espresso-cart": #1c0a02ff,
+    "roast-brown": #431407ff,
+    "cart-orange": #c2410cff,
+    "checkout-tangerine": #f97316ff,
+    "marigold-deal": #f59e0bff,
+    "honey-ticket": #facc15ff,
+    "peach-receipt": #fed7aaff,
+    "cream-checkout": #fffbebff
 );

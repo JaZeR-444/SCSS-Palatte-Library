@@ -25,50 +25,50 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---forest-ledger-spectrum-ledger-forest: #0b1f17ff;
---forest-ledger-spectrum-account-pine: #123524ff;
---forest-ledger-spectrum-report-green: #1b5e3cff;
---forest-ledger-spectrum-balance-green: #2e7d32ff;
---forest-ledger-spectrum-metric-leaf: #43a047ff;
---forest-ledger-spectrum-growth-green: #66bb6aff;
---forest-ledger-spectrum-summary-sage: #a5d6a7ff;
+--ledger-forest: #0b1f17ff;
+--account-pine: #123524ff;
+--report-green: #1b5e3cff;
+--balance-green: #2e7d32ff;
+--metric-leaf: #43a047ff;
+--growth-green: #66bb6aff;
+--summary-sage: #a5d6a7ff;
 
 /* CSS HSL */
---forest-ledger-spectrum-ledger-forest: hsla(156, 48%, 8%, 1);
---forest-ledger-spectrum-account-pine: hsla(151, 49%, 14%, 1);
---forest-ledger-spectrum-report-green: hsla(150, 55%, 24%, 1);
---forest-ledger-spectrum-balance-green: hsla(123, 46%, 34%, 1);
---forest-ledger-spectrum-metric-leaf: hsla(123, 41%, 45%, 1);
---forest-ledger-spectrum-growth-green: hsla(123, 38%, 57%, 1);
---forest-ledger-spectrum-summary-sage: hsla(122, 37%, 74%, 1);
+--ledger-forest: hsla(156, 48%, 8%, 1);
+--account-pine: hsla(151, 49%, 14%, 1);
+--report-green: hsla(150, 55%, 24%, 1);
+--balance-green: hsla(123, 46%, 34%, 1);
+--metric-leaf: hsla(123, 41%, 45%, 1);
+--growth-green: hsla(123, 38%, 57%, 1);
+--summary-sage: hsla(122, 37%, 74%, 1);
 }
 
 /* SCSS HEX */
-$forest-ledger-spectrum-ledger-forest: #0b1f17ff;
-$forest-ledger-spectrum-account-pine: #123524ff;
-$forest-ledger-spectrum-report-green: #1b5e3cff;
-$forest-ledger-spectrum-balance-green: #2e7d32ff;
-$forest-ledger-spectrum-metric-leaf: #43a047ff;
-$forest-ledger-spectrum-growth-green: #66bb6aff;
-$forest-ledger-spectrum-summary-sage: #a5d6a7ff;
+$ledger-forest: #0b1f17ff;
+$account-pine: #123524ff;
+$report-green: #1b5e3cff;
+$balance-green: #2e7d32ff;
+$metric-leaf: #43a047ff;
+$growth-green: #66bb6aff;
+$summary-sage: #a5d6a7ff;
 
 /* SCSS HSL */
-$forest-ledger-spectrum-ledger-forest: hsla(156, 48%, 8%, 1);
-$forest-ledger-spectrum-account-pine: hsla(151, 49%, 14%, 1);
-$forest-ledger-spectrum-report-green: hsla(150, 55%, 24%, 1);
-$forest-ledger-spectrum-balance-green: hsla(123, 46%, 34%, 1);
-$forest-ledger-spectrum-metric-leaf: hsla(123, 41%, 45%, 1);
-$forest-ledger-spectrum-growth-green: hsla(123, 38%, 57%, 1);
-$forest-ledger-spectrum-summary-sage: hsla(122, 37%, 74%, 1);
+$ledger-forest: hsla(156, 48%, 8%, 1);
+$account-pine: hsla(151, 49%, 14%, 1);
+$report-green: hsla(150, 55%, 24%, 1);
+$balance-green: hsla(123, 46%, 34%, 1);
+$metric-leaf: hsla(123, 41%, 45%, 1);
+$growth-green: hsla(123, 38%, 57%, 1);
+$summary-sage: hsla(122, 37%, 74%, 1);
 
 /* SCSS RGB */
-$forest-ledger-spectrum-ledger-forest: rgba(11, 31, 23, 1);
-$forest-ledger-spectrum-account-pine: rgba(18, 53, 36, 1);
-$forest-ledger-spectrum-report-green: rgba(27, 94, 60, 1);
-$forest-ledger-spectrum-balance-green: rgba(46, 125, 50, 1);
-$forest-ledger-spectrum-metric-leaf: rgba(67, 160, 71, 1);
-$forest-ledger-spectrum-growth-green: rgba(102, 187, 106, 1);
-$forest-ledger-spectrum-summary-sage: rgba(165, 214, 167, 1);
+$ledger-forest: rgba(11, 31, 23, 1);
+$account-pine: rgba(18, 53, 36, 1);
+$report-green: rgba(27, 94, 60, 1);
+$balance-green: rgba(46, 125, 50, 1);
+$metric-leaf: rgba(67, 160, 71, 1);
+$growth-green: rgba(102, 187, 106, 1);
+$summary-sage: rgba(165, 214, 167, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #43a047ff, #66bb6aff, #a5d6a7ff);
@@ -83,11 +83,11 @@ $gradient-radial: radial-gradient(#0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff, #4
 
 /* SCSS Map */
 $forest-ledger-spectrum-map: (
-    "forest-ledger-spectrum-ledger-forest": #0b1f17ff,
-    "forest-ledger-spectrum-account-pine": #123524ff,
-    "forest-ledger-spectrum-report-green": #1b5e3cff,
-    "forest-ledger-spectrum-balance-green": #2e7d32ff,
-    "forest-ledger-spectrum-metric-leaf": #43a047ff,
-    "forest-ledger-spectrum-growth-green": #66bb6aff,
-    "forest-ledger-spectrum-summary-sage": #a5d6a7ff
+    "ledger-forest": #0b1f17ff,
+    "account-pine": #123524ff,
+    "report-green": #1b5e3cff,
+    "balance-green": #2e7d32ff,
+    "metric-leaf": #43a047ff,
+    "growth-green": #66bb6aff,
+    "summary-sage": #a5d6a7ff
 );

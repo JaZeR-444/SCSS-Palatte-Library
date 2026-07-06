@@ -25,30 +25,30 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---amber-forge-trio-kiln-black: #1c0f05ff;
---amber-forge-trio-forge-ember: #7c2d12ff;
---amber-forge-trio-molten-amber: #f97316ff;
+--kiln-black: #1c0f05ff;
+--forge-ember: #7c2d12ff;
+--molten-amber: #f97316ff;
 
 /* CSS HSL */
---amber-forge-trio-kiln-black: hsla(26, 70%, 6%, 1);
---amber-forge-trio-forge-ember: hsla(15, 75%, 28%, 1);
---amber-forge-trio-molten-amber: hsla(25, 95%, 53%, 1);
+--kiln-black: hsla(26, 70%, 6%, 1);
+--forge-ember: hsla(15, 75%, 28%, 1);
+--molten-amber: hsla(25, 95%, 53%, 1);
 }
 
 /* SCSS HEX */
-$amber-forge-trio-kiln-black: #1c0f05ff;
-$amber-forge-trio-forge-ember: #7c2d12ff;
-$amber-forge-trio-molten-amber: #f97316ff;
+$kiln-black: #1c0f05ff;
+$forge-ember: #7c2d12ff;
+$molten-amber: #f97316ff;
 
 /* SCSS HSL */
-$amber-forge-trio-kiln-black: hsla(26, 70%, 6%, 1);
-$amber-forge-trio-forge-ember: hsla(15, 75%, 28%, 1);
-$amber-forge-trio-molten-amber: hsla(25, 95%, 53%, 1);
+$kiln-black: hsla(26, 70%, 6%, 1);
+$forge-ember: hsla(15, 75%, 28%, 1);
+$molten-amber: hsla(25, 95%, 53%, 1);
 
 /* SCSS RGB */
-$amber-forge-trio-kiln-black: rgba(28, 15, 5, 1);
-$amber-forge-trio-forge-ember: rgba(124, 45, 18, 1);
-$amber-forge-trio-molten-amber: rgba(249, 115, 22, 1);
+$kiln-black: rgba(28, 15, 5, 1);
+$forge-ember: rgba(124, 45, 18, 1);
+$molten-amber: rgba(249, 115, 22, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1c0f05ff, #7c2d12ff, #f97316ff);
@@ -63,7 +63,7 @@ $gradient-radial: radial-gradient(#1c0f05ff, #7c2d12ff, #f97316ff);
 
 /* SCSS Map */
 $amber-forge-trio-map: (
-    "amber-forge-trio-kiln-black": #1c0f05ff,
-    "amber-forge-trio-forge-ember": #7c2d12ff,
-    "amber-forge-trio-molten-amber": #f97316ff
+    "kiln-black": #1c0f05ff,
+    "forge-ember": #7c2d12ff,
+    "molten-amber": #f97316ff
 );

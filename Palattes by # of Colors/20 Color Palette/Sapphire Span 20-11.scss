@@ -1,6 +1,6 @@
 /*---
 id: sapphire-span-20-11
-name: Sapphire Span 20-11
+name: Sapphire Span Slim
 author: JaZeR-444
 version: 1.0.0
 category: Singular Hue Span
@@ -20,115 +20,115 @@ updated: '2026-07-04'
 
 :root {
 /* CSS HEX */
---span-01: #0f121aff;
---span-02: #161a2aff;
---span-03: #1a223cff;
---span-04: #1f2a4dff;
---span-05: #203163ff;
---span-06: #213979ff;
---span-07: #22448eff;
---span-08: #1c3eabff;
---span-09: #1c48c2ff;
---span-10: #1852dbff;
---span-11: #2559e5ff;
---span-12: #3864e9ff;
---span-13: #537be5ff;
---span-14: #6f8cdfff;
---span-15: #879fdeff;
---span-16: #9cacdfff;
---span-17: #b1bde1ff;
---span-18: #c4cbe4ff;
---span-19: #d6dae9ff;
---span-20: #e6e9efff;
+--almost-black: #0f121aff;
+--dark: #161a2aff;
+--navy: #1a223cff;
+--marine: #1f2a4dff;
+--marine-blue: #203163ff;
+--darkish-blue: #213979ff;
+--cobalt: #22448eff;
+--sapphire: #1c3eabff;
+--blue-blue: #1c48c2ff;
+--azul: #1852dbff;
+--warm-blue: #2559e5ff;
+--cerulean-blue: #3864e9ff;
+--cornflower-blue: #537be5ff;
+--soft-blue: #6f8cdfff;
+--carolina-blue: #879fdeff;
+--pastel-blue: #9cacdfff;
+--cloudy-blue: #b1bde1ff;
+--powder-blue: #c4cbe4ff;
+--very-light-pink: #d6dae9ff;
+--white: #e6e9efff;
 
 /* CSS HSL */
---span-01: hsla(224, 25%, 8%, 1);
---span-02: hsla(224, 32%, 12%, 1);
---span-03: hsla(224, 40%, 17%, 1);
---span-04: hsla(224, 43%, 21%, 1);
---span-05: hsla(224, 51%, 26%, 1);
---span-06: hsla(224, 57%, 30%, 1);
---span-07: hsla(224, 61%, 35%, 1);
---span-08: hsla(224, 72%, 39%, 1);
---span-09: hsla(224, 75%, 43%, 1);
---span-10: hsla(224, 80%, 48%, 1);
---span-11: hsla(224, 79%, 52%, 1);
---span-12: hsla(224, 80%, 57%, 1);
---span-13: hsla(224, 74%, 61%, 1);
---span-14: hsla(224, 64%, 65%, 1);
---span-15: hsla(224, 57%, 70%, 1);
---span-16: hsla(224, 51%, 74%, 1);
---span-17: hsla(224, 44%, 79%, 1);
---span-18: hsla(224, 38%, 83%, 1);
---span-19: hsla(224, 31%, 88%, 1);
---span-20: hsla(224, 23%, 92%, 1);
+--almost-black: hsla(224, 25%, 8%, 1);
+--dark: hsla(224, 32%, 12%, 1);
+--navy: hsla(224, 40%, 17%, 1);
+--marine: hsla(224, 43%, 21%, 1);
+--marine-blue: hsla(224, 51%, 26%, 1);
+--darkish-blue: hsla(224, 57%, 30%, 1);
+--cobalt: hsla(224, 61%, 35%, 1);
+--sapphire: hsla(224, 72%, 39%, 1);
+--blue-blue: hsla(224, 75%, 43%, 1);
+--azul: hsla(224, 80%, 48%, 1);
+--warm-blue: hsla(224, 79%, 52%, 1);
+--cerulean-blue: hsla(224, 80%, 57%, 1);
+--cornflower-blue: hsla(224, 74%, 61%, 1);
+--soft-blue: hsla(224, 64%, 65%, 1);
+--carolina-blue: hsla(224, 57%, 70%, 1);
+--pastel-blue: hsla(224, 51%, 74%, 1);
+--cloudy-blue: hsla(224, 44%, 79%, 1);
+--powder-blue: hsla(224, 38%, 83%, 1);
+--very-light-pink: hsla(224, 31%, 88%, 1);
+--white: hsla(224, 23%, 92%, 1);
 }
 
 /* SCSS HEX */
-$span-01: #0f121aff;
-$span-02: #161a2aff;
-$span-03: #1a223cff;
-$span-04: #1f2a4dff;
-$span-05: #203163ff;
-$span-06: #213979ff;
-$span-07: #22448eff;
-$span-08: #1c3eabff;
-$span-09: #1c48c2ff;
-$span-10: #1852dbff;
-$span-11: #2559e5ff;
-$span-12: #3864e9ff;
-$span-13: #537be5ff;
-$span-14: #6f8cdfff;
-$span-15: #879fdeff;
-$span-16: #9cacdfff;
-$span-17: #b1bde1ff;
-$span-18: #c4cbe4ff;
-$span-19: #d6dae9ff;
-$span-20: #e6e9efff;
+$almost-black: #0f121aff;
+$dark: #161a2aff;
+$navy: #1a223cff;
+$marine: #1f2a4dff;
+$marine-blue: #203163ff;
+$darkish-blue: #213979ff;
+$cobalt: #22448eff;
+$sapphire: #1c3eabff;
+$blue-blue: #1c48c2ff;
+$azul: #1852dbff;
+$warm-blue: #2559e5ff;
+$cerulean-blue: #3864e9ff;
+$cornflower-blue: #537be5ff;
+$soft-blue: #6f8cdfff;
+$carolina-blue: #879fdeff;
+$pastel-blue: #9cacdfff;
+$cloudy-blue: #b1bde1ff;
+$powder-blue: #c4cbe4ff;
+$very-light-pink: #d6dae9ff;
+$white: #e6e9efff;
 
 /* SCSS HSL */
-$span-01: hsla(224, 25%, 8%, 1);
-$span-02: hsla(224, 32%, 12%, 1);
-$span-03: hsla(224, 40%, 17%, 1);
-$span-04: hsla(224, 43%, 21%, 1);
-$span-05: hsla(224, 51%, 26%, 1);
-$span-06: hsla(224, 57%, 30%, 1);
-$span-07: hsla(224, 61%, 35%, 1);
-$span-08: hsla(224, 72%, 39%, 1);
-$span-09: hsla(224, 75%, 43%, 1);
-$span-10: hsla(224, 80%, 48%, 1);
-$span-11: hsla(224, 79%, 52%, 1);
-$span-12: hsla(224, 80%, 57%, 1);
-$span-13: hsla(224, 74%, 61%, 1);
-$span-14: hsla(224, 64%, 65%, 1);
-$span-15: hsla(224, 57%, 70%, 1);
-$span-16: hsla(224, 51%, 74%, 1);
-$span-17: hsla(224, 44%, 79%, 1);
-$span-18: hsla(224, 38%, 83%, 1);
-$span-19: hsla(224, 31%, 88%, 1);
-$span-20: hsla(224, 23%, 92%, 1);
+$almost-black: hsla(224, 25%, 8%, 1);
+$dark: hsla(224, 32%, 12%, 1);
+$navy: hsla(224, 40%, 17%, 1);
+$marine: hsla(224, 43%, 21%, 1);
+$marine-blue: hsla(224, 51%, 26%, 1);
+$darkish-blue: hsla(224, 57%, 30%, 1);
+$cobalt: hsla(224, 61%, 35%, 1);
+$sapphire: hsla(224, 72%, 39%, 1);
+$blue-blue: hsla(224, 75%, 43%, 1);
+$azul: hsla(224, 80%, 48%, 1);
+$warm-blue: hsla(224, 79%, 52%, 1);
+$cerulean-blue: hsla(224, 80%, 57%, 1);
+$cornflower-blue: hsla(224, 74%, 61%, 1);
+$soft-blue: hsla(224, 64%, 65%, 1);
+$carolina-blue: hsla(224, 57%, 70%, 1);
+$pastel-blue: hsla(224, 51%, 74%, 1);
+$cloudy-blue: hsla(224, 44%, 79%, 1);
+$powder-blue: hsla(224, 38%, 83%, 1);
+$very-light-pink: hsla(224, 31%, 88%, 1);
+$white: hsla(224, 23%, 92%, 1);
 
 /* SCSS RGB */
-$span-01: rgba(15, 18, 26, 1);
-$span-02: rgba(22, 26, 42, 1);
-$span-03: rgba(26, 34, 60, 1);
-$span-04: rgba(31, 42, 77, 1);
-$span-05: rgba(32, 49, 99, 1);
-$span-06: rgba(33, 57, 121, 1);
-$span-07: rgba(34, 68, 142, 1);
-$span-08: rgba(28, 62, 171, 1);
-$span-09: rgba(28, 72, 194, 1);
-$span-10: rgba(24, 82, 219, 1);
-$span-11: rgba(37, 89, 229, 1);
-$span-12: rgba(56, 100, 233, 1);
-$span-13: rgba(83, 123, 229, 1);
-$span-14: rgba(111, 140, 223, 1);
-$span-15: rgba(135, 159, 222, 1);
-$span-16: rgba(156, 172, 223, 1);
-$span-17: rgba(177, 189, 225, 1);
-$span-18: rgba(196, 203, 228, 1);
-$span-19: rgba(214, 218, 233, 1);
-$span-20: rgba(230, 233, 239, 1);
+$almost-black: rgba(15, 18, 26, 1);
+$dark: rgba(22, 26, 42, 1);
+$navy: rgba(26, 34, 60, 1);
+$marine: rgba(31, 42, 77, 1);
+$marine-blue: rgba(32, 49, 99, 1);
+$darkish-blue: rgba(33, 57, 121, 1);
+$cobalt: rgba(34, 68, 142, 1);
+$sapphire: rgba(28, 62, 171, 1);
+$blue-blue: rgba(28, 72, 194, 1);
+$azul: rgba(24, 82, 219, 1);
+$warm-blue: rgba(37, 89, 229, 1);
+$cerulean-blue: rgba(56, 100, 233, 1);
+$cornflower-blue: rgba(83, 123, 229, 1);
+$soft-blue: rgba(111, 140, 223, 1);
+$carolina-blue: rgba(135, 159, 222, 1);
+$pastel-blue: rgba(156, 172, 223, 1);
+$cloudy-blue: rgba(177, 189, 225, 1);
+$powder-blue: rgba(196, 203, 228, 1);
+$very-light-pink: rgba(214, 218, 233, 1);
+$white: rgba(230, 233, 239, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #0f121aff, #161a2aff, #1a223cff, #1f2a4dff, #203163ff, #213979ff, #22448eff, #1c3eabff, #1c48c2ff, #1852dbff, #2559e5ff, #3864e9ff, #537be5ff, #6f8cdfff, #879fdeff, #9cacdfff, #b1bde1ff, #c4cbe4ff, #d6dae9ff, #e6e9efff);
@@ -143,24 +143,24 @@ $gradient-radial: radial-gradient(#0f121aff, #161a2aff, #1a223cff, #1f2a4dff, #2
 
 /* SCSS Map */
 $sapphire-span-20-11-map: (
-    "span-01": #0f121aff,
-    "span-02": #161a2aff,
-    "span-03": #1a223cff,
-    "span-04": #1f2a4dff,
-    "span-05": #203163ff,
-    "span-06": #213979ff,
-    "span-07": #22448eff,
-    "span-08": #1c3eabff,
-    "span-09": #1c48c2ff,
-    "span-10": #1852dbff,
-    "span-11": #2559e5ff,
-    "span-12": #3864e9ff,
-    "span-13": #537be5ff,
-    "span-14": #6f8cdfff,
-    "span-15": #879fdeff,
-    "span-16": #9cacdfff,
-    "span-17": #b1bde1ff,
-    "span-18": #c4cbe4ff,
-    "span-19": #d6dae9ff,
-    "span-20": #e6e9efff
+    "almost-black": #0f121aff,
+    "dark": #161a2aff,
+    "navy": #1a223cff,
+    "marine": #1f2a4dff,
+    "marine-blue": #203163ff,
+    "darkish-blue": #213979ff,
+    "cobalt": #22448eff,
+    "sapphire": #1c3eabff,
+    "blue-blue": #1c48c2ff,
+    "azul": #1852dbff,
+    "warm-blue": #2559e5ff,
+    "cerulean-blue": #3864e9ff,
+    "cornflower-blue": #537be5ff,
+    "soft-blue": #6f8cdfff,
+    "carolina-blue": #879fdeff,
+    "pastel-blue": #9cacdfff,
+    "cloudy-blue": #b1bde1ff,
+    "powder-blue": #c4cbe4ff,
+    "very-light-pink": #d6dae9ff,
+    "white": #e6e9efff
 );

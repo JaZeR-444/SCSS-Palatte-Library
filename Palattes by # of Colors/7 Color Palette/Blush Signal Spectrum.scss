@@ -25,50 +25,50 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---blush-signal-spectrum-signal-ink: #1f0a17ff;
---blush-signal-spectrum-rose-route: #831843ff;
---blush-signal-spectrum-active-rose: #be185dff;
---blush-signal-spectrum-blush-core: #db2777ff;
---blush-signal-spectrum-pink-flash: #f9a8d4ff;
---blush-signal-spectrum-cream-notice: #fdf2f8ff;
---blush-signal-spectrum-white-signal: #ffffffff;
+--signal-ink: #1f0a17ff;
+--rose-route: #831843ff;
+--active-rose: #be185dff;
+--blush-core: #db2777ff;
+--pink-flash: #f9a8d4ff;
+--cream-notice: #fdf2f8ff;
+--white-signal: #ffffffff;
 
 /* CSS HSL */
---blush-signal-spectrum-signal-ink: hsla(323, 51%, 8%, 1);
---blush-signal-spectrum-rose-route: hsla(336, 69%, 30%, 1);
---blush-signal-spectrum-active-rose: hsla(335, 78%, 42%, 1);
---blush-signal-spectrum-blush-core: hsla(333, 71%, 51%, 1);
---blush-signal-spectrum-pink-flash: hsla(327, 87%, 82%, 1);
---blush-signal-spectrum-cream-notice: hsla(327, 73%, 97%, 1);
---blush-signal-spectrum-white-signal: hsla(0, 0%, 100%, 1);
+--signal-ink: hsla(323, 51%, 8%, 1);
+--rose-route: hsla(336, 69%, 30%, 1);
+--active-rose: hsla(335, 78%, 42%, 1);
+--blush-core: hsla(333, 71%, 51%, 1);
+--pink-flash: hsla(327, 87%, 82%, 1);
+--cream-notice: hsla(327, 73%, 97%, 1);
+--white-signal: hsla(0, 0%, 100%, 1);
 }
 
 /* SCSS HEX */
-$blush-signal-spectrum-signal-ink: #1f0a17ff;
-$blush-signal-spectrum-rose-route: #831843ff;
-$blush-signal-spectrum-active-rose: #be185dff;
-$blush-signal-spectrum-blush-core: #db2777ff;
-$blush-signal-spectrum-pink-flash: #f9a8d4ff;
-$blush-signal-spectrum-cream-notice: #fdf2f8ff;
-$blush-signal-spectrum-white-signal: #ffffffff;
+$signal-ink: #1f0a17ff;
+$rose-route: #831843ff;
+$active-rose: #be185dff;
+$blush-core: #db2777ff;
+$pink-flash: #f9a8d4ff;
+$cream-notice: #fdf2f8ff;
+$white-signal: #ffffffff;
 
 /* SCSS HSL */
-$blush-signal-spectrum-signal-ink: hsla(323, 51%, 8%, 1);
-$blush-signal-spectrum-rose-route: hsla(336, 69%, 30%, 1);
-$blush-signal-spectrum-active-rose: hsla(335, 78%, 42%, 1);
-$blush-signal-spectrum-blush-core: hsla(333, 71%, 51%, 1);
-$blush-signal-spectrum-pink-flash: hsla(327, 87%, 82%, 1);
-$blush-signal-spectrum-cream-notice: hsla(327, 73%, 97%, 1);
-$blush-signal-spectrum-white-signal: hsla(0, 0%, 100%, 1);
+$signal-ink: hsla(323, 51%, 8%, 1);
+$rose-route: hsla(336, 69%, 30%, 1);
+$active-rose: hsla(335, 78%, 42%, 1);
+$blush-core: hsla(333, 71%, 51%, 1);
+$pink-flash: hsla(327, 87%, 82%, 1);
+$cream-notice: hsla(327, 73%, 97%, 1);
+$white-signal: hsla(0, 0%, 100%, 1);
 
 /* SCSS RGB */
-$blush-signal-spectrum-signal-ink: rgba(31, 10, 23, 1);
-$blush-signal-spectrum-rose-route: rgba(131, 24, 67, 1);
-$blush-signal-spectrum-active-rose: rgba(190, 24, 93, 1);
-$blush-signal-spectrum-blush-core: rgba(219, 39, 119, 1);
-$blush-signal-spectrum-pink-flash: rgba(249, 168, 212, 1);
-$blush-signal-spectrum-cream-notice: rgba(253, 242, 248, 1);
-$blush-signal-spectrum-white-signal: rgba(255, 255, 255, 1);
+$signal-ink: rgba(31, 10, 23, 1);
+$rose-route: rgba(131, 24, 67, 1);
+$active-rose: rgba(190, 24, 93, 1);
+$blush-core: rgba(219, 39, 119, 1);
+$pink-flash: rgba(249, 168, 212, 1);
+$cream-notice: rgba(253, 242, 248, 1);
+$white-signal: rgba(255, 255, 255, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1f0a17ff, #831843ff, #be185dff, #db2777ff, #f9a8d4ff, #fdf2f8ff, #ffffffff);
@@ -83,11 +83,11 @@ $gradient-radial: radial-gradient(#1f0a17ff, #831843ff, #be185dff, #db2777ff, #f
 
 /* SCSS Map */
 $blush-signal-spectrum-map: (
-    "blush-signal-spectrum-signal-ink": #1f0a17ff,
-    "blush-signal-spectrum-rose-route": #831843ff,
-    "blush-signal-spectrum-active-rose": #be185dff,
-    "blush-signal-spectrum-blush-core": #db2777ff,
-    "blush-signal-spectrum-pink-flash": #f9a8d4ff,
-    "blush-signal-spectrum-cream-notice": #fdf2f8ff,
-    "blush-signal-spectrum-white-signal": #ffffffff
+    "signal-ink": #1f0a17ff,
+    "rose-route": #831843ff,
+    "active-rose": #be185dff,
+    "blush-core": #db2777ff,
+    "pink-flash": #f9a8d4ff,
+    "cream-notice": #fdf2f8ff,
+    "white-signal": #ffffffff
 );

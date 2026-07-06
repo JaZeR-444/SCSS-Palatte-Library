@@ -25,60 +25,60 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---porcelain-circuit-matrix-graphite-console: #111827ff;
---porcelain-circuit-matrix-slate-trace: #475569ff;
---porcelain-circuit-matrix-cool-trace: #94a3b8ff;
---porcelain-circuit-matrix-ceramic-border: #cbd5e1ff;
---porcelain-circuit-matrix-porcelain-panel: #e5e7ebff;
---porcelain-circuit-matrix-soft-console: #f1f5f9ff;
---porcelain-circuit-matrix-mist-surface: #f8fafcff;
---porcelain-circuit-matrix-signal-white: #ffffffff;
---porcelain-circuit-matrix-ice-accent: #e0f2feff;
+--graphite-console: #111827ff;
+--slate-trace: #475569ff;
+--cool-trace: #94a3b8ff;
+--ceramic-border: #cbd5e1ff;
+--porcelain-panel: #e5e7ebff;
+--soft-console: #f1f5f9ff;
+--mist-surface: #f8fafcff;
+--signal-white: #ffffffff;
+--ice-accent: #e0f2feff;
 
 /* CSS HSL */
---porcelain-circuit-matrix-graphite-console: hsla(221, 39%, 11%, 1);
---porcelain-circuit-matrix-slate-trace: hsla(215, 19%, 35%, 1);
---porcelain-circuit-matrix-cool-trace: hsla(215, 20%, 65%, 1);
---porcelain-circuit-matrix-ceramic-border: hsla(213, 27%, 84%, 1);
---porcelain-circuit-matrix-porcelain-panel: hsla(220, 13%, 91%, 1);
---porcelain-circuit-matrix-soft-console: hsla(210, 40%, 96%, 1);
---porcelain-circuit-matrix-mist-surface: hsla(210, 40%, 98%, 1);
---porcelain-circuit-matrix-signal-white: hsla(0, 0%, 100%, 1);
---porcelain-circuit-matrix-ice-accent: hsla(204, 94%, 94%, 1);
+--graphite-console: hsla(221, 39%, 11%, 1);
+--slate-trace: hsla(215, 19%, 35%, 1);
+--cool-trace: hsla(215, 20%, 65%, 1);
+--ceramic-border: hsla(213, 27%, 84%, 1);
+--porcelain-panel: hsla(220, 13%, 91%, 1);
+--soft-console: hsla(210, 40%, 96%, 1);
+--mist-surface: hsla(210, 40%, 98%, 1);
+--signal-white: hsla(0, 0%, 100%, 1);
+--ice-accent: hsla(204, 94%, 94%, 1);
 }
 
 /* SCSS HEX */
-$porcelain-circuit-matrix-graphite-console: #111827ff;
-$porcelain-circuit-matrix-slate-trace: #475569ff;
-$porcelain-circuit-matrix-cool-trace: #94a3b8ff;
-$porcelain-circuit-matrix-ceramic-border: #cbd5e1ff;
-$porcelain-circuit-matrix-porcelain-panel: #e5e7ebff;
-$porcelain-circuit-matrix-soft-console: #f1f5f9ff;
-$porcelain-circuit-matrix-mist-surface: #f8fafcff;
-$porcelain-circuit-matrix-signal-white: #ffffffff;
-$porcelain-circuit-matrix-ice-accent: #e0f2feff;
+$graphite-console: #111827ff;
+$slate-trace: #475569ff;
+$cool-trace: #94a3b8ff;
+$ceramic-border: #cbd5e1ff;
+$porcelain-panel: #e5e7ebff;
+$soft-console: #f1f5f9ff;
+$mist-surface: #f8fafcff;
+$signal-white: #ffffffff;
+$ice-accent: #e0f2feff;
 
 /* SCSS HSL */
-$porcelain-circuit-matrix-graphite-console: hsla(221, 39%, 11%, 1);
-$porcelain-circuit-matrix-slate-trace: hsla(215, 19%, 35%, 1);
-$porcelain-circuit-matrix-cool-trace: hsla(215, 20%, 65%, 1);
-$porcelain-circuit-matrix-ceramic-border: hsla(213, 27%, 84%, 1);
-$porcelain-circuit-matrix-porcelain-panel: hsla(220, 13%, 91%, 1);
-$porcelain-circuit-matrix-soft-console: hsla(210, 40%, 96%, 1);
-$porcelain-circuit-matrix-mist-surface: hsla(210, 40%, 98%, 1);
-$porcelain-circuit-matrix-signal-white: hsla(0, 0%, 100%, 1);
-$porcelain-circuit-matrix-ice-accent: hsla(204, 94%, 94%, 1);
+$graphite-console: hsla(221, 39%, 11%, 1);
+$slate-trace: hsla(215, 19%, 35%, 1);
+$cool-trace: hsla(215, 20%, 65%, 1);
+$ceramic-border: hsla(213, 27%, 84%, 1);
+$porcelain-panel: hsla(220, 13%, 91%, 1);
+$soft-console: hsla(210, 40%, 96%, 1);
+$mist-surface: hsla(210, 40%, 98%, 1);
+$signal-white: hsla(0, 0%, 100%, 1);
+$ice-accent: hsla(204, 94%, 94%, 1);
 
 /* SCSS RGB */
-$porcelain-circuit-matrix-graphite-console: rgba(17, 24, 39, 1);
-$porcelain-circuit-matrix-slate-trace: rgba(71, 85, 105, 1);
-$porcelain-circuit-matrix-cool-trace: rgba(148, 163, 184, 1);
-$porcelain-circuit-matrix-ceramic-border: rgba(203, 213, 225, 1);
-$porcelain-circuit-matrix-porcelain-panel: rgba(229, 231, 235, 1);
-$porcelain-circuit-matrix-soft-console: rgba(241, 245, 249, 1);
-$porcelain-circuit-matrix-mist-surface: rgba(248, 250, 252, 1);
-$porcelain-circuit-matrix-signal-white: rgba(255, 255, 255, 1);
-$porcelain-circuit-matrix-ice-accent: rgba(224, 242, 254, 1);
+$graphite-console: rgba(17, 24, 39, 1);
+$slate-trace: rgba(71, 85, 105, 1);
+$cool-trace: rgba(148, 163, 184, 1);
+$ceramic-border: rgba(203, 213, 225, 1);
+$porcelain-panel: rgba(229, 231, 235, 1);
+$soft-console: rgba(241, 245, 249, 1);
+$mist-surface: rgba(248, 250, 252, 1);
+$signal-white: rgba(255, 255, 255, 1);
+$ice-accent: rgba(224, 242, 254, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e5e7ebff, #f1f5f9ff, #f8fafcff, #ffffffff, #e0f2feff);
@@ -93,13 +93,13 @@ $gradient-radial: radial-gradient(#111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e
 
 /* SCSS Map */
 $porcelain-circuit-matrix-map: (
-    "porcelain-circuit-matrix-graphite-console": #111827ff,
-    "porcelain-circuit-matrix-slate-trace": #475569ff,
-    "porcelain-circuit-matrix-cool-trace": #94a3b8ff,
-    "porcelain-circuit-matrix-ceramic-border": #cbd5e1ff,
-    "porcelain-circuit-matrix-porcelain-panel": #e5e7ebff,
-    "porcelain-circuit-matrix-soft-console": #f1f5f9ff,
-    "porcelain-circuit-matrix-mist-surface": #f8fafcff,
-    "porcelain-circuit-matrix-signal-white": #ffffffff,
-    "porcelain-circuit-matrix-ice-accent": #e0f2feff
+    "graphite-console": #111827ff,
+    "slate-trace": #475569ff,
+    "cool-trace": #94a3b8ff,
+    "ceramic-border": #cbd5e1ff,
+    "porcelain-panel": #e5e7ebff,
+    "soft-console": #f1f5f9ff,
+    "mist-surface": #f8fafcff,
+    "signal-white": #ffffffff,
+    "ice-accent": #e0f2feff
 );

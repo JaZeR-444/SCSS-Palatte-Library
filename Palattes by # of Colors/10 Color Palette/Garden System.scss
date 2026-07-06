@@ -25,64 +25,64 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---soil-900: #1a120bff;
---bark-700: #3f2e1eff;
---leaf-900: #14532dff;
---leaf-700: #15803dff;
---leaf-400: #4ade80ff;
---mint-100: #dcfce7ff;
+--soil: #1a120bff;
+--bark: #3f2e1eff;
+--pine-green: #14532dff;
+--jungle-green: #15803dff;
+--seaweed: #4ade80ff;
+--mint: #dcfce7ff;
 --bloom-rose: #f472b6ff;
 --pollen-gold: #facc15ff;
---stone-300: #d6d3d1ff;
+--stone: #d6d3d1ff;
 --garden-white: #fafaf9ff;
 
 /* CSS HSL */
---soil-900: hsla(28, 41%, 7%, 1);
---bark-700: hsla(29, 35%, 18%, 1);
---leaf-900: hsla(144, 61%, 20%, 1);
---leaf-700: hsla(142, 72%, 29%, 1);
---leaf-400: hsla(142, 69%, 58%, 1);
---mint-100: hsla(141, 84%, 93%, 1);
+--soil: hsla(28, 41%, 7%, 1);
+--bark: hsla(29, 35%, 18%, 1);
+--pine-green: hsla(144, 61%, 20%, 1);
+--jungle-green: hsla(142, 72%, 29%, 1);
+--seaweed: hsla(142, 69%, 58%, 1);
+--mint: hsla(141, 84%, 93%, 1);
 --bloom-rose: hsla(329, 86%, 70%, 1);
 --pollen-gold: hsla(48, 96%, 53%, 1);
---stone-300: hsla(24, 6%, 83%, 1);
+--stone: hsla(24, 6%, 83%, 1);
 --garden-white: hsla(60, 9%, 98%, 1);
 }
 
 /* SCSS HEX */
-$soil-900: #1a120bff;
-$bark-700: #3f2e1eff;
-$leaf-900: #14532dff;
-$leaf-700: #15803dff;
-$leaf-400: #4ade80ff;
-$mint-100: #dcfce7ff;
+$soil: #1a120bff;
+$bark: #3f2e1eff;
+$pine-green: #14532dff;
+$jungle-green: #15803dff;
+$seaweed: #4ade80ff;
+$mint: #dcfce7ff;
 $bloom-rose: #f472b6ff;
 $pollen-gold: #facc15ff;
-$stone-300: #d6d3d1ff;
+$stone: #d6d3d1ff;
 $garden-white: #fafaf9ff;
 
 /* SCSS HSL */
-$soil-900: hsla(28, 41%, 7%, 1);
-$bark-700: hsla(29, 35%, 18%, 1);
-$leaf-900: hsla(144, 61%, 20%, 1);
-$leaf-700: hsla(142, 72%, 29%, 1);
-$leaf-400: hsla(142, 69%, 58%, 1);
-$mint-100: hsla(141, 84%, 93%, 1);
+$soil: hsla(28, 41%, 7%, 1);
+$bark: hsla(29, 35%, 18%, 1);
+$pine-green: hsla(144, 61%, 20%, 1);
+$jungle-green: hsla(142, 72%, 29%, 1);
+$seaweed: hsla(142, 69%, 58%, 1);
+$mint: hsla(141, 84%, 93%, 1);
 $bloom-rose: hsla(329, 86%, 70%, 1);
 $pollen-gold: hsla(48, 96%, 53%, 1);
-$stone-300: hsla(24, 6%, 83%, 1);
+$stone: hsla(24, 6%, 83%, 1);
 $garden-white: hsla(60, 9%, 98%, 1);
 
 /* SCSS RGB */
-$soil-900: rgba(26, 18, 11, 1);
-$bark-700: rgba(63, 46, 30, 1);
-$leaf-900: rgba(20, 83, 45, 1);
-$leaf-700: rgba(21, 128, 61, 1);
-$leaf-400: rgba(74, 222, 128, 1);
-$mint-100: rgba(220, 252, 231, 1);
+$soil: rgba(26, 18, 11, 1);
+$bark: rgba(63, 46, 30, 1);
+$pine-green: rgba(20, 83, 45, 1);
+$jungle-green: rgba(21, 128, 61, 1);
+$seaweed: rgba(74, 222, 128, 1);
+$mint: rgba(220, 252, 231, 1);
 $bloom-rose: rgba(244, 114, 182, 1);
 $pollen-gold: rgba(250, 204, 21, 1);
-$stone-300: rgba(214, 211, 209, 1);
+$stone: rgba(214, 211, 209, 1);
 $garden-white: rgba(250, 250, 249, 1);
 
 /* SCSS Gradient */
@@ -98,14 +98,14 @@ $gradient-radial: radial-gradient(#1a120bff, #3f2e1eff, #14532dff, #15803dff, #4
 
 /* SCSS Map */
 $garden-system-map: (
-    "soil-900": #1a120bff,
-    "bark-700": #3f2e1eff,
-    "leaf-900": #14532dff,
-    "leaf-700": #15803dff,
-    "leaf-400": #4ade80ff,
-    "mint-100": #dcfce7ff,
+    "soil": #1a120bff,
+    "bark": #3f2e1eff,
+    "pine-green": #14532dff,
+    "jungle-green": #15803dff,
+    "seaweed": #4ade80ff,
+    "mint": #dcfce7ff,
     "bloom-rose": #f472b6ff,
     "pollen-gold": #facc15ff,
-    "stone-300": #d6d3d1ff,
+    "stone": #d6d3d1ff,
     "garden-white": #fafaf9ff
 );

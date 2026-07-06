@@ -25,65 +25,65 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---ember-market-atlas-market-night: #1c0b0bff;
---ember-market-atlas-ember-depth: #3f1111ff;
---ember-market-atlas-stall-red: #7f1d1dff;
---ember-market-atlas-sale-ruby: #b42318ff;
---ember-market-atlas-action-red: #d92d20ff;
---ember-market-atlas-hot-coral: #f04438ff;
---ember-market-atlas-market-orange: #f79009ff;
---ember-market-atlas-receipt-gold: #fec84bff;
---ember-market-atlas-paper-peach: #fee4cbff;
---ember-market-atlas-cream-card: #fffbebff;
+--market-night: #1c0b0bff;
+--ember-depth: #3f1111ff;
+--stall-red: #7f1d1dff;
+--sale-ruby: #b42318ff;
+--action-red: #d92d20ff;
+--hot-coral: #f04438ff;
+--market-orange: #f79009ff;
+--receipt-gold: #fec84bff;
+--paper-peach: #fee4cbff;
+--cream-card: #fffbebff;
 
 /* CSS HSL */
---ember-market-atlas-market-night: hsla(0, 44%, 8%, 1);
---ember-market-atlas-ember-depth: hsla(0, 58%, 16%, 1);
---ember-market-atlas-stall-red: hsla(0, 63%, 31%, 1);
---ember-market-atlas-sale-ruby: hsla(4, 76%, 40%, 1);
---ember-market-atlas-action-red: hsla(4, 74%, 49%, 1);
---ember-market-atlas-hot-coral: hsla(4, 86%, 58%, 1);
---ember-market-atlas-market-orange: hsla(34, 94%, 50%, 1);
---ember-market-atlas-receipt-gold: hsla(42, 99%, 65%, 1);
---ember-market-atlas-paper-peach: hsla(29, 96%, 90%, 1);
---ember-market-atlas-cream-card: hsla(48, 100%, 96%, 1);
+--market-night: hsla(0, 44%, 8%, 1);
+--ember-depth: hsla(0, 58%, 16%, 1);
+--stall-red: hsla(0, 63%, 31%, 1);
+--sale-ruby: hsla(4, 76%, 40%, 1);
+--action-red: hsla(4, 74%, 49%, 1);
+--hot-coral: hsla(4, 86%, 58%, 1);
+--market-orange: hsla(34, 94%, 50%, 1);
+--receipt-gold: hsla(42, 99%, 65%, 1);
+--paper-peach: hsla(29, 96%, 90%, 1);
+--cream-card: hsla(48, 100%, 96%, 1);
 }
 
 /* SCSS HEX */
-$ember-market-atlas-market-night: #1c0b0bff;
-$ember-market-atlas-ember-depth: #3f1111ff;
-$ember-market-atlas-stall-red: #7f1d1dff;
-$ember-market-atlas-sale-ruby: #b42318ff;
-$ember-market-atlas-action-red: #d92d20ff;
-$ember-market-atlas-hot-coral: #f04438ff;
-$ember-market-atlas-market-orange: #f79009ff;
-$ember-market-atlas-receipt-gold: #fec84bff;
-$ember-market-atlas-paper-peach: #fee4cbff;
-$ember-market-atlas-cream-card: #fffbebff;
+$market-night: #1c0b0bff;
+$ember-depth: #3f1111ff;
+$stall-red: #7f1d1dff;
+$sale-ruby: #b42318ff;
+$action-red: #d92d20ff;
+$hot-coral: #f04438ff;
+$market-orange: #f79009ff;
+$receipt-gold: #fec84bff;
+$paper-peach: #fee4cbff;
+$cream-card: #fffbebff;
 
 /* SCSS HSL */
-$ember-market-atlas-market-night: hsla(0, 44%, 8%, 1);
-$ember-market-atlas-ember-depth: hsla(0, 58%, 16%, 1);
-$ember-market-atlas-stall-red: hsla(0, 63%, 31%, 1);
-$ember-market-atlas-sale-ruby: hsla(4, 76%, 40%, 1);
-$ember-market-atlas-action-red: hsla(4, 74%, 49%, 1);
-$ember-market-atlas-hot-coral: hsla(4, 86%, 58%, 1);
-$ember-market-atlas-market-orange: hsla(34, 94%, 50%, 1);
-$ember-market-atlas-receipt-gold: hsla(42, 99%, 65%, 1);
-$ember-market-atlas-paper-peach: hsla(29, 96%, 90%, 1);
-$ember-market-atlas-cream-card: hsla(48, 100%, 96%, 1);
+$market-night: hsla(0, 44%, 8%, 1);
+$ember-depth: hsla(0, 58%, 16%, 1);
+$stall-red: hsla(0, 63%, 31%, 1);
+$sale-ruby: hsla(4, 76%, 40%, 1);
+$action-red: hsla(4, 74%, 49%, 1);
+$hot-coral: hsla(4, 86%, 58%, 1);
+$market-orange: hsla(34, 94%, 50%, 1);
+$receipt-gold: hsla(42, 99%, 65%, 1);
+$paper-peach: hsla(29, 96%, 90%, 1);
+$cream-card: hsla(48, 100%, 96%, 1);
 
 /* SCSS RGB */
-$ember-market-atlas-market-night: rgba(28, 11, 11, 1);
-$ember-market-atlas-ember-depth: rgba(63, 17, 17, 1);
-$ember-market-atlas-stall-red: rgba(127, 29, 29, 1);
-$ember-market-atlas-sale-ruby: rgba(180, 35, 24, 1);
-$ember-market-atlas-action-red: rgba(217, 45, 32, 1);
-$ember-market-atlas-hot-coral: rgba(240, 68, 56, 1);
-$ember-market-atlas-market-orange: rgba(247, 144, 9, 1);
-$ember-market-atlas-receipt-gold: rgba(254, 200, 75, 1);
-$ember-market-atlas-paper-peach: rgba(254, 228, 203, 1);
-$ember-market-atlas-cream-card: rgba(255, 251, 235, 1);
+$market-night: rgba(28, 11, 11, 1);
+$ember-depth: rgba(63, 17, 17, 1);
+$stall-red: rgba(127, 29, 29, 1);
+$sale-ruby: rgba(180, 35, 24, 1);
+$action-red: rgba(217, 45, 32, 1);
+$hot-coral: rgba(240, 68, 56, 1);
+$market-orange: rgba(247, 144, 9, 1);
+$receipt-gold: rgba(254, 200, 75, 1);
+$paper-peach: rgba(254, 228, 203, 1);
+$cream-card: rgba(255, 251, 235, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1c0b0bff, #3f1111ff, #7f1d1dff, #b42318ff, #d92d20ff, #f04438ff, #f79009ff, #fec84bff, #fee4cbff, #fffbebff);
@@ -98,14 +98,14 @@ $gradient-radial: radial-gradient(#1c0b0bff, #3f1111ff, #7f1d1dff, #b42318ff, #d
 
 /* SCSS Map */
 $ember-market-atlas-map: (
-    "ember-market-atlas-market-night": #1c0b0bff,
-    "ember-market-atlas-ember-depth": #3f1111ff,
-    "ember-market-atlas-stall-red": #7f1d1dff,
-    "ember-market-atlas-sale-ruby": #b42318ff,
-    "ember-market-atlas-action-red": #d92d20ff,
-    "ember-market-atlas-hot-coral": #f04438ff,
-    "ember-market-atlas-market-orange": #f79009ff,
-    "ember-market-atlas-receipt-gold": #fec84bff,
-    "ember-market-atlas-paper-peach": #fee4cbff,
-    "ember-market-atlas-cream-card": #fffbebff
+    "market-night": #1c0b0bff,
+    "ember-depth": #3f1111ff,
+    "stall-red": #7f1d1dff,
+    "sale-ruby": #b42318ff,
+    "action-red": #d92d20ff,
+    "hot-coral": #f04438ff,
+    "market-orange": #f79009ff,
+    "receipt-gold": #fec84bff,
+    "paper-peach": #fee4cbff,
+    "cream-card": #fffbebff
 );

@@ -25,55 +25,55 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---petal-commerce-system-berry-shelf: #1f0a17ff;
---petal-commerce-system-wine-label: #500724ff;
---petal-commerce-system-petal-cart: #9d174dff;
---petal-commerce-system-checkout-rose: #be185dff;
---petal-commerce-system-offer-pink: #db2777ff;
---petal-commerce-system-ticket-glow: #f9a8d4ff;
---petal-commerce-system-receipt-blush: #fce7f3ff;
---petal-commerce-system-checkout-white: #fff7fbff;
+--berry-shelf: #1f0a17ff;
+--wine-label: #500724ff;
+--petal-cart: #9d174dff;
+--checkout-rose: #be185dff;
+--offer-pink: #db2777ff;
+--ticket-glow: #f9a8d4ff;
+--receipt-blush: #fce7f3ff;
+--checkout-white: #fff7fbff;
 
 /* CSS HSL */
---petal-commerce-system-berry-shelf: hsla(323, 51%, 8%, 1);
---petal-commerce-system-wine-label: hsla(336, 84%, 17%, 1);
---petal-commerce-system-petal-cart: hsla(336, 74%, 35%, 1);
---petal-commerce-system-checkout-rose: hsla(335, 78%, 42%, 1);
---petal-commerce-system-offer-pink: hsla(333, 71%, 51%, 1);
---petal-commerce-system-ticket-glow: hsla(327, 87%, 82%, 1);
---petal-commerce-system-receipt-blush: hsla(326, 78%, 95%, 1);
---petal-commerce-system-checkout-white: hsla(330, 100%, 98%, 1);
+--berry-shelf: hsla(323, 51%, 8%, 1);
+--wine-label: hsla(336, 84%, 17%, 1);
+--petal-cart: hsla(336, 74%, 35%, 1);
+--checkout-rose: hsla(335, 78%, 42%, 1);
+--offer-pink: hsla(333, 71%, 51%, 1);
+--ticket-glow: hsla(327, 87%, 82%, 1);
+--receipt-blush: hsla(326, 78%, 95%, 1);
+--checkout-white: hsla(330, 100%, 98%, 1);
 }
 
 /* SCSS HEX */
-$petal-commerce-system-berry-shelf: #1f0a17ff;
-$petal-commerce-system-wine-label: #500724ff;
-$petal-commerce-system-petal-cart: #9d174dff;
-$petal-commerce-system-checkout-rose: #be185dff;
-$petal-commerce-system-offer-pink: #db2777ff;
-$petal-commerce-system-ticket-glow: #f9a8d4ff;
-$petal-commerce-system-receipt-blush: #fce7f3ff;
-$petal-commerce-system-checkout-white: #fff7fbff;
+$berry-shelf: #1f0a17ff;
+$wine-label: #500724ff;
+$petal-cart: #9d174dff;
+$checkout-rose: #be185dff;
+$offer-pink: #db2777ff;
+$ticket-glow: #f9a8d4ff;
+$receipt-blush: #fce7f3ff;
+$checkout-white: #fff7fbff;
 
 /* SCSS HSL */
-$petal-commerce-system-berry-shelf: hsla(323, 51%, 8%, 1);
-$petal-commerce-system-wine-label: hsla(336, 84%, 17%, 1);
-$petal-commerce-system-petal-cart: hsla(336, 74%, 35%, 1);
-$petal-commerce-system-checkout-rose: hsla(335, 78%, 42%, 1);
-$petal-commerce-system-offer-pink: hsla(333, 71%, 51%, 1);
-$petal-commerce-system-ticket-glow: hsla(327, 87%, 82%, 1);
-$petal-commerce-system-receipt-blush: hsla(326, 78%, 95%, 1);
-$petal-commerce-system-checkout-white: hsla(330, 100%, 98%, 1);
+$berry-shelf: hsla(323, 51%, 8%, 1);
+$wine-label: hsla(336, 84%, 17%, 1);
+$petal-cart: hsla(336, 74%, 35%, 1);
+$checkout-rose: hsla(335, 78%, 42%, 1);
+$offer-pink: hsla(333, 71%, 51%, 1);
+$ticket-glow: hsla(327, 87%, 82%, 1);
+$receipt-blush: hsla(326, 78%, 95%, 1);
+$checkout-white: hsla(330, 100%, 98%, 1);
 
 /* SCSS RGB */
-$petal-commerce-system-berry-shelf: rgba(31, 10, 23, 1);
-$petal-commerce-system-wine-label: rgba(80, 7, 36, 1);
-$petal-commerce-system-petal-cart: rgba(157, 23, 77, 1);
-$petal-commerce-system-checkout-rose: rgba(190, 24, 93, 1);
-$petal-commerce-system-offer-pink: rgba(219, 39, 119, 1);
-$petal-commerce-system-ticket-glow: rgba(249, 168, 212, 1);
-$petal-commerce-system-receipt-blush: rgba(252, 231, 243, 1);
-$petal-commerce-system-checkout-white: rgba(255, 247, 251, 1);
+$berry-shelf: rgba(31, 10, 23, 1);
+$wine-label: rgba(80, 7, 36, 1);
+$petal-cart: rgba(157, 23, 77, 1);
+$checkout-rose: rgba(190, 24, 93, 1);
+$offer-pink: rgba(219, 39, 119, 1);
+$ticket-glow: rgba(249, 168, 212, 1);
+$receipt-blush: rgba(252, 231, 243, 1);
+$checkout-white: rgba(255, 247, 251, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1f0a17ff, #500724ff, #9d174dff, #be185dff, #db2777ff, #f9a8d4ff, #fce7f3ff, #fff7fbff);
@@ -88,12 +88,12 @@ $gradient-radial: radial-gradient(#1f0a17ff, #500724ff, #9d174dff, #be185dff, #d
 
 /* SCSS Map */
 $petal-commerce-system-map: (
-    "petal-commerce-system-berry-shelf": #1f0a17ff,
-    "petal-commerce-system-wine-label": #500724ff,
-    "petal-commerce-system-petal-cart": #9d174dff,
-    "petal-commerce-system-checkout-rose": #be185dff,
-    "petal-commerce-system-offer-pink": #db2777ff,
-    "petal-commerce-system-ticket-glow": #f9a8d4ff,
-    "petal-commerce-system-receipt-blush": #fce7f3ff,
-    "petal-commerce-system-checkout-white": #fff7fbff
+    "berry-shelf": #1f0a17ff,
+    "wine-label": #500724ff,
+    "petal-cart": #9d174dff,
+    "checkout-rose": #be185dff,
+    "offer-pink": #db2777ff,
+    "ticket-glow": #f9a8d4ff,
+    "receipt-blush": #fce7f3ff,
+    "checkout-white": #fff7fbff
 );

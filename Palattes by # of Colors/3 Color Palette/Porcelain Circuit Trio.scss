@@ -25,30 +25,30 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---porcelain-circuit-trio-graphite-console: #111827ff;
---porcelain-circuit-trio-porcelain-panel: #e5e7ebff;
---porcelain-circuit-trio-signal-white: #ffffffff;
+--graphite-console: #111827ff;
+--porcelain-panel: #e5e7ebff;
+--signal-white: #ffffffff;
 
 /* CSS HSL */
---porcelain-circuit-trio-graphite-console: hsla(221, 39%, 11%, 1);
---porcelain-circuit-trio-porcelain-panel: hsla(220, 13%, 91%, 1);
---porcelain-circuit-trio-signal-white: hsla(0, 0%, 100%, 1);
+--graphite-console: hsla(221, 39%, 11%, 1);
+--porcelain-panel: hsla(220, 13%, 91%, 1);
+--signal-white: hsla(0, 0%, 100%, 1);
 }
 
 /* SCSS HEX */
-$porcelain-circuit-trio-graphite-console: #111827ff;
-$porcelain-circuit-trio-porcelain-panel: #e5e7ebff;
-$porcelain-circuit-trio-signal-white: #ffffffff;
+$graphite-console: #111827ff;
+$porcelain-panel: #e5e7ebff;
+$signal-white: #ffffffff;
 
 /* SCSS HSL */
-$porcelain-circuit-trio-graphite-console: hsla(221, 39%, 11%, 1);
-$porcelain-circuit-trio-porcelain-panel: hsla(220, 13%, 91%, 1);
-$porcelain-circuit-trio-signal-white: hsla(0, 0%, 100%, 1);
+$graphite-console: hsla(221, 39%, 11%, 1);
+$porcelain-panel: hsla(220, 13%, 91%, 1);
+$signal-white: hsla(0, 0%, 100%, 1);
 
 /* SCSS RGB */
-$porcelain-circuit-trio-graphite-console: rgba(17, 24, 39, 1);
-$porcelain-circuit-trio-porcelain-panel: rgba(229, 231, 235, 1);
-$porcelain-circuit-trio-signal-white: rgba(255, 255, 255, 1);
+$graphite-console: rgba(17, 24, 39, 1);
+$porcelain-panel: rgba(229, 231, 235, 1);
+$signal-white: rgba(255, 255, 255, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #111827ff, #e5e7ebff, #ffffffff);
@@ -63,7 +63,7 @@ $gradient-radial: radial-gradient(#111827ff, #e5e7ebff, #ffffffff);
 
 /* SCSS Map */
 $porcelain-circuit-trio-map: (
-    "porcelain-circuit-trio-graphite-console": #111827ff,
-    "porcelain-circuit-trio-porcelain-panel": #e5e7ebff,
-    "porcelain-circuit-trio-signal-white": #ffffffff
+    "graphite-console": #111827ff,
+    "porcelain-panel": #e5e7ebff,
+    "signal-white": #ffffffff
 );

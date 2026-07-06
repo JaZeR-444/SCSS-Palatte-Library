@@ -25,45 +25,45 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---porcelain-circuit-array-graphite-console: #111827ff;
---porcelain-circuit-array-slate-trace: #475569ff;
---porcelain-circuit-array-cool-trace: #94a3b8ff;
---porcelain-circuit-array-ceramic-border: #cbd5e1ff;
---porcelain-circuit-array-porcelain-panel: #e5e7ebff;
---porcelain-circuit-array-signal-white: #ffffffff;
+--graphite-console: #111827ff;
+--slate-trace: #475569ff;
+--cool-trace: #94a3b8ff;
+--ceramic-border: #cbd5e1ff;
+--porcelain-panel: #e5e7ebff;
+--signal-white: #ffffffff;
 
 /* CSS HSL */
---porcelain-circuit-array-graphite-console: hsla(221, 39%, 11%, 1);
---porcelain-circuit-array-slate-trace: hsla(215, 19%, 35%, 1);
---porcelain-circuit-array-cool-trace: hsla(215, 20%, 65%, 1);
---porcelain-circuit-array-ceramic-border: hsla(213, 27%, 84%, 1);
---porcelain-circuit-array-porcelain-panel: hsla(220, 13%, 91%, 1);
---porcelain-circuit-array-signal-white: hsla(0, 0%, 100%, 1);
+--graphite-console: hsla(221, 39%, 11%, 1);
+--slate-trace: hsla(215, 19%, 35%, 1);
+--cool-trace: hsla(215, 20%, 65%, 1);
+--ceramic-border: hsla(213, 27%, 84%, 1);
+--porcelain-panel: hsla(220, 13%, 91%, 1);
+--signal-white: hsla(0, 0%, 100%, 1);
 }
 
 /* SCSS HEX */
-$porcelain-circuit-array-graphite-console: #111827ff;
-$porcelain-circuit-array-slate-trace: #475569ff;
-$porcelain-circuit-array-cool-trace: #94a3b8ff;
-$porcelain-circuit-array-ceramic-border: #cbd5e1ff;
-$porcelain-circuit-array-porcelain-panel: #e5e7ebff;
-$porcelain-circuit-array-signal-white: #ffffffff;
+$graphite-console: #111827ff;
+$slate-trace: #475569ff;
+$cool-trace: #94a3b8ff;
+$ceramic-border: #cbd5e1ff;
+$porcelain-panel: #e5e7ebff;
+$signal-white: #ffffffff;
 
 /* SCSS HSL */
-$porcelain-circuit-array-graphite-console: hsla(221, 39%, 11%, 1);
-$porcelain-circuit-array-slate-trace: hsla(215, 19%, 35%, 1);
-$porcelain-circuit-array-cool-trace: hsla(215, 20%, 65%, 1);
-$porcelain-circuit-array-ceramic-border: hsla(213, 27%, 84%, 1);
-$porcelain-circuit-array-porcelain-panel: hsla(220, 13%, 91%, 1);
-$porcelain-circuit-array-signal-white: hsla(0, 0%, 100%, 1);
+$graphite-console: hsla(221, 39%, 11%, 1);
+$slate-trace: hsla(215, 19%, 35%, 1);
+$cool-trace: hsla(215, 20%, 65%, 1);
+$ceramic-border: hsla(213, 27%, 84%, 1);
+$porcelain-panel: hsla(220, 13%, 91%, 1);
+$signal-white: hsla(0, 0%, 100%, 1);
 
 /* SCSS RGB */
-$porcelain-circuit-array-graphite-console: rgba(17, 24, 39, 1);
-$porcelain-circuit-array-slate-trace: rgba(71, 85, 105, 1);
-$porcelain-circuit-array-cool-trace: rgba(148, 163, 184, 1);
-$porcelain-circuit-array-ceramic-border: rgba(203, 213, 225, 1);
-$porcelain-circuit-array-porcelain-panel: rgba(229, 231, 235, 1);
-$porcelain-circuit-array-signal-white: rgba(255, 255, 255, 1);
+$graphite-console: rgba(17, 24, 39, 1);
+$slate-trace: rgba(71, 85, 105, 1);
+$cool-trace: rgba(148, 163, 184, 1);
+$ceramic-border: rgba(203, 213, 225, 1);
+$porcelain-panel: rgba(229, 231, 235, 1);
+$signal-white: rgba(255, 255, 255, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e5e7ebff, #ffffffff);
@@ -78,10 +78,10 @@ $gradient-radial: radial-gradient(#111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e
 
 /* SCSS Map */
 $porcelain-circuit-array-map: (
-    "porcelain-circuit-array-graphite-console": #111827ff,
-    "porcelain-circuit-array-slate-trace": #475569ff,
-    "porcelain-circuit-array-cool-trace": #94a3b8ff,
-    "porcelain-circuit-array-ceramic-border": #cbd5e1ff,
-    "porcelain-circuit-array-porcelain-panel": #e5e7ebff,
-    "porcelain-circuit-array-signal-white": #ffffffff
+    "graphite-console": #111827ff,
+    "slate-trace": #475569ff,
+    "cool-trace": #94a3b8ff,
+    "ceramic-border": #cbd5e1ff,
+    "porcelain-panel": #e5e7ebff,
+    "signal-white": #ffffffff
 );

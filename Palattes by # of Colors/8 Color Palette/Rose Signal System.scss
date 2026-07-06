@@ -25,55 +25,55 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---rose-signal-system-signal-black: #17070dff;
---rose-signal-system-rose-depth: #3f0d1eff;
---rose-signal-system-berry-core: #831843ff;
---rose-signal-system-signal-ruby: #be123cff;
---rose-signal-system-rose-action: #e11d48ff;
---rose-signal-system-vivid-rose: #f43f5eff;
---rose-signal-system-petal-red: #fb7185ff;
---rose-signal-system-soft-petal: #fecdd3ff;
+--signal-black: #17070dff;
+--rose-depth: #3f0d1eff;
+--berry-core: #831843ff;
+--signal-ruby: #be123cff;
+--rose-action: #e11d48ff;
+--vivid-rose: #f43f5eff;
+--petal-red: #fb7185ff;
+--soft-petal: #fecdd3ff;
 
 /* CSS HSL */
---rose-signal-system-signal-black: hsla(338, 53%, 6%, 1);
---rose-signal-system-rose-depth: hsla(340, 66%, 15%, 1);
---rose-signal-system-berry-core: hsla(336, 69%, 30%, 1);
---rose-signal-system-signal-ruby: hsla(345, 83%, 41%, 1);
---rose-signal-system-rose-action: hsla(347, 77%, 50%, 1);
---rose-signal-system-vivid-rose: hsla(350, 89%, 60%, 1);
---rose-signal-system-petal-red: hsla(351, 95%, 71%, 1);
---rose-signal-system-soft-petal: hsla(353, 96%, 90%, 1);
+--signal-black: hsla(338, 53%, 6%, 1);
+--rose-depth: hsla(340, 66%, 15%, 1);
+--berry-core: hsla(336, 69%, 30%, 1);
+--signal-ruby: hsla(345, 83%, 41%, 1);
+--rose-action: hsla(347, 77%, 50%, 1);
+--vivid-rose: hsla(350, 89%, 60%, 1);
+--petal-red: hsla(351, 95%, 71%, 1);
+--soft-petal: hsla(353, 96%, 90%, 1);
 }
 
 /* SCSS HEX */
-$rose-signal-system-signal-black: #17070dff;
-$rose-signal-system-rose-depth: #3f0d1eff;
-$rose-signal-system-berry-core: #831843ff;
-$rose-signal-system-signal-ruby: #be123cff;
-$rose-signal-system-rose-action: #e11d48ff;
-$rose-signal-system-vivid-rose: #f43f5eff;
-$rose-signal-system-petal-red: #fb7185ff;
-$rose-signal-system-soft-petal: #fecdd3ff;
+$signal-black: #17070dff;
+$rose-depth: #3f0d1eff;
+$berry-core: #831843ff;
+$signal-ruby: #be123cff;
+$rose-action: #e11d48ff;
+$vivid-rose: #f43f5eff;
+$petal-red: #fb7185ff;
+$soft-petal: #fecdd3ff;
 
 /* SCSS HSL */
-$rose-signal-system-signal-black: hsla(338, 53%, 6%, 1);
-$rose-signal-system-rose-depth: hsla(340, 66%, 15%, 1);
-$rose-signal-system-berry-core: hsla(336, 69%, 30%, 1);
-$rose-signal-system-signal-ruby: hsla(345, 83%, 41%, 1);
-$rose-signal-system-rose-action: hsla(347, 77%, 50%, 1);
-$rose-signal-system-vivid-rose: hsla(350, 89%, 60%, 1);
-$rose-signal-system-petal-red: hsla(351, 95%, 71%, 1);
-$rose-signal-system-soft-petal: hsla(353, 96%, 90%, 1);
+$signal-black: hsla(338, 53%, 6%, 1);
+$rose-depth: hsla(340, 66%, 15%, 1);
+$berry-core: hsla(336, 69%, 30%, 1);
+$signal-ruby: hsla(345, 83%, 41%, 1);
+$rose-action: hsla(347, 77%, 50%, 1);
+$vivid-rose: hsla(350, 89%, 60%, 1);
+$petal-red: hsla(351, 95%, 71%, 1);
+$soft-petal: hsla(353, 96%, 90%, 1);
 
 /* SCSS RGB */
-$rose-signal-system-signal-black: rgba(23, 7, 13, 1);
-$rose-signal-system-rose-depth: rgba(63, 13, 30, 1);
-$rose-signal-system-berry-core: rgba(131, 24, 67, 1);
-$rose-signal-system-signal-ruby: rgba(190, 18, 60, 1);
-$rose-signal-system-rose-action: rgba(225, 29, 72, 1);
-$rose-signal-system-vivid-rose: rgba(244, 63, 94, 1);
-$rose-signal-system-petal-red: rgba(251, 113, 133, 1);
-$rose-signal-system-soft-petal: rgba(254, 205, 211, 1);
+$signal-black: rgba(23, 7, 13, 1);
+$rose-depth: rgba(63, 13, 30, 1);
+$berry-core: rgba(131, 24, 67, 1);
+$signal-ruby: rgba(190, 18, 60, 1);
+$rose-action: rgba(225, 29, 72, 1);
+$vivid-rose: rgba(244, 63, 94, 1);
+$petal-red: rgba(251, 113, 133, 1);
+$soft-petal: rgba(254, 205, 211, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #17070dff, #3f0d1eff, #831843ff, #be123cff, #e11d48ff, #f43f5eff, #fb7185ff, #fecdd3ff);
@@ -88,12 +88,12 @@ $gradient-radial: radial-gradient(#17070dff, #3f0d1eff, #831843ff, #be123cff, #e
 
 /* SCSS Map */
 $rose-signal-system-map: (
-    "rose-signal-system-signal-black": #17070dff,
-    "rose-signal-system-rose-depth": #3f0d1eff,
-    "rose-signal-system-berry-core": #831843ff,
-    "rose-signal-system-signal-ruby": #be123cff,
-    "rose-signal-system-rose-action": #e11d48ff,
-    "rose-signal-system-vivid-rose": #f43f5eff,
-    "rose-signal-system-petal-red": #fb7185ff,
-    "rose-signal-system-soft-petal": #fecdd3ff
+    "signal-black": #17070dff,
+    "rose-depth": #3f0d1eff,
+    "berry-core": #831843ff,
+    "signal-ruby": #be123cff,
+    "rose-action": #e11d48ff,
+    "vivid-rose": #f43f5eff,
+    "petal-red": #fb7185ff,
+    "soft-petal": #fecdd3ff
 );

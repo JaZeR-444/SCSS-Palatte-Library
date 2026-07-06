@@ -25,35 +25,35 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---imperial-velvet-quartet-velvet-void: #0e061aff;
---imperial-velvet-quartet-imperial-shadow: #1f0b3dff;
---imperial-velvet-quartet-royal-plum: #37106bff;
---imperial-velvet-quartet-crown-violet: #5521a3ff;
+--velvet-void: #0e061aff;
+--imperial-shadow: #1f0b3dff;
+--royal-plum: #37106bff;
+--crown-violet: #5521a3ff;
 
 /* CSS HSL */
---imperial-velvet-quartet-velvet-void: hsla(264, 63%, 6%, 1);
---imperial-velvet-quartet-imperial-shadow: hsla(264, 69%, 14%, 1);
---imperial-velvet-quartet-royal-plum: hsla(266, 74%, 24%, 1);
---imperial-velvet-quartet-crown-violet: hsla(264, 66%, 38%, 1);
+--velvet-void: hsla(264, 63%, 6%, 1);
+--imperial-shadow: hsla(264, 69%, 14%, 1);
+--royal-plum: hsla(266, 74%, 24%, 1);
+--crown-violet: hsla(264, 66%, 38%, 1);
 }
 
 /* SCSS HEX */
-$imperial-velvet-quartet-velvet-void: #0e061aff;
-$imperial-velvet-quartet-imperial-shadow: #1f0b3dff;
-$imperial-velvet-quartet-royal-plum: #37106bff;
-$imperial-velvet-quartet-crown-violet: #5521a3ff;
+$velvet-void: #0e061aff;
+$imperial-shadow: #1f0b3dff;
+$royal-plum: #37106bff;
+$crown-violet: #5521a3ff;
 
 /* SCSS HSL */
-$imperial-velvet-quartet-velvet-void: hsla(264, 63%, 6%, 1);
-$imperial-velvet-quartet-imperial-shadow: hsla(264, 69%, 14%, 1);
-$imperial-velvet-quartet-royal-plum: hsla(266, 74%, 24%, 1);
-$imperial-velvet-quartet-crown-violet: hsla(264, 66%, 38%, 1);
+$velvet-void: hsla(264, 63%, 6%, 1);
+$imperial-shadow: hsla(264, 69%, 14%, 1);
+$royal-plum: hsla(266, 74%, 24%, 1);
+$crown-violet: hsla(264, 66%, 38%, 1);
 
 /* SCSS RGB */
-$imperial-velvet-quartet-velvet-void: rgba(14, 6, 26, 1);
-$imperial-velvet-quartet-imperial-shadow: rgba(31, 11, 61, 1);
-$imperial-velvet-quartet-royal-plum: rgba(55, 16, 107, 1);
-$imperial-velvet-quartet-crown-violet: rgba(85, 33, 163, 1);
+$velvet-void: rgba(14, 6, 26, 1);
+$imperial-shadow: rgba(31, 11, 61, 1);
+$royal-plum: rgba(55, 16, 107, 1);
+$crown-violet: rgba(85, 33, 163, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #0e061aff, #1f0b3dff, #37106bff, #5521a3ff);
@@ -68,8 +68,8 @@ $gradient-radial: radial-gradient(#0e061aff, #1f0b3dff, #37106bff, #5521a3ff);
 
 /* SCSS Map */
 $imperial-velvet-quartet-map: (
-    "imperial-velvet-quartet-velvet-void": #0e061aff,
-    "imperial-velvet-quartet-imperial-shadow": #1f0b3dff,
-    "imperial-velvet-quartet-royal-plum": #37106bff,
-    "imperial-velvet-quartet-crown-violet": #5521a3ff
+    "velvet-void": #0e061aff,
+    "imperial-shadow": #1f0b3dff,
+    "royal-plum": #37106bff,
+    "crown-violet": #5521a3ff
 );

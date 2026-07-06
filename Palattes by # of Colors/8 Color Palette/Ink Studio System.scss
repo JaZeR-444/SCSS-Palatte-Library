@@ -25,55 +25,55 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---ink-studio-system-studio-black: #070707ff;
---ink-studio-system-ink-depth: #14110fff;
---ink-studio-system-charcoal-warm: #23201dff;
---ink-studio-system-gallery-graphite: #34312dff;
---ink-studio-system-type-stone: #57534eff;
---ink-studio-system-caption-smoke: #78716cff;
---ink-studio-system-border-stone: #a8a29eff;
---ink-studio-system-paper-line: #d6d3d1ff;
+--studio-black: #070707ff;
+--ink-depth: #14110fff;
+--charcoal-warm: #23201dff;
+--gallery-graphite: #34312dff;
+--type-stone: #57534eff;
+--caption-smoke: #78716cff;
+--border-stone: #a8a29eff;
+--paper-line: #d6d3d1ff;
 
 /* CSS HSL */
---ink-studio-system-studio-black: hsla(0, 0%, 3%, 1);
---ink-studio-system-ink-depth: hsla(24, 14%, 7%, 1);
---ink-studio-system-charcoal-warm: hsla(30, 9%, 13%, 1);
---ink-studio-system-gallery-graphite: hsla(34, 7%, 19%, 1);
---ink-studio-system-type-stone: hsla(33, 5%, 32%, 1);
---ink-studio-system-caption-smoke: hsla(25, 5%, 45%, 1);
---ink-studio-system-border-stone: hsla(24, 5%, 64%, 1);
---ink-studio-system-paper-line: hsla(24, 6%, 83%, 1);
+--studio-black: hsla(0, 0%, 3%, 1);
+--ink-depth: hsla(24, 14%, 7%, 1);
+--charcoal-warm: hsla(30, 9%, 13%, 1);
+--gallery-graphite: hsla(34, 7%, 19%, 1);
+--type-stone: hsla(33, 5%, 32%, 1);
+--caption-smoke: hsla(25, 5%, 45%, 1);
+--border-stone: hsla(24, 5%, 64%, 1);
+--paper-line: hsla(24, 6%, 83%, 1);
 }
 
 /* SCSS HEX */
-$ink-studio-system-studio-black: #070707ff;
-$ink-studio-system-ink-depth: #14110fff;
-$ink-studio-system-charcoal-warm: #23201dff;
-$ink-studio-system-gallery-graphite: #34312dff;
-$ink-studio-system-type-stone: #57534eff;
-$ink-studio-system-caption-smoke: #78716cff;
-$ink-studio-system-border-stone: #a8a29eff;
-$ink-studio-system-paper-line: #d6d3d1ff;
+$studio-black: #070707ff;
+$ink-depth: #14110fff;
+$charcoal-warm: #23201dff;
+$gallery-graphite: #34312dff;
+$type-stone: #57534eff;
+$caption-smoke: #78716cff;
+$border-stone: #a8a29eff;
+$paper-line: #d6d3d1ff;
 
 /* SCSS HSL */
-$ink-studio-system-studio-black: hsla(0, 0%, 3%, 1);
-$ink-studio-system-ink-depth: hsla(24, 14%, 7%, 1);
-$ink-studio-system-charcoal-warm: hsla(30, 9%, 13%, 1);
-$ink-studio-system-gallery-graphite: hsla(34, 7%, 19%, 1);
-$ink-studio-system-type-stone: hsla(33, 5%, 32%, 1);
-$ink-studio-system-caption-smoke: hsla(25, 5%, 45%, 1);
-$ink-studio-system-border-stone: hsla(24, 5%, 64%, 1);
-$ink-studio-system-paper-line: hsla(24, 6%, 83%, 1);
+$studio-black: hsla(0, 0%, 3%, 1);
+$ink-depth: hsla(24, 14%, 7%, 1);
+$charcoal-warm: hsla(30, 9%, 13%, 1);
+$gallery-graphite: hsla(34, 7%, 19%, 1);
+$type-stone: hsla(33, 5%, 32%, 1);
+$caption-smoke: hsla(25, 5%, 45%, 1);
+$border-stone: hsla(24, 5%, 64%, 1);
+$paper-line: hsla(24, 6%, 83%, 1);
 
 /* SCSS RGB */
-$ink-studio-system-studio-black: rgba(7, 7, 7, 1);
-$ink-studio-system-ink-depth: rgba(20, 17, 15, 1);
-$ink-studio-system-charcoal-warm: rgba(35, 32, 29, 1);
-$ink-studio-system-gallery-graphite: rgba(52, 49, 45, 1);
-$ink-studio-system-type-stone: rgba(87, 83, 78, 1);
-$ink-studio-system-caption-smoke: rgba(120, 113, 108, 1);
-$ink-studio-system-border-stone: rgba(168, 162, 158, 1);
-$ink-studio-system-paper-line: rgba(214, 211, 209, 1);
+$studio-black: rgba(7, 7, 7, 1);
+$ink-depth: rgba(20, 17, 15, 1);
+$charcoal-warm: rgba(35, 32, 29, 1);
+$gallery-graphite: rgba(52, 49, 45, 1);
+$type-stone: rgba(87, 83, 78, 1);
+$caption-smoke: rgba(120, 113, 108, 1);
+$border-stone: rgba(168, 162, 158, 1);
+$paper-line: rgba(214, 211, 209, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #070707ff, #14110fff, #23201dff, #34312dff, #57534eff, #78716cff, #a8a29eff, #d6d3d1ff);
@@ -88,12 +88,12 @@ $gradient-radial: radial-gradient(#070707ff, #14110fff, #23201dff, #34312dff, #5
 
 /* SCSS Map */
 $ink-studio-system-map: (
-    "ink-studio-system-studio-black": #070707ff,
-    "ink-studio-system-ink-depth": #14110fff,
-    "ink-studio-system-charcoal-warm": #23201dff,
-    "ink-studio-system-gallery-graphite": #34312dff,
-    "ink-studio-system-type-stone": #57534eff,
-    "ink-studio-system-caption-smoke": #78716cff,
-    "ink-studio-system-border-stone": #a8a29eff,
-    "ink-studio-system-paper-line": #d6d3d1ff
+    "studio-black": #070707ff,
+    "ink-depth": #14110fff,
+    "charcoal-warm": #23201dff,
+    "gallery-graphite": #34312dff,
+    "type-stone": #57534eff,
+    "caption-smoke": #78716cff,
+    "border-stone": #a8a29eff,
+    "paper-line": #d6d3d1ff
 );

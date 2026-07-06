@@ -25,40 +25,40 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---tangerine-signal-scale-signal-night: #231006ff;
---tangerine-signal-scale-burnt-routing: #7c2d12ff;
---tangerine-signal-scale-tangerine-core: #ea580cff;
---tangerine-signal-scale-citrus-flash: #fb923cff;
---tangerine-signal-scale-peach-notice: #fed7aaff;
+--signal-night: #231006ff;
+--burnt-routing: #7c2d12ff;
+--tangerine-core: #ea580cff;
+--citrus-flash: #fb923cff;
+--peach-notice: #fed7aaff;
 
 /* CSS HSL */
---tangerine-signal-scale-signal-night: hsla(21, 71%, 8%, 1);
---tangerine-signal-scale-burnt-routing: hsla(15, 75%, 28%, 1);
---tangerine-signal-scale-tangerine-core: hsla(21, 90%, 48%, 1);
---tangerine-signal-scale-citrus-flash: hsla(27, 96%, 61%, 1);
---tangerine-signal-scale-peach-notice: hsla(32, 98%, 83%, 1);
+--signal-night: hsla(21, 71%, 8%, 1);
+--burnt-routing: hsla(15, 75%, 28%, 1);
+--tangerine-core: hsla(21, 90%, 48%, 1);
+--citrus-flash: hsla(27, 96%, 61%, 1);
+--peach-notice: hsla(32, 98%, 83%, 1);
 }
 
 /* SCSS HEX */
-$tangerine-signal-scale-signal-night: #231006ff;
-$tangerine-signal-scale-burnt-routing: #7c2d12ff;
-$tangerine-signal-scale-tangerine-core: #ea580cff;
-$tangerine-signal-scale-citrus-flash: #fb923cff;
-$tangerine-signal-scale-peach-notice: #fed7aaff;
+$signal-night: #231006ff;
+$burnt-routing: #7c2d12ff;
+$tangerine-core: #ea580cff;
+$citrus-flash: #fb923cff;
+$peach-notice: #fed7aaff;
 
 /* SCSS HSL */
-$tangerine-signal-scale-signal-night: hsla(21, 71%, 8%, 1);
-$tangerine-signal-scale-burnt-routing: hsla(15, 75%, 28%, 1);
-$tangerine-signal-scale-tangerine-core: hsla(21, 90%, 48%, 1);
-$tangerine-signal-scale-citrus-flash: hsla(27, 96%, 61%, 1);
-$tangerine-signal-scale-peach-notice: hsla(32, 98%, 83%, 1);
+$signal-night: hsla(21, 71%, 8%, 1);
+$burnt-routing: hsla(15, 75%, 28%, 1);
+$tangerine-core: hsla(21, 90%, 48%, 1);
+$citrus-flash: hsla(27, 96%, 61%, 1);
+$peach-notice: hsla(32, 98%, 83%, 1);
 
 /* SCSS RGB */
-$tangerine-signal-scale-signal-night: rgba(35, 16, 6, 1);
-$tangerine-signal-scale-burnt-routing: rgba(124, 45, 18, 1);
-$tangerine-signal-scale-tangerine-core: rgba(234, 88, 12, 1);
-$tangerine-signal-scale-citrus-flash: rgba(251, 146, 60, 1);
-$tangerine-signal-scale-peach-notice: rgba(254, 215, 170, 1);
+$signal-night: rgba(35, 16, 6, 1);
+$burnt-routing: rgba(124, 45, 18, 1);
+$tangerine-core: rgba(234, 88, 12, 1);
+$citrus-flash: rgba(251, 146, 60, 1);
+$peach-notice: rgba(254, 215, 170, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #231006ff, #7c2d12ff, #ea580cff, #fb923cff, #fed7aaff);
@@ -73,9 +73,9 @@ $gradient-radial: radial-gradient(#231006ff, #7c2d12ff, #ea580cff, #fb923cff, #f
 
 /* SCSS Map */
 $tangerine-signal-scale-map: (
-    "tangerine-signal-scale-signal-night": #231006ff,
-    "tangerine-signal-scale-burnt-routing": #7c2d12ff,
-    "tangerine-signal-scale-tangerine-core": #ea580cff,
-    "tangerine-signal-scale-citrus-flash": #fb923cff,
-    "tangerine-signal-scale-peach-notice": #fed7aaff
+    "signal-night": #231006ff,
+    "burnt-routing": #7c2d12ff,
+    "tangerine-core": #ea580cff,
+    "citrus-flash": #fb923cff,
+    "peach-notice": #fed7aaff
 );

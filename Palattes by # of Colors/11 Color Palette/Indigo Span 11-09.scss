@@ -1,6 +1,6 @@
 /*---
 id: indigo-span-11-09
-name: Indigo Span 11-09
+name: Indigo Span Micro
 author: JaZeR-444
 version: 1.0.0
 category: Singular Hue Span
@@ -20,70 +20,70 @@ updated: '2026-07-04'
 
 :root {
 /* CSS HEX */
---span-01: #110f19ff;
---span-02: #201b39ff;
---span-03: #291f60ff;
---span-04: #352386ff;
---span-05: #371fb6ff;
---span-06: #4616e9ff;
---span-07: #6b47e3ff;
---span-08: #8774e0ff;
---span-09: #aea3ddff;
---span-10: #ccc8e3ff;
---span-11: #e8e6efff;
+--almost-black: #110f19ff;
+--navy: #201b39ff;
+--dark-indigo: #291f60ff;
+--dark-royal-blue: #352386ff;
+--indigo-blue: #371fb6ff;
+--blue-violet: #4616e9ff;
+--blurple: #6b47e3ff;
+--lavender-blue: #8774e0ff;
+--pale-purple: #aea3ddff;
+--cloudy-blue: #ccc8e3ff;
+--very-light-pink: #e8e6efff;
 
 /* CSS HSL */
---span-01: hsla(252, 24%, 8%, 1);
---span-02: hsla(252, 36%, 16%, 1);
---span-03: hsla(252, 51%, 25%, 1);
---span-04: hsla(252, 59%, 33%, 1);
---span-05: hsla(252, 71%, 42%, 1);
---span-06: hsla(252, 83%, 50%, 1);
---span-07: hsla(252, 73%, 58%, 1);
---span-08: hsla(252, 64%, 67%, 1);
---span-09: hsla(252, 46%, 75%, 1);
---span-10: hsla(252, 33%, 84%, 1);
---span-11: hsla(252, 21%, 92%, 1);
+--almost-black: hsla(252, 24%, 8%, 1);
+--navy: hsla(252, 36%, 16%, 1);
+--dark-indigo: hsla(252, 51%, 25%, 1);
+--dark-royal-blue: hsla(252, 59%, 33%, 1);
+--indigo-blue: hsla(252, 71%, 42%, 1);
+--blue-violet: hsla(252, 83%, 50%, 1);
+--blurple: hsla(252, 73%, 58%, 1);
+--lavender-blue: hsla(252, 64%, 67%, 1);
+--pale-purple: hsla(252, 46%, 75%, 1);
+--cloudy-blue: hsla(252, 33%, 84%, 1);
+--very-light-pink: hsla(252, 21%, 92%, 1);
 }
 
 /* SCSS HEX */
-$span-01: #110f19ff;
-$span-02: #201b39ff;
-$span-03: #291f60ff;
-$span-04: #352386ff;
-$span-05: #371fb6ff;
-$span-06: #4616e9ff;
-$span-07: #6b47e3ff;
-$span-08: #8774e0ff;
-$span-09: #aea3ddff;
-$span-10: #ccc8e3ff;
-$span-11: #e8e6efff;
+$almost-black: #110f19ff;
+$navy: #201b39ff;
+$dark-indigo: #291f60ff;
+$dark-royal-blue: #352386ff;
+$indigo-blue: #371fb6ff;
+$blue-violet: #4616e9ff;
+$blurple: #6b47e3ff;
+$lavender-blue: #8774e0ff;
+$pale-purple: #aea3ddff;
+$cloudy-blue: #ccc8e3ff;
+$very-light-pink: #e8e6efff;
 
 /* SCSS HSL */
-$span-01: hsla(252, 24%, 8%, 1);
-$span-02: hsla(252, 36%, 16%, 1);
-$span-03: hsla(252, 51%, 25%, 1);
-$span-04: hsla(252, 59%, 33%, 1);
-$span-05: hsla(252, 71%, 42%, 1);
-$span-06: hsla(252, 83%, 50%, 1);
-$span-07: hsla(252, 73%, 58%, 1);
-$span-08: hsla(252, 64%, 67%, 1);
-$span-09: hsla(252, 46%, 75%, 1);
-$span-10: hsla(252, 33%, 84%, 1);
-$span-11: hsla(252, 21%, 92%, 1);
+$almost-black: hsla(252, 24%, 8%, 1);
+$navy: hsla(252, 36%, 16%, 1);
+$dark-indigo: hsla(252, 51%, 25%, 1);
+$dark-royal-blue: hsla(252, 59%, 33%, 1);
+$indigo-blue: hsla(252, 71%, 42%, 1);
+$blue-violet: hsla(252, 83%, 50%, 1);
+$blurple: hsla(252, 73%, 58%, 1);
+$lavender-blue: hsla(252, 64%, 67%, 1);
+$pale-purple: hsla(252, 46%, 75%, 1);
+$cloudy-blue: hsla(252, 33%, 84%, 1);
+$very-light-pink: hsla(252, 21%, 92%, 1);
 
 /* SCSS RGB */
-$span-01: rgba(17, 15, 25, 1);
-$span-02: rgba(32, 27, 57, 1);
-$span-03: rgba(41, 31, 96, 1);
-$span-04: rgba(53, 35, 134, 1);
-$span-05: rgba(55, 31, 182, 1);
-$span-06: rgba(70, 22, 233, 1);
-$span-07: rgba(107, 71, 227, 1);
-$span-08: rgba(135, 116, 224, 1);
-$span-09: rgba(174, 163, 221, 1);
-$span-10: rgba(204, 200, 227, 1);
-$span-11: rgba(232, 230, 239, 1);
+$almost-black: rgba(17, 15, 25, 1);
+$navy: rgba(32, 27, 57, 1);
+$dark-indigo: rgba(41, 31, 96, 1);
+$dark-royal-blue: rgba(53, 35, 134, 1);
+$indigo-blue: rgba(55, 31, 182, 1);
+$blue-violet: rgba(70, 22, 233, 1);
+$blurple: rgba(107, 71, 227, 1);
+$lavender-blue: rgba(135, 116, 224, 1);
+$pale-purple: rgba(174, 163, 221, 1);
+$cloudy-blue: rgba(204, 200, 227, 1);
+$very-light-pink: rgba(232, 230, 239, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #110f19ff, #201b39ff, #291f60ff, #352386ff, #371fb6ff, #4616e9ff, #6b47e3ff, #8774e0ff, #aea3ddff, #ccc8e3ff, #e8e6efff);
@@ -98,15 +98,15 @@ $gradient-radial: radial-gradient(#110f19ff, #201b39ff, #291f60ff, #352386ff, #3
 
 /* SCSS Map */
 $indigo-span-11-09-map: (
-    "span-01": #110f19ff,
-    "span-02": #201b39ff,
-    "span-03": #291f60ff,
-    "span-04": #352386ff,
-    "span-05": #371fb6ff,
-    "span-06": #4616e9ff,
-    "span-07": #6b47e3ff,
-    "span-08": #8774e0ff,
-    "span-09": #aea3ddff,
-    "span-10": #ccc8e3ff,
-    "span-11": #e8e6efff
+    "almost-black": #110f19ff,
+    "navy": #201b39ff,
+    "dark-indigo": #291f60ff,
+    "dark-royal-blue": #352386ff,
+    "indigo-blue": #371fb6ff,
+    "blue-violet": #4616e9ff,
+    "blurple": #6b47e3ff,
+    "lavender-blue": #8774e0ff,
+    "pale-purple": #aea3ddff,
+    "cloudy-blue": #ccc8e3ff,
+    "very-light-pink": #e8e6efff
 );

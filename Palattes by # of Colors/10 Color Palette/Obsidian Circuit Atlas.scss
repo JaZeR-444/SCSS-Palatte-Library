@@ -25,65 +25,65 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---obsidian-circuit-atlas-circuit-void: #030304ff;
---obsidian-circuit-atlas-obsidian-root: #0a0a0fff;
---obsidian-circuit-atlas-carbon-board: #12121aff;
---obsidian-circuit-atlas-graphite-panel: #1f2937ff;
---obsidian-circuit-atlas-slate-control: #374151ff;
---obsidian-circuit-atlas-smoke-muted: #4b5563ff;
---obsidian-circuit-atlas-trace-gray: #9ca3afff;
---obsidian-circuit-atlas-debug-line: #d1d5dbff;
---obsidian-circuit-atlas-terminal-mist: #f3f4f6ff;
---obsidian-circuit-atlas-white-signal: #ffffffff;
+--circuit-void: #030304ff;
+--obsidian-root: #0a0a0fff;
+--carbon-board: #12121aff;
+--graphite-panel: #1f2937ff;
+--slate-control: #374151ff;
+--smoke-muted: #4b5563ff;
+--trace-gray: #9ca3afff;
+--debug-line: #d1d5dbff;
+--terminal-mist: #f3f4f6ff;
+--white-signal: #ffffffff;
 
 /* CSS HSL */
---obsidian-circuit-atlas-circuit-void: hsla(240, 14%, 1%, 1);
---obsidian-circuit-atlas-obsidian-root: hsla(240, 20%, 5%, 1);
---obsidian-circuit-atlas-carbon-board: hsla(240, 18%, 9%, 1);
---obsidian-circuit-atlas-graphite-panel: hsla(215, 28%, 17%, 1);
---obsidian-circuit-atlas-slate-control: hsla(217, 19%, 27%, 1);
---obsidian-circuit-atlas-smoke-muted: hsla(215, 14%, 34%, 1);
---obsidian-circuit-atlas-trace-gray: hsla(218, 11%, 65%, 1);
---obsidian-circuit-atlas-debug-line: hsla(216, 12%, 84%, 1);
---obsidian-circuit-atlas-terminal-mist: hsla(220, 14%, 96%, 1);
---obsidian-circuit-atlas-white-signal: hsla(0, 0%, 100%, 1);
+--circuit-void: hsla(240, 14%, 1%, 1);
+--obsidian-root: hsla(240, 20%, 5%, 1);
+--carbon-board: hsla(240, 18%, 9%, 1);
+--graphite-panel: hsla(215, 28%, 17%, 1);
+--slate-control: hsla(217, 19%, 27%, 1);
+--smoke-muted: hsla(215, 14%, 34%, 1);
+--trace-gray: hsla(218, 11%, 65%, 1);
+--debug-line: hsla(216, 12%, 84%, 1);
+--terminal-mist: hsla(220, 14%, 96%, 1);
+--white-signal: hsla(0, 0%, 100%, 1);
 }
 
 /* SCSS HEX */
-$obsidian-circuit-atlas-circuit-void: #030304ff;
-$obsidian-circuit-atlas-obsidian-root: #0a0a0fff;
-$obsidian-circuit-atlas-carbon-board: #12121aff;
-$obsidian-circuit-atlas-graphite-panel: #1f2937ff;
-$obsidian-circuit-atlas-slate-control: #374151ff;
-$obsidian-circuit-atlas-smoke-muted: #4b5563ff;
-$obsidian-circuit-atlas-trace-gray: #9ca3afff;
-$obsidian-circuit-atlas-debug-line: #d1d5dbff;
-$obsidian-circuit-atlas-terminal-mist: #f3f4f6ff;
-$obsidian-circuit-atlas-white-signal: #ffffffff;
+$circuit-void: #030304ff;
+$obsidian-root: #0a0a0fff;
+$carbon-board: #12121aff;
+$graphite-panel: #1f2937ff;
+$slate-control: #374151ff;
+$smoke-muted: #4b5563ff;
+$trace-gray: #9ca3afff;
+$debug-line: #d1d5dbff;
+$terminal-mist: #f3f4f6ff;
+$white-signal: #ffffffff;
 
 /* SCSS HSL */
-$obsidian-circuit-atlas-circuit-void: hsla(240, 14%, 1%, 1);
-$obsidian-circuit-atlas-obsidian-root: hsla(240, 20%, 5%, 1);
-$obsidian-circuit-atlas-carbon-board: hsla(240, 18%, 9%, 1);
-$obsidian-circuit-atlas-graphite-panel: hsla(215, 28%, 17%, 1);
-$obsidian-circuit-atlas-slate-control: hsla(217, 19%, 27%, 1);
-$obsidian-circuit-atlas-smoke-muted: hsla(215, 14%, 34%, 1);
-$obsidian-circuit-atlas-trace-gray: hsla(218, 11%, 65%, 1);
-$obsidian-circuit-atlas-debug-line: hsla(216, 12%, 84%, 1);
-$obsidian-circuit-atlas-terminal-mist: hsla(220, 14%, 96%, 1);
-$obsidian-circuit-atlas-white-signal: hsla(0, 0%, 100%, 1);
+$circuit-void: hsla(240, 14%, 1%, 1);
+$obsidian-root: hsla(240, 20%, 5%, 1);
+$carbon-board: hsla(240, 18%, 9%, 1);
+$graphite-panel: hsla(215, 28%, 17%, 1);
+$slate-control: hsla(217, 19%, 27%, 1);
+$smoke-muted: hsla(215, 14%, 34%, 1);
+$trace-gray: hsla(218, 11%, 65%, 1);
+$debug-line: hsla(216, 12%, 84%, 1);
+$terminal-mist: hsla(220, 14%, 96%, 1);
+$white-signal: hsla(0, 0%, 100%, 1);
 
 /* SCSS RGB */
-$obsidian-circuit-atlas-circuit-void: rgba(3, 3, 4, 1);
-$obsidian-circuit-atlas-obsidian-root: rgba(10, 10, 15, 1);
-$obsidian-circuit-atlas-carbon-board: rgba(18, 18, 26, 1);
-$obsidian-circuit-atlas-graphite-panel: rgba(31, 41, 55, 1);
-$obsidian-circuit-atlas-slate-control: rgba(55, 65, 81, 1);
-$obsidian-circuit-atlas-smoke-muted: rgba(75, 85, 99, 1);
-$obsidian-circuit-atlas-trace-gray: rgba(156, 163, 175, 1);
-$obsidian-circuit-atlas-debug-line: rgba(209, 213, 219, 1);
-$obsidian-circuit-atlas-terminal-mist: rgba(243, 244, 246, 1);
-$obsidian-circuit-atlas-white-signal: rgba(255, 255, 255, 1);
+$circuit-void: rgba(3, 3, 4, 1);
+$obsidian-root: rgba(10, 10, 15, 1);
+$carbon-board: rgba(18, 18, 26, 1);
+$graphite-panel: rgba(31, 41, 55, 1);
+$slate-control: rgba(55, 65, 81, 1);
+$smoke-muted: rgba(75, 85, 99, 1);
+$trace-gray: rgba(156, 163, 175, 1);
+$debug-line: rgba(209, 213, 219, 1);
+$terminal-mist: rgba(243, 244, 246, 1);
+$white-signal: rgba(255, 255, 255, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #030304ff, #0a0a0fff, #12121aff, #1f2937ff, #374151ff, #4b5563ff, #9ca3afff, #d1d5dbff, #f3f4f6ff, #ffffffff);
@@ -98,14 +98,14 @@ $gradient-radial: radial-gradient(#030304ff, #0a0a0fff, #12121aff, #1f2937ff, #3
 
 /* SCSS Map */
 $obsidian-circuit-atlas-map: (
-    "obsidian-circuit-atlas-circuit-void": #030304ff,
-    "obsidian-circuit-atlas-obsidian-root": #0a0a0fff,
-    "obsidian-circuit-atlas-carbon-board": #12121aff,
-    "obsidian-circuit-atlas-graphite-panel": #1f2937ff,
-    "obsidian-circuit-atlas-slate-control": #374151ff,
-    "obsidian-circuit-atlas-smoke-muted": #4b5563ff,
-    "obsidian-circuit-atlas-trace-gray": #9ca3afff,
-    "obsidian-circuit-atlas-debug-line": #d1d5dbff,
-    "obsidian-circuit-atlas-terminal-mist": #f3f4f6ff,
-    "obsidian-circuit-atlas-white-signal": #ffffffff
+    "circuit-void": #030304ff,
+    "obsidian-root": #0a0a0fff,
+    "carbon-board": #12121aff,
+    "graphite-panel": #1f2937ff,
+    "slate-control": #374151ff,
+    "smoke-muted": #4b5563ff,
+    "trace-gray": #9ca3afff,
+    "debug-line": #d1d5dbff,
+    "terminal-mist": #f3f4f6ff,
+    "white-signal": #ffffffff
 );

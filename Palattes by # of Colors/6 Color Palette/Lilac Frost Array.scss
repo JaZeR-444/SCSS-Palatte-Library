@@ -25,45 +25,45 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---lilac-frost-array-frost-indigo: #1e1b4bff;
---lilac-frost-array-lilac-depth: #312e81ff;
---lilac-frost-array-clear-violet: #4f46e5ff;
---lilac-frost-array-fresh-purple: #7c3aedff;
---lilac-frost-array-soft-lavender: #a78bfaff;
---lilac-frost-array-frost-lilac: #c4b5fdff;
+--frost-indigo: #1e1b4bff;
+--lilac-depth: #312e81ff;
+--clear-violet: #4f46e5ff;
+--fresh-purple: #7c3aedff;
+--soft-lavender: #a78bfaff;
+--frost-lilac: #c4b5fdff;
 
 /* CSS HSL */
---lilac-frost-array-frost-indigo: hsla(244, 47%, 20%, 1);
---lilac-frost-array-lilac-depth: hsla(242, 47%, 34%, 1);
---lilac-frost-array-clear-violet: hsla(243, 75%, 59%, 1);
---lilac-frost-array-fresh-purple: hsla(262, 83%, 58%, 1);
---lilac-frost-array-soft-lavender: hsla(255, 92%, 76%, 1);
---lilac-frost-array-frost-lilac: hsla(252, 95%, 85%, 1);
+--frost-indigo: hsla(244, 47%, 20%, 1);
+--lilac-depth: hsla(242, 47%, 34%, 1);
+--clear-violet: hsla(243, 75%, 59%, 1);
+--fresh-purple: hsla(262, 83%, 58%, 1);
+--soft-lavender: hsla(255, 92%, 76%, 1);
+--frost-lilac: hsla(252, 95%, 85%, 1);
 }
 
 /* SCSS HEX */
-$lilac-frost-array-frost-indigo: #1e1b4bff;
-$lilac-frost-array-lilac-depth: #312e81ff;
-$lilac-frost-array-clear-violet: #4f46e5ff;
-$lilac-frost-array-fresh-purple: #7c3aedff;
-$lilac-frost-array-soft-lavender: #a78bfaff;
-$lilac-frost-array-frost-lilac: #c4b5fdff;
+$frost-indigo: #1e1b4bff;
+$lilac-depth: #312e81ff;
+$clear-violet: #4f46e5ff;
+$fresh-purple: #7c3aedff;
+$soft-lavender: #a78bfaff;
+$frost-lilac: #c4b5fdff;
 
 /* SCSS HSL */
-$lilac-frost-array-frost-indigo: hsla(244, 47%, 20%, 1);
-$lilac-frost-array-lilac-depth: hsla(242, 47%, 34%, 1);
-$lilac-frost-array-clear-violet: hsla(243, 75%, 59%, 1);
-$lilac-frost-array-fresh-purple: hsla(262, 83%, 58%, 1);
-$lilac-frost-array-soft-lavender: hsla(255, 92%, 76%, 1);
-$lilac-frost-array-frost-lilac: hsla(252, 95%, 85%, 1);
+$frost-indigo: hsla(244, 47%, 20%, 1);
+$lilac-depth: hsla(242, 47%, 34%, 1);
+$clear-violet: hsla(243, 75%, 59%, 1);
+$fresh-purple: hsla(262, 83%, 58%, 1);
+$soft-lavender: hsla(255, 92%, 76%, 1);
+$frost-lilac: hsla(252, 95%, 85%, 1);
 
 /* SCSS RGB */
-$lilac-frost-array-frost-indigo: rgba(30, 27, 75, 1);
-$lilac-frost-array-lilac-depth: rgba(49, 46, 129, 1);
-$lilac-frost-array-clear-violet: rgba(79, 70, 229, 1);
-$lilac-frost-array-fresh-purple: rgba(124, 58, 237, 1);
-$lilac-frost-array-soft-lavender: rgba(167, 139, 250, 1);
-$lilac-frost-array-frost-lilac: rgba(196, 181, 253, 1);
+$frost-indigo: rgba(30, 27, 75, 1);
+$lilac-depth: rgba(49, 46, 129, 1);
+$clear-violet: rgba(79, 70, 229, 1);
+$fresh-purple: rgba(124, 58, 237, 1);
+$soft-lavender: rgba(167, 139, 250, 1);
+$frost-lilac: rgba(196, 181, 253, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff, #a78bfaff, #c4b5fdff);
@@ -78,10 +78,10 @@ $gradient-radial: radial-gradient(#1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff, #a
 
 /* SCSS Map */
 $lilac-frost-array-map: (
-    "lilac-frost-array-frost-indigo": #1e1b4bff,
-    "lilac-frost-array-lilac-depth": #312e81ff,
-    "lilac-frost-array-clear-violet": #4f46e5ff,
-    "lilac-frost-array-fresh-purple": #7c3aedff,
-    "lilac-frost-array-soft-lavender": #a78bfaff,
-    "lilac-frost-array-frost-lilac": #c4b5fdff
+    "frost-indigo": #1e1b4bff,
+    "lilac-depth": #312e81ff,
+    "clear-violet": #4f46e5ff,
+    "fresh-purple": #7c3aedff,
+    "soft-lavender": #a78bfaff,
+    "frost-lilac": #c4b5fdff
 );

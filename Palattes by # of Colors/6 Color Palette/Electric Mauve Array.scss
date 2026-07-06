@@ -25,45 +25,45 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---electric-mauve-array-mauve-black: #0b0614ff;
---electric-mauve-array-voltage-plum: #20113aff;
---electric-mauve-array-circuit-mauve: #3b1d5fff;
---electric-mauve-array-electric-violet: #6d28d9ff;
---electric-mauve-array-neon-purple: #9333eaff;
---electric-mauve-array-signal-magenta: #d946efff;
+--mauve-black: #0b0614ff;
+--voltage-plum: #20113aff;
+--circuit-mauve: #3b1d5fff;
+--electric-violet: #6d28d9ff;
+--neon-purple: #9333eaff;
+--signal-magenta: #d946efff;
 
 /* CSS HSL */
---electric-mauve-array-mauve-black: hsla(261, 54%, 5%, 1);
---electric-mauve-array-voltage-plum: hsla(262, 55%, 15%, 1);
---electric-mauve-array-circuit-mauve: hsla(267, 53%, 24%, 1);
---electric-mauve-array-electric-violet: hsla(263, 70%, 50%, 1);
---electric-mauve-array-neon-purple: hsla(271, 81%, 56%, 1);
---electric-mauve-array-signal-magenta: hsla(292, 84%, 61%, 1);
+--mauve-black: hsla(261, 54%, 5%, 1);
+--voltage-plum: hsla(262, 55%, 15%, 1);
+--circuit-mauve: hsla(267, 53%, 24%, 1);
+--electric-violet: hsla(263, 70%, 50%, 1);
+--neon-purple: hsla(271, 81%, 56%, 1);
+--signal-magenta: hsla(292, 84%, 61%, 1);
 }
 
 /* SCSS HEX */
-$electric-mauve-array-mauve-black: #0b0614ff;
-$electric-mauve-array-voltage-plum: #20113aff;
-$electric-mauve-array-circuit-mauve: #3b1d5fff;
-$electric-mauve-array-electric-violet: #6d28d9ff;
-$electric-mauve-array-neon-purple: #9333eaff;
-$electric-mauve-array-signal-magenta: #d946efff;
+$mauve-black: #0b0614ff;
+$voltage-plum: #20113aff;
+$circuit-mauve: #3b1d5fff;
+$electric-violet: #6d28d9ff;
+$neon-purple: #9333eaff;
+$signal-magenta: #d946efff;
 
 /* SCSS HSL */
-$electric-mauve-array-mauve-black: hsla(261, 54%, 5%, 1);
-$electric-mauve-array-voltage-plum: hsla(262, 55%, 15%, 1);
-$electric-mauve-array-circuit-mauve: hsla(267, 53%, 24%, 1);
-$electric-mauve-array-electric-violet: hsla(263, 70%, 50%, 1);
-$electric-mauve-array-neon-purple: hsla(271, 81%, 56%, 1);
-$electric-mauve-array-signal-magenta: hsla(292, 84%, 61%, 1);
+$mauve-black: hsla(261, 54%, 5%, 1);
+$voltage-plum: hsla(262, 55%, 15%, 1);
+$circuit-mauve: hsla(267, 53%, 24%, 1);
+$electric-violet: hsla(263, 70%, 50%, 1);
+$neon-purple: hsla(271, 81%, 56%, 1);
+$signal-magenta: hsla(292, 84%, 61%, 1);
 
 /* SCSS RGB */
-$electric-mauve-array-mauve-black: rgba(11, 6, 20, 1);
-$electric-mauve-array-voltage-plum: rgba(32, 17, 58, 1);
-$electric-mauve-array-circuit-mauve: rgba(59, 29, 95, 1);
-$electric-mauve-array-electric-violet: rgba(109, 40, 217, 1);
-$electric-mauve-array-neon-purple: rgba(147, 51, 234, 1);
-$electric-mauve-array-signal-magenta: rgba(217, 70, 239, 1);
+$mauve-black: rgba(11, 6, 20, 1);
+$voltage-plum: rgba(32, 17, 58, 1);
+$circuit-mauve: rgba(59, 29, 95, 1);
+$electric-violet: rgba(109, 40, 217, 1);
+$neon-purple: rgba(147, 51, 234, 1);
+$signal-magenta: rgba(217, 70, 239, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #0b0614ff, #20113aff, #3b1d5fff, #6d28d9ff, #9333eaff, #d946efff);
@@ -78,10 +78,10 @@ $gradient-radial: radial-gradient(#0b0614ff, #20113aff, #3b1d5fff, #6d28d9ff, #9
 
 /* SCSS Map */
 $electric-mauve-array-map: (
-    "electric-mauve-array-mauve-black": #0b0614ff,
-    "electric-mauve-array-voltage-plum": #20113aff,
-    "electric-mauve-array-circuit-mauve": #3b1d5fff,
-    "electric-mauve-array-electric-violet": #6d28d9ff,
-    "electric-mauve-array-neon-purple": #9333eaff,
-    "electric-mauve-array-signal-magenta": #d946efff
+    "mauve-black": #0b0614ff,
+    "voltage-plum": #20113aff,
+    "circuit-mauve": #3b1d5fff,
+    "electric-violet": #6d28d9ff,
+    "neon-purple": #9333eaff,
+    "signal-magenta": #d946efff
 );

@@ -25,55 +25,55 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---moss-garden-system-garden-night: #111d13ff;
---moss-garden-system-moss-depth: #1b4332ff;
---moss-garden-system-leaf-shadow: #2d6a4fff;
---moss-garden-system-herb-green: #40916cff;
---moss-garden-system-garden-green: #52b788ff;
---moss-garden-system-fresh-leaf: #74c69dff;
---moss-garden-system-sage-mist: #95d5b2ff;
---moss-garden-system-sprout-line: #b7e4c7ff;
+--garden-night: #111d13ff;
+--moss-depth: #1b4332ff;
+--leaf-shadow: #2d6a4fff;
+--herb-green: #40916cff;
+--garden-green: #52b788ff;
+--fresh-leaf: #74c69dff;
+--sage-mist: #95d5b2ff;
+--sprout-line: #b7e4c7ff;
 
 /* CSS HSL */
---moss-garden-system-garden-night: hsla(130, 26%, 9%, 1);
---moss-garden-system-moss-depth: hsla(155, 43%, 18%, 1);
---moss-garden-system-leaf-shadow: hsla(153, 40%, 30%, 1);
---moss-garden-system-herb-green: hsla(153, 39%, 41%, 1);
---moss-garden-system-garden-green: hsla(152, 41%, 52%, 1);
---moss-garden-system-fresh-leaf: hsla(150, 42%, 62%, 1);
---moss-garden-system-sage-mist: hsla(147, 43%, 71%, 1);
---moss-garden-system-sprout-line: hsla(141, 45%, 81%, 1);
+--garden-night: hsla(130, 26%, 9%, 1);
+--moss-depth: hsla(155, 43%, 18%, 1);
+--leaf-shadow: hsla(153, 40%, 30%, 1);
+--herb-green: hsla(153, 39%, 41%, 1);
+--garden-green: hsla(152, 41%, 52%, 1);
+--fresh-leaf: hsla(150, 42%, 62%, 1);
+--sage-mist: hsla(147, 43%, 71%, 1);
+--sprout-line: hsla(141, 45%, 81%, 1);
 }
 
 /* SCSS HEX */
-$moss-garden-system-garden-night: #111d13ff;
-$moss-garden-system-moss-depth: #1b4332ff;
-$moss-garden-system-leaf-shadow: #2d6a4fff;
-$moss-garden-system-herb-green: #40916cff;
-$moss-garden-system-garden-green: #52b788ff;
-$moss-garden-system-fresh-leaf: #74c69dff;
-$moss-garden-system-sage-mist: #95d5b2ff;
-$moss-garden-system-sprout-line: #b7e4c7ff;
+$garden-night: #111d13ff;
+$moss-depth: #1b4332ff;
+$leaf-shadow: #2d6a4fff;
+$herb-green: #40916cff;
+$garden-green: #52b788ff;
+$fresh-leaf: #74c69dff;
+$sage-mist: #95d5b2ff;
+$sprout-line: #b7e4c7ff;
 
 /* SCSS HSL */
-$moss-garden-system-garden-night: hsla(130, 26%, 9%, 1);
-$moss-garden-system-moss-depth: hsla(155, 43%, 18%, 1);
-$moss-garden-system-leaf-shadow: hsla(153, 40%, 30%, 1);
-$moss-garden-system-herb-green: hsla(153, 39%, 41%, 1);
-$moss-garden-system-garden-green: hsla(152, 41%, 52%, 1);
-$moss-garden-system-fresh-leaf: hsla(150, 42%, 62%, 1);
-$moss-garden-system-sage-mist: hsla(147, 43%, 71%, 1);
-$moss-garden-system-sprout-line: hsla(141, 45%, 81%, 1);
+$garden-night: hsla(130, 26%, 9%, 1);
+$moss-depth: hsla(155, 43%, 18%, 1);
+$leaf-shadow: hsla(153, 40%, 30%, 1);
+$herb-green: hsla(153, 39%, 41%, 1);
+$garden-green: hsla(152, 41%, 52%, 1);
+$fresh-leaf: hsla(150, 42%, 62%, 1);
+$sage-mist: hsla(147, 43%, 71%, 1);
+$sprout-line: hsla(141, 45%, 81%, 1);
 
 /* SCSS RGB */
-$moss-garden-system-garden-night: rgba(17, 29, 19, 1);
-$moss-garden-system-moss-depth: rgba(27, 67, 50, 1);
-$moss-garden-system-leaf-shadow: rgba(45, 106, 79, 1);
-$moss-garden-system-herb-green: rgba(64, 145, 108, 1);
-$moss-garden-system-garden-green: rgba(82, 183, 136, 1);
-$moss-garden-system-fresh-leaf: rgba(116, 198, 157, 1);
-$moss-garden-system-sage-mist: rgba(149, 213, 178, 1);
-$moss-garden-system-sprout-line: rgba(183, 228, 199, 1);
+$garden-night: rgba(17, 29, 19, 1);
+$moss-depth: rgba(27, 67, 50, 1);
+$leaf-shadow: rgba(45, 106, 79, 1);
+$herb-green: rgba(64, 145, 108, 1);
+$garden-green: rgba(82, 183, 136, 1);
+$fresh-leaf: rgba(116, 198, 157, 1);
+$sage-mist: rgba(149, 213, 178, 1);
+$sprout-line: rgba(183, 228, 199, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #111d13ff, #1b4332ff, #2d6a4fff, #40916cff, #52b788ff, #74c69dff, #95d5b2ff, #b7e4c7ff);
@@ -88,12 +88,12 @@ $gradient-radial: radial-gradient(#111d13ff, #1b4332ff, #2d6a4fff, #40916cff, #5
 
 /* SCSS Map */
 $moss-garden-system-map: (
-    "moss-garden-system-garden-night": #111d13ff,
-    "moss-garden-system-moss-depth": #1b4332ff,
-    "moss-garden-system-leaf-shadow": #2d6a4fff,
-    "moss-garden-system-herb-green": #40916cff,
-    "moss-garden-system-garden-green": #52b788ff,
-    "moss-garden-system-fresh-leaf": #74c69dff,
-    "moss-garden-system-sage-mist": #95d5b2ff,
-    "moss-garden-system-sprout-line": #b7e4c7ff
+    "garden-night": #111d13ff,
+    "moss-depth": #1b4332ff,
+    "leaf-shadow": #2d6a4fff,
+    "herb-green": #40916cff,
+    "garden-green": #52b788ff,
+    "fresh-leaf": #74c69dff,
+    "sage-mist": #95d5b2ff,
+    "sprout-line": #b7e4c7ff
 );

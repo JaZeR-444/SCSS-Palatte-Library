@@ -25,35 +25,35 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---forest-ledger-quartet-ledger-forest: #0b1f17ff;
---forest-ledger-quartet-account-pine: #123524ff;
---forest-ledger-quartet-report-green: #1b5e3cff;
---forest-ledger-quartet-balance-green: #2e7d32ff;
+--ledger-forest: #0b1f17ff;
+--account-pine: #123524ff;
+--report-green: #1b5e3cff;
+--balance-green: #2e7d32ff;
 
 /* CSS HSL */
---forest-ledger-quartet-ledger-forest: hsla(156, 48%, 8%, 1);
---forest-ledger-quartet-account-pine: hsla(151, 49%, 14%, 1);
---forest-ledger-quartet-report-green: hsla(150, 55%, 24%, 1);
---forest-ledger-quartet-balance-green: hsla(123, 46%, 34%, 1);
+--ledger-forest: hsla(156, 48%, 8%, 1);
+--account-pine: hsla(151, 49%, 14%, 1);
+--report-green: hsla(150, 55%, 24%, 1);
+--balance-green: hsla(123, 46%, 34%, 1);
 }
 
 /* SCSS HEX */
-$forest-ledger-quartet-ledger-forest: #0b1f17ff;
-$forest-ledger-quartet-account-pine: #123524ff;
-$forest-ledger-quartet-report-green: #1b5e3cff;
-$forest-ledger-quartet-balance-green: #2e7d32ff;
+$ledger-forest: #0b1f17ff;
+$account-pine: #123524ff;
+$report-green: #1b5e3cff;
+$balance-green: #2e7d32ff;
 
 /* SCSS HSL */
-$forest-ledger-quartet-ledger-forest: hsla(156, 48%, 8%, 1);
-$forest-ledger-quartet-account-pine: hsla(151, 49%, 14%, 1);
-$forest-ledger-quartet-report-green: hsla(150, 55%, 24%, 1);
-$forest-ledger-quartet-balance-green: hsla(123, 46%, 34%, 1);
+$ledger-forest: hsla(156, 48%, 8%, 1);
+$account-pine: hsla(151, 49%, 14%, 1);
+$report-green: hsla(150, 55%, 24%, 1);
+$balance-green: hsla(123, 46%, 34%, 1);
 
 /* SCSS RGB */
-$forest-ledger-quartet-ledger-forest: rgba(11, 31, 23, 1);
-$forest-ledger-quartet-account-pine: rgba(18, 53, 36, 1);
-$forest-ledger-quartet-report-green: rgba(27, 94, 60, 1);
-$forest-ledger-quartet-balance-green: rgba(46, 125, 50, 1);
+$ledger-forest: rgba(11, 31, 23, 1);
+$account-pine: rgba(18, 53, 36, 1);
+$report-green: rgba(27, 94, 60, 1);
+$balance-green: rgba(46, 125, 50, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff);
@@ -68,8 +68,8 @@ $gradient-radial: radial-gradient(#0b1f17ff, #123524ff, #1b5e3cff, #2e7d32ff);
 
 /* SCSS Map */
 $forest-ledger-quartet-map: (
-    "forest-ledger-quartet-ledger-forest": #0b1f17ff,
-    "forest-ledger-quartet-account-pine": #123524ff,
-    "forest-ledger-quartet-report-green": #1b5e3cff,
-    "forest-ledger-quartet-balance-green": #2e7d32ff
+    "ledger-forest": #0b1f17ff,
+    "account-pine": #123524ff,
+    "report-green": #1b5e3cff,
+    "balance-green": #2e7d32ff
 );

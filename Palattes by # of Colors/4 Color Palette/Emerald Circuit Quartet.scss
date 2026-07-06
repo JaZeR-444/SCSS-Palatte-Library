@@ -25,35 +25,35 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---emerald-circuit-quartet-circuit-black: #02140bff;
---emerald-circuit-quartet-terminal-root: #052e16ff;
---emerald-circuit-quartet-emerald-board: #14532dff;
---emerald-circuit-quartet-runtime-green: #15803dff;
+--circuit-black: #02140bff;
+--terminal-root: #052e16ff;
+--emerald-board: #14532dff;
+--runtime-green: #15803dff;
 
 /* CSS HSL */
---emerald-circuit-quartet-circuit-black: hsla(150, 82%, 4%, 1);
---emerald-circuit-quartet-terminal-root: hsla(145, 80%, 10%, 1);
---emerald-circuit-quartet-emerald-board: hsla(144, 61%, 20%, 1);
---emerald-circuit-quartet-runtime-green: hsla(142, 72%, 29%, 1);
+--circuit-black: hsla(150, 82%, 4%, 1);
+--terminal-root: hsla(145, 80%, 10%, 1);
+--emerald-board: hsla(144, 61%, 20%, 1);
+--runtime-green: hsla(142, 72%, 29%, 1);
 }
 
 /* SCSS HEX */
-$emerald-circuit-quartet-circuit-black: #02140bff;
-$emerald-circuit-quartet-terminal-root: #052e16ff;
-$emerald-circuit-quartet-emerald-board: #14532dff;
-$emerald-circuit-quartet-runtime-green: #15803dff;
+$circuit-black: #02140bff;
+$terminal-root: #052e16ff;
+$emerald-board: #14532dff;
+$runtime-green: #15803dff;
 
 /* SCSS HSL */
-$emerald-circuit-quartet-circuit-black: hsla(150, 82%, 4%, 1);
-$emerald-circuit-quartet-terminal-root: hsla(145, 80%, 10%, 1);
-$emerald-circuit-quartet-emerald-board: hsla(144, 61%, 20%, 1);
-$emerald-circuit-quartet-runtime-green: hsla(142, 72%, 29%, 1);
+$circuit-black: hsla(150, 82%, 4%, 1);
+$terminal-root: hsla(145, 80%, 10%, 1);
+$emerald-board: hsla(144, 61%, 20%, 1);
+$runtime-green: hsla(142, 72%, 29%, 1);
 
 /* SCSS RGB */
-$emerald-circuit-quartet-circuit-black: rgba(2, 20, 11, 1);
-$emerald-circuit-quartet-terminal-root: rgba(5, 46, 22, 1);
-$emerald-circuit-quartet-emerald-board: rgba(20, 83, 45, 1);
-$emerald-circuit-quartet-runtime-green: rgba(21, 128, 61, 1);
+$circuit-black: rgba(2, 20, 11, 1);
+$terminal-root: rgba(5, 46, 22, 1);
+$emerald-board: rgba(20, 83, 45, 1);
+$runtime-green: rgba(21, 128, 61, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #02140bff, #052e16ff, #14532dff, #15803dff);
@@ -68,8 +68,8 @@ $gradient-radial: radial-gradient(#02140bff, #052e16ff, #14532dff, #15803dff);
 
 /* SCSS Map */
 $emerald-circuit-quartet-map: (
-    "emerald-circuit-quartet-circuit-black": #02140bff,
-    "emerald-circuit-quartet-terminal-root": #052e16ff,
-    "emerald-circuit-quartet-emerald-board": #14532dff,
-    "emerald-circuit-quartet-runtime-green": #15803dff
+    "circuit-black": #02140bff,
+    "terminal-root": #052e16ff,
+    "emerald-board": #14532dff,
+    "runtime-green": #15803dff
 );

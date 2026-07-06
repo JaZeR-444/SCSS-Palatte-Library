@@ -25,65 +25,65 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---ruby-ledger-atlas-ledger-ink: #1f0a0cff;
---ruby-ledger-atlas-account-ruby: #3b0d11ff;
---ruby-ledger-atlas-report-red: #7f1d1dff;
---ruby-ledger-atlas-balance-red: #b91c1cff;
---ruby-ledger-atlas-metric-red: #dc2626ff;
---ruby-ledger-atlas-chart-orange: #f97316ff;
---ruby-ledger-atlas-summary-coral: #fb923cff;
---ruby-ledger-atlas-panel-peach: #fed7aaff;
---ruby-ledger-atlas-sheet-blush: #fff1e6ff;
---ruby-ledger-atlas-white-report: #ffffffff;
+--ledger-ink: #1f0a0cff;
+--account-ruby: #3b0d11ff;
+--report-red: #7f1d1dff;
+--balance-red: #b91c1cff;
+--metric-red: #dc2626ff;
+--chart-orange: #f97316ff;
+--summary-coral: #fb923cff;
+--panel-peach: #fed7aaff;
+--sheet-blush: #fff1e6ff;
+--white-report: #ffffffff;
 
 /* CSS HSL */
---ruby-ledger-atlas-ledger-ink: hsla(354, 51%, 8%, 1);
---ruby-ledger-atlas-account-ruby: hsla(355, 64%, 14%, 1);
---ruby-ledger-atlas-report-red: hsla(0, 63%, 31%, 1);
---ruby-ledger-atlas-balance-red: hsla(0, 74%, 42%, 1);
---ruby-ledger-atlas-metric-red: hsla(0, 72%, 51%, 1);
---ruby-ledger-atlas-chart-orange: hsla(25, 95%, 53%, 1);
---ruby-ledger-atlas-summary-coral: hsla(27, 96%, 61%, 1);
---ruby-ledger-atlas-panel-peach: hsla(32, 98%, 83%, 1);
---ruby-ledger-atlas-sheet-blush: hsla(26, 100%, 95%, 1);
---ruby-ledger-atlas-white-report: hsla(0, 0%, 100%, 1);
+--ledger-ink: hsla(354, 51%, 8%, 1);
+--account-ruby: hsla(355, 64%, 14%, 1);
+--report-red: hsla(0, 63%, 31%, 1);
+--balance-red: hsla(0, 74%, 42%, 1);
+--metric-red: hsla(0, 72%, 51%, 1);
+--chart-orange: hsla(25, 95%, 53%, 1);
+--summary-coral: hsla(27, 96%, 61%, 1);
+--panel-peach: hsla(32, 98%, 83%, 1);
+--sheet-blush: hsla(26, 100%, 95%, 1);
+--white-report: hsla(0, 0%, 100%, 1);
 }
 
 /* SCSS HEX */
-$ruby-ledger-atlas-ledger-ink: #1f0a0cff;
-$ruby-ledger-atlas-account-ruby: #3b0d11ff;
-$ruby-ledger-atlas-report-red: #7f1d1dff;
-$ruby-ledger-atlas-balance-red: #b91c1cff;
-$ruby-ledger-atlas-metric-red: #dc2626ff;
-$ruby-ledger-atlas-chart-orange: #f97316ff;
-$ruby-ledger-atlas-summary-coral: #fb923cff;
-$ruby-ledger-atlas-panel-peach: #fed7aaff;
-$ruby-ledger-atlas-sheet-blush: #fff1e6ff;
-$ruby-ledger-atlas-white-report: #ffffffff;
+$ledger-ink: #1f0a0cff;
+$account-ruby: #3b0d11ff;
+$report-red: #7f1d1dff;
+$balance-red: #b91c1cff;
+$metric-red: #dc2626ff;
+$chart-orange: #f97316ff;
+$summary-coral: #fb923cff;
+$panel-peach: #fed7aaff;
+$sheet-blush: #fff1e6ff;
+$white-report: #ffffffff;
 
 /* SCSS HSL */
-$ruby-ledger-atlas-ledger-ink: hsla(354, 51%, 8%, 1);
-$ruby-ledger-atlas-account-ruby: hsla(355, 64%, 14%, 1);
-$ruby-ledger-atlas-report-red: hsla(0, 63%, 31%, 1);
-$ruby-ledger-atlas-balance-red: hsla(0, 74%, 42%, 1);
-$ruby-ledger-atlas-metric-red: hsla(0, 72%, 51%, 1);
-$ruby-ledger-atlas-chart-orange: hsla(25, 95%, 53%, 1);
-$ruby-ledger-atlas-summary-coral: hsla(27, 96%, 61%, 1);
-$ruby-ledger-atlas-panel-peach: hsla(32, 98%, 83%, 1);
-$ruby-ledger-atlas-sheet-blush: hsla(26, 100%, 95%, 1);
-$ruby-ledger-atlas-white-report: hsla(0, 0%, 100%, 1);
+$ledger-ink: hsla(354, 51%, 8%, 1);
+$account-ruby: hsla(355, 64%, 14%, 1);
+$report-red: hsla(0, 63%, 31%, 1);
+$balance-red: hsla(0, 74%, 42%, 1);
+$metric-red: hsla(0, 72%, 51%, 1);
+$chart-orange: hsla(25, 95%, 53%, 1);
+$summary-coral: hsla(27, 96%, 61%, 1);
+$panel-peach: hsla(32, 98%, 83%, 1);
+$sheet-blush: hsla(26, 100%, 95%, 1);
+$white-report: hsla(0, 0%, 100%, 1);
 
 /* SCSS RGB */
-$ruby-ledger-atlas-ledger-ink: rgba(31, 10, 12, 1);
-$ruby-ledger-atlas-account-ruby: rgba(59, 13, 17, 1);
-$ruby-ledger-atlas-report-red: rgba(127, 29, 29, 1);
-$ruby-ledger-atlas-balance-red: rgba(185, 28, 28, 1);
-$ruby-ledger-atlas-metric-red: rgba(220, 38, 38, 1);
-$ruby-ledger-atlas-chart-orange: rgba(249, 115, 22, 1);
-$ruby-ledger-atlas-summary-coral: rgba(251, 146, 60, 1);
-$ruby-ledger-atlas-panel-peach: rgba(254, 215, 170, 1);
-$ruby-ledger-atlas-sheet-blush: rgba(255, 241, 230, 1);
-$ruby-ledger-atlas-white-report: rgba(255, 255, 255, 1);
+$ledger-ink: rgba(31, 10, 12, 1);
+$account-ruby: rgba(59, 13, 17, 1);
+$report-red: rgba(127, 29, 29, 1);
+$balance-red: rgba(185, 28, 28, 1);
+$metric-red: rgba(220, 38, 38, 1);
+$chart-orange: rgba(249, 115, 22, 1);
+$summary-coral: rgba(251, 146, 60, 1);
+$panel-peach: rgba(254, 215, 170, 1);
+$sheet-blush: rgba(255, 241, 230, 1);
+$white-report: rgba(255, 255, 255, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1f0a0cff, #3b0d11ff, #7f1d1dff, #b91c1cff, #dc2626ff, #f97316ff, #fb923cff, #fed7aaff, #fff1e6ff, #ffffffff);
@@ -98,14 +98,14 @@ $gradient-radial: radial-gradient(#1f0a0cff, #3b0d11ff, #7f1d1dff, #b91c1cff, #d
 
 /* SCSS Map */
 $ruby-ledger-atlas-map: (
-    "ruby-ledger-atlas-ledger-ink": #1f0a0cff,
-    "ruby-ledger-atlas-account-ruby": #3b0d11ff,
-    "ruby-ledger-atlas-report-red": #7f1d1dff,
-    "ruby-ledger-atlas-balance-red": #b91c1cff,
-    "ruby-ledger-atlas-metric-red": #dc2626ff,
-    "ruby-ledger-atlas-chart-orange": #f97316ff,
-    "ruby-ledger-atlas-summary-coral": #fb923cff,
-    "ruby-ledger-atlas-panel-peach": #fed7aaff,
-    "ruby-ledger-atlas-sheet-blush": #fff1e6ff,
-    "ruby-ledger-atlas-white-report": #ffffffff
+    "ledger-ink": #1f0a0cff,
+    "account-ruby": #3b0d11ff,
+    "report-red": #7f1d1dff,
+    "balance-red": #b91c1cff,
+    "metric-red": #dc2626ff,
+    "chart-orange": #f97316ff,
+    "summary-coral": #fb923cff,
+    "panel-peach": #fed7aaff,
+    "sheet-blush": #fff1e6ff,
+    "white-report": #ffffffff
 );

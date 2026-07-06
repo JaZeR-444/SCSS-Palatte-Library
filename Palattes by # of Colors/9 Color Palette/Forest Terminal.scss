@@ -26,10 +26,10 @@ updated: '2026-05-19'
 :root {
 /* CSS HEX */
 --terminal-black: #030712ff;
---forest-950: #052e16ff;
---forest-800: #166534ff;
---forest-600: #16a34aff;
---forest-300: #86efacff;
+--dark-forest-green: #052e16ff;
+--spruce: #166534ff;
+--emerald: #16a34aff;
+--light-sea-green: #86efacff;
 --code-cyan: #22d3eeff;
 --alert-amber: #fbbf24ff;
 --error-rose: #fb7185ff;
@@ -37,10 +37,10 @@ updated: '2026-05-19'
 
 /* CSS HSL */
 --terminal-black: hsla(224, 71%, 4%, 1);
---forest-950: hsla(145, 80%, 10%, 1);
---forest-800: hsla(143, 64%, 24%, 1);
---forest-600: hsla(142, 76%, 36%, 1);
---forest-300: hsla(142, 77%, 73%, 1);
+--dark-forest-green: hsla(145, 80%, 10%, 1);
+--spruce: hsla(143, 64%, 24%, 1);
+--emerald: hsla(142, 76%, 36%, 1);
+--light-sea-green: hsla(142, 77%, 73%, 1);
 --code-cyan: hsla(188, 86%, 53%, 1);
 --alert-amber: hsla(43, 96%, 56%, 1);
 --error-rose: hsla(351, 95%, 71%, 1);
@@ -49,10 +49,10 @@ updated: '2026-05-19'
 
 /* SCSS HEX */
 $terminal-black: #030712ff;
-$forest-950: #052e16ff;
-$forest-800: #166534ff;
-$forest-600: #16a34aff;
-$forest-300: #86efacff;
+$dark-forest-green: #052e16ff;
+$spruce: #166534ff;
+$emerald: #16a34aff;
+$light-sea-green: #86efacff;
 $code-cyan: #22d3eeff;
 $alert-amber: #fbbf24ff;
 $error-rose: #fb7185ff;
@@ -60,10 +60,10 @@ $screen-white: #f0fdf4ff;
 
 /* SCSS HSL */
 $terminal-black: hsla(224, 71%, 4%, 1);
-$forest-950: hsla(145, 80%, 10%, 1);
-$forest-800: hsla(143, 64%, 24%, 1);
-$forest-600: hsla(142, 76%, 36%, 1);
-$forest-300: hsla(142, 77%, 73%, 1);
+$dark-forest-green: hsla(145, 80%, 10%, 1);
+$spruce: hsla(143, 64%, 24%, 1);
+$emerald: hsla(142, 76%, 36%, 1);
+$light-sea-green: hsla(142, 77%, 73%, 1);
 $code-cyan: hsla(188, 86%, 53%, 1);
 $alert-amber: hsla(43, 96%, 56%, 1);
 $error-rose: hsla(351, 95%, 71%, 1);
@@ -71,10 +71,10 @@ $screen-white: hsla(138, 76%, 97%, 1);
 
 /* SCSS RGB */
 $terminal-black: rgba(3, 7, 18, 1);
-$forest-950: rgba(5, 46, 22, 1);
-$forest-800: rgba(22, 101, 52, 1);
-$forest-600: rgba(22, 163, 74, 1);
-$forest-300: rgba(134, 239, 172, 1);
+$dark-forest-green: rgba(5, 46, 22, 1);
+$spruce: rgba(22, 101, 52, 1);
+$emerald: rgba(22, 163, 74, 1);
+$light-sea-green: rgba(134, 239, 172, 1);
 $code-cyan: rgba(34, 211, 238, 1);
 $alert-amber: rgba(251, 191, 36, 1);
 $error-rose: rgba(251, 113, 133, 1);
@@ -94,10 +94,10 @@ $gradient-radial: radial-gradient(#030712ff, #052e16ff, #166534ff, #16a34aff, #8
 /* SCSS Map */
 $forest-terminal-map: (
     "terminal-black": #030712ff,
-    "forest-950": #052e16ff,
-    "forest-800": #166534ff,
-    "forest-600": #16a34aff,
-    "forest-300": #86efacff,
+    "dark-forest-green": #052e16ff,
+    "spruce": #166534ff,
+    "emerald": #16a34aff,
+    "light-sea-green": #86efacff,
     "code-cyan": #22d3eeff,
     "alert-amber": #fbbf24ff,
     "error-rose": #fb7185ff,

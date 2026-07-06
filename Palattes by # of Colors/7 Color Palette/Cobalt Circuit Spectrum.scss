@@ -25,50 +25,50 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---cobalt-circuit-spectrum-circuit-black: #020617ff;
---cobalt-circuit-spectrum-logic-navy: #0f172aff;
---cobalt-circuit-spectrum-cobalt-core: #1e3a8aff;
---cobalt-circuit-spectrum-runtime-blue: #1d4ed8ff;
---cobalt-circuit-spectrum-action-blue: #2563ebff;
---cobalt-circuit-spectrum-signal-blue: #3b82f6ff;
---cobalt-circuit-spectrum-spark-blue: #60a5faff;
+--circuit-black: #020617ff;
+--logic-navy: #0f172aff;
+--cobalt-core: #1e3a8aff;
+--runtime-blue: #1d4ed8ff;
+--action-blue: #2563ebff;
+--signal-blue: #3b82f6ff;
+--spark-blue: #60a5faff;
 
 /* CSS HSL */
---cobalt-circuit-spectrum-circuit-black: hsla(229, 84%, 5%, 1);
---cobalt-circuit-spectrum-logic-navy: hsla(222, 47%, 11%, 1);
---cobalt-circuit-spectrum-cobalt-core: hsla(224, 64%, 33%, 1);
---cobalt-circuit-spectrum-runtime-blue: hsla(224, 76%, 48%, 1);
---cobalt-circuit-spectrum-action-blue: hsla(221, 83%, 53%, 1);
---cobalt-circuit-spectrum-signal-blue: hsla(217, 91%, 60%, 1);
---cobalt-circuit-spectrum-spark-blue: hsla(213, 94%, 68%, 1);
+--circuit-black: hsla(229, 84%, 5%, 1);
+--logic-navy: hsla(222, 47%, 11%, 1);
+--cobalt-core: hsla(224, 64%, 33%, 1);
+--runtime-blue: hsla(224, 76%, 48%, 1);
+--action-blue: hsla(221, 83%, 53%, 1);
+--signal-blue: hsla(217, 91%, 60%, 1);
+--spark-blue: hsla(213, 94%, 68%, 1);
 }
 
 /* SCSS HEX */
-$cobalt-circuit-spectrum-circuit-black: #020617ff;
-$cobalt-circuit-spectrum-logic-navy: #0f172aff;
-$cobalt-circuit-spectrum-cobalt-core: #1e3a8aff;
-$cobalt-circuit-spectrum-runtime-blue: #1d4ed8ff;
-$cobalt-circuit-spectrum-action-blue: #2563ebff;
-$cobalt-circuit-spectrum-signal-blue: #3b82f6ff;
-$cobalt-circuit-spectrum-spark-blue: #60a5faff;
+$circuit-black: #020617ff;
+$logic-navy: #0f172aff;
+$cobalt-core: #1e3a8aff;
+$runtime-blue: #1d4ed8ff;
+$action-blue: #2563ebff;
+$signal-blue: #3b82f6ff;
+$spark-blue: #60a5faff;
 
 /* SCSS HSL */
-$cobalt-circuit-spectrum-circuit-black: hsla(229, 84%, 5%, 1);
-$cobalt-circuit-spectrum-logic-navy: hsla(222, 47%, 11%, 1);
-$cobalt-circuit-spectrum-cobalt-core: hsla(224, 64%, 33%, 1);
-$cobalt-circuit-spectrum-runtime-blue: hsla(224, 76%, 48%, 1);
-$cobalt-circuit-spectrum-action-blue: hsla(221, 83%, 53%, 1);
-$cobalt-circuit-spectrum-signal-blue: hsla(217, 91%, 60%, 1);
-$cobalt-circuit-spectrum-spark-blue: hsla(213, 94%, 68%, 1);
+$circuit-black: hsla(229, 84%, 5%, 1);
+$logic-navy: hsla(222, 47%, 11%, 1);
+$cobalt-core: hsla(224, 64%, 33%, 1);
+$runtime-blue: hsla(224, 76%, 48%, 1);
+$action-blue: hsla(221, 83%, 53%, 1);
+$signal-blue: hsla(217, 91%, 60%, 1);
+$spark-blue: hsla(213, 94%, 68%, 1);
 
 /* SCSS RGB */
-$cobalt-circuit-spectrum-circuit-black: rgba(2, 6, 23, 1);
-$cobalt-circuit-spectrum-logic-navy: rgba(15, 23, 42, 1);
-$cobalt-circuit-spectrum-cobalt-core: rgba(30, 58, 138, 1);
-$cobalt-circuit-spectrum-runtime-blue: rgba(29, 78, 216, 1);
-$cobalt-circuit-spectrum-action-blue: rgba(37, 99, 235, 1);
-$cobalt-circuit-spectrum-signal-blue: rgba(59, 130, 246, 1);
-$cobalt-circuit-spectrum-spark-blue: rgba(96, 165, 250, 1);
+$circuit-black: rgba(2, 6, 23, 1);
+$logic-navy: rgba(15, 23, 42, 1);
+$cobalt-core: rgba(30, 58, 138, 1);
+$runtime-blue: rgba(29, 78, 216, 1);
+$action-blue: rgba(37, 99, 235, 1);
+$signal-blue: rgba(59, 130, 246, 1);
+$spark-blue: rgba(96, 165, 250, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff, #60a5faff);
@@ -83,11 +83,11 @@ $gradient-radial: radial-gradient(#020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2
 
 /* SCSS Map */
 $cobalt-circuit-spectrum-map: (
-    "cobalt-circuit-spectrum-circuit-black": #020617ff,
-    "cobalt-circuit-spectrum-logic-navy": #0f172aff,
-    "cobalt-circuit-spectrum-cobalt-core": #1e3a8aff,
-    "cobalt-circuit-spectrum-runtime-blue": #1d4ed8ff,
-    "cobalt-circuit-spectrum-action-blue": #2563ebff,
-    "cobalt-circuit-spectrum-signal-blue": #3b82f6ff,
-    "cobalt-circuit-spectrum-spark-blue": #60a5faff
+    "circuit-black": #020617ff,
+    "logic-navy": #0f172aff,
+    "cobalt-core": #1e3a8aff,
+    "runtime-blue": #1d4ed8ff,
+    "action-blue": #2563ebff,
+    "signal-blue": #3b82f6ff,
+    "spark-blue": #60a5faff
 );

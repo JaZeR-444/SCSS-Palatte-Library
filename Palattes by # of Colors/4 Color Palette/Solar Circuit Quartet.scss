@@ -25,35 +25,35 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---solar-circuit-quartet-console-black: #171104ff;
---solar-circuit-quartet-trace-brown: #422006ff;
---solar-circuit-quartet-circuit-gold: #a16207ff;
---solar-circuit-quartet-signal-yellow: #eab308ff;
+--console-black: #171104ff;
+--trace-brown: #422006ff;
+--circuit-gold: #a16207ff;
+--signal-yellow: #eab308ff;
 
 /* CSS HSL */
---solar-circuit-quartet-console-black: hsla(41, 70%, 5%, 1);
---solar-circuit-quartet-trace-brown: hsla(26, 83%, 14%, 1);
---solar-circuit-quartet-circuit-gold: hsla(35, 92%, 33%, 1);
---solar-circuit-quartet-signal-yellow: hsla(45, 93%, 47%, 1);
+--console-black: hsla(41, 70%, 5%, 1);
+--trace-brown: hsla(26, 83%, 14%, 1);
+--circuit-gold: hsla(35, 92%, 33%, 1);
+--signal-yellow: hsla(45, 93%, 47%, 1);
 }
 
 /* SCSS HEX */
-$solar-circuit-quartet-console-black: #171104ff;
-$solar-circuit-quartet-trace-brown: #422006ff;
-$solar-circuit-quartet-circuit-gold: #a16207ff;
-$solar-circuit-quartet-signal-yellow: #eab308ff;
+$console-black: #171104ff;
+$trace-brown: #422006ff;
+$circuit-gold: #a16207ff;
+$signal-yellow: #eab308ff;
 
 /* SCSS HSL */
-$solar-circuit-quartet-console-black: hsla(41, 70%, 5%, 1);
-$solar-circuit-quartet-trace-brown: hsla(26, 83%, 14%, 1);
-$solar-circuit-quartet-circuit-gold: hsla(35, 92%, 33%, 1);
-$solar-circuit-quartet-signal-yellow: hsla(45, 93%, 47%, 1);
+$console-black: hsla(41, 70%, 5%, 1);
+$trace-brown: hsla(26, 83%, 14%, 1);
+$circuit-gold: hsla(35, 92%, 33%, 1);
+$signal-yellow: hsla(45, 93%, 47%, 1);
 
 /* SCSS RGB */
-$solar-circuit-quartet-console-black: rgba(23, 17, 4, 1);
-$solar-circuit-quartet-trace-brown: rgba(66, 32, 6, 1);
-$solar-circuit-quartet-circuit-gold: rgba(161, 98, 7, 1);
-$solar-circuit-quartet-signal-yellow: rgba(234, 179, 8, 1);
+$console-black: rgba(23, 17, 4, 1);
+$trace-brown: rgba(66, 32, 6, 1);
+$circuit-gold: rgba(161, 98, 7, 1);
+$signal-yellow: rgba(234, 179, 8, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #171104ff, #422006ff, #a16207ff, #eab308ff);
@@ -68,8 +68,8 @@ $gradient-radial: radial-gradient(#171104ff, #422006ff, #a16207ff, #eab308ff);
 
 /* SCSS Map */
 $solar-circuit-quartet-map: (
-    "solar-circuit-quartet-console-black": #171104ff,
-    "solar-circuit-quartet-trace-brown": #422006ff,
-    "solar-circuit-quartet-circuit-gold": #a16207ff,
-    "solar-circuit-quartet-signal-yellow": #eab308ff
+    "console-black": #171104ff,
+    "trace-brown": #422006ff,
+    "circuit-gold": #a16207ff,
+    "signal-yellow": #eab308ff
 );

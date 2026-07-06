@@ -25,55 +25,55 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---crimson-circuit-system-circuit-black: #160607ff;
---crimson-circuit-system-alert-root: #2a0a0dff;
---crimson-circuit-system-crimson-board: #5f0f14ff;
---crimson-circuit-system-runtime-red: #991b1bff;
---crimson-circuit-system-signal-red: #dc2626ff;
---crimson-circuit-system-action-red: #ef4444ff;
---crimson-circuit-system-trace-coral: #f87171ff;
---crimson-circuit-system-debug-rose: #fecacaff;
+--circuit-black: #160607ff;
+--alert-root: #2a0a0dff;
+--crimson-board: #5f0f14ff;
+--runtime-red: #991b1bff;
+--signal-red: #dc2626ff;
+--action-red: #ef4444ff;
+--trace-coral: #f87171ff;
+--debug-rose: #fecacaff;
 
 /* CSS HSL */
---crimson-circuit-system-circuit-black: hsla(356, 57%, 5%, 1);
---crimson-circuit-system-alert-root: hsla(354, 62%, 10%, 1);
---crimson-circuit-system-crimson-board: hsla(356, 73%, 22%, 1);
---crimson-circuit-system-runtime-red: hsla(0, 70%, 35%, 1);
---crimson-circuit-system-signal-red: hsla(0, 72%, 51%, 1);
---crimson-circuit-system-action-red: hsla(0, 84%, 60%, 1);
---crimson-circuit-system-trace-coral: hsla(0, 91%, 71%, 1);
---crimson-circuit-system-debug-rose: hsla(0, 96%, 89%, 1);
+--circuit-black: hsla(356, 57%, 5%, 1);
+--alert-root: hsla(354, 62%, 10%, 1);
+--crimson-board: hsla(356, 73%, 22%, 1);
+--runtime-red: hsla(0, 70%, 35%, 1);
+--signal-red: hsla(0, 72%, 51%, 1);
+--action-red: hsla(0, 84%, 60%, 1);
+--trace-coral: hsla(0, 91%, 71%, 1);
+--debug-rose: hsla(0, 96%, 89%, 1);
 }
 
 /* SCSS HEX */
-$crimson-circuit-system-circuit-black: #160607ff;
-$crimson-circuit-system-alert-root: #2a0a0dff;
-$crimson-circuit-system-crimson-board: #5f0f14ff;
-$crimson-circuit-system-runtime-red: #991b1bff;
-$crimson-circuit-system-signal-red: #dc2626ff;
-$crimson-circuit-system-action-red: #ef4444ff;
-$crimson-circuit-system-trace-coral: #f87171ff;
-$crimson-circuit-system-debug-rose: #fecacaff;
+$circuit-black: #160607ff;
+$alert-root: #2a0a0dff;
+$crimson-board: #5f0f14ff;
+$runtime-red: #991b1bff;
+$signal-red: #dc2626ff;
+$action-red: #ef4444ff;
+$trace-coral: #f87171ff;
+$debug-rose: #fecacaff;
 
 /* SCSS HSL */
-$crimson-circuit-system-circuit-black: hsla(356, 57%, 5%, 1);
-$crimson-circuit-system-alert-root: hsla(354, 62%, 10%, 1);
-$crimson-circuit-system-crimson-board: hsla(356, 73%, 22%, 1);
-$crimson-circuit-system-runtime-red: hsla(0, 70%, 35%, 1);
-$crimson-circuit-system-signal-red: hsla(0, 72%, 51%, 1);
-$crimson-circuit-system-action-red: hsla(0, 84%, 60%, 1);
-$crimson-circuit-system-trace-coral: hsla(0, 91%, 71%, 1);
-$crimson-circuit-system-debug-rose: hsla(0, 96%, 89%, 1);
+$circuit-black: hsla(356, 57%, 5%, 1);
+$alert-root: hsla(354, 62%, 10%, 1);
+$crimson-board: hsla(356, 73%, 22%, 1);
+$runtime-red: hsla(0, 70%, 35%, 1);
+$signal-red: hsla(0, 72%, 51%, 1);
+$action-red: hsla(0, 84%, 60%, 1);
+$trace-coral: hsla(0, 91%, 71%, 1);
+$debug-rose: hsla(0, 96%, 89%, 1);
 
 /* SCSS RGB */
-$crimson-circuit-system-circuit-black: rgba(22, 6, 7, 1);
-$crimson-circuit-system-alert-root: rgba(42, 10, 13, 1);
-$crimson-circuit-system-crimson-board: rgba(95, 15, 20, 1);
-$crimson-circuit-system-runtime-red: rgba(153, 27, 27, 1);
-$crimson-circuit-system-signal-red: rgba(220, 38, 38, 1);
-$crimson-circuit-system-action-red: rgba(239, 68, 68, 1);
-$crimson-circuit-system-trace-coral: rgba(248, 113, 113, 1);
-$crimson-circuit-system-debug-rose: rgba(254, 202, 202, 1);
+$circuit-black: rgba(22, 6, 7, 1);
+$alert-root: rgba(42, 10, 13, 1);
+$crimson-board: rgba(95, 15, 20, 1);
+$runtime-red: rgba(153, 27, 27, 1);
+$signal-red: rgba(220, 38, 38, 1);
+$action-red: rgba(239, 68, 68, 1);
+$trace-coral: rgba(248, 113, 113, 1);
+$debug-rose: rgba(254, 202, 202, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #dc2626ff, #ef4444ff, #f87171ff, #fecacaff);
@@ -88,12 +88,12 @@ $gradient-radial: radial-gradient(#160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #d
 
 /* SCSS Map */
 $crimson-circuit-system-map: (
-    "crimson-circuit-system-circuit-black": #160607ff,
-    "crimson-circuit-system-alert-root": #2a0a0dff,
-    "crimson-circuit-system-crimson-board": #5f0f14ff,
-    "crimson-circuit-system-runtime-red": #991b1bff,
-    "crimson-circuit-system-signal-red": #dc2626ff,
-    "crimson-circuit-system-action-red": #ef4444ff,
-    "crimson-circuit-system-trace-coral": #f87171ff,
-    "crimson-circuit-system-debug-rose": #fecacaff
+    "circuit-black": #160607ff,
+    "alert-root": #2a0a0dff,
+    "crimson-board": #5f0f14ff,
+    "runtime-red": #991b1bff,
+    "signal-red": #dc2626ff,
+    "action-red": #ef4444ff,
+    "trace-coral": #f87171ff,
+    "debug-rose": #fecacaff
 );

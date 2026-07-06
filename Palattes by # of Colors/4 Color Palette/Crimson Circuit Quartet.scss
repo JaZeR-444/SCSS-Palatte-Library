@@ -25,35 +25,35 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---crimson-circuit-quartet-circuit-black: #160607ff;
---crimson-circuit-quartet-alert-root: #2a0a0dff;
---crimson-circuit-quartet-crimson-board: #5f0f14ff;
---crimson-circuit-quartet-runtime-red: #991b1bff;
+--circuit-black: #160607ff;
+--alert-root: #2a0a0dff;
+--crimson-board: #5f0f14ff;
+--runtime-red: #991b1bff;
 
 /* CSS HSL */
---crimson-circuit-quartet-circuit-black: hsla(356, 57%, 5%, 1);
---crimson-circuit-quartet-alert-root: hsla(354, 62%, 10%, 1);
---crimson-circuit-quartet-crimson-board: hsla(356, 73%, 22%, 1);
---crimson-circuit-quartet-runtime-red: hsla(0, 70%, 35%, 1);
+--circuit-black: hsla(356, 57%, 5%, 1);
+--alert-root: hsla(354, 62%, 10%, 1);
+--crimson-board: hsla(356, 73%, 22%, 1);
+--runtime-red: hsla(0, 70%, 35%, 1);
 }
 
 /* SCSS HEX */
-$crimson-circuit-quartet-circuit-black: #160607ff;
-$crimson-circuit-quartet-alert-root: #2a0a0dff;
-$crimson-circuit-quartet-crimson-board: #5f0f14ff;
-$crimson-circuit-quartet-runtime-red: #991b1bff;
+$circuit-black: #160607ff;
+$alert-root: #2a0a0dff;
+$crimson-board: #5f0f14ff;
+$runtime-red: #991b1bff;
 
 /* SCSS HSL */
-$crimson-circuit-quartet-circuit-black: hsla(356, 57%, 5%, 1);
-$crimson-circuit-quartet-alert-root: hsla(354, 62%, 10%, 1);
-$crimson-circuit-quartet-crimson-board: hsla(356, 73%, 22%, 1);
-$crimson-circuit-quartet-runtime-red: hsla(0, 70%, 35%, 1);
+$circuit-black: hsla(356, 57%, 5%, 1);
+$alert-root: hsla(354, 62%, 10%, 1);
+$crimson-board: hsla(356, 73%, 22%, 1);
+$runtime-red: hsla(0, 70%, 35%, 1);
 
 /* SCSS RGB */
-$crimson-circuit-quartet-circuit-black: rgba(22, 6, 7, 1);
-$crimson-circuit-quartet-alert-root: rgba(42, 10, 13, 1);
-$crimson-circuit-quartet-crimson-board: rgba(95, 15, 20, 1);
-$crimson-circuit-quartet-runtime-red: rgba(153, 27, 27, 1);
+$circuit-black: rgba(22, 6, 7, 1);
+$alert-root: rgba(42, 10, 13, 1);
+$crimson-board: rgba(95, 15, 20, 1);
+$runtime-red: rgba(153, 27, 27, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #160607ff, #2a0a0dff, #5f0f14ff, #991b1bff);
@@ -68,8 +68,8 @@ $gradient-radial: radial-gradient(#160607ff, #2a0a0dff, #5f0f14ff, #991b1bff);
 
 /* SCSS Map */
 $crimson-circuit-quartet-map: (
-    "crimson-circuit-quartet-circuit-black": #160607ff,
-    "crimson-circuit-quartet-alert-root": #2a0a0dff,
-    "crimson-circuit-quartet-crimson-board": #5f0f14ff,
-    "crimson-circuit-quartet-runtime-red": #991b1bff
+    "circuit-black": #160607ff,
+    "alert-root": #2a0a0dff,
+    "crimson-board": #5f0f14ff,
+    "runtime-red": #991b1bff
 );

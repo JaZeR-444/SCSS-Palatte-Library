@@ -25,65 +25,65 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---fuchsia-circuit-atlas-console-plum: #1a0712ff;
---fuchsia-circuit-atlas-trace-wine: #500724ff;
---fuchsia-circuit-atlas-circuit-fuchsia: #831843ff;
---fuchsia-circuit-atlas-active-magenta: #9d174dff;
---fuchsia-circuit-atlas-status-pink: #be185dff;
---fuchsia-circuit-atlas-signal-pink: #ec4899ff;
---fuchsia-circuit-atlas-pulse-rose: #f9a8d4ff;
---fuchsia-circuit-atlas-terminal-blush: #fce7f3ff;
---fuchsia-circuit-atlas-signal-white: #fdf2f8ff;
---fuchsia-circuit-atlas-ink-slate: #111827ff;
+--console-plum: #1a0712ff;
+--trace-wine: #500724ff;
+--circuit-fuchsia: #831843ff;
+--active-magenta: #9d174dff;
+--status-pink: #be185dff;
+--signal-pink: #ec4899ff;
+--pulse-rose: #f9a8d4ff;
+--terminal-blush: #fce7f3ff;
+--signal-white: #fdf2f8ff;
+--ink-slate: #111827ff;
 
 /* CSS HSL */
---fuchsia-circuit-atlas-console-plum: hsla(325, 58%, 6%, 1);
---fuchsia-circuit-atlas-trace-wine: hsla(336, 84%, 17%, 1);
---fuchsia-circuit-atlas-circuit-fuchsia: hsla(336, 69%, 30%, 1);
---fuchsia-circuit-atlas-active-magenta: hsla(336, 74%, 35%, 1);
---fuchsia-circuit-atlas-status-pink: hsla(335, 78%, 42%, 1);
---fuchsia-circuit-atlas-signal-pink: hsla(330, 81%, 60%, 1);
---fuchsia-circuit-atlas-pulse-rose: hsla(327, 87%, 82%, 1);
---fuchsia-circuit-atlas-terminal-blush: hsla(326, 78%, 95%, 1);
---fuchsia-circuit-atlas-signal-white: hsla(327, 73%, 97%, 1);
---fuchsia-circuit-atlas-ink-slate: hsla(221, 39%, 11%, 1);
+--console-plum: hsla(325, 58%, 6%, 1);
+--trace-wine: hsla(336, 84%, 17%, 1);
+--circuit-fuchsia: hsla(336, 69%, 30%, 1);
+--active-magenta: hsla(336, 74%, 35%, 1);
+--status-pink: hsla(335, 78%, 42%, 1);
+--signal-pink: hsla(330, 81%, 60%, 1);
+--pulse-rose: hsla(327, 87%, 82%, 1);
+--terminal-blush: hsla(326, 78%, 95%, 1);
+--signal-white: hsla(327, 73%, 97%, 1);
+--ink-slate: hsla(221, 39%, 11%, 1);
 }
 
 /* SCSS HEX */
-$fuchsia-circuit-atlas-console-plum: #1a0712ff;
-$fuchsia-circuit-atlas-trace-wine: #500724ff;
-$fuchsia-circuit-atlas-circuit-fuchsia: #831843ff;
-$fuchsia-circuit-atlas-active-magenta: #9d174dff;
-$fuchsia-circuit-atlas-status-pink: #be185dff;
-$fuchsia-circuit-atlas-signal-pink: #ec4899ff;
-$fuchsia-circuit-atlas-pulse-rose: #f9a8d4ff;
-$fuchsia-circuit-atlas-terminal-blush: #fce7f3ff;
-$fuchsia-circuit-atlas-signal-white: #fdf2f8ff;
-$fuchsia-circuit-atlas-ink-slate: #111827ff;
+$console-plum: #1a0712ff;
+$trace-wine: #500724ff;
+$circuit-fuchsia: #831843ff;
+$active-magenta: #9d174dff;
+$status-pink: #be185dff;
+$signal-pink: #ec4899ff;
+$pulse-rose: #f9a8d4ff;
+$terminal-blush: #fce7f3ff;
+$signal-white: #fdf2f8ff;
+$ink-slate: #111827ff;
 
 /* SCSS HSL */
-$fuchsia-circuit-atlas-console-plum: hsla(325, 58%, 6%, 1);
-$fuchsia-circuit-atlas-trace-wine: hsla(336, 84%, 17%, 1);
-$fuchsia-circuit-atlas-circuit-fuchsia: hsla(336, 69%, 30%, 1);
-$fuchsia-circuit-atlas-active-magenta: hsla(336, 74%, 35%, 1);
-$fuchsia-circuit-atlas-status-pink: hsla(335, 78%, 42%, 1);
-$fuchsia-circuit-atlas-signal-pink: hsla(330, 81%, 60%, 1);
-$fuchsia-circuit-atlas-pulse-rose: hsla(327, 87%, 82%, 1);
-$fuchsia-circuit-atlas-terminal-blush: hsla(326, 78%, 95%, 1);
-$fuchsia-circuit-atlas-signal-white: hsla(327, 73%, 97%, 1);
-$fuchsia-circuit-atlas-ink-slate: hsla(221, 39%, 11%, 1);
+$console-plum: hsla(325, 58%, 6%, 1);
+$trace-wine: hsla(336, 84%, 17%, 1);
+$circuit-fuchsia: hsla(336, 69%, 30%, 1);
+$active-magenta: hsla(336, 74%, 35%, 1);
+$status-pink: hsla(335, 78%, 42%, 1);
+$signal-pink: hsla(330, 81%, 60%, 1);
+$pulse-rose: hsla(327, 87%, 82%, 1);
+$terminal-blush: hsla(326, 78%, 95%, 1);
+$signal-white: hsla(327, 73%, 97%, 1);
+$ink-slate: hsla(221, 39%, 11%, 1);
 
 /* SCSS RGB */
-$fuchsia-circuit-atlas-console-plum: rgba(26, 7, 18, 1);
-$fuchsia-circuit-atlas-trace-wine: rgba(80, 7, 36, 1);
-$fuchsia-circuit-atlas-circuit-fuchsia: rgba(131, 24, 67, 1);
-$fuchsia-circuit-atlas-active-magenta: rgba(157, 23, 77, 1);
-$fuchsia-circuit-atlas-status-pink: rgba(190, 24, 93, 1);
-$fuchsia-circuit-atlas-signal-pink: rgba(236, 72, 153, 1);
-$fuchsia-circuit-atlas-pulse-rose: rgba(249, 168, 212, 1);
-$fuchsia-circuit-atlas-terminal-blush: rgba(252, 231, 243, 1);
-$fuchsia-circuit-atlas-signal-white: rgba(253, 242, 248, 1);
-$fuchsia-circuit-atlas-ink-slate: rgba(17, 24, 39, 1);
+$console-plum: rgba(26, 7, 18, 1);
+$trace-wine: rgba(80, 7, 36, 1);
+$circuit-fuchsia: rgba(131, 24, 67, 1);
+$active-magenta: rgba(157, 23, 77, 1);
+$status-pink: rgba(190, 24, 93, 1);
+$signal-pink: rgba(236, 72, 153, 1);
+$pulse-rose: rgba(249, 168, 212, 1);
+$terminal-blush: rgba(252, 231, 243, 1);
+$signal-white: rgba(253, 242, 248, 1);
+$ink-slate: rgba(17, 24, 39, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1a0712ff, #500724ff, #831843ff, #9d174dff, #be185dff, #ec4899ff, #f9a8d4ff, #fce7f3ff, #fdf2f8ff, #111827ff);
@@ -98,14 +98,14 @@ $gradient-radial: radial-gradient(#1a0712ff, #500724ff, #831843ff, #9d174dff, #b
 
 /* SCSS Map */
 $fuchsia-circuit-atlas-map: (
-    "fuchsia-circuit-atlas-console-plum": #1a0712ff,
-    "fuchsia-circuit-atlas-trace-wine": #500724ff,
-    "fuchsia-circuit-atlas-circuit-fuchsia": #831843ff,
-    "fuchsia-circuit-atlas-active-magenta": #9d174dff,
-    "fuchsia-circuit-atlas-status-pink": #be185dff,
-    "fuchsia-circuit-atlas-signal-pink": #ec4899ff,
-    "fuchsia-circuit-atlas-pulse-rose": #f9a8d4ff,
-    "fuchsia-circuit-atlas-terminal-blush": #fce7f3ff,
-    "fuchsia-circuit-atlas-signal-white": #fdf2f8ff,
-    "fuchsia-circuit-atlas-ink-slate": #111827ff
+    "console-plum": #1a0712ff,
+    "trace-wine": #500724ff,
+    "circuit-fuchsia": #831843ff,
+    "active-magenta": #9d174dff,
+    "status-pink": #be185dff,
+    "signal-pink": #ec4899ff,
+    "pulse-rose": #f9a8d4ff,
+    "terminal-blush": #fce7f3ff,
+    "signal-white": #fdf2f8ff,
+    "ink-slate": #111827ff
 );

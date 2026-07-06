@@ -25,50 +25,50 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---crimson-circuit-spectrum-circuit-black: #160607ff;
---crimson-circuit-spectrum-alert-root: #2a0a0dff;
---crimson-circuit-spectrum-crimson-board: #5f0f14ff;
---crimson-circuit-spectrum-runtime-red: #991b1bff;
---crimson-circuit-spectrum-signal-red: #dc2626ff;
---crimson-circuit-spectrum-action-red: #ef4444ff;
---crimson-circuit-spectrum-trace-coral: #f87171ff;
+--circuit-black: #160607ff;
+--alert-root: #2a0a0dff;
+--crimson-board: #5f0f14ff;
+--runtime-red: #991b1bff;
+--signal-red: #dc2626ff;
+--action-red: #ef4444ff;
+--trace-coral: #f87171ff;
 
 /* CSS HSL */
---crimson-circuit-spectrum-circuit-black: hsla(356, 57%, 5%, 1);
---crimson-circuit-spectrum-alert-root: hsla(354, 62%, 10%, 1);
---crimson-circuit-spectrum-crimson-board: hsla(356, 73%, 22%, 1);
---crimson-circuit-spectrum-runtime-red: hsla(0, 70%, 35%, 1);
---crimson-circuit-spectrum-signal-red: hsla(0, 72%, 51%, 1);
---crimson-circuit-spectrum-action-red: hsla(0, 84%, 60%, 1);
---crimson-circuit-spectrum-trace-coral: hsla(0, 91%, 71%, 1);
+--circuit-black: hsla(356, 57%, 5%, 1);
+--alert-root: hsla(354, 62%, 10%, 1);
+--crimson-board: hsla(356, 73%, 22%, 1);
+--runtime-red: hsla(0, 70%, 35%, 1);
+--signal-red: hsla(0, 72%, 51%, 1);
+--action-red: hsla(0, 84%, 60%, 1);
+--trace-coral: hsla(0, 91%, 71%, 1);
 }
 
 /* SCSS HEX */
-$crimson-circuit-spectrum-circuit-black: #160607ff;
-$crimson-circuit-spectrum-alert-root: #2a0a0dff;
-$crimson-circuit-spectrum-crimson-board: #5f0f14ff;
-$crimson-circuit-spectrum-runtime-red: #991b1bff;
-$crimson-circuit-spectrum-signal-red: #dc2626ff;
-$crimson-circuit-spectrum-action-red: #ef4444ff;
-$crimson-circuit-spectrum-trace-coral: #f87171ff;
+$circuit-black: #160607ff;
+$alert-root: #2a0a0dff;
+$crimson-board: #5f0f14ff;
+$runtime-red: #991b1bff;
+$signal-red: #dc2626ff;
+$action-red: #ef4444ff;
+$trace-coral: #f87171ff;
 
 /* SCSS HSL */
-$crimson-circuit-spectrum-circuit-black: hsla(356, 57%, 5%, 1);
-$crimson-circuit-spectrum-alert-root: hsla(354, 62%, 10%, 1);
-$crimson-circuit-spectrum-crimson-board: hsla(356, 73%, 22%, 1);
-$crimson-circuit-spectrum-runtime-red: hsla(0, 70%, 35%, 1);
-$crimson-circuit-spectrum-signal-red: hsla(0, 72%, 51%, 1);
-$crimson-circuit-spectrum-action-red: hsla(0, 84%, 60%, 1);
-$crimson-circuit-spectrum-trace-coral: hsla(0, 91%, 71%, 1);
+$circuit-black: hsla(356, 57%, 5%, 1);
+$alert-root: hsla(354, 62%, 10%, 1);
+$crimson-board: hsla(356, 73%, 22%, 1);
+$runtime-red: hsla(0, 70%, 35%, 1);
+$signal-red: hsla(0, 72%, 51%, 1);
+$action-red: hsla(0, 84%, 60%, 1);
+$trace-coral: hsla(0, 91%, 71%, 1);
 
 /* SCSS RGB */
-$crimson-circuit-spectrum-circuit-black: rgba(22, 6, 7, 1);
-$crimson-circuit-spectrum-alert-root: rgba(42, 10, 13, 1);
-$crimson-circuit-spectrum-crimson-board: rgba(95, 15, 20, 1);
-$crimson-circuit-spectrum-runtime-red: rgba(153, 27, 27, 1);
-$crimson-circuit-spectrum-signal-red: rgba(220, 38, 38, 1);
-$crimson-circuit-spectrum-action-red: rgba(239, 68, 68, 1);
-$crimson-circuit-spectrum-trace-coral: rgba(248, 113, 113, 1);
+$circuit-black: rgba(22, 6, 7, 1);
+$alert-root: rgba(42, 10, 13, 1);
+$crimson-board: rgba(95, 15, 20, 1);
+$runtime-red: rgba(153, 27, 27, 1);
+$signal-red: rgba(220, 38, 38, 1);
+$action-red: rgba(239, 68, 68, 1);
+$trace-coral: rgba(248, 113, 113, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #dc2626ff, #ef4444ff, #f87171ff);
@@ -83,11 +83,11 @@ $gradient-radial: radial-gradient(#160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #d
 
 /* SCSS Map */
 $crimson-circuit-spectrum-map: (
-    "crimson-circuit-spectrum-circuit-black": #160607ff,
-    "crimson-circuit-spectrum-alert-root": #2a0a0dff,
-    "crimson-circuit-spectrum-crimson-board": #5f0f14ff,
-    "crimson-circuit-spectrum-runtime-red": #991b1bff,
-    "crimson-circuit-spectrum-signal-red": #dc2626ff,
-    "crimson-circuit-spectrum-action-red": #ef4444ff,
-    "crimson-circuit-spectrum-trace-coral": #f87171ff
+    "circuit-black": #160607ff,
+    "alert-root": #2a0a0dff,
+    "crimson-board": #5f0f14ff,
+    "runtime-red": #991b1bff,
+    "signal-red": #dc2626ff,
+    "action-red": #ef4444ff,
+    "trace-coral": #f87171ff
 );

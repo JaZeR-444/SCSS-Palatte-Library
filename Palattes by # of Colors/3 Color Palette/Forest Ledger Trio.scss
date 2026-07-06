@@ -25,30 +25,30 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---forest-ledger-trio-ledger-forest: #0b1f17ff;
---forest-ledger-trio-account-pine: #123524ff;
---forest-ledger-trio-report-green: #1b5e3cff;
+--ledger-forest: #0b1f17ff;
+--account-pine: #123524ff;
+--report-green: #1b5e3cff;
 
 /* CSS HSL */
---forest-ledger-trio-ledger-forest: hsla(156, 48%, 8%, 1);
---forest-ledger-trio-account-pine: hsla(151, 49%, 14%, 1);
---forest-ledger-trio-report-green: hsla(150, 55%, 24%, 1);
+--ledger-forest: hsla(156, 48%, 8%, 1);
+--account-pine: hsla(151, 49%, 14%, 1);
+--report-green: hsla(150, 55%, 24%, 1);
 }
 
 /* SCSS HEX */
-$forest-ledger-trio-ledger-forest: #0b1f17ff;
-$forest-ledger-trio-account-pine: #123524ff;
-$forest-ledger-trio-report-green: #1b5e3cff;
+$ledger-forest: #0b1f17ff;
+$account-pine: #123524ff;
+$report-green: #1b5e3cff;
 
 /* SCSS HSL */
-$forest-ledger-trio-ledger-forest: hsla(156, 48%, 8%, 1);
-$forest-ledger-trio-account-pine: hsla(151, 49%, 14%, 1);
-$forest-ledger-trio-report-green: hsla(150, 55%, 24%, 1);
+$ledger-forest: hsla(156, 48%, 8%, 1);
+$account-pine: hsla(151, 49%, 14%, 1);
+$report-green: hsla(150, 55%, 24%, 1);
 
 /* SCSS RGB */
-$forest-ledger-trio-ledger-forest: rgba(11, 31, 23, 1);
-$forest-ledger-trio-account-pine: rgba(18, 53, 36, 1);
-$forest-ledger-trio-report-green: rgba(27, 94, 60, 1);
+$ledger-forest: rgba(11, 31, 23, 1);
+$account-pine: rgba(18, 53, 36, 1);
+$report-green: rgba(27, 94, 60, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #0b1f17ff, #123524ff, #1b5e3cff);
@@ -63,7 +63,7 @@ $gradient-radial: radial-gradient(#0b1f17ff, #123524ff, #1b5e3cff);
 
 /* SCSS Map */
 $forest-ledger-trio-map: (
-    "forest-ledger-trio-ledger-forest": #0b1f17ff,
-    "forest-ledger-trio-account-pine": #123524ff,
-    "forest-ledger-trio-report-green": #1b5e3cff
+    "ledger-forest": #0b1f17ff,
+    "account-pine": #123524ff,
+    "report-green": #1b5e3cff
 );

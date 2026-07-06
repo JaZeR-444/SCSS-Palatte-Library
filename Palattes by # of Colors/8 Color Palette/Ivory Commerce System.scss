@@ -25,55 +25,55 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---ivory-commerce-system-ink-receipt: #1f2937ff;
---ivory-commerce-system-label-stone: #78716cff;
---ivory-commerce-system-warm-border: #d6d3d1ff;
---ivory-commerce-system-ivory-shelf: #f5f5f4ff;
---ivory-commerce-system-checkout-ivory: #fafaf9ff;
---ivory-commerce-system-receipt-white: #ffffffff;
---ivory-commerce-system-premium-gold: #d4af37ff;
---ivory-commerce-system-action-charcoal: #292524ff;
+--ink-receipt: #1f2937ff;
+--label-stone: #78716cff;
+--warm-border: #d6d3d1ff;
+--ivory-shelf: #f5f5f4ff;
+--checkout-ivory: #fafaf9ff;
+--receipt-white: #ffffffff;
+--premium-gold: #d4af37ff;
+--action-charcoal: #292524ff;
 
 /* CSS HSL */
---ivory-commerce-system-ink-receipt: hsla(215, 28%, 17%, 1);
---ivory-commerce-system-label-stone: hsla(25, 5%, 45%, 1);
---ivory-commerce-system-warm-border: hsla(24, 6%, 83%, 1);
---ivory-commerce-system-ivory-shelf: hsla(60, 5%, 96%, 1);
---ivory-commerce-system-checkout-ivory: hsla(60, 9%, 98%, 1);
---ivory-commerce-system-receipt-white: hsla(0, 0%, 100%, 1);
---ivory-commerce-system-premium-gold: hsla(46, 65%, 52%, 1);
---ivory-commerce-system-action-charcoal: hsla(12, 6%, 15%, 1);
+--ink-receipt: hsla(215, 28%, 17%, 1);
+--label-stone: hsla(25, 5%, 45%, 1);
+--warm-border: hsla(24, 6%, 83%, 1);
+--ivory-shelf: hsla(60, 5%, 96%, 1);
+--checkout-ivory: hsla(60, 9%, 98%, 1);
+--receipt-white: hsla(0, 0%, 100%, 1);
+--premium-gold: hsla(46, 65%, 52%, 1);
+--action-charcoal: hsla(12, 6%, 15%, 1);
 }
 
 /* SCSS HEX */
-$ivory-commerce-system-ink-receipt: #1f2937ff;
-$ivory-commerce-system-label-stone: #78716cff;
-$ivory-commerce-system-warm-border: #d6d3d1ff;
-$ivory-commerce-system-ivory-shelf: #f5f5f4ff;
-$ivory-commerce-system-checkout-ivory: #fafaf9ff;
-$ivory-commerce-system-receipt-white: #ffffffff;
-$ivory-commerce-system-premium-gold: #d4af37ff;
-$ivory-commerce-system-action-charcoal: #292524ff;
+$ink-receipt: #1f2937ff;
+$label-stone: #78716cff;
+$warm-border: #d6d3d1ff;
+$ivory-shelf: #f5f5f4ff;
+$checkout-ivory: #fafaf9ff;
+$receipt-white: #ffffffff;
+$premium-gold: #d4af37ff;
+$action-charcoal: #292524ff;
 
 /* SCSS HSL */
-$ivory-commerce-system-ink-receipt: hsla(215, 28%, 17%, 1);
-$ivory-commerce-system-label-stone: hsla(25, 5%, 45%, 1);
-$ivory-commerce-system-warm-border: hsla(24, 6%, 83%, 1);
-$ivory-commerce-system-ivory-shelf: hsla(60, 5%, 96%, 1);
-$ivory-commerce-system-checkout-ivory: hsla(60, 9%, 98%, 1);
-$ivory-commerce-system-receipt-white: hsla(0, 0%, 100%, 1);
-$ivory-commerce-system-premium-gold: hsla(46, 65%, 52%, 1);
-$ivory-commerce-system-action-charcoal: hsla(12, 6%, 15%, 1);
+$ink-receipt: hsla(215, 28%, 17%, 1);
+$label-stone: hsla(25, 5%, 45%, 1);
+$warm-border: hsla(24, 6%, 83%, 1);
+$ivory-shelf: hsla(60, 5%, 96%, 1);
+$checkout-ivory: hsla(60, 9%, 98%, 1);
+$receipt-white: hsla(0, 0%, 100%, 1);
+$premium-gold: hsla(46, 65%, 52%, 1);
+$action-charcoal: hsla(12, 6%, 15%, 1);
 
 /* SCSS RGB */
-$ivory-commerce-system-ink-receipt: rgba(31, 41, 55, 1);
-$ivory-commerce-system-label-stone: rgba(120, 113, 108, 1);
-$ivory-commerce-system-warm-border: rgba(214, 211, 209, 1);
-$ivory-commerce-system-ivory-shelf: rgba(245, 245, 244, 1);
-$ivory-commerce-system-checkout-ivory: rgba(250, 250, 249, 1);
-$ivory-commerce-system-receipt-white: rgba(255, 255, 255, 1);
-$ivory-commerce-system-premium-gold: rgba(212, 175, 55, 1);
-$ivory-commerce-system-action-charcoal: rgba(41, 37, 36, 1);
+$ink-receipt: rgba(31, 41, 55, 1);
+$label-stone: rgba(120, 113, 108, 1);
+$warm-border: rgba(214, 211, 209, 1);
+$ivory-shelf: rgba(245, 245, 244, 1);
+$checkout-ivory: rgba(250, 250, 249, 1);
+$receipt-white: rgba(255, 255, 255, 1);
+$premium-gold: rgba(212, 175, 55, 1);
+$action-charcoal: rgba(41, 37, 36, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1f2937ff, #78716cff, #d6d3d1ff, #f5f5f4ff, #fafaf9ff, #ffffffff, #d4af37ff, #292524ff);
@@ -88,12 +88,12 @@ $gradient-radial: radial-gradient(#1f2937ff, #78716cff, #d6d3d1ff, #f5f5f4ff, #f
 
 /* SCSS Map */
 $ivory-commerce-system-map: (
-    "ivory-commerce-system-ink-receipt": #1f2937ff,
-    "ivory-commerce-system-label-stone": #78716cff,
-    "ivory-commerce-system-warm-border": #d6d3d1ff,
-    "ivory-commerce-system-ivory-shelf": #f5f5f4ff,
-    "ivory-commerce-system-checkout-ivory": #fafaf9ff,
-    "ivory-commerce-system-receipt-white": #ffffffff,
-    "ivory-commerce-system-premium-gold": #d4af37ff,
-    "ivory-commerce-system-action-charcoal": #292524ff
+    "ink-receipt": #1f2937ff,
+    "label-stone": #78716cff,
+    "warm-border": #d6d3d1ff,
+    "ivory-shelf": #f5f5f4ff,
+    "checkout-ivory": #fafaf9ff,
+    "receipt-white": #ffffffff,
+    "premium-gold": #d4af37ff,
+    "action-charcoal": #292524ff
 );

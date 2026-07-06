@@ -25,60 +25,60 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---lilac-frost-matrix-frost-indigo: #1e1b4bff;
---lilac-frost-matrix-lilac-depth: #312e81ff;
---lilac-frost-matrix-clear-violet: #4f46e5ff;
---lilac-frost-matrix-fresh-purple: #7c3aedff;
---lilac-frost-matrix-soft-lavender: #a78bfaff;
---lilac-frost-matrix-frost-lilac: #c4b5fdff;
---lilac-frost-matrix-powder-violet: #ddd6feff;
---lilac-frost-matrix-mist-panel: #ede9feff;
---lilac-frost-matrix-snow-surface: #f8fafcff;
+--frost-indigo: #1e1b4bff;
+--lilac-depth: #312e81ff;
+--clear-violet: #4f46e5ff;
+--fresh-purple: #7c3aedff;
+--soft-lavender: #a78bfaff;
+--frost-lilac: #c4b5fdff;
+--powder-violet: #ddd6feff;
+--mist-panel: #ede9feff;
+--snow-surface: #f8fafcff;
 
 /* CSS HSL */
---lilac-frost-matrix-frost-indigo: hsla(244, 47%, 20%, 1);
---lilac-frost-matrix-lilac-depth: hsla(242, 47%, 34%, 1);
---lilac-frost-matrix-clear-violet: hsla(243, 75%, 59%, 1);
---lilac-frost-matrix-fresh-purple: hsla(262, 83%, 58%, 1);
---lilac-frost-matrix-soft-lavender: hsla(255, 92%, 76%, 1);
---lilac-frost-matrix-frost-lilac: hsla(252, 95%, 85%, 1);
---lilac-frost-matrix-powder-violet: hsla(251, 95%, 92%, 1);
---lilac-frost-matrix-mist-panel: hsla(251, 91%, 95%, 1);
---lilac-frost-matrix-snow-surface: hsla(210, 40%, 98%, 1);
+--frost-indigo: hsla(244, 47%, 20%, 1);
+--lilac-depth: hsla(242, 47%, 34%, 1);
+--clear-violet: hsla(243, 75%, 59%, 1);
+--fresh-purple: hsla(262, 83%, 58%, 1);
+--soft-lavender: hsla(255, 92%, 76%, 1);
+--frost-lilac: hsla(252, 95%, 85%, 1);
+--powder-violet: hsla(251, 95%, 92%, 1);
+--mist-panel: hsla(251, 91%, 95%, 1);
+--snow-surface: hsla(210, 40%, 98%, 1);
 }
 
 /* SCSS HEX */
-$lilac-frost-matrix-frost-indigo: #1e1b4bff;
-$lilac-frost-matrix-lilac-depth: #312e81ff;
-$lilac-frost-matrix-clear-violet: #4f46e5ff;
-$lilac-frost-matrix-fresh-purple: #7c3aedff;
-$lilac-frost-matrix-soft-lavender: #a78bfaff;
-$lilac-frost-matrix-frost-lilac: #c4b5fdff;
-$lilac-frost-matrix-powder-violet: #ddd6feff;
-$lilac-frost-matrix-mist-panel: #ede9feff;
-$lilac-frost-matrix-snow-surface: #f8fafcff;
+$frost-indigo: #1e1b4bff;
+$lilac-depth: #312e81ff;
+$clear-violet: #4f46e5ff;
+$fresh-purple: #7c3aedff;
+$soft-lavender: #a78bfaff;
+$frost-lilac: #c4b5fdff;
+$powder-violet: #ddd6feff;
+$mist-panel: #ede9feff;
+$snow-surface: #f8fafcff;
 
 /* SCSS HSL */
-$lilac-frost-matrix-frost-indigo: hsla(244, 47%, 20%, 1);
-$lilac-frost-matrix-lilac-depth: hsla(242, 47%, 34%, 1);
-$lilac-frost-matrix-clear-violet: hsla(243, 75%, 59%, 1);
-$lilac-frost-matrix-fresh-purple: hsla(262, 83%, 58%, 1);
-$lilac-frost-matrix-soft-lavender: hsla(255, 92%, 76%, 1);
-$lilac-frost-matrix-frost-lilac: hsla(252, 95%, 85%, 1);
-$lilac-frost-matrix-powder-violet: hsla(251, 95%, 92%, 1);
-$lilac-frost-matrix-mist-panel: hsla(251, 91%, 95%, 1);
-$lilac-frost-matrix-snow-surface: hsla(210, 40%, 98%, 1);
+$frost-indigo: hsla(244, 47%, 20%, 1);
+$lilac-depth: hsla(242, 47%, 34%, 1);
+$clear-violet: hsla(243, 75%, 59%, 1);
+$fresh-purple: hsla(262, 83%, 58%, 1);
+$soft-lavender: hsla(255, 92%, 76%, 1);
+$frost-lilac: hsla(252, 95%, 85%, 1);
+$powder-violet: hsla(251, 95%, 92%, 1);
+$mist-panel: hsla(251, 91%, 95%, 1);
+$snow-surface: hsla(210, 40%, 98%, 1);
 
 /* SCSS RGB */
-$lilac-frost-matrix-frost-indigo: rgba(30, 27, 75, 1);
-$lilac-frost-matrix-lilac-depth: rgba(49, 46, 129, 1);
-$lilac-frost-matrix-clear-violet: rgba(79, 70, 229, 1);
-$lilac-frost-matrix-fresh-purple: rgba(124, 58, 237, 1);
-$lilac-frost-matrix-soft-lavender: rgba(167, 139, 250, 1);
-$lilac-frost-matrix-frost-lilac: rgba(196, 181, 253, 1);
-$lilac-frost-matrix-powder-violet: rgba(221, 214, 254, 1);
-$lilac-frost-matrix-mist-panel: rgba(237, 233, 254, 1);
-$lilac-frost-matrix-snow-surface: rgba(248, 250, 252, 1);
+$frost-indigo: rgba(30, 27, 75, 1);
+$lilac-depth: rgba(49, 46, 129, 1);
+$clear-violet: rgba(79, 70, 229, 1);
+$fresh-purple: rgba(124, 58, 237, 1);
+$soft-lavender: rgba(167, 139, 250, 1);
+$frost-lilac: rgba(196, 181, 253, 1);
+$powder-violet: rgba(221, 214, 254, 1);
+$mist-panel: rgba(237, 233, 254, 1);
+$snow-surface: rgba(248, 250, 252, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff, #a78bfaff, #c4b5fdff, #ddd6feff, #ede9feff, #f8fafcff);
@@ -93,13 +93,13 @@ $gradient-radial: radial-gradient(#1e1b4bff, #312e81ff, #4f46e5ff, #7c3aedff, #a
 
 /* SCSS Map */
 $lilac-frost-matrix-map: (
-    "lilac-frost-matrix-frost-indigo": #1e1b4bff,
-    "lilac-frost-matrix-lilac-depth": #312e81ff,
-    "lilac-frost-matrix-clear-violet": #4f46e5ff,
-    "lilac-frost-matrix-fresh-purple": #7c3aedff,
-    "lilac-frost-matrix-soft-lavender": #a78bfaff,
-    "lilac-frost-matrix-frost-lilac": #c4b5fdff,
-    "lilac-frost-matrix-powder-violet": #ddd6feff,
-    "lilac-frost-matrix-mist-panel": #ede9feff,
-    "lilac-frost-matrix-snow-surface": #f8fafcff
+    "frost-indigo": #1e1b4bff,
+    "lilac-depth": #312e81ff,
+    "clear-violet": #4f46e5ff,
+    "fresh-purple": #7c3aedff,
+    "soft-lavender": #a78bfaff,
+    "frost-lilac": #c4b5fdff,
+    "powder-violet": #ddd6feff,
+    "mist-panel": #ede9feff,
+    "snow-surface": #f8fafcff
 );

@@ -25,50 +25,50 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---electric-mauve-spectrum-mauve-black: #0b0614ff;
---electric-mauve-spectrum-voltage-plum: #20113aff;
---electric-mauve-spectrum-circuit-mauve: #3b1d5fff;
---electric-mauve-spectrum-electric-violet: #6d28d9ff;
---electric-mauve-spectrum-neon-purple: #9333eaff;
---electric-mauve-spectrum-signal-magenta: #d946efff;
---electric-mauve-spectrum-pink-current: #f0abfcff;
+--mauve-black: #0b0614ff;
+--voltage-plum: #20113aff;
+--circuit-mauve: #3b1d5fff;
+--electric-violet: #6d28d9ff;
+--neon-purple: #9333eaff;
+--signal-magenta: #d946efff;
+--pink-current: #f0abfcff;
 
 /* CSS HSL */
---electric-mauve-spectrum-mauve-black: hsla(261, 54%, 5%, 1);
---electric-mauve-spectrum-voltage-plum: hsla(262, 55%, 15%, 1);
---electric-mauve-spectrum-circuit-mauve: hsla(267, 53%, 24%, 1);
---electric-mauve-spectrum-electric-violet: hsla(263, 70%, 50%, 1);
---electric-mauve-spectrum-neon-purple: hsla(271, 81%, 56%, 1);
---electric-mauve-spectrum-signal-magenta: hsla(292, 84%, 61%, 1);
---electric-mauve-spectrum-pink-current: hsla(291, 93%, 83%, 1);
+--mauve-black: hsla(261, 54%, 5%, 1);
+--voltage-plum: hsla(262, 55%, 15%, 1);
+--circuit-mauve: hsla(267, 53%, 24%, 1);
+--electric-violet: hsla(263, 70%, 50%, 1);
+--neon-purple: hsla(271, 81%, 56%, 1);
+--signal-magenta: hsla(292, 84%, 61%, 1);
+--pink-current: hsla(291, 93%, 83%, 1);
 }
 
 /* SCSS HEX */
-$electric-mauve-spectrum-mauve-black: #0b0614ff;
-$electric-mauve-spectrum-voltage-plum: #20113aff;
-$electric-mauve-spectrum-circuit-mauve: #3b1d5fff;
-$electric-mauve-spectrum-electric-violet: #6d28d9ff;
-$electric-mauve-spectrum-neon-purple: #9333eaff;
-$electric-mauve-spectrum-signal-magenta: #d946efff;
-$electric-mauve-spectrum-pink-current: #f0abfcff;
+$mauve-black: #0b0614ff;
+$voltage-plum: #20113aff;
+$circuit-mauve: #3b1d5fff;
+$electric-violet: #6d28d9ff;
+$neon-purple: #9333eaff;
+$signal-magenta: #d946efff;
+$pink-current: #f0abfcff;
 
 /* SCSS HSL */
-$electric-mauve-spectrum-mauve-black: hsla(261, 54%, 5%, 1);
-$electric-mauve-spectrum-voltage-plum: hsla(262, 55%, 15%, 1);
-$electric-mauve-spectrum-circuit-mauve: hsla(267, 53%, 24%, 1);
-$electric-mauve-spectrum-electric-violet: hsla(263, 70%, 50%, 1);
-$electric-mauve-spectrum-neon-purple: hsla(271, 81%, 56%, 1);
-$electric-mauve-spectrum-signal-magenta: hsla(292, 84%, 61%, 1);
-$electric-mauve-spectrum-pink-current: hsla(291, 93%, 83%, 1);
+$mauve-black: hsla(261, 54%, 5%, 1);
+$voltage-plum: hsla(262, 55%, 15%, 1);
+$circuit-mauve: hsla(267, 53%, 24%, 1);
+$electric-violet: hsla(263, 70%, 50%, 1);
+$neon-purple: hsla(271, 81%, 56%, 1);
+$signal-magenta: hsla(292, 84%, 61%, 1);
+$pink-current: hsla(291, 93%, 83%, 1);
 
 /* SCSS RGB */
-$electric-mauve-spectrum-mauve-black: rgba(11, 6, 20, 1);
-$electric-mauve-spectrum-voltage-plum: rgba(32, 17, 58, 1);
-$electric-mauve-spectrum-circuit-mauve: rgba(59, 29, 95, 1);
-$electric-mauve-spectrum-electric-violet: rgba(109, 40, 217, 1);
-$electric-mauve-spectrum-neon-purple: rgba(147, 51, 234, 1);
-$electric-mauve-spectrum-signal-magenta: rgba(217, 70, 239, 1);
-$electric-mauve-spectrum-pink-current: rgba(240, 171, 252, 1);
+$mauve-black: rgba(11, 6, 20, 1);
+$voltage-plum: rgba(32, 17, 58, 1);
+$circuit-mauve: rgba(59, 29, 95, 1);
+$electric-violet: rgba(109, 40, 217, 1);
+$neon-purple: rgba(147, 51, 234, 1);
+$signal-magenta: rgba(217, 70, 239, 1);
+$pink-current: rgba(240, 171, 252, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #0b0614ff, #20113aff, #3b1d5fff, #6d28d9ff, #9333eaff, #d946efff, #f0abfcff);
@@ -83,11 +83,11 @@ $gradient-radial: radial-gradient(#0b0614ff, #20113aff, #3b1d5fff, #6d28d9ff, #9
 
 /* SCSS Map */
 $electric-mauve-spectrum-map: (
-    "electric-mauve-spectrum-mauve-black": #0b0614ff,
-    "electric-mauve-spectrum-voltage-plum": #20113aff,
-    "electric-mauve-spectrum-circuit-mauve": #3b1d5fff,
-    "electric-mauve-spectrum-electric-violet": #6d28d9ff,
-    "electric-mauve-spectrum-neon-purple": #9333eaff,
-    "electric-mauve-spectrum-signal-magenta": #d946efff,
-    "electric-mauve-spectrum-pink-current": #f0abfcff
+    "mauve-black": #0b0614ff,
+    "voltage-plum": #20113aff,
+    "circuit-mauve": #3b1d5fff,
+    "electric-violet": #6d28d9ff,
+    "neon-purple": #9333eaff,
+    "signal-magenta": #d946efff,
+    "pink-current": #f0abfcff
 );

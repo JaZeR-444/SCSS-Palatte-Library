@@ -25,30 +25,30 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---pearl-signal-trio-signal-ink: #1f2937ff;
---pearl-signal-trio-pearl-surface: #f3f4f6ff;
---pearl-signal-trio-pearl-white: #ffffffff;
+--signal-ink: #1f2937ff;
+--pearl-surface: #f3f4f6ff;
+--pearl-white: #ffffffff;
 
 /* CSS HSL */
---pearl-signal-trio-signal-ink: hsla(215, 28%, 17%, 1);
---pearl-signal-trio-pearl-surface: hsla(220, 14%, 96%, 1);
---pearl-signal-trio-pearl-white: hsla(0, 0%, 100%, 1);
+--signal-ink: hsla(215, 28%, 17%, 1);
+--pearl-surface: hsla(220, 14%, 96%, 1);
+--pearl-white: hsla(0, 0%, 100%, 1);
 }
 
 /* SCSS HEX */
-$pearl-signal-trio-signal-ink: #1f2937ff;
-$pearl-signal-trio-pearl-surface: #f3f4f6ff;
-$pearl-signal-trio-pearl-white: #ffffffff;
+$signal-ink: #1f2937ff;
+$pearl-surface: #f3f4f6ff;
+$pearl-white: #ffffffff;
 
 /* SCSS HSL */
-$pearl-signal-trio-signal-ink: hsla(215, 28%, 17%, 1);
-$pearl-signal-trio-pearl-surface: hsla(220, 14%, 96%, 1);
-$pearl-signal-trio-pearl-white: hsla(0, 0%, 100%, 1);
+$signal-ink: hsla(215, 28%, 17%, 1);
+$pearl-surface: hsla(220, 14%, 96%, 1);
+$pearl-white: hsla(0, 0%, 100%, 1);
 
 /* SCSS RGB */
-$pearl-signal-trio-signal-ink: rgba(31, 41, 55, 1);
-$pearl-signal-trio-pearl-surface: rgba(243, 244, 246, 1);
-$pearl-signal-trio-pearl-white: rgba(255, 255, 255, 1);
+$signal-ink: rgba(31, 41, 55, 1);
+$pearl-surface: rgba(243, 244, 246, 1);
+$pearl-white: rgba(255, 255, 255, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1f2937ff, #f3f4f6ff, #ffffffff);
@@ -63,7 +63,7 @@ $gradient-radial: radial-gradient(#1f2937ff, #f3f4f6ff, #ffffffff);
 
 /* SCSS Map */
 $pearl-signal-trio-map: (
-    "pearl-signal-trio-signal-ink": #1f2937ff,
-    "pearl-signal-trio-pearl-surface": #f3f4f6ff,
-    "pearl-signal-trio-pearl-white": #ffffffff
+    "signal-ink": #1f2937ff,
+    "pearl-surface": #f3f4f6ff,
+    "pearl-white": #ffffffff
 );

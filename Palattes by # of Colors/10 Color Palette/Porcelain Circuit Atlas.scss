@@ -25,65 +25,65 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---porcelain-circuit-atlas-graphite-console: #111827ff;
---porcelain-circuit-atlas-slate-trace: #475569ff;
---porcelain-circuit-atlas-cool-trace: #94a3b8ff;
---porcelain-circuit-atlas-ceramic-border: #cbd5e1ff;
---porcelain-circuit-atlas-porcelain-panel: #e5e7ebff;
---porcelain-circuit-atlas-soft-console: #f1f5f9ff;
---porcelain-circuit-atlas-mist-surface: #f8fafcff;
---porcelain-circuit-atlas-signal-white: #ffffffff;
---porcelain-circuit-atlas-ice-accent: #e0f2feff;
---porcelain-circuit-atlas-blue-ink: #1d4ed8ff;
+--graphite-console: #111827ff;
+--slate-trace: #475569ff;
+--cool-trace: #94a3b8ff;
+--ceramic-border: #cbd5e1ff;
+--porcelain-panel: #e5e7ebff;
+--soft-console: #f1f5f9ff;
+--mist-surface: #f8fafcff;
+--signal-white: #ffffffff;
+--ice-accent: #e0f2feff;
+--blue-ink: #1d4ed8ff;
 
 /* CSS HSL */
---porcelain-circuit-atlas-graphite-console: hsla(221, 39%, 11%, 1);
---porcelain-circuit-atlas-slate-trace: hsla(215, 19%, 35%, 1);
---porcelain-circuit-atlas-cool-trace: hsla(215, 20%, 65%, 1);
---porcelain-circuit-atlas-ceramic-border: hsla(213, 27%, 84%, 1);
---porcelain-circuit-atlas-porcelain-panel: hsla(220, 13%, 91%, 1);
---porcelain-circuit-atlas-soft-console: hsla(210, 40%, 96%, 1);
---porcelain-circuit-atlas-mist-surface: hsla(210, 40%, 98%, 1);
---porcelain-circuit-atlas-signal-white: hsla(0, 0%, 100%, 1);
---porcelain-circuit-atlas-ice-accent: hsla(204, 94%, 94%, 1);
---porcelain-circuit-atlas-blue-ink: hsla(224, 76%, 48%, 1);
+--graphite-console: hsla(221, 39%, 11%, 1);
+--slate-trace: hsla(215, 19%, 35%, 1);
+--cool-trace: hsla(215, 20%, 65%, 1);
+--ceramic-border: hsla(213, 27%, 84%, 1);
+--porcelain-panel: hsla(220, 13%, 91%, 1);
+--soft-console: hsla(210, 40%, 96%, 1);
+--mist-surface: hsla(210, 40%, 98%, 1);
+--signal-white: hsla(0, 0%, 100%, 1);
+--ice-accent: hsla(204, 94%, 94%, 1);
+--blue-ink: hsla(224, 76%, 48%, 1);
 }
 
 /* SCSS HEX */
-$porcelain-circuit-atlas-graphite-console: #111827ff;
-$porcelain-circuit-atlas-slate-trace: #475569ff;
-$porcelain-circuit-atlas-cool-trace: #94a3b8ff;
-$porcelain-circuit-atlas-ceramic-border: #cbd5e1ff;
-$porcelain-circuit-atlas-porcelain-panel: #e5e7ebff;
-$porcelain-circuit-atlas-soft-console: #f1f5f9ff;
-$porcelain-circuit-atlas-mist-surface: #f8fafcff;
-$porcelain-circuit-atlas-signal-white: #ffffffff;
-$porcelain-circuit-atlas-ice-accent: #e0f2feff;
-$porcelain-circuit-atlas-blue-ink: #1d4ed8ff;
+$graphite-console: #111827ff;
+$slate-trace: #475569ff;
+$cool-trace: #94a3b8ff;
+$ceramic-border: #cbd5e1ff;
+$porcelain-panel: #e5e7ebff;
+$soft-console: #f1f5f9ff;
+$mist-surface: #f8fafcff;
+$signal-white: #ffffffff;
+$ice-accent: #e0f2feff;
+$blue-ink: #1d4ed8ff;
 
 /* SCSS HSL */
-$porcelain-circuit-atlas-graphite-console: hsla(221, 39%, 11%, 1);
-$porcelain-circuit-atlas-slate-trace: hsla(215, 19%, 35%, 1);
-$porcelain-circuit-atlas-cool-trace: hsla(215, 20%, 65%, 1);
-$porcelain-circuit-atlas-ceramic-border: hsla(213, 27%, 84%, 1);
-$porcelain-circuit-atlas-porcelain-panel: hsla(220, 13%, 91%, 1);
-$porcelain-circuit-atlas-soft-console: hsla(210, 40%, 96%, 1);
-$porcelain-circuit-atlas-mist-surface: hsla(210, 40%, 98%, 1);
-$porcelain-circuit-atlas-signal-white: hsla(0, 0%, 100%, 1);
-$porcelain-circuit-atlas-ice-accent: hsla(204, 94%, 94%, 1);
-$porcelain-circuit-atlas-blue-ink: hsla(224, 76%, 48%, 1);
+$graphite-console: hsla(221, 39%, 11%, 1);
+$slate-trace: hsla(215, 19%, 35%, 1);
+$cool-trace: hsla(215, 20%, 65%, 1);
+$ceramic-border: hsla(213, 27%, 84%, 1);
+$porcelain-panel: hsla(220, 13%, 91%, 1);
+$soft-console: hsla(210, 40%, 96%, 1);
+$mist-surface: hsla(210, 40%, 98%, 1);
+$signal-white: hsla(0, 0%, 100%, 1);
+$ice-accent: hsla(204, 94%, 94%, 1);
+$blue-ink: hsla(224, 76%, 48%, 1);
 
 /* SCSS RGB */
-$porcelain-circuit-atlas-graphite-console: rgba(17, 24, 39, 1);
-$porcelain-circuit-atlas-slate-trace: rgba(71, 85, 105, 1);
-$porcelain-circuit-atlas-cool-trace: rgba(148, 163, 184, 1);
-$porcelain-circuit-atlas-ceramic-border: rgba(203, 213, 225, 1);
-$porcelain-circuit-atlas-porcelain-panel: rgba(229, 231, 235, 1);
-$porcelain-circuit-atlas-soft-console: rgba(241, 245, 249, 1);
-$porcelain-circuit-atlas-mist-surface: rgba(248, 250, 252, 1);
-$porcelain-circuit-atlas-signal-white: rgba(255, 255, 255, 1);
-$porcelain-circuit-atlas-ice-accent: rgba(224, 242, 254, 1);
-$porcelain-circuit-atlas-blue-ink: rgba(29, 78, 216, 1);
+$graphite-console: rgba(17, 24, 39, 1);
+$slate-trace: rgba(71, 85, 105, 1);
+$cool-trace: rgba(148, 163, 184, 1);
+$ceramic-border: rgba(203, 213, 225, 1);
+$porcelain-panel: rgba(229, 231, 235, 1);
+$soft-console: rgba(241, 245, 249, 1);
+$mist-surface: rgba(248, 250, 252, 1);
+$signal-white: rgba(255, 255, 255, 1);
+$ice-accent: rgba(224, 242, 254, 1);
+$blue-ink: rgba(29, 78, 216, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e5e7ebff, #f1f5f9ff, #f8fafcff, #ffffffff, #e0f2feff, #1d4ed8ff);
@@ -98,14 +98,14 @@ $gradient-radial: radial-gradient(#111827ff, #475569ff, #94a3b8ff, #cbd5e1ff, #e
 
 /* SCSS Map */
 $porcelain-circuit-atlas-map: (
-    "porcelain-circuit-atlas-graphite-console": #111827ff,
-    "porcelain-circuit-atlas-slate-trace": #475569ff,
-    "porcelain-circuit-atlas-cool-trace": #94a3b8ff,
-    "porcelain-circuit-atlas-ceramic-border": #cbd5e1ff,
-    "porcelain-circuit-atlas-porcelain-panel": #e5e7ebff,
-    "porcelain-circuit-atlas-soft-console": #f1f5f9ff,
-    "porcelain-circuit-atlas-mist-surface": #f8fafcff,
-    "porcelain-circuit-atlas-signal-white": #ffffffff,
-    "porcelain-circuit-atlas-ice-accent": #e0f2feff,
-    "porcelain-circuit-atlas-blue-ink": #1d4ed8ff
+    "graphite-console": #111827ff,
+    "slate-trace": #475569ff,
+    "cool-trace": #94a3b8ff,
+    "ceramic-border": #cbd5e1ff,
+    "porcelain-panel": #e5e7ebff,
+    "soft-console": #f1f5f9ff,
+    "mist-surface": #f8fafcff,
+    "signal-white": #ffffffff,
+    "ice-accent": #e0f2feff,
+    "blue-ink": #1d4ed8ff
 );

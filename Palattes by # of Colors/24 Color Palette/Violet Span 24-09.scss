@@ -1,6 +1,6 @@
 /*---
 id: violet-span-24-09
-name: Violet Span 24-09
+name: Violet Span Wide
 author: JaZeR-444
 version: 1.0.0
 category: Singular Hue Span
@@ -20,135 +20,135 @@ updated: '2026-07-04'
 
 :root {
 /* CSS HEX */
---span-01: #180f19ff;
---span-02: #221626ff;
---span-03: #2e1a34ff;
---span-04: #391c45ff;
---span-05: #482252ff;
---span-06: #532165ff;
---span-07: #652276ff;
---span-08: #71218aff;
---span-09: #7c1f9fff;
---span-10: #9520b0ff;
---span-11: #a217ccff;
---span-12: #ac18deff;
---span-13: #b31debff;
---span-14: #bc33e8ff;
---span-15: #b94ce1ff;
---span-16: #c461dfff;
---span-17: #c573e0ff;
---span-18: #c78adbff;
---span-19: #d099dfff;
---span-20: #d1acdfff;
---span-21: #d7bde0ff;
---span-22: #decce4ff;
---span-23: #e6d8ebff;
---span-24: #ede6efff;
+--almost-black: #180f19ff;
+--dark: #221626ff;
+--eggplant: #2e1a34ff;
+--aubergine: #391c45ff;
+--dark-purple: #482252ff;
+--plum-purple: #532165ff;
+--darkish-purple: #652276ff;
+--purple: #71218aff;
+--barney-purple: #7c1f9fff;
+--barney: #9520b0ff;
+--vibrant-purple: #a217ccff;
+--violet: #ac18deff;
+--hot-purple: #b31debff;
+--heliotrope: #bc33e8ff;
+--bright-lilac: #b94ce1ff;
+--light-purple: #c461dfff;
+--amethyst: #c573e0ff;
+--baby-purple: #c78adbff;
+--pale-purple: #d099dfff;
+--light-lavender: #d1acdfff;
+--pale-lavender: #d7bde0ff;
+--light-pink: #decce4ff;
+--pale-pink: #e6d8ebff;
+--very-light-pink: #ede6efff;
 
 /* CSS HSL */
---span-01: hsla(286, 25%, 8%, 1);
---span-02: hsla(286, 28%, 12%, 1);
---span-03: hsla(286, 32%, 15%, 1);
---span-04: hsla(286, 43%, 19%, 1);
---span-05: hsla(286, 42%, 23%, 1);
---span-06: hsla(286, 51%, 26%, 1);
---span-07: hsla(286, 55%, 30%, 1);
---span-08: hsla(286, 62%, 34%, 1);
---span-09: hsla(286, 67%, 37%, 1);
---span-10: hsla(286, 69%, 41%, 1);
---span-11: hsla(286, 79%, 45%, 1);
---span-12: hsla(286, 81%, 48%, 1);
---span-13: hsla(286, 84%, 52%, 1);
---span-14: hsla(286, 80%, 55%, 1);
---span-15: hsla(286, 71%, 59%, 1);
---span-16: hsla(286, 66%, 63%, 1);
---span-17: hsla(286, 64%, 66%, 1);
---span-18: hsla(286, 53%, 70%, 1);
---span-19: hsla(286, 52%, 74%, 1);
---span-20: hsla(286, 44%, 77%, 1);
---span-21: hsla(286, 36%, 81%, 1);
---span-22: hsla(286, 31%, 85%, 1);
---span-23: hsla(286, 33%, 88%, 1);
---span-24: hsla(286, 23%, 92%, 1);
+--almost-black: hsla(286, 25%, 8%, 1);
+--dark: hsla(286, 28%, 12%, 1);
+--eggplant: hsla(286, 32%, 15%, 1);
+--aubergine: hsla(286, 43%, 19%, 1);
+--dark-purple: hsla(286, 42%, 23%, 1);
+--plum-purple: hsla(286, 51%, 26%, 1);
+--darkish-purple: hsla(286, 55%, 30%, 1);
+--purple: hsla(286, 62%, 34%, 1);
+--barney-purple: hsla(286, 67%, 37%, 1);
+--barney: hsla(286, 69%, 41%, 1);
+--vibrant-purple: hsla(286, 79%, 45%, 1);
+--violet: hsla(286, 81%, 48%, 1);
+--hot-purple: hsla(286, 84%, 52%, 1);
+--heliotrope: hsla(286, 80%, 55%, 1);
+--bright-lilac: hsla(286, 71%, 59%, 1);
+--light-purple: hsla(286, 66%, 63%, 1);
+--amethyst: hsla(286, 64%, 66%, 1);
+--baby-purple: hsla(286, 53%, 70%, 1);
+--pale-purple: hsla(286, 52%, 74%, 1);
+--light-lavender: hsla(286, 44%, 77%, 1);
+--pale-lavender: hsla(286, 36%, 81%, 1);
+--light-pink: hsla(286, 31%, 85%, 1);
+--pale-pink: hsla(286, 33%, 88%, 1);
+--very-light-pink: hsla(286, 23%, 92%, 1);
 }
 
 /* SCSS HEX */
-$span-01: #180f19ff;
-$span-02: #221626ff;
-$span-03: #2e1a34ff;
-$span-04: #391c45ff;
-$span-05: #482252ff;
-$span-06: #532165ff;
-$span-07: #652276ff;
-$span-08: #71218aff;
-$span-09: #7c1f9fff;
-$span-10: #9520b0ff;
-$span-11: #a217ccff;
-$span-12: #ac18deff;
-$span-13: #b31debff;
-$span-14: #bc33e8ff;
-$span-15: #b94ce1ff;
-$span-16: #c461dfff;
-$span-17: #c573e0ff;
-$span-18: #c78adbff;
-$span-19: #d099dfff;
-$span-20: #d1acdfff;
-$span-21: #d7bde0ff;
-$span-22: #decce4ff;
-$span-23: #e6d8ebff;
-$span-24: #ede6efff;
+$almost-black: #180f19ff;
+$dark: #221626ff;
+$eggplant: #2e1a34ff;
+$aubergine: #391c45ff;
+$dark-purple: #482252ff;
+$plum-purple: #532165ff;
+$darkish-purple: #652276ff;
+$purple: #71218aff;
+$barney-purple: #7c1f9fff;
+$barney: #9520b0ff;
+$vibrant-purple: #a217ccff;
+$violet: #ac18deff;
+$hot-purple: #b31debff;
+$heliotrope: #bc33e8ff;
+$bright-lilac: #b94ce1ff;
+$light-purple: #c461dfff;
+$amethyst: #c573e0ff;
+$baby-purple: #c78adbff;
+$pale-purple: #d099dfff;
+$light-lavender: #d1acdfff;
+$pale-lavender: #d7bde0ff;
+$light-pink: #decce4ff;
+$pale-pink: #e6d8ebff;
+$very-light-pink: #ede6efff;
 
 /* SCSS HSL */
-$span-01: hsla(286, 25%, 8%, 1);
-$span-02: hsla(286, 28%, 12%, 1);
-$span-03: hsla(286, 32%, 15%, 1);
-$span-04: hsla(286, 43%, 19%, 1);
-$span-05: hsla(286, 42%, 23%, 1);
-$span-06: hsla(286, 51%, 26%, 1);
-$span-07: hsla(286, 55%, 30%, 1);
-$span-08: hsla(286, 62%, 34%, 1);
-$span-09: hsla(286, 67%, 37%, 1);
-$span-10: hsla(286, 69%, 41%, 1);
-$span-11: hsla(286, 79%, 45%, 1);
-$span-12: hsla(286, 81%, 48%, 1);
-$span-13: hsla(286, 84%, 52%, 1);
-$span-14: hsla(286, 80%, 55%, 1);
-$span-15: hsla(286, 71%, 59%, 1);
-$span-16: hsla(286, 66%, 63%, 1);
-$span-17: hsla(286, 64%, 66%, 1);
-$span-18: hsla(286, 53%, 70%, 1);
-$span-19: hsla(286, 52%, 74%, 1);
-$span-20: hsla(286, 44%, 77%, 1);
-$span-21: hsla(286, 36%, 81%, 1);
-$span-22: hsla(286, 31%, 85%, 1);
-$span-23: hsla(286, 33%, 88%, 1);
-$span-24: hsla(286, 23%, 92%, 1);
+$almost-black: hsla(286, 25%, 8%, 1);
+$dark: hsla(286, 28%, 12%, 1);
+$eggplant: hsla(286, 32%, 15%, 1);
+$aubergine: hsla(286, 43%, 19%, 1);
+$dark-purple: hsla(286, 42%, 23%, 1);
+$plum-purple: hsla(286, 51%, 26%, 1);
+$darkish-purple: hsla(286, 55%, 30%, 1);
+$purple: hsla(286, 62%, 34%, 1);
+$barney-purple: hsla(286, 67%, 37%, 1);
+$barney: hsla(286, 69%, 41%, 1);
+$vibrant-purple: hsla(286, 79%, 45%, 1);
+$violet: hsla(286, 81%, 48%, 1);
+$hot-purple: hsla(286, 84%, 52%, 1);
+$heliotrope: hsla(286, 80%, 55%, 1);
+$bright-lilac: hsla(286, 71%, 59%, 1);
+$light-purple: hsla(286, 66%, 63%, 1);
+$amethyst: hsla(286, 64%, 66%, 1);
+$baby-purple: hsla(286, 53%, 70%, 1);
+$pale-purple: hsla(286, 52%, 74%, 1);
+$light-lavender: hsla(286, 44%, 77%, 1);
+$pale-lavender: hsla(286, 36%, 81%, 1);
+$light-pink: hsla(286, 31%, 85%, 1);
+$pale-pink: hsla(286, 33%, 88%, 1);
+$very-light-pink: hsla(286, 23%, 92%, 1);
 
 /* SCSS RGB */
-$span-01: rgba(24, 15, 25, 1);
-$span-02: rgba(34, 22, 38, 1);
-$span-03: rgba(46, 26, 52, 1);
-$span-04: rgba(57, 28, 69, 1);
-$span-05: rgba(72, 34, 82, 1);
-$span-06: rgba(83, 33, 101, 1);
-$span-07: rgba(101, 34, 118, 1);
-$span-08: rgba(113, 33, 138, 1);
-$span-09: rgba(124, 31, 159, 1);
-$span-10: rgba(149, 32, 176, 1);
-$span-11: rgba(162, 23, 204, 1);
-$span-12: rgba(172, 24, 222, 1);
-$span-13: rgba(179, 29, 235, 1);
-$span-14: rgba(188, 51, 232, 1);
-$span-15: rgba(185, 76, 225, 1);
-$span-16: rgba(196, 97, 223, 1);
-$span-17: rgba(197, 115, 224, 1);
-$span-18: rgba(199, 138, 219, 1);
-$span-19: rgba(208, 153, 223, 1);
-$span-20: rgba(209, 172, 223, 1);
-$span-21: rgba(215, 189, 224, 1);
-$span-22: rgba(222, 204, 228, 1);
-$span-23: rgba(230, 216, 235, 1);
-$span-24: rgba(237, 230, 239, 1);
+$almost-black: rgba(24, 15, 25, 1);
+$dark: rgba(34, 22, 38, 1);
+$eggplant: rgba(46, 26, 52, 1);
+$aubergine: rgba(57, 28, 69, 1);
+$dark-purple: rgba(72, 34, 82, 1);
+$plum-purple: rgba(83, 33, 101, 1);
+$darkish-purple: rgba(101, 34, 118, 1);
+$purple: rgba(113, 33, 138, 1);
+$barney-purple: rgba(124, 31, 159, 1);
+$barney: rgba(149, 32, 176, 1);
+$vibrant-purple: rgba(162, 23, 204, 1);
+$violet: rgba(172, 24, 222, 1);
+$hot-purple: rgba(179, 29, 235, 1);
+$heliotrope: rgba(188, 51, 232, 1);
+$bright-lilac: rgba(185, 76, 225, 1);
+$light-purple: rgba(196, 97, 223, 1);
+$amethyst: rgba(197, 115, 224, 1);
+$baby-purple: rgba(199, 138, 219, 1);
+$pale-purple: rgba(208, 153, 223, 1);
+$light-lavender: rgba(209, 172, 223, 1);
+$pale-lavender: rgba(215, 189, 224, 1);
+$light-pink: rgba(222, 204, 228, 1);
+$pale-pink: rgba(230, 216, 235, 1);
+$very-light-pink: rgba(237, 230, 239, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #180f19ff, #221626ff, #2e1a34ff, #391c45ff, #482252ff, #532165ff, #652276ff, #71218aff, #7c1f9fff, #9520b0ff, #a217ccff, #ac18deff, #b31debff, #bc33e8ff, #b94ce1ff, #c461dfff, #c573e0ff, #c78adbff, #d099dfff, #d1acdfff, #d7bde0ff, #decce4ff, #e6d8ebff, #ede6efff);
@@ -163,28 +163,28 @@ $gradient-radial: radial-gradient(#180f19ff, #221626ff, #2e1a34ff, #391c45ff, #4
 
 /* SCSS Map */
 $violet-span-24-09-map: (
-    "span-01": #180f19ff,
-    "span-02": #221626ff,
-    "span-03": #2e1a34ff,
-    "span-04": #391c45ff,
-    "span-05": #482252ff,
-    "span-06": #532165ff,
-    "span-07": #652276ff,
-    "span-08": #71218aff,
-    "span-09": #7c1f9fff,
-    "span-10": #9520b0ff,
-    "span-11": #a217ccff,
-    "span-12": #ac18deff,
-    "span-13": #b31debff,
-    "span-14": #bc33e8ff,
-    "span-15": #b94ce1ff,
-    "span-16": #c461dfff,
-    "span-17": #c573e0ff,
-    "span-18": #c78adbff,
-    "span-19": #d099dfff,
-    "span-20": #d1acdfff,
-    "span-21": #d7bde0ff,
-    "span-22": #decce4ff,
-    "span-23": #e6d8ebff,
-    "span-24": #ede6efff
+    "almost-black": #180f19ff,
+    "dark": #221626ff,
+    "eggplant": #2e1a34ff,
+    "aubergine": #391c45ff,
+    "dark-purple": #482252ff,
+    "plum-purple": #532165ff,
+    "darkish-purple": #652276ff,
+    "purple": #71218aff,
+    "barney-purple": #7c1f9fff,
+    "barney": #9520b0ff,
+    "vibrant-purple": #a217ccff,
+    "violet": #ac18deff,
+    "hot-purple": #b31debff,
+    "heliotrope": #bc33e8ff,
+    "bright-lilac": #b94ce1ff,
+    "light-purple": #c461dfff,
+    "amethyst": #c573e0ff,
+    "baby-purple": #c78adbff,
+    "pale-purple": #d099dfff,
+    "light-lavender": #d1acdfff,
+    "pale-lavender": #d7bde0ff,
+    "light-pink": #decce4ff,
+    "pale-pink": #e6d8ebff,
+    "very-light-pink": #ede6efff
 );

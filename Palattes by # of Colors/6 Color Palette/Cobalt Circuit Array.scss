@@ -25,45 +25,45 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---cobalt-circuit-array-circuit-black: #020617ff;
---cobalt-circuit-array-logic-navy: #0f172aff;
---cobalt-circuit-array-cobalt-core: #1e3a8aff;
---cobalt-circuit-array-runtime-blue: #1d4ed8ff;
---cobalt-circuit-array-action-blue: #2563ebff;
---cobalt-circuit-array-signal-blue: #3b82f6ff;
+--circuit-black: #020617ff;
+--logic-navy: #0f172aff;
+--cobalt-core: #1e3a8aff;
+--runtime-blue: #1d4ed8ff;
+--action-blue: #2563ebff;
+--signal-blue: #3b82f6ff;
 
 /* CSS HSL */
---cobalt-circuit-array-circuit-black: hsla(229, 84%, 5%, 1);
---cobalt-circuit-array-logic-navy: hsla(222, 47%, 11%, 1);
---cobalt-circuit-array-cobalt-core: hsla(224, 64%, 33%, 1);
---cobalt-circuit-array-runtime-blue: hsla(224, 76%, 48%, 1);
---cobalt-circuit-array-action-blue: hsla(221, 83%, 53%, 1);
---cobalt-circuit-array-signal-blue: hsla(217, 91%, 60%, 1);
+--circuit-black: hsla(229, 84%, 5%, 1);
+--logic-navy: hsla(222, 47%, 11%, 1);
+--cobalt-core: hsla(224, 64%, 33%, 1);
+--runtime-blue: hsla(224, 76%, 48%, 1);
+--action-blue: hsla(221, 83%, 53%, 1);
+--signal-blue: hsla(217, 91%, 60%, 1);
 }
 
 /* SCSS HEX */
-$cobalt-circuit-array-circuit-black: #020617ff;
-$cobalt-circuit-array-logic-navy: #0f172aff;
-$cobalt-circuit-array-cobalt-core: #1e3a8aff;
-$cobalt-circuit-array-runtime-blue: #1d4ed8ff;
-$cobalt-circuit-array-action-blue: #2563ebff;
-$cobalt-circuit-array-signal-blue: #3b82f6ff;
+$circuit-black: #020617ff;
+$logic-navy: #0f172aff;
+$cobalt-core: #1e3a8aff;
+$runtime-blue: #1d4ed8ff;
+$action-blue: #2563ebff;
+$signal-blue: #3b82f6ff;
 
 /* SCSS HSL */
-$cobalt-circuit-array-circuit-black: hsla(229, 84%, 5%, 1);
-$cobalt-circuit-array-logic-navy: hsla(222, 47%, 11%, 1);
-$cobalt-circuit-array-cobalt-core: hsla(224, 64%, 33%, 1);
-$cobalt-circuit-array-runtime-blue: hsla(224, 76%, 48%, 1);
-$cobalt-circuit-array-action-blue: hsla(221, 83%, 53%, 1);
-$cobalt-circuit-array-signal-blue: hsla(217, 91%, 60%, 1);
+$circuit-black: hsla(229, 84%, 5%, 1);
+$logic-navy: hsla(222, 47%, 11%, 1);
+$cobalt-core: hsla(224, 64%, 33%, 1);
+$runtime-blue: hsla(224, 76%, 48%, 1);
+$action-blue: hsla(221, 83%, 53%, 1);
+$signal-blue: hsla(217, 91%, 60%, 1);
 
 /* SCSS RGB */
-$cobalt-circuit-array-circuit-black: rgba(2, 6, 23, 1);
-$cobalt-circuit-array-logic-navy: rgba(15, 23, 42, 1);
-$cobalt-circuit-array-cobalt-core: rgba(30, 58, 138, 1);
-$cobalt-circuit-array-runtime-blue: rgba(29, 78, 216, 1);
-$cobalt-circuit-array-action-blue: rgba(37, 99, 235, 1);
-$cobalt-circuit-array-signal-blue: rgba(59, 130, 246, 1);
+$circuit-black: rgba(2, 6, 23, 1);
+$logic-navy: rgba(15, 23, 42, 1);
+$cobalt-core: rgba(30, 58, 138, 1);
+$runtime-blue: rgba(29, 78, 216, 1);
+$action-blue: rgba(37, 99, 235, 1);
+$signal-blue: rgba(59, 130, 246, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff);
@@ -78,10 +78,10 @@ $gradient-radial: radial-gradient(#020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2
 
 /* SCSS Map */
 $cobalt-circuit-array-map: (
-    "cobalt-circuit-array-circuit-black": #020617ff,
-    "cobalt-circuit-array-logic-navy": #0f172aff,
-    "cobalt-circuit-array-cobalt-core": #1e3a8aff,
-    "cobalt-circuit-array-runtime-blue": #1d4ed8ff,
-    "cobalt-circuit-array-action-blue": #2563ebff,
-    "cobalt-circuit-array-signal-blue": #3b82f6ff
+    "circuit-black": #020617ff,
+    "logic-navy": #0f172aff,
+    "cobalt-core": #1e3a8aff,
+    "runtime-blue": #1d4ed8ff,
+    "action-blue": #2563ebff,
+    "signal-blue": #3b82f6ff
 );

@@ -25,40 +25,40 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---fuchsia-circuit-scale-console-plum: #1a0712ff;
---fuchsia-circuit-scale-trace-wine: #500724ff;
---fuchsia-circuit-scale-circuit-fuchsia: #be185dff;
---fuchsia-circuit-scale-signal-pink: #ec4899ff;
---fuchsia-circuit-scale-pulse-rose: #f9a8d4ff;
+--console-plum: #1a0712ff;
+--trace-wine: #500724ff;
+--circuit-fuchsia: #be185dff;
+--signal-pink: #ec4899ff;
+--pulse-rose: #f9a8d4ff;
 
 /* CSS HSL */
---fuchsia-circuit-scale-console-plum: hsla(325, 58%, 6%, 1);
---fuchsia-circuit-scale-trace-wine: hsla(336, 84%, 17%, 1);
---fuchsia-circuit-scale-circuit-fuchsia: hsla(335, 78%, 42%, 1);
---fuchsia-circuit-scale-signal-pink: hsla(330, 81%, 60%, 1);
---fuchsia-circuit-scale-pulse-rose: hsla(327, 87%, 82%, 1);
+--console-plum: hsla(325, 58%, 6%, 1);
+--trace-wine: hsla(336, 84%, 17%, 1);
+--circuit-fuchsia: hsla(335, 78%, 42%, 1);
+--signal-pink: hsla(330, 81%, 60%, 1);
+--pulse-rose: hsla(327, 87%, 82%, 1);
 }
 
 /* SCSS HEX */
-$fuchsia-circuit-scale-console-plum: #1a0712ff;
-$fuchsia-circuit-scale-trace-wine: #500724ff;
-$fuchsia-circuit-scale-circuit-fuchsia: #be185dff;
-$fuchsia-circuit-scale-signal-pink: #ec4899ff;
-$fuchsia-circuit-scale-pulse-rose: #f9a8d4ff;
+$console-plum: #1a0712ff;
+$trace-wine: #500724ff;
+$circuit-fuchsia: #be185dff;
+$signal-pink: #ec4899ff;
+$pulse-rose: #f9a8d4ff;
 
 /* SCSS HSL */
-$fuchsia-circuit-scale-console-plum: hsla(325, 58%, 6%, 1);
-$fuchsia-circuit-scale-trace-wine: hsla(336, 84%, 17%, 1);
-$fuchsia-circuit-scale-circuit-fuchsia: hsla(335, 78%, 42%, 1);
-$fuchsia-circuit-scale-signal-pink: hsla(330, 81%, 60%, 1);
-$fuchsia-circuit-scale-pulse-rose: hsla(327, 87%, 82%, 1);
+$console-plum: hsla(325, 58%, 6%, 1);
+$trace-wine: hsla(336, 84%, 17%, 1);
+$circuit-fuchsia: hsla(335, 78%, 42%, 1);
+$signal-pink: hsla(330, 81%, 60%, 1);
+$pulse-rose: hsla(327, 87%, 82%, 1);
 
 /* SCSS RGB */
-$fuchsia-circuit-scale-console-plum: rgba(26, 7, 18, 1);
-$fuchsia-circuit-scale-trace-wine: rgba(80, 7, 36, 1);
-$fuchsia-circuit-scale-circuit-fuchsia: rgba(190, 24, 93, 1);
-$fuchsia-circuit-scale-signal-pink: rgba(236, 72, 153, 1);
-$fuchsia-circuit-scale-pulse-rose: rgba(249, 168, 212, 1);
+$console-plum: rgba(26, 7, 18, 1);
+$trace-wine: rgba(80, 7, 36, 1);
+$circuit-fuchsia: rgba(190, 24, 93, 1);
+$signal-pink: rgba(236, 72, 153, 1);
+$pulse-rose: rgba(249, 168, 212, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1a0712ff, #500724ff, #be185dff, #ec4899ff, #f9a8d4ff);
@@ -73,9 +73,9 @@ $gradient-radial: radial-gradient(#1a0712ff, #500724ff, #be185dff, #ec4899ff, #f
 
 /* SCSS Map */
 $fuchsia-circuit-scale-map: (
-    "fuchsia-circuit-scale-console-plum": #1a0712ff,
-    "fuchsia-circuit-scale-trace-wine": #500724ff,
-    "fuchsia-circuit-scale-circuit-fuchsia": #be185dff,
-    "fuchsia-circuit-scale-signal-pink": #ec4899ff,
-    "fuchsia-circuit-scale-pulse-rose": #f9a8d4ff
+    "console-plum": #1a0712ff,
+    "trace-wine": #500724ff,
+    "circuit-fuchsia": #be185dff,
+    "signal-pink": #ec4899ff,
+    "pulse-rose": #f9a8d4ff
 );

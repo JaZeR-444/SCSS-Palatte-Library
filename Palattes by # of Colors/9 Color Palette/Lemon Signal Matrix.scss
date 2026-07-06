@@ -25,60 +25,60 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---lemon-signal-matrix-signal-ink: #18140aff;
---lemon-signal-matrix-golden-route: #854d0eff;
---lemon-signal-matrix-active-gold: #ca8a04ff;
---lemon-signal-matrix-lemon-core: #facc15ff;
---lemon-signal-matrix-lemon-flash: #fef08aff;
---lemon-signal-matrix-cream-notice: #fefce8ff;
---lemon-signal-matrix-white-signal: #ffffffff;
---lemon-signal-matrix-slate-copy: #334155ff;
---lemon-signal-matrix-mist-border: #e2e8f0ff;
+--signal-ink: #18140aff;
+--golden-route: #854d0eff;
+--active-gold: #ca8a04ff;
+--lemon-core: #facc15ff;
+--lemon-flash: #fef08aff;
+--cream-notice: #fefce8ff;
+--white-signal: #ffffffff;
+--slate-copy: #334155ff;
+--mist-border: #e2e8f0ff;
 
 /* CSS HSL */
---lemon-signal-matrix-signal-ink: hsla(43, 41%, 7%, 1);
---lemon-signal-matrix-golden-route: hsla(32, 81%, 29%, 1);
---lemon-signal-matrix-active-gold: hsla(41, 96%, 40%, 1);
---lemon-signal-matrix-lemon-core: hsla(48, 96%, 53%, 1);
---lemon-signal-matrix-lemon-flash: hsla(53, 98%, 77%, 1);
---lemon-signal-matrix-cream-notice: hsla(55, 92%, 95%, 1);
---lemon-signal-matrix-white-signal: hsla(0, 0%, 100%, 1);
---lemon-signal-matrix-slate-copy: hsla(215, 25%, 27%, 1);
---lemon-signal-matrix-mist-border: hsla(214, 32%, 91%, 1);
+--signal-ink: hsla(43, 41%, 7%, 1);
+--golden-route: hsla(32, 81%, 29%, 1);
+--active-gold: hsla(41, 96%, 40%, 1);
+--lemon-core: hsla(48, 96%, 53%, 1);
+--lemon-flash: hsla(53, 98%, 77%, 1);
+--cream-notice: hsla(55, 92%, 95%, 1);
+--white-signal: hsla(0, 0%, 100%, 1);
+--slate-copy: hsla(215, 25%, 27%, 1);
+--mist-border: hsla(214, 32%, 91%, 1);
 }
 
 /* SCSS HEX */
-$lemon-signal-matrix-signal-ink: #18140aff;
-$lemon-signal-matrix-golden-route: #854d0eff;
-$lemon-signal-matrix-active-gold: #ca8a04ff;
-$lemon-signal-matrix-lemon-core: #facc15ff;
-$lemon-signal-matrix-lemon-flash: #fef08aff;
-$lemon-signal-matrix-cream-notice: #fefce8ff;
-$lemon-signal-matrix-white-signal: #ffffffff;
-$lemon-signal-matrix-slate-copy: #334155ff;
-$lemon-signal-matrix-mist-border: #e2e8f0ff;
+$signal-ink: #18140aff;
+$golden-route: #854d0eff;
+$active-gold: #ca8a04ff;
+$lemon-core: #facc15ff;
+$lemon-flash: #fef08aff;
+$cream-notice: #fefce8ff;
+$white-signal: #ffffffff;
+$slate-copy: #334155ff;
+$mist-border: #e2e8f0ff;
 
 /* SCSS HSL */
-$lemon-signal-matrix-signal-ink: hsla(43, 41%, 7%, 1);
-$lemon-signal-matrix-golden-route: hsla(32, 81%, 29%, 1);
-$lemon-signal-matrix-active-gold: hsla(41, 96%, 40%, 1);
-$lemon-signal-matrix-lemon-core: hsla(48, 96%, 53%, 1);
-$lemon-signal-matrix-lemon-flash: hsla(53, 98%, 77%, 1);
-$lemon-signal-matrix-cream-notice: hsla(55, 92%, 95%, 1);
-$lemon-signal-matrix-white-signal: hsla(0, 0%, 100%, 1);
-$lemon-signal-matrix-slate-copy: hsla(215, 25%, 27%, 1);
-$lemon-signal-matrix-mist-border: hsla(214, 32%, 91%, 1);
+$signal-ink: hsla(43, 41%, 7%, 1);
+$golden-route: hsla(32, 81%, 29%, 1);
+$active-gold: hsla(41, 96%, 40%, 1);
+$lemon-core: hsla(48, 96%, 53%, 1);
+$lemon-flash: hsla(53, 98%, 77%, 1);
+$cream-notice: hsla(55, 92%, 95%, 1);
+$white-signal: hsla(0, 0%, 100%, 1);
+$slate-copy: hsla(215, 25%, 27%, 1);
+$mist-border: hsla(214, 32%, 91%, 1);
 
 /* SCSS RGB */
-$lemon-signal-matrix-signal-ink: rgba(24, 20, 10, 1);
-$lemon-signal-matrix-golden-route: rgba(133, 77, 14, 1);
-$lemon-signal-matrix-active-gold: rgba(202, 138, 4, 1);
-$lemon-signal-matrix-lemon-core: rgba(250, 204, 21, 1);
-$lemon-signal-matrix-lemon-flash: rgba(254, 240, 138, 1);
-$lemon-signal-matrix-cream-notice: rgba(254, 252, 232, 1);
-$lemon-signal-matrix-white-signal: rgba(255, 255, 255, 1);
-$lemon-signal-matrix-slate-copy: rgba(51, 65, 85, 1);
-$lemon-signal-matrix-mist-border: rgba(226, 232, 240, 1);
+$signal-ink: rgba(24, 20, 10, 1);
+$golden-route: rgba(133, 77, 14, 1);
+$active-gold: rgba(202, 138, 4, 1);
+$lemon-core: rgba(250, 204, 21, 1);
+$lemon-flash: rgba(254, 240, 138, 1);
+$cream-notice: rgba(254, 252, 232, 1);
+$white-signal: rgba(255, 255, 255, 1);
+$slate-copy: rgba(51, 65, 85, 1);
+$mist-border: rgba(226, 232, 240, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #18140aff, #854d0eff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff, #ffffffff, #334155ff, #e2e8f0ff);
@@ -93,13 +93,13 @@ $gradient-radial: radial-gradient(#18140aff, #854d0eff, #ca8a04ff, #facc15ff, #f
 
 /* SCSS Map */
 $lemon-signal-matrix-map: (
-    "lemon-signal-matrix-signal-ink": #18140aff,
-    "lemon-signal-matrix-golden-route": #854d0eff,
-    "lemon-signal-matrix-active-gold": #ca8a04ff,
-    "lemon-signal-matrix-lemon-core": #facc15ff,
-    "lemon-signal-matrix-lemon-flash": #fef08aff,
-    "lemon-signal-matrix-cream-notice": #fefce8ff,
-    "lemon-signal-matrix-white-signal": #ffffffff,
-    "lemon-signal-matrix-slate-copy": #334155ff,
-    "lemon-signal-matrix-mist-border": #e2e8f0ff
+    "signal-ink": #18140aff,
+    "golden-route": #854d0eff,
+    "active-gold": #ca8a04ff,
+    "lemon-core": #facc15ff,
+    "lemon-flash": #fef08aff,
+    "cream-notice": #fefce8ff,
+    "white-signal": #ffffffff,
+    "slate-copy": #334155ff,
+    "mist-border": #e2e8f0ff
 );

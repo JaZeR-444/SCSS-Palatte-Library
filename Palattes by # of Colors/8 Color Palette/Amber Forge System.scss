@@ -25,55 +25,55 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---amber-forge-system-kiln-black: #1c0f05ff;
---amber-forge-system-furnace-brown: #431407ff;
---amber-forge-system-oxide-panel: #7c2d12ff;
---amber-forge-system-forge-ember: #9a3412ff;
---amber-forge-system-copper-heat: #c2410cff;
---amber-forge-system-molten-amber: #f97316ff;
---amber-forge-system-spark-gold: #fbbf24ff;
---amber-forge-system-worklight-cream: #ffedd5ff;
+--kiln-black: #1c0f05ff;
+--furnace-brown: #431407ff;
+--oxide-panel: #7c2d12ff;
+--forge-ember: #9a3412ff;
+--copper-heat: #c2410cff;
+--molten-amber: #f97316ff;
+--spark-gold: #fbbf24ff;
+--worklight-cream: #ffedd5ff;
 
 /* CSS HSL */
---amber-forge-system-kiln-black: hsla(26, 70%, 6%, 1);
---amber-forge-system-furnace-brown: hsla(13, 81%, 15%, 1);
---amber-forge-system-oxide-panel: hsla(15, 75%, 28%, 1);
---amber-forge-system-forge-ember: hsla(15, 79%, 34%, 1);
---amber-forge-system-copper-heat: hsla(17, 88%, 40%, 1);
---amber-forge-system-molten-amber: hsla(25, 95%, 53%, 1);
---amber-forge-system-spark-gold: hsla(43, 96%, 56%, 1);
---amber-forge-system-worklight-cream: hsla(34, 100%, 92%, 1);
+--kiln-black: hsla(26, 70%, 6%, 1);
+--furnace-brown: hsla(13, 81%, 15%, 1);
+--oxide-panel: hsla(15, 75%, 28%, 1);
+--forge-ember: hsla(15, 79%, 34%, 1);
+--copper-heat: hsla(17, 88%, 40%, 1);
+--molten-amber: hsla(25, 95%, 53%, 1);
+--spark-gold: hsla(43, 96%, 56%, 1);
+--worklight-cream: hsla(34, 100%, 92%, 1);
 }
 
 /* SCSS HEX */
-$amber-forge-system-kiln-black: #1c0f05ff;
-$amber-forge-system-furnace-brown: #431407ff;
-$amber-forge-system-oxide-panel: #7c2d12ff;
-$amber-forge-system-forge-ember: #9a3412ff;
-$amber-forge-system-copper-heat: #c2410cff;
-$amber-forge-system-molten-amber: #f97316ff;
-$amber-forge-system-spark-gold: #fbbf24ff;
-$amber-forge-system-worklight-cream: #ffedd5ff;
+$kiln-black: #1c0f05ff;
+$furnace-brown: #431407ff;
+$oxide-panel: #7c2d12ff;
+$forge-ember: #9a3412ff;
+$copper-heat: #c2410cff;
+$molten-amber: #f97316ff;
+$spark-gold: #fbbf24ff;
+$worklight-cream: #ffedd5ff;
 
 /* SCSS HSL */
-$amber-forge-system-kiln-black: hsla(26, 70%, 6%, 1);
-$amber-forge-system-furnace-brown: hsla(13, 81%, 15%, 1);
-$amber-forge-system-oxide-panel: hsla(15, 75%, 28%, 1);
-$amber-forge-system-forge-ember: hsla(15, 79%, 34%, 1);
-$amber-forge-system-copper-heat: hsla(17, 88%, 40%, 1);
-$amber-forge-system-molten-amber: hsla(25, 95%, 53%, 1);
-$amber-forge-system-spark-gold: hsla(43, 96%, 56%, 1);
-$amber-forge-system-worklight-cream: hsla(34, 100%, 92%, 1);
+$kiln-black: hsla(26, 70%, 6%, 1);
+$furnace-brown: hsla(13, 81%, 15%, 1);
+$oxide-panel: hsla(15, 75%, 28%, 1);
+$forge-ember: hsla(15, 79%, 34%, 1);
+$copper-heat: hsla(17, 88%, 40%, 1);
+$molten-amber: hsla(25, 95%, 53%, 1);
+$spark-gold: hsla(43, 96%, 56%, 1);
+$worklight-cream: hsla(34, 100%, 92%, 1);
 
 /* SCSS RGB */
-$amber-forge-system-kiln-black: rgba(28, 15, 5, 1);
-$amber-forge-system-furnace-brown: rgba(67, 20, 7, 1);
-$amber-forge-system-oxide-panel: rgba(124, 45, 18, 1);
-$amber-forge-system-forge-ember: rgba(154, 52, 18, 1);
-$amber-forge-system-copper-heat: rgba(194, 65, 12, 1);
-$amber-forge-system-molten-amber: rgba(249, 115, 22, 1);
-$amber-forge-system-spark-gold: rgba(251, 191, 36, 1);
-$amber-forge-system-worklight-cream: rgba(255, 237, 213, 1);
+$kiln-black: rgba(28, 15, 5, 1);
+$furnace-brown: rgba(67, 20, 7, 1);
+$oxide-panel: rgba(124, 45, 18, 1);
+$forge-ember: rgba(154, 52, 18, 1);
+$copper-heat: rgba(194, 65, 12, 1);
+$molten-amber: rgba(249, 115, 22, 1);
+$spark-gold: rgba(251, 191, 36, 1);
+$worklight-cream: rgba(255, 237, 213, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1c0f05ff, #431407ff, #7c2d12ff, #9a3412ff, #c2410cff, #f97316ff, #fbbf24ff, #ffedd5ff);
@@ -88,12 +88,12 @@ $gradient-radial: radial-gradient(#1c0f05ff, #431407ff, #7c2d12ff, #9a3412ff, #c
 
 /* SCSS Map */
 $amber-forge-system-map: (
-    "amber-forge-system-kiln-black": #1c0f05ff,
-    "amber-forge-system-furnace-brown": #431407ff,
-    "amber-forge-system-oxide-panel": #7c2d12ff,
-    "amber-forge-system-forge-ember": #9a3412ff,
-    "amber-forge-system-copper-heat": #c2410cff,
-    "amber-forge-system-molten-amber": #f97316ff,
-    "amber-forge-system-spark-gold": #fbbf24ff,
-    "amber-forge-system-worklight-cream": #ffedd5ff
+    "kiln-black": #1c0f05ff,
+    "furnace-brown": #431407ff,
+    "oxide-panel": #7c2d12ff,
+    "forge-ember": #9a3412ff,
+    "copper-heat": #c2410cff,
+    "molten-amber": #f97316ff,
+    "spark-gold": #fbbf24ff,
+    "worklight-cream": #ffedd5ff
 );

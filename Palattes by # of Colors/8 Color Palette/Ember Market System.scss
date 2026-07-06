@@ -25,55 +25,55 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---ember-market-system-market-night: #1c0b0bff;
---ember-market-system-ember-depth: #3f1111ff;
---ember-market-system-stall-red: #7f1d1dff;
---ember-market-system-sale-ruby: #b42318ff;
---ember-market-system-action-red: #d92d20ff;
---ember-market-system-hot-coral: #f04438ff;
---ember-market-system-market-orange: #f79009ff;
---ember-market-system-receipt-gold: #fec84bff;
+--market-night: #1c0b0bff;
+--ember-depth: #3f1111ff;
+--stall-red: #7f1d1dff;
+--sale-ruby: #b42318ff;
+--action-red: #d92d20ff;
+--hot-coral: #f04438ff;
+--market-orange: #f79009ff;
+--receipt-gold: #fec84bff;
 
 /* CSS HSL */
---ember-market-system-market-night: hsla(0, 44%, 8%, 1);
---ember-market-system-ember-depth: hsla(0, 58%, 16%, 1);
---ember-market-system-stall-red: hsla(0, 63%, 31%, 1);
---ember-market-system-sale-ruby: hsla(4, 76%, 40%, 1);
---ember-market-system-action-red: hsla(4, 74%, 49%, 1);
---ember-market-system-hot-coral: hsla(4, 86%, 58%, 1);
---ember-market-system-market-orange: hsla(34, 94%, 50%, 1);
---ember-market-system-receipt-gold: hsla(42, 99%, 65%, 1);
+--market-night: hsla(0, 44%, 8%, 1);
+--ember-depth: hsla(0, 58%, 16%, 1);
+--stall-red: hsla(0, 63%, 31%, 1);
+--sale-ruby: hsla(4, 76%, 40%, 1);
+--action-red: hsla(4, 74%, 49%, 1);
+--hot-coral: hsla(4, 86%, 58%, 1);
+--market-orange: hsla(34, 94%, 50%, 1);
+--receipt-gold: hsla(42, 99%, 65%, 1);
 }
 
 /* SCSS HEX */
-$ember-market-system-market-night: #1c0b0bff;
-$ember-market-system-ember-depth: #3f1111ff;
-$ember-market-system-stall-red: #7f1d1dff;
-$ember-market-system-sale-ruby: #b42318ff;
-$ember-market-system-action-red: #d92d20ff;
-$ember-market-system-hot-coral: #f04438ff;
-$ember-market-system-market-orange: #f79009ff;
-$ember-market-system-receipt-gold: #fec84bff;
+$market-night: #1c0b0bff;
+$ember-depth: #3f1111ff;
+$stall-red: #7f1d1dff;
+$sale-ruby: #b42318ff;
+$action-red: #d92d20ff;
+$hot-coral: #f04438ff;
+$market-orange: #f79009ff;
+$receipt-gold: #fec84bff;
 
 /* SCSS HSL */
-$ember-market-system-market-night: hsla(0, 44%, 8%, 1);
-$ember-market-system-ember-depth: hsla(0, 58%, 16%, 1);
-$ember-market-system-stall-red: hsla(0, 63%, 31%, 1);
-$ember-market-system-sale-ruby: hsla(4, 76%, 40%, 1);
-$ember-market-system-action-red: hsla(4, 74%, 49%, 1);
-$ember-market-system-hot-coral: hsla(4, 86%, 58%, 1);
-$ember-market-system-market-orange: hsla(34, 94%, 50%, 1);
-$ember-market-system-receipt-gold: hsla(42, 99%, 65%, 1);
+$market-night: hsla(0, 44%, 8%, 1);
+$ember-depth: hsla(0, 58%, 16%, 1);
+$stall-red: hsla(0, 63%, 31%, 1);
+$sale-ruby: hsla(4, 76%, 40%, 1);
+$action-red: hsla(4, 74%, 49%, 1);
+$hot-coral: hsla(4, 86%, 58%, 1);
+$market-orange: hsla(34, 94%, 50%, 1);
+$receipt-gold: hsla(42, 99%, 65%, 1);
 
 /* SCSS RGB */
-$ember-market-system-market-night: rgba(28, 11, 11, 1);
-$ember-market-system-ember-depth: rgba(63, 17, 17, 1);
-$ember-market-system-stall-red: rgba(127, 29, 29, 1);
-$ember-market-system-sale-ruby: rgba(180, 35, 24, 1);
-$ember-market-system-action-red: rgba(217, 45, 32, 1);
-$ember-market-system-hot-coral: rgba(240, 68, 56, 1);
-$ember-market-system-market-orange: rgba(247, 144, 9, 1);
-$ember-market-system-receipt-gold: rgba(254, 200, 75, 1);
+$market-night: rgba(28, 11, 11, 1);
+$ember-depth: rgba(63, 17, 17, 1);
+$stall-red: rgba(127, 29, 29, 1);
+$sale-ruby: rgba(180, 35, 24, 1);
+$action-red: rgba(217, 45, 32, 1);
+$hot-coral: rgba(240, 68, 56, 1);
+$market-orange: rgba(247, 144, 9, 1);
+$receipt-gold: rgba(254, 200, 75, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1c0b0bff, #3f1111ff, #7f1d1dff, #b42318ff, #d92d20ff, #f04438ff, #f79009ff, #fec84bff);
@@ -88,12 +88,12 @@ $gradient-radial: radial-gradient(#1c0b0bff, #3f1111ff, #7f1d1dff, #b42318ff, #d
 
 /* SCSS Map */
 $ember-market-system-map: (
-    "ember-market-system-market-night": #1c0b0bff,
-    "ember-market-system-ember-depth": #3f1111ff,
-    "ember-market-system-stall-red": #7f1d1dff,
-    "ember-market-system-sale-ruby": #b42318ff,
-    "ember-market-system-action-red": #d92d20ff,
-    "ember-market-system-hot-coral": #f04438ff,
-    "ember-market-system-market-orange": #f79009ff,
-    "ember-market-system-receipt-gold": #fec84bff
+    "market-night": #1c0b0bff,
+    "ember-depth": #3f1111ff,
+    "stall-red": #7f1d1dff,
+    "sale-ruby": #b42318ff,
+    "action-red": #d92d20ff,
+    "hot-coral": #f04438ff,
+    "market-orange": #f79009ff,
+    "receipt-gold": #fec84bff
 );

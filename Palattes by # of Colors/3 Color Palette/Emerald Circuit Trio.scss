@@ -25,30 +25,30 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---emerald-circuit-trio-circuit-black: #02140bff;
---emerald-circuit-trio-terminal-root: #052e16ff;
---emerald-circuit-trio-emerald-board: #14532dff;
+--circuit-black: #02140bff;
+--terminal-root: #052e16ff;
+--emerald-board: #14532dff;
 
 /* CSS HSL */
---emerald-circuit-trio-circuit-black: hsla(150, 82%, 4%, 1);
---emerald-circuit-trio-terminal-root: hsla(145, 80%, 10%, 1);
---emerald-circuit-trio-emerald-board: hsla(144, 61%, 20%, 1);
+--circuit-black: hsla(150, 82%, 4%, 1);
+--terminal-root: hsla(145, 80%, 10%, 1);
+--emerald-board: hsla(144, 61%, 20%, 1);
 }
 
 /* SCSS HEX */
-$emerald-circuit-trio-circuit-black: #02140bff;
-$emerald-circuit-trio-terminal-root: #052e16ff;
-$emerald-circuit-trio-emerald-board: #14532dff;
+$circuit-black: #02140bff;
+$terminal-root: #052e16ff;
+$emerald-board: #14532dff;
 
 /* SCSS HSL */
-$emerald-circuit-trio-circuit-black: hsla(150, 82%, 4%, 1);
-$emerald-circuit-trio-terminal-root: hsla(145, 80%, 10%, 1);
-$emerald-circuit-trio-emerald-board: hsla(144, 61%, 20%, 1);
+$circuit-black: hsla(150, 82%, 4%, 1);
+$terminal-root: hsla(145, 80%, 10%, 1);
+$emerald-board: hsla(144, 61%, 20%, 1);
 
 /* SCSS RGB */
-$emerald-circuit-trio-circuit-black: rgba(2, 20, 11, 1);
-$emerald-circuit-trio-terminal-root: rgba(5, 46, 22, 1);
-$emerald-circuit-trio-emerald-board: rgba(20, 83, 45, 1);
+$circuit-black: rgba(2, 20, 11, 1);
+$terminal-root: rgba(5, 46, 22, 1);
+$emerald-board: rgba(20, 83, 45, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #02140bff, #052e16ff, #14532dff);
@@ -63,7 +63,7 @@ $gradient-radial: radial-gradient(#02140bff, #052e16ff, #14532dff);
 
 /* SCSS Map */
 $emerald-circuit-trio-map: (
-    "emerald-circuit-trio-circuit-black": #02140bff,
-    "emerald-circuit-trio-terminal-root": #052e16ff,
-    "emerald-circuit-trio-emerald-board": #14532dff
+    "circuit-black": #02140bff,
+    "terminal-root": #052e16ff,
+    "emerald-board": #14532dff
 );

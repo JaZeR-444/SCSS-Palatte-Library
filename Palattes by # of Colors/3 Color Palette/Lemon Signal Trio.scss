@@ -25,30 +25,30 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---lemon-signal-trio-signal-ink: #18140aff;
---lemon-signal-trio-lemon-core: #facc15ff;
---lemon-signal-trio-lemon-flash: #fef08aff;
+--signal-ink: #18140aff;
+--lemon-core: #facc15ff;
+--lemon-flash: #fef08aff;
 
 /* CSS HSL */
---lemon-signal-trio-signal-ink: hsla(43, 41%, 7%, 1);
---lemon-signal-trio-lemon-core: hsla(48, 96%, 53%, 1);
---lemon-signal-trio-lemon-flash: hsla(53, 98%, 77%, 1);
+--signal-ink: hsla(43, 41%, 7%, 1);
+--lemon-core: hsla(48, 96%, 53%, 1);
+--lemon-flash: hsla(53, 98%, 77%, 1);
 }
 
 /* SCSS HEX */
-$lemon-signal-trio-signal-ink: #18140aff;
-$lemon-signal-trio-lemon-core: #facc15ff;
-$lemon-signal-trio-lemon-flash: #fef08aff;
+$signal-ink: #18140aff;
+$lemon-core: #facc15ff;
+$lemon-flash: #fef08aff;
 
 /* SCSS HSL */
-$lemon-signal-trio-signal-ink: hsla(43, 41%, 7%, 1);
-$lemon-signal-trio-lemon-core: hsla(48, 96%, 53%, 1);
-$lemon-signal-trio-lemon-flash: hsla(53, 98%, 77%, 1);
+$signal-ink: hsla(43, 41%, 7%, 1);
+$lemon-core: hsla(48, 96%, 53%, 1);
+$lemon-flash: hsla(53, 98%, 77%, 1);
 
 /* SCSS RGB */
-$lemon-signal-trio-signal-ink: rgba(24, 20, 10, 1);
-$lemon-signal-trio-lemon-core: rgba(250, 204, 21, 1);
-$lemon-signal-trio-lemon-flash: rgba(254, 240, 138, 1);
+$signal-ink: rgba(24, 20, 10, 1);
+$lemon-core: rgba(250, 204, 21, 1);
+$lemon-flash: rgba(254, 240, 138, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #18140aff, #facc15ff, #fef08aff);
@@ -63,7 +63,7 @@ $gradient-radial: radial-gradient(#18140aff, #facc15ff, #fef08aff);
 
 /* SCSS Map */
 $lemon-signal-trio-map: (
-    "lemon-signal-trio-signal-ink": #18140aff,
-    "lemon-signal-trio-lemon-core": #facc15ff,
-    "lemon-signal-trio-lemon-flash": #fef08aff
+    "signal-ink": #18140aff,
+    "lemon-core": #facc15ff,
+    "lemon-flash": #fef08aff
 );

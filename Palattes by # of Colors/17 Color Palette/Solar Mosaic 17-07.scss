@@ -1,6 +1,6 @@
 /*---
 id: solar-mosaic-17-07
-name: Solar Mosaic 17-07
+name: Solar Mosaic Mini
 author: JaZeR-444
 version: 1.0.0
 category: Multi Color Composition
@@ -20,100 +20,100 @@ updated: '2026-07-04'
 
 :root {
 /* CSS HEX */
---tone-01: #194e18ff;
---tone-02: #186251ff;
---tone-03: #155278ff;
---tone-04: #351190ff;
---tone-05: #890baaff;
---tone-06: #993054ff;
---tone-07: #b2512bff;
---tone-08: #ccbf24ff;
---tone-09: #4de51fff;
---tone-10: #27f16eff;
---tone-11: #5fbecdff;
---tone-12: #6678daff;
---tone-13: #ac6ee5ff;
---tone-14: #ef78d3ff;
---tone-15: #f78495ff;
---tone-16: #e4c9aaff;
---tone-17: #e2edb5ff;
+--british-racing-green: #194e18ff;
+--dark-green-blue: #186251ff;
+--deep-sea-blue: #155278ff;
+--indigo: #351190ff;
+--barney: #890baaff;
+--light-burgundy: #993054ff;
+--terra-cotta: #b2512bff;
+--olive-yellow: #ccbf24ff;
+--vibrant-green: #4de51fff;
+--spearmint: #27f16eff;
+--turquoise-blue: #5fbecdff;
+--cornflower-blue: #6678daff;
+--light-purple: #ac6ee5ff;
+--bubblegum-pink: #ef78d3ff;
+--rose-pink: #f78495ff;
+--light-peach: #e4c9aaff;
+--ecru: #e2edb5ff;
 
 /* CSS HSL */
---tone-01: hsla(120, 52%, 20%, 1);
---tone-02: hsla(166, 61%, 24%, 1);
---tone-03: hsla(203, 70%, 28%, 1);
---tone-04: hsla(257, 79%, 32%, 1);
---tone-05: hsla(288, 88%, 36%, 1);
---tone-06: hsla(340, 52%, 39%, 1);
---tone-07: hsla(17, 61%, 43%, 1);
---tone-08: hsla(55, 70%, 47%, 1);
---tone-09: hsla(106, 79%, 51%, 1);
---tone-10: hsla(141, 88%, 55%, 1);
---tone-11: hsla(188, 52%, 59%, 1);
---tone-12: hsla(230, 61%, 63%, 1);
---tone-13: hsla(271, 70%, 66%, 1);
---tone-14: hsla(314, 79%, 70%, 1);
---tone-15: hsla(351, 88%, 74%, 1);
---tone-16: hsla(32, 52%, 78%, 1);
---tone-17: hsla(72, 61%, 82%, 1);
+--british-racing-green: hsla(120, 52%, 20%, 1);
+--dark-green-blue: hsla(166, 61%, 24%, 1);
+--deep-sea-blue: hsla(203, 70%, 28%, 1);
+--indigo: hsla(257, 79%, 32%, 1);
+--barney: hsla(288, 88%, 36%, 1);
+--light-burgundy: hsla(340, 52%, 39%, 1);
+--terra-cotta: hsla(17, 61%, 43%, 1);
+--olive-yellow: hsla(55, 70%, 47%, 1);
+--vibrant-green: hsla(106, 79%, 51%, 1);
+--spearmint: hsla(141, 88%, 55%, 1);
+--turquoise-blue: hsla(188, 52%, 59%, 1);
+--cornflower-blue: hsla(230, 61%, 63%, 1);
+--light-purple: hsla(271, 70%, 66%, 1);
+--bubblegum-pink: hsla(314, 79%, 70%, 1);
+--rose-pink: hsla(351, 88%, 74%, 1);
+--light-peach: hsla(32, 52%, 78%, 1);
+--ecru: hsla(72, 61%, 82%, 1);
 }
 
 /* SCSS HEX */
-$tone-01: #194e18ff;
-$tone-02: #186251ff;
-$tone-03: #155278ff;
-$tone-04: #351190ff;
-$tone-05: #890baaff;
-$tone-06: #993054ff;
-$tone-07: #b2512bff;
-$tone-08: #ccbf24ff;
-$tone-09: #4de51fff;
-$tone-10: #27f16eff;
-$tone-11: #5fbecdff;
-$tone-12: #6678daff;
-$tone-13: #ac6ee5ff;
-$tone-14: #ef78d3ff;
-$tone-15: #f78495ff;
-$tone-16: #e4c9aaff;
-$tone-17: #e2edb5ff;
+$british-racing-green: #194e18ff;
+$dark-green-blue: #186251ff;
+$deep-sea-blue: #155278ff;
+$indigo: #351190ff;
+$barney: #890baaff;
+$light-burgundy: #993054ff;
+$terra-cotta: #b2512bff;
+$olive-yellow: #ccbf24ff;
+$vibrant-green: #4de51fff;
+$spearmint: #27f16eff;
+$turquoise-blue: #5fbecdff;
+$cornflower-blue: #6678daff;
+$light-purple: #ac6ee5ff;
+$bubblegum-pink: #ef78d3ff;
+$rose-pink: #f78495ff;
+$light-peach: #e4c9aaff;
+$ecru: #e2edb5ff;
 
 /* SCSS HSL */
-$tone-01: hsla(120, 52%, 20%, 1);
-$tone-02: hsla(166, 61%, 24%, 1);
-$tone-03: hsla(203, 70%, 28%, 1);
-$tone-04: hsla(257, 79%, 32%, 1);
-$tone-05: hsla(288, 88%, 36%, 1);
-$tone-06: hsla(340, 52%, 39%, 1);
-$tone-07: hsla(17, 61%, 43%, 1);
-$tone-08: hsla(55, 70%, 47%, 1);
-$tone-09: hsla(106, 79%, 51%, 1);
-$tone-10: hsla(141, 88%, 55%, 1);
-$tone-11: hsla(188, 52%, 59%, 1);
-$tone-12: hsla(230, 61%, 63%, 1);
-$tone-13: hsla(271, 70%, 66%, 1);
-$tone-14: hsla(314, 79%, 70%, 1);
-$tone-15: hsla(351, 88%, 74%, 1);
-$tone-16: hsla(32, 52%, 78%, 1);
-$tone-17: hsla(72, 61%, 82%, 1);
+$british-racing-green: hsla(120, 52%, 20%, 1);
+$dark-green-blue: hsla(166, 61%, 24%, 1);
+$deep-sea-blue: hsla(203, 70%, 28%, 1);
+$indigo: hsla(257, 79%, 32%, 1);
+$barney: hsla(288, 88%, 36%, 1);
+$light-burgundy: hsla(340, 52%, 39%, 1);
+$terra-cotta: hsla(17, 61%, 43%, 1);
+$olive-yellow: hsla(55, 70%, 47%, 1);
+$vibrant-green: hsla(106, 79%, 51%, 1);
+$spearmint: hsla(141, 88%, 55%, 1);
+$turquoise-blue: hsla(188, 52%, 59%, 1);
+$cornflower-blue: hsla(230, 61%, 63%, 1);
+$light-purple: hsla(271, 70%, 66%, 1);
+$bubblegum-pink: hsla(314, 79%, 70%, 1);
+$rose-pink: hsla(351, 88%, 74%, 1);
+$light-peach: hsla(32, 52%, 78%, 1);
+$ecru: hsla(72, 61%, 82%, 1);
 
 /* SCSS RGB */
-$tone-01: rgba(25, 78, 24, 1);
-$tone-02: rgba(24, 98, 81, 1);
-$tone-03: rgba(21, 82, 120, 1);
-$tone-04: rgba(53, 17, 144, 1);
-$tone-05: rgba(137, 11, 170, 1);
-$tone-06: rgba(153, 48, 84, 1);
-$tone-07: rgba(178, 81, 43, 1);
-$tone-08: rgba(204, 191, 36, 1);
-$tone-09: rgba(77, 229, 31, 1);
-$tone-10: rgba(39, 241, 110, 1);
-$tone-11: rgba(95, 190, 205, 1);
-$tone-12: rgba(102, 120, 218, 1);
-$tone-13: rgba(172, 110, 229, 1);
-$tone-14: rgba(239, 120, 211, 1);
-$tone-15: rgba(247, 132, 149, 1);
-$tone-16: rgba(228, 201, 170, 1);
-$tone-17: rgba(226, 237, 181, 1);
+$british-racing-green: rgba(25, 78, 24, 1);
+$dark-green-blue: rgba(24, 98, 81, 1);
+$deep-sea-blue: rgba(21, 82, 120, 1);
+$indigo: rgba(53, 17, 144, 1);
+$barney: rgba(137, 11, 170, 1);
+$light-burgundy: rgba(153, 48, 84, 1);
+$terra-cotta: rgba(178, 81, 43, 1);
+$olive-yellow: rgba(204, 191, 36, 1);
+$vibrant-green: rgba(77, 229, 31, 1);
+$spearmint: rgba(39, 241, 110, 1);
+$turquoise-blue: rgba(95, 190, 205, 1);
+$cornflower-blue: rgba(102, 120, 218, 1);
+$light-purple: rgba(172, 110, 229, 1);
+$bubblegum-pink: rgba(239, 120, 211, 1);
+$rose-pink: rgba(247, 132, 149, 1);
+$light-peach: rgba(228, 201, 170, 1);
+$ecru: rgba(226, 237, 181, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #194e18ff, #186251ff, #155278ff, #351190ff, #890baaff, #993054ff, #b2512bff, #ccbf24ff, #4de51fff, #27f16eff, #5fbecdff, #6678daff, #ac6ee5ff, #ef78d3ff, #f78495ff, #e4c9aaff, #e2edb5ff);
@@ -128,21 +128,21 @@ $gradient-radial: radial-gradient(#194e18ff, #186251ff, #155278ff, #351190ff, #8
 
 /* SCSS Map */
 $solar-mosaic-17-07-map: (
-    "tone-01": #194e18ff,
-    "tone-02": #186251ff,
-    "tone-03": #155278ff,
-    "tone-04": #351190ff,
-    "tone-05": #890baaff,
-    "tone-06": #993054ff,
-    "tone-07": #b2512bff,
-    "tone-08": #ccbf24ff,
-    "tone-09": #4de51fff,
-    "tone-10": #27f16eff,
-    "tone-11": #5fbecdff,
-    "tone-12": #6678daff,
-    "tone-13": #ac6ee5ff,
-    "tone-14": #ef78d3ff,
-    "tone-15": #f78495ff,
-    "tone-16": #e4c9aaff,
-    "tone-17": #e2edb5ff
+    "british-racing-green": #194e18ff,
+    "dark-green-blue": #186251ff,
+    "deep-sea-blue": #155278ff,
+    "indigo": #351190ff,
+    "barney": #890baaff,
+    "light-burgundy": #993054ff,
+    "terra-cotta": #b2512bff,
+    "olive-yellow": #ccbf24ff,
+    "vibrant-green": #4de51fff,
+    "spearmint": #27f16eff,
+    "turquoise-blue": #5fbecdff,
+    "cornflower-blue": #6678daff,
+    "light-purple": #ac6ee5ff,
+    "bubblegum-pink": #ef78d3ff,
+    "rose-pink": #f78495ff,
+    "light-peach": #e4c9aaff,
+    "ecru": #e2edb5ff
 );

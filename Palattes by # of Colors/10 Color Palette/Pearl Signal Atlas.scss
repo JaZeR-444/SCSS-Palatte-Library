@@ -25,65 +25,65 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---pearl-signal-atlas-signal-ink: #1f2937ff;
---pearl-signal-atlas-caption-gray: #6b7280ff;
---pearl-signal-atlas-soft-border: #d1d5dbff;
---pearl-signal-atlas-pearl-surface: #f3f4f6ff;
---pearl-signal-atlas-cloud-panel: #f9fafbff;
---pearl-signal-atlas-pearl-white: #ffffffff;
---pearl-signal-atlas-sky-accent: #bae6fdff;
---pearl-signal-atlas-action-blue: #2563ebff;
---pearl-signal-atlas-focus-indigo: #4f46e5ff;
---pearl-signal-atlas-deep-navy: #0f172aff;
+--signal-ink: #1f2937ff;
+--caption-gray: #6b7280ff;
+--soft-border: #d1d5dbff;
+--pearl-surface: #f3f4f6ff;
+--cloud-panel: #f9fafbff;
+--pearl-white: #ffffffff;
+--sky-accent: #bae6fdff;
+--action-blue: #2563ebff;
+--focus-indigo: #4f46e5ff;
+--deep-navy: #0f172aff;
 
 /* CSS HSL */
---pearl-signal-atlas-signal-ink: hsla(215, 28%, 17%, 1);
---pearl-signal-atlas-caption-gray: hsla(220, 9%, 46%, 1);
---pearl-signal-atlas-soft-border: hsla(216, 12%, 84%, 1);
---pearl-signal-atlas-pearl-surface: hsla(220, 14%, 96%, 1);
---pearl-signal-atlas-cloud-panel: hsla(210, 20%, 98%, 1);
---pearl-signal-atlas-pearl-white: hsla(0, 0%, 100%, 1);
---pearl-signal-atlas-sky-accent: hsla(201, 94%, 86%, 1);
---pearl-signal-atlas-action-blue: hsla(221, 83%, 53%, 1);
---pearl-signal-atlas-focus-indigo: hsla(243, 75%, 59%, 1);
---pearl-signal-atlas-deep-navy: hsla(222, 47%, 11%, 1);
+--signal-ink: hsla(215, 28%, 17%, 1);
+--caption-gray: hsla(220, 9%, 46%, 1);
+--soft-border: hsla(216, 12%, 84%, 1);
+--pearl-surface: hsla(220, 14%, 96%, 1);
+--cloud-panel: hsla(210, 20%, 98%, 1);
+--pearl-white: hsla(0, 0%, 100%, 1);
+--sky-accent: hsla(201, 94%, 86%, 1);
+--action-blue: hsla(221, 83%, 53%, 1);
+--focus-indigo: hsla(243, 75%, 59%, 1);
+--deep-navy: hsla(222, 47%, 11%, 1);
 }
 
 /* SCSS HEX */
-$pearl-signal-atlas-signal-ink: #1f2937ff;
-$pearl-signal-atlas-caption-gray: #6b7280ff;
-$pearl-signal-atlas-soft-border: #d1d5dbff;
-$pearl-signal-atlas-pearl-surface: #f3f4f6ff;
-$pearl-signal-atlas-cloud-panel: #f9fafbff;
-$pearl-signal-atlas-pearl-white: #ffffffff;
-$pearl-signal-atlas-sky-accent: #bae6fdff;
-$pearl-signal-atlas-action-blue: #2563ebff;
-$pearl-signal-atlas-focus-indigo: #4f46e5ff;
-$pearl-signal-atlas-deep-navy: #0f172aff;
+$signal-ink: #1f2937ff;
+$caption-gray: #6b7280ff;
+$soft-border: #d1d5dbff;
+$pearl-surface: #f3f4f6ff;
+$cloud-panel: #f9fafbff;
+$pearl-white: #ffffffff;
+$sky-accent: #bae6fdff;
+$action-blue: #2563ebff;
+$focus-indigo: #4f46e5ff;
+$deep-navy: #0f172aff;
 
 /* SCSS HSL */
-$pearl-signal-atlas-signal-ink: hsla(215, 28%, 17%, 1);
-$pearl-signal-atlas-caption-gray: hsla(220, 9%, 46%, 1);
-$pearl-signal-atlas-soft-border: hsla(216, 12%, 84%, 1);
-$pearl-signal-atlas-pearl-surface: hsla(220, 14%, 96%, 1);
-$pearl-signal-atlas-cloud-panel: hsla(210, 20%, 98%, 1);
-$pearl-signal-atlas-pearl-white: hsla(0, 0%, 100%, 1);
-$pearl-signal-atlas-sky-accent: hsla(201, 94%, 86%, 1);
-$pearl-signal-atlas-action-blue: hsla(221, 83%, 53%, 1);
-$pearl-signal-atlas-focus-indigo: hsla(243, 75%, 59%, 1);
-$pearl-signal-atlas-deep-navy: hsla(222, 47%, 11%, 1);
+$signal-ink: hsla(215, 28%, 17%, 1);
+$caption-gray: hsla(220, 9%, 46%, 1);
+$soft-border: hsla(216, 12%, 84%, 1);
+$pearl-surface: hsla(220, 14%, 96%, 1);
+$cloud-panel: hsla(210, 20%, 98%, 1);
+$pearl-white: hsla(0, 0%, 100%, 1);
+$sky-accent: hsla(201, 94%, 86%, 1);
+$action-blue: hsla(221, 83%, 53%, 1);
+$focus-indigo: hsla(243, 75%, 59%, 1);
+$deep-navy: hsla(222, 47%, 11%, 1);
 
 /* SCSS RGB */
-$pearl-signal-atlas-signal-ink: rgba(31, 41, 55, 1);
-$pearl-signal-atlas-caption-gray: rgba(107, 114, 128, 1);
-$pearl-signal-atlas-soft-border: rgba(209, 213, 219, 1);
-$pearl-signal-atlas-pearl-surface: rgba(243, 244, 246, 1);
-$pearl-signal-atlas-cloud-panel: rgba(249, 250, 251, 1);
-$pearl-signal-atlas-pearl-white: rgba(255, 255, 255, 1);
-$pearl-signal-atlas-sky-accent: rgba(186, 230, 253, 1);
-$pearl-signal-atlas-action-blue: rgba(37, 99, 235, 1);
-$pearl-signal-atlas-focus-indigo: rgba(79, 70, 229, 1);
-$pearl-signal-atlas-deep-navy: rgba(15, 23, 42, 1);
+$signal-ink: rgba(31, 41, 55, 1);
+$caption-gray: rgba(107, 114, 128, 1);
+$soft-border: rgba(209, 213, 219, 1);
+$pearl-surface: rgba(243, 244, 246, 1);
+$cloud-panel: rgba(249, 250, 251, 1);
+$pearl-white: rgba(255, 255, 255, 1);
+$sky-accent: rgba(186, 230, 253, 1);
+$action-blue: rgba(37, 99, 235, 1);
+$focus-indigo: rgba(79, 70, 229, 1);
+$deep-navy: rgba(15, 23, 42, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1f2937ff, #6b7280ff, #d1d5dbff, #f3f4f6ff, #f9fafbff, #ffffffff, #bae6fdff, #2563ebff, #4f46e5ff, #0f172aff);
@@ -98,14 +98,14 @@ $gradient-radial: radial-gradient(#1f2937ff, #6b7280ff, #d1d5dbff, #f3f4f6ff, #f
 
 /* SCSS Map */
 $pearl-signal-atlas-map: (
-    "pearl-signal-atlas-signal-ink": #1f2937ff,
-    "pearl-signal-atlas-caption-gray": #6b7280ff,
-    "pearl-signal-atlas-soft-border": #d1d5dbff,
-    "pearl-signal-atlas-pearl-surface": #f3f4f6ff,
-    "pearl-signal-atlas-cloud-panel": #f9fafbff,
-    "pearl-signal-atlas-pearl-white": #ffffffff,
-    "pearl-signal-atlas-sky-accent": #bae6fdff,
-    "pearl-signal-atlas-action-blue": #2563ebff,
-    "pearl-signal-atlas-focus-indigo": #4f46e5ff,
-    "pearl-signal-atlas-deep-navy": #0f172aff
+    "signal-ink": #1f2937ff,
+    "caption-gray": #6b7280ff,
+    "soft-border": #d1d5dbff,
+    "pearl-surface": #f3f4f6ff,
+    "cloud-panel": #f9fafbff,
+    "pearl-white": #ffffffff,
+    "sky-accent": #bae6fdff,
+    "action-blue": #2563ebff,
+    "focus-indigo": #4f46e5ff,
+    "deep-navy": #0f172aff
 );

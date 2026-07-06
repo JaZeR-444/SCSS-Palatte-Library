@@ -1,6 +1,6 @@
 /*---
 id: amber-span-11-14
-name: Amber Span 11-14
+name: Amber Span Micro
 author: JaZeR-444
 version: 1.0.0
 category: Singular Hue Span
@@ -20,70 +20,70 @@ updated: '2026-07-04'
 
 :root {
 /* CSS HEX */
---span-01: #1a140fff;
---span-02: #3b2919ff;
---span-03: #5e3e21ff;
---span-04: #874e23ff;
---span-05: #b9691bff;
---span-06: #f27c0dff;
---span-07: #df894bff;
---span-08: #e1a374ff;
---span-09: #ddbea2ff;
---span-10: #e4d3c6ff;
---span-11: #f0eae5ff;
+--almost-black: #1a140fff;
+--dark-brown: #3b2919ff;
+--mud-brown: #5e3e21ff;
+--milk-chocolate: #874e23ff;
+--orangey-brown: #b9691bff;
+--pumpkin-orange: #f27c0dff;
+--dull-orange: #df894bff;
+--peach: #e1a374ff;
+--putty: #ddbea2ff;
+--very-light-pink: #e4d3c6ff;
+--white: #f0eae5ff;
 
 /* CSS HSL */
---span-01: hsla(28, 28%, 8%, 1);
---span-02: hsla(28, 40%, 16%, 1);
---span-03: hsla(28, 48%, 25%, 1);
---span-04: hsla(28, 59%, 33%, 1);
---span-05: hsla(28, 75%, 42%, 1);
---span-06: hsla(28, 90%, 50%, 1);
---span-07: hsla(28, 70%, 58%, 1);
---span-08: hsla(28, 64%, 67%, 1);
---span-09: hsla(28, 47%, 75%, 1);
---span-10: hsla(28, 35%, 84%, 1);
---span-11: hsla(28, 28%, 92%, 1);
+--almost-black: hsla(28, 28%, 8%, 1);
+--dark-brown: hsla(28, 40%, 16%, 1);
+--mud-brown: hsla(28, 48%, 25%, 1);
+--milk-chocolate: hsla(28, 59%, 33%, 1);
+--orangey-brown: hsla(28, 75%, 42%, 1);
+--pumpkin-orange: hsla(28, 90%, 50%, 1);
+--dull-orange: hsla(28, 70%, 58%, 1);
+--peach: hsla(28, 64%, 67%, 1);
+--putty: hsla(28, 47%, 75%, 1);
+--very-light-pink: hsla(28, 35%, 84%, 1);
+--white: hsla(28, 28%, 92%, 1);
 }
 
 /* SCSS HEX */
-$span-01: #1a140fff;
-$span-02: #3b2919ff;
-$span-03: #5e3e21ff;
-$span-04: #874e23ff;
-$span-05: #b9691bff;
-$span-06: #f27c0dff;
-$span-07: #df894bff;
-$span-08: #e1a374ff;
-$span-09: #ddbea2ff;
-$span-10: #e4d3c6ff;
-$span-11: #f0eae5ff;
+$almost-black: #1a140fff;
+$dark-brown: #3b2919ff;
+$mud-brown: #5e3e21ff;
+$milk-chocolate: #874e23ff;
+$orangey-brown: #b9691bff;
+$pumpkin-orange: #f27c0dff;
+$dull-orange: #df894bff;
+$peach: #e1a374ff;
+$putty: #ddbea2ff;
+$very-light-pink: #e4d3c6ff;
+$white: #f0eae5ff;
 
 /* SCSS HSL */
-$span-01: hsla(28, 28%, 8%, 1);
-$span-02: hsla(28, 40%, 16%, 1);
-$span-03: hsla(28, 48%, 25%, 1);
-$span-04: hsla(28, 59%, 33%, 1);
-$span-05: hsla(28, 75%, 42%, 1);
-$span-06: hsla(28, 90%, 50%, 1);
-$span-07: hsla(28, 70%, 58%, 1);
-$span-08: hsla(28, 64%, 67%, 1);
-$span-09: hsla(28, 47%, 75%, 1);
-$span-10: hsla(28, 35%, 84%, 1);
-$span-11: hsla(28, 28%, 92%, 1);
+$almost-black: hsla(28, 28%, 8%, 1);
+$dark-brown: hsla(28, 40%, 16%, 1);
+$mud-brown: hsla(28, 48%, 25%, 1);
+$milk-chocolate: hsla(28, 59%, 33%, 1);
+$orangey-brown: hsla(28, 75%, 42%, 1);
+$pumpkin-orange: hsla(28, 90%, 50%, 1);
+$dull-orange: hsla(28, 70%, 58%, 1);
+$peach: hsla(28, 64%, 67%, 1);
+$putty: hsla(28, 47%, 75%, 1);
+$very-light-pink: hsla(28, 35%, 84%, 1);
+$white: hsla(28, 28%, 92%, 1);
 
 /* SCSS RGB */
-$span-01: rgba(26, 20, 15, 1);
-$span-02: rgba(59, 41, 25, 1);
-$span-03: rgba(94, 62, 33, 1);
-$span-04: rgba(135, 78, 35, 1);
-$span-05: rgba(185, 105, 27, 1);
-$span-06: rgba(242, 124, 13, 1);
-$span-07: rgba(223, 137, 75, 1);
-$span-08: rgba(225, 163, 116, 1);
-$span-09: rgba(221, 190, 162, 1);
-$span-10: rgba(228, 211, 198, 1);
-$span-11: rgba(240, 234, 229, 1);
+$almost-black: rgba(26, 20, 15, 1);
+$dark-brown: rgba(59, 41, 25, 1);
+$mud-brown: rgba(94, 62, 33, 1);
+$milk-chocolate: rgba(135, 78, 35, 1);
+$orangey-brown: rgba(185, 105, 27, 1);
+$pumpkin-orange: rgba(242, 124, 13, 1);
+$dull-orange: rgba(223, 137, 75, 1);
+$peach: rgba(225, 163, 116, 1);
+$putty: rgba(221, 190, 162, 1);
+$very-light-pink: rgba(228, 211, 198, 1);
+$white: rgba(240, 234, 229, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1a140fff, #3b2919ff, #5e3e21ff, #874e23ff, #b9691bff, #f27c0dff, #df894bff, #e1a374ff, #ddbea2ff, #e4d3c6ff, #f0eae5ff);
@@ -98,15 +98,15 @@ $gradient-radial: radial-gradient(#1a140fff, #3b2919ff, #5e3e21ff, #874e23ff, #b
 
 /* SCSS Map */
 $amber-span-11-14-map: (
-    "span-01": #1a140fff,
-    "span-02": #3b2919ff,
-    "span-03": #5e3e21ff,
-    "span-04": #874e23ff,
-    "span-05": #b9691bff,
-    "span-06": #f27c0dff,
-    "span-07": #df894bff,
-    "span-08": #e1a374ff,
-    "span-09": #ddbea2ff,
-    "span-10": #e4d3c6ff,
-    "span-11": #f0eae5ff
+    "almost-black": #1a140fff,
+    "dark-brown": #3b2919ff,
+    "mud-brown": #5e3e21ff,
+    "milk-chocolate": #874e23ff,
+    "orangey-brown": #b9691bff,
+    "pumpkin-orange": #f27c0dff,
+    "dull-orange": #df894bff,
+    "peach": #e1a374ff,
+    "putty": #ddbea2ff,
+    "very-light-pink": #e4d3c6ff,
+    "white": #f0eae5ff
 );

@@ -25,35 +25,35 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---tangerine-signal-quartet-signal-night: #231006ff;
---tangerine-signal-quartet-burnt-routing: #7c2d12ff;
---tangerine-signal-quartet-tangerine-core: #ea580cff;
---tangerine-signal-quartet-citrus-flash: #fb923cff;
+--signal-night: #231006ff;
+--burnt-routing: #7c2d12ff;
+--tangerine-core: #ea580cff;
+--citrus-flash: #fb923cff;
 
 /* CSS HSL */
---tangerine-signal-quartet-signal-night: hsla(21, 71%, 8%, 1);
---tangerine-signal-quartet-burnt-routing: hsla(15, 75%, 28%, 1);
---tangerine-signal-quartet-tangerine-core: hsla(21, 90%, 48%, 1);
---tangerine-signal-quartet-citrus-flash: hsla(27, 96%, 61%, 1);
+--signal-night: hsla(21, 71%, 8%, 1);
+--burnt-routing: hsla(15, 75%, 28%, 1);
+--tangerine-core: hsla(21, 90%, 48%, 1);
+--citrus-flash: hsla(27, 96%, 61%, 1);
 }
 
 /* SCSS HEX */
-$tangerine-signal-quartet-signal-night: #231006ff;
-$tangerine-signal-quartet-burnt-routing: #7c2d12ff;
-$tangerine-signal-quartet-tangerine-core: #ea580cff;
-$tangerine-signal-quartet-citrus-flash: #fb923cff;
+$signal-night: #231006ff;
+$burnt-routing: #7c2d12ff;
+$tangerine-core: #ea580cff;
+$citrus-flash: #fb923cff;
 
 /* SCSS HSL */
-$tangerine-signal-quartet-signal-night: hsla(21, 71%, 8%, 1);
-$tangerine-signal-quartet-burnt-routing: hsla(15, 75%, 28%, 1);
-$tangerine-signal-quartet-tangerine-core: hsla(21, 90%, 48%, 1);
-$tangerine-signal-quartet-citrus-flash: hsla(27, 96%, 61%, 1);
+$signal-night: hsla(21, 71%, 8%, 1);
+$burnt-routing: hsla(15, 75%, 28%, 1);
+$tangerine-core: hsla(21, 90%, 48%, 1);
+$citrus-flash: hsla(27, 96%, 61%, 1);
 
 /* SCSS RGB */
-$tangerine-signal-quartet-signal-night: rgba(35, 16, 6, 1);
-$tangerine-signal-quartet-burnt-routing: rgba(124, 45, 18, 1);
-$tangerine-signal-quartet-tangerine-core: rgba(234, 88, 12, 1);
-$tangerine-signal-quartet-citrus-flash: rgba(251, 146, 60, 1);
+$signal-night: rgba(35, 16, 6, 1);
+$burnt-routing: rgba(124, 45, 18, 1);
+$tangerine-core: rgba(234, 88, 12, 1);
+$citrus-flash: rgba(251, 146, 60, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #231006ff, #7c2d12ff, #ea580cff, #fb923cff);
@@ -68,8 +68,8 @@ $gradient-radial: radial-gradient(#231006ff, #7c2d12ff, #ea580cff, #fb923cff);
 
 /* SCSS Map */
 $tangerine-signal-quartet-map: (
-    "tangerine-signal-quartet-signal-night": #231006ff,
-    "tangerine-signal-quartet-burnt-routing": #7c2d12ff,
-    "tangerine-signal-quartet-tangerine-core": #ea580cff,
-    "tangerine-signal-quartet-citrus-flash": #fb923cff
+    "signal-night": #231006ff,
+    "burnt-routing": #7c2d12ff,
+    "tangerine-core": #ea580cff,
+    "citrus-flash": #fb923cff
 );

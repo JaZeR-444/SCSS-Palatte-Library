@@ -25,65 +25,65 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---moss-garden-atlas-garden-night: #111d13ff;
---moss-garden-atlas-moss-depth: #1b4332ff;
---moss-garden-atlas-leaf-shadow: #2d6a4fff;
---moss-garden-atlas-herb-green: #40916cff;
---moss-garden-atlas-garden-green: #52b788ff;
---moss-garden-atlas-fresh-leaf: #74c69dff;
---moss-garden-atlas-sage-mist: #95d5b2ff;
---moss-garden-atlas-sprout-line: #b7e4c7ff;
---moss-garden-atlas-mint-panel: #d8f3dcff;
---moss-garden-atlas-garden-white: #f8fff4ff;
+--garden-night: #111d13ff;
+--moss-depth: #1b4332ff;
+--leaf-shadow: #2d6a4fff;
+--herb-green: #40916cff;
+--garden-green: #52b788ff;
+--fresh-leaf: #74c69dff;
+--sage-mist: #95d5b2ff;
+--sprout-line: #b7e4c7ff;
+--mint-panel: #d8f3dcff;
+--garden-white: #f8fff4ff;
 
 /* CSS HSL */
---moss-garden-atlas-garden-night: hsla(130, 26%, 9%, 1);
---moss-garden-atlas-moss-depth: hsla(155, 43%, 18%, 1);
---moss-garden-atlas-leaf-shadow: hsla(153, 40%, 30%, 1);
---moss-garden-atlas-herb-green: hsla(153, 39%, 41%, 1);
---moss-garden-atlas-garden-green: hsla(152, 41%, 52%, 1);
---moss-garden-atlas-fresh-leaf: hsla(150, 42%, 62%, 1);
---moss-garden-atlas-sage-mist: hsla(147, 43%, 71%, 1);
---moss-garden-atlas-sprout-line: hsla(141, 45%, 81%, 1);
---moss-garden-atlas-mint-panel: hsla(129, 53%, 90%, 1);
---moss-garden-atlas-garden-white: hsla(98, 100%, 98%, 1);
+--garden-night: hsla(130, 26%, 9%, 1);
+--moss-depth: hsla(155, 43%, 18%, 1);
+--leaf-shadow: hsla(153, 40%, 30%, 1);
+--herb-green: hsla(153, 39%, 41%, 1);
+--garden-green: hsla(152, 41%, 52%, 1);
+--fresh-leaf: hsla(150, 42%, 62%, 1);
+--sage-mist: hsla(147, 43%, 71%, 1);
+--sprout-line: hsla(141, 45%, 81%, 1);
+--mint-panel: hsla(129, 53%, 90%, 1);
+--garden-white: hsla(98, 100%, 98%, 1);
 }
 
 /* SCSS HEX */
-$moss-garden-atlas-garden-night: #111d13ff;
-$moss-garden-atlas-moss-depth: #1b4332ff;
-$moss-garden-atlas-leaf-shadow: #2d6a4fff;
-$moss-garden-atlas-herb-green: #40916cff;
-$moss-garden-atlas-garden-green: #52b788ff;
-$moss-garden-atlas-fresh-leaf: #74c69dff;
-$moss-garden-atlas-sage-mist: #95d5b2ff;
-$moss-garden-atlas-sprout-line: #b7e4c7ff;
-$moss-garden-atlas-mint-panel: #d8f3dcff;
-$moss-garden-atlas-garden-white: #f8fff4ff;
+$garden-night: #111d13ff;
+$moss-depth: #1b4332ff;
+$leaf-shadow: #2d6a4fff;
+$herb-green: #40916cff;
+$garden-green: #52b788ff;
+$fresh-leaf: #74c69dff;
+$sage-mist: #95d5b2ff;
+$sprout-line: #b7e4c7ff;
+$mint-panel: #d8f3dcff;
+$garden-white: #f8fff4ff;
 
 /* SCSS HSL */
-$moss-garden-atlas-garden-night: hsla(130, 26%, 9%, 1);
-$moss-garden-atlas-moss-depth: hsla(155, 43%, 18%, 1);
-$moss-garden-atlas-leaf-shadow: hsla(153, 40%, 30%, 1);
-$moss-garden-atlas-herb-green: hsla(153, 39%, 41%, 1);
-$moss-garden-atlas-garden-green: hsla(152, 41%, 52%, 1);
-$moss-garden-atlas-fresh-leaf: hsla(150, 42%, 62%, 1);
-$moss-garden-atlas-sage-mist: hsla(147, 43%, 71%, 1);
-$moss-garden-atlas-sprout-line: hsla(141, 45%, 81%, 1);
-$moss-garden-atlas-mint-panel: hsla(129, 53%, 90%, 1);
-$moss-garden-atlas-garden-white: hsla(98, 100%, 98%, 1);
+$garden-night: hsla(130, 26%, 9%, 1);
+$moss-depth: hsla(155, 43%, 18%, 1);
+$leaf-shadow: hsla(153, 40%, 30%, 1);
+$herb-green: hsla(153, 39%, 41%, 1);
+$garden-green: hsla(152, 41%, 52%, 1);
+$fresh-leaf: hsla(150, 42%, 62%, 1);
+$sage-mist: hsla(147, 43%, 71%, 1);
+$sprout-line: hsla(141, 45%, 81%, 1);
+$mint-panel: hsla(129, 53%, 90%, 1);
+$garden-white: hsla(98, 100%, 98%, 1);
 
 /* SCSS RGB */
-$moss-garden-atlas-garden-night: rgba(17, 29, 19, 1);
-$moss-garden-atlas-moss-depth: rgba(27, 67, 50, 1);
-$moss-garden-atlas-leaf-shadow: rgba(45, 106, 79, 1);
-$moss-garden-atlas-herb-green: rgba(64, 145, 108, 1);
-$moss-garden-atlas-garden-green: rgba(82, 183, 136, 1);
-$moss-garden-atlas-fresh-leaf: rgba(116, 198, 157, 1);
-$moss-garden-atlas-sage-mist: rgba(149, 213, 178, 1);
-$moss-garden-atlas-sprout-line: rgba(183, 228, 199, 1);
-$moss-garden-atlas-mint-panel: rgba(216, 243, 220, 1);
-$moss-garden-atlas-garden-white: rgba(248, 255, 244, 1);
+$garden-night: rgba(17, 29, 19, 1);
+$moss-depth: rgba(27, 67, 50, 1);
+$leaf-shadow: rgba(45, 106, 79, 1);
+$herb-green: rgba(64, 145, 108, 1);
+$garden-green: rgba(82, 183, 136, 1);
+$fresh-leaf: rgba(116, 198, 157, 1);
+$sage-mist: rgba(149, 213, 178, 1);
+$sprout-line: rgba(183, 228, 199, 1);
+$mint-panel: rgba(216, 243, 220, 1);
+$garden-white: rgba(248, 255, 244, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #111d13ff, #1b4332ff, #2d6a4fff, #40916cff, #52b788ff, #74c69dff, #95d5b2ff, #b7e4c7ff, #d8f3dcff, #f8fff4ff);
@@ -98,14 +98,14 @@ $gradient-radial: radial-gradient(#111d13ff, #1b4332ff, #2d6a4fff, #40916cff, #5
 
 /* SCSS Map */
 $moss-garden-atlas-map: (
-    "moss-garden-atlas-garden-night": #111d13ff,
-    "moss-garden-atlas-moss-depth": #1b4332ff,
-    "moss-garden-atlas-leaf-shadow": #2d6a4fff,
-    "moss-garden-atlas-herb-green": #40916cff,
-    "moss-garden-atlas-garden-green": #52b788ff,
-    "moss-garden-atlas-fresh-leaf": #74c69dff,
-    "moss-garden-atlas-sage-mist": #95d5b2ff,
-    "moss-garden-atlas-sprout-line": #b7e4c7ff,
-    "moss-garden-atlas-mint-panel": #d8f3dcff,
-    "moss-garden-atlas-garden-white": #f8fff4ff
+    "garden-night": #111d13ff,
+    "moss-depth": #1b4332ff,
+    "leaf-shadow": #2d6a4fff,
+    "herb-green": #40916cff,
+    "garden-green": #52b788ff,
+    "fresh-leaf": #74c69dff,
+    "sage-mist": #95d5b2ff,
+    "sprout-line": #b7e4c7ff,
+    "mint-panel": #d8f3dcff,
+    "garden-white": #f8fff4ff
 );

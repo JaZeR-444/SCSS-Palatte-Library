@@ -25,35 +25,35 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---obsidian-circuit-quartet-circuit-void: #030304ff;
---obsidian-circuit-quartet-obsidian-root: #0a0a0fff;
---obsidian-circuit-quartet-carbon-board: #12121aff;
---obsidian-circuit-quartet-graphite-panel: #1f2937ff;
+--circuit-void: #030304ff;
+--obsidian-root: #0a0a0fff;
+--carbon-board: #12121aff;
+--graphite-panel: #1f2937ff;
 
 /* CSS HSL */
---obsidian-circuit-quartet-circuit-void: hsla(240, 14%, 1%, 1);
---obsidian-circuit-quartet-obsidian-root: hsla(240, 20%, 5%, 1);
---obsidian-circuit-quartet-carbon-board: hsla(240, 18%, 9%, 1);
---obsidian-circuit-quartet-graphite-panel: hsla(215, 28%, 17%, 1);
+--circuit-void: hsla(240, 14%, 1%, 1);
+--obsidian-root: hsla(240, 20%, 5%, 1);
+--carbon-board: hsla(240, 18%, 9%, 1);
+--graphite-panel: hsla(215, 28%, 17%, 1);
 }
 
 /* SCSS HEX */
-$obsidian-circuit-quartet-circuit-void: #030304ff;
-$obsidian-circuit-quartet-obsidian-root: #0a0a0fff;
-$obsidian-circuit-quartet-carbon-board: #12121aff;
-$obsidian-circuit-quartet-graphite-panel: #1f2937ff;
+$circuit-void: #030304ff;
+$obsidian-root: #0a0a0fff;
+$carbon-board: #12121aff;
+$graphite-panel: #1f2937ff;
 
 /* SCSS HSL */
-$obsidian-circuit-quartet-circuit-void: hsla(240, 14%, 1%, 1);
-$obsidian-circuit-quartet-obsidian-root: hsla(240, 20%, 5%, 1);
-$obsidian-circuit-quartet-carbon-board: hsla(240, 18%, 9%, 1);
-$obsidian-circuit-quartet-graphite-panel: hsla(215, 28%, 17%, 1);
+$circuit-void: hsla(240, 14%, 1%, 1);
+$obsidian-root: hsla(240, 20%, 5%, 1);
+$carbon-board: hsla(240, 18%, 9%, 1);
+$graphite-panel: hsla(215, 28%, 17%, 1);
 
 /* SCSS RGB */
-$obsidian-circuit-quartet-circuit-void: rgba(3, 3, 4, 1);
-$obsidian-circuit-quartet-obsidian-root: rgba(10, 10, 15, 1);
-$obsidian-circuit-quartet-carbon-board: rgba(18, 18, 26, 1);
-$obsidian-circuit-quartet-graphite-panel: rgba(31, 41, 55, 1);
+$circuit-void: rgba(3, 3, 4, 1);
+$obsidian-root: rgba(10, 10, 15, 1);
+$carbon-board: rgba(18, 18, 26, 1);
+$graphite-panel: rgba(31, 41, 55, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #030304ff, #0a0a0fff, #12121aff, #1f2937ff);
@@ -68,8 +68,8 @@ $gradient-radial: radial-gradient(#030304ff, #0a0a0fff, #12121aff, #1f2937ff);
 
 /* SCSS Map */
 $obsidian-circuit-quartet-map: (
-    "obsidian-circuit-quartet-circuit-void": #030304ff,
-    "obsidian-circuit-quartet-obsidian-root": #0a0a0fff,
-    "obsidian-circuit-quartet-carbon-board": #12121aff,
-    "obsidian-circuit-quartet-graphite-panel": #1f2937ff
+    "circuit-void": #030304ff,
+    "obsidian-root": #0a0a0fff,
+    "carbon-board": #12121aff,
+    "graphite-panel": #1f2937ff
 );

@@ -25,55 +25,55 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---void-chrome-system-void-black: #000000ff;
---void-chrome-system-chrome-night: #070b12ff;
---void-chrome-system-deep-frame: #111827ff;
---void-chrome-system-metal-panel: #1f2937ff;
---void-chrome-system-blue-graphite: #334155ff;
---void-chrome-system-chrome-muted: #64748bff;
---void-chrome-system-cool-smoke: #94a3b8ff;
---void-chrome-system-edge-light: #cbd5e1ff;
+--void-black: #000000ff;
+--chrome-night: #070b12ff;
+--deep-frame: #111827ff;
+--metal-panel: #1f2937ff;
+--blue-graphite: #334155ff;
+--chrome-muted: #64748bff;
+--cool-smoke: #94a3b8ff;
+--edge-light: #cbd5e1ff;
 
 /* CSS HSL */
---void-chrome-system-void-black: hsla(0, 0%, 0%, 1);
---void-chrome-system-chrome-night: hsla(218, 44%, 5%, 1);
---void-chrome-system-deep-frame: hsla(221, 39%, 11%, 1);
---void-chrome-system-metal-panel: hsla(215, 28%, 17%, 1);
---void-chrome-system-blue-graphite: hsla(215, 25%, 27%, 1);
---void-chrome-system-chrome-muted: hsla(215, 16%, 47%, 1);
---void-chrome-system-cool-smoke: hsla(215, 20%, 65%, 1);
---void-chrome-system-edge-light: hsla(213, 27%, 84%, 1);
+--void-black: hsla(0, 0%, 0%, 1);
+--chrome-night: hsla(218, 44%, 5%, 1);
+--deep-frame: hsla(221, 39%, 11%, 1);
+--metal-panel: hsla(215, 28%, 17%, 1);
+--blue-graphite: hsla(215, 25%, 27%, 1);
+--chrome-muted: hsla(215, 16%, 47%, 1);
+--cool-smoke: hsla(215, 20%, 65%, 1);
+--edge-light: hsla(213, 27%, 84%, 1);
 }
 
 /* SCSS HEX */
-$void-chrome-system-void-black: #000000ff;
-$void-chrome-system-chrome-night: #070b12ff;
-$void-chrome-system-deep-frame: #111827ff;
-$void-chrome-system-metal-panel: #1f2937ff;
-$void-chrome-system-blue-graphite: #334155ff;
-$void-chrome-system-chrome-muted: #64748bff;
-$void-chrome-system-cool-smoke: #94a3b8ff;
-$void-chrome-system-edge-light: #cbd5e1ff;
+$void-black: #000000ff;
+$chrome-night: #070b12ff;
+$deep-frame: #111827ff;
+$metal-panel: #1f2937ff;
+$blue-graphite: #334155ff;
+$chrome-muted: #64748bff;
+$cool-smoke: #94a3b8ff;
+$edge-light: #cbd5e1ff;
 
 /* SCSS HSL */
-$void-chrome-system-void-black: hsla(0, 0%, 0%, 1);
-$void-chrome-system-chrome-night: hsla(218, 44%, 5%, 1);
-$void-chrome-system-deep-frame: hsla(221, 39%, 11%, 1);
-$void-chrome-system-metal-panel: hsla(215, 28%, 17%, 1);
-$void-chrome-system-blue-graphite: hsla(215, 25%, 27%, 1);
-$void-chrome-system-chrome-muted: hsla(215, 16%, 47%, 1);
-$void-chrome-system-cool-smoke: hsla(215, 20%, 65%, 1);
-$void-chrome-system-edge-light: hsla(213, 27%, 84%, 1);
+$void-black: hsla(0, 0%, 0%, 1);
+$chrome-night: hsla(218, 44%, 5%, 1);
+$deep-frame: hsla(221, 39%, 11%, 1);
+$metal-panel: hsla(215, 28%, 17%, 1);
+$blue-graphite: hsla(215, 25%, 27%, 1);
+$chrome-muted: hsla(215, 16%, 47%, 1);
+$cool-smoke: hsla(215, 20%, 65%, 1);
+$edge-light: hsla(213, 27%, 84%, 1);
 
 /* SCSS RGB */
-$void-chrome-system-void-black: rgba(0, 0, 0, 1);
-$void-chrome-system-chrome-night: rgba(7, 11, 18, 1);
-$void-chrome-system-deep-frame: rgba(17, 24, 39, 1);
-$void-chrome-system-metal-panel: rgba(31, 41, 55, 1);
-$void-chrome-system-blue-graphite: rgba(51, 65, 85, 1);
-$void-chrome-system-chrome-muted: rgba(100, 116, 139, 1);
-$void-chrome-system-cool-smoke: rgba(148, 163, 184, 1);
-$void-chrome-system-edge-light: rgba(203, 213, 225, 1);
+$void-black: rgba(0, 0, 0, 1);
+$chrome-night: rgba(7, 11, 18, 1);
+$deep-frame: rgba(17, 24, 39, 1);
+$metal-panel: rgba(31, 41, 55, 1);
+$blue-graphite: rgba(51, 65, 85, 1);
+$chrome-muted: rgba(100, 116, 139, 1);
+$cool-smoke: rgba(148, 163, 184, 1);
+$edge-light: rgba(203, 213, 225, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #000000ff, #070b12ff, #111827ff, #1f2937ff, #334155ff, #64748bff, #94a3b8ff, #cbd5e1ff);
@@ -88,12 +88,12 @@ $gradient-radial: radial-gradient(#000000ff, #070b12ff, #111827ff, #1f2937ff, #3
 
 /* SCSS Map */
 $void-chrome-system-map: (
-    "void-chrome-system-void-black": #000000ff,
-    "void-chrome-system-chrome-night": #070b12ff,
-    "void-chrome-system-deep-frame": #111827ff,
-    "void-chrome-system-metal-panel": #1f2937ff,
-    "void-chrome-system-blue-graphite": #334155ff,
-    "void-chrome-system-chrome-muted": #64748bff,
-    "void-chrome-system-cool-smoke": #94a3b8ff,
-    "void-chrome-system-edge-light": #cbd5e1ff
+    "void-black": #000000ff,
+    "chrome-night": #070b12ff,
+    "deep-frame": #111827ff,
+    "metal-panel": #1f2937ff,
+    "blue-graphite": #334155ff,
+    "chrome-muted": #64748bff,
+    "cool-smoke": #94a3b8ff,
+    "edge-light": #cbd5e1ff
 );

@@ -25,65 +25,65 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---alpine-mist-atlas-mountain-shadow: #0f172aff;
---alpine-mist-atlas-stone-ridge: #64748bff;
---alpine-mist-atlas-frost-edge: #cbd5e1ff;
---alpine-mist-atlas-alpine-mist: #e2e8f0ff;
---alpine-mist-atlas-snow-field: #f8fafcff;
---alpine-mist-atlas-glacier-white: #ffffffff;
---alpine-mist-atlas-ice-blue: #dbeafeff;
---alpine-mist-atlas-sky-reflection: #bfdbfeff;
---alpine-mist-atlas-alpine-blue: #3b82f6ff;
---alpine-mist-atlas-evergreen-ink: #064e3bff;
+--mountain-shadow: #0f172aff;
+--stone-ridge: #64748bff;
+--frost-edge: #cbd5e1ff;
+--alpine-mist: #e2e8f0ff;
+--snow-field: #f8fafcff;
+--glacier-white: #ffffffff;
+--ice-blue: #dbeafeff;
+--sky-reflection: #bfdbfeff;
+--alpine-blue: #3b82f6ff;
+--evergreen-ink: #064e3bff;
 
 /* CSS HSL */
---alpine-mist-atlas-mountain-shadow: hsla(222, 47%, 11%, 1);
---alpine-mist-atlas-stone-ridge: hsla(215, 16%, 47%, 1);
---alpine-mist-atlas-frost-edge: hsla(213, 27%, 84%, 1);
---alpine-mist-atlas-alpine-mist: hsla(214, 32%, 91%, 1);
---alpine-mist-atlas-snow-field: hsla(210, 40%, 98%, 1);
---alpine-mist-atlas-glacier-white: hsla(0, 0%, 100%, 1);
---alpine-mist-atlas-ice-blue: hsla(214, 95%, 93%, 1);
---alpine-mist-atlas-sky-reflection: hsla(213, 97%, 87%, 1);
---alpine-mist-atlas-alpine-blue: hsla(217, 91%, 60%, 1);
---alpine-mist-atlas-evergreen-ink: hsla(164, 86%, 16%, 1);
+--mountain-shadow: hsla(222, 47%, 11%, 1);
+--stone-ridge: hsla(215, 16%, 47%, 1);
+--frost-edge: hsla(213, 27%, 84%, 1);
+--alpine-mist: hsla(214, 32%, 91%, 1);
+--snow-field: hsla(210, 40%, 98%, 1);
+--glacier-white: hsla(0, 0%, 100%, 1);
+--ice-blue: hsla(214, 95%, 93%, 1);
+--sky-reflection: hsla(213, 97%, 87%, 1);
+--alpine-blue: hsla(217, 91%, 60%, 1);
+--evergreen-ink: hsla(164, 86%, 16%, 1);
 }
 
 /* SCSS HEX */
-$alpine-mist-atlas-mountain-shadow: #0f172aff;
-$alpine-mist-atlas-stone-ridge: #64748bff;
-$alpine-mist-atlas-frost-edge: #cbd5e1ff;
-$alpine-mist-atlas-alpine-mist: #e2e8f0ff;
-$alpine-mist-atlas-snow-field: #f8fafcff;
-$alpine-mist-atlas-glacier-white: #ffffffff;
-$alpine-mist-atlas-ice-blue: #dbeafeff;
-$alpine-mist-atlas-sky-reflection: #bfdbfeff;
-$alpine-mist-atlas-alpine-blue: #3b82f6ff;
-$alpine-mist-atlas-evergreen-ink: #064e3bff;
+$mountain-shadow: #0f172aff;
+$stone-ridge: #64748bff;
+$frost-edge: #cbd5e1ff;
+$alpine-mist: #e2e8f0ff;
+$snow-field: #f8fafcff;
+$glacier-white: #ffffffff;
+$ice-blue: #dbeafeff;
+$sky-reflection: #bfdbfeff;
+$alpine-blue: #3b82f6ff;
+$evergreen-ink: #064e3bff;
 
 /* SCSS HSL */
-$alpine-mist-atlas-mountain-shadow: hsla(222, 47%, 11%, 1);
-$alpine-mist-atlas-stone-ridge: hsla(215, 16%, 47%, 1);
-$alpine-mist-atlas-frost-edge: hsla(213, 27%, 84%, 1);
-$alpine-mist-atlas-alpine-mist: hsla(214, 32%, 91%, 1);
-$alpine-mist-atlas-snow-field: hsla(210, 40%, 98%, 1);
-$alpine-mist-atlas-glacier-white: hsla(0, 0%, 100%, 1);
-$alpine-mist-atlas-ice-blue: hsla(214, 95%, 93%, 1);
-$alpine-mist-atlas-sky-reflection: hsla(213, 97%, 87%, 1);
-$alpine-mist-atlas-alpine-blue: hsla(217, 91%, 60%, 1);
-$alpine-mist-atlas-evergreen-ink: hsla(164, 86%, 16%, 1);
+$mountain-shadow: hsla(222, 47%, 11%, 1);
+$stone-ridge: hsla(215, 16%, 47%, 1);
+$frost-edge: hsla(213, 27%, 84%, 1);
+$alpine-mist: hsla(214, 32%, 91%, 1);
+$snow-field: hsla(210, 40%, 98%, 1);
+$glacier-white: hsla(0, 0%, 100%, 1);
+$ice-blue: hsla(214, 95%, 93%, 1);
+$sky-reflection: hsla(213, 97%, 87%, 1);
+$alpine-blue: hsla(217, 91%, 60%, 1);
+$evergreen-ink: hsla(164, 86%, 16%, 1);
 
 /* SCSS RGB */
-$alpine-mist-atlas-mountain-shadow: rgba(15, 23, 42, 1);
-$alpine-mist-atlas-stone-ridge: rgba(100, 116, 139, 1);
-$alpine-mist-atlas-frost-edge: rgba(203, 213, 225, 1);
-$alpine-mist-atlas-alpine-mist: rgba(226, 232, 240, 1);
-$alpine-mist-atlas-snow-field: rgba(248, 250, 252, 1);
-$alpine-mist-atlas-glacier-white: rgba(255, 255, 255, 1);
-$alpine-mist-atlas-ice-blue: rgba(219, 234, 254, 1);
-$alpine-mist-atlas-sky-reflection: rgba(191, 219, 254, 1);
-$alpine-mist-atlas-alpine-blue: rgba(59, 130, 246, 1);
-$alpine-mist-atlas-evergreen-ink: rgba(6, 78, 59, 1);
+$mountain-shadow: rgba(15, 23, 42, 1);
+$stone-ridge: rgba(100, 116, 139, 1);
+$frost-edge: rgba(203, 213, 225, 1);
+$alpine-mist: rgba(226, 232, 240, 1);
+$snow-field: rgba(248, 250, 252, 1);
+$glacier-white: rgba(255, 255, 255, 1);
+$ice-blue: rgba(219, 234, 254, 1);
+$sky-reflection: rgba(191, 219, 254, 1);
+$alpine-blue: rgba(59, 130, 246, 1);
+$evergreen-ink: rgba(6, 78, 59, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #0f172aff, #64748bff, #cbd5e1ff, #e2e8f0ff, #f8fafcff, #ffffffff, #dbeafeff, #bfdbfeff, #3b82f6ff, #064e3bff);
@@ -98,14 +98,14 @@ $gradient-radial: radial-gradient(#0f172aff, #64748bff, #cbd5e1ff, #e2e8f0ff, #f
 
 /* SCSS Map */
 $alpine-mist-atlas-map: (
-    "alpine-mist-atlas-mountain-shadow": #0f172aff,
-    "alpine-mist-atlas-stone-ridge": #64748bff,
-    "alpine-mist-atlas-frost-edge": #cbd5e1ff,
-    "alpine-mist-atlas-alpine-mist": #e2e8f0ff,
-    "alpine-mist-atlas-snow-field": #f8fafcff,
-    "alpine-mist-atlas-glacier-white": #ffffffff,
-    "alpine-mist-atlas-ice-blue": #dbeafeff,
-    "alpine-mist-atlas-sky-reflection": #bfdbfeff,
-    "alpine-mist-atlas-alpine-blue": #3b82f6ff,
-    "alpine-mist-atlas-evergreen-ink": #064e3bff
+    "mountain-shadow": #0f172aff,
+    "stone-ridge": #64748bff,
+    "frost-edge": #cbd5e1ff,
+    "alpine-mist": #e2e8f0ff,
+    "snow-field": #f8fafcff,
+    "glacier-white": #ffffffff,
+    "ice-blue": #dbeafeff,
+    "sky-reflection": #bfdbfeff,
+    "alpine-blue": #3b82f6ff,
+    "evergreen-ink": #064e3bff
 );

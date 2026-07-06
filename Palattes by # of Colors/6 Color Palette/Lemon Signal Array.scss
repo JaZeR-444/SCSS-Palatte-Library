@@ -25,45 +25,45 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---lemon-signal-array-signal-ink: #18140aff;
---lemon-signal-array-golden-route: #854d0eff;
---lemon-signal-array-active-gold: #ca8a04ff;
---lemon-signal-array-lemon-core: #facc15ff;
---lemon-signal-array-lemon-flash: #fef08aff;
---lemon-signal-array-cream-notice: #fefce8ff;
+--signal-ink: #18140aff;
+--golden-route: #854d0eff;
+--active-gold: #ca8a04ff;
+--lemon-core: #facc15ff;
+--lemon-flash: #fef08aff;
+--cream-notice: #fefce8ff;
 
 /* CSS HSL */
---lemon-signal-array-signal-ink: hsla(43, 41%, 7%, 1);
---lemon-signal-array-golden-route: hsla(32, 81%, 29%, 1);
---lemon-signal-array-active-gold: hsla(41, 96%, 40%, 1);
---lemon-signal-array-lemon-core: hsla(48, 96%, 53%, 1);
---lemon-signal-array-lemon-flash: hsla(53, 98%, 77%, 1);
---lemon-signal-array-cream-notice: hsla(55, 92%, 95%, 1);
+--signal-ink: hsla(43, 41%, 7%, 1);
+--golden-route: hsla(32, 81%, 29%, 1);
+--active-gold: hsla(41, 96%, 40%, 1);
+--lemon-core: hsla(48, 96%, 53%, 1);
+--lemon-flash: hsla(53, 98%, 77%, 1);
+--cream-notice: hsla(55, 92%, 95%, 1);
 }
 
 /* SCSS HEX */
-$lemon-signal-array-signal-ink: #18140aff;
-$lemon-signal-array-golden-route: #854d0eff;
-$lemon-signal-array-active-gold: #ca8a04ff;
-$lemon-signal-array-lemon-core: #facc15ff;
-$lemon-signal-array-lemon-flash: #fef08aff;
-$lemon-signal-array-cream-notice: #fefce8ff;
+$signal-ink: #18140aff;
+$golden-route: #854d0eff;
+$active-gold: #ca8a04ff;
+$lemon-core: #facc15ff;
+$lemon-flash: #fef08aff;
+$cream-notice: #fefce8ff;
 
 /* SCSS HSL */
-$lemon-signal-array-signal-ink: hsla(43, 41%, 7%, 1);
-$lemon-signal-array-golden-route: hsla(32, 81%, 29%, 1);
-$lemon-signal-array-active-gold: hsla(41, 96%, 40%, 1);
-$lemon-signal-array-lemon-core: hsla(48, 96%, 53%, 1);
-$lemon-signal-array-lemon-flash: hsla(53, 98%, 77%, 1);
-$lemon-signal-array-cream-notice: hsla(55, 92%, 95%, 1);
+$signal-ink: hsla(43, 41%, 7%, 1);
+$golden-route: hsla(32, 81%, 29%, 1);
+$active-gold: hsla(41, 96%, 40%, 1);
+$lemon-core: hsla(48, 96%, 53%, 1);
+$lemon-flash: hsla(53, 98%, 77%, 1);
+$cream-notice: hsla(55, 92%, 95%, 1);
 
 /* SCSS RGB */
-$lemon-signal-array-signal-ink: rgba(24, 20, 10, 1);
-$lemon-signal-array-golden-route: rgba(133, 77, 14, 1);
-$lemon-signal-array-active-gold: rgba(202, 138, 4, 1);
-$lemon-signal-array-lemon-core: rgba(250, 204, 21, 1);
-$lemon-signal-array-lemon-flash: rgba(254, 240, 138, 1);
-$lemon-signal-array-cream-notice: rgba(254, 252, 232, 1);
+$signal-ink: rgba(24, 20, 10, 1);
+$golden-route: rgba(133, 77, 14, 1);
+$active-gold: rgba(202, 138, 4, 1);
+$lemon-core: rgba(250, 204, 21, 1);
+$lemon-flash: rgba(254, 240, 138, 1);
+$cream-notice: rgba(254, 252, 232, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #18140aff, #854d0eff, #ca8a04ff, #facc15ff, #fef08aff, #fefce8ff);
@@ -78,10 +78,10 @@ $gradient-radial: radial-gradient(#18140aff, #854d0eff, #ca8a04ff, #facc15ff, #f
 
 /* SCSS Map */
 $lemon-signal-array-map: (
-    "lemon-signal-array-signal-ink": #18140aff,
-    "lemon-signal-array-golden-route": #854d0eff,
-    "lemon-signal-array-active-gold": #ca8a04ff,
-    "lemon-signal-array-lemon-core": #facc15ff,
-    "lemon-signal-array-lemon-flash": #fef08aff,
-    "lemon-signal-array-cream-notice": #fefce8ff
+    "signal-ink": #18140aff,
+    "golden-route": #854d0eff,
+    "active-gold": #ca8a04ff,
+    "lemon-core": #facc15ff,
+    "lemon-flash": #fef08aff,
+    "cream-notice": #fefce8ff
 );

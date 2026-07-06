@@ -25,30 +25,30 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---nebula-orchid-trio-nebula-black: #080012ff;
---nebula-orchid-trio-orbit-plum: #18002fff;
---nebula-orchid-trio-deep-orchid: #2f075eff;
+--nebula-black: #080012ff;
+--orbit-plum: #18002fff;
+--deep-orchid: #2f075eff;
 
 /* CSS HSL */
---nebula-orchid-trio-nebula-black: hsla(267, 100%, 4%, 1);
---nebula-orchid-trio-orbit-plum: hsla(271, 100%, 9%, 1);
---nebula-orchid-trio-deep-orchid: hsla(268, 86%, 20%, 1);
+--nebula-black: hsla(267, 100%, 4%, 1);
+--orbit-plum: hsla(271, 100%, 9%, 1);
+--deep-orchid: hsla(268, 86%, 20%, 1);
 }
 
 /* SCSS HEX */
-$nebula-orchid-trio-nebula-black: #080012ff;
-$nebula-orchid-trio-orbit-plum: #18002fff;
-$nebula-orchid-trio-deep-orchid: #2f075eff;
+$nebula-black: #080012ff;
+$orbit-plum: #18002fff;
+$deep-orchid: #2f075eff;
 
 /* SCSS HSL */
-$nebula-orchid-trio-nebula-black: hsla(267, 100%, 4%, 1);
-$nebula-orchid-trio-orbit-plum: hsla(271, 100%, 9%, 1);
-$nebula-orchid-trio-deep-orchid: hsla(268, 86%, 20%, 1);
+$nebula-black: hsla(267, 100%, 4%, 1);
+$orbit-plum: hsla(271, 100%, 9%, 1);
+$deep-orchid: hsla(268, 86%, 20%, 1);
 
 /* SCSS RGB */
-$nebula-orchid-trio-nebula-black: rgba(8, 0, 18, 1);
-$nebula-orchid-trio-orbit-plum: rgba(24, 0, 47, 1);
-$nebula-orchid-trio-deep-orchid: rgba(47, 7, 94, 1);
+$nebula-black: rgba(8, 0, 18, 1);
+$orbit-plum: rgba(24, 0, 47, 1);
+$deep-orchid: rgba(47, 7, 94, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #080012ff, #18002fff, #2f075eff);
@@ -63,7 +63,7 @@ $gradient-radial: radial-gradient(#080012ff, #18002fff, #2f075eff);
 
 /* SCSS Map */
 $nebula-orchid-trio-map: (
-    "nebula-orchid-trio-nebula-black": #080012ff,
-    "nebula-orchid-trio-orbit-plum": #18002fff,
-    "nebula-orchid-trio-deep-orchid": #2f075eff
+    "nebula-black": #080012ff,
+    "orbit-plum": #18002fff,
+    "deep-orchid": #2f075eff
 );

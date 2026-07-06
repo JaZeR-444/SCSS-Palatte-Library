@@ -25,65 +25,65 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---ivory-commerce-atlas-ink-receipt: #1f2937ff;
---ivory-commerce-atlas-action-charcoal: #292524ff;
---ivory-commerce-atlas-label-stone: #78716cff;
---ivory-commerce-atlas-warm-border: #d6d3d1ff;
---ivory-commerce-atlas-ivory-shelf: #f5f5f4ff;
---ivory-commerce-atlas-checkout-ivory: #fafaf9ff;
---ivory-commerce-atlas-receipt-white: #ffffffff;
---ivory-commerce-atlas-premium-gold: #d4af37ff;
---ivory-commerce-atlas-soft-champagne: #fef3c7ff;
---ivory-commerce-atlas-deep-espresso: #1c1206ff;
+--ink-receipt: #1f2937ff;
+--action-charcoal: #292524ff;
+--label-stone: #78716cff;
+--warm-border: #d6d3d1ff;
+--ivory-shelf: #f5f5f4ff;
+--checkout-ivory: #fafaf9ff;
+--receipt-white: #ffffffff;
+--premium-gold: #d4af37ff;
+--soft-champagne: #fef3c7ff;
+--deep-espresso: #1c1206ff;
 
 /* CSS HSL */
---ivory-commerce-atlas-ink-receipt: hsla(215, 28%, 17%, 1);
---ivory-commerce-atlas-action-charcoal: hsla(12, 6%, 15%, 1);
---ivory-commerce-atlas-label-stone: hsla(25, 5%, 45%, 1);
---ivory-commerce-atlas-warm-border: hsla(24, 6%, 83%, 1);
---ivory-commerce-atlas-ivory-shelf: hsla(60, 5%, 96%, 1);
---ivory-commerce-atlas-checkout-ivory: hsla(60, 9%, 98%, 1);
---ivory-commerce-atlas-receipt-white: hsla(0, 0%, 100%, 1);
---ivory-commerce-atlas-premium-gold: hsla(46, 65%, 52%, 1);
---ivory-commerce-atlas-soft-champagne: hsla(48, 96%, 89%, 1);
---ivory-commerce-atlas-deep-espresso: hsla(33, 65%, 7%, 1);
+--ink-receipt: hsla(215, 28%, 17%, 1);
+--action-charcoal: hsla(12, 6%, 15%, 1);
+--label-stone: hsla(25, 5%, 45%, 1);
+--warm-border: hsla(24, 6%, 83%, 1);
+--ivory-shelf: hsla(60, 5%, 96%, 1);
+--checkout-ivory: hsla(60, 9%, 98%, 1);
+--receipt-white: hsla(0, 0%, 100%, 1);
+--premium-gold: hsla(46, 65%, 52%, 1);
+--soft-champagne: hsla(48, 96%, 89%, 1);
+--deep-espresso: hsla(33, 65%, 7%, 1);
 }
 
 /* SCSS HEX */
-$ivory-commerce-atlas-ink-receipt: #1f2937ff;
-$ivory-commerce-atlas-action-charcoal: #292524ff;
-$ivory-commerce-atlas-label-stone: #78716cff;
-$ivory-commerce-atlas-warm-border: #d6d3d1ff;
-$ivory-commerce-atlas-ivory-shelf: #f5f5f4ff;
-$ivory-commerce-atlas-checkout-ivory: #fafaf9ff;
-$ivory-commerce-atlas-receipt-white: #ffffffff;
-$ivory-commerce-atlas-premium-gold: #d4af37ff;
-$ivory-commerce-atlas-soft-champagne: #fef3c7ff;
-$ivory-commerce-atlas-deep-espresso: #1c1206ff;
+$ink-receipt: #1f2937ff;
+$action-charcoal: #292524ff;
+$label-stone: #78716cff;
+$warm-border: #d6d3d1ff;
+$ivory-shelf: #f5f5f4ff;
+$checkout-ivory: #fafaf9ff;
+$receipt-white: #ffffffff;
+$premium-gold: #d4af37ff;
+$soft-champagne: #fef3c7ff;
+$deep-espresso: #1c1206ff;
 
 /* SCSS HSL */
-$ivory-commerce-atlas-ink-receipt: hsla(215, 28%, 17%, 1);
-$ivory-commerce-atlas-action-charcoal: hsla(12, 6%, 15%, 1);
-$ivory-commerce-atlas-label-stone: hsla(25, 5%, 45%, 1);
-$ivory-commerce-atlas-warm-border: hsla(24, 6%, 83%, 1);
-$ivory-commerce-atlas-ivory-shelf: hsla(60, 5%, 96%, 1);
-$ivory-commerce-atlas-checkout-ivory: hsla(60, 9%, 98%, 1);
-$ivory-commerce-atlas-receipt-white: hsla(0, 0%, 100%, 1);
-$ivory-commerce-atlas-premium-gold: hsla(46, 65%, 52%, 1);
-$ivory-commerce-atlas-soft-champagne: hsla(48, 96%, 89%, 1);
-$ivory-commerce-atlas-deep-espresso: hsla(33, 65%, 7%, 1);
+$ink-receipt: hsla(215, 28%, 17%, 1);
+$action-charcoal: hsla(12, 6%, 15%, 1);
+$label-stone: hsla(25, 5%, 45%, 1);
+$warm-border: hsla(24, 6%, 83%, 1);
+$ivory-shelf: hsla(60, 5%, 96%, 1);
+$checkout-ivory: hsla(60, 9%, 98%, 1);
+$receipt-white: hsla(0, 0%, 100%, 1);
+$premium-gold: hsla(46, 65%, 52%, 1);
+$soft-champagne: hsla(48, 96%, 89%, 1);
+$deep-espresso: hsla(33, 65%, 7%, 1);
 
 /* SCSS RGB */
-$ivory-commerce-atlas-ink-receipt: rgba(31, 41, 55, 1);
-$ivory-commerce-atlas-action-charcoal: rgba(41, 37, 36, 1);
-$ivory-commerce-atlas-label-stone: rgba(120, 113, 108, 1);
-$ivory-commerce-atlas-warm-border: rgba(214, 211, 209, 1);
-$ivory-commerce-atlas-ivory-shelf: rgba(245, 245, 244, 1);
-$ivory-commerce-atlas-checkout-ivory: rgba(250, 250, 249, 1);
-$ivory-commerce-atlas-receipt-white: rgba(255, 255, 255, 1);
-$ivory-commerce-atlas-premium-gold: rgba(212, 175, 55, 1);
-$ivory-commerce-atlas-soft-champagne: rgba(254, 243, 199, 1);
-$ivory-commerce-atlas-deep-espresso: rgba(28, 18, 6, 1);
+$ink-receipt: rgba(31, 41, 55, 1);
+$action-charcoal: rgba(41, 37, 36, 1);
+$label-stone: rgba(120, 113, 108, 1);
+$warm-border: rgba(214, 211, 209, 1);
+$ivory-shelf: rgba(245, 245, 244, 1);
+$checkout-ivory: rgba(250, 250, 249, 1);
+$receipt-white: rgba(255, 255, 255, 1);
+$premium-gold: rgba(212, 175, 55, 1);
+$soft-champagne: rgba(254, 243, 199, 1);
+$deep-espresso: rgba(28, 18, 6, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1f2937ff, #292524ff, #78716cff, #d6d3d1ff, #f5f5f4ff, #fafaf9ff, #ffffffff, #d4af37ff, #fef3c7ff, #1c1206ff);
@@ -98,14 +98,14 @@ $gradient-radial: radial-gradient(#1f2937ff, #292524ff, #78716cff, #d6d3d1ff, #f
 
 /* SCSS Map */
 $ivory-commerce-atlas-map: (
-    "ivory-commerce-atlas-ink-receipt": #1f2937ff,
-    "ivory-commerce-atlas-action-charcoal": #292524ff,
-    "ivory-commerce-atlas-label-stone": #78716cff,
-    "ivory-commerce-atlas-warm-border": #d6d3d1ff,
-    "ivory-commerce-atlas-ivory-shelf": #f5f5f4ff,
-    "ivory-commerce-atlas-checkout-ivory": #fafaf9ff,
-    "ivory-commerce-atlas-receipt-white": #ffffffff,
-    "ivory-commerce-atlas-premium-gold": #d4af37ff,
-    "ivory-commerce-atlas-soft-champagne": #fef3c7ff,
-    "ivory-commerce-atlas-deep-espresso": #1c1206ff
+    "ink-receipt": #1f2937ff,
+    "action-charcoal": #292524ff,
+    "label-stone": #78716cff,
+    "warm-border": #d6d3d1ff,
+    "ivory-shelf": #f5f5f4ff,
+    "checkout-ivory": #fafaf9ff,
+    "receipt-white": #ffffffff,
+    "premium-gold": #d4af37ff,
+    "soft-champagne": #fef3c7ff,
+    "deep-espresso": #1c1206ff
 );

@@ -25,50 +25,50 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---solar-circuit-spectrum-console-black: #171104ff;
---solar-circuit-spectrum-trace-brown: #422006ff;
---solar-circuit-spectrum-circuit-gold: #a16207ff;
---solar-circuit-spectrum-warning-amber: #ca8a04ff;
---solar-circuit-spectrum-signal-yellow: #eab308ff;
---solar-circuit-spectrum-pulse-lime: #fde047ff;
---solar-circuit-spectrum-terminal-cream: #fef9c3ff;
+--console-black: #171104ff;
+--trace-brown: #422006ff;
+--circuit-gold: #a16207ff;
+--warning-amber: #ca8a04ff;
+--signal-yellow: #eab308ff;
+--pulse-lime: #fde047ff;
+--terminal-cream: #fef9c3ff;
 
 /* CSS HSL */
---solar-circuit-spectrum-console-black: hsla(41, 70%, 5%, 1);
---solar-circuit-spectrum-trace-brown: hsla(26, 83%, 14%, 1);
---solar-circuit-spectrum-circuit-gold: hsla(35, 92%, 33%, 1);
---solar-circuit-spectrum-warning-amber: hsla(41, 96%, 40%, 1);
---solar-circuit-spectrum-signal-yellow: hsla(45, 93%, 47%, 1);
---solar-circuit-spectrum-pulse-lime: hsla(50, 98%, 64%, 1);
---solar-circuit-spectrum-terminal-cream: hsla(55, 97%, 88%, 1);
+--console-black: hsla(41, 70%, 5%, 1);
+--trace-brown: hsla(26, 83%, 14%, 1);
+--circuit-gold: hsla(35, 92%, 33%, 1);
+--warning-amber: hsla(41, 96%, 40%, 1);
+--signal-yellow: hsla(45, 93%, 47%, 1);
+--pulse-lime: hsla(50, 98%, 64%, 1);
+--terminal-cream: hsla(55, 97%, 88%, 1);
 }
 
 /* SCSS HEX */
-$solar-circuit-spectrum-console-black: #171104ff;
-$solar-circuit-spectrum-trace-brown: #422006ff;
-$solar-circuit-spectrum-circuit-gold: #a16207ff;
-$solar-circuit-spectrum-warning-amber: #ca8a04ff;
-$solar-circuit-spectrum-signal-yellow: #eab308ff;
-$solar-circuit-spectrum-pulse-lime: #fde047ff;
-$solar-circuit-spectrum-terminal-cream: #fef9c3ff;
+$console-black: #171104ff;
+$trace-brown: #422006ff;
+$circuit-gold: #a16207ff;
+$warning-amber: #ca8a04ff;
+$signal-yellow: #eab308ff;
+$pulse-lime: #fde047ff;
+$terminal-cream: #fef9c3ff;
 
 /* SCSS HSL */
-$solar-circuit-spectrum-console-black: hsla(41, 70%, 5%, 1);
-$solar-circuit-spectrum-trace-brown: hsla(26, 83%, 14%, 1);
-$solar-circuit-spectrum-circuit-gold: hsla(35, 92%, 33%, 1);
-$solar-circuit-spectrum-warning-amber: hsla(41, 96%, 40%, 1);
-$solar-circuit-spectrum-signal-yellow: hsla(45, 93%, 47%, 1);
-$solar-circuit-spectrum-pulse-lime: hsla(50, 98%, 64%, 1);
-$solar-circuit-spectrum-terminal-cream: hsla(55, 97%, 88%, 1);
+$console-black: hsla(41, 70%, 5%, 1);
+$trace-brown: hsla(26, 83%, 14%, 1);
+$circuit-gold: hsla(35, 92%, 33%, 1);
+$warning-amber: hsla(41, 96%, 40%, 1);
+$signal-yellow: hsla(45, 93%, 47%, 1);
+$pulse-lime: hsla(50, 98%, 64%, 1);
+$terminal-cream: hsla(55, 97%, 88%, 1);
 
 /* SCSS RGB */
-$solar-circuit-spectrum-console-black: rgba(23, 17, 4, 1);
-$solar-circuit-spectrum-trace-brown: rgba(66, 32, 6, 1);
-$solar-circuit-spectrum-circuit-gold: rgba(161, 98, 7, 1);
-$solar-circuit-spectrum-warning-amber: rgba(202, 138, 4, 1);
-$solar-circuit-spectrum-signal-yellow: rgba(234, 179, 8, 1);
-$solar-circuit-spectrum-pulse-lime: rgba(253, 224, 71, 1);
-$solar-circuit-spectrum-terminal-cream: rgba(254, 249, 195, 1);
+$console-black: rgba(23, 17, 4, 1);
+$trace-brown: rgba(66, 32, 6, 1);
+$circuit-gold: rgba(161, 98, 7, 1);
+$warning-amber: rgba(202, 138, 4, 1);
+$signal-yellow: rgba(234, 179, 8, 1);
+$pulse-lime: rgba(253, 224, 71, 1);
+$terminal-cream: rgba(254, 249, 195, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #171104ff, #422006ff, #a16207ff, #ca8a04ff, #eab308ff, #fde047ff, #fef9c3ff);
@@ -83,11 +83,11 @@ $gradient-radial: radial-gradient(#171104ff, #422006ff, #a16207ff, #ca8a04ff, #e
 
 /* SCSS Map */
 $solar-circuit-spectrum-map: (
-    "solar-circuit-spectrum-console-black": #171104ff,
-    "solar-circuit-spectrum-trace-brown": #422006ff,
-    "solar-circuit-spectrum-circuit-gold": #a16207ff,
-    "solar-circuit-spectrum-warning-amber": #ca8a04ff,
-    "solar-circuit-spectrum-signal-yellow": #eab308ff,
-    "solar-circuit-spectrum-pulse-lime": #fde047ff,
-    "solar-circuit-spectrum-terminal-cream": #fef9c3ff
+    "console-black": #171104ff,
+    "trace-brown": #422006ff,
+    "circuit-gold": #a16207ff,
+    "warning-amber": #ca8a04ff,
+    "signal-yellow": #eab308ff,
+    "pulse-lime": #fde047ff,
+    "terminal-cream": #fef9c3ff
 );

@@ -25,60 +25,60 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---solar-circuit-matrix-console-black: #171104ff;
---solar-circuit-matrix-trace-brown: #422006ff;
---solar-circuit-matrix-circuit-gold: #854d0eff;
---solar-circuit-matrix-warning-amber: #a16207ff;
---solar-circuit-matrix-status-gold: #ca8a04ff;
---solar-circuit-matrix-signal-yellow: #eab308ff;
---solar-circuit-matrix-pulse-lime: #fde047ff;
---solar-circuit-matrix-terminal-cream: #fef9c3ff;
---solar-circuit-matrix-signal-white: #fefce8ff;
+--console-black: #171104ff;
+--trace-brown: #422006ff;
+--circuit-gold: #854d0eff;
+--warning-amber: #a16207ff;
+--status-gold: #ca8a04ff;
+--signal-yellow: #eab308ff;
+--pulse-lime: #fde047ff;
+--terminal-cream: #fef9c3ff;
+--signal-white: #fefce8ff;
 
 /* CSS HSL */
---solar-circuit-matrix-console-black: hsla(41, 70%, 5%, 1);
---solar-circuit-matrix-trace-brown: hsla(26, 83%, 14%, 1);
---solar-circuit-matrix-circuit-gold: hsla(32, 81%, 29%, 1);
---solar-circuit-matrix-warning-amber: hsla(35, 92%, 33%, 1);
---solar-circuit-matrix-status-gold: hsla(41, 96%, 40%, 1);
---solar-circuit-matrix-signal-yellow: hsla(45, 93%, 47%, 1);
---solar-circuit-matrix-pulse-lime: hsla(50, 98%, 64%, 1);
---solar-circuit-matrix-terminal-cream: hsla(55, 97%, 88%, 1);
---solar-circuit-matrix-signal-white: hsla(55, 92%, 95%, 1);
+--console-black: hsla(41, 70%, 5%, 1);
+--trace-brown: hsla(26, 83%, 14%, 1);
+--circuit-gold: hsla(32, 81%, 29%, 1);
+--warning-amber: hsla(35, 92%, 33%, 1);
+--status-gold: hsla(41, 96%, 40%, 1);
+--signal-yellow: hsla(45, 93%, 47%, 1);
+--pulse-lime: hsla(50, 98%, 64%, 1);
+--terminal-cream: hsla(55, 97%, 88%, 1);
+--signal-white: hsla(55, 92%, 95%, 1);
 }
 
 /* SCSS HEX */
-$solar-circuit-matrix-console-black: #171104ff;
-$solar-circuit-matrix-trace-brown: #422006ff;
-$solar-circuit-matrix-circuit-gold: #854d0eff;
-$solar-circuit-matrix-warning-amber: #a16207ff;
-$solar-circuit-matrix-status-gold: #ca8a04ff;
-$solar-circuit-matrix-signal-yellow: #eab308ff;
-$solar-circuit-matrix-pulse-lime: #fde047ff;
-$solar-circuit-matrix-terminal-cream: #fef9c3ff;
-$solar-circuit-matrix-signal-white: #fefce8ff;
+$console-black: #171104ff;
+$trace-brown: #422006ff;
+$circuit-gold: #854d0eff;
+$warning-amber: #a16207ff;
+$status-gold: #ca8a04ff;
+$signal-yellow: #eab308ff;
+$pulse-lime: #fde047ff;
+$terminal-cream: #fef9c3ff;
+$signal-white: #fefce8ff;
 
 /* SCSS HSL */
-$solar-circuit-matrix-console-black: hsla(41, 70%, 5%, 1);
-$solar-circuit-matrix-trace-brown: hsla(26, 83%, 14%, 1);
-$solar-circuit-matrix-circuit-gold: hsla(32, 81%, 29%, 1);
-$solar-circuit-matrix-warning-amber: hsla(35, 92%, 33%, 1);
-$solar-circuit-matrix-status-gold: hsla(41, 96%, 40%, 1);
-$solar-circuit-matrix-signal-yellow: hsla(45, 93%, 47%, 1);
-$solar-circuit-matrix-pulse-lime: hsla(50, 98%, 64%, 1);
-$solar-circuit-matrix-terminal-cream: hsla(55, 97%, 88%, 1);
-$solar-circuit-matrix-signal-white: hsla(55, 92%, 95%, 1);
+$console-black: hsla(41, 70%, 5%, 1);
+$trace-brown: hsla(26, 83%, 14%, 1);
+$circuit-gold: hsla(32, 81%, 29%, 1);
+$warning-amber: hsla(35, 92%, 33%, 1);
+$status-gold: hsla(41, 96%, 40%, 1);
+$signal-yellow: hsla(45, 93%, 47%, 1);
+$pulse-lime: hsla(50, 98%, 64%, 1);
+$terminal-cream: hsla(55, 97%, 88%, 1);
+$signal-white: hsla(55, 92%, 95%, 1);
 
 /* SCSS RGB */
-$solar-circuit-matrix-console-black: rgba(23, 17, 4, 1);
-$solar-circuit-matrix-trace-brown: rgba(66, 32, 6, 1);
-$solar-circuit-matrix-circuit-gold: rgba(133, 77, 14, 1);
-$solar-circuit-matrix-warning-amber: rgba(161, 98, 7, 1);
-$solar-circuit-matrix-status-gold: rgba(202, 138, 4, 1);
-$solar-circuit-matrix-signal-yellow: rgba(234, 179, 8, 1);
-$solar-circuit-matrix-pulse-lime: rgba(253, 224, 71, 1);
-$solar-circuit-matrix-terminal-cream: rgba(254, 249, 195, 1);
-$solar-circuit-matrix-signal-white: rgba(254, 252, 232, 1);
+$console-black: rgba(23, 17, 4, 1);
+$trace-brown: rgba(66, 32, 6, 1);
+$circuit-gold: rgba(133, 77, 14, 1);
+$warning-amber: rgba(161, 98, 7, 1);
+$status-gold: rgba(202, 138, 4, 1);
+$signal-yellow: rgba(234, 179, 8, 1);
+$pulse-lime: rgba(253, 224, 71, 1);
+$terminal-cream: rgba(254, 249, 195, 1);
+$signal-white: rgba(254, 252, 232, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #171104ff, #422006ff, #854d0eff, #a16207ff, #ca8a04ff, #eab308ff, #fde047ff, #fef9c3ff, #fefce8ff);
@@ -93,13 +93,13 @@ $gradient-radial: radial-gradient(#171104ff, #422006ff, #854d0eff, #a16207ff, #c
 
 /* SCSS Map */
 $solar-circuit-matrix-map: (
-    "solar-circuit-matrix-console-black": #171104ff,
-    "solar-circuit-matrix-trace-brown": #422006ff,
-    "solar-circuit-matrix-circuit-gold": #854d0eff,
-    "solar-circuit-matrix-warning-amber": #a16207ff,
-    "solar-circuit-matrix-status-gold": #ca8a04ff,
-    "solar-circuit-matrix-signal-yellow": #eab308ff,
-    "solar-circuit-matrix-pulse-lime": #fde047ff,
-    "solar-circuit-matrix-terminal-cream": #fef9c3ff,
-    "solar-circuit-matrix-signal-white": #fefce8ff
+    "console-black": #171104ff,
+    "trace-brown": #422006ff,
+    "circuit-gold": #854d0eff,
+    "warning-amber": #a16207ff,
+    "status-gold": #ca8a04ff,
+    "signal-yellow": #eab308ff,
+    "pulse-lime": #fde047ff,
+    "terminal-cream": #fef9c3ff,
+    "signal-white": #fefce8ff
 );

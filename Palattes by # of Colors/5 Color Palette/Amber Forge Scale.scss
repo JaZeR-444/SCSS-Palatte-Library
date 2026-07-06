@@ -25,40 +25,40 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---amber-forge-scale-kiln-black: #1c0f05ff;
---amber-forge-scale-furnace-brown: #431407ff;
---amber-forge-scale-forge-ember: #9a3412ff;
---amber-forge-scale-molten-amber: #f97316ff;
---amber-forge-scale-spark-gold: #fbbf24ff;
+--kiln-black: #1c0f05ff;
+--furnace-brown: #431407ff;
+--forge-ember: #9a3412ff;
+--molten-amber: #f97316ff;
+--spark-gold: #fbbf24ff;
 
 /* CSS HSL */
---amber-forge-scale-kiln-black: hsla(26, 70%, 6%, 1);
---amber-forge-scale-furnace-brown: hsla(13, 81%, 15%, 1);
---amber-forge-scale-forge-ember: hsla(15, 79%, 34%, 1);
---amber-forge-scale-molten-amber: hsla(25, 95%, 53%, 1);
---amber-forge-scale-spark-gold: hsla(43, 96%, 56%, 1);
+--kiln-black: hsla(26, 70%, 6%, 1);
+--furnace-brown: hsla(13, 81%, 15%, 1);
+--forge-ember: hsla(15, 79%, 34%, 1);
+--molten-amber: hsla(25, 95%, 53%, 1);
+--spark-gold: hsla(43, 96%, 56%, 1);
 }
 
 /* SCSS HEX */
-$amber-forge-scale-kiln-black: #1c0f05ff;
-$amber-forge-scale-furnace-brown: #431407ff;
-$amber-forge-scale-forge-ember: #9a3412ff;
-$amber-forge-scale-molten-amber: #f97316ff;
-$amber-forge-scale-spark-gold: #fbbf24ff;
+$kiln-black: #1c0f05ff;
+$furnace-brown: #431407ff;
+$forge-ember: #9a3412ff;
+$molten-amber: #f97316ff;
+$spark-gold: #fbbf24ff;
 
 /* SCSS HSL */
-$amber-forge-scale-kiln-black: hsla(26, 70%, 6%, 1);
-$amber-forge-scale-furnace-brown: hsla(13, 81%, 15%, 1);
-$amber-forge-scale-forge-ember: hsla(15, 79%, 34%, 1);
-$amber-forge-scale-molten-amber: hsla(25, 95%, 53%, 1);
-$amber-forge-scale-spark-gold: hsla(43, 96%, 56%, 1);
+$kiln-black: hsla(26, 70%, 6%, 1);
+$furnace-brown: hsla(13, 81%, 15%, 1);
+$forge-ember: hsla(15, 79%, 34%, 1);
+$molten-amber: hsla(25, 95%, 53%, 1);
+$spark-gold: hsla(43, 96%, 56%, 1);
 
 /* SCSS RGB */
-$amber-forge-scale-kiln-black: rgba(28, 15, 5, 1);
-$amber-forge-scale-furnace-brown: rgba(67, 20, 7, 1);
-$amber-forge-scale-forge-ember: rgba(154, 52, 18, 1);
-$amber-forge-scale-molten-amber: rgba(249, 115, 22, 1);
-$amber-forge-scale-spark-gold: rgba(251, 191, 36, 1);
+$kiln-black: rgba(28, 15, 5, 1);
+$furnace-brown: rgba(67, 20, 7, 1);
+$forge-ember: rgba(154, 52, 18, 1);
+$molten-amber: rgba(249, 115, 22, 1);
+$spark-gold: rgba(251, 191, 36, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1c0f05ff, #431407ff, #9a3412ff, #f97316ff, #fbbf24ff);
@@ -73,9 +73,9 @@ $gradient-radial: radial-gradient(#1c0f05ff, #431407ff, #9a3412ff, #f97316ff, #f
 
 /* SCSS Map */
 $amber-forge-scale-map: (
-    "amber-forge-scale-kiln-black": #1c0f05ff,
-    "amber-forge-scale-furnace-brown": #431407ff,
-    "amber-forge-scale-forge-ember": #9a3412ff,
-    "amber-forge-scale-molten-amber": #f97316ff,
-    "amber-forge-scale-spark-gold": #fbbf24ff
+    "kiln-black": #1c0f05ff,
+    "furnace-brown": #431407ff,
+    "forge-ember": #9a3412ff,
+    "molten-amber": #f97316ff,
+    "spark-gold": #fbbf24ff
 );

@@ -25,55 +25,55 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---carbon-ledger-system-ledger-black: #050505ff;
---carbon-ledger-system-account-ink: #111111ff;
---carbon-ledger-system-report-charcoal: #1c1c1eff;
---carbon-ledger-system-balance-graphite: #2c2c2eff;
---carbon-ledger-system-metric-steel: #3a3a3cff;
---carbon-ledger-system-summary-smoke: #636366ff;
---carbon-ledger-system-sheet-gray: #8e8e93ff;
---carbon-ledger-system-panel-line: #c7c7ccff;
+--ledger-black: #050505ff;
+--account-ink: #111111ff;
+--report-charcoal: #1c1c1eff;
+--balance-graphite: #2c2c2eff;
+--metric-steel: #3a3a3cff;
+--summary-smoke: #636366ff;
+--sheet-gray: #8e8e93ff;
+--panel-line: #c7c7ccff;
 
 /* CSS HSL */
---carbon-ledger-system-ledger-black: hsla(0, 0%, 2%, 1);
---carbon-ledger-system-account-ink: hsla(0, 0%, 7%, 1);
---carbon-ledger-system-report-charcoal: hsla(240, 3%, 11%, 1);
---carbon-ledger-system-balance-graphite: hsla(240, 2%, 18%, 1);
---carbon-ledger-system-metric-steel: hsla(240, 2%, 23%, 1);
---carbon-ledger-system-summary-smoke: hsla(240, 1%, 39%, 1);
---carbon-ledger-system-sheet-gray: hsla(240, 2%, 57%, 1);
---carbon-ledger-system-panel-line: hsla(240, 5%, 79%, 1);
+--ledger-black: hsla(0, 0%, 2%, 1);
+--account-ink: hsla(0, 0%, 7%, 1);
+--report-charcoal: hsla(240, 3%, 11%, 1);
+--balance-graphite: hsla(240, 2%, 18%, 1);
+--metric-steel: hsla(240, 2%, 23%, 1);
+--summary-smoke: hsla(240, 1%, 39%, 1);
+--sheet-gray: hsla(240, 2%, 57%, 1);
+--panel-line: hsla(240, 5%, 79%, 1);
 }
 
 /* SCSS HEX */
-$carbon-ledger-system-ledger-black: #050505ff;
-$carbon-ledger-system-account-ink: #111111ff;
-$carbon-ledger-system-report-charcoal: #1c1c1eff;
-$carbon-ledger-system-balance-graphite: #2c2c2eff;
-$carbon-ledger-system-metric-steel: #3a3a3cff;
-$carbon-ledger-system-summary-smoke: #636366ff;
-$carbon-ledger-system-sheet-gray: #8e8e93ff;
-$carbon-ledger-system-panel-line: #c7c7ccff;
+$ledger-black: #050505ff;
+$account-ink: #111111ff;
+$report-charcoal: #1c1c1eff;
+$balance-graphite: #2c2c2eff;
+$metric-steel: #3a3a3cff;
+$summary-smoke: #636366ff;
+$sheet-gray: #8e8e93ff;
+$panel-line: #c7c7ccff;
 
 /* SCSS HSL */
-$carbon-ledger-system-ledger-black: hsla(0, 0%, 2%, 1);
-$carbon-ledger-system-account-ink: hsla(0, 0%, 7%, 1);
-$carbon-ledger-system-report-charcoal: hsla(240, 3%, 11%, 1);
-$carbon-ledger-system-balance-graphite: hsla(240, 2%, 18%, 1);
-$carbon-ledger-system-metric-steel: hsla(240, 2%, 23%, 1);
-$carbon-ledger-system-summary-smoke: hsla(240, 1%, 39%, 1);
-$carbon-ledger-system-sheet-gray: hsla(240, 2%, 57%, 1);
-$carbon-ledger-system-panel-line: hsla(240, 5%, 79%, 1);
+$ledger-black: hsla(0, 0%, 2%, 1);
+$account-ink: hsla(0, 0%, 7%, 1);
+$report-charcoal: hsla(240, 3%, 11%, 1);
+$balance-graphite: hsla(240, 2%, 18%, 1);
+$metric-steel: hsla(240, 2%, 23%, 1);
+$summary-smoke: hsla(240, 1%, 39%, 1);
+$sheet-gray: hsla(240, 2%, 57%, 1);
+$panel-line: hsla(240, 5%, 79%, 1);
 
 /* SCSS RGB */
-$carbon-ledger-system-ledger-black: rgba(5, 5, 5, 1);
-$carbon-ledger-system-account-ink: rgba(17, 17, 17, 1);
-$carbon-ledger-system-report-charcoal: rgba(28, 28, 30, 1);
-$carbon-ledger-system-balance-graphite: rgba(44, 44, 46, 1);
-$carbon-ledger-system-metric-steel: rgba(58, 58, 60, 1);
-$carbon-ledger-system-summary-smoke: rgba(99, 99, 102, 1);
-$carbon-ledger-system-sheet-gray: rgba(142, 142, 147, 1);
-$carbon-ledger-system-panel-line: rgba(199, 199, 204, 1);
+$ledger-black: rgba(5, 5, 5, 1);
+$account-ink: rgba(17, 17, 17, 1);
+$report-charcoal: rgba(28, 28, 30, 1);
+$balance-graphite: rgba(44, 44, 46, 1);
+$metric-steel: rgba(58, 58, 60, 1);
+$summary-smoke: rgba(99, 99, 102, 1);
+$sheet-gray: rgba(142, 142, 147, 1);
+$panel-line: rgba(199, 199, 204, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #050505ff, #111111ff, #1c1c1eff, #2c2c2eff, #3a3a3cff, #636366ff, #8e8e93ff, #c7c7ccff);
@@ -88,12 +88,12 @@ $gradient-radial: radial-gradient(#050505ff, #111111ff, #1c1c1eff, #2c2c2eff, #3
 
 /* SCSS Map */
 $carbon-ledger-system-map: (
-    "carbon-ledger-system-ledger-black": #050505ff,
-    "carbon-ledger-system-account-ink": #111111ff,
-    "carbon-ledger-system-report-charcoal": #1c1c1eff,
-    "carbon-ledger-system-balance-graphite": #2c2c2eff,
-    "carbon-ledger-system-metric-steel": #3a3a3cff,
-    "carbon-ledger-system-summary-smoke": #636366ff,
-    "carbon-ledger-system-sheet-gray": #8e8e93ff,
-    "carbon-ledger-system-panel-line": #c7c7ccff
+    "ledger-black": #050505ff,
+    "account-ink": #111111ff,
+    "report-charcoal": #1c1c1eff,
+    "balance-graphite": #2c2c2eff,
+    "metric-steel": #3a3a3cff,
+    "summary-smoke": #636366ff,
+    "sheet-gray": #8e8e93ff,
+    "panel-line": #c7c7ccff
 );

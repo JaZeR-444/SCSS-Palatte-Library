@@ -25,60 +25,60 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---crimson-circuit-matrix-circuit-black: #160607ff;
---crimson-circuit-matrix-alert-root: #2a0a0dff;
---crimson-circuit-matrix-crimson-board: #5f0f14ff;
---crimson-circuit-matrix-runtime-red: #991b1bff;
---crimson-circuit-matrix-signal-red: #dc2626ff;
---crimson-circuit-matrix-action-red: #ef4444ff;
---crimson-circuit-matrix-trace-coral: #f87171ff;
---crimson-circuit-matrix-debug-rose: #fecacaff;
---crimson-circuit-matrix-panel-red: #fee2e2ff;
+--circuit-black: #160607ff;
+--alert-root: #2a0a0dff;
+--crimson-board: #5f0f14ff;
+--runtime-red: #991b1bff;
+--signal-red: #dc2626ff;
+--action-red: #ef4444ff;
+--trace-coral: #f87171ff;
+--debug-rose: #fecacaff;
+--panel-red: #fee2e2ff;
 
 /* CSS HSL */
---crimson-circuit-matrix-circuit-black: hsla(356, 57%, 5%, 1);
---crimson-circuit-matrix-alert-root: hsla(354, 62%, 10%, 1);
---crimson-circuit-matrix-crimson-board: hsla(356, 73%, 22%, 1);
---crimson-circuit-matrix-runtime-red: hsla(0, 70%, 35%, 1);
---crimson-circuit-matrix-signal-red: hsla(0, 72%, 51%, 1);
---crimson-circuit-matrix-action-red: hsla(0, 84%, 60%, 1);
---crimson-circuit-matrix-trace-coral: hsla(0, 91%, 71%, 1);
---crimson-circuit-matrix-debug-rose: hsla(0, 96%, 89%, 1);
---crimson-circuit-matrix-panel-red: hsla(0, 93%, 94%, 1);
+--circuit-black: hsla(356, 57%, 5%, 1);
+--alert-root: hsla(354, 62%, 10%, 1);
+--crimson-board: hsla(356, 73%, 22%, 1);
+--runtime-red: hsla(0, 70%, 35%, 1);
+--signal-red: hsla(0, 72%, 51%, 1);
+--action-red: hsla(0, 84%, 60%, 1);
+--trace-coral: hsla(0, 91%, 71%, 1);
+--debug-rose: hsla(0, 96%, 89%, 1);
+--panel-red: hsla(0, 93%, 94%, 1);
 }
 
 /* SCSS HEX */
-$crimson-circuit-matrix-circuit-black: #160607ff;
-$crimson-circuit-matrix-alert-root: #2a0a0dff;
-$crimson-circuit-matrix-crimson-board: #5f0f14ff;
-$crimson-circuit-matrix-runtime-red: #991b1bff;
-$crimson-circuit-matrix-signal-red: #dc2626ff;
-$crimson-circuit-matrix-action-red: #ef4444ff;
-$crimson-circuit-matrix-trace-coral: #f87171ff;
-$crimson-circuit-matrix-debug-rose: #fecacaff;
-$crimson-circuit-matrix-panel-red: #fee2e2ff;
+$circuit-black: #160607ff;
+$alert-root: #2a0a0dff;
+$crimson-board: #5f0f14ff;
+$runtime-red: #991b1bff;
+$signal-red: #dc2626ff;
+$action-red: #ef4444ff;
+$trace-coral: #f87171ff;
+$debug-rose: #fecacaff;
+$panel-red: #fee2e2ff;
 
 /* SCSS HSL */
-$crimson-circuit-matrix-circuit-black: hsla(356, 57%, 5%, 1);
-$crimson-circuit-matrix-alert-root: hsla(354, 62%, 10%, 1);
-$crimson-circuit-matrix-crimson-board: hsla(356, 73%, 22%, 1);
-$crimson-circuit-matrix-runtime-red: hsla(0, 70%, 35%, 1);
-$crimson-circuit-matrix-signal-red: hsla(0, 72%, 51%, 1);
-$crimson-circuit-matrix-action-red: hsla(0, 84%, 60%, 1);
-$crimson-circuit-matrix-trace-coral: hsla(0, 91%, 71%, 1);
-$crimson-circuit-matrix-debug-rose: hsla(0, 96%, 89%, 1);
-$crimson-circuit-matrix-panel-red: hsla(0, 93%, 94%, 1);
+$circuit-black: hsla(356, 57%, 5%, 1);
+$alert-root: hsla(354, 62%, 10%, 1);
+$crimson-board: hsla(356, 73%, 22%, 1);
+$runtime-red: hsla(0, 70%, 35%, 1);
+$signal-red: hsla(0, 72%, 51%, 1);
+$action-red: hsla(0, 84%, 60%, 1);
+$trace-coral: hsla(0, 91%, 71%, 1);
+$debug-rose: hsla(0, 96%, 89%, 1);
+$panel-red: hsla(0, 93%, 94%, 1);
 
 /* SCSS RGB */
-$crimson-circuit-matrix-circuit-black: rgba(22, 6, 7, 1);
-$crimson-circuit-matrix-alert-root: rgba(42, 10, 13, 1);
-$crimson-circuit-matrix-crimson-board: rgba(95, 15, 20, 1);
-$crimson-circuit-matrix-runtime-red: rgba(153, 27, 27, 1);
-$crimson-circuit-matrix-signal-red: rgba(220, 38, 38, 1);
-$crimson-circuit-matrix-action-red: rgba(239, 68, 68, 1);
-$crimson-circuit-matrix-trace-coral: rgba(248, 113, 113, 1);
-$crimson-circuit-matrix-debug-rose: rgba(254, 202, 202, 1);
-$crimson-circuit-matrix-panel-red: rgba(254, 226, 226, 1);
+$circuit-black: rgba(22, 6, 7, 1);
+$alert-root: rgba(42, 10, 13, 1);
+$crimson-board: rgba(95, 15, 20, 1);
+$runtime-red: rgba(153, 27, 27, 1);
+$signal-red: rgba(220, 38, 38, 1);
+$action-red: rgba(239, 68, 68, 1);
+$trace-coral: rgba(248, 113, 113, 1);
+$debug-rose: rgba(254, 202, 202, 1);
+$panel-red: rgba(254, 226, 226, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #dc2626ff, #ef4444ff, #f87171ff, #fecacaff, #fee2e2ff);
@@ -93,13 +93,13 @@ $gradient-radial: radial-gradient(#160607ff, #2a0a0dff, #5f0f14ff, #991b1bff, #d
 
 /* SCSS Map */
 $crimson-circuit-matrix-map: (
-    "crimson-circuit-matrix-circuit-black": #160607ff,
-    "crimson-circuit-matrix-alert-root": #2a0a0dff,
-    "crimson-circuit-matrix-crimson-board": #5f0f14ff,
-    "crimson-circuit-matrix-runtime-red": #991b1bff,
-    "crimson-circuit-matrix-signal-red": #dc2626ff,
-    "crimson-circuit-matrix-action-red": #ef4444ff,
-    "crimson-circuit-matrix-trace-coral": #f87171ff,
-    "crimson-circuit-matrix-debug-rose": #fecacaff,
-    "crimson-circuit-matrix-panel-red": #fee2e2ff
+    "circuit-black": #160607ff,
+    "alert-root": #2a0a0dff,
+    "crimson-board": #5f0f14ff,
+    "runtime-red": #991b1bff,
+    "signal-red": #dc2626ff,
+    "action-red": #ef4444ff,
+    "trace-coral": #f87171ff,
+    "debug-rose": #fecacaff,
+    "panel-red": #fee2e2ff
 );

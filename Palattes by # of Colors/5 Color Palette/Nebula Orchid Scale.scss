@@ -25,40 +25,40 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---nebula-orchid-scale-nebula-black: #080012ff;
---nebula-orchid-scale-orbit-plum: #18002fff;
---nebula-orchid-scale-deep-orchid: #2f075eff;
---nebula-orchid-scale-stellar-violet: #5a189aff;
---nebula-orchid-scale-nova-purple: #8f2fd1ff;
+--nebula-black: #080012ff;
+--orbit-plum: #18002fff;
+--deep-orchid: #2f075eff;
+--stellar-violet: #5a189aff;
+--nova-purple: #8f2fd1ff;
 
 /* CSS HSL */
---nebula-orchid-scale-nebula-black: hsla(267, 100%, 4%, 1);
---nebula-orchid-scale-orbit-plum: hsla(271, 100%, 9%, 1);
---nebula-orchid-scale-deep-orchid: hsla(268, 86%, 20%, 1);
---nebula-orchid-scale-stellar-violet: hsla(270, 73%, 35%, 1);
---nebula-orchid-scale-nova-purple: hsla(276, 64%, 50%, 1);
+--nebula-black: hsla(267, 100%, 4%, 1);
+--orbit-plum: hsla(271, 100%, 9%, 1);
+--deep-orchid: hsla(268, 86%, 20%, 1);
+--stellar-violet: hsla(270, 73%, 35%, 1);
+--nova-purple: hsla(276, 64%, 50%, 1);
 }
 
 /* SCSS HEX */
-$nebula-orchid-scale-nebula-black: #080012ff;
-$nebula-orchid-scale-orbit-plum: #18002fff;
-$nebula-orchid-scale-deep-orchid: #2f075eff;
-$nebula-orchid-scale-stellar-violet: #5a189aff;
-$nebula-orchid-scale-nova-purple: #8f2fd1ff;
+$nebula-black: #080012ff;
+$orbit-plum: #18002fff;
+$deep-orchid: #2f075eff;
+$stellar-violet: #5a189aff;
+$nova-purple: #8f2fd1ff;
 
 /* SCSS HSL */
-$nebula-orchid-scale-nebula-black: hsla(267, 100%, 4%, 1);
-$nebula-orchid-scale-orbit-plum: hsla(271, 100%, 9%, 1);
-$nebula-orchid-scale-deep-orchid: hsla(268, 86%, 20%, 1);
-$nebula-orchid-scale-stellar-violet: hsla(270, 73%, 35%, 1);
-$nebula-orchid-scale-nova-purple: hsla(276, 64%, 50%, 1);
+$nebula-black: hsla(267, 100%, 4%, 1);
+$orbit-plum: hsla(271, 100%, 9%, 1);
+$deep-orchid: hsla(268, 86%, 20%, 1);
+$stellar-violet: hsla(270, 73%, 35%, 1);
+$nova-purple: hsla(276, 64%, 50%, 1);
 
 /* SCSS RGB */
-$nebula-orchid-scale-nebula-black: rgba(8, 0, 18, 1);
-$nebula-orchid-scale-orbit-plum: rgba(24, 0, 47, 1);
-$nebula-orchid-scale-deep-orchid: rgba(47, 7, 94, 1);
-$nebula-orchid-scale-stellar-violet: rgba(90, 24, 154, 1);
-$nebula-orchid-scale-nova-purple: rgba(143, 47, 209, 1);
+$nebula-black: rgba(8, 0, 18, 1);
+$orbit-plum: rgba(24, 0, 47, 1);
+$deep-orchid: rgba(47, 7, 94, 1);
+$stellar-violet: rgba(90, 24, 154, 1);
+$nova-purple: rgba(143, 47, 209, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #080012ff, #18002fff, #2f075eff, #5a189aff, #8f2fd1ff);
@@ -73,9 +73,9 @@ $gradient-radial: radial-gradient(#080012ff, #18002fff, #2f075eff, #5a189aff, #8
 
 /* SCSS Map */
 $nebula-orchid-scale-map: (
-    "nebula-orchid-scale-nebula-black": #080012ff,
-    "nebula-orchid-scale-orbit-plum": #18002fff,
-    "nebula-orchid-scale-deep-orchid": #2f075eff,
-    "nebula-orchid-scale-stellar-violet": #5a189aff,
-    "nebula-orchid-scale-nova-purple": #8f2fd1ff
+    "nebula-black": #080012ff,
+    "orbit-plum": #18002fff,
+    "deep-orchid": #2f075eff,
+    "stellar-violet": #5a189aff,
+    "nova-purple": #8f2fd1ff
 );

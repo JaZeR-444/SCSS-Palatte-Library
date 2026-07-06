@@ -25,50 +25,50 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---ruby-ledger-spectrum-ledger-ink: #1f0a0cff;
---ruby-ledger-spectrum-account-ruby: #3b0d11ff;
---ruby-ledger-spectrum-report-red: #7f1d1dff;
---ruby-ledger-spectrum-balance-red: #b91c1cff;
---ruby-ledger-spectrum-metric-red: #dc2626ff;
---ruby-ledger-spectrum-chart-orange: #f97316ff;
---ruby-ledger-spectrum-summary-coral: #fb923cff;
+--ledger-ink: #1f0a0cff;
+--account-ruby: #3b0d11ff;
+--report-red: #7f1d1dff;
+--balance-red: #b91c1cff;
+--metric-red: #dc2626ff;
+--chart-orange: #f97316ff;
+--summary-coral: #fb923cff;
 
 /* CSS HSL */
---ruby-ledger-spectrum-ledger-ink: hsla(354, 51%, 8%, 1);
---ruby-ledger-spectrum-account-ruby: hsla(355, 64%, 14%, 1);
---ruby-ledger-spectrum-report-red: hsla(0, 63%, 31%, 1);
---ruby-ledger-spectrum-balance-red: hsla(0, 74%, 42%, 1);
---ruby-ledger-spectrum-metric-red: hsla(0, 72%, 51%, 1);
---ruby-ledger-spectrum-chart-orange: hsla(25, 95%, 53%, 1);
---ruby-ledger-spectrum-summary-coral: hsla(27, 96%, 61%, 1);
+--ledger-ink: hsla(354, 51%, 8%, 1);
+--account-ruby: hsla(355, 64%, 14%, 1);
+--report-red: hsla(0, 63%, 31%, 1);
+--balance-red: hsla(0, 74%, 42%, 1);
+--metric-red: hsla(0, 72%, 51%, 1);
+--chart-orange: hsla(25, 95%, 53%, 1);
+--summary-coral: hsla(27, 96%, 61%, 1);
 }
 
 /* SCSS HEX */
-$ruby-ledger-spectrum-ledger-ink: #1f0a0cff;
-$ruby-ledger-spectrum-account-ruby: #3b0d11ff;
-$ruby-ledger-spectrum-report-red: #7f1d1dff;
-$ruby-ledger-spectrum-balance-red: #b91c1cff;
-$ruby-ledger-spectrum-metric-red: #dc2626ff;
-$ruby-ledger-spectrum-chart-orange: #f97316ff;
-$ruby-ledger-spectrum-summary-coral: #fb923cff;
+$ledger-ink: #1f0a0cff;
+$account-ruby: #3b0d11ff;
+$report-red: #7f1d1dff;
+$balance-red: #b91c1cff;
+$metric-red: #dc2626ff;
+$chart-orange: #f97316ff;
+$summary-coral: #fb923cff;
 
 /* SCSS HSL */
-$ruby-ledger-spectrum-ledger-ink: hsla(354, 51%, 8%, 1);
-$ruby-ledger-spectrum-account-ruby: hsla(355, 64%, 14%, 1);
-$ruby-ledger-spectrum-report-red: hsla(0, 63%, 31%, 1);
-$ruby-ledger-spectrum-balance-red: hsla(0, 74%, 42%, 1);
-$ruby-ledger-spectrum-metric-red: hsla(0, 72%, 51%, 1);
-$ruby-ledger-spectrum-chart-orange: hsla(25, 95%, 53%, 1);
-$ruby-ledger-spectrum-summary-coral: hsla(27, 96%, 61%, 1);
+$ledger-ink: hsla(354, 51%, 8%, 1);
+$account-ruby: hsla(355, 64%, 14%, 1);
+$report-red: hsla(0, 63%, 31%, 1);
+$balance-red: hsla(0, 74%, 42%, 1);
+$metric-red: hsla(0, 72%, 51%, 1);
+$chart-orange: hsla(25, 95%, 53%, 1);
+$summary-coral: hsla(27, 96%, 61%, 1);
 
 /* SCSS RGB */
-$ruby-ledger-spectrum-ledger-ink: rgba(31, 10, 12, 1);
-$ruby-ledger-spectrum-account-ruby: rgba(59, 13, 17, 1);
-$ruby-ledger-spectrum-report-red: rgba(127, 29, 29, 1);
-$ruby-ledger-spectrum-balance-red: rgba(185, 28, 28, 1);
-$ruby-ledger-spectrum-metric-red: rgba(220, 38, 38, 1);
-$ruby-ledger-spectrum-chart-orange: rgba(249, 115, 22, 1);
-$ruby-ledger-spectrum-summary-coral: rgba(251, 146, 60, 1);
+$ledger-ink: rgba(31, 10, 12, 1);
+$account-ruby: rgba(59, 13, 17, 1);
+$report-red: rgba(127, 29, 29, 1);
+$balance-red: rgba(185, 28, 28, 1);
+$metric-red: rgba(220, 38, 38, 1);
+$chart-orange: rgba(249, 115, 22, 1);
+$summary-coral: rgba(251, 146, 60, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1f0a0cff, #3b0d11ff, #7f1d1dff, #b91c1cff, #dc2626ff, #f97316ff, #fb923cff);
@@ -83,11 +83,11 @@ $gradient-radial: radial-gradient(#1f0a0cff, #3b0d11ff, #7f1d1dff, #b91c1cff, #d
 
 /* SCSS Map */
 $ruby-ledger-spectrum-map: (
-    "ruby-ledger-spectrum-ledger-ink": #1f0a0cff,
-    "ruby-ledger-spectrum-account-ruby": #3b0d11ff,
-    "ruby-ledger-spectrum-report-red": #7f1d1dff,
-    "ruby-ledger-spectrum-balance-red": #b91c1cff,
-    "ruby-ledger-spectrum-metric-red": #dc2626ff,
-    "ruby-ledger-spectrum-chart-orange": #f97316ff,
-    "ruby-ledger-spectrum-summary-coral": #fb923cff
+    "ledger-ink": #1f0a0cff,
+    "account-ruby": #3b0d11ff,
+    "report-red": #7f1d1dff,
+    "balance-red": #b91c1cff,
+    "metric-red": #dc2626ff,
+    "chart-orange": #f97316ff,
+    "summary-coral": #fb923cff
 );

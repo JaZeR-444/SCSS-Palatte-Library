@@ -25,35 +25,35 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---porcelain-circuit-quartet-graphite-console: #111827ff;
---porcelain-circuit-quartet-cool-trace: #94a3b8ff;
---porcelain-circuit-quartet-porcelain-panel: #e5e7ebff;
---porcelain-circuit-quartet-signal-white: #ffffffff;
+--graphite-console: #111827ff;
+--cool-trace: #94a3b8ff;
+--porcelain-panel: #e5e7ebff;
+--signal-white: #ffffffff;
 
 /* CSS HSL */
---porcelain-circuit-quartet-graphite-console: hsla(221, 39%, 11%, 1);
---porcelain-circuit-quartet-cool-trace: hsla(215, 20%, 65%, 1);
---porcelain-circuit-quartet-porcelain-panel: hsla(220, 13%, 91%, 1);
---porcelain-circuit-quartet-signal-white: hsla(0, 0%, 100%, 1);
+--graphite-console: hsla(221, 39%, 11%, 1);
+--cool-trace: hsla(215, 20%, 65%, 1);
+--porcelain-panel: hsla(220, 13%, 91%, 1);
+--signal-white: hsla(0, 0%, 100%, 1);
 }
 
 /* SCSS HEX */
-$porcelain-circuit-quartet-graphite-console: #111827ff;
-$porcelain-circuit-quartet-cool-trace: #94a3b8ff;
-$porcelain-circuit-quartet-porcelain-panel: #e5e7ebff;
-$porcelain-circuit-quartet-signal-white: #ffffffff;
+$graphite-console: #111827ff;
+$cool-trace: #94a3b8ff;
+$porcelain-panel: #e5e7ebff;
+$signal-white: #ffffffff;
 
 /* SCSS HSL */
-$porcelain-circuit-quartet-graphite-console: hsla(221, 39%, 11%, 1);
-$porcelain-circuit-quartet-cool-trace: hsla(215, 20%, 65%, 1);
-$porcelain-circuit-quartet-porcelain-panel: hsla(220, 13%, 91%, 1);
-$porcelain-circuit-quartet-signal-white: hsla(0, 0%, 100%, 1);
+$graphite-console: hsla(221, 39%, 11%, 1);
+$cool-trace: hsla(215, 20%, 65%, 1);
+$porcelain-panel: hsla(220, 13%, 91%, 1);
+$signal-white: hsla(0, 0%, 100%, 1);
 
 /* SCSS RGB */
-$porcelain-circuit-quartet-graphite-console: rgba(17, 24, 39, 1);
-$porcelain-circuit-quartet-cool-trace: rgba(148, 163, 184, 1);
-$porcelain-circuit-quartet-porcelain-panel: rgba(229, 231, 235, 1);
-$porcelain-circuit-quartet-signal-white: rgba(255, 255, 255, 1);
+$graphite-console: rgba(17, 24, 39, 1);
+$cool-trace: rgba(148, 163, 184, 1);
+$porcelain-panel: rgba(229, 231, 235, 1);
+$signal-white: rgba(255, 255, 255, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #111827ff, #94a3b8ff, #e5e7ebff, #ffffffff);
@@ -68,8 +68,8 @@ $gradient-radial: radial-gradient(#111827ff, #94a3b8ff, #e5e7ebff, #ffffffff);
 
 /* SCSS Map */
 $porcelain-circuit-quartet-map: (
-    "porcelain-circuit-quartet-graphite-console": #111827ff,
-    "porcelain-circuit-quartet-cool-trace": #94a3b8ff,
-    "porcelain-circuit-quartet-porcelain-panel": #e5e7ebff,
-    "porcelain-circuit-quartet-signal-white": #ffffffff
+    "graphite-console": #111827ff,
+    "cool-trace": #94a3b8ff,
+    "porcelain-panel": #e5e7ebff,
+    "signal-white": #ffffffff
 );

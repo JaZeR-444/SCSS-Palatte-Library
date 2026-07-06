@@ -25,65 +25,65 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---honey-commerce-atlas-espresso-shelf: #1c1206ff;
---honey-commerce-atlas-roast-label: #422006ff;
---honey-commerce-atlas-honey-cart: #854d0eff;
---honey-commerce-atlas-checkout-gold: #a16207ff;
---honey-commerce-atlas-action-amber: #ca8a04ff;
---honey-commerce-atlas-offer-yellow: #eab308ff;
---honey-commerce-atlas-ticket-glow: #fde047ff;
---honey-commerce-atlas-receipt-cream: #fef9c3ff;
---honey-commerce-atlas-checkout-white: #fffef5ff;
---honey-commerce-atlas-ink-copy: #111827ff;
+--espresso-shelf: #1c1206ff;
+--roast-label: #422006ff;
+--honey-cart: #854d0eff;
+--checkout-gold: #a16207ff;
+--action-amber: #ca8a04ff;
+--offer-yellow: #eab308ff;
+--ticket-glow: #fde047ff;
+--receipt-cream: #fef9c3ff;
+--checkout-white: #fffef5ff;
+--ink-copy: #111827ff;
 
 /* CSS HSL */
---honey-commerce-atlas-espresso-shelf: hsla(33, 65%, 7%, 1);
---honey-commerce-atlas-roast-label: hsla(26, 83%, 14%, 1);
---honey-commerce-atlas-honey-cart: hsla(32, 81%, 29%, 1);
---honey-commerce-atlas-checkout-gold: hsla(35, 92%, 33%, 1);
---honey-commerce-atlas-action-amber: hsla(41, 96%, 40%, 1);
---honey-commerce-atlas-offer-yellow: hsla(45, 93%, 47%, 1);
---honey-commerce-atlas-ticket-glow: hsla(50, 98%, 64%, 1);
---honey-commerce-atlas-receipt-cream: hsla(55, 97%, 88%, 1);
---honey-commerce-atlas-checkout-white: hsla(54, 100%, 98%, 1);
---honey-commerce-atlas-ink-copy: hsla(221, 39%, 11%, 1);
+--espresso-shelf: hsla(33, 65%, 7%, 1);
+--roast-label: hsla(26, 83%, 14%, 1);
+--honey-cart: hsla(32, 81%, 29%, 1);
+--checkout-gold: hsla(35, 92%, 33%, 1);
+--action-amber: hsla(41, 96%, 40%, 1);
+--offer-yellow: hsla(45, 93%, 47%, 1);
+--ticket-glow: hsla(50, 98%, 64%, 1);
+--receipt-cream: hsla(55, 97%, 88%, 1);
+--checkout-white: hsla(54, 100%, 98%, 1);
+--ink-copy: hsla(221, 39%, 11%, 1);
 }
 
 /* SCSS HEX */
-$honey-commerce-atlas-espresso-shelf: #1c1206ff;
-$honey-commerce-atlas-roast-label: #422006ff;
-$honey-commerce-atlas-honey-cart: #854d0eff;
-$honey-commerce-atlas-checkout-gold: #a16207ff;
-$honey-commerce-atlas-action-amber: #ca8a04ff;
-$honey-commerce-atlas-offer-yellow: #eab308ff;
-$honey-commerce-atlas-ticket-glow: #fde047ff;
-$honey-commerce-atlas-receipt-cream: #fef9c3ff;
-$honey-commerce-atlas-checkout-white: #fffef5ff;
-$honey-commerce-atlas-ink-copy: #111827ff;
+$espresso-shelf: #1c1206ff;
+$roast-label: #422006ff;
+$honey-cart: #854d0eff;
+$checkout-gold: #a16207ff;
+$action-amber: #ca8a04ff;
+$offer-yellow: #eab308ff;
+$ticket-glow: #fde047ff;
+$receipt-cream: #fef9c3ff;
+$checkout-white: #fffef5ff;
+$ink-copy: #111827ff;
 
 /* SCSS HSL */
-$honey-commerce-atlas-espresso-shelf: hsla(33, 65%, 7%, 1);
-$honey-commerce-atlas-roast-label: hsla(26, 83%, 14%, 1);
-$honey-commerce-atlas-honey-cart: hsla(32, 81%, 29%, 1);
-$honey-commerce-atlas-checkout-gold: hsla(35, 92%, 33%, 1);
-$honey-commerce-atlas-action-amber: hsla(41, 96%, 40%, 1);
-$honey-commerce-atlas-offer-yellow: hsla(45, 93%, 47%, 1);
-$honey-commerce-atlas-ticket-glow: hsla(50, 98%, 64%, 1);
-$honey-commerce-atlas-receipt-cream: hsla(55, 97%, 88%, 1);
-$honey-commerce-atlas-checkout-white: hsla(54, 100%, 98%, 1);
-$honey-commerce-atlas-ink-copy: hsla(221, 39%, 11%, 1);
+$espresso-shelf: hsla(33, 65%, 7%, 1);
+$roast-label: hsla(26, 83%, 14%, 1);
+$honey-cart: hsla(32, 81%, 29%, 1);
+$checkout-gold: hsla(35, 92%, 33%, 1);
+$action-amber: hsla(41, 96%, 40%, 1);
+$offer-yellow: hsla(45, 93%, 47%, 1);
+$ticket-glow: hsla(50, 98%, 64%, 1);
+$receipt-cream: hsla(55, 97%, 88%, 1);
+$checkout-white: hsla(54, 100%, 98%, 1);
+$ink-copy: hsla(221, 39%, 11%, 1);
 
 /* SCSS RGB */
-$honey-commerce-atlas-espresso-shelf: rgba(28, 18, 6, 1);
-$honey-commerce-atlas-roast-label: rgba(66, 32, 6, 1);
-$honey-commerce-atlas-honey-cart: rgba(133, 77, 14, 1);
-$honey-commerce-atlas-checkout-gold: rgba(161, 98, 7, 1);
-$honey-commerce-atlas-action-amber: rgba(202, 138, 4, 1);
-$honey-commerce-atlas-offer-yellow: rgba(234, 179, 8, 1);
-$honey-commerce-atlas-ticket-glow: rgba(253, 224, 71, 1);
-$honey-commerce-atlas-receipt-cream: rgba(254, 249, 195, 1);
-$honey-commerce-atlas-checkout-white: rgba(255, 254, 245, 1);
-$honey-commerce-atlas-ink-copy: rgba(17, 24, 39, 1);
+$espresso-shelf: rgba(28, 18, 6, 1);
+$roast-label: rgba(66, 32, 6, 1);
+$honey-cart: rgba(133, 77, 14, 1);
+$checkout-gold: rgba(161, 98, 7, 1);
+$action-amber: rgba(202, 138, 4, 1);
+$offer-yellow: rgba(234, 179, 8, 1);
+$ticket-glow: rgba(253, 224, 71, 1);
+$receipt-cream: rgba(254, 249, 195, 1);
+$checkout-white: rgba(255, 254, 245, 1);
+$ink-copy: rgba(17, 24, 39, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1c1206ff, #422006ff, #854d0eff, #a16207ff, #ca8a04ff, #eab308ff, #fde047ff, #fef9c3ff, #fffef5ff, #111827ff);
@@ -98,14 +98,14 @@ $gradient-radial: radial-gradient(#1c1206ff, #422006ff, #854d0eff, #a16207ff, #c
 
 /* SCSS Map */
 $honey-commerce-atlas-map: (
-    "honey-commerce-atlas-espresso-shelf": #1c1206ff,
-    "honey-commerce-atlas-roast-label": #422006ff,
-    "honey-commerce-atlas-honey-cart": #854d0eff,
-    "honey-commerce-atlas-checkout-gold": #a16207ff,
-    "honey-commerce-atlas-action-amber": #ca8a04ff,
-    "honey-commerce-atlas-offer-yellow": #eab308ff,
-    "honey-commerce-atlas-ticket-glow": #fde047ff,
-    "honey-commerce-atlas-receipt-cream": #fef9c3ff,
-    "honey-commerce-atlas-checkout-white": #fffef5ff,
-    "honey-commerce-atlas-ink-copy": #111827ff
+    "espresso-shelf": #1c1206ff,
+    "roast-label": #422006ff,
+    "honey-cart": #854d0eff,
+    "checkout-gold": #a16207ff,
+    "action-amber": #ca8a04ff,
+    "offer-yellow": #eab308ff,
+    "ticket-glow": #fde047ff,
+    "receipt-cream": #fef9c3ff,
+    "checkout-white": #fffef5ff,
+    "ink-copy": #111827ff
 );

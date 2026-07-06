@@ -25,30 +25,30 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---carbon-ledger-trio-ledger-black: #050505ff;
---carbon-ledger-trio-account-ink: #111111ff;
---carbon-ledger-trio-report-charcoal: #1c1c1eff;
+--ledger-black: #050505ff;
+--account-ink: #111111ff;
+--report-charcoal: #1c1c1eff;
 
 /* CSS HSL */
---carbon-ledger-trio-ledger-black: hsla(0, 0%, 2%, 1);
---carbon-ledger-trio-account-ink: hsla(0, 0%, 7%, 1);
---carbon-ledger-trio-report-charcoal: hsla(240, 3%, 11%, 1);
+--ledger-black: hsla(0, 0%, 2%, 1);
+--account-ink: hsla(0, 0%, 7%, 1);
+--report-charcoal: hsla(240, 3%, 11%, 1);
 }
 
 /* SCSS HEX */
-$carbon-ledger-trio-ledger-black: #050505ff;
-$carbon-ledger-trio-account-ink: #111111ff;
-$carbon-ledger-trio-report-charcoal: #1c1c1eff;
+$ledger-black: #050505ff;
+$account-ink: #111111ff;
+$report-charcoal: #1c1c1eff;
 
 /* SCSS HSL */
-$carbon-ledger-trio-ledger-black: hsla(0, 0%, 2%, 1);
-$carbon-ledger-trio-account-ink: hsla(0, 0%, 7%, 1);
-$carbon-ledger-trio-report-charcoal: hsla(240, 3%, 11%, 1);
+$ledger-black: hsla(0, 0%, 2%, 1);
+$account-ink: hsla(0, 0%, 7%, 1);
+$report-charcoal: hsla(240, 3%, 11%, 1);
 
 /* SCSS RGB */
-$carbon-ledger-trio-ledger-black: rgba(5, 5, 5, 1);
-$carbon-ledger-trio-account-ink: rgba(17, 17, 17, 1);
-$carbon-ledger-trio-report-charcoal: rgba(28, 28, 30, 1);
+$ledger-black: rgba(5, 5, 5, 1);
+$account-ink: rgba(17, 17, 17, 1);
+$report-charcoal: rgba(28, 28, 30, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #050505ff, #111111ff, #1c1c1eff);
@@ -63,7 +63,7 @@ $gradient-radial: radial-gradient(#050505ff, #111111ff, #1c1c1eff);
 
 /* SCSS Map */
 $carbon-ledger-trio-map: (
-    "carbon-ledger-trio-ledger-black": #050505ff,
-    "carbon-ledger-trio-account-ink": #111111ff,
-    "carbon-ledger-trio-report-charcoal": #1c1c1eff
+    "ledger-black": #050505ff,
+    "account-ink": #111111ff,
+    "report-charcoal": #1c1c1eff
 );

@@ -25,35 +25,35 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---lemon-signal-quartet-signal-ink: #18140aff;
---lemon-signal-quartet-golden-route: #ca8a04ff;
---lemon-signal-quartet-lemon-core: #facc15ff;
---lemon-signal-quartet-lemon-flash: #fef08aff;
+--signal-ink: #18140aff;
+--golden-route: #ca8a04ff;
+--lemon-core: #facc15ff;
+--lemon-flash: #fef08aff;
 
 /* CSS HSL */
---lemon-signal-quartet-signal-ink: hsla(43, 41%, 7%, 1);
---lemon-signal-quartet-golden-route: hsla(41, 96%, 40%, 1);
---lemon-signal-quartet-lemon-core: hsla(48, 96%, 53%, 1);
---lemon-signal-quartet-lemon-flash: hsla(53, 98%, 77%, 1);
+--signal-ink: hsla(43, 41%, 7%, 1);
+--golden-route: hsla(41, 96%, 40%, 1);
+--lemon-core: hsla(48, 96%, 53%, 1);
+--lemon-flash: hsla(53, 98%, 77%, 1);
 }
 
 /* SCSS HEX */
-$lemon-signal-quartet-signal-ink: #18140aff;
-$lemon-signal-quartet-golden-route: #ca8a04ff;
-$lemon-signal-quartet-lemon-core: #facc15ff;
-$lemon-signal-quartet-lemon-flash: #fef08aff;
+$signal-ink: #18140aff;
+$golden-route: #ca8a04ff;
+$lemon-core: #facc15ff;
+$lemon-flash: #fef08aff;
 
 /* SCSS HSL */
-$lemon-signal-quartet-signal-ink: hsla(43, 41%, 7%, 1);
-$lemon-signal-quartet-golden-route: hsla(41, 96%, 40%, 1);
-$lemon-signal-quartet-lemon-core: hsla(48, 96%, 53%, 1);
-$lemon-signal-quartet-lemon-flash: hsla(53, 98%, 77%, 1);
+$signal-ink: hsla(43, 41%, 7%, 1);
+$golden-route: hsla(41, 96%, 40%, 1);
+$lemon-core: hsla(48, 96%, 53%, 1);
+$lemon-flash: hsla(53, 98%, 77%, 1);
 
 /* SCSS RGB */
-$lemon-signal-quartet-signal-ink: rgba(24, 20, 10, 1);
-$lemon-signal-quartet-golden-route: rgba(202, 138, 4, 1);
-$lemon-signal-quartet-lemon-core: rgba(250, 204, 21, 1);
-$lemon-signal-quartet-lemon-flash: rgba(254, 240, 138, 1);
+$signal-ink: rgba(24, 20, 10, 1);
+$golden-route: rgba(202, 138, 4, 1);
+$lemon-core: rgba(250, 204, 21, 1);
+$lemon-flash: rgba(254, 240, 138, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #18140aff, #ca8a04ff, #facc15ff, #fef08aff);
@@ -68,8 +68,8 @@ $gradient-radial: radial-gradient(#18140aff, #ca8a04ff, #facc15ff, #fef08aff);
 
 /* SCSS Map */
 $lemon-signal-quartet-map: (
-    "lemon-signal-quartet-signal-ink": #18140aff,
-    "lemon-signal-quartet-golden-route": #ca8a04ff,
-    "lemon-signal-quartet-lemon-core": #facc15ff,
-    "lemon-signal-quartet-lemon-flash": #fef08aff
+    "signal-ink": #18140aff,
+    "golden-route": #ca8a04ff,
+    "lemon-core": #facc15ff,
+    "lemon-flash": #fef08aff
 );

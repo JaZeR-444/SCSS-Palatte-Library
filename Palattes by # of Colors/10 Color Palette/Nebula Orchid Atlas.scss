@@ -25,65 +25,65 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---nebula-orchid-atlas-nebula-black: #080012ff;
---nebula-orchid-atlas-orbit-plum: #18002fff;
---nebula-orchid-atlas-deep-orchid: #2f075eff;
---nebula-orchid-atlas-stellar-violet: #5a189aff;
---nebula-orchid-atlas-nova-purple: #8f2fd1ff;
---nebula-orchid-atlas-orchid-pulse: #c026d3ff;
---nebula-orchid-atlas-cosmic-pink: #e879f9ff;
---nebula-orchid-atlas-petal-light: #f5d0feff;
---nebula-orchid-atlas-star-mist: #fdf4ffff;
---nebula-orchid-atlas-ice-flare: #ecfeffff;
+--nebula-black: #080012ff;
+--orbit-plum: #18002fff;
+--deep-orchid: #2f075eff;
+--stellar-violet: #5a189aff;
+--nova-purple: #8f2fd1ff;
+--orchid-pulse: #c026d3ff;
+--cosmic-pink: #e879f9ff;
+--petal-light: #f5d0feff;
+--star-mist: #fdf4ffff;
+--ice-flare: #ecfeffff;
 
 /* CSS HSL */
---nebula-orchid-atlas-nebula-black: hsla(267, 100%, 4%, 1);
---nebula-orchid-atlas-orbit-plum: hsla(271, 100%, 9%, 1);
---nebula-orchid-atlas-deep-orchid: hsla(268, 86%, 20%, 1);
---nebula-orchid-atlas-stellar-violet: hsla(270, 73%, 35%, 1);
---nebula-orchid-atlas-nova-purple: hsla(276, 64%, 50%, 1);
---nebula-orchid-atlas-orchid-pulse: hsla(293, 69%, 49%, 1);
---nebula-orchid-atlas-cosmic-pink: hsla(292, 91%, 73%, 1);
---nebula-orchid-atlas-petal-light: hsla(288, 96%, 91%, 1);
---nebula-orchid-atlas-star-mist: hsla(289, 100%, 98%, 1);
---nebula-orchid-atlas-ice-flare: hsla(183, 100%, 96%, 1);
+--nebula-black: hsla(267, 100%, 4%, 1);
+--orbit-plum: hsla(271, 100%, 9%, 1);
+--deep-orchid: hsla(268, 86%, 20%, 1);
+--stellar-violet: hsla(270, 73%, 35%, 1);
+--nova-purple: hsla(276, 64%, 50%, 1);
+--orchid-pulse: hsla(293, 69%, 49%, 1);
+--cosmic-pink: hsla(292, 91%, 73%, 1);
+--petal-light: hsla(288, 96%, 91%, 1);
+--star-mist: hsla(289, 100%, 98%, 1);
+--ice-flare: hsla(183, 100%, 96%, 1);
 }
 
 /* SCSS HEX */
-$nebula-orchid-atlas-nebula-black: #080012ff;
-$nebula-orchid-atlas-orbit-plum: #18002fff;
-$nebula-orchid-atlas-deep-orchid: #2f075eff;
-$nebula-orchid-atlas-stellar-violet: #5a189aff;
-$nebula-orchid-atlas-nova-purple: #8f2fd1ff;
-$nebula-orchid-atlas-orchid-pulse: #c026d3ff;
-$nebula-orchid-atlas-cosmic-pink: #e879f9ff;
-$nebula-orchid-atlas-petal-light: #f5d0feff;
-$nebula-orchid-atlas-star-mist: #fdf4ffff;
-$nebula-orchid-atlas-ice-flare: #ecfeffff;
+$nebula-black: #080012ff;
+$orbit-plum: #18002fff;
+$deep-orchid: #2f075eff;
+$stellar-violet: #5a189aff;
+$nova-purple: #8f2fd1ff;
+$orchid-pulse: #c026d3ff;
+$cosmic-pink: #e879f9ff;
+$petal-light: #f5d0feff;
+$star-mist: #fdf4ffff;
+$ice-flare: #ecfeffff;
 
 /* SCSS HSL */
-$nebula-orchid-atlas-nebula-black: hsla(267, 100%, 4%, 1);
-$nebula-orchid-atlas-orbit-plum: hsla(271, 100%, 9%, 1);
-$nebula-orchid-atlas-deep-orchid: hsla(268, 86%, 20%, 1);
-$nebula-orchid-atlas-stellar-violet: hsla(270, 73%, 35%, 1);
-$nebula-orchid-atlas-nova-purple: hsla(276, 64%, 50%, 1);
-$nebula-orchid-atlas-orchid-pulse: hsla(293, 69%, 49%, 1);
-$nebula-orchid-atlas-cosmic-pink: hsla(292, 91%, 73%, 1);
-$nebula-orchid-atlas-petal-light: hsla(288, 96%, 91%, 1);
-$nebula-orchid-atlas-star-mist: hsla(289, 100%, 98%, 1);
-$nebula-orchid-atlas-ice-flare: hsla(183, 100%, 96%, 1);
+$nebula-black: hsla(267, 100%, 4%, 1);
+$orbit-plum: hsla(271, 100%, 9%, 1);
+$deep-orchid: hsla(268, 86%, 20%, 1);
+$stellar-violet: hsla(270, 73%, 35%, 1);
+$nova-purple: hsla(276, 64%, 50%, 1);
+$orchid-pulse: hsla(293, 69%, 49%, 1);
+$cosmic-pink: hsla(292, 91%, 73%, 1);
+$petal-light: hsla(288, 96%, 91%, 1);
+$star-mist: hsla(289, 100%, 98%, 1);
+$ice-flare: hsla(183, 100%, 96%, 1);
 
 /* SCSS RGB */
-$nebula-orchid-atlas-nebula-black: rgba(8, 0, 18, 1);
-$nebula-orchid-atlas-orbit-plum: rgba(24, 0, 47, 1);
-$nebula-orchid-atlas-deep-orchid: rgba(47, 7, 94, 1);
-$nebula-orchid-atlas-stellar-violet: rgba(90, 24, 154, 1);
-$nebula-orchid-atlas-nova-purple: rgba(143, 47, 209, 1);
-$nebula-orchid-atlas-orchid-pulse: rgba(192, 38, 211, 1);
-$nebula-orchid-atlas-cosmic-pink: rgba(232, 121, 249, 1);
-$nebula-orchid-atlas-petal-light: rgba(245, 208, 254, 1);
-$nebula-orchid-atlas-star-mist: rgba(253, 244, 255, 1);
-$nebula-orchid-atlas-ice-flare: rgba(236, 254, 255, 1);
+$nebula-black: rgba(8, 0, 18, 1);
+$orbit-plum: rgba(24, 0, 47, 1);
+$deep-orchid: rgba(47, 7, 94, 1);
+$stellar-violet: rgba(90, 24, 154, 1);
+$nova-purple: rgba(143, 47, 209, 1);
+$orchid-pulse: rgba(192, 38, 211, 1);
+$cosmic-pink: rgba(232, 121, 249, 1);
+$petal-light: rgba(245, 208, 254, 1);
+$star-mist: rgba(253, 244, 255, 1);
+$ice-flare: rgba(236, 254, 255, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #080012ff, #18002fff, #2f075eff, #5a189aff, #8f2fd1ff, #c026d3ff, #e879f9ff, #f5d0feff, #fdf4ffff, #ecfeffff);
@@ -98,14 +98,14 @@ $gradient-radial: radial-gradient(#080012ff, #18002fff, #2f075eff, #5a189aff, #8
 
 /* SCSS Map */
 $nebula-orchid-atlas-map: (
-    "nebula-orchid-atlas-nebula-black": #080012ff,
-    "nebula-orchid-atlas-orbit-plum": #18002fff,
-    "nebula-orchid-atlas-deep-orchid": #2f075eff,
-    "nebula-orchid-atlas-stellar-violet": #5a189aff,
-    "nebula-orchid-atlas-nova-purple": #8f2fd1ff,
-    "nebula-orchid-atlas-orchid-pulse": #c026d3ff,
-    "nebula-orchid-atlas-cosmic-pink": #e879f9ff,
-    "nebula-orchid-atlas-petal-light": #f5d0feff,
-    "nebula-orchid-atlas-star-mist": #fdf4ffff,
-    "nebula-orchid-atlas-ice-flare": #ecfeffff
+    "nebula-black": #080012ff,
+    "orbit-plum": #18002fff,
+    "deep-orchid": #2f075eff,
+    "stellar-violet": #5a189aff,
+    "nova-purple": #8f2fd1ff,
+    "orchid-pulse": #c026d3ff,
+    "cosmic-pink": #e879f9ff,
+    "petal-light": #f5d0feff,
+    "star-mist": #fdf4ffff,
+    "ice-flare": #ecfeffff
 );

@@ -1,6 +1,6 @@
 /*---
 id: moss-span-28-11
-name: Moss Span 28-11
+name: Moss Span Wide
 author: JaZeR-444
 version: 1.0.0
 category: Singular Hue Span
@@ -20,155 +20,155 @@ updated: '2026-07-04'
 
 :root {
 /* CSS HEX */
---span-01: #131a0fff;
---span-02: #1a2415ff;
---span-03: #233118ff;
---span-04: #273c1cff;
---span-05: #304b1dff;
---span-06: #375622ff;
---span-07: #3d6721ff;
---span-08: #407721ff;
---span-09: #4d8820ff;
---span-10: #4f9b1dff;
---span-11: #55a720ff;
---span-12: #5dba1dff;
---span-13: #5ace19ff;
---span-14: #65de19ff;
---span-15: #6eea1dff;
---span-16: #81e433ff;
---span-17: #87e047ff;
---span-18: #93e552ff;
---span-19: #98de69ff;
---span-20: #9fdb7bff;
---span-21: #aadd89ff;
---span-22: #b6e096ff;
---span-23: #bee1a5ff;
---span-24: #c4e1b5ff;
---span-25: #cee5c1ff;
---span-26: #d9e8ceff;
---span-27: #e2ecdaff;
---span-28: #eaf0e5ff;
+--almost-black: #131a0fff;
+--charcoal: #1a2415ff;
+--very-dark-green: #233118ff;
+--dark-forest-green: #273c1cff;
+--pine-green: #304b1dff;
+--navy-green: #375622ff;
+--camouflage-green: #3d6721ff;
+--tree-green: #407721ff;
+--sap-green: #4d8820ff;
+--grass: #4f9b1dff;
+--lawn-green: #55a720ff;
+--kermit-green: #5dba1dff;
+--toxic-green: #5ace19ff;
+--green-apple: #65de19ff;
+--bright-lime: #6eea1dff;
+--kiwi-green: #81e433ff;
+--apple-green: #87e047ff;
+--light-grass-green: #93e552ff;
+--pistachio: #98de69ff;
+--pale-olive-green: #9fdb7bff;
+--light-moss-green: #aadd89ff;
+--light-sage: #b6e096ff;
+--very-pale-green: #bee1a5ff;
+--very-light-green: #c4e1b5ff;
+--eggshell: #cee5c1ff;
+--off-white: #d9e8ceff;
+--very-light-pink: #e2ecdaff;
+--white: #eaf0e5ff;
 
 /* CSS HSL */
---span-01: hsla(96, 27%, 8%, 1);
---span-02: hsla(96, 26%, 11%, 1);
---span-03: hsla(96, 35%, 14%, 1);
---span-04: hsla(96, 36%, 17%, 1);
---span-05: hsla(96, 44%, 20%, 1);
---span-06: hsla(96, 43%, 24%, 1);
---span-07: hsla(96, 51%, 27%, 1);
---span-08: hsla(96, 56%, 30%, 1);
---span-09: hsla(96, 62%, 33%, 1);
---span-10: hsla(96, 69%, 36%, 1);
---span-11: hsla(96, 68%, 39%, 1);
---span-12: hsla(96, 73%, 42%, 1);
---span-13: hsla(96, 78%, 45%, 1);
---span-14: hsla(96, 80%, 48%, 1);
---span-15: hsla(96, 83%, 52%, 1);
---span-16: hsla(96, 76%, 55%, 1);
---span-17: hsla(96, 71%, 58%, 1);
---span-18: hsla(96, 74%, 61%, 1);
---span-19: hsla(96, 64%, 64%, 1);
---span-20: hsla(96, 57%, 67%, 1);
---span-21: hsla(96, 55%, 70%, 1);
---span-22: hsla(96, 55%, 73%, 1);
---span-23: hsla(96, 49%, 76%, 1);
---span-24: hsla(96, 43%, 80%, 1);
---span-25: hsla(96, 41%, 83%, 1);
---span-26: hsla(96, 36%, 86%, 1);
---span-27: hsla(96, 32%, 89%, 1);
---span-28: hsla(96, 26%, 92%, 1);
+--almost-black: hsla(96, 27%, 8%, 1);
+--charcoal: hsla(96, 26%, 11%, 1);
+--very-dark-green: hsla(96, 35%, 14%, 1);
+--dark-forest-green: hsla(96, 36%, 17%, 1);
+--pine-green: hsla(96, 44%, 20%, 1);
+--navy-green: hsla(96, 43%, 24%, 1);
+--camouflage-green: hsla(96, 51%, 27%, 1);
+--tree-green: hsla(96, 56%, 30%, 1);
+--sap-green: hsla(96, 62%, 33%, 1);
+--grass: hsla(96, 69%, 36%, 1);
+--lawn-green: hsla(96, 68%, 39%, 1);
+--kermit-green: hsla(96, 73%, 42%, 1);
+--toxic-green: hsla(96, 78%, 45%, 1);
+--green-apple: hsla(96, 80%, 48%, 1);
+--bright-lime: hsla(96, 83%, 52%, 1);
+--kiwi-green: hsla(96, 76%, 55%, 1);
+--apple-green: hsla(96, 71%, 58%, 1);
+--light-grass-green: hsla(96, 74%, 61%, 1);
+--pistachio: hsla(96, 64%, 64%, 1);
+--pale-olive-green: hsla(96, 57%, 67%, 1);
+--light-moss-green: hsla(96, 55%, 70%, 1);
+--light-sage: hsla(96, 55%, 73%, 1);
+--very-pale-green: hsla(96, 49%, 76%, 1);
+--very-light-green: hsla(96, 43%, 80%, 1);
+--eggshell: hsla(96, 41%, 83%, 1);
+--off-white: hsla(96, 36%, 86%, 1);
+--very-light-pink: hsla(96, 32%, 89%, 1);
+--white: hsla(96, 26%, 92%, 1);
 }
 
 /* SCSS HEX */
-$span-01: #131a0fff;
-$span-02: #1a2415ff;
-$span-03: #233118ff;
-$span-04: #273c1cff;
-$span-05: #304b1dff;
-$span-06: #375622ff;
-$span-07: #3d6721ff;
-$span-08: #407721ff;
-$span-09: #4d8820ff;
-$span-10: #4f9b1dff;
-$span-11: #55a720ff;
-$span-12: #5dba1dff;
-$span-13: #5ace19ff;
-$span-14: #65de19ff;
-$span-15: #6eea1dff;
-$span-16: #81e433ff;
-$span-17: #87e047ff;
-$span-18: #93e552ff;
-$span-19: #98de69ff;
-$span-20: #9fdb7bff;
-$span-21: #aadd89ff;
-$span-22: #b6e096ff;
-$span-23: #bee1a5ff;
-$span-24: #c4e1b5ff;
-$span-25: #cee5c1ff;
-$span-26: #d9e8ceff;
-$span-27: #e2ecdaff;
-$span-28: #eaf0e5ff;
+$almost-black: #131a0fff;
+$charcoal: #1a2415ff;
+$very-dark-green: #233118ff;
+$dark-forest-green: #273c1cff;
+$pine-green: #304b1dff;
+$navy-green: #375622ff;
+$camouflage-green: #3d6721ff;
+$tree-green: #407721ff;
+$sap-green: #4d8820ff;
+$grass: #4f9b1dff;
+$lawn-green: #55a720ff;
+$kermit-green: #5dba1dff;
+$toxic-green: #5ace19ff;
+$green-apple: #65de19ff;
+$bright-lime: #6eea1dff;
+$kiwi-green: #81e433ff;
+$apple-green: #87e047ff;
+$light-grass-green: #93e552ff;
+$pistachio: #98de69ff;
+$pale-olive-green: #9fdb7bff;
+$light-moss-green: #aadd89ff;
+$light-sage: #b6e096ff;
+$very-pale-green: #bee1a5ff;
+$very-light-green: #c4e1b5ff;
+$eggshell: #cee5c1ff;
+$off-white: #d9e8ceff;
+$very-light-pink: #e2ecdaff;
+$white: #eaf0e5ff;
 
 /* SCSS HSL */
-$span-01: hsla(96, 27%, 8%, 1);
-$span-02: hsla(96, 26%, 11%, 1);
-$span-03: hsla(96, 35%, 14%, 1);
-$span-04: hsla(96, 36%, 17%, 1);
-$span-05: hsla(96, 44%, 20%, 1);
-$span-06: hsla(96, 43%, 24%, 1);
-$span-07: hsla(96, 51%, 27%, 1);
-$span-08: hsla(96, 56%, 30%, 1);
-$span-09: hsla(96, 62%, 33%, 1);
-$span-10: hsla(96, 69%, 36%, 1);
-$span-11: hsla(96, 68%, 39%, 1);
-$span-12: hsla(96, 73%, 42%, 1);
-$span-13: hsla(96, 78%, 45%, 1);
-$span-14: hsla(96, 80%, 48%, 1);
-$span-15: hsla(96, 83%, 52%, 1);
-$span-16: hsla(96, 76%, 55%, 1);
-$span-17: hsla(96, 71%, 58%, 1);
-$span-18: hsla(96, 74%, 61%, 1);
-$span-19: hsla(96, 64%, 64%, 1);
-$span-20: hsla(96, 57%, 67%, 1);
-$span-21: hsla(96, 55%, 70%, 1);
-$span-22: hsla(96, 55%, 73%, 1);
-$span-23: hsla(96, 49%, 76%, 1);
-$span-24: hsla(96, 43%, 80%, 1);
-$span-25: hsla(96, 41%, 83%, 1);
-$span-26: hsla(96, 36%, 86%, 1);
-$span-27: hsla(96, 32%, 89%, 1);
-$span-28: hsla(96, 26%, 92%, 1);
+$almost-black: hsla(96, 27%, 8%, 1);
+$charcoal: hsla(96, 26%, 11%, 1);
+$very-dark-green: hsla(96, 35%, 14%, 1);
+$dark-forest-green: hsla(96, 36%, 17%, 1);
+$pine-green: hsla(96, 44%, 20%, 1);
+$navy-green: hsla(96, 43%, 24%, 1);
+$camouflage-green: hsla(96, 51%, 27%, 1);
+$tree-green: hsla(96, 56%, 30%, 1);
+$sap-green: hsla(96, 62%, 33%, 1);
+$grass: hsla(96, 69%, 36%, 1);
+$lawn-green: hsla(96, 68%, 39%, 1);
+$kermit-green: hsla(96, 73%, 42%, 1);
+$toxic-green: hsla(96, 78%, 45%, 1);
+$green-apple: hsla(96, 80%, 48%, 1);
+$bright-lime: hsla(96, 83%, 52%, 1);
+$kiwi-green: hsla(96, 76%, 55%, 1);
+$apple-green: hsla(96, 71%, 58%, 1);
+$light-grass-green: hsla(96, 74%, 61%, 1);
+$pistachio: hsla(96, 64%, 64%, 1);
+$pale-olive-green: hsla(96, 57%, 67%, 1);
+$light-moss-green: hsla(96, 55%, 70%, 1);
+$light-sage: hsla(96, 55%, 73%, 1);
+$very-pale-green: hsla(96, 49%, 76%, 1);
+$very-light-green: hsla(96, 43%, 80%, 1);
+$eggshell: hsla(96, 41%, 83%, 1);
+$off-white: hsla(96, 36%, 86%, 1);
+$very-light-pink: hsla(96, 32%, 89%, 1);
+$white: hsla(96, 26%, 92%, 1);
 
 /* SCSS RGB */
-$span-01: rgba(19, 26, 15, 1);
-$span-02: rgba(26, 36, 21, 1);
-$span-03: rgba(35, 49, 24, 1);
-$span-04: rgba(39, 60, 28, 1);
-$span-05: rgba(48, 75, 29, 1);
-$span-06: rgba(55, 86, 34, 1);
-$span-07: rgba(61, 103, 33, 1);
-$span-08: rgba(64, 119, 33, 1);
-$span-09: rgba(77, 136, 32, 1);
-$span-10: rgba(79, 155, 29, 1);
-$span-11: rgba(85, 167, 32, 1);
-$span-12: rgba(93, 186, 29, 1);
-$span-13: rgba(90, 206, 25, 1);
-$span-14: rgba(101, 222, 25, 1);
-$span-15: rgba(110, 234, 29, 1);
-$span-16: rgba(129, 228, 51, 1);
-$span-17: rgba(135, 224, 71, 1);
-$span-18: rgba(147, 229, 82, 1);
-$span-19: rgba(152, 222, 105, 1);
-$span-20: rgba(159, 219, 123, 1);
-$span-21: rgba(170, 221, 137, 1);
-$span-22: rgba(182, 224, 150, 1);
-$span-23: rgba(190, 225, 165, 1);
-$span-24: rgba(196, 225, 181, 1);
-$span-25: rgba(206, 229, 193, 1);
-$span-26: rgba(217, 232, 206, 1);
-$span-27: rgba(226, 236, 218, 1);
-$span-28: rgba(234, 240, 229, 1);
+$almost-black: rgba(19, 26, 15, 1);
+$charcoal: rgba(26, 36, 21, 1);
+$very-dark-green: rgba(35, 49, 24, 1);
+$dark-forest-green: rgba(39, 60, 28, 1);
+$pine-green: rgba(48, 75, 29, 1);
+$navy-green: rgba(55, 86, 34, 1);
+$camouflage-green: rgba(61, 103, 33, 1);
+$tree-green: rgba(64, 119, 33, 1);
+$sap-green: rgba(77, 136, 32, 1);
+$grass: rgba(79, 155, 29, 1);
+$lawn-green: rgba(85, 167, 32, 1);
+$kermit-green: rgba(93, 186, 29, 1);
+$toxic-green: rgba(90, 206, 25, 1);
+$green-apple: rgba(101, 222, 25, 1);
+$bright-lime: rgba(110, 234, 29, 1);
+$kiwi-green: rgba(129, 228, 51, 1);
+$apple-green: rgba(135, 224, 71, 1);
+$light-grass-green: rgba(147, 229, 82, 1);
+$pistachio: rgba(152, 222, 105, 1);
+$pale-olive-green: rgba(159, 219, 123, 1);
+$light-moss-green: rgba(170, 221, 137, 1);
+$light-sage: rgba(182, 224, 150, 1);
+$very-pale-green: rgba(190, 225, 165, 1);
+$very-light-green: rgba(196, 225, 181, 1);
+$eggshell: rgba(206, 229, 193, 1);
+$off-white: rgba(217, 232, 206, 1);
+$very-light-pink: rgba(226, 236, 218, 1);
+$white: rgba(234, 240, 229, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #131a0fff, #1a2415ff, #233118ff, #273c1cff, #304b1dff, #375622ff, #3d6721ff, #407721ff, #4d8820ff, #4f9b1dff, #55a720ff, #5dba1dff, #5ace19ff, #65de19ff, #6eea1dff, #81e433ff, #87e047ff, #93e552ff, #98de69ff, #9fdb7bff, #aadd89ff, #b6e096ff, #bee1a5ff, #c4e1b5ff, #cee5c1ff, #d9e8ceff, #e2ecdaff, #eaf0e5ff);
@@ -183,32 +183,32 @@ $gradient-radial: radial-gradient(#131a0fff, #1a2415ff, #233118ff, #273c1cff, #3
 
 /* SCSS Map */
 $moss-span-28-11-map: (
-    "span-01": #131a0fff,
-    "span-02": #1a2415ff,
-    "span-03": #233118ff,
-    "span-04": #273c1cff,
-    "span-05": #304b1dff,
-    "span-06": #375622ff,
-    "span-07": #3d6721ff,
-    "span-08": #407721ff,
-    "span-09": #4d8820ff,
-    "span-10": #4f9b1dff,
-    "span-11": #55a720ff,
-    "span-12": #5dba1dff,
-    "span-13": #5ace19ff,
-    "span-14": #65de19ff,
-    "span-15": #6eea1dff,
-    "span-16": #81e433ff,
-    "span-17": #87e047ff,
-    "span-18": #93e552ff,
-    "span-19": #98de69ff,
-    "span-20": #9fdb7bff,
-    "span-21": #aadd89ff,
-    "span-22": #b6e096ff,
-    "span-23": #bee1a5ff,
-    "span-24": #c4e1b5ff,
-    "span-25": #cee5c1ff,
-    "span-26": #d9e8ceff,
-    "span-27": #e2ecdaff,
-    "span-28": #eaf0e5ff
+    "almost-black": #131a0fff,
+    "charcoal": #1a2415ff,
+    "very-dark-green": #233118ff,
+    "dark-forest-green": #273c1cff,
+    "pine-green": #304b1dff,
+    "navy-green": #375622ff,
+    "camouflage-green": #3d6721ff,
+    "tree-green": #407721ff,
+    "sap-green": #4d8820ff,
+    "grass": #4f9b1dff,
+    "lawn-green": #55a720ff,
+    "kermit-green": #5dba1dff,
+    "toxic-green": #5ace19ff,
+    "green-apple": #65de19ff,
+    "bright-lime": #6eea1dff,
+    "kiwi-green": #81e433ff,
+    "apple-green": #87e047ff,
+    "light-grass-green": #93e552ff,
+    "pistachio": #98de69ff,
+    "pale-olive-green": #9fdb7bff,
+    "light-moss-green": #aadd89ff,
+    "light-sage": #b6e096ff,
+    "very-pale-green": #bee1a5ff,
+    "very-light-green": #c4e1b5ff,
+    "eggshell": #cee5c1ff,
+    "off-white": #d9e8ceff,
+    "very-light-pink": #e2ecdaff,
+    "white": #eaf0e5ff
 );

@@ -25,55 +25,55 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---sunflower-field-system-field-shadow: #1a1405ff;
---sunflower-field-system-soil-umber: #3f2f08ff;
---sunflower-field-system-seed-brown: #713f12ff;
---sunflower-field-system-petal-gold: #ca8a04ff;
---sunflower-field-system-sunflower-yellow: #eab308ff;
---sunflower-field-system-daylight-petal: #fde047ff;
---sunflower-field-system-pollen-cream: #fef9c3ff;
---sunflower-field-system-field-mist: #fefce8ff;
+--field-shadow: #1a1405ff;
+--soil-umber: #3f2f08ff;
+--seed-brown: #713f12ff;
+--petal-gold: #ca8a04ff;
+--sunflower-yellow: #eab308ff;
+--daylight-petal: #fde047ff;
+--pollen-cream: #fef9c3ff;
+--field-mist: #fefce8ff;
 
 /* CSS HSL */
---sunflower-field-system-field-shadow: hsla(43, 68%, 6%, 1);
---sunflower-field-system-soil-umber: hsla(43, 77%, 14%, 1);
---sunflower-field-system-seed-brown: hsla(28, 73%, 26%, 1);
---sunflower-field-system-petal-gold: hsla(41, 96%, 40%, 1);
---sunflower-field-system-sunflower-yellow: hsla(45, 93%, 47%, 1);
---sunflower-field-system-daylight-petal: hsla(50, 98%, 64%, 1);
---sunflower-field-system-pollen-cream: hsla(55, 97%, 88%, 1);
---sunflower-field-system-field-mist: hsla(55, 92%, 95%, 1);
+--field-shadow: hsla(43, 68%, 6%, 1);
+--soil-umber: hsla(43, 77%, 14%, 1);
+--seed-brown: hsla(28, 73%, 26%, 1);
+--petal-gold: hsla(41, 96%, 40%, 1);
+--sunflower-yellow: hsla(45, 93%, 47%, 1);
+--daylight-petal: hsla(50, 98%, 64%, 1);
+--pollen-cream: hsla(55, 97%, 88%, 1);
+--field-mist: hsla(55, 92%, 95%, 1);
 }
 
 /* SCSS HEX */
-$sunflower-field-system-field-shadow: #1a1405ff;
-$sunflower-field-system-soil-umber: #3f2f08ff;
-$sunflower-field-system-seed-brown: #713f12ff;
-$sunflower-field-system-petal-gold: #ca8a04ff;
-$sunflower-field-system-sunflower-yellow: #eab308ff;
-$sunflower-field-system-daylight-petal: #fde047ff;
-$sunflower-field-system-pollen-cream: #fef9c3ff;
-$sunflower-field-system-field-mist: #fefce8ff;
+$field-shadow: #1a1405ff;
+$soil-umber: #3f2f08ff;
+$seed-brown: #713f12ff;
+$petal-gold: #ca8a04ff;
+$sunflower-yellow: #eab308ff;
+$daylight-petal: #fde047ff;
+$pollen-cream: #fef9c3ff;
+$field-mist: #fefce8ff;
 
 /* SCSS HSL */
-$sunflower-field-system-field-shadow: hsla(43, 68%, 6%, 1);
-$sunflower-field-system-soil-umber: hsla(43, 77%, 14%, 1);
-$sunflower-field-system-seed-brown: hsla(28, 73%, 26%, 1);
-$sunflower-field-system-petal-gold: hsla(41, 96%, 40%, 1);
-$sunflower-field-system-sunflower-yellow: hsla(45, 93%, 47%, 1);
-$sunflower-field-system-daylight-petal: hsla(50, 98%, 64%, 1);
-$sunflower-field-system-pollen-cream: hsla(55, 97%, 88%, 1);
-$sunflower-field-system-field-mist: hsla(55, 92%, 95%, 1);
+$field-shadow: hsla(43, 68%, 6%, 1);
+$soil-umber: hsla(43, 77%, 14%, 1);
+$seed-brown: hsla(28, 73%, 26%, 1);
+$petal-gold: hsla(41, 96%, 40%, 1);
+$sunflower-yellow: hsla(45, 93%, 47%, 1);
+$daylight-petal: hsla(50, 98%, 64%, 1);
+$pollen-cream: hsla(55, 97%, 88%, 1);
+$field-mist: hsla(55, 92%, 95%, 1);
 
 /* SCSS RGB */
-$sunflower-field-system-field-shadow: rgba(26, 20, 5, 1);
-$sunflower-field-system-soil-umber: rgba(63, 47, 8, 1);
-$sunflower-field-system-seed-brown: rgba(113, 63, 18, 1);
-$sunflower-field-system-petal-gold: rgba(202, 138, 4, 1);
-$sunflower-field-system-sunflower-yellow: rgba(234, 179, 8, 1);
-$sunflower-field-system-daylight-petal: rgba(253, 224, 71, 1);
-$sunflower-field-system-pollen-cream: rgba(254, 249, 195, 1);
-$sunflower-field-system-field-mist: rgba(254, 252, 232, 1);
+$field-shadow: rgba(26, 20, 5, 1);
+$soil-umber: rgba(63, 47, 8, 1);
+$seed-brown: rgba(113, 63, 18, 1);
+$petal-gold: rgba(202, 138, 4, 1);
+$sunflower-yellow: rgba(234, 179, 8, 1);
+$daylight-petal: rgba(253, 224, 71, 1);
+$pollen-cream: rgba(254, 249, 195, 1);
+$field-mist: rgba(254, 252, 232, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1a1405ff, #3f2f08ff, #713f12ff, #ca8a04ff, #eab308ff, #fde047ff, #fef9c3ff, #fefce8ff);
@@ -88,12 +88,12 @@ $gradient-radial: radial-gradient(#1a1405ff, #3f2f08ff, #713f12ff, #ca8a04ff, #e
 
 /* SCSS Map */
 $sunflower-field-system-map: (
-    "sunflower-field-system-field-shadow": #1a1405ff,
-    "sunflower-field-system-soil-umber": #3f2f08ff,
-    "sunflower-field-system-seed-brown": #713f12ff,
-    "sunflower-field-system-petal-gold": #ca8a04ff,
-    "sunflower-field-system-sunflower-yellow": #eab308ff,
-    "sunflower-field-system-daylight-petal": #fde047ff,
-    "sunflower-field-system-pollen-cream": #fef9c3ff,
-    "sunflower-field-system-field-mist": #fefce8ff
+    "field-shadow": #1a1405ff,
+    "soil-umber": #3f2f08ff,
+    "seed-brown": #713f12ff,
+    "petal-gold": #ca8a04ff,
+    "sunflower-yellow": #eab308ff,
+    "daylight-petal": #fde047ff,
+    "pollen-cream": #fef9c3ff,
+    "field-mist": #fefce8ff
 );

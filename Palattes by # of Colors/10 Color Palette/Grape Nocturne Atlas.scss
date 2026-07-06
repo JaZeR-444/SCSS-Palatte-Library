@@ -25,65 +25,65 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---grape-nocturne-atlas-nocturne-ink: #14061fff;
---grape-nocturne-atlas-grape-shadow: #2a0f3fff;
---grape-nocturne-atlas-wine-plum: #4a1d5fff;
---grape-nocturne-atlas-midnight-grape: #6b2d83ff;
---grape-nocturne-atlas-velvet-grape: #8e44adff;
---grape-nocturne-atlas-orchid-chord: #b06ad1ff;
---grape-nocturne-atlas-lavender-echo: #d7bde2ff;
---grape-nocturne-atlas-mist-note: #eadcf8ff;
---grape-nocturne-atlas-stage-white: #fbf7ffff;
---grape-nocturne-atlas-candle-gold: #fef3c7ff;
+--nocturne-ink: #14061fff;
+--grape-shadow: #2a0f3fff;
+--wine-plum: #4a1d5fff;
+--midnight-grape: #6b2d83ff;
+--velvet-grape: #8e44adff;
+--orchid-chord: #b06ad1ff;
+--lavender-echo: #d7bde2ff;
+--mist-note: #eadcf8ff;
+--stage-white: #fbf7ffff;
+--candle-gold: #fef3c7ff;
 
 /* CSS HSL */
---grape-nocturne-atlas-nocturne-ink: hsla(274, 68%, 7%, 1);
---grape-nocturne-atlas-grape-shadow: hsla(274, 62%, 15%, 1);
---grape-nocturne-atlas-wine-plum: hsla(281, 53%, 24%, 1);
---grape-nocturne-atlas-midnight-grape: hsla(283, 49%, 35%, 1);
---grape-nocturne-atlas-velvet-grape: hsla(282, 44%, 47%, 1);
---grape-nocturne-atlas-orchid-chord: hsla(281, 53%, 62%, 1);
---grape-nocturne-atlas-lavender-echo: hsla(282, 39%, 81%, 1);
---grape-nocturne-atlas-mist-note: hsla(270, 67%, 92%, 1);
---grape-nocturne-atlas-stage-white: hsla(270, 100%, 98%, 1);
---grape-nocturne-atlas-candle-gold: hsla(48, 96%, 89%, 1);
+--nocturne-ink: hsla(274, 68%, 7%, 1);
+--grape-shadow: hsla(274, 62%, 15%, 1);
+--wine-plum: hsla(281, 53%, 24%, 1);
+--midnight-grape: hsla(283, 49%, 35%, 1);
+--velvet-grape: hsla(282, 44%, 47%, 1);
+--orchid-chord: hsla(281, 53%, 62%, 1);
+--lavender-echo: hsla(282, 39%, 81%, 1);
+--mist-note: hsla(270, 67%, 92%, 1);
+--stage-white: hsla(270, 100%, 98%, 1);
+--candle-gold: hsla(48, 96%, 89%, 1);
 }
 
 /* SCSS HEX */
-$grape-nocturne-atlas-nocturne-ink: #14061fff;
-$grape-nocturne-atlas-grape-shadow: #2a0f3fff;
-$grape-nocturne-atlas-wine-plum: #4a1d5fff;
-$grape-nocturne-atlas-midnight-grape: #6b2d83ff;
-$grape-nocturne-atlas-velvet-grape: #8e44adff;
-$grape-nocturne-atlas-orchid-chord: #b06ad1ff;
-$grape-nocturne-atlas-lavender-echo: #d7bde2ff;
-$grape-nocturne-atlas-mist-note: #eadcf8ff;
-$grape-nocturne-atlas-stage-white: #fbf7ffff;
-$grape-nocturne-atlas-candle-gold: #fef3c7ff;
+$nocturne-ink: #14061fff;
+$grape-shadow: #2a0f3fff;
+$wine-plum: #4a1d5fff;
+$midnight-grape: #6b2d83ff;
+$velvet-grape: #8e44adff;
+$orchid-chord: #b06ad1ff;
+$lavender-echo: #d7bde2ff;
+$mist-note: #eadcf8ff;
+$stage-white: #fbf7ffff;
+$candle-gold: #fef3c7ff;
 
 /* SCSS HSL */
-$grape-nocturne-atlas-nocturne-ink: hsla(274, 68%, 7%, 1);
-$grape-nocturne-atlas-grape-shadow: hsla(274, 62%, 15%, 1);
-$grape-nocturne-atlas-wine-plum: hsla(281, 53%, 24%, 1);
-$grape-nocturne-atlas-midnight-grape: hsla(283, 49%, 35%, 1);
-$grape-nocturne-atlas-velvet-grape: hsla(282, 44%, 47%, 1);
-$grape-nocturne-atlas-orchid-chord: hsla(281, 53%, 62%, 1);
-$grape-nocturne-atlas-lavender-echo: hsla(282, 39%, 81%, 1);
-$grape-nocturne-atlas-mist-note: hsla(270, 67%, 92%, 1);
-$grape-nocturne-atlas-stage-white: hsla(270, 100%, 98%, 1);
-$grape-nocturne-atlas-candle-gold: hsla(48, 96%, 89%, 1);
+$nocturne-ink: hsla(274, 68%, 7%, 1);
+$grape-shadow: hsla(274, 62%, 15%, 1);
+$wine-plum: hsla(281, 53%, 24%, 1);
+$midnight-grape: hsla(283, 49%, 35%, 1);
+$velvet-grape: hsla(282, 44%, 47%, 1);
+$orchid-chord: hsla(281, 53%, 62%, 1);
+$lavender-echo: hsla(282, 39%, 81%, 1);
+$mist-note: hsla(270, 67%, 92%, 1);
+$stage-white: hsla(270, 100%, 98%, 1);
+$candle-gold: hsla(48, 96%, 89%, 1);
 
 /* SCSS RGB */
-$grape-nocturne-atlas-nocturne-ink: rgba(20, 6, 31, 1);
-$grape-nocturne-atlas-grape-shadow: rgba(42, 15, 63, 1);
-$grape-nocturne-atlas-wine-plum: rgba(74, 29, 95, 1);
-$grape-nocturne-atlas-midnight-grape: rgba(107, 45, 131, 1);
-$grape-nocturne-atlas-velvet-grape: rgba(142, 68, 173, 1);
-$grape-nocturne-atlas-orchid-chord: rgba(176, 106, 209, 1);
-$grape-nocturne-atlas-lavender-echo: rgba(215, 189, 226, 1);
-$grape-nocturne-atlas-mist-note: rgba(234, 220, 248, 1);
-$grape-nocturne-atlas-stage-white: rgba(251, 247, 255, 1);
-$grape-nocturne-atlas-candle-gold: rgba(254, 243, 199, 1);
+$nocturne-ink: rgba(20, 6, 31, 1);
+$grape-shadow: rgba(42, 15, 63, 1);
+$wine-plum: rgba(74, 29, 95, 1);
+$midnight-grape: rgba(107, 45, 131, 1);
+$velvet-grape: rgba(142, 68, 173, 1);
+$orchid-chord: rgba(176, 106, 209, 1);
+$lavender-echo: rgba(215, 189, 226, 1);
+$mist-note: rgba(234, 220, 248, 1);
+$stage-white: rgba(251, 247, 255, 1);
+$candle-gold: rgba(254, 243, 199, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff, #8e44adff, #b06ad1ff, #d7bde2ff, #eadcf8ff, #fbf7ffff, #fef3c7ff);
@@ -98,14 +98,14 @@ $gradient-radial: radial-gradient(#14061fff, #2a0f3fff, #4a1d5fff, #6b2d83ff, #8
 
 /* SCSS Map */
 $grape-nocturne-atlas-map: (
-    "grape-nocturne-atlas-nocturne-ink": #14061fff,
-    "grape-nocturne-atlas-grape-shadow": #2a0f3fff,
-    "grape-nocturne-atlas-wine-plum": #4a1d5fff,
-    "grape-nocturne-atlas-midnight-grape": #6b2d83ff,
-    "grape-nocturne-atlas-velvet-grape": #8e44adff,
-    "grape-nocturne-atlas-orchid-chord": #b06ad1ff,
-    "grape-nocturne-atlas-lavender-echo": #d7bde2ff,
-    "grape-nocturne-atlas-mist-note": #eadcf8ff,
-    "grape-nocturne-atlas-stage-white": #fbf7ffff,
-    "grape-nocturne-atlas-candle-gold": #fef3c7ff
+    "nocturne-ink": #14061fff,
+    "grape-shadow": #2a0f3fff,
+    "wine-plum": #4a1d5fff,
+    "midnight-grape": #6b2d83ff,
+    "velvet-grape": #8e44adff,
+    "orchid-chord": #b06ad1ff,
+    "lavender-echo": #d7bde2ff,
+    "mist-note": #eadcf8ff,
+    "stage-white": #fbf7ffff,
+    "candle-gold": #fef3c7ff
 );

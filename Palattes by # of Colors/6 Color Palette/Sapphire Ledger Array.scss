@@ -25,45 +25,45 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---sapphire-ledger-array-ledger-navy: #0a2540ff;
---sapphire-ledger-array-sapphire-book: #12355bff;
---sapphire-ledger-array-report-blue: #1d4e89ff;
---sapphire-ledger-array-primary-blue: #2563ebff;
---sapphire-ledger-array-metric-blue: #2f80edff;
---sapphire-ledger-array-chart-cyan: #56ccf2ff;
+--ledger-navy: #0a2540ff;
+--sapphire-book: #12355bff;
+--report-blue: #1d4e89ff;
+--primary-blue: #2563ebff;
+--metric-blue: #2f80edff;
+--chart-cyan: #56ccf2ff;
 
 /* CSS HSL */
---sapphire-ledger-array-ledger-navy: hsla(210, 73%, 15%, 1);
---sapphire-ledger-array-sapphire-book: hsla(211, 67%, 21%, 1);
---sapphire-ledger-array-report-blue: hsla(213, 65%, 33%, 1);
---sapphire-ledger-array-primary-blue: hsla(221, 83%, 53%, 1);
---sapphire-ledger-array-metric-blue: hsla(214, 84%, 56%, 1);
---sapphire-ledger-array-chart-cyan: hsla(195, 86%, 64%, 1);
+--ledger-navy: hsla(210, 73%, 15%, 1);
+--sapphire-book: hsla(211, 67%, 21%, 1);
+--report-blue: hsla(213, 65%, 33%, 1);
+--primary-blue: hsla(221, 83%, 53%, 1);
+--metric-blue: hsla(214, 84%, 56%, 1);
+--chart-cyan: hsla(195, 86%, 64%, 1);
 }
 
 /* SCSS HEX */
-$sapphire-ledger-array-ledger-navy: #0a2540ff;
-$sapphire-ledger-array-sapphire-book: #12355bff;
-$sapphire-ledger-array-report-blue: #1d4e89ff;
-$sapphire-ledger-array-primary-blue: #2563ebff;
-$sapphire-ledger-array-metric-blue: #2f80edff;
-$sapphire-ledger-array-chart-cyan: #56ccf2ff;
+$ledger-navy: #0a2540ff;
+$sapphire-book: #12355bff;
+$report-blue: #1d4e89ff;
+$primary-blue: #2563ebff;
+$metric-blue: #2f80edff;
+$chart-cyan: #56ccf2ff;
 
 /* SCSS HSL */
-$sapphire-ledger-array-ledger-navy: hsla(210, 73%, 15%, 1);
-$sapphire-ledger-array-sapphire-book: hsla(211, 67%, 21%, 1);
-$sapphire-ledger-array-report-blue: hsla(213, 65%, 33%, 1);
-$sapphire-ledger-array-primary-blue: hsla(221, 83%, 53%, 1);
-$sapphire-ledger-array-metric-blue: hsla(214, 84%, 56%, 1);
-$sapphire-ledger-array-chart-cyan: hsla(195, 86%, 64%, 1);
+$ledger-navy: hsla(210, 73%, 15%, 1);
+$sapphire-book: hsla(211, 67%, 21%, 1);
+$report-blue: hsla(213, 65%, 33%, 1);
+$primary-blue: hsla(221, 83%, 53%, 1);
+$metric-blue: hsla(214, 84%, 56%, 1);
+$chart-cyan: hsla(195, 86%, 64%, 1);
 
 /* SCSS RGB */
-$sapphire-ledger-array-ledger-navy: rgba(10, 37, 64, 1);
-$sapphire-ledger-array-sapphire-book: rgba(18, 53, 91, 1);
-$sapphire-ledger-array-report-blue: rgba(29, 78, 137, 1);
-$sapphire-ledger-array-primary-blue: rgba(37, 99, 235, 1);
-$sapphire-ledger-array-metric-blue: rgba(47, 128, 237, 1);
-$sapphire-ledger-array-chart-cyan: rgba(86, 204, 242, 1);
+$ledger-navy: rgba(10, 37, 64, 1);
+$sapphire-book: rgba(18, 53, 91, 1);
+$report-blue: rgba(29, 78, 137, 1);
+$primary-blue: rgba(37, 99, 235, 1);
+$metric-blue: rgba(47, 128, 237, 1);
+$chart-cyan: rgba(86, 204, 242, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #0a2540ff, #12355bff, #1d4e89ff, #2563ebff, #2f80edff, #56ccf2ff);
@@ -78,10 +78,10 @@ $gradient-radial: radial-gradient(#0a2540ff, #12355bff, #1d4e89ff, #2563ebff, #2
 
 /* SCSS Map */
 $sapphire-ledger-array-map: (
-    "sapphire-ledger-array-ledger-navy": #0a2540ff,
-    "sapphire-ledger-array-sapphire-book": #12355bff,
-    "sapphire-ledger-array-report-blue": #1d4e89ff,
-    "sapphire-ledger-array-primary-blue": #2563ebff,
-    "sapphire-ledger-array-metric-blue": #2f80edff,
-    "sapphire-ledger-array-chart-cyan": #56ccf2ff
+    "ledger-navy": #0a2540ff,
+    "sapphire-book": #12355bff,
+    "report-blue": #1d4e89ff,
+    "primary-blue": #2563ebff,
+    "metric-blue": #2f80edff,
+    "chart-cyan": #56ccf2ff
 );

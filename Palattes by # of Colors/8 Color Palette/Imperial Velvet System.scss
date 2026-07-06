@@ -25,55 +25,55 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---imperial-velvet-system-velvet-void: #0e061aff;
---imperial-velvet-system-imperial-shadow: #1f0b3dff;
---imperial-velvet-system-royal-plum: #37106bff;
---imperial-velvet-system-crown-violet: #5521a3ff;
---imperial-velvet-system-regal-purple: #7c3aedff;
---imperial-velvet-system-silk-lavender: #a78bfaff;
---imperial-velvet-system-court-lilac: #c4b5fdff;
---imperial-velvet-system-veil-mist: #e9d5ffff;
+--velvet-void: #0e061aff;
+--imperial-shadow: #1f0b3dff;
+--royal-plum: #37106bff;
+--crown-violet: #5521a3ff;
+--regal-purple: #7c3aedff;
+--silk-lavender: #a78bfaff;
+--court-lilac: #c4b5fdff;
+--veil-mist: #e9d5ffff;
 
 /* CSS HSL */
---imperial-velvet-system-velvet-void: hsla(264, 63%, 6%, 1);
---imperial-velvet-system-imperial-shadow: hsla(264, 69%, 14%, 1);
---imperial-velvet-system-royal-plum: hsla(266, 74%, 24%, 1);
---imperial-velvet-system-crown-violet: hsla(264, 66%, 38%, 1);
---imperial-velvet-system-regal-purple: hsla(262, 83%, 58%, 1);
---imperial-velvet-system-silk-lavender: hsla(255, 92%, 76%, 1);
---imperial-velvet-system-court-lilac: hsla(252, 95%, 85%, 1);
---imperial-velvet-system-veil-mist: hsla(269, 100%, 92%, 1);
+--velvet-void: hsla(264, 63%, 6%, 1);
+--imperial-shadow: hsla(264, 69%, 14%, 1);
+--royal-plum: hsla(266, 74%, 24%, 1);
+--crown-violet: hsla(264, 66%, 38%, 1);
+--regal-purple: hsla(262, 83%, 58%, 1);
+--silk-lavender: hsla(255, 92%, 76%, 1);
+--court-lilac: hsla(252, 95%, 85%, 1);
+--veil-mist: hsla(269, 100%, 92%, 1);
 }
 
 /* SCSS HEX */
-$imperial-velvet-system-velvet-void: #0e061aff;
-$imperial-velvet-system-imperial-shadow: #1f0b3dff;
-$imperial-velvet-system-royal-plum: #37106bff;
-$imperial-velvet-system-crown-violet: #5521a3ff;
-$imperial-velvet-system-regal-purple: #7c3aedff;
-$imperial-velvet-system-silk-lavender: #a78bfaff;
-$imperial-velvet-system-court-lilac: #c4b5fdff;
-$imperial-velvet-system-veil-mist: #e9d5ffff;
+$velvet-void: #0e061aff;
+$imperial-shadow: #1f0b3dff;
+$royal-plum: #37106bff;
+$crown-violet: #5521a3ff;
+$regal-purple: #7c3aedff;
+$silk-lavender: #a78bfaff;
+$court-lilac: #c4b5fdff;
+$veil-mist: #e9d5ffff;
 
 /* SCSS HSL */
-$imperial-velvet-system-velvet-void: hsla(264, 63%, 6%, 1);
-$imperial-velvet-system-imperial-shadow: hsla(264, 69%, 14%, 1);
-$imperial-velvet-system-royal-plum: hsla(266, 74%, 24%, 1);
-$imperial-velvet-system-crown-violet: hsla(264, 66%, 38%, 1);
-$imperial-velvet-system-regal-purple: hsla(262, 83%, 58%, 1);
-$imperial-velvet-system-silk-lavender: hsla(255, 92%, 76%, 1);
-$imperial-velvet-system-court-lilac: hsla(252, 95%, 85%, 1);
-$imperial-velvet-system-veil-mist: hsla(269, 100%, 92%, 1);
+$velvet-void: hsla(264, 63%, 6%, 1);
+$imperial-shadow: hsla(264, 69%, 14%, 1);
+$royal-plum: hsla(266, 74%, 24%, 1);
+$crown-violet: hsla(264, 66%, 38%, 1);
+$regal-purple: hsla(262, 83%, 58%, 1);
+$silk-lavender: hsla(255, 92%, 76%, 1);
+$court-lilac: hsla(252, 95%, 85%, 1);
+$veil-mist: hsla(269, 100%, 92%, 1);
 
 /* SCSS RGB */
-$imperial-velvet-system-velvet-void: rgba(14, 6, 26, 1);
-$imperial-velvet-system-imperial-shadow: rgba(31, 11, 61, 1);
-$imperial-velvet-system-royal-plum: rgba(55, 16, 107, 1);
-$imperial-velvet-system-crown-violet: rgba(85, 33, 163, 1);
-$imperial-velvet-system-regal-purple: rgba(124, 58, 237, 1);
-$imperial-velvet-system-silk-lavender: rgba(167, 139, 250, 1);
-$imperial-velvet-system-court-lilac: rgba(196, 181, 253, 1);
-$imperial-velvet-system-veil-mist: rgba(233, 213, 255, 1);
+$velvet-void: rgba(14, 6, 26, 1);
+$imperial-shadow: rgba(31, 11, 61, 1);
+$royal-plum: rgba(55, 16, 107, 1);
+$crown-violet: rgba(85, 33, 163, 1);
+$regal-purple: rgba(124, 58, 237, 1);
+$silk-lavender: rgba(167, 139, 250, 1);
+$court-lilac: rgba(196, 181, 253, 1);
+$veil-mist: rgba(233, 213, 255, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #0e061aff, #1f0b3dff, #37106bff, #5521a3ff, #7c3aedff, #a78bfaff, #c4b5fdff, #e9d5ffff);
@@ -88,12 +88,12 @@ $gradient-radial: radial-gradient(#0e061aff, #1f0b3dff, #37106bff, #5521a3ff, #7
 
 /* SCSS Map */
 $imperial-velvet-system-map: (
-    "imperial-velvet-system-velvet-void": #0e061aff,
-    "imperial-velvet-system-imperial-shadow": #1f0b3dff,
-    "imperial-velvet-system-royal-plum": #37106bff,
-    "imperial-velvet-system-crown-violet": #5521a3ff,
-    "imperial-velvet-system-regal-purple": #7c3aedff,
-    "imperial-velvet-system-silk-lavender": #a78bfaff,
-    "imperial-velvet-system-court-lilac": #c4b5fdff,
-    "imperial-velvet-system-veil-mist": #e9d5ffff
+    "velvet-void": #0e061aff,
+    "imperial-shadow": #1f0b3dff,
+    "royal-plum": #37106bff,
+    "crown-violet": #5521a3ff,
+    "regal-purple": #7c3aedff,
+    "silk-lavender": #a78bfaff,
+    "court-lilac": #c4b5fdff,
+    "veil-mist": #e9d5ffff
 );

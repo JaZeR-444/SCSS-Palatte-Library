@@ -25,30 +25,30 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---electric-mauve-trio-mauve-black: #0b0614ff;
---electric-mauve-trio-voltage-plum: #20113aff;
---electric-mauve-trio-circuit-mauve: #3b1d5fff;
+--mauve-black: #0b0614ff;
+--voltage-plum: #20113aff;
+--circuit-mauve: #3b1d5fff;
 
 /* CSS HSL */
---electric-mauve-trio-mauve-black: hsla(261, 54%, 5%, 1);
---electric-mauve-trio-voltage-plum: hsla(262, 55%, 15%, 1);
---electric-mauve-trio-circuit-mauve: hsla(267, 53%, 24%, 1);
+--mauve-black: hsla(261, 54%, 5%, 1);
+--voltage-plum: hsla(262, 55%, 15%, 1);
+--circuit-mauve: hsla(267, 53%, 24%, 1);
 }
 
 /* SCSS HEX */
-$electric-mauve-trio-mauve-black: #0b0614ff;
-$electric-mauve-trio-voltage-plum: #20113aff;
-$electric-mauve-trio-circuit-mauve: #3b1d5fff;
+$mauve-black: #0b0614ff;
+$voltage-plum: #20113aff;
+$circuit-mauve: #3b1d5fff;
 
 /* SCSS HSL */
-$electric-mauve-trio-mauve-black: hsla(261, 54%, 5%, 1);
-$electric-mauve-trio-voltage-plum: hsla(262, 55%, 15%, 1);
-$electric-mauve-trio-circuit-mauve: hsla(267, 53%, 24%, 1);
+$mauve-black: hsla(261, 54%, 5%, 1);
+$voltage-plum: hsla(262, 55%, 15%, 1);
+$circuit-mauve: hsla(267, 53%, 24%, 1);
 
 /* SCSS RGB */
-$electric-mauve-trio-mauve-black: rgba(11, 6, 20, 1);
-$electric-mauve-trio-voltage-plum: rgba(32, 17, 58, 1);
-$electric-mauve-trio-circuit-mauve: rgba(59, 29, 95, 1);
+$mauve-black: rgba(11, 6, 20, 1);
+$voltage-plum: rgba(32, 17, 58, 1);
+$circuit-mauve: rgba(59, 29, 95, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #0b0614ff, #20113aff, #3b1d5fff);
@@ -63,7 +63,7 @@ $gradient-radial: radial-gradient(#0b0614ff, #20113aff, #3b1d5fff);
 
 /* SCSS Map */
 $electric-mauve-trio-map: (
-    "electric-mauve-trio-mauve-black": #0b0614ff,
-    "electric-mauve-trio-voltage-plum": #20113aff,
-    "electric-mauve-trio-circuit-mauve": #3b1d5fff
+    "mauve-black": #0b0614ff,
+    "voltage-plum": #20113aff,
+    "circuit-mauve": #3b1d5fff
 );

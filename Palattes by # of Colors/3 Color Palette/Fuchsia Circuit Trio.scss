@@ -25,30 +25,30 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---fuchsia-circuit-trio-console-plum: #1a0712ff;
---fuchsia-circuit-trio-circuit-fuchsia: #9d174dff;
---fuchsia-circuit-trio-signal-pink: #ec4899ff;
+--console-plum: #1a0712ff;
+--circuit-fuchsia: #9d174dff;
+--signal-pink: #ec4899ff;
 
 /* CSS HSL */
---fuchsia-circuit-trio-console-plum: hsla(325, 58%, 6%, 1);
---fuchsia-circuit-trio-circuit-fuchsia: hsla(336, 74%, 35%, 1);
---fuchsia-circuit-trio-signal-pink: hsla(330, 81%, 60%, 1);
+--console-plum: hsla(325, 58%, 6%, 1);
+--circuit-fuchsia: hsla(336, 74%, 35%, 1);
+--signal-pink: hsla(330, 81%, 60%, 1);
 }
 
 /* SCSS HEX */
-$fuchsia-circuit-trio-console-plum: #1a0712ff;
-$fuchsia-circuit-trio-circuit-fuchsia: #9d174dff;
-$fuchsia-circuit-trio-signal-pink: #ec4899ff;
+$console-plum: #1a0712ff;
+$circuit-fuchsia: #9d174dff;
+$signal-pink: #ec4899ff;
 
 /* SCSS HSL */
-$fuchsia-circuit-trio-console-plum: hsla(325, 58%, 6%, 1);
-$fuchsia-circuit-trio-circuit-fuchsia: hsla(336, 74%, 35%, 1);
-$fuchsia-circuit-trio-signal-pink: hsla(330, 81%, 60%, 1);
+$console-plum: hsla(325, 58%, 6%, 1);
+$circuit-fuchsia: hsla(336, 74%, 35%, 1);
+$signal-pink: hsla(330, 81%, 60%, 1);
 
 /* SCSS RGB */
-$fuchsia-circuit-trio-console-plum: rgba(26, 7, 18, 1);
-$fuchsia-circuit-trio-circuit-fuchsia: rgba(157, 23, 77, 1);
-$fuchsia-circuit-trio-signal-pink: rgba(236, 72, 153, 1);
+$console-plum: rgba(26, 7, 18, 1);
+$circuit-fuchsia: rgba(157, 23, 77, 1);
+$signal-pink: rgba(236, 72, 153, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1a0712ff, #9d174dff, #ec4899ff);
@@ -63,7 +63,7 @@ $gradient-radial: radial-gradient(#1a0712ff, #9d174dff, #ec4899ff);
 
 /* SCSS Map */
 $fuchsia-circuit-trio-map: (
-    "fuchsia-circuit-trio-console-plum": #1a0712ff,
-    "fuchsia-circuit-trio-circuit-fuchsia": #9d174dff,
-    "fuchsia-circuit-trio-signal-pink": #ec4899ff
+    "console-plum": #1a0712ff,
+    "circuit-fuchsia": #9d174dff,
+    "signal-pink": #ec4899ff
 );

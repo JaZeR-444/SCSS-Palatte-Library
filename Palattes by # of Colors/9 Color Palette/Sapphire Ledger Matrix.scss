@@ -25,60 +25,60 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---sapphire-ledger-matrix-ledger-navy: #0a2540ff;
---sapphire-ledger-matrix-sapphire-book: #12355bff;
---sapphire-ledger-matrix-report-blue: #1d4e89ff;
---sapphire-ledger-matrix-primary-blue: #2563ebff;
---sapphire-ledger-matrix-metric-blue: #2f80edff;
---sapphire-ledger-matrix-chart-cyan: #56ccf2ff;
---sapphire-ledger-matrix-summary-blue: #93c5fdff;
---sapphire-ledger-matrix-panel-blue: #dbeafeff;
---sapphire-ledger-matrix-sheet-slate: #f1f5f9ff;
+--ledger-navy: #0a2540ff;
+--sapphire-book: #12355bff;
+--report-blue: #1d4e89ff;
+--primary-blue: #2563ebff;
+--metric-blue: #2f80edff;
+--chart-cyan: #56ccf2ff;
+--summary-blue: #93c5fdff;
+--panel-blue: #dbeafeff;
+--sheet-slate: #f1f5f9ff;
 
 /* CSS HSL */
---sapphire-ledger-matrix-ledger-navy: hsla(210, 73%, 15%, 1);
---sapphire-ledger-matrix-sapphire-book: hsla(211, 67%, 21%, 1);
---sapphire-ledger-matrix-report-blue: hsla(213, 65%, 33%, 1);
---sapphire-ledger-matrix-primary-blue: hsla(221, 83%, 53%, 1);
---sapphire-ledger-matrix-metric-blue: hsla(214, 84%, 56%, 1);
---sapphire-ledger-matrix-chart-cyan: hsla(195, 86%, 64%, 1);
---sapphire-ledger-matrix-summary-blue: hsla(212, 96%, 78%, 1);
---sapphire-ledger-matrix-panel-blue: hsla(214, 95%, 93%, 1);
---sapphire-ledger-matrix-sheet-slate: hsla(210, 40%, 96%, 1);
+--ledger-navy: hsla(210, 73%, 15%, 1);
+--sapphire-book: hsla(211, 67%, 21%, 1);
+--report-blue: hsla(213, 65%, 33%, 1);
+--primary-blue: hsla(221, 83%, 53%, 1);
+--metric-blue: hsla(214, 84%, 56%, 1);
+--chart-cyan: hsla(195, 86%, 64%, 1);
+--summary-blue: hsla(212, 96%, 78%, 1);
+--panel-blue: hsla(214, 95%, 93%, 1);
+--sheet-slate: hsla(210, 40%, 96%, 1);
 }
 
 /* SCSS HEX */
-$sapphire-ledger-matrix-ledger-navy: #0a2540ff;
-$sapphire-ledger-matrix-sapphire-book: #12355bff;
-$sapphire-ledger-matrix-report-blue: #1d4e89ff;
-$sapphire-ledger-matrix-primary-blue: #2563ebff;
-$sapphire-ledger-matrix-metric-blue: #2f80edff;
-$sapphire-ledger-matrix-chart-cyan: #56ccf2ff;
-$sapphire-ledger-matrix-summary-blue: #93c5fdff;
-$sapphire-ledger-matrix-panel-blue: #dbeafeff;
-$sapphire-ledger-matrix-sheet-slate: #f1f5f9ff;
+$ledger-navy: #0a2540ff;
+$sapphire-book: #12355bff;
+$report-blue: #1d4e89ff;
+$primary-blue: #2563ebff;
+$metric-blue: #2f80edff;
+$chart-cyan: #56ccf2ff;
+$summary-blue: #93c5fdff;
+$panel-blue: #dbeafeff;
+$sheet-slate: #f1f5f9ff;
 
 /* SCSS HSL */
-$sapphire-ledger-matrix-ledger-navy: hsla(210, 73%, 15%, 1);
-$sapphire-ledger-matrix-sapphire-book: hsla(211, 67%, 21%, 1);
-$sapphire-ledger-matrix-report-blue: hsla(213, 65%, 33%, 1);
-$sapphire-ledger-matrix-primary-blue: hsla(221, 83%, 53%, 1);
-$sapphire-ledger-matrix-metric-blue: hsla(214, 84%, 56%, 1);
-$sapphire-ledger-matrix-chart-cyan: hsla(195, 86%, 64%, 1);
-$sapphire-ledger-matrix-summary-blue: hsla(212, 96%, 78%, 1);
-$sapphire-ledger-matrix-panel-blue: hsla(214, 95%, 93%, 1);
-$sapphire-ledger-matrix-sheet-slate: hsla(210, 40%, 96%, 1);
+$ledger-navy: hsla(210, 73%, 15%, 1);
+$sapphire-book: hsla(211, 67%, 21%, 1);
+$report-blue: hsla(213, 65%, 33%, 1);
+$primary-blue: hsla(221, 83%, 53%, 1);
+$metric-blue: hsla(214, 84%, 56%, 1);
+$chart-cyan: hsla(195, 86%, 64%, 1);
+$summary-blue: hsla(212, 96%, 78%, 1);
+$panel-blue: hsla(214, 95%, 93%, 1);
+$sheet-slate: hsla(210, 40%, 96%, 1);
 
 /* SCSS RGB */
-$sapphire-ledger-matrix-ledger-navy: rgba(10, 37, 64, 1);
-$sapphire-ledger-matrix-sapphire-book: rgba(18, 53, 91, 1);
-$sapphire-ledger-matrix-report-blue: rgba(29, 78, 137, 1);
-$sapphire-ledger-matrix-primary-blue: rgba(37, 99, 235, 1);
-$sapphire-ledger-matrix-metric-blue: rgba(47, 128, 237, 1);
-$sapphire-ledger-matrix-chart-cyan: rgba(86, 204, 242, 1);
-$sapphire-ledger-matrix-summary-blue: rgba(147, 197, 253, 1);
-$sapphire-ledger-matrix-panel-blue: rgba(219, 234, 254, 1);
-$sapphire-ledger-matrix-sheet-slate: rgba(241, 245, 249, 1);
+$ledger-navy: rgba(10, 37, 64, 1);
+$sapphire-book: rgba(18, 53, 91, 1);
+$report-blue: rgba(29, 78, 137, 1);
+$primary-blue: rgba(37, 99, 235, 1);
+$metric-blue: rgba(47, 128, 237, 1);
+$chart-cyan: rgba(86, 204, 242, 1);
+$summary-blue: rgba(147, 197, 253, 1);
+$panel-blue: rgba(219, 234, 254, 1);
+$sheet-slate: rgba(241, 245, 249, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #0a2540ff, #12355bff, #1d4e89ff, #2563ebff, #2f80edff, #56ccf2ff, #93c5fdff, #dbeafeff, #f1f5f9ff);
@@ -93,13 +93,13 @@ $gradient-radial: radial-gradient(#0a2540ff, #12355bff, #1d4e89ff, #2563ebff, #2
 
 /* SCSS Map */
 $sapphire-ledger-matrix-map: (
-    "sapphire-ledger-matrix-ledger-navy": #0a2540ff,
-    "sapphire-ledger-matrix-sapphire-book": #12355bff,
-    "sapphire-ledger-matrix-report-blue": #1d4e89ff,
-    "sapphire-ledger-matrix-primary-blue": #2563ebff,
-    "sapphire-ledger-matrix-metric-blue": #2f80edff,
-    "sapphire-ledger-matrix-chart-cyan": #56ccf2ff,
-    "sapphire-ledger-matrix-summary-blue": #93c5fdff,
-    "sapphire-ledger-matrix-panel-blue": #dbeafeff,
-    "sapphire-ledger-matrix-sheet-slate": #f1f5f9ff
+    "ledger-navy": #0a2540ff,
+    "sapphire-book": #12355bff,
+    "report-blue": #1d4e89ff,
+    "primary-blue": #2563ebff,
+    "metric-blue": #2f80edff,
+    "chart-cyan": #56ccf2ff,
+    "summary-blue": #93c5fdff,
+    "panel-blue": #dbeafeff,
+    "sheet-slate": #f1f5f9ff
 );

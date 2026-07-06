@@ -25,55 +25,55 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---cobalt-circuit-system-circuit-black: #020617ff;
---cobalt-circuit-system-logic-navy: #0f172aff;
---cobalt-circuit-system-cobalt-core: #1e3a8aff;
---cobalt-circuit-system-runtime-blue: #1d4ed8ff;
---cobalt-circuit-system-action-blue: #2563ebff;
---cobalt-circuit-system-signal-blue: #3b82f6ff;
---cobalt-circuit-system-spark-blue: #60a5faff;
---cobalt-circuit-system-trace-blue: #bfdbfeff;
+--circuit-black: #020617ff;
+--logic-navy: #0f172aff;
+--cobalt-core: #1e3a8aff;
+--runtime-blue: #1d4ed8ff;
+--action-blue: #2563ebff;
+--signal-blue: #3b82f6ff;
+--spark-blue: #60a5faff;
+--trace-blue: #bfdbfeff;
 
 /* CSS HSL */
---cobalt-circuit-system-circuit-black: hsla(229, 84%, 5%, 1);
---cobalt-circuit-system-logic-navy: hsla(222, 47%, 11%, 1);
---cobalt-circuit-system-cobalt-core: hsla(224, 64%, 33%, 1);
---cobalt-circuit-system-runtime-blue: hsla(224, 76%, 48%, 1);
---cobalt-circuit-system-action-blue: hsla(221, 83%, 53%, 1);
---cobalt-circuit-system-signal-blue: hsla(217, 91%, 60%, 1);
---cobalt-circuit-system-spark-blue: hsla(213, 94%, 68%, 1);
---cobalt-circuit-system-trace-blue: hsla(213, 97%, 87%, 1);
+--circuit-black: hsla(229, 84%, 5%, 1);
+--logic-navy: hsla(222, 47%, 11%, 1);
+--cobalt-core: hsla(224, 64%, 33%, 1);
+--runtime-blue: hsla(224, 76%, 48%, 1);
+--action-blue: hsla(221, 83%, 53%, 1);
+--signal-blue: hsla(217, 91%, 60%, 1);
+--spark-blue: hsla(213, 94%, 68%, 1);
+--trace-blue: hsla(213, 97%, 87%, 1);
 }
 
 /* SCSS HEX */
-$cobalt-circuit-system-circuit-black: #020617ff;
-$cobalt-circuit-system-logic-navy: #0f172aff;
-$cobalt-circuit-system-cobalt-core: #1e3a8aff;
-$cobalt-circuit-system-runtime-blue: #1d4ed8ff;
-$cobalt-circuit-system-action-blue: #2563ebff;
-$cobalt-circuit-system-signal-blue: #3b82f6ff;
-$cobalt-circuit-system-spark-blue: #60a5faff;
-$cobalt-circuit-system-trace-blue: #bfdbfeff;
+$circuit-black: #020617ff;
+$logic-navy: #0f172aff;
+$cobalt-core: #1e3a8aff;
+$runtime-blue: #1d4ed8ff;
+$action-blue: #2563ebff;
+$signal-blue: #3b82f6ff;
+$spark-blue: #60a5faff;
+$trace-blue: #bfdbfeff;
 
 /* SCSS HSL */
-$cobalt-circuit-system-circuit-black: hsla(229, 84%, 5%, 1);
-$cobalt-circuit-system-logic-navy: hsla(222, 47%, 11%, 1);
-$cobalt-circuit-system-cobalt-core: hsla(224, 64%, 33%, 1);
-$cobalt-circuit-system-runtime-blue: hsla(224, 76%, 48%, 1);
-$cobalt-circuit-system-action-blue: hsla(221, 83%, 53%, 1);
-$cobalt-circuit-system-signal-blue: hsla(217, 91%, 60%, 1);
-$cobalt-circuit-system-spark-blue: hsla(213, 94%, 68%, 1);
-$cobalt-circuit-system-trace-blue: hsla(213, 97%, 87%, 1);
+$circuit-black: hsla(229, 84%, 5%, 1);
+$logic-navy: hsla(222, 47%, 11%, 1);
+$cobalt-core: hsla(224, 64%, 33%, 1);
+$runtime-blue: hsla(224, 76%, 48%, 1);
+$action-blue: hsla(221, 83%, 53%, 1);
+$signal-blue: hsla(217, 91%, 60%, 1);
+$spark-blue: hsla(213, 94%, 68%, 1);
+$trace-blue: hsla(213, 97%, 87%, 1);
 
 /* SCSS RGB */
-$cobalt-circuit-system-circuit-black: rgba(2, 6, 23, 1);
-$cobalt-circuit-system-logic-navy: rgba(15, 23, 42, 1);
-$cobalt-circuit-system-cobalt-core: rgba(30, 58, 138, 1);
-$cobalt-circuit-system-runtime-blue: rgba(29, 78, 216, 1);
-$cobalt-circuit-system-action-blue: rgba(37, 99, 235, 1);
-$cobalt-circuit-system-signal-blue: rgba(59, 130, 246, 1);
-$cobalt-circuit-system-spark-blue: rgba(96, 165, 250, 1);
-$cobalt-circuit-system-trace-blue: rgba(191, 219, 254, 1);
+$circuit-black: rgba(2, 6, 23, 1);
+$logic-navy: rgba(15, 23, 42, 1);
+$cobalt-core: rgba(30, 58, 138, 1);
+$runtime-blue: rgba(29, 78, 216, 1);
+$action-blue: rgba(37, 99, 235, 1);
+$signal-blue: rgba(59, 130, 246, 1);
+$spark-blue: rgba(96, 165, 250, 1);
+$trace-blue: rgba(191, 219, 254, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2563ebff, #3b82f6ff, #60a5faff, #bfdbfeff);
@@ -88,12 +88,12 @@ $gradient-radial: radial-gradient(#020617ff, #0f172aff, #1e3a8aff, #1d4ed8ff, #2
 
 /* SCSS Map */
 $cobalt-circuit-system-map: (
-    "cobalt-circuit-system-circuit-black": #020617ff,
-    "cobalt-circuit-system-logic-navy": #0f172aff,
-    "cobalt-circuit-system-cobalt-core": #1e3a8aff,
-    "cobalt-circuit-system-runtime-blue": #1d4ed8ff,
-    "cobalt-circuit-system-action-blue": #2563ebff,
-    "cobalt-circuit-system-signal-blue": #3b82f6ff,
-    "cobalt-circuit-system-spark-blue": #60a5faff,
-    "cobalt-circuit-system-trace-blue": #bfdbfeff
+    "circuit-black": #020617ff,
+    "logic-navy": #0f172aff,
+    "cobalt-core": #1e3a8aff,
+    "runtime-blue": #1d4ed8ff,
+    "action-blue": #2563ebff,
+    "signal-blue": #3b82f6ff,
+    "spark-blue": #60a5faff,
+    "trace-blue": #bfdbfeff
 );

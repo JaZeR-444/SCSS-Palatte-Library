@@ -25,50 +25,50 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---emerald-circuit-spectrum-circuit-black: #02140bff;
---emerald-circuit-spectrum-terminal-root: #052e16ff;
---emerald-circuit-spectrum-emerald-board: #14532dff;
---emerald-circuit-spectrum-runtime-green: #15803dff;
---emerald-circuit-spectrum-signal-green: #16a34aff;
---emerald-circuit-spectrum-action-green: #22c55eff;
---emerald-circuit-spectrum-trace-mint: #86efacff;
+--circuit-black: #02140bff;
+--terminal-root: #052e16ff;
+--emerald-board: #14532dff;
+--runtime-green: #15803dff;
+--signal-green: #16a34aff;
+--action-green: #22c55eff;
+--trace-mint: #86efacff;
 
 /* CSS HSL */
---emerald-circuit-spectrum-circuit-black: hsla(150, 82%, 4%, 1);
---emerald-circuit-spectrum-terminal-root: hsla(145, 80%, 10%, 1);
---emerald-circuit-spectrum-emerald-board: hsla(144, 61%, 20%, 1);
---emerald-circuit-spectrum-runtime-green: hsla(142, 72%, 29%, 1);
---emerald-circuit-spectrum-signal-green: hsla(142, 76%, 36%, 1);
---emerald-circuit-spectrum-action-green: hsla(142, 71%, 45%, 1);
---emerald-circuit-spectrum-trace-mint: hsla(142, 77%, 73%, 1);
+--circuit-black: hsla(150, 82%, 4%, 1);
+--terminal-root: hsla(145, 80%, 10%, 1);
+--emerald-board: hsla(144, 61%, 20%, 1);
+--runtime-green: hsla(142, 72%, 29%, 1);
+--signal-green: hsla(142, 76%, 36%, 1);
+--action-green: hsla(142, 71%, 45%, 1);
+--trace-mint: hsla(142, 77%, 73%, 1);
 }
 
 /* SCSS HEX */
-$emerald-circuit-spectrum-circuit-black: #02140bff;
-$emerald-circuit-spectrum-terminal-root: #052e16ff;
-$emerald-circuit-spectrum-emerald-board: #14532dff;
-$emerald-circuit-spectrum-runtime-green: #15803dff;
-$emerald-circuit-spectrum-signal-green: #16a34aff;
-$emerald-circuit-spectrum-action-green: #22c55eff;
-$emerald-circuit-spectrum-trace-mint: #86efacff;
+$circuit-black: #02140bff;
+$terminal-root: #052e16ff;
+$emerald-board: #14532dff;
+$runtime-green: #15803dff;
+$signal-green: #16a34aff;
+$action-green: #22c55eff;
+$trace-mint: #86efacff;
 
 /* SCSS HSL */
-$emerald-circuit-spectrum-circuit-black: hsla(150, 82%, 4%, 1);
-$emerald-circuit-spectrum-terminal-root: hsla(145, 80%, 10%, 1);
-$emerald-circuit-spectrum-emerald-board: hsla(144, 61%, 20%, 1);
-$emerald-circuit-spectrum-runtime-green: hsla(142, 72%, 29%, 1);
-$emerald-circuit-spectrum-signal-green: hsla(142, 76%, 36%, 1);
-$emerald-circuit-spectrum-action-green: hsla(142, 71%, 45%, 1);
-$emerald-circuit-spectrum-trace-mint: hsla(142, 77%, 73%, 1);
+$circuit-black: hsla(150, 82%, 4%, 1);
+$terminal-root: hsla(145, 80%, 10%, 1);
+$emerald-board: hsla(144, 61%, 20%, 1);
+$runtime-green: hsla(142, 72%, 29%, 1);
+$signal-green: hsla(142, 76%, 36%, 1);
+$action-green: hsla(142, 71%, 45%, 1);
+$trace-mint: hsla(142, 77%, 73%, 1);
 
 /* SCSS RGB */
-$emerald-circuit-spectrum-circuit-black: rgba(2, 20, 11, 1);
-$emerald-circuit-spectrum-terminal-root: rgba(5, 46, 22, 1);
-$emerald-circuit-spectrum-emerald-board: rgba(20, 83, 45, 1);
-$emerald-circuit-spectrum-runtime-green: rgba(21, 128, 61, 1);
-$emerald-circuit-spectrum-signal-green: rgba(22, 163, 74, 1);
-$emerald-circuit-spectrum-action-green: rgba(34, 197, 94, 1);
-$emerald-circuit-spectrum-trace-mint: rgba(134, 239, 172, 1);
+$circuit-black: rgba(2, 20, 11, 1);
+$terminal-root: rgba(5, 46, 22, 1);
+$emerald-board: rgba(20, 83, 45, 1);
+$runtime-green: rgba(21, 128, 61, 1);
+$signal-green: rgba(22, 163, 74, 1);
+$action-green: rgba(34, 197, 94, 1);
+$trace-mint: rgba(134, 239, 172, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #02140bff, #052e16ff, #14532dff, #15803dff, #16a34aff, #22c55eff, #86efacff);
@@ -83,11 +83,11 @@ $gradient-radial: radial-gradient(#02140bff, #052e16ff, #14532dff, #15803dff, #1
 
 /* SCSS Map */
 $emerald-circuit-spectrum-map: (
-    "emerald-circuit-spectrum-circuit-black": #02140bff,
-    "emerald-circuit-spectrum-terminal-root": #052e16ff,
-    "emerald-circuit-spectrum-emerald-board": #14532dff,
-    "emerald-circuit-spectrum-runtime-green": #15803dff,
-    "emerald-circuit-spectrum-signal-green": #16a34aff,
-    "emerald-circuit-spectrum-action-green": #22c55eff,
-    "emerald-circuit-spectrum-trace-mint": #86efacff
+    "circuit-black": #02140bff,
+    "terminal-root": #052e16ff,
+    "emerald-board": #14532dff,
+    "runtime-green": #15803dff,
+    "signal-green": #16a34aff,
+    "action-green": #22c55eff,
+    "trace-mint": #86efacff
 );

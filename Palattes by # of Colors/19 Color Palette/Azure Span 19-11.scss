@@ -1,6 +1,6 @@
 /*---
 id: azure-span-19-11
-name: Azure Span 19-11
+name: Azure Span Slim
 author: JaZeR-444
 version: 1.0.0
 category: Singular Hue Span
@@ -20,110 +20,110 @@ updated: '2026-07-04'
 
 :root {
 /* CSS HEX */
---span-01: #101619ff;
---span-02: #17242aff;
---span-03: #1c333dff;
---span-04: #1d4153ff;
---span-05: #1f5569ff;
---span-06: #23607cff;
---span-07: #207398ff;
---span-08: #1982b7ff;
---span-09: #159ed3ff;
---span-10: #17a0e8ff;
---span-11: #2dafeaff;
---span-12: #4fb2e0ff;
---span-13: #64bbe2ff;
---span-14: #7ec7e0ff;
---span-15: #98cbdeff;
---span-16: #b0cfdeff;
---span-17: #c1d8e4ff;
---span-18: #d5e2e8ff;
---span-19: #e6ecefff;
+--almost-black: #101619ff;
+--dark: #17242aff;
+--charcoal: #1c333dff;
+--dark-slate-blue: #1d4153ff;
+--petrol: #1f5569ff;
+--sea-blue: #23607cff;
+--ocean-blue: #207398ff;
+--nice-blue: #1982b7ff;
+--cool-blue: #159ed3ff;
+--water-blue: #17a0e8ff;
+--sky-blue: #2dafeaff;
+--sky: #4fb2e0ff;
+--light-blue: #64bbe2ff;
+--cloudy-blue: #7ec7e0ff;
+--powder-blue: #98cbdeff;
+--pale-sky-blue: #b0cfdeff;
+--very-light-blue: #c1d8e4ff;
+--white: #d5e2e8ff;
+--very-light-pink: #e6ecefff;
 
 /* CSS HSL */
---span-01: hsla(198, 22%, 8%, 1);
---span-02: hsla(198, 29%, 13%, 1);
---span-03: hsla(198, 38%, 17%, 1);
---span-04: hsla(198, 48%, 22%, 1);
---span-05: hsla(198, 54%, 27%, 1);
---span-06: hsla(198, 56%, 31%, 1);
---span-07: hsla(198, 65%, 36%, 1);
---span-08: hsla(198, 76%, 41%, 1);
---span-09: hsla(198, 82%, 45%, 1);
---span-10: hsla(198, 82%, 50%, 1);
---span-11: hsla(198, 82%, 55%, 1);
---span-12: hsla(198, 70%, 59%, 1);
---span-13: hsla(198, 69%, 64%, 1);
---span-14: hsla(198, 62%, 69%, 1);
---span-15: hsla(198, 51%, 73%, 1);
---span-16: hsla(198, 41%, 78%, 1);
---span-17: hsla(198, 39%, 83%, 1);
---span-18: hsla(198, 29%, 87%, 1);
---span-19: hsla(198, 20%, 92%, 1);
+--almost-black: hsla(198, 22%, 8%, 1);
+--dark: hsla(198, 29%, 13%, 1);
+--charcoal: hsla(198, 38%, 17%, 1);
+--dark-slate-blue: hsla(198, 48%, 22%, 1);
+--petrol: hsla(198, 54%, 27%, 1);
+--sea-blue: hsla(198, 56%, 31%, 1);
+--ocean-blue: hsla(198, 65%, 36%, 1);
+--nice-blue: hsla(198, 76%, 41%, 1);
+--cool-blue: hsla(198, 82%, 45%, 1);
+--water-blue: hsla(198, 82%, 50%, 1);
+--sky-blue: hsla(198, 82%, 55%, 1);
+--sky: hsla(198, 70%, 59%, 1);
+--light-blue: hsla(198, 69%, 64%, 1);
+--cloudy-blue: hsla(198, 62%, 69%, 1);
+--powder-blue: hsla(198, 51%, 73%, 1);
+--pale-sky-blue: hsla(198, 41%, 78%, 1);
+--very-light-blue: hsla(198, 39%, 83%, 1);
+--white: hsla(198, 29%, 87%, 1);
+--very-light-pink: hsla(198, 20%, 92%, 1);
 }
 
 /* SCSS HEX */
-$span-01: #101619ff;
-$span-02: #17242aff;
-$span-03: #1c333dff;
-$span-04: #1d4153ff;
-$span-05: #1f5569ff;
-$span-06: #23607cff;
-$span-07: #207398ff;
-$span-08: #1982b7ff;
-$span-09: #159ed3ff;
-$span-10: #17a0e8ff;
-$span-11: #2dafeaff;
-$span-12: #4fb2e0ff;
-$span-13: #64bbe2ff;
-$span-14: #7ec7e0ff;
-$span-15: #98cbdeff;
-$span-16: #b0cfdeff;
-$span-17: #c1d8e4ff;
-$span-18: #d5e2e8ff;
-$span-19: #e6ecefff;
+$almost-black: #101619ff;
+$dark: #17242aff;
+$charcoal: #1c333dff;
+$dark-slate-blue: #1d4153ff;
+$petrol: #1f5569ff;
+$sea-blue: #23607cff;
+$ocean-blue: #207398ff;
+$nice-blue: #1982b7ff;
+$cool-blue: #159ed3ff;
+$water-blue: #17a0e8ff;
+$sky-blue: #2dafeaff;
+$sky: #4fb2e0ff;
+$light-blue: #64bbe2ff;
+$cloudy-blue: #7ec7e0ff;
+$powder-blue: #98cbdeff;
+$pale-sky-blue: #b0cfdeff;
+$very-light-blue: #c1d8e4ff;
+$white: #d5e2e8ff;
+$very-light-pink: #e6ecefff;
 
 /* SCSS HSL */
-$span-01: hsla(198, 22%, 8%, 1);
-$span-02: hsla(198, 29%, 13%, 1);
-$span-03: hsla(198, 38%, 17%, 1);
-$span-04: hsla(198, 48%, 22%, 1);
-$span-05: hsla(198, 54%, 27%, 1);
-$span-06: hsla(198, 56%, 31%, 1);
-$span-07: hsla(198, 65%, 36%, 1);
-$span-08: hsla(198, 76%, 41%, 1);
-$span-09: hsla(198, 82%, 45%, 1);
-$span-10: hsla(198, 82%, 50%, 1);
-$span-11: hsla(198, 82%, 55%, 1);
-$span-12: hsla(198, 70%, 59%, 1);
-$span-13: hsla(198, 69%, 64%, 1);
-$span-14: hsla(198, 62%, 69%, 1);
-$span-15: hsla(198, 51%, 73%, 1);
-$span-16: hsla(198, 41%, 78%, 1);
-$span-17: hsla(198, 39%, 83%, 1);
-$span-18: hsla(198, 29%, 87%, 1);
-$span-19: hsla(198, 20%, 92%, 1);
+$almost-black: hsla(198, 22%, 8%, 1);
+$dark: hsla(198, 29%, 13%, 1);
+$charcoal: hsla(198, 38%, 17%, 1);
+$dark-slate-blue: hsla(198, 48%, 22%, 1);
+$petrol: hsla(198, 54%, 27%, 1);
+$sea-blue: hsla(198, 56%, 31%, 1);
+$ocean-blue: hsla(198, 65%, 36%, 1);
+$nice-blue: hsla(198, 76%, 41%, 1);
+$cool-blue: hsla(198, 82%, 45%, 1);
+$water-blue: hsla(198, 82%, 50%, 1);
+$sky-blue: hsla(198, 82%, 55%, 1);
+$sky: hsla(198, 70%, 59%, 1);
+$light-blue: hsla(198, 69%, 64%, 1);
+$cloudy-blue: hsla(198, 62%, 69%, 1);
+$powder-blue: hsla(198, 51%, 73%, 1);
+$pale-sky-blue: hsla(198, 41%, 78%, 1);
+$very-light-blue: hsla(198, 39%, 83%, 1);
+$white: hsla(198, 29%, 87%, 1);
+$very-light-pink: hsla(198, 20%, 92%, 1);
 
 /* SCSS RGB */
-$span-01: rgba(16, 22, 25, 1);
-$span-02: rgba(23, 36, 42, 1);
-$span-03: rgba(28, 51, 61, 1);
-$span-04: rgba(29, 65, 83, 1);
-$span-05: rgba(31, 85, 105, 1);
-$span-06: rgba(35, 96, 124, 1);
-$span-07: rgba(32, 115, 152, 1);
-$span-08: rgba(25, 130, 183, 1);
-$span-09: rgba(21, 158, 211, 1);
-$span-10: rgba(23, 160, 232, 1);
-$span-11: rgba(45, 175, 234, 1);
-$span-12: rgba(79, 178, 224, 1);
-$span-13: rgba(100, 187, 226, 1);
-$span-14: rgba(126, 199, 224, 1);
-$span-15: rgba(152, 203, 222, 1);
-$span-16: rgba(176, 207, 222, 1);
-$span-17: rgba(193, 216, 228, 1);
-$span-18: rgba(213, 226, 232, 1);
-$span-19: rgba(230, 236, 239, 1);
+$almost-black: rgba(16, 22, 25, 1);
+$dark: rgba(23, 36, 42, 1);
+$charcoal: rgba(28, 51, 61, 1);
+$dark-slate-blue: rgba(29, 65, 83, 1);
+$petrol: rgba(31, 85, 105, 1);
+$sea-blue: rgba(35, 96, 124, 1);
+$ocean-blue: rgba(32, 115, 152, 1);
+$nice-blue: rgba(25, 130, 183, 1);
+$cool-blue: rgba(21, 158, 211, 1);
+$water-blue: rgba(23, 160, 232, 1);
+$sky-blue: rgba(45, 175, 234, 1);
+$sky: rgba(79, 178, 224, 1);
+$light-blue: rgba(100, 187, 226, 1);
+$cloudy-blue: rgba(126, 199, 224, 1);
+$powder-blue: rgba(152, 203, 222, 1);
+$pale-sky-blue: rgba(176, 207, 222, 1);
+$very-light-blue: rgba(193, 216, 228, 1);
+$white: rgba(213, 226, 232, 1);
+$very-light-pink: rgba(230, 236, 239, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #101619ff, #17242aff, #1c333dff, #1d4153ff, #1f5569ff, #23607cff, #207398ff, #1982b7ff, #159ed3ff, #17a0e8ff, #2dafeaff, #4fb2e0ff, #64bbe2ff, #7ec7e0ff, #98cbdeff, #b0cfdeff, #c1d8e4ff, #d5e2e8ff, #e6ecefff);
@@ -138,23 +138,23 @@ $gradient-radial: radial-gradient(#101619ff, #17242aff, #1c333dff, #1d4153ff, #1
 
 /* SCSS Map */
 $azure-span-19-11-map: (
-    "span-01": #101619ff,
-    "span-02": #17242aff,
-    "span-03": #1c333dff,
-    "span-04": #1d4153ff,
-    "span-05": #1f5569ff,
-    "span-06": #23607cff,
-    "span-07": #207398ff,
-    "span-08": #1982b7ff,
-    "span-09": #159ed3ff,
-    "span-10": #17a0e8ff,
-    "span-11": #2dafeaff,
-    "span-12": #4fb2e0ff,
-    "span-13": #64bbe2ff,
-    "span-14": #7ec7e0ff,
-    "span-15": #98cbdeff,
-    "span-16": #b0cfdeff,
-    "span-17": #c1d8e4ff,
-    "span-18": #d5e2e8ff,
-    "span-19": #e6ecefff
+    "almost-black": #101619ff,
+    "dark": #17242aff,
+    "charcoal": #1c333dff,
+    "dark-slate-blue": #1d4153ff,
+    "petrol": #1f5569ff,
+    "sea-blue": #23607cff,
+    "ocean-blue": #207398ff,
+    "nice-blue": #1982b7ff,
+    "cool-blue": #159ed3ff,
+    "water-blue": #17a0e8ff,
+    "sky-blue": #2dafeaff,
+    "sky": #4fb2e0ff,
+    "light-blue": #64bbe2ff,
+    "cloudy-blue": #7ec7e0ff,
+    "powder-blue": #98cbdeff,
+    "pale-sky-blue": #b0cfdeff,
+    "very-light-blue": #c1d8e4ff,
+    "white": #d5e2e8ff,
+    "very-light-pink": #e6ecefff
 );

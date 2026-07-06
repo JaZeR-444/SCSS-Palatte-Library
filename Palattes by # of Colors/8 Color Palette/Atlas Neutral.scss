@@ -25,53 +25,53 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---atlas-900: #111827ff;
---atlas-800: #1f2937ff;
---atlas-700: #374151ff;
---atlas-500: #6b7280ff;
---atlas-300: #d1d5dbff;
---atlas-100: #f3f4f6ff;
+--dark: #111827ff;
+--charcoal: #1f2937ff;
+--dark-slate-blue: #374151ff;
+--steel: #6b7280ff;
+--cloudy-blue: #d1d5dbff;
+--white: #f3f4f6ff;
 --atlas-blue: #2563ebff;
 --atlas-amber: #f59e0bff;
 
 /* CSS HSL */
---atlas-900: hsla(221, 39%, 11%, 1);
---atlas-800: hsla(215, 28%, 17%, 1);
---atlas-700: hsla(217, 19%, 27%, 1);
---atlas-500: hsla(220, 9%, 46%, 1);
---atlas-300: hsla(216, 12%, 84%, 1);
---atlas-100: hsla(220, 14%, 96%, 1);
+--dark: hsla(221, 39%, 11%, 1);
+--charcoal: hsla(215, 28%, 17%, 1);
+--dark-slate-blue: hsla(217, 19%, 27%, 1);
+--steel: hsla(220, 9%, 46%, 1);
+--cloudy-blue: hsla(216, 12%, 84%, 1);
+--white: hsla(220, 14%, 96%, 1);
 --atlas-blue: hsla(221, 83%, 53%, 1);
 --atlas-amber: hsla(38, 92%, 50%, 1);
 }
 
 /* SCSS HEX */
-$atlas-900: #111827ff;
-$atlas-800: #1f2937ff;
-$atlas-700: #374151ff;
-$atlas-500: #6b7280ff;
-$atlas-300: #d1d5dbff;
-$atlas-100: #f3f4f6ff;
+$dark: #111827ff;
+$charcoal: #1f2937ff;
+$dark-slate-blue: #374151ff;
+$steel: #6b7280ff;
+$cloudy-blue: #d1d5dbff;
+$white: #f3f4f6ff;
 $atlas-blue: #2563ebff;
 $atlas-amber: #f59e0bff;
 
 /* SCSS HSL */
-$atlas-900: hsla(221, 39%, 11%, 1);
-$atlas-800: hsla(215, 28%, 17%, 1);
-$atlas-700: hsla(217, 19%, 27%, 1);
-$atlas-500: hsla(220, 9%, 46%, 1);
-$atlas-300: hsla(216, 12%, 84%, 1);
-$atlas-100: hsla(220, 14%, 96%, 1);
+$dark: hsla(221, 39%, 11%, 1);
+$charcoal: hsla(215, 28%, 17%, 1);
+$dark-slate-blue: hsla(217, 19%, 27%, 1);
+$steel: hsla(220, 9%, 46%, 1);
+$cloudy-blue: hsla(216, 12%, 84%, 1);
+$white: hsla(220, 14%, 96%, 1);
 $atlas-blue: hsla(221, 83%, 53%, 1);
 $atlas-amber: hsla(38, 92%, 50%, 1);
 
 /* SCSS RGB */
-$atlas-900: rgba(17, 24, 39, 1);
-$atlas-800: rgba(31, 41, 55, 1);
-$atlas-700: rgba(55, 65, 81, 1);
-$atlas-500: rgba(107, 114, 128, 1);
-$atlas-300: rgba(209, 213, 219, 1);
-$atlas-100: rgba(243, 244, 246, 1);
+$dark: rgba(17, 24, 39, 1);
+$charcoal: rgba(31, 41, 55, 1);
+$dark-slate-blue: rgba(55, 65, 81, 1);
+$steel: rgba(107, 114, 128, 1);
+$cloudy-blue: rgba(209, 213, 219, 1);
+$white: rgba(243, 244, 246, 1);
 $atlas-blue: rgba(37, 99, 235, 1);
 $atlas-amber: rgba(245, 158, 11, 1);
 
@@ -88,12 +88,12 @@ $gradient-radial: radial-gradient(#111827ff, #1f2937ff, #374151ff, #6b7280ff, #d
 
 /* SCSS Map */
 $atlas-neutral-map: (
-    "atlas-900": #111827ff,
-    "atlas-800": #1f2937ff,
-    "atlas-700": #374151ff,
-    "atlas-500": #6b7280ff,
-    "atlas-300": #d1d5dbff,
-    "atlas-100": #f3f4f6ff,
+    "dark": #111827ff,
+    "charcoal": #1f2937ff,
+    "dark-slate-blue": #374151ff,
+    "steel": #6b7280ff,
+    "cloudy-blue": #d1d5dbff,
+    "white": #f3f4f6ff,
     "atlas-blue": #2563ebff,
     "atlas-amber": #f59e0bff
 );

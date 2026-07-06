@@ -1,6 +1,6 @@
 /*---
 id: crystal-sea-411
-name: Crystal Sea 411
+name: Crystal Sea
 author: JaZeR-444
 version: 1.0.0
 category: Modern & Minimalist
@@ -24,130 +24,130 @@ updated: '2026-07-04'
 
 :root {
 /* CSS HEX */
---autumn-mauve-1: #1e85acff;
---copper-ember-2: #1a7dbcff;
---neon-mauve-3: #1988b3ff;
---coral-void-4: #168db6ff;
---lime-nebula-5: #1a8fbeff;
---future-pink-6: #1dabc0ff;
---radiant-gold-7: #16b3aaff;
---winter-silver-8: #1fc19fff;
---vintage-apricot-9: #15a68cff;
---olive-forest-10: #18a07cff;
---cyan-snow-11: #129d7eff;
---mauve-river-12: #0e9d4dff;
---cyber-magenta-13: #0ea45eff;
---crimson-oasis-14: #0e9f4aff;
---lilac-quest-15: #17ad46ff;
---bronze-light-16: #0e9238ff;
---copper-pulse-17: #0c9135ff;
---urban-white-18: #0dac37ff;
---plum-path-19: #0c830cff;
---lavender-star-20: #118e20ff;
---red-adventure-21: #12a217ff;
---copper-dream-22: #18a00fff;
---burgundy-jungle-23: #307f09ff;
+--autumn-mauve: #1e85acff;
+--copper-ember: #1a7dbcff;
+--neon-mauve: #1988b3ff;
+--coral-void: #168db6ff;
+--lime-nebula: #1a8fbeff;
+--future-pink: #1dabc0ff;
+--radiant-gold: #16b3aaff;
+--winter-silver: #1fc19fff;
+--vintage-apricot: #15a68cff;
+--olive-forest: #18a07cff;
+--cyan-snow: #129d7eff;
+--mauve-river: #0e9d4dff;
+--cyber-magenta: #0ea45eff;
+--crimson-oasis: #0e9f4aff;
+--lilac-quest: #17ad46ff;
+--bronze-light: #0e9238ff;
+--copper-pulse: #0c9135ff;
+--urban-white: #0dac37ff;
+--plum-path: #0c830cff;
+--lavender-star: #118e20ff;
+--red-adventure: #12a217ff;
+--copper-dream: #18a00fff;
+--burgundy-jungle: #307f09ff;
 
 /* CSS HSL */
---autumn-mauve-1: hsla(196, 70%, 40%, 1);
---copper-ember-2: hsla(203, 75%, 42%, 1);
---neon-mauve-3: hsla(197, 75%, 40%, 1);
---coral-void-4: hsla(195, 78%, 40%, 1);
---lime-nebula-5: hsla(197, 76%, 43%, 1);
---future-pink-6: hsla(188, 73%, 44%, 1);
---radiant-gold-7: hsla(177, 78%, 39%, 1);
---winter-silver-8: hsla(167, 72%, 44%, 1);
---vintage-apricot-9: hsla(169, 77%, 37%, 1);
---olive-forest-10: hsla(164, 73%, 36%, 1);
---cyan-snow-11: hsla(167, 79%, 34%, 1);
---mauve-river-12: hsla(146, 83%, 34%, 1);
---cyber-magenta-13: hsla(152, 84%, 35%, 1);
---crimson-oasis-14: hsla(145, 83%, 34%, 1);
---lilac-quest-15: hsla(139, 76%, 39%, 1);
---bronze-light-16: hsla(139, 82%, 31%, 1);
---copper-pulse-17: hsla(138, 85%, 31%, 1);
---urban-white-18: hsla(136, 85%, 37%, 1);
---plum-path-19: hsla(120, 83%, 28%, 1);
---lavender-star-20: hsla(127, 78%, 31%, 1);
---red-adventure-21: hsla(122, 79%, 35%, 1);
---copper-dream-22: hsla(116, 82%, 35%, 1);
---burgundy-jungle-23: hsla(100, 87%, 27%, 1);
+--autumn-mauve: hsla(196, 70%, 40%, 1);
+--copper-ember: hsla(203, 75%, 42%, 1);
+--neon-mauve: hsla(197, 75%, 40%, 1);
+--coral-void: hsla(195, 78%, 40%, 1);
+--lime-nebula: hsla(197, 76%, 43%, 1);
+--future-pink: hsla(188, 73%, 44%, 1);
+--radiant-gold: hsla(177, 78%, 39%, 1);
+--winter-silver: hsla(167, 72%, 44%, 1);
+--vintage-apricot: hsla(169, 77%, 37%, 1);
+--olive-forest: hsla(164, 73%, 36%, 1);
+--cyan-snow: hsla(167, 79%, 34%, 1);
+--mauve-river: hsla(146, 83%, 34%, 1);
+--cyber-magenta: hsla(152, 84%, 35%, 1);
+--crimson-oasis: hsla(145, 83%, 34%, 1);
+--lilac-quest: hsla(139, 76%, 39%, 1);
+--bronze-light: hsla(139, 82%, 31%, 1);
+--copper-pulse: hsla(138, 85%, 31%, 1);
+--urban-white: hsla(136, 85%, 37%, 1);
+--plum-path: hsla(120, 83%, 28%, 1);
+--lavender-star: hsla(127, 78%, 31%, 1);
+--red-adventure: hsla(122, 79%, 35%, 1);
+--copper-dream: hsla(116, 82%, 35%, 1);
+--burgundy-jungle: hsla(100, 87%, 27%, 1);
 }
 
 /* SCSS HEX */
-$autumn-mauve-1: #1e85acff;
-$copper-ember-2: #1a7dbcff;
-$neon-mauve-3: #1988b3ff;
-$coral-void-4: #168db6ff;
-$lime-nebula-5: #1a8fbeff;
-$future-pink-6: #1dabc0ff;
-$radiant-gold-7: #16b3aaff;
-$winter-silver-8: #1fc19fff;
-$vintage-apricot-9: #15a68cff;
-$olive-forest-10: #18a07cff;
-$cyan-snow-11: #129d7eff;
-$mauve-river-12: #0e9d4dff;
-$cyber-magenta-13: #0ea45eff;
-$crimson-oasis-14: #0e9f4aff;
-$lilac-quest-15: #17ad46ff;
-$bronze-light-16: #0e9238ff;
-$copper-pulse-17: #0c9135ff;
-$urban-white-18: #0dac37ff;
-$plum-path-19: #0c830cff;
-$lavender-star-20: #118e20ff;
-$red-adventure-21: #12a217ff;
-$copper-dream-22: #18a00fff;
-$burgundy-jungle-23: #307f09ff;
+$autumn-mauve: #1e85acff;
+$copper-ember: #1a7dbcff;
+$neon-mauve: #1988b3ff;
+$coral-void: #168db6ff;
+$lime-nebula: #1a8fbeff;
+$future-pink: #1dabc0ff;
+$radiant-gold: #16b3aaff;
+$winter-silver: #1fc19fff;
+$vintage-apricot: #15a68cff;
+$olive-forest: #18a07cff;
+$cyan-snow: #129d7eff;
+$mauve-river: #0e9d4dff;
+$cyber-magenta: #0ea45eff;
+$crimson-oasis: #0e9f4aff;
+$lilac-quest: #17ad46ff;
+$bronze-light: #0e9238ff;
+$copper-pulse: #0c9135ff;
+$urban-white: #0dac37ff;
+$plum-path: #0c830cff;
+$lavender-star: #118e20ff;
+$red-adventure: #12a217ff;
+$copper-dream: #18a00fff;
+$burgundy-jungle: #307f09ff;
 
 /* SCSS HSL */
-$autumn-mauve-1: hsla(196, 70%, 40%, 1);
-$copper-ember-2: hsla(203, 75%, 42%, 1);
-$neon-mauve-3: hsla(197, 75%, 40%, 1);
-$coral-void-4: hsla(195, 78%, 40%, 1);
-$lime-nebula-5: hsla(197, 76%, 43%, 1);
-$future-pink-6: hsla(188, 73%, 44%, 1);
-$radiant-gold-7: hsla(177, 78%, 39%, 1);
-$winter-silver-8: hsla(167, 72%, 44%, 1);
-$vintage-apricot-9: hsla(169, 77%, 37%, 1);
-$olive-forest-10: hsla(164, 73%, 36%, 1);
-$cyan-snow-11: hsla(167, 79%, 34%, 1);
-$mauve-river-12: hsla(146, 83%, 34%, 1);
-$cyber-magenta-13: hsla(152, 84%, 35%, 1);
-$crimson-oasis-14: hsla(145, 83%, 34%, 1);
-$lilac-quest-15: hsla(139, 76%, 39%, 1);
-$bronze-light-16: hsla(139, 82%, 31%, 1);
-$copper-pulse-17: hsla(138, 85%, 31%, 1);
-$urban-white-18: hsla(136, 85%, 37%, 1);
-$plum-path-19: hsla(120, 83%, 28%, 1);
-$lavender-star-20: hsla(127, 78%, 31%, 1);
-$red-adventure-21: hsla(122, 79%, 35%, 1);
-$copper-dream-22: hsla(116, 82%, 35%, 1);
-$burgundy-jungle-23: hsla(100, 87%, 27%, 1);
+$autumn-mauve: hsla(196, 70%, 40%, 1);
+$copper-ember: hsla(203, 75%, 42%, 1);
+$neon-mauve: hsla(197, 75%, 40%, 1);
+$coral-void: hsla(195, 78%, 40%, 1);
+$lime-nebula: hsla(197, 76%, 43%, 1);
+$future-pink: hsla(188, 73%, 44%, 1);
+$radiant-gold: hsla(177, 78%, 39%, 1);
+$winter-silver: hsla(167, 72%, 44%, 1);
+$vintage-apricot: hsla(169, 77%, 37%, 1);
+$olive-forest: hsla(164, 73%, 36%, 1);
+$cyan-snow: hsla(167, 79%, 34%, 1);
+$mauve-river: hsla(146, 83%, 34%, 1);
+$cyber-magenta: hsla(152, 84%, 35%, 1);
+$crimson-oasis: hsla(145, 83%, 34%, 1);
+$lilac-quest: hsla(139, 76%, 39%, 1);
+$bronze-light: hsla(139, 82%, 31%, 1);
+$copper-pulse: hsla(138, 85%, 31%, 1);
+$urban-white: hsla(136, 85%, 37%, 1);
+$plum-path: hsla(120, 83%, 28%, 1);
+$lavender-star: hsla(127, 78%, 31%, 1);
+$red-adventure: hsla(122, 79%, 35%, 1);
+$copper-dream: hsla(116, 82%, 35%, 1);
+$burgundy-jungle: hsla(100, 87%, 27%, 1);
 
 /* SCSS RGB */
-$autumn-mauve-1: rgba(30, 133, 172, 1);
-$copper-ember-2: rgba(26, 125, 188, 1);
-$neon-mauve-3: rgba(25, 136, 179, 1);
-$coral-void-4: rgba(22, 141, 182, 1);
-$lime-nebula-5: rgba(26, 143, 190, 1);
-$future-pink-6: rgba(29, 171, 192, 1);
-$radiant-gold-7: rgba(22, 179, 170, 1);
-$winter-silver-8: rgba(31, 193, 159, 1);
-$vintage-apricot-9: rgba(21, 166, 140, 1);
-$olive-forest-10: rgba(24, 160, 124, 1);
-$cyan-snow-11: rgba(18, 157, 126, 1);
-$mauve-river-12: rgba(14, 157, 77, 1);
-$cyber-magenta-13: rgba(14, 164, 94, 1);
-$crimson-oasis-14: rgba(14, 159, 74, 1);
-$lilac-quest-15: rgba(23, 173, 70, 1);
-$bronze-light-16: rgba(14, 146, 56, 1);
-$copper-pulse-17: rgba(12, 145, 53, 1);
-$urban-white-18: rgba(13, 172, 55, 1);
-$plum-path-19: rgba(12, 131, 12, 1);
-$lavender-star-20: rgba(17, 142, 32, 1);
-$red-adventure-21: rgba(18, 162, 23, 1);
-$copper-dream-22: rgba(24, 160, 15, 1);
-$burgundy-jungle-23: rgba(48, 127, 9, 1);
+$autumn-mauve: rgba(30, 133, 172, 1);
+$copper-ember: rgba(26, 125, 188, 1);
+$neon-mauve: rgba(25, 136, 179, 1);
+$coral-void: rgba(22, 141, 182, 1);
+$lime-nebula: rgba(26, 143, 190, 1);
+$future-pink: rgba(29, 171, 192, 1);
+$radiant-gold: rgba(22, 179, 170, 1);
+$winter-silver: rgba(31, 193, 159, 1);
+$vintage-apricot: rgba(21, 166, 140, 1);
+$olive-forest: rgba(24, 160, 124, 1);
+$cyan-snow: rgba(18, 157, 126, 1);
+$mauve-river: rgba(14, 157, 77, 1);
+$cyber-magenta: rgba(14, 164, 94, 1);
+$crimson-oasis: rgba(14, 159, 74, 1);
+$lilac-quest: rgba(23, 173, 70, 1);
+$bronze-light: rgba(14, 146, 56, 1);
+$copper-pulse: rgba(12, 145, 53, 1);
+$urban-white: rgba(13, 172, 55, 1);
+$plum-path: rgba(12, 131, 12, 1);
+$lavender-star: rgba(17, 142, 32, 1);
+$red-adventure: rgba(18, 162, 23, 1);
+$copper-dream: rgba(24, 160, 15, 1);
+$burgundy-jungle: rgba(48, 127, 9, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1e85acff, #1a7dbcff, #1988b3ff, #168db6ff, #1a8fbeff, #1dabc0ff, #16b3aaff, #1fc19fff, #15a68cff, #18a07cff, #129d7eff, #0e9d4dff, #0ea45eff, #0e9f4aff, #17ad46ff, #0e9238ff, #0c9135ff, #0dac37ff, #0c830cff, #118e20ff, #12a217ff, #18a00fff, #307f09ff);
@@ -162,27 +162,27 @@ $gradient-radial: radial-gradient(#1e85acff, #1a7dbcff, #1988b3ff, #168db6ff, #1
 
 /* SCSS Map */
 $crystal-sea-411-map: (
-    "autumn-mauve-1": #1e85acff,
-    "copper-ember-2": #1a7dbcff,
-    "neon-mauve-3": #1988b3ff,
-    "coral-void-4": #168db6ff,
-    "lime-nebula-5": #1a8fbeff,
-    "future-pink-6": #1dabc0ff,
-    "radiant-gold-7": #16b3aaff,
-    "winter-silver-8": #1fc19fff,
-    "vintage-apricot-9": #15a68cff,
-    "olive-forest-10": #18a07cff,
-    "cyan-snow-11": #129d7eff,
-    "mauve-river-12": #0e9d4dff,
-    "cyber-magenta-13": #0ea45eff,
-    "crimson-oasis-14": #0e9f4aff,
-    "lilac-quest-15": #17ad46ff,
-    "bronze-light-16": #0e9238ff,
-    "copper-pulse-17": #0c9135ff,
-    "urban-white-18": #0dac37ff,
-    "plum-path-19": #0c830cff,
-    "lavender-star-20": #118e20ff,
-    "red-adventure-21": #12a217ff,
-    "copper-dream-22": #18a00fff,
-    "burgundy-jungle-23": #307f09ff
+    "autumn-mauve": #1e85acff,
+    "copper-ember": #1a7dbcff,
+    "neon-mauve": #1988b3ff,
+    "coral-void": #168db6ff,
+    "lime-nebula": #1a8fbeff,
+    "future-pink": #1dabc0ff,
+    "radiant-gold": #16b3aaff,
+    "winter-silver": #1fc19fff,
+    "vintage-apricot": #15a68cff,
+    "olive-forest": #18a07cff,
+    "cyan-snow": #129d7eff,
+    "mauve-river": #0e9d4dff,
+    "cyber-magenta": #0ea45eff,
+    "crimson-oasis": #0e9f4aff,
+    "lilac-quest": #17ad46ff,
+    "bronze-light": #0e9238ff,
+    "copper-pulse": #0c9135ff,
+    "urban-white": #0dac37ff,
+    "plum-path": #0c830cff,
+    "lavender-star": #118e20ff,
+    "red-adventure": #12a217ff,
+    "copper-dream": #18a00fff,
+    "burgundy-jungle": #307f09ff
 );

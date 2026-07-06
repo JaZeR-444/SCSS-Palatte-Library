@@ -25,30 +25,30 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---imperial-velvet-trio-velvet-void: #0e061aff;
---imperial-velvet-trio-imperial-shadow: #1f0b3dff;
---imperial-velvet-trio-royal-plum: #37106bff;
+--velvet-void: #0e061aff;
+--imperial-shadow: #1f0b3dff;
+--royal-plum: #37106bff;
 
 /* CSS HSL */
---imperial-velvet-trio-velvet-void: hsla(264, 63%, 6%, 1);
---imperial-velvet-trio-imperial-shadow: hsla(264, 69%, 14%, 1);
---imperial-velvet-trio-royal-plum: hsla(266, 74%, 24%, 1);
+--velvet-void: hsla(264, 63%, 6%, 1);
+--imperial-shadow: hsla(264, 69%, 14%, 1);
+--royal-plum: hsla(266, 74%, 24%, 1);
 }
 
 /* SCSS HEX */
-$imperial-velvet-trio-velvet-void: #0e061aff;
-$imperial-velvet-trio-imperial-shadow: #1f0b3dff;
-$imperial-velvet-trio-royal-plum: #37106bff;
+$velvet-void: #0e061aff;
+$imperial-shadow: #1f0b3dff;
+$royal-plum: #37106bff;
 
 /* SCSS HSL */
-$imperial-velvet-trio-velvet-void: hsla(264, 63%, 6%, 1);
-$imperial-velvet-trio-imperial-shadow: hsla(264, 69%, 14%, 1);
-$imperial-velvet-trio-royal-plum: hsla(266, 74%, 24%, 1);
+$velvet-void: hsla(264, 63%, 6%, 1);
+$imperial-shadow: hsla(264, 69%, 14%, 1);
+$royal-plum: hsla(266, 74%, 24%, 1);
 
 /* SCSS RGB */
-$imperial-velvet-trio-velvet-void: rgba(14, 6, 26, 1);
-$imperial-velvet-trio-imperial-shadow: rgba(31, 11, 61, 1);
-$imperial-velvet-trio-royal-plum: rgba(55, 16, 107, 1);
+$velvet-void: rgba(14, 6, 26, 1);
+$imperial-shadow: rgba(31, 11, 61, 1);
+$royal-plum: rgba(55, 16, 107, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #0e061aff, #1f0b3dff, #37106bff);
@@ -63,7 +63,7 @@ $gradient-radial: radial-gradient(#0e061aff, #1f0b3dff, #37106bff);
 
 /* SCSS Map */
 $imperial-velvet-trio-map: (
-    "imperial-velvet-trio-velvet-void": #0e061aff,
-    "imperial-velvet-trio-imperial-shadow": #1f0b3dff,
-    "imperial-velvet-trio-royal-plum": #37106bff
+    "velvet-void": #0e061aff,
+    "imperial-shadow": #1f0b3dff,
+    "royal-plum": #37106bff
 );

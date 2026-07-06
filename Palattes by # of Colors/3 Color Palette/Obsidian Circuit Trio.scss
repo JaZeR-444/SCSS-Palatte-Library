@@ -25,30 +25,30 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---obsidian-circuit-trio-circuit-void: #030304ff;
---obsidian-circuit-trio-obsidian-root: #0a0a0fff;
---obsidian-circuit-trio-carbon-board: #12121aff;
+--circuit-void: #030304ff;
+--obsidian-root: #0a0a0fff;
+--carbon-board: #12121aff;
 
 /* CSS HSL */
---obsidian-circuit-trio-circuit-void: hsla(240, 14%, 1%, 1);
---obsidian-circuit-trio-obsidian-root: hsla(240, 20%, 5%, 1);
---obsidian-circuit-trio-carbon-board: hsla(240, 18%, 9%, 1);
+--circuit-void: hsla(240, 14%, 1%, 1);
+--obsidian-root: hsla(240, 20%, 5%, 1);
+--carbon-board: hsla(240, 18%, 9%, 1);
 }
 
 /* SCSS HEX */
-$obsidian-circuit-trio-circuit-void: #030304ff;
-$obsidian-circuit-trio-obsidian-root: #0a0a0fff;
-$obsidian-circuit-trio-carbon-board: #12121aff;
+$circuit-void: #030304ff;
+$obsidian-root: #0a0a0fff;
+$carbon-board: #12121aff;
 
 /* SCSS HSL */
-$obsidian-circuit-trio-circuit-void: hsla(240, 14%, 1%, 1);
-$obsidian-circuit-trio-obsidian-root: hsla(240, 20%, 5%, 1);
-$obsidian-circuit-trio-carbon-board: hsla(240, 18%, 9%, 1);
+$circuit-void: hsla(240, 14%, 1%, 1);
+$obsidian-root: hsla(240, 20%, 5%, 1);
+$carbon-board: hsla(240, 18%, 9%, 1);
 
 /* SCSS RGB */
-$obsidian-circuit-trio-circuit-void: rgba(3, 3, 4, 1);
-$obsidian-circuit-trio-obsidian-root: rgba(10, 10, 15, 1);
-$obsidian-circuit-trio-carbon-board: rgba(18, 18, 26, 1);
+$circuit-void: rgba(3, 3, 4, 1);
+$obsidian-root: rgba(10, 10, 15, 1);
+$carbon-board: rgba(18, 18, 26, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #030304ff, #0a0a0fff, #12121aff);
@@ -63,7 +63,7 @@ $gradient-radial: radial-gradient(#030304ff, #0a0a0fff, #12121aff);
 
 /* SCSS Map */
 $obsidian-circuit-trio-map: (
-    "obsidian-circuit-trio-circuit-void": #030304ff,
-    "obsidian-circuit-trio-obsidian-root": #0a0a0fff,
-    "obsidian-circuit-trio-carbon-board": #12121aff
+    "circuit-void": #030304ff,
+    "obsidian-root": #0a0a0fff,
+    "carbon-board": #12121aff
 );

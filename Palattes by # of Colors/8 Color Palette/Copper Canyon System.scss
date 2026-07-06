@@ -25,55 +25,55 @@ updated: '2026-05-19'
 
 :root {
 /* CSS HEX */
---copper-canyon-system-canyon-night: #1f1308ff;
---copper-canyon-system-desert-umber: #4a250bff;
---copper-canyon-system-copper-wall: #9a3412ff;
---copper-canyon-system-clay-trail: #c2410cff;
---copper-canyon-system-mesa-orange: #ea580cff;
---copper-canyon-system-sandstone-sun: #fdba74ff;
---copper-canyon-system-dune-peach: #fed7aaff;
---copper-canyon-system-canyon-mist: #fff7edff;
+--canyon-night: #1f1308ff;
+--desert-umber: #4a250bff;
+--copper-wall: #9a3412ff;
+--clay-trail: #c2410cff;
+--mesa-orange: #ea580cff;
+--sandstone-sun: #fdba74ff;
+--dune-peach: #fed7aaff;
+--canyon-mist: #fff7edff;
 
 /* CSS HSL */
---copper-canyon-system-canyon-night: hsla(29, 59%, 8%, 1);
---copper-canyon-system-desert-umber: hsla(25, 74%, 17%, 1);
---copper-canyon-system-copper-wall: hsla(15, 79%, 34%, 1);
---copper-canyon-system-clay-trail: hsla(17, 88%, 40%, 1);
---copper-canyon-system-mesa-orange: hsla(21, 90%, 48%, 1);
---copper-canyon-system-sandstone-sun: hsla(31, 97%, 72%, 1);
---copper-canyon-system-dune-peach: hsla(32, 98%, 83%, 1);
---copper-canyon-system-canyon-mist: hsla(33, 100%, 96%, 1);
+--canyon-night: hsla(29, 59%, 8%, 1);
+--desert-umber: hsla(25, 74%, 17%, 1);
+--copper-wall: hsla(15, 79%, 34%, 1);
+--clay-trail: hsla(17, 88%, 40%, 1);
+--mesa-orange: hsla(21, 90%, 48%, 1);
+--sandstone-sun: hsla(31, 97%, 72%, 1);
+--dune-peach: hsla(32, 98%, 83%, 1);
+--canyon-mist: hsla(33, 100%, 96%, 1);
 }
 
 /* SCSS HEX */
-$copper-canyon-system-canyon-night: #1f1308ff;
-$copper-canyon-system-desert-umber: #4a250bff;
-$copper-canyon-system-copper-wall: #9a3412ff;
-$copper-canyon-system-clay-trail: #c2410cff;
-$copper-canyon-system-mesa-orange: #ea580cff;
-$copper-canyon-system-sandstone-sun: #fdba74ff;
-$copper-canyon-system-dune-peach: #fed7aaff;
-$copper-canyon-system-canyon-mist: #fff7edff;
+$canyon-night: #1f1308ff;
+$desert-umber: #4a250bff;
+$copper-wall: #9a3412ff;
+$clay-trail: #c2410cff;
+$mesa-orange: #ea580cff;
+$sandstone-sun: #fdba74ff;
+$dune-peach: #fed7aaff;
+$canyon-mist: #fff7edff;
 
 /* SCSS HSL */
-$copper-canyon-system-canyon-night: hsla(29, 59%, 8%, 1);
-$copper-canyon-system-desert-umber: hsla(25, 74%, 17%, 1);
-$copper-canyon-system-copper-wall: hsla(15, 79%, 34%, 1);
-$copper-canyon-system-clay-trail: hsla(17, 88%, 40%, 1);
-$copper-canyon-system-mesa-orange: hsla(21, 90%, 48%, 1);
-$copper-canyon-system-sandstone-sun: hsla(31, 97%, 72%, 1);
-$copper-canyon-system-dune-peach: hsla(32, 98%, 83%, 1);
-$copper-canyon-system-canyon-mist: hsla(33, 100%, 96%, 1);
+$canyon-night: hsla(29, 59%, 8%, 1);
+$desert-umber: hsla(25, 74%, 17%, 1);
+$copper-wall: hsla(15, 79%, 34%, 1);
+$clay-trail: hsla(17, 88%, 40%, 1);
+$mesa-orange: hsla(21, 90%, 48%, 1);
+$sandstone-sun: hsla(31, 97%, 72%, 1);
+$dune-peach: hsla(32, 98%, 83%, 1);
+$canyon-mist: hsla(33, 100%, 96%, 1);
 
 /* SCSS RGB */
-$copper-canyon-system-canyon-night: rgba(31, 19, 8, 1);
-$copper-canyon-system-desert-umber: rgba(74, 37, 11, 1);
-$copper-canyon-system-copper-wall: rgba(154, 52, 18, 1);
-$copper-canyon-system-clay-trail: rgba(194, 65, 12, 1);
-$copper-canyon-system-mesa-orange: rgba(234, 88, 12, 1);
-$copper-canyon-system-sandstone-sun: rgba(253, 186, 116, 1);
-$copper-canyon-system-dune-peach: rgba(254, 215, 170, 1);
-$copper-canyon-system-canyon-mist: rgba(255, 247, 237, 1);
+$canyon-night: rgba(31, 19, 8, 1);
+$desert-umber: rgba(74, 37, 11, 1);
+$copper-wall: rgba(154, 52, 18, 1);
+$clay-trail: rgba(194, 65, 12, 1);
+$mesa-orange: rgba(234, 88, 12, 1);
+$sandstone-sun: rgba(253, 186, 116, 1);
+$dune-peach: rgba(254, 215, 170, 1);
+$canyon-mist: rgba(255, 247, 237, 1);
 
 /* SCSS Gradient */
 $gradient-top: linear-gradient(0deg, #1f1308ff, #4a250bff, #9a3412ff, #c2410cff, #ea580cff, #fdba74ff, #fed7aaff, #fff7edff);
@@ -88,12 +88,12 @@ $gradient-radial: radial-gradient(#1f1308ff, #4a250bff, #9a3412ff, #c2410cff, #e
 
 /* SCSS Map */
 $copper-canyon-system-map: (
-    "copper-canyon-system-canyon-night": #1f1308ff,
-    "copper-canyon-system-desert-umber": #4a250bff,
-    "copper-canyon-system-copper-wall": #9a3412ff,
-    "copper-canyon-system-clay-trail": #c2410cff,
-    "copper-canyon-system-mesa-orange": #ea580cff,
-    "copper-canyon-system-sandstone-sun": #fdba74ff,
-    "copper-canyon-system-dune-peach": #fed7aaff,
-    "copper-canyon-system-canyon-mist": #fff7edff
+    "canyon-night": #1f1308ff,
+    "desert-umber": #4a250bff,
+    "copper-wall": #9a3412ff,
+    "clay-trail": #c2410cff,
+    "mesa-orange": #ea580cff,
+    "sandstone-sun": #fdba74ff,
+    "dune-peach": #fed7aaff,
+    "canyon-mist": #fff7edff
 );
