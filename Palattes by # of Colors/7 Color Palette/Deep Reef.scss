@@ -18,76 +18,76 @@ suggested_use:
 - Travel
 - Maps
 - Product UI
-url: https://coolors.co/001219-005f73-0a9396-94d2bd-ee9b00-ca6702-e9d8a6
+url: https://coolors.co/081821-11595f-24a89d-eb5d47-e96379-6a288a-f0cd42
 created: '2026-05-19'
-updated: '2026-05-19'
+updated: '2026-07-06'
 ---*/
 
 :root {
 /* CSS HEX */
---reef-night: #001219ff;
---deep-teal: #005f73ff;
---reef-blue: #0a9396ff;
---tide-mint: #94d2bdff;
---coral-pop: #ee9b00ff;
---reef-orange: #ca6702ff;
---shell-white: #e9d8a6ff;
+--abyss-black: #081821ff;
+--deep-reef-teal: #11595fff;
+--reef-turquoise: #24a89dff;
+--vivid-coral: #eb5d47ff;
+--coral-pink: #e96379ff;
+--sea-urchin-purple: #6a288aff;
+--anemone-yellow: #f0cd42ff;
 
 /* CSS HSL */
---reef-night: hsla(197, 100%, 5%, 1);
---deep-teal: hsla(190, 100%, 23%, 1);
---reef-blue: hsla(181, 88%, 31%, 1);
---tide-mint: hsla(160, 41%, 70%, 1);
---coral-pop: hsla(39, 100%, 47%, 1);
---reef-orange: hsla(30, 98%, 40%, 1);
---shell-white: hsla(45, 60%, 78%, 1);
+--abyss-black: hsla(202, 61%, 8%, 1);
+--deep-reef-teal: hsla(185, 70%, 22%, 1);
+--reef-turquoise: hsla(175, 65%, 40%, 1);
+--vivid-coral: hsla(8, 80%, 60%, 1);
+--coral-pink: hsla(350, 75%, 65%, 1);
+--sea-urchin-purple: hsla(280, 55%, 35%, 1);
+--anemone-yellow: hsla(48, 85%, 60%, 1);
 }
 
 /* SCSS HEX */
-$reef-night: #001219ff;
-$deep-teal: #005f73ff;
-$reef-blue: #0a9396ff;
-$tide-mint: #94d2bdff;
-$coral-pop: #ee9b00ff;
-$reef-orange: #ca6702ff;
-$shell-white: #e9d8a6ff;
+$abyss-black: #081821ff;
+$deep-reef-teal: #11595fff;
+$reef-turquoise: #24a89dff;
+$vivid-coral: #eb5d47ff;
+$coral-pink: #e96379ff;
+$sea-urchin-purple: #6a288aff;
+$anemone-yellow: #f0cd42ff;
 
 /* SCSS HSL */
-$reef-night: hsla(197, 100%, 5%, 1);
-$deep-teal: hsla(190, 100%, 23%, 1);
-$reef-blue: hsla(181, 88%, 31%, 1);
-$tide-mint: hsla(160, 41%, 70%, 1);
-$coral-pop: hsla(39, 100%, 47%, 1);
-$reef-orange: hsla(30, 98%, 40%, 1);
-$shell-white: hsla(45, 60%, 78%, 1);
+$abyss-black: hsla(202, 61%, 8%, 1);
+$deep-reef-teal: hsla(185, 70%, 22%, 1);
+$reef-turquoise: hsla(175, 65%, 40%, 1);
+$vivid-coral: hsla(8, 80%, 60%, 1);
+$coral-pink: hsla(350, 75%, 65%, 1);
+$sea-urchin-purple: hsla(280, 55%, 35%, 1);
+$anemone-yellow: hsla(48, 85%, 60%, 1);
 
 /* SCSS RGB */
-$reef-night: rgba(0, 18, 25, 1);
-$deep-teal: rgba(0, 95, 115, 1);
-$reef-blue: rgba(10, 147, 150, 1);
-$tide-mint: rgba(148, 210, 189, 1);
-$coral-pop: rgba(238, 155, 0, 1);
-$reef-orange: rgba(202, 103, 2, 1);
-$shell-white: rgba(233, 216, 166, 1);
+$abyss-black: rgba(8, 24, 33, 1);
+$deep-reef-teal: rgba(17, 89, 95, 1);
+$reef-turquoise: rgba(36, 168, 157, 1);
+$vivid-coral: rgba(235, 93, 71, 1);
+$coral-pink: rgba(233, 99, 121, 1);
+$sea-urchin-purple: rgba(106, 40, 138, 1);
+$anemone-yellow: rgba(240, 205, 66, 1);
 
 /* SCSS Gradient */
-$gradient-top: linear-gradient(0deg, #001219ff, #005f73ff, #0a9396ff, #94d2bdff, #ee9b00ff, #ca6702ff, #e9d8a6ff);
-$gradient-right: linear-gradient(90deg, #001219ff, #005f73ff, #0a9396ff, #94d2bdff, #ee9b00ff, #ca6702ff, #e9d8a6ff);
-$gradient-bottom: linear-gradient(180deg, #001219ff, #005f73ff, #0a9396ff, #94d2bdff, #ee9b00ff, #ca6702ff, #e9d8a6ff);
-$gradient-left: linear-gradient(270deg, #001219ff, #005f73ff, #0a9396ff, #94d2bdff, #ee9b00ff, #ca6702ff, #e9d8a6ff);
-$gradient-top-right: linear-gradient(45deg, #001219ff, #005f73ff, #0a9396ff, #94d2bdff, #ee9b00ff, #ca6702ff, #e9d8a6ff);
-$gradient-bottom-right: linear-gradient(135deg, #001219ff, #005f73ff, #0a9396ff, #94d2bdff, #ee9b00ff, #ca6702ff, #e9d8a6ff);
-$gradient-top-left: linear-gradient(225deg, #001219ff, #005f73ff, #0a9396ff, #94d2bdff, #ee9b00ff, #ca6702ff, #e9d8a6ff);
-$gradient-bottom-left: linear-gradient(315deg, #001219ff, #005f73ff, #0a9396ff, #94d2bdff, #ee9b00ff, #ca6702ff, #e9d8a6ff);
-$gradient-radial: radial-gradient(#001219ff, #005f73ff, #0a9396ff, #94d2bdff, #ee9b00ff, #ca6702ff, #e9d8a6ff);
+$gradient-top: linear-gradient(0deg, #081821ff, #11595fff, #24a89dff, #eb5d47ff, #e96379ff, #6a288aff, #f0cd42ff);
+$gradient-right: linear-gradient(90deg, #081821ff, #11595fff, #24a89dff, #eb5d47ff, #e96379ff, #6a288aff, #f0cd42ff);
+$gradient-bottom: linear-gradient(180deg, #081821ff, #11595fff, #24a89dff, #eb5d47ff, #e96379ff, #6a288aff, #f0cd42ff);
+$gradient-left: linear-gradient(270deg, #081821ff, #11595fff, #24a89dff, #eb5d47ff, #e96379ff, #6a288aff, #f0cd42ff);
+$gradient-top-right: linear-gradient(45deg, #081821ff, #11595fff, #24a89dff, #eb5d47ff, #e96379ff, #6a288aff, #f0cd42ff);
+$gradient-bottom-right: linear-gradient(135deg, #081821ff, #11595fff, #24a89dff, #eb5d47ff, #e96379ff, #6a288aff, #f0cd42ff);
+$gradient-top-left: linear-gradient(225deg, #081821ff, #11595fff, #24a89dff, #eb5d47ff, #e96379ff, #6a288aff, #f0cd42ff);
+$gradient-bottom-left: linear-gradient(315deg, #081821ff, #11595fff, #24a89dff, #eb5d47ff, #e96379ff, #6a288aff, #f0cd42ff);
+$gradient-radial: radial-gradient(#081821ff, #11595fff, #24a89dff, #eb5d47ff, #e96379ff, #6a288aff, #f0cd42ff);
 
 /* SCSS Map */
 $deep-reef-map: (
-    "reef-night": #001219ff,
-    "deep-teal": #005f73ff,
-    "reef-blue": #0a9396ff,
-    "tide-mint": #94d2bdff,
-    "coral-pop": #ee9b00ff,
-    "reef-orange": #ca6702ff,
-    "shell-white": #e9d8a6ff
+    "abyss-black": #081821ff,
+    "deep-reef-teal": #11595fff,
+    "reef-turquoise": #24a89dff,
+    "vivid-coral": #eb5d47ff,
+    "coral-pink": #e96379ff,
+    "sea-urchin-purple": #6a288aff,
+    "anemone-yellow": #f0cd42ff
 );
