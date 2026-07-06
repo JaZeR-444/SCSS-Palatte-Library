@@ -18,94 +18,94 @@ suggested_use:
 - Wellness
 - Food
 - Brand System
-url: https://coolors.co/111d13-1b4332-2d6a4f-40916c-52b788-74c69d-95d5b2-b7e4c7-d8f3dc-f8fff4
+url: https://coolors.co/11131d-251b43-3c2d6a-524091-6852b7-8374c6-9e95d5-b9b7e4-d8ddf3-f4fbff
 created: '2026-05-19'
-updated: '2026-05-19'
+updated: '2026-07-06'
 ---*/
 
 :root {
 /* CSS HEX */
---garden-night: #111d13ff;
---moss-depth: #1b4332ff;
---leaf-shadow: #2d6a4fff;
---herb-green: #40916cff;
---garden-green: #52b788ff;
---fresh-leaf: #74c69dff;
---sage-mist: #95d5b2ff;
---sprout-line: #b7e4c7ff;
---mint-panel: #d8f3dcff;
---garden-white: #f8fff4ff;
+--almost-black: #11131dff;
+--navy: #251b43ff;
+--marine: #3c2d6aff;
+--blueberry: #524091ff;
+--iris: #6852b7ff;
+--deep-lilac: #8374c6ff;
+--pale-purple: #9e95d5ff;
+--light-periwinkle: #b9b7e4ff;
+--cloudy-blue: #d8ddf3ff;
+--white: #f4fbffff;
 
 /* CSS HSL */
---garden-night: hsla(130, 26%, 9%, 1);
---moss-depth: hsla(155, 43%, 18%, 1);
---leaf-shadow: hsla(153, 40%, 30%, 1);
---herb-green: hsla(153, 39%, 41%, 1);
---garden-green: hsla(152, 41%, 52%, 1);
---fresh-leaf: hsla(150, 42%, 62%, 1);
---sage-mist: hsla(147, 43%, 71%, 1);
---sprout-line: hsla(141, 45%, 81%, 1);
---mint-panel: hsla(129, 53%, 90%, 1);
---garden-white: hsla(98, 100%, 98%, 1);
+--almost-black: hsla(230, 26%, 9%, 1);
+--navy: hsla(255, 43%, 18%, 1);
+--marine: hsla(255, 40%, 30%, 1);
+--blueberry: hsla(253, 39%, 41%, 1);
+--iris: hsla(253, 41%, 52%, 1);
+--deep-lilac: hsla(251, 42%, 62%, 1);
+--pale-purple: hsla(248, 43%, 71%, 1);
+--light-periwinkle: hsla(243, 45%, 81%, 1);
+--cloudy-blue: hsla(229, 53%, 90%, 1);
+--white: hsla(202, 100%, 98%, 1);
 }
 
 /* SCSS HEX */
-$garden-night: #111d13ff;
-$moss-depth: #1b4332ff;
-$leaf-shadow: #2d6a4fff;
-$herb-green: #40916cff;
-$garden-green: #52b788ff;
-$fresh-leaf: #74c69dff;
-$sage-mist: #95d5b2ff;
-$sprout-line: #b7e4c7ff;
-$mint-panel: #d8f3dcff;
-$garden-white: #f8fff4ff;
+$almost-black: #11131dff;
+$navy: #251b43ff;
+$marine: #3c2d6aff;
+$blueberry: #524091ff;
+$iris: #6852b7ff;
+$deep-lilac: #8374c6ff;
+$pale-purple: #9e95d5ff;
+$light-periwinkle: #b9b7e4ff;
+$cloudy-blue: #d8ddf3ff;
+$white: #f4fbffff;
 
 /* SCSS HSL */
-$garden-night: hsla(130, 26%, 9%, 1);
-$moss-depth: hsla(155, 43%, 18%, 1);
-$leaf-shadow: hsla(153, 40%, 30%, 1);
-$herb-green: hsla(153, 39%, 41%, 1);
-$garden-green: hsla(152, 41%, 52%, 1);
-$fresh-leaf: hsla(150, 42%, 62%, 1);
-$sage-mist: hsla(147, 43%, 71%, 1);
-$sprout-line: hsla(141, 45%, 81%, 1);
-$mint-panel: hsla(129, 53%, 90%, 1);
-$garden-white: hsla(98, 100%, 98%, 1);
+$almost-black: hsla(230, 26%, 9%, 1);
+$navy: hsla(255, 43%, 18%, 1);
+$marine: hsla(255, 40%, 30%, 1);
+$blueberry: hsla(253, 39%, 41%, 1);
+$iris: hsla(253, 41%, 52%, 1);
+$deep-lilac: hsla(251, 42%, 62%, 1);
+$pale-purple: hsla(248, 43%, 71%, 1);
+$light-periwinkle: hsla(243, 45%, 81%, 1);
+$cloudy-blue: hsla(229, 53%, 90%, 1);
+$white: hsla(202, 100%, 98%, 1);
 
 /* SCSS RGB */
-$garden-night: rgba(17, 29, 19, 1);
-$moss-depth: rgba(27, 67, 50, 1);
-$leaf-shadow: rgba(45, 106, 79, 1);
-$herb-green: rgba(64, 145, 108, 1);
-$garden-green: rgba(82, 183, 136, 1);
-$fresh-leaf: rgba(116, 198, 157, 1);
-$sage-mist: rgba(149, 213, 178, 1);
-$sprout-line: rgba(183, 228, 199, 1);
-$mint-panel: rgba(216, 243, 220, 1);
-$garden-white: rgba(248, 255, 244, 1);
+$almost-black: rgba(17, 19, 29, 1);
+$navy: rgba(37, 27, 67, 1);
+$marine: rgba(60, 45, 106, 1);
+$blueberry: rgba(82, 64, 145, 1);
+$iris: rgba(104, 82, 183, 1);
+$deep-lilac: rgba(131, 116, 198, 1);
+$pale-purple: rgba(158, 149, 213, 1);
+$light-periwinkle: rgba(185, 183, 228, 1);
+$cloudy-blue: rgba(216, 221, 243, 1);
+$white: rgba(244, 251, 255, 1);
 
 /* SCSS Gradient */
-$gradient-top: linear-gradient(0deg, #111d13ff, #1b4332ff, #2d6a4fff, #40916cff, #52b788ff, #74c69dff, #95d5b2ff, #b7e4c7ff, #d8f3dcff, #f8fff4ff);
-$gradient-right: linear-gradient(90deg, #111d13ff, #1b4332ff, #2d6a4fff, #40916cff, #52b788ff, #74c69dff, #95d5b2ff, #b7e4c7ff, #d8f3dcff, #f8fff4ff);
-$gradient-bottom: linear-gradient(180deg, #111d13ff, #1b4332ff, #2d6a4fff, #40916cff, #52b788ff, #74c69dff, #95d5b2ff, #b7e4c7ff, #d8f3dcff, #f8fff4ff);
-$gradient-left: linear-gradient(270deg, #111d13ff, #1b4332ff, #2d6a4fff, #40916cff, #52b788ff, #74c69dff, #95d5b2ff, #b7e4c7ff, #d8f3dcff, #f8fff4ff);
-$gradient-top-right: linear-gradient(45deg, #111d13ff, #1b4332ff, #2d6a4fff, #40916cff, #52b788ff, #74c69dff, #95d5b2ff, #b7e4c7ff, #d8f3dcff, #f8fff4ff);
-$gradient-bottom-right: linear-gradient(135deg, #111d13ff, #1b4332ff, #2d6a4fff, #40916cff, #52b788ff, #74c69dff, #95d5b2ff, #b7e4c7ff, #d8f3dcff, #f8fff4ff);
-$gradient-top-left: linear-gradient(225deg, #111d13ff, #1b4332ff, #2d6a4fff, #40916cff, #52b788ff, #74c69dff, #95d5b2ff, #b7e4c7ff, #d8f3dcff, #f8fff4ff);
-$gradient-bottom-left: linear-gradient(315deg, #111d13ff, #1b4332ff, #2d6a4fff, #40916cff, #52b788ff, #74c69dff, #95d5b2ff, #b7e4c7ff, #d8f3dcff, #f8fff4ff);
-$gradient-radial: radial-gradient(#111d13ff, #1b4332ff, #2d6a4fff, #40916cff, #52b788ff, #74c69dff, #95d5b2ff, #b7e4c7ff, #d8f3dcff, #f8fff4ff);
+$gradient-top: linear-gradient(0deg, #11131dff, #251b43ff, #3c2d6aff, #524091ff, #6852b7ff, #8374c6ff, #9e95d5ff, #b9b7e4ff, #d8ddf3ff, #f4fbffff);
+$gradient-right: linear-gradient(90deg, #11131dff, #251b43ff, #3c2d6aff, #524091ff, #6852b7ff, #8374c6ff, #9e95d5ff, #b9b7e4ff, #d8ddf3ff, #f4fbffff);
+$gradient-bottom: linear-gradient(180deg, #11131dff, #251b43ff, #3c2d6aff, #524091ff, #6852b7ff, #8374c6ff, #9e95d5ff, #b9b7e4ff, #d8ddf3ff, #f4fbffff);
+$gradient-left: linear-gradient(270deg, #11131dff, #251b43ff, #3c2d6aff, #524091ff, #6852b7ff, #8374c6ff, #9e95d5ff, #b9b7e4ff, #d8ddf3ff, #f4fbffff);
+$gradient-top-right: linear-gradient(45deg, #11131dff, #251b43ff, #3c2d6aff, #524091ff, #6852b7ff, #8374c6ff, #9e95d5ff, #b9b7e4ff, #d8ddf3ff, #f4fbffff);
+$gradient-bottom-right: linear-gradient(135deg, #11131dff, #251b43ff, #3c2d6aff, #524091ff, #6852b7ff, #8374c6ff, #9e95d5ff, #b9b7e4ff, #d8ddf3ff, #f4fbffff);
+$gradient-top-left: linear-gradient(225deg, #11131dff, #251b43ff, #3c2d6aff, #524091ff, #6852b7ff, #8374c6ff, #9e95d5ff, #b9b7e4ff, #d8ddf3ff, #f4fbffff);
+$gradient-bottom-left: linear-gradient(315deg, #11131dff, #251b43ff, #3c2d6aff, #524091ff, #6852b7ff, #8374c6ff, #9e95d5ff, #b9b7e4ff, #d8ddf3ff, #f4fbffff);
+$gradient-radial: radial-gradient(#11131dff, #251b43ff, #3c2d6aff, #524091ff, #6852b7ff, #8374c6ff, #9e95d5ff, #b9b7e4ff, #d8ddf3ff, #f4fbffff);
 
 /* SCSS Map */
 $moss-garden-atlas-map: (
-    "garden-night": #111d13ff,
-    "moss-depth": #1b4332ff,
-    "leaf-shadow": #2d6a4fff,
-    "herb-green": #40916cff,
-    "garden-green": #52b788ff,
-    "fresh-leaf": #74c69dff,
-    "sage-mist": #95d5b2ff,
-    "sprout-line": #b7e4c7ff,
-    "mint-panel": #d8f3dcff,
-    "garden-white": #f8fff4ff
+    "almost-black": #11131dff,
+    "navy": #251b43ff,
+    "marine": #3c2d6aff,
+    "blueberry": #524091ff,
+    "iris": #6852b7ff,
+    "deep-lilac": #8374c6ff,
+    "pale-purple": #9e95d5ff,
+    "light-periwinkle": #b9b7e4ff,
+    "cloudy-blue": #d8ddf3ff,
+    "white": #f4fbffff
 );

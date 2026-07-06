@@ -13,208 +13,208 @@ tags:
   aesthetic:
   - Web Design
 intent: A semantic 29-color system mapped for web development roles, states, and surfaces.
-url: https://coolors.co/
+url: https://coolors.co/161513-292724-3d3a34-514e43-655d53-7a7362-8f8270-a09583-b0a696-c0b6aa-d0cbbe-dfdad2-eeece7-996f29-58c427-e33171-4c73f0-86dadf-a24020-1cce7a-ed9f26-90d666-e67f99-173eab-12ced9-ce6146-5ddf97-edbf78-56b30f
 created: '2026-07-04'
-updated: '2026-07-04'
+updated: '2026-07-06'
 ---*/
 
 :root {
 /* CSS HEX */
---bg-canvas: #131416ff;
---bg-surface: #242629ff;
---bg-elevated: #34373dff;
---bg-overlay: #434651ff;
---border-subtle: #535b65ff;
---border-strong: #62697aff;
---text-muted: #707e8fff;
---text-base: #838ea0ff;
---text-strong: #96a0b0ff;
---text-inverse: #aab4c0ff;
---neutral-11: #bec3d0ff;
---neutral-12: #d2d7dfff;
---neutral-13: #e7e9eeff;
---primary: #295599ff;
---primary-hover: #9027c4ff;
---secondary: #31e3a0ff;
---secondary-hover: #f0c64cff;
---accent: #df8a86ff;
---accent-soft: #2084a2ff;
---success: #ce1c73ff;
---warning: #2677edff;
---danger: #aa66d6ff;
---info: #7fe6caff;
---link: #ab8217ff;
---focus-ring: #d91a12ff;
---support-13: #46b5ceff;
---support-14: #df5da7ff;
---support-15: #78a8edff;
---support-16: #690fb3ff;
+--almost-black: #161513ff;
+--dark-grey: #292724ff;
+--charcoal: #3d3a34ff;
+--gunmetal: #514e43ff;
+--dark-taupe: #655d53ff;
+--dull-brown: #7a7362ff;
+--cement: #8f8270ff;
+--stone: #a09583ff;
+--mushroom: #b0a696ff;
+--putty: #c0b6aaff;
+--very-light-pink: #d0cbbeff;
+--white: #dfdad2ff;
+--off-white: #eeece7ff;
+--leather: #996f29ff;
+--frog-green: #58c427ff;
+--dark-hot-pink: #e33171ff;
+--lightish-blue: #4c73f0ff;
+--robins-egg-blue: #86dadfff;
+--brick: #a24020ff;
+--seaweed: #1cce7aff;
+--mango: #ed9f26ff;
+--turtle-green: #90d666ff;
+--muted-pink: #e67f99ff;
+--sapphire: #173eabff;
+--aqua-blue: #12ced9ff;
+--terracotta: #ce6146ff;
+--seafoam-green: #5ddf97ff;
+--tan: #edbf78ff;
+--kermit-green: #56b30fff;
 
 /* CSS HSL */
---bg-canvas: hsla(226, 6%, 8%, 1);
---bg-surface: hsla(212, 7%, 15%, 1);
---bg-elevated: hsla(218, 8%, 22%, 1);
---bg-overlay: hsla(227, 9%, 29%, 1);
---border-subtle: hsla(214, 10%, 36%, 1);
---border-strong: hsla(221, 11%, 43%, 1);
---text-muted: hsla(213, 12%, 50%, 1);
---text-base: hsla(217, 13%, 57%, 1);
---text-strong: hsla(218, 14%, 64%, 1);
---text-inverse: hsla(214, 15%, 71%, 1);
---neutral-11: hsla(224, 16%, 78%, 1);
---neutral-12: hsla(219, 17%, 85%, 1);
---neutral-13: hsla(219, 18%, 92%, 1);
---primary: hsla(217, 58%, 38%, 1);
---primary-hover: hsla(280, 67%, 46%, 1);
---secondary: hsla(158, 76%, 54%, 1);
---secondary-hover: hsla(44, 85%, 62%, 1);
---accent: hsla(3, 58%, 70%, 1);
---accent-soft: hsla(194, 67%, 38%, 1);
---success: hsla(331, 76%, 46%, 1);
---warning: hsla(216, 85%, 54%, 1);
---danger: hsla(276, 58%, 62%, 1);
---info: hsla(164, 67%, 70%, 1);
---link: hsla(44, 76%, 38%, 1);
---focus-ring: hsla(3, 85%, 46%, 1);
---support-13: hsla(191, 58%, 54%, 1);
---support-14: hsla(326, 67%, 62%, 1);
---support-15: hsla(216, 76%, 70%, 1);
---support-16: hsla(273, 85%, 38%, 1);
+--almost-black: hsla(40, 7%, 8%, 1);
+--dark-grey: hsla(36, 6%, 15%, 1);
+--charcoal: hsla(40, 8%, 22%, 1);
+--gunmetal: hsla(47, 9%, 29%, 1);
+--dark-taupe: hsla(33, 10%, 36%, 1);
+--dull-brown: hsla(42, 11%, 43%, 1);
+--cement: hsla(35, 12%, 50%, 1);
+--stone: hsla(37, 13%, 57%, 1);
+--mushroom: hsla(37, 14%, 64%, 1);
+--putty: hsla(33, 15%, 71%, 1);
+--very-light-pink: hsla(43, 16%, 78%, 1);
+--white: hsla(37, 17%, 85%, 1);
+--off-white: hsla(43, 17%, 92%, 1);
+--leather: hsla(38, 58%, 38%, 1);
+--frog-green: hsla(101, 67%, 46%, 1);
+--dark-hot-pink: hsla(338, 76%, 54%, 1);
+--lightish-blue: hsla(226, 85%, 62%, 1);
+--robins-egg-blue: hsla(183, 58%, 70%, 1);
+--brick: hsla(15, 67%, 38%, 1);
+--seaweed: hsla(152, 76%, 46%, 1);
+--mango: hsla(36, 85%, 54%, 1);
+--turtle-green: hsla(98, 58%, 62%, 1);
+--muted-pink: hsla(345, 67%, 70%, 1);
+--sapphire: hsla(224, 76%, 38%, 1);
+--aqua-blue: hsla(183, 85%, 46%, 1);
+--terracotta: hsla(12, 58%, 54%, 1);
+--seafoam-green: hsla(147, 67%, 62%, 1);
+--tan: hsla(36, 76%, 70%, 1);
+--kermit-green: hsla(94, 85%, 38%, 1);
 }
 
 /* SCSS HEX */
-$bg-canvas: #131416ff;
-$bg-surface: #242629ff;
-$bg-elevated: #34373dff;
-$bg-overlay: #434651ff;
-$border-subtle: #535b65ff;
-$border-strong: #62697aff;
-$text-muted: #707e8fff;
-$text-base: #838ea0ff;
-$text-strong: #96a0b0ff;
-$text-inverse: #aab4c0ff;
-$neutral-11: #bec3d0ff;
-$neutral-12: #d2d7dfff;
-$neutral-13: #e7e9eeff;
-$primary: #295599ff;
-$primary-hover: #9027c4ff;
-$secondary: #31e3a0ff;
-$secondary-hover: #f0c64cff;
-$accent: #df8a86ff;
-$accent-soft: #2084a2ff;
-$success: #ce1c73ff;
-$warning: #2677edff;
-$danger: #aa66d6ff;
-$info: #7fe6caff;
-$link: #ab8217ff;
-$focus-ring: #d91a12ff;
-$support-13: #46b5ceff;
-$support-14: #df5da7ff;
-$support-15: #78a8edff;
-$support-16: #690fb3ff;
+$almost-black: #161513ff;
+$dark-grey: #292724ff;
+$charcoal: #3d3a34ff;
+$gunmetal: #514e43ff;
+$dark-taupe: #655d53ff;
+$dull-brown: #7a7362ff;
+$cement: #8f8270ff;
+$stone: #a09583ff;
+$mushroom: #b0a696ff;
+$putty: #c0b6aaff;
+$very-light-pink: #d0cbbeff;
+$white: #dfdad2ff;
+$off-white: #eeece7ff;
+$leather: #996f29ff;
+$frog-green: #58c427ff;
+$dark-hot-pink: #e33171ff;
+$lightish-blue: #4c73f0ff;
+$robins-egg-blue: #86dadfff;
+$brick: #a24020ff;
+$seaweed: #1cce7aff;
+$mango: #ed9f26ff;
+$turtle-green: #90d666ff;
+$muted-pink: #e67f99ff;
+$sapphire: #173eabff;
+$aqua-blue: #12ced9ff;
+$terracotta: #ce6146ff;
+$seafoam-green: #5ddf97ff;
+$tan: #edbf78ff;
+$kermit-green: #56b30fff;
 
 /* SCSS HSL */
-$bg-canvas: hsla(226, 6%, 8%, 1);
-$bg-surface: hsla(212, 7%, 15%, 1);
-$bg-elevated: hsla(218, 8%, 22%, 1);
-$bg-overlay: hsla(227, 9%, 29%, 1);
-$border-subtle: hsla(214, 10%, 36%, 1);
-$border-strong: hsla(221, 11%, 43%, 1);
-$text-muted: hsla(213, 12%, 50%, 1);
-$text-base: hsla(217, 13%, 57%, 1);
-$text-strong: hsla(218, 14%, 64%, 1);
-$text-inverse: hsla(214, 15%, 71%, 1);
-$neutral-11: hsla(224, 16%, 78%, 1);
-$neutral-12: hsla(219, 17%, 85%, 1);
-$neutral-13: hsla(219, 18%, 92%, 1);
-$primary: hsla(217, 58%, 38%, 1);
-$primary-hover: hsla(280, 67%, 46%, 1);
-$secondary: hsla(158, 76%, 54%, 1);
-$secondary-hover: hsla(44, 85%, 62%, 1);
-$accent: hsla(3, 58%, 70%, 1);
-$accent-soft: hsla(194, 67%, 38%, 1);
-$success: hsla(331, 76%, 46%, 1);
-$warning: hsla(216, 85%, 54%, 1);
-$danger: hsla(276, 58%, 62%, 1);
-$info: hsla(164, 67%, 70%, 1);
-$link: hsla(44, 76%, 38%, 1);
-$focus-ring: hsla(3, 85%, 46%, 1);
-$support-13: hsla(191, 58%, 54%, 1);
-$support-14: hsla(326, 67%, 62%, 1);
-$support-15: hsla(216, 76%, 70%, 1);
-$support-16: hsla(273, 85%, 38%, 1);
+$almost-black: hsla(40, 7%, 8%, 1);
+$dark-grey: hsla(36, 6%, 15%, 1);
+$charcoal: hsla(40, 8%, 22%, 1);
+$gunmetal: hsla(47, 9%, 29%, 1);
+$dark-taupe: hsla(33, 10%, 36%, 1);
+$dull-brown: hsla(42, 11%, 43%, 1);
+$cement: hsla(35, 12%, 50%, 1);
+$stone: hsla(37, 13%, 57%, 1);
+$mushroom: hsla(37, 14%, 64%, 1);
+$putty: hsla(33, 15%, 71%, 1);
+$very-light-pink: hsla(43, 16%, 78%, 1);
+$white: hsla(37, 17%, 85%, 1);
+$off-white: hsla(43, 17%, 92%, 1);
+$leather: hsla(38, 58%, 38%, 1);
+$frog-green: hsla(101, 67%, 46%, 1);
+$dark-hot-pink: hsla(338, 76%, 54%, 1);
+$lightish-blue: hsla(226, 85%, 62%, 1);
+$robins-egg-blue: hsla(183, 58%, 70%, 1);
+$brick: hsla(15, 67%, 38%, 1);
+$seaweed: hsla(152, 76%, 46%, 1);
+$mango: hsla(36, 85%, 54%, 1);
+$turtle-green: hsla(98, 58%, 62%, 1);
+$muted-pink: hsla(345, 67%, 70%, 1);
+$sapphire: hsla(224, 76%, 38%, 1);
+$aqua-blue: hsla(183, 85%, 46%, 1);
+$terracotta: hsla(12, 58%, 54%, 1);
+$seafoam-green: hsla(147, 67%, 62%, 1);
+$tan: hsla(36, 76%, 70%, 1);
+$kermit-green: hsla(94, 85%, 38%, 1);
 
 /* SCSS RGB */
-$bg-canvas: rgba(19, 20, 22, 1);
-$bg-surface: rgba(36, 38, 41, 1);
-$bg-elevated: rgba(52, 55, 61, 1);
-$bg-overlay: rgba(67, 70, 81, 1);
-$border-subtle: rgba(83, 91, 101, 1);
-$border-strong: rgba(98, 105, 122, 1);
-$text-muted: rgba(112, 126, 143, 1);
-$text-base: rgba(131, 142, 160, 1);
-$text-strong: rgba(150, 160, 176, 1);
-$text-inverse: rgba(170, 180, 192, 1);
-$neutral-11: rgba(190, 195, 208, 1);
-$neutral-12: rgba(210, 215, 223, 1);
-$neutral-13: rgba(231, 233, 238, 1);
-$primary: rgba(41, 85, 153, 1);
-$primary-hover: rgba(144, 39, 196, 1);
-$secondary: rgba(49, 227, 160, 1);
-$secondary-hover: rgba(240, 198, 76, 1);
-$accent: rgba(223, 138, 134, 1);
-$accent-soft: rgba(32, 132, 162, 1);
-$success: rgba(206, 28, 115, 1);
-$warning: rgba(38, 119, 237, 1);
-$danger: rgba(170, 102, 214, 1);
-$info: rgba(127, 230, 202, 1);
-$link: rgba(171, 130, 23, 1);
-$focus-ring: rgba(217, 26, 18, 1);
-$support-13: rgba(70, 181, 206, 1);
-$support-14: rgba(223, 93, 167, 1);
-$support-15: rgba(120, 168, 237, 1);
-$support-16: rgba(105, 15, 179, 1);
+$almost-black: rgba(22, 21, 19, 1);
+$dark-grey: rgba(41, 39, 36, 1);
+$charcoal: rgba(61, 58, 52, 1);
+$gunmetal: rgba(81, 78, 67, 1);
+$dark-taupe: rgba(101, 93, 83, 1);
+$dull-brown: rgba(122, 115, 98, 1);
+$cement: rgba(143, 130, 112, 1);
+$stone: rgba(160, 149, 131, 1);
+$mushroom: rgba(176, 166, 150, 1);
+$putty: rgba(192, 182, 170, 1);
+$very-light-pink: rgba(208, 203, 190, 1);
+$white: rgba(223, 218, 210, 1);
+$off-white: rgba(238, 236, 231, 1);
+$leather: rgba(153, 111, 41, 1);
+$frog-green: rgba(88, 196, 39, 1);
+$dark-hot-pink: rgba(227, 49, 113, 1);
+$lightish-blue: rgba(76, 115, 240, 1);
+$robins-egg-blue: rgba(134, 218, 223, 1);
+$brick: rgba(162, 64, 32, 1);
+$seaweed: rgba(28, 206, 122, 1);
+$mango: rgba(237, 159, 38, 1);
+$turtle-green: rgba(144, 214, 102, 1);
+$muted-pink: rgba(230, 127, 153, 1);
+$sapphire: rgba(23, 62, 171, 1);
+$aqua-blue: rgba(18, 206, 217, 1);
+$terracotta: rgba(206, 97, 70, 1);
+$seafoam-green: rgba(93, 223, 151, 1);
+$tan: rgba(237, 191, 120, 1);
+$kermit-green: rgba(86, 179, 15, 1);
 
 /* SCSS Gradient */
-$gradient-top: linear-gradient(0deg, #131416ff, #242629ff, #34373dff, #434651ff, #535b65ff, #62697aff, #707e8fff, #838ea0ff, #96a0b0ff, #aab4c0ff, #bec3d0ff, #d2d7dfff, #e7e9eeff, #295599ff, #9027c4ff, #31e3a0ff, #f0c64cff, #df8a86ff, #2084a2ff, #ce1c73ff, #2677edff, #aa66d6ff, #7fe6caff, #ab8217ff, #d91a12ff, #46b5ceff, #df5da7ff, #78a8edff, #690fb3ff);
-$gradient-right: linear-gradient(90deg, #131416ff, #242629ff, #34373dff, #434651ff, #535b65ff, #62697aff, #707e8fff, #838ea0ff, #96a0b0ff, #aab4c0ff, #bec3d0ff, #d2d7dfff, #e7e9eeff, #295599ff, #9027c4ff, #31e3a0ff, #f0c64cff, #df8a86ff, #2084a2ff, #ce1c73ff, #2677edff, #aa66d6ff, #7fe6caff, #ab8217ff, #d91a12ff, #46b5ceff, #df5da7ff, #78a8edff, #690fb3ff);
-$gradient-bottom: linear-gradient(180deg, #131416ff, #242629ff, #34373dff, #434651ff, #535b65ff, #62697aff, #707e8fff, #838ea0ff, #96a0b0ff, #aab4c0ff, #bec3d0ff, #d2d7dfff, #e7e9eeff, #295599ff, #9027c4ff, #31e3a0ff, #f0c64cff, #df8a86ff, #2084a2ff, #ce1c73ff, #2677edff, #aa66d6ff, #7fe6caff, #ab8217ff, #d91a12ff, #46b5ceff, #df5da7ff, #78a8edff, #690fb3ff);
-$gradient-left: linear-gradient(270deg, #131416ff, #242629ff, #34373dff, #434651ff, #535b65ff, #62697aff, #707e8fff, #838ea0ff, #96a0b0ff, #aab4c0ff, #bec3d0ff, #d2d7dfff, #e7e9eeff, #295599ff, #9027c4ff, #31e3a0ff, #f0c64cff, #df8a86ff, #2084a2ff, #ce1c73ff, #2677edff, #aa66d6ff, #7fe6caff, #ab8217ff, #d91a12ff, #46b5ceff, #df5da7ff, #78a8edff, #690fb3ff);
-$gradient-top-right: linear-gradient(45deg, #131416ff, #242629ff, #34373dff, #434651ff, #535b65ff, #62697aff, #707e8fff, #838ea0ff, #96a0b0ff, #aab4c0ff, #bec3d0ff, #d2d7dfff, #e7e9eeff, #295599ff, #9027c4ff, #31e3a0ff, #f0c64cff, #df8a86ff, #2084a2ff, #ce1c73ff, #2677edff, #aa66d6ff, #7fe6caff, #ab8217ff, #d91a12ff, #46b5ceff, #df5da7ff, #78a8edff, #690fb3ff);
-$gradient-bottom-right: linear-gradient(135deg, #131416ff, #242629ff, #34373dff, #434651ff, #535b65ff, #62697aff, #707e8fff, #838ea0ff, #96a0b0ff, #aab4c0ff, #bec3d0ff, #d2d7dfff, #e7e9eeff, #295599ff, #9027c4ff, #31e3a0ff, #f0c64cff, #df8a86ff, #2084a2ff, #ce1c73ff, #2677edff, #aa66d6ff, #7fe6caff, #ab8217ff, #d91a12ff, #46b5ceff, #df5da7ff, #78a8edff, #690fb3ff);
-$gradient-top-left: linear-gradient(225deg, #131416ff, #242629ff, #34373dff, #434651ff, #535b65ff, #62697aff, #707e8fff, #838ea0ff, #96a0b0ff, #aab4c0ff, #bec3d0ff, #d2d7dfff, #e7e9eeff, #295599ff, #9027c4ff, #31e3a0ff, #f0c64cff, #df8a86ff, #2084a2ff, #ce1c73ff, #2677edff, #aa66d6ff, #7fe6caff, #ab8217ff, #d91a12ff, #46b5ceff, #df5da7ff, #78a8edff, #690fb3ff);
-$gradient-bottom-left: linear-gradient(315deg, #131416ff, #242629ff, #34373dff, #434651ff, #535b65ff, #62697aff, #707e8fff, #838ea0ff, #96a0b0ff, #aab4c0ff, #bec3d0ff, #d2d7dfff, #e7e9eeff, #295599ff, #9027c4ff, #31e3a0ff, #f0c64cff, #df8a86ff, #2084a2ff, #ce1c73ff, #2677edff, #aa66d6ff, #7fe6caff, #ab8217ff, #d91a12ff, #46b5ceff, #df5da7ff, #78a8edff, #690fb3ff);
-$gradient-radial: radial-gradient(#131416ff, #242629ff, #34373dff, #434651ff, #535b65ff, #62697aff, #707e8fff, #838ea0ff, #96a0b0ff, #aab4c0ff, #bec3d0ff, #d2d7dfff, #e7e9eeff, #295599ff, #9027c4ff, #31e3a0ff, #f0c64cff, #df8a86ff, #2084a2ff, #ce1c73ff, #2677edff, #aa66d6ff, #7fe6caff, #ab8217ff, #d91a12ff, #46b5ceff, #df5da7ff, #78a8edff, #690fb3ff);
+$gradient-top: linear-gradient(0deg, #161513ff, #292724ff, #3d3a34ff, #514e43ff, #655d53ff, #7a7362ff, #8f8270ff, #a09583ff, #b0a696ff, #c0b6aaff, #d0cbbeff, #dfdad2ff, #eeece7ff, #996f29ff, #58c427ff, #e33171ff, #4c73f0ff, #86dadfff, #a24020ff, #1cce7aff, #ed9f26ff, #90d666ff, #e67f99ff, #173eabff, #12ced9ff, #ce6146ff, #5ddf97ff, #edbf78ff, #56b30fff);
+$gradient-right: linear-gradient(90deg, #161513ff, #292724ff, #3d3a34ff, #514e43ff, #655d53ff, #7a7362ff, #8f8270ff, #a09583ff, #b0a696ff, #c0b6aaff, #d0cbbeff, #dfdad2ff, #eeece7ff, #996f29ff, #58c427ff, #e33171ff, #4c73f0ff, #86dadfff, #a24020ff, #1cce7aff, #ed9f26ff, #90d666ff, #e67f99ff, #173eabff, #12ced9ff, #ce6146ff, #5ddf97ff, #edbf78ff, #56b30fff);
+$gradient-bottom: linear-gradient(180deg, #161513ff, #292724ff, #3d3a34ff, #514e43ff, #655d53ff, #7a7362ff, #8f8270ff, #a09583ff, #b0a696ff, #c0b6aaff, #d0cbbeff, #dfdad2ff, #eeece7ff, #996f29ff, #58c427ff, #e33171ff, #4c73f0ff, #86dadfff, #a24020ff, #1cce7aff, #ed9f26ff, #90d666ff, #e67f99ff, #173eabff, #12ced9ff, #ce6146ff, #5ddf97ff, #edbf78ff, #56b30fff);
+$gradient-left: linear-gradient(270deg, #161513ff, #292724ff, #3d3a34ff, #514e43ff, #655d53ff, #7a7362ff, #8f8270ff, #a09583ff, #b0a696ff, #c0b6aaff, #d0cbbeff, #dfdad2ff, #eeece7ff, #996f29ff, #58c427ff, #e33171ff, #4c73f0ff, #86dadfff, #a24020ff, #1cce7aff, #ed9f26ff, #90d666ff, #e67f99ff, #173eabff, #12ced9ff, #ce6146ff, #5ddf97ff, #edbf78ff, #56b30fff);
+$gradient-top-right: linear-gradient(45deg, #161513ff, #292724ff, #3d3a34ff, #514e43ff, #655d53ff, #7a7362ff, #8f8270ff, #a09583ff, #b0a696ff, #c0b6aaff, #d0cbbeff, #dfdad2ff, #eeece7ff, #996f29ff, #58c427ff, #e33171ff, #4c73f0ff, #86dadfff, #a24020ff, #1cce7aff, #ed9f26ff, #90d666ff, #e67f99ff, #173eabff, #12ced9ff, #ce6146ff, #5ddf97ff, #edbf78ff, #56b30fff);
+$gradient-bottom-right: linear-gradient(135deg, #161513ff, #292724ff, #3d3a34ff, #514e43ff, #655d53ff, #7a7362ff, #8f8270ff, #a09583ff, #b0a696ff, #c0b6aaff, #d0cbbeff, #dfdad2ff, #eeece7ff, #996f29ff, #58c427ff, #e33171ff, #4c73f0ff, #86dadfff, #a24020ff, #1cce7aff, #ed9f26ff, #90d666ff, #e67f99ff, #173eabff, #12ced9ff, #ce6146ff, #5ddf97ff, #edbf78ff, #56b30fff);
+$gradient-top-left: linear-gradient(225deg, #161513ff, #292724ff, #3d3a34ff, #514e43ff, #655d53ff, #7a7362ff, #8f8270ff, #a09583ff, #b0a696ff, #c0b6aaff, #d0cbbeff, #dfdad2ff, #eeece7ff, #996f29ff, #58c427ff, #e33171ff, #4c73f0ff, #86dadfff, #a24020ff, #1cce7aff, #ed9f26ff, #90d666ff, #e67f99ff, #173eabff, #12ced9ff, #ce6146ff, #5ddf97ff, #edbf78ff, #56b30fff);
+$gradient-bottom-left: linear-gradient(315deg, #161513ff, #292724ff, #3d3a34ff, #514e43ff, #655d53ff, #7a7362ff, #8f8270ff, #a09583ff, #b0a696ff, #c0b6aaff, #d0cbbeff, #dfdad2ff, #eeece7ff, #996f29ff, #58c427ff, #e33171ff, #4c73f0ff, #86dadfff, #a24020ff, #1cce7aff, #ed9f26ff, #90d666ff, #e67f99ff, #173eabff, #12ced9ff, #ce6146ff, #5ddf97ff, #edbf78ff, #56b30fff);
+$gradient-radial: radial-gradient(#161513ff, #292724ff, #3d3a34ff, #514e43ff, #655d53ff, #7a7362ff, #8f8270ff, #a09583ff, #b0a696ff, #c0b6aaff, #d0cbbeff, #dfdad2ff, #eeece7ff, #996f29ff, #58c427ff, #e33171ff, #4c73f0ff, #86dadfff, #a24020ff, #1cce7aff, #ed9f26ff, #90d666ff, #e67f99ff, #173eabff, #12ced9ff, #ce6146ff, #5ddf97ff, #edbf78ff, #56b30fff);
 
 /* SCSS Map */
 $studio-interface-map-29-18-map: (
-    "bg-canvas": #131416ff,
-    "bg-surface": #242629ff,
-    "bg-elevated": #34373dff,
-    "bg-overlay": #434651ff,
-    "border-subtle": #535b65ff,
-    "border-strong": #62697aff,
-    "text-muted": #707e8fff,
-    "text-base": #838ea0ff,
-    "text-strong": #96a0b0ff,
-    "text-inverse": #aab4c0ff,
-    "neutral-11": #bec3d0ff,
-    "neutral-12": #d2d7dfff,
-    "neutral-13": #e7e9eeff,
-    "primary": #295599ff,
-    "primary-hover": #9027c4ff,
-    "secondary": #31e3a0ff,
-    "secondary-hover": #f0c64cff,
-    "accent": #df8a86ff,
-    "accent-soft": #2084a2ff,
-    "success": #ce1c73ff,
-    "warning": #2677edff,
-    "danger": #aa66d6ff,
-    "info": #7fe6caff,
-    "link": #ab8217ff,
-    "focus-ring": #d91a12ff,
-    "support-13": #46b5ceff,
-    "support-14": #df5da7ff,
-    "support-15": #78a8edff,
-    "support-16": #690fb3ff
+    "almost-black": #161513ff,
+    "dark-grey": #292724ff,
+    "charcoal": #3d3a34ff,
+    "gunmetal": #514e43ff,
+    "dark-taupe": #655d53ff,
+    "dull-brown": #7a7362ff,
+    "cement": #8f8270ff,
+    "stone": #a09583ff,
+    "mushroom": #b0a696ff,
+    "putty": #c0b6aaff,
+    "very-light-pink": #d0cbbeff,
+    "white": #dfdad2ff,
+    "off-white": #eeece7ff,
+    "leather": #996f29ff,
+    "frog-green": #58c427ff,
+    "dark-hot-pink": #e33171ff,
+    "lightish-blue": #4c73f0ff,
+    "robins-egg-blue": #86dadfff,
+    "brick": #a24020ff,
+    "seaweed": #1cce7aff,
+    "mango": #ed9f26ff,
+    "turtle-green": #90d666ff,
+    "muted-pink": #e67f99ff,
+    "sapphire": #173eabff,
+    "aqua-blue": #12ced9ff,
+    "terracotta": #ce6146ff,
+    "seafoam-green": #5ddf97ff,
+    "tan": #edbf78ff,
+    "kermit-green": #56b30fff
 );
