@@ -2,25 +2,52 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Github, Shuffle, Plus, Folder, Trash, ChevronDown, FolderPlus, X, Sparkles } from "lucide-react";
+import {
+  Github,
+  Shuffle,
+  Plus,
+  Folder,
+  Trash,
+  ChevronDown,
+  FolderPlus,
+  X,
+  Sparkles,
+  FolderKanban,
+} from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
 import { useStudio } from "./studio/studio-context";
 import { playSound } from "@/utils/audio";
 import { showToast } from "@/utils/toast";
-import { useState, useEffect, useRef, type KeyboardEvent as ReactKeyboardEvent } from "react";
+import {
+  useState,
+  useEffect,
+  useRef,
+  type KeyboardEvent as ReactKeyboardEvent,
+} from "react";
 
 interface HeaderProps {
   count: number;
 }
 
 export function Header({ count }: HeaderProps) {
-  const { openStudio, openCreator, openBrandSystem, activeCollectionId, setActiveCollectionId } = useStudio();
-  
-  const [collections, setCollections] = useState<{ id: string; name: string; palette_count: number }[]>([]);
+  const {
+    openStudio,
+    openCreator,
+    openBrandSystem,
+    activeCollectionId,
+    setActiveCollectionId,
+  } = useStudio();
+
+  const [collections, setCollections] = useState<
+    { id: string; name: string; palette_count: number }[]
+  >([]);
   const [showCollections, setShowCollections] = useState(false);
   const [newCollectionName, setNewCollectionName] = useState("");
   const [collectionError, setCollectionError] = useState("");
-  const [collectionToDelete, setCollectionToDelete] = useState<{ id: string; name: string } | null>(null);
+  const [collectionToDelete, setCollectionToDelete] = useState<{
+    id: string;
+    name: string;
+  } | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const firstCollectionItemRef = useRef<HTMLDivElement>(null);
   const deleteDialogRef = useRef<HTMLDivElement>(null);
@@ -42,7 +69,9 @@ export function Header({ count }: HeaderProps) {
   useEffect(() => {
     if (showCollections) {
       fetchCollections();
-      const frame = requestAnimationFrame(() => firstCollectionItemRef.current?.focus());
+      const frame = requestAnimationFrame(() =>
+        firstCollectionItemRef.current?.focus(),
+      );
       return () => cancelAnimationFrame(frame);
     }
   }, [showCollections]);
@@ -50,7 +79,10 @@ export function Header({ count }: HeaderProps) {
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleOutsideClick = (e: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(e.target as Node)
+      ) {
         setShowCollections(false);
       }
     };
@@ -168,7 +200,9 @@ export function Header({ count }: HeaderProps) {
     playSound("click");
   };
 
-  const handleCollectionsMenuKeyDown = (e: ReactKeyboardEvent<HTMLDivElement>) => {
+  const handleCollectionsMenuKeyDown = (
+    e: ReactKeyboardEvent<HTMLDivElement>,
+  ) => {
     if (e.key !== "ArrowDown" && e.key !== "ArrowUp") return;
     const menu = dropdownRef.current;
     if (!menu) return;
@@ -177,7 +211,9 @@ export function Header({ count }: HeaderProps) {
     );
     if (items.length === 0) return;
 
-    const currentIndex = items.findIndex((item) => item === document.activeElement);
+    const currentIndex = items.findIndex(
+      (item) => item === document.activeElement,
+    );
     const delta = e.key === "ArrowDown" ? 1 : -1;
     const nextIndex =
       currentIndex < 0
@@ -225,6 +261,16 @@ export function Header({ count }: HeaderProps) {
             </span>
           </div>
 
+          {/* Projects */}
+          <Link
+            href="/projects"
+            className="flex items-center gap-2 h-8 px-3 rounded-lg border border-gray-200 dark:border-slate-800 text-gray-500 hover:bg-indigo-50 hover:text-indigo-600 hover:border-indigo-300 dark:text-gray-400 dark:hover:bg-indigo-950/30 dark:hover:text-indigo-400 dark:hover:border-indigo-800 transition-colors text-[11px] font-bold cursor-pointer focus-visible:outline-2 focus-visible:outline-indigo-500"
+            title="Browse palettes by project"
+          >
+            <FolderKanban className="h-3.5 w-3.5" />
+            <span className="hidden sm:inline">Projects</span>
+          </Link>
+
           {/* Collections Dropdown */}
           <div className="relative" ref={dropdownRef}>
             <button
@@ -237,7 +283,11 @@ export function Header({ count }: HeaderProps) {
                   ? "bg-indigo-500 text-white border-indigo-500"
                   : "border-gray-200 dark:border-slate-800 text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-slate-800/50"
               }`}
-              aria-label={activeCollectionId ? "Open selected collection menu" : "Open collections menu"}
+              aria-label={
+                activeCollectionId
+                  ? "Open selected collection menu"
+                  : "Open collections menu"
+              }
               aria-haspopup="menu"
               aria-expanded={showCollections}
               aria-controls="collections-menu"
@@ -245,10 +295,17 @@ export function Header({ count }: HeaderProps) {
               <Folder className="h-3.5 w-3.5" />
               <span>
                 {activeCollectionId
-                  ? activeCollectionId.split("-").slice(0, -2).join(" ").replace(/\b\w/g, c => c.toUpperCase()) || "Selected Board"
+                  ? activeCollectionId
+                      .split("-")
+                      .slice(0, -2)
+                      .join(" ")
+                      .replace(/\b\w/g, (c) => c.toUpperCase()) ||
+                    "Selected Board"
                   : "Collections"}
               </span>
-              <ChevronDown className={`h-3 w-3 transition-transform ${showCollections ? "rotate-180" : ""}`} />
+              <ChevronDown
+                className={`h-3 w-3 transition-transform ${showCollections ? "rotate-180" : ""}`}
+              />
             </button>
 
             {showCollections && (
@@ -305,7 +362,9 @@ export function Header({ count }: HeaderProps) {
                         } focus-visible:outline-2 focus-visible:outline-indigo-500`}
                       >
                         <div className="flex items-center gap-2 min-w-0">
-                          <Folder className={`h-3.5 w-3.5 flex-shrink-0 ${activeCollectionId === col.id ? "text-indigo-500" : "text-gray-400"}`} />
+                          <Folder
+                            className={`h-3.5 w-3.5 flex-shrink-0 ${activeCollectionId === col.id ? "text-indigo-500" : "text-gray-400"}`}
+                          />
                           <span className="truncate pr-1">{col.name}</span>
                           <span className="text-[10px] px-1.5 py-0.5 rounded bg-gray-100 dark:bg-slate-800 text-gray-500 dark:text-gray-300 font-black">
                             {col.palette_count}
@@ -314,7 +373,10 @@ export function Header({ count }: HeaderProps) {
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
-                            setCollectionToDelete({ id: col.id, name: col.name });
+                            setCollectionToDelete({
+                              id: col.id,
+                              name: col.name,
+                            });
                           }}
                           className="opacity-0 group-hover:opacity-100 text-gray-400 hover:text-rose-500 p-1 rounded hover:bg-rose-50 dark:hover:bg-rose-950/30 transition-all cursor-pointer"
                           title="Delete collection"
@@ -328,7 +390,10 @@ export function Header({ count }: HeaderProps) {
                 </div>
 
                 {/* Create Collection Form */}
-                <form onSubmit={handleCreateCollection} className="flex items-center gap-1.5 pt-2 border-t border-gray-100 dark:border-slate-800">
+                <form
+                  onSubmit={handleCreateCollection}
+                  className="flex items-center gap-1.5 pt-2 border-t border-gray-100 dark:border-slate-800"
+                >
                   <label htmlFor="new-collection-name" className="sr-only">
                     New collection name
                   </label>
@@ -411,13 +476,25 @@ export function Header({ count }: HeaderProps) {
         </div>
       </div>
       {collectionToDelete && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/50 p-4" role="alertdialog" aria-modal="true" aria-labelledby="delete-collection-title">
-          <div ref={deleteDialogRef} className="w-full max-w-sm rounded-2xl border border-gray-200 bg-white p-5 shadow-2xl dark:border-slate-800 dark:bg-slate-950">
-            <h2 id="delete-collection-title" className="text-base font-black text-gray-900 dark:text-white">
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/50 p-4"
+          role="alertdialog"
+          aria-modal="true"
+          aria-labelledby="delete-collection-title"
+        >
+          <div
+            ref={deleteDialogRef}
+            className="w-full max-w-sm rounded-2xl border border-gray-200 bg-white p-5 shadow-2xl dark:border-slate-800 dark:bg-slate-950"
+          >
+            <h2
+              id="delete-collection-title"
+              className="text-base font-black text-gray-900 dark:text-white"
+            >
               Delete collection?
             </h2>
             <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-              This removes "{collectionToDelete.name}" and all saved mappings inside it.
+              This removes "{collectionToDelete.name}" and all saved mappings
+              inside it.
             </p>
             <div className="mt-5 flex justify-end gap-2">
               <button
