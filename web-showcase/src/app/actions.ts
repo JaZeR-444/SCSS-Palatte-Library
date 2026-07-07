@@ -31,7 +31,10 @@ export async function getRoleMappingAction(paletteId: string) {
   return db.getRoleMapping(paletteId);
 }
 
-export async function saveRoleMappingAction(paletteId: string, mapping: Record<string, string>) {
+export async function saveRoleMappingAction(
+  paletteId: string,
+  mapping: Record<string, string>,
+) {
   db.saveRoleMapping(paletteId, mapping);
 }
 
@@ -107,7 +110,7 @@ export async function savePaletteAction(palette: Palette, oldPath?: string) {
     const rootDir = path.resolve(process.cwd(), "..");
     const paletteLibraryDir = path.join(rootDir, "palettes-library");
     const paletteSourceDir = path.join(paletteLibraryDir, "src", "palettes");
-    
+
     // Fetch existing palette from DB to compare for history log
     let oldPalette: Palette | null = null;
     try {
@@ -116,7 +119,7 @@ export async function savePaletteAction(palette: Palette, oldPath?: string) {
     } catch (e) {
       console.error("Failed to fetch old palette for history logging:", e);
     }
-    
+
     // 1. Delete old SCSS file if name/count changed and oldPath is provided
     if (oldPath) {
       const fullOldPath = path.resolve(paletteLibraryDir, oldPath);
@@ -125,9 +128,14 @@ export async function savePaletteAction(palette: Palette, oldPath?: string) {
         // Normalize new path and compare
         const newFolder = `${palette.count} Color Palette`;
         const newFilename = `${palette.name}.scss`;
-        const newRelativePath = path.join("src", "palettes", newFolder, newFilename);
+        const newRelativePath = path.join(
+          "src",
+          "palettes",
+          newFolder,
+          newFilename,
+        );
         const fullNewPath = path.resolve(paletteLibraryDir, newRelativePath);
-        
+
         if (fullOldPath !== fullNewPath) {
           await fs.unlink(fullOldPath);
           console.log(`Deleted old file: ${oldPath}`);
@@ -153,13 +161,13 @@ export async function savePaletteAction(palette: Palette, oldPath?: string) {
         kebabName,
         hex,
         hslStr: `hsla(${h}, ${s}%, ${l}%, 1)`,
-        rgbStr: `rgba(${r}, ${g}, ${b}, 1)`
+        rgbStr: `rgba(${r}, ${g}, ${b}, 1)`,
       };
     });
 
     // 4. Generate SCSS file content
     const today = new Date().toISOString().split("T")[0];
-    
+
     let content = `/*---\n`;
     content += `id: ${palette.id}\n`;
     content += `name: ${palette.name}\n`;
@@ -238,13 +246,21 @@ export async function savePaletteAction(palette: Palette, oldPath?: string) {
     console.log(`Saved SCSS file to: ${filePath}`);
 
     // 6. Run rebuild script to sync db, csv, markdown, and showcase JSON
-    const { stdout, stderr } = await execAsync("python tools/build_index.py", { cwd: rootDir });
+    const { stdout, stderr } = await execAsync("python tools/build_index.py", {
+      cwd: rootDir,
+    });
     console.log("Index rebuild output:", stdout);
     if (stderr) console.error("Index rebuild stderr:", stderr);
 
     // 7. Copy generated palettes.json into web-showcase
     const srcJson = path.join(rootDir, "generated", "palettes.json");
-    const destJson = path.join(rootDir, "web-showcase", "src", "data", "palettes.json");
+    const destJson = path.join(
+      rootDir,
+      "web-showcase",
+      "src",
+      "data",
+      "palettes.json",
+    );
     await fs.copyFile(srcJson, destJson);
     console.log("Synced palettes.json to web-showcase/src/data");
 
@@ -254,21 +270,24 @@ export async function savePaletteAction(palette: Palette, oldPath?: string) {
         db.logPaletteHistory(palette.id, "edit", {
           before: {
             name: oldPalette.name,
-            colors: oldPalette.colors.map(c => ({ name: c.name, hex: c.hex })),
+            colors: oldPalette.colors.map((c) => ({
+              name: c.name,
+              hex: c.hex,
+            })),
             category: oldPalette.category,
             description: oldPalette.description,
           },
           after: {
             name: palette.name,
-            colors: palette.colors.map(c => ({ name: c.name, hex: c.hex })),
+            colors: palette.colors.map((c) => ({ name: c.name, hex: c.hex })),
             category: palette.category,
             description: palette.description,
-          }
+          },
         });
       } else {
         db.logPaletteHistory(palette.id, "create", {
           name: palette.name,
-          colors: palette.colors.map(c => ({ name: c.name, hex: c.hex })),
+          colors: palette.colors.map((c) => ({ name: c.name, hex: c.hex })),
           category: palette.category,
           description: palette.description,
         });
@@ -279,7 +298,7 @@ export async function savePaletteAction(palette: Palette, oldPath?: string) {
 
     // 9. Revalidate page cache
     revalidatePath("/");
-    
+
     return { success: true };
   } catch (error: any) {
     console.error("Save palette action failed:", error);
@@ -292,7 +311,10 @@ export async function getCollectionsAction() {
   return db.getCollections();
 }
 
-export async function createCollectionAction(name: string, description?: string) {
+export async function createCollectionAction(
+  name: string,
+  description?: string,
+) {
   try {
     const id = db.createCollection(name, description);
     revalidatePath("/");
@@ -312,7 +334,10 @@ export async function deleteCollectionAction(id: string) {
   }
 }
 
-export async function addPaletteToCollectionAction(colId: string, palId: string) {
+export async function addPaletteToCollectionAction(
+  colId: string,
+  palId: string,
+) {
   try {
     db.addPaletteToCollection(colId, palId);
     revalidatePath("/");
@@ -322,7 +347,10 @@ export async function addPaletteToCollectionAction(colId: string, palId: string)
   }
 }
 
-export async function removePaletteFromCollectionAction(colId: string, palId: string) {
+export async function removePaletteFromCollectionAction(
+  colId: string,
+  palId: string,
+) {
   try {
     db.removePaletteFromCollection(colId, palId);
     revalidatePath("/");
@@ -348,4 +376,85 @@ export async function searchPalettesAction(query: string) {
 
 export async function searchPalettesByColorAction(hexColor: string) {
   return db.searchPalettesByColor(hexColor);
+}
+
+// --- Projects Actions ---
+export async function updateProjectMetaAction(
+  slug: string,
+  type: string,
+  description: string,
+) {
+  try {
+    db.updateProjectMeta(slug, type, description);
+    revalidatePath(`/projects/${slug}`);
+    revalidatePath("/projects");
+    return { success: true };
+  } catch (error: any) {
+    return { success: false, error: error.message };
+  }
+}
+
+export async function getProjectPalettesAction(slug: string) {
+  return db.getProjectPalettes(slug);
+}
+
+export async function getManualPaletteIdsAction(slug: string) {
+  return db.getManualPaletteIds(slug);
+}
+
+export async function addPaletteToProjectAction(
+  slug: string,
+  paletteId: string,
+) {
+  try {
+    db.addPaletteToProject(slug, paletteId);
+    revalidatePath(`/projects/${slug}`);
+    revalidatePath("/projects");
+    return { success: true };
+  } catch (error: any) {
+    return { success: false, error: error.message };
+  }
+}
+
+export async function removePaletteFromProjectAction(
+  slug: string,
+  paletteId: string,
+) {
+  try {
+    db.removePaletteFromProject(slug, paletteId);
+    revalidatePath(`/projects/${slug}`);
+    revalidatePath("/projects");
+    return { success: true };
+  } catch (error: any) {
+    return { success: false, error: error.message };
+  }
+}
+
+export async function getProjectPresetsAction(slug: string) {
+  return db.getProjectPresets(slug);
+}
+
+export async function createProjectPresetAction(
+  slug: string,
+  name: string,
+  paletteId: string,
+  mapping: Record<string, string>,
+) {
+  try {
+    const id = db.createProjectPreset(slug, name, paletteId, mapping);
+    revalidatePath(`/projects/${slug}`);
+    return { success: true, id };
+  } catch (error: any) {
+    return { success: false, error: error.message };
+  }
+}
+
+export async function deleteProjectPresetAction(slug: string, id: string) {
+  try {
+    db.deleteProjectPreset(id);
+    revalidatePath(`/projects/${slug}`);
+    return { success: true };
+  } catch (error: any) {
+    return { success: false, error: error.message };
+  }
 }

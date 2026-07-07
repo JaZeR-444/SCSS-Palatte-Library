@@ -88,6 +88,29 @@ export function getDb(): Database.Database {
         changes_json TEXT,
         timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
       );
+
+      CREATE TABLE IF NOT EXISTS projects (
+        slug TEXT PRIMARY KEY,
+        name TEXT NOT NULL,
+        type TEXT,
+        description TEXT,
+        created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+      );
+
+      CREATE TABLE IF NOT EXISTS project_palettes (
+        project_slug TEXT,
+        palette_id TEXT,
+        PRIMARY KEY (project_slug, palette_id)
+      );
+
+      CREATE TABLE IF NOT EXISTS project_presets (
+        id TEXT PRIMARY KEY,
+        project_slug TEXT NOT NULL,
+        name TEXT NOT NULL,
+        palette_id TEXT NOT NULL,
+        mapping_json TEXT NOT NULL,
+        created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+      );
     `);
   }
   return dbInstance;
@@ -554,4 +577,244 @@ export function logPaletteHistory(
   } catch (error) {
     console.error("Failed to log palette history:", error);
   }
+}
+
+// --- Projects (palettes grouped by the product they were designed for) ---
+// Membership has two sources: the `project` palette_tags rows written by
+// refine_palettes.py (the "designed-for" set) plus a runtime `project_palettes`
+// table for palettes added later in the app. Per-project metadata (type,
+// description) lives in the runtime `projects` table; role presets in
+// `project_presets`. All runtime tables are preserved across sync_palettes.py.
+
+export interface ProjectSummary {
+  name: string;
+  slug: string;
+  type: string;
+  description: string;
+  count: number;
+  preview: string[]; // representative hexes for a color strip
+}
+
+export interface ProjectPreset {
+  id: string;
+  project_slug: string;
+  name: string;
+  palette_id: string;
+  mapping: Record<string, string>;
+  created_at: string;
+}
+
+// Seeded default types for the projects that ship as data (editable in-app).
+const PROJECT_TYPE_SEED: Record<string, string> = {
+  "wrd-leads-crm": "CRM",
+  "signal-scout": "Web App",
+};
+
+export function slugifyProject(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+/** Canonical project names, taken from the shipped `project` tags. */
+function projectNames(): string[] {
+  const db = getDb();
+  const rows = db
+    .prepare(
+      `SELECT DISTINCT tag_value AS name FROM palette_tags WHERE tag_type = 'project'`,
+    )
+    .all() as { name: string }[];
+  return rows.map((r) => r.name);
+}
+
+export function getProjectName(slug: string): string | null {
+  return projectNames().find((n) => slugifyProject(n) === slug) ?? null;
+}
+
+/** Ensure a metadata row exists (seeded default type) and return it. */
+function ensureProjectRow(
+  slug: string,
+  name: string,
+): { type: string; description: string } {
+  const db = getDb();
+  db.prepare(
+    `INSERT OR IGNORE INTO projects (slug, name, type, description) VALUES (?, ?, ?, '')`,
+  ).run(slug, name, PROJECT_TYPE_SEED[slug] ?? "Product");
+  const row = db
+    .prepare(`SELECT type, description FROM projects WHERE slug = ?`)
+    .get(slug) as
+    { type: string | null; description: string | null } | undefined;
+  return { type: row?.type ?? "Product", description: row?.description ?? "" };
+}
+
+/** All palette ids in a project: shipped `project` tags ∪ runtime additions. */
+function projectPaletteIds(slug: string, name: string): string[] {
+  const db = getDb();
+  const tagged = (
+    db
+      .prepare(
+        `SELECT palette_id FROM palette_tags WHERE tag_type = 'project' AND tag_value = ?`,
+      )
+      .all(name) as { palette_id: string }[]
+  ).map((r) => r.palette_id);
+  const manual = getManualPaletteIds(slug);
+  return Array.from(new Set([...tagged, ...manual]));
+}
+
+export function getManualPaletteIds(slug: string): string[] {
+  const db = getDb();
+  return (
+    db
+      .prepare(`SELECT palette_id FROM project_palettes WHERE project_slug = ?`)
+      .all(slug) as { palette_id: string }[]
+  ).map((r) => r.palette_id);
+}
+
+export function getProjects(): ProjectSummary[] {
+  const db = getDb();
+  try {
+    return projectNames()
+      .map((name) => {
+        const slug = slugifyProject(name);
+        const meta = ensureProjectRow(slug, name);
+        const ids = projectPaletteIds(slug, name);
+        const firstId = [...ids].sort()[0];
+        const preview = firstId
+          ? (
+              db
+                .prepare(
+                  `SELECT hex FROM palette_colors WHERE palette_id = ? ORDER BY color_index LIMIT 12`,
+                )
+                .all(firstId) as { hex: string }[]
+            ).map((c) => c.hex)
+          : [];
+        return {
+          name,
+          slug,
+          type: meta.type,
+          description: meta.description,
+          count: ids.length,
+          preview,
+        };
+      })
+      .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+  } catch (error) {
+    console.error("Failed to load projects:", error);
+    return [];
+  }
+}
+
+export function getProjectMeta(
+  slug: string,
+): { type: string; description: string } | null {
+  const name = getProjectName(slug);
+  if (!name) return null;
+  return ensureProjectRow(slug, name);
+}
+
+export function updateProjectMeta(
+  slug: string,
+  type: string,
+  description: string,
+): void {
+  const db = getDb();
+  const name = getProjectName(slug);
+  if (!name) return;
+  ensureProjectRow(slug, name);
+  db.prepare(
+    `UPDATE projects SET type = ?, description = ? WHERE slug = ?`,
+  ).run(type, description, slug);
+}
+
+export function getProjectPalettes(slug: string): Palette[] {
+  const db = getDb();
+  try {
+    const name = getProjectName(slug);
+    if (!name) return [];
+    const ids = projectPaletteIds(slug, name);
+    if (ids.length === 0) return [];
+    const placeholders = ids.map(() => "?").join(",");
+
+    const palettes = db
+      .prepare(`SELECT * FROM palettes WHERE id IN (${placeholders})`)
+      .all(...ids) as any[];
+    const colors = db
+      .prepare(
+        `SELECT * FROM palette_colors WHERE palette_id IN (${placeholders}) ORDER BY palette_id ASC, color_index ASC`,
+      )
+      .all(...ids) as any[];
+    const tags = db
+      .prepare(
+        `SELECT * FROM palette_tags WHERE palette_id IN (${placeholders})`,
+      )
+      .all(...ids) as any[];
+
+    return stitchPalettes(palettes, colors, tags).sort((a, b) =>
+      a.name.localeCompare(b.name),
+    );
+  } catch (error) {
+    console.error("Failed to load project palettes:", error);
+    return [];
+  }
+}
+
+export function addPaletteToProject(slug: string, paletteId: string): void {
+  const db = getDb();
+  db.prepare(
+    `INSERT OR IGNORE INTO project_palettes (project_slug, palette_id) VALUES (?, ?)`,
+  ).run(slug, paletteId);
+}
+
+export function removePaletteFromProject(
+  slug: string,
+  paletteId: string,
+): void {
+  const db = getDb();
+  db.prepare(
+    `DELETE FROM project_palettes WHERE project_slug = ? AND palette_id = ?`,
+  ).run(slug, paletteId);
+}
+
+// --- Per-project role-mapping presets ---
+export function getProjectPresets(slug: string): ProjectPreset[] {
+  const db = getDb();
+  try {
+    const rows = db
+      .prepare(
+        `SELECT * FROM project_presets WHERE project_slug = ? ORDER BY created_at DESC`,
+      )
+      .all(slug) as any[];
+    return rows.map((r) => ({
+      id: r.id,
+      project_slug: r.project_slug,
+      name: r.name,
+      palette_id: r.palette_id,
+      mapping: JSON.parse(r.mapping_json),
+      created_at: r.created_at,
+    }));
+  } catch (error) {
+    console.error("Failed to load project presets:", error);
+    return [];
+  }
+}
+
+export function createProjectPreset(
+  slug: string,
+  name: string,
+  paletteId: string,
+  mapping: Record<string, string>,
+): string {
+  const db = getDb();
+  const id = `${slug}-${slugifyProject(name)}-${paletteId}`.slice(0, 120);
+  db.prepare(
+    `INSERT OR REPLACE INTO project_presets (id, project_slug, name, palette_id, mapping_json)
+     VALUES (?, ?, ?, ?, ?)`,
+  ).run(id, slug, name, paletteId, JSON.stringify(mapping));
+  return id;
+}
+
+export function deleteProjectPreset(id: string): void {
+  const db = getDb();
+  db.prepare(`DELETE FROM project_presets WHERE id = ?`).run(id);
 }
