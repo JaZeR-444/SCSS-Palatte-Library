@@ -1094,6 +1094,8 @@ function rowToSavedSystem(r: any): SavedDesignSystem {
     tokens: j.tokens,
     presetId: j.presetId,
     mode: j.mode,
+    composed: j.composed ?? false,
+    assignments: j.assignments ?? undefined,
     createdAt: r.created_at,
     updatedAt: r.updated_at,
   };
@@ -1139,6 +1141,9 @@ export function saveDesignSystem(rec: SavedDesignSystem): SavedDesignSystem {
     tokens: rec.tokens,
     presetId: rec.presetId,
     mode: rec.mode,
+    // Composer artifacts (optional; absent on single-palette systems).
+    composed: rec.composed ?? false,
+    assignments: rec.assignments ?? null,
   });
   // ON CONFLICT preserves created_at and bumps updated_at. The association is
   // dual-written to workspace_slug (unified) and project_slug (dormant legacy)

@@ -102,6 +102,8 @@ export function BrandSystemModal() {
     closeBrandSystem,
     brandSystemLoadId,
     clearBrandSystemLoadId,
+    brandSystemWorkspaceSlug,
+    clearBrandSystemWorkspaceSlug,
   } = useStudio();
 
   const [selectedPalette, setSelectedPalette] = useState<Palette | null>(null);
@@ -236,6 +238,19 @@ export function BrandSystemModal() {
       }
     })();
   }, [isBrandSystemOpen]);
+
+  // If opened targeting a specific workspace (e.g. from a workspace card),
+  // pre-select it as the attach target, then consume the one-shot signal.
+  useEffect(() => {
+    if (isBrandSystemOpen && brandSystemWorkspaceSlug) {
+      setWorkspaceSlug(brandSystemWorkspaceSlug);
+      clearBrandSystemWorkspaceSlug();
+    }
+  }, [
+    isBrandSystemOpen,
+    brandSystemWorkspaceSlug,
+    clearBrandSystemWorkspaceSlug,
+  ]);
 
   // Keep the name field tracking the app name until the system is saved.
   useEffect(() => {
@@ -554,7 +569,8 @@ export function BrandSystemModal() {
                         setSystem(null);
                         setImportHints(null);
                         setCurrentSavedId(null);
-                        setWorkspaceSlug(null);
+                        // Keep any workspace attach target (may be seeded when
+                        // opened from a workspace card); Reset clears it.
                       }}
                       onImport={setImportHints}
                     />

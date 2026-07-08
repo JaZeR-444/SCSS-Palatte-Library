@@ -321,6 +321,7 @@ export async function createCollectionAction(
   try {
     const id = db.createCollection(name, description);
     revalidatePath("/");
+    revalidatePath("/workspaces");
     return { success: true, id };
   } catch (error: any) {
     return { success: false, error: error.message };
@@ -331,6 +332,7 @@ export async function deleteCollectionAction(id: string) {
   try {
     db.deleteCollection(id);
     revalidatePath("/");
+    revalidatePath("/workspaces");
     return { success: true };
   } catch (error: any) {
     return { success: false, error: error.message };
@@ -344,6 +346,7 @@ export async function addPaletteToCollectionAction(
   try {
     db.addPaletteToCollection(colId, palId);
     revalidatePath("/");
+    revalidatePath("/workspaces");
     return { success: true };
   } catch (error: any) {
     return { success: false, error: error.message };
@@ -357,6 +360,7 @@ export async function removePaletteFromCollectionAction(
   try {
     db.removePaletteFromCollection(colId, palId);
     revalidatePath("/");
+    revalidatePath("/workspaces");
     return { success: true };
   } catch (error: any) {
     return { success: false, error: error.message };
@@ -389,8 +393,8 @@ export async function updateProjectMetaAction(
 ) {
   try {
     db.updateProjectMeta(slug, type, description);
-    revalidatePath(`/projects/${slug}`);
-    revalidatePath("/projects");
+    revalidatePath(`/workspaces/${slug}`);
+    revalidatePath("/workspaces");
     return { success: true };
   } catch (error: any) {
     return { success: false, error: error.message };
@@ -405,8 +409,8 @@ export async function promoteToProjectAction(
 ) {
   try {
     db.promoteToProject(slug, type, description);
-    revalidatePath("/projects");
-    revalidatePath(`/projects/${slug}`);
+    revalidatePath("/workspaces");
+    revalidatePath(`/workspaces/${slug}`);
     revalidatePath("/");
     return { success: true };
   } catch (error: any) {
@@ -433,8 +437,8 @@ export async function addPaletteToProjectAction(
 ) {
   try {
     db.addPaletteToProject(slug, paletteId);
-    revalidatePath(`/projects/${slug}`);
-    revalidatePath("/projects");
+    revalidatePath(`/workspaces/${slug}`);
+    revalidatePath("/workspaces");
     return { success: true };
   } catch (error: any) {
     return { success: false, error: error.message };
@@ -447,8 +451,8 @@ export async function removePaletteFromProjectAction(
 ) {
   try {
     db.removePaletteFromProject(slug, paletteId);
-    revalidatePath(`/projects/${slug}`);
-    revalidatePath("/projects");
+    revalidatePath(`/workspaces/${slug}`);
+    revalidatePath("/workspaces");
     return { success: true };
   } catch (error: any) {
     return { success: false, error: error.message };
@@ -467,7 +471,7 @@ export async function createProjectPresetAction(
 ) {
   try {
     const id = db.createProjectPreset(slug, name, paletteId, mapping);
-    revalidatePath(`/projects/${slug}`);
+    revalidatePath(`/workspaces/${slug}`);
     return { success: true, id };
   } catch (error: any) {
     return { success: false, error: error.message };
@@ -477,7 +481,7 @@ export async function createProjectPresetAction(
 export async function deleteProjectPresetAction(slug: string, id: string) {
   try {
     db.deleteProjectPreset(id);
-    revalidatePath(`/projects/${slug}`);
+    revalidatePath(`/workspaces/${slug}`);
     return { success: true };
   } catch (error: any) {
     return { success: false, error: error.message };
@@ -664,7 +668,7 @@ export async function getDesignSystemAction(id: string) {
 
 export async function saveDesignSystemAction(rec: SavedDesignSystem) {
   const saved = db.saveDesignSystem(rec);
-  if (saved.projectSlug) revalidatePath(`/projects/${saved.projectSlug}`);
+  if (saved.projectSlug) revalidatePath(`/workspaces/${saved.projectSlug}`);
   return saved;
 }
 
@@ -681,7 +685,7 @@ export async function setDesignSystemProjectAction(
   projectSlug: string | null,
 ) {
   db.setDesignSystemProject(id, projectSlug);
-  if (projectSlug) revalidatePath(`/projects/${projectSlug}`);
+  if (projectSlug) revalidatePath(`/workspaces/${projectSlug}`);
 }
 
 export async function deleteDesignSystemAction(id: string) {

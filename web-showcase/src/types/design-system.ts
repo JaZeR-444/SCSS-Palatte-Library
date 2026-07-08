@@ -38,6 +38,34 @@ export interface BrandKit {
 /** key -> hex map for one theme (Brand System role keys, e.g. "brand-primary"). */
 export type ColorTokens = Record<string, string>;
 
+/* ------------------------------------------------------------------ *
+ * Composition — the in-project builder assigns individual palette      *
+ * colors to brand-system roles. This is the editable source of truth   *
+ * behind a "composed" DesignSystem; `tokens.color` is its projection.  *
+ * ------------------------------------------------------------------ */
+
+/** One role's resolved color plus optional provenance back to a palette swatch. */
+export interface RoleAssignment {
+  hex: string;
+  /** Source project palette this color came from (advisory — never required). */
+  paletteId?: string;
+  /** Swatch name within that palette (advisory). */
+  colorName?: string;
+  /** true = auto-seeded and untouched; false/undefined = user-set. */
+  seeded?: boolean;
+}
+
+/** roleKey -> assignment, for a single theme. */
+export type ModeAssignments = Record<string, RoleAssignment>;
+
+/** The full per-color composition for a project brand system. */
+export interface BrandComposition {
+  light: ModeAssignments;
+  dark: ModeAssignments;
+  /** chart-1..6 provenance (modeless); mirrors tokens.chart. */
+  chart: RoleAssignment[];
+}
+
 export interface TypographyTokens {
   /** Primary UI/body typeface stack. */
   sans: string;
@@ -203,6 +231,10 @@ export interface SavedDesignSystem {
   /** Applied preset id, if any. */
   presetId?: string;
   mode: ColorMode;
+  /** True when built by the in-project composer (per-color role assignment). */
+  composed?: boolean;
+  /** The editable per-color composition; present iff `composed`. */
+  assignments?: BrandComposition;
   createdAt?: string;
   updatedAt?: string;
 }
