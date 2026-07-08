@@ -1,0 +1,113 @@
+/*---
+id: scandinavian-frost
+name: Scandinavian Frost
+author: JaZeR-444
+version: 1.0.0
+category: Geographic & Architectural
+count: 10
+description: A Nordic minimalist palette progressing from rich charcoal and warm grays through cloud whites and pale icy blues to crisp pure white, evoking Scandinavian interiors and winter landscapes.
+tags:
+  mood:
+  - calm
+  - minimal
+  - clean
+  aesthetic:
+  - Scandinavian
+  - Nordic
+  - Minimalist
+intent: A refined 10-color palette designed for luxury residential interiors, minimalist product design, and premium Scandinavian brand systems.
+suggested_use:
+- High-end interior design presentations
+- Minimalist SaaS and tech product UI
+- Premium lifestyle and fashion branding
+url: https://coolors.co/1c1c1e-3a3a3c-636366-8e8e93-aeaeb2-d1d1d6-e5e5ea-dde8f0-c7dce8-ffffff
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--charcoal-black: #1c1c1eff;
+--dark-warm-gray: #3a3a3cff;
+--medium-gray: #636366ff;
+--light-warm-gray: #8e8e93ff;
+--cloud-silver: #aeaeb2ff;
+--pale-cloud: #d1d1d6ff;
+--cloud-white: #e5e5eaff;
+--pale-blue-white: #dde8f0ff;
+--icy-blue: #c7dce8ff;
+--pure-white: #ffffffff;
+
+/* CSS HSL */
+--charcoal-black: hsla(0, 0%, 11%, 1);
+--dark-warm-gray: hsla(240, 1%, 23%, 1);
+--medium-gray: hsla(240, 1%, 39%, 1);
+--light-warm-gray: hsla(240, 2%, 57%, 1);
+--cloud-silver: hsla(240, 1%, 69%, 1);
+--pale-cloud: hsla(240, 2%, 83%, 1);
+--cloud-white: hsla(240, 4%, 90%, 1);
+--pale-blue-white: hsla(207, 33%, 91%, 1);
+--icy-blue: hsla(204, 38%, 85%, 1);
+--pure-white: hsla(0, 0%, 100%, 1);
+}
+
+/* SCSS HEX */
+$charcoal-black: #1c1c1eff;
+$dark-warm-gray: #3a3a3cff;
+$medium-gray: #636366ff;
+$light-warm-gray: #8e8e93ff;
+$cloud-silver: #aeaeb2ff;
+$pale-cloud: #d1d1d6ff;
+$cloud-white: #e5e5eaff;
+$pale-blue-white: #dde8f0ff;
+$icy-blue: #c7dce8ff;
+$pure-white: #ffffffff;
+
+/* SCSS HSL */
+$charcoal-black: hsla(0, 0%, 11%, 1);
+$dark-warm-gray: hsla(240, 1%, 23%, 1);
+$medium-gray: hsla(240, 1%, 39%, 1);
+$light-warm-gray: hsla(240, 2%, 57%, 1);
+$cloud-silver: hsla(240, 1%, 69%, 1);
+$pale-cloud: hsla(240, 2%, 83%, 1);
+$cloud-white: hsla(240, 4%, 90%, 1);
+$pale-blue-white: hsla(207, 33%, 91%, 1);
+$icy-blue: hsla(204, 38%, 85%, 1);
+$pure-white: hsla(0, 0%, 100%, 1);
+
+/* SCSS RGB */
+$charcoal-black: rgba(28, 28, 30, 1);
+$dark-warm-gray: rgba(58, 58, 60, 1);
+$medium-gray: rgba(99, 99, 102, 1);
+$light-warm-gray: rgba(142, 142, 147, 1);
+$cloud-silver: rgba(174, 174, 178, 1);
+$pale-cloud: rgba(209, 209, 214, 1);
+$cloud-white: rgba(229, 229, 234, 1);
+$pale-blue-white: rgba(221, 232, 240, 1);
+$icy-blue: rgba(199, 220, 232, 1);
+$pure-white: rgba(255, 255, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1c1c1eff, #3a3a3cff, #636366ff, #8e8e93ff, #aeaeb2ff, #d1d1d6ff, #e5e5eaff, #dde8f0ff, #c7dce8ff, #ffffffff);
+$gradient-right: linear-gradient(90deg, #1c1c1eff, #3a3a3cff, #636366ff, #8e8e93ff, #aeaeb2ff, #d1d1d6ff, #e5e5eaff, #dde8f0ff, #c7dce8ff, #ffffffff);
+$gradient-bottom: linear-gradient(180deg, #1c1c1eff, #3a3a3cff, #636366ff, #8e8e93ff, #aeaeb2ff, #d1d1d6ff, #e5e5eaff, #dde8f0ff, #c7dce8ff, #ffffffff);
+$gradient-left: linear-gradient(270deg, #1c1c1eff, #3a3a3cff, #636366ff, #8e8e93ff, #aeaeb2ff, #d1d1d6ff, #e5e5eaff, #dde8f0ff, #c7dce8ff, #ffffffff);
+$gradient-top-right: linear-gradient(45deg, #1c1c1eff, #3a3a3cff, #636366ff, #8e8e93ff, #aeaeb2ff, #d1d1d6ff, #e5e5eaff, #dde8f0ff, #c7dce8ff, #ffffffff);
+$gradient-bottom-right: linear-gradient(135deg, #1c1c1eff, #3a3a3cff, #636366ff, #8e8e93ff, #aeaeb2ff, #d1d1d6ff, #e5e5eaff, #dde8f0ff, #c7dce8ff, #ffffffff);
+$gradient-top-left: linear-gradient(225deg, #1c1c1eff, #3a3a3cff, #636366ff, #8e8e93ff, #aeaeb2ff, #d1d1d6ff, #e5e5eaff, #dde8f0ff, #c7dce8ff, #ffffffff);
+$gradient-bottom-left: linear-gradient(315deg, #1c1c1eff, #3a3a3cff, #636366ff, #8e8e93ff, #aeaeb2ff, #d1d1d6ff, #e5e5eaff, #dde8f0ff, #c7dce8ff, #ffffffff);
+$gradient-radial: radial-gradient(#1c1c1eff, #3a3a3cff, #636366ff, #8e8e93ff, #aeaeb2ff, #d1d1d6ff, #e5e5eaff, #dde8f0ff, #c7dce8ff, #ffffffff);
+
+/* SCSS Map */
+$scandinavian-frost-map: (
+    "charcoal-black": #1c1c1eff,
+    "dark-warm-gray": #3a3a3cff,
+    "medium-gray": #636366ff,
+    "light-warm-gray": #8e8e93ff,
+    "cloud-silver": #aeaeb2ff,
+    "pale-cloud": #d1d1d6ff,
+    "cloud-white": #e5e5eaff,
+    "pale-blue-white": #dde8f0ff,
+    "icy-blue": #c7dce8ff,
+    "pure-white": #ffffffff,
+);

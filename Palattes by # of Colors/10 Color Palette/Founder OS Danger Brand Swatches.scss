@@ -1,0 +1,110 @@
+/*---
+id: founder-os-danger-brand-swatches
+name: Founder OS Danger Brand Swatches
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 10
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - brand-scale
+  mood:
+  - tonal
+  - semantic
+  aesthetic:
+  - UI
+  - Web Design
+intent: Foundational 10-step tonal scale for Danger (Rose/Red). Used for destructive actions, errors, and negative trends.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--brand-danger-50-wash: #fff1f2ff;
+--brand-danger-100-subtle: #ffe4e6ff;
+--brand-danger-200-light: #fecdd3ff;
+--brand-danger-300-muted: #fda4afff;
+--brand-danger-400-base: #fb7185ff;
+--brand-danger-500-emphasis: #f43f5eff;
+--brand-danger-600-strong: #e11d48ff;
+--brand-danger-700-deep: #be123cff;
+--brand-danger-800-dark: #9f1239ff;
+--brand-danger-900-black: #881337ff;
+
+/* CSS HSL */
+--brand-danger-50-wash: hsla(356, 100%, 97%, 1);
+--brand-danger-100-subtle: hsla(356, 100%, 95%, 1);
+--brand-danger-200-light: hsla(353, 96%, 90%, 1);
+--brand-danger-300-muted: hsla(353, 96%, 82%, 1);
+--brand-danger-400-base: hsla(351, 95%, 71%, 1);
+--brand-danger-500-emphasis: hsla(350, 89%, 60%, 1);
+--brand-danger-600-strong: hsla(347, 77%, 50%, 1);
+--brand-danger-700-deep: hsla(345, 83%, 41%, 1);
+--brand-danger-800-dark: hsla(343, 80%, 35%, 1);
+--brand-danger-900-black: hsla(342, 75%, 30%, 1);
+}
+
+/* SCSS HEX */
+$brand-danger-50-wash: #fff1f2ff;
+$brand-danger-100-subtle: #ffe4e6ff;
+$brand-danger-200-light: #fecdd3ff;
+$brand-danger-300-muted: #fda4afff;
+$brand-danger-400-base: #fb7185ff;
+$brand-danger-500-emphasis: #f43f5eff;
+$brand-danger-600-strong: #e11d48ff;
+$brand-danger-700-deep: #be123cff;
+$brand-danger-800-dark: #9f1239ff;
+$brand-danger-900-black: #881337ff;
+
+/* SCSS HSL */
+$brand-danger-50-wash: hsla(356, 100%, 97%, 1);
+$brand-danger-100-subtle: hsla(356, 100%, 95%, 1);
+$brand-danger-200-light: hsla(353, 96%, 90%, 1);
+$brand-danger-300-muted: hsla(353, 96%, 82%, 1);
+$brand-danger-400-base: hsla(351, 95%, 71%, 1);
+$brand-danger-500-emphasis: hsla(350, 89%, 60%, 1);
+$brand-danger-600-strong: hsla(347, 77%, 50%, 1);
+$brand-danger-700-deep: hsla(345, 83%, 41%, 1);
+$brand-danger-800-dark: hsla(343, 80%, 35%, 1);
+$brand-danger-900-black: hsla(342, 75%, 30%, 1);
+
+/* SCSS RGB */
+$brand-danger-50-wash: rgba(255, 241, 242, 1);
+$brand-danger-100-subtle: rgba(255, 228, 230, 1);
+$brand-danger-200-light: rgba(254, 205, 211, 1);
+$brand-danger-300-muted: rgba(253, 164, 175, 1);
+$brand-danger-400-base: rgba(251, 113, 133, 1);
+$brand-danger-500-emphasis: rgba(244, 63, 94, 1);
+$brand-danger-600-strong: rgba(225, 29, 72, 1);
+$brand-danger-700-deep: rgba(190, 18, 60, 1);
+$brand-danger-800-dark: rgba(159, 18, 57, 1);
+$brand-danger-900-black: rgba(136, 19, 55, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #fff1f2ff, #ffe4e6ff, #fecdd3ff, #fda4afff, #fb7185ff, #f43f5eff, #e11d48ff, #be123cff, #9f1239ff, #881337ff);
+$gradient-right: linear-gradient(90deg, #fff1f2ff, #ffe4e6ff, #fecdd3ff, #fda4afff, #fb7185ff, #f43f5eff, #e11d48ff, #be123cff, #9f1239ff, #881337ff);
+$gradient-bottom: linear-gradient(180deg, #fff1f2ff, #ffe4e6ff, #fecdd3ff, #fda4afff, #fb7185ff, #f43f5eff, #e11d48ff, #be123cff, #9f1239ff, #881337ff);
+$gradient-left: linear-gradient(270deg, #fff1f2ff, #ffe4e6ff, #fecdd3ff, #fda4afff, #fb7185ff, #f43f5eff, #e11d48ff, #be123cff, #9f1239ff, #881337ff);
+$gradient-top-right: linear-gradient(45deg, #fff1f2ff, #ffe4e6ff, #fecdd3ff, #fda4afff, #fb7185ff, #f43f5eff, #e11d48ff, #be123cff, #9f1239ff, #881337ff);
+$gradient-bottom-right: linear-gradient(135deg, #fff1f2ff, #ffe4e6ff, #fecdd3ff, #fda4afff, #fb7185ff, #f43f5eff, #e11d48ff, #be123cff, #9f1239ff, #881337ff);
+$gradient-top-left: linear-gradient(225deg, #fff1f2ff, #ffe4e6ff, #fecdd3ff, #fda4afff, #fb7185ff, #f43f5eff, #e11d48ff, #be123cff, #9f1239ff, #881337ff);
+$gradient-bottom-left: linear-gradient(315deg, #fff1f2ff, #ffe4e6ff, #fecdd3ff, #fda4afff, #fb7185ff, #f43f5eff, #e11d48ff, #be123cff, #9f1239ff, #881337ff);
+$gradient-radial: radial-gradient(#fff1f2ff, #ffe4e6ff, #fecdd3ff, #fda4afff, #fb7185ff, #f43f5eff, #e11d48ff, #be123cff, #9f1239ff, #881337ff);
+
+/* SCSS Map */
+$founder-os-danger-brand-swatches-map: (
+    "brand-danger-50-wash": #fff1f2ff,
+    "brand-danger-100-subtle": #ffe4e6ff,
+    "brand-danger-200-light": #fecdd3ff,
+    "brand-danger-300-muted": #fda4afff,
+    "brand-danger-400-base": #fb7185ff,
+    "brand-danger-500-emphasis": #f43f5eff,
+    "brand-danger-600-strong": #e11d48ff,
+    "brand-danger-700-deep": #be123cff,
+    "brand-danger-800-dark": #9f1239ff,
+    "brand-danger-900-black": #881337ff
+);

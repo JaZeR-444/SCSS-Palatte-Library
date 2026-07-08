@@ -1,0 +1,113 @@
+/*---
+id: marrakech-souk
+name: Marrakech Souk
+author: JaZeR-444
+version: 1.0.0
+category: Geographic & Architectural
+count: 10
+description: A sun-drenched Moroccan market palette of deep terra cottas, saffron golds, and turmeric spice tones punctuated by cool cobalt and turquoise tile accents.
+tags:
+  mood:
+  - warm
+  - exotic
+  - vibrant
+  aesthetic:
+  - Moroccan
+  - Artisan
+  - Mediterranean
+intent: A rich 10-color palette designed for hospitality branding, artisan e-commerce, and travel editorial design inspired by Marrakech's historic souks.
+suggested_use:
+- Travel and hospitality branding
+- Artisan and craft marketplace UI
+- Editorial and print design
+url: https://coolors.co/6b2737-b5451b-d4622a-e8923a-f0b429-c9954c-f5deb3-00897b-1565c0-fdf6ec
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--deep-terra-cotta: #6b2737ff;
+--brick-red: #b5451bff;
+--warm-amber: #d4622aff;
+--saffron-gold: #e8923aff;
+--turmeric: #f0b429ff;
+--clay-sand: #c9954cff;
+--warm-ivory: #f5deb3ff;
+--cool-turquoise: #00897bff;
+--cobalt-tile: #1565c0ff;
+--desert-offwhite: #fdf6ecff;
+
+/* CSS HSL */
+--deep-terra-cotta: hsla(349, 47%, 30%, 1);
+--brick-red: hsla(16, 74%, 40%, 1);
+--warm-amber: hsla(19, 66%, 50%, 1);
+--saffron-gold: hsla(28, 80%, 57%, 1);
+--turmeric: hsla(40, 86%, 55%, 1);
+--clay-sand: hsla(33, 47%, 55%, 1);
+--warm-ivory: hsla(39, 77%, 83%, 1);
+--cool-turquoise: hsla(174, 100%, 27%, 1);
+--cobalt-tile: hsla(213, 79%, 41%, 1);
+--desert-offwhite: hsla(39, 82%, 96%, 1);
+}
+
+/* SCSS HEX */
+$deep-terra-cotta: #6b2737ff;
+$brick-red: #b5451bff;
+$warm-amber: #d4622aff;
+$saffron-gold: #e8923aff;
+$turmeric: #f0b429ff;
+$clay-sand: #c9954cff;
+$warm-ivory: #f5deb3ff;
+$cool-turquoise: #00897bff;
+$cobalt-tile: #1565c0ff;
+$desert-offwhite: #fdf6ecff;
+
+/* SCSS HSL */
+$deep-terra-cotta: hsla(349, 47%, 30%, 1);
+$brick-red: hsla(16, 74%, 40%, 1);
+$warm-amber: hsla(19, 66%, 50%, 1);
+$saffron-gold: hsla(28, 80%, 57%, 1);
+$turmeric: hsla(40, 86%, 55%, 1);
+$clay-sand: hsla(33, 47%, 55%, 1);
+$warm-ivory: hsla(39, 77%, 83%, 1);
+$cool-turquoise: hsla(174, 100%, 27%, 1);
+$cobalt-tile: hsla(213, 79%, 41%, 1);
+$desert-offwhite: hsla(39, 82%, 96%, 1);
+
+/* SCSS RGB */
+$deep-terra-cotta: rgba(107, 39, 55, 1);
+$brick-red: rgba(181, 69, 27, 1);
+$warm-amber: rgba(212, 98, 42, 1);
+$saffron-gold: rgba(232, 146, 58, 1);
+$turmeric: rgba(240, 180, 41, 1);
+$clay-sand: rgba(201, 149, 76, 1);
+$warm-ivory: rgba(245, 222, 179, 1);
+$cool-turquoise: rgba(0, 137, 123, 1);
+$cobalt-tile: rgba(21, 101, 192, 1);
+$desert-offwhite: rgba(253, 246, 236, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #6b2737ff, #b5451bff, #d4622aff, #e8923aff, #f0b429ff, #c9954cff, #f5deb3ff, #00897bff, #1565c0ff, #fdf6ecff);
+$gradient-right: linear-gradient(90deg, #6b2737ff, #b5451bff, #d4622aff, #e8923aff, #f0b429ff, #c9954cff, #f5deb3ff, #00897bff, #1565c0ff, #fdf6ecff);
+$gradient-bottom: linear-gradient(180deg, #6b2737ff, #b5451bff, #d4622aff, #e8923aff, #f0b429ff, #c9954cff, #f5deb3ff, #00897bff, #1565c0ff, #fdf6ecff);
+$gradient-left: linear-gradient(270deg, #6b2737ff, #b5451bff, #d4622aff, #e8923aff, #f0b429ff, #c9954cff, #f5deb3ff, #00897bff, #1565c0ff, #fdf6ecff);
+$gradient-top-right: linear-gradient(45deg, #6b2737ff, #b5451bff, #d4622aff, #e8923aff, #f0b429ff, #c9954cff, #f5deb3ff, #00897bff, #1565c0ff, #fdf6ecff);
+$gradient-bottom-right: linear-gradient(135deg, #6b2737ff, #b5451bff, #d4622aff, #e8923aff, #f0b429ff, #c9954cff, #f5deb3ff, #00897bff, #1565c0ff, #fdf6ecff);
+$gradient-top-left: linear-gradient(225deg, #6b2737ff, #b5451bff, #d4622aff, #e8923aff, #f0b429ff, #c9954cff, #f5deb3ff, #00897bff, #1565c0ff, #fdf6ecff);
+$gradient-bottom-left: linear-gradient(315deg, #6b2737ff, #b5451bff, #d4622aff, #e8923aff, #f0b429ff, #c9954cff, #f5deb3ff, #00897bff, #1565c0ff, #fdf6ecff);
+$gradient-radial: radial-gradient(#6b2737ff, #b5451bff, #d4622aff, #e8923aff, #f0b429ff, #c9954cff, #f5deb3ff, #00897bff, #1565c0ff, #fdf6ecff);
+
+/* SCSS Map */
+$marrakech-souk-map: (
+    "deep-terra-cotta": #6b2737ff,
+    "brick-red": #b5451bff,
+    "warm-amber": #d4622aff,
+    "saffron-gold": #e8923aff,
+    "turmeric": #f0b429ff,
+    "clay-sand": #c9954cff,
+    "warm-ivory": #f5deb3ff,
+    "cool-turquoise": #00897bff,
+    "cobalt-tile": #1565c0ff,
+    "desert-offwhite": #fdf6ecff,
+);

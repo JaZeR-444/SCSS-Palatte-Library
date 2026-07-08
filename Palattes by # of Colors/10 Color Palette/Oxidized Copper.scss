@@ -1,0 +1,113 @@
+/*---
+id: oxidized-copper
+name: Oxidized Copper
+author: JaZeR-444
+version: 1.0.0
+category: Material & Metal
+count: 10
+description: A richly textured palette tracing the oxidation journey of copper from warm bright metal through patina greens and teal verdigris to a cool stone finish.
+tags:
+  mood:
+  - earthy
+  - aged
+  - textured
+  aesthetic:
+  - Industrial
+  - Artisan
+  - Material
+intent: A material-inspired 10-color palette designed for industrial UI themes, artisan brand identities, and patina-inspired design systems.
+suggested_use:
+- Industrial and artisan brand identities
+- Textured UI components and cards
+- Nature-meets-industry design systems
+url: https://coolors.co/b87333-c8813a-a0694a-7a8c6e-4e9e8c-3a7d7b-2e5f6b-8ec6b0-d4cfc8-c9c9c9
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--bright-copper: #b87333ff;
+--warm-copper: #c8813aff;
+--aged-copper: #a0694aff;
+--patina-start: #7a8c6eff;
+--teal-patina: #4e9e8cff;
+--verdigris: #3a7d7bff;
+--blue-patina: #2e5f6bff;
+--pale-verdigris: #8ec6b0ff;
+--stone-white: #d4cfc8ff;
+--metallic-sheen: #c9c9c9ff;
+
+/* CSS HSL */
+--bright-copper: hsla(29, 55%, 46%, 1);
+--warm-copper: hsla(28, 55%, 51%, 1);
+--aged-copper: hsla(18, 37%, 46%, 1);
+--patina-start: hsla(90, 12%, 50%, 1);
+--teal-patina: hsla(170, 34%, 47%, 1);
+--verdigris: hsla(179, 35%, 36%, 1);
+--blue-patina: hsla(194, 38%, 30%, 1);
+--pale-verdigris: hsla(156, 33%, 67%, 1);
+--stone-white: hsla(35, 12%, 81%, 1);
+--metallic-sheen: hsla(0, 0%, 79%, 1);
+}
+
+/* SCSS HEX */
+$bright-copper: #b87333ff;
+$warm-copper: #c8813aff;
+$aged-copper: #a0694aff;
+$patina-start: #7a8c6eff;
+$teal-patina: #4e9e8cff;
+$verdigris: #3a7d7bff;
+$blue-patina: #2e5f6bff;
+$pale-verdigris: #8ec6b0ff;
+$stone-white: #d4cfc8ff;
+$metallic-sheen: #c9c9c9ff;
+
+/* SCSS HSL */
+$bright-copper: hsla(29, 55%, 46%, 1);
+$warm-copper: hsla(28, 55%, 51%, 1);
+$aged-copper: hsla(18, 37%, 46%, 1);
+$patina-start: hsla(90, 12%, 50%, 1);
+$teal-patina: hsla(170, 34%, 47%, 1);
+$verdigris: hsla(179, 35%, 36%, 1);
+$blue-patina: hsla(194, 38%, 30%, 1);
+$pale-verdigris: hsla(156, 33%, 67%, 1);
+$stone-white: hsla(35, 12%, 81%, 1);
+$metallic-sheen: hsla(0, 0%, 79%, 1);
+
+/* SCSS RGB */
+$bright-copper: rgba(184, 115, 51, 1);
+$warm-copper: rgba(200, 129, 58, 1);
+$aged-copper: rgba(160, 105, 74, 1);
+$patina-start: rgba(122, 140, 110, 1);
+$teal-patina: rgba(78, 158, 140, 1);
+$verdigris: rgba(58, 125, 123, 1);
+$blue-patina: rgba(46, 95, 107, 1);
+$pale-verdigris: rgba(142, 198, 176, 1);
+$stone-white: rgba(212, 207, 200, 1);
+$metallic-sheen: rgba(201, 201, 201, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #b87333ff, #c8813aff, #a0694aff, #7a8c6eff, #4e9e8cff, #3a7d7bff, #2e5f6bff, #8ec6b0ff, #d4cfc8ff, #c9c9c9ff);
+$gradient-right: linear-gradient(90deg, #b87333ff, #c8813aff, #a0694aff, #7a8c6eff, #4e9e8cff, #3a7d7bff, #2e5f6bff, #8ec6b0ff, #d4cfc8ff, #c9c9c9ff);
+$gradient-bottom: linear-gradient(180deg, #b87333ff, #c8813aff, #a0694aff, #7a8c6eff, #4e9e8cff, #3a7d7bff, #2e5f6bff, #8ec6b0ff, #d4cfc8ff, #c9c9c9ff);
+$gradient-left: linear-gradient(270deg, #b87333ff, #c8813aff, #a0694aff, #7a8c6eff, #4e9e8cff, #3a7d7bff, #2e5f6bff, #8ec6b0ff, #d4cfc8ff, #c9c9c9ff);
+$gradient-top-right: linear-gradient(45deg, #b87333ff, #c8813aff, #a0694aff, #7a8c6eff, #4e9e8cff, #3a7d7bff, #2e5f6bff, #8ec6b0ff, #d4cfc8ff, #c9c9c9ff);
+$gradient-bottom-right: linear-gradient(135deg, #b87333ff, #c8813aff, #a0694aff, #7a8c6eff, #4e9e8cff, #3a7d7bff, #2e5f6bff, #8ec6b0ff, #d4cfc8ff, #c9c9c9ff);
+$gradient-top-left: linear-gradient(225deg, #b87333ff, #c8813aff, #a0694aff, #7a8c6eff, #4e9e8cff, #3a7d7bff, #2e5f6bff, #8ec6b0ff, #d4cfc8ff, #c9c9c9ff);
+$gradient-bottom-left: linear-gradient(315deg, #b87333ff, #c8813aff, #a0694aff, #7a8c6eff, #4e9e8cff, #3a7d7bff, #2e5f6bff, #8ec6b0ff, #d4cfc8ff, #c9c9c9ff);
+$gradient-radial: radial-gradient(#b87333ff, #c8813aff, #a0694aff, #7a8c6eff, #4e9e8cff, #3a7d7bff, #2e5f6bff, #8ec6b0ff, #d4cfc8ff, #c9c9c9ff);
+
+/* SCSS Map */
+$oxidized-copper-map: (
+    "bright-copper": #b87333ff,
+    "warm-copper": #c8813aff,
+    "aged-copper": #a0694aff,
+    "patina-start": #7a8c6eff,
+    "teal-patina": #4e9e8cff,
+    "verdigris": #3a7d7bff,
+    "blue-patina": #2e5f6bff,
+    "pale-verdigris": #8ec6b0ff,
+    "stone-white": #d4cfc8ff,
+    "metallic-sheen": #c9c9c9ff,
+);

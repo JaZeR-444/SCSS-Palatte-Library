@@ -1,0 +1,109 @@
+/*---
+id: founder-os-primary-brand-swatches
+name: Founder OS Primary Brand Swatches
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 10
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - brand-scale
+  mood:
+  - neon
+  - vibrant
+  aesthetic:
+  - Tech
+intent: A 10-color swatch range for Founder OS primary cyan accent, from subtle washes to deep active states.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--brand-cyan-50-wash: #e5fcffff;
+--brand-cyan-100-subtle: #b3f5ffff;
+--brand-cyan-200-light: #80efffff;
+--brand-cyan-300-muted: #4de9ffff;
+--brand-cyan-400-base: #1ae3ffff;
+--brand-cyan-500-primary: #00f0ffff;
+--brand-cyan-600-hover: #00c3ffff;
+--brand-cyan-700-active: #0099ccff;
+--brand-cyan-800-deep: #006699ff;
+--brand-cyan-900-dark: #003366ff;
+
+/* CSS HSL */
+--brand-cyan-50-wash: hsla(187, 100%, 95%, 1);
+--brand-cyan-100-subtle: hsla(188, 100%, 85%, 1);
+--brand-cyan-200-light: hsla(188, 100%, 75%, 1);
+--brand-cyan-300-muted: hsla(187, 100%, 65%, 1);
+--brand-cyan-400-base: hsla(187, 100%, 55%, 1);
+--brand-cyan-500-primary: hsla(184, 100%, 50%, 1);
+--brand-cyan-600-hover: hsla(194, 100%, 50%, 1);
+--brand-cyan-700-active: hsla(195, 100%, 40%, 1);
+--brand-cyan-800-deep: hsla(200, 100%, 30%, 1);
+--brand-cyan-900-dark: hsla(210, 100%, 20%, 1);
+}
+
+/* SCSS HEX */
+$brand-cyan-50-wash: #e5fcffff;
+$brand-cyan-100-subtle: #b3f5ffff;
+$brand-cyan-200-light: #80efffff;
+$brand-cyan-300-muted: #4de9ffff;
+$brand-cyan-400-base: #1ae3ffff;
+$brand-cyan-500-primary: #00f0ffff;
+$brand-cyan-600-hover: #00c3ffff;
+$brand-cyan-700-active: #0099ccff;
+$brand-cyan-800-deep: #006699ff;
+$brand-cyan-900-dark: #003366ff;
+
+/* SCSS HSL */
+$brand-cyan-50-wash: hsla(187, 100%, 95%, 1);
+$brand-cyan-100-subtle: hsla(188, 100%, 85%, 1);
+$brand-cyan-200-light: hsla(188, 100%, 75%, 1);
+$brand-cyan-300-muted: hsla(187, 100%, 65%, 1);
+$brand-cyan-400-base: hsla(187, 100%, 55%, 1);
+$brand-cyan-500-primary: hsla(184, 100%, 50%, 1);
+$brand-cyan-600-hover: hsla(194, 100%, 50%, 1);
+$brand-cyan-700-active: hsla(195, 100%, 40%, 1);
+$brand-cyan-800-deep: hsla(200, 100%, 30%, 1);
+$brand-cyan-900-dark: hsla(210, 100%, 20%, 1);
+
+/* SCSS RGB */
+$brand-cyan-50-wash: rgba(229, 252, 255, 1);
+$brand-cyan-100-subtle: rgba(179, 245, 255, 1);
+$brand-cyan-200-light: rgba(128, 239, 255, 1);
+$brand-cyan-300-muted: rgba(77, 233, 255, 1);
+$brand-cyan-400-base: rgba(26, 227, 255, 1);
+$brand-cyan-500-primary: rgba(0, 240, 255, 1);
+$brand-cyan-600-hover: rgba(0, 195, 255, 1);
+$brand-cyan-700-active: rgba(0, 153, 204, 1);
+$brand-cyan-800-deep: rgba(0, 102, 153, 1);
+$brand-cyan-900-dark: rgba(0, 51, 102, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #e5fcffff, #b3f5ffff, #80efffff, #4de9ffff, #1ae3ffff, #00f0ffff, #00c3ffff, #0099ccff, #006699ff, #003366ff);
+$gradient-right: linear-gradient(90deg, #e5fcffff, #b3f5ffff, #80efffff, #4de9ffff, #1ae3ffff, #00f0ffff, #00c3ffff, #0099ccff, #006699ff, #003366ff);
+$gradient-bottom: linear-gradient(180deg, #e5fcffff, #b3f5ffff, #80efffff, #4de9ffff, #1ae3ffff, #00f0ffff, #00c3ffff, #0099ccff, #006699ff, #003366ff);
+$gradient-left: linear-gradient(270deg, #e5fcffff, #b3f5ffff, #80efffff, #4de9ffff, #1ae3ffff, #00f0ffff, #00c3ffff, #0099ccff, #006699ff, #003366ff);
+$gradient-top-right: linear-gradient(45deg, #e5fcffff, #b3f5ffff, #80efffff, #4de9ffff, #1ae3ffff, #00f0ffff, #00c3ffff, #0099ccff, #006699ff, #003366ff);
+$gradient-bottom-right: linear-gradient(135deg, #e5fcffff, #b3f5ffff, #80efffff, #4de9ffff, #1ae3ffff, #00f0ffff, #00c3ffff, #0099ccff, #006699ff, #003366ff);
+$gradient-top-left: linear-gradient(225deg, #e5fcffff, #b3f5ffff, #80efffff, #4de9ffff, #1ae3ffff, #00f0ffff, #00c3ffff, #0099ccff, #006699ff, #003366ff);
+$gradient-bottom-left: linear-gradient(315deg, #e5fcffff, #b3f5ffff, #80efffff, #4de9ffff, #1ae3ffff, #00f0ffff, #00c3ffff, #0099ccff, #006699ff, #003366ff);
+$gradient-radial: radial-gradient(#e5fcffff, #b3f5ffff, #80efffff, #4de9ffff, #1ae3ffff, #00f0ffff, #00c3ffff, #0099ccff, #006699ff, #003366ff);
+
+/* SCSS Map */
+$founder-os-primary-brand-swatches-map: (
+    "brand-cyan-50-wash": #e5fcffff,
+    "brand-cyan-100-subtle": #b3f5ffff,
+    "brand-cyan-200-light": #80efffff,
+    "brand-cyan-300-muted": #4de9ffff,
+    "brand-cyan-400-base": #1ae3ffff,
+    "brand-cyan-500-primary": #00f0ffff,
+    "brand-cyan-600-hover": #00c3ffff,
+    "brand-cyan-700-active": #0099ccff,
+    "brand-cyan-800-deep": #006699ff,
+    "brand-cyan-900-dark": #003366ff
+);

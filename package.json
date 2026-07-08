@@ -2,6 +2,9 @@
   "name": "scss-palette-library",
   "version": "2.0.0",
   "description": "A comprehensive collection of themed SCSS and CSS color palettes.",
+  "scripts": {
+    "prepack": "python update_index_scss.py"
+  },
   "main": "_index.scss",
   "sass": "_index.scss",
   "style": "_index.scss",

@@ -1,0 +1,113 @@
+/*---
+id: impressionist-garden
+name: Impressionist Garden
+author: JaZeR-444
+version: 1.0.0
+category: Art & Cultural Movements
+count: 10
+description: A luminous Monet water garden palette of deep shadowed greens, sky-reflected blues, soft lilacs, and sun-kissed peaches dissolving into pale cream.
+tags:
+  mood:
+  - serene
+  - luminous
+  - organic
+  aesthetic:
+  - Impressionist
+  - Painterly
+  - Natural
+intent: A serene 10-color palette designed for wellness brands, nature-inspired editorial, and lifestyle apps that evoke tranquil, sun-dappled beauty.
+suggested_use:
+- Wellness, spa, and lifestyle branding
+- Garden, nature, and botanical editorial
+- Soft UI for health and mindfulness apps
+url: https://coolors.co/1e3a2f-2d5c43-5a8f6a-8ab89a-7cb9d4-c0a8d8-d4b8d8-e8a8b0-f0c8a8-faf0e0
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--deep-shadow-green: #1e3a2fff;
+--forest: #2d5c43ff;
+--sage: #5a8f6aff;
+--soft-green: #8ab89aff;
+--sky-blue: #7cb9d4ff;
+--lilac: #c0a8d8ff;
+--garden-lavender: #d4b8d8ff;
+--rose: #e8a8b0ff;
+--peach: #f0c8a8ff;
+--pale-cream: #faf0e0ff;
+
+/* CSS HSL */
+--deep-shadow-green: hsla(154, 32%, 17%, 1);
+--forest: hsla(150, 34%, 27%, 1);
+--sage: hsla(138, 24%, 46%, 1);
+--soft-green: hsla(137, 21%, 63%, 1);
+--sky-blue: hsla(200, 44%, 66%, 1);
+--lilac: hsla(275, 32%, 76%, 1);
+--garden-lavender: hsla(295, 22%, 78%, 1);
+--rose: hsla(353, 50%, 79%, 1);
+--peach: hsla(30, 70%, 80%, 1);
+--pale-cream: hsla(40, 71%, 93%, 1);
+}
+
+/* SCSS HEX */
+$deep-shadow-green: #1e3a2fff;
+$forest: #2d5c43ff;
+$sage: #5a8f6aff;
+$soft-green: #8ab89aff;
+$sky-blue: #7cb9d4ff;
+$lilac: #c0a8d8ff;
+$garden-lavender: #d4b8d8ff;
+$rose: #e8a8b0ff;
+$peach: #f0c8a8ff;
+$pale-cream: #faf0e0ff;
+
+/* SCSS HSL */
+$deep-shadow-green: hsla(154, 32%, 17%, 1);
+$forest: hsla(150, 34%, 27%, 1);
+$sage: hsla(138, 24%, 46%, 1);
+$soft-green: hsla(137, 21%, 63%, 1);
+$sky-blue: hsla(200, 44%, 66%, 1);
+$lilac: hsla(275, 32%, 76%, 1);
+$garden-lavender: hsla(295, 22%, 78%, 1);
+$rose: hsla(353, 50%, 79%, 1);
+$peach: hsla(30, 70%, 80%, 1);
+$pale-cream: hsla(40, 71%, 93%, 1);
+
+/* SCSS RGB */
+$deep-shadow-green: rgba(30, 58, 47, 1);
+$forest: rgba(45, 92, 67, 1);
+$sage: rgba(90, 143, 106, 1);
+$soft-green: rgba(138, 184, 154, 1);
+$sky-blue: rgba(124, 185, 212, 1);
+$lilac: rgba(192, 168, 216, 1);
+$garden-lavender: rgba(212, 184, 216, 1);
+$rose: rgba(232, 168, 176, 1);
+$peach: rgba(240, 200, 168, 1);
+$pale-cream: rgba(250, 240, 224, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1e3a2fff, #2d5c43ff, #5a8f6aff, #8ab89aff, #7cb9d4ff, #c0a8d8ff, #d4b8d8ff, #e8a8b0ff, #f0c8a8ff, #faf0e0ff);
+$gradient-right: linear-gradient(90deg, #1e3a2fff, #2d5c43ff, #5a8f6aff, #8ab89aff, #7cb9d4ff, #c0a8d8ff, #d4b8d8ff, #e8a8b0ff, #f0c8a8ff, #faf0e0ff);
+$gradient-bottom: linear-gradient(180deg, #1e3a2fff, #2d5c43ff, #5a8f6aff, #8ab89aff, #7cb9d4ff, #c0a8d8ff, #d4b8d8ff, #e8a8b0ff, #f0c8a8ff, #faf0e0ff);
+$gradient-left: linear-gradient(270deg, #1e3a2fff, #2d5c43ff, #5a8f6aff, #8ab89aff, #7cb9d4ff, #c0a8d8ff, #d4b8d8ff, #e8a8b0ff, #f0c8a8ff, #faf0e0ff);
+$gradient-top-right: linear-gradient(45deg, #1e3a2fff, #2d5c43ff, #5a8f6aff, #8ab89aff, #7cb9d4ff, #c0a8d8ff, #d4b8d8ff, #e8a8b0ff, #f0c8a8ff, #faf0e0ff);
+$gradient-bottom-right: linear-gradient(135deg, #1e3a2fff, #2d5c43ff, #5a8f6aff, #8ab89aff, #7cb9d4ff, #c0a8d8ff, #d4b8d8ff, #e8a8b0ff, #f0c8a8ff, #faf0e0ff);
+$gradient-top-left: linear-gradient(225deg, #1e3a2fff, #2d5c43ff, #5a8f6aff, #8ab89aff, #7cb9d4ff, #c0a8d8ff, #d4b8d8ff, #e8a8b0ff, #f0c8a8ff, #faf0e0ff);
+$gradient-bottom-left: linear-gradient(315deg, #1e3a2fff, #2d5c43ff, #5a8f6aff, #8ab89aff, #7cb9d4ff, #c0a8d8ff, #d4b8d8ff, #e8a8b0ff, #f0c8a8ff, #faf0e0ff);
+$gradient-radial: radial-gradient(#1e3a2fff, #2d5c43ff, #5a8f6aff, #8ab89aff, #7cb9d4ff, #c0a8d8ff, #d4b8d8ff, #e8a8b0ff, #f0c8a8ff, #faf0e0ff);
+
+/* SCSS Map */
+$impressionist-garden-map: (
+    "deep-shadow-green": #1e3a2fff,
+    "forest": #2d5c43ff,
+    "sage": #5a8f6aff,
+    "soft-green": #8ab89aff,
+    "sky-blue": #7cb9d4ff,
+    "lilac": #c0a8d8ff,
+    "garden-lavender": #d4b8d8ff,
+    "rose": #e8a8b0ff,
+    "peach": #f0c8a8ff,
+    "pale-cream": #faf0e0ff,
+);

@@ -1,0 +1,113 @@
+/*---
+id: raw-timber
+name: Raw Timber
+author: JaZeR-444
+version: 1.0.0
+category: Material & Wood
+count: 10
+description: A natural wood palette journeying from deep walnut and mahogany through warm honey oaks and light ash to pale birch and linen off-whites, evoking craft interiors, woodworking brands, and nature-forward design.
+tags:
+  mood:
+  - warm
+  - natural
+  - grounded
+  aesthetic:
+  - Craft
+  - Nature
+  - Interior
+intent: A material-inspired 10-color palette designed for woodworking brands, craft interior design systems, and warm nature-forward digital products.
+suggested_use:
+- Woodworking and furniture brand identities
+- Craft interior design and architecture presentations
+- Warm nature-forward web and app UI
+url: https://coolors.co/3b1f0e-5c3317-7d4e24-9e6a3a-c08b5c-d4a97a-e3c49e-ecdcbf-f5eedd-faf7f0
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--deep-walnut: #3b1f0eff;
+--dark-mahogany: #5c3317ff;
+--warm-brown: #7d4e24ff;
+--medium-oak: #9e6a3aff;
+--honey-oak: #c08b5cff;
+--light-ash: #d4a97aff;
+--pale-birch: #e3c49eff;
+--warm-cream-wood: #ecdcbfff;
+--linen: #f5eeddff;
+--off-white-grain: #faf7f0ff;
+
+/* CSS HSL */
+--deep-walnut: hsla(24, 64%, 14%, 1);
+--dark-mahogany: hsla(22, 57%, 23%, 1);
+--warm-brown: hsla(27, 55%, 32%, 1);
+--medium-oak: hsla(27, 47%, 42%, 1);
+--honey-oak: hsla(27, 41%, 55%, 1);
+--light-ash: hsla(30, 46%, 65%, 1);
+--pale-birch: hsla(31, 52%, 76%, 1);
+--warm-cream-wood: hsla(37, 54%, 84%, 1);
+--linen: hsla(42, 67%, 92%, 1);
+--off-white-grain: hsla(42, 50%, 96%, 1);
+}
+
+/* SCSS HEX */
+$deep-walnut: #3b1f0eff;
+$dark-mahogany: #5c3317ff;
+$warm-brown: #7d4e24ff;
+$medium-oak: #9e6a3aff;
+$honey-oak: #c08b5cff;
+$light-ash: #d4a97aff;
+$pale-birch: #e3c49eff;
+$warm-cream-wood: #ecdcbfff;
+$linen: #f5eeddff;
+$off-white-grain: #faf7f0ff;
+
+/* SCSS HSL */
+$deep-walnut: hsla(24, 64%, 14%, 1);
+$dark-mahogany: hsla(22, 57%, 23%, 1);
+$warm-brown: hsla(27, 55%, 32%, 1);
+$medium-oak: hsla(27, 47%, 42%, 1);
+$honey-oak: hsla(27, 41%, 55%, 1);
+$light-ash: hsla(30, 46%, 65%, 1);
+$pale-birch: hsla(31, 52%, 76%, 1);
+$warm-cream-wood: hsla(37, 54%, 84%, 1);
+$linen: hsla(42, 67%, 92%, 1);
+$off-white-grain: hsla(42, 50%, 96%, 1);
+
+/* SCSS RGB */
+$deep-walnut: rgba(59, 31, 14, 1);
+$dark-mahogany: rgba(92, 51, 23, 1);
+$warm-brown: rgba(125, 78, 36, 1);
+$medium-oak: rgba(158, 106, 58, 1);
+$honey-oak: rgba(192, 139, 92, 1);
+$light-ash: rgba(212, 169, 122, 1);
+$pale-birch: rgba(227, 196, 158, 1);
+$warm-cream-wood: rgba(236, 220, 191, 1);
+$linen: rgba(245, 238, 221, 1);
+$off-white-grain: rgba(250, 247, 240, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #3b1f0eff, #5c3317ff, #7d4e24ff, #9e6a3aff, #c08b5cff, #d4a97aff, #e3c49eff, #ecdcbfff, #f5eeddff, #faf7f0ff);
+$gradient-right: linear-gradient(90deg, #3b1f0eff, #5c3317ff, #7d4e24ff, #9e6a3aff, #c08b5cff, #d4a97aff, #e3c49eff, #ecdcbfff, #f5eeddff, #faf7f0ff);
+$gradient-bottom: linear-gradient(180deg, #3b1f0eff, #5c3317ff, #7d4e24ff, #9e6a3aff, #c08b5cff, #d4a97aff, #e3c49eff, #ecdcbfff, #f5eeddff, #faf7f0ff);
+$gradient-left: linear-gradient(270deg, #3b1f0eff, #5c3317ff, #7d4e24ff, #9e6a3aff, #c08b5cff, #d4a97aff, #e3c49eff, #ecdcbfff, #f5eeddff, #faf7f0ff);
+$gradient-top-right: linear-gradient(45deg, #3b1f0eff, #5c3317ff, #7d4e24ff, #9e6a3aff, #c08b5cff, #d4a97aff, #e3c49eff, #ecdcbfff, #f5eeddff, #faf7f0ff);
+$gradient-bottom-right: linear-gradient(135deg, #3b1f0eff, #5c3317ff, #7d4e24ff, #9e6a3aff, #c08b5cff, #d4a97aff, #e3c49eff, #ecdcbfff, #f5eeddff, #faf7f0ff);
+$gradient-top-left: linear-gradient(225deg, #3b1f0eff, #5c3317ff, #7d4e24ff, #9e6a3aff, #c08b5cff, #d4a97aff, #e3c49eff, #ecdcbfff, #f5eeddff, #faf7f0ff);
+$gradient-bottom-left: linear-gradient(315deg, #3b1f0eff, #5c3317ff, #7d4e24ff, #9e6a3aff, #c08b5cff, #d4a97aff, #e3c49eff, #ecdcbfff, #f5eeddff, #faf7f0ff);
+$gradient-radial: radial-gradient(#3b1f0eff, #5c3317ff, #7d4e24ff, #9e6a3aff, #c08b5cff, #d4a97aff, #e3c49eff, #ecdcbfff, #f5eeddff, #faf7f0ff);
+
+/* SCSS Map */
+$raw-timber-map: (
+    "deep-walnut": #3b1f0eff,
+    "dark-mahogany": #5c3317ff,
+    "warm-brown": #7d4e24ff,
+    "medium-oak": #9e6a3aff,
+    "honey-oak": #c08b5cff,
+    "light-ash": #d4a97aff,
+    "pale-birch": #e3c49eff,
+    "warm-cream-wood": #ecdcbfff,
+    "linen": #f5eeddff,
+    "off-white-grain": #faf7f0ff,
+);

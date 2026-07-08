@@ -1,0 +1,113 @@
+/*---
+id: woven-textile
+name: Woven Textile
+author: JaZeR-444
+version: 1.0.0
+category: Material & Fabric
+count: 10
+description: A fabric and textile palette ranging from deep indigo dye and navy through slate gray and warm flax linen to blush wool and off-white cotton, evoking handwoven artisan textiles and slow fashion brands.
+tags:
+  mood:
+  - artisan
+  - tactile
+  - serene
+  aesthetic:
+  - Textile
+  - Fashion
+  - Slow Design
+intent: A material-inspired 10-color palette designed for slow fashion brands, artisan textile identities, and fabric-forward editorial and product design.
+suggested_use:
+- Slow fashion and textile brand identities
+- Fabric swatch and product design systems
+- Artisan editorial and packaging design
+url: https://coolors.co/1a1744-2e2a5e-4a4680-6b6898-9a96b8-c2bfcc-d6d0c4-e8dfd0-f2ebe0-faf8f4
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--deep-indigo-dye: #1a1744ff;
+--navy-woven: #2e2a5eff;
+--slate-loom: #4a4680ff;
+--gray-felt: #6b6898ff;
+--warm-flax: #9a96b8ff;
+--natural-linen-gray: #c2bfccff;
+--natural-linen: #d6d0c4ff;
+--cream-cotton: #e8dfd0ff;
+--blush-wool: #f2ebe0ff;
+--warm-ivory: #faf8f4ff;
+
+/* CSS HSL */
+--deep-indigo-dye: hsla(244, 46%, 18%, 1);
+--navy-woven: hsla(245, 37%, 27%, 1);
+--slate-loom: hsla(244, 29%, 39%, 1);
+--gray-felt: hsla(243, 17%, 50%, 1);
+--warm-flax: hsla(245, 15%, 66%, 1);
+--natural-linen-gray: hsla(255, 7%, 77%, 1);
+--natural-linen: hsla(38, 15%, 80%, 1);
+--cream-cotton: hsla(36, 30%, 86%, 1);
+--blush-wool: hsla(38, 38%, 91%, 1);
+--warm-ivory: hsla(40, 33%, 97%, 1);
+}
+
+/* SCSS HEX */
+$deep-indigo-dye: #1a1744ff;
+$navy-woven: #2e2a5eff;
+$slate-loom: #4a4680ff;
+$gray-felt: #6b6898ff;
+$warm-flax: #9a96b8ff;
+$natural-linen-gray: #c2bfccff;
+$natural-linen: #d6d0c4ff;
+$cream-cotton: #e8dfd0ff;
+$blush-wool: #f2ebe0ff;
+$warm-ivory: #faf8f4ff;
+
+/* SCSS HSL */
+$deep-indigo-dye: hsla(244, 46%, 18%, 1);
+$navy-woven: hsla(245, 37%, 27%, 1);
+$slate-loom: hsla(244, 29%, 39%, 1);
+$gray-felt: hsla(243, 17%, 50%, 1);
+$warm-flax: hsla(245, 15%, 66%, 1);
+$natural-linen-gray: hsla(255, 7%, 77%, 1);
+$natural-linen: hsla(38, 15%, 80%, 1);
+$cream-cotton: hsla(36, 30%, 86%, 1);
+$blush-wool: hsla(38, 38%, 91%, 1);
+$warm-ivory: hsla(40, 33%, 97%, 1);
+
+/* SCSS RGB */
+$deep-indigo-dye: rgba(26, 23, 68, 1);
+$navy-woven: rgba(46, 42, 94, 1);
+$slate-loom: rgba(74, 70, 128, 1);
+$gray-felt: rgba(107, 104, 152, 1);
+$warm-flax: rgba(154, 150, 184, 1);
+$natural-linen-gray: rgba(194, 191, 204, 1);
+$natural-linen: rgba(214, 208, 196, 1);
+$cream-cotton: rgba(232, 223, 208, 1);
+$blush-wool: rgba(242, 235, 224, 1);
+$warm-ivory: rgba(250, 248, 244, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1a1744ff, #2e2a5eff, #4a4680ff, #6b6898ff, #9a96b8ff, #c2bfccff, #d6d0c4ff, #e8dfd0ff, #f2ebe0ff, #faf8f4ff);
+$gradient-right: linear-gradient(90deg, #1a1744ff, #2e2a5eff, #4a4680ff, #6b6898ff, #9a96b8ff, #c2bfccff, #d6d0c4ff, #e8dfd0ff, #f2ebe0ff, #faf8f4ff);
+$gradient-bottom: linear-gradient(180deg, #1a1744ff, #2e2a5eff, #4a4680ff, #6b6898ff, #9a96b8ff, #c2bfccff, #d6d0c4ff, #e8dfd0ff, #f2ebe0ff, #faf8f4ff);
+$gradient-left: linear-gradient(270deg, #1a1744ff, #2e2a5eff, #4a4680ff, #6b6898ff, #9a96b8ff, #c2bfccff, #d6d0c4ff, #e8dfd0ff, #f2ebe0ff, #faf8f4ff);
+$gradient-top-right: linear-gradient(45deg, #1a1744ff, #2e2a5eff, #4a4680ff, #6b6898ff, #9a96b8ff, #c2bfccff, #d6d0c4ff, #e8dfd0ff, #f2ebe0ff, #faf8f4ff);
+$gradient-bottom-right: linear-gradient(135deg, #1a1744ff, #2e2a5eff, #4a4680ff, #6b6898ff, #9a96b8ff, #c2bfccff, #d6d0c4ff, #e8dfd0ff, #f2ebe0ff, #faf8f4ff);
+$gradient-top-left: linear-gradient(225deg, #1a1744ff, #2e2a5eff, #4a4680ff, #6b6898ff, #9a96b8ff, #c2bfccff, #d6d0c4ff, #e8dfd0ff, #f2ebe0ff, #faf8f4ff);
+$gradient-bottom-left: linear-gradient(315deg, #1a1744ff, #2e2a5eff, #4a4680ff, #6b6898ff, #9a96b8ff, #c2bfccff, #d6d0c4ff, #e8dfd0ff, #f2ebe0ff, #faf8f4ff);
+$gradient-radial: radial-gradient(#1a1744ff, #2e2a5eff, #4a4680ff, #6b6898ff, #9a96b8ff, #c2bfccff, #d6d0c4ff, #e8dfd0ff, #f2ebe0ff, #faf8f4ff);
+
+/* SCSS Map */
+$woven-textile-map: (
+    "deep-indigo-dye": #1a1744ff,
+    "navy-woven": #2e2a5eff,
+    "slate-loom": #4a4680ff,
+    "gray-felt": #6b6898ff,
+    "warm-flax": #9a96b8ff,
+    "natural-linen-gray": #c2bfccff,
+    "natural-linen": #d6d0c4ff,
+    "cream-cotton": #e8dfd0ff,
+    "blush-wool": #f2ebe0ff,
+    "warm-ivory": #faf8f4ff,
+);

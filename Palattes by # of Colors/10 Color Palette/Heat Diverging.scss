@@ -1,0 +1,113 @@
+/*---
+id: heat-diverging
+name: Heat Diverging
+author: JaZeR-444
+version: 1.0.0
+category: Data Visualization & Diverging
+count: 10
+description: A classic diverging red-to-blue palette with a neutral near-white center, ideal for correlation matrices, temperature anomaly maps, and signed-value visualizations.
+tags:
+  mood:
+  - analytical
+  - contrasting
+  - scientific
+  aesthetic:
+  - Data Viz
+  - Scientific
+  - Heatmap
+intent: A diverging 10-color red-white-blue palette designed for correlation matrices, temperature anomaly maps, and signed-value data visualization.
+suggested_use:
+- Correlation and covariance matrices
+- Temperature and climate anomaly maps
+- Sentiment and opinion divergence charts
+url: https://coolors.co/67001f-b2182b-d6604d-f4a582-fddbc7-d1e5f0-92c5de-4393c3-2166ac-053061
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--crimson-depth: #67001fff;
+--scarlet-bold: #b2182bff;
+--coral-medium: #d6604dff;
+--salmon-light: #f4a582ff;
+--blush-center: #fddbc7ff;
+--pale-arctic: #d1e5f0ff;
+--sky-steel: #92c5deff;
+--cobalt-mid: #4393c3ff;
+--royal-anchor: #2166acff;
+--navy-anchor: #053061ff;
+
+/* CSS HSL */
+--crimson-depth: hsla(345, 100%, 20%, 1);
+--scarlet-bold: hsla(352, 67%, 40%, 1);
+--coral-medium: hsla(6, 60%, 57%, 1);
+--salmon-light: hsla(14, 82%, 73%, 1);
+--blush-center: hsla(20, 90%, 89%, 1);
+--pale-arctic: hsla(203, 47%, 76%, 1);
+--sky-steel: hsla(204, 52%, 59%, 1);
+--cobalt-mid: hsla(207, 54%, 51%, 1);
+--royal-anchor: hsla(211, 69%, 40%, 1);
+--navy-anchor: hsla(213, 91%, 20%, 1);
+}
+
+/* SCSS HEX */
+$crimson-depth: #67001fff;
+$scarlet-bold: #b2182bff;
+$coral-medium: #d6604dff;
+$salmon-light: #f4a582ff;
+$blush-center: #fddbc7ff;
+$pale-arctic: #d1e5f0ff;
+$sky-steel: #92c5deff;
+$cobalt-mid: #4393c3ff;
+$royal-anchor: #2166acff;
+$navy-anchor: #053061ff;
+
+/* SCSS HSL */
+$crimson-depth: hsla(345, 100%, 20%, 1);
+$scarlet-bold: hsla(352, 67%, 40%, 1);
+$coral-medium: hsla(6, 60%, 57%, 1);
+$salmon-light: hsla(14, 82%, 73%, 1);
+$blush-center: hsla(20, 90%, 89%, 1);
+$pale-arctic: hsla(203, 47%, 76%, 1);
+$sky-steel: hsla(204, 52%, 59%, 1);
+$cobalt-mid: hsla(207, 54%, 51%, 1);
+$royal-anchor: hsla(211, 69%, 40%, 1);
+$navy-anchor: hsla(213, 91%, 20%, 1);
+
+/* SCSS RGB */
+$crimson-depth: rgba(103, 0, 31, 1);
+$scarlet-bold: rgba(178, 24, 43, 1);
+$coral-medium: rgba(214, 96, 77, 1);
+$salmon-light: rgba(244, 165, 130, 1);
+$blush-center: rgba(253, 219, 199, 1);
+$pale-arctic: rgba(209, 229, 240, 1);
+$sky-steel: rgba(146, 197, 222, 1);
+$cobalt-mid: rgba(67, 147, 195, 1);
+$royal-anchor: rgba(33, 102, 172, 1);
+$navy-anchor: rgba(5, 48, 97, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #67001fff, #b2182bff, #d6604dff, #f4a582ff, #fddbc7ff, #d1e5f0ff, #92c5deff, #4393c3ff, #2166acff, #053061ff);
+$gradient-right: linear-gradient(90deg, #67001fff, #b2182bff, #d6604dff, #f4a582ff, #fddbc7ff, #d1e5f0ff, #92c5deff, #4393c3ff, #2166acff, #053061ff);
+$gradient-bottom: linear-gradient(180deg, #67001fff, #b2182bff, #d6604dff, #f4a582ff, #fddbc7ff, #d1e5f0ff, #92c5deff, #4393c3ff, #2166acff, #053061ff);
+$gradient-left: linear-gradient(270deg, #67001fff, #b2182bff, #d6604dff, #f4a582ff, #fddbc7ff, #d1e5f0ff, #92c5deff, #4393c3ff, #2166acff, #053061ff);
+$gradient-top-right: linear-gradient(45deg, #67001fff, #b2182bff, #d6604dff, #f4a582ff, #fddbc7ff, #d1e5f0ff, #92c5deff, #4393c3ff, #2166acff, #053061ff);
+$gradient-bottom-right: linear-gradient(135deg, #67001fff, #b2182bff, #d6604dff, #f4a582ff, #fddbc7ff, #d1e5f0ff, #92c5deff, #4393c3ff, #2166acff, #053061ff);
+$gradient-top-left: linear-gradient(225deg, #67001fff, #b2182bff, #d6604dff, #f4a582ff, #fddbc7ff, #d1e5f0ff, #92c5deff, #4393c3ff, #2166acff, #053061ff);
+$gradient-bottom-left: linear-gradient(315deg, #67001fff, #b2182bff, #d6604dff, #f4a582ff, #fddbc7ff, #d1e5f0ff, #92c5deff, #4393c3ff, #2166acff, #053061ff);
+$gradient-radial: radial-gradient(#67001fff, #b2182bff, #d6604dff, #f4a582ff, #fddbc7ff, #d1e5f0ff, #92c5deff, #4393c3ff, #2166acff, #053061ff);
+
+/* SCSS Map */
+$heat-diverging-map: (
+    "crimson-depth": #67001fff,
+    "scarlet-bold": #b2182bff,
+    "coral-medium": #d6604dff,
+    "salmon-light": #f4a582ff,
+    "blush-center": #fddbc7ff,
+    "pale-arctic": #d1e5f0ff,
+    "sky-steel": #92c5deff,
+    "cobalt-mid": #4393c3ff,
+    "royal-anchor": #2166acff,
+    "navy-anchor": #053061ff,
+);

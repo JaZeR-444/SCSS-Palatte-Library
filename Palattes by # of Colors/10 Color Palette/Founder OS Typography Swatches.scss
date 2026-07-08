@@ -1,0 +1,109 @@
+/*---
+id: founder-os-typography-swatches
+name: Founder OS Typography Swatches
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 10
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - component-states
+  mood:
+  - neutral
+  - clean
+  aesthetic:
+  - UI
+intent: A 10-color semantic map strictly for text, placeholders, and borders within the Founder OS app.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--text-heading-primary: #ffffffff;
+--text-body-base: #e2e8f0ff;
+--text-muted-subtle: #94a3b8ff;
+--text-placeholder: #64748bff;
+--text-disabled: #475569ff;
+--border-input-focus: #38bdf8ff;
+--text-inverse: #0f172aff;
+--border-divider-light: #334155ff;
+--border-input-base: #1e293bff;
+--border-card-subtle: #0f172aff;
+
+/* CSS HSL */
+--text-heading-primary: hsla(0, 0%, 100%, 1);
+--text-body-base: hsla(214, 32%, 91%, 1);
+--text-muted-subtle: hsla(215, 25%, 65%, 1);
+--text-placeholder: hsla(215, 16%, 47%, 1);
+--text-disabled: hsla(215, 19%, 35%, 1);
+--border-input-focus: hsla(201, 93%, 60%, 1);
+--text-inverse: hsla(222, 47%, 11%, 1);
+--border-divider-light: hsla(215, 25%, 27%, 1);
+--border-input-base: hsla(217, 33%, 17%, 1);
+--border-card-subtle: hsla(222, 47%, 11%, 1);
+}
+
+/* SCSS HEX */
+$text-heading-primary: #ffffffff;
+$text-body-base: #e2e8f0ff;
+$text-muted-subtle: #94a3b8ff;
+$text-placeholder: #64748bff;
+$text-disabled: #475569ff;
+$border-input-focus: #38bdf8ff;
+$text-inverse: #0f172aff;
+$border-divider-light: #334155ff;
+$border-input-base: #1e293bff;
+$border-card-subtle: #0f172aff;
+
+/* SCSS HSL */
+$text-heading-primary: hsla(0, 0%, 100%, 1);
+$text-body-base: hsla(214, 32%, 91%, 1);
+$text-muted-subtle: hsla(215, 25%, 65%, 1);
+$text-placeholder: hsla(215, 16%, 47%, 1);
+$text-disabled: hsla(215, 19%, 35%, 1);
+$border-input-focus: hsla(201, 93%, 60%, 1);
+$text-inverse: hsla(222, 47%, 11%, 1);
+$border-divider-light: hsla(215, 25%, 27%, 1);
+$border-input-base: hsla(217, 33%, 17%, 1);
+$border-card-subtle: hsla(222, 47%, 11%, 1);
+
+/* SCSS RGB */
+$text-heading-primary: rgba(255, 255, 255, 1);
+$text-body-base: rgba(226, 232, 240, 1);
+$text-muted-subtle: rgba(148, 163, 184, 1);
+$text-placeholder: rgba(100, 116, 139, 1);
+$text-disabled: rgba(71, 85, 105, 1);
+$border-input-focus: rgba(56, 189, 248, 1);
+$text-inverse: rgba(15, 23, 42, 1);
+$border-divider-light: rgba(51, 65, 85, 1);
+$border-input-base: rgba(30, 41, 59, 1);
+$border-card-subtle: rgba(15, 23, 42, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #ffffffff, #e2e8f0ff, #94a3b8ff, #64748bff, #475569ff, #38bdf8ff, #0f172aff, #334155ff, #1e293bff, #0f172aff);
+$gradient-right: linear-gradient(90deg, #ffffffff, #e2e8f0ff, #94a3b8ff, #64748bff, #475569ff, #38bdf8ff, #0f172aff, #334155ff, #1e293bff, #0f172aff);
+$gradient-bottom: linear-gradient(180deg, #ffffffff, #e2e8f0ff, #94a3b8ff, #64748bff, #475569ff, #38bdf8ff, #0f172aff, #334155ff, #1e293bff, #0f172aff);
+$gradient-left: linear-gradient(270deg, #ffffffff, #e2e8f0ff, #94a3b8ff, #64748bff, #475569ff, #38bdf8ff, #0f172aff, #334155ff, #1e293bff, #0f172aff);
+$gradient-top-right: linear-gradient(45deg, #ffffffff, #e2e8f0ff, #94a3b8ff, #64748bff, #475569ff, #38bdf8ff, #0f172aff, #334155ff, #1e293bff, #0f172aff);
+$gradient-bottom-right: linear-gradient(135deg, #ffffffff, #e2e8f0ff, #94a3b8ff, #64748bff, #475569ff, #38bdf8ff, #0f172aff, #334155ff, #1e293bff, #0f172aff);
+$gradient-top-left: linear-gradient(225deg, #ffffffff, #e2e8f0ff, #94a3b8ff, #64748bff, #475569ff, #38bdf8ff, #0f172aff, #334155ff, #1e293bff, #0f172aff);
+$gradient-bottom-left: linear-gradient(315deg, #ffffffff, #e2e8f0ff, #94a3b8ff, #64748bff, #475569ff, #38bdf8ff, #0f172aff, #334155ff, #1e293bff, #0f172aff);
+$gradient-radial: radial-gradient(#ffffffff, #e2e8f0ff, #94a3b8ff, #64748bff, #475569ff, #38bdf8ff, #0f172aff, #334155ff, #1e293bff, #0f172aff);
+
+/* SCSS Map */
+$founder-os-typography-swatches-map: (
+    "text-heading-primary": #ffffffff,
+    "text-body-base": #e2e8f0ff,
+    "text-muted-subtle": #94a3b8ff,
+    "text-placeholder": #64748bff,
+    "text-disabled": #475569ff,
+    "border-input-focus": #38bdf8ff,
+    "text-inverse": #0f172aff,
+    "border-divider-light": #334155ff,
+    "border-input-base": #1e293bff,
+    "border-card-subtle": #0f172aff
+);

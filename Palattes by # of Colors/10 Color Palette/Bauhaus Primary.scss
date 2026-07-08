@@ -1,0 +1,113 @@
+/*---
+id: bauhaus-primary
+name: Bauhaus Primary
+author: JaZeR-444
+version: 1.0.0
+category: Art & Cultural Movements
+count: 10
+description: A bold Bauhaus-inspired palette distilling the movement's radical reduction to pure primaries, deep neutrals, and geometric confidence.
+tags:
+  mood:
+  - bold
+  - geometric
+  - modernist
+  aesthetic:
+  - Bauhaus
+  - Constructivist
+  - Modernist
+intent: A bold 10-color palette designed for design systems, editorial layouts, and modernist UI that demands clarity and visual power.
+suggested_use:
+- Brand identity with a modernist edge
+- Editorial and poster design
+- Design-system foundations with primary-color hierarchy
+url: https://coolors.co/0d0d0d-2e2e2e-7a7369-d62828-f5c800-1a53ff-f7f7f7-ffd700-003399-e85d04
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--bauhaus-black: #0d0d0dff;
+--bauhaus-charcoal: #2e2e2eff;
+--bauhaus-warm-gray: #7a7369ff;
+--bauhaus-red: #d62828ff;
+--bauhaus-yellow: #f5c800ff;
+--bauhaus-blue: #1a53ffff;
+--bauhaus-white: #f7f7f7ff;
+--bauhaus-bright-yellow: #ffd700ff;
+--bauhaus-deep-cobalt: #003399ff;
+--bauhaus-warm-orange: #e85d04ff;
+
+/* CSS HSL */
+--bauhaus-black: hsla(0, 0%, 5%, 1);
+--bauhaus-charcoal: hsla(0, 0%, 18%, 1);
+--bauhaus-warm-gray: hsla(37, 5%, 45%, 1);
+--bauhaus-red: hsla(0, 66%, 50%, 1);
+--bauhaus-yellow: hsla(49, 100%, 48%, 1);
+--bauhaus-blue: hsla(225, 100%, 55%, 1);
+--bauhaus-white: hsla(0, 0%, 97%, 1);
+--bauhaus-bright-yellow: hsla(51, 100%, 50%, 1);
+--bauhaus-deep-cobalt: hsla(220, 100%, 30%, 1);
+--bauhaus-warm-orange: hsla(25, 97%, 46%, 1);
+}
+
+/* SCSS HEX */
+$bauhaus-black: #0d0d0dff;
+$bauhaus-charcoal: #2e2e2eff;
+$bauhaus-warm-gray: #7a7369ff;
+$bauhaus-red: #d62828ff;
+$bauhaus-yellow: #f5c800ff;
+$bauhaus-blue: #1a53ffff;
+$bauhaus-white: #f7f7f7ff;
+$bauhaus-bright-yellow: #ffd700ff;
+$bauhaus-deep-cobalt: #003399ff;
+$bauhaus-warm-orange: #e85d04ff;
+
+/* SCSS HSL */
+$bauhaus-black: hsla(0, 0%, 5%, 1);
+$bauhaus-charcoal: hsla(0, 0%, 18%, 1);
+$bauhaus-warm-gray: hsla(37, 5%, 45%, 1);
+$bauhaus-red: hsla(0, 66%, 50%, 1);
+$bauhaus-yellow: hsla(49, 100%, 48%, 1);
+$bauhaus-blue: hsla(225, 100%, 55%, 1);
+$bauhaus-white: hsla(0, 0%, 97%, 1);
+$bauhaus-bright-yellow: hsla(51, 100%, 50%, 1);
+$bauhaus-deep-cobalt: hsla(220, 100%, 30%, 1);
+$bauhaus-warm-orange: hsla(25, 97%, 46%, 1);
+
+/* SCSS RGB */
+$bauhaus-black: rgba(13, 13, 13, 1);
+$bauhaus-charcoal: rgba(46, 46, 46, 1);
+$bauhaus-warm-gray: rgba(122, 115, 105, 1);
+$bauhaus-red: rgba(214, 40, 40, 1);
+$bauhaus-yellow: rgba(245, 200, 0, 1);
+$bauhaus-blue: rgba(26, 83, 255, 1);
+$bauhaus-white: rgba(247, 247, 247, 1);
+$bauhaus-bright-yellow: rgba(255, 215, 0, 1);
+$bauhaus-deep-cobalt: rgba(0, 51, 153, 1);
+$bauhaus-warm-orange: rgba(232, 93, 4, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0d0d0dff, #2e2e2eff, #7a7369ff, #d62828ff, #f5c800ff, #1a53ffff, #f7f7f7ff, #ffd700ff, #003399ff, #e85d04ff);
+$gradient-right: linear-gradient(90deg, #0d0d0dff, #2e2e2eff, #7a7369ff, #d62828ff, #f5c800ff, #1a53ffff, #f7f7f7ff, #ffd700ff, #003399ff, #e85d04ff);
+$gradient-bottom: linear-gradient(180deg, #0d0d0dff, #2e2e2eff, #7a7369ff, #d62828ff, #f5c800ff, #1a53ffff, #f7f7f7ff, #ffd700ff, #003399ff, #e85d04ff);
+$gradient-left: linear-gradient(270deg, #0d0d0dff, #2e2e2eff, #7a7369ff, #d62828ff, #f5c800ff, #1a53ffff, #f7f7f7ff, #ffd700ff, #003399ff, #e85d04ff);
+$gradient-top-right: linear-gradient(45deg, #0d0d0dff, #2e2e2eff, #7a7369ff, #d62828ff, #f5c800ff, #1a53ffff, #f7f7f7ff, #ffd700ff, #003399ff, #e85d04ff);
+$gradient-bottom-right: linear-gradient(135deg, #0d0d0dff, #2e2e2eff, #7a7369ff, #d62828ff, #f5c800ff, #1a53ffff, #f7f7f7ff, #ffd700ff, #003399ff, #e85d04ff);
+$gradient-top-left: linear-gradient(225deg, #0d0d0dff, #2e2e2eff, #7a7369ff, #d62828ff, #f5c800ff, #1a53ffff, #f7f7f7ff, #ffd700ff, #003399ff, #e85d04ff);
+$gradient-bottom-left: linear-gradient(315deg, #0d0d0dff, #2e2e2eff, #7a7369ff, #d62828ff, #f5c800ff, #1a53ffff, #f7f7f7ff, #ffd700ff, #003399ff, #e85d04ff);
+$gradient-radial: radial-gradient(#0d0d0dff, #2e2e2eff, #7a7369ff, #d62828ff, #f5c800ff, #1a53ffff, #f7f7f7ff, #ffd700ff, #003399ff, #e85d04ff);
+
+/* SCSS Map */
+$bauhaus-primary-map: (
+    "bauhaus-black": #0d0d0dff,
+    "bauhaus-charcoal": #2e2e2eff,
+    "bauhaus-warm-gray": #7a7369ff,
+    "bauhaus-red": #d62828ff,
+    "bauhaus-yellow": #f5c800ff,
+    "bauhaus-blue": #1a53ffff,
+    "bauhaus-white": #f7f7f7ff,
+    "bauhaus-bright-yellow": #ffd700ff,
+    "bauhaus-deep-cobalt": #003399ff,
+    "bauhaus-warm-orange": #e85d04ff,
+);

@@ -1,0 +1,113 @@
+/*---
+id: wes-anderson
+name: Wes Anderson
+author: JaZeR-444
+version: 1.0.0
+category: Cinematic & Film-Inspired
+count: 10
+description: A precisely symmetrical pastel storybook palette of dusty roses, warm salmons, powder blues, and warm creams inspired by Wes Anderson's meticulous cinematography.
+tags:
+  mood:
+  - whimsical
+  - nostalgic
+  - soft
+  aesthetic:
+  - Pastel
+  - Storybook
+  - Wes Anderson
+intent: A whimsical 10-color palette designed for boutique branding, lifestyle apps, and editorial work with a charming, handcrafted aesthetic.
+suggested_use:
+- Boutique hospitality and lifestyle branding
+- Children's book and editorial illustration
+- Charming e-commerce and product UI
+url: https://coolors.co/e8b4b8-e8a090-f5dfa0-b8d8c8-aecde8-c8b8e0-f5ead0-d4b896-8b6f5e-f8f4ee
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--dusty-rose: #e8b4b8ff;
+--warm-salmon: #e8a090ff;
+--pastel-yellow: #f5dfa0ff;
+--mint-green: #b8d8c8ff;
+--powder-blue: #aecde8ff;
+--lavender: #c8b8e0ff;
+--warm-cream: #f5ead0ff;
+--sand: #d4b896ff;
+--warm-brown: #8b6f5eff;
+--film-off-white: #f8f4eeff;
+
+/* CSS HSL */
+--dusty-rose: hsla(355, 46%, 80%, 1);
+--warm-salmon: hsla(10, 62%, 74%, 1);
+--pastel-yellow: hsla(44, 82%, 80%, 1);
+--mint-green: hsla(151, 30%, 78%, 1);
+--powder-blue: hsla(208, 57%, 79%, 1);
+--lavender: hsla(270, 37%, 80%, 1);
+--warm-cream: hsla(40, 74%, 89%, 1);
+--sand: hsla(32, 43%, 71%, 1);
+--warm-brown: hsla(23, 21%, 45%, 1);
+--film-off-white: hsla(40, 50%, 96%, 1);
+}
+
+/* SCSS HEX */
+$dusty-rose: #e8b4b8ff;
+$warm-salmon: #e8a090ff;
+$pastel-yellow: #f5dfa0ff;
+$mint-green: #b8d8c8ff;
+$powder-blue: #aecde8ff;
+$lavender: #c8b8e0ff;
+$warm-cream: #f5ead0ff;
+$sand: #d4b896ff;
+$warm-brown: #8b6f5eff;
+$film-off-white: #f8f4eeff;
+
+/* SCSS HSL */
+$dusty-rose: hsla(355, 46%, 80%, 1);
+$warm-salmon: hsla(10, 62%, 74%, 1);
+$pastel-yellow: hsla(44, 82%, 80%, 1);
+$mint-green: hsla(151, 30%, 78%, 1);
+$powder-blue: hsla(208, 57%, 79%, 1);
+$lavender: hsla(270, 37%, 80%, 1);
+$warm-cream: hsla(40, 74%, 89%, 1);
+$sand: hsla(32, 43%, 71%, 1);
+$warm-brown: hsla(23, 21%, 45%, 1);
+$film-off-white: hsla(40, 50%, 96%, 1);
+
+/* SCSS RGB */
+$dusty-rose: rgba(232, 180, 184, 1);
+$warm-salmon: rgba(232, 160, 144, 1);
+$pastel-yellow: rgba(245, 223, 160, 1);
+$mint-green: rgba(184, 216, 200, 1);
+$powder-blue: rgba(174, 205, 232, 1);
+$lavender: rgba(200, 184, 224, 1);
+$warm-cream: rgba(245, 234, 208, 1);
+$sand: rgba(212, 184, 150, 1);
+$warm-brown: rgba(139, 111, 94, 1);
+$film-off-white: rgba(248, 244, 238, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #e8b4b8ff, #e8a090ff, #f5dfa0ff, #b8d8c8ff, #aecde8ff, #c8b8e0ff, #f5ead0ff, #d4b896ff, #8b6f5eff, #f8f4eeff);
+$gradient-right: linear-gradient(90deg, #e8b4b8ff, #e8a090ff, #f5dfa0ff, #b8d8c8ff, #aecde8ff, #c8b8e0ff, #f5ead0ff, #d4b896ff, #8b6f5eff, #f8f4eeff);
+$gradient-bottom: linear-gradient(180deg, #e8b4b8ff, #e8a090ff, #f5dfa0ff, #b8d8c8ff, #aecde8ff, #c8b8e0ff, #f5ead0ff, #d4b896ff, #8b6f5eff, #f8f4eeff);
+$gradient-left: linear-gradient(270deg, #e8b4b8ff, #e8a090ff, #f5dfa0ff, #b8d8c8ff, #aecde8ff, #c8b8e0ff, #f5ead0ff, #d4b896ff, #8b6f5eff, #f8f4eeff);
+$gradient-top-right: linear-gradient(45deg, #e8b4b8ff, #e8a090ff, #f5dfa0ff, #b8d8c8ff, #aecde8ff, #c8b8e0ff, #f5ead0ff, #d4b896ff, #8b6f5eff, #f8f4eeff);
+$gradient-bottom-right: linear-gradient(135deg, #e8b4b8ff, #e8a090ff, #f5dfa0ff, #b8d8c8ff, #aecde8ff, #c8b8e0ff, #f5ead0ff, #d4b896ff, #8b6f5eff, #f8f4eeff);
+$gradient-top-left: linear-gradient(225deg, #e8b4b8ff, #e8a090ff, #f5dfa0ff, #b8d8c8ff, #aecde8ff, #c8b8e0ff, #f5ead0ff, #d4b896ff, #8b6f5eff, #f8f4eeff);
+$gradient-bottom-left: linear-gradient(315deg, #e8b4b8ff, #e8a090ff, #f5dfa0ff, #b8d8c8ff, #aecde8ff, #c8b8e0ff, #f5ead0ff, #d4b896ff, #8b6f5eff, #f8f4eeff);
+$gradient-radial: radial-gradient(#e8b4b8ff, #e8a090ff, #f5dfa0ff, #b8d8c8ff, #aecde8ff, #c8b8e0ff, #f5ead0ff, #d4b896ff, #8b6f5eff, #f8f4eeff);
+
+/* SCSS Map */
+$wes-anderson-map: (
+    "dusty-rose": #e8b4b8ff,
+    "warm-salmon": #e8a090ff,
+    "pastel-yellow": #f5dfa0ff,
+    "mint-green": #b8d8c8ff,
+    "powder-blue": #aecde8ff,
+    "lavender": #c8b8e0ff,
+    "warm-cream": #f5ead0ff,
+    "sand": #d4b896ff,
+    "warm-brown": #8b6f5eff,
+    "film-off-white": #f8f4eeff,
+);

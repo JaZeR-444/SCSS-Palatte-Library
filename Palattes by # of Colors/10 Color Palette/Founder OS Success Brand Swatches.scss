@@ -1,0 +1,110 @@
+/*---
+id: founder-os-success-brand-swatches
+name: Founder OS Success Brand Swatches
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 10
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - brand-scale
+  mood:
+  - tonal
+  - semantic
+  aesthetic:
+  - UI
+  - Web Design
+intent: Foundational 10-step tonal scale for Success (Emerald/Green). Used for positive trends, success states, and confirmations.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--brand-success-50-wash: #ecfdf5ff;
+--brand-success-100-subtle: #d1fae5ff;
+--brand-success-200-light: #a7f3d0ff;
+--brand-success-300-muted: #6ee7b7ff;
+--brand-success-400-base: #34d399ff;
+--brand-success-500-emphasis: #10b981ff;
+--brand-success-600-strong: #059669ff;
+--brand-success-700-deep: #047857ff;
+--brand-success-800-dark: #065f46ff;
+--brand-success-900-black: #064e3bff;
+
+/* CSS HSL */
+--brand-success-50-wash: hsla(152, 81%, 96%, 1);
+--brand-success-100-subtle: hsla(149, 80%, 90%, 1);
+--brand-success-200-light: hsla(152, 76%, 80%, 1);
+--brand-success-300-muted: hsla(156, 72%, 67%, 1);
+--brand-success-400-base: hsla(158, 64%, 52%, 1);
+--brand-success-500-emphasis: hsla(160, 84%, 39%, 1);
+--brand-success-600-strong: hsla(161, 94%, 30%, 1);
+--brand-success-700-deep: hsla(163, 94%, 24%, 1);
+--brand-success-800-dark: hsla(163, 88%, 20%, 1);
+--brand-success-900-black: hsla(164, 86%, 16%, 1);
+}
+
+/* SCSS HEX */
+$brand-success-50-wash: #ecfdf5ff;
+$brand-success-100-subtle: #d1fae5ff;
+$brand-success-200-light: #a7f3d0ff;
+$brand-success-300-muted: #6ee7b7ff;
+$brand-success-400-base: #34d399ff;
+$brand-success-500-emphasis: #10b981ff;
+$brand-success-600-strong: #059669ff;
+$brand-success-700-deep: #047857ff;
+$brand-success-800-dark: #065f46ff;
+$brand-success-900-black: #064e3bff;
+
+/* SCSS HSL */
+$brand-success-50-wash: hsla(152, 81%, 96%, 1);
+$brand-success-100-subtle: hsla(149, 80%, 90%, 1);
+$brand-success-200-light: hsla(152, 76%, 80%, 1);
+$brand-success-300-muted: hsla(156, 72%, 67%, 1);
+$brand-success-400-base: hsla(158, 64%, 52%, 1);
+$brand-success-500-emphasis: hsla(160, 84%, 39%, 1);
+$brand-success-600-strong: hsla(161, 94%, 30%, 1);
+$brand-success-700-deep: hsla(163, 94%, 24%, 1);
+$brand-success-800-dark: hsla(163, 88%, 20%, 1);
+$brand-success-900-black: hsla(164, 86%, 16%, 1);
+
+/* SCSS RGB */
+$brand-success-50-wash: rgba(236, 253, 245, 1);
+$brand-success-100-subtle: rgba(209, 250, 229, 1);
+$brand-success-200-light: rgba(167, 243, 208, 1);
+$brand-success-300-muted: rgba(110, 231, 183, 1);
+$brand-success-400-base: rgba(52, 211, 153, 1);
+$brand-success-500-emphasis: rgba(16, 185, 129, 1);
+$brand-success-600-strong: rgba(5, 150, 105, 1);
+$brand-success-700-deep: rgba(4, 120, 87, 1);
+$brand-success-800-dark: rgba(6, 95, 70, 1);
+$brand-success-900-black: rgba(6, 78, 59, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #ecfdf5ff, #d1fae5ff, #a7f3d0ff, #6ee7b7ff, #34d399ff, #10b981ff, #059669ff, #047857ff, #065f46ff, #064e3bff);
+$gradient-right: linear-gradient(90deg, #ecfdf5ff, #d1fae5ff, #a7f3d0ff, #6ee7b7ff, #34d399ff, #10b981ff, #059669ff, #047857ff, #065f46ff, #064e3bff);
+$gradient-bottom: linear-gradient(180deg, #ecfdf5ff, #d1fae5ff, #a7f3d0ff, #6ee7b7ff, #34d399ff, #10b981ff, #059669ff, #047857ff, #065f46ff, #064e3bff);
+$gradient-left: linear-gradient(270deg, #ecfdf5ff, #d1fae5ff, #a7f3d0ff, #6ee7b7ff, #34d399ff, #10b981ff, #059669ff, #047857ff, #065f46ff, #064e3bff);
+$gradient-top-right: linear-gradient(45deg, #ecfdf5ff, #d1fae5ff, #a7f3d0ff, #6ee7b7ff, #34d399ff, #10b981ff, #059669ff, #047857ff, #065f46ff, #064e3bff);
+$gradient-bottom-right: linear-gradient(135deg, #ecfdf5ff, #d1fae5ff, #a7f3d0ff, #6ee7b7ff, #34d399ff, #10b981ff, #059669ff, #047857ff, #065f46ff, #064e3bff);
+$gradient-top-left: linear-gradient(225deg, #ecfdf5ff, #d1fae5ff, #a7f3d0ff, #6ee7b7ff, #34d399ff, #10b981ff, #059669ff, #047857ff, #065f46ff, #064e3bff);
+$gradient-bottom-left: linear-gradient(315deg, #ecfdf5ff, #d1fae5ff, #a7f3d0ff, #6ee7b7ff, #34d399ff, #10b981ff, #059669ff, #047857ff, #065f46ff, #064e3bff);
+$gradient-radial: radial-gradient(#ecfdf5ff, #d1fae5ff, #a7f3d0ff, #6ee7b7ff, #34d399ff, #10b981ff, #059669ff, #047857ff, #065f46ff, #064e3bff);
+
+/* SCSS Map */
+$founder-os-success-brand-swatches-map: (
+    "brand-success-50-wash": #ecfdf5ff,
+    "brand-success-100-subtle": #d1fae5ff,
+    "brand-success-200-light": #a7f3d0ff,
+    "brand-success-300-muted": #6ee7b7ff,
+    "brand-success-400-base": #34d399ff,
+    "brand-success-500-emphasis": #10b981ff,
+    "brand-success-600-strong": #059669ff,
+    "brand-success-700-deep": #047857ff,
+    "brand-success-800-dark": #065f46ff,
+    "brand-success-900-black": #064e3bff
+);

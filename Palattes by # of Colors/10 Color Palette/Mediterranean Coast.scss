@@ -1,0 +1,113 @@
+/*---
+id: mediterranean-coast
+name: Mediterranean Coast
+author: JaZeR-444
+version: 1.0.0
+category: Geographic & Architectural
+count: 10
+description: A Greek island palette sweeping from deep sea navy and Aegean ocean blue through brilliant turquoise and sea foam to bougainvillea pink, terracotta, and sun-bleached brilliant white.
+tags:
+  mood:
+  - serene
+  - luminous
+  - idyllic
+  aesthetic:
+  - Mediterranean
+  - Greek Island
+  - Coastal
+intent: A luminous 10-color palette designed for travel platforms, coastal lifestyle brands, and summer resort identity systems.
+suggested_use:
+- Travel and tourism platforms
+- Coastal hospitality and resort branding
+- Summer fashion and lifestyle editorial
+url: https://coolors.co/0a2342-1b5299-2196f3-00bcd4-80deea-bbdefb-f48fb1-c1694f-f5e6c8-ffffff
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--deep-sea-navy: #0a2342ff;
+--aegean-ocean: #1b5299ff;
+--bright-sky-blue: #2196f3ff;
+--aegean-turquoise: #00bcd4ff;
+--sea-foam: #80deeaff;
+--whitewash-blue: #bbdefbff;
+--bougainvillea-pink: #f48fb1ff;
+--sun-terracotta: #c1694fff;
+--island-sand: #f5e6c8ff;
+--brilliant-white: #ffffffff;
+
+/* CSS HSL */
+--deep-sea-navy: hsla(213, 69%, 15%, 1);
+--aegean-ocean: hsla(211, 70%, 35%, 1);
+--bright-sky-blue: hsla(207, 88%, 54%, 1);
+--aegean-turquoise: hsla(187, 100%, 42%, 1);
+--sea-foam: hsla(187, 56%, 69%, 1);
+--whitewash-blue: hsla(207, 89%, 85%, 1);
+--bougainvillea-pink: hsla(340, 83%, 76%, 1);
+--sun-terracotta: hsla(14, 50%, 53%, 1);
+--island-sand: hsla(38, 75%, 87%, 1);
+--brilliant-white: hsla(0, 0%, 100%, 1);
+}
+
+/* SCSS HEX */
+$deep-sea-navy: #0a2342ff;
+$aegean-ocean: #1b5299ff;
+$bright-sky-blue: #2196f3ff;
+$aegean-turquoise: #00bcd4ff;
+$sea-foam: #80deeaff;
+$whitewash-blue: #bbdefbff;
+$bougainvillea-pink: #f48fb1ff;
+$sun-terracotta: #c1694fff;
+$island-sand: #f5e6c8ff;
+$brilliant-white: #ffffffff;
+
+/* SCSS HSL */
+$deep-sea-navy: hsla(213, 69%, 15%, 1);
+$aegean-ocean: hsla(211, 70%, 35%, 1);
+$bright-sky-blue: hsla(207, 88%, 54%, 1);
+$aegean-turquoise: hsla(187, 100%, 42%, 1);
+$sea-foam: hsla(187, 56%, 69%, 1);
+$whitewash-blue: hsla(207, 89%, 85%, 1);
+$bougainvillea-pink: hsla(340, 83%, 76%, 1);
+$sun-terracotta: hsla(14, 50%, 53%, 1);
+$island-sand: hsla(38, 75%, 87%, 1);
+$brilliant-white: hsla(0, 0%, 100%, 1);
+
+/* SCSS RGB */
+$deep-sea-navy: rgba(10, 35, 66, 1);
+$aegean-ocean: rgba(27, 82, 153, 1);
+$bright-sky-blue: rgba(33, 150, 243, 1);
+$aegean-turquoise: rgba(0, 188, 212, 1);
+$sea-foam: rgba(128, 222, 234, 1);
+$whitewash-blue: rgba(187, 222, 251, 1);
+$bougainvillea-pink: rgba(244, 143, 177, 1);
+$sun-terracotta: rgba(193, 105, 79, 1);
+$island-sand: rgba(245, 230, 200, 1);
+$brilliant-white: rgba(255, 255, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0a2342ff, #1b5299ff, #2196f3ff, #00bcd4ff, #80deeaff, #bbdefbff, #f48fb1ff, #c1694fff, #f5e6c8ff, #ffffffff);
+$gradient-right: linear-gradient(90deg, #0a2342ff, #1b5299ff, #2196f3ff, #00bcd4ff, #80deeaff, #bbdefbff, #f48fb1ff, #c1694fff, #f5e6c8ff, #ffffffff);
+$gradient-bottom: linear-gradient(180deg, #0a2342ff, #1b5299ff, #2196f3ff, #00bcd4ff, #80deeaff, #bbdefbff, #f48fb1ff, #c1694fff, #f5e6c8ff, #ffffffff);
+$gradient-left: linear-gradient(270deg, #0a2342ff, #1b5299ff, #2196f3ff, #00bcd4ff, #80deeaff, #bbdefbff, #f48fb1ff, #c1694fff, #f5e6c8ff, #ffffffff);
+$gradient-top-right: linear-gradient(45deg, #0a2342ff, #1b5299ff, #2196f3ff, #00bcd4ff, #80deeaff, #bbdefbff, #f48fb1ff, #c1694fff, #f5e6c8ff, #ffffffff);
+$gradient-bottom-right: linear-gradient(135deg, #0a2342ff, #1b5299ff, #2196f3ff, #00bcd4ff, #80deeaff, #bbdefbff, #f48fb1ff, #c1694fff, #f5e6c8ff, #ffffffff);
+$gradient-top-left: linear-gradient(225deg, #0a2342ff, #1b5299ff, #2196f3ff, #00bcd4ff, #80deeaff, #bbdefbff, #f48fb1ff, #c1694fff, #f5e6c8ff, #ffffffff);
+$gradient-bottom-left: linear-gradient(315deg, #0a2342ff, #1b5299ff, #2196f3ff, #00bcd4ff, #80deeaff, #bbdefbff, #f48fb1ff, #c1694fff, #f5e6c8ff, #ffffffff);
+$gradient-radial: radial-gradient(#0a2342ff, #1b5299ff, #2196f3ff, #00bcd4ff, #80deeaff, #bbdefbff, #f48fb1ff, #c1694fff, #f5e6c8ff, #ffffffff);
+
+/* SCSS Map */
+$mediterranean-coast-map: (
+    "deep-sea-navy": #0a2342ff,
+    "aegean-ocean": #1b5299ff,
+    "bright-sky-blue": #2196f3ff,
+    "aegean-turquoise": #00bcd4ff,
+    "sea-foam": #80deeaff,
+    "whitewash-blue": #bbdefbff,
+    "bougainvillea-pink": #f48fb1ff,
+    "sun-terracotta": #c1694fff,
+    "island-sand": #f5e6c8ff,
+    "brilliant-white": #ffffffff,
+);

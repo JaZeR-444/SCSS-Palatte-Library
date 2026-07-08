@@ -1,0 +1,109 @@
+/*---
+id: founder-os-data-viz-sequential
+name: Founder OS Data Viz Sequential
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 10
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - data
+  mood:
+  - functional
+  aesthetic:
+  - UI
+  - Web Design
+intent: A robust 10-step sequential scale for heatmaps, volume charts, and density mapping using the Primary Brand scale.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--sequential-10: #e5fcffff;
+--sequential-20: #b3f5ffff;
+--sequential-30: #80efffff;
+--sequential-40: #4de9ffff;
+--sequential-50: #1ae3ffff;
+--sequential-60: #00f0ffff;
+--sequential-70: #00c3ffff;
+--sequential-80: #0099ccff;
+--sequential-90: #006699ff;
+--sequential-100: #003366ff;
+
+/* CSS HSL */
+--sequential-10: hsla(187, 100%, 95%, 1);
+--sequential-20: hsla(188, 100%, 85%, 1);
+--sequential-30: hsla(188, 100%, 75%, 1);
+--sequential-40: hsla(187, 100%, 65%, 1);
+--sequential-50: hsla(187, 100%, 55%, 1);
+--sequential-60: hsla(184, 100%, 50%, 1);
+--sequential-70: hsla(194, 100%, 50%, 1);
+--sequential-80: hsla(195, 100%, 40%, 1);
+--sequential-90: hsla(200, 100%, 30%, 1);
+--sequential-100: hsla(210, 100%, 20%, 1);
+}
+
+/* SCSS HEX */
+$sequential-10: #e5fcffff;
+$sequential-20: #b3f5ffff;
+$sequential-30: #80efffff;
+$sequential-40: #4de9ffff;
+$sequential-50: #1ae3ffff;
+$sequential-60: #00f0ffff;
+$sequential-70: #00c3ffff;
+$sequential-80: #0099ccff;
+$sequential-90: #006699ff;
+$sequential-100: #003366ff;
+
+/* SCSS HSL */
+$sequential-10: hsla(187, 100%, 95%, 1);
+$sequential-20: hsla(188, 100%, 85%, 1);
+$sequential-30: hsla(188, 100%, 75%, 1);
+$sequential-40: hsla(187, 100%, 65%, 1);
+$sequential-50: hsla(187, 100%, 55%, 1);
+$sequential-60: hsla(184, 100%, 50%, 1);
+$sequential-70: hsla(194, 100%, 50%, 1);
+$sequential-80: hsla(195, 100%, 40%, 1);
+$sequential-90: hsla(200, 100%, 30%, 1);
+$sequential-100: hsla(210, 100%, 20%, 1);
+
+/* SCSS RGB */
+$sequential-10: rgba(229, 252, 255, 1);
+$sequential-20: rgba(179, 245, 255, 1);
+$sequential-30: rgba(128, 239, 255, 1);
+$sequential-40: rgba(77, 233, 255, 1);
+$sequential-50: rgba(26, 227, 255, 1);
+$sequential-60: rgba(0, 240, 255, 1);
+$sequential-70: rgba(0, 195, 255, 1);
+$sequential-80: rgba(0, 153, 204, 1);
+$sequential-90: rgba(0, 102, 153, 1);
+$sequential-100: rgba(0, 51, 102, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #e5fcffff, #b3f5ffff, #80efffff, #4de9ffff, #1ae3ffff, #00f0ffff, #00c3ffff, #0099ccff, #006699ff, #003366ff);
+$gradient-right: linear-gradient(90deg, #e5fcffff, #b3f5ffff, #80efffff, #4de9ffff, #1ae3ffff, #00f0ffff, #00c3ffff, #0099ccff, #006699ff, #003366ff);
+$gradient-bottom: linear-gradient(180deg, #e5fcffff, #b3f5ffff, #80efffff, #4de9ffff, #1ae3ffff, #00f0ffff, #00c3ffff, #0099ccff, #006699ff, #003366ff);
+$gradient-left: linear-gradient(270deg, #e5fcffff, #b3f5ffff, #80efffff, #4de9ffff, #1ae3ffff, #00f0ffff, #00c3ffff, #0099ccff, #006699ff, #003366ff);
+$gradient-top-right: linear-gradient(45deg, #e5fcffff, #b3f5ffff, #80efffff, #4de9ffff, #1ae3ffff, #00f0ffff, #00c3ffff, #0099ccff, #006699ff, #003366ff);
+$gradient-bottom-right: linear-gradient(135deg, #e5fcffff, #b3f5ffff, #80efffff, #4de9ffff, #1ae3ffff, #00f0ffff, #00c3ffff, #0099ccff, #006699ff, #003366ff);
+$gradient-top-left: linear-gradient(225deg, #e5fcffff, #b3f5ffff, #80efffff, #4de9ffff, #1ae3ffff, #00f0ffff, #00c3ffff, #0099ccff, #006699ff, #003366ff);
+$gradient-bottom-left: linear-gradient(315deg, #e5fcffff, #b3f5ffff, #80efffff, #4de9ffff, #1ae3ffff, #00f0ffff, #00c3ffff, #0099ccff, #006699ff, #003366ff);
+$gradient-radial: radial-gradient(#e5fcffff, #b3f5ffff, #80efffff, #4de9ffff, #1ae3ffff, #00f0ffff, #00c3ffff, #0099ccff, #006699ff, #003366ff);
+
+/* SCSS Map */
+$founder-os-data-viz-sequential-map: (
+    "sequential-10": #e5fcffff,
+    "sequential-20": #b3f5ffff,
+    "sequential-30": #80efffff,
+    "sequential-40": #4de9ffff,
+    "sequential-50": #1ae3ffff,
+    "sequential-60": #00f0ffff,
+    "sequential-70": #00c3ffff,
+    "sequential-80": #0099ccff,
+    "sequential-90": #006699ff,
+    "sequential-100": #003366ff
+);

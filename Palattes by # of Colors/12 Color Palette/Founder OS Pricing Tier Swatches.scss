@@ -1,0 +1,122 @@
+/*---
+id: founder-os-pricing-tier-swatches
+name: Founder OS Pricing Tier Swatches
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 12
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - component-states
+  mood:
+  - semantic
+  - functional
+  aesthetic:
+  - UI
+  - Web Design
+intent: Pricing tier color identity perfectly mapped to foundational scales (Free=Neutral, Pro=Primary, Enterprise=Accent, Lifetime=Secondary).
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--tier-free-bg: #f8fafcff;
+--tier-free-border: #94a3b8ff;
+--tier-free-text: #0f172aff;
+--tier-pro-bg: #e5fcffff;
+--tier-pro-border: #1ae3ffff;
+--tier-pro-text: #003366ff;
+--tier-enterprise-bg: #fffbebff;
+--tier-enterprise-border: #fbbf24ff;
+--tier-enterprise-text: #78350fff;
+--tier-lifetime-bg: #fff0f6ff;
+--tier-lifetime-border: #ff4da8ff;
+--tier-lifetime-text: #60001eff;
+
+/* CSS HSL */
+--tier-free-bg: hsla(210, 40%, 98%, 1);
+--tier-free-border: hsla(215, 20%, 65%, 1);
+--tier-free-text: hsla(222, 47%, 11%, 1);
+--tier-pro-bg: hsla(187, 100%, 95%, 1);
+--tier-pro-border: hsla(187, 100%, 55%, 1);
+--tier-pro-text: hsla(210, 100%, 20%, 1);
+--tier-enterprise-bg: hsla(48, 100%, 96%, 1);
+--tier-enterprise-border: hsla(43, 96%, 56%, 1);
+--tier-enterprise-text: hsla(22, 78%, 26%, 1);
+--tier-lifetime-bg: hsla(336, 100%, 97%, 1);
+--tier-lifetime-border: hsla(329, 100%, 65%, 1);
+--tier-lifetime-text: hsla(341, 100%, 19%, 1);
+}
+
+/* SCSS HEX */
+$tier-free-bg: #f8fafcff;
+$tier-free-border: #94a3b8ff;
+$tier-free-text: #0f172aff;
+$tier-pro-bg: #e5fcffff;
+$tier-pro-border: #1ae3ffff;
+$tier-pro-text: #003366ff;
+$tier-enterprise-bg: #fffbebff;
+$tier-enterprise-border: #fbbf24ff;
+$tier-enterprise-text: #78350fff;
+$tier-lifetime-bg: #fff0f6ff;
+$tier-lifetime-border: #ff4da8ff;
+$tier-lifetime-text: #60001eff;
+
+/* SCSS HSL */
+$tier-free-bg: hsla(210, 40%, 98%, 1);
+$tier-free-border: hsla(215, 20%, 65%, 1);
+$tier-free-text: hsla(222, 47%, 11%, 1);
+$tier-pro-bg: hsla(187, 100%, 95%, 1);
+$tier-pro-border: hsla(187, 100%, 55%, 1);
+$tier-pro-text: hsla(210, 100%, 20%, 1);
+$tier-enterprise-bg: hsla(48, 100%, 96%, 1);
+$tier-enterprise-border: hsla(43, 96%, 56%, 1);
+$tier-enterprise-text: hsla(22, 78%, 26%, 1);
+$tier-lifetime-bg: hsla(336, 100%, 97%, 1);
+$tier-lifetime-border: hsla(329, 100%, 65%, 1);
+$tier-lifetime-text: hsla(341, 100%, 19%, 1);
+
+/* SCSS RGB */
+$tier-free-bg: rgba(248, 250, 252, 1);
+$tier-free-border: rgba(148, 163, 184, 1);
+$tier-free-text: rgba(15, 23, 42, 1);
+$tier-pro-bg: rgba(229, 252, 255, 1);
+$tier-pro-border: rgba(26, 227, 255, 1);
+$tier-pro-text: rgba(0, 51, 102, 1);
+$tier-enterprise-bg: rgba(255, 251, 235, 1);
+$tier-enterprise-border: rgba(251, 191, 36, 1);
+$tier-enterprise-text: rgba(120, 53, 15, 1);
+$tier-lifetime-bg: rgba(255, 240, 246, 1);
+$tier-lifetime-border: rgba(255, 77, 168, 1);
+$tier-lifetime-text: rgba(96, 0, 30, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #f8fafcff, #94a3b8ff, #0f172aff, #e5fcffff, #1ae3ffff, #003366ff, #fffbebff, #fbbf24ff, #78350fff, #fff0f6ff, #ff4da8ff, #60001eff);
+$gradient-right: linear-gradient(90deg, #f8fafcff, #94a3b8ff, #0f172aff, #e5fcffff, #1ae3ffff, #003366ff, #fffbebff, #fbbf24ff, #78350fff, #fff0f6ff, #ff4da8ff, #60001eff);
+$gradient-bottom: linear-gradient(180deg, #f8fafcff, #94a3b8ff, #0f172aff, #e5fcffff, #1ae3ffff, #003366ff, #fffbebff, #fbbf24ff, #78350fff, #fff0f6ff, #ff4da8ff, #60001eff);
+$gradient-left: linear-gradient(270deg, #f8fafcff, #94a3b8ff, #0f172aff, #e5fcffff, #1ae3ffff, #003366ff, #fffbebff, #fbbf24ff, #78350fff, #fff0f6ff, #ff4da8ff, #60001eff);
+$gradient-top-right: linear-gradient(45deg, #f8fafcff, #94a3b8ff, #0f172aff, #e5fcffff, #1ae3ffff, #003366ff, #fffbebff, #fbbf24ff, #78350fff, #fff0f6ff, #ff4da8ff, #60001eff);
+$gradient-bottom-right: linear-gradient(135deg, #f8fafcff, #94a3b8ff, #0f172aff, #e5fcffff, #1ae3ffff, #003366ff, #fffbebff, #fbbf24ff, #78350fff, #fff0f6ff, #ff4da8ff, #60001eff);
+$gradient-top-left: linear-gradient(225deg, #f8fafcff, #94a3b8ff, #0f172aff, #e5fcffff, #1ae3ffff, #003366ff, #fffbebff, #fbbf24ff, #78350fff, #fff0f6ff, #ff4da8ff, #60001eff);
+$gradient-bottom-left: linear-gradient(315deg, #f8fafcff, #94a3b8ff, #0f172aff, #e5fcffff, #1ae3ffff, #003366ff, #fffbebff, #fbbf24ff, #78350fff, #fff0f6ff, #ff4da8ff, #60001eff);
+$gradient-radial: radial-gradient(#f8fafcff, #94a3b8ff, #0f172aff, #e5fcffff, #1ae3ffff, #003366ff, #fffbebff, #fbbf24ff, #78350fff, #fff0f6ff, #ff4da8ff, #60001eff);
+
+/* SCSS Map */
+$founder-os-pricing-tier-swatches-map: (
+    "tier-free-bg": #f8fafcff,
+    "tier-free-border": #94a3b8ff,
+    "tier-free-text": #0f172aff,
+    "tier-pro-bg": #e5fcffff,
+    "tier-pro-border": #1ae3ffff,
+    "tier-pro-text": #003366ff,
+    "tier-enterprise-bg": #fffbebff,
+    "tier-enterprise-border": #fbbf24ff,
+    "tier-enterprise-text": #78350fff,
+    "tier-lifetime-bg": #fff0f6ff,
+    "tier-lifetime-border": #ff4da8ff,
+    "tier-lifetime-text": #60001eff
+);

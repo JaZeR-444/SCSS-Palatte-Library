@@ -1,0 +1,113 @@
+/*---
+id: urgency-signal
+name: Urgency Signal
+author: JaZeR-444
+version: 1.0.0
+category: Emotional & Psychological
+count: 10
+description: A psychologically calibrated urgency palette escalating from dark near-black backgrounds through deep alarm reds and vivid warning oranges to high-visibility caution yellows and crisp signal white.
+tags:
+  mood:
+  - urgent
+  - alarming
+  - high-energy
+  aesthetic:
+  - Alert System
+  - Safety
+  - Notification UI
+intent: A high-impact 10-color palette designed for alert systems, emergency UIs, notification badges, and call-to-action components that must command immediate attention.
+suggested_use:
+- Alert and notification systems
+- E-commerce urgency and scarcity UI
+- Safety and emergency communications
+url: https://coolors.co/0a0a0a-1a1a1a-6b6b6b-c0392b-e53935-ff5722-ff9800-ffc107-fff9c4-ffffff
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--void-black: #0a0a0aff;
+--dark-background: #1a1a1aff;
+--mid-gray: #6b6b6bff;
+--deep-alarm-red: #c0392bff;
+--vivid-red: #e53935ff;
+--bright-red-orange: #ff5722ff;
+--warning-orange: #ff9800ff;
+--alert-amber: #ffc107ff;
+--caution-yellow: #fff9c4ff;
+--signal-white: #ffffffff;
+
+/* CSS HSL */
+--void-black: hsla(0, 0%, 4%, 1);
+--dark-background: hsla(0, 0%, 10%, 1);
+--mid-gray: hsla(0, 0%, 42%, 1);
+--deep-alarm-red: hsla(5, 62%, 45%, 1);
+--vivid-red: hsla(1, 77%, 55%, 1);
+--bright-red-orange: hsla(14, 100%, 57%, 1);
+--warning-orange: hsla(36, 100%, 50%, 1);
+--alert-amber: hsla(45, 100%, 51%, 1);
+--caution-yellow: hsla(54, 100%, 88%, 1);
+--signal-white: hsla(0, 0%, 100%, 1);
+}
+
+/* SCSS HEX */
+$void-black: #0a0a0aff;
+$dark-background: #1a1a1aff;
+$mid-gray: #6b6b6bff;
+$deep-alarm-red: #c0392bff;
+$vivid-red: #e53935ff;
+$bright-red-orange: #ff5722ff;
+$warning-orange: #ff9800ff;
+$alert-amber: #ffc107ff;
+$caution-yellow: #fff9c4ff;
+$signal-white: #ffffffff;
+
+/* SCSS HSL */
+$void-black: hsla(0, 0%, 4%, 1);
+$dark-background: hsla(0, 0%, 10%, 1);
+$mid-gray: hsla(0, 0%, 42%, 1);
+$deep-alarm-red: hsla(5, 62%, 45%, 1);
+$vivid-red: hsla(1, 77%, 55%, 1);
+$bright-red-orange: hsla(14, 100%, 57%, 1);
+$warning-orange: hsla(36, 100%, 50%, 1);
+$alert-amber: hsla(45, 100%, 51%, 1);
+$caution-yellow: hsla(54, 100%, 88%, 1);
+$signal-white: hsla(0, 0%, 100%, 1);
+
+/* SCSS RGB */
+$void-black: rgba(10, 10, 10, 1);
+$dark-background: rgba(26, 26, 26, 1);
+$mid-gray: rgba(107, 107, 107, 1);
+$deep-alarm-red: rgba(192, 57, 43, 1);
+$vivid-red: rgba(229, 57, 53, 1);
+$bright-red-orange: rgba(255, 87, 34, 1);
+$warning-orange: rgba(255, 152, 0, 1);
+$alert-amber: rgba(255, 193, 7, 1);
+$caution-yellow: rgba(255, 249, 196, 1);
+$signal-white: rgba(255, 255, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0a0a0aff, #1a1a1aff, #6b6b6bff, #c0392bff, #e53935ff, #ff5722ff, #ff9800ff, #ffc107ff, #fff9c4ff, #ffffffff);
+$gradient-right: linear-gradient(90deg, #0a0a0aff, #1a1a1aff, #6b6b6bff, #c0392bff, #e53935ff, #ff5722ff, #ff9800ff, #ffc107ff, #fff9c4ff, #ffffffff);
+$gradient-bottom: linear-gradient(180deg, #0a0a0aff, #1a1a1aff, #6b6b6bff, #c0392bff, #e53935ff, #ff5722ff, #ff9800ff, #ffc107ff, #fff9c4ff, #ffffffff);
+$gradient-left: linear-gradient(270deg, #0a0a0aff, #1a1a1aff, #6b6b6bff, #c0392bff, #e53935ff, #ff5722ff, #ff9800ff, #ffc107ff, #fff9c4ff, #ffffffff);
+$gradient-top-right: linear-gradient(45deg, #0a0a0aff, #1a1a1aff, #6b6b6bff, #c0392bff, #e53935ff, #ff5722ff, #ff9800ff, #ffc107ff, #fff9c4ff, #ffffffff);
+$gradient-bottom-right: linear-gradient(135deg, #0a0a0aff, #1a1a1aff, #6b6b6bff, #c0392bff, #e53935ff, #ff5722ff, #ff9800ff, #ffc107ff, #fff9c4ff, #ffffffff);
+$gradient-top-left: linear-gradient(225deg, #0a0a0aff, #1a1a1aff, #6b6b6bff, #c0392bff, #e53935ff, #ff5722ff, #ff9800ff, #ffc107ff, #fff9c4ff, #ffffffff);
+$gradient-bottom-left: linear-gradient(315deg, #0a0a0aff, #1a1a1aff, #6b6b6bff, #c0392bff, #e53935ff, #ff5722ff, #ff9800ff, #ffc107ff, #fff9c4ff, #ffffffff);
+$gradient-radial: radial-gradient(#0a0a0aff, #1a1a1aff, #6b6b6bff, #c0392bff, #e53935ff, #ff5722ff, #ff9800ff, #ffc107ff, #fff9c4ff, #ffffffff);
+
+/* SCSS Map */
+$urgency-signal-map: (
+    "void-black": #0a0a0aff,
+    "dark-background": #1a1a1aff,
+    "mid-gray": #6b6b6bff,
+    "deep-alarm-red": #c0392bff,
+    "vivid-red": #e53935ff,
+    "bright-red-orange": #ff5722ff,
+    "warning-orange": #ff9800ff,
+    "alert-amber": #ffc107ff,
+    "caution-yellow": #fff9c4ff,
+    "signal-white": #ffffffff,
+);

@@ -1,0 +1,113 @@
+/*---
+id: polished-marble
+name: Polished Marble
+author: JaZeR-444
+version: 1.0.0
+category: Material & Stone
+count: 10
+description: A refined marble and stone palette spanning deep charcoal veining through luminous warm whites, evoking luxury surfaces, editorial design, and high-end architectural interiors.
+tags:
+  mood:
+  - luxurious
+  - refined
+  - timeless
+  aesthetic:
+  - Luxury
+  - Editorial
+  - Architectural
+intent: A material-inspired 10-color palette designed for luxury brand identities, editorial layouts, and high-end architectural interior presentations.
+suggested_use:
+- Luxury and premium brand systems
+- Editorial and editorial web layouts
+- Architectural visualization and interior design
+url: https://coolors.co/1c1c1e-3a3a3c-636366-8e8e93-aeaeb2-c7c7cc-d8d8dc-e8e4df-f5f0eb-fafafa
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--charcoal-vein: #1c1c1eff;
+--dark-obsidian: #3a3a3cff;
+--medium-graphite: #636366ff;
+--light-schist: #8e8e93ff;
+--warm-slate: #aeaeb2ff;
+--silver-marble: #c7c7ccff;
+--pearl-dust: #d8d8dcff;
+--warm-stone: #e8e4dfff;
+--cream-marble: #f5f0ebff;
+--alabaster: #fafafaff;
+
+/* CSS HSL */
+--charcoal-vein: hsla(240, 1%, 11%, 1);
+--dark-obsidian: hsla(240, 1%, 23%, 1);
+--medium-graphite: hsla(240, 2%, 39%, 1);
+--light-schist: hsla(240, 2%, 57%, 1);
+--warm-slate: hsla(240, 2%, 69%, 1);
+--silver-marble: hsla(240, 3%, 80%, 1);
+--pearl-dust: hsla(240, 3%, 86%, 1);
+--warm-stone: hsla(36, 9%, 89%, 1);
+--cream-marble: hsla(35, 27%, 94%, 1);
+--alabaster: hsla(0, 0%, 98%, 1);
+}
+
+/* SCSS HEX */
+$charcoal-vein: #1c1c1eff;
+$dark-obsidian: #3a3a3cff;
+$medium-graphite: #636366ff;
+$light-schist: #8e8e93ff;
+$warm-slate: #aeaeb2ff;
+$silver-marble: #c7c7ccff;
+$pearl-dust: #d8d8dcff;
+$warm-stone: #e8e4dfff;
+$cream-marble: #f5f0ebff;
+$alabaster: #fafafaff;
+
+/* SCSS HSL */
+$charcoal-vein: hsla(240, 1%, 11%, 1);
+$dark-obsidian: hsla(240, 1%, 23%, 1);
+$medium-graphite: hsla(240, 2%, 39%, 1);
+$light-schist: hsla(240, 2%, 57%, 1);
+$warm-slate: hsla(240, 2%, 69%, 1);
+$silver-marble: hsla(240, 3%, 80%, 1);
+$pearl-dust: hsla(240, 3%, 86%, 1);
+$warm-stone: hsla(36, 9%, 89%, 1);
+$cream-marble: hsla(35, 27%, 94%, 1);
+$alabaster: hsla(0, 0%, 98%, 1);
+
+/* SCSS RGB */
+$charcoal-vein: rgba(28, 28, 30, 1);
+$dark-obsidian: rgba(58, 58, 60, 1);
+$medium-graphite: rgba(99, 99, 102, 1);
+$light-schist: rgba(142, 142, 147, 1);
+$warm-slate: rgba(174, 174, 178, 1);
+$silver-marble: rgba(199, 199, 204, 1);
+$pearl-dust: rgba(216, 216, 220, 1);
+$warm-stone: rgba(232, 228, 223, 1);
+$cream-marble: rgba(245, 240, 235, 1);
+$alabaster: rgba(250, 250, 250, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1c1c1eff, #3a3a3cff, #636366ff, #8e8e93ff, #aeaeb2ff, #c7c7ccff, #d8d8dcff, #e8e4dfff, #f5f0ebff, #fafafaff);
+$gradient-right: linear-gradient(90deg, #1c1c1eff, #3a3a3cff, #636366ff, #8e8e93ff, #aeaeb2ff, #c7c7ccff, #d8d8dcff, #e8e4dfff, #f5f0ebff, #fafafaff);
+$gradient-bottom: linear-gradient(180deg, #1c1c1eff, #3a3a3cff, #636366ff, #8e8e93ff, #aeaeb2ff, #c7c7ccff, #d8d8dcff, #e8e4dfff, #f5f0ebff, #fafafaff);
+$gradient-left: linear-gradient(270deg, #1c1c1eff, #3a3a3cff, #636366ff, #8e8e93ff, #aeaeb2ff, #c7c7ccff, #d8d8dcff, #e8e4dfff, #f5f0ebff, #fafafaff);
+$gradient-top-right: linear-gradient(45deg, #1c1c1eff, #3a3a3cff, #636366ff, #8e8e93ff, #aeaeb2ff, #c7c7ccff, #d8d8dcff, #e8e4dfff, #f5f0ebff, #fafafaff);
+$gradient-bottom-right: linear-gradient(135deg, #1c1c1eff, #3a3a3cff, #636366ff, #8e8e93ff, #aeaeb2ff, #c7c7ccff, #d8d8dcff, #e8e4dfff, #f5f0ebff, #fafafaff);
+$gradient-top-left: linear-gradient(225deg, #1c1c1eff, #3a3a3cff, #636366ff, #8e8e93ff, #aeaeb2ff, #c7c7ccff, #d8d8dcff, #e8e4dfff, #f5f0ebff, #fafafaff);
+$gradient-bottom-left: linear-gradient(315deg, #1c1c1eff, #3a3a3cff, #636366ff, #8e8e93ff, #aeaeb2ff, #c7c7ccff, #d8d8dcff, #e8e4dfff, #f5f0ebff, #fafafaff);
+$gradient-radial: radial-gradient(#1c1c1eff, #3a3a3cff, #636366ff, #8e8e93ff, #aeaeb2ff, #c7c7ccff, #d8d8dcff, #e8e4dfff, #f5f0ebff, #fafafaff);
+
+/* SCSS Map */
+$polished-marble-map: (
+    "charcoal-vein": #1c1c1eff,
+    "dark-obsidian": #3a3a3cff,
+    "medium-graphite": #636366ff,
+    "light-schist": #8e8e93ff,
+    "warm-slate": #aeaeb2ff,
+    "silver-marble": #c7c7ccff,
+    "pearl-dust": #d8d8dcff,
+    "warm-stone": #e8e4dfff,
+    "cream-marble": #f5f0ebff,
+    "alabaster": #fafafaff,
+);

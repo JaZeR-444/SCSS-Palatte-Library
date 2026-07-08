@@ -1,0 +1,113 @@
+/*---
+id: tokyo-neon
+name: Tokyo Neon
+author: JaZeR-444
+version: 1.0.0
+category: Geographic & Architectural
+count: 10
+description: A contemporary Tokyo streetscape palette blending deep navy city shadows with electric neon pinks, cyans, and blues against warm amber street glow and urban concrete whites.
+tags:
+  mood:
+  - electric
+  - vibrant
+  - nocturnal
+  aesthetic:
+  - Cyberpunk
+  - Urban Night
+  - Neon Noir
+intent: A vivid 10-color palette designed for dark-mode UI design, gaming interfaces, and urban brand identities inspired by Tokyo's neon-lit streets.
+suggested_use:
+- Dark-mode web applications
+- Gaming and esports branding
+- Music and entertainment platforms
+url: https://coolors.co/0d1b2a-2b2d42-8d99ae-ff2d78-ff0090-00f5ff-0066ff-ffb347-ffd700-f0f4f8
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--city-navy: #0d1b2aff;
+--asphalt-dark: #2b2d42ff;
+--urban-concrete: #8d99aeff;
+--electric-pink: #ff2d78ff;
+--neon-magenta: #ff0090ff;
+--vivid-cyan: #00f5ffff;
+--electric-blue: #0066ffff;
+--street-amber: #ffb347ff;
+--urban-gold: #ffd700ff;
+--concrete-white: #f0f4f8ff;
+
+/* CSS HSL */
+--city-navy: hsla(210, 52%, 11%, 1);
+--asphalt-dark: hsla(235, 22%, 22%, 1);
+--urban-concrete: hsla(218, 14%, 61%, 1);
+--electric-pink: hsla(341, 100%, 59%, 1);
+--neon-magenta: hsla(322, 100%, 50%, 1);
+--vivid-cyan: hsla(185, 100%, 50%, 1);
+--electric-blue: hsla(220, 100%, 50%, 1);
+--street-amber: hsla(30, 100%, 65%, 1);
+--urban-gold: hsla(51, 100%, 50%, 1);
+--concrete-white: hsla(210, 33%, 96%, 1);
+}
+
+/* SCSS HEX */
+$city-navy: #0d1b2aff;
+$asphalt-dark: #2b2d42ff;
+$urban-concrete: #8d99aeff;
+$electric-pink: #ff2d78ff;
+$neon-magenta: #ff0090ff;
+$vivid-cyan: #00f5ffff;
+$electric-blue: #0066ffff;
+$street-amber: #ffb347ff;
+$urban-gold: #ffd700ff;
+$concrete-white: #f0f4f8ff;
+
+/* SCSS HSL */
+$city-navy: hsla(210, 52%, 11%, 1);
+$asphalt-dark: hsla(235, 22%, 22%, 1);
+$urban-concrete: hsla(218, 14%, 61%, 1);
+$electric-pink: hsla(341, 100%, 59%, 1);
+$neon-magenta: hsla(322, 100%, 50%, 1);
+$vivid-cyan: hsla(185, 100%, 50%, 1);
+$electric-blue: hsla(220, 100%, 50%, 1);
+$street-amber: hsla(30, 100%, 65%, 1);
+$urban-gold: hsla(51, 100%, 50%, 1);
+$concrete-white: hsla(210, 33%, 96%, 1);
+
+/* SCSS RGB */
+$city-navy: rgba(13, 27, 42, 1);
+$asphalt-dark: rgba(43, 45, 66, 1);
+$urban-concrete: rgba(141, 153, 174, 1);
+$electric-pink: rgba(255, 45, 120, 1);
+$neon-magenta: rgba(255, 0, 144, 1);
+$vivid-cyan: rgba(0, 245, 255, 1);
+$electric-blue: rgba(0, 102, 255, 1);
+$street-amber: rgba(255, 179, 71, 1);
+$urban-gold: rgba(255, 215, 0, 1);
+$concrete-white: rgba(240, 244, 248, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0d1b2aff, #2b2d42ff, #8d99aeff, #ff2d78ff, #ff0090ff, #00f5ffff, #0066ffff, #ffb347ff, #ffd700ff, #f0f4f8ff);
+$gradient-right: linear-gradient(90deg, #0d1b2aff, #2b2d42ff, #8d99aeff, #ff2d78ff, #ff0090ff, #00f5ffff, #0066ffff, #ffb347ff, #ffd700ff, #f0f4f8ff);
+$gradient-bottom: linear-gradient(180deg, #0d1b2aff, #2b2d42ff, #8d99aeff, #ff2d78ff, #ff0090ff, #00f5ffff, #0066ffff, #ffb347ff, #ffd700ff, #f0f4f8ff);
+$gradient-left: linear-gradient(270deg, #0d1b2aff, #2b2d42ff, #8d99aeff, #ff2d78ff, #ff0090ff, #00f5ffff, #0066ffff, #ffb347ff, #ffd700ff, #f0f4f8ff);
+$gradient-top-right: linear-gradient(45deg, #0d1b2aff, #2b2d42ff, #8d99aeff, #ff2d78ff, #ff0090ff, #00f5ffff, #0066ffff, #ffb347ff, #ffd700ff, #f0f4f8ff);
+$gradient-bottom-right: linear-gradient(135deg, #0d1b2aff, #2b2d42ff, #8d99aeff, #ff2d78ff, #ff0090ff, #00f5ffff, #0066ffff, #ffb347ff, #ffd700ff, #f0f4f8ff);
+$gradient-top-left: linear-gradient(225deg, #0d1b2aff, #2b2d42ff, #8d99aeff, #ff2d78ff, #ff0090ff, #00f5ffff, #0066ffff, #ffb347ff, #ffd700ff, #f0f4f8ff);
+$gradient-bottom-left: linear-gradient(315deg, #0d1b2aff, #2b2d42ff, #8d99aeff, #ff2d78ff, #ff0090ff, #00f5ffff, #0066ffff, #ffb347ff, #ffd700ff, #f0f4f8ff);
+$gradient-radial: radial-gradient(#0d1b2aff, #2b2d42ff, #8d99aeff, #ff2d78ff, #ff0090ff, #00f5ffff, #0066ffff, #ffb347ff, #ffd700ff, #f0f4f8ff);
+
+/* SCSS Map */
+$tokyo-neon-map: (
+    "city-navy": #0d1b2aff,
+    "asphalt-dark": #2b2d42ff,
+    "urban-concrete": #8d99aeff,
+    "electric-pink": #ff2d78ff,
+    "neon-magenta": #ff0090ff,
+    "vivid-cyan": #00f5ffff,
+    "electric-blue": #0066ffff,
+    "street-amber": #ffb347ff,
+    "urban-gold": #ffd700ff,
+    "concrete-white": #f0f4f8ff,
+);

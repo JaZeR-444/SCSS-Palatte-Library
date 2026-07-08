@@ -1,0 +1,114 @@
+/*---
+id: brutalist-concrete
+name: Brutalist Concrete
+author: JaZeR-444
+version: 1.0.0
+category: Art & Cultural Movements
+count: 10
+description: A raw architectural palette of poured concrete, industrial steel, and stark accent colors embodying the uncompromising honesty of Brutalist design.
+tags:
+  mood:
+  - raw
+  - stark
+  - industrial
+  aesthetic:
+  - Brutalism
+  - Architectural
+  - Industrial
+intent: A stark 10-color palette designed for architectural portfolios, brutalist UI design systems, and editorial work demanding raw, uncompromising aesthetics.
+suggested_use:
+- Architectural and portfolio websites
+- Brutalist-inspired UI design systems
+- Editorial layouts with strong typographic contrast
+url: https://coolors.co/b5b0a8-6b6761-999390-c4bfba-8a9099-e8e6e3-f0c300-c0392b-111111-f5f3f0
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--raw-concrete: #b5b0a8ff;
+--charcoal-concrete: #6b6761ff;
+--medium-gray: #999390ff;
+--warm-gray: #c4bfbaff;
+--industrial-steel: #8a9099ff;
+--cold-white: #e8e6e3ff;
+--stark-yellow: #f0c300ff;
+--blood-red: #c0392bff;
+--concrete-black: #111111ff;
+--off-white: #f5f3f0ff;
+
+/* CSS HSL */
+--raw-concrete: hsla(36, 7%, 68%, 1);
+--charcoal-concrete: hsla(33, 5%, 40%, 1);
+--medium-gray: hsla(30, 4%, 58%, 1);
+--warm-gray: hsla(33, 9%, 74%, 1);
+--industrial-steel: hsla(218, 8%, 57%, 1);
+--cold-white: hsla(30, 11%, 90%, 1);
+--stark-yellow: hsla(48, 100%, 47%, 1);
+--blood-red: hsla(5, 63%, 46%, 1);
+--concrete-black: hsla(0, 0%, 7%, 1);
+--off-white: hsla(36, 25%, 95%, 1);
+
+}
+
+/* SCSS HEX */
+$raw-concrete: #b5b0a8ff;
+$charcoal-concrete: #6b6761ff;
+$medium-gray: #999390ff;
+$warm-gray: #c4bfbaff;
+$industrial-steel: #8a9099ff;
+$cold-white: #e8e6e3ff;
+$stark-yellow: #f0c300ff;
+$blood-red: #c0392bff;
+$concrete-black: #111111ff;
+$off-white: #f5f3f0ff;
+
+/* SCSS HSL */
+$raw-concrete: hsla(36, 7%, 68%, 1);
+$charcoal-concrete: hsla(33, 5%, 40%, 1);
+$medium-gray: hsla(30, 4%, 58%, 1);
+$warm-gray: hsla(33, 9%, 74%, 1);
+$industrial-steel: hsla(218, 8%, 57%, 1);
+$cold-white: hsla(30, 11%, 90%, 1);
+$stark-yellow: hsla(48, 100%, 47%, 1);
+$blood-red: hsla(5, 63%, 46%, 1);
+$concrete-black: hsla(0, 0%, 7%, 1);
+$off-white: hsla(36, 25%, 95%, 1);
+
+/* SCSS RGB */
+$raw-concrete: rgba(181, 176, 168, 1);
+$charcoal-concrete: rgba(107, 103, 97, 1);
+$medium-gray: rgba(153, 147, 144, 1);
+$warm-gray: rgba(196, 191, 186, 1);
+$industrial-steel: rgba(138, 144, 153, 1);
+$cold-white: rgba(232, 230, 227, 1);
+$stark-yellow: rgba(240, 195, 0, 1);
+$blood-red: rgba(192, 57, 43, 1);
+$concrete-black: rgba(17, 17, 17, 1);
+$off-white: rgba(245, 243, 240, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #b5b0a8ff, #6b6761ff, #999390ff, #c4bfbaff, #8a9099ff, #e8e6e3ff, #f0c300ff, #c0392bff, #111111ff, #f5f3f0ff);
+$gradient-right: linear-gradient(90deg, #b5b0a8ff, #6b6761ff, #999390ff, #c4bfbaff, #8a9099ff, #e8e6e3ff, #f0c300ff, #c0392bff, #111111ff, #f5f3f0ff);
+$gradient-bottom: linear-gradient(180deg, #b5b0a8ff, #6b6761ff, #999390ff, #c4bfbaff, #8a9099ff, #e8e6e3ff, #f0c300ff, #c0392bff, #111111ff, #f5f3f0ff);
+$gradient-left: linear-gradient(270deg, #b5b0a8ff, #6b6761ff, #999390ff, #c4bfbaff, #8a9099ff, #e8e6e3ff, #f0c300ff, #c0392bff, #111111ff, #f5f3f0ff);
+$gradient-top-right: linear-gradient(45deg, #b5b0a8ff, #6b6761ff, #999390ff, #c4bfbaff, #8a9099ff, #e8e6e3ff, #f0c300ff, #c0392bff, #111111ff, #f5f3f0ff);
+$gradient-bottom-right: linear-gradient(135deg, #b5b0a8ff, #6b6761ff, #999390ff, #c4bfbaff, #8a9099ff, #e8e6e3ff, #f0c300ff, #c0392bff, #111111ff, #f5f3f0ff);
+$gradient-top-left: linear-gradient(225deg, #b5b0a8ff, #6b6761ff, #999390ff, #c4bfbaff, #8a9099ff, #e8e6e3ff, #f0c300ff, #c0392bff, #111111ff, #f5f3f0ff);
+$gradient-bottom-left: linear-gradient(315deg, #b5b0a8ff, #6b6761ff, #999390ff, #c4bfbaff, #8a9099ff, #e8e6e3ff, #f0c300ff, #c0392bff, #111111ff, #f5f3f0ff);
+$gradient-radial: radial-gradient(#b5b0a8ff, #6b6761ff, #999390ff, #c4bfbaff, #8a9099ff, #e8e6e3ff, #f0c300ff, #c0392bff, #111111ff, #f5f3f0ff);
+
+/* SCSS Map */
+$brutalist-concrete-map: (
+    "raw-concrete": #b5b0a8ff,
+    "charcoal-concrete": #6b6761ff,
+    "medium-gray": #999390ff,
+    "warm-gray": #c4bfbaff,
+    "industrial-steel": #8a9099ff,
+    "cold-white": #e8e6e3ff,
+    "stark-yellow": #f0c300ff,
+    "blood-red": #c0392bff,
+    "concrete-black": #111111ff,
+    "off-white": #f5f3f0ff,
+);

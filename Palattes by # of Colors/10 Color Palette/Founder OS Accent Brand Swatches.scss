@@ -1,0 +1,111 @@
+/*---
+id: founder-os-accent-brand-swatches
+name: Founder OS Accent Brand Swatches
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 10
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - brand-scale
+  mood:
+  - warm
+  - premium
+  - bold
+  aesthetic:
+  - Tech
+  - Luxury
+intent: A 10-stop amber/gold scale for Founder OS accent usage — premium tier badges, founder rank indicators, highlights on key metrics, warning-adjacent callouts.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--brand-amber-50-wash: #fffbebff;
+--brand-amber-100-subtle: #fef3c7ff;
+--brand-amber-200-light: #fde68aff;
+--brand-amber-300-muted: #fcd34dff;
+--brand-amber-400-base: #fbbf24ff;
+--brand-amber-500-accent: #ffb800ff;
+--brand-amber-600-hover: #d97706ff;
+--brand-amber-700-active: #b45309ff;
+--brand-amber-800-deep: #92400eff;
+--brand-amber-900-dark: #78350fff;
+
+/* CSS HSL */
+--brand-amber-50-wash: hsla(48, 100%, 96%, 1);
+--brand-amber-100-subtle: hsla(48, 96%, 89%, 1);
+--brand-amber-200-light: hsla(48, 97%, 77%, 1);
+--brand-amber-300-muted: hsla(46, 97%, 65%, 1);
+--brand-amber-400-base: hsla(43, 96%, 56%, 1);
+--brand-amber-500-accent: hsla(43, 100%, 50%, 1);
+--brand-amber-600-hover: hsla(38, 93%, 44%, 1);
+--brand-amber-700-active: hsla(33, 81%, 37%, 1);
+--brand-amber-800-deep: hsla(29, 80%, 30%, 1);
+--brand-amber-900-dark: hsla(26, 83%, 27%, 1);
+}
+
+/* SCSS HEX */
+$brand-amber-50-wash: #fffbebff;
+$brand-amber-100-subtle: #fef3c7ff;
+$brand-amber-200-light: #fde68aff;
+$brand-amber-300-muted: #fcd34dff;
+$brand-amber-400-base: #fbbf24ff;
+$brand-amber-500-accent: #ffb800ff;
+$brand-amber-600-hover: #d97706ff;
+$brand-amber-700-active: #b45309ff;
+$brand-amber-800-deep: #92400eff;
+$brand-amber-900-dark: #78350fff;
+
+/* SCSS HSL */
+$brand-amber-50-wash: hsla(48, 100%, 96%, 1);
+$brand-amber-100-subtle: hsla(48, 96%, 89%, 1);
+$brand-amber-200-light: hsla(48, 97%, 77%, 1);
+$brand-amber-300-muted: hsla(46, 97%, 65%, 1);
+$brand-amber-400-base: hsla(43, 96%, 56%, 1);
+$brand-amber-500-accent: hsla(43, 100%, 50%, 1);
+$brand-amber-600-hover: hsla(38, 93%, 44%, 1);
+$brand-amber-700-active: hsla(33, 81%, 37%, 1);
+$brand-amber-800-deep: hsla(29, 80%, 30%, 1);
+$brand-amber-900-dark: hsla(26, 83%, 27%, 1);
+
+/* SCSS RGB */
+$brand-amber-50-wash: rgba(255, 251, 235, 1);
+$brand-amber-100-subtle: rgba(254, 243, 199, 1);
+$brand-amber-200-light: rgba(253, 230, 138, 1);
+$brand-amber-300-muted: rgba(252, 211, 77, 1);
+$brand-amber-400-base: rgba(251, 191, 36, 1);
+$brand-amber-500-accent: rgba(255, 184, 0, 1);
+$brand-amber-600-hover: rgba(217, 119, 6, 1);
+$brand-amber-700-active: rgba(180, 83, 9, 1);
+$brand-amber-800-deep: rgba(146, 64, 14, 1);
+$brand-amber-900-dark: rgba(120, 53, 15, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #fffbebff, #fef3c7ff, #fde68aff, #fcd34dff, #fbbf24ff, #ffb800ff, #d97706ff, #b45309ff, #92400eff, #78350fff);
+$gradient-right: linear-gradient(90deg, #fffbebff, #fef3c7ff, #fde68aff, #fcd34dff, #fbbf24ff, #ffb800ff, #d97706ff, #b45309ff, #92400eff, #78350fff);
+$gradient-bottom: linear-gradient(180deg, #fffbebff, #fef3c7ff, #fde68aff, #fcd34dff, #fbbf24ff, #ffb800ff, #d97706ff, #b45309ff, #92400eff, #78350fff);
+$gradient-left: linear-gradient(270deg, #fffbebff, #fef3c7ff, #fde68aff, #fcd34dff, #fbbf24ff, #ffb800ff, #d97706ff, #b45309ff, #92400eff, #78350fff);
+$gradient-top-right: linear-gradient(45deg, #fffbebff, #fef3c7ff, #fde68aff, #fcd34dff, #fbbf24ff, #ffb800ff, #d97706ff, #b45309ff, #92400eff, #78350fff);
+$gradient-bottom-right: linear-gradient(135deg, #fffbebff, #fef3c7ff, #fde68aff, #fcd34dff, #fbbf24ff, #ffb800ff, #d97706ff, #b45309ff, #92400eff, #78350fff);
+$gradient-top-left: linear-gradient(225deg, #fffbebff, #fef3c7ff, #fde68aff, #fcd34dff, #fbbf24ff, #ffb800ff, #d97706ff, #b45309ff, #92400eff, #78350fff);
+$gradient-bottom-left: linear-gradient(315deg, #fffbebff, #fef3c7ff, #fde68aff, #fcd34dff, #fbbf24ff, #ffb800ff, #d97706ff, #b45309ff, #92400eff, #78350fff);
+$gradient-radial: radial-gradient(#fffbebff, #fef3c7ff, #fde68aff, #fcd34dff, #fbbf24ff, #ffb800ff, #d97706ff, #b45309ff, #92400eff, #78350fff);
+
+/* SCSS Map */
+$founder-os-accent-brand-swatches-map: (
+    "brand-amber-50-wash": #fffbebff,
+    "brand-amber-100-subtle": #fef3c7ff,
+    "brand-amber-200-light": #fde68aff,
+    "brand-amber-300-muted": #fcd34dff,
+    "brand-amber-400-base": #fbbf24ff,
+    "brand-amber-500-accent": #ffb800ff,
+    "brand-amber-600-hover": #d97706ff,
+    "brand-amber-700-active": #b45309ff,
+    "brand-amber-800-deep": #92400eff,
+    "brand-amber-900-dark": #78350fff
+);

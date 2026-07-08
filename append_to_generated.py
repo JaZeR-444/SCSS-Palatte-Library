@@ -26,11 +26,11 @@ def rgb_to_hsl(r, g, b):
         s = df / (2 - mx - mn)
     return round(h), round(s * 100), round(l * 100)
 
-base_dir = r"C:\Users\JaZeR\OneDrive\Desktop\Projects\App - Pallates"
+base_dir = os.path.dirname(os.path.abspath(__file__))
 palettes_dir = os.path.join(base_dir, "Palattes by # of Colors")
 
 new_palettes = []
-for i in range(20, 36):
+for i in range(3, 36):
     folder_name = f"{i} Color Palette"
     folder_path = os.path.join(palettes_dir, folder_name)
     if os.path.exists(folder_path):

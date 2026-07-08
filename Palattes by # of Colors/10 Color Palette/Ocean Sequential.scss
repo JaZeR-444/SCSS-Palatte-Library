@@ -1,0 +1,113 @@
+/*---
+id: ocean-sequential
+name: Ocean Sequential
+author: JaZeR-444
+version: 1.0.0
+category: Data Visualization & Sequential
+count: 10
+description: A single-hue sequential blue palette sweeping from deepest navy to near-white, ideal for choropleth maps, heatmaps, and continuous data encoding.
+tags:
+  mood:
+  - calm
+  - deep
+  - gradual
+  aesthetic:
+  - Data Viz
+  - Cartographic
+  - Scientific
+intent: A sequential 10-color blue palette designed for choropleth maps, heatmaps, and continuous quantitative data encoding.
+suggested_use:
+- Choropleth and density maps
+- Sequential heatmaps
+- Continuous value encoding in dashboards
+url: https://coolors.co/03045e-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8-e8f8fd-f0fbff
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--abyss-navy: #03045eff;
+--deep-sapphire: #0077b6ff;
+--dark-cerulean: #0096c7ff;
+--pacific-blue: #00b4d8ff;
+--sky-lagoon: #48cae4ff;
+--polar-sky: #90e0efff;
+--mist-blue: #ade8f4ff;
+--ice-wash: #caf0f8ff;
+--frost-haze: #e8f8fdff;
+--arctic-white: #f0fbffff;
+
+/* CSS HSL */
+--abyss-navy: hsla(238, 95%, 19%, 1);
+--deep-sapphire: hsla(202, 100%, 36%, 1);
+--dark-cerulean: hsla(195, 100%, 39%, 1);
+--pacific-blue: hsla(191, 100%, 42%, 1);
+--sky-lagoon: hsla(193, 72%, 59%, 1);
+--polar-sky: hsla(196, 68%, 75%, 1);
+--mist-blue: hsla(195, 77%, 82%, 1);
+--ice-wash: hsla(194, 74%, 88%, 1);
+--frost-haze: hsla(197, 77%, 95%, 1);
+--arctic-white: hsla(200, 100%, 97%, 1);
+}
+
+/* SCSS HEX */
+$abyss-navy: #03045eff;
+$deep-sapphire: #0077b6ff;
+$dark-cerulean: #0096c7ff;
+$pacific-blue: #00b4d8ff;
+$sky-lagoon: #48cae4ff;
+$polar-sky: #90e0efff;
+$mist-blue: #ade8f4ff;
+$ice-wash: #caf0f8ff;
+$frost-haze: #e8f8fdff;
+$arctic-white: #f0fbffff;
+
+/* SCSS HSL */
+$abyss-navy: hsla(238, 95%, 19%, 1);
+$deep-sapphire: hsla(202, 100%, 36%, 1);
+$dark-cerulean: hsla(195, 100%, 39%, 1);
+$pacific-blue: hsla(191, 100%, 42%, 1);
+$sky-lagoon: hsla(193, 72%, 59%, 1);
+$polar-sky: hsla(196, 68%, 75%, 1);
+$mist-blue: hsla(195, 77%, 82%, 1);
+$ice-wash: hsla(194, 74%, 88%, 1);
+$frost-haze: hsla(197, 77%, 95%, 1);
+$arctic-white: hsla(200, 100%, 97%, 1);
+
+/* SCSS RGB */
+$abyss-navy: rgba(3, 4, 94, 1);
+$deep-sapphire: rgba(0, 119, 182, 1);
+$dark-cerulean: rgba(0, 150, 199, 1);
+$pacific-blue: rgba(0, 180, 216, 1);
+$sky-lagoon: rgba(72, 202, 228, 1);
+$polar-sky: rgba(144, 224, 239, 1);
+$mist-blue: rgba(173, 232, 244, 1);
+$ice-wash: rgba(202, 240, 248, 1);
+$frost-haze: rgba(232, 248, 253, 1);
+$arctic-white: rgba(240, 251, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #03045eff, #0077b6ff, #0096c7ff, #00b4d8ff, #48cae4ff, #90e0efff, #ade8f4ff, #caf0f8ff, #e8f8fdff, #f0fbffff);
+$gradient-right: linear-gradient(90deg, #03045eff, #0077b6ff, #0096c7ff, #00b4d8ff, #48cae4ff, #90e0efff, #ade8f4ff, #caf0f8ff, #e8f8fdff, #f0fbffff);
+$gradient-bottom: linear-gradient(180deg, #03045eff, #0077b6ff, #0096c7ff, #00b4d8ff, #48cae4ff, #90e0efff, #ade8f4ff, #caf0f8ff, #e8f8fdff, #f0fbffff);
+$gradient-left: linear-gradient(270deg, #03045eff, #0077b6ff, #0096c7ff, #00b4d8ff, #48cae4ff, #90e0efff, #ade8f4ff, #caf0f8ff, #e8f8fdff, #f0fbffff);
+$gradient-top-right: linear-gradient(45deg, #03045eff, #0077b6ff, #0096c7ff, #00b4d8ff, #48cae4ff, #90e0efff, #ade8f4ff, #caf0f8ff, #e8f8fdff, #f0fbffff);
+$gradient-bottom-right: linear-gradient(135deg, #03045eff, #0077b6ff, #0096c7ff, #00b4d8ff, #48cae4ff, #90e0efff, #ade8f4ff, #caf0f8ff, #e8f8fdff, #f0fbffff);
+$gradient-top-left: linear-gradient(225deg, #03045eff, #0077b6ff, #0096c7ff, #00b4d8ff, #48cae4ff, #90e0efff, #ade8f4ff, #caf0f8ff, #e8f8fdff, #f0fbffff);
+$gradient-bottom-left: linear-gradient(315deg, #03045eff, #0077b6ff, #0096c7ff, #00b4d8ff, #48cae4ff, #90e0efff, #ade8f4ff, #caf0f8ff, #e8f8fdff, #f0fbffff);
+$gradient-radial: radial-gradient(#03045eff, #0077b6ff, #0096c7ff, #00b4d8ff, #48cae4ff, #90e0efff, #ade8f4ff, #caf0f8ff, #e8f8fdff, #f0fbffff);
+
+/* SCSS Map */
+$ocean-sequential-map: (
+    "abyss-navy": #03045eff,
+    "deep-sapphire": #0077b6ff,
+    "dark-cerulean": #0096c7ff,
+    "pacific-blue": #00b4d8ff,
+    "sky-lagoon": #48cae4ff,
+    "polar-sky": #90e0efff,
+    "mist-blue": #ade8f4ff,
+    "ice-wash": #caf0f8ff,
+    "frost-haze": #e8f8fdff,
+    "arctic-white": #f0fbffff,
+);

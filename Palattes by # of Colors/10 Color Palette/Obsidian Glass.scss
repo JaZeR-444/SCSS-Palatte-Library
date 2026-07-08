@@ -1,0 +1,113 @@
+/*---
+id: obsidian-glass
+name: Obsidian Glass
+author: JaZeR-444
+version: 1.0.0
+category: Material & Volcanic
+count: 10
+description: A volcanic glass palette sliding from absolute obsidian black through cool dark grays and silver reflections to pure luminous white, ideal for premium dark-mode interfaces and high-contrast editorial design.
+tags:
+  mood:
+  - dramatic
+  - premium
+  - sleek
+  aesthetic:
+  - Dark Mode
+  - Luxury
+  - Minimal
+intent: A material-inspired 10-color palette designed for premium dark-mode interfaces, high-contrast editorial systems, and sleek monochromatic brand identities.
+suggested_use:
+- Premium dark-mode web and app interfaces
+- High-contrast editorial and typographic layouts
+- Sleek monochromatic brand identity systems
+url: https://coolors.co/0a0a0f-14141e-1e1e2e-2d2d3f-3d3d52-6e6e85-9999b0-bbbbd0-dddde8-f5f5fa
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--pure-obsidian: #0a0a0fff;
+--near-black: #14141eff;
+--dark-glass: #1e1e2eff;
+--gray-obsidian: #2d2d3fff;
+--cool-slate: #3d3d52ff;
+--silver-glass: #6e6e85ff;
+--pale-glass: #9999b0ff;
+--light-reflection: #bbbbd0ff;
+--near-white-glass: #dddde8ff;
+--pure-white: #f5f5faff;
+
+/* CSS HSL */
+--pure-obsidian: hsla(240, 23%, 6%, 1);
+--near-black: hsla(240, 20%, 10%, 1);
+--dark-glass: hsla(240, 20%, 14%, 1);
+--gray-obsidian: hsla(240, 18%, 21%, 1);
+--cool-slate: hsla(242, 16%, 28%, 1);
+--silver-glass: hsla(242, 10%, 48%, 1);
+--pale-glass: hsla(240, 13%, 65%, 1);
+--light-reflection: hsla(240, 17%, 79%, 1);
+--near-white-glass: hsla(240, 13%, 89%, 1);
+--pure-white: hsla(240, 33%, 97%, 1);
+}
+
+/* SCSS HEX */
+$pure-obsidian: #0a0a0fff;
+$near-black: #14141eff;
+$dark-glass: #1e1e2eff;
+$gray-obsidian: #2d2d3fff;
+$cool-slate: #3d3d52ff;
+$silver-glass: #6e6e85ff;
+$pale-glass: #9999b0ff;
+$light-reflection: #bbbbd0ff;
+$near-white-glass: #dddde8ff;
+$pure-white: #f5f5faff;
+
+/* SCSS HSL */
+$pure-obsidian: hsla(240, 23%, 6%, 1);
+$near-black: hsla(240, 20%, 10%, 1);
+$dark-glass: hsla(240, 20%, 14%, 1);
+$gray-obsidian: hsla(240, 18%, 21%, 1);
+$cool-slate: hsla(242, 16%, 28%, 1);
+$silver-glass: hsla(242, 10%, 48%, 1);
+$pale-glass: hsla(240, 13%, 65%, 1);
+$light-reflection: hsla(240, 17%, 79%, 1);
+$near-white-glass: hsla(240, 13%, 89%, 1);
+$pure-white: hsla(240, 33%, 97%, 1);
+
+/* SCSS RGB */
+$pure-obsidian: rgba(10, 10, 15, 1);
+$near-black: rgba(20, 20, 30, 1);
+$dark-glass: rgba(30, 30, 46, 1);
+$gray-obsidian: rgba(45, 45, 63, 1);
+$cool-slate: rgba(61, 61, 82, 1);
+$silver-glass: rgba(110, 110, 133, 1);
+$pale-glass: rgba(153, 153, 176, 1);
+$light-reflection: rgba(187, 187, 208, 1);
+$near-white-glass: rgba(221, 221, 232, 1);
+$pure-white: rgba(245, 245, 250, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0a0a0fff, #14141eff, #1e1e2eff, #2d2d3fff, #3d3d52ff, #6e6e85ff, #9999b0ff, #bbbbd0ff, #dddde8ff, #f5f5faff);
+$gradient-right: linear-gradient(90deg, #0a0a0fff, #14141eff, #1e1e2eff, #2d2d3fff, #3d3d52ff, #6e6e85ff, #9999b0ff, #bbbbd0ff, #dddde8ff, #f5f5faff);
+$gradient-bottom: linear-gradient(180deg, #0a0a0fff, #14141eff, #1e1e2eff, #2d2d3fff, #3d3d52ff, #6e6e85ff, #9999b0ff, #bbbbd0ff, #dddde8ff, #f5f5faff);
+$gradient-left: linear-gradient(270deg, #0a0a0fff, #14141eff, #1e1e2eff, #2d2d3fff, #3d3d52ff, #6e6e85ff, #9999b0ff, #bbbbd0ff, #dddde8ff, #f5f5faff);
+$gradient-top-right: linear-gradient(45deg, #0a0a0fff, #14141eff, #1e1e2eff, #2d2d3fff, #3d3d52ff, #6e6e85ff, #9999b0ff, #bbbbd0ff, #dddde8ff, #f5f5faff);
+$gradient-bottom-right: linear-gradient(135deg, #0a0a0fff, #14141eff, #1e1e2eff, #2d2d3fff, #3d3d52ff, #6e6e85ff, #9999b0ff, #bbbbd0ff, #dddde8ff, #f5f5faff);
+$gradient-top-left: linear-gradient(225deg, #0a0a0fff, #14141eff, #1e1e2eff, #2d2d3fff, #3d3d52ff, #6e6e85ff, #9999b0ff, #bbbbd0ff, #dddde8ff, #f5f5faff);
+$gradient-bottom-left: linear-gradient(315deg, #0a0a0fff, #14141eff, #1e1e2eff, #2d2d3fff, #3d3d52ff, #6e6e85ff, #9999b0ff, #bbbbd0ff, #dddde8ff, #f5f5faff);
+$gradient-radial: radial-gradient(#0a0a0fff, #14141eff, #1e1e2eff, #2d2d3fff, #3d3d52ff, #6e6e85ff, #9999b0ff, #bbbbd0ff, #dddde8ff, #f5f5faff);
+
+/* SCSS Map */
+$obsidian-glass-map: (
+    "pure-obsidian": #0a0a0fff,
+    "near-black": #14141eff,
+    "dark-glass": #1e1e2eff,
+    "gray-obsidian": #2d2d3fff,
+    "cool-slate": #3d3d52ff,
+    "silver-glass": #6e6e85ff,
+    "pale-glass": #9999b0ff,
+    "light-reflection": #bbbbd0ff,
+    "near-white-glass": #dddde8ff,
+    "pure-white": #f5f5faff,
+);

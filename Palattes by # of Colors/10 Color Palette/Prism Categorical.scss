@@ -1,0 +1,113 @@
+/*---
+id: prism-categorical
+name: Prism Categorical
+author: JaZeR-444
+version: 1.0.0
+category: Data Visualization & Categorical
+count: 10
+description: A colorblind-safe categorical palette delivering ten perceptually distinct hues optimized for data visualization, charting libraries, and accessible dashboards.
+tags:
+  mood:
+  - accessible
+  - clear
+  - structured
+  aesthetic:
+  - Data Viz
+  - Scientific
+  - Dashboard
+intent: A colorblind-safe 10-color palette designed for categorical charting, accessible dashboards, and multi-series data visualization.
+suggested_use:
+- Multi-series line and bar charts
+- Categorical map encoding
+- Accessible dashboard legends
+url: https://coolors.co/0173b2-de8f05-029e73-d55e00-cc78bc-ca9161-fbafe4-949494-000000-ffffff
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--cerulean-signal: #0173b2ff;
+--marigold-pulse: #de8f05ff;
+--emerald-data: #029e73ff;
+--vermillion-mark: #d55e00ff;
+--orchid-plot: #cc78bcff;
+--caramel-series: #ca9161ff;
+--flamingo-trace: #fbafe4ff;
+--slate-neutral: #949494ff;
+--graphite-ink: #000000ff;
+--chart-canvas: #ffffffff;
+
+/* CSS HSL */
+--cerulean-signal: hsla(205, 97%, 35%, 1);
+--marigold-pulse: hsla(38, 96%, 44%, 1);
+--emerald-data: hsla(162, 98%, 31%, 1);
+--vermillion-mark: hsla(25, 100%, 42%, 1);
+--orchid-plot: hsla(308, 41%, 63%, 1);
+--caramel-series: hsla(28, 41%, 58%, 1);
+--flamingo-trace: hsla(321, 90%, 83%, 1);
+--slate-neutral: hsla(0, 0%, 58%, 1);
+--graphite-ink: hsla(0, 0%, 0%, 1);
+--chart-canvas: hsla(0, 0%, 100%, 1);
+}
+
+/* SCSS HEX */
+$cerulean-signal: #0173b2ff;
+$marigold-pulse: #de8f05ff;
+$emerald-data: #029e73ff;
+$vermillion-mark: #d55e00ff;
+$orchid-plot: #cc78bcff;
+$caramel-series: #ca9161ff;
+$flamingo-trace: #fbafe4ff;
+$slate-neutral: #949494ff;
+$graphite-ink: #000000ff;
+$chart-canvas: #ffffffff;
+
+/* SCSS HSL */
+$cerulean-signal: hsla(205, 97%, 35%, 1);
+$marigold-pulse: hsla(38, 96%, 44%, 1);
+$emerald-data: hsla(162, 98%, 31%, 1);
+$vermillion-mark: hsla(25, 100%, 42%, 1);
+$orchid-plot: hsla(308, 41%, 63%, 1);
+$caramel-series: hsla(28, 41%, 58%, 1);
+$flamingo-trace: hsla(321, 90%, 83%, 1);
+$slate-neutral: hsla(0, 0%, 58%, 1);
+$graphite-ink: hsla(0, 0%, 0%, 1);
+$chart-canvas: hsla(0, 0%, 100%, 1);
+
+/* SCSS RGB */
+$cerulean-signal: rgba(1, 115, 178, 1);
+$marigold-pulse: rgba(222, 143, 5, 1);
+$emerald-data: rgba(2, 158, 115, 1);
+$vermillion-mark: rgba(213, 94, 0, 1);
+$orchid-plot: rgba(204, 120, 188, 1);
+$caramel-series: rgba(202, 145, 97, 1);
+$flamingo-trace: rgba(251, 175, 228, 1);
+$slate-neutral: rgba(148, 148, 148, 1);
+$graphite-ink: rgba(0, 0, 0, 1);
+$chart-canvas: rgba(255, 255, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0173b2ff, #de8f05ff, #029e73ff, #d55e00ff, #cc78bcff, #ca9161ff, #fbafe4ff, #949494ff, #000000ff, #ffffffff);
+$gradient-right: linear-gradient(90deg, #0173b2ff, #de8f05ff, #029e73ff, #d55e00ff, #cc78bcff, #ca9161ff, #fbafe4ff, #949494ff, #000000ff, #ffffffff);
+$gradient-bottom: linear-gradient(180deg, #0173b2ff, #de8f05ff, #029e73ff, #d55e00ff, #cc78bcff, #ca9161ff, #fbafe4ff, #949494ff, #000000ff, #ffffffff);
+$gradient-left: linear-gradient(270deg, #0173b2ff, #de8f05ff, #029e73ff, #d55e00ff, #cc78bcff, #ca9161ff, #fbafe4ff, #949494ff, #000000ff, #ffffffff);
+$gradient-top-right: linear-gradient(45deg, #0173b2ff, #de8f05ff, #029e73ff, #d55e00ff, #cc78bcff, #ca9161ff, #fbafe4ff, #949494ff, #000000ff, #ffffffff);
+$gradient-bottom-right: linear-gradient(135deg, #0173b2ff, #de8f05ff, #029e73ff, #d55e00ff, #cc78bcff, #ca9161ff, #fbafe4ff, #949494ff, #000000ff, #ffffffff);
+$gradient-top-left: linear-gradient(225deg, #0173b2ff, #de8f05ff, #029e73ff, #d55e00ff, #cc78bcff, #ca9161ff, #fbafe4ff, #949494ff, #000000ff, #ffffffff);
+$gradient-bottom-left: linear-gradient(315deg, #0173b2ff, #de8f05ff, #029e73ff, #d55e00ff, #cc78bcff, #ca9161ff, #fbafe4ff, #949494ff, #000000ff, #ffffffff);
+$gradient-radial: radial-gradient(#0173b2ff, #de8f05ff, #029e73ff, #d55e00ff, #cc78bcff, #ca9161ff, #fbafe4ff, #949494ff, #000000ff, #ffffffff);
+
+/* SCSS Map */
+$prism-categorical-map: (
+    "cerulean-signal": #0173b2ff,
+    "marigold-pulse": #de8f05ff,
+    "emerald-data": #029e73ff,
+    "vermillion-mark": #d55e00ff,
+    "orchid-plot": #cc78bcff,
+    "caramel-series": #ca9161ff,
+    "flamingo-trace": #fbafe4ff,
+    "slate-neutral": #949494ff,
+    "graphite-ink": #000000ff,
+    "chart-canvas": #ffffffff,
+);
