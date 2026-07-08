@@ -522,6 +522,9 @@ def rebuild_db(palettes):
                     rows.append(("aesthetic", tv))
                 for tv in tags.get("project", []):
                     rows.append(("project", tv))
+                # Design-system swatch category (surfaced as palette.swatchType).
+                for tv in tags.get("swatchType", []):
+                    rows.append(("swatchType", tv))
             d, acc = p["derived"], p["accessibility"]
             rows += [
                 ("hue", d["hueFamily"].lower()),

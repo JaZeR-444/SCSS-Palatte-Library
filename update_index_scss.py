@@ -5,7 +5,7 @@ palettes_dir = os.path.join(base_dir, "Palattes by # of Colors")
 
 scss_content = "// SCSS Palette Library - Main Entry Point\n\n"
 
-folders = [f"{i} Color Palette" for i in range(3, 36)]
+folders = [f"{i} Color Palette" for i in range(3, 101)]
 
 for folder in folders:
     folder_path = os.path.join(palettes_dir, folder)
