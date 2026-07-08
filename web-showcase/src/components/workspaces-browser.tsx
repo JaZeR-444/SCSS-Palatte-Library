@@ -40,6 +40,7 @@ export function WorkspacesBrowser({
   const [workspaces, setWorkspaces] = useState<WorkspaceCardData[]>(initial);
   const [filter, setFilter] = useState<KindFilter>("all");
   const [newName, setNewName] = useState("");
+  const [creating, setCreating] = useState(false);
   const [error, setError] = useState("");
   const [pendingDelete, setPendingDelete] = useState<WorkspaceCardData | null>(
     null,
@@ -71,16 +72,21 @@ export function WorkspacesBrowser({
     e.preventDefault();
     setError("");
     if (!newName.trim()) return;
-    const { createCollectionAction } = await import("@/app/actions");
-    const res = await createCollectionAction(newName.trim());
-    if (res.success) {
-      setNewName("");
-      await refresh();
-      setFilter("collection");
-      playSound("success");
-      showToast("Collection created");
-    } else {
-      setError(res.error || "Could not create collection.");
+    setCreating(true);
+    try {
+      const { createCollectionAction } = await import("@/app/actions");
+      const res = await createCollectionAction(newName.trim());
+      if (res.success) {
+        setNewName("");
+        await refresh();
+        setFilter("collection");
+        playSound("success");
+        showToast("Collection created");
+      } else {
+        setError(res.error || "Could not create collection.");
+      }
+    } finally {
+      setCreating(false);
     }
   };
 
@@ -132,7 +138,8 @@ export function WorkspacesBrowser({
             <button
               key={t.id}
               onClick={() => setFilter(t.id)}
-              className={`rounded-lg border px-2.5 py-1 text-xs font-black transition-colors ${
+              aria-pressed={filter === t.id}
+              className={`cursor-pointer rounded-lg border px-2.5 py-1 text-xs font-black transition-colors active:scale-95 focus-visible:outline-2 focus-visible:outline-indigo-500 ${
                 filter === t.id
                   ? "border-indigo-600 bg-indigo-600 text-white"
                   : "border-gray-200 bg-white text-gray-500 hover:border-indigo-400 hover:text-indigo-500 dark:border-slate-800 dark:bg-slate-900 dark:text-gray-400"
@@ -159,16 +166,42 @@ export function WorkspacesBrowser({
               value={newName}
               onChange={(e) => setNewName(e.target.value)}
               placeholder="New collection…"
-              className="w-44 rounded-lg border border-gray-200 bg-gray-50 px-2.5 py-1.5 text-xs dark:border-slate-800 dark:bg-slate-900"
+              disabled={creating}
+              className="w-44 rounded-lg border border-gray-200 bg-gray-50 px-2.5 py-1.5 text-xs disabled:opacity-50 dark:border-slate-800 dark:bg-slate-900"
             />
             <button
               type="submit"
               title="Create collection"
               aria-label="Create collection"
-              className="inline-flex items-center gap-1.5 rounded-lg border border-gray-200 px-2.5 py-1.5 text-xs font-black text-gray-600 transition-colors hover:border-indigo-300 hover:text-indigo-600 dark:border-slate-800 dark:text-gray-300"
+              disabled={creating}
+              className="inline-flex cursor-pointer items-center gap-1.5 rounded-lg border border-gray-200 px-2.5 py-1.5 text-xs font-black text-gray-600 transition-colors hover:border-indigo-300 hover:text-indigo-600 disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-800 dark:text-gray-300"
             >
-              <FolderPlus className="h-3.5 w-3.5" />
-              New
+              {creating ? (
+                <svg
+                  className="h-3.5 w-3.5 animate-spin"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  />
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+                  />
+                </svg>
+              ) : (
+                <FolderPlus className="h-3.5 w-3.5" />
+              )}
+              {creating ? "Creating…" : "New"}
             </button>
           </form>
           <button
@@ -176,7 +209,7 @@ export function WorkspacesBrowser({
               playSound("open");
               openBrandSystem();
             }}
-            className="inline-flex items-center gap-1.5 rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-black text-white transition-colors hover:bg-indigo-700"
+            className="inline-flex cursor-pointer items-center gap-1.5 rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-black text-white transition-colors hover:bg-indigo-700 active:scale-95"
           >
             <Sparkles className="h-3.5 w-3.5" />
             Build Brand System
@@ -192,12 +225,20 @@ export function WorkspacesBrowser({
 
       {filtered.length === 0 ? (
         <div className="rounded-2xl border border-dashed border-gray-200 bg-white p-12 text-center dark:border-slate-800 dark:bg-slate-900">
-          <p className="text-sm text-gray-500 dark:text-gray-400">
-            {filter === "collection"
-              ? "No collections yet. Create one above, then add palettes from any palette's studio."
-              : "Nothing here yet."}
-          </p>
-        </div>
+            <FolderPlus className="mx-auto mb-3 h-8 w-8 text-gray-300 dark:text-slate-600" />
+            <p className="text-sm font-bold text-gray-500 dark:text-gray-400">
+              {filter === "collection"
+                ? "No collections yet."
+                : filter === "project"
+                  ? "No projects yet."
+                  : "Nothing here yet."}
+            </p>
+            <p className="mt-1 text-xs text-gray-400 dark:text-gray-500">
+              {filter === "collection"
+                ? "Create one above, then add palettes from any palette's studio."
+                : "Create a collection or promote one to a project."}
+            </p>
+          </div>
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
           {filtered.map((w) => {
@@ -211,7 +252,7 @@ export function WorkspacesBrowser({
                   href={`/workspaces/${w.slug}`}
                   className="flex flex-col focus-visible:outline-2 focus-visible:outline-indigo-500"
                 >
-                  <div className="flex h-24 overflow-hidden sm:h-28">
+                  <div className="flex h-28 overflow-hidden sm:h-32">
                     {w.preview.length > 0 ? (
                       w.preview.map((hex, i) => (
                         <div
@@ -258,12 +299,11 @@ export function WorkspacesBrowser({
                   </div>
                 </Link>
 
-                {/* Action row */}
                 <div className="mt-auto flex items-center gap-1.5 px-4 pb-4 pt-1">
                   <button
                     onClick={() => build(w)}
                     title="Build a brand system for this workspace"
-                    className="inline-flex items-center gap-1 rounded-lg border border-gray-200 px-2 py-1 text-[11px] font-bold text-gray-600 transition-colors hover:border-indigo-300 hover:text-indigo-600 dark:border-slate-800 dark:text-gray-300"
+                    className="inline-flex cursor-pointer items-center gap-1 rounded-lg border border-gray-200 px-2 py-1 text-[11px] font-bold text-gray-600 transition-colors hover:border-indigo-300 hover:text-indigo-600 active:scale-95 dark:border-slate-800 dark:text-gray-300"
                   >
                     <Sparkles className="h-3 w-3" />
                     Brand System
@@ -273,7 +313,7 @@ export function WorkspacesBrowser({
                       <button
                         onClick={() => promote(w)}
                         title="Promote this collection to a project"
-                        className="inline-flex items-center gap-1 rounded-lg border border-gray-200 px-2 py-1 text-[11px] font-bold text-gray-600 transition-colors hover:border-indigo-300 hover:text-indigo-600 dark:border-slate-800 dark:text-gray-300"
+                        className="inline-flex cursor-pointer items-center gap-1 rounded-lg border border-gray-200 px-2 py-1 text-[11px] font-bold text-gray-600 transition-colors hover:border-indigo-300 hover:text-indigo-600 active:scale-95 dark:border-slate-800 dark:text-gray-300"
                       >
                         <Rocket className="h-3 w-3" />
                         Promote
@@ -282,7 +322,7 @@ export function WorkspacesBrowser({
                         onClick={() => setPendingDelete(w)}
                         title="Delete collection"
                         aria-label={`Delete ${w.name}`}
-                        className="rounded-lg p-1.5 text-gray-400 transition-colors hover:bg-rose-50 hover:text-rose-500 dark:hover:bg-rose-950/30"
+                        className="cursor-pointer rounded-lg p-1.5 text-gray-400 transition-colors hover:bg-rose-50 hover:text-rose-500 active:scale-95 dark:hover:bg-rose-950/30"
                       >
                         <Trash2 className="h-3.5 w-3.5" />
                       </button>
@@ -291,7 +331,7 @@ export function WorkspacesBrowser({
                   <Link
                     href={`/workspaces/${w.slug}`}
                     aria-label={`Open ${w.name}`}
-                    className="ml-auto flex h-8 w-8 items-center justify-center rounded-lg bg-gray-50 text-gray-400 shadow-sm transition-colors hover:bg-indigo-500 hover:text-white dark:bg-slate-800"
+                    className="ml-auto flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg bg-gray-50 text-gray-400 shadow-sm transition-colors hover:bg-indigo-500 hover:text-white active:scale-95 dark:bg-slate-800"
                   >
                     <ArrowRight className="h-3.5 w-3.5" />
                   </Link>
