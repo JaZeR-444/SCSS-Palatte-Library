@@ -30,7 +30,7 @@ base_dir = os.path.dirname(os.path.abspath(__file__))
 palettes_dir = os.path.join(base_dir, "Palattes by # of Colors")
 
 new_palettes = []
-for i in range(3, 36):
+for i in range(3, 101):
     folder_name = f"{i} Color Palette"
     folder_path = os.path.join(palettes_dir, folder_name)
     if os.path.exists(folder_path):
