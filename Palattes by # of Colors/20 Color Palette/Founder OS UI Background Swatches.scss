@@ -1,0 +1,112 @@
+/*---
+id: founder-os-ui-background-swatches
+name: Founder OS UI Background Swatches
+author: JaZeR-444
+version: 2.0.0
+category: Web Development System
+count: 20
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - surfaces
+  aesthetic:
+  - UI
+  - Enterprise
+intent: App-level canvas colors, layout backgrounds, structural fills, and pattern grids.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--bg-canvas-base: #0f172aff;
+--bg-canvas-subtle: #0f172aff;
+--bg-canvas-inset: #0f172aff;
+--bg-layout-header: #0f172aff;
+--bg-layout-sidebar: #0f172aff;
+--bg-layout-footer: #0f172aff;
+--bg-dashed-fill: #00000033;
+--bg-code-block: #0f172aff;
+--bg-empty-state: #0f172aff;
+--bg-well: #0f172aff;
+--bg-pattern-grid: #ffffff0a;
+--bg-pattern-dots: #ffffff14;
+--bg-pattern-waves: #ffffff05;
+--bg-glow-spotlight: #003366ff;
+--bg-glow-ambient: #0f172aff;
+--bg-media-placeholder: #1e293bff;
+--bg-video-overlay: #000000b3;
+--bg-transparent: #00000000;
+--bg-black-solid: #000000ff;
+--bg-white-solid: #ffffffff;
+
+/* CSS HSL */
+--bg-canvas-base: hsla(222, 47%, 11%, 1.0);
+--bg-canvas-subtle: hsla(222, 47%, 11%, 1.0);
+--bg-canvas-inset: hsla(222, 47%, 11%, 1.0);
+--bg-layout-header: hsla(222, 47%, 11%, 1.0);
+--bg-layout-sidebar: hsla(222, 47%, 11%, 1.0);
+--bg-layout-footer: hsla(222, 47%, 11%, 1.0);
+--bg-dashed-fill: hsla(0, 0%, 0%, 0.2);
+--bg-code-block: hsla(222, 47%, 11%, 1.0);
+--bg-empty-state: hsla(222, 47%, 11%, 1.0);
+--bg-well: hsla(222, 47%, 11%, 1.0);
+--bg-pattern-grid: hsla(0, 0%, 100%, 0.04);
+--bg-pattern-dots: hsla(0, 0%, 100%, 0.08);
+--bg-pattern-waves: hsla(0, 0%, 100%, 0.02);
+--bg-glow-spotlight: hsla(210, 100%, 20%, 1.0);
+--bg-glow-ambient: hsla(222, 47%, 11%, 1.0);
+--bg-media-placeholder: hsla(217, 33%, 17%, 1.0);
+--bg-video-overlay: hsla(0, 0%, 0%, 0.7);
+--bg-transparent: hsla(0, 0%, 0%, 0);
+--bg-black-solid: hsla(0, 0%, 0%, 1.0);
+--bg-white-solid: hsla(0, 0%, 100%, 1.0);
+}
+
+/* SCSS HEX */
+$bg-canvas-base: #0f172aff;
+$bg-canvas-subtle: #0f172aff;
+$bg-canvas-inset: #0f172aff;
+$bg-layout-header: #0f172aff;
+$bg-layout-sidebar: #0f172aff;
+$bg-layout-footer: #0f172aff;
+$bg-dashed-fill: #00000033;
+$bg-code-block: #0f172aff;
+$bg-empty-state: #0f172aff;
+$bg-well: #0f172aff;
+$bg-pattern-grid: #ffffff0a;
+$bg-pattern-dots: #ffffff14;
+$bg-pattern-waves: #ffffff05;
+$bg-glow-spotlight: #003366ff;
+$bg-glow-ambient: #0f172aff;
+$bg-media-placeholder: #1e293bff;
+$bg-video-overlay: #000000b3;
+$bg-transparent: #00000000;
+$bg-black-solid: #000000ff;
+$bg-white-solid: #ffffffff;
+
+/* SCSS Map */
+$founder-os-ui-background-swatches-map: (
+    "bg-canvas-base": #0f172aff,
+    "bg-canvas-subtle": #0f172aff,
+    "bg-canvas-inset": #0f172aff,
+    "bg-layout-header": #0f172aff,
+    "bg-layout-sidebar": #0f172aff,
+    "bg-layout-footer": #0f172aff,
+    "bg-dashed-fill": #00000033,
+    "bg-code-block": #0f172aff,
+    "bg-empty-state": #0f172aff,
+    "bg-well": #0f172aff,
+    "bg-pattern-grid": #ffffff0a,
+    "bg-pattern-dots": #ffffff14,
+    "bg-pattern-waves": #ffffff05,
+    "bg-glow-spotlight": #003366ff,
+    "bg-glow-ambient": #0f172aff,
+    "bg-media-placeholder": #1e293bff,
+    "bg-video-overlay": #000000b3,
+    "bg-transparent": #00000000,
+    "bg-black-solid": #000000ff,
+    "bg-white-solid": #ffffffff
+);

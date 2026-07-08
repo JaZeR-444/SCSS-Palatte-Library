@@ -1,0 +1,112 @@
+/*---
+id: founder-os-brand-marketing-swatches
+name: Founder OS Brand Marketing Swatches
+author: JaZeR-444
+version: 2.0.0
+category: Web Development System
+count: 20
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - marketing
+  aesthetic:
+  - UI
+  - Enterprise
+intent: High-conversion marketing tokens and gradients.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--marketing-hero-bg: #0f172aff;
+--marketing-hero-text: #f8fafcff;
+--marketing-primary-cta: #00f0ffff;
+--marketing-primary-cta-hover: #1ae3ffff;
+--marketing-secondary-cta: #1e293bff;
+--marketing-accent-1: #1ae3ffff;
+--marketing-accent-2: #ffb800ff;
+--marketing-accent-3: #fb7185ff;
+--marketing-gradient-start: #00f0ffff;
+--marketing-gradient-end: #f43f5eff;
+--marketing-badge-bg: #003366ff;
+--marketing-badge-text: #4de9ffff;
+--marketing-feature-icon: #1ae3ffff;
+--marketing-feature-bg: #0f172aff;
+--marketing-border-glow: #00f0ffff;
+--marketing-footer-bg: #0f172aff;
+--marketing-footer-text: #94a3b8ff;
+--marketing-pricing-card: #0f172aff;
+--marketing-pricing-popular: #003366ff;
+--marketing-highlight-text: #4de9ffff;
+
+/* CSS HSL */
+--marketing-hero-bg: hsla(222, 47%, 11%, 1.0);
+--marketing-hero-text: hsla(210, 40%, 98%, 1.0);
+--marketing-primary-cta: hsla(184, 100%, 50%, 1.0);
+--marketing-primary-cta-hover: hsla(187, 100%, 55%, 1.0);
+--marketing-secondary-cta: hsla(217, 33%, 17%, 1.0);
+--marketing-accent-1: hsla(187, 100%, 55%, 1.0);
+--marketing-accent-2: hsla(43, 100%, 50%, 1.0);
+--marketing-accent-3: hsla(351, 95%, 71%, 1.0);
+--marketing-gradient-start: hsla(184, 100%, 50%, 1.0);
+--marketing-gradient-end: hsla(350, 89%, 60%, 1.0);
+--marketing-badge-bg: hsla(210, 100%, 20%, 1.0);
+--marketing-badge-text: hsla(187, 100%, 65%, 1.0);
+--marketing-feature-icon: hsla(187, 100%, 55%, 1.0);
+--marketing-feature-bg: hsla(222, 47%, 11%, 1.0);
+--marketing-border-glow: hsla(184, 100%, 50%, 1.0);
+--marketing-footer-bg: hsla(222, 47%, 11%, 1.0);
+--marketing-footer-text: hsla(215, 20%, 65%, 1.0);
+--marketing-pricing-card: hsla(222, 47%, 11%, 1.0);
+--marketing-pricing-popular: hsla(210, 100%, 20%, 1.0);
+--marketing-highlight-text: hsla(187, 100%, 65%, 1.0);
+}
+
+/* SCSS HEX */
+$marketing-hero-bg: #0f172aff;
+$marketing-hero-text: #f8fafcff;
+$marketing-primary-cta: #00f0ffff;
+$marketing-primary-cta-hover: #1ae3ffff;
+$marketing-secondary-cta: #1e293bff;
+$marketing-accent-1: #1ae3ffff;
+$marketing-accent-2: #ffb800ff;
+$marketing-accent-3: #fb7185ff;
+$marketing-gradient-start: #00f0ffff;
+$marketing-gradient-end: #f43f5eff;
+$marketing-badge-bg: #003366ff;
+$marketing-badge-text: #4de9ffff;
+$marketing-feature-icon: #1ae3ffff;
+$marketing-feature-bg: #0f172aff;
+$marketing-border-glow: #00f0ffff;
+$marketing-footer-bg: #0f172aff;
+$marketing-footer-text: #94a3b8ff;
+$marketing-pricing-card: #0f172aff;
+$marketing-pricing-popular: #003366ff;
+$marketing-highlight-text: #4de9ffff;
+
+/* SCSS Map */
+$founder-os-brand-marketing-swatches-map: (
+    "marketing-hero-bg": #0f172aff,
+    "marketing-hero-text": #f8fafcff,
+    "marketing-primary-cta": #00f0ffff,
+    "marketing-primary-cta-hover": #1ae3ffff,
+    "marketing-secondary-cta": #1e293bff,
+    "marketing-accent-1": #1ae3ffff,
+    "marketing-accent-2": #ffb800ff,
+    "marketing-accent-3": #fb7185ff,
+    "marketing-gradient-start": #00f0ffff,
+    "marketing-gradient-end": #f43f5eff,
+    "marketing-badge-bg": #003366ff,
+    "marketing-badge-text": #4de9ffff,
+    "marketing-feature-icon": #1ae3ffff,
+    "marketing-feature-bg": #0f172aff,
+    "marketing-border-glow": #00f0ffff,
+    "marketing-footer-bg": #0f172aff,
+    "marketing-footer-text": #94a3b8ff,
+    "marketing-pricing-card": #0f172aff,
+    "marketing-pricing-popular": #003366ff,
+    "marketing-highlight-text": #4de9ffff
+);

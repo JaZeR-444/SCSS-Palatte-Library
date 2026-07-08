@@ -1,0 +1,120 @@
+/*---
+id: founder-os-data-viz-diverging
+name: Founder OS Data Viz Diverging
+author: JaZeR-444
+version: 2.0.0
+category: Web Development System
+count: 22
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - data
+  aesthetic:
+  - UI
+  - Enterprise
+intent: Perfectly mathematically stepped diverging scales for complex charts and heatmaps.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--data-div-a-1: #be123cff;
+--data-div-a-2: #f43f5eff;
+--data-div-a-3: #fda4afff;
+--data-div-a-4: #ffe4e6ff;
+--data-div-a-5: #f8fafcff;
+--data-div-a-6: #d1fae5ff;
+--data-div-a-7: #6ee7b7ff;
+--data-div-a-8: #10b981ff;
+--data-div-a-9: #047857ff;
+--data-div-b-1: #0099ccff;
+--data-div-b-2: #00f0ffff;
+--data-div-b-3: #4de9ffff;
+--data-div-b-4: #b3f5ffff;
+--data-div-b-5: #f8fafcff;
+--data-div-b-6: #fef3c7ff;
+--data-div-b-7: #fcd34dff;
+--data-div-b-8: #ffb800ff;
+--data-div-b-9: #b45309ff;
+--data-div-extreme-low: #881337ff;
+--data-div-extreme-mid: #f1f5f9ff;
+--data-div-extreme-high: #064e3bff;
+--data-div-no-data: #1e293bff;
+
+/* CSS HSL */
+--data-div-a-1: hsla(345, 83%, 41%, 1.0);
+--data-div-a-2: hsla(350, 89%, 60%, 1.0);
+--data-div-a-3: hsla(353, 96%, 82%, 1.0);
+--data-div-a-4: hsla(356, 100%, 95%, 1.0);
+--data-div-a-5: hsla(210, 40%, 98%, 1.0);
+--data-div-a-6: hsla(149, 80%, 90%, 1.0);
+--data-div-a-7: hsla(156, 72%, 67%, 1.0);
+--data-div-a-8: hsla(160, 84%, 39%, 1.0);
+--data-div-a-9: hsla(163, 94%, 24%, 1.0);
+--data-div-b-1: hsla(195, 100%, 40%, 1.0);
+--data-div-b-2: hsla(184, 100%, 50%, 1.0);
+--data-div-b-3: hsla(187, 100%, 65%, 1.0);
+--data-div-b-4: hsla(188, 100%, 85%, 1.0);
+--data-div-b-5: hsla(210, 40%, 98%, 1.0);
+--data-div-b-6: hsla(48, 96%, 89%, 1.0);
+--data-div-b-7: hsla(46, 97%, 65%, 1.0);
+--data-div-b-8: hsla(43, 100%, 50%, 1.0);
+--data-div-b-9: hsla(26, 90%, 37%, 1.0);
+--data-div-extreme-low: hsla(342, 75%, 30%, 1.0);
+--data-div-extreme-mid: hsla(210, 40%, 96%, 1.0);
+--data-div-extreme-high: hsla(164, 86%, 16%, 1.0);
+--data-div-no-data: hsla(217, 33%, 17%, 1.0);
+}
+
+/* SCSS HEX */
+$data-div-a-1: #be123cff;
+$data-div-a-2: #f43f5eff;
+$data-div-a-3: #fda4afff;
+$data-div-a-4: #ffe4e6ff;
+$data-div-a-5: #f8fafcff;
+$data-div-a-6: #d1fae5ff;
+$data-div-a-7: #6ee7b7ff;
+$data-div-a-8: #10b981ff;
+$data-div-a-9: #047857ff;
+$data-div-b-1: #0099ccff;
+$data-div-b-2: #00f0ffff;
+$data-div-b-3: #4de9ffff;
+$data-div-b-4: #b3f5ffff;
+$data-div-b-5: #f8fafcff;
+$data-div-b-6: #fef3c7ff;
+$data-div-b-7: #fcd34dff;
+$data-div-b-8: #ffb800ff;
+$data-div-b-9: #b45309ff;
+$data-div-extreme-low: #881337ff;
+$data-div-extreme-mid: #f1f5f9ff;
+$data-div-extreme-high: #064e3bff;
+$data-div-no-data: #1e293bff;
+
+/* SCSS Map */
+$founder-os-data-viz-diverging-map: (
+    "data-div-a-1": #be123cff,
+    "data-div-a-2": #f43f5eff,
+    "data-div-a-3": #fda4afff,
+    "data-div-a-4": #ffe4e6ff,
+    "data-div-a-5": #f8fafcff,
+    "data-div-a-6": #d1fae5ff,
+    "data-div-a-7": #6ee7b7ff,
+    "data-div-a-8": #10b981ff,
+    "data-div-a-9": #047857ff,
+    "data-div-b-1": #0099ccff,
+    "data-div-b-2": #00f0ffff,
+    "data-div-b-3": #4de9ffff,
+    "data-div-b-4": #b3f5ffff,
+    "data-div-b-5": #f8fafcff,
+    "data-div-b-6": #fef3c7ff,
+    "data-div-b-7": #fcd34dff,
+    "data-div-b-8": #ffb800ff,
+    "data-div-b-9": #b45309ff,
+    "data-div-extreme-low": #881337ff,
+    "data-div-extreme-mid": #f1f5f9ff,
+    "data-div-extreme-high": #064e3bff,
+    "data-div-no-data": #1e293bff
+);

@@ -1,0 +1,128 @@
+/*---
+id: founder-os-light-surface-swatches
+name: Founder OS Light Surface Swatches
+author: JaZeR-444
+version: 2.0.0
+category: Web Development System
+count: 24
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - surfaces
+  aesthetic:
+  - UI
+  - Enterprise
+intent: Enterprise light surface and layout backgrounds.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--surface-page-bg: #f8fafcff;
+--surface-panel-bg: #ffffffff;
+--surface-card-bg: #ffffffff;
+--surface-card-hover: #f8fafcff;
+--surface-card-active: #f1f5f9ff;
+--surface-nested-bg: #f8fafcff;
+--surface-popover-bg: #ffffffff;
+--surface-tooltip-bg: #0f172aff;
+--surface-sidebar-bg: #f8fafcff;
+--surface-header-bg: #ffffffff;
+--surface-modal-bg: #ffffffff;
+--surface-backdrop: #00000099;
+--surface-border-subtle: #e2e8f0ff;
+--surface-border-strong: #cbd5e1ff;
+--surface-divider: #e2e8f0ff;
+--surface-hover-overlay: #0000000a;
+--surface-active-overlay: #00000014;
+--surface-selected-bg: #e5fcffff;
+--surface-selected-border: #80efffff;
+--surface-brand-subtle: #e5fcffff;
+--surface-success-subtle: #ecfdf5ff;
+--surface-warning-subtle: #fffbebff;
+--surface-danger-subtle: #fff1f2ff;
+--surface-skeleton: #e2e8f0ff;
+
+/* CSS HSL */
+--surface-page-bg: hsla(210, 40%, 98%, 1.0);
+--surface-panel-bg: hsla(0, 0%, 100%, 1.0);
+--surface-card-bg: hsla(0, 0%, 100%, 1.0);
+--surface-card-hover: hsla(210, 40%, 98%, 1.0);
+--surface-card-active: hsla(210, 40%, 96%, 1.0);
+--surface-nested-bg: hsla(210, 40%, 98%, 1.0);
+--surface-popover-bg: hsla(0, 0%, 100%, 1.0);
+--surface-tooltip-bg: hsla(222, 47%, 11%, 1.0);
+--surface-sidebar-bg: hsla(210, 40%, 98%, 1.0);
+--surface-header-bg: hsla(0, 0%, 100%, 1.0);
+--surface-modal-bg: hsla(0, 0%, 100%, 1.0);
+--surface-backdrop: hsla(0, 0%, 0%, 0.6);
+--surface-border-subtle: hsla(214, 32%, 91%, 1.0);
+--surface-border-strong: hsla(213, 27%, 84%, 1.0);
+--surface-divider: hsla(214, 32%, 91%, 1.0);
+--surface-hover-overlay: hsla(0, 0%, 0%, 0.04);
+--surface-active-overlay: hsla(0, 0%, 0%, 0.08);
+--surface-selected-bg: hsla(187, 100%, 95%, 1.0);
+--surface-selected-border: hsla(188, 100%, 75%, 1.0);
+--surface-brand-subtle: hsla(187, 100%, 95%, 1.0);
+--surface-success-subtle: hsla(152, 81%, 96%, 1.0);
+--surface-warning-subtle: hsla(48, 100%, 96%, 1.0);
+--surface-danger-subtle: hsla(356, 100%, 97%, 1.0);
+--surface-skeleton: hsla(214, 32%, 91%, 1.0);
+}
+
+/* SCSS HEX */
+$surface-page-bg: #f8fafcff;
+$surface-panel-bg: #ffffffff;
+$surface-card-bg: #ffffffff;
+$surface-card-hover: #f8fafcff;
+$surface-card-active: #f1f5f9ff;
+$surface-nested-bg: #f8fafcff;
+$surface-popover-bg: #ffffffff;
+$surface-tooltip-bg: #0f172aff;
+$surface-sidebar-bg: #f8fafcff;
+$surface-header-bg: #ffffffff;
+$surface-modal-bg: #ffffffff;
+$surface-backdrop: #00000099;
+$surface-border-subtle: #e2e8f0ff;
+$surface-border-strong: #cbd5e1ff;
+$surface-divider: #e2e8f0ff;
+$surface-hover-overlay: #0000000a;
+$surface-active-overlay: #00000014;
+$surface-selected-bg: #e5fcffff;
+$surface-selected-border: #80efffff;
+$surface-brand-subtle: #e5fcffff;
+$surface-success-subtle: #ecfdf5ff;
+$surface-warning-subtle: #fffbebff;
+$surface-danger-subtle: #fff1f2ff;
+$surface-skeleton: #e2e8f0ff;
+
+/* SCSS Map */
+$founder-os-light-surface-swatches-map: (
+    "surface-page-bg": #f8fafcff,
+    "surface-panel-bg": #ffffffff,
+    "surface-card-bg": #ffffffff,
+    "surface-card-hover": #f8fafcff,
+    "surface-card-active": #f1f5f9ff,
+    "surface-nested-bg": #f8fafcff,
+    "surface-popover-bg": #ffffffff,
+    "surface-tooltip-bg": #0f172aff,
+    "surface-sidebar-bg": #f8fafcff,
+    "surface-header-bg": #ffffffff,
+    "surface-modal-bg": #ffffffff,
+    "surface-backdrop": #00000099,
+    "surface-border-subtle": #e2e8f0ff,
+    "surface-border-strong": #cbd5e1ff,
+    "surface-divider": #e2e8f0ff,
+    "surface-hover-overlay": #0000000a,
+    "surface-active-overlay": #00000014,
+    "surface-selected-bg": #e5fcffff,
+    "surface-selected-border": #80efffff,
+    "surface-brand-subtle": #e5fcffff,
+    "surface-success-subtle": #ecfdf5ff,
+    "surface-warning-subtle": #fffbebff,
+    "surface-danger-subtle": #fff1f2ff,
+    "surface-skeleton": #e2e8f0ff
+);
