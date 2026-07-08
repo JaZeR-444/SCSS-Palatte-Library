@@ -56,12 +56,15 @@ interface StudioContextType extends StudioState {
   setActiveCollectionId: (id: string | null) => void;
   isBrandSystemOpen: boolean;
   brandSystemPalette: Palette | null;
-  openBrandSystem: (palette?: Palette) => void;
+  openBrandSystem: (palette?: Palette, workspaceSlug?: string | null) => void;
   closeBrandSystem: () => void;
   /** When set, the modal loads this saved design system on open. */
   brandSystemLoadId: string | null;
   openBrandSystemWithSystem: (id: string) => void;
   clearBrandSystemLoadId: () => void;
+  /** When set, the modal pre-selects this workspace as the attach target. */
+  brandSystemWorkspaceSlug: string | null;
+  clearBrandSystemWorkspaceSlug: () => void;
   /**
    * The unified design system derived from the current palette + role edits.
    * `roleMapping` stays the editable source of truth; this is the canonical
@@ -98,6 +101,9 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
   const [brandSystemLoadId, setBrandSystemLoadId] = useState<string | null>(
     null,
   );
+  const [brandSystemWorkspaceSlug, setBrandSystemWorkspaceSlug] = useState<
+    string | null
+  >(null);
 
   const [hasRoleEdits, setHasRoleEdits] = useState(false);
   // Per-palette role overrides survive prev/next navigation within a session.
@@ -119,21 +125,30 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
     setCreatorPaletteToEdit(null);
   }, []);
 
-  const openBrandSystem = useCallback((palette?: Palette) => {
-    setBrandSystemPalette(palette || null);
-    setBrandSystemLoadId(null);
-    setIsBrandSystemOpen(true);
-  }, []);
+  const openBrandSystem = useCallback(
+    (palette?: Palette, workspaceSlug?: string | null) => {
+      setBrandSystemPalette(palette || null);
+      setBrandSystemLoadId(null);
+      setBrandSystemWorkspaceSlug(workspaceSlug ?? null);
+      setIsBrandSystemOpen(true);
+    },
+    [],
+  );
 
   // Open the modal and load a specific saved design system (e.g. from a project).
   const openBrandSystemWithSystem = useCallback((id: string) => {
     setBrandSystemPalette(null);
     setBrandSystemLoadId(id);
+    setBrandSystemWorkspaceSlug(null);
     setIsBrandSystemOpen(true);
   }, []);
 
   const clearBrandSystemLoadId = useCallback(() => {
     setBrandSystemLoadId(null);
+  }, []);
+
+  const clearBrandSystemWorkspaceSlug = useCallback(() => {
+    setBrandSystemWorkspaceSlug(null);
   }, []);
 
   const closeBrandSystem = useCallback(() => {
@@ -328,6 +343,8 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
         brandSystemLoadId,
         openBrandSystemWithSystem,
         clearBrandSystemLoadId,
+        brandSystemWorkspaceSlug,
+        clearBrandSystemWorkspaceSlug,
       }}
     >
       {children}

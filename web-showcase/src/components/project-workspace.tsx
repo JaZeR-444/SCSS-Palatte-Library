@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { PaletteCard } from "@/components/palette-card";
 import { FounderOsDemo } from "@/components/founder-os-demo";
+import { BrandSystemComposer } from "@/components/brand-system/brand-system-composer";
 import { useStudio } from "@/components/studio/studio-context";
 import { Palette } from "@/types";
 import { SavedDesignSystem } from "@/types/design-system";
@@ -48,15 +49,15 @@ type SortKey = "quality" | "name" | "count";
 
 /** Ordered swatch category tabs for design-system projects */
 const SWATCH_TABS: { id: string; label: string; emoji: string }[] = [
-  { id: "all",              label: "All",              emoji: "🎨" },
-  { id: "system-map",       label: "System Map",       emoji: "🗺️" },
-  { id: "aesthetics",       label: "Aesthetics",       emoji: "✨" },
-  { id: "brand-scale",      label: "Brand Scale",      emoji: "🎯" },
-  { id: "surfaces",         label: "Surfaces",         emoji: "🪟" },
+  { id: "all", label: "All", emoji: "🎨" },
+  { id: "system-map", label: "System Map", emoji: "🗺️" },
+  { id: "aesthetics", label: "Aesthetics", emoji: "✨" },
+  { id: "brand-scale", label: "Brand Scale", emoji: "🎯" },
+  { id: "surfaces", label: "Surfaces", emoji: "🪟" },
   { id: "component-states", label: "Component States", emoji: "⚙️" },
-  { id: "data",             label: "Data & Charts",    emoji: "📊" },
-  { id: "gradients",        label: "Gradients",        emoji: "🌈" },
-  { id: "marketing",        label: "Marketing",        emoji: "📣" },
+  { id: "data", label: "Data & Charts", emoji: "📊" },
+  { id: "gradients", label: "Gradients", emoji: "🌈" },
+  { id: "marketing", label: "Marketing", emoji: "📣" },
 ];
 
 export function ProjectWorkspace({
@@ -85,6 +86,10 @@ export function ProjectWorkspace({
     [],
   );
   const [attachId, setAttachId] = useState("");
+  // In-project brand system composer (per-color role assignment).
+  const [composer, setComposer] = useState<{
+    initial?: SavedDesignSystem;
+  } | null>(null);
 
   const reloadSystems = async () => {
     const { listDesignSystemsAction } = await import("@/app/actions");
@@ -116,9 +121,18 @@ export function ProjectWorkspace({
     showToast("Detached from project");
   };
 
+  // Composed (in-project) systems reopen in the composer; single-palette
+  // systems open the standalone Brand System modal.
   const applySystem = (id: string) => {
+    const sys = attachedSystems.find((s) => s.id === id);
     playSound("open");
-    openBrandSystemWithSystem(id);
+    if (sys?.composed) setComposer({ initial: sys });
+    else openBrandSystemWithSystem(id);
+  };
+
+  const openComposer = () => {
+    playSound("open");
+    setComposer({});
   };
 
   // meta editing
@@ -194,7 +208,7 @@ export function ProjectWorkspace({
   }, [sorted, activeTab, hasSwatchTypes]);
 
   // Copy all CSS custom properties from a palette as a token block
-  const copyCssTokens = (palette: typeof palettes[0]) => {
+  const copyCssTokens = (palette: (typeof palettes)[0]) => {
     const lines = palette.colors
       .map((c) => `  ${c.name}: ${c.hex};`)
       .join("\n");
@@ -405,11 +419,11 @@ export function ProjectWorkspace({
               <span>{tab.emoji}</span>
               {tab.label}
               <span className="rounded-md bg-slate-800 px-1 py-0.5 text-[10px] font-black text-slate-400">
-                {tab.id === "demo" 
-                  ? "UI" 
+                {tab.id === "demo"
+                  ? "UI"
                   : tab.id === "all"
-                  ? palettes.length
-                  : palettes.filter((p) => p.swatchType === tab.id).length}
+                    ? palettes.length
+                    : palettes.filter((p) => p.swatchType === tab.id).length}
               </span>
             </button>
           ))}
@@ -621,18 +635,21 @@ export function ProjectWorkspace({
       ) : (
         <div className="space-y-8">
           {/* When tabs are active and not on 'all', show a category header */}
-          {hasSwatchTypes && activeTab !== "all" && (() => {
-            const tab = SWATCH_TABS.find((t) => t.id === activeTab);
-            return tab ? (
-              <div className="flex items-center gap-2 border-b border-slate-800 pb-3">
-                <span className="text-lg">{tab.emoji}</span>
-                <h2 className="text-sm font-black text-white">{tab.label}</h2>
-                <span className="text-xs text-slate-500">
-                  {displayed.length} swatch{displayed.length !== 1 ? "es" : ""}
-                </span>
-              </div>
-            ) : null;
-          })()}
+          {hasSwatchTypes &&
+            activeTab !== "all" &&
+            (() => {
+              const tab = SWATCH_TABS.find((t) => t.id === activeTab);
+              return tab ? (
+                <div className="flex items-center gap-2 border-b border-slate-800 pb-3">
+                  <span className="text-lg">{tab.emoji}</span>
+                  <h2 className="text-sm font-black text-white">{tab.label}</h2>
+                  <span className="text-xs text-slate-500">
+                    {displayed.length} swatch
+                    {displayed.length !== 1 ? "es" : ""}
+                  </span>
+                </div>
+              ) : null;
+            })()}
 
           <div className="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
             {displayed.map((palette) => (

@@ -281,7 +281,7 @@ function deriveBrandColors(cols: ColorMeta[], sp: StyleProfile): BrandIdentity {
  * State colors                                                       *
  * ------------------------------------------------------------------ */
 
-const STATE_HUES: Record<string, number> = {
+export const STATE_HUES: Record<string, number> = {
   success: 145,
   warning: 40,
   error: 4,
@@ -731,6 +731,141 @@ function buildRoleSet(
 }
 
 /**
+ * Gap-fill for the in-project composer: given a partial map of assigned role
+ * hexes (the roles the user/seed set), compute every derived role and provide
+ * safe fallbacks for missing assignable ones, so a composed system has no
+ * holes. Mirrors the derivation math in `buildRoleSet` but sourced from
+ * explicit assignments instead of a scored palette. Chart roles are handled
+ * separately (see `chartSeriesFromHexes`). Returns all 28 non-chart roles.
+ */
+export function deriveMissingRoles(
+  assigned: Record<string, string>,
+  mode: ColorMode,
+): Record<string, string> {
+  const has = (k: string) =>
+    typeof assigned[k] === "string" && assigned[k].length > 0;
+  const dark = mode === "dark";
+
+  const bgBase = has("bg-base")
+    ? assigned["bg-base"]
+    : dark
+      ? "#0B0E14"
+      : "#F8FAFC";
+  const surface = has("surface")
+    ? assigned["surface"]
+    : dark
+      ? lighten(bgBase, 8)
+      : "#FFFFFF";
+  const bgElevated = has("bg-elevated")
+    ? assigned["bg-elevated"]
+    : dark
+      ? lighten(bgBase, 5)
+      : "#FFFFFF";
+  const surfaceHover = has("surface-hover")
+    ? assigned["surface-hover"]
+    : dark
+      ? lighten(bgBase, 12)
+      : darken(bgBase, 3);
+  const textPrimary = has("text-primary")
+    ? assigned["text-primary"]
+    : dark
+      ? "#F8FAFC"
+      : "#0F172A";
+  const textSecondary = has("text-secondary")
+    ? assigned["text-secondary"]
+    : mixHex(textPrimary, bgBase, 0.28);
+  const textMuted = has("text-muted")
+    ? assigned["text-muted"]
+    : mixHex(textPrimary, bgBase, 0.48);
+  const borderSubtle = has("border-subtle")
+    ? assigned["border-subtle"]
+    : mixHex(surface, textPrimary, 0.1);
+  const borderStrong = has("border-strong")
+    ? assigned["border-strong"]
+    : mixHex(surface, textPrimary, dark ? 0.28 : 0.24);
+  const disabled = has("disabled")
+    ? assigned["disabled"]
+    : mixHex(textMuted, bgBase, 0.5);
+  const overlay = has("overlay")
+    ? assigned["overlay"]
+    : withAlpha(dark ? "#020617" : "#0F172A", 0.6);
+
+  const brandPrimary = has("brand-primary")
+    ? assigned["brand-primary"]
+    : "#6366F1";
+  const primaryHover = has("brand-primary-hover")
+    ? assigned["brand-primary-hover"]
+    : dark
+      ? lighten(brandPrimary, 10)
+      : darken(brandPrimary, 8);
+  const brandSecondary = has("brand-secondary")
+    ? assigned["brand-secondary"]
+    : brandPrimary;
+  const brandAccent = has("brand-accent")
+    ? assigned["brand-accent"]
+    : brandPrimary;
+  const onBrand = has("on-brand")
+    ? assigned["on-brand"]
+    : readableOn(brandPrimary);
+  const onAccent = has("on-accent")
+    ? assigned["on-accent"]
+    : readableOn(brandAccent);
+
+  const link = has("link")
+    ? assigned["link"]
+    : ensureContrast(brandAccent, bgBase, mode, 4.5);
+  const focusRing = has("focus-ring")
+    ? assigned["focus-ring"]
+    : ensureContrast(brandAccent, bgBase, mode, 3);
+
+  const stateFill = (name: keyof typeof STATE_HUES, key: string) =>
+    has(key) ? assigned[key] : hslToHex(STATE_HUES[name], 65, dark ? 62 : 47);
+  const success = stateFill("success", "state-success");
+  const warning = stateFill("warning", "state-warning");
+  const error = stateFill("error", "state-error");
+  const info = stateFill("info", "state-info");
+  const stateText = (fill: string, key: string) =>
+    has(key) ? assigned[key] : ensureContrast(fill, surface, mode, 4.5);
+
+  return {
+    "brand-primary": brandPrimary,
+    "brand-primary-hover": primaryHover,
+    "brand-secondary": brandSecondary,
+    "brand-accent": brandAccent,
+    "on-brand": onBrand,
+    "on-accent": onAccent,
+    "bg-base": bgBase,
+    "bg-elevated": bgElevated,
+    surface: surface,
+    "surface-hover": surfaceHover,
+    "text-primary": textPrimary,
+    "text-secondary": textSecondary,
+    "text-muted": textMuted,
+    link: link,
+    "border-subtle": borderSubtle,
+    "border-strong": borderStrong,
+    "focus-ring": focusRing,
+    "state-success": success,
+    "state-warning": warning,
+    "state-error": error,
+    "state-info": info,
+    "state-success-text": stateText(success, "state-success-text"),
+    "state-warning-text": stateText(warning, "state-warning-text"),
+    "state-error-text": stateText(error, "state-error-text"),
+    "state-info-text": stateText(info, "state-info-text"),
+    "on-error": has("on-error") ? assigned["on-error"] : readableOn(error),
+    disabled: disabled,
+    overlay: overlay,
+  };
+}
+
+/** Chart series (ordered for adjacent contrast) from plain hex strings. */
+export function chartSeriesFromHexes(hexes: string[], count = 6): string[] {
+  const seeds = hexes.filter(Boolean).map(meta);
+  return deriveChartSeries(seeds.length ? seeds : [meta("#6366F1")], count);
+}
+
+/**
  * Deterministically map a palette (of any size) onto full light + dark systems.
  */
 export function deriveRoles(
@@ -894,7 +1029,7 @@ function buildFoundation(
   };
 }
 
-function buildComponents(): ComponentGuide[] {
+export function buildComponents(): ComponentGuide[] {
   return [
     {
       name: "Primary Button",
@@ -1019,7 +1154,7 @@ function buildComponents(): ComponentGuide[] {
   ];
 }
 
-function buildUsage(inputs: BrandInputs, mode: ColorMode): UsageGuide[] {
+export function buildUsage(inputs: BrandInputs, mode: ColorMode): UsageGuide[] {
   return [
     {
       area: "App shell",
@@ -1116,7 +1251,7 @@ function buildUsage(inputs: BrandInputs, mode: ColorMode): UsageGuide[] {
  * Accessibility review                                               *
  * ------------------------------------------------------------------ */
 
-function buildAccessibility(
+export function buildAccessibility(
   roles: Record<string, string>,
 ): BrandSystem["accessibility"] {
   const pair = (
