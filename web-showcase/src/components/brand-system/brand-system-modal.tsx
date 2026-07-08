@@ -17,6 +17,7 @@ import {
   Compass,
   Clock,
   AlertCircle,
+  SlidersHorizontal,
 } from "lucide-react";
 import { useStudio } from "@/components/studio/studio-context";
 import { Palette } from "@/types";
@@ -26,16 +27,41 @@ import {
   BrandSystemRecord,
   DEFAULT_INPUTS,
 } from "@/types/brand-system";
+import {
+  DesignTokens,
+  ImportResult,
+  SavedDesignSystem,
+} from "@/types/design-system";
 import { generateBrandSystem } from "@/utils/brand-system";
+import {
+  designSystemFromBrandSystem,
+  toSavedDesignSystem,
+} from "@/utils/design-system";
+import {
+  DESIGN_PRESETS,
+  applyPreset,
+  makeRadius,
+} from "@/utils/design-presets";
+import {
+  listDesignSystemsAction,
+  getDesignSystemAction,
+  saveDesignSystemAction,
+  duplicateDesignSystemAction,
+  deleteDesignSystemAction,
+  listWorkspacesAction,
+  setDesignSystemProjectAction,
+} from "@/app/actions";
 import palettesData from "@/data/palettes.json";
 import { playSound } from "@/utils/audio";
 import { showToast } from "@/utils/toast";
 import { PaletteSelector } from "./palette-selector";
 import { BrandInputPanel } from "./input-panel";
 import { SemanticRoles } from "./semantic-roles";
+import { TokenControls } from "./token-controls";
 import { TokenOutput } from "./token-output";
 import { AccessibilityReview } from "./accessibility-review";
 import { BrandPreview } from "./preview";
+import { SavedSystemsBar } from "./saved-systems-bar";
 
 const ALL = palettesData as Palette[];
 const INPUTS_KEY = "palettes.brandSystem.inputs";
@@ -70,19 +96,290 @@ function SectionHeader({
 }
 
 export function BrandSystemModal() {
-  const { isBrandSystemOpen, brandSystemPalette, closeBrandSystem } = useStudio();
+  const {
+    isBrandSystemOpen,
+    brandSystemPalette,
+    closeBrandSystem,
+    brandSystemLoadId,
+    clearBrandSystemLoadId,
+  } = useStudio();
 
   const [selectedPalette, setSelectedPalette] = useState<Palette | null>(null);
   const [inputs, setInputs] = useState<BrandInputs>(DEFAULT_INPUTS);
   const [system, setSystem] = useState<BrandSystem | null>(null);
   const [recents, setRecents] = useState<BrandSystemRecord[]>([]);
+  // Live-editable non-color tokens (type/space/radius/shadow/density). Null
+  // until a system is generated; reset whenever a fresh system is built.
+  const [tokenEdits, setTokenEdits] = useState<DesignTokens | null>(null);
+  const [activePresetId, setActivePresetId] = useState<string | null>(null);
+  // Bumped whenever tokens are replaced wholesale (regenerate / preset) so the
+  // TokenControls remount and re-read the new values into their sliders.
+  const [tokenNonce, setTokenNonce] = useState(0);
+  // Non-color hints detected by an import (font / radius / shadow).
+  const [importHints, setImportHints] = useState<ImportResult | null>(null);
+  // Saved (DB-backed) design systems + the one currently loaded, if any.
+  const [savedSystems, setSavedSystems] = useState<SavedDesignSystem[]>([]);
+  const [currentSavedId, setCurrentSavedId] = useState<string | null>(null);
+  const [currentName, setCurrentName] = useState(DEFAULT_INPUTS.appName);
+  // Workspaces (projects + collections) this system can be attached to.
+  const [workspaces, setWorkspaces] = useState<
+    { slug: string; name: string; kind: "collection" | "project" }[]
+  >([]);
+  const [workspaceSlug, setWorkspaceSlug] = useState<string | null>(null);
   const outputRef = useRef<HTMLDivElement>(null);
+  // Carries a loaded system's tokens through the baseDs reset effect so a
+  // restore isn't wiped when the regenerated system swaps in.
+  const pendingRestoreRef = useRef<{
+    tokens: DesignTokens;
+    presetId: string | null;
+  } | null>(null);
+
+  // Base unified system derived from the generated color system.
+  const baseDs = useMemo(
+    () => (system ? designSystemFromBrandSystem(system) : null),
+    [system],
+  );
+  // When a new base system swaps in: apply a pending restore if one is queued,
+  // otherwise reset token edits + preset (fresh generate).
+  useEffect(() => {
+    const pending = pendingRestoreRef.current;
+    if (pending) {
+      setTokenEdits(pending.tokens);
+      setActivePresetId(pending.presetId);
+      pendingRestoreRef.current = null;
+    } else {
+      setTokenEdits(null);
+      setActivePresetId(null);
+    }
+    setTokenNonce((n) => n + 1);
+  }, [baseDs]);
+  // The active design system = base color layer + any live token edits.
+  const designSystem = useMemo(
+    () => (baseDs ? { ...baseDs, tokens: tokenEdits ?? baseDs.tokens } : null),
+    [baseDs, tokenEdits],
+  );
+
+  // Manual slider edit → drop the "applied preset" highlight.
+  const handleTokenChange = useCallback((tokens: DesignTokens) => {
+    setTokenEdits(tokens);
+    setActivePresetId(null);
+  }, []);
+
+  // Apply a full-system preset over the current color layer.
+  const handleApplyPreset = useCallback(
+    (presetId: string) => {
+      if (!designSystem) return;
+      const preset = DESIGN_PRESETS.find((p) => p.id === presetId);
+      if (!preset) return;
+      setTokenEdits(applyPreset(designSystem, preset).tokens);
+      setActivePresetId(presetId);
+      setTokenNonce((n) => n + 1);
+      playSound("click");
+    },
+    [designSystem],
+  );
+
+  // Inline canvas edit → override a single color token for the shown mode.
+  const handleColorChange = useCallback(
+    (mode: "light" | "dark", key: string, hex: string) => {
+      if (!designSystem) return;
+      const t = designSystem.tokens;
+      setTokenEdits({
+        ...t,
+        color: { ...t.color, [mode]: { ...t.color[mode], [key]: hex } },
+      });
+    },
+    [designSystem],
+  );
+
+  // Apply the detected type + shape from an import onto the live tokens.
+  const handleApplyImportStyle = useCallback(() => {
+    if (!designSystem || !importHints) return;
+    const t = designSystem.tokens;
+    setTokenEdits({
+      ...t,
+      typography: importHints.fontSans
+        ? { ...t.typography, sans: importHints.fontSans }
+        : t.typography,
+      radius:
+        importHints.radius != null ? makeRadius(importHints.radius) : t.radius,
+    });
+    setActivePresetId(null);
+    setTokenNonce((n) => n + 1);
+    playSound("click");
+    showToast("Applied detected type & shape.");
+  }, [designSystem, importHints]);
+
+  // --- Saved (DB-backed) design systems ---------------------------------
+
+  const refreshSaved = useCallback(async () => {
+    try {
+      setSavedSystems(await listDesignSystemsAction());
+    } catch {
+      /* offline / no db — leave list as-is */
+    }
+  }, []);
+
+  // Load the saved list whenever the modal opens.
+  useEffect(() => {
+    if (isBrandSystemOpen) refreshSaved();
+  }, [isBrandSystemOpen, refreshSaved]);
+
+  // Load attachable workspaces (projects + collections) when the modal opens.
+  useEffect(() => {
+    if (!isBrandSystemOpen) return;
+    (async () => {
+      try {
+        setWorkspaces(await listWorkspacesAction());
+      } catch {
+        /* offline / no db — leave list empty */
+      }
+    })();
+  }, [isBrandSystemOpen]);
+
+  // Keep the name field tracking the app name until the system is saved.
+  useEffect(() => {
+    if (!currentSavedId) setCurrentName(inputs.appName);
+  }, [inputs.appName, currentSavedId]);
+
+  const handleSaveSystem = useCallback(
+    async (asNew: boolean) => {
+      if (!designSystem || !selectedPalette) return;
+      const rec = {
+        ...toSavedDesignSystem(designSystem, inputs, {
+          id: asNew ? "" : (currentSavedId ?? ""),
+          name: currentName.trim() || inputs.appName,
+          paletteId: selectedPalette.id,
+        }),
+        // Carry the chosen workspace so a fresh save is attached immediately.
+        projectSlug: workspaceSlug,
+      };
+      try {
+        const saved = await saveDesignSystemAction(rec);
+        setCurrentSavedId(saved.id);
+        setCurrentName(saved.name);
+        setWorkspaceSlug(saved.projectSlug ?? null);
+        await refreshSaved();
+        playSound("success");
+        showToast(asNew ? "Saved as a new system!" : "Design system saved!");
+      } catch {
+        showToast("Couldn't save the system.", "error");
+      }
+    },
+    [
+      designSystem,
+      selectedPalette,
+      inputs,
+      currentSavedId,
+      currentName,
+      workspaceSlug,
+      refreshSaved,
+    ],
+  );
+
+  // Attach the current system to a workspace. Persists immediately when the
+  // system is already saved; otherwise the choice is applied on the next save.
+  const handleAssignWorkspace = useCallback(
+    async (slug: string | null) => {
+      setWorkspaceSlug(slug);
+      if (!currentSavedId) return;
+      try {
+        await setDesignSystemProjectAction(currentSavedId, slug);
+        await refreshSaved();
+        playSound("click");
+        showToast(
+          slug
+            ? `Attached to ${workspaces.find((w) => w.slug === slug)?.name ?? "workspace"}`
+            : "Detached from workspace",
+        );
+      } catch {
+        showToast("Couldn't update the attachment.", "error");
+      }
+    },
+    [currentSavedId, refreshSaved, workspaces],
+  );
+
+  const handleDuplicateSystem = useCallback(async () => {
+    if (!currentSavedId) return;
+    try {
+      const dup = await duplicateDesignSystemAction(currentSavedId);
+      if (dup) {
+        setCurrentSavedId(dup.id);
+        setCurrentName(dup.name);
+        await refreshSaved();
+        playSound("success");
+        showToast("Duplicated!");
+      }
+    } catch {
+      showToast("Couldn't duplicate.", "error");
+    }
+  }, [currentSavedId, refreshSaved]);
+
+  const handleDeleteSystem = useCallback(
+    async (id: string) => {
+      try {
+        await deleteDesignSystemAction(id);
+        if (id === currentSavedId) setCurrentSavedId(null);
+        await refreshSaved();
+        showToast("Deleted.");
+      } catch {
+        showToast("Couldn't delete.", "error");
+      }
+    },
+    [currentSavedId, refreshSaved],
+  );
+
+  const handleLoadSystem = useCallback((saved: SavedDesignSystem) => {
+    const pal =
+      ALL.find((p) => p.id === saved.paletteId) ?? syntheticPalette(saved);
+    const mergedInputs = { ...DEFAULT_INPUTS, ...saved.inputs };
+    // Queue the saved tokens so the baseDs effect applies them post-regenerate.
+    pendingRestoreRef.current = {
+      tokens: saved.tokens,
+      presetId: saved.presetId ?? null,
+    };
+    setCurrentSavedId(saved.id);
+    setCurrentName(saved.name);
+    setWorkspaceSlug(saved.projectSlug ?? null);
+    setSelectedPalette(pal);
+    setInputs(mergedInputs);
+    setImportHints(null);
+    setSystem(generateBrandSystem(pal, mergedInputs));
+    playSound("click");
+    showToast(`Loaded “${saved.name}”`);
+    requestAnimationFrame(() => {
+      outputRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }, []);
+
+  // Apply-from-project: when opened with a target saved-system id, load it.
+  useEffect(() => {
+    if (!isBrandSystemOpen || !brandSystemLoadId) return;
+    let active = true;
+    (async () => {
+      try {
+        const saved = await getDesignSystemAction(brandSystemLoadId);
+        if (active && saved) handleLoadSystem(saved);
+      } finally {
+        clearBrandSystemLoadId();
+      }
+    })();
+    return () => {
+      active = false;
+    };
+  }, [
+    isBrandSystemOpen,
+    brandSystemLoadId,
+    handleLoadSystem,
+    clearBrandSystemLoadId,
+  ]);
 
   // Hydrate persisted inputs + recents once.
   useEffect(() => {
     try {
       const storedInputs = localStorage.getItem(INPUTS_KEY);
-      if (storedInputs) setInputs({ ...DEFAULT_INPUTS, ...JSON.parse(storedInputs) });
+      if (storedInputs)
+        setInputs({ ...DEFAULT_INPUTS, ...JSON.parse(storedInputs) });
       const storedRecents = localStorage.getItem(RECENTS_KEY);
       if (storedRecents) setRecents(JSON.parse(storedRecents));
     } catch {}
@@ -131,7 +428,10 @@ export function BrandSystemModal() {
       inputs,
       savedAt: new Date().toISOString(),
     };
-    const next = [record, ...recents.filter((r) => r.id !== record.id)].slice(0, 6);
+    const next = [record, ...recents.filter((r) => r.id !== record.id)].slice(
+      0,
+      6,
+    );
     persistRecents(next);
 
     requestAnimationFrame(() => {
@@ -143,6 +443,9 @@ export function BrandSystemModal() {
     setInputs(DEFAULT_INPUTS);
     setSelectedPalette(null);
     setSystem(null);
+    setCurrentSavedId(null);
+    setWorkspaceSlug(null);
+    setImportHints(null);
     playSound("click");
     showToast("Brand System reset.");
   }, []);
@@ -249,7 +552,11 @@ export function BrandSystemModal() {
                       onSelect={(p) => {
                         setSelectedPalette(p);
                         setSystem(null);
+                        setImportHints(null);
+                        setCurrentSavedId(null);
+                        setWorkspaceSlug(null);
                       }}
+                      onImport={setImportHints}
                     />
                   </div>
 
@@ -283,7 +590,9 @@ export function BrandSystemModal() {
                           <span className="font-black text-gray-900 dark:text-white">
                             {r.appName}
                           </span>
-                          <span className="text-gray-400">· {r.paletteName}</span>
+                          <span className="text-gray-400">
+                            · {r.paletteName}
+                          </span>
                         </button>
                       ))}
                     </div>
@@ -311,9 +620,29 @@ export function BrandSystemModal() {
                   )}
                 </div>
 
+                {/* Save / Load / Duplicate reusable systems */}
+                <SavedSystemsBar
+                  saved={savedSystems}
+                  currentSavedId={currentSavedId}
+                  name={currentName}
+                  onNameChange={setCurrentName}
+                  canSave={!!designSystem}
+                  onSave={handleSaveSystem}
+                  onDuplicate={handleDuplicateSystem}
+                  onLoad={handleLoadSystem}
+                  onDelete={handleDeleteSystem}
+                  onOpenList={refreshSaved}
+                  workspaces={workspaces}
+                  currentWorkspaceSlug={workspaceSlug}
+                  onAssignWorkspace={handleAssignWorkspace}
+                />
+
                 {/* Output */}
                 {system && (
-                  <div ref={outputRef} className="space-y-12 border-t border-gray-100 dark:border-slate-800 pt-10">
+                  <div
+                    ref={outputRef}
+                    className="space-y-12 border-t border-gray-100 dark:border-slate-800 pt-10"
+                  >
                     {/* Foundation */}
                     <section className="space-y-5">
                       <SectionHeader
@@ -347,8 +676,114 @@ export function BrandSystemModal() {
                         title="Semantic Color Roles"
                         subtitle="Click any role to copy its token. Amber = derived."
                       />
-                      <SemanticRoles system={system} />
+                      <SemanticRoles
+                        system={system}
+                        overrides={
+                          designSystem?.tokens.color[designSystem.mode]
+                        }
+                      />
                     </section>
+
+                    {/* Design tokens (type / space / radius / shadow / density) */}
+                    {designSystem && (
+                      <section className="space-y-5">
+                        <SectionHeader
+                          icon={SlidersHorizontal}
+                          color="bg-amber-500 shadow-amber-500/20"
+                          title="Design Tokens"
+                          subtitle="Start from a preset, then tune type, spacing, shape and elevation — the preview and exports update live."
+                        />
+
+                        {/* Detected style from an import */}
+                        {importHints &&
+                          (importHints.fontSans ||
+                            importHints.radius != null) && (
+                            <div className="flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-indigo-100 bg-indigo-50/40 px-3 py-2.5 dark:border-indigo-950/50 dark:bg-indigo-950/20">
+                              <p className="text-[11px] font-medium text-gray-500 dark:text-gray-400">
+                                Detected from{" "}
+                                <span className="font-black text-indigo-500">
+                                  {importHints.source.ref}
+                                </span>
+                                :{" "}
+                                {importHints.fontSans && (
+                                  <span className="font-bold">
+                                    {importHints.fontSans
+                                      .split(",")[0]
+                                      .replace(/["']/g, "")}
+                                  </span>
+                                )}
+                                {importHints.fontSans &&
+                                  importHints.radius != null &&
+                                  " · "}
+                                {importHints.radius != null && (
+                                  <span className="font-bold">
+                                    {importHints.radius}px radius
+                                  </span>
+                                )}
+                              </p>
+                              <button
+                                type="button"
+                                onClick={handleApplyImportStyle}
+                                className="rounded-xl bg-indigo-500 px-3 py-1.5 text-[11px] font-bold text-white transition-all hover:bg-indigo-600 cursor-pointer"
+                              >
+                                Apply detected style
+                              </button>
+                            </div>
+                          )}
+
+                        {/* Preset rail — restyle the whole system in one click */}
+                        <div className="flex gap-2 overflow-x-auto pb-1 no-scrollbar">
+                          {DESIGN_PRESETS.map((preset) => {
+                            const active = activePresetId === preset.id;
+                            const t = preset.tokens;
+                            return (
+                              <button
+                                key={preset.id}
+                                type="button"
+                                onClick={() => handleApplyPreset(preset.id)}
+                                title={preset.description}
+                                className={`group flex w-40 flex-shrink-0 flex-col gap-2 rounded-2xl border p-3 text-left transition-all cursor-pointer ${
+                                  active
+                                    ? "border-indigo-500 bg-indigo-50/60 ring-1 ring-indigo-500/30 dark:bg-indigo-950/30"
+                                    : "border-gray-100 bg-white hover:border-indigo-300 dark:border-slate-800 dark:bg-slate-900"
+                                }`}
+                              >
+                                {/* Mini shape/elevation swatch */}
+                                <div className="flex h-8 items-center gap-1.5">
+                                  <span
+                                    className="h-7 w-7 border border-black/10 bg-gradient-to-br from-indigo-400 to-violet-500"
+                                    style={{
+                                      borderRadius: `${t.radius?.md ?? 8}px`,
+                                      boxShadow: t.shadow?.[1] ?? "none",
+                                    }}
+                                  />
+                                  <span
+                                    className="text-[13px] font-black text-gray-700 dark:text-gray-200"
+                                    style={{ fontFamily: t.typography?.sans }}
+                                  >
+                                    Aa
+                                  </span>
+                                </div>
+                                <div>
+                                  <p className="text-[11px] font-black text-gray-900 dark:text-white">
+                                    {preset.name}
+                                  </p>
+                                  <p className="line-clamp-2 text-[10px] leading-snug text-gray-400">
+                                    {preset.description}
+                                  </p>
+                                </div>
+                              </button>
+                            );
+                          })}
+                        </div>
+
+                        <TokenControls
+                          key={`${designSystem.id}-${tokenNonce}`}
+                          tokens={designSystem.tokens}
+                          onChange={handleTokenChange}
+                        />
+                      </section>
+                    )}
 
                     {/* Preview */}
                     <section className="space-y-5">
@@ -358,7 +793,12 @@ export function BrandSystemModal() {
                         title="Visual Preview"
                         subtitle="Your tokens applied to a realistic interface."
                       />
-                      <BrandPreview system={system} />
+                      {designSystem && (
+                        <BrandPreview
+                          designSystem={designSystem}
+                          onColorChange={handleColorChange}
+                        />
+                      )}
                     </section>
 
                     {/* Usage guide */}
@@ -404,7 +844,9 @@ export function BrandSystemModal() {
                               <p className="text-xs font-black text-gray-900 dark:text-white">
                                 {c.name}
                               </p>
-                              <p className="text-[10px] text-gray-400">{c.intent}</p>
+                              <p className="text-[10px] text-gray-400">
+                                {c.intent}
+                              </p>
                             </div>
                             <div className="space-y-1">
                               {c.usage.map((u) => (
@@ -420,7 +862,9 @@ export function BrandSystemModal() {
                                       className="h-3.5 w-3.5 rounded border border-black/10"
                                       style={{
                                         backgroundColor:
-                                          system.roles[u.token.replace("--", "")],
+                                          system.roles[
+                                            u.token.replace("--", "")
+                                          ],
                                       }}
                                     />
                                     <code className="text-[9px] font-mono text-gray-400">
@@ -443,7 +887,10 @@ export function BrandSystemModal() {
                         title="Token System & Export"
                         subtitle="Copy or download CSS, SCSS, JSON or Markdown."
                       />
-                      <TokenOutput system={system} />
+                      <TokenOutput
+                        system={system}
+                        designSystem={designSystem ?? undefined}
+                      />
                     </section>
 
                     {/* Accessibility */}
@@ -496,4 +943,31 @@ function slugify(name: string): string {
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-|-$/g, "") || "app"
   );
+}
+
+/**
+ * Rebuild a Palette for a saved system whose source palette isn't in the
+ * dataset (e.g. an imported one). Colors come from the saved chart series or
+ * brand tokens; the saved tokens are overlaid on load, so exact colors are
+ * preserved regardless — this only feeds the regenerated narrative/roles.
+ */
+function syntheticPalette(saved: SavedDesignSystem): Palette {
+  const light = saved.tokens.color.light;
+  const hexes = (
+    saved.tokens.chart?.length
+      ? saved.tokens.chart
+      : [
+          light["brand-primary"],
+          light["brand-secondary"],
+          light["brand-accent"],
+        ]
+  ).filter(Boolean);
+  return {
+    id: saved.paletteId ?? `saved-${saved.id}`,
+    name: saved.name,
+    category: "Saved",
+    count: hexes.length,
+    colors: hexes.map((hex, i) => ({ name: `Color ${i + 1}`, hex })),
+    tags: { mood: [], aesthetic: [] },
+  };
 }

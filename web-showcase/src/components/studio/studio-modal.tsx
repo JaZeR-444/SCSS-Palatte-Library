@@ -40,6 +40,7 @@ import { playSound } from "@/utils/audio";
 import { showToast } from "@/utils/toast";
 import { getContrastRatio, getLuminanceValue } from "@/utils/contrast-utils";
 import { computeRoleIssues } from "@/utils/role-mapping";
+import { exportShadcn, exportCssTheme } from "@/utils/design-system-export";
 import palettesData from "@/data/palettes.json";
 import { Palette } from "@/types";
 import React, { useMemo, useState, useEffect, useRef } from "react";
@@ -58,7 +59,7 @@ const VISION_OPTIONS = [
   { value: "achromatopsia", label: "Achromatopsia (No Color)" },
 ];
 
-type CodeTab = "scss" | "css" | "tailwind" | "json";
+type CodeTab = "shadcn" | "theme" | "scss" | "css" | "tailwind" | "json";
 
 const STUDIO_SECTIONS = [
   { id: "overview", label: "Overview" },
@@ -348,6 +349,7 @@ export function StudioModal() {
     pulse,
     previewDevice,
     setPreviewDevice,
+    designSystem,
   } = useStudio();
 
   const palettes = palettesData as Palette[];
@@ -689,17 +691,20 @@ export function StudioModal() {
     ? semanticEntries(roleMapping)
     : paletteEntries(selectedPalette);
 
-  const exportFilename = `${nameToVar(selectedPalette.name)}${
-    useSemantic ? "-tokens" : ""
-  }.${
+  // shadcn / theme are full-DesignSystem exports (not affected by the
+  // descriptive/semantic naming toggle).
+  const isFullDs = codeTab === "shadcn" || codeTab === "theme";
+  const exportExt =
     codeTab === "scss"
       ? "scss"
-      : codeTab === "css"
-        ? "css"
-        : codeTab === "json"
-          ? "json"
-          : "js"
-  }`;
+      : codeTab === "json"
+        ? "json"
+        : codeTab === "tailwind"
+          ? "js"
+          : "css";
+  const exportFilename = `${nameToVar(selectedPalette.name)}${
+    codeTab === "shadcn" ? "-shadcn" : useSemantic && !isFullDs ? "-tokens" : ""
+  }.${exportExt}`;
 
   const downloadCode = () => {
     const blob = new Blob([codeContent], {
@@ -716,18 +721,26 @@ export function StudioModal() {
   };
 
   const codeContent =
-    codeTab === "scss"
-      ? generateScss(
-          exportEntries,
-          useSemantic
-            ? `${selectedPalette.name} — Design Tokens`
-            : `${selectedPalette.name} — ${selectedPalette.count} Colors`,
-        )
-      : codeTab === "css"
-        ? generateCss(exportEntries)
-        : codeTab === "json"
-          ? generateJson(exportEntries)
-          : generateTailwind(exportEntries);
+    codeTab === "shadcn"
+      ? designSystem
+        ? exportShadcn(designSystem)
+        : ""
+      : codeTab === "theme"
+        ? designSystem
+          ? exportCssTheme(designSystem)
+          : ""
+        : codeTab === "scss"
+          ? generateScss(
+              exportEntries,
+              useSemantic
+                ? `${selectedPalette.name} — Design Tokens`
+                : `${selectedPalette.name} — ${selectedPalette.count} Colors`,
+            )
+          : codeTab === "css"
+            ? generateCss(exportEntries)
+            : codeTab === "json"
+              ? generateJson(exportEntries)
+              : generateTailwind(exportEntries);
 
   const scenarioFilterStyle = visionFilter
     ? { filter: `url(#filter-${visionFilter})` }
@@ -1424,6 +1437,8 @@ export function StudioModal() {
                       <div className="flex border-b border-gray-100 dark:border-slate-800 bg-gray-50/50 dark:bg-slate-950/20">
                         {(
                           [
+                            ["shadcn", "shadcn/ui"],
+                            ["theme", "Theme CSS"],
                             ["scss", "SCSS"],
                             ["css", "CSS Vars"],
                             ["tailwind", "Tailwind"],
@@ -1474,31 +1489,37 @@ export function StudioModal() {
 
                       {/* Naming toggle + filename hint */}
                       <div className="flex flex-wrap items-center justify-between gap-2 border-b border-gray-100 bg-gray-50/30 px-4 py-2 dark:border-slate-800 dark:bg-slate-950/10">
-                        <div className="inline-flex rounded-xl bg-gray-100 p-0.5 dark:bg-slate-800">
-                          <button
-                            onClick={() => setUseSemantic(false)}
-                            className={`rounded-lg px-3 py-1 text-[10px] font-black uppercase tracking-wider transition-all ${
-                              !useSemantic
-                                ? "bg-white text-indigo-500 shadow-sm dark:bg-slate-900"
-                                : "text-gray-400 hover:text-gray-600"
-                            }`}
-                            title="Export raw palette colors by their descriptive names"
-                          >
-                            Descriptive
-                          </button>
-                          <button
-                            onClick={() => setUseSemantic(true)}
-                            className={`inline-flex items-center gap-1 rounded-lg px-3 py-1 text-[10px] font-black uppercase tracking-wider transition-all ${
-                              useSemantic
-                                ? "bg-white text-indigo-500 shadow-sm dark:bg-slate-900"
-                                : "text-gray-400 hover:text-gray-600"
-                            }`}
-                            title="Export your role assignments as semantic tokens (bg-canvas, primary, …)"
-                          >
-                            <Braces className="h-3 w-3" />
-                            Semantic roles
-                          </button>
-                        </div>
+                        {isFullDs ? (
+                          <span className="text-[10px] font-black uppercase tracking-wider text-gray-400">
+                            Full design system · light + dark
+                          </span>
+                        ) : (
+                          <div className="inline-flex rounded-xl bg-gray-100 p-0.5 dark:bg-slate-800">
+                            <button
+                              onClick={() => setUseSemantic(false)}
+                              className={`rounded-lg px-3 py-1 text-[10px] font-black uppercase tracking-wider transition-all ${
+                                !useSemantic
+                                  ? "bg-white text-indigo-500 shadow-sm dark:bg-slate-900"
+                                  : "text-gray-400 hover:text-gray-600"
+                              }`}
+                              title="Export raw palette colors by their descriptive names"
+                            >
+                              Descriptive
+                            </button>
+                            <button
+                              onClick={() => setUseSemantic(true)}
+                              className={`inline-flex items-center gap-1 rounded-lg px-3 py-1 text-[10px] font-black uppercase tracking-wider transition-all ${
+                                useSemantic
+                                  ? "bg-white text-indigo-500 shadow-sm dark:bg-slate-900"
+                                  : "text-gray-400 hover:text-gray-600"
+                              }`}
+                              title="Export your role assignments as semantic tokens (bg-canvas, primary, …)"
+                            >
+                              <Braces className="h-3 w-3" />
+                              Semantic roles
+                            </button>
+                          </div>
+                        )}
                         <code className="font-mono text-[10px] text-gray-400">
                           {exportFilename}
                         </code>

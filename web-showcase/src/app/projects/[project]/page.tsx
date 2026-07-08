@@ -9,6 +9,7 @@ import {
   getManualPaletteIds,
   getProjectPresets,
   getProjects,
+  listDesignSystems,
 } from "@/utils/db";
 import { Header } from "@/components/header";
 import { LazyModals } from "@/components/lazy-modals";
@@ -48,6 +49,7 @@ export default async function ProjectDetailPage({
   const meta = getProjectMeta(project) ?? { type: "Product", description: "" };
   const manualIds = getManualPaletteIds(project);
   const presets = getProjectPresets(project);
+  const designSystems = listDesignSystems(project);
 
   return (
     <main id="main-content" className="min-h-screen">
@@ -81,6 +83,7 @@ export default async function ProjectDetailPage({
           palettes={palettes}
           manualIds={manualIds}
           presets={presets}
+          designSystems={designSystems}
         />
       </div>
 

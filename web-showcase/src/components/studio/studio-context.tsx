@@ -6,18 +6,23 @@ import React, {
   useState,
   useCallback,
   useEffect,
+  useMemo,
   useRef,
 } from "react";
 import { Palette } from "@/types";
+import { ColorMode } from "@/types/brand-system";
+import { DesignSystem } from "@/types/design-system";
 import { UISelection, StudioState, ROLE_META } from "@/types/studio";
 import {
   buildRoleMapping,
   indexRoleMapping,
   kindToSurface,
 } from "@/utils/role-mapping";
+import { designSystemFromRoleMapping } from "@/utils/design-system";
 import {
   bestContrastColor,
   getContrastRatio,
+  getLuminanceValue,
   wcagGrade,
 } from "@/utils/contrast-utils";
 
@@ -53,6 +58,16 @@ interface StudioContextType extends StudioState {
   brandSystemPalette: Palette | null;
   openBrandSystem: (palette?: Palette) => void;
   closeBrandSystem: () => void;
+  /** When set, the modal loads this saved design system on open. */
+  brandSystemLoadId: string | null;
+  openBrandSystemWithSystem: (id: string) => void;
+  clearBrandSystemLoadId: () => void;
+  /**
+   * The unified design system derived from the current palette + role edits.
+   * `roleMapping` stays the editable source of truth; this is the canonical
+   * object the Brand System + exporters share. Null when no palette is open.
+   */
+  designSystem: DesignSystem | null;
 }
 
 const StudioContext = createContext<StudioContextType | undefined>(undefined);
@@ -80,6 +95,9 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
   const [brandSystemPalette, setBrandSystemPalette] = useState<Palette | null>(
     null,
   );
+  const [brandSystemLoadId, setBrandSystemLoadId] = useState<string | null>(
+    null,
+  );
 
   const [hasRoleEdits, setHasRoleEdits] = useState(false);
   // Per-palette role overrides survive prev/next navigation within a session.
@@ -103,7 +121,19 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
 
   const openBrandSystem = useCallback((palette?: Palette) => {
     setBrandSystemPalette(palette || null);
+    setBrandSystemLoadId(null);
     setIsBrandSystemOpen(true);
+  }, []);
+
+  // Open the modal and load a specific saved design system (e.g. from a project).
+  const openBrandSystemWithSystem = useCallback((id: string) => {
+    setBrandSystemPalette(null);
+    setBrandSystemLoadId(id);
+    setIsBrandSystemOpen(true);
+  }, []);
+
+  const clearBrandSystemLoadId = useCallback(() => {
+    setBrandSystemLoadId(null);
   }, []);
 
   const closeBrandSystem = useCallback(() => {
@@ -251,10 +281,23 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
     setState((prev) => ({ ...prev, visionFilter: f }));
   }, []);
 
+  // One canonical DesignSystem derived from the live palette + role edits.
+  // Mode mirrors buildRoleMapping's light/dark heuristic (median luminance).
+  const designSystem = useMemo<DesignSystem | null>(() => {
+    const p = state.selectedPalette;
+    if (!p) return null;
+    const lums = p.colors.map((c) => getLuminanceValue(c.hex));
+    const sorted = [...lums].sort((a, b) => a - b);
+    const median = sorted[Math.floor(sorted.length / 2)] ?? 1;
+    const mode: ColorMode = median < 0.35 ? "dark" : "light";
+    return designSystemFromRoleMapping(p, state.roleMapping, mode);
+  }, [state.selectedPalette, state.roleMapping]);
+
   return (
     <StudioContext.Provider
       value={{
         ...state,
+        designSystem,
         openStudio,
         closeStudio,
         setScenario,
@@ -282,6 +325,9 @@ export function StudioProvider({ children }: { children: React.ReactNode }) {
         brandSystemPalette,
         openBrandSystem,
         closeBrandSystem,
+        brandSystemLoadId,
+        openBrandSystemWithSystem,
+        clearBrandSystemLoadId,
       }}
     >
       {children}

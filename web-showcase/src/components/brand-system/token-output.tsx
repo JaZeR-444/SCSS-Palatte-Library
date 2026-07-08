@@ -2,21 +2,39 @@
 
 import { useMemo, useState } from "react";
 import { BrandSystem } from "@/types/brand-system";
+import { DesignSystem } from "@/types/design-system";
 import {
   exportCss,
-  exportJson,
   exportMarkdown,
   exportScss,
   exportStyleDictionary,
-  exportTailwind,
 } from "@/utils/brand-system";
+import { designSystemFromBrandSystem } from "@/utils/design-system";
+import {
+  exportCssTheme,
+  exportShadcn,
+  exportTailwindTheme,
+  exportTokensJson,
+} from "@/utils/design-system-export";
 import { showToast } from "@/utils/toast";
 import { playSound } from "@/utils/audio";
 import { Copy, Download } from "lucide-react";
 
-type Tab = "css" | "scss" | "json" | "tailwind" | "style-dictionary" | "markdown";
+type Tab =
+  | "shadcn"
+  | "theme"
+  | "css"
+  | "scss"
+  | "json"
+  | "tailwind"
+  | "style-dictionary"
+  | "markdown";
 
+// "shadcn" + "theme" cover the full token model (type/space/radius/shadow);
+// the rest remain the color-focused Brand System exports.
 const TABS: { id: Tab; label: string; ext: string }[] = [
+  { id: "shadcn", label: "shadcn/ui", ext: "css" },
+  { id: "theme", label: "Theme CSS", ext: "css" },
   { id: "css", label: "CSS Vars", ext: "css" },
   { id: "scss", label: "SCSS", ext: "scss" },
   { id: "json", label: "JSON", ext: "json" },
@@ -34,25 +52,42 @@ function slug(name: string): string {
   );
 }
 
-export function TokenOutput({ system }: { system: BrandSystem }) {
-  const [tab, setTab] = useState<Tab>("css");
+export function TokenOutput({
+  system,
+  designSystem,
+}: {
+  system: BrandSystem;
+  /** When supplied (with live token edits), exports reflect the edited tokens. */
+  designSystem?: DesignSystem;
+}) {
+  const [tab, setTab] = useState<Tab>("shadcn");
+
+  // Full unified design system (adds type/space/radius/shadow to the color layer).
+  const ds = useMemo(
+    () => designSystem ?? designSystemFromBrandSystem(system),
+    [designSystem, system],
+  );
 
   const content = useMemo(() => {
     switch (tab) {
+      case "shadcn":
+        return exportShadcn(ds);
+      case "theme":
+        return exportCssTheme(ds);
       case "css":
         return exportCss(system);
       case "scss":
         return exportScss(system);
       case "json":
-        return exportJson(system);
+        return exportTokensJson(ds);
       case "tailwind":
-        return exportTailwind(system);
+        return exportTailwindTheme(ds);
       case "style-dictionary":
         return exportStyleDictionary(system);
       case "markdown":
         return exportMarkdown(system);
     }
-  }, [tab, system]);
+  }, [tab, system, ds]);
 
   const download = () => {
     const ext = TABS.find((t) => t.id === tab)!.ext;

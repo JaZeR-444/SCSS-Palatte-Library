@@ -72,4 +72,6 @@ export interface Palette {
   qualityScore?: number;
   /** Product this palette was designed for (e.g. "WRD Leads CRM"), if any. */
   project?: string;
+  /** Design-system swatch category (e.g. "surfaces", "brand-scale", "component-states"). */
+  swatchType?: string;
 }

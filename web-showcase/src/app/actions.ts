@@ -1,11 +1,14 @@
-﻿"use server";
+"use server";
 
 import fs from "fs/promises";
 import path from "path";
 import { exec } from "child_process";
 import { promisify } from "util";
+import { lookup as dnsLookup } from "dns/promises";
 import { revalidatePath } from "next/cache";
 import { Palette } from "@/types";
+import { ImportResult, SavedDesignSystem } from "@/types/design-system";
+import { analyzeCss } from "@/utils/import-analyze";
 import * as db from "@/utils/db";
 
 const execAsync = promisify(exec);
@@ -394,8 +397,30 @@ export async function updateProjectMetaAction(
   }
 }
 
+/** Promote a collection into a project (flip kind + add product metadata). */
+export async function promoteToProjectAction(
+  slug: string,
+  type: string,
+  description: string,
+) {
+  try {
+    db.promoteToProject(slug, type, description);
+    revalidatePath("/projects");
+    revalidatePath(`/projects/${slug}`);
+    revalidatePath("/");
+    return { success: true };
+  } catch (error: any) {
+    return { success: false, error: error.message };
+  }
+}
+
 export async function getProjectPalettesAction(slug: string) {
   return db.getProjectPalettes(slug);
+}
+
+// --- Workspaces (unified collections + projects) ---
+export async function listWorkspacesAction(kind?: "collection" | "project") {
+  return db.listWorkspaces(kind);
 }
 
 export async function getManualPaletteIdsAction(slug: string) {
@@ -457,4 +482,208 @@ export async function deleteProjectPresetAction(slug: string, id: string) {
   } catch (error: any) {
     return { success: false, error: error.message };
   }
+}
+
+/* ------------------------------------------------------------------ *
+ * Design-system import — reverse-engineer a public site's CSS.        *
+ * ------------------------------------------------------------------ */
+
+/** True for loopback / private / link-local / CGNAT addresses (v4 + v6). */
+function isPrivateIp(ip: string): boolean {
+  const addr = ip.toLowerCase();
+  const mapped = addr.match(/^::ffff:(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})$/);
+  if (mapped) return isPrivateIp(mapped[1]);
+  const v4 = addr.match(/^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$/);
+  if (v4) {
+    const a = +v4[1];
+    const b = +v4[2];
+    if (a === 0 || a === 10 || a === 127) return true;
+    if (a === 169 && b === 254) return true; // link-local
+    if (a === 172 && b >= 16 && b <= 31) return true;
+    if (a === 192 && b === 168) return true;
+    if (a === 100 && b >= 64 && b <= 127) return true; // CGNAT
+    if (a === 255) return true;
+    return false;
+  }
+  if (addr === "::1" || addr === "::") return true;
+  if (addr.startsWith("fc") || addr.startsWith("fd")) return true; // fc00::/7 ULA
+  if (/^fe[89ab]/.test(addr)) return true; // fe80::/10 link-local
+  return false;
+}
+
+/** Protocol + literal-hostname guard (cheap pre-filter before DNS). */
+function isSafeImportUrl(u: URL): boolean {
+  if (u.protocol !== "http:" && u.protocol !== "https:") return false;
+  const h = u.hostname.toLowerCase().replace(/^\[|\]$/g, "");
+  if (h === "localhost" || h.endsWith(".local") || h.endsWith(".internal"))
+    return false;
+  if (/^\d{1,3}(\.\d{1,3}){3}$/.test(h) || h.includes(":")) {
+    return !isPrivateIp(h); // reject private IP literals directly
+  }
+  return true;
+}
+
+/**
+ * Resolve the host and reject if the literal guard fails or ANY resolved
+ * address is private — closing the "public hostname → private IP" SSRF hole.
+ * Residual TOCTOU (resolve vs. connect may differ) is accepted for this
+ * public-site import use case; full protection would pin the resolved IP.
+ */
+async function assertPublicHost(u: URL): Promise<void> {
+  if (!isSafeImportUrl(u)) throw new Error("blocked URL");
+  let addrs: { address: string }[];
+  try {
+    addrs = await dnsLookup(u.hostname, { all: true });
+  } catch {
+    throw new Error("could not resolve host");
+  }
+  if (!addrs.length || addrs.some((a) => isPrivateIp(a.address))) {
+    throw new Error("host resolves to a private address");
+  }
+}
+
+/** Fetch text, validating every redirect hop against the SSRF guard. */
+async function safeFetchText(startUrl: string, cap: number): Promise<string> {
+  let url = new URL(startUrl);
+  for (let hop = 0; hop < 5; hop++) {
+    await assertPublicHost(url);
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 8000);
+    let res: Response;
+    try {
+      res = await fetch(url.toString(), {
+        signal: ctrl.signal,
+        redirect: "manual",
+        headers: {
+          "user-agent": "Mozilla/5.0 (compatible; PalattesImport/1.0)",
+          accept: "text/html,text/css,*/*",
+        },
+      });
+    } finally {
+      clearTimeout(timer);
+    }
+    if (res.status >= 300 && res.status < 400) {
+      const loc = res.headers.get("location");
+      if (!loc) throw new Error(`HTTP ${res.status}`);
+      url = new URL(loc, url); // re-validated at top of next iteration
+      continue;
+    }
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const text = await res.text();
+    return text.length > cap ? text.slice(0, cap) : text;
+  }
+  throw new Error("too many redirects");
+}
+
+function extractStylesheetHrefs(html: string): string[] {
+  const hrefs: string[] = [];
+  for (const m of html.matchAll(/<link\b[^>]*>/gi)) {
+    const tag = m[0];
+    if (!/rel\s*=\s*["']?[^"'>]*stylesheet/i.test(tag)) continue;
+    const href = tag.match(/href\s*=\s*["']([^"']+)["']/i);
+    if (href) hrefs.push(href[1]);
+  }
+  return hrefs;
+}
+
+export async function analyzeUrlAction(
+  rawUrl: string,
+): Promise<{ result?: ImportResult; error?: string }> {
+  let base: URL;
+  try {
+    const withScheme = /^https?:\/\//i.test(rawUrl)
+      ? rawUrl
+      : `https://${rawUrl}`;
+    base = new URL(withScheme);
+  } catch {
+    return { error: "That doesn't look like a valid URL." };
+  }
+  if (!isSafeImportUrl(base)) {
+    return { error: "Only public http(s) sites can be imported." };
+  }
+
+  let html: string;
+  try {
+    html = await safeFetchText(base.toString(), 2_000_000);
+  } catch (e: any) {
+    return {
+      error: `Couldn't fetch that site (${e?.message || "network error"}).`,
+    };
+  }
+
+  // Pull in up to 6 linked stylesheets — that's where most colors live.
+  const hrefs = extractStylesheetHrefs(html).slice(0, 6);
+  const cssTexts: string[] = [];
+  for (const href of hrefs) {
+    try {
+      const abs = new URL(href, base);
+      // safeFetchText re-validates (protocol + DNS + each redirect hop).
+      cssTexts.push(await safeFetchText(abs.toString(), 1_500_000));
+    } catch {
+      // skip unreachable / blocked stylesheet
+    }
+  }
+
+  const combined = [html, ...cssTexts].join("\n").slice(0, 6_000_000);
+  const a = analyzeCss(combined);
+  if (!a.colors.length) {
+    return {
+      error:
+        "No colors found — this site likely styles at runtime (CSS-in-JS), which static import can't read.",
+    };
+  }
+
+  const notes: string[] = [
+    "Static CSS only — styles injected at runtime (CSS-in-JS) aren't captured.",
+    `Analyzed the page${cssTexts.length ? ` + ${cssTexts.length} stylesheet${cssTexts.length > 1 ? "s" : ""}` : ""}.`,
+  ];
+
+  return {
+    result: {
+      source: { kind: "url", ref: base.hostname },
+      colors: a.colors,
+      fontSans: a.fontSans,
+      radius: a.radius,
+      shadow: a.shadow,
+      notes,
+    },
+  };
+}
+
+/* ------------------------------------------------------------------ *
+ * Design-system persistence (reusable, project-optional artifacts).   *
+ * ------------------------------------------------------------------ */
+
+export async function listDesignSystemsAction(projectSlug?: string) {
+  return db.listDesignSystems(projectSlug);
+}
+
+export async function getDesignSystemAction(id: string) {
+  return db.getDesignSystem(id);
+}
+
+export async function saveDesignSystemAction(rec: SavedDesignSystem) {
+  const saved = db.saveDesignSystem(rec);
+  if (saved.projectSlug) revalidatePath(`/projects/${saved.projectSlug}`);
+  return saved;
+}
+
+export async function renameDesignSystemAction(id: string, name: string) {
+  db.renameDesignSystem(id, name);
+}
+
+export async function duplicateDesignSystemAction(id: string) {
+  return db.duplicateDesignSystem(id);
+}
+
+export async function setDesignSystemProjectAction(
+  id: string,
+  projectSlug: string | null,
+) {
+  db.setDesignSystemProject(id, projectSlug);
+  if (projectSlug) revalidatePath(`/projects/${projectSlug}`);
+}
+
+export async function deleteDesignSystemAction(id: string) {
+  db.deleteDesignSystem(id);
 }
