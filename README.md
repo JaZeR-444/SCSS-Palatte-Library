@@ -4,11 +4,11 @@
   <br /><br />
 
   [![Live Demo](https://img.shields.io/badge/Live_Demo-app--pallates.vercel.app-6366F1?style=for-the-badge&logo=vercel&logoColor=white)](https://app-pallates.vercel.app)
-  [![Palettes](https://img.shields.io/badge/Palettes-2%2C555%2B-F97316?style=for-the-badge)](https://app-pallates.vercel.app)
+  [![Palettes](https://img.shields.io/badge/Palettes-3%2C000%2B-F97316?style=for-the-badge)](https://app-pallates.vercel.app)
   [![License](https://img.shields.io/badge/License-MIT-10B981?style=for-the-badge)](LICENSE)
   [![npm](https://img.shields.io/badge/npm-install-CB3837?style=for-the-badge&logo=npm)](https://github.com/JaZeR-444/SCSS-Palatte-Library)
 
-  <p><em>2,500+ production-ready SCSS & CSS color palettes — browse, search, export, and use in any project.</em></p>
+  <p><em>3,000+ production-ready SCSS &amp; CSS color palettes — browse, search, export, and use in any project.</em></p>
 </div>
 
 ---
@@ -19,8 +19,8 @@
 
 | Layer | Description |
 |-------|-------------|
-| 📦 **SCSS/CSS Library** | 332+ curated palette files installable via `npm`. Each palette ships in HEX, HSL, RGB, and gradient formats. |
-| 🌐 **Interactive Showcase** | A Next.js 15 App Router web app at `web-showcase/` with live preview, search, contrast checking (WCAG), export, and collection management for 2,555+ palettes from a SQLite database. |
+| 📦 **SCSS/CSS Library** | 933+ curated palette files installable via `npm`. Each palette ships in HEX, HSL, RGB, and gradient formats. |
+| 🌐 **Interactive Showcase** | A Next.js 16 App Router web app at `web-showcase/` with live preview, search, contrast checking (WCAG), export, and collection management for 3,000+ palettes from a SQLite database. |
 
 ---
 
@@ -31,7 +31,7 @@
 ### App Features
 
 - 🔍 **Full-text search** — fuzzy-match palettes by name, description, tag, or hex value
-- 🎨 **2,555+ palettes** served from a normalized SQLite database
+- 🎨 **3,000+ palettes** served from a normalized SQLite database
 - 🌓 **Dark / Light mode** with system preference support
 - ♿ **WCAG contrast checker** — AA/AAA pass/fail for any palette
 - 🎭 **Colorblind simulation** — Protanopia, Deuteranopia, Tritanopia, Achromatopsia
@@ -42,6 +42,9 @@
 - 🎛️ **Studio Mode** — deep-dive view with role mapping and audio feedback
 - 📱 **Fully responsive** — mobile, tablet, and desktop
 - 🔧 **Palette Creator** — build your own palette and save to the library
+- 🏷️ **UI Readiness Score** — accessibility mode plus advanced filters for temperature, saturation profile, and span type
+- 🧠 **Collection Intelligence** — smart palette recommendations based on active collection composition
+- 🔗 **Shareable URLs** — search and filter state synced to URL query params
 
 ---
 
@@ -49,7 +52,7 @@
 
 For Zoho or lead-review pages that only show the Search button after highlighting a phone number, use `tools/zoho-one-click-phone-search.user.js` with a userscript manager such as Tampermonkey. It scans the current page for US-style phone numbers, turns each one into a small clickable button, selects the number, and clicks the page's existing `Search` button.
 
-Update the `@match` line in the script to the exact viewer domain before using it every day.
+Update the `@match` line in the script to the exact viewer domain before using it.
 
 ---
 
@@ -93,7 +96,7 @@ files, and root package docs so installs stay lightweight.
 ### Import everything
 
 ```scss
-@use 'scss-palette-library'; // imports _index.scss → all 833 palettes
+@use 'scss-palette-library'; // imports _index.scss → all 933 palettes
 ```
 
 ---
@@ -102,7 +105,7 @@ files, and root package docs so installs stay lightweight.
 
 ```
 App - Palattes/
-├── Palattes by # of Colors/          # SCSS source palettes
+├── Palattes by # of Colors/          # SCSS source palettes (933 total)
 │   ├── 3 Color Palette/              # 36 palettes
 │   ├── 4 Color Palette/              # 36 palettes
 │   ├── 5 Color Palette/              # 44 palettes
@@ -111,9 +114,9 @@ App - Palattes/
 │   ├── 8 Color Palette/              # 53 palettes
 │   ├── 9 Color Palette/              # 41 palettes
 │   ├── 10 Color Palette/             # 53 palettes
-│   └── 11-35 Color Palette/          # 500 new palettes (20 per folder)
+│   └── 11–35 Color Palette/          # 20–31 palettes each (25 folders)
 │
-├── web-showcase/                     # Next.js 15 App Router showcase
+├── web-showcase/                     # Next.js 16 App Router showcase
 │   ├── src/
 │   │   ├── app/                      # layout, page, server actions
 │   │   ├── components/               # UI components + Studio
@@ -123,6 +126,7 @@ App - Palattes/
 │   └── public/                       # Brand assets + PWA icons
 │       ├── icon.svg                  # App icon (SVG)
 │       ├── logo.svg                  # Full wordmark
+│       ├── logo-dark.svg             # Dark-mode wordmark
 │       ├── og-image.png              # OpenGraph social card (1200×630)
 │       ├── icon-192.png              # PWA icon
 │       ├── icon-512.png              # PWA icon
@@ -133,10 +137,23 @@ App - Palattes/
 │   └── showcase/                     # Retired legacy static gallery (kept for reference)
 │
 ├── generated/                        # Canonical palette dataset (single source of truth)
-│   └── palettes.db                   # Normalized SQLite (3,056 palettes)
+│   └── palettes.db                   # Normalized SQLite (~3,056 palettes)
+│
+├── tools/
+│   └── zoho-one-click-phone-search.user.js   # Userscript: phone-number search helper
+│
+├── docs/                             # Additional documentation and plans
 │
 ├── _index.scss                       # npm package entry point
-├── build_index.py                    # Regenerates showcase data from SCSS
+├── build_index.py                    # Regenerates archive data from SCSS sources
+├── sync_palettes.py                  # Syncs generated/ dataset → web-showcase/src/data/
+├── append_to_generated.py            # Appends new palettes to the canonical dataset
+├── enrich_palettes.py                # Enriches palette metadata (tags, descriptions, scores)
+├── refine_palettes.py                # Refines and deduplicates palette entries
+├── update_index_scss.py              # Regenerates _index.scss from palette sources
+├── palettes.db                       # Root SQLite mirror (built by build_index.py)
+├── master_index.csv                  # CSV export of all palette metadata
+├── color-names.csv                   # Reference color-name dataset
 ├── package.json                      # npm package config (SCSS library)
 └── CHANGELOG.md
 ```
@@ -185,6 +202,13 @@ npm run dev
 ```bash
 python build_index.py
 # regenerates archive/showcase/palettes.json, PALETTES.md, master_index.csv
+```
+
+### Sync palettes to the web app
+
+```bash
+python sync_palettes.py
+# copies generated/palettes.db → web-showcase/src/data/
 ```
 
 ### Serve the retired static gallery (archived)

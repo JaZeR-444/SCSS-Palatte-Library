@@ -1,0 +1,113 @@
+/*---
+id: ceramic-glaze
+name: Ceramic Glaze
+author: JaZeR-444
+version: 1.0.0
+category: Material & Craft
+count: 10
+description: A warmly handcrafted ceramic and pottery palette moving from rich terracotta clays through raku tans and sand glazes into celadon greens and soft off-whites, evoking artisan studios and slow design.
+tags:
+  mood:
+  - warm
+  - handcrafted
+  - organic
+  aesthetic:
+  - Artisan
+  - Craft
+  - Earthy
+intent: A material-inspired 10-color palette designed for artisan brands, craft studios, slow-design products, and warm editorial systems.
+suggested_use:
+- Artisan and pottery brand identities
+- Craft and slow-design editorial layouts
+- Warm-toned UI components and packaging
+url: https://coolors.co/b5543c-c97c5d-d9a87c-e8c99a-f2e0c4-d4e6d0-a8d5b5-c8e8da-f0ece4-faf6f0
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--terracotta-clay: #b5543cff;
+--warm-clay: #c97c5dff;
+--raku-tan: #d9a87cff;
+--sand-glaze: #e8c99aff;
+--cream-bisque: #f2e0c4ff;
+--celadon-green: #d4e6d0ff;
+--sky-celadon: #a8d5b5ff;
+--pale-glaze: #c8e8daff;
+--soft-white: #f0ece4ff;
+--warm-cream: #faf6f0ff;
+
+/* CSS HSL */
+--terracotta-clay: hsla(11, 50%, 47%, 1);
+--warm-clay: hsla(18, 45%, 58%, 1);
+--raku-tan: hsla(28, 52%, 67%, 1);
+--sand-glaze: hsla(34, 62%, 76%, 1);
+--cream-bisque: hsla(36, 67%, 86%, 1);
+--celadon-green: hsla(110, 25%, 85%, 1);
+--sky-celadon: hsla(139, 33%, 75%, 1);
+--pale-glaze: hsla(155, 37%, 84%, 1);
+--soft-white: hsla(40, 22%, 92%, 1);
+--warm-cream: hsla(40, 50%, 97%, 1);
+}
+
+/* SCSS HEX */
+$terracotta-clay: #b5543cff;
+$warm-clay: #c97c5dff;
+$raku-tan: #d9a87cff;
+$sand-glaze: #e8c99aff;
+$cream-bisque: #f2e0c4ff;
+$celadon-green: #d4e6d0ff;
+$sky-celadon: #a8d5b5ff;
+$pale-glaze: #c8e8daff;
+$soft-white: #f0ece4ff;
+$warm-cream: #faf6f0ff;
+
+/* SCSS HSL */
+$terracotta-clay: hsla(11, 50%, 47%, 1);
+$warm-clay: hsla(18, 45%, 58%, 1);
+$raku-tan: hsla(28, 52%, 67%, 1);
+$sand-glaze: hsla(34, 62%, 76%, 1);
+$cream-bisque: hsla(36, 67%, 86%, 1);
+$celadon-green: hsla(110, 25%, 85%, 1);
+$sky-celadon: hsla(139, 33%, 75%, 1);
+$pale-glaze: hsla(155, 37%, 84%, 1);
+$soft-white: hsla(40, 22%, 92%, 1);
+$warm-cream: hsla(40, 50%, 97%, 1);
+
+/* SCSS RGB */
+$terracotta-clay: rgba(181, 84, 60, 1);
+$warm-clay: rgba(201, 124, 93, 1);
+$raku-tan: rgba(217, 168, 124, 1);
+$sand-glaze: rgba(232, 201, 154, 1);
+$cream-bisque: rgba(242, 224, 196, 1);
+$celadon-green: rgba(212, 230, 208, 1);
+$sky-celadon: rgba(168, 213, 181, 1);
+$pale-glaze: rgba(200, 232, 218, 1);
+$soft-white: rgba(240, 236, 228, 1);
+$warm-cream: rgba(250, 246, 240, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #b5543cff, #c97c5dff, #d9a87cff, #e8c99aff, #f2e0c4ff, #d4e6d0ff, #a8d5b5ff, #c8e8daff, #f0ece4ff, #faf6f0ff);
+$gradient-right: linear-gradient(90deg, #b5543cff, #c97c5dff, #d9a87cff, #e8c99aff, #f2e0c4ff, #d4e6d0ff, #a8d5b5ff, #c8e8daff, #f0ece4ff, #faf6f0ff);
+$gradient-bottom: linear-gradient(180deg, #b5543cff, #c97c5dff, #d9a87cff, #e8c99aff, #f2e0c4ff, #d4e6d0ff, #a8d5b5ff, #c8e8daff, #f0ece4ff, #faf6f0ff);
+$gradient-left: linear-gradient(270deg, #b5543cff, #c97c5dff, #d9a87cff, #e8c99aff, #f2e0c4ff, #d4e6d0ff, #a8d5b5ff, #c8e8daff, #f0ece4ff, #faf6f0ff);
+$gradient-top-right: linear-gradient(45deg, #b5543cff, #c97c5dff, #d9a87cff, #e8c99aff, #f2e0c4ff, #d4e6d0ff, #a8d5b5ff, #c8e8daff, #f0ece4ff, #faf6f0ff);
+$gradient-bottom-right: linear-gradient(135deg, #b5543cff, #c97c5dff, #d9a87cff, #e8c99aff, #f2e0c4ff, #d4e6d0ff, #a8d5b5ff, #c8e8daff, #f0ece4ff, #faf6f0ff);
+$gradient-top-left: linear-gradient(225deg, #b5543cff, #c97c5dff, #d9a87cff, #e8c99aff, #f2e0c4ff, #d4e6d0ff, #a8d5b5ff, #c8e8daff, #f0ece4ff, #faf6f0ff);
+$gradient-bottom-left: linear-gradient(315deg, #b5543cff, #c97c5dff, #d9a87cff, #e8c99aff, #f2e0c4ff, #d4e6d0ff, #a8d5b5ff, #c8e8daff, #f0ece4ff, #faf6f0ff);
+$gradient-radial: radial-gradient(#b5543cff, #c97c5dff, #d9a87cff, #e8c99aff, #f2e0c4ff, #d4e6d0ff, #a8d5b5ff, #c8e8daff, #f0ece4ff, #faf6f0ff);
+
+/* SCSS Map */
+$ceramic-glaze-map: (
+    "terracotta-clay": #b5543cff,
+    "warm-clay": #c97c5dff,
+    "raku-tan": #d9a87cff,
+    "sand-glaze": #e8c99aff,
+    "cream-bisque": #f2e0c4ff,
+    "celadon-green": #d4e6d0ff,
+    "sky-celadon": #a8d5b5ff,
+    "pale-glaze": #c8e8daff,
+    "soft-white": #f0ece4ff,
+    "warm-cream": #faf6f0ff,
+);

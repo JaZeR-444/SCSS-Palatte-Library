@@ -3,12 +3,13 @@
 import { BrandSystem, ContrastPair } from "@/types/brand-system";
 import { AlertTriangle, CheckCircle2, ShieldCheck } from "lucide-react";
 
-function gradeCls(grade: ContrastPair["grade"]): string {
-  if (grade === "AAA")
+function gradeCls(level: ContrastPair["level"]): string {
+  if (level === "AAA")
     return "bg-emerald-500/10 text-emerald-500 border-emerald-500/20";
-  if (grade === "AA")
+  if (level === "AA")
     return "bg-indigo-500/10 text-indigo-500 border-indigo-500/20";
-  if (grade === "AA Large")
+  if (level === "UI") return "bg-teal-500/10 text-teal-500 border-teal-500/20";
+  if (level === "AA-Large")
     return "bg-amber-500/10 text-amber-500 border-amber-500/20";
   return "bg-red-500/10 text-red-500 border-red-500/20";
 }
@@ -24,7 +25,10 @@ function PairRow({ pair }: { pair: ContrastPair }) {
           />
           <span
             className="-ml-2 flex h-6 w-6 items-center justify-center rounded-r-md border border-black/10 text-[9px] font-black"
-            style={{ backgroundColor: pair.bg.slice(0, 7), color: pair.fg.slice(0, 7) }}
+            style={{
+              backgroundColor: pair.bg.slice(0, 7),
+              color: pair.fg.slice(0, 7),
+            }}
           >
             Aa
           </span>
@@ -38,9 +42,9 @@ function PairRow({ pair }: { pair: ContrastPair }) {
           {pair.ratio.toFixed(2)}:1
         </span>
         <span
-          className={`rounded-md border px-1.5 py-0.5 text-[8px] font-black uppercase ${gradeCls(pair.grade)}`}
+          className={`rounded-md border px-1.5 py-0.5 text-[8px] font-black uppercase ${gradeCls(pair.level)}`}
         >
-          {pair.grade}
+          {pair.gradeLabel}
         </span>
       </div>
     </div>
@@ -70,8 +74,8 @@ export function AccessibilityReview({ system }: { system: BrandSystem }) {
           <p className="text-[11px] font-medium text-gray-500 dark:text-gray-400">
             {accessibility.safe.length} of{" "}
             {accessibility.safe.length + accessibility.unsafe.length} critical
-            pairs meet WCAG AA. Muted text is intentionally reserved for
-            secondary use.
+            pairs meet their WCAG target for {system.mode} mode (text at 4.5:1,
+            UI &amp; large text at 3:1).
           </p>
         </div>
       </div>

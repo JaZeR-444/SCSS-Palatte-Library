@@ -1,6 +1,6 @@
 import os
 
-base_dir = r"C:\Users\JaZeR\OneDrive\Desktop\Projects\App - Pallates"
+base_dir = os.path.dirname(os.path.abspath(__file__))
 palettes_dir = os.path.join(base_dir, "Palattes by # of Colors")
 
 scss_content = "// SCSS Palette Library - Main Entry Point\n\n"

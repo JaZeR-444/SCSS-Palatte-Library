@@ -12,12 +12,26 @@ const GROUP_ORDER: RoleGroup[] = [
   "Line",
   "State",
   "Utility",
+  "Data-viz",
 ];
 
-export function SemanticRoles({ system }: { system: BrandSystem }) {
+export function SemanticRoles({
+  system,
+  overrides,
+}: {
+  system: BrandSystem;
+  /** Active-mode color map; inline edits override each role's swatch. */
+  overrides?: Record<string, string>;
+}) {
   const grouped = GROUP_ORDER.map((g) => ({
     group: g,
-    roles: system.rolesList.filter((r) => r.group === g),
+    roles: system.rolesList
+      .filter((r) => r.group === g)
+      .map((r) =>
+        overrides?.[r.key] && overrides[r.key] !== r.hex
+          ? { ...r, hex: overrides[r.key] }
+          : r,
+      ),
   })).filter((x) => x.roles.length > 0);
 
   return (
@@ -44,7 +58,9 @@ function RoleCard({ role }: { role: SemanticRole }) {
   return (
     <button
       onClick={() => {
-        navigator.clipboard.writeText(`--${role.key}: ${role.hex.toLowerCase()};`);
+        navigator.clipboard.writeText(
+          `--${role.key}: ${role.hex.toLowerCase()};`,
+        );
         showToast(`--${role.key} copied!`);
       }}
       className="group flex items-stretch gap-3 rounded-2xl border border-gray-100 dark:border-slate-800 bg-white dark:bg-slate-900 p-2.5 text-left transition-all hover:shadow-md cursor-copy"

@@ -1,0 +1,113 @@
+/*---
+id: molten-steel
+name: Molten Steel
+author: JaZeR-444
+version: 1.0.0
+category: Material & Metal
+count: 10
+description: A cool-toned industrial steel palette progressing from raw dark charcoal through gunmetal and polished silver to icy crisp white, ideal for tech, engineering, and modern UI systems.
+tags:
+  mood:
+  - industrial
+  - precise
+  - cool
+  aesthetic:
+  - Industrial
+  - Tech
+  - Minimal
+intent: A material-inspired 10-color palette designed for engineering tools, tech SaaS products, and dark-mode industrial UI systems.
+suggested_use:
+- Dark-mode tech and SaaS interfaces
+- Engineering and industrial design tools
+- Modern minimal brand systems
+url: https://coolors.co/1a1a2e-16213e-0f3460-1b4f72-2e86ab-5ba4cf-87ceeb-b0c4de-dce8f0-f0f4f8
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--raw-steel-dark: #1a1a2eff;
+--forge-charcoal: #16213eff;
+--gunmetal-deep: #0f3460ff;
+--steel-anchor: #1b4f72ff;
+--medium-steel: #2e86abff;
+--light-steel: #5ba4cfff;
+--polished-chrome: #87ceebff;
+--cool-silver: #b0c4deff;
+--icy-plate: #dce8f0ff;
+--cool-white: #f0f4f8ff;
+
+/* CSS HSL */
+--raw-steel-dark: hsla(240, 28%, 14%, 1);
+--forge-charcoal: hsla(219, 46%, 17%, 1);
+--gunmetal-deep: hsla(217, 74%, 21%, 1);
+--steel-anchor: hsla(205, 61%, 28%, 1);
+--medium-steel: hsla(197, 58%, 42%, 1);
+--light-steel: hsla(207, 52%, 58%, 1);
+--polished-chrome: hsla(197, 71%, 73%, 1);
+--cool-silver: hsla(213, 36%, 78%, 1);
+--icy-plate: hsla(204, 38%, 90%, 1);
+--cool-white: hsla(213, 27%, 96%, 1);
+}
+
+/* SCSS HEX */
+$raw-steel-dark: #1a1a2eff;
+$forge-charcoal: #16213eff;
+$gunmetal-deep: #0f3460ff;
+$steel-anchor: #1b4f72ff;
+$medium-steel: #2e86abff;
+$light-steel: #5ba4cfff;
+$polished-chrome: #87ceebff;
+$cool-silver: #b0c4deff;
+$icy-plate: #dce8f0ff;
+$cool-white: #f0f4f8ff;
+
+/* SCSS HSL */
+$raw-steel-dark: hsla(240, 28%, 14%, 1);
+$forge-charcoal: hsla(219, 46%, 17%, 1);
+$gunmetal-deep: hsla(217, 74%, 21%, 1);
+$steel-anchor: hsla(205, 61%, 28%, 1);
+$medium-steel: hsla(197, 58%, 42%, 1);
+$light-steel: hsla(207, 52%, 58%, 1);
+$polished-chrome: hsla(197, 71%, 73%, 1);
+$cool-silver: hsla(213, 36%, 78%, 1);
+$icy-plate: hsla(204, 38%, 90%, 1);
+$cool-white: hsla(213, 27%, 96%, 1);
+
+/* SCSS RGB */
+$raw-steel-dark: rgba(26, 26, 46, 1);
+$forge-charcoal: rgba(22, 33, 62, 1);
+$gunmetal-deep: rgba(15, 52, 96, 1);
+$steel-anchor: rgba(27, 79, 114, 1);
+$medium-steel: rgba(46, 134, 171, 1);
+$light-steel: rgba(91, 164, 207, 1);
+$polished-chrome: rgba(135, 206, 235, 1);
+$cool-silver: rgba(176, 196, 222, 1);
+$icy-plate: rgba(220, 232, 240, 1);
+$cool-white: rgba(240, 244, 248, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #1a1a2eff, #16213eff, #0f3460ff, #1b4f72ff, #2e86abff, #5ba4cfff, #87ceebff, #b0c4deff, #dce8f0ff, #f0f4f8ff);
+$gradient-right: linear-gradient(90deg, #1a1a2eff, #16213eff, #0f3460ff, #1b4f72ff, #2e86abff, #5ba4cfff, #87ceebff, #b0c4deff, #dce8f0ff, #f0f4f8ff);
+$gradient-bottom: linear-gradient(180deg, #1a1a2eff, #16213eff, #0f3460ff, #1b4f72ff, #2e86abff, #5ba4cfff, #87ceebff, #b0c4deff, #dce8f0ff, #f0f4f8ff);
+$gradient-left: linear-gradient(270deg, #1a1a2eff, #16213eff, #0f3460ff, #1b4f72ff, #2e86abff, #5ba4cfff, #87ceebff, #b0c4deff, #dce8f0ff, #f0f4f8ff);
+$gradient-top-right: linear-gradient(45deg, #1a1a2eff, #16213eff, #0f3460ff, #1b4f72ff, #2e86abff, #5ba4cfff, #87ceebff, #b0c4deff, #dce8f0ff, #f0f4f8ff);
+$gradient-bottom-right: linear-gradient(135deg, #1a1a2eff, #16213eff, #0f3460ff, #1b4f72ff, #2e86abff, #5ba4cfff, #87ceebff, #b0c4deff, #dce8f0ff, #f0f4f8ff);
+$gradient-top-left: linear-gradient(225deg, #1a1a2eff, #16213eff, #0f3460ff, #1b4f72ff, #2e86abff, #5ba4cfff, #87ceebff, #b0c4deff, #dce8f0ff, #f0f4f8ff);
+$gradient-bottom-left: linear-gradient(315deg, #1a1a2eff, #16213eff, #0f3460ff, #1b4f72ff, #2e86abff, #5ba4cfff, #87ceebff, #b0c4deff, #dce8f0ff, #f0f4f8ff);
+$gradient-radial: radial-gradient(#1a1a2eff, #16213eff, #0f3460ff, #1b4f72ff, #2e86abff, #5ba4cfff, #87ceebff, #b0c4deff, #dce8f0ff, #f0f4f8ff);
+
+/* SCSS Map */
+$molten-steel-map: (
+    "raw-steel-dark": #1a1a2eff,
+    "forge-charcoal": #16213eff,
+    "gunmetal-deep": #0f3460ff,
+    "steel-anchor": #1b4f72ff,
+    "medium-steel": #2e86abff,
+    "light-steel": #5ba4cfff,
+    "polished-chrome": #87ceebff,
+    "cool-silver": #b0c4deff,
+    "icy-plate": #dce8f0ff,
+    "cool-white": #f0f4f8ff,
+);

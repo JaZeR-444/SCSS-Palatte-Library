@@ -29,12 +29,10 @@ export interface SemanticRole {
 }
 
 export type RoleGroup =
-  | "Brand"
-  | "Surface"
-  | "Text"
-  | "Line"
-  | "State"
-  | "Utility";
+  "Brand" | "Surface" | "Text" | "Line" | "State" | "Utility" | "Data-viz";
+
+/** WCAG threshold a pair is judged against. */
+export type SurfaceKind = "text" | "large" | "ui";
 
 export interface ComponentGuide {
   name: string;
@@ -52,7 +50,11 @@ export interface ContrastPair {
   fg: string;
   bg: string;
   ratio: number;
-  grade: "AAA" | "AA" | "AA Large" | "Fail";
+  /** Which WCAG threshold this pair is judged against. */
+  kind: SurfaceKind;
+  level: "AAA" | "AA" | "AA-Large" | "UI" | "Fail";
+  /** Short human label for the badge (e.g. "AA Lg", "UI"). */
+  gradeLabel: string;
   pass: boolean;
 }
 
@@ -77,10 +79,18 @@ export interface BrandSystem {
   paletteName: string;
   category: string;
   inputs: BrandInputs;
+  /** Resolved default mode for this system. */
   mode: ColorMode;
-  /** key -> hex map for quick token/style lookups. */
+  /** key -> hex map for the active (default) mode. */
   roles: Record<string, string>;
   rolesList: SemanticRole[];
+  /** Both generated themes, so callers can toggle / export either. */
+  lightRoles: Record<string, string>;
+  darkRoles: Record<string, string>;
+  lightRolesList: SemanticRole[];
+  darkRolesList: SemanticRole[];
+  /** Ordered categorical series for charts (mode-independent). */
+  chartSeries: string[];
   foundation: BrandFoundation;
   components: ComponentGuide[];
   usage: UsageGuide[];

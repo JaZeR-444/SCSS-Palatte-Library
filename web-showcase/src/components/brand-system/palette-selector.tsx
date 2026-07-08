@@ -1,13 +1,25 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { Palette } from "@/types";
 import { BrandInputs } from "@/types/brand-system";
+import { ImportResult } from "@/types/design-system";
 import { deriveRoles } from "@/utils/brand-system";
 import { getContrastRatio } from "@/utils/contrast-utils";
+import { extractImageColors } from "@/utils/image-colors";
+import { analyzeUrlAction } from "@/app/actions";
 import palettesData from "@/data/palettes.json";
-import { Search, Check, Shuffle, Palette as PaletteIcon } from "lucide-react";
+import {
+  Search,
+  Check,
+  Shuffle,
+  Palette as PaletteIcon,
+  Globe,
+  ImageUp,
+  Loader2,
+} from "lucide-react";
 import { playSound } from "@/utils/audio";
+import { showToast } from "@/utils/toast";
 
 const ALL = palettesData as Palette[];
 
@@ -15,6 +27,21 @@ interface Props {
   selected: Palette | null;
   inputs: BrandInputs;
   onSelect: (p: Palette) => void;
+  /** Fired with the raw import extraction so callers can seed style hints. */
+  onImport?: (result: ImportResult) => void;
+}
+
+/** Build a selectable palette from a set of extracted colors. */
+function paletteFromColors(colors: string[], label: string): Palette {
+  return {
+    id: `import-${label.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+    name: `Imported · ${label}`,
+    category: "Imported",
+    count: colors.length,
+    description: `Colors extracted from ${label}.`,
+    colors: colors.map((hex, i) => ({ name: `Color ${i + 1}`, hex })),
+    tags: { mood: [], aesthetic: [] },
+  };
 }
 
 const RECS = [
@@ -24,8 +51,77 @@ const RECS = [
   { key: "bg-base", label: "Neutral / BG" },
 ] as const;
 
-export function PaletteSelector({ selected, inputs, onSelect }: Props) {
+export function PaletteSelector({
+  selected,
+  inputs,
+  onSelect,
+  onImport,
+}: Props) {
   const [query, setQuery] = useState("");
+  const [importUrl, setImportUrl] = useState("");
+  const [importing, setImporting] = useState(false);
+  const [importError, setImportError] = useState<string | null>(null);
+  const [lastImport, setLastImport] = useState<ImportResult | null>(null);
+  const fileRef = useRef<HTMLInputElement>(null);
+
+  const applyImport = (result: ImportResult) => {
+    setLastImport(result);
+    setImportError(null);
+    onSelect(paletteFromColors(result.colors, result.source.ref));
+    onImport?.(result);
+    playSound("success");
+    showToast(
+      `Imported ${result.colors.length} colors from ${result.source.ref}`,
+    );
+  };
+
+  const handleUrlImport = async () => {
+    const url = importUrl.trim();
+    if (!url || importing) return;
+    setImporting(true);
+    setImportError(null);
+    try {
+      const { result, error } = await analyzeUrlAction(url);
+      if (error || !result) {
+        setImportError(error ?? "Import failed.");
+        playSound("click");
+      } else {
+        applyImport(result);
+      }
+    } catch {
+      setImportError("Import failed — please try again.");
+      playSound("click");
+    } finally {
+      setImporting(false);
+    }
+  };
+
+  const handleScreenshot = async (file: File | undefined) => {
+    if (!file) return;
+    setImporting(true);
+    setImportError(null);
+    try {
+      const colors = await extractImageColors(file);
+      if (!colors.length) {
+        setImportError("Couldn't read colors from that image.");
+        playSound("click");
+        return;
+      }
+      applyImport({
+        source: { kind: "screenshot", ref: file.name.replace(/\.[^.]+$/, "") },
+        colors,
+        notes: [
+          "Screenshots yield colors only — type, shape and elevation can't be read from pixels.",
+        ],
+      });
+    } catch (e: any) {
+      setImportError(e?.message ?? "Couldn't read that image.");
+      playSound("click");
+    } finally {
+      setImporting(false);
+      if (fileRef.current) fileRef.current.value = "";
+    }
+  };
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -41,9 +137,9 @@ export function PaletteSelector({ selected, inputs, onSelect }: Props) {
 
   const recommendation = useMemo(() => {
     if (!selected) return null;
-    const { roles, mode } = deriveRoles(selected, inputs);
+    const { light, dark, mode } = deriveRoles(selected, inputs);
     const map: Record<string, string> = {};
-    for (const r of roles) map[r.key] = r.hex;
+    for (const r of mode === "dark" ? dark : light) map[r.key] = r.hex;
     return { map, mode };
   }, [selected, inputs]);
 
@@ -55,6 +151,94 @@ export function PaletteSelector({ selected, inputs, onSelect }: Props) {
 
   return (
     <div className="space-y-4">
+      {/* Import from an existing interface */}
+      <div className="rounded-2xl border border-indigo-100 dark:border-indigo-950/50 bg-indigo-50/40 dark:bg-indigo-950/20 p-3 space-y-2.5">
+        <div className="flex items-center gap-1.5">
+          <Globe className="h-3.5 w-3.5 text-indigo-500" />
+          <span className="text-[10px] font-black uppercase tracking-widest text-indigo-500">
+            Import from a site or screenshot
+          </span>
+        </div>
+        <div className="flex gap-2">
+          <input
+            type="url"
+            value={importUrl}
+            onChange={(e) => setImportUrl(e.target.value)}
+            onKeyDown={(e) => e.key === "Enter" && handleUrlImport()}
+            placeholder="paste a website URL…"
+            className="min-w-0 flex-1 rounded-xl border border-gray-200 bg-white px-3 py-2 text-sm dark:border-slate-700 dark:bg-slate-800"
+            disabled={importing}
+          />
+          <button
+            onClick={handleUrlImport}
+            disabled={importing || !importUrl.trim()}
+            className="flex items-center gap-1.5 rounded-xl bg-indigo-500 px-3 py-2 text-[11px] font-bold text-white transition-all hover:bg-indigo-600 disabled:opacity-50 cursor-pointer"
+          >
+            {importing ? (
+              <Loader2 className="h-3.5 w-3.5 animate-spin" />
+            ) : (
+              <Globe className="h-3.5 w-3.5" />
+            )}
+            Analyze
+          </button>
+          <button
+            onClick={() => fileRef.current?.click()}
+            disabled={importing}
+            title="Extract colors from a screenshot"
+            className="flex items-center gap-1.5 rounded-xl border border-gray-200 bg-white px-3 py-2 text-[11px] font-bold text-gray-500 transition-all hover:border-indigo-300 hover:text-indigo-500 disabled:opacity-50 dark:border-slate-700 dark:bg-slate-800 cursor-pointer"
+          >
+            <ImageUp className="h-3.5 w-3.5" />
+            <span className="hidden sm:inline">Screenshot</span>
+          </button>
+          <input
+            ref={fileRef}
+            type="file"
+            accept="image/*"
+            className="hidden"
+            onChange={(e) => handleScreenshot(e.target.files?.[0])}
+          />
+        </div>
+        {importError && (
+          <p className="text-[11px] font-medium text-red-500">{importError}</p>
+        )}
+        {lastImport && !importError && (
+          <div className="space-y-1.5">
+            <div className="flex flex-wrap items-center gap-1.5">
+              {lastImport.colors.map((c) => (
+                <span
+                  key={c}
+                  className="h-5 w-5 rounded-md border border-black/10"
+                  style={{ backgroundColor: c }}
+                  title={c}
+                />
+              ))}
+            </div>
+            <div className="flex flex-wrap gap-1.5 text-[10px] font-bold text-gray-500 dark:text-gray-400">
+              {lastImport.fontSans && (
+                <span className="rounded-md bg-white px-2 py-0.5 dark:bg-slate-800">
+                  Aa {lastImport.fontSans.split(",")[0].replace(/["']/g, "")}
+                </span>
+              )}
+              {lastImport.radius != null && (
+                <span className="rounded-md bg-white px-2 py-0.5 dark:bg-slate-800">
+                  radius {lastImport.radius}px
+                </span>
+              )}
+              {lastImport.shadow && (
+                <span className="rounded-md bg-white px-2 py-0.5 dark:bg-slate-800">
+                  shadow detected
+                </span>
+              )}
+            </div>
+            {lastImport.notes[0] && (
+              <p className="text-[10px] leading-snug text-gray-400">
+                {lastImport.notes[0]}
+              </p>
+            )}
+          </div>
+        )}
+      </div>
+
       {/* Search */}
       <div className="relative">
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
@@ -94,7 +278,11 @@ export function PaletteSelector({ selected, inputs, onSelect }: Props) {
             >
               <div className="flex h-9 w-16 flex-shrink-0 overflow-hidden rounded-lg border border-black/5">
                 {p.colors.map((c, i) => (
-                  <div key={i} className="flex-1" style={{ backgroundColor: c.hex }} />
+                  <div
+                    key={i}
+                    className="flex-1"
+                    style={{ backgroundColor: c.hex }}
+                  />
                 ))}
               </div>
               <div className="min-w-0 flex-1">

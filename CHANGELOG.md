@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **License File**: Added the missing MIT `LICENSE` file referenced by package metadata and README badges.
 
 ### Added
+- **Founder.OS Brand System**: Added 4 aesthetic palettes (5-color), 1 Interface Map (20-color), and 3 highly semantic component-level swatches (10-color each for UI Backgrounds, Primary Brand elements, and Typography/Borders) tailored specifically for the Founder.OS app ecosystem.
 - **Homepage Crawlability + Structured Data**: Added `robots.txt`, `sitemap.xml`, canonical metadata, and JSON-LD (`WebSite`, `Organization`, `SoftwareApplication`) for the active web showcase.
 - **Homepage Trust Footer**: Added a production/trust footer section linking to repository resources (repo, changelog, license).
 - **Large Palette Expansion**: Added 100 new fresh color palettes ranging from 20 to 35 colors.

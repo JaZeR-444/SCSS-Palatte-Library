@@ -1,0 +1,145 @@
+/*---
+id: founder-os-light-surface-swatches
+name: Founder OS Light Surface Swatches
+author: JaZeR-444
+version: 1.2.0
+category: Web Development System
+count: 16
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - surfaces
+  mood:
+  - functional
+  aesthetic:
+  - UI
+  - Web Design
+intent: Advanced light surfaces including interactive cards (hover/active), selected table rows, modal backdrops, and inverted tooltip text.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--surface-app-bg: #f8fafcff;
+--surface-panel-bg: #ffffffff;
+--surface-card-bg: #ffffffff;
+--surface-elevated-bg: #ffffffff;
+--surface-hover-bg: #f1f5f9ff;
+--surface-active-bg: #e2e8f0ff;
+--surface-selected-bg: #e5fcffff;
+--surface-selected-border: #4de9ffff;
+--surface-border-subtle: #e2e8f0ff;
+--surface-border-strong: #cbd5e1ff;
+--surface-text-primary: #0f172aff;
+--surface-text-secondary: #475569ff;
+--surface-text-muted: #94a3b8ff;
+--surface-inverted-text: #ffffffff;
+--surface-tooltip-bg: #1e293bff;
+--surface-backdrop: #00000066;
+
+/* CSS HSL */
+--surface-app-bg: hsla(210, 40%, 98%, 1);
+--surface-panel-bg: hsla(0, 0%, 100%, 1);
+--surface-card-bg: hsla(0, 0%, 100%, 1);
+--surface-elevated-bg: hsla(0, 0%, 100%, 1);
+--surface-hover-bg: hsla(210, 40%, 96%, 1);
+--surface-active-bg: hsla(214, 32%, 91%, 1);
+--surface-selected-bg: hsla(187, 100%, 95%, 1);
+--surface-selected-border: hsla(187, 100%, 65%, 1);
+--surface-border-subtle: hsla(214, 32%, 91%, 1);
+--surface-border-strong: hsla(213, 27%, 84%, 1);
+--surface-text-primary: hsla(222, 47%, 11%, 1);
+--surface-text-secondary: hsla(215, 19%, 35%, 1);
+--surface-text-muted: hsla(215, 20%, 65%, 1);
+--surface-inverted-text: hsla(0, 0%, 100%, 1);
+--surface-tooltip-bg: hsla(217, 33%, 17%, 1);
+--surface-backdrop: hsla(0, 0%, 0%, 1);
+}
+
+/* SCSS HEX */
+$surface-app-bg: #f8fafcff;
+$surface-panel-bg: #ffffffff;
+$surface-card-bg: #ffffffff;
+$surface-elevated-bg: #ffffffff;
+$surface-hover-bg: #f1f5f9ff;
+$surface-active-bg: #e2e8f0ff;
+$surface-selected-bg: #e5fcffff;
+$surface-selected-border: #4de9ffff;
+$surface-border-subtle: #e2e8f0ff;
+$surface-border-strong: #cbd5e1ff;
+$surface-text-primary: #0f172aff;
+$surface-text-secondary: #475569ff;
+$surface-text-muted: #94a3b8ff;
+$surface-inverted-text: #ffffffff;
+$surface-tooltip-bg: #1e293bff;
+$surface-backdrop: #00000066;
+
+/* SCSS HSL */
+$surface-app-bg: hsla(210, 40%, 98%, 1);
+$surface-panel-bg: hsla(0, 0%, 100%, 1);
+$surface-card-bg: hsla(0, 0%, 100%, 1);
+$surface-elevated-bg: hsla(0, 0%, 100%, 1);
+$surface-hover-bg: hsla(210, 40%, 96%, 1);
+$surface-active-bg: hsla(214, 32%, 91%, 1);
+$surface-selected-bg: hsla(187, 100%, 95%, 1);
+$surface-selected-border: hsla(187, 100%, 65%, 1);
+$surface-border-subtle: hsla(214, 32%, 91%, 1);
+$surface-border-strong: hsla(213, 27%, 84%, 1);
+$surface-text-primary: hsla(222, 47%, 11%, 1);
+$surface-text-secondary: hsla(215, 19%, 35%, 1);
+$surface-text-muted: hsla(215, 20%, 65%, 1);
+$surface-inverted-text: hsla(0, 0%, 100%, 1);
+$surface-tooltip-bg: hsla(217, 33%, 17%, 1);
+$surface-backdrop: hsla(0, 0%, 0%, 1);
+
+/* SCSS RGB */
+$surface-app-bg: rgba(248, 250, 252, 1);
+$surface-panel-bg: rgba(255, 255, 255, 1);
+$surface-card-bg: rgba(255, 255, 255, 1);
+$surface-elevated-bg: rgba(255, 255, 255, 1);
+$surface-hover-bg: rgba(241, 245, 249, 1);
+$surface-active-bg: rgba(226, 232, 240, 1);
+$surface-selected-bg: rgba(229, 252, 255, 1);
+$surface-selected-border: rgba(77, 233, 255, 1);
+$surface-border-subtle: rgba(226, 232, 240, 1);
+$surface-border-strong: rgba(203, 213, 225, 1);
+$surface-text-primary: rgba(15, 23, 42, 1);
+$surface-text-secondary: rgba(71, 85, 105, 1);
+$surface-text-muted: rgba(148, 163, 184, 1);
+$surface-inverted-text: rgba(255, 255, 255, 1);
+$surface-tooltip-bg: rgba(30, 41, 59, 1);
+$surface-backdrop: rgba(0, 0, 0, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #f8fafcff, #ffffffff, #ffffffff, #ffffffff, #f1f5f9ff, #e2e8f0ff, #e5fcffff, #4de9ffff, #e2e8f0ff, #cbd5e1ff, #0f172aff, #475569ff, #94a3b8ff, #ffffffff, #1e293bff, #00000066);
+$gradient-right: linear-gradient(90deg, #f8fafcff, #ffffffff, #ffffffff, #ffffffff, #f1f5f9ff, #e2e8f0ff, #e5fcffff, #4de9ffff, #e2e8f0ff, #cbd5e1ff, #0f172aff, #475569ff, #94a3b8ff, #ffffffff, #1e293bff, #00000066);
+$gradient-bottom: linear-gradient(180deg, #f8fafcff, #ffffffff, #ffffffff, #ffffffff, #f1f5f9ff, #e2e8f0ff, #e5fcffff, #4de9ffff, #e2e8f0ff, #cbd5e1ff, #0f172aff, #475569ff, #94a3b8ff, #ffffffff, #1e293bff, #00000066);
+$gradient-left: linear-gradient(270deg, #f8fafcff, #ffffffff, #ffffffff, #ffffffff, #f1f5f9ff, #e2e8f0ff, #e5fcffff, #4de9ffff, #e2e8f0ff, #cbd5e1ff, #0f172aff, #475569ff, #94a3b8ff, #ffffffff, #1e293bff, #00000066);
+$gradient-top-right: linear-gradient(45deg, #f8fafcff, #ffffffff, #ffffffff, #ffffffff, #f1f5f9ff, #e2e8f0ff, #e5fcffff, #4de9ffff, #e2e8f0ff, #cbd5e1ff, #0f172aff, #475569ff, #94a3b8ff, #ffffffff, #1e293bff, #00000066);
+$gradient-bottom-right: linear-gradient(135deg, #f8fafcff, #ffffffff, #ffffffff, #ffffffff, #f1f5f9ff, #e2e8f0ff, #e5fcffff, #4de9ffff, #e2e8f0ff, #cbd5e1ff, #0f172aff, #475569ff, #94a3b8ff, #ffffffff, #1e293bff, #00000066);
+$gradient-top-left: linear-gradient(225deg, #f8fafcff, #ffffffff, #ffffffff, #ffffffff, #f1f5f9ff, #e2e8f0ff, #e5fcffff, #4de9ffff, #e2e8f0ff, #cbd5e1ff, #0f172aff, #475569ff, #94a3b8ff, #ffffffff, #1e293bff, #00000066);
+$gradient-bottom-left: linear-gradient(315deg, #f8fafcff, #ffffffff, #ffffffff, #ffffffff, #f1f5f9ff, #e2e8f0ff, #e5fcffff, #4de9ffff, #e2e8f0ff, #cbd5e1ff, #0f172aff, #475569ff, #94a3b8ff, #ffffffff, #1e293bff, #00000066);
+$gradient-radial: radial-gradient(#f8fafcff, #ffffffff, #ffffffff, #ffffffff, #f1f5f9ff, #e2e8f0ff, #e5fcffff, #4de9ffff, #e2e8f0ff, #cbd5e1ff, #0f172aff, #475569ff, #94a3b8ff, #ffffffff, #1e293bff, #00000066);
+
+/* SCSS Map */
+$founder-os-light-surface-swatches-map: (
+    "surface-app-bg": #f8fafcff,
+    "surface-panel-bg": #ffffffff,
+    "surface-card-bg": #ffffffff,
+    "surface-elevated-bg": #ffffffff,
+    "surface-hover-bg": #f1f5f9ff,
+    "surface-active-bg": #e2e8f0ff,
+    "surface-selected-bg": #e5fcffff,
+    "surface-selected-border": #4de9ffff,
+    "surface-border-subtle": #e2e8f0ff,
+    "surface-border-strong": #cbd5e1ff,
+    "surface-text-primary": #0f172aff,
+    "surface-text-secondary": #475569ff,
+    "surface-text-muted": #94a3b8ff,
+    "surface-inverted-text": #ffffffff,
+    "surface-tooltip-bg": #1e293bff,
+    "surface-backdrop": #00000066
+);

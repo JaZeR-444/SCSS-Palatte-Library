@@ -1,0 +1,113 @@
+/*---
+id: de-stijl
+name: De Stijl
+author: JaZeR-444
+version: 1.0.0
+category: Art & Cultural Movements
+count: 10
+description: A pure Mondrian-inspired palette of absolute primaries, architectural blacks, and neutral whites capturing the radical simplicity of the De Stijl movement.
+tags:
+  mood:
+  - pure
+  - minimal
+  - structured
+  aesthetic:
+  - De Stijl
+  - Mondrian
+  - Neo-Plasticism
+intent: A pure 10-color palette designed for minimalist UI systems, grid-based editorial layouts, and brand identities rooted in geometric order.
+suggested_use:
+- Grid-based web and app UI systems
+- Minimalist brand and identity design
+- Poster and editorial design with strong structure
+url: https://coolors.co/ffffff-e8e8e8-9e9e9e-2c2c2c-d32f2f-1565c0-f9a825-1a1a1a-757575-ff6f00
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--pure-white: #ffffffff;
+--light-gray: #e8e8e8ff;
+--mid-gray: #9e9e9eff;
+--dark-gray: #2c2c2cff;
+--primary-red: #d32f2fff;
+--primary-blue: #1565c0ff;
+--primary-yellow: #f9a825ff;
+--stijl-black: #1a1a1aff;
+--neutral-gray: #757575ff;
+--warm-accent: #ff6f00ff;
+
+/* CSS HSL */
+--pure-white: hsla(0, 0%, 100%, 1);
+--light-gray: hsla(0, 0%, 91%, 1);
+--mid-gray: hsla(0, 0%, 62%, 1);
+--dark-gray: hsla(0, 0%, 17%, 1);
+--primary-red: hsla(0, 63%, 50%, 1);
+--primary-blue: hsla(213, 78%, 41%, 1);
+--primary-yellow: hsla(43, 94%, 56%, 1);
+--stijl-black: hsla(0, 0%, 10%, 1);
+--neutral-gray: hsla(0, 0%, 46%, 1);
+--warm-accent: hsla(33, 100%, 50%, 1);
+}
+
+/* SCSS HEX */
+$pure-white: #ffffffff;
+$light-gray: #e8e8e8ff;
+$mid-gray: #9e9e9eff;
+$dark-gray: #2c2c2cff;
+$primary-red: #d32f2fff;
+$primary-blue: #1565c0ff;
+$primary-yellow: #f9a825ff;
+$stijl-black: #1a1a1aff;
+$neutral-gray: #757575ff;
+$warm-accent: #ff6f00ff;
+
+/* SCSS HSL */
+$pure-white: hsla(0, 0%, 100%, 1);
+$light-gray: hsla(0, 0%, 91%, 1);
+$mid-gray: hsla(0, 0%, 62%, 1);
+$dark-gray: hsla(0, 0%, 17%, 1);
+$primary-red: hsla(0, 63%, 50%, 1);
+$primary-blue: hsla(213, 78%, 41%, 1);
+$primary-yellow: hsla(43, 94%, 56%, 1);
+$stijl-black: hsla(0, 0%, 10%, 1);
+$neutral-gray: hsla(0, 0%, 46%, 1);
+$warm-accent: hsla(33, 100%, 50%, 1);
+
+/* SCSS RGB */
+$pure-white: rgba(255, 255, 255, 1);
+$light-gray: rgba(232, 232, 232, 1);
+$mid-gray: rgba(158, 158, 158, 1);
+$dark-gray: rgba(44, 44, 44, 1);
+$primary-red: rgba(211, 47, 47, 1);
+$primary-blue: rgba(21, 101, 192, 1);
+$primary-yellow: rgba(249, 168, 37, 1);
+$stijl-black: rgba(26, 26, 26, 1);
+$neutral-gray: rgba(117, 117, 117, 1);
+$warm-accent: rgba(255, 111, 0, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #ffffffff, #e8e8e8ff, #9e9e9eff, #2c2c2cff, #d32f2fff, #1565c0ff, #f9a825ff, #1a1a1aff, #757575ff, #ff6f00ff);
+$gradient-right: linear-gradient(90deg, #ffffffff, #e8e8e8ff, #9e9e9eff, #2c2c2cff, #d32f2fff, #1565c0ff, #f9a825ff, #1a1a1aff, #757575ff, #ff6f00ff);
+$gradient-bottom: linear-gradient(180deg, #ffffffff, #e8e8e8ff, #9e9e9eff, #2c2c2cff, #d32f2fff, #1565c0ff, #f9a825ff, #1a1a1aff, #757575ff, #ff6f00ff);
+$gradient-left: linear-gradient(270deg, #ffffffff, #e8e8e8ff, #9e9e9eff, #2c2c2cff, #d32f2fff, #1565c0ff, #f9a825ff, #1a1a1aff, #757575ff, #ff6f00ff);
+$gradient-top-right: linear-gradient(45deg, #ffffffff, #e8e8e8ff, #9e9e9eff, #2c2c2cff, #d32f2fff, #1565c0ff, #f9a825ff, #1a1a1aff, #757575ff, #ff6f00ff);
+$gradient-bottom-right: linear-gradient(135deg, #ffffffff, #e8e8e8ff, #9e9e9eff, #2c2c2cff, #d32f2fff, #1565c0ff, #f9a825ff, #1a1a1aff, #757575ff, #ff6f00ff);
+$gradient-top-left: linear-gradient(225deg, #ffffffff, #e8e8e8ff, #9e9e9eff, #2c2c2cff, #d32f2fff, #1565c0ff, #f9a825ff, #1a1a1aff, #757575ff, #ff6f00ff);
+$gradient-bottom-left: linear-gradient(315deg, #ffffffff, #e8e8e8ff, #9e9e9eff, #2c2c2cff, #d32f2fff, #1565c0ff, #f9a825ff, #1a1a1aff, #757575ff, #ff6f00ff);
+$gradient-radial: radial-gradient(#ffffffff, #e8e8e8ff, #9e9e9eff, #2c2c2cff, #d32f2fff, #1565c0ff, #f9a825ff, #1a1a1aff, #757575ff, #ff6f00ff);
+
+/* SCSS Map */
+$de-stijl-map: (
+    "pure-white": #ffffffff,
+    "light-gray": #e8e8e8ff,
+    "mid-gray": #9e9e9eff,
+    "dark-gray": #2c2c2cff,
+    "primary-red": #d32f2fff,
+    "primary-blue": #1565c0ff,
+    "primary-yellow": #f9a825ff,
+    "stijl-black": #1a1a1aff,
+    "neutral-gray": #757575ff,
+    "warm-accent": #ff6f00ff,
+);

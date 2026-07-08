@@ -2,11 +2,12 @@
 
 import { useStudio } from "./studio/studio-context";
 import { AnimatePresence, motion } from "framer-motion";
-import { X, Save, Sparkles, RefreshCw } from "lucide-react";
-import { useState, useEffect, useTransition } from "react";
+import { X, Save, Sparkles, RefreshCw, ImageUp } from "lucide-react";
+import { useState, useEffect, useRef, useTransition } from "react";
 import { showToast } from "@/utils/toast";
 import { playSound } from "@/utils/audio";
 import { savePaletteAction } from "@/app/actions";
+import { ImageColorPicker } from "./image-color-picker";
 import { Palette, Color } from "@/types";
 
 const CATEGORIES = [
@@ -22,7 +23,7 @@ const CATEGORIES = [
   "Natural",
   "Abstract",
   "Cosmic",
-  "Minimalist"
+  "Minimalist",
 ];
 
 const STANDARD_COUNTS = Array.from({ length: 33 }, (_, i) => i + 3);
@@ -39,12 +40,12 @@ function generateCohesiveColors(count: number): Color[] {
     const hue = (baseHue + i * (30 / count)) % 360;
     // Vary lightness from dark to light
     const lightness = 15 + progress * 70; // 15% to 85%
-    
+
     // Convert HSL to HEX
     const hex = hslToHex(hue, baseSat, lightness);
     colors.push({
       name: `Color ${i + 1}`,
-      hex: hex
+      hex: hex,
     });
   }
   return colors;
@@ -56,7 +57,9 @@ function hslToHex(h: number, s: number, l: number): string {
   const f = (n: number) => {
     const k = (n + h / 30) % 12;
     const color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
-    return Math.round(255 * color).toString(16).padStart(2, "0");
+    return Math.round(255 * color)
+      .toString(16)
+      .padStart(2, "0");
   };
   return `#${f(0)}${f(8)}${f(4)}`;
 }
@@ -75,8 +78,12 @@ export function PaletteCreator() {
   const [moodTags, setMoodTags] = useState("");
   const [aestheticTags, setAestheticTags] = useState("");
 
+  const [pickerFile, setPickerFile] = useState<File | null>(null);
+  const fileRef = useRef<HTMLInputElement>(null);
+
   // Populate data if editing
   useEffect(() => {
+    setPickerFile(null);
     if (creatorPaletteToEdit) {
       setName(creatorPaletteToEdit.name);
       setCategory(creatorPaletteToEdit.category ?? CATEGORIES[0]);
@@ -84,7 +91,7 @@ export function PaletteCreator() {
       setVersion(creatorPaletteToEdit.version ?? "1.0.0");
       setDescription(creatorPaletteToEdit.description ?? "");
       setCount(creatorPaletteToEdit.count);
-      setColors(creatorPaletteToEdit.colors.map(c => ({ ...c })));
+      setColors(creatorPaletteToEdit.colors.map((c) => ({ ...c })));
       setMoodTags((creatorPaletteToEdit.tags?.mood || []).join(", "));
       setAestheticTags((creatorPaletteToEdit.tags?.aesthetic || []).join(", "));
     } else {
@@ -114,7 +121,7 @@ export function PaletteCreator() {
         for (let i = prevColors.length; i < newCount; i++) {
           nextColors.push({
             name: `Color ${i + 1}`,
-            hex: newCohesive[i].hex
+            hex: newCohesive[i].hex,
           });
         }
         return nextColors;
@@ -122,7 +129,11 @@ export function PaletteCreator() {
     });
   };
 
-  const handleColorChange = (index: number, key: "hex" | "name", val: string) => {
+  const handleColorChange = (
+    index: number,
+    key: "hex" | "name",
+    val: string,
+  ) => {
     setColors((prev) => {
       const next = [...prev];
       next[index] = { ...next[index], [key]: val };
@@ -136,6 +147,25 @@ export function PaletteCreator() {
     showToast("Generated new cohesive color set!");
   };
 
+  // Apply colors chosen in the image picker. Picks replace the swatch set;
+  // count follows the number picked (clamped to the 3–35 palette range, with
+  // cohesive filler if fewer than three were selected).
+  const applyPicked = (hexes: string[]) => {
+    const n = Math.min(35, Math.max(3, hexes.length));
+    const filler = hexes.length < n ? generateCohesiveColors(n) : [];
+    const next: Color[] = Array.from({ length: n }, (_, i) => ({
+      name: `Color ${i + 1}`,
+      hex: hexes[i] ?? filler[i].hex,
+    }));
+    setColors(next);
+    setCount(n);
+    setPickerFile(null);
+    playSound("success");
+    showToast(
+      `Applied ${hexes.length} color${hexes.length === 1 ? "" : "s"} from image.`,
+    );
+  };
+
   const handleSave = () => {
     if (!name.trim()) {
       showToast("Please enter a palette name.");
@@ -143,7 +173,10 @@ export function PaletteCreator() {
     }
 
     // Validation
-    const id = name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+    const id = name
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$/g, "");
     if (!id) {
       showToast("Invalid palette name.");
       return;
@@ -159,15 +192,24 @@ export function PaletteCreator() {
       description: description.trim() || `A vibrant ${count}-color palette.`,
       colors: colors.map((c, i) => ({
         name: c.name.trim() || `Color ${i + 1}`,
-        hex: c.hex.startsWith("#") ? c.hex : `#${c.hex}`
+        hex: c.hex.startsWith("#") ? c.hex : `#${c.hex}`,
       })),
       tags: {
-        mood: moodTags.split(",").map(t => t.trim().toLowerCase()).filter(Boolean),
-        aesthetic: aestheticTags.split(",").map(t => t.trim()).filter(Boolean)
+        mood: moodTags
+          .split(",")
+          .map((t) => t.trim().toLowerCase())
+          .filter(Boolean),
+        aesthetic: aestheticTags
+          .split(",")
+          .map((t) => t.trim())
+          .filter(Boolean),
       },
-      created: creatorPaletteToEdit?.created || new Date().toISOString().split("T")[0],
+      created:
+        creatorPaletteToEdit?.created || new Date().toISOString().split("T")[0],
       updated: new Date().toISOString().split("T")[0],
-      path: creatorPaletteToEdit?.path || `Palattes by # of Colors/${count} Color Palette/${name.trim()}.scss`
+      path:
+        creatorPaletteToEdit?.path ||
+        `Palattes by # of Colors/${count} Color Palette/${name.trim()}.scss`,
     };
 
     startTransition(async () => {
@@ -215,7 +257,8 @@ export function PaletteCreator() {
                   {creatorPaletteToEdit ? "Edit Palette" : "Create New Palette"}
                 </h2>
                 <p className="text-xs text-gray-400 mt-0.5">
-                  Design a custom color system, automatically generate SCSS, and sync to the library.
+                  Design a custom color system, automatically generate SCSS, and
+                  sync to the library.
                 </p>
               </div>
               <button
@@ -228,6 +271,15 @@ export function PaletteCreator() {
 
             {/* Content */}
             <div className="flex-1 overflow-y-auto p-8 space-y-6">
+              {/* Image color picker (shown once an image is uploaded) */}
+              {pickerFile && (
+                <ImageColorPicker
+                  file={pickerFile}
+                  onApply={applyPicked}
+                  onCancel={() => setPickerFile(null)}
+                />
+              )}
+
               {/* Form Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Left Column: Metadata */}
@@ -269,7 +321,9 @@ export function PaletteCreator() {
                       </label>
                       <select
                         value={count}
-                        onChange={(e) => handleCountChange(Number(e.target.value))}
+                        onChange={(e) =>
+                          handleCountChange(Number(e.target.value))
+                        }
                         className="w-full px-4 py-2.5 rounded-xl border border-gray-200 dark:border-slate-800 bg-gray-50 dark:bg-slate-950 text-gray-900 dark:text-white text-sm outline-none focus:border-indigo-500 transition-all font-medium"
                       >
                         {STANDARD_COUNTS.map((cnt) => (
@@ -349,7 +403,7 @@ export function PaletteCreator() {
                   </div>
 
                   {/* Actions */}
-                  <div className="pt-2">
+                  <div className="pt-2 space-y-2">
                     <button
                       type="button"
                       onClick={handleAutoGenerate}
@@ -358,6 +412,26 @@ export function PaletteCreator() {
                       <RefreshCw className="h-3.5 w-3.5" />
                       Auto-Generate Harmonious Swatches
                     </button>
+                    <button
+                      type="button"
+                      onClick={() => fileRef.current?.click()}
+                      title="Upload an image and pick colors from it"
+                      className="w-full flex items-center justify-center gap-2 py-3 border border-gray-200 dark:border-slate-700 hover:border-indigo-500/50 hover:bg-indigo-50/10 text-gray-500 dark:text-gray-400 hover:text-indigo-500 rounded-xl text-xs font-bold transition-all cursor-pointer"
+                    >
+                      <ImageUp className="h-3.5 w-3.5" />
+                      Pick Colors from Image
+                    </button>
+                    <input
+                      ref={fileRef}
+                      type="file"
+                      accept="image/*"
+                      className="hidden"
+                      onChange={(e) => {
+                        const f = e.target.files?.[0];
+                        if (f) setPickerFile(f);
+                        e.target.value = "";
+                      }}
+                    />
                   </div>
                 </div>
 
@@ -380,7 +454,13 @@ export function PaletteCreator() {
                           <input
                             type="color"
                             value={color.hex.slice(0, 7)}
-                            onChange={(e) => handleColorChange(index, "hex", e.target.value + "ff")}
+                            onChange={(e) =>
+                              handleColorChange(
+                                index,
+                                "hex",
+                                e.target.value + "ff",
+                              )
+                            }
                             className="absolute inset-0 opacity-0 cursor-pointer w-full h-full scale-150"
                           />
                         </div>
@@ -390,14 +470,18 @@ export function PaletteCreator() {
                           <input
                             type="text"
                             value={color.name}
-                            onChange={(e) => handleColorChange(index, "name", e.target.value)}
+                            onChange={(e) =>
+                              handleColorChange(index, "name", e.target.value)
+                            }
                             placeholder="Color Name"
                             className="px-3 py-1.5 rounded-lg border border-gray-150 dark:border-slate-800 bg-transparent text-gray-900 dark:text-white text-xs outline-none focus:border-indigo-500 font-bold"
                           />
                           <input
                             type="text"
                             value={color.hex.toUpperCase()}
-                            onChange={(e) => handleColorChange(index, "hex", e.target.value)}
+                            onChange={(e) =>
+                              handleColorChange(index, "hex", e.target.value)
+                            }
                             placeholder="#FFFFFF"
                             className="px-3 py-1.5 rounded-lg border border-gray-150 dark:border-slate-800 bg-transparent text-gray-900 dark:text-white text-xs font-mono outline-none focus:border-indigo-500"
                           />
@@ -430,7 +514,11 @@ export function PaletteCreator() {
                 ) : (
                   <Save className="h-3.5 w-3.5" />
                 )}
-                {isPending ? "Compiling..." : creatorPaletteToEdit ? "Save Changes" : "Save to Library"}
+                {isPending
+                  ? "Compiling..."
+                  : creatorPaletteToEdit
+                    ? "Save Changes"
+                    : "Save to Library"}
               </button>
             </div>
           </motion.div>

@@ -1,0 +1,110 @@
+/*---
+id: founder-os-info-brand-swatches
+name: Founder OS Info Brand Swatches
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 10
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - brand-scale
+  mood:
+  - tonal
+  - semantic
+  aesthetic:
+  - UI
+  - Web Design
+intent: Foundational 10-step tonal scale for Info (Blue). Used for tooltips, system messages, links, and neutral highlights.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--brand-info-50-wash: #eff6ffff;
+--brand-info-100-subtle: #dbeafeff;
+--brand-info-200-light: #bfdbfeff;
+--brand-info-300-muted: #93c5fdff;
+--brand-info-400-base: #60a5faff;
+--brand-info-500-emphasis: #3b82f6ff;
+--brand-info-600-strong: #2563ebff;
+--brand-info-700-deep: #1d4ed8ff;
+--brand-info-800-dark: #1e40afff;
+--brand-info-900-black: #1e3a8aff;
+
+/* CSS HSL */
+--brand-info-50-wash: hsla(214, 100%, 97%, 1);
+--brand-info-100-subtle: hsla(214, 95%, 93%, 1);
+--brand-info-200-light: hsla(213, 97%, 87%, 1);
+--brand-info-300-muted: hsla(212, 96%, 78%, 1);
+--brand-info-400-base: hsla(213, 94%, 68%, 1);
+--brand-info-500-emphasis: hsla(217, 91%, 60%, 1);
+--brand-info-600-strong: hsla(221, 83%, 53%, 1);
+--brand-info-700-deep: hsla(224, 76%, 48%, 1);
+--brand-info-800-dark: hsla(226, 71%, 40%, 1);
+--brand-info-900-black: hsla(224, 64%, 33%, 1);
+}
+
+/* SCSS HEX */
+$brand-info-50-wash: #eff6ffff;
+$brand-info-100-subtle: #dbeafeff;
+$brand-info-200-light: #bfdbfeff;
+$brand-info-300-muted: #93c5fdff;
+$brand-info-400-base: #60a5faff;
+$brand-info-500-emphasis: #3b82f6ff;
+$brand-info-600-strong: #2563ebff;
+$brand-info-700-deep: #1d4ed8ff;
+$brand-info-800-dark: #1e40afff;
+$brand-info-900-black: #1e3a8aff;
+
+/* SCSS HSL */
+$brand-info-50-wash: hsla(214, 100%, 97%, 1);
+$brand-info-100-subtle: hsla(214, 95%, 93%, 1);
+$brand-info-200-light: hsla(213, 97%, 87%, 1);
+$brand-info-300-muted: hsla(212, 96%, 78%, 1);
+$brand-info-400-base: hsla(213, 94%, 68%, 1);
+$brand-info-500-emphasis: hsla(217, 91%, 60%, 1);
+$brand-info-600-strong: hsla(221, 83%, 53%, 1);
+$brand-info-700-deep: hsla(224, 76%, 48%, 1);
+$brand-info-800-dark: hsla(226, 71%, 40%, 1);
+$brand-info-900-black: hsla(224, 64%, 33%, 1);
+
+/* SCSS RGB */
+$brand-info-50-wash: rgba(239, 246, 255, 1);
+$brand-info-100-subtle: rgba(219, 234, 254, 1);
+$brand-info-200-light: rgba(191, 219, 254, 1);
+$brand-info-300-muted: rgba(147, 197, 253, 1);
+$brand-info-400-base: rgba(96, 165, 250, 1);
+$brand-info-500-emphasis: rgba(59, 130, 246, 1);
+$brand-info-600-strong: rgba(37, 99, 235, 1);
+$brand-info-700-deep: rgba(29, 78, 216, 1);
+$brand-info-800-dark: rgba(30, 64, 175, 1);
+$brand-info-900-black: rgba(30, 58, 138, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #eff6ffff, #dbeafeff, #bfdbfeff, #93c5fdff, #60a5faff, #3b82f6ff, #2563ebff, #1d4ed8ff, #1e40afff, #1e3a8aff);
+$gradient-right: linear-gradient(90deg, #eff6ffff, #dbeafeff, #bfdbfeff, #93c5fdff, #60a5faff, #3b82f6ff, #2563ebff, #1d4ed8ff, #1e40afff, #1e3a8aff);
+$gradient-bottom: linear-gradient(180deg, #eff6ffff, #dbeafeff, #bfdbfeff, #93c5fdff, #60a5faff, #3b82f6ff, #2563ebff, #1d4ed8ff, #1e40afff, #1e3a8aff);
+$gradient-left: linear-gradient(270deg, #eff6ffff, #dbeafeff, #bfdbfeff, #93c5fdff, #60a5faff, #3b82f6ff, #2563ebff, #1d4ed8ff, #1e40afff, #1e3a8aff);
+$gradient-top-right: linear-gradient(45deg, #eff6ffff, #dbeafeff, #bfdbfeff, #93c5fdff, #60a5faff, #3b82f6ff, #2563ebff, #1d4ed8ff, #1e40afff, #1e3a8aff);
+$gradient-bottom-right: linear-gradient(135deg, #eff6ffff, #dbeafeff, #bfdbfeff, #93c5fdff, #60a5faff, #3b82f6ff, #2563ebff, #1d4ed8ff, #1e40afff, #1e3a8aff);
+$gradient-top-left: linear-gradient(225deg, #eff6ffff, #dbeafeff, #bfdbfeff, #93c5fdff, #60a5faff, #3b82f6ff, #2563ebff, #1d4ed8ff, #1e40afff, #1e3a8aff);
+$gradient-bottom-left: linear-gradient(315deg, #eff6ffff, #dbeafeff, #bfdbfeff, #93c5fdff, #60a5faff, #3b82f6ff, #2563ebff, #1d4ed8ff, #1e40afff, #1e3a8aff);
+$gradient-radial: radial-gradient(#eff6ffff, #dbeafeff, #bfdbfeff, #93c5fdff, #60a5faff, #3b82f6ff, #2563ebff, #1d4ed8ff, #1e40afff, #1e3a8aff);
+
+/* SCSS Map */
+$founder-os-info-brand-swatches-map: (
+    "brand-info-50-wash": #eff6ffff,
+    "brand-info-100-subtle": #dbeafeff,
+    "brand-info-200-light": #bfdbfeff,
+    "brand-info-300-muted": #93c5fdff,
+    "brand-info-400-base": #60a5faff,
+    "brand-info-500-emphasis": #3b82f6ff,
+    "brand-info-600-strong": #2563ebff,
+    "brand-info-700-deep": #1d4ed8ff,
+    "brand-info-800-dark": #1e40afff,
+    "brand-info-900-black": #1e3a8aff
+);

@@ -1,0 +1,113 @@
+/*---
+id: memphis-design
+name: Memphis Design
+author: JaZeR-444
+version: 1.0.0
+category: Art & Cultural Movements
+count: 10
+description: A high-voltage Memphis Group palette of screaming hot pinks, electric blues, vivid citrus, and turquoise pop set against pure black and white.
+tags:
+  mood:
+  - energetic
+  - playful
+  - bold
+  aesthetic:
+  - Memphis
+  - Pop Art
+  - Postmodern
+intent: A bold 10-color palette designed for pop culture branding, playful UI systems, and design work that demands unapologetic vibrancy and energy.
+suggested_use:
+- Youth brand identity and packaging
+- Playful SaaS and app interfaces
+- Festival, event, and pop-culture editorial
+url: https://coolors.co/ff2d78-0066ff-ffe600-ff6b00-00d68f-e8001e-00c8d4-9b00e8-111111-ffffff
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--hot-pink: #ff2d78ff;
+--electric-blue: #0066ffff;
+--bright-yellow: #ffe600ff;
+--vivid-orange: #ff6b00ff;
+--mint-green: #00d68fff;
+--bright-red: #e8001eff;
+--turquoise: #00c8d4ff;
+--purple: #9b00e8ff;
+--memphis-black: #111111ff;
+--memphis-white: #ffffffff;
+
+/* CSS HSL */
+--hot-pink: hsla(340, 100%, 59%, 1);
+--electric-blue: hsla(220, 100%, 50%, 1);
+--bright-yellow: hsla(55, 100%, 50%, 1);
+--vivid-orange: hsla(26, 100%, 50%, 1);
+--mint-green: hsla(158, 100%, 42%, 1);
+--bright-red: hsla(355, 100%, 45%, 1);
+--turquoise: hsla(185, 100%, 41%, 1);
+--purple: hsla(278, 100%, 46%, 1);
+--memphis-black: hsla(0, 0%, 7%, 1);
+--memphis-white: hsla(0, 0%, 100%, 1);
+}
+
+/* SCSS HEX */
+$hot-pink: #ff2d78ff;
+$electric-blue: #0066ffff;
+$bright-yellow: #ffe600ff;
+$vivid-orange: #ff6b00ff;
+$mint-green: #00d68fff;
+$bright-red: #e8001eff;
+$turquoise: #00c8d4ff;
+$purple: #9b00e8ff;
+$memphis-black: #111111ff;
+$memphis-white: #ffffffff;
+
+/* SCSS HSL */
+$hot-pink: hsla(340, 100%, 59%, 1);
+$electric-blue: hsla(220, 100%, 50%, 1);
+$bright-yellow: hsla(55, 100%, 50%, 1);
+$vivid-orange: hsla(26, 100%, 50%, 1);
+$mint-green: hsla(158, 100%, 42%, 1);
+$bright-red: hsla(355, 100%, 45%, 1);
+$turquoise: hsla(185, 100%, 41%, 1);
+$purple: hsla(278, 100%, 46%, 1);
+$memphis-black: hsla(0, 0%, 7%, 1);
+$memphis-white: hsla(0, 0%, 100%, 1);
+
+/* SCSS RGB */
+$hot-pink: rgba(255, 45, 120, 1);
+$electric-blue: rgba(0, 102, 255, 1);
+$bright-yellow: rgba(255, 230, 0, 1);
+$vivid-orange: rgba(255, 107, 0, 1);
+$mint-green: rgba(0, 214, 143, 1);
+$bright-red: rgba(232, 0, 30, 1);
+$turquoise: rgba(0, 200, 212, 1);
+$purple: rgba(155, 0, 232, 1);
+$memphis-black: rgba(17, 17, 17, 1);
+$memphis-white: rgba(255, 255, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #ff2d78ff, #0066ffff, #ffe600ff, #ff6b00ff, #00d68fff, #e8001eff, #00c8d4ff, #9b00e8ff, #111111ff, #ffffffff);
+$gradient-right: linear-gradient(90deg, #ff2d78ff, #0066ffff, #ffe600ff, #ff6b00ff, #00d68fff, #e8001eff, #00c8d4ff, #9b00e8ff, #111111ff, #ffffffff);
+$gradient-bottom: linear-gradient(180deg, #ff2d78ff, #0066ffff, #ffe600ff, #ff6b00ff, #00d68fff, #e8001eff, #00c8d4ff, #9b00e8ff, #111111ff, #ffffffff);
+$gradient-left: linear-gradient(270deg, #ff2d78ff, #0066ffff, #ffe600ff, #ff6b00ff, #00d68fff, #e8001eff, #00c8d4ff, #9b00e8ff, #111111ff, #ffffffff);
+$gradient-top-right: linear-gradient(45deg, #ff2d78ff, #0066ffff, #ffe600ff, #ff6b00ff, #00d68fff, #e8001eff, #00c8d4ff, #9b00e8ff, #111111ff, #ffffffff);
+$gradient-bottom-right: linear-gradient(135deg, #ff2d78ff, #0066ffff, #ffe600ff, #ff6b00ff, #00d68fff, #e8001eff, #00c8d4ff, #9b00e8ff, #111111ff, #ffffffff);
+$gradient-top-left: linear-gradient(225deg, #ff2d78ff, #0066ffff, #ffe600ff, #ff6b00ff, #00d68fff, #e8001eff, #00c8d4ff, #9b00e8ff, #111111ff, #ffffffff);
+$gradient-bottom-left: linear-gradient(315deg, #ff2d78ff, #0066ffff, #ffe600ff, #ff6b00ff, #00d68fff, #e8001eff, #00c8d4ff, #9b00e8ff, #111111ff, #ffffffff);
+$gradient-radial: radial-gradient(#ff2d78ff, #0066ffff, #ffe600ff, #ff6b00ff, #00d68fff, #e8001eff, #00c8d4ff, #9b00e8ff, #111111ff, #ffffffff);
+
+/* SCSS Map */
+$memphis-design-map: (
+    "hot-pink": #ff2d78ff,
+    "electric-blue": #0066ffff,
+    "bright-yellow": #ffe600ff,
+    "vivid-orange": #ff6b00ff,
+    "mint-green": #00d68fff,
+    "bright-red": #e8001eff,
+    "turquoise": #00c8d4ff,
+    "purple": #9b00e8ff,
+    "memphis-black": #111111ff,
+    "memphis-white": #ffffffff,
+);

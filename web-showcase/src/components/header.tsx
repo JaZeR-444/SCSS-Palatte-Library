@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import {
   Github,
   Shuffle,
@@ -37,6 +38,7 @@ export function Header({ count }: HeaderProps) {
     activeCollectionId,
     setActiveCollectionId,
   } = useStudio();
+  const router = useRouter();
 
   const [collections, setCollections] = useState<
     { id: string; name: string; palette_count: number }[]
@@ -165,6 +167,29 @@ export function Header({ count }: HeaderProps) {
     } catch (error) {
       console.error("Create collection failed:", error);
       setCollectionError("Could not create collection.");
+    }
+  };
+
+  // Promote a curated collection into a full project workspace. Membership
+  // carries over (no copy); the user lands on the new project page to edit its
+  // type/description and attach design systems.
+  const handlePromoteCollection = async (col: { id: string; name: string }) => {
+    try {
+      const { promoteToProjectAction } = await import("@/app/actions");
+      const res = await promoteToProjectAction(col.id, "Product", "");
+      if (res.success) {
+        if (activeCollectionId === col.id) setActiveCollectionId(null);
+        setShowCollections(false);
+        fetchCollections();
+        playSound("success");
+        showToast(`Promoted "${col.name}" to a project`);
+        router.push(`/projects/${col.id}`);
+      } else {
+        showToast(res.error || "Could not promote collection.", "error");
+      }
+    } catch (error) {
+      console.error("Promote collection failed:", error);
+      showToast("Could not promote collection.", "error");
     }
   };
 
@@ -370,20 +395,33 @@ export function Header({ count }: HeaderProps) {
                             {col.palette_count}
                           </span>
                         </div>
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setCollectionToDelete({
-                              id: col.id,
-                              name: col.name,
-                            });
-                          }}
-                          className="opacity-0 group-hover:opacity-100 text-gray-400 hover:text-rose-500 p-1 rounded hover:bg-rose-50 dark:hover:bg-rose-950/30 transition-all cursor-pointer"
-                          title="Delete collection"
-                          aria-label={`Delete ${col.name} collection`}
-                        >
-                          <Trash className="h-3 w-3" />
-                        </button>
+                        <div className="flex flex-shrink-0 items-center gap-0.5">
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handlePromoteCollection(col);
+                            }}
+                            className="opacity-0 group-hover:opacity-100 text-gray-400 hover:text-indigo-500 p-1 rounded hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition-all cursor-pointer"
+                            title="Promote to project"
+                            aria-label={`Promote ${col.name} to a project`}
+                          >
+                            <FolderKanban className="h-3 w-3" />
+                          </button>
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setCollectionToDelete({
+                                id: col.id,
+                                name: col.name,
+                              });
+                            }}
+                            className="opacity-0 group-hover:opacity-100 text-gray-400 hover:text-rose-500 p-1 rounded hover:bg-rose-50 dark:hover:bg-rose-950/30 transition-all cursor-pointer"
+                            title="Delete collection"
+                            aria-label={`Delete ${col.name} collection`}
+                          >
+                            <Trash className="h-3 w-3" />
+                          </button>
+                        </div>
                       </div>
                     ))
                   )}

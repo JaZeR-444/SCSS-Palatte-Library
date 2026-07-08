@@ -1,0 +1,110 @@
+/*---
+id: founder-os-tertiary-brand-swatches
+name: Founder OS Tertiary Brand Swatches
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 10
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - brand-scale
+  mood:
+  - tonal
+  - semantic
+  aesthetic:
+  - UI
+  - Web Design
+intent: Foundational 10-step tonal scale for Tertiary (Violet/Purple). Used as an accent for AI, premium, or bot features.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--brand-tertiary-50-wash: #f5f3ffff;
+--brand-tertiary-100-subtle: #ede9feff;
+--brand-tertiary-200-light: #ddd6feff;
+--brand-tertiary-300-muted: #c4b5fdff;
+--brand-tertiary-400-base: #a78bfaff;
+--brand-tertiary-500-emphasis: #8b5cf6ff;
+--brand-tertiary-600-strong: #7c3aedff;
+--brand-tertiary-700-deep: #6d28d9ff;
+--brand-tertiary-800-dark: #5b21b6ff;
+--brand-tertiary-900-black: #4c1d95ff;
+
+/* CSS HSL */
+--brand-tertiary-50-wash: hsla(250, 100%, 98%, 1);
+--brand-tertiary-100-subtle: hsla(251, 91%, 95%, 1);
+--brand-tertiary-200-light: hsla(250, 95%, 92%, 1);
+--brand-tertiary-300-muted: hsla(252, 95%, 85%, 1);
+--brand-tertiary-400-base: hsla(255, 92%, 76%, 1);
+--brand-tertiary-500-emphasis: hsla(258, 90%, 66%, 1);
+--brand-tertiary-600-strong: hsla(262, 83%, 58%, 1);
+--brand-tertiary-700-deep: hsla(263, 70%, 50%, 1);
+--brand-tertiary-800-dark: hsla(263, 69%, 42%, 1);
+--brand-tertiary-900-black: hsla(264, 67%, 35%, 1);
+}
+
+/* SCSS HEX */
+$brand-tertiary-50-wash: #f5f3ffff;
+$brand-tertiary-100-subtle: #ede9feff;
+$brand-tertiary-200-light: #ddd6feff;
+$brand-tertiary-300-muted: #c4b5fdff;
+$brand-tertiary-400-base: #a78bfaff;
+$brand-tertiary-500-emphasis: #8b5cf6ff;
+$brand-tertiary-600-strong: #7c3aedff;
+$brand-tertiary-700-deep: #6d28d9ff;
+$brand-tertiary-800-dark: #5b21b6ff;
+$brand-tertiary-900-black: #4c1d95ff;
+
+/* SCSS HSL */
+$brand-tertiary-50-wash: hsla(250, 100%, 98%, 1);
+$brand-tertiary-100-subtle: hsla(251, 91%, 95%, 1);
+$brand-tertiary-200-light: hsla(250, 95%, 92%, 1);
+$brand-tertiary-300-muted: hsla(252, 95%, 85%, 1);
+$brand-tertiary-400-base: hsla(255, 92%, 76%, 1);
+$brand-tertiary-500-emphasis: hsla(258, 90%, 66%, 1);
+$brand-tertiary-600-strong: hsla(262, 83%, 58%, 1);
+$brand-tertiary-700-deep: hsla(263, 70%, 50%, 1);
+$brand-tertiary-800-dark: hsla(263, 69%, 42%, 1);
+$brand-tertiary-900-black: hsla(264, 67%, 35%, 1);
+
+/* SCSS RGB */
+$brand-tertiary-50-wash: rgba(245, 243, 255, 1);
+$brand-tertiary-100-subtle: rgba(237, 233, 254, 1);
+$brand-tertiary-200-light: rgba(221, 214, 254, 1);
+$brand-tertiary-300-muted: rgba(196, 181, 253, 1);
+$brand-tertiary-400-base: rgba(167, 139, 250, 1);
+$brand-tertiary-500-emphasis: rgba(139, 92, 246, 1);
+$brand-tertiary-600-strong: rgba(124, 58, 237, 1);
+$brand-tertiary-700-deep: rgba(109, 40, 217, 1);
+$brand-tertiary-800-dark: rgba(91, 33, 182, 1);
+$brand-tertiary-900-black: rgba(76, 29, 149, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #f5f3ffff, #ede9feff, #ddd6feff, #c4b5fdff, #a78bfaff, #8b5cf6ff, #7c3aedff, #6d28d9ff, #5b21b6ff, #4c1d95ff);
+$gradient-right: linear-gradient(90deg, #f5f3ffff, #ede9feff, #ddd6feff, #c4b5fdff, #a78bfaff, #8b5cf6ff, #7c3aedff, #6d28d9ff, #5b21b6ff, #4c1d95ff);
+$gradient-bottom: linear-gradient(180deg, #f5f3ffff, #ede9feff, #ddd6feff, #c4b5fdff, #a78bfaff, #8b5cf6ff, #7c3aedff, #6d28d9ff, #5b21b6ff, #4c1d95ff);
+$gradient-left: linear-gradient(270deg, #f5f3ffff, #ede9feff, #ddd6feff, #c4b5fdff, #a78bfaff, #8b5cf6ff, #7c3aedff, #6d28d9ff, #5b21b6ff, #4c1d95ff);
+$gradient-top-right: linear-gradient(45deg, #f5f3ffff, #ede9feff, #ddd6feff, #c4b5fdff, #a78bfaff, #8b5cf6ff, #7c3aedff, #6d28d9ff, #5b21b6ff, #4c1d95ff);
+$gradient-bottom-right: linear-gradient(135deg, #f5f3ffff, #ede9feff, #ddd6feff, #c4b5fdff, #a78bfaff, #8b5cf6ff, #7c3aedff, #6d28d9ff, #5b21b6ff, #4c1d95ff);
+$gradient-top-left: linear-gradient(225deg, #f5f3ffff, #ede9feff, #ddd6feff, #c4b5fdff, #a78bfaff, #8b5cf6ff, #7c3aedff, #6d28d9ff, #5b21b6ff, #4c1d95ff);
+$gradient-bottom-left: linear-gradient(315deg, #f5f3ffff, #ede9feff, #ddd6feff, #c4b5fdff, #a78bfaff, #8b5cf6ff, #7c3aedff, #6d28d9ff, #5b21b6ff, #4c1d95ff);
+$gradient-radial: radial-gradient(#f5f3ffff, #ede9feff, #ddd6feff, #c4b5fdff, #a78bfaff, #8b5cf6ff, #7c3aedff, #6d28d9ff, #5b21b6ff, #4c1d95ff);
+
+/* SCSS Map */
+$founder-os-tertiary-brand-swatches-map: (
+    "brand-tertiary-50-wash": #f5f3ffff,
+    "brand-tertiary-100-subtle": #ede9feff,
+    "brand-tertiary-200-light": #ddd6feff,
+    "brand-tertiary-300-muted": #c4b5fdff,
+    "brand-tertiary-400-base": #a78bfaff,
+    "brand-tertiary-500-emphasis": #8b5cf6ff,
+    "brand-tertiary-600-strong": #7c3aedff,
+    "brand-tertiary-700-deep": #6d28d9ff,
+    "brand-tertiary-800-dark": #5b21b6ff,
+    "brand-tertiary-900-black": #4c1d95ff
+);

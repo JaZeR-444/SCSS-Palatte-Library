@@ -341,7 +341,27 @@ def enrich(palettes):
 
     # -- accessibility (1) + derived (6) + descriptions (4)
     for p in palettes:
-        hexes = [c["hex"][:7] for c in p["colors"]]
+        # Filter to only valid 6-digit hex colors (skip rgba/gradient tokens)
+        hexes = [c["hex"][:7] for c in p["colors"]
+                 if c.get("hex", "").lstrip("#").replace("0123456789abcdefABCDEF", "") == ""
+                 and len(c.get("hex", "").lstrip("#")) >= 6]
+        if not hexes:
+            # Stub metadata for palettes with no parseable hex colors (e.g. glass/gradient token sets)
+            p["accessibility"] = {
+                "uiReadiness": 0, "wcagPassRate": 0.0, "contrastRange": 0.0,
+                "aaPairs": 0, "aaaPairs": 0, "totalPairs": 0,
+                "hasAccessibleText": False,
+                "bestTextPair": {"background": "#000000", "text": "#ffffff", "ratio": 0.0, "level": "Fail"},
+                "roles": {"background": "#000000", "surface": "#000000", "text": "#ffffff", "accent": "#ffffff"},
+            }
+            p["derived"] = {
+                "hueFamily": "Neutral", "hueFamilies": ["Neutral"], "temperature": "balanced",
+                "harmony": "neutral", "structure": "single-span", "saturationProfile": "muted",
+                "averageLuminance": 0.0, "averageSaturation": 0.0, "sortKey": 9999,
+            }
+            p.setdefault("description", p.get("intent", "A semantic token swatch set."))
+            continue
+
         lums = [luminance(h) for h in hexes]
         hsls = [hex_to_hsl(h) for h in hexes]
         hues = [h for h, s, l in hsls]
@@ -500,6 +520,8 @@ def rebuild_db(palettes):
                     rows.append(("mood", tv))
                 for tv in tags.get("aesthetic", []):
                     rows.append(("aesthetic", tv))
+                for tv in tags.get("project", []):
+                    rows.append(("project", tv))
             d, acc = p["derived"], p["accessibility"]
             rows += [
                 ("hue", d["hueFamily"].lower()),

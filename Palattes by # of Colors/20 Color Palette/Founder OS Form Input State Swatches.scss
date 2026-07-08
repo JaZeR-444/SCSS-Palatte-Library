@@ -1,0 +1,169 @@
+/*---
+id: founder-os-form-input-state-swatches
+name: Founder OS Form Input State Swatches
+author: JaZeR-444
+version: 1.2.0
+category: Web Development System
+count: 20
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - component-states
+  mood:
+  - functional
+  aesthetic:
+  - UI
+  - Web Design
+intent: Comprehensive form input states mapped to foundational scales. Now includes Disabled, Readonly, Placeholder, and Interactive Hover borders.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--input-neutral-bg: #f8fafcff;
+--input-neutral-border: #94a3b8ff;
+--input-neutral-hover-border: #64748bff;
+--input-neutral-text: #0f172aff;
+--input-placeholder: #94a3b8ff;
+--input-focus-bg: #ffffffff;
+--input-focus-border: #00f0ffff;
+--input-focus-text: #0f172aff;
+--input-valid-bg: #ecfdf5ff;
+--input-valid-border: #10b981ff;
+--input-valid-text: #064e3bff;
+--input-error-bg: #fff1f2ff;
+--input-error-border: #f43f5eff;
+--input-error-text: #881337ff;
+--input-disabled-bg: #f1f5f9ff;
+--input-disabled-border: #e2e8f0ff;
+--input-disabled-text: #94a3b8ff;
+--input-readonly-bg: #00000000;
+--input-readonly-border: #cbd5e1ff;
+--input-readonly-text: #334155ff;
+
+/* CSS HSL */
+--input-neutral-bg: hsla(210, 40%, 98%, 1);
+--input-neutral-border: hsla(215, 20%, 65%, 1);
+--input-neutral-hover-border: hsla(215, 16%, 47%, 1);
+--input-neutral-text: hsla(222, 47%, 11%, 1);
+--input-placeholder: hsla(215, 20%, 65%, 1);
+--input-focus-bg: hsla(0, 0%, 100%, 1);
+--input-focus-border: hsla(184, 100%, 50%, 1);
+--input-focus-text: hsla(222, 47%, 11%, 1);
+--input-valid-bg: hsla(152, 81%, 96%, 1);
+--input-valid-border: hsla(160, 84%, 39%, 1);
+--input-valid-text: hsla(164, 86%, 16%, 1);
+--input-error-bg: hsla(356, 100%, 97%, 1);
+--input-error-border: hsla(350, 89%, 60%, 1);
+--input-error-text: hsla(342, 75%, 30%, 1);
+--input-disabled-bg: hsla(210, 40%, 96%, 1);
+--input-disabled-border: hsla(214, 32%, 91%, 1);
+--input-disabled-text: hsla(215, 20%, 65%, 1);
+--input-readonly-bg: hsla(0, 0%, 0%, 1);
+--input-readonly-border: hsla(213, 27%, 84%, 1);
+--input-readonly-text: hsla(215, 25%, 27%, 1);
+}
+
+/* SCSS HEX */
+$input-neutral-bg: #f8fafcff;
+$input-neutral-border: #94a3b8ff;
+$input-neutral-hover-border: #64748bff;
+$input-neutral-text: #0f172aff;
+$input-placeholder: #94a3b8ff;
+$input-focus-bg: #ffffffff;
+$input-focus-border: #00f0ffff;
+$input-focus-text: #0f172aff;
+$input-valid-bg: #ecfdf5ff;
+$input-valid-border: #10b981ff;
+$input-valid-text: #064e3bff;
+$input-error-bg: #fff1f2ff;
+$input-error-border: #f43f5eff;
+$input-error-text: #881337ff;
+$input-disabled-bg: #f1f5f9ff;
+$input-disabled-border: #e2e8f0ff;
+$input-disabled-text: #94a3b8ff;
+$input-readonly-bg: #00000000;
+$input-readonly-border: #cbd5e1ff;
+$input-readonly-text: #334155ff;
+
+/* SCSS HSL */
+$input-neutral-bg: hsla(210, 40%, 98%, 1);
+$input-neutral-border: hsla(215, 20%, 65%, 1);
+$input-neutral-hover-border: hsla(215, 16%, 47%, 1);
+$input-neutral-text: hsla(222, 47%, 11%, 1);
+$input-placeholder: hsla(215, 20%, 65%, 1);
+$input-focus-bg: hsla(0, 0%, 100%, 1);
+$input-focus-border: hsla(184, 100%, 50%, 1);
+$input-focus-text: hsla(222, 47%, 11%, 1);
+$input-valid-bg: hsla(152, 81%, 96%, 1);
+$input-valid-border: hsla(160, 84%, 39%, 1);
+$input-valid-text: hsla(164, 86%, 16%, 1);
+$input-error-bg: hsla(356, 100%, 97%, 1);
+$input-error-border: hsla(350, 89%, 60%, 1);
+$input-error-text: hsla(342, 75%, 30%, 1);
+$input-disabled-bg: hsla(210, 40%, 96%, 1);
+$input-disabled-border: hsla(214, 32%, 91%, 1);
+$input-disabled-text: hsla(215, 20%, 65%, 1);
+$input-readonly-bg: hsla(0, 0%, 0%, 1);
+$input-readonly-border: hsla(213, 27%, 84%, 1);
+$input-readonly-text: hsla(215, 25%, 27%, 1);
+
+/* SCSS RGB */
+$input-neutral-bg: rgba(248, 250, 252, 1);
+$input-neutral-border: rgba(148, 163, 184, 1);
+$input-neutral-hover-border: rgba(100, 116, 139, 1);
+$input-neutral-text: rgba(15, 23, 42, 1);
+$input-placeholder: rgba(148, 163, 184, 1);
+$input-focus-bg: rgba(255, 255, 255, 1);
+$input-focus-border: rgba(0, 240, 255, 1);
+$input-focus-text: rgba(15, 23, 42, 1);
+$input-valid-bg: rgba(236, 253, 245, 1);
+$input-valid-border: rgba(16, 185, 129, 1);
+$input-valid-text: rgba(6, 78, 59, 1);
+$input-error-bg: rgba(255, 241, 242, 1);
+$input-error-border: rgba(244, 63, 94, 1);
+$input-error-text: rgba(136, 19, 55, 1);
+$input-disabled-bg: rgba(241, 245, 249, 1);
+$input-disabled-border: rgba(226, 232, 240, 1);
+$input-disabled-text: rgba(148, 163, 184, 1);
+$input-readonly-bg: rgba(0, 0, 0, 1);
+$input-readonly-border: rgba(203, 213, 225, 1);
+$input-readonly-text: rgba(51, 65, 85, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #f8fafcff, #94a3b8ff, #64748bff, #0f172aff, #94a3b8ff, #ffffffff, #00f0ffff, #0f172aff, #ecfdf5ff, #10b981ff, #064e3bff, #fff1f2ff, #f43f5eff, #881337ff, #f1f5f9ff, #e2e8f0ff, #94a3b8ff, #00000000, #cbd5e1ff, #334155ff);
+$gradient-right: linear-gradient(90deg, #f8fafcff, #94a3b8ff, #64748bff, #0f172aff, #94a3b8ff, #ffffffff, #00f0ffff, #0f172aff, #ecfdf5ff, #10b981ff, #064e3bff, #fff1f2ff, #f43f5eff, #881337ff, #f1f5f9ff, #e2e8f0ff, #94a3b8ff, #00000000, #cbd5e1ff, #334155ff);
+$gradient-bottom: linear-gradient(180deg, #f8fafcff, #94a3b8ff, #64748bff, #0f172aff, #94a3b8ff, #ffffffff, #00f0ffff, #0f172aff, #ecfdf5ff, #10b981ff, #064e3bff, #fff1f2ff, #f43f5eff, #881337ff, #f1f5f9ff, #e2e8f0ff, #94a3b8ff, #00000000, #cbd5e1ff, #334155ff);
+$gradient-left: linear-gradient(270deg, #f8fafcff, #94a3b8ff, #64748bff, #0f172aff, #94a3b8ff, #ffffffff, #00f0ffff, #0f172aff, #ecfdf5ff, #10b981ff, #064e3bff, #fff1f2ff, #f43f5eff, #881337ff, #f1f5f9ff, #e2e8f0ff, #94a3b8ff, #00000000, #cbd5e1ff, #334155ff);
+$gradient-top-right: linear-gradient(45deg, #f8fafcff, #94a3b8ff, #64748bff, #0f172aff, #94a3b8ff, #ffffffff, #00f0ffff, #0f172aff, #ecfdf5ff, #10b981ff, #064e3bff, #fff1f2ff, #f43f5eff, #881337ff, #f1f5f9ff, #e2e8f0ff, #94a3b8ff, #00000000, #cbd5e1ff, #334155ff);
+$gradient-bottom-right: linear-gradient(135deg, #f8fafcff, #94a3b8ff, #64748bff, #0f172aff, #94a3b8ff, #ffffffff, #00f0ffff, #0f172aff, #ecfdf5ff, #10b981ff, #064e3bff, #fff1f2ff, #f43f5eff, #881337ff, #f1f5f9ff, #e2e8f0ff, #94a3b8ff, #00000000, #cbd5e1ff, #334155ff);
+$gradient-top-left: linear-gradient(225deg, #f8fafcff, #94a3b8ff, #64748bff, #0f172aff, #94a3b8ff, #ffffffff, #00f0ffff, #0f172aff, #ecfdf5ff, #10b981ff, #064e3bff, #fff1f2ff, #f43f5eff, #881337ff, #f1f5f9ff, #e2e8f0ff, #94a3b8ff, #00000000, #cbd5e1ff, #334155ff);
+$gradient-bottom-left: linear-gradient(315deg, #f8fafcff, #94a3b8ff, #64748bff, #0f172aff, #94a3b8ff, #ffffffff, #00f0ffff, #0f172aff, #ecfdf5ff, #10b981ff, #064e3bff, #fff1f2ff, #f43f5eff, #881337ff, #f1f5f9ff, #e2e8f0ff, #94a3b8ff, #00000000, #cbd5e1ff, #334155ff);
+$gradient-radial: radial-gradient(#f8fafcff, #94a3b8ff, #64748bff, #0f172aff, #94a3b8ff, #ffffffff, #00f0ffff, #0f172aff, #ecfdf5ff, #10b981ff, #064e3bff, #fff1f2ff, #f43f5eff, #881337ff, #f1f5f9ff, #e2e8f0ff, #94a3b8ff, #00000000, #cbd5e1ff, #334155ff);
+
+/* SCSS Map */
+$founder-os-form-input-state-swatches-map: (
+    "input-neutral-bg": #f8fafcff,
+    "input-neutral-border": #94a3b8ff,
+    "input-neutral-hover-border": #64748bff,
+    "input-neutral-text": #0f172aff,
+    "input-placeholder": #94a3b8ff,
+    "input-focus-bg": #ffffffff,
+    "input-focus-border": #00f0ffff,
+    "input-focus-text": #0f172aff,
+    "input-valid-bg": #ecfdf5ff,
+    "input-valid-border": #10b981ff,
+    "input-valid-text": #064e3bff,
+    "input-error-bg": #fff1f2ff,
+    "input-error-border": #f43f5eff,
+    "input-error-text": #881337ff,
+    "input-disabled-bg": #f1f5f9ff,
+    "input-disabled-border": #e2e8f0ff,
+    "input-disabled-text": #94a3b8ff,
+    "input-readonly-bg": #00000000,
+    "input-readonly-border": #cbd5e1ff,
+    "input-readonly-text": #334155ff
+);

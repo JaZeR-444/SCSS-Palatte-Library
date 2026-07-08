@@ -1,8 +1,9 @@
-﻿import Database from "better-sqlite3";
+import Database from "better-sqlite3";
 import fs from "fs";
 import os from "os";
 import path from "path";
 import { Palette, Color } from "@/types";
+import type { SavedDesignSystem } from "@/types/design-system";
 
 function resolveDbPath() {
   const localSeedPath = path.resolve(
@@ -111,9 +112,131 @@ export function getDb(): Database.Database {
         mapping_json TEXT NOT NULL,
         created_at DATETIME DEFAULT CURRENT_TIMESTAMP
       );
+
+      -- Full, reusable design systems (the Brand System modal's output).
+      -- Standalone artifacts; project_slug is an optional association so a
+      -- system can be reused/attached across projects later.
+      CREATE TABLE IF NOT EXISTS design_systems (
+        id TEXT PRIMARY KEY,
+        name TEXT NOT NULL,
+        palette_id TEXT,
+        project_slug TEXT,
+        system_json TEXT NOT NULL,
+        created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+        updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+      );
+
+      -- Unified workspace primitive. A workspace is a named set of palettes
+      -- with a kind discriminator: 'collection' (a loose, user-curated bag)
+      -- or 'project' (a product workspace). This collapses the previously
+      -- parallel collections/projects models onto one table + one join.
+      -- The single slug key doubles as id and URL key (a collection's old
+      -- slug-<timestamp> id becomes its slug; a project's slug is
+      -- slugifyProject(name)). Children reference workspace_slug.
+      CREATE TABLE IF NOT EXISTS workspaces (
+        slug        TEXT PRIMARY KEY,
+        kind        TEXT NOT NULL DEFAULT 'collection'
+                    CHECK (kind IN ('collection','project')),
+        name        TEXT NOT NULL,
+        type        TEXT,
+        description TEXT,
+        promoted_at DATETIME,
+        created_at  DATETIME DEFAULT CURRENT_TIMESTAMP
+      );
+
+      -- Manual palette membership: collection members + a project's MANUAL
+      -- additions (a project also has tag-derived members, see palette_tags).
+      CREATE TABLE IF NOT EXISTS workspace_palettes (
+        workspace_slug TEXT NOT NULL,
+        palette_id     TEXT NOT NULL,
+        created_at     DATETIME DEFAULT CURRENT_TIMESTAMP,
+        PRIMARY KEY (workspace_slug, palette_id),
+        FOREIGN KEY (workspace_slug) REFERENCES workspaces(slug) ON DELETE CASCADE
+      );
+
+      -- Per-workspace role-mapping presets (re-homed from project_presets).
+      CREATE TABLE IF NOT EXISTS workspace_presets (
+        id             TEXT PRIMARY KEY,
+        workspace_slug TEXT NOT NULL,
+        name           TEXT NOT NULL,
+        palette_id     TEXT NOT NULL,
+        mapping_json   TEXT NOT NULL,
+        created_at     DATETIME DEFAULT CURRENT_TIMESTAMP
+      );
+
+      CREATE INDEX IF NOT EXISTS idx_workspaces_kind ON workspaces(kind);
+      CREATE INDEX IF NOT EXISTS idx_ws_palettes_ws  ON workspace_palettes(workspace_slug);
+      CREATE INDEX IF NOT EXISTS idx_ws_presets_ws   ON workspace_presets(workspace_slug);
     `);
+
+    migrateToWorkspaces(dbInstance);
   }
   return dbInstance;
+}
+
+/**
+ * Idempotently migrate the legacy collections/projects tables onto the unified
+ * `workspaces` model. The FK-declared cascade on workspace_palettes never
+ * actually fires because `PRAGMA foreign_keys` is OFF for this connection, so
+ * all deletes elsewhere do explicit child cleanup — the FK is documentation.
+ *
+ * Two idempotency guards work together:
+ *   - the column-existence check makes the design_systems ALTER safe to run on
+ *     every getDb() (better-sqlite3 has no `ADD COLUMN IF NOT EXISTS`);
+ *   - `PRAGMA user_version` gates the one-time data backfill so it is a no-op
+ *     once applied (survives Vercel's per-cold-start seed→tmp copy), and
+ *     `INSERT OR IGNORE` guards against any half-applied state.
+ *
+ * The legacy tables are intentionally left in place (and dual-written by the
+ * design-system helpers) for one release so a code rollback still sees data.
+ */
+function migrateToWorkspaces(db: Database.Database): void {
+  // Add design_systems.workspace_slug if missing (guarded — ADD COLUMN throws
+  // if it already exists). Runs every init; cheap and idempotent.
+  const dsCols = db.prepare(`PRAGMA table_info(design_systems)`).all() as {
+    name: string;
+  }[];
+  if (!dsCols.some((c) => c.name === "workspace_slug")) {
+    db.exec(`ALTER TABLE design_systems ADD COLUMN workspace_slug TEXT`);
+  }
+
+  const userVersion = db.pragma("user_version", { simple: true }) as number;
+  if (userVersion >= 1) return;
+
+  db.transaction(() => {
+    // collections -> workspaces(kind='collection')
+    db.exec(`
+      INSERT OR IGNORE INTO workspaces (slug, kind, name, description, created_at)
+      SELECT id, 'collection', name, description, created_at FROM collections;
+    `);
+    // projects (metadata sidecar) -> workspaces(kind='project')
+    db.exec(`
+      INSERT OR IGNORE INTO workspaces (slug, kind, name, type, description, created_at)
+      SELECT slug, 'project', name, type, description, created_at FROM projects;
+    `);
+    // collection_palettes + project_palettes -> workspace_palettes
+    db.exec(`
+      INSERT OR IGNORE INTO workspace_palettes (workspace_slug, palette_id)
+      SELECT collection_id, palette_id FROM collection_palettes;
+    `);
+    db.exec(`
+      INSERT OR IGNORE INTO workspace_palettes (workspace_slug, palette_id)
+      SELECT project_slug, palette_id FROM project_palettes;
+    `);
+    // project_presets -> workspace_presets
+    db.exec(`
+      INSERT OR IGNORE INTO workspace_presets
+        (id, workspace_slug, name, palette_id, mapping_json, created_at)
+      SELECT id, project_slug, name, palette_id, mapping_json, created_at
+      FROM project_presets;
+    `);
+    // design_systems.project_slug -> workspace_slug
+    db.exec(`
+      UPDATE design_systems SET workspace_slug = project_slug
+      WHERE workspace_slug IS NULL AND project_slug IS NOT NULL;
+    `);
+    db.pragma("user_version = 1");
+  })();
 }
 
 function hexToRgb(hex: string): [number, number, number] | null {
@@ -191,8 +314,31 @@ function stitchPalettes(
       source: f.source as Palette["source"],
       kind: f.kind as Palette["kind"],
       project: f.project,
+      swatchType: f.swatchType,
     };
   });
+}
+
+/**
+ * Fetch + stitch full Palette objects for a set of ids (order not preserved).
+ * Shared by the workspace / collection / project palette getters.
+ */
+function stitchByIds(ids: string[]): Palette[] {
+  if (ids.length === 0) return [];
+  const db = getDb();
+  const placeholders = ids.map(() => "?").join(",");
+  const palettes = db
+    .prepare(`SELECT * FROM palettes WHERE id IN (${placeholders})`)
+    .all(...ids) as any[];
+  const colors = db
+    .prepare(
+      `SELECT * FROM palette_colors WHERE palette_id IN (${placeholders}) ORDER BY palette_id ASC, color_index ASC`,
+    )
+    .all(...ids) as any[];
+  const tags = db
+    .prepare(`SELECT * FROM palette_tags WHERE palette_id IN (${placeholders})`)
+    .all(...ids) as any[];
+  return stitchPalettes(palettes, colors, tags);
 }
 
 export function getAllPalettes(): Palette[] {
@@ -428,18 +574,23 @@ export function saveRoleMapping(
   }
 }
 
-// --- Collections CRUD ---
+// --- Collections (workspaces of kind='collection') ---
+// A collection is the loose, user-curated bag of palettes. It shares the
+// unified `workspaces` + `workspace_palettes` storage with Projects; the only
+// differences are `kind` and that a collection has no tag-derived membership.
 export function getCollections(): Collection[] {
   const db = getDb();
   try {
     const rows = db
       .prepare(
         `
-      SELECT c.*, COUNT(cp.palette_id) as palette_count
-      FROM collections c
-      LEFT JOIN collection_palettes cp ON c.id = cp.collection_id
-      GROUP BY c.id
-      ORDER BY c.created_at DESC
+      SELECT w.slug AS id, w.name, w.description, w.created_at,
+             COUNT(wp.palette_id) AS palette_count
+      FROM workspaces w
+      LEFT JOIN workspace_palettes wp ON w.slug = wp.workspace_slug
+      WHERE w.kind = 'collection'
+      GROUP BY w.slug
+      ORDER BY w.created_at DESC
     `,
       )
       .all() as any[];
@@ -458,6 +609,8 @@ export function getCollections(): Collection[] {
 
 export function createCollection(name: string, description?: string): string {
   const db = getDb();
+  // Same id scheme as before: slugified name + Date.now(). The timestamp
+  // suffix keeps collection slugs from ever colliding with project slugs.
   const id =
     name
       .toLowerCase()
@@ -467,7 +620,7 @@ export function createCollection(name: string, description?: string): string {
     Date.now();
   try {
     db.prepare(
-      "INSERT INTO collections (id, name, description) VALUES (?, ?, ?)",
+      "INSERT INTO workspaces (slug, kind, name, description) VALUES (?, 'collection', ?, ?)",
     ).run(id, name, description || "");
     return id;
   } catch (error) {
@@ -479,7 +632,25 @@ export function createCollection(name: string, description?: string): string {
 export function deleteCollection(id: string): void {
   const db = getDb();
   try {
-    db.prepare("DELETE FROM collections WHERE id = ?").run(id);
+    // FKs are OFF on this connection, so cascade explicitly in a transaction
+    // and clear any dangling design-system associations.
+    db.transaction(() => {
+      db.prepare("DELETE FROM workspace_palettes WHERE workspace_slug = ?").run(
+        id,
+      );
+      db.prepare("DELETE FROM workspace_presets WHERE workspace_slug = ?").run(
+        id,
+      );
+      db.prepare(
+        "UPDATE design_systems SET workspace_slug = NULL WHERE workspace_slug = ?",
+      ).run(id);
+      db.prepare(
+        "UPDATE design_systems SET project_slug = NULL WHERE project_slug = ?",
+      ).run(id);
+      db.prepare(
+        "DELETE FROM workspaces WHERE slug = ? AND kind = 'collection'",
+      ).run(id);
+    })();
   } catch (error) {
     console.error("Failed to delete collection:", error);
     throw error;
@@ -493,7 +664,7 @@ export function addPaletteToCollection(
   const db = getDb();
   try {
     db.prepare(
-      "INSERT OR IGNORE INTO collection_palettes (collection_id, palette_id) VALUES (?, ?)",
+      "INSERT OR IGNORE INTO workspace_palettes (workspace_slug, palette_id) VALUES (?, ?)",
     ).run(collectionId, paletteId);
   } catch (error) {
     console.error("Failed to add palette to collection:", error);
@@ -508,7 +679,7 @@ export function removePaletteFromCollection(
   const db = getDb();
   try {
     db.prepare(
-      "DELETE FROM collection_palettes WHERE collection_id = ? AND palette_id = ?",
+      "DELETE FROM workspace_palettes WHERE workspace_slug = ? AND palette_id = ?",
     ).run(collectionId, paletteId);
   } catch (error) {
     console.error("Failed to remove palette from collection:", error);
@@ -517,36 +688,7 @@ export function removePaletteFromCollection(
 }
 
 export function getCollectionPalettes(collectionId: string): Palette[] {
-  const db = getDb();
-  try {
-    const rows = db
-      .prepare(
-        "SELECT palette_id FROM collection_palettes WHERE collection_id = ?",
-      )
-      .all(collectionId) as { palette_id: string }[];
-    if (rows.length === 0) return [];
-    const ids = rows.map((r) => r.palette_id);
-    const placeholders = ids.map(() => "?").join(",");
-
-    const palettes = db
-      .prepare(`SELECT * FROM palettes WHERE id IN (${placeholders})`)
-      .all(...ids) as any[];
-    const colors = db
-      .prepare(
-        `SELECT * FROM palette_colors WHERE palette_id IN (${placeholders}) ORDER BY palette_id ASC, color_index ASC`,
-      )
-      .all(...ids) as any[];
-    const tags = db
-      .prepare(
-        `SELECT * FROM palette_tags WHERE palette_id IN (${placeholders})`,
-      )
-      .all(...ids) as any[];
-
-    return stitchPalettes(palettes, colors, tags);
-  } catch (error) {
-    console.error("Failed to get collection palettes:", error);
-    return [];
-  }
+  return getWorkspacePalettes(collectionId);
 }
 
 // --- History Log ---
@@ -579,28 +721,25 @@ export function logPaletteHistory(
   }
 }
 
-// --- Projects (palettes grouped by the product they were designed for) ---
-// Membership has two sources: the `project` palette_tags rows written by
-// refine_palettes.py (the "designed-for" set) plus a runtime `project_palettes`
-// table for palettes added later in the app. Per-project metadata (type,
-// description) lives in the runtime `projects` table; role presets in
-// `project_presets`. All runtime tables are preserved across sync_palettes.py.
+// --- Workspaces core (shared by Collections + Projects) ---------------------
+// A workspace is a named set of palettes with a `kind` discriminator.
+// `kind='collection'` is a loose, user-curated bag; `kind='project'` is a
+// product workspace whose membership is the union of tag-derived palettes
+// (palette_tags where tag_type='project', written by the data pipeline) and
+// manual additions in `workspace_palettes`. Project *identity* is still
+// data-derived: canonical project names come from those tags, and project
+// rows are lazily materialized. A promoted collection is a project-kind row
+// with no tag backing — its membership is purely manual.
 
-export interface ProjectSummary {
-  name: string;
+export type WorkspaceKind = "collection" | "project";
+
+export interface Workspace {
   slug: string;
+  kind: WorkspaceKind;
+  name: string;
   type: string;
   description: string;
-  count: number;
-  preview: string[]; // representative hexes for a color strip
-}
-
-export interface ProjectPreset {
-  id: string;
-  project_slug: string;
-  name: string;
-  palette_id: string;
-  mapping: Record<string, string>;
+  promoted_at: string | null;
   created_at: string;
 }
 
@@ -628,89 +767,234 @@ function projectNames(): string[] {
   return rows.map((r) => r.name);
 }
 
-export function getProjectName(slug: string): string | null {
+/** Resolve a tag-derived project name by slug (no workspace row required). */
+function resolveProjectName(slug: string): string | null {
   return projectNames().find((n) => slugifyProject(n) === slug) ?? null;
 }
 
-/** Ensure a metadata row exists (seeded default type) and return it. */
-function ensureProjectRow(
+function getWorkspaceRow(slug: string): Workspace | null {
+  const db = getDb();
+  const r = db.prepare(`SELECT * FROM workspaces WHERE slug = ?`).get(slug) as
+    any | undefined;
+  if (!r) return null;
+  return {
+    slug: r.slug,
+    kind: r.kind,
+    name: r.name,
+    type: r.type ?? "",
+    description: r.description ?? "",
+    promoted_at: r.promoted_at ?? null,
+    created_at: r.created_at,
+  };
+}
+
+/** Ensure a project-kind workspace row exists (seeded type) and return meta. */
+function ensureProjectWorkspace(
   slug: string,
   name: string,
 ): { type: string; description: string } {
   const db = getDb();
   db.prepare(
-    `INSERT OR IGNORE INTO projects (slug, name, type, description) VALUES (?, ?, ?, '')`,
+    `INSERT OR IGNORE INTO workspaces (slug, kind, name, type, description)
+     VALUES (?, 'project', ?, ?, '')`,
   ).run(slug, name, PROJECT_TYPE_SEED[slug] ?? "Product");
   const row = db
-    .prepare(`SELECT type, description FROM projects WHERE slug = ?`)
+    .prepare(`SELECT type, description FROM workspaces WHERE slug = ?`)
     .get(slug) as
     { type: string | null; description: string | null } | undefined;
   return { type: row?.type ?? "Product", description: row?.description ?? "" };
 }
 
-/** All palette ids in a project: shipped `project` tags ∪ runtime additions. */
-function projectPaletteIds(slug: string, name: string): string[] {
+function taggedPaletteIds(name: string): string[] {
   const db = getDb();
-  const tagged = (
+  return (
     db
       .prepare(
         `SELECT palette_id FROM palette_tags WHERE tag_type = 'project' AND tag_value = ?`,
       )
       .all(name) as { palette_id: string }[]
   ).map((r) => r.palette_id);
-  const manual = getManualPaletteIds(slug);
-  return Array.from(new Set([...tagged, ...manual]));
 }
 
-export function getManualPaletteIds(slug: string): string[] {
+function manualPaletteIds(slug: string): string[] {
   const db = getDb();
   return (
     db
-      .prepare(`SELECT palette_id FROM project_palettes WHERE project_slug = ?`)
+      .prepare(
+        `SELECT palette_id FROM workspace_palettes WHERE workspace_slug = ?`,
+      )
       .all(slug) as { palette_id: string }[]
   ).map((r) => r.palette_id);
 }
 
-export function getProjects(): ProjectSummary[] {
-  const db = getDb();
+/**
+ * All palette ids in a workspace. For a project this is the tag-derived set ∪
+ * manual additions; for a collection it is just the manual set. Handles a
+ * tag-derived project whose row hasn't been materialized yet.
+ */
+export function getWorkspacePaletteIds(slug: string): string[] {
+  const ws = getWorkspaceRow(slug);
+  const manual = manualPaletteIds(slug);
+  const name = ws?.name ?? resolveProjectName(slug);
+  const isProject = ws?.kind === "project" || (!ws && !!name);
+  if (isProject && name) {
+    return Array.from(new Set([...taggedPaletteIds(name), ...manual]));
+  }
+  return manual;
+}
+
+export function getWorkspacePalettes(slug: string): Palette[] {
   try {
-    return projectNames()
-      .map((name) => {
-        const slug = slugifyProject(name);
-        const meta = ensureProjectRow(slug, name);
-        const ids = projectPaletteIds(slug, name);
-        const firstId = [...ids].sort()[0];
-        const preview = firstId
-          ? (
-              db
-                .prepare(
-                  `SELECT hex FROM palette_colors WHERE palette_id = ? ORDER BY color_index LIMIT 12`,
-                )
-                .all(firstId) as { hex: string }[]
-            ).map((c) => c.hex)
-          : [];
-        return {
-          name,
-          slug,
-          type: meta.type,
-          description: meta.description,
-          count: ids.length,
-          preview,
-        };
-      })
-      .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+    return stitchByIds(getWorkspacePaletteIds(slug)).sort((a, b) =>
+      a.name.localeCompare(b.name),
+    );
   } catch (error) {
-    console.error("Failed to load projects:", error);
+    console.error("Failed to load workspace palettes:", error);
     return [];
   }
+}
+
+/** A workspace's display name (materialized row, else tag-derived project). */
+export function getWorkspaceName(slug: string): string | null {
+  return getWorkspaceRow(slug)?.name ?? resolveProjectName(slug);
+}
+
+export interface WorkspaceSummary extends ProjectSummary {
+  kind: WorkspaceKind;
+}
+
+function summarizeWorkspace(slug: string): WorkspaceSummary | null {
+  const db = getDb();
+  const name = getWorkspaceName(slug);
+  if (!name) return null;
+  const ws = getWorkspaceRow(slug);
+  const kind: WorkspaceKind = ws?.kind ?? "project";
+  const meta =
+    kind === "project"
+      ? ensureProjectWorkspace(slug, name)
+      : { type: ws?.type ?? "", description: ws?.description ?? "" };
+  const ids = getWorkspacePaletteIds(slug);
+  const firstId = [...ids].sort()[0];
+  const preview = firstId
+    ? (
+        db
+          .prepare(
+            `SELECT hex FROM palette_colors WHERE palette_id = ? ORDER BY color_index LIMIT 12`,
+          )
+          .all(firstId) as { hex: string }[]
+      ).map((c) => c.hex)
+    : [];
+  return {
+    name,
+    slug,
+    kind,
+    type: meta.type,
+    description: meta.description,
+    count: ids.length,
+    preview,
+  };
+}
+
+/**
+ * List workspaces of a given kind (or all). Projects are enumerated as the
+ * union of tag-derived names (lazily materialized) and any project-kind rows
+ * (e.g. a promoted collection), so both surface.
+ */
+export function listWorkspaces(kind?: WorkspaceKind): WorkspaceSummary[] {
+  const db = getDb();
+  try {
+    const slugs = new Set<string>();
+    if (kind !== "collection") {
+      for (const name of projectNames()) {
+        const slug = slugifyProject(name);
+        ensureProjectWorkspace(slug, name);
+        slugs.add(slug);
+      }
+    }
+    const rows = db
+      .prepare(
+        kind
+          ? `SELECT slug FROM workspaces WHERE kind = ?`
+          : `SELECT slug FROM workspaces`,
+      )
+      .all(...(kind ? [kind] : [])) as { slug: string }[];
+    for (const r of rows) slugs.add(r.slug);
+
+    return Array.from(slugs)
+      .map((slug) => summarizeWorkspace(slug))
+      .filter((w): w is WorkspaceSummary => w !== null)
+      .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+  } catch (error) {
+    console.error("Failed to list workspaces:", error);
+    return [];
+  }
+}
+
+/** Promote a collection into a project (flip kind, add product metadata). */
+export function promoteToProject(
+  slug: string,
+  type: string,
+  description: string,
+): void {
+  getDb()
+    .prepare(
+      `UPDATE workspaces
+       SET kind = 'project', type = ?, description = ?, promoted_at = CURRENT_TIMESTAMP
+       WHERE slug = ? AND kind = 'collection'`,
+    )
+    .run(type, description, slug);
+}
+
+// --- Projects (palettes grouped by the product they were designed for) ------
+// A project is a workspace of kind='project'. Membership = the `project`
+// palette_tags rows (the "designed-for" set) ∪ manual `workspace_palettes`
+// additions. Metadata (type, description) lives in the `workspaces` row; role
+// presets in `workspace_presets`. All runtime tables survive sync_palettes.py.
+
+export interface ProjectSummary {
+  name: string;
+  slug: string;
+  type: string;
+  description: string;
+  count: number;
+  preview: string[]; // representative hexes for a color strip
+}
+
+export interface ProjectPreset {
+  id: string;
+  project_slug: string;
+  name: string;
+  palette_id: string;
+  mapping: Record<string, string>;
+  created_at: string;
+}
+
+export function getProjectName(slug: string): string | null {
+  return getWorkspaceName(slug);
+}
+
+export function getManualPaletteIds(slug: string): string[] {
+  return manualPaletteIds(slug);
+}
+
+export function getProjects(): ProjectSummary[] {
+  // Projects are workspaces of kind='project' (tag-derived ∪ promoted).
+  return listWorkspaces("project").map((w) => ({
+    name: w.name,
+    slug: w.slug,
+    type: w.type,
+    description: w.description,
+    count: w.count,
+    preview: w.preview,
+  }));
 }
 
 export function getProjectMeta(
   slug: string,
 ): { type: string; description: string } | null {
-  const name = getProjectName(slug);
+  const name = getWorkspaceName(slug);
   if (!name) return null;
-  return ensureProjectRow(slug, name);
+  return ensureProjectWorkspace(slug, name);
 }
 
 export function updateProjectMeta(
@@ -719,50 +1003,22 @@ export function updateProjectMeta(
   description: string,
 ): void {
   const db = getDb();
-  const name = getProjectName(slug);
+  const name = getWorkspaceName(slug);
   if (!name) return;
-  ensureProjectRow(slug, name);
+  ensureProjectWorkspace(slug, name);
   db.prepare(
-    `UPDATE projects SET type = ?, description = ? WHERE slug = ?`,
+    `UPDATE workspaces SET type = ?, description = ? WHERE slug = ?`,
   ).run(type, description, slug);
 }
 
 export function getProjectPalettes(slug: string): Palette[] {
-  const db = getDb();
-  try {
-    const name = getProjectName(slug);
-    if (!name) return [];
-    const ids = projectPaletteIds(slug, name);
-    if (ids.length === 0) return [];
-    const placeholders = ids.map(() => "?").join(",");
-
-    const palettes = db
-      .prepare(`SELECT * FROM palettes WHERE id IN (${placeholders})`)
-      .all(...ids) as any[];
-    const colors = db
-      .prepare(
-        `SELECT * FROM palette_colors WHERE palette_id IN (${placeholders}) ORDER BY palette_id ASC, color_index ASC`,
-      )
-      .all(...ids) as any[];
-    const tags = db
-      .prepare(
-        `SELECT * FROM palette_tags WHERE palette_id IN (${placeholders})`,
-      )
-      .all(...ids) as any[];
-
-    return stitchPalettes(palettes, colors, tags).sort((a, b) =>
-      a.name.localeCompare(b.name),
-    );
-  } catch (error) {
-    console.error("Failed to load project palettes:", error);
-    return [];
-  }
+  return getWorkspacePalettes(slug);
 }
 
 export function addPaletteToProject(slug: string, paletteId: string): void {
   const db = getDb();
   db.prepare(
-    `INSERT OR IGNORE INTO project_palettes (project_slug, palette_id) VALUES (?, ?)`,
+    `INSERT OR IGNORE INTO workspace_palettes (workspace_slug, palette_id) VALUES (?, ?)`,
   ).run(slug, paletteId);
 }
 
@@ -772,22 +1028,22 @@ export function removePaletteFromProject(
 ): void {
   const db = getDb();
   db.prepare(
-    `DELETE FROM project_palettes WHERE project_slug = ? AND palette_id = ?`,
+    `DELETE FROM workspace_palettes WHERE workspace_slug = ? AND palette_id = ?`,
   ).run(slug, paletteId);
 }
 
-// --- Per-project role-mapping presets ---
+// --- Per-workspace role-mapping presets (project_slug aliases workspace_slug) ---
 export function getProjectPresets(slug: string): ProjectPreset[] {
   const db = getDb();
   try {
     const rows = db
       .prepare(
-        `SELECT * FROM project_presets WHERE project_slug = ? ORDER BY created_at DESC`,
+        `SELECT * FROM workspace_presets WHERE workspace_slug = ? ORDER BY created_at DESC`,
       )
       .all(slug) as any[];
     return rows.map((r) => ({
       id: r.id,
-      project_slug: r.project_slug,
+      project_slug: r.workspace_slug,
       name: r.name,
       palette_id: r.palette_id,
       mapping: JSON.parse(r.mapping_json),
@@ -808,7 +1064,7 @@ export function createProjectPreset(
   const db = getDb();
   const id = `${slug}-${slugifyProject(name)}-${paletteId}`.slice(0, 120);
   db.prepare(
-    `INSERT OR REPLACE INTO project_presets (id, project_slug, name, palette_id, mapping_json)
+    `INSERT OR REPLACE INTO workspace_presets (id, workspace_slug, name, palette_id, mapping_json)
      VALUES (?, ?, ?, ?, ?)`,
   ).run(id, slug, name, paletteId, JSON.stringify(mapping));
   return id;
@@ -816,5 +1072,138 @@ export function createProjectPreset(
 
 export function deleteProjectPreset(id: string): void {
   const db = getDb();
-  db.prepare(`DELETE FROM project_presets WHERE id = ?`).run(id);
+  db.prepare(`DELETE FROM workspace_presets WHERE id = ?`).run(id);
+}
+
+/* ------------------------------------------------------------------ *
+ * Design systems — full, reusable Brand System artifacts.            *
+ * Standalone; a nullable project_slug optionally associates one with *
+ * a project. Columns carry queryable fields; system_json holds the   *
+ * editable payload (inputs + tokens + preset + mode).                *
+ * ------------------------------------------------------------------ */
+
+function rowToSavedSystem(r: any): SavedDesignSystem {
+  const j = JSON.parse(r.system_json);
+  return {
+    id: r.id,
+    name: r.name,
+    paletteId: r.palette_id ?? undefined,
+    // Prefer the unified workspace_slug; fall back to the dormant legacy column.
+    projectSlug: r.workspace_slug ?? r.project_slug ?? null,
+    inputs: j.inputs,
+    tokens: j.tokens,
+    presetId: j.presetId,
+    mode: j.mode,
+    createdAt: r.created_at,
+    updatedAt: r.updated_at,
+  };
+}
+
+export function listDesignSystems(projectSlug?: string): SavedDesignSystem[] {
+  const db = getDb();
+  try {
+    const rows = (
+      projectSlug
+        ? db
+            .prepare(
+              `SELECT * FROM design_systems WHERE COALESCE(workspace_slug, project_slug) = ? ORDER BY updated_at DESC`,
+            )
+            .all(projectSlug)
+        : db
+            .prepare(`SELECT * FROM design_systems ORDER BY updated_at DESC`)
+            .all()
+    ) as any[];
+    return rows.map(rowToSavedSystem);
+  } catch (error) {
+    console.error("Failed to load design systems:", error);
+    return [];
+  }
+}
+
+export function getDesignSystem(id: string): SavedDesignSystem | null {
+  const db = getDb();
+  const row = db
+    .prepare(`SELECT * FROM design_systems WHERE id = ?`)
+    .get(id) as any;
+  return row ? rowToSavedSystem(row) : null;
+}
+
+/** Upsert a design system (Save for new, Update for existing). Returns saved. */
+export function saveDesignSystem(rec: SavedDesignSystem): SavedDesignSystem {
+  const db = getDb();
+  const id =
+    rec.id ||
+    `ds-${slugifyProject(rec.name) || "system"}-${Date.now().toString(36)}`;
+  const systemJson = JSON.stringify({
+    inputs: rec.inputs,
+    tokens: rec.tokens,
+    presetId: rec.presetId,
+    mode: rec.mode,
+  });
+  // ON CONFLICT preserves created_at and bumps updated_at. The association is
+  // dual-written to workspace_slug (unified) and project_slug (dormant legacy)
+  // so a rollback still sees it; Phase 3 drops the legacy column.
+  db.prepare(
+    `INSERT INTO design_systems (id, name, palette_id, workspace_slug, project_slug, system_json, updated_at)
+     VALUES (@id, @name, @palette_id, @slug, @slug, @system_json, CURRENT_TIMESTAMP)
+     ON CONFLICT(id) DO UPDATE SET
+       name = excluded.name,
+       palette_id = excluded.palette_id,
+       workspace_slug = excluded.workspace_slug,
+       project_slug = excluded.project_slug,
+       system_json = excluded.system_json,
+       updated_at = CURRENT_TIMESTAMP`,
+  ).run({
+    id,
+    name: rec.name,
+    palette_id: rec.paletteId ?? null,
+    slug: rec.projectSlug ?? null,
+    system_json: systemJson,
+  });
+  return getDesignSystem(id)!;
+}
+
+export function renameDesignSystem(id: string, name: string): void {
+  getDb()
+    .prepare(
+      `UPDATE design_systems SET name = ?, updated_at = CURRENT_TIMESTAMP WHERE id = ?`,
+    )
+    .run(name, id);
+}
+
+export function duplicateDesignSystem(id: string): SavedDesignSystem | null {
+  const existing = getDesignSystem(id);
+  if (!existing) return null;
+  return saveDesignSystem({
+    ...existing,
+    id: "", // force a fresh id
+    name: `${existing.name} copy`,
+  });
+}
+
+/** Attach a design system to any workspace (collection or project), or null. */
+export function setDesignSystemWorkspace(
+  id: string,
+  workspaceSlug: string | null,
+): void {
+  // Dual-write during the transition (see saveDesignSystem).
+  getDb()
+    .prepare(
+      `UPDATE design_systems
+       SET workspace_slug = ?, project_slug = ?, updated_at = CURRENT_TIMESTAMP
+       WHERE id = ?`,
+    )
+    .run(workspaceSlug, workspaceSlug, id);
+}
+
+/** Back-compat alias — project association is now a workspace association. */
+export function setDesignSystemProject(
+  id: string,
+  projectSlug: string | null,
+): void {
+  setDesignSystemWorkspace(id, projectSlug);
+}
+
+export function deleteDesignSystem(id: string): void {
+  getDb().prepare(`DELETE FROM design_systems WHERE id = ?`).run(id);
 }

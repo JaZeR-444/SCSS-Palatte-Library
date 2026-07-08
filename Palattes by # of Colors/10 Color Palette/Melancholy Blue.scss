@@ -1,0 +1,113 @@
+/*---
+id: melancholy-blue
+name: Melancholy Blue
+author: JaZeR-444
+version: 1.0.0
+category: Emotional & Psychological
+count: 10
+description: An emotionally resonant palette of blue-blacks, midnight slates, muted storm blues, and pale lavender mists — capturing the introspective beauty of melancholy, solitude, and emotional depth.
+tags:
+  mood:
+  - melancholic
+  - introspective
+  - contemplative
+  aesthetic:
+  - Noir
+  - Poetic
+  - Cinematic
+intent: A deeply expressive 10-color palette designed for literary platforms, film and music editorial, journaling apps, and brands that communicate emotional authenticity.
+suggested_use:
+- Music streaming and editorial platforms
+- Literary publishing and journaling apps
+- Film and documentary brand identity
+url: https://coolors.co/090d14-141e2e-1e2d42-2d4263-3a5a8a-6b8cae-a8bfd4-ccd9e6-e6edf5-f5f7fa
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--blue-black-void: #090d14ff;
+--midnight-depth: #141e2eff;
+--dark-slate: #1e2d42ff;
+--muted-midnight: #2d4263ff;
+--storm-blue: #3a5a8aff;
+--pale-storm: #6b8caeff;
+--silver-mist: #a8bfd4ff;
+--fog-blue: #ccd9e6ff;
+--pale-lavender: #e6edf5ff;
+--near-white: #f5f7faff;
+
+/* CSS HSL */
+--blue-black-void: hsla(219, 42%, 6%, 1);
+--midnight-depth: hsla(218, 40%, 13%, 1);
+--dark-slate: hsla(215, 38%, 19%, 1);
+--muted-midnight: hsla(218, 38%, 28%, 1);
+--storm-blue: hsla(214, 41%, 38%, 1);
+--pale-storm: hsla(211, 27%, 55%, 1);
+--silver-mist: hsla(209, 27%, 75%, 1);
+--fog-blue: hsla(210, 29%, 85%, 1);
+--pale-lavender: hsla(216, 35%, 93%, 1);
+--near-white: hsla(220, 33%, 97%, 1);
+}
+
+/* SCSS HEX */
+$blue-black-void: #090d14ff;
+$midnight-depth: #141e2eff;
+$dark-slate: #1e2d42ff;
+$muted-midnight: #2d4263ff;
+$storm-blue: #3a5a8aff;
+$pale-storm: #6b8caeff;
+$silver-mist: #a8bfd4ff;
+$fog-blue: #ccd9e6ff;
+$pale-lavender: #e6edf5ff;
+$near-white: #f5f7faff;
+
+/* SCSS HSL */
+$blue-black-void: hsla(219, 42%, 6%, 1);
+$midnight-depth: hsla(218, 40%, 13%, 1);
+$dark-slate: hsla(215, 38%, 19%, 1);
+$muted-midnight: hsla(218, 38%, 28%, 1);
+$storm-blue: hsla(214, 41%, 38%, 1);
+$pale-storm: hsla(211, 27%, 55%, 1);
+$silver-mist: hsla(209, 27%, 75%, 1);
+$fog-blue: hsla(210, 29%, 85%, 1);
+$pale-lavender: hsla(216, 35%, 93%, 1);
+$near-white: hsla(220, 33%, 97%, 1);
+
+/* SCSS RGB */
+$blue-black-void: rgba(9, 13, 20, 1);
+$midnight-depth: rgba(20, 30, 46, 1);
+$dark-slate: rgba(30, 45, 66, 1);
+$muted-midnight: rgba(45, 66, 99, 1);
+$storm-blue: rgba(58, 90, 138, 1);
+$pale-storm: rgba(107, 140, 174, 1);
+$silver-mist: rgba(168, 191, 212, 1);
+$fog-blue: rgba(204, 217, 230, 1);
+$pale-lavender: rgba(230, 237, 245, 1);
+$near-white: rgba(245, 247, 250, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #090d14ff, #141e2eff, #1e2d42ff, #2d4263ff, #3a5a8aff, #6b8caeff, #a8bfd4ff, #ccd9e6ff, #e6edf5ff, #f5f7faff);
+$gradient-right: linear-gradient(90deg, #090d14ff, #141e2eff, #1e2d42ff, #2d4263ff, #3a5a8aff, #6b8caeff, #a8bfd4ff, #ccd9e6ff, #e6edf5ff, #f5f7faff);
+$gradient-bottom: linear-gradient(180deg, #090d14ff, #141e2eff, #1e2d42ff, #2d4263ff, #3a5a8aff, #6b8caeff, #a8bfd4ff, #ccd9e6ff, #e6edf5ff, #f5f7faff);
+$gradient-left: linear-gradient(270deg, #090d14ff, #141e2eff, #1e2d42ff, #2d4263ff, #3a5a8aff, #6b8caeff, #a8bfd4ff, #ccd9e6ff, #e6edf5ff, #f5f7faff);
+$gradient-top-right: linear-gradient(45deg, #090d14ff, #141e2eff, #1e2d42ff, #2d4263ff, #3a5a8aff, #6b8caeff, #a8bfd4ff, #ccd9e6ff, #e6edf5ff, #f5f7faff);
+$gradient-bottom-right: linear-gradient(135deg, #090d14ff, #141e2eff, #1e2d42ff, #2d4263ff, #3a5a8aff, #6b8caeff, #a8bfd4ff, #ccd9e6ff, #e6edf5ff, #f5f7faff);
+$gradient-top-left: linear-gradient(225deg, #090d14ff, #141e2eff, #1e2d42ff, #2d4263ff, #3a5a8aff, #6b8caeff, #a8bfd4ff, #ccd9e6ff, #e6edf5ff, #f5f7faff);
+$gradient-bottom-left: linear-gradient(315deg, #090d14ff, #141e2eff, #1e2d42ff, #2d4263ff, #3a5a8aff, #6b8caeff, #a8bfd4ff, #ccd9e6ff, #e6edf5ff, #f5f7faff);
+$gradient-radial: radial-gradient(#090d14ff, #141e2eff, #1e2d42ff, #2d4263ff, #3a5a8aff, #6b8caeff, #a8bfd4ff, #ccd9e6ff, #e6edf5ff, #f5f7faff);
+
+/* SCSS Map */
+$melancholy-blue-map: (
+    "blue-black-void": #090d14ff,
+    "midnight-depth": #141e2eff,
+    "dark-slate": #1e2d42ff,
+    "muted-midnight": #2d4263ff,
+    "storm-blue": #3a5a8aff,
+    "pale-storm": #6b8caeff,
+    "silver-mist": #a8bfd4ff,
+    "fog-blue": #ccd9e6ff,
+    "pale-lavender": #e6edf5ff,
+    "near-white": #f5f7faff,
+);

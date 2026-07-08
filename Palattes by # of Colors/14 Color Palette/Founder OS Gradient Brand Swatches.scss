@@ -1,0 +1,80 @@
+/*---
+id: founder-os-gradient-brand-swatches
+name: Founder OS Gradient Brand Swatches
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 14
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - gradients
+  mood:
+  - dark
+  - neon
+  - premium
+  aesthetic:
+  - Glassmorphism
+  - Cyberpunk
+  - Tech
+intent: A 14-token named gradient swatch set for Founder OS — covering hero sections, CTA buttons, card borders, glassmorphic backgrounds, and holographic shimmer effects. Each gradient is named for exactly where it is meant to be used.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+/* NOTE: These are gradient tokens — use the variable names directly in CSS */
+--grad-hero-bg: linear-gradient(135deg, #090b10ff 0%, #12151fff 40%, #0d2a33ff 70%, #090b10ff 100%);
+--grad-cta-button-primary: linear-gradient(90deg, #00f0ffff 0%, #0099ccff 100%);
+--grad-cta-button-secondary: linear-gradient(90deg, #ff0055ff 0%, #b8003aff 100%);
+--grad-cta-button-accent: linear-gradient(90deg, #ffb800ff 0%, #b45309ff 100%);
+--grad-card-border-glow: linear-gradient(135deg, #00f0ff33 0%, #ff005533 50%, #ffb80033 100%);
+--grad-card-header-glass: linear-gradient(180deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.02) 100%);
+--grad-sidebar-overlay: linear-gradient(90deg, #090b10ff 0%, rgba(9,11,16,0.0) 100%);
+--grad-hero-text-shine: linear-gradient(90deg, #00f0ffff 0%, #ffffff 40%, #ff0055ff 80%, #ffb800ff 100%);
+--grad-metric-card-bg: linear-gradient(135deg, #12151fff 0%, #1a1f2eff 100%);
+--grad-holographic-shimmer: linear-gradient(135deg, #00f0ff1a 0%, #ff00551a 25%, #ffb8001a 50%, #8b5cf61a 75%, #00f0ff1a 100%);
+--grad-footer-fade: linear-gradient(180deg, rgba(9,11,16,0) 0%, #090b10ff 100%);
+--grad-modal-bg: linear-gradient(135deg, #12151fff 0%, #0d2a33ff 100%);
+--grad-section-divider: linear-gradient(90deg, transparent 0%, #00f0ff33 50%, transparent 100%);
+--grad-skeleton-shimmer: linear-gradient(90deg, #1a1f2eff 0%, #232a3dff 50%, #1a1f2eff 100%);
+
+/* Note: HSL/RGB equivalents for the solid stop colors are in the companion swatch files */
+}
+
+/* SCSS HEX */
+$grad-hero-bg: linear-gradient(135deg, #090b10ff 0%, #12151fff 40%, #0d2a33ff 70%, #090b10ff 100%);
+$grad-cta-button-primary: linear-gradient(90deg, #00f0ffff 0%, #0099ccff 100%);
+$grad-cta-button-secondary: linear-gradient(90deg, #ff0055ff 0%, #b8003aff 100%);
+$grad-cta-button-accent: linear-gradient(90deg, #ffb800ff 0%, #b45309ff 100%);
+$grad-card-border-glow: linear-gradient(135deg, #00f0ff33 0%, #ff005533 50%, #ffb80033 100%);
+$grad-card-header-glass: linear-gradient(180deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.02) 100%);
+$grad-sidebar-overlay: linear-gradient(90deg, #090b10ff 0%, rgba(9,11,16,0.0) 100%);
+$grad-hero-text-shine: linear-gradient(90deg, #00f0ffff 0%, #ffffff 40%, #ff0055ff 80%, #ffb800ff 100%);
+$grad-metric-card-bg: linear-gradient(135deg, #12151fff 0%, #1a1f2eff 100%);
+$grad-holographic-shimmer: linear-gradient(135deg, #00f0ff1a 0%, #ff00551a 25%, #ffb8001a 50%, #8b5cf61a 75%, #00f0ff1a 100%);
+$grad-footer-fade: linear-gradient(180deg, rgba(9,11,16,0) 0%, #090b10ff 100%);
+$grad-modal-bg: linear-gradient(135deg, #12151fff 0%, #0d2a33ff 100%);
+$grad-section-divider: linear-gradient(90deg, transparent 0%, #00f0ff33 50%, transparent 100%);
+$grad-skeleton-shimmer: linear-gradient(90deg, #1a1f2eff 0%, #232a3dff 50%, #1a1f2eff 100%);
+
+/* SCSS Map (start colors of each gradient for indexing) */
+$founder-os-gradient-brand-swatches-map: (
+    "grad-hero-bg-start": #090b10ff,
+    "grad-cta-button-primary-start": #00f0ffff,
+    "grad-cta-button-secondary-start": #ff0055ff,
+    "grad-cta-button-accent-start": #ffb800ff,
+    "grad-card-border-glow-start": #00f0ff33,
+    "grad-hero-text-shine-start": #00f0ffff,
+    "grad-metric-card-bg-start": #12151fff,
+    "grad-holographic-shimmer-start": #00f0ff1a,
+    "grad-modal-bg-start": #12151fff,
+    "grad-skeleton-shimmer-start": #1a1f2eff,
+    "grad-section-divider-mid": #00f0ff33,
+    "grad-sidebar-overlay-start": #090b10ff,
+    "grad-footer-fade-end": #090b10ff,
+    "grad-card-header-glass-start": rgba(255,255,255,0.07)
+);

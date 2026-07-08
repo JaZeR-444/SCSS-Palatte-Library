@@ -10,10 +10,17 @@ import {
   Trash2,
   Wand2,
   ExternalLink,
+  Layers,
+  Unlink,
+  Copy,
+  Sparkles,
+  LayoutGrid,
 } from "lucide-react";
 import { PaletteCard } from "@/components/palette-card";
+import { FounderOsDemo } from "@/components/founder-os-demo";
 import { useStudio } from "@/components/studio/studio-context";
 import { Palette } from "@/types";
+import { SavedDesignSystem } from "@/types/design-system";
 import { analyzePalette } from "@/utils/palette-metrics";
 import { buildRoleMapping } from "@/utils/role-mapping";
 import { playSound } from "@/utils/audio";
@@ -34,9 +41,23 @@ interface ProjectWorkspaceProps {
   palettes: Palette[];
   manualIds: string[];
   presets: Preset[];
+  designSystems: SavedDesignSystem[];
 }
 
 type SortKey = "quality" | "name" | "count";
+
+/** Ordered swatch category tabs for design-system projects */
+const SWATCH_TABS: { id: string; label: string; emoji: string }[] = [
+  { id: "all",              label: "All",              emoji: "🎨" },
+  { id: "system-map",       label: "System Map",       emoji: "🗺️" },
+  { id: "aesthetics",       label: "Aesthetics",       emoji: "✨" },
+  { id: "brand-scale",      label: "Brand Scale",      emoji: "🎯" },
+  { id: "surfaces",         label: "Surfaces",         emoji: "🪟" },
+  { id: "component-states", label: "Component States", emoji: "⚙️" },
+  { id: "data",             label: "Data & Charts",    emoji: "📊" },
+  { id: "gradients",        label: "Gradients",        emoji: "🌈" },
+  { id: "marketing",        label: "Marketing",        emoji: "📣" },
+];
 
 export function ProjectWorkspace({
   slug,
@@ -46,8 +67,9 @@ export function ProjectWorkspace({
   palettes: initialPalettes,
   manualIds: initialManualIds,
   presets: initialPresets,
+  designSystems: initialDesignSystems,
 }: ProjectWorkspaceProps) {
-  const { openStudio } = useStudio();
+  const { openStudio, openBrandSystemWithSystem } = useStudio();
 
   const [palettes, setPalettes] = useState<Palette[]>(initialPalettes);
   const [manualIds, setManualIds] = useState<Set<string>>(
@@ -55,6 +77,49 @@ export function ProjectWorkspace({
   );
   const [presets, setPresets] = useState<Preset[]>(initialPresets);
   const [sort, setSort] = useState<SortKey>("quality");
+
+  // Saved design systems: attached to this project + others available to attach.
+  const [attachedSystems, setAttachedSystems] =
+    useState<SavedDesignSystem[]>(initialDesignSystems);
+  const [availableSystems, setAvailableSystems] = useState<SavedDesignSystem[]>(
+    [],
+  );
+  const [attachId, setAttachId] = useState("");
+
+  const reloadSystems = async () => {
+    const { listDesignSystemsAction } = await import("@/app/actions");
+    const all = await listDesignSystemsAction();
+    setAttachedSystems(all.filter((s) => s.projectSlug === slug));
+    setAvailableSystems(all.filter((s) => s.projectSlug !== slug));
+  };
+
+  useEffect(() => {
+    reloadSystems();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [slug]);
+
+  const attachSystem = async () => {
+    if (!attachId) return;
+    const { setDesignSystemProjectAction } = await import("@/app/actions");
+    await setDesignSystemProjectAction(attachId, slug);
+    setAttachId("");
+    await reloadSystems();
+    playSound("success");
+    showToast("Design system attached");
+  };
+
+  const detachSystem = async (id: string) => {
+    const { setDesignSystemProjectAction } = await import("@/app/actions");
+    await setDesignSystemProjectAction(id, null);
+    await reloadSystems();
+    playSound("click");
+    showToast("Detached from project");
+  };
+
+  const applySystem = (id: string) => {
+    playSound("open");
+    openBrandSystemWithSystem(id);
+  };
 
   // meta editing
   const [meta, setMeta] = useState({ type, description });
@@ -97,6 +162,48 @@ export function ProjectWorkspace({
       );
     return arr;
   }, [palettes, sort, uiReadinessById]);
+
+  // Detect whether this project has swatch-typed palettes
+  const hasSwatchTypes = useMemo(
+    () => palettes.some((p) => !!p.swatchType),
+    [palettes],
+  );
+
+  const [activeTab, setActiveTab] = useState("all");
+
+  // Tabs visible for this project (only tabs that have at least 1 palette)
+  const visibleTabs = useMemo(() => {
+    if (!hasSwatchTypes) return [];
+    const presentTypes = new Set(palettes.map((p) => p.swatchType ?? ""));
+    const tabs = SWATCH_TABS.filter(
+      (t) => t.id === "all" || presentTypes.has(t.id),
+    );
+    if (slug === "founder-os") {
+      tabs.push({ id: "demo", label: "Live Dashboard Demo", emoji: "🚀" });
+    }
+    return tabs;
+  }, [hasSwatchTypes, palettes, slug]);
+
+  // Filtered + sorted list based on active tab
+  const displayed = useMemo(() => {
+    const base =
+      activeTab === "all" || !hasSwatchTypes
+        ? sorted
+        : sorted.filter((p) => p.swatchType === activeTab);
+    return base;
+  }, [sorted, activeTab, hasSwatchTypes]);
+
+  // Copy all CSS custom properties from a palette as a token block
+  const copyCssTokens = (palette: typeof palettes[0]) => {
+    const lines = palette.colors
+      .map((c) => `  ${c.name}: ${c.hex};`)
+      .join("\n");
+    const block = `:root {\n/* ${palette.name} */\n${lines}\n}`;
+    navigator.clipboard.writeText(block).then(() => {
+      playSound("success");
+      showToast(`Copied CSS tokens for ${palette.name}`);
+    });
+  };
 
   const saveMeta = async () => {
     const { updateProjectMetaAction } = await import("@/app/actions");
@@ -282,6 +389,33 @@ export function ProjectWorkspace({
         )}
       </div>
 
+      {/* Swatch type tabs (shown when project has swatchType data) */}
+      {hasSwatchTypes && visibleTabs.length > 1 && (
+        <div className="-mx-0.5 flex flex-wrap gap-1.5">
+          {visibleTabs.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs font-bold transition-colors ${
+                activeTab === tab.id
+                  ? "border-cyan-500 bg-cyan-500/10 text-cyan-400"
+                  : "border-slate-700 bg-slate-900 text-slate-400 hover:border-cyan-500/50 hover:text-cyan-400"
+              }`}
+            >
+              <span>{tab.emoji}</span>
+              {tab.label}
+              <span className="rounded-md bg-slate-800 px-1 py-0.5 text-[10px] font-black text-slate-400">
+                {tab.id === "demo" 
+                  ? "UI" 
+                  : tab.id === "all"
+                  ? palettes.length
+                  : palettes.filter((p) => p.swatchType === tab.id).length}
+              </span>
+            </button>
+          ))}
+        </div>
+      )}
+
       {/* Toolbar */}
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-2">
@@ -391,56 +525,184 @@ export function ProjectWorkspace({
         </p>
       </div>
 
-      {/* Palette grid */}
-      {sorted.length === 0 ? (
+      {/* Design systems (full, reusable Brand System artifacts) */}
+      <div className="rounded-2xl border border-gray-100 bg-white p-4 dark:border-slate-800 dark:bg-slate-900 sm:p-5">
+        <div className="mb-3 flex items-center gap-2">
+          <Layers className="h-4 w-4 text-indigo-500" />
+          <h2 className="text-sm font-black text-gray-900 dark:text-white">
+            Design systems
+          </h2>
+          <span className="text-xs text-gray-400">
+            Full brand systems attached to {name}
+          </span>
+        </div>
+
+        {attachedSystems.length > 0 ? (
+          <ul className="mb-4 space-y-1.5">
+            {attachedSystems.map((ds) => (
+              <li
+                key={ds.id}
+                className="flex items-center justify-between gap-3 rounded-lg border border-gray-100 bg-gray-50 px-3 py-2 dark:border-slate-800 dark:bg-slate-950"
+              >
+                <div className="min-w-0">
+                  <p className="truncate text-sm font-bold text-gray-900 dark:text-white">
+                    {ds.name}
+                  </p>
+                  <p className="truncate text-[11px] text-gray-400">
+                    {ds.mode} mode
+                    {ds.updatedAt
+                      ? ` · updated ${ds.updatedAt.slice(0, 10)}`
+                      : ""}
+                  </p>
+                </div>
+                <div className="flex flex-shrink-0 items-center gap-1.5">
+                  <button
+                    onClick={() => applySystem(ds.id)}
+                    className="inline-flex items-center gap-1 rounded-lg border border-indigo-200 bg-white px-2 py-1 text-[11px] font-bold text-indigo-600 hover:bg-indigo-50 dark:border-indigo-900/60 dark:bg-slate-900 dark:text-indigo-400"
+                  >
+                    <ExternalLink className="h-3 w-3" />
+                    Open
+                  </button>
+                  <button
+                    onClick={() => detachSystem(ds.id)}
+                    className="rounded-lg p-1.5 text-gray-400 hover:bg-amber-50 hover:text-amber-600 dark:hover:bg-amber-950/30"
+                    aria-label={`Detach ${ds.name} from project`}
+                    title="Detach from project"
+                  >
+                    <Unlink className="h-3.5 w-3.5" />
+                  </button>
+                </div>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="mb-4 text-[11px] text-gray-400">
+            No design systems attached yet. Build one in the Brand System modal
+            (Save it), then attach it here.
+          </p>
+        )}
+
+        {availableSystems.length > 0 && (
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
+            <select
+              value={attachId}
+              onChange={(e) => setAttachId(e.target.value)}
+              className="flex-1 rounded-lg border border-gray-200 bg-gray-50 px-2.5 py-2 text-xs font-bold text-gray-700 dark:border-slate-800 dark:bg-slate-950 dark:text-gray-300"
+              aria-label="Design system to attach"
+            >
+              <option value="">Attach an existing system…</option>
+              {availableSystems.map((ds) => (
+                <option key={ds.id} value={ds.id}>
+                  {ds.name}
+                  {ds.projectSlug ? ` (in ${ds.projectSlug})` : ""}
+                </option>
+              ))}
+            </select>
+            <button
+              onClick={attachSystem}
+              disabled={!attachId}
+              className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 px-3 py-2 text-xs font-black text-gray-600 transition-colors hover:border-indigo-300 hover:text-indigo-600 disabled:opacity-50 dark:border-slate-800 dark:text-gray-300"
+            >
+              <Layers className="h-3.5 w-3.5" />
+              Attach
+            </button>
+          </div>
+        )}
+      </div>
+
+      {/* Palette grid or Demo */}
+      {activeTab === "demo" && slug === "founder-os" ? (
+        <FounderOsDemo />
+      ) : displayed.length === 0 ? (
         <p className="rounded-2xl border border-dashed border-gray-200 bg-white p-8 text-center text-sm text-gray-500 dark:border-slate-800 dark:bg-slate-900 dark:text-gray-400">
           No palettes in this project yet. Use{" "}
           <span className="font-bold">Add palettes</span> to bring some in.
         </p>
       ) : (
-        <div className="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-          {sorted.map((palette) => (
-            <div key={palette.id} className="relative">
-              {manualIds.has(palette.id) && (
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    removePalette(palette.id);
-                  }}
-                  className="absolute -right-2 -top-2 z-10 flex h-6 w-6 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-400 shadow-sm transition-colors hover:border-rose-300 hover:text-rose-500 dark:border-slate-700 dark:bg-slate-900"
-                  title="Remove from project"
-                  aria-label={`Remove ${palette.name} from project`}
-                >
-                  <X className="h-3.5 w-3.5" />
-                </button>
-              )}
-              <div
-                role="button"
-                tabIndex={0}
-                onClick={() => {
-                  playSound("open");
-                  openStudio(palette);
-                }}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" || e.key === " ") {
-                    e.preventDefault();
+        <div className="space-y-8">
+          {/* When tabs are active and not on 'all', show a category header */}
+          {hasSwatchTypes && activeTab !== "all" && (() => {
+            const tab = SWATCH_TABS.find((t) => t.id === activeTab);
+            return tab ? (
+              <div className="flex items-center gap-2 border-b border-slate-800 pb-3">
+                <span className="text-lg">{tab.emoji}</span>
+                <h2 className="text-sm font-black text-white">{tab.label}</h2>
+                <span className="text-xs text-slate-500">
+                  {displayed.length} swatch{displayed.length !== 1 ? "es" : ""}
+                </span>
+              </div>
+            ) : null;
+          })()}
+
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+            {displayed.map((palette) => (
+              <div key={palette.id} className="relative">
+                {manualIds.has(palette.id) && (
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      removePalette(palette.id);
+                    }}
+                    className="absolute -right-2 -top-2 z-10 flex h-6 w-6 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-400 shadow-sm transition-colors hover:border-rose-300 hover:text-rose-500 dark:border-slate-700 dark:bg-slate-900"
+                    title="Remove from project"
+                    aria-label={`Remove ${palette.name} from project`}
+                  >
+                    <X className="h-3.5 w-3.5" />
+                  </button>
+                )}
+
+                {/* Swatch type badge */}
+                {palette.swatchType && (
+                  <div className="absolute left-2 top-2 z-10">
+                    <span className="rounded-md bg-slate-950/80 px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider text-cyan-400 backdrop-blur-sm">
+                      {palette.swatchType}
+                    </span>
+                  </div>
+                )}
+
+                <div
+                  role="button"
+                  tabIndex={0}
+                  onClick={() => {
                     playSound("open");
                     openStudio(palette);
-                  }
-                }}
-                aria-label={`Open ${palette.name} palette`}
-                className="rounded-xl focus-visible:outline-2 focus-visible:outline-indigo-500"
-              >
-                <PaletteCard
-                  palette={palette}
-                  isFavorite={false}
-                  onToggleFavorite={() => {}}
-                  viewMode="grid"
-                  qualityScore={uiReadinessById[palette.id]}
-                />
+                  }}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      e.preventDefault();
+                      playSound("open");
+                      openStudio(palette);
+                    }
+                  }}
+                  aria-label={`Open ${palette.name} palette`}
+                  className="rounded-xl focus-visible:outline-2 focus-visible:outline-indigo-500"
+                >
+                  <PaletteCard
+                    palette={palette}
+                    isFavorite={false}
+                    onToggleFavorite={() => {}}
+                    viewMode="grid"
+                    qualityScore={uiReadinessById[palette.id]}
+                  />
+                </div>
+
+                {/* Copy CSS tokens button — shown for swatch-typed palettes */}
+                {palette.swatchType && (
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      copyCssTokens(palette);
+                    }}
+                    title="Copy as CSS custom property token block"
+                    className="mt-1.5 flex w-full items-center justify-center gap-1.5 rounded-lg border border-slate-700 bg-slate-900 py-1.5 text-[10px] font-bold text-slate-400 transition-colors hover:border-cyan-500/60 hover:text-cyan-400"
+                  >
+                    <Copy className="h-3 w-3" />
+                    Copy CSS Tokens
+                  </button>
+                )}
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       )}
 

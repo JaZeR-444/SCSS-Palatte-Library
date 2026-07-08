@@ -1,0 +1,122 @@
+/*---
+id: founder-os-semantic-status-swatches
+name: Founder OS Semantic Status Swatches
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 12
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - component-states
+  mood:
+  - semantic
+  - functional
+  aesthetic:
+  - UI
+  - Web Design
+intent: Semantic status color tokens (bg, border, text) perfectly mapped to foundational scales (Success, Warning, Danger, Info).
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--status-success-bg: #ecfdf5ff;
+--status-success-border: #34d399ff;
+--status-success-text: #064e3bff;
+--status-warning-bg: #fffbebff;
+--status-warning-border: #fbbf24ff;
+--status-warning-text: #78350fff;
+--status-danger-bg: #fff1f2ff;
+--status-danger-border: #fb7185ff;
+--status-danger-text: #881337ff;
+--status-info-bg: #eff6ffff;
+--status-info-border: #60a5faff;
+--status-info-text: #1e3a8aff;
+
+/* CSS HSL */
+--status-success-bg: hsla(152, 81%, 96%, 1);
+--status-success-border: hsla(158, 64%, 52%, 1);
+--status-success-text: hsla(164, 86%, 16%, 1);
+--status-warning-bg: hsla(48, 100%, 96%, 1);
+--status-warning-border: hsla(43, 96%, 56%, 1);
+--status-warning-text: hsla(22, 78%, 26%, 1);
+--status-danger-bg: hsla(356, 100%, 97%, 1);
+--status-danger-border: hsla(351, 95%, 71%, 1);
+--status-danger-text: hsla(342, 75%, 30%, 1);
+--status-info-bg: hsla(214, 100%, 97%, 1);
+--status-info-border: hsla(213, 94%, 68%, 1);
+--status-info-text: hsla(224, 64%, 33%, 1);
+}
+
+/* SCSS HEX */
+$status-success-bg: #ecfdf5ff;
+$status-success-border: #34d399ff;
+$status-success-text: #064e3bff;
+$status-warning-bg: #fffbebff;
+$status-warning-border: #fbbf24ff;
+$status-warning-text: #78350fff;
+$status-danger-bg: #fff1f2ff;
+$status-danger-border: #fb7185ff;
+$status-danger-text: #881337ff;
+$status-info-bg: #eff6ffff;
+$status-info-border: #60a5faff;
+$status-info-text: #1e3a8aff;
+
+/* SCSS HSL */
+$status-success-bg: hsla(152, 81%, 96%, 1);
+$status-success-border: hsla(158, 64%, 52%, 1);
+$status-success-text: hsla(164, 86%, 16%, 1);
+$status-warning-bg: hsla(48, 100%, 96%, 1);
+$status-warning-border: hsla(43, 96%, 56%, 1);
+$status-warning-text: hsla(22, 78%, 26%, 1);
+$status-danger-bg: hsla(356, 100%, 97%, 1);
+$status-danger-border: hsla(351, 95%, 71%, 1);
+$status-danger-text: hsla(342, 75%, 30%, 1);
+$status-info-bg: hsla(214, 100%, 97%, 1);
+$status-info-border: hsla(213, 94%, 68%, 1);
+$status-info-text: hsla(224, 64%, 33%, 1);
+
+/* SCSS RGB */
+$status-success-bg: rgba(236, 253, 245, 1);
+$status-success-border: rgba(52, 211, 153, 1);
+$status-success-text: rgba(6, 78, 59, 1);
+$status-warning-bg: rgba(255, 251, 235, 1);
+$status-warning-border: rgba(251, 191, 36, 1);
+$status-warning-text: rgba(120, 53, 15, 1);
+$status-danger-bg: rgba(255, 241, 242, 1);
+$status-danger-border: rgba(251, 113, 133, 1);
+$status-danger-text: rgba(136, 19, 55, 1);
+$status-info-bg: rgba(239, 246, 255, 1);
+$status-info-border: rgba(96, 165, 250, 1);
+$status-info-text: rgba(30, 58, 138, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #ecfdf5ff, #34d399ff, #064e3bff, #fffbebff, #fbbf24ff, #78350fff, #fff1f2ff, #fb7185ff, #881337ff, #eff6ffff, #60a5faff, #1e3a8aff);
+$gradient-right: linear-gradient(90deg, #ecfdf5ff, #34d399ff, #064e3bff, #fffbebff, #fbbf24ff, #78350fff, #fff1f2ff, #fb7185ff, #881337ff, #eff6ffff, #60a5faff, #1e3a8aff);
+$gradient-bottom: linear-gradient(180deg, #ecfdf5ff, #34d399ff, #064e3bff, #fffbebff, #fbbf24ff, #78350fff, #fff1f2ff, #fb7185ff, #881337ff, #eff6ffff, #60a5faff, #1e3a8aff);
+$gradient-left: linear-gradient(270deg, #ecfdf5ff, #34d399ff, #064e3bff, #fffbebff, #fbbf24ff, #78350fff, #fff1f2ff, #fb7185ff, #881337ff, #eff6ffff, #60a5faff, #1e3a8aff);
+$gradient-top-right: linear-gradient(45deg, #ecfdf5ff, #34d399ff, #064e3bff, #fffbebff, #fbbf24ff, #78350fff, #fff1f2ff, #fb7185ff, #881337ff, #eff6ffff, #60a5faff, #1e3a8aff);
+$gradient-bottom-right: linear-gradient(135deg, #ecfdf5ff, #34d399ff, #064e3bff, #fffbebff, #fbbf24ff, #78350fff, #fff1f2ff, #fb7185ff, #881337ff, #eff6ffff, #60a5faff, #1e3a8aff);
+$gradient-top-left: linear-gradient(225deg, #ecfdf5ff, #34d399ff, #064e3bff, #fffbebff, #fbbf24ff, #78350fff, #fff1f2ff, #fb7185ff, #881337ff, #eff6ffff, #60a5faff, #1e3a8aff);
+$gradient-bottom-left: linear-gradient(315deg, #ecfdf5ff, #34d399ff, #064e3bff, #fffbebff, #fbbf24ff, #78350fff, #fff1f2ff, #fb7185ff, #881337ff, #eff6ffff, #60a5faff, #1e3a8aff);
+$gradient-radial: radial-gradient(#ecfdf5ff, #34d399ff, #064e3bff, #fffbebff, #fbbf24ff, #78350fff, #fff1f2ff, #fb7185ff, #881337ff, #eff6ffff, #60a5faff, #1e3a8aff);
+
+/* SCSS Map */
+$founder-os-semantic-status-swatches-map: (
+    "status-success-bg": #ecfdf5ff,
+    "status-success-border": #34d399ff,
+    "status-success-text": #064e3bff,
+    "status-warning-bg": #fffbebff,
+    "status-warning-border": #fbbf24ff,
+    "status-warning-text": #78350fff,
+    "status-danger-bg": #fff1f2ff,
+    "status-danger-border": #fb7185ff,
+    "status-danger-text": #881337ff,
+    "status-info-bg": #eff6ffff,
+    "status-info-border": #60a5faff,
+    "status-info-text": #1e3a8aff
+);

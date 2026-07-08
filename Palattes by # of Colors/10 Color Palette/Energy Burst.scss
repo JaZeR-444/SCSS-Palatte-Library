@@ -1,0 +1,113 @@
+/*---
+id: energy-burst
+name: Energy Burst
+author: JaZeR-444
+version: 1.0.0
+category: Emotional & Psychological
+count: 10
+description: A high-octane energy palette of electric neon yellow, vivid orange and hot red contrasted against magenta, electric blue, and neon green on a near-black background — engineered to trigger excitement and peak arousal.
+tags:
+  mood:
+  - explosive
+  - dynamic
+  - electric
+  aesthetic:
+  - Esports
+  - Sport
+  - Rave
+intent: A maximum-energy 10-color palette designed for sports brands, gaming peripherals, energy drink marketing, and high-performance athletic platforms.
+suggested_use:
+- Sports and athleisure brand identity
+- Gaming and esports UI
+- Energy drink and supplement marketing
+url: https://coolors.co/0d0d0d-111111-ccff00-ff6b00-ff1744-e040fb-2979ff-00e676-00e5ff-ffffff
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--void-dark: #0d0d0dff;
+--near-black: #111111ff;
+--neon-yellow: #ccff00ff;
+--vivid-orange: #ff6b00ff;
+--hot-red: #ff1744ff;
+--electric-magenta: #e040fbff;
+--electric-blue: #2979ffff;
+--neon-green: #00e676ff;
+--vivid-cyan: #00e5ffff;
+--burst-white: #ffffffff;
+
+/* CSS HSL */
+--void-dark: hsla(0, 0%, 5%, 1);
+--near-black: hsla(0, 0%, 7%, 1);
+--neon-yellow: hsla(73, 100%, 50%, 1);
+--vivid-orange: hsla(25, 100%, 50%, 1);
+--hot-red: hsla(351, 100%, 55%, 1);
+--electric-magenta: hsla(291, 96%, 61%, 1);
+--electric-blue: hsla(224, 100%, 58%, 1);
+--neon-green: hsla(151, 100%, 45%, 1);
+--vivid-cyan: hsla(188, 100%, 50%, 1);
+--burst-white: hsla(0, 0%, 100%, 1);
+}
+
+/* SCSS HEX */
+$void-dark: #0d0d0dff;
+$near-black: #111111ff;
+$neon-yellow: #ccff00ff;
+$vivid-orange: #ff6b00ff;
+$hot-red: #ff1744ff;
+$electric-magenta: #e040fbff;
+$electric-blue: #2979ffff;
+$neon-green: #00e676ff;
+$vivid-cyan: #00e5ffff;
+$burst-white: #ffffffff;
+
+/* SCSS HSL */
+$void-dark: hsla(0, 0%, 5%, 1);
+$near-black: hsla(0, 0%, 7%, 1);
+$neon-yellow: hsla(73, 100%, 50%, 1);
+$vivid-orange: hsla(25, 100%, 50%, 1);
+$hot-red: hsla(351, 100%, 55%, 1);
+$electric-magenta: hsla(291, 96%, 61%, 1);
+$electric-blue: hsla(224, 100%, 58%, 1);
+$neon-green: hsla(151, 100%, 45%, 1);
+$vivid-cyan: hsla(188, 100%, 50%, 1);
+$burst-white: hsla(0, 0%, 100%, 1);
+
+/* SCSS RGB */
+$void-dark: rgba(13, 13, 13, 1);
+$near-black: rgba(17, 17, 17, 1);
+$neon-yellow: rgba(204, 255, 0, 1);
+$vivid-orange: rgba(255, 107, 0, 1);
+$hot-red: rgba(255, 23, 68, 1);
+$electric-magenta: rgba(224, 64, 251, 1);
+$electric-blue: rgba(41, 121, 255, 1);
+$neon-green: rgba(0, 230, 118, 1);
+$vivid-cyan: rgba(0, 229, 255, 1);
+$burst-white: rgba(255, 255, 255, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0d0d0dff, #111111ff, #ccff00ff, #ff6b00ff, #ff1744ff, #e040fbff, #2979ffff, #00e676ff, #00e5ffff, #ffffffff);
+$gradient-right: linear-gradient(90deg, #0d0d0dff, #111111ff, #ccff00ff, #ff6b00ff, #ff1744ff, #e040fbff, #2979ffff, #00e676ff, #00e5ffff, #ffffffff);
+$gradient-bottom: linear-gradient(180deg, #0d0d0dff, #111111ff, #ccff00ff, #ff6b00ff, #ff1744ff, #e040fbff, #2979ffff, #00e676ff, #00e5ffff, #ffffffff);
+$gradient-left: linear-gradient(270deg, #0d0d0dff, #111111ff, #ccff00ff, #ff6b00ff, #ff1744ff, #e040fbff, #2979ffff, #00e676ff, #00e5ffff, #ffffffff);
+$gradient-top-right: linear-gradient(45deg, #0d0d0dff, #111111ff, #ccff00ff, #ff6b00ff, #ff1744ff, #e040fbff, #2979ffff, #00e676ff, #00e5ffff, #ffffffff);
+$gradient-bottom-right: linear-gradient(135deg, #0d0d0dff, #111111ff, #ccff00ff, #ff6b00ff, #ff1744ff, #e040fbff, #2979ffff, #00e676ff, #00e5ffff, #ffffffff);
+$gradient-top-left: linear-gradient(225deg, #0d0d0dff, #111111ff, #ccff00ff, #ff6b00ff, #ff1744ff, #e040fbff, #2979ffff, #00e676ff, #00e5ffff, #ffffffff);
+$gradient-bottom-left: linear-gradient(315deg, #0d0d0dff, #111111ff, #ccff00ff, #ff6b00ff, #ff1744ff, #e040fbff, #2979ffff, #00e676ff, #00e5ffff, #ffffffff);
+$gradient-radial: radial-gradient(#0d0d0dff, #111111ff, #ccff00ff, #ff6b00ff, #ff1744ff, #e040fbff, #2979ffff, #00e676ff, #00e5ffff, #ffffffff);
+
+/* SCSS Map */
+$energy-burst-map: (
+    "void-dark": #0d0d0dff,
+    "near-black": #111111ff,
+    "neon-yellow": #ccff00ff,
+    "vivid-orange": #ff6b00ff,
+    "hot-red": #ff1744ff,
+    "electric-magenta": #e040fbff,
+    "electric-blue": #2979ffff,
+    "neon-green": #00e676ff,
+    "vivid-cyan": #00e5ffff,
+    "burst-white": #ffffffff,
+);

@@ -1,0 +1,113 @@
+/*---
+id: golden-age-cinema
+name: Golden Age Cinema
+author: JaZeR-444
+version: 1.0.0
+category: Cinematic & Film-Inspired
+count: 10
+description: A warm Technicolor palette of deep mahoganies, rich burgundies, burnished golds, and luminous creams evoking the lush opulence of Hollywood's golden era.
+tags:
+  mood:
+  - warm
+  - opulent
+  - romantic
+  aesthetic:
+  - Technicolor
+  - Hollywood Golden Age
+  - Vintage Cinema
+intent: A warm 10-color palette designed for entertainment brands, luxury editorial, and vintage-inspired UI that channels old Hollywood glamour.
+suggested_use:
+- Film festival and entertainment branding
+- Luxury lifestyle editorial design
+- Vintage-inspired web and app interfaces
+url: https://coolors.co/3b0a0a-6b1a1a-b03030-c8892a-d4a843-e8d080-e8cdb0-f2e8d0-f5d4c0-fdf5ec
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--deep-mahogany: #3b0a0aff;
+--rich-burgundy: #6b1a1aff;
+--warm-red: #b03030ff;
+--golden-amber: #c8892aff;
+--warm-gold: #d4a843ff;
+--cream-yellow: #e8d080ff;
+--warm-beige: #e8cdb0ff;
+--ivory: #f2e8d0ff;
+--blush: #f5d4c0ff;
+--cream-white: #fdf5ecff;
+
+/* CSS HSL */
+--deep-mahogany: hsla(0, 67%, 14%, 1);
+--rich-burgundy: hsla(0, 60%, 26%, 1);
+--warm-red: hsla(0, 57%, 44%, 1);
+--golden-amber: hsla(36, 65%, 47%, 1);
+--warm-gold: hsla(40, 60%, 55%, 1);
+--cream-yellow: hsla(46, 68%, 70%, 1);
+--warm-beige: hsla(33, 55%, 80%, 1);
+--ivory: hsla(40, 57%, 87%, 1);
+--blush: hsla(22, 73%, 86%, 1);
+--cream-white: hsla(38, 82%, 96%, 1);
+}
+
+/* SCSS HEX */
+$deep-mahogany: #3b0a0aff;
+$rich-burgundy: #6b1a1aff;
+$warm-red: #b03030ff;
+$golden-amber: #c8892aff;
+$warm-gold: #d4a843ff;
+$cream-yellow: #e8d080ff;
+$warm-beige: #e8cdb0ff;
+$ivory: #f2e8d0ff;
+$blush: #f5d4c0ff;
+$cream-white: #fdf5ecff;
+
+/* SCSS HSL */
+$deep-mahogany: hsla(0, 67%, 14%, 1);
+$rich-burgundy: hsla(0, 60%, 26%, 1);
+$warm-red: hsla(0, 57%, 44%, 1);
+$golden-amber: hsla(36, 65%, 47%, 1);
+$warm-gold: hsla(40, 60%, 55%, 1);
+$cream-yellow: hsla(46, 68%, 70%, 1);
+$warm-beige: hsla(33, 55%, 80%, 1);
+$ivory: hsla(40, 57%, 87%, 1);
+$blush: hsla(22, 73%, 86%, 1);
+$cream-white: hsla(38, 82%, 96%, 1);
+
+/* SCSS RGB */
+$deep-mahogany: rgba(59, 10, 10, 1);
+$rich-burgundy: rgba(107, 26, 26, 1);
+$warm-red: rgba(176, 48, 48, 1);
+$golden-amber: rgba(200, 137, 42, 1);
+$warm-gold: rgba(212, 168, 67, 1);
+$cream-yellow: rgba(232, 208, 128, 1);
+$warm-beige: rgba(232, 205, 176, 1);
+$ivory: rgba(242, 232, 208, 1);
+$blush: rgba(245, 212, 192, 1);
+$cream-white: rgba(253, 245, 236, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #3b0a0aff, #6b1a1aff, #b03030ff, #c8892aff, #d4a843ff, #e8d080ff, #e8cdb0ff, #f2e8d0ff, #f5d4c0ff, #fdf5ecff);
+$gradient-right: linear-gradient(90deg, #3b0a0aff, #6b1a1aff, #b03030ff, #c8892aff, #d4a843ff, #e8d080ff, #e8cdb0ff, #f2e8d0ff, #f5d4c0ff, #fdf5ecff);
+$gradient-bottom: linear-gradient(180deg, #3b0a0aff, #6b1a1aff, #b03030ff, #c8892aff, #d4a843ff, #e8d080ff, #e8cdb0ff, #f2e8d0ff, #f5d4c0ff, #fdf5ecff);
+$gradient-left: linear-gradient(270deg, #3b0a0aff, #6b1a1aff, #b03030ff, #c8892aff, #d4a843ff, #e8d080ff, #e8cdb0ff, #f2e8d0ff, #f5d4c0ff, #fdf5ecff);
+$gradient-top-right: linear-gradient(45deg, #3b0a0aff, #6b1a1aff, #b03030ff, #c8892aff, #d4a843ff, #e8d080ff, #e8cdb0ff, #f2e8d0ff, #f5d4c0ff, #fdf5ecff);
+$gradient-bottom-right: linear-gradient(135deg, #3b0a0aff, #6b1a1aff, #b03030ff, #c8892aff, #d4a843ff, #e8d080ff, #e8cdb0ff, #f2e8d0ff, #f5d4c0ff, #fdf5ecff);
+$gradient-top-left: linear-gradient(225deg, #3b0a0aff, #6b1a1aff, #b03030ff, #c8892aff, #d4a843ff, #e8d080ff, #e8cdb0ff, #f2e8d0ff, #f5d4c0ff, #fdf5ecff);
+$gradient-bottom-left: linear-gradient(315deg, #3b0a0aff, #6b1a1aff, #b03030ff, #c8892aff, #d4a843ff, #e8d080ff, #e8cdb0ff, #f2e8d0ff, #f5d4c0ff, #fdf5ecff);
+$gradient-radial: radial-gradient(#3b0a0aff, #6b1a1aff, #b03030ff, #c8892aff, #d4a843ff, #e8d080ff, #e8cdb0ff, #f2e8d0ff, #f5d4c0ff, #fdf5ecff);
+
+/* SCSS Map */
+$golden-age-cinema-map: (
+    "deep-mahogany": #3b0a0aff,
+    "rich-burgundy": #6b1a1aff,
+    "warm-red": #b03030ff,
+    "golden-amber": #c8892aff,
+    "warm-gold": #d4a843ff,
+    "cream-yellow": #e8d080ff,
+    "warm-beige": #e8cdb0ff,
+    "ivory": #f2e8d0ff,
+    "blush": #f5d4c0ff,
+    "cream-white": #fdf5ecff,
+);

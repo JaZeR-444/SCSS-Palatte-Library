@@ -1,0 +1,113 @@
+/*---
+id: art-deco-gilt
+name: Art Deco Gilt
+author: JaZeR-444
+version: 1.0.0
+category: Art & Cultural Movements
+count: 10
+description: A lavish 1920s Art Deco palette of jet black, noir depths, rich chocolates, antique gold, and luminous ivory evoking the opulence of Gatsby's era.
+tags:
+  mood:
+  - opulent
+  - glamorous
+  - luxurious
+  aesthetic:
+  - Art Deco
+  - Gatsby
+  - Gilded
+intent: A luxurious 10-color palette designed for premium branding, hospitality interfaces, and editorial design that channels 1920s grandeur.
+suggested_use:
+- Luxury brand identity and packaging
+- Hotel and hospitality web design
+- High-end editorial and print layouts
+url: https://coolors.co/0a0a0a-1a1a1a-2b2118-3d2b1f-8b6914-c9a84c-e6c455-a0785a-f5ead7-fdf6ec
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--jet-black: #0a0a0aff;
+--art-deco-noir: #1a1a1aff;
+--warm-black: #2b2118ff;
+--dark-chocolate: #3d2b1fff;
+--rich-ochre: #8b6914ff;
+--antique-gold: #c9a84cff;
+--bright-gold: #e6c455ff;
+--bronze: #a0785aff;
+--warm-ivory: #f5ead7ff;
+--cream: #fdf6ecff;
+
+/* CSS HSL */
+--jet-black: hsla(0, 0%, 4%, 1);
+--art-deco-noir: hsla(0, 0%, 10%, 1);
+--warm-black: hsla(36, 24%, 13%, 1);
+--dark-chocolate: hsla(22, 32%, 18%, 1);
+--rich-ochre: hsla(43, 73%, 31%, 1);
+--antique-gold: hsla(42, 54%, 54%, 1);
+--bright-gold: hsla(45, 72%, 62%, 1);
+--bronze: hsla(24, 30%, 49%, 1);
+--warm-ivory: hsla(38, 71%, 90%, 1);
+--cream: hsla(40, 82%, 96%, 1);
+}
+
+/* SCSS HEX */
+$jet-black: #0a0a0aff;
+$art-deco-noir: #1a1a1aff;
+$warm-black: #2b2118ff;
+$dark-chocolate: #3d2b1fff;
+$rich-ochre: #8b6914ff;
+$antique-gold: #c9a84cff;
+$bright-gold: #e6c455ff;
+$bronze: #a0785aff;
+$warm-ivory: #f5ead7ff;
+$cream: #fdf6ecff;
+
+/* SCSS HSL */
+$jet-black: hsla(0, 0%, 4%, 1);
+$art-deco-noir: hsla(0, 0%, 10%, 1);
+$warm-black: hsla(36, 24%, 13%, 1);
+$dark-chocolate: hsla(22, 32%, 18%, 1);
+$rich-ochre: hsla(43, 73%, 31%, 1);
+$antique-gold: hsla(42, 54%, 54%, 1);
+$bright-gold: hsla(45, 72%, 62%, 1);
+$bronze: hsla(24, 30%, 49%, 1);
+$warm-ivory: hsla(38, 71%, 90%, 1);
+$cream: hsla(40, 82%, 96%, 1);
+
+/* SCSS RGB */
+$jet-black: rgba(10, 10, 10, 1);
+$art-deco-noir: rgba(26, 26, 26, 1);
+$warm-black: rgba(43, 33, 24, 1);
+$dark-chocolate: rgba(61, 43, 31, 1);
+$rich-ochre: rgba(139, 105, 20, 1);
+$antique-gold: rgba(201, 168, 76, 1);
+$bright-gold: rgba(230, 196, 85, 1);
+$bronze: rgba(160, 120, 90, 1);
+$warm-ivory: rgba(245, 234, 215, 1);
+$cream: rgba(253, 246, 236, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0a0a0aff, #1a1a1aff, #2b2118ff, #3d2b1fff, #8b6914ff, #c9a84cff, #e6c455ff, #a0785aff, #f5ead7ff, #fdf6ecff);
+$gradient-right: linear-gradient(90deg, #0a0a0aff, #1a1a1aff, #2b2118ff, #3d2b1fff, #8b6914ff, #c9a84cff, #e6c455ff, #a0785aff, #f5ead7ff, #fdf6ecff);
+$gradient-bottom: linear-gradient(180deg, #0a0a0aff, #1a1a1aff, #2b2118ff, #3d2b1fff, #8b6914ff, #c9a84cff, #e6c455ff, #a0785aff, #f5ead7ff, #fdf6ecff);
+$gradient-left: linear-gradient(270deg, #0a0a0aff, #1a1a1aff, #2b2118ff, #3d2b1fff, #8b6914ff, #c9a84cff, #e6c455ff, #a0785aff, #f5ead7ff, #fdf6ecff);
+$gradient-top-right: linear-gradient(45deg, #0a0a0aff, #1a1a1aff, #2b2118ff, #3d2b1fff, #8b6914ff, #c9a84cff, #e6c455ff, #a0785aff, #f5ead7ff, #fdf6ecff);
+$gradient-bottom-right: linear-gradient(135deg, #0a0a0aff, #1a1a1aff, #2b2118ff, #3d2b1fff, #8b6914ff, #c9a84cff, #e6c455ff, #a0785aff, #f5ead7ff, #fdf6ecff);
+$gradient-top-left: linear-gradient(225deg, #0a0a0aff, #1a1a1aff, #2b2118ff, #3d2b1fff, #8b6914ff, #c9a84cff, #e6c455ff, #a0785aff, #f5ead7ff, #fdf6ecff);
+$gradient-bottom-left: linear-gradient(315deg, #0a0a0aff, #1a1a1aff, #2b2118ff, #3d2b1fff, #8b6914ff, #c9a84cff, #e6c455ff, #a0785aff, #f5ead7ff, #fdf6ecff);
+$gradient-radial: radial-gradient(#0a0a0aff, #1a1a1aff, #2b2118ff, #3d2b1fff, #8b6914ff, #c9a84cff, #e6c455ff, #a0785aff, #f5ead7ff, #fdf6ecff);
+
+/* SCSS Map */
+$art-deco-gilt-map: (
+    "jet-black": #0a0a0aff,
+    "art-deco-noir": #1a1a1aff,
+    "warm-black": #2b2118ff,
+    "dark-chocolate": #3d2b1fff,
+    "rich-ochre": #8b6914ff,
+    "antique-gold": #c9a84cff,
+    "bright-gold": #e6c455ff,
+    "bronze": #a0785aff,
+    "warm-ivory": #f5ead7ff,
+    "cream": #fdf6ecff,
+);

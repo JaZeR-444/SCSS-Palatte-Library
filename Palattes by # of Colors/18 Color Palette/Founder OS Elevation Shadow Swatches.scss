@@ -1,0 +1,96 @@
+/*---
+id: founder-os-elevation-shadow-swatches
+name: Founder OS Elevation & Shadow Swatches
+author: JaZeR-444
+version: 1.1.0
+category: Web Development System
+count: 18
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - component-states
+  mood:
+  - dark
+  - premium
+  aesthetic:
+  - Glassmorphism
+  - Tech
+intent: A comprehensive 18-token named shadow swatch set for Founder OS depth hierarchy — includes hover lifts, directional drawers, deep insets, and glowing focus rings.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX (Base Colors) */
+--shadow-color-base: #000000ff;
+--shadow-color-cyan-tint: #00f0ff1a;
+--shadow-color-magenta-tint: #ff00551a;
+--shadow-color-mid: #090b10ff;
+--shadow-color-deep: #07090dff;
+
+/* NOTE: Box shadow tokens (These translate directly in Tailwind) */
+--shadow-xs: 0 1px 3px rgba(0,0,0,0.5), 0 1px 2px rgba(0,0,0,0.4);
+--shadow-sm: 0 4px 6px rgba(0,0,0,0.55), 0 2px 4px rgba(0,0,0,0.45);
+--shadow-md: 0 10px 15px rgba(0,0,0,0.6), 0 4px 6px rgba(0,0,0,0.45);
+--shadow-lg: 0 20px 25px rgba(0,0,0,0.65), 0 10px 10px rgba(0,0,0,0.5);
+--shadow-xl: 0 25px 50px rgba(0,0,0,0.75), 0 0 0 1px rgba(255,255,255,0.04);
+--shadow-hover-lift: 0 15px 30px rgba(0,0,0,0.7), 0 5px 15px rgba(0,0,0,0.5);
+--shadow-drawer-left: 20px 0 25px rgba(0,0,0,0.65);
+--shadow-drawer-right: -20px 0 25px rgba(0,0,0,0.65);
+--shadow-glow-cyan: 0 0 12px rgba(0,240,255,0.35), 0 0 24px rgba(0,240,255,0.15);
+--shadow-glow-magenta: 0 0 12px rgba(255,0,85,0.35), 0 0 24px rgba(255,0,85,0.15);
+--shadow-glow-amber: 0 0 12px rgba(255,184,0,0.30), 0 0 24px rgba(255,184,0,0.12);
+--shadow-focus-ring: 0 0 0 2px #090b10ff, 0 0 0 4px #00f0ffff;
+--shadow-inset: inset 0 2px 6px rgba(0,0,0,0.6);
+--shadow-inset-deep: inset 0 4px 10px rgba(0,0,0,0.8);
+
+/* CSS HSL */
+--shadow-color-base: hsla(0, 0%, 0%, 1);
+--shadow-color-cyan-tint: hsla(184, 100%, 50%, 0.10);
+--shadow-color-magenta-tint: hsla(340, 100%, 50%, 0.10);
+--shadow-color-mid: hsla(223, 28%, 5%, 1);
+--shadow-color-deep: hsla(220, 30%, 4%, 1);
+}
+
+/* SCSS HEX */
+$shadow-color-base: #000000ff;
+$shadow-color-cyan-tint: rgba(0, 240, 255, 0.10);
+$shadow-color-magenta-tint: rgba(255, 0, 85, 0.10);
+$shadow-color-mid: #090b10ff;
+$shadow-color-deep: #07090dff;
+
+/* SCSS Box Shadows */
+$shadow-xs: 0 1px 3px rgba(0,0,0,0.5), 0 1px 2px rgba(0,0,0,0.4);
+$shadow-sm: 0 4px 6px rgba(0,0,0,0.55), 0 2px 4px rgba(0,0,0,0.45);
+$shadow-md: 0 10px 15px rgba(0,0,0,0.6), 0 4px 6px rgba(0,0,0,0.45);
+$shadow-lg: 0 20px 25px rgba(0,0,0,0.65), 0 10px 10px rgba(0,0,0,0.5);
+$shadow-xl: 0 25px 50px rgba(0,0,0,0.75), 0 0 0 1px rgba(255,255,255,0.04);
+$shadow-hover-lift: 0 15px 30px rgba(0,0,0,0.7), 0 5px 15px rgba(0,0,0,0.5);
+$shadow-drawer-left: 20px 0 25px rgba(0,0,0,0.65);
+$shadow-drawer-right: -20px 0 25px rgba(0,0,0,0.65);
+$shadow-glow-cyan: 0 0 12px rgba(0,240,255,0.35), 0 0 24px rgba(0,240,255,0.15);
+$shadow-glow-magenta: 0 0 12px rgba(255,0,85,0.35), 0 0 24px rgba(255,0,85,0.15);
+$shadow-glow-amber: 0 0 12px rgba(255,184,0,0.30), 0 0 24px rgba(255,184,0,0.12);
+$shadow-focus-ring: 0 0 0 2px #090b10ff, 0 0 0 4px #00f0ffff;
+$shadow-inset: inset 0 2px 6px rgba(0,0,0,0.6);
+$shadow-inset-deep: inset 0 4px 10px rgba(0,0,0,0.8);
+
+/* SCSS Map */
+$founder-os-elevation-shadow-swatches-map: (
+    "shadow-color-base": #000000ff,
+    "shadow-color-mid": #090b10ff,
+    "shadow-color-deep": #07090dff,
+    "shadow-xs": "0 1px 3px rgba(0,0,0,0.5)",
+    "shadow-sm": "0 4px 6px rgba(0,0,0,0.55)",
+    "shadow-md": "0 10px 15px rgba(0,0,0,0.6)",
+    "shadow-lg": "0 20px 25px rgba(0,0,0,0.65)",
+    "shadow-xl": "0 25px 50px rgba(0,0,0,0.75)",
+    "shadow-hover-lift": "0 15px 30px rgba(0,0,0,0.7)",
+    "shadow-drawer-left": "20px 0 25px rgba(0,0,0,0.65)",
+    "shadow-drawer-right": "-20px 0 25px rgba(0,0,0,0.65)",
+    "shadow-glow-cyan": "0 0 12px rgba(0,240,255,0.35)",
+    "shadow-glow-amber": "0 0 12px rgba(255,184,0,0.30)",
+    "shadow-inset-deep": "inset 0 4px 10px rgba(0,0,0,0.8)"
+);

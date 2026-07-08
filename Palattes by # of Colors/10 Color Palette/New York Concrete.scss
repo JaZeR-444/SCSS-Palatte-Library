@@ -1,0 +1,113 @@
+/*---
+id: new-york-concrete
+name: New York Concrete
+author: JaZeR-444
+version: 1.0.0
+category: Geographic & Architectural
+count: 10
+description: A NYC urban architectural palette of deep pavement blacks, raw concrete grays, cold steel beams, and glass-blue highlights punctuated by a single taxi yellow accent against steam white and open sky.
+tags:
+  mood:
+  - gritty
+  - industrial
+  - metropolitan
+  aesthetic:
+  - Urban
+  - Industrial
+  - Brutalist
+intent: A raw 10-color palette designed for urban architecture portfolios, streetwear brands, NYC-inspired editorial, and industrial product design systems.
+suggested_use:
+- Architecture and real estate branding
+- Streetwear and urban fashion identity
+- Industrial and manufacturing product UI
+url: https://coolors.co/0a0a0a-1c1c1c-2e2e2e-4a4a4a-6e6e6e-9e9e9e-b0bec5-fdd835-f5f5f0-ecf4fb
+created: '2026-07-07'
+updated: '2026-07-07'
+---*/
+
+:root {
+/* CSS HEX */
+--pavement-black: #0a0a0aff;
+--tar-dark: #1c1c1cff;
+--raw-concrete-dark: #2e2e2eff;
+--concrete-mid: #4a4a4aff;
+--concrete-light: #6e6e6eff;
+--steel-beam: #9e9e9eff;
+--glass-blue: #b0bec5ff;
+--taxi-yellow: #fdd835ff;
+--steam-white: #f5f5f0ff;
+--sky-white: #ecf4fbff;
+
+/* CSS HSL */
+--pavement-black: hsla(0, 0%, 4%, 1);
+--tar-dark: hsla(0, 0%, 11%, 1);
+--raw-concrete-dark: hsla(0, 0%, 18%, 1);
+--concrete-mid: hsla(0, 0%, 29%, 1);
+--concrete-light: hsla(0, 0%, 43%, 1);
+--steel-beam: hsla(0, 0%, 62%, 1);
+--glass-blue: hsla(200, 12%, 73%, 1);
+--taxi-yellow: hsla(48, 98%, 60%, 1);
+--steam-white: hsla(60, 7%, 96%, 1);
+--sky-white: hsla(207, 58%, 96%, 1);
+}
+
+/* SCSS HEX */
+$pavement-black: #0a0a0aff;
+$tar-dark: #1c1c1cff;
+$raw-concrete-dark: #2e2e2eff;
+$concrete-mid: #4a4a4aff;
+$concrete-light: #6e6e6eff;
+$steel-beam: #9e9e9eff;
+$glass-blue: #b0bec5ff;
+$taxi-yellow: #fdd835ff;
+$steam-white: #f5f5f0ff;
+$sky-white: #ecf4fbff;
+
+/* SCSS HSL */
+$pavement-black: hsla(0, 0%, 4%, 1);
+$tar-dark: hsla(0, 0%, 11%, 1);
+$raw-concrete-dark: hsla(0, 0%, 18%, 1);
+$concrete-mid: hsla(0, 0%, 29%, 1);
+$concrete-light: hsla(0, 0%, 43%, 1);
+$steel-beam: hsla(0, 0%, 62%, 1);
+$glass-blue: hsla(200, 12%, 73%, 1);
+$taxi-yellow: hsla(48, 98%, 60%, 1);
+$steam-white: hsla(60, 7%, 96%, 1);
+$sky-white: hsla(207, 58%, 96%, 1);
+
+/* SCSS RGB */
+$pavement-black: rgba(10, 10, 10, 1);
+$tar-dark: rgba(28, 28, 28, 1);
+$raw-concrete-dark: rgba(46, 46, 46, 1);
+$concrete-mid: rgba(74, 74, 74, 1);
+$concrete-light: rgba(110, 110, 110, 1);
+$steel-beam: rgba(158, 158, 158, 1);
+$glass-blue: rgba(176, 190, 197, 1);
+$taxi-yellow: rgba(253, 216, 53, 1);
+$steam-white: rgba(245, 245, 240, 1);
+$sky-white: rgba(236, 244, 251, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #0a0a0aff, #1c1c1cff, #2e2e2eff, #4a4a4aff, #6e6e6eff, #9e9e9eff, #b0bec5ff, #fdd835ff, #f5f5f0ff, #ecf4fbff);
+$gradient-right: linear-gradient(90deg, #0a0a0aff, #1c1c1cff, #2e2e2eff, #4a4a4aff, #6e6e6eff, #9e9e9eff, #b0bec5ff, #fdd835ff, #f5f5f0ff, #ecf4fbff);
+$gradient-bottom: linear-gradient(180deg, #0a0a0aff, #1c1c1cff, #2e2e2eff, #4a4a4aff, #6e6e6eff, #9e9e9eff, #b0bec5ff, #fdd835ff, #f5f5f0ff, #ecf4fbff);
+$gradient-left: linear-gradient(270deg, #0a0a0aff, #1c1c1cff, #2e2e2eff, #4a4a4aff, #6e6e6eff, #9e9e9eff, #b0bec5ff, #fdd835ff, #f5f5f0ff, #ecf4fbff);
+$gradient-top-right: linear-gradient(45deg, #0a0a0aff, #1c1c1cff, #2e2e2eff, #4a4a4aff, #6e6e6eff, #9e9e9eff, #b0bec5ff, #fdd835ff, #f5f5f0ff, #ecf4fbff);
+$gradient-bottom-right: linear-gradient(135deg, #0a0a0aff, #1c1c1cff, #2e2e2eff, #4a4a4aff, #6e6e6eff, #9e9e9eff, #b0bec5ff, #fdd835ff, #f5f5f0ff, #ecf4fbff);
+$gradient-top-left: linear-gradient(225deg, #0a0a0aff, #1c1c1cff, #2e2e2eff, #4a4a4aff, #6e6e6eff, #9e9e9eff, #b0bec5ff, #fdd835ff, #f5f5f0ff, #ecf4fbff);
+$gradient-bottom-left: linear-gradient(315deg, #0a0a0aff, #1c1c1cff, #2e2e2eff, #4a4a4aff, #6e6e6eff, #9e9e9eff, #b0bec5ff, #fdd835ff, #f5f5f0ff, #ecf4fbff);
+$gradient-radial: radial-gradient(#0a0a0aff, #1c1c1cff, #2e2e2eff, #4a4a4aff, #6e6e6eff, #9e9e9eff, #b0bec5ff, #fdd835ff, #f5f5f0ff, #ecf4fbff);
+
+/* SCSS Map */
+$new-york-concrete-map: (
+    "pavement-black": #0a0a0aff,
+    "tar-dark": #1c1c1cff,
+    "raw-concrete-dark": #2e2e2eff,
+    "concrete-mid": #4a4a4aff,
+    "concrete-light": #6e6e6eff,
+    "steel-beam": #9e9e9eff,
+    "glass-blue": #b0bec5ff,
+    "taxi-yellow": #fdd835ff,
+    "steam-white": #f5f5f0ff,
+    "sky-white": #ecf4fbff,
+);
