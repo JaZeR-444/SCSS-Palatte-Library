@@ -1,0 +1,72 @@
+/*---
+id: founder-os-teal-brand-swatches
+name: Founder OS Teal Brand Swatches
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 10
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - brand-scale
+  aesthetic:
+  - UI
+  - Enterprise
+intent: A deep, trustworthy 10-step teal scale for fintech, healthcare, and secure systems.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--brand-teal-50-wash: #f0fdfaff;
+--brand-teal-100-subtle: #ccfbf1ff;
+--brand-teal-200-light: #99f6e4ff;
+--brand-teal-300-muted: #5eead4ff;
+--brand-teal-400-base: #2dd4bfff;
+--brand-teal-500-primary: #14b8a6ff;
+--brand-teal-600-hover: #0d9488ff;
+--brand-teal-700-active: #0f766eff;
+--brand-teal-800-deep: #115e59ff;
+--brand-teal-900-dark: #134e4aff;
+
+/* CSS HSL */
+--brand-teal-50-wash: hsla(166, 76%, 97%, 1);
+--brand-teal-100-subtle: hsla(167, 85%, 89%, 1);
+--brand-teal-200-light: hsla(168, 84%, 78%, 1);
+--brand-teal-300-muted: hsla(171, 77%, 64%, 1);
+--brand-teal-400-base: hsla(172, 66%, 50%, 1);
+--brand-teal-500-primary: hsla(173, 80%, 40%, 1);
+--brand-teal-600-hover: hsla(175, 84%, 32%, 1);
+--brand-teal-700-active: hsla(175, 77%, 26%, 1);
+--brand-teal-800-deep: hsla(176, 69%, 22%, 1);
+--brand-teal-900-dark: hsla(176, 61%, 19%, 1);
+}
+
+/* SCSS HEX */
+$brand-teal-50-wash: #f0fdfaff;
+$brand-teal-100-subtle: #ccfbf1ff;
+$brand-teal-200-light: #99f6e4ff;
+$brand-teal-300-muted: #5eead4ff;
+$brand-teal-400-base: #2dd4bfff;
+$brand-teal-500-primary: #14b8a6ff;
+$brand-teal-600-hover: #0d9488ff;
+$brand-teal-700-active: #0f766eff;
+$brand-teal-800-deep: #115e59ff;
+$brand-teal-900-dark: #134e4aff;
+
+/* SCSS Map */
+$founder-os-teal-brand-swatches-map: (
+    "brand-teal-50-wash": #f0fdfaff,
+    "brand-teal-100-subtle": #ccfbf1ff,
+    "brand-teal-200-light": #99f6e4ff,
+    "brand-teal-300-muted": #5eead4ff,
+    "brand-teal-400-base": #2dd4bfff,
+    "brand-teal-500-primary": #14b8a6ff,
+    "brand-teal-600-hover": #0d9488ff,
+    "brand-teal-700-active": #0f766eff,
+    "brand-teal-800-deep": #115e59ff,
+    "brand-teal-900-dark": #134e4aff
+);

@@ -1,0 +1,72 @@
+/*---
+id: founder-os-violet-brand-swatches
+name: Founder OS Violet Brand Swatches
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 10
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - brand-scale
+  aesthetic:
+  - UI
+  - Enterprise
+intent: A beautiful 10-step violet scale, perfect for AI features, magic actions, and premium SaaS tiers.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--brand-violet-50-wash: #f5f3ffff;
+--brand-violet-100-subtle: #ede9feff;
+--brand-violet-200-light: #ddd6feff;
+--brand-violet-300-muted: #c4b5fdff;
+--brand-violet-400-base: #a78bfaff;
+--brand-violet-500-primary: #8b5cf6ff;
+--brand-violet-600-hover: #7c3aedff;
+--brand-violet-700-active: #6d28d9ff;
+--brand-violet-800-deep: #5b21b6ff;
+--brand-violet-900-dark: #4c1d95ff;
+
+/* CSS HSL */
+--brand-violet-50-wash: hsla(250, 100%, 98%, 1);
+--brand-violet-100-subtle: hsla(251, 91%, 95%, 1);
+--brand-violet-200-light: hsla(250, 95%, 92%, 1);
+--brand-violet-300-muted: hsla(252, 95%, 85%, 1);
+--brand-violet-400-base: hsla(255, 92%, 76%, 1);
+--brand-violet-500-primary: hsla(258, 90%, 66%, 1);
+--brand-violet-600-hover: hsla(262, 83%, 58%, 1);
+--brand-violet-700-active: hsla(263, 70%, 50%, 1);
+--brand-violet-800-deep: hsla(263, 69%, 42%, 1);
+--brand-violet-900-dark: hsla(264, 67%, 35%, 1);
+}
+
+/* SCSS HEX */
+$brand-violet-50-wash: #f5f3ffff;
+$brand-violet-100-subtle: #ede9feff;
+$brand-violet-200-light: #ddd6feff;
+$brand-violet-300-muted: #c4b5fdff;
+$brand-violet-400-base: #a78bfaff;
+$brand-violet-500-primary: #8b5cf6ff;
+$brand-violet-600-hover: #7c3aedff;
+$brand-violet-700-active: #6d28d9ff;
+$brand-violet-800-deep: #5b21b6ff;
+$brand-violet-900-dark: #4c1d95ff;
+
+/* SCSS Map */
+$founder-os-violet-brand-swatches-map: (
+    "brand-violet-50-wash": #f5f3ffff,
+    "brand-violet-100-subtle": #ede9feff,
+    "brand-violet-200-light": #ddd6feff,
+    "brand-violet-300-muted": #c4b5fdff,
+    "brand-violet-400-base": #a78bfaff,
+    "brand-violet-500-primary": #8b5cf6ff,
+    "brand-violet-600-hover": #7c3aedff,
+    "brand-violet-700-active": #6d28d9ff,
+    "brand-violet-800-deep": #5b21b6ff,
+    "brand-violet-900-dark": #4c1d95ff
+);

@@ -1,0 +1,72 @@
+/*---
+id: founder-os-rose-brand-swatches
+name: Founder OS Rose Brand Swatches
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 10
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - brand-scale
+  aesthetic:
+  - UI
+  - Enterprise
+intent: A vibrant 10-step rose scale for pop marketing, lifestyle brands, and soft destructive alerts.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--brand-rose-50-wash: #fff1f2ff;
+--brand-rose-100-subtle: #ffe4e6ff;
+--brand-rose-200-light: #fecdd3ff;
+--brand-rose-300-muted: #fda4afff;
+--brand-rose-400-base: #fb7185ff;
+--brand-rose-500-primary: #f43f5eff;
+--brand-rose-600-hover: #e11d48ff;
+--brand-rose-700-active: #be123cff;
+--brand-rose-800-deep: #9f1239ff;
+--brand-rose-900-dark: #881337ff;
+
+/* CSS HSL */
+--brand-rose-50-wash: hsla(356, 100%, 97%, 1);
+--brand-rose-100-subtle: hsla(356, 100%, 95%, 1);
+--brand-rose-200-light: hsla(353, 96%, 90%, 1);
+--brand-rose-300-muted: hsla(353, 96%, 82%, 1);
+--brand-rose-400-base: hsla(351, 95%, 71%, 1);
+--brand-rose-500-primary: hsla(350, 89%, 60%, 1);
+--brand-rose-600-hover: hsla(347, 77%, 50%, 1);
+--brand-rose-700-active: hsla(345, 83%, 41%, 1);
+--brand-rose-800-deep: hsla(343, 80%, 35%, 1);
+--brand-rose-900-dark: hsla(342, 75%, 30%, 1);
+}
+
+/* SCSS HEX */
+$brand-rose-50-wash: #fff1f2ff;
+$brand-rose-100-subtle: #ffe4e6ff;
+$brand-rose-200-light: #fecdd3ff;
+$brand-rose-300-muted: #fda4afff;
+$brand-rose-400-base: #fb7185ff;
+$brand-rose-500-primary: #f43f5eff;
+$brand-rose-600-hover: #e11d48ff;
+$brand-rose-700-active: #be123cff;
+$brand-rose-800-deep: #9f1239ff;
+$brand-rose-900-dark: #881337ff;
+
+/* SCSS Map */
+$founder-os-rose-brand-swatches-map: (
+    "brand-rose-50-wash": #fff1f2ff,
+    "brand-rose-100-subtle": #ffe4e6ff,
+    "brand-rose-200-light": #fecdd3ff,
+    "brand-rose-300-muted": #fda4afff,
+    "brand-rose-400-base": #fb7185ff,
+    "brand-rose-500-primary": #f43f5eff,
+    "brand-rose-600-hover": #e11d48ff,
+    "brand-rose-700-active": #be123cff,
+    "brand-rose-800-deep": #9f1239ff,
+    "brand-rose-900-dark": #881337ff
+);

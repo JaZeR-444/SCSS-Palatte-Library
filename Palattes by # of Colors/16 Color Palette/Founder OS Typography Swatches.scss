@@ -1,0 +1,96 @@
+/*---
+id: founder-os-typography-swatches
+name: Founder OS Typography Swatches
+author: JaZeR-444
+version: 2.0.0
+category: Web Development System
+count: 16
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - component-states
+  aesthetic:
+  - UI
+  - Enterprise
+intent: Comprehensive typography token system.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--text-display: #f8fafcff;
+--text-heading: #f1f5f9ff;
+--text-primary: #e2e8f0ff;
+--text-secondary: #94a3b8ff;
+--text-tertiary: #64748bff;
+--text-placeholder: #475569ff;
+--text-disabled: #334155ff;
+--text-inverse: #0f172aff;
+--text-link: #1ae3ffff;
+--text-link-hover: #4de9ffff;
+--text-brand: #00f0ffff;
+--text-success: #34d399ff;
+--text-warning: #fbbf24ff;
+--text-danger: #fb7185ff;
+--text-code: #cbd5e1ff;
+--text-highlight: #ffffff1a;
+
+/* CSS HSL */
+--text-display: hsla(210, 40%, 98%, 1.0);
+--text-heading: hsla(210, 40%, 96%, 1.0);
+--text-primary: hsla(214, 32%, 91%, 1.0);
+--text-secondary: hsla(215, 20%, 65%, 1.0);
+--text-tertiary: hsla(215, 16%, 47%, 1.0);
+--text-placeholder: hsla(215, 19%, 35%, 1.0);
+--text-disabled: hsla(215, 25%, 27%, 1.0);
+--text-inverse: hsla(222, 47%, 11%, 1.0);
+--text-link: hsla(187, 100%, 55%, 1.0);
+--text-link-hover: hsla(187, 100%, 65%, 1.0);
+--text-brand: hsla(184, 100%, 50%, 1.0);
+--text-success: hsla(158, 64%, 52%, 1.0);
+--text-warning: hsla(43, 96%, 56%, 1.0);
+--text-danger: hsla(351, 95%, 71%, 1.0);
+--text-code: hsla(213, 27%, 84%, 1.0);
+--text-highlight: hsla(0, 0%, 100%, 0.1);
+}
+
+/* SCSS HEX */
+$text-display: #f8fafcff;
+$text-heading: #f1f5f9ff;
+$text-primary: #e2e8f0ff;
+$text-secondary: #94a3b8ff;
+$text-tertiary: #64748bff;
+$text-placeholder: #475569ff;
+$text-disabled: #334155ff;
+$text-inverse: #0f172aff;
+$text-link: #1ae3ffff;
+$text-link-hover: #4de9ffff;
+$text-brand: #00f0ffff;
+$text-success: #34d399ff;
+$text-warning: #fbbf24ff;
+$text-danger: #fb7185ff;
+$text-code: #cbd5e1ff;
+$text-highlight: #ffffff1a;
+
+/* SCSS Map */
+$founder-os-typography-swatches-map: (
+    "text-display": #f8fafcff,
+    "text-heading": #f1f5f9ff,
+    "text-primary": #e2e8f0ff,
+    "text-secondary": #94a3b8ff,
+    "text-tertiary": #64748bff,
+    "text-placeholder": #475569ff,
+    "text-disabled": #334155ff,
+    "text-inverse": #0f172aff,
+    "text-link": #1ae3ffff,
+    "text-link-hover": #4de9ffff,
+    "text-brand": #00f0ffff,
+    "text-success": #34d399ff,
+    "text-warning": #fbbf24ff,
+    "text-danger": #fb7185ff,
+    "text-code": #cbd5e1ff,
+    "text-highlight": #ffffff1a
+);

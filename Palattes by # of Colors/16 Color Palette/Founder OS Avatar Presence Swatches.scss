@@ -1,0 +1,96 @@
+/*---
+id: founder-os-avatar-presence-swatches
+name: Founder OS Avatar Presence Swatches
+author: JaZeR-444
+version: 2.0.0
+category: Web Development System
+count: 16
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - component-states
+  aesthetic:
+  - UI
+  - Enterprise
+intent: Avatar backgrounds and semantic presence indicators.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--avatar-bg-1: #006699ff;
+--avatar-bg-2: #065f46ff;
+--avatar-bg-3: #92400eff;
+--avatar-bg-4: #9f1239ff;
+--avatar-text-1: #80efffff;
+--avatar-text-2: #a7f3d0ff;
+--avatar-text-3: #fde68aff;
+--avatar-text-4: #fecdd3ff;
+--avatar-fallback-bg: #1e293bff;
+--avatar-fallback-text: #94a3b8ff;
+--presence-online: #10b981ff;
+--presence-offline: #64748bff;
+--presence-busy: #f43f5eff;
+--presence-away: #ffb800ff;
+--presence-border: #0f172aff;
+--avatar-ring: #00f0ffff;
+
+/* CSS HSL */
+--avatar-bg-1: hsla(200, 100%, 30%, 1.0);
+--avatar-bg-2: hsla(163, 88%, 20%, 1.0);
+--avatar-bg-3: hsla(23, 82%, 31%, 1.0);
+--avatar-bg-4: hsla(343, 80%, 35%, 1.0);
+--avatar-text-1: hsla(188, 100%, 75%, 1.0);
+--avatar-text-2: hsla(152, 76%, 80%, 1.0);
+--avatar-text-3: hsla(48, 97%, 77%, 1.0);
+--avatar-text-4: hsla(353, 96%, 90%, 1.0);
+--avatar-fallback-bg: hsla(217, 33%, 17%, 1.0);
+--avatar-fallback-text: hsla(215, 20%, 65%, 1.0);
+--presence-online: hsla(160, 84%, 39%, 1.0);
+--presence-offline: hsla(215, 16%, 47%, 1.0);
+--presence-busy: hsla(350, 89%, 60%, 1.0);
+--presence-away: hsla(43, 100%, 50%, 1.0);
+--presence-border: hsla(222, 47%, 11%, 1.0);
+--avatar-ring: hsla(184, 100%, 50%, 1.0);
+}
+
+/* SCSS HEX */
+$avatar-bg-1: #006699ff;
+$avatar-bg-2: #065f46ff;
+$avatar-bg-3: #92400eff;
+$avatar-bg-4: #9f1239ff;
+$avatar-text-1: #80efffff;
+$avatar-text-2: #a7f3d0ff;
+$avatar-text-3: #fde68aff;
+$avatar-text-4: #fecdd3ff;
+$avatar-fallback-bg: #1e293bff;
+$avatar-fallback-text: #94a3b8ff;
+$presence-online: #10b981ff;
+$presence-offline: #64748bff;
+$presence-busy: #f43f5eff;
+$presence-away: #ffb800ff;
+$presence-border: #0f172aff;
+$avatar-ring: #00f0ffff;
+
+/* SCSS Map */
+$founder-os-avatar-presence-swatches-map: (
+    "avatar-bg-1": #006699ff,
+    "avatar-bg-2": #065f46ff,
+    "avatar-bg-3": #92400eff,
+    "avatar-bg-4": #9f1239ff,
+    "avatar-text-1": #80efffff,
+    "avatar-text-2": #a7f3d0ff,
+    "avatar-text-3": #fde68aff,
+    "avatar-text-4": #fecdd3ff,
+    "avatar-fallback-bg": #1e293bff,
+    "avatar-fallback-text": #94a3b8ff,
+    "presence-online": #10b981ff,
+    "presence-offline": #64748bff,
+    "presence-busy": #f43f5eff,
+    "presence-away": #ffb800ff,
+    "presence-border": #0f172aff,
+    "avatar-ring": #00f0ffff
+);

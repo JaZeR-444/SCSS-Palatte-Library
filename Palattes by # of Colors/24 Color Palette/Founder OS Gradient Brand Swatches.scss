@@ -1,0 +1,128 @@
+/*---
+id: founder-os-gradient-brand-swatches
+name: Founder OS Gradient Brand Swatches
+author: JaZeR-444
+version: 2.0.0
+category: Web Development System
+count: 24
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - gradients
+  aesthetic:
+  - UI
+  - Enterprise
+intent: Individual color stops (start, mid, end) for complex linear, radial, and mesh gradients.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--gradient-primary-start: #1ae3ffff;
+--gradient-primary-end: #0099ccff;
+--gradient-success-start: #6ee7b7ff;
+--gradient-success-end: #059669ff;
+--gradient-warning-start: #fcd34dff;
+--gradient-warning-end: #d97706ff;
+--gradient-danger-start: #fb7185ff;
+--gradient-danger-end: #be123cff;
+--gradient-info-start: #93c5fdff;
+--gradient-info-end: #2563ebff;
+--gradient-neutral-start: #f1f5f9ff;
+--gradient-neutral-end: #94a3b8ff;
+--gradient-hero-start: #4de9ffff;
+--gradient-hero-mid: #3b82f6ff;
+--gradient-hero-end: #f43f5eff;
+--gradient-mesh-1: #003366ff;
+--gradient-mesh-2: #0f172aff;
+--gradient-mesh-3: #006699ff;
+--gradient-border-start: #ffffff4d;
+--gradient-border-mid: #ffffff1a;
+--gradient-border-end: #ffffff00;
+--gradient-skeleton-start: #0f172aff;
+--gradient-skeleton-mid: #1e293bff;
+--gradient-skeleton-end: #0f172aff;
+
+/* CSS HSL */
+--gradient-primary-start: hsla(187, 100%, 55%, 1.0);
+--gradient-primary-end: hsla(195, 100%, 40%, 1.0);
+--gradient-success-start: hsla(156, 72%, 67%, 1.0);
+--gradient-success-end: hsla(161, 94%, 30%, 1.0);
+--gradient-warning-start: hsla(46, 97%, 65%, 1.0);
+--gradient-warning-end: hsla(32, 95%, 44%, 1.0);
+--gradient-danger-start: hsla(351, 95%, 71%, 1.0);
+--gradient-danger-end: hsla(345, 83%, 41%, 1.0);
+--gradient-info-start: hsla(212, 96%, 78%, 1.0);
+--gradient-info-end: hsla(221, 83%, 53%, 1.0);
+--gradient-neutral-start: hsla(210, 40%, 96%, 1.0);
+--gradient-neutral-end: hsla(215, 20%, 65%, 1.0);
+--gradient-hero-start: hsla(187, 100%, 65%, 1.0);
+--gradient-hero-mid: hsla(217, 91%, 60%, 1.0);
+--gradient-hero-end: hsla(350, 89%, 60%, 1.0);
+--gradient-mesh-1: hsla(210, 100%, 20%, 1.0);
+--gradient-mesh-2: hsla(222, 47%, 11%, 1.0);
+--gradient-mesh-3: hsla(200, 100%, 30%, 1.0);
+--gradient-border-start: hsla(0, 0%, 100%, 0.3);
+--gradient-border-mid: hsla(0, 0%, 100%, 0.1);
+--gradient-border-end: hsla(0, 0%, 0%, 0);
+--gradient-skeleton-start: hsla(222, 47%, 11%, 1.0);
+--gradient-skeleton-mid: hsla(217, 33%, 17%, 1.0);
+--gradient-skeleton-end: hsla(222, 47%, 11%, 1.0);
+}
+
+/* SCSS HEX */
+$gradient-primary-start: #1ae3ffff;
+$gradient-primary-end: #0099ccff;
+$gradient-success-start: #6ee7b7ff;
+$gradient-success-end: #059669ff;
+$gradient-warning-start: #fcd34dff;
+$gradient-warning-end: #d97706ff;
+$gradient-danger-start: #fb7185ff;
+$gradient-danger-end: #be123cff;
+$gradient-info-start: #93c5fdff;
+$gradient-info-end: #2563ebff;
+$gradient-neutral-start: #f1f5f9ff;
+$gradient-neutral-end: #94a3b8ff;
+$gradient-hero-start: #4de9ffff;
+$gradient-hero-mid: #3b82f6ff;
+$gradient-hero-end: #f43f5eff;
+$gradient-mesh-1: #003366ff;
+$gradient-mesh-2: #0f172aff;
+$gradient-mesh-3: #006699ff;
+$gradient-border-start: #ffffff4d;
+$gradient-border-mid: #ffffff1a;
+$gradient-border-end: #ffffff00;
+$gradient-skeleton-start: #0f172aff;
+$gradient-skeleton-mid: #1e293bff;
+$gradient-skeleton-end: #0f172aff;
+
+/* SCSS Map */
+$founder-os-gradient-brand-swatches-map: (
+    "gradient-primary-start": #1ae3ffff,
+    "gradient-primary-end": #0099ccff,
+    "gradient-success-start": #6ee7b7ff,
+    "gradient-success-end": #059669ff,
+    "gradient-warning-start": #fcd34dff,
+    "gradient-warning-end": #d97706ff,
+    "gradient-danger-start": #fb7185ff,
+    "gradient-danger-end": #be123cff,
+    "gradient-info-start": #93c5fdff,
+    "gradient-info-end": #2563ebff,
+    "gradient-neutral-start": #f1f5f9ff,
+    "gradient-neutral-end": #94a3b8ff,
+    "gradient-hero-start": #4de9ffff,
+    "gradient-hero-mid": #3b82f6ff,
+    "gradient-hero-end": #f43f5eff,
+    "gradient-mesh-1": #003366ff,
+    "gradient-mesh-2": #0f172aff,
+    "gradient-mesh-3": #006699ff,
+    "gradient-border-start": #ffffff4d,
+    "gradient-border-mid": #ffffff1a,
+    "gradient-border-end": #ffffff00,
+    "gradient-skeleton-start": #0f172aff,
+    "gradient-skeleton-mid": #1e293bff,
+    "gradient-skeleton-end": #0f172aff
+);

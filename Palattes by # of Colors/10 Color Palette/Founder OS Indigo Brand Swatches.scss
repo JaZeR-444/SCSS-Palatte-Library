@@ -1,0 +1,72 @@
+/*---
+id: founder-os-indigo-brand-swatches
+name: Founder OS Indigo Brand Swatches
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 10
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - brand-scale
+  aesthetic:
+  - UI
+  - Enterprise
+intent: A highly corporate 10-step indigo scale for enterprise dashboards and intense focus states.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--brand-indigo-50-wash: #eef2ffff;
+--brand-indigo-100-subtle: #e0e7ffff;
+--brand-indigo-200-light: #c7d2feff;
+--brand-indigo-300-muted: #a5b4fcff;
+--brand-indigo-400-base: #818cf8ff;
+--brand-indigo-500-primary: #6366f1ff;
+--brand-indigo-600-hover: #4f46e5ff;
+--brand-indigo-700-active: #4338caff;
+--brand-indigo-800-deep: #3730a3ff;
+--brand-indigo-900-dark: #312e81ff;
+
+/* CSS HSL */
+--brand-indigo-50-wash: hsla(226, 100%, 97%, 1);
+--brand-indigo-100-subtle: hsla(226, 100%, 94%, 1);
+--brand-indigo-200-light: hsla(228, 96%, 89%, 1);
+--brand-indigo-300-muted: hsla(230, 94%, 82%, 1);
+--brand-indigo-400-base: hsla(234, 89%, 74%, 1);
+--brand-indigo-500-primary: hsla(239, 84%, 67%, 1);
+--brand-indigo-600-hover: hsla(243, 75%, 59%, 1);
+--brand-indigo-700-active: hsla(245, 58%, 51%, 1);
+--brand-indigo-800-deep: hsla(244, 55%, 41%, 1);
+--brand-indigo-900-dark: hsla(242, 47%, 34%, 1);
+}
+
+/* SCSS HEX */
+$brand-indigo-50-wash: #eef2ffff;
+$brand-indigo-100-subtle: #e0e7ffff;
+$brand-indigo-200-light: #c7d2feff;
+$brand-indigo-300-muted: #a5b4fcff;
+$brand-indigo-400-base: #818cf8ff;
+$brand-indigo-500-primary: #6366f1ff;
+$brand-indigo-600-hover: #4f46e5ff;
+$brand-indigo-700-active: #4338caff;
+$brand-indigo-800-deep: #3730a3ff;
+$brand-indigo-900-dark: #312e81ff;
+
+/* SCSS Map */
+$founder-os-indigo-brand-swatches-map: (
+    "brand-indigo-50-wash": #eef2ffff,
+    "brand-indigo-100-subtle": #e0e7ffff,
+    "brand-indigo-200-light": #c7d2feff,
+    "brand-indigo-300-muted": #a5b4fcff,
+    "brand-indigo-400-base": #818cf8ff,
+    "brand-indigo-500-primary": #6366f1ff,
+    "brand-indigo-600-hover": #4f46e5ff,
+    "brand-indigo-700-active": #4338caff,
+    "brand-indigo-800-deep": #3730a3ff,
+    "brand-indigo-900-dark": #312e81ff
+);

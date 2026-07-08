@@ -1,0 +1,112 @@
+/*---
+id: founder-os-text-on-brand-swatches
+name: Founder OS Text On Brand Swatches
+author: JaZeR-444
+version: 2.0.0
+category: Web Development System
+count: 20
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - brand-scale
+  aesthetic:
+  - UI
+  - Enterprise
+intent: Perfectly contrasted text-on-brand mapping.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--text-on-primary: #003366ff;
+--text-on-primary-subtle: #006699ff;
+--text-on-primary-icon: #003366ff;
+--text-on-neutral: #0f172aff;
+--text-on-neutral-subtle: #334155ff;
+--text-on-success: #064e3bff;
+--text-on-success-subtle: #064e3bff;
+--text-on-warning: #78350fff;
+--text-on-warning-subtle: #78350fff;
+--text-on-danger: #881337ff;
+--text-on-danger-subtle: #881337ff;
+--text-on-inverse: #f8fafcff;
+--text-on-glass: #ffffffff;
+--text-on-glass-subtle: #ffffffb3;
+--text-on-brand-accent: #e5fcffff;
+--text-on-marketing-glow: #0f172aff;
+--text-on-tooltip: #0f172aff;
+--text-on-badge-strong: #ffffffff;
+--text-on-badge-subtle: #e2e8f0ff;
+--text-on-black: #cbd5e1ff;
+
+/* CSS HSL */
+--text-on-primary: hsla(210, 100%, 20%, 1.0);
+--text-on-primary-subtle: hsla(200, 100%, 30%, 1.0);
+--text-on-primary-icon: hsla(210, 100%, 20%, 1.0);
+--text-on-neutral: hsla(222, 47%, 11%, 1.0);
+--text-on-neutral-subtle: hsla(215, 25%, 27%, 1.0);
+--text-on-success: hsla(164, 86%, 16%, 1.0);
+--text-on-success-subtle: hsla(164, 86%, 16%, 1.0);
+--text-on-warning: hsla(22, 78%, 26%, 1.0);
+--text-on-warning-subtle: hsla(22, 78%, 26%, 1.0);
+--text-on-danger: hsla(342, 75%, 30%, 1.0);
+--text-on-danger-subtle: hsla(342, 75%, 30%, 1.0);
+--text-on-inverse: hsla(210, 40%, 98%, 1.0);
+--text-on-glass: hsla(0, 0%, 100%, 1.0);
+--text-on-glass-subtle: hsla(0, 0%, 100%, 0.7);
+--text-on-brand-accent: hsla(187, 100%, 95%, 1.0);
+--text-on-marketing-glow: hsla(222, 47%, 11%, 1.0);
+--text-on-tooltip: hsla(222, 47%, 11%, 1.0);
+--text-on-badge-strong: hsla(0, 0%, 100%, 1.0);
+--text-on-badge-subtle: hsla(214, 32%, 91%, 1.0);
+--text-on-black: hsla(213, 27%, 84%, 1.0);
+}
+
+/* SCSS HEX */
+$text-on-primary: #003366ff;
+$text-on-primary-subtle: #006699ff;
+$text-on-primary-icon: #003366ff;
+$text-on-neutral: #0f172aff;
+$text-on-neutral-subtle: #334155ff;
+$text-on-success: #064e3bff;
+$text-on-success-subtle: #064e3bff;
+$text-on-warning: #78350fff;
+$text-on-warning-subtle: #78350fff;
+$text-on-danger: #881337ff;
+$text-on-danger-subtle: #881337ff;
+$text-on-inverse: #f8fafcff;
+$text-on-glass: #ffffffff;
+$text-on-glass-subtle: #ffffffb3;
+$text-on-brand-accent: #e5fcffff;
+$text-on-marketing-glow: #0f172aff;
+$text-on-tooltip: #0f172aff;
+$text-on-badge-strong: #ffffffff;
+$text-on-badge-subtle: #e2e8f0ff;
+$text-on-black: #cbd5e1ff;
+
+/* SCSS Map */
+$founder-os-text-on-brand-swatches-map: (
+    "text-on-primary": #003366ff,
+    "text-on-primary-subtle": #006699ff,
+    "text-on-primary-icon": #003366ff,
+    "text-on-neutral": #0f172aff,
+    "text-on-neutral-subtle": #334155ff,
+    "text-on-success": #064e3bff,
+    "text-on-success-subtle": #064e3bff,
+    "text-on-warning": #78350fff,
+    "text-on-warning-subtle": #78350fff,
+    "text-on-danger": #881337ff,
+    "text-on-danger-subtle": #881337ff,
+    "text-on-inverse": #f8fafcff,
+    "text-on-glass": #ffffffff,
+    "text-on-glass-subtle": #ffffffb3,
+    "text-on-brand-accent": #e5fcffff,
+    "text-on-marketing-glow": #0f172aff,
+    "text-on-tooltip": #0f172aff,
+    "text-on-badge-strong": #ffffffff,
+    "text-on-badge-subtle": #e2e8f0ff,
+    "text-on-black": #cbd5e1ff
+);

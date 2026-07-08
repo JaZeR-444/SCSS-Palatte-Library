@@ -1,0 +1,96 @@
+/*---
+id: founder-os-glassmorphism-overlay-swatches
+name: Founder OS Glassmorphism Overlay Swatches
+author: JaZeR-444
+version: 2.0.0
+category: Web Development System
+count: 16
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - surfaces
+  aesthetic:
+  - UI
+  - Enterprise
+intent: Advanced translucent, tinted, and blur-ready glass overlays.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--glass-overlay-light: #ffffff1a;
+--glass-overlay-mid: #ffffff33;
+--glass-overlay-heavy: #ffffff4d;
+--glass-overlay-dark: #00000033;
+--glass-overlay-darker: #00000066;
+--glass-panel-bg: #090b10b3;
+--glass-panel-border: #ffffff1a;
+--glass-tooltip-bg: #07090de6;
+--glass-dropdown-bg: #090b10cc;
+--glass-scrim: #00000099;
+--glass-tint-primary: #00f0ff1a;
+--glass-tint-success: #34d3991a;
+--glass-tint-danger: #fb71851a;
+--glass-tint-warning: #ffb8001a;
+--glass-shimmer: #ffffff26;
+--glass-highlight: #ffffff80;
+
+/* CSS HSL */
+--glass-overlay-light: hsla(0, 0%, 100%, 0.1);
+--glass-overlay-mid: hsla(0, 0%, 100%, 0.2);
+--glass-overlay-heavy: hsla(0, 0%, 100%, 0.3);
+--glass-overlay-dark: hsla(0, 0%, 0%, 0.2);
+--glass-overlay-darker: hsla(0, 0%, 0%, 0.4);
+--glass-panel-bg: hsla(223, 28%, 5%, 0.7);
+--glass-panel-border: hsla(0, 0%, 100%, 0.1);
+--glass-tooltip-bg: hsla(220, 30%, 4%, 0.9);
+--glass-dropdown-bg: hsla(223, 28%, 5%, 0.8);
+--glass-scrim: hsla(0, 0%, 0%, 0.6);
+--glass-tint-primary: hsla(184, 100%, 50%, 0.1);
+--glass-tint-success: hsla(158, 64%, 52%, 0.1);
+--glass-tint-danger: hsla(351, 95%, 71%, 0.1);
+--glass-tint-warning: hsla(43, 100%, 50%, 0.1);
+--glass-shimmer: hsla(0, 0%, 100%, 0.15);
+--glass-highlight: hsla(0, 0%, 100%, 0.5);
+}
+
+/* SCSS HEX */
+$glass-overlay-light: #ffffff1a;
+$glass-overlay-mid: #ffffff33;
+$glass-overlay-heavy: #ffffff4d;
+$glass-overlay-dark: #00000033;
+$glass-overlay-darker: #00000066;
+$glass-panel-bg: #090b10b3;
+$glass-panel-border: #ffffff1a;
+$glass-tooltip-bg: #07090de6;
+$glass-dropdown-bg: #090b10cc;
+$glass-scrim: #00000099;
+$glass-tint-primary: #00f0ff1a;
+$glass-tint-success: #34d3991a;
+$glass-tint-danger: #fb71851a;
+$glass-tint-warning: #ffb8001a;
+$glass-shimmer: #ffffff26;
+$glass-highlight: #ffffff80;
+
+/* SCSS Map */
+$founder-os-glassmorphism-overlay-swatches-map: (
+    "glass-overlay-light": #ffffff1a,
+    "glass-overlay-mid": #ffffff33,
+    "glass-overlay-heavy": #ffffff4d,
+    "glass-overlay-dark": #00000033,
+    "glass-overlay-darker": #00000066,
+    "glass-panel-bg": #090b10b3,
+    "glass-panel-border": #ffffff1a,
+    "glass-tooltip-bg": #07090de6,
+    "glass-dropdown-bg": #090b10cc,
+    "glass-scrim": #00000099,
+    "glass-tint-primary": #00f0ff1a,
+    "glass-tint-success": #34d3991a,
+    "glass-tint-danger": #fb71851a,
+    "glass-tint-warning": #ffb8001a,
+    "glass-shimmer": #ffffff26,
+    "glass-highlight": #ffffff80
+);

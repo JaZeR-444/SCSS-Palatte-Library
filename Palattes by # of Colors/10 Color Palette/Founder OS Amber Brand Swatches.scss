@@ -1,0 +1,72 @@
+/*---
+id: founder-os-amber-brand-swatches
+name: Founder OS Amber Brand Swatches
+author: JaZeR-444
+version: 1.0.0
+category: Web Development System
+count: 10
+tags:
+  project:
+  - Founder OS
+  swatchType:
+  - brand-scale
+  aesthetic:
+  - UI
+  - Enterprise
+intent: A striking 10-step amber scale for intense warnings, energetic highlights, and glowing accents.
+url: https://founder.os/
+created: '2026-07-08'
+updated: '2026-07-08'
+---*/
+
+:root {
+/* CSS HEX */
+--brand-amber-50-wash: #fffbebff;
+--brand-amber-100-subtle: #fef3c7ff;
+--brand-amber-200-light: #fde68aff;
+--brand-amber-300-muted: #fcd34dff;
+--brand-amber-400-base: #fbbf24ff;
+--brand-amber-500-primary: #f59e0bff;
+--brand-amber-600-hover: #d97706ff;
+--brand-amber-700-active: #b45309ff;
+--brand-amber-800-deep: #92400eff;
+--brand-amber-900-dark: #78350fff;
+
+/* CSS HSL */
+--brand-amber-50-wash: hsla(48, 100%, 96%, 1);
+--brand-amber-100-subtle: hsla(48, 96%, 89%, 1);
+--brand-amber-200-light: hsla(48, 97%, 77%, 1);
+--brand-amber-300-muted: hsla(46, 97%, 65%, 1);
+--brand-amber-400-base: hsla(43, 96%, 56%, 1);
+--brand-amber-500-primary: hsla(38, 92%, 50%, 1);
+--brand-amber-600-hover: hsla(32, 95%, 44%, 1);
+--brand-amber-700-active: hsla(26, 90%, 37%, 1);
+--brand-amber-800-deep: hsla(23, 82%, 31%, 1);
+--brand-amber-900-dark: hsla(22, 78%, 26%, 1);
+}
+
+/* SCSS HEX */
+$brand-amber-50-wash: #fffbebff;
+$brand-amber-100-subtle: #fef3c7ff;
+$brand-amber-200-light: #fde68aff;
+$brand-amber-300-muted: #fcd34dff;
+$brand-amber-400-base: #fbbf24ff;
+$brand-amber-500-primary: #f59e0bff;
+$brand-amber-600-hover: #d97706ff;
+$brand-amber-700-active: #b45309ff;
+$brand-amber-800-deep: #92400eff;
+$brand-amber-900-dark: #78350fff;
+
+/* SCSS Map */
+$founder-os-amber-brand-swatches-map: (
+    "brand-amber-50-wash": #fffbebff,
+    "brand-amber-100-subtle": #fef3c7ff,
+    "brand-amber-200-light": #fde68aff,
+    "brand-amber-300-muted": #fcd34dff,
+    "brand-amber-400-base": #fbbf24ff,
+    "brand-amber-500-primary": #f59e0bff,
+    "brand-amber-600-hover": #d97706ff,
+    "brand-amber-700-active": #b45309ff,
+    "brand-amber-800-deep": #92400eff,
+    "brand-amber-900-dark": #78350fff
+);
