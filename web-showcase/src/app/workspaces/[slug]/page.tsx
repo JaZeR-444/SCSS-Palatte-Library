@@ -60,7 +60,7 @@ export default async function WorkspaceDetailPage({
       <div className="mx-auto max-w-[1600px] px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <Link
           href="/workspaces"
-          className="inline-flex items-center gap-1.5 rounded-lg text-xs font-black uppercase tracking-widest text-gray-500 transition-colors hover:text-indigo-500 focus-visible:outline-2 focus-visible:outline-indigo-500 dark:text-gray-400"
+          className="inline-flex items-center gap-1.5 rounded-lg px-1 py-0.5 text-xs font-black uppercase tracking-widest text-gray-400 transition-colors hover:text-indigo-500 focus-visible:outline-2 focus-visible:outline-indigo-500 dark:text-gray-500"
         >
           <ChevronLeft className="h-4 w-4" />
           All workspaces
@@ -71,9 +71,11 @@ export default async function WorkspaceDetailPage({
             {name}
           </h1>
           <p className="mt-2 max-w-2xl text-sm text-gray-500 sm:text-base dark:text-gray-400">
-            {palettes.length} palette{palettes.length === 1 ? "" : "s"} in this
-            workspace. Click one to open the studio and map its colors onto UI
-            roles, or save a role preset for the whole workspace.
+            <span className="font-bold text-gray-700 dark:text-gray-300">
+              {palettes.length} palette{palettes.length === 1 ? "" : "s"}
+            </span>{" "}
+            in this workspace. Click a palette to open the studio and map its
+            colors onto UI roles, or save a role preset for the whole workspace.
           </p>
         </div>
 

@@ -15,6 +15,16 @@ import {
   Copy,
   Sparkles,
   LayoutGrid,
+  Palette as PaletteIcon,
+  Network,
+  Target,
+  LayoutDashboard,
+  SlidersHorizontal,
+  BarChart2,
+  Sun,
+  Megaphone,
+  Monitor,
+  type LucideIcon,
 } from "lucide-react";
 import { PaletteCard } from "@/components/palette-card";
 import { FounderOsDemo } from "@/components/founder-os-demo";
@@ -48,16 +58,16 @@ interface ProjectWorkspaceProps {
 type SortKey = "quality" | "name" | "count";
 
 /** Ordered swatch category tabs for design-system projects */
-const SWATCH_TABS: { id: string; label: string; emoji: string }[] = [
-  { id: "all", label: "All", emoji: "🎨" },
-  { id: "system-map", label: "System Map", emoji: "🗺️" },
-  { id: "aesthetics", label: "Aesthetics", emoji: "✨" },
-  { id: "brand-scale", label: "Brand Scale", emoji: "🎯" },
-  { id: "surfaces", label: "Surfaces", emoji: "🪟" },
-  { id: "component-states", label: "Component States", emoji: "⚙️" },
-  { id: "data", label: "Data & Charts", emoji: "📊" },
-  { id: "gradients", label: "Gradients", emoji: "🌈" },
-  { id: "marketing", label: "Marketing", emoji: "📣" },
+const SWATCH_TABS: { id: string; label: string; icon: LucideIcon }[] = [
+  { id: "all", label: "All", icon: PaletteIcon },
+  { id: "system-map", label: "System Map", icon: Network },
+  { id: "aesthetics", label: "Aesthetics", icon: Sparkles },
+  { id: "brand-scale", label: "Brand Scale", icon: Target },
+  { id: "surfaces", label: "Surfaces", icon: LayoutDashboard },
+  { id: "component-states", label: "Component States", icon: SlidersHorizontal },
+  { id: "data", label: "Data & Charts", icon: BarChart2 },
+  { id: "gradients", label: "Gradients", icon: Sun },
+  { id: "marketing", label: "Marketing", icon: Megaphone },
 ];
 
 export function ProjectWorkspace({
@@ -149,6 +159,7 @@ export function ProjectWorkspace({
   // preset creation
   const [presetPaletteId, setPresetPaletteId] = useState("");
   const [presetName, setPresetName] = useState("");
+  const [savingPreset, setSavingPreset] = useState(false);
 
   // Close the add-palettes dialog on Escape (matches the app's other dialogs).
   useEffect(() => {
@@ -193,7 +204,7 @@ export function ProjectWorkspace({
       (t) => t.id === "all" || presentTypes.has(t.id),
     );
     if (slug === "founder-os") {
-      tabs.push({ id: "demo", label: "Live Dashboard Demo", emoji: "🚀" });
+      tabs.push({ id: "demo", label: "Live Dashboard Demo", icon: Monitor });
     }
     return tabs;
   }, [hasSwatchTypes, palettes, slug]);
@@ -286,25 +297,30 @@ export function ProjectWorkspace({
       showToast("Pick a palette and name the preset.", "error");
       return;
     }
-    const mapping = buildRoleMapping(
-      palette.colors.map((c) => c.hex.slice(0, 7)),
-    );
-    const { createProjectPresetAction, getProjectPresetsAction } =
-      await import("@/app/actions");
-    const res = await createProjectPresetAction(
-      slug,
-      presetName.trim(),
-      palette.id,
-      mapping,
-    );
-    if (res.success) {
-      setPresets((await getProjectPresetsAction(slug)) as Preset[]);
-      setPresetName("");
-      setPresetPaletteId("");
-      playSound("success");
-      showToast("Role preset saved");
-    } else {
-      showToast(res.error || "Could not save preset.", "error");
+    setSavingPreset(true);
+    try {
+      const mapping = buildRoleMapping(
+        palette.colors.map((c) => c.hex.slice(0, 7)),
+      );
+      const { createProjectPresetAction, getProjectPresetsAction } =
+        await import("@/app/actions");
+      const res = await createProjectPresetAction(
+        slug,
+        presetName.trim(),
+        palette.id,
+        mapping,
+      );
+      if (res.success) {
+        setPresets((await getProjectPresetsAction(slug)) as Preset[]);
+        setPresetName("");
+        setPresetPaletteId("");
+        playSound("success");
+        showToast("Role preset saved");
+      } else {
+        showToast(res.error || "Could not save preset.", "error");
+      }
+    } finally {
+      setSavingPreset(false);
     }
   };
 
@@ -406,19 +422,20 @@ export function ProjectWorkspace({
       {/* Swatch type tabs (shown when project has swatchType data) */}
       {hasSwatchTypes && visibleTabs.length > 1 && (
         <div className="-mx-0.5 flex flex-wrap gap-1.5">
-          {visibleTabs.map((tab) => (
+      {visibleTabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs font-bold transition-colors ${
+              aria-pressed={activeTab === tab.id}
+              className={`inline-flex cursor-pointer items-center gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs font-bold transition-colors active:scale-95 focus-visible:outline-2 focus-visible:outline-indigo-500 ${
                 activeTab === tab.id
-                  ? "border-cyan-500 bg-cyan-500/10 text-cyan-400"
-                  : "border-slate-700 bg-slate-900 text-slate-400 hover:border-cyan-500/50 hover:text-cyan-400"
+                  ? "border-indigo-500 bg-indigo-50 text-indigo-600 dark:border-cyan-500 dark:bg-cyan-500/10 dark:text-cyan-400"
+                  : "border-gray-200 bg-white text-gray-500 hover:border-indigo-400 hover:text-indigo-500 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-400 dark:hover:border-cyan-500/50 dark:hover:text-cyan-400"
               }`}
             >
-              <span>{tab.emoji}</span>
+              <tab.icon className="h-3.5 w-3.5 shrink-0" />
               {tab.label}
-              <span className="rounded-md bg-slate-800 px-1 py-0.5 text-[10px] font-black text-slate-400">
+              <span className="rounded-md bg-gray-100 px-1 py-0.5 text-[10px] font-black text-gray-500 dark:bg-slate-800 dark:text-slate-400">
                 {tab.id === "demo"
                   ? "UI"
                   : tab.id === "all"
@@ -526,10 +543,35 @@ export function ProjectWorkspace({
           />
           <button
             onClick={createPreset}
-            className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 px-3 py-2 text-xs font-black text-gray-600 transition-colors hover:border-indigo-300 hover:text-indigo-600 dark:border-slate-800 dark:text-gray-300"
+            disabled={savingPreset}
+            className="inline-flex cursor-pointer items-center justify-center gap-1.5 rounded-lg border border-gray-200 px-3 py-2 text-xs font-black text-gray-600 transition-colors hover:border-indigo-300 hover:text-indigo-600 disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-800 dark:text-gray-300"
           >
-            <Wand2 className="h-3.5 w-3.5" />
-            Save preset
+            {savingPreset ? (
+              <svg
+                className="h-3.5 w-3.5 animate-spin"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                />
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+                />
+              </svg>
+            ) : (
+              <Wand2 className="h-3.5 w-3.5" />
+            )}
+            {savingPreset ? "Saving…" : "Save preset"}
           </button>
         </div>
         <p className="mt-2 text-[11px] text-gray-400">
@@ -640,10 +682,10 @@ export function ProjectWorkspace({
             (() => {
               const tab = SWATCH_TABS.find((t) => t.id === activeTab);
               return tab ? (
-                <div className="flex items-center gap-2 border-b border-slate-800 pb-3">
-                  <span className="text-lg">{tab.emoji}</span>
-                  <h2 className="text-sm font-black text-white">{tab.label}</h2>
-                  <span className="text-xs text-slate-500">
+                <div className="flex items-center gap-2 border-b border-gray-200 pb-3 dark:border-slate-800">
+                  <tab.icon className="h-4 w-4 text-indigo-500 dark:text-cyan-400" />
+                  <h2 className="text-sm font-black text-gray-900 dark:text-white">{tab.label}</h2>
+                  <span className="text-xs text-gray-400 dark:text-slate-500">
                     {displayed.length} swatch
                     {displayed.length !== 1 ? "es" : ""}
                   </span>
@@ -660,11 +702,11 @@ export function ProjectWorkspace({
                       e.stopPropagation();
                       removePalette(palette.id);
                     }}
-                    className="absolute -right-2 -top-2 z-10 flex h-6 w-6 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-400 shadow-sm transition-colors hover:border-rose-300 hover:text-rose-500 dark:border-slate-700 dark:bg-slate-900"
+                    className="absolute -right-2 -top-2 z-10 flex h-7 w-7 cursor-pointer items-center justify-center rounded-full border border-gray-200 bg-white text-gray-400 shadow-md transition-all hover:border-rose-300 hover:bg-rose-50 hover:text-rose-500 active:scale-95 dark:border-slate-700 dark:bg-slate-900 dark:hover:bg-rose-950/40"
                     title="Remove from project"
                     aria-label={`Remove ${palette.name} from project`}
                   >
-                    <X className="h-3.5 w-3.5" />
+                    <X className="h-3 w-3" />
                   </button>
                 )}
 
@@ -692,7 +734,7 @@ export function ProjectWorkspace({
                     }
                   }}
                   aria-label={`Open ${palette.name} palette`}
-                  className="rounded-xl focus-visible:outline-2 focus-visible:outline-indigo-500"
+                  className="cursor-pointer rounded-xl focus-visible:outline-2 focus-visible:outline-indigo-500"
                 >
                   <PaletteCard
                     palette={palette}
